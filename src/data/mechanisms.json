@@ -1,0 +1,551 @@
+[
+  {
+    "id": "avoir-etat",
+    "token": "avoir",
+    "name": "avoir для состояний",
+    "blurb": "Французский «имеет» холод, голод, страх и нужду."
+  },
+  {
+    "id": "avoir-besoin",
+    "token": "j'ai besoin de",
+    "name": "avoir besoin de",
+    "blurb": "«Мне нужно» через «иметь нужду»."
+  },
+  {
+    "id": "avoir-age",
+    "token": "j'ai … ans",
+    "name": "Возраст через avoir",
+    "blurb": "Во французском годы «имеют», а не «суть»."
+  },
+  {
+    "id": "cest",
+    "token": "c'est",
+    "name": "c'est",
+    "blurb": "Универсальный способ прикрепить оценку и идентичность."
+  },
+  {
+    "id": "ilya",
+    "token": "il y a",
+    "name": "il y a",
+    "blurb": "Главный способ сказать «есть / существует»."
+  },
+  {
+    "id": "un-une",
+    "token": "un / une",
+    "name": "un / une",
+    "blurb": "Новый объект впервые входит в кадр."
+  },
+  {
+    "id": "le-la-les",
+    "token": "le / la / les",
+    "name": "le / la / les",
+    "blurb": "Известный объект или категория целиком."
+  },
+  {
+    "id": "du",
+    "token": "du / de la / des",
+    "name": "du / de la / des",
+    "blurb": "Порция, масса, неопределённое количество."
+  },
+  {
+    "id": "pas-de",
+    "token": "pas de",
+    "name": "pas de",
+    "blurb": "После отрицания объект исчезает из кадра."
+  },
+  {
+    "id": "camera",
+    "token": "le vs du",
+    "name": "Категория или порция",
+    "blurb": "Люблю категорию — хочу порцию."
+  },
+  {
+    "id": "lui-leur",
+    "token": "lui / leur",
+    "name": "lui / leur",
+    "blurb": "Кому — косвенный объект перед глаголом."
+  },
+  {
+    "id": "le-vs-lui",
+    "token": "le vs lui",
+    "name": "le vs lui",
+    "blurb": "Прямой объект против «к кому»."
+  },
+  {
+    "id": "double-pronoms",
+    "token": "je te le",
+    "name": "Двойные местоимения",
+    "blurb": "Порядок маленьких слов перед глаголом."
+  },
+  { "id": "y", "token": "y", "name": "y", "blurb": "Контейнер для места или идеи с à." },
+  {
+    "id": "en",
+    "token": "en",
+    "name": "en",
+    "blurb": "Способ не повторять «этого / немного / их»."
+  },
+  {
+    "id": "chez",
+    "token": "à / de / chez",
+    "name": "à / de / chez",
+    "blurb": "Три главных направления бытовой жизни."
+  },
+  {
+    "id": "au-aux",
+    "token": "au / aux",
+    "name": "au / aux / du / des",
+    "blurb": "Предлог слипается с артиклем."
+  },
+  {
+    "id": "aller-chercher",
+    "token": "aller chercher",
+    "name": "aller chercher",
+    "blurb": "Не «искать», а «пойти забрать»."
+  },
+  {
+    "id": "voudrais",
+    "token": "je voudrais",
+    "name": "je veux vs je voudrais",
+    "blurb": "Безопасная кнопка вежливой просьбы."
+  },
+  {
+    "id": "je-peux",
+    "token": "je peux",
+    "name": "je peux",
+    "blurb": "«Могу» и «можно мне» + инфинитив."
+  },
+  {
+    "id": "il-faut",
+    "token": "il faut",
+    "name": "il faut",
+    "blurb": "«Надо» без указания виноватого."
+  },
+  {
+    "id": "passe-compose",
+    "token": "passé composé",
+    "name": "passé composé",
+    "blurb": "Щелчок камеры: событие случилось."
+  },
+  {
+    "id": "imparfait",
+    "token": "imparfait",
+    "name": "imparfait",
+    "blurb": "Фон, состояние, привычка."
+  },
+  {
+    "id": "futur-proche",
+    "token": "je vais + inf.",
+    "name": "futur proche",
+    "blurb": "Самый живой способ говорить о будущем."
+  },
+  {
+    "id": "depuis",
+    "token": "depuis / pendant",
+    "name": "depuis / pendant / il y a",
+    "blurb": "С каких пор, как долго, как давно."
+  },
+  {
+    "id": "on",
+    "token": "on",
+    "name": "on вместо nous",
+    "blurb": "Разговорное «мы» без формального пафоса."
+  },
+  {
+    "id": "ne-drop",
+    "token": "(ne) … pas",
+    "name": "Выпадение ne",
+    "blurb": "В живой речи ne часто исчезает."
+  },
+  {
+    "id": "est-ce-que",
+    "token": "est-ce que",
+    "name": "est-ce que",
+    "blurb": "Просто кнопка вопроса, а не страх."
+  },
+  {
+    "id": "quest-ce-que",
+    "token": "qu'est-ce que",
+    "name": "qu'est-ce que",
+    "blurb": "Застывший блок «что …?»."
+  },
+  {
+    "id": "liaison",
+    "token": "liaison",
+    "name": "liaison",
+    "blurb": "Финальная согласная оживает перед гласной."
+  },
+  {
+    "id": "lettres-muettes",
+    "token": "lettres muettes",
+    "name": "Буквы-призраки",
+    "blurb": "Финальные согласные часто немые."
+  },
+  {
+    "id": "bonjour",
+    "token": "bonjour",
+    "name": "bonjour-протокол",
+    "blurb": "Входной билет в любой разговор."
+  },
+  {
+    "id": "secours",
+    "token": "фразы-спасатели",
+    "name": "Фразы-спасатели",
+    "blurb": "Набор для выживания в реальном разговоре."
+  },
+  {
+    "id": "savoir-connaitre",
+    "token": "savoir / connaître",
+    "name": "savoir vs connaître",
+    "blurb": "Знать факт/уметь против быть знакомым."
+  },
+  {
+    "id": "faux-amis",
+    "token": "ложные друзья",
+    "name": "Переводческие капканы",
+    "blurb": "Похожее слово — другое значение."
+  },
+  {
+    "id": "perception",
+    "token": "voir / regarder",
+    "name": "Восприятие vs действие",
+    "blurb": "Видеть/слышать против смотреть/слушать."
+  },
+  {
+    "id": "logique",
+    "token": "parce que / donc",
+    "name": "Причина и следствие",
+    "blurb": "«Потому что» и «поэтому»."
+  },
+  {
+    "id": "connecteurs",
+    "token": "mais / si / quand",
+    "name": "Коннекторы",
+    "blurb": "Но, если, когда — длинная мысль."
+  },
+  {
+    "id": "avoir-mal",
+    "token": "avoir mal à",
+    "name": "avoir mal à",
+    "blurb": "«У меня болит…» через avoir."
+  },
+  {
+    "id": "meteo",
+    "token": "il fait / il y a",
+    "name": "Погода",
+    "blurb": "Безличные обороты про погоду."
+  },
+  { "id": "ca", "token": "ça", "name": "ça", "blurb": "Универсальное разговорное «это»." },
+  {
+    "id": "me-te",
+    "token": "me / te / nous / vous",
+    "name": "me / te / nous / vous",
+    "blurb": "Меня, тебе, нам, вас — перед глаголом."
+  },
+  {
+    "id": "prepositions",
+    "token": "dans / sur / sous",
+    "name": "Предлоги места",
+    "blurb": "Бытовая карта пространства."
+  },
+  {
+    "id": "aller-venir",
+    "token": "aller / venir",
+    "name": "Глаголы перемещения",
+    "blurb": "aller, venir, rentrer, arriver, partir."
+  },
+  {
+    "id": "je-dois",
+    "token": "je dois",
+    "name": "je dois",
+    "blurb": "Личная обязанность «я должен»."
+  },
+  {
+    "id": "on-peut",
+    "token": "on peut",
+    "name": "on peut",
+    "blurb": "Разговорное «можем / можно»."
+  },
+  { "id": "ca-va", "token": "ça va", "name": "ça va", "blurb": "Швейцарский нож разговора." },
+  {
+    "id": "tu-vous",
+    "token": "tu / vous",
+    "name": "tu vs vous",
+    "blurb": "Социальная дистанция, а не грамматика."
+  },
+  {
+    "id": "microsignaux",
+    "token": "déjà / encore",
+    "name": "Микросигналы",
+    "blurb": "Маленькие слова, меняющие смысл."
+  },
+  {
+    "id": "calques",
+    "token": "антикальки",
+    "name": "Антикальки",
+    "blurb": "Где русский мозг подсовывает кальку."
+  },
+  {
+    "id": "an-annee",
+    "token": "an / année",
+    "name": "an vs année",
+    "blurb": "Год как точка против длительности."
+  },
+  {
+    "id": "verbes-pieges",
+    "token": "manquer / plaire",
+    "name": "Глаголы-ловушки",
+    "blurb": "Строятся не как в русском."
+  },
+  {
+    "id": "alors",
+    "token": "alors / comme",
+    "name": "alors / comme",
+    "blurb": "«Тогда / ну» и «так как»."
+  },
+  {
+    "id": "avant-apres",
+    "token": "avant de / après",
+    "name": "avant de / après avoir",
+    "blurb": "До и после действия."
+  },
+  {
+    "id": "cest-il-est",
+    "token": "c'est vs il est",
+    "name": "c'est vs il est",
+    "blurb": "Представить объект против описать роль."
+  },
+  {
+    "id": "blocs",
+    "token": "готовые блоки",
+    "name": "Готовые блоки",
+    "blurb": "Бери конструкцию целиком, не собирай пословно."
+  },
+  {
+    "id": "politesse",
+    "token": "s'il vous plaît",
+    "name": "Вежливый ритуал",
+    "blurb": "merci, s'il vous plaît, bonne journée."
+  },
+  {
+    "id": "excuses",
+    "token": "désolé / pardon",
+    "name": "Как извиняться",
+    "blurb": "Уровни извинения и привлечения внимания."
+  },
+  {
+    "id": "ordre-mots",
+    "token": "порядок слов",
+    "name": "Порядок слов",
+    "blurb": "Жёсткая цепочка: кто → действие → объект → куда/когда."
+  },
+  {
+    "id": "sequence",
+    "token": "d'abord / ensuite",
+    "name": "По порядку",
+    "blurb": "Сначала, потом, наконец — шаги мысли."
+  },
+  {
+    "id": "nasales",
+    "token": "an / on / in",
+    "name": "Носовые звуки",
+    "blurb": "Гласный звучит «в нос», n отдельно не читается."
+  },
+  {
+    "id": "elision",
+    "token": "j' / l' / d'",
+    "name": "Élision",
+    "blurb": "Перед гласной короткое слово теряет гласную."
+  },
+  {
+    "id": "reductions",
+    "token": "chuis / t'es",
+    "name": "Сжатия в речи",
+    "blurb": "Как на самом деле звучит быстрая речь."
+  },
+  {
+    "id": "nombres",
+    "token": "soixante-dix",
+    "name": "Числа",
+    "blurb": "После 60 — французская математика: 70=60+10, 80=4×20."
+  },
+  {
+    "id": "lheure",
+    "token": "il est … heures",
+    "name": "Который час",
+    "blurb": "et quart · et demie · moins le quart."
+  },
+  {
+    "id": "prix",
+    "token": "c'est combien",
+    "name": "Цены",
+    "blurb": "Спросить цену и заплатить."
+  },
+  {
+    "id": "date",
+    "token": "le 3 mai",
+    "name": "Даты и дни",
+    "blurb": "le + число + месяц; только 1-е — le premier."
+  },
+  {
+    "id": "quantites",
+    "token": "un peu de",
+    "name": "Количество",
+    "blurb": "После количества всегда de, не du/des."
+  },
+  {
+    "id": "adj-place-apres",
+    "token": "voiture rouge",
+    "name": "Прилагательное после",
+    "blurb": "Большинство прилагательных стоят после существительного."
+  },
+  {
+    "id": "adj-accord",
+    "token": "petit / petite",
+    "name": "Согласование прилагательного",
+    "blurb": "Прилагательное меняет форму по роду и числу."
+  },
+  {
+    "id": "adj-place-avant",
+    "token": "un grand homme",
+    "name": "Прилагательное перед (BAGS)",
+    "blurb": "Короткие частотные прилагательные идут перед существительным."
+  },
+  {
+    "id": "adj-comparatif",
+    "token": "plus … que",
+    "name": "Сравнительная степень",
+    "blurb": "plus / moins / aussi … que; bon → meilleur."
+  },
+  {
+    "id": "adj-superlatif",
+    "token": "le plus",
+    "name": "Превосходная степень",
+    "blurb": "le / la plus … с артиклем; le meilleur."
+  },
+  {
+    "id": "poss-mon-ma",
+    "token": "mon / ma / mes",
+    "name": "Мой / моя / мои",
+    "blurb": "Притяжательное согласуется с предметом, а не с владельцем."
+  },
+  {
+    "id": "poss-son-sa",
+    "token": "son / sa",
+    "name": "Его / её (по предмету)",
+    "blurb": "son / sa выбираются по предмету: sa femme = и его, и её."
+  },
+  {
+    "id": "poss-mon-amie",
+    "token": "mon amie",
+    "name": "mon перед гласной",
+    "blurb": "Перед гласной даже у женского рода — mon / ton / son."
+  },
+  {
+    "id": "poss-notre-leur",
+    "token": "notre / leur",
+    "name": "Наш / ваш / их",
+    "blurb": "Несколько владельцев: notre, votre, leur (+s по предметам)."
+  },
+  {
+    "id": "poss-a-moi",
+    "token": "c'est à moi",
+    "name": "Принадлежность через de / à",
+    "blurb": "le livre de Marie (нет 's), c'est à moi."
+  },
+  {
+    "id": "neg-cadre",
+    "token": "ne … pas",
+    "name": "Рамка ne … pas",
+    "blurb": "Отрицание оборачивает глагол: ne перед, pas после."
+  },
+  {
+    "id": "neg-plus",
+    "token": "ne … plus",
+    "name": "ne … plus",
+    "blurb": "«Больше не»: je ne fume plus."
+  },
+  {
+    "id": "neg-jamais",
+    "token": "ne … jamais",
+    "name": "ne … jamais",
+    "blurb": "«Никогда»: je ne bois jamais d'alcool."
+  },
+  {
+    "id": "neg-rien-personne",
+    "token": "ne … rien / personne",
+    "name": "ne … rien / personne",
+    "blurb": "«Ничего» и «никого / никто»."
+  },
+  {
+    "id": "neg-que",
+    "token": "ne … que",
+    "name": "ne … que = только",
+    "blurb": "Это не отрицание, а «только»: je n'ai que 5 euros."
+  },
+  {
+    "id": "refl-base",
+    "token": "se laver",
+    "name": "Возвратный глагол",
+    "blurb": "Глагол тащит местоимение: je me lave — действие на себя."
+  },
+  {
+    "id": "refl-appeler",
+    "token": "je m'appelle",
+    "name": "s'appeler",
+    "blurb": "«Меня зовут» буквально «я себя зову»."
+  },
+  {
+    "id": "refl-routine",
+    "token": "se lever",
+    "name": "Возвратная рутина",
+    "blurb": "Распорядок дня — сплошь возвратные глаголы."
+  },
+  {
+    "id": "refl-passe",
+    "token": "je me suis levé",
+    "name": "Возвратные в passé composé",
+    "blurb": "В прошедшем — с être и согласованием."
+  },
+  {
+    "id": "refl-reciproque",
+    "token": "on se voit",
+    "name": "se: друг друга / так делается",
+    "blurb": "on se voit (видимся), ça se dit (так говорят)."
+  },
+  {
+    "id": "trap-tres-beaucoup",
+    "token": "très / beaucoup",
+    "name": "très vs beaucoup",
+    "blurb": "«Очень»: très с прилагательным, beaucoup с глаголом."
+  },
+  {
+    "id": "trap-raison-accord",
+    "token": "tu as raison",
+    "name": "avoir raison / être d'accord",
+    "blurb": "«Прав» через avoir, «согласен» через être d'accord."
+  },
+  {
+    "id": "trap-pays",
+    "token": "à Paris / en France",
+    "name": "Предлоги стран и городов",
+    "blurb": "à город, en страна ж.р., au страна м.р., aux мн.ч."
+  },
+  {
+    "id": "trap-rection",
+    "token": "penser à",
+    "name": "Управление глаголов",
+    "blurb": "penser à, jouer à / de, téléphoner à — свой предлог у каждого."
+  },
+  {
+    "id": "trap-corps",
+    "token": "se laver les mains",
+    "name": "Части тела — артикль",
+    "blurb": "С частями тела — определённый артикль (les/le/la), не притяжательное."
+  },
+  {
+    "id": "trap-temps-dans-en",
+    "token": "dans une heure",
+    "name": "dans / en — через / за",
+    "blurb": "«Через» = dans (момент в будущем), «за» = en (длительность)."
+  }
+]

@@ -1,0 +1,462 @@
+[
+  {
+    "id": "liaison",
+    "mechanism": "liaison",
+    "category": "pronunciation",
+    "title": "Liaison — когда слова склеиваются",
+    "question": "Почему vous avez звучит как «ву-заве», хотя s обычно молчит?",
+    "strangeness": "vous avez → «ву‿заве»",
+    "difficulty": "medium",
+    "scenes": ["cours", "voisins"],
+    "insight": "Перед гласной немая финальная согласная оживает и склеивает слова: vous‿avez, les‿enfants.",
+    "steps": [
+      {
+        "id": "liai-strange",
+        "kind": "strangeness",
+        "prompt": "Что происходит на стыке слов?",
+        "phrase": "vous avez",
+        "options": [
+          "Немая s в vous оживает как «з» и склеивается с avez",
+          "Появляется новое слово «zavez»",
+          "Это две ошибки произношения",
+          "vous здесь — это глагол"
+        ],
+        "correctIndex": 0,
+        "explanation": "Финальная s обычно немая, но перед гласной она оживает (звучит как «з») и связывает слова: vous‿avez."
+      },
+      {
+        "id": "liai-hypo",
+        "kind": "hypothesis",
+        "prompt": "Когда возникает связка (liaison)?",
+        "clues": ["vous‿avez", "les‿enfants", "deux‿amis", "on‿y va"],
+        "options": [
+          "Когда следующее слово начинается с гласной",
+          "Когда следующее слово начинается с согласной",
+          "Только в вопросах",
+          "Только в прошедшем времени"
+        ],
+        "correctIndex": 0,
+        "explanation": "Liaison появляется, когда обычно немая финальная согласная встречает гласную в начале следующего слова."
+      },
+      {
+        "id": "liai-written",
+        "kind": "expand",
+        "prompt": "Написано vs звучит. Как прозвучит «vous avez» в речи?",
+        "phrase": "vous avez",
+        "options": ["ву-заве", "ву аве (раздельно)", "ву-саве", "вус-авес"],
+        "correctIndex": 0,
+        "explanation": "Связка даёт «ву‿заве»: s звучит как «з» и прилипает к avez."
+      },
+      {
+        "id": "liai-sort",
+        "kind": "sort",
+        "prompt": "Где будет liaison, а где нет?",
+        "baskets": [
+          { "id": "yes", "label": "связка есть (перед гласной)" },
+          { "id": "no", "label": "связки нет (перед согласной)" }
+        ],
+        "items": [
+          { "text": "les enfants", "basket": "yes" },
+          { "text": "les copains", "basket": "no" },
+          { "text": "vous avez", "basket": "yes" },
+          { "text": "vous parlez", "basket": "no" },
+          { "text": "deux amis", "basket": "yes" }
+        ],
+        "explanation": "Гласная в начале следующего слова → связка. Согласная → связки нет."
+      },
+      {
+        "id": "liai-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "les enfants",
+        "tokens": [
+          { "fr": "les", "ru": "артикль мн.ч.", "role": "финальная s обычно немая" },
+          { "fr": "‿", "ru": "звучит как «з»", "role": "связка" },
+          { "fr": "enfants", "ru": "дети", "role": "начинается с гласной" }
+        ],
+        "note": "enfants начинается с гласной, поэтому немая s в les оживает: «ле‿занфан». Финальная s в enfants остаётся немой."
+      },
+      {
+        "id": "liai-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Перед гласной немая финальная согласная оживает и склеивает слова.",
+          "Liaison происходит всегда, между любыми словами.",
+          "Финальные согласные никогда не произносятся.",
+          "Liaison бывает только в письме."
+        ],
+        "correctIndex": 0,
+        "explanation": "Французская речь — поток слогов: слушай связки, а не отдельные слова."
+      }
+    ]
+  },
+  {
+    "id": "lettres-muettes",
+    "mechanism": "lettres-muettes",
+    "category": "pronunciation",
+    "title": "Финальные буквы-призраки",
+    "question": "Почему petit звучит как «пёти», без t на конце?",
+    "strangeness": "petit → «пёти» (t молчит)",
+    "difficulty": "medium",
+    "scenes": ["cours"],
+    "insight": "Большинство финальных согласных немые (petit, grand, vous). Чаще читаются c, r, f, l — «CaReFuL».",
+    "steps": [
+      {
+        "id": "muet-strange",
+        "kind": "strangeness",
+        "prompt": "Что не так со звучанием?",
+        "phrase": "petit",
+        "options": [
+          "Финальная t не читается: звучит «пёти»",
+          "Читается только t, остальное молчит",
+          "Слово звучит как написано",
+          "Здесь две гласные подряд"
+        ],
+        "correctIndex": 0,
+        "explanation": "Финальная t обычно немая: petit → «пёти». Это типичная буква-призрак."
+      },
+      {
+        "id": "muet-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что объединяет эти слова на слух?",
+        "clues": ["petit → пёти", "grand → гран", "vous → ву", "parlez → парле"],
+        "options": [
+          "Их финальные согласные не произносятся",
+          "Их финальные согласные читаются громко",
+          "Это глаголы в прошедшем времени",
+          "У них нет гласных"
+        ],
+        "correctIndex": 0,
+        "explanation": "Финальные t, d, s, z обычно немые. Поэтому написанное и звучащее так сильно расходятся."
+      },
+      {
+        "id": "muet-choice",
+        "kind": "oddOneOut",
+        "prompt": "В каком слове финальная согласная ЗВУЧИТ? Найди его.",
+        "options": ["petit", "grand", "vous", "avec"],
+        "correctIndex": 3,
+        "explanation": "В avec финальная c читается («авэк»). А в petit/grand/vous финальная согласная немая. Буквы c, r, f, l («CaReFuL») чаще произносятся."
+      },
+      {
+        "id": "muet-sort",
+        "kind": "sort",
+        "prompt": "Разложи: финальная согласная немая или звучит?",
+        "baskets": [
+          { "id": "silent", "label": "немая" },
+          { "id": "sounded", "label": "звучит" }
+        ],
+        "items": [
+          { "text": "petit", "basket": "silent" },
+          { "text": "sac", "basket": "sounded" },
+          { "text": "grand", "basket": "silent" },
+          { "text": "neuf", "basket": "sounded" },
+          { "text": "vous", "basket": "silent" },
+          { "text": "hôtel", "basket": "sounded" }
+        ],
+        "explanation": "c, r, f, l («CaReFuL») обычно звучат (sac, neuf, hôtel). Большинство других финальных согласных — немые."
+      },
+      {
+        "id": "muet-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "un petit sac",
+        "tokens": [
+          { "fr": "un", "ru": "один", "role": "финальная n назализуется" },
+          { "fr": "petit", "ru": "маленький", "role": "финальная t немая" },
+          { "fr": "sac", "ru": "мешок", "role": "финальная c звучит (CaReFuL)" }
+        ],
+        "note": "petit → «пёти» (t немая), а sac → «сак» (c из «CaReFuL» звучит)."
+      },
+      {
+        "id": "muet-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Финальные согласные чаще немые; читаются обычно c, r, f, l («CaReFuL»).",
+          "Все финальные буквы во французском произносятся.",
+          "Финальные буквы читаются только в вопросах.",
+          "Финальная t всегда звучит."
+        ],
+        "correctIndex": 0,
+        "explanation": "Не жди, что французский звучит как пишется — слушай блоками."
+      }
+    ]
+  },
+  {
+    "id": "nasales",
+    "mechanism": "nasales",
+    "category": "pronunciation",
+    "title": "Носовые звуки: an / on / in",
+    "question": "Почему bon звучит «бон в нос», а n отдельно не слышно?",
+    "strangeness": "гласная + n/m = один носовой звук",
+    "difficulty": "medium",
+    "scenes": ["cours"],
+    "insight": "Носовые: an/en → «ан в нос», on → «он в нос», in/un → «эн в нос». Буква n/m не звучит отдельно — она назализует гласную.",
+    "steps": [
+      {
+        "id": "nas-strange",
+        "kind": "strangeness",
+        "prompt": "Что происходит со звуком?",
+        "phrase": "bon",
+        "options": [
+          "Гласная звучит «в нос», а n отдельно не произносится",
+          "Читается по буквам: б-о-н",
+          "n читается, а o — нет",
+          "Это два слога"
+        ],
+        "correctIndex": 0,
+        "explanation": "on → один носовой звук «он в нос». Конечная n не звучит как отдельная согласная."
+      },
+      {
+        "id": "nas-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что общего у этих сочетаний?",
+        "clues": ["an → grand", "on → bon", "in → vin", "un → brun"],
+        "options": [
+          "Гласная + n/m дают один носовой звук",
+          "n всегда читается отдельно",
+          "Это разные способы написать «а»",
+          "Это окончания глаголов"
+        ],
+        "correctIndex": 0,
+        "explanation": "an/en, on, in/un — каждое сочетание = один носовой гласный, n/m лишь «закрывает» его в нос."
+      },
+      {
+        "id": "nas-sort",
+        "kind": "sort",
+        "prompt": "Разложи слова по носовому звуку.",
+        "baskets": [
+          { "id": "an", "label": "an/en — «ан»" },
+          { "id": "on", "label": "on — «он»" },
+          { "id": "in", "label": "in/un — «эн»" }
+        ],
+        "items": [
+          { "text": "grand", "basket": "an" },
+          { "text": "enfant", "basket": "an" },
+          { "text": "bon", "basket": "on" },
+          { "text": "maison", "basket": "on" },
+          { "text": "vin", "basket": "in" },
+          { "text": "pain", "basket": "in" }
+        ],
+        "explanation": "an/en → «ан» (grand, enfant), on → «он» (bon, maison), in/ain/un → «эн» (vin, pain)."
+      },
+      {
+        "id": "nas-odd",
+        "kind": "oddOneOut",
+        "prompt": "В каком слове n ЧИТАЕТСЯ, и носового звука НЕТ? Найди его.",
+        "options": ["bon", "bonne", "vin", "pain"],
+        "correctIndex": 1,
+        "explanation": "В bonne после n идёт гласная, поэтому n звучит чётко («бон» с ясной н), без носового. А bon/vin/pain — носовые."
+      },
+      {
+        "id": "nas-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "un bon vin",
+        "tokens": [
+          { "fr": "un", "ru": "один", "role": "носовой «эн»" },
+          { "fr": "bon", "ru": "хороший", "role": "носовой «он»" },
+          { "fr": "vin", "ru": "вино", "role": "носовой «эн»" }
+        ],
+        "note": "Три носовых подряд: «эн-бон-вэн», нигде n не звучит отдельной согласной."
+      },
+      {
+        "id": "nas-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "an/en → «ан», on → «он», in/un → «эн»; n/m назализует гласную, а не звучит отдельно.",
+          "n всегда читается как русское «н».",
+          "Носовых звуков во французском нет.",
+          "Носовой звук бывает только в вопросах."
+        ],
+        "correctIndex": 0,
+        "explanation": "Слышишь «в нос» — это носовой гласный, а не «н»."
+      }
+    ]
+  },
+  {
+    "id": "elision",
+    "mechanism": "elision",
+    "category": "pronunciation",
+    "title": "Élision: je aime → j'aime",
+    "question": "Почему je aime превращается в j'aime?",
+    "strangeness": "перед гласной гласная выпадает",
+    "difficulty": "easy",
+    "scenes": ["cours"],
+    "insight": "Перед гласной (и немой h) короткие слова теряют гласную и сливаются: je → j', de → d', le/la → l', ne → n', que → qu'.",
+    "steps": [
+      {
+        "id": "eli-strange",
+        "kind": "strangeness",
+        "prompt": "Почему не «je aime»?",
+        "phrase": "j'aime",
+        "options": [
+          "Перед гласной je теряет e и слипается: j'aime",
+          "Это ошибка, надо je aime",
+          "j' — это отдельное слово",
+          "aime начинается с согласной"
+        ],
+        "correctIndex": 0,
+        "explanation": "Французский не любит две гласные подряд: je + aime → j'aime. Это élision."
+      },
+      {
+        "id": "eli-hypo",
+        "kind": "hypothesis",
+        "prompt": "Когда происходит élision?",
+        "clues": ["je + aime → j'aime", "de + eau → d'eau", "le + ami → l'ami", "que + il → qu'il"],
+        "options": [
+          "Когда следующее слово начинается с гласной (или немого h)",
+          "Когда следующее слово начинается с согласной",
+          "Только в вопросах",
+          "Только в прошедшем времени"
+        ],
+        "correctIndex": 0,
+        "explanation": "Перед гласной короткое слово теряет конечную гласную, и ставится апостроф."
+      },
+      {
+        "id": "eli-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode.",
+        "buggy": "Je ai une question.",
+        "bugReport": "no élision before a vowel",
+        "options": [
+          "J'ai une question.",
+          "Jai une question.",
+          "Je'ai une question.",
+          "Je ai une question."
+        ],
+        "correctIndex": 0,
+        "fixNote": "je → j' before a vowel",
+        "explanation": "je + ai → j'ai (с апострофом). «Je ai» не говорят."
+      },
+      {
+        "id": "eli-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь правильную форму: «Я иду в школу».",
+        "phrase": "Je vais à ___ école.",
+        "options": ["l'", "la", "le", "les"],
+        "correctIndex": 0,
+        "explanation": "école начинается с гласной, поэтому la → l': à l'école.",
+        "result": "Je vais à l'école."
+      },
+      {
+        "id": "eli-sort",
+        "kind": "sort",
+        "prompt": "Где слова сливаются (élision), а где нет?",
+        "baskets": [
+          { "id": "yes", "label": "сливается (перед гласной)" },
+          { "id": "no", "label": "не сливается (перед согласной)" }
+        ],
+        "items": [
+          { "text": "le + ami → l'ami", "basket": "yes" },
+          { "text": "le + café → le café", "basket": "no" },
+          { "text": "de + eau → d'eau", "basket": "yes" },
+          { "text": "de + Paris → de Paris", "basket": "no" },
+          { "text": "que + il → qu'il", "basket": "yes" }
+        ],
+        "explanation": "Гласная в начале следующего слова → élision. Согласная → слова остаются раздельными."
+      },
+      {
+        "id": "eli-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Перед гласной je/de/le/la/ne/que теряют гласную: j'/d'/l'/n'/qu'.",
+          "Апостроф ставят перед любым словом.",
+          "Élision бывает только перед согласной.",
+          "j' — это сокращение от jamais."
+        ],
+        "correctIndex": 0,
+        "explanation": "Две гласные не сталкиваются — первая выпадает."
+      }
+    ]
+  },
+  {
+    "id": "reductions",
+    "mechanism": "reductions",
+    "category": "pronunciation",
+    "title": "Как звучит живая речь: chuis, t'es",
+    "question": "Почему «je suis» слышится как «chuis», а «tu es» — как «t'es»?",
+    "strangeness": "je suis → chuis, tu es → t'es",
+    "difficulty": "medium",
+    "scenes": ["voisins", "cafe", "cours"],
+    "insight": "В быстрой речи слова сжимаются: je suis → chuis, tu es → t'es, tu as → t'as, il y a → y a, je ne sais pas → chais pas. Узнавать это критично на слух.",
+    "steps": [
+      {
+        "id": "red-expand",
+        "kind": "expand",
+        "prompt": "Написано — vs — звучит. Как «Je ne sais pas» прозвучит в живой речи?",
+        "phrase": "Je ne sais pas.",
+        "options": [
+          "chais pas / ché pas",
+          "же-не-сэ-па (чётко по слогам)",
+          "je suis pas",
+          "ne sais je pas"
+        ],
+        "correctIndex": 0,
+        "explanation": "ne выпадает, je sais сливается: «chais pas» (или «ché pas»). Очень частотно в речи."
+      },
+      {
+        "id": "red-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что происходит с этими парами в речи?",
+        "clues": ["je suis → chuis", "tu es → t'es", "tu as → t'as", "il y a → y a"],
+        "options": [
+          "Местоимение и глагол сливаются и сжимаются",
+          "Это разные времена",
+          "Слова меняются местами",
+          "Это вежливые формы"
+        ],
+        "correctIndex": 0,
+        "explanation": "В разговоре je suis → «chuis», tu es/as → «t'es/t'as», il y a → «y a». Письменная форма остаётся полной."
+      },
+      {
+        "id": "red-sort",
+        "kind": "sort",
+        "prompt": "Разложи: как пишут vs как звучит в речи.",
+        "baskets": [
+          { "id": "ecrit", "label": "как пишут" },
+          { "id": "oral", "label": "как звучит" }
+        ],
+        "items": [
+          { "text": "je suis", "basket": "ecrit" },
+          { "text": "chuis", "basket": "oral" },
+          { "text": "tu es", "basket": "ecrit" },
+          { "text": "t'es", "basket": "oral" },
+          { "text": "il y a", "basket": "ecrit" },
+          { "text": "y a", "basket": "oral" }
+        ],
+        "explanation": "На письме — полные формы. В живой речи — сжатые: chuis, t'es, y a."
+      },
+      {
+        "id": "red-choice",
+        "kind": "expand",
+        "prompt": "Как «Tu es prêt ?» звучит в обычном разговоре?",
+        "phrase": "Tu es prêt ?",
+        "options": [
+          "T'es prêt ?",
+          "Tu es prêt ? (чётко по словам)",
+          "Te es prêt ?",
+          "T'est prêt ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "tu es → «t'es». (Заметь: t'es = tu es, а не «t'est» — est это глагол être.)"
+      },
+      {
+        "id": "red-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "В быстрой речи слова сжимаются: chuis, t'es, t'as, y a, chais pas — узнавай их на слух.",
+          "Французы всегда проговаривают слова целиком.",
+          "Сжатия используют только на письме.",
+          "chuis — это грубая ошибка, так не говорят."
+        ],
+        "correctIndex": 0,
+        "explanation": "Слушай сжатые блоки, а не отдельные слова из учебника."
+      }
+    ]
+  }
+]

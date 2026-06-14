@@ -1,0 +1,609 @@
+[
+  {
+    "id": "chez",
+    "mechanism": "chez",
+    "category": "movement",
+    "title": "à / de / chez — три главных направления",
+    "question": "Почему je vais chez le médecin, а не à le médecin?",
+    "strangeness": "à médecin → chez le médecin",
+    "difficulty": "medium",
+    "scenes": ["medecin", "voisins", "magasin"],
+    "insight": "chez — это «в пространстве человека или специалиста»: chez le médecin, chez moi.",
+    "steps": [
+      {
+        "id": "chez-hypo",
+        "kind": "hypothesis",
+        "prompt": "Когда используют chez?",
+        "clues": [
+          "Je vais chez le médecin.",
+          "Je suis chez moi.",
+          "On va chez des amis.",
+          "Il habite chez ses parents."
+        ],
+        "options": [
+          "Когда идём «к человеку» или в его пространство",
+          "Когда идём в любое здание",
+          "Только для магазинов",
+          "Это форма прошедшего времени"
+        ],
+        "correctIndex": 0,
+        "explanation": "chez = пространство, связанное с человеком/специалистом/семьёй: chez le médecin, chez moi."
+      },
+      {
+        "id": "chez-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь правильный предлог.",
+        "phrase": "Je vais ___ le médecin.",
+        "options": ["chez", "à", "dans", "de"],
+        "correctIndex": 0,
+        "explanation": "К врачу как к человеку → chez. Je vais chez le médecin.",
+        "result": "Je vais chez le médecin."
+      },
+      {
+        "id": "chez-code",
+        "kind": "code",
+        "prompt": "Вскрытие трёх направлений.",
+        "phrase": "Je viens de chez le médecin.",
+        "tokens": [
+          {
+            "fr": "Je viens",
+            "ru": "я иду / возвращаюсь",
+            "role": "движение"
+          },
+          {
+            "fr": "de",
+            "ru": "от / из",
+            "role": "источник"
+          },
+          {
+            "fr": "chez le médecin",
+            "ru": "от врача",
+            "role": "пространство человека"
+          }
+        ],
+        "note": "à — к/в, de — из/от, chez — у человека. Их можно совмещать: de chez."
+      },
+      {
+        "id": "chez-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode.",
+        "buggy": "Je vais à le magasin.",
+        "bugReport": "à + le not contracted",
+        "options": [
+          "Je vais au magasin.",
+          "Je vais à magasin.",
+          "Je vais chez magasin.",
+          "Je vais le magasin."
+        ],
+        "correctIndex": 0,
+        "fixNote": "à + le → au",
+        "explanation": "Магазин — это место, не человек, поэтому à. Но à + le слипается в au: au magasin."
+      },
+      {
+        "id": "chez-sort",
+        "kind": "sort",
+        "prompt": "Разложи: куда идём через chez (к человеку), а куда через à / au (в место)?",
+        "baskets": [
+          {
+            "id": "chez",
+            "label": "chez (к человеку)"
+          },
+          {
+            "id": "a",
+            "label": "à / au (в место)"
+          }
+        ],
+        "items": [
+          {
+            "text": "___ le médecin",
+            "basket": "chez"
+          },
+          {
+            "text": "___ moi",
+            "basket": "chez"
+          },
+          {
+            "text": "___ magasin (au)",
+            "basket": "a"
+          },
+          {
+            "text": "___ l'école (à)",
+            "basket": "a"
+          },
+          {
+            "text": "___ le coiffeur",
+            "basket": "chez"
+          }
+        ],
+        "explanation": "Человек/специалист → chez. Учреждение/место → à / au."
+      },
+      {
+        "id": "chez-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "chez — это «в пространстве человека или специалиста».",
+          "chez — это то же самое, что à.",
+          "chez используется только для дома.",
+          "chez ставится перед глаголом."
+        ],
+        "correctIndex": 0,
+        "explanation": "К врачу, к другу, к себе — всегда chez."
+      }
+    ]
+  },
+  {
+    "id": "aller-chercher",
+    "mechanism": "aller-chercher",
+    "category": "movement",
+    "title": "je vais chercher mon fils — это не «искать»",
+    "question": "Почему aller chercher значит «пойти забрать», а не «искать»?",
+    "strangeness": "chercher здесь = забрать, а не искать",
+    "difficulty": "medium",
+    "scenes": ["ecole", "creche", "boulangerie"],
+    "insight": "aller chercher quelqu'un / quelque chose = «пойти забрать», устойчивый бытовой блок.",
+    "steps": [
+      {
+        "id": "ac-hidden",
+        "kind": "expand",
+        "prompt": "Найди скрытый смысл. Что значит фраза?",
+        "phrase": "Je vais chercher mon fils à l'école.",
+        "options": [
+          "Я иду забрать сына из школы",
+          "Я иду искать пропавшего сына",
+          "Я спрашиваю сына о чём-то",
+          "Я зову сына"
+        ],
+        "correctIndex": 0,
+        "explanation": "В быту aller chercher = пойти и забрать. Никто не «потерял» сына."
+      },
+      {
+        "id": "ac-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je vais chercher mon fils.",
+        "tokens": [
+          {
+            "fr": "Je vais",
+            "ru": "я собираюсь (futur proche)",
+            "role": "ближайшее будущее"
+          },
+          {
+            "fr": "chercher",
+            "ru": "забрать (не «искать»!)",
+            "role": "устойчивый блок"
+          },
+          {
+            "fr": "mon fils",
+            "ru": "сына",
+            "role": "кого"
+          }
+        ],
+        "note": "Тут сразу два механизма: futur proche (je vais + inf.) и блок aller chercher."
+      },
+      {
+        "id": "ac-mutate",
+        "kind": "mutation",
+        "prompt": "Мутация: скажи «Я иду забрать хлеб».",
+        "phrase": "Je vais chercher mon fils.",
+        "options": [
+          "Je vais chercher le pain.",
+          "Je vais trouver le pain.",
+          "Je cherche pour le pain.",
+          "Je vais le pain chercher."
+        ],
+        "correctIndex": 0,
+        "explanation": "Тот же блок: je vais chercher + объект."
+      },
+      {
+        "id": "ac-own",
+        "kind": "ownPhrase",
+        "prompt": "Составь 3 свои фразы с aller chercher.",
+        "pattern": "Je vais chercher ___ .",
+        "examples": [
+          "Je vais chercher mon fils à la crèche.",
+          "Je vais chercher ma commande.",
+          "Je vais chercher les enfants.",
+          "Je vais chercher le pain.",
+          "Je vais chercher un colis.",
+          "Je vais chercher ma fille à l'école.",
+          "Je vais chercher des médicaments."
+        ],
+        "minCount": 3
+      },
+      {
+        "id": "ac-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "aller chercher = «пойти забрать», а не «искать».",
+          "chercher всегда значит «искать».",
+          "aller chercher — это вопрос.",
+          "Этот блок используется только в прошедшем."
+        ],
+        "correctIndex": 0,
+        "explanation": "Бери блоком, не переводи пословно."
+      }
+    ]
+  },
+  {
+    "id": "au-aux",
+    "mechanism": "au-aux",
+    "category": "movement",
+    "title": "au / aux / du / des — почему всё слипается",
+    "question": "à + le = au, à + les = aux, de + le = du, de + les = des.",
+    "strangeness": "à le → au, de les → des",
+    "difficulty": "medium",
+    "scenes": ["magasin", "transport", "administration"],
+    "insight": "Предлог слипается с артиклем: à+le=au, à+les=aux, de+le=du, de+les=des.",
+    "steps": [
+      {
+        "id": "auaux-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что произошло с предлогом и артиклем?",
+        "clues": [
+          "Je vais au magasin.",
+          "Je joue aux cartes.",
+          "Je viens du travail.",
+          "Je parle des enfants."
+        ],
+        "options": [
+          "Предлог склеился с артиклем: à+le=au, à+les=aux, de+le=du, de+les=des",
+          "Артикль исчез совсем",
+          "Это формы прошедшего времени",
+          "au и du — это местоимения"
+        ],
+        "correctIndex": 0,
+        "explanation": "à le / de le не пишут — они обязательно слипаются в au / du (и aux / des во множественном)."
+      },
+      {
+        "id": "auaux-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode.",
+        "buggy": "Je vais à le magasin.",
+        "bugReport": "à + le must contract",
+        "options": [
+          "Je vais au magasin.",
+          "Je vais à magasin.",
+          "Je vais le magasin.",
+          "Je vais aux magasin."
+        ],
+        "correctIndex": 0,
+        "fixNote": "à + le → au",
+        "explanation": "à + le всегда слипается в au: je vais au magasin."
+      },
+      {
+        "id": "auaux-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь слипшуюся форму: «Я возвращаюсь из туалета».",
+        "phrase": "Je reviens ___ toilettes.",
+        "options": ["des", "de les", "du", "de"],
+        "correctIndex": 0,
+        "explanation": "de + les = des. Je reviens des toilettes.",
+        "result": "Je reviens des toilettes."
+      },
+      {
+        "id": "auaux-sort",
+        "kind": "sort",
+        "prompt": "Разложи: движение К месту (à/au/aux) или ОТ места (de/du/des)?",
+        "baskets": [
+          {
+            "id": "to",
+            "label": "к / в — à · au · aux"
+          },
+          {
+            "id": "from",
+            "label": "из / от — de · du · des"
+          }
+        ],
+        "items": [
+          {
+            "text": "Je vais au magasin.",
+            "basket": "to"
+          },
+          {
+            "text": "Je viens du travail.",
+            "basket": "from"
+          },
+          {
+            "text": "Je vais aux toilettes.",
+            "basket": "to"
+          },
+          {
+            "text": "Je reviens des courses.",
+            "basket": "from"
+          },
+          {
+            "text": "Je joue aux cartes.",
+            "basket": "to"
+          }
+        ],
+        "explanation": "à/au/aux указывают направление к; de/du/des — источник или происхождение."
+      },
+      {
+        "id": "auaux-code",
+        "kind": "code",
+        "prompt": "Вскрытие слипшейся формы.",
+        "phrase": "Je vais au magasin.",
+        "tokens": [
+          {
+            "fr": "Je vais",
+            "ru": "я иду",
+            "role": "движение"
+          },
+          {
+            "fr": "au",
+            "ru": "в (à + le)",
+            "role": "слипшийся предлог"
+          },
+          {
+            "fr": "magasin",
+            "ru": "магазин",
+            "role": "место"
+          }
+        ],
+        "note": "à + le → au. «à le magasin» не пишут никогда."
+      },
+      {
+        "id": "auaux-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Предлог слипается с артиклем: à+le=au, à+les=aux, de+le=du, de+les=des.",
+          "à le и de le пишутся раздельно.",
+          "au и du используются только во множественном числе.",
+          "Слипание происходит только перед гласной."
+        ],
+        "correctIndex": 0,
+        "explanation": "Четыре слипшиеся формы — запомни как таблицу-щёлк."
+      }
+    ]
+  },
+  {
+    "id": "prepositions",
+    "mechanism": "prepositions",
+    "category": "movement",
+    "title": "dans / sur / sous / devant / derrière",
+    "question": "Бытовая карта пространства в пяти предлогах.",
+    "strangeness": "в / на / под / перед / за",
+    "difficulty": "easy",
+    "scenes": ["voisins", "magasin"],
+    "insight": "Пять предлогов рисуют пространство: dans (в), sur (на), sous (под), devant (перед), derrière (за).",
+    "steps": [
+      {
+        "id": "prep-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь предлог: «Ключи на столе».",
+        "phrase": "Les clés sont ___ la table.",
+        "options": ["sur", "dans", "sous", "devant"],
+        "correctIndex": 0,
+        "explanation": "На поверхности → sur. Les clés sont sur la table.",
+        "result": "Les clés sont sur la table."
+      },
+      {
+        "id": "prep-sort",
+        "kind": "sort",
+        "prompt": "Сопоставь предлог и смысл.",
+        "baskets": [
+          {
+            "id": "in",
+            "label": "внутри (dans)"
+          },
+          {
+            "id": "under",
+            "label": "под (sous)"
+          },
+          {
+            "id": "front",
+            "label": "перед (devant)"
+          }
+        ],
+        "items": [
+          {
+            "text": "dans la chambre",
+            "basket": "in"
+          },
+          {
+            "text": "sous la chaise",
+            "basket": "under"
+          },
+          {
+            "text": "devant l'école",
+            "basket": "front"
+          },
+          {
+            "text": "dans le sac",
+            "basket": "in"
+          },
+          {
+            "text": "sous le lit",
+            "basket": "under"
+          }
+        ],
+        "explanation": "dans — внутри, sous — под, devant — перед (а ещё sur — на, derrière — за)."
+      },
+      {
+        "id": "prep-scene",
+        "kind": "scene",
+        "prompt": "Сцена: voisins.",
+        "situation": "Ты объясняешь, где оставил посылку — перед дверью.",
+        "options": [
+          "Le colis est devant la porte.",
+          "Le colis est dans la porte.",
+          "Le colis est sous la porte.",
+          "Le colis est à la porte dedans."
+        ],
+        "correctIndex": 0,
+        "explanation": "Перед дверью → devant la porte."
+      },
+      {
+        "id": "prep-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Les clés sont sur la table.",
+        "tokens": [
+          {
+            "fr": "Les clés",
+            "ru": "ключи",
+            "role": "что"
+          },
+          {
+            "fr": "sont",
+            "ru": "находятся",
+            "role": "être"
+          },
+          {
+            "fr": "sur",
+            "ru": "на",
+            "role": "предлог места"
+          },
+          {
+            "fr": "la table",
+            "ru": "столе",
+            "role": "место"
+          }
+        ],
+        "note": "sur = «на поверхности». Предлог места идёт перед группой la table."
+      },
+      {
+        "id": "prep-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "dans (в), sur (на), sous (под), devant (перед), derrière (за).",
+          "Все предлоги места означают одно и то же.",
+          "sur значит «под».",
+          "devant значит «внутри»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Пять кнопок — вся бытовая карта пространства."
+      }
+    ]
+  },
+  {
+    "id": "aller-venir",
+    "mechanism": "aller-venir",
+    "category": "movement",
+    "title": "aller / venir / rentrer / arriver / partir",
+    "question": "Пять глаголов перемещения, которые нужны постоянно.",
+    "strangeness": "иду / прихожу / возвращаюсь / прибываю / ухожу",
+    "difficulty": "medium",
+    "scenes": ["transport", "ecole", "voisins"],
+    "insight": "aller — туда, venir — сюда/оттуда, rentrer — домой, arriver — прибыть, partir — уйти.",
+    "steps": [
+      {
+        "id": "av-sort",
+        "kind": "sort",
+        "prompt": "Разложи по направлению движения.",
+        "baskets": [
+          {
+            "id": "to",
+            "label": "туда / отбытие"
+          },
+          {
+            "id": "back",
+            "label": "сюда / возвращение"
+          }
+        ],
+        "items": [
+          {
+            "text": "Je vais à l'école.",
+            "basket": "to"
+          },
+          {
+            "text": "Je rentre chez moi.",
+            "basket": "back"
+          },
+          {
+            "text": "Je pars maintenant.",
+            "basket": "to"
+          },
+          {
+            "text": "Je viens de la maison.",
+            "basket": "back"
+          },
+          {
+            "text": "J'arrive bientôt.",
+            "basket": "back"
+          }
+        ],
+        "explanation": "aller/partir — движение туда/прочь; venir/rentrer/arriver — сюда/назад/прибытие."
+      },
+      {
+        "id": "av-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь глагол: «Я ухожу сейчас».",
+        "phrase": "Je ___ maintenant.",
+        "options": ["pars", "viens", "arrive", "rentre"],
+        "correctIndex": 0,
+        "explanation": "Уйти/отбыть → partir. Je pars maintenant.",
+        "result": "Je pars maintenant."
+      },
+      {
+        "id": "av-fix",
+        "kind": "fixCalque",
+        "prompt": "Почини: «Я возвращаюсь дом».",
+        "phrase": "Je rentre maison.",
+        "options": [
+          "Je rentre chez moi.",
+          "Je rentre à maison.",
+          "Je rentre dans maison.",
+          "Je viens maison."
+        ],
+        "correctIndex": 0,
+        "explanation": "Домой (к себе) → rentrer chez moi. (Или rentrer à la maison.)"
+      },
+      {
+        "id": "av-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je rentre chez moi.",
+        "tokens": [
+          {
+            "fr": "Je rentre",
+            "ru": "я возвращаюсь",
+            "role": "движение домой"
+          },
+          {
+            "fr": "chez",
+            "ru": "к (в пространство)",
+            "role": "предлог"
+          },
+          {
+            "fr": "moi",
+            "ru": "себе",
+            "role": "к кому"
+          }
+        ],
+        "note": "rentrer chez moi = «возвращаюсь к себе домой». chez + человек, не à."
+      },
+      {
+        "id": "av-scene",
+        "kind": "scene",
+        "prompt": "Сцена: transport.",
+        "situation": "Уже поздно, и ты говоришь друзьям, что уходишь прямо сейчас.",
+        "options": [
+          "Je pars maintenant.",
+          "Je arrive maintenant.",
+          "Je viens maintenant.",
+          "Je vais maintenant."
+        ],
+        "correctIndex": 0,
+        "explanation": "Уйти/отбыть → partir: je pars maintenant. arriver/venir — про прибытие сюда."
+      },
+      {
+        "id": "av-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "aller — туда, venir — сюда, rentrer — домой, arriver — прибыть, partir — уйти.",
+          "Все пять глаголов значат «идти».",
+          "partir значит «прибывать».",
+          "rentrer используется только в вопросах."
+        ],
+        "correctIndex": 0,
+        "explanation": "Пять глаголов перемещения — каркас бытовых перемещений."
+      }
+    ]
+  }
+]

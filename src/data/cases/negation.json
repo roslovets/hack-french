@@ -1,0 +1,396 @@
+[
+  {
+    "id": "neg-cadre",
+    "mechanism": "neg-cadre",
+    "category": "negation",
+    "title": "Отрицание — это рамка ne … pas вокруг глагола",
+    "question": "Почему «не» во французском состоит из двух частей и обнимает глагол?",
+    "strangeness": "не знаю → ne sais pas",
+    "difficulty": "easy",
+    "scenes": ["cours", "administration"],
+    "insight": "Отрицание — рамка из двух частей: ne перед глаголом, pas после. Перед гласной ne → n'.",
+    "steps": [
+      {
+        "id": "cadre-strange",
+        "kind": "strangeness",
+        "prompt": "Что необычно в отрицании?",
+        "phrase": "Je ne sais pas.",
+        "options": [
+          "Отрицание состоит из двух частей вокруг глагола: ne … pas",
+          "pas — это существительное",
+          "ne и pas означают разное отрицание",
+          "Глагол стоит в конце"
+        ],
+        "correctIndex": 0,
+        "explanation": "Французское «не» разрезано на ne (перед глаголом) и pas (после). Вместе они обнимают глагол: ne sais pas."
+      },
+      {
+        "id": "cadre-hypo",
+        "kind": "hypothesis",
+        "prompt": "Где стоят ne и pas?",
+        "clues": ["Je ne mange pas.", "Il ne parle pas.", "Nous n'avons pas faim."],
+        "options": [
+          "ne перед глаголом, pas после; перед гласной ne → n'",
+          "ne и pas оба после глагола",
+          "ne и pas оба перед глаголом",
+          "pas ставится перед глаголом"
+        ],
+        "correctIndex": 0,
+        "explanation": "ne … pas обнимают глагол. Перед гласной ne сокращается: n'avons pas."
+      },
+      {
+        "id": "cadre-build",
+        "kind": "build",
+        "prompt": "Собери: «Я не понимаю».",
+        "translation": "Я не понимаю.",
+        "blocks": ["Je", "ne", "comprends", "pas"],
+        "answer": ["Je", "ne", "comprends", "pas"],
+        "explanation": "ne перед глаголом, pas после: Je ne comprends pas."
+      },
+      {
+        "id": "cadre-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode.",
+        "buggy": "Je ne pas comprends.",
+        "bugReport": "pas placed before the verb",
+        "options": [
+          "Je ne comprends pas.",
+          "Je ne pas comprends.",
+          "Je pas ne comprends.",
+          "Je comprends ne pas."
+        ],
+        "correctIndex": 0,
+        "fixNote": "pas goes after the verb",
+        "explanation": "Глагол должен стоять между ne и pas: Je ne comprends pas."
+      },
+      {
+        "id": "cadre-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Отрицание — рамка: ne перед глаголом, pas после (перед гласной ne → n').",
+          "Отрицание — это одно слово pas перед глаголом.",
+          "ne ставится после глагола.",
+          "Для отрицания достаточно поставить ne."
+        ],
+        "correctIndex": 0,
+        "explanation": "Рамка ne … pas — основа всего отрицания."
+      }
+    ]
+  },
+  {
+    "id": "neg-plus",
+    "mechanism": "neg-plus",
+    "category": "negation",
+    "title": "ne … plus — «больше не»",
+    "question": "Как сказать «я больше не курю»? И почему plus здесь не значит «больше»?",
+    "strangeness": "plus = «ещё больше»… или «больше не»?",
+    "difficulty": "medium",
+    "scenes": ["boulangerie", "voisins"],
+    "insight": "ne … plus = «больше не»: действие прекратилось. Je ne fume plus — я больше не курю.",
+    "steps": [
+      {
+        "id": "plus-strange",
+        "kind": "strangeness",
+        "prompt": "Что значит plus в этой фразе?",
+        "phrase": "Je ne fume plus.",
+        "options": [
+          "«Больше не»: курить прекратил",
+          "«Курю ещё больше»",
+          "«Иногда курю»",
+          "«Хочу курить»"
+        ],
+        "correctIndex": 0,
+        "explanation": "В рамке ne … plus слово plus меняет смысл на «больше не». Je ne fume plus = бросил курить."
+      },
+      {
+        "id": "plus-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что объединяет эти фразы?",
+        "clues": [
+          "Je ne travaille plus ici.",
+          "Il n'habite plus à Paris.",
+          "Elle n'est plus malade."
+        ],
+        "options": [
+          "ne … plus = прежнее состояние закончилось («больше не»)",
+          "ne … plus = действие усилилось",
+          "ne … plus = действие в будущем",
+          "ne … plus = вопрос"
+        ],
+        "correctIndex": 0,
+        "explanation": "Во всех случаях что-то было, а теперь нет: больше не работаю, больше не живу, больше не болею."
+      },
+      {
+        "id": "plus-cloze",
+        "kind": "cloze",
+        "prompt": "Хлеб закончился. Вставь нужное слово.",
+        "phrase": "Désolé, il n'y a ___ de pain.",
+        "options": ["plus", "pas", "jamais", "rien"],
+        "correctIndex": 0,
+        "explanation": "Был, а теперь нет → il n'y a plus de pain (больше нет хлеба). После отрицания du pain → de pain.",
+        "result": "Désolé, il n'y a plus de pain."
+      },
+      {
+        "id": "plus-mutate",
+        "kind": "mutation",
+        "prompt": "Преврати «Je fume» в «Я больше не курю».",
+        "phrase": "Je fume.",
+        "options": [
+          "Je ne fume plus.",
+          "Je ne fume pas plus.",
+          "Je fume ne plus.",
+          "Je ne plus fume."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Больше не» — это рамка ne … plus вокруг глагола: Je ne fume plus. «pas plus» — калька, так нельзя."
+      },
+      {
+        "id": "plus-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "ne … plus = «больше не»: прежнее состояние закончилось.",
+          "ne … plus = «ещё больше».",
+          "ne … plus означает будущее время.",
+          "«Больше не» переводится ne … pas plus."
+        ],
+        "correctIndex": 0,
+        "explanation": "plus в рамке отрицания = «больше не»."
+      }
+    ]
+  },
+  {
+    "id": "neg-jamais",
+    "mechanism": "neg-jamais",
+    "category": "negation",
+    "title": "ne … jamais — «никогда»",
+    "question": "Как сказать «никогда» — и что происходит с артиклем после?",
+    "strangeness": "никогда не пью → ne bois jamais de…",
+    "difficulty": "medium",
+    "scenes": ["cafe", "medecin"],
+    "insight": "ne … jamais = «никогда». После него неопределённый артикль, как и после pas, сворачивается в de.",
+    "steps": [
+      {
+        "id": "jamais-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что значит рамка ne … jamais?",
+        "clues": ["Je ne suis jamais en retard.", "Elle ne ment jamais.", "On ne sait jamais."],
+        "options": ["«Никогда» — действие не случается вообще", "«Иногда»", "«Уже не»", "«Часто»"],
+        "correctIndex": 0,
+        "explanation": "jamais в рамке ne … jamais = никогда. On ne sait jamais — «никогда не знаешь»."
+      },
+      {
+        "id": "jamais-cloze",
+        "kind": "cloze",
+        "prompt": "Он вегетарианец. Вставь нужное слово.",
+        "phrase": "Il ne mange ___ de viande, il est végétarien.",
+        "options": ["jamais", "rien", "que", "personne"],
+        "correctIndex": 0,
+        "explanation": "Не ест мяса в принципе → ne mange jamais de viande (никогда). rien / personne / que в эту рамку не встают.",
+        "result": "Il ne mange jamais de viande, il est végétarien."
+      },
+      {
+        "id": "jamais-mutate",
+        "kind": "mutation",
+        "prompt": "Преврати «Je bois du café» в «Я никогда не пью кофе».",
+        "phrase": "Je bois du café.",
+        "options": [
+          "Je ne bois jamais de café.",
+          "Je ne bois jamais du café.",
+          "Je bois ne jamais café.",
+          "Je ne jamais bois de café."
+        ],
+        "correctIndex": 0,
+        "explanation": "Рамка ne … jamais вокруг глагола, и после отрицания du → de: je ne bois jamais de café."
+      },
+      {
+        "id": "jamais-scene",
+        "kind": "scene",
+        "prompt": "Сцена: médecin.",
+        "situation": "Врач спрашивает, куришь ли ты. Ты не куришь никогда. Как ответить?",
+        "options": [
+          "Je ne fume jamais.",
+          "Je ne fume jamais pas.",
+          "Je fume ne jamais.",
+          "Je jamais fume."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Никогда не курю» → Je ne fume jamais. Второе pas не нужно: jamais само закрывает рамку."
+      },
+      {
+        "id": "jamais-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "ne … jamais = «никогда»; после него неопределённый артикль → de.",
+          "ne … jamais = «иногда».",
+          "После jamais нужно ещё и pas.",
+          "jamais не влияет на артикль."
+        ],
+        "correctIndex": 0,
+        "explanation": "jamais закрывает рамку отрицания и тянет de, как pas."
+      }
+    ]
+  },
+  {
+    "id": "neg-rien-personne",
+    "mechanism": "neg-rien-personne",
+    "category": "negation",
+    "title": "ne … rien / ne … personne — «ничего» и «никого»",
+    "question": "Чем «ничего» отличается от «никого» и как они встают в рамку?",
+    "strangeness": "rien — о вещах, personne — о людях",
+    "difficulty": "medium",
+    "scenes": ["magasin", "telephone"],
+    "insight": "ne … rien = «ничего» (о вещах), ne … personne = «никого / никто» (о людях).",
+    "steps": [
+      {
+        "id": "rien-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что закрывает рамку отрицания в этих фразах?",
+        "clues": ["Je ne vois rien.", "Je n'entends rien.", "Je ne connais personne."],
+        "options": [
+          "rien = «ничего» (вещи), personne = «никого» (люди)",
+          "rien и personne — одно и то же",
+          "rien = «никого», personne = «ничего»",
+          "Оба значат «никогда»"
+        ],
+        "correctIndex": 0,
+        "explanation": "rien закрывает рамку для вещей (ничего), personne — для людей (никого). Оба заменяют pas."
+      },
+      {
+        "id": "rien-compare",
+        "kind": "compare",
+        "prompt": "Чем отличаются эти две фразы?",
+        "phrases": ["Je ne vois rien.", "Je ne vois personne."],
+        "options": [
+          "rien — «не вижу ничего» (вещи), personne — «не вижу никого» (людей)",
+          "Это одно и то же",
+          "rien — о людях, personne — о вещах",
+          "personne здесь значит «человек»"
+        ],
+        "correctIndex": 0,
+        "explanation": "rien — про вещи, personne — про людей. Внимание: само personne как существительное значит «человек», но в рамке ne … personne — «никого»."
+      },
+      {
+        "id": "rien-cloze",
+        "kind": "cloze",
+        "prompt": "Коробка пустая. Вставь нужное слово.",
+        "phrase": "Il n'y a ___ dans la boîte.",
+        "options": ["rien", "personne", "jamais", "plus"],
+        "correctIndex": 0,
+        "explanation": "В коробке нет вещей → il n'y a rien (ничего).",
+        "result": "Il n'y a rien dans la boîte."
+      },
+      {
+        "id": "rien-scene",
+        "kind": "scene",
+        "prompt": "Сцена: только приехал в город.",
+        "situation": "Ты говоришь, что пока никого здесь не знаешь.",
+        "options": [
+          "Je ne connais personne ici.",
+          "Je ne connais rien ici.",
+          "Je ne connais pas personne ici.",
+          "Je connais ne personne ici."
+        ],
+        "correctIndex": 0,
+        "explanation": "Никого (о людях) → ne … personne: Je ne connais personne ici. Второе pas не нужно."
+      },
+      {
+        "id": "rien-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "ne … rien = «ничего» (вещи), ne … personne = «никого» (люди).",
+          "rien и personne взаимозаменяемы.",
+          "После rien и personne нужно ещё pas.",
+          "personne в рамке отрицания значит «человек»."
+        ],
+        "correctIndex": 0,
+        "explanation": "rien — вещи, personne — люди; оба заменяют pas."
+      }
+    ]
+  },
+  {
+    "id": "neg-que",
+    "mechanism": "neg-que",
+    "category": "negation",
+    "title": "ne … que — это «только», а не отрицание",
+    "question": "Почему Je n'ai que 5 euros значит «у меня ТОЛЬКО 5 евро», а не «нет 5 евро»?",
+    "strangeness": "выглядит как отрицание, а значит «только»",
+    "difficulty": "hard",
+    "scenes": ["magasin", "cafe"],
+    "insight": "ne … que — это не отрицание, а «только» (= seulement). И артикль после que не сворачивается в de.",
+    "steps": [
+      {
+        "id": "que-strange",
+        "kind": "strangeness",
+        "prompt": "Что на самом деле значит эта фраза?",
+        "phrase": "Je n'ai que 5 euros.",
+        "options": [
+          "«У меня только 5 евро» — это ограничение, а не отрицание",
+          "«У меня нет 5 евро»",
+          "«У меня больше 5 евро»",
+          "«У меня никогда нет 5 евро»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Рамка ne … que значит «только» (seulement), хотя выглядит как отрицание. Je n'ai que 5 euros = у меня всего 5 евро."
+      },
+      {
+        "id": "que-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что общего у этих фраз?",
+        "clues": [
+          "Il ne boit que de l'eau.",
+          "Je ne parle que français.",
+          "Elle ne mange que des légumes."
+        ],
+        "options": [
+          "ne … que = «только» (= seulement)",
+          "ne … que = «не»",
+          "ne … que = «больше не»",
+          "ne … que = «никогда»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Только воду, только по-французски, только овощи. ne … que = seulement, ограничение."
+      },
+      {
+        "id": "que-cloze",
+        "kind": "cloze",
+        "prompt": "«Он пьёт только воду». Вставь нужное слово.",
+        "phrase": "Il ne boit ___ de l'eau.",
+        "options": ["que", "pas", "plus", "rien"],
+        "correctIndex": 0,
+        "explanation": "«Только воду» → ne … que. Важно: que — не отрицание, поэтому артикль НЕ сворачивается: de l'eau остаётся (не «d'eau»).",
+        "result": "Il ne boit que de l'eau."
+      },
+      {
+        "id": "que-compare",
+        "kind": "compare",
+        "prompt": "Сравни. Что значит вторая фраза?",
+        "phrases": ["Je ne mange pas de viande.", "Je ne mange que des légumes."],
+        "options": [
+          "«Я ем только овощи» — ограничение, а не запрет",
+          "«Я не ем овощи»",
+          "«Я никогда не ем овощи»",
+          "«Я больше не ем овощи»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Первая — настоящее отрицание (не ем мяса, pas de viande). Вторая — ограничение ne … que: ем только овощи (des légumes сохраняется)."
+      },
+      {
+        "id": "que-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "ne … que — это «только» (seulement), а не отрицание; артикль после que сохраняется.",
+          "ne … que означает «не».",
+          "ne … que = «больше не».",
+          "После que артикль сворачивается в de."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ложное отрицание: ne … que = только."
+      }
+    ]
+  }
+]

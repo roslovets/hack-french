@@ -1,0 +1,709 @@
+[
+  {
+    "id": "lui-leur",
+    "mechanism": "lui-leur",
+    "category": "pronouns",
+    "title": "lui / leur — «кому» перед глаголом",
+    "question": "Почему je lui parle, а не je parle lui?",
+    "strangeness": "je parle lui → je lui parle",
+    "difficulty": "medium",
+    "scenes": ["telephone", "ecole", "administration"],
+    "insight": "lui / leur отвечают на вопрос «кому» и встают перед глаголом.",
+    "steps": [
+      {
+        "id": "lui-strange",
+        "kind": "strangeness",
+        "prompt": "Что странного в правильной фразе je lui parle?",
+        "phrase": "Je lui parle.",
+        "options": [
+          "Маленькое «кому» (lui) стоит перед глаголом, а не после",
+          "Глагол стоит в будущем времени",
+          "Подлежащее опущено",
+          "lui — это прямой объект"
+        ],
+        "correctIndex": 0,
+        "explanation": "Косвенный объект (кому) во французском уезжает перед глагол: je lui parle."
+      },
+      {
+        "id": "lui-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode.",
+        "buggy": "Je parle lui.",
+        "bugReport": "wrong pronoun position",
+        "options": ["Je lui parle.", "Je parle à lui.", "Lui je parle.", "Je le parle."],
+        "correctIndex": 0,
+        "fixNote": "move lui before the verb",
+        "explanation": "lui — косвенное местоимение, его место перед глаголом: je lui parle."
+      },
+      {
+        "id": "lui-build",
+        "kind": "build",
+        "prompt": "Собери: «Я ему сказал» (passé composé).",
+        "translation": "Я ему сказал.",
+        "blocks": ["Je", "lui", "ai", "dit"],
+        "answer": ["Je", "lui", "ai", "dit"],
+        "explanation": "Je lui ai dit. Местоимение lui встаёт перед всей глагольной группой ai dit."
+      },
+      {
+        "id": "lui-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je lui ai parlé.",
+        "tokens": [
+          {
+            "fr": "Je",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "lui",
+            "ru": "ему / ей",
+            "role": "кому"
+          },
+          {
+            "fr": "ai parlé",
+            "ru": "поговорил",
+            "role": "что сделал"
+          }
+        ],
+        "note": "[кто] [кому] [что сделал] — устойчивый каркас."
+      },
+      {
+        "id": "lui-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "lui / leur — это «кому», и они встают перед глаголом.",
+          "lui / leur ставятся после глагола.",
+          "lui / leur — это прямые объекты.",
+          "lui / leur меняют время глагола."
+        ],
+        "correctIndex": 0,
+        "explanation": "Порядок слов держится на этом."
+      }
+    ]
+  },
+  {
+    "id": "le-vs-lui",
+    "mechanism": "le-vs-lui",
+    "category": "pronouns",
+    "title": "Почему je le vois, но je lui parle?",
+    "question": "Когда le/la, а когда lui/leur? Разные камеры объекта.",
+    "strangeness": "вижу его (le) ≠ говорю ему (lui)",
+    "difficulty": "medium",
+    "scenes": ["telephone", "ecole"],
+    "insight": "le / la — прямой объект (вижу что/кого), lui / leur — «к кому» (говорю кому).",
+    "steps": [
+      {
+        "id": "levslui-odd",
+        "kind": "oddOneOut",
+        "prompt": "Три фразы про «кому», одна — про «кого». Найди лишнюю.",
+        "options": ["Je lui parle.", "Je lui écris.", "Je lui donne un livre.", "Je le vois."],
+        "correctIndex": 3,
+        "explanation": "parler / écrire / donner à quelqu'un → lui. А voir quelqu'un → прямой объект le. Je le vois выбивается."
+      },
+      {
+        "id": "levslui-hypo",
+        "kind": "hypothesis",
+        "prompt": "Выведи правило по уликам.",
+        "clues": [
+          "Je le vois. (вижу его)",
+          "Je lui parle. (говорю ему)",
+          "Je la connais. (знаю её)",
+          "Je leur écris. (пишу им)"
+        ],
+        "options": [
+          "le / la / les — прямой объект; lui / leur — «к кому»",
+          "le и lui — это одно и то же",
+          "lui всегда про предмет, le про человека",
+          "Разница только в числе"
+        ],
+        "correctIndex": 0,
+        "explanation": "Глаголы вроде voir, connaître берут прямой объект (le/la). Глаголы с à (parler à, écrire à) берут lui/leur."
+      },
+      {
+        "id": "levslui-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь местоимение: «Я ей звоню» (téléphoner à).",
+        "phrase": "Je ___ téléphone.",
+        "options": ["lui", "la", "le", "leur"],
+        "correctIndex": 0,
+        "explanation": "téléphoner à quelqu'un → косвенный объект lui. Je lui téléphone.",
+        "result": "Je lui téléphone."
+      },
+      {
+        "id": "levslui-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je le vois.",
+        "tokens": [
+          {
+            "fr": "Je",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "le",
+            "ru": "его",
+            "role": "что/кого (прямой объект)"
+          },
+          {
+            "fr": "vois",
+            "ru": "вижу",
+            "role": "действие"
+          }
+        ],
+        "note": "voir кого-то → прямой объект le. Сравни: parler à → lui."
+      },
+      {
+        "id": "levslui-scene",
+        "kind": "scene",
+        "prompt": "Сцена: ecole.",
+        "situation": "Учительница спрашивает про твоего сына. Ты хочешь сказать «Я ей позвоню» (téléphoner à).",
+        "options": [
+          "Je lui téléphone.",
+          "Je la téléphone.",
+          "Je le téléphone.",
+          "Je téléphone lui."
+        ],
+        "correctIndex": 0,
+        "explanation": "téléphoner à quelqu'un → косвенный объект lui, перед глаголом: je lui téléphone."
+      },
+      {
+        "id": "levslui-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "le / la — это «кого/что вижу», lui / leur — это «кому говорю».",
+          "le и lui взаимозаменяемы.",
+          "lui всегда стоит после глагола.",
+          "le используется только с предметами."
+        ],
+        "correctIndex": 0,
+        "explanation": "Прямой объект vs направление «к кому»."
+      }
+    ]
+  },
+  {
+    "id": "y",
+    "mechanism": "y",
+    "category": "pronouns",
+    "title": "Почему j'y vais, если y вроде ничего не значит?",
+    "question": "Маленькая кнопка y сворачивает целое место или идею.",
+    "strangeness": "à la crèche → y",
+    "difficulty": "medium",
+    "scenes": ["creche", "ecole", "transport"],
+    "insight": "y — это маленький контейнер для уже известного места или идеи с à.",
+    "steps": [
+      {
+        "id": "y-hypo",
+        "kind": "hypothesis",
+        "prompt": "Мини-расследование. Что заменяет y?",
+        "clues": [
+          "Je vais à l'école → J'y vais.",
+          "Je pense à ça → J'y pense.",
+          "Je suis à Toulouse → J'y suis."
+        ],
+        "options": [
+          "Место или идею, связанные с à",
+          "Человека, которому говорят",
+          "Кусок с de",
+          "Время действия"
+        ],
+        "correctIndex": 0,
+        "explanation": "y сворачивает à + место/идею: à l'école, à ça, à Toulouse."
+      },
+      {
+        "id": "y-collapse",
+        "kind": "collapse",
+        "prompt": "Сверни фразу: замени à la crèche одним словом.",
+        "phrase": "Je vais à la crèche.",
+        "options": ["J'y vais.", "Je la vais.", "J'en vais.", "Je vais y la."],
+        "correctIndex": 0,
+        "explanation": "à la crèche → y, и y встаёт перед глаголом: j'y vais.",
+        "result": "J'y vais."
+      },
+      {
+        "id": "y-code",
+        "kind": "code",
+        "prompt": "Вскрытие живой фразы.",
+        "phrase": "On y va ?",
+        "tokens": [
+          {
+            "fr": "On",
+            "ru": "мы / пошли",
+            "role": "кто"
+          },
+          {
+            "fr": "y",
+            "ru": "туда / в это место",
+            "role": "à + место"
+          },
+          {
+            "fr": "va",
+            "ru": "идём",
+            "role": "что делаем"
+          }
+        ],
+        "note": "On y va ? — «Идём?» Одна из самых частотных живых фраз."
+      },
+      {
+        "id": "y-scene",
+        "kind": "scene",
+        "prompt": "Сцена: voisins.",
+        "situation": "Сосед предлагает вместе пойти в магазин. Ты согласен и хочешь сказать «пойдём (туда)».",
+        "options": ["On y va !", "On va y la !", "On le va !", "Va on y ?"],
+        "correctIndex": 0,
+        "explanation": "On y va ! — естественное «пойдём». y свернуло «в магазин»."
+      },
+      {
+        "id": "y-own",
+        "kind": "ownPhrase",
+        "prompt": "Составь 3 фразы про свою жизнь с y.",
+        "pattern": "J'y ___ .",
+        "examples": [
+          "J'y vais.",
+          "J'y pense.",
+          "J'y suis.",
+          "J'y retourne demain.",
+          "J'y reste un moment.",
+          "J'y crois.",
+          "J'y travaille."
+        ],
+        "minCount": 3
+      },
+      {
+        "id": "y-catch",
+        "kind": "catch",
+        "prompt": "Миссия.",
+        "targets": ["on y va", "j'y vais", "j'y pense"],
+        "hint": "Поймай в речи фразу с y — особенно «on y va ?»"
+      },
+      {
+        "id": "y-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "y — это маленький контейнер для уже известного места или идеи с à.",
+          "y всегда означает человека.",
+          "y заменяет кусок с de.",
+          "y используется только в вопросах."
+        ],
+        "correctIndex": 0,
+        "explanation": "Сворачивай место в одну кнопку."
+      }
+    ]
+  },
+  {
+    "id": "en",
+    "mechanism": "en",
+    "category": "pronouns",
+    "title": "Почему j'en veux, если en вроде ничего не значит?",
+    "question": "en — способ не повторять «этого / из этого / немного / их».",
+    "strangeness": "je veux du café → j'en veux",
+    "difficulty": "hard",
+    "scenes": ["boulangerie", "cafe", "magasin"],
+    "insight": "en — это французский способ не повторять «этого / из этого / немного / их».",
+    "steps": [
+      {
+        "id": "en-strange",
+        "kind": "strangeness",
+        "prompt": "Русский мозг хочет сказать je veux ça. А француз?",
+        "phrase": "J'en veux.",
+        "options": [
+          "Заменяет объект маленьким en вместо повтора",
+          "Ставит глагол в будущее",
+          "Делает фразу вежливой",
+          "Означает конкретного человека"
+        ],
+        "correctIndex": 0,
+        "explanation": "Вместо повторять «кофе / этого» француз сворачивает объект в en."
+      },
+      {
+        "id": "en-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что, скорее всего, делает en?",
+        "clues": ["J'en veux.", "J'en ai besoin.", "J'en prends deux.", "J'en parle."],
+        "options": [
+          "Заменяет кусок с de: de ça, du café, des croissants",
+          "Показывает будущее",
+          "Делает фразу вежливой",
+          "Означает место с à"
+        ],
+        "correctIndex": 0,
+        "explanation": "en сворачивает de + объект / количество / часть: du café → en, de ce document → en."
+      },
+      {
+        "id": "en-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "J'en veux.",
+        "tokens": [
+          {
+            "fr": "J'",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "en",
+            "ru": "этого / немного / кофе",
+            "role": "de + объект"
+          },
+          {
+            "fr": "veux",
+            "ru": "хочу",
+            "role": "что делаю"
+          }
+        ],
+        "note": "Je veux du café → J'en veux. du café свернулось в en."
+      },
+      {
+        "id": "en-collapse",
+        "kind": "collapse",
+        "prompt": "Сверни фразу.",
+        "phrase": "Je prends deux croissants.",
+        "options": [
+          "J'en prends deux.",
+          "Je les prends deux.",
+          "J'y prends deux.",
+          "Je prends en deux."
+        ],
+        "correctIndex": 0,
+        "explanation": "croissants после числа сворачивается в en, число остаётся: j'en prends deux.",
+        "result": "J'en prends deux."
+      },
+      {
+        "id": "en-expand",
+        "kind": "expand",
+        "prompt": "Разверни фразу. Что может прятаться в en?",
+        "phrase": "J'en ai besoin.",
+        "options": ["de ce document", "à l'école", "mon fils", "le café"],
+        "correctIndex": 0,
+        "explanation": "avoir besoin de → en сворачивает de ce document. «Мне это нужно».",
+        "result": "J'ai besoin de ce document. → J'en ai besoin."
+      },
+      {
+        "id": "en-scene",
+        "kind": "scene",
+        "prompt": "Сцена: boulangerie.",
+        "situation": "Продавец спрашивает: «Vous voulez combien de croissants ?» Ты хочешь два.",
+        "options": [
+          "J'en prends deux.",
+          "Je prends deux.",
+          "Je les prends deux.",
+          "Je prends en deux."
+        ],
+        "correctIndex": 0,
+        "explanation": "Объект (croissants) уже в разговоре — сворачиваем в en: j'en prends deux."
+      },
+      {
+        "id": "en-own",
+        "kind": "ownPhrase",
+        "prompt": "Составь 4 свои фразы с en.",
+        "pattern": "J'en ___ .",
+        "examples": [
+          "J'en veux.",
+          "J'en ai besoin.",
+          "J'en prends un.",
+          "J'en ai assez.",
+          "J'en prends deux.",
+          "J'en parle souvent.",
+          "J'en ai marre.",
+          "J'en reprends un peu."
+        ],
+        "minCount": 4
+      },
+      {
+        "id": "en-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "en — это французский способ не повторять «этого / из этого / немного / их».",
+          "en всегда заменяет место с à.",
+          "en — это форма будущего времени.",
+          "en означает конкретного человека."
+        ],
+        "correctIndex": 0,
+        "explanation": "Не повторяй объект — сворачивай в en."
+      }
+    ]
+  },
+  {
+    "id": "double-pronoms",
+    "mechanism": "double-pronoms",
+    "category": "pronouns",
+    "title": "je te le donne — два местоимения подряд",
+    "question": "Когда «тебе» и «это» встречаются перед глаголом — в каком порядке?",
+    "strangeness": "te + le = je te le donne",
+    "difficulty": "hard",
+    "scenes": ["telephone", "ecole"],
+    "insight": "Порядок упаковки: me/te/nous/vous → le/la/les → lui/leur. Перед глаголом — строго так.",
+    "steps": [
+      {
+        "id": "dbl-strange",
+        "kind": "strangeness",
+        "prompt": "Что необычного во фразе?",
+        "phrase": "Je te le donne.",
+        "options": [
+          "Два маленьких слова (te, le) стоят перед глаголом подряд",
+          "Глагол стоит в будущем",
+          "Подлежащее опущено",
+          "te — это прямой объект"
+        ],
+        "correctIndex": 0,
+        "explanation": "te (тебе) и le (это) оба сворачиваются и встают перед глаголом в строгом порядке."
+      },
+      {
+        "id": "dbl-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je te le donne.",
+        "tokens": [
+          {
+            "fr": "Je",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "te",
+            "ru": "тебе",
+            "role": "кому"
+          },
+          {
+            "fr": "le",
+            "ru": "это / его",
+            "role": "что"
+          },
+          {
+            "fr": "donne",
+            "ru": "даю",
+            "role": "действие"
+          }
+        ],
+        "note": "Сначала «кому» (te), потом «что» (le) — для me/te/nous/vous это именно такой порядок."
+      },
+      {
+        "id": "dbl-hypo",
+        "kind": "hypothesis",
+        "prompt": "Выведи правило порядка по уликам.",
+        "clues": ["Je te le donne.", "Je vous l'envoie.", "Je le lui dis."],
+        "options": [
+          "Порядок: me/te/nous/vous → le/la/les → lui/leur",
+          "Местоимения идут в любом порядке",
+          "lui всегда стоит первым",
+          "le всегда стоит последним"
+        ],
+        "correctIndex": 0,
+        "explanation": "me/te/nous/vous идут перед le/la/les, а le/la/les — перед lui/leur."
+      },
+      {
+        "id": "dbl-build",
+        "kind": "build",
+        "prompt": "Собери: «Я тебе это даю».",
+        "translation": "Я тебе это даю.",
+        "blocks": ["Je", "te", "le", "donne"],
+        "answer": ["Je", "te", "le", "donne"],
+        "explanation": "Je te le donne. te (кому) перед le (что)."
+      },
+      {
+        "id": "dbl-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode.",
+        "buggy": "Je le te donne.",
+        "bugReport": "wrong pronoun order",
+        "options": ["Je te le donne.", "Je te donne le.", "Je donne te le.", "Je lui le donne."],
+        "correctIndex": 0,
+        "fixNote": "me/te/nous/vous go before le/la/les",
+        "explanation": "te должно стоять перед le: je te le donne, а не «le te»."
+      },
+      {
+        "id": "dbl-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Порядок: me/te/nous/vous → le/la/les → lui/leur.",
+          "Местоимения можно ставить в любом порядке.",
+          "Двойные местоимения ставятся после глагола.",
+          "lui всегда идёт перед le."
+        ],
+        "correctIndex": 0,
+        "explanation": "Это упаковка смысла в строгом порядке перед глаголом."
+      }
+    ]
+  },
+  {
+    "id": "ca",
+    "mechanism": "ca",
+    "category": "pronouns",
+    "title": "ça — универсальное «это»",
+    "question": "Одно маленькое ça работает в куче ситуаций.",
+    "strangeness": "ça — швейцарский нож разговора",
+    "difficulty": "easy",
+    "scenes": ["cafe", "magasin", "voisins"],
+    "insight": "ça — разговорное «это»: c'est quoi ça ?, ça va, j'aime ça, ça te va ?",
+    "steps": [
+      {
+        "id": "ca-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что делает ça в этих фразах?",
+        "clues": ["C'est quoi, ça ?", "Ça va ?", "J'aime ça.", "Ça coûte combien ?"],
+        "options": [
+          "Указывает на «это» — предмет, ситуацию или идею",
+          "Это форма прошедшего времени",
+          "Означает конкретного человека",
+          "Это вопросительное слово «почему»"
+        ],
+        "correctIndex": 0,
+        "explanation": "ça = разговорное «это/то». Удобно указывать на предмет, идею или всю ситуацию."
+      },
+      {
+        "id": "ca-scene",
+        "kind": "scene",
+        "prompt": "Сцена: magasin.",
+        "situation": "Ты показываешь на витрину и спрашиваешь, что это.",
+        "options": ["C'est quoi, ça ?", "Quoi c'est ça que ?", "Ça est quoi ?", "Que ça c'est ?"],
+        "correctIndex": 0,
+        "explanation": "«C'est quoi, ça ?» — живой разговорный вопрос «что это?»"
+      },
+      {
+        "id": "ca-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь: «Мне это нравится».",
+        "phrase": "J'aime ___ .",
+        "options": ["ça", "le", "y", "en"],
+        "correctIndex": 0,
+        "explanation": "«J'aime ça» — мне это нравится. ça указывает на вещь/занятие в целом.",
+        "result": "J'aime ça."
+      },
+      {
+        "id": "ca-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "C'est quoi, ça ?",
+        "tokens": [
+          {
+            "fr": "C'est",
+            "ru": "это есть",
+            "role": "ce + est"
+          },
+          {
+            "fr": "quoi",
+            "ru": "что",
+            "role": "вопрос"
+          },
+          {
+            "fr": "ça",
+            "ru": "это (предмет)",
+            "role": "указание"
+          }
+        ],
+        "note": "Живой разговорный вопрос «что это?». ça повторяет и уточняет «это»."
+      },
+      {
+        "id": "ca-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "ça — разговорное «это»: предмет, идея или вся ситуация.",
+          "ça всегда означает человека.",
+          "ça — это прошедшее время.",
+          "ça ставится только в конце вопроса."
+        ],
+        "correctIndex": 0,
+        "explanation": "Одно слово — куча живых фраз."
+      }
+    ]
+  },
+  {
+    "id": "me-te",
+    "mechanism": "me-te",
+    "category": "pronouns",
+    "title": "me / te / nous / vous — меня, тебе, нам, вас",
+    "question": "Эти местоимения тоже встают перед глаголом.",
+    "strangeness": "il me parle, je te donne",
+    "difficulty": "medium",
+    "scenes": ["telephone", "voisins"],
+    "insight": "me / te / nous / vous (меня/тебе/нам/вас) встают перед глаголом, как le и lui.",
+    "steps": [
+      {
+        "id": "mt-hypo",
+        "kind": "hypothesis",
+        "prompt": "Где стоят эти маленькие слова?",
+        "clues": ["Il me parle.", "Je te donne ça.", "Elle nous appelle.", "Je vous écoute."],
+        "options": [
+          "Перед глаголом — как le/la/les и lui/leur",
+          "После глагола",
+          "Только в вопросах",
+          "В самом конце фразы"
+        ],
+        "correctIndex": 0,
+        "explanation": "me/te/nous/vous — тоже клитики: их место перед глаголом."
+      },
+      {
+        "id": "mt-build",
+        "kind": "build",
+        "prompt": "Собери: «Ты можешь мне помочь?»",
+        "translation": "Можешь мне помочь?",
+        "blocks": ["Tu", "peux", "m'aider", "?"],
+        "answer": ["Tu", "peux", "m'aider", "?"],
+        "explanation": "Tu peux m'aider ? me → m' перед гласной, и стоит перед aider."
+      },
+      {
+        "id": "mt-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь местоимение: «Я тебе перезвоню».",
+        "phrase": "Je ___ rappelle.",
+        "options": ["te", "toi", "tu", "lui"],
+        "correctIndex": 0,
+        "explanation": "«тебе» как клитик → te перед глаголом: je te rappelle.",
+        "result": "Je te rappelle."
+      },
+      {
+        "id": "mt-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je te rappelle.",
+        "tokens": [
+          {
+            "fr": "Je",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "te",
+            "ru": "тебе",
+            "role": "кому (перед глаголом)"
+          },
+          {
+            "fr": "rappelle",
+            "ru": "перезвоню",
+            "role": "действие"
+          }
+        ],
+        "note": "te (тебе) встаёт перед глаголом, как le и lui."
+      },
+      {
+        "id": "mt-scene",
+        "kind": "scene",
+        "prompt": "Сцена: telephone.",
+        "situation": "Ты занят и хочешь сказать собеседнику «Я тебе перезвоню».",
+        "options": ["Je te rappelle.", "Je rappelle toi.", "Je rappelle te.", "Je toi rappelle."],
+        "correctIndex": 0,
+        "explanation": "te (тебе) — клитик перед глаголом: je te rappelle. Не «rappelle toi»."
+      },
+      {
+        "id": "mt-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "me / te / nous / vous встают перед глаголом, как le и lui.",
+          "Эти местоимения ставятся после глагола.",
+          "te — это подлежащее.",
+          "vous нельзя использовать как объект."
+        ],
+        "correctIndex": 0,
+        "explanation": "Перед глаголом — общее правило для маленьких слов."
+      }
+    ]
+  }
+]

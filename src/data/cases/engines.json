@@ -1,0 +1,549 @@
+[
+  {
+    "id": "avoir-froid",
+    "mechanism": "avoir-etat",
+    "category": "engines",
+    "title": "Почему «мне холодно» — это j'ai froid?",
+    "question": "Француз говорит «я имею холод». Что за этим стоит?",
+    "strangeness": "Je suis froid → J'ai froid",
+    "difficulty": "easy",
+    "scenes": ["voisins", "creche", "medecin"],
+    "insight": "Французский выражает состояние через avoir: я имею холод, голод, страх и нужду.",
+    "steps": [
+      {
+        "id": "froid-strange",
+        "kind": "strangeness",
+        "prompt": "Что здесь странного для русского мозга?",
+        "phrase": "J'ai froid.",
+        "options": [
+          "Француз буквально говорит «я имею холод»",
+          "Француз использует будущее время",
+          "Француз опускает подлежащее",
+          "Француз говорит через местоимение y"
+        ],
+        "correctIndex": 0,
+        "explanation": "Где русский говорит «мне холодно», француз использует avoir (иметь): j'ai froid — «я имею холод»."
+      },
+      {
+        "id": "froid-hypo",
+        "kind": "hypothesis",
+        "prompt": "Собери улики. Что их объединяет?",
+        "clues": ["J'ai froid.", "J'ai faim.", "J'ai soif.", "J'ai peur."],
+        "options": [
+          "Состояние тела и эмоции выражаются через avoir",
+          "Все эти фразы стоят в прошедшем времени",
+          "Это вопросы без вопросительного слова",
+          "Везде спрятано местоимение en"
+        ],
+        "correctIndex": 0,
+        "explanation": "Холод, голод, жажда, страх — француз их «имеет». Это устойчивый механизм avoir + существительное."
+      },
+      {
+        "id": "froid-code",
+        "kind": "code",
+        "prompt": "Вскрытие: разбери фразу как код.",
+        "phrase": "J'ai froid.",
+        "tokens": [
+          {
+            "fr": "J'",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "ai",
+            "ru": "имею",
+            "role": "avoir"
+          },
+          {
+            "fr": "froid",
+            "ru": "холод",
+            "role": "что именно"
+          }
+        ],
+        "note": "Никакого «быть холодным». Француз буквально «имеет холод»."
+      },
+      {
+        "id": "froid-fix",
+        "kind": "fixCalque",
+        "prompt": "Русский мозг сказал так. Почини кальку.",
+        "phrase": "Je suis froid.",
+        "options": ["J'ai froid.", "Je fais froid.", "Je suis du froid.", "Il me froid."],
+        "correctIndex": 0,
+        "explanation": "Je suis froid звучит как «я холодный (по характеру)». Состояние — всегда через avoir: j'ai froid.",
+        "result": "J'ai froid."
+      },
+      {
+        "id": "froid-mutate",
+        "kind": "mutation",
+        "prompt": "Возьми каркас j'ai ___ и скажи: «Я хочу есть».",
+        "phrase": "J'ai froid.",
+        "options": ["J'ai faim.", "Je suis faim.", "J'ai de faim.", "Je veux manger faim."],
+        "correctIndex": 0,
+        "explanation": "Тот же механизм: голод тоже «имеют». J'ai faim — «я голоден»."
+      },
+      {
+        "id": "froid-scene",
+        "kind": "scene",
+        "prompt": "Выбери естественную реакцию.",
+        "situation": "Зима. Ты заходишь к соседям, и тебе реально холодно. Что сказать?",
+        "options": ["J'ai froid.", "Je suis froid.", "Il fait moi froid.", "Moi, froid."],
+        "correctIndex": 0,
+        "explanation": "Про себя — j'ai froid. (Про погоду было бы il fait froid — но это уже про окружающий мир, а не про тебя.)"
+      },
+      {
+        "id": "froid-own",
+        "kind": "ownPhrase",
+        "prompt": "Собери 3 своих состояния через avoir — те, что реально скажешь завтра.",
+        "pattern": "J'ai ___ .",
+        "examples": [
+          "J'ai faim.",
+          "J'ai soif.",
+          "J'ai sommeil.",
+          "J'ai chaud.",
+          "J'ai peur.",
+          "J'ai froid.",
+          "J'ai mal à la tête.",
+          "J'ai de la chance."
+        ],
+        "minCount": 3
+      },
+      {
+        "id": "froid-catch",
+        "kind": "catch",
+        "prompt": "Миссия в реальный мир.",
+        "targets": ["j'ai froid", "j'ai faim", "j'ai chaud"],
+        "hint": "Поймай в речи (или поймай себя на мысли) одно состояние через avoir."
+      },
+      {
+        "id": "froid-insight",
+        "kind": "insight",
+        "prompt": "Зафиксируй озарение. Какое правило останется в голове?",
+        "options": [
+          "Французский выражает состояние через avoir: я имею холод, голод, страх и нужду.",
+          "После être всегда идёт прилагательное холода.",
+          "Состояния во французском всегда в прошедшем времени.",
+          "Чтобы сказать о состоянии, нужно местоимение y."
+        ],
+        "correctIndex": 0,
+        "explanation": "Это ядро механизма. Запомни связку avoir → состояние."
+      }
+    ]
+  },
+  {
+    "id": "avoir-besoin",
+    "mechanism": "avoir-besoin",
+    "category": "engines",
+    "title": "«Мне нужно» через «иметь нужду»",
+    "question": "Почему j'ai besoin de, а не простое «мне нужно»?",
+    "strangeness": "мне нужно → j'ai besoin de",
+    "difficulty": "easy",
+    "scenes": ["administration", "pharmacie", "telephone"],
+    "insight": "Когда хочешь сказать «мне нужно», почти всегда начинай с j'ai besoin de…",
+    "steps": [
+      {
+        "id": "besoin-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что общего у этих улик?",
+        "clues": ["J'ai besoin d'aide.", "J'ai besoin de temps.", "J'ai besoin d'un document."],
+        "options": [
+          "«Мне нужно X» = j'ai besoin de + X",
+          "Besoin — это глагол в будущем времени",
+          "De здесь означает место",
+          "Это вежливая форма приветствия"
+        ],
+        "correctIndex": 0,
+        "explanation": "Besoin — существительное «нужда». Француз «имеет нужду в чём-то»: avoir besoin de + объект."
+      },
+      {
+        "id": "besoin-code",
+        "kind": "code",
+        "prompt": "Вскрытие фразы.",
+        "phrase": "J'ai besoin d'aide.",
+        "tokens": [
+          {
+            "fr": "J'",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "ai besoin",
+            "ru": "имею нужду",
+            "role": "avoir besoin"
+          },
+          {
+            "fr": "d'",
+            "ru": "в",
+            "role": "de → d' перед гласной"
+          },
+          {
+            "fr": "aide",
+            "ru": "помощи",
+            "role": "в чём"
+          }
+        ],
+        "note": "de перед гласной превращается в d': de aide → d'aide."
+      },
+      {
+        "id": "besoin-build",
+        "kind": "build",
+        "prompt": "Собери фразу: «Мне нужна встреча (приём)».",
+        "translation": "Мне нужен rendez-vous.",
+        "blocks": ["J'ai", "besoin", "d'un", "rendez-vous"],
+        "answer": ["J'ai", "besoin", "d'un", "rendez-vous"],
+        "explanation": "J'ai besoin d'un rendez-vous. Каркас тот же, меняется только объект."
+      },
+      {
+        "id": "besoin-hack",
+        "kind": "ownPhrase",
+        "prompt": "Быстрый хак: сделай 4 фразы за 60 секунд, которые реально пригодятся.",
+        "pattern": "J'ai besoin de ___ .",
+        "examples": [
+          "J'ai besoin d'aide.",
+          "J'ai besoin de votre adresse.",
+          "J'ai besoin d'un justificatif.",
+          "J'ai besoin de dormir.",
+          "J'ai besoin de temps.",
+          "J'ai besoin d'un rendez-vous.",
+          "J'ai besoin de vacances.",
+          "J'ai besoin de votre signature."
+        ],
+        "minCount": 4
+      },
+      {
+        "id": "besoin-scene",
+        "kind": "scene",
+        "prompt": "Сцена: administration.",
+        "situation": "В préfecture тебе нужна справка (une attestation). Как сказать вежливо и по-французски?",
+        "options": [
+          "J'ai besoin d'une attestation, s'il vous plaît.",
+          "Je suis besoin attestation.",
+          "Je besoin une attestation.",
+          "J'ai un besoin de l'attestation maintenant."
+        ],
+        "correctIndex": 0,
+        "explanation": "avoir besoin de + объект, плюс s'il vous plaît для вежливости."
+      },
+      {
+        "id": "besoin-insight",
+        "kind": "insight",
+        "prompt": "Озарение дня.",
+        "options": [
+          "«Мне нужно» почти всегда начинается с j'ai besoin de…",
+          "Besoin — это глагол, его нужно спрягать.",
+          "После besoin всегда идёт à, а не de.",
+          "Besoin используется только в прошедшем времени."
+        ],
+        "correctIndex": 0,
+        "explanation": "Один каркас — десятки бытовых фраз."
+      }
+    ]
+  },
+  {
+    "id": "avoir-age",
+    "mechanism": "avoir-age",
+    "category": "engines",
+    "title": "Почему возраст «имеют», а не «суть»?",
+    "question": "Je suis 35 ans — звучит логично по-русски, но француз так не скажет.",
+    "strangeness": "Je suis 35 ans → J'ai 35 ans",
+    "difficulty": "easy",
+    "scenes": ["administration", "medecin"],
+    "insight": "Возраст во французском имеют: j'ai 35 ans, а не je suis.",
+    "steps": [
+      {
+        "id": "age-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode. Найди и почини баг.",
+        "buggy": "Je suis 35 ans.",
+        "bugReport": "wrong verb for age",
+        "options": ["J'ai 35 ans.", "Je fais 35 ans.", "J'ai 35 années.", "Je suis 35 ."],
+        "correctIndex": 0,
+        "fixNote": "replace être with avoir for age",
+        "explanation": "Возраст во французском «имеют»: j'ai 35 ans. И именно ans, а не années."
+      },
+      {
+        "id": "age-explain",
+        "kind": "explainError",
+        "prompt": "Почему je suis 35 ans — ошибка?",
+        "phrase": "Je suis 35 ans.",
+        "options": [
+          "Потому что возраст выражается через avoir, а не être",
+          "Потому что нужно поставить артикль перед 35",
+          "Потому что цифры идут после ans",
+          "Потому что это вопрос, а не утверждение"
+        ],
+        "correctIndex": 0,
+        "explanation": "Тот же механизм avoir: год жизни — это то, что ты «имеешь»."
+      },
+      {
+        "id": "age-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "J'ai 35 ans.",
+        "tokens": [
+          {
+            "fr": "J'",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "ai",
+            "ru": "имею",
+            "role": "avoir"
+          },
+          {
+            "fr": "35 ans",
+            "ru": "35 лет",
+            "role": "сколько"
+          }
+        ],
+        "note": "ans никогда не выбрасывают: «j'ai 35» — незакончено, нужно j'ai 35 ans."
+      },
+      {
+        "id": "age-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь правильный механизм.",
+        "phrase": "Mon fils ___ trois ans.",
+        "options": ["a", "est", "fait", "as"],
+        "correctIndex": 0,
+        "explanation": "Третье лицо avoir — a. Mon fils a trois ans.",
+        "result": "Mon fils a trois ans."
+      },
+      {
+        "id": "age-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Возраст во французском имеют: j'ai … ans.",
+          "Возраст выражают через être + ans.",
+          "После цифры артикль обязателен.",
+          "Возраст — это всегда imparfait."
+        ],
+        "correctIndex": 0,
+        "explanation": "avoir снова двигатель: возраст, состояние, нужда."
+      }
+    ]
+  },
+  {
+    "id": "avoir-mal",
+    "mechanism": "avoir-mal",
+    "category": "engines",
+    "title": "avoir mal à — как сказать, что болит",
+    "question": "Почему «болит голова» — это j'ai mal à la tête, а не «ma tête fait mal»?",
+    "strangeness": "у меня боль в голове, а не «голова болит»",
+    "difficulty": "easy",
+    "scenes": ["medecin", "pharmacie"],
+    "insight": "Боль выражают через avoir mal à + часть тела: j'ai mal à la tête.",
+    "steps": [
+      {
+        "id": "mal-strange",
+        "kind": "strangeness",
+        "prompt": "Что необычного в этой фразе?",
+        "phrase": "J'ai mal à la tête.",
+        "options": [
+          "Дословно «я имею боль в голове» — снова avoir",
+          "Это будущее время",
+          "Здесь спрятано местоимение y",
+          "Голова — подлежащее"
+        ],
+        "correctIndex": 0,
+        "explanation": "avoir mal à + часть тела. Француз «имеет боль в…», а не «у него болит…»."
+      },
+      {
+        "id": "mal-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь предлог: «У меня болит горло».",
+        "phrase": "J'ai mal ___ gorge.",
+        "options": ["à la", "au", "à", "de la"],
+        "correctIndex": 0,
+        "explanation": "gorge — женский род, поэтому à la: j'ai mal à la gorge.",
+        "result": "J'ai mal à la gorge."
+      },
+      {
+        "id": "mal-mutate",
+        "kind": "mutation",
+        "prompt": "Мутация: «У меня болит живот» (au ventre).",
+        "phrase": "J'ai mal à la tête.",
+        "options": [
+          "J'ai mal au ventre.",
+          "J'ai mal à le ventre.",
+          "Je suis mal ventre.",
+          "J'ai le ventre mal."
+        ],
+        "correctIndex": 0,
+        "explanation": "ventre — мужской род, à + le → au: j'ai mal au ventre."
+      },
+      {
+        "id": "mal-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "J'ai mal à la tête.",
+        "tokens": [
+          {
+            "fr": "J'",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "ai mal",
+            "ru": "имею боль",
+            "role": "avoir mal"
+          },
+          {
+            "fr": "à la",
+            "ru": "в",
+            "role": "предлог + артикль (ж. род)"
+          },
+          {
+            "fr": "tête",
+            "ru": "голове",
+            "role": "где болит"
+          }
+        ],
+        "note": "tête — женский род, поэтому à la. Для мужского было бы au (à + le)."
+      },
+      {
+        "id": "mal-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Боль — это avoir mal à + часть тела (à la / au / aux).",
+          "Боль выражают через être.",
+          "После mal всегда идёт de.",
+          "avoir mal используется только в прошедшем."
+        ],
+        "correctIndex": 0,
+        "explanation": "Снова avoir — и не забудь про à la / au."
+      }
+    ]
+  },
+  {
+    "id": "meteo",
+    "mechanism": "meteo",
+    "category": "engines",
+    "title": "Погода: il fait и il y a",
+    "question": "Почему «жарко» — это il fait chaud, без подлежащего?",
+    "strangeness": "погода через безличное il",
+    "difficulty": "easy",
+    "scenes": ["voisins", "transport"],
+    "insight": "Погода — безличные обороты: il fait chaud/froid и il y a du vent/du soleil.",
+    "steps": [
+      {
+        "id": "met-hypo",
+        "kind": "hypothesis",
+        "prompt": "Как французы говорят о погоде?",
+        "clues": ["Il fait chaud.", "Il fait froid.", "Il y a du vent.", "Il y a du soleil."],
+        "options": [
+          "Безличное il: il fait + прилагательное или il y a + явление",
+          "Через je suis + погода",
+          "Это прошедшее время",
+          "il здесь — конкретный человек"
+        ],
+        "correctIndex": 0,
+        "explanation": "il fait chaud/froid (температура) и il y a du vent/soleil (явления). il — пустое, безличное."
+      },
+      {
+        "id": "met-sort",
+        "kind": "sort",
+        "prompt": "Разложи погоду по обороту.",
+        "baskets": [
+          {
+            "id": "fait",
+            "label": "il fait + прилагательное"
+          },
+          {
+            "id": "ilya",
+            "label": "il y a + du / de la"
+          }
+        ],
+        "items": [
+          {
+            "text": "___ chaud",
+            "basket": "fait"
+          },
+          {
+            "text": "___ du vent",
+            "basket": "ilya"
+          },
+          {
+            "text": "___ froid",
+            "basket": "fait"
+          },
+          {
+            "text": "___ du soleil",
+            "basket": "ilya"
+          },
+          {
+            "text": "___ beau",
+            "basket": "fait"
+          }
+        ],
+        "explanation": "Температура/общая погода → il fait. Конкретное явление (ветер, солнце, дождь) → il y a du…"
+      },
+      {
+        "id": "met-fix",
+        "kind": "fixCalque",
+        "prompt": "Почини кальку: «Я холодно сегодня».",
+        "phrase": "Je suis froid aujourd'hui.",
+        "options": [
+          "Il fait froid aujourd'hui.",
+          "Je fais froid aujourd'hui.",
+          "Il y a froid.",
+          "Je suis du froid."
+        ],
+        "correctIndex": 0,
+        "explanation": "Про погоду — il fait froid (а про себя было бы j'ai froid)."
+      },
+      {
+        "id": "met-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Il fait chaud.",
+        "tokens": [
+          {
+            "fr": "Il",
+            "ru": "(оно)",
+            "role": "безличное il"
+          },
+          {
+            "fr": "fait",
+            "ru": "делает",
+            "role": "faire"
+          },
+          {
+            "fr": "chaud",
+            "ru": "жарко / тепло",
+            "role": "погода"
+          }
+        ],
+        "note": "il здесь пустое — никакого «он». Дословно «оно делает жарко»."
+      },
+      {
+        "id": "met-scene",
+        "kind": "scene",
+        "prompt": "Сцена: остановка автобуса.",
+        "situation": "Жаркий летний день, ты ждёшь автобус с соседкой. Как сказать о погоде?",
+        "options": [
+          "Il fait chaud aujourd'hui.",
+          "Je suis chaud aujourd'hui.",
+          "Il y a chaud aujourd'hui.",
+          "Je fais chaud aujourd'hui."
+        ],
+        "correctIndex": 0,
+        "explanation": "Температура воздуха — il fait chaud. (Je suis chaud — про человека и звучит двусмысленно; il y a здесь не подходит.)"
+      },
+      {
+        "id": "met-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Погода — безличные il fait chaud/froid и il y a du vent/soleil.",
+          "Погоду выражают через je suis.",
+          "il fait используется только с людьми.",
+          "Погода всегда в прошедшем времени."
+        ],
+        "correctIndex": 0,
+        "explanation": "il fait — про температуру, il y a du… — про явление."
+      }
+    ]
+  }
+]

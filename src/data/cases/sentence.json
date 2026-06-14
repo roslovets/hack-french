@@ -1,0 +1,438 @@
+[
+  {
+    "id": "cest",
+    "mechanism": "cest",
+    "category": "sentence",
+    "title": "Почему c'est встречается вообще везде?",
+    "question": "C'est bon, c'est mon fils, c'est difficile — один блок на все случаи.",
+    "strangeness": "c'est — универсальный «прикрепитель» оценки",
+    "difficulty": "easy",
+    "scenes": ["cafe", "voisins", "magasin"],
+    "insight": "c'est — главный способ прикрепить оценку, описание или идентичность к ситуации.",
+    "steps": [
+      {
+        "id": "cest-strange",
+        "kind": "strangeness",
+        "prompt": "Что объединяет эти три фразы?",
+        "phrase": "C'est bon. · C'est mon fils. · C'est difficile.",
+        "options": [
+          "Один блок c'est вводит и оценку, и человека, и свойство",
+          "Это три разных времени",
+          "Везде спрятано отрицание",
+          "C'est — это всегда вопрос"
+        ],
+        "correctIndex": 0,
+        "explanation": "c'est = ce + est, «это есть». Французу удобно прикреплять им что угодно к ситуации."
+      },
+      {
+        "id": "cest-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "C'est mon fils.",
+        "tokens": [
+          {
+            "fr": "C'",
+            "ru": "это",
+            "role": "ce"
+          },
+          {
+            "fr": "est",
+            "ru": "есть",
+            "role": "être"
+          },
+          {
+            "fr": "mon fils",
+            "ru": "мой сын",
+            "role": "что/кто"
+          }
+        ],
+        "note": "ce + est склеиваются в c'est — французский не любит две гласные подряд."
+      },
+      {
+        "id": "cest-compare",
+        "kind": "oddOneOut",
+        "prompt": "Где c'est, а где нужно il est? Найди фразу, которая выбивается.",
+        "options": ["C'est un médecin.", "C'est mon ami.", "C'est difficile.", "Il est médecin."],
+        "correctIndex": 3,
+        "explanation": "C'est + (артикль/имя/оценка). Но профессия как роль идёт без артикля через il est: il est médecin."
+      },
+      {
+        "id": "cest-build",
+        "kind": "build",
+        "prompt": "Собери: «Это хорошая идея».",
+        "translation": "Это хорошая идея.",
+        "blocks": ["C'est", "une", "bonne", "idée"],
+        "answer": ["C'est", "une", "bonne", "idée"],
+        "explanation": "C'est une bonne idée. После c'est существительное почти всегда с артиклем."
+      },
+      {
+        "id": "cest-own",
+        "kind": "ownPhrase",
+        "prompt": "Сделай 3 своих оценки через c'est.",
+        "pattern": "C'est ___ .",
+        "examples": [
+          "C'est bon.",
+          "C'est parfait.",
+          "C'est compliqué.",
+          "C'est cher.",
+          "C'est génial.",
+          "C'est dommage.",
+          "C'est facile.",
+          "C'est délicieux."
+        ],
+        "minCount": 3
+      },
+      {
+        "id": "cest-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "c'est прикрепляет оценку, описание или идентичность к ситуации.",
+          "c'est ставится только перед прилагательным.",
+          "c'est — это вопросительная конструкция.",
+          "c'est нельзя использовать с существительным."
+        ],
+        "correctIndex": 0,
+        "explanation": "Один из самых частотных блоков французского."
+      }
+    ]
+  },
+  {
+    "id": "ilya",
+    "mechanism": "ilya",
+    "category": "sentence",
+    "title": "il y a — как сказать «есть / существует»",
+    "question": "Француз не говорит «есть проблема» напрямую — он включает il y a.",
+    "strangeness": "есть проблема → il y a un problème",
+    "difficulty": "easy",
+    "scenes": ["cafe", "transport", "administration"],
+    "insight": "il y a — отдельная кнопка «существует / имеется», которую не переводят пословно.",
+    "steps": [
+      {
+        "id": "ilya-strange",
+        "kind": "strangeness",
+        "prompt": "Что странного в этой фразе?",
+        "phrase": "Il y a un problème.",
+        "options": [
+          "Дословно это «он там имеет», но значит «есть проблема»",
+          "Это будущее время",
+          "Тут пропущено подлежащее",
+          "Il y a — это имя человека"
+        ],
+        "correctIndex": 0,
+        "explanation": "il y a — застывший блок. Пословно «il (он) y (там) a (имеет)», а смысл — «имеется / есть»."
+      },
+      {
+        "id": "ilya-code",
+        "kind": "code",
+        "prompt": "Вскрытие застывшего блока.",
+        "phrase": "Il y a un problème.",
+        "tokens": [
+          {
+            "fr": "Il y a",
+            "ru": "имеется / есть",
+            "role": "застывший блок"
+          },
+          {
+            "fr": "un problème",
+            "ru": "проблема",
+            "role": "что именно"
+          }
+        ],
+        "note": "Не пытайся разбирать il / y / a по отдельности — бери целым куском."
+      },
+      {
+        "id": "ilya-fix",
+        "kind": "fixCalque",
+        "prompt": "Почини кальку.",
+        "phrase": "Est un problème.",
+        "options": [
+          "Il y a un problème.",
+          "C'est y a un problème.",
+          "Il a un problème là.",
+          "Y est un problème."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Есть проблема» в безличном смысле — это il y a, а не est."
+      },
+      {
+        "id": "ilya-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь механизм: «В кофе есть молоко?»",
+        "phrase": "___ du lait dedans ?",
+        "options": ["Il y a", "C'est", "Il est", "Il fait"],
+        "correctIndex": 0,
+        "explanation": "Наличие чего-то — il y a. Il y a du lait dedans ?",
+        "result": "Il y a du lait dedans ?"
+      },
+      {
+        "id": "ilya-mutation",
+        "kind": "mutation",
+        "prompt": "Мутация: скажи «Есть автобус в 8 часов».",
+        "phrase": "Il y a un problème.",
+        "options": [
+          "Il y a un bus à 8 heures.",
+          "C'est un bus à 8 heures.",
+          "Il a un bus 8 heures.",
+          "Y a est un bus à 8 heures."
+        ],
+        "correctIndex": 0,
+        "explanation": "Тот же каркас il y a + объект + обстоятельство."
+      },
+      {
+        "id": "ilya-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "il y a — отдельная кнопка «существует / имеется», её не переводят пословно.",
+          "il y a используется только для времени.",
+          "il y a — это вежливая просьба.",
+          "il y a меняется по родам."
+        ],
+        "correctIndex": 0,
+        "explanation": "Бери блоком — и фраза собирается мгновенно."
+      }
+    ]
+  },
+  {
+    "id": "cest-il-est",
+    "mechanism": "cest-il-est",
+    "category": "sentence",
+    "title": "c'est или il est — представить или назвать роль",
+    "question": "«C'est un médecin» или «Il est médecin» — когда что?",
+    "strangeness": "c'est + артикль (идентификация), il est + профессия без артикля",
+    "difficulty": "medium",
+    "scenes": ["voisins", "administration", "cafe"],
+    "insight": "C'est + артикль/имя — представляем или идентифицируем; il est + профессия без артикля — называем роль.",
+    "steps": [
+      {
+        "id": "cie-compare",
+        "kind": "compare",
+        "prompt": "Две фразы про врача. В чём разница?",
+        "phrases": ["C'est un médecin.", "Il est médecin."],
+        "options": [
+          "c'est + артикль (un médecin) — представляем/идентифицируем; il est + профессия без артикля — называем роль",
+          "это одно и то же",
+          "c'est без артикля, il est с артиклем",
+          "il est используется только во множественном числе"
+        ],
+        "correctIndex": 0,
+        "explanation": "«C'est un médecin» = «Это (некий) врач» (с артиклем). «Il est médecin» = «Он врач (по профессии)» — без артикля."
+      },
+      {
+        "id": "cie-odd",
+        "kind": "oddOneOut",
+        "prompt": "Где нужно именно il est (роль/профессия без артикля)? Найди эту фразу.",
+        "options": [
+          "C'est mon ami.",
+          "C'est une bonne idée.",
+          "Il est ingénieur.",
+          "C'est difficile."
+        ],
+        "correctIndex": 2,
+        "explanation": "Профессия без артикля идёт через il est: «Il est ingénieur». Остальные — это c'est + имя/оценка/артикль."
+      },
+      {
+        "id": "cie-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь: «Он учитель» (роль, без артикля).",
+        "phrase": "___ professeur.",
+        "options": ["Il est", "C'est", "Il est un", "C'est le"],
+        "correctIndex": 0,
+        "explanation": "Профессия как роль — без артикля через il est: «Il est professeur».",
+        "result": "Il est professeur."
+      },
+      {
+        "id": "cie-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "C'est une bonne idée.",
+        "tokens": [
+          { "fr": "C'", "ru": "это", "role": "ce" },
+          { "fr": "est", "ru": "есть", "role": "être" },
+          { "fr": "une", "ru": "(одна)", "role": "артикль — обязателен после c'est" },
+          { "fr": "bonne idée", "ru": "хорошая идея", "role": "что именно" }
+        ],
+        "note": "После c'est существительное идёт с артиклем; для профессии-роли используют il est без артикля."
+      },
+      {
+        "id": "cie-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "c'est + артикль/имя — представляем/идентифицируем; il est + профессия без артикля — называем роль.",
+          "c'est и il est полностью взаимозаменяемы.",
+          "после il est профессия идёт с артиклем.",
+          "c'est нельзя использовать с существительным."
+        ],
+        "correctIndex": 0,
+        "explanation": "Идентификация → c'est + артикль; роль/профессия → il est без артикля."
+      }
+    ]
+  },
+  {
+    "id": "blocs",
+    "mechanism": "blocs",
+    "category": "sentence",
+    "title": "Французский собирается блоками, а не по словам",
+    "question": "Почему avoir besoin de нельзя переводить пословно?",
+    "strangeness": "готовые блоки вместо пословной сборки",
+    "difficulty": "medium",
+    "scenes": ["cafe", "medecin", "magasin"],
+    "insight": "Французский предпочитает готовые блоки (avoir besoin de, avoir envie de, prendre rendez-vous, faire attention) пословной сборке — бери блоком целиком.",
+    "steps": [
+      {
+        "id": "blocs-hypo",
+        "kind": "hypothesis",
+        "prompt": "Посмотри на улики. Какой общий принцип?",
+        "clues": ["avoir besoin de", "avoir envie de", "prendre rendez-vous", "faire attention"],
+        "options": [
+          "это готовые блоки — бери их целиком, не собирай по словам",
+          "это четыре времени одного глагола",
+          "каждый блок переводится пословно",
+          "это формы прошедшего времени"
+        ],
+        "correctIndex": 0,
+        "explanation": "Это устойчивые блоки. «avoir besoin de» = «нуждаться в», а не «иметь нужду из» — бери целиком."
+      },
+      {
+        "id": "blocs-sort",
+        "kind": "sort",
+        "prompt": "Разложи блоки по «двигателю» — какой глагол внутри.",
+        "baskets": [
+          { "id": "avoir", "label": "avoir-блоки" },
+          { "id": "faire", "label": "faire-блоки" },
+          { "id": "prendre", "label": "prendre-блоки" }
+        ],
+        "items": [
+          { "text": "avoir besoin de", "basket": "avoir" },
+          { "text": "avoir envie de", "basket": "avoir" },
+          { "text": "avoir mal à", "basket": "avoir" },
+          { "text": "faire attention", "basket": "faire" },
+          { "text": "prendre rendez-vous", "basket": "prendre" }
+        ],
+        "explanation": "У каждого блока свой «двигатель»: avoir (besoin/envie/mal), faire (attention), prendre (rendez-vous)."
+      },
+      {
+        "id": "blocs-own",
+        "kind": "ownPhrase",
+        "prompt": "Собери 3 свои фразы, каждая на готовом блоке.",
+        "pattern": "(готовый блок)",
+        "examples": [
+          "J'ai envie de dormir.",
+          "Il faut faire attention.",
+          "Je dois prendre rendez-vous.",
+          "J'ai besoin d'aide.",
+          "J'ai mal à la tête.",
+          "Fais attention !"
+        ],
+        "minCount": 3
+      },
+      {
+        "id": "blocs-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Французский собирается готовыми блоками (avoir besoin de, faire attention, prendre rendez-vous), а не пословно.",
+          "Каждое французское выражение строится пословно по русскому образцу.",
+          "Блоки нужно всегда разбирать на отдельные слова.",
+          "В блоках можно свободно менять глагол на любой другой."
+        ],
+        "correctIndex": 0,
+        "explanation": "Запоминай блок целиком — и фраза собирается без ошибок."
+      }
+    ]
+  },
+  {
+    "id": "ordre-mots",
+    "mechanism": "ordre-mots",
+    "category": "sentence",
+    "title": "Французская фраза как цепочка",
+    "question": "Почему по-французски порядок слов нельзя тасовать, как в русском?",
+    "strangeness": "кто → действие → что → куда/когда",
+    "difficulty": "medium",
+    "scenes": ["cours", "voisins"],
+    "insight": "Французская фраза — устойчивая цепочка: кто → что делает → что/кому → куда/когда. Переставлять, как в русском, нельзя.",
+    "steps": [
+      {
+        "id": "ord-strange",
+        "kind": "strangeness",
+        "prompt": "Что важно понять про эту фразу?",
+        "phrase": "Je mange une pomme.",
+        "options": [
+          "Порядок жёсткий: сначала кто, потом действие, потом объект",
+          "Слова можно ставить в любом порядке, как в русском",
+          "Подлежащее можно опустить",
+          "Это вопрос без вопросительного слова"
+        ],
+        "correctIndex": 0,
+        "explanation": "Французский держится на каркасе «подлежащее → глагол → дополнение». Свободной перестановки, как в русском, нет."
+      },
+      {
+        "id": "ord-hypo",
+        "kind": "hypothesis",
+        "prompt": "Собери улики. Как собирается французская фраза?",
+        "clues": ["Je mange une pomme.", "Je vais à l'école demain.", "Il lit un livre le soir."],
+        "options": [
+          "кто → что делает → что/куда → когда",
+          "когда → что → кто → действие",
+          "сначала всегда глагол",
+          "порядок каждый раз случайный"
+        ],
+        "correctIndex": 0,
+        "explanation": "Сначала кто (Je/Il), потом действие (mange/vais/lit), потом объект/место (une pomme, à l'école), и в конце время (demain, le soir)."
+      },
+      {
+        "id": "ord-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode.",
+        "buggy": "Je une pomme mange.",
+        "bugReport": "object placed before the verb",
+        "options": [
+          "Je mange une pomme.",
+          "Une pomme mange je.",
+          "Mange je une pomme.",
+          "Je mange pomme une."
+        ],
+        "correctIndex": 0,
+        "fixNote": "verb goes right after the subject",
+        "explanation": "Глагол идёт сразу за подлежащим, объект — после глагола: Je mange une pomme."
+      },
+      {
+        "id": "ord-build",
+        "kind": "build",
+        "prompt": "Собери цепочку: «Я иду в школу завтра».",
+        "translation": "кто → действие → куда → когда",
+        "blocks": ["Je", "vais", "à l'école", "demain"],
+        "answer": ["Je", "vais", "à l'école", "demain"],
+        "explanation": "Je vais à l'école demain. Место (à l'école) перед временем (demain)."
+      },
+      {
+        "id": "ord-code",
+        "kind": "code",
+        "prompt": "Вскрытие цепочки.",
+        "phrase": "Je vais à l'école demain.",
+        "tokens": [
+          { "fr": "Je", "ru": "я", "role": "кто" },
+          { "fr": "vais", "ru": "иду", "role": "что делаю" },
+          { "fr": "à l'école", "ru": "в школу", "role": "куда" },
+          { "fr": "demain", "ru": "завтра", "role": "когда" }
+        ],
+        "note": "Каркас «кто → действие → куда → когда» работает для большинства простых фраз."
+      },
+      {
+        "id": "ord-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Французская фраза — цепочка: кто → действие → что/куда → когда.",
+          "Во французском слова переставляют свободно, как в русском.",
+          "Глагол всегда стоит в конце фразы.",
+          "Подлежащее обычно опускают."
+        ],
+        "correctIndex": 0,
+        "explanation": "Держись каркаса — и фраза собирается сама."
+      }
+    ]
+  }
+]

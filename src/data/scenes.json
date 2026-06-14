@@ -1,0 +1,14 @@
+[
+  { "id": "boulangerie", "name": "Boulangerie", "emoji": "🥖" },
+  { "id": "cafe", "name": "Café / Restaurant", "emoji": "☕" },
+  { "id": "creche", "name": "Crèche", "emoji": "🧸" },
+  { "id": "ecole", "name": "École", "emoji": "🎒" },
+  { "id": "medecin", "name": "Médecin", "emoji": "🩺" },
+  { "id": "pharmacie", "name": "Pharmacie", "emoji": "💊" },
+  { "id": "administration", "name": "Administration", "emoji": "🗂️" },
+  { "id": "telephone", "name": "Téléphone", "emoji": "📞" },
+  { "id": "magasin", "name": "Magasin", "emoji": "🛒" },
+  { "id": "transport", "name": "Transport", "emoji": "🚌" },
+  { "id": "voisins", "name": "Voisins", "emoji": "🏠" },
+  { "id": "cours", "name": "Cours de français", "emoji": "📚" }
+]

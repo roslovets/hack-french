@@ -1,0 +1,424 @@
+[
+  {
+    "id": "bonjour",
+    "mechanism": "bonjour",
+    "category": "social",
+    "title": "bonjour — социальный ключ к разговору",
+    "question": "Почему нельзя просто начать с вопроса в магазине?",
+    "strangeness": "bonjour — входной билет, а не вежливость",
+    "difficulty": "easy",
+    "scenes": ["magasin", "boulangerie", "administration"],
+    "insight": "bonjour — входной билет в разговор. Без него вопрос звучит грубо, даже если он правильный.",
+    "steps": [
+      {
+        "id": "bj-scene",
+        "kind": "scene",
+        "prompt": "Сцена: boulangerie.",
+        "situation": "Ты заходишь в булочную и хочешь спросить цену. С чего начать?",
+        "options": [
+          "Bonjour ! Je voudrais une baguette, s'il vous plaît.",
+          "Combien ? Baguette.",
+          "C'est combien la baguette ?",
+          "Donnez baguette."
+        ],
+        "correctIndex": 0,
+        "explanation": "Сначала bonjour — иначе даже правильный вопрос звучит резко. Это социальный протокол."
+      },
+      {
+        "id": "bj-order",
+        "kind": "order",
+        "prompt": "Отсортируй приветствия от самого холодного к самому тёплому/вежливому.",
+        "scaleLow": "сухо",
+        "scaleHigh": "тепло / вежливо",
+        "items": [
+          "(сразу вопрос без bonjour)",
+          "Bonjour.",
+          "Bonjour, ça va ?",
+          "Bonjour ! Comment allez-vous aujourd'hui ?"
+        ],
+        "explanation": "Минимум — это bonjour. Сразу вопрос без приветствия воспринимается как невежливость."
+      },
+      {
+        "id": "bj-ritual",
+        "kind": "sort",
+        "prompt": "Разложи ритуальные фразы: вход в разговор vs выход из него.",
+        "baskets": [
+          {
+            "id": "in",
+            "label": "вход / начало"
+          },
+          {
+            "id": "out",
+            "label": "выход / завершение"
+          }
+        ],
+        "items": [
+          {
+            "text": "Bonjour !",
+            "basket": "in"
+          },
+          {
+            "text": "Bonne journée !",
+            "basket": "out"
+          },
+          {
+            "text": "Excusez-moi...",
+            "basket": "in"
+          },
+          {
+            "text": "Merci, au revoir !",
+            "basket": "out"
+          },
+          {
+            "text": "Bonsoir !",
+            "basket": "in"
+          }
+        ],
+        "explanation": "Bonjour/bonsoir/excusez-moi открывают, bonne journée/au revoir закрывают."
+      },
+      {
+        "id": "bj-catch",
+        "kind": "catch",
+        "prompt": "Миссия.",
+        "targets": ["bonjour", "bonne journée", "merci, au revoir"],
+        "hint": "Замечай, как каждый разговор обрамляется bonjour … bonne journée."
+      },
+      {
+        "id": "bj-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "bonjour — входной билет в разговор, без него даже правильный вопрос звучит грубо.",
+          "bonjour можно опускать в магазинах.",
+          "bonjour — это прощание.",
+          "bonjour ставится в конце фразы."
+        ],
+        "correctIndex": 0,
+        "explanation": "Сначала bonjour, потом всё остальное."
+      }
+    ]
+  },
+  {
+    "id": "secours",
+    "mechanism": "secours",
+    "category": "social",
+    "title": "Фразы-спасатели: «я не понял»",
+    "question": "Что сказать, когда быстро говорят, а ты не понял ни слова?",
+    "strangeness": "не «Quoi ?», а Vous pouvez répéter ?",
+    "difficulty": "easy",
+    "scenes": ["creche", "medecin", "telephone", "cours"],
+    "insight": "Набор фраз-спасателей держит разговор: vous pouvez répéter ? · plus lentement · je n'ai pas compris.",
+    "steps": [
+      {
+        "id": "sec-scene",
+        "kind": "scene",
+        "prompt": "Сцена: crèche.",
+        "situation": "Воспитатель быстро сказал что-то про твоего ребёнка. Ты не понял. Как переспросить вежливо?",
+        "options": [
+          "Vous pouvez répéter plus lentement, s'il vous plaît ?",
+          "Quoi ?",
+          "Je ne comprends rien.",
+          "Parlez normal."
+        ],
+        "correctIndex": 0,
+        "explanation": "Вежливая просьба замедлиться и повторить. «Quoi ?» звучит грубо."
+      },
+      {
+        "id": "sec-forms",
+        "kind": "oddOneOut",
+        "prompt": "Три фразы-спасателя про «я не понял». Одна выбивается — найди её.",
+        "options": [
+          "Je n'ai pas compris.",
+          "Vous pouvez répéter ?",
+          "Plus lentement, s'il vous plaît.",
+          "Bonne journée !"
+        ],
+        "correctIndex": 3,
+        "explanation": "Первые три спасают разговор. Bonne journée — это прощание, оно выбивается."
+      },
+      {
+        "id": "sec-own",
+        "kind": "ownPhrase",
+        "prompt": "Собери свой набор из 3 фраз-спасателей.",
+        "pattern": "(фраза-спасатель)",
+        "examples": [
+          "Pardon ?",
+          "Vous pouvez répéter, s'il vous plaît ?",
+          "Je n'ai pas bien compris.",
+          "Plus lentement, s'il vous plaît.",
+          "Comment ?",
+          "Je ne comprends pas.",
+          "Vous pouvez parler plus lentement ?",
+          "Qu'est-ce que ça veut dire ?",
+          "Vous pouvez épeler, s'il vous plaît ?"
+        ],
+        "minCount": 3
+      },
+      {
+        "id": "sec-catch",
+        "kind": "catch",
+        "prompt": "Миссия.",
+        "targets": ["vous pouvez répéter", "plus lentement", "je n'ai pas compris"],
+        "hint": "В следующий раз, когда не поймёшь, используй спасатель вместо паники."
+      },
+      {
+        "id": "sec-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Фразы-спасатели держат разговор: répéter · plus lentement · je n'ai pas compris.",
+          "Если не понял, лучше молчать.",
+          "«Quoi ?» — самая вежливая форма.",
+          "Спасатели нужны только письменно."
+        ],
+        "correctIndex": 0,
+        "explanation": "Заранее заготовь спасатели — и не будешь теряться."
+      }
+    ]
+  },
+  {
+    "id": "tu-vous",
+    "mechanism": "tu-vous",
+    "category": "social",
+    "title": "tu vs vous — это социальная дистанция",
+    "question": "Когда «ты», а когда «вы» — и почему это не про грамматику.",
+    "strangeness": "tu — близкие, vous — дистанция/уважение/мн.ч.",
+    "difficulty": "medium",
+    "scenes": ["administration", "voisins", "magasin"],
+    "insight": "tu — близкие и дети; vous — незнакомые, старшие, официальное и просто множественное число.",
+    "steps": [
+      {
+        "id": "tv-compare",
+        "kind": "compare",
+        "prompt": "Одна просьба — два регистра. В чём разница?",
+        "phrases": ["Tu as l'heure ?", "Vous avez l'heure ?"],
+        "options": [
+          "tu — к близкому/ребёнку; vous — к незнакомому/старшему или к нескольким",
+          "Это одно и то же",
+          "vous — это прошедшее время tu",
+          "tu вежливее, чем vous"
+        ],
+        "correctIndex": 0,
+        "explanation": "Выбор tu/vous — про дистанцию и уважение, а не про грамматику."
+      },
+      {
+        "id": "tv-scene",
+        "kind": "scene",
+        "prompt": "Сцена: administration.",
+        "situation": "Ты обращаешься к незнакомому сотруднику в окне. На «ты» или на «вы»?",
+        "options": [
+          "Bonjour, vous pouvez m'aider ?",
+          "Salut, tu peux m'aider ?",
+          "Bonjour, tu m'aides ?",
+          "Hé, aide-moi."
+        ],
+        "correctIndex": 0,
+        "explanation": "С незнакомым и в официальном контексте — vous. «Vous pouvez m'aider ?»"
+      },
+      {
+        "id": "tv-sort",
+        "kind": "sort",
+        "prompt": "К кому tu, а к кому vous?",
+        "baskets": [
+          {
+            "id": "tu",
+            "label": "tu (близость)"
+          },
+          {
+            "id": "vous",
+            "label": "vous (дистанция/мн.ч.)"
+          }
+        ],
+        "items": [
+          {
+            "text": "к близкому другу",
+            "basket": "tu"
+          },
+          {
+            "text": "к ребёнку",
+            "basket": "tu"
+          },
+          {
+            "text": "к незнакомцу на улице",
+            "basket": "vous"
+          },
+          {
+            "text": "к чиновнику",
+            "basket": "vous"
+          },
+          {
+            "text": "к группе людей",
+            "basket": "vous"
+          }
+        ],
+        "explanation": "Друзья/дети → tu. Незнакомые/официальное/несколько человек → vous."
+      },
+      {
+        "id": "tv-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Vous pouvez m'aider ?",
+        "tokens": [
+          {
+            "fr": "Vous",
+            "ru": "вы (вежливое)",
+            "role": "дистанция/уважение"
+          },
+          {
+            "fr": "pouvez",
+            "ru": "можете",
+            "role": "глагол при vous"
+          },
+          {
+            "fr": "m'aider",
+            "ru": "мне помочь",
+            "role": "инфинитив + me→m'"
+          }
+        ],
+        "note": "При vous глагол берёт окончание -ez: vous pouvez. С tu было бы «tu peux m'aider ?»."
+      },
+      {
+        "id": "tv-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "tu — близкие и дети; vous — незнакомые, старшие, официальное и множественное.",
+          "tu и vous взаимозаменяемы всегда.",
+          "vous используется только во множественном числе.",
+          "tu — это вежливая форма."
+        ],
+        "correctIndex": 0,
+        "explanation": "Сомневаешься — начни с vous, это безопаснее."
+      }
+    ]
+  },
+  {
+    "id": "politesse",
+    "mechanism": "politesse",
+    "category": "social",
+    "title": "Вежливость — обязательный ритуал, а не украшение",
+    "question": "Почему s'il vous plaît и merci нельзя пропускать?",
+    "strangeness": "вежливые формулы — часть протокола, а не бонус",
+    "difficulty": "easy",
+    "scenes": ["magasin", "cafe", "administration"],
+    "insight": "s'il vous plaît / merci / bonne journée — обязательный ритуал общения, а не украшение: без них фраза звучит грубо.",
+    "steps": [
+      {
+        "id": "pol-scene",
+        "kind": "scene",
+        "prompt": "Сцена: boulangerie.",
+        "situation": "Ты получил багет и платишь. Как вежливо завершить покупку?",
+        "options": ["Merci, bonne journée !", "C'est tout.", "Voilà.", "OK, fini."],
+        "correctIndex": 0,
+        "explanation": "Завершают покупку формулой merci + bonne journée. Это обязательный ритуал, а не лишняя любезность."
+      },
+      {
+        "id": "pol-order",
+        "kind": "order",
+        "prompt": "Отсортируй заказ кофе от самого сухого к самому вежливому.",
+        "scaleLow": "сухо",
+        "scaleHigh": "вежливо",
+        "items": [
+          "Un café.",
+          "Je veux un café.",
+          "Je voudrais un café, s'il vous plaît.",
+          "Bonjour, je voudrais un café, s'il vous plaît."
+        ],
+        "explanation": "От «Un café» (сухо) к полной форме с bonjour и s'il vous plaît (вежливо). je voudrais мягче, чем je veux."
+      },
+      {
+        "id": "pol-sort",
+        "kind": "sort",
+        "prompt": "Разложи формулы: вход в разговор vs выход из него.",
+        "baskets": [
+          { "id": "in", "label": "вход / начало" },
+          { "id": "out", "label": "выход / завершение" }
+        ],
+        "items": [
+          { "text": "Bonjour !", "basket": "in" },
+          { "text": "Bonne journée !", "basket": "out" },
+          { "text": "Excusez-moi…", "basket": "in" },
+          { "text": "Merci, au revoir !", "basket": "out" }
+        ],
+        "explanation": "Bonjour и excusez-moi открывают разговор; bonne journée и merci, au revoir его закрывают."
+      },
+      {
+        "id": "pol-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "s'il vous plaît / merci / bonne journée — обязательный ритуал, без него фраза звучит грубо.",
+          "вежливые формулы — необязательное украшение.",
+          "s'il vous plaît нужно только в письмах.",
+          "merci ставят только в начале разговора."
+        ],
+        "correctIndex": 0,
+        "explanation": "Вежливость во Франции — часть протокола, а не бонус."
+      }
+    ]
+  },
+  {
+    "id": "excuses",
+    "mechanism": "excuses",
+    "category": "social",
+    "title": "Pardon / Excusez-moi / Je suis désolé — уровни извинения",
+    "question": "Чем «pardon» отличается от «je suis désolé»?",
+    "strangeness": "привлечь внимание ≠ извиниться за проступок",
+    "difficulty": "medium",
+    "scenes": ["magasin", "voisins", "administration"],
+    "insight": "Pardon / Excusez-moi привлекают внимание или просят пройти; Je suis désolé выражает сожаление о проступке.",
+    "steps": [
+      {
+        "id": "exc-scene",
+        "kind": "scene",
+        "prompt": "Сцена: magasin.",
+        "situation": "Ты случайно наступил кому-то на ногу. Что сказать?",
+        "options": [
+          "Pardon ! Excusez-moi !",
+          "Bonne journée !",
+          "Je voudrais un café.",
+          "C'est tout."
+        ],
+        "correctIndex": 0,
+        "explanation": "Мелкая помеха в моменте — «Pardon !» / «Excusez-moi !». А вот за опоздание скажут «Je suis désolé pour le retard.»"
+      },
+      {
+        "id": "exc-compare",
+        "kind": "compare",
+        "prompt": "Две формы извинения. В чём разница?",
+        "phrases": ["Excusez-moi", "Je suis désolé"],
+        "options": [
+          "Excusez-moi — привлечь внимание/пройти; Je suis désolé — сожаление о проступке",
+          "это полные синонимы",
+          "Excusez-moi — про серьёзный проступок, Je suis désolé — чтобы пройти",
+          "обе фразы используют только по телефону"
+        ],
+        "correctIndex": 0,
+        "explanation": "«Excusez-moi» — чтобы привлечь внимание или пройти; «Je suis désolé» — когда действительно виноват."
+      },
+      {
+        "id": "exc-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь: «Извините за опоздание» (сожаление о проступке).",
+        "phrase": "___ pour le retard.",
+        "options": ["Je suis désolé", "Excusez-moi", "Pardon", "Bonne journée"],
+        "correctIndex": 0,
+        "explanation": "Сожаление о проступке (опоздание) → «Je suis désolé pour le retard.»",
+        "result": "Je suis désolé pour le retard."
+      },
+      {
+        "id": "exc-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Pardon / Excusez-moi привлекают внимание или просят пройти; Je suis désolé — сожаление о проступке.",
+          "все три фразы означают одно и то же.",
+          "Je suis désolé используют, чтобы пройти в толпе.",
+          "Pardon нельзя использовать при людях."
+        ],
+        "correctIndex": 0,
+        "explanation": "Уровень извинения зависит от ситуации: помеха в моменте vs реальный проступок."
+      }
+    ]
+  }
+]

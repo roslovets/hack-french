@@ -1,0 +1,453 @@
+[
+  {
+    "id": "voudrais",
+    "mechanism": "voudrais",
+    "category": "modals",
+    "title": "je veux vs je voudrais — кнопка вежливости",
+    "question": "Почему je voudrais звучит нормально, а je veux часто грубовато?",
+    "strangeness": "je veux → je voudrais",
+    "difficulty": "easy",
+    "scenes": ["cafe", "boulangerie", "telephone"],
+    "insight": "je voudrais — безопасная кнопка вежливой просьбы. По умолчанию выбирай её.",
+    "steps": [
+      {
+        "id": "voud-intention",
+        "kind": "scene",
+        "prompt": "Выбор по намерению: ты хочешь мягко попросить кофе.",
+        "situation": "Кафе. Ты делаешь заказ и не хочешь звучать резко.",
+        "options": [
+          "Je voudrais un café, s'il vous plaît.",
+          "Je veux un café.",
+          "Donne un café.",
+          "Café maintenant."
+        ],
+        "correctIndex": 0,
+        "explanation": "je voudrais — вежливая форма (conditionnel). je veux звучит как требование."
+      },
+      {
+        "id": "voud-order",
+        "kind": "order",
+        "prompt": "Отсортируй фразы от самой сухой к самой мягкой.",
+        "scaleLow": "сухо / прямо",
+        "scaleHigh": "очень вежливо",
+        "items": [
+          "Un café.",
+          "Je veux un café.",
+          "Je voudrais un café, s'il vous plaît.",
+          "Est-ce que je pourrais avoir un café ?"
+        ],
+        "explanation": "Un café — телеграфно; je veux — прямо; je voudrais — норма; est-ce que je pourrais — очень мягко."
+      },
+      {
+        "id": "voud-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je voudrais prendre rendez-vous.",
+        "tokens": [
+          {
+            "fr": "Je voudrais",
+            "ru": "я хотел бы",
+            "role": "вежливое желание"
+          },
+          {
+            "fr": "prendre rendez-vous",
+            "ru": "записаться (взять приём)",
+            "role": "устойчивый блок"
+          }
+        ],
+        "note": "voudrais — это conditionnel от vouloir, форма вежливости."
+      },
+      {
+        "id": "voud-mutate",
+        "kind": "mutation",
+        "prompt": "Мутация: «Я хотел бы перенести встречу».",
+        "phrase": "Je voudrais prendre rendez-vous.",
+        "options": [
+          "Je voudrais déplacer mon rendez-vous.",
+          "Je veux changer le rendez-vous maintenant.",
+          "Je voudrais prendre déplacer rendez-vous.",
+          "Je déplace voudrais rendez-vous."
+        ],
+        "correctIndex": 0,
+        "explanation": "Каркас je voudrais + инфинитив: déplacer mon rendez-vous."
+      },
+      {
+        "id": "voud-own",
+        "kind": "ownPhrase",
+        "prompt": "Составь 3 вежливые просьбы через je voudrais.",
+        "pattern": "Je voudrais ___ .",
+        "examples": [
+          "Je voudrais une baguette.",
+          "Je voudrais prendre rendez-vous.",
+          "Je voudrais une attestation.",
+          "Je voudrais un café.",
+          "Je voudrais déplacer mon rendez-vous.",
+          "Je voudrais réserver une table.",
+          "Je voudrais parler au responsable.",
+          "Je voudrais payer, s'il vous plaît."
+        ],
+        "minCount": 3
+      },
+      {
+        "id": "voud-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "je voudrais — безопасная кнопка вежливой просьбы.",
+          "je veux всегда лучше, чем je voudrais.",
+          "voudrais — это прошедшее время.",
+          "После je voudrais нельзя ставить инфинитив."
+        ],
+        "correctIndex": 0,
+        "explanation": "Сомневаешься — бери je voudrais."
+      }
+    ]
+  },
+  {
+    "id": "il-faut",
+    "mechanism": "il-faut",
+    "category": "modals",
+    "title": "il faut — «надо» без указания виноватого",
+    "question": "Как сказать «надо», не называя, кто именно должен?",
+    "strangeness": "il faut — безличное «надо»",
+    "difficulty": "easy",
+    "scenes": ["ecole", "administration", "telephone"],
+    "insight": "il faut — безличное «надо»: снимает ответственность с конкретного человека.",
+    "steps": [
+      {
+        "id": "faut-strange",
+        "kind": "strangeness",
+        "prompt": "Что необычного в il faut?",
+        "phrase": "Il faut appeler l'école.",
+        "options": [
+          "«Надо» без подлежащего: никто конкретно не назван",
+          "Это вопрос",
+          "Il здесь — реальный человек «он»",
+          "Это прошедшее время"
+        ],
+        "correctIndex": 0,
+        "explanation": "il faut — безличный оборот. il — пустое, как в il pleut. Значит просто «надо»."
+      },
+      {
+        "id": "faut-build",
+        "kind": "build",
+        "prompt": "Собери: «Надо записаться (на приём)».",
+        "translation": "Надо взять rendez-vous.",
+        "blocks": ["Il", "faut", "prendre", "rendez-vous"],
+        "answer": ["Il", "faut", "prendre", "rendez-vous"],
+        "explanation": "Il faut prendre rendez-vous. После il faut — инфинитив."
+      },
+      {
+        "id": "faut-convert",
+        "kind": "cloze",
+        "prompt": "Преврати описание в фразу: «Надо + позвонить + в школу».",
+        "phrase": "Il faut ___ l'école.",
+        "options": ["appeler", "appelle", "appelé", "appelons"],
+        "correctIndex": 0,
+        "explanation": "После il faut всегда инфинитив: il faut appeler l'école.",
+        "result": "Il faut appeler l'école."
+      },
+      {
+        "id": "faut-own",
+        "kind": "ownPhrase",
+        "prompt": "Напиши 3 реальные «надо», которые пригодятся завтра.",
+        "pattern": "Il faut ___ .",
+        "examples": [
+          "Il faut acheter du pain.",
+          "Il faut appeler le médecin.",
+          "Il faut prendre rendez-vous.",
+          "Il faut partir maintenant.",
+          "Il faut faire les courses.",
+          "Il faut réserver à l'avance.",
+          "Il faut prévenir l'école.",
+          "Il faut attendre un peu."
+        ],
+        "minCount": 3
+      },
+      {
+        "id": "faut-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "il faut — безличное «надо», без указания виноватого.",
+          "il faut значит «он падает».",
+          "После il faut идёт спрягаемый глагол.",
+          "il faut — это вежливая просьба."
+        ],
+        "correctIndex": 0,
+        "explanation": "Нужен инфинитив после il faut."
+      }
+    ]
+  },
+  {
+    "id": "je-peux",
+    "mechanism": "je-peux",
+    "category": "modals",
+    "title": "je peux — «могу» и «можно мне»",
+    "question": "Одна кнопка je peux открывает и разрешение, и возможность.",
+    "strangeness": "je peux + инфинитив = могу / можно",
+    "difficulty": "easy",
+    "scenes": ["cafe", "magasin", "administration"],
+    "insight": "je peux + инфинитив — это и «я могу», и «можно мне». Универсальная кнопка возможности и разрешения.",
+    "steps": [
+      {
+        "id": "peux-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что общего у этих улик?",
+        "clues": ["Je peux entrer ?", "Tu peux m'aider ?", "On peut commencer ?"],
+        "options": [
+          "je peux + инфинитив — это «могу» или «можно мне»",
+          "peux — это существительное «возможность»",
+          "Это прошедшее время",
+          "После peux всегда идёт de"
+        ],
+        "correctIndex": 0,
+        "explanation": "pouvoir (je peux / tu peux / on peut) + инфинитив выражает возможность и разрешение."
+      },
+      {
+        "id": "peux-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Est-ce que je peux entrer ?",
+        "tokens": [
+          {
+            "fr": "Est-ce que",
+            "ru": "(маркер вопроса)",
+            "role": "кнопка вопроса"
+          },
+          {
+            "fr": "je peux",
+            "ru": "я могу / можно мне",
+            "role": "pouvoir"
+          },
+          {
+            "fr": "entrer",
+            "ru": "войти",
+            "role": "инфинитив"
+          }
+        ],
+        "note": "После je peux — всегда инфинитив, без de и без que."
+      },
+      {
+        "id": "peux-scene",
+        "kind": "scene",
+        "prompt": "Сцена: café.",
+        "situation": "Ты хочешь спросить, можно ли расплатиться картой.",
+        "options": [
+          "Je peux payer par carte ?",
+          "Je peux payer carte ?",
+          "Je peux de payer par carte ?",
+          "Payer par carte je peux ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "je peux + инфинитив (payer) + par carte. Естественный разговорный вопрос."
+      },
+      {
+        "id": "peux-mutate",
+        "kind": "mutation",
+        "prompt": "Мутация: «Можно открыть окно?»",
+        "phrase": "Je peux entrer ?",
+        "options": [
+          "Je peux ouvrir la fenêtre ?",
+          "Je peux ouvre la fenêtre ?",
+          "Je peux la fenêtre ouvrir ?",
+          "Je peux d'ouvrir la fenêtre ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Тот же каркас je peux + инфинитив: ouvrir la fenêtre."
+      },
+      {
+        "id": "peux-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "je peux + инфинитив — это и «я могу», и «можно мне».",
+          "После je peux нужен спрягаемый глагол.",
+          "je peux всегда требует de.",
+          "je peux используется только в прошедшем."
+        ],
+        "correctIndex": 0,
+        "explanation": "Универсальная кнопка возможности и разрешения."
+      }
+    ]
+  },
+  {
+    "id": "je-dois",
+    "mechanism": "je-dois",
+    "category": "modals",
+    "title": "je dois — я должен",
+    "question": "Личная обязанность через devoir + инфинитив.",
+    "strangeness": "je dois + инфинитив = я должен",
+    "difficulty": "easy",
+    "scenes": ["administration", "telephone", "ecole"],
+    "insight": "je dois + инфинитив — личная обязанность «я должен». В отличие от безличного il faut.",
+    "steps": [
+      {
+        "id": "dois-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что общего у этих фраз?",
+        "clues": ["Je dois partir.", "Je dois travailler.", "Tu dois appeler l'école."],
+        "options": [
+          "devoir + инфинитив = личная обязанность «должен»",
+          "Это вежливая просьба",
+          "Это прошедшее время",
+          "После dois идёт de"
+        ],
+        "correctIndex": 0,
+        "explanation": "devoir (je dois / tu dois) + инфинитив — «я/ты должен». Конкретный человек обязан."
+      },
+      {
+        "id": "dois-compare",
+        "kind": "compare",
+        "prompt": "В чём разница: je dois и il faut?",
+        "phrases": ["Je dois partir.", "Il faut partir."],
+        "options": [
+          "je dois — лично я должен; il faut — надо вообще (без виноватого)",
+          "Это одно и то же",
+          "il faut — это прошедшее время je dois",
+          "je dois безличное, il faut личное"
+        ],
+        "correctIndex": 0,
+        "explanation": "je dois называет, кто обязан; il faut — безличное «надо»."
+      },
+      {
+        "id": "dois-mutate",
+        "kind": "mutation",
+        "prompt": "Мутация: «Мне придётся отменить» (je vais devoir).",
+        "phrase": "Je dois partir.",
+        "options": [
+          "Je vais devoir annuler.",
+          "Je vais dois annuler.",
+          "Je dois vais annuler.",
+          "Je vais devoir d'annuler."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ближайшая вынужденность: je vais devoir + инфинитив."
+      },
+      {
+        "id": "dois-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je dois appeler l'école.",
+        "tokens": [
+          {
+            "fr": "Je dois",
+            "ru": "я должен",
+            "role": "devoir"
+          },
+          {
+            "fr": "appeler",
+            "ru": "позвонить",
+            "role": "инфинитив"
+          },
+          {
+            "fr": "l'école",
+            "ru": "в школу",
+            "role": "кому / куда"
+          }
+        ],
+        "note": "devoir (je dois) + инфинитив, без de. Называет, кто именно обязан."
+      },
+      {
+        "id": "dois-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "je dois + инфинитив — личная обязанность; il faut — безличное «надо».",
+          "je dois и il faut одинаковы.",
+          "После devoir нужен спрягаемый глагол.",
+          "je dois — это вежливая просьба."
+        ],
+        "correctIndex": 0,
+        "explanation": "Должен лично — devoir; надо вообще — il faut."
+      }
+    ]
+  },
+  {
+    "id": "on-peut",
+    "mechanism": "on-peut",
+    "category": "modals",
+    "title": "on peut — можно / мы можем",
+    "question": "Самый разговорный способ предложить действие.",
+    "strangeness": "on peut y aller ?",
+    "difficulty": "easy",
+    "scenes": ["voisins", "cafe", "transport"],
+    "insight": "on peut + инфинитив — живое «можем / можно?»: on peut y aller ?, on peut commencer ?",
+    "steps": [
+      {
+        "id": "onp-build",
+        "kind": "build",
+        "prompt": "Собери предложение: «Пойдём? (можем туда идти?)»",
+        "translation": "Можем туда идти?",
+        "blocks": ["On", "peut", "y", "aller", "?"],
+        "answer": ["On", "peut", "y", "aller", "?"],
+        "explanation": "On peut y aller ? on + peut + y + инфинитив. Очень частотная фраза."
+      },
+      {
+        "id": "onp-scene",
+        "kind": "scene",
+        "prompt": "Сцена: cafe.",
+        "situation": "Вы с другом решаете начать. Предложи: «Можем начинать?»",
+        "options": [
+          "On peut commencer ?",
+          "On peuvent commencer ?",
+          "Nous peut commencer ?",
+          "On commencer peut ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "on берёт форму 3 лица ед.: on peut. On peut commencer ?"
+      },
+      {
+        "id": "onp-mutate",
+        "kind": "mutation",
+        "prompt": "Мутация: «Можно тут сесть?»",
+        "phrase": "On peut y aller ?",
+        "options": [
+          "On peut s'asseoir ici ?",
+          "On peut asseoir ici ?",
+          "On peut ici s'asseoir est-ce que ?",
+          "On s'asseoir peut ici ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "On peut + инфинитив (s'asseoir) + ici."
+      },
+      {
+        "id": "onp-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "On peut y aller ?",
+        "tokens": [
+          {
+            "fr": "On peut",
+            "ru": "мы можем / можно",
+            "role": "pouvoir (3 л. ед.)"
+          },
+          {
+            "fr": "y",
+            "ru": "туда",
+            "role": "местоимение"
+          },
+          {
+            "fr": "aller",
+            "ru": "идти / ехать",
+            "role": "инфинитив"
+          }
+        ],
+        "note": "on берёт форму 3 л. ед.: on peut. После — инфинитив (тут с y перед ним)."
+      },
+      {
+        "id": "onp-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "on peut + инфинитив — живое «можем / можно?».",
+          "on peut требует формы nous (peuvent).",
+          "on peut — это прошедшее время.",
+          "После on peut нужен предлог de."
+        ],
+        "correctIndex": 0,
+        "explanation": "Разговорное предложение действия в одну кнопку."
+      }
+    ]
+  }
+]

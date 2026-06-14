@@ -1,0 +1,414 @@
+[
+  {
+    "id": "adj-place-apres",
+    "mechanism": "adj-place-apres",
+    "category": "adjectives",
+    "title": "Почему une voiture rouge, а не une rouge voiture?",
+    "question": "По-русски «красная машина», а французы говорят наоборот. Почему?",
+    "strangeness": "красная машина → une voiture rouge",
+    "difficulty": "easy",
+    "scenes": ["magasin", "cafe"],
+    "insight": "Большинство прилагательных во французском стоят ПОСЛЕ существительного: une voiture rouge.",
+    "steps": [
+      {
+        "id": "apres-strange",
+        "kind": "strangeness",
+        "prompt": "Найди странность для русского мозга.",
+        "phrase": "une voiture rouge",
+        "options": [
+          "Прилагательное стоит после существительного, а не перед",
+          "rouge — это глагол",
+          "voiture стоит во множественном числе",
+          "une лишнее"
+        ],
+        "correctIndex": 0,
+        "explanation": "Цвет, национальность и большинство описаний идут после существительного: voiture rouge, sac noir, film français."
+      },
+      {
+        "id": "apres-fix",
+        "kind": "fixCalque",
+        "prompt": "Русский мозг поставил прилагательное перед. Почини.",
+        "phrase": "une rouge voiture",
+        "options": [
+          "une voiture rouge",
+          "une rouge voiture",
+          "un voiture rouge",
+          "une voiture rouges"
+        ],
+        "correctIndex": 0,
+        "explanation": "Прилагательное цвета идёт после: une voiture rouge.",
+        "result": "une voiture rouge"
+      },
+      {
+        "id": "apres-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "un film français intéressant",
+        "tokens": [
+          { "fr": "un", "ru": "(новый) один", "role": "артикль" },
+          { "fr": "film", "ru": "фильм", "role": "существительное" },
+          { "fr": "français", "ru": "французский", "role": "национальность — после" },
+          { "fr": "intéressant", "ru": "интересный", "role": "оценка — после" }
+        ],
+        "note": "Оба прилагательных стоят после существительного. Перед — нельзя."
+      },
+      {
+        "id": "apres-odd",
+        "kind": "oddOneOut",
+        "prompt": "Найди фразу с неправильным порядком слов.",
+        "options": ["un sac noir", "une table blanche", "un livre intéressant", "une rouge pomme"],
+        "correctIndex": 3,
+        "explanation": "Должно быть une pomme rouge. Цвет идёт после существительного."
+      },
+      {
+        "id": "apres-scene",
+        "kind": "scene",
+        "prompt": "Сцена: magasin.",
+        "situation": "Ты показываешь на чёрную сумку и хочешь сказать «чёрная сумка».",
+        "options": ["un sac noir", "un noir sac", "une sac noir", "un sac noire"],
+        "correctIndex": 0,
+        "explanation": "Прилагательное после существительного и в мужском роде: un sac noir."
+      },
+      {
+        "id": "apres-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Большинство прилагательных стоят после существительного: une voiture rouge.",
+          "Прилагательные всегда стоят перед существительным.",
+          "Прилагательные не изменяются и стоят где угодно.",
+          "Цвет ставится только перед существительным."
+        ],
+        "correctIndex": 0,
+        "explanation": "Базовая позиция прилагательного — после существительного."
+      }
+    ]
+  },
+  {
+    "id": "adj-accord",
+    "mechanism": "adj-accord",
+    "category": "adjectives",
+    "title": "petit, petite, petits, petites — почему столько форм?",
+    "question": "Почему прилагательное меняет хвост в зависимости от существительного?",
+    "strangeness": "un petit chat → une petite maison",
+    "difficulty": "easy",
+    "scenes": ["voisins", "cours"],
+    "insight": "Прилагательное согласуется с существительным: +e в женском роде, +s во множественном числе.",
+    "steps": [
+      {
+        "id": "accord-hypo",
+        "kind": "hypothesis",
+        "prompt": "Сравни улики. По какому закону меняется хвост прилагательного?",
+        "clues": ["un petit chat", "une petite maison", "des petits chats", "des petites maisons"],
+        "options": [
+          "Прилагательное согласуется в роде (+e) и числе (+s)",
+          "Прилагательное меняется по времени",
+          "Хвост зависит от первой буквы существительного",
+          "Это случайные формы без правила"
+        ],
+        "correctIndex": 0,
+        "explanation": "Женский род добавляет -e, множественное число добавляет -s. Формы складываются: petite + s = petites."
+      },
+      {
+        "id": "accord-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "une petite maison blanche",
+        "tokens": [
+          { "fr": "une", "ru": "(новая) одна", "role": "артикль ж.р." },
+          { "fr": "petite", "ru": "маленькая", "role": "petit + e (ж.р.) — перед" },
+          { "fr": "maison", "ru": "дом", "role": "существительное ж.р." },
+          { "fr": "blanche", "ru": "белая", "role": "blanc → blanche (ж.р.) — после" }
+        ],
+        "note": "Оба прилагательных согласованы с maison (ж.р.). blanc меняется нестандартно: blanc → blanche."
+      },
+      {
+        "id": "accord-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode.",
+        "buggy": "une voiture vert",
+        "bugReport": "adjective not agreed in gender",
+        "options": [
+          "une voiture verte",
+          "une voiture verts",
+          "un voiture vert",
+          "une verte voiture"
+        ],
+        "correctIndex": 0,
+        "fixNote": "vert → verte before a feminine noun",
+        "explanation": "voiture — женский род, значит vert → verte: une voiture verte."
+      },
+      {
+        "id": "accord-cloze",
+        "kind": "cloze",
+        "prompt": "Поставь правильную форму прилагательного content.",
+        "phrase": "Mes sœurs sont ___.",
+        "options": ["contentes", "content", "contente", "contents"],
+        "correctIndex": 0,
+        "explanation": "sœurs — женский род, множественное число → content + e + s = contentes.",
+        "result": "Mes sœurs sont contentes."
+      },
+      {
+        "id": "accord-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Прилагательное согласуется в роде (+e) и числе (+s) с существительным.",
+          "Прилагательное никогда не меняет форму.",
+          "Прилагательное согласуется только с глаголом.",
+          "Множественное число прилагательного образуется через -e."
+        ],
+        "correctIndex": 0,
+        "explanation": "Род даёт -e, число даёт -s; формы складываются."
+      }
+    ]
+  },
+  {
+    "id": "adj-place-avant",
+    "mechanism": "adj-place-avant",
+    "category": "adjectives",
+    "title": "un grand homme — а это прилагательное стоит перед!",
+    "question": "Если прилагательные идут после, почему говорят un grand homme, une belle ville?",
+    "strangeness": "voiture rouge (после), но grand homme (перед)",
+    "difficulty": "medium",
+    "scenes": ["cafe", "voisins"],
+    "insight": "Короткие частотные прилагательные (grand, petit, bon, beau, jeune, vieux, joli, nouveau) идут ПЕРЕД существительным.",
+    "steps": [
+      {
+        "id": "avant-hypo",
+        "kind": "hypothesis",
+        "prompt": "Какие прилагательные встали перед существительным?",
+        "clues": ["un grand jardin", "une petite cuillère", "un bon café", "une belle ville"],
+        "options": [
+          "Короткие частотные: grand, petit, bon, beau и подобные",
+          "Только прилагательные цвета",
+          "Только национальности",
+          "Длинные прилагательные на -ant"
+        ],
+        "correctIndex": 0,
+        "explanation": "Маленькая группа частых коротких прилагательных (grand, petit, bon, mauvais, beau, joli, jeune, vieux, nouveau, gros) стоит перед существительным."
+      },
+      {
+        "id": "avant-sort",
+        "kind": "sort",
+        "prompt": "Куда обычно встаёт прилагательное — перед или после существительного?",
+        "baskets": [
+          { "id": "avant", "label": "перед (grand, petit, bon…)" },
+          { "id": "apres", "label": "после (цвет, национальность, длинные)" }
+        ],
+        "items": [
+          { "text": "grand", "basket": "avant" },
+          { "text": "rouge", "basket": "apres" },
+          { "text": "bon", "basket": "avant" },
+          { "text": "français", "basket": "apres" },
+          { "text": "petit", "basket": "avant" },
+          { "text": "intéressant", "basket": "apres" }
+        ],
+        "explanation": "Короткие оценочные — перед; цвет, национальность и длинные описания — после."
+      },
+      {
+        "id": "avant-compare",
+        "kind": "compare",
+        "prompt": "Эти две фразы значат разное. Что значит un grand homme?",
+        "phrases": ["un grand homme", "un homme grand"],
+        "options": [
+          "Великий, выдающийся человек",
+          "Высокий мужчина",
+          "Взрослый мужчина",
+          "Большой ребёнок"
+        ],
+        "correctIndex": 0,
+        "explanation": "grand перед существительным — переносный смысл (великий); после — буквальный (высокий). un homme grand = высокий мужчина."
+      },
+      {
+        "id": "avant-scene",
+        "kind": "scene",
+        "prompt": "Сцена: cafe.",
+        "situation": "Ты советуешь другу заведение и хочешь сказать «хороший ресторан».",
+        "options": [
+          "un bon restaurant",
+          "un restaurant bon",
+          "une bon restaurant",
+          "un bonne restaurant"
+        ],
+        "correctIndex": 0,
+        "explanation": "bon — из группы коротких частотных, стоит перед: un bon restaurant."
+      },
+      {
+        "id": "avant-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Короткие частотные прилагательные (grand, petit, bon, beau…) идут перед существительным.",
+          "Все прилагательные идут перед существительным.",
+          "Перед существительным стоят только цвета.",
+          "Позиция прилагательного во французском не важна."
+        ],
+        "correctIndex": 0,
+        "explanation": "Маленькая группа BAGS-прилагательных — исключение, стоит перед."
+      }
+    ]
+  },
+  {
+    "id": "adj-comparatif",
+    "mechanism": "adj-comparatif",
+    "category": "adjectives",
+    "title": "plus grand que — как сравнивать",
+    "question": "Как сказать «быстрее, чем», «лучше, чем» по-французски?",
+    "strangeness": "быстрее → plus rapide que",
+    "difficulty": "medium",
+    "scenes": ["transport", "magasin"],
+    "insight": "Сравнение строится рамкой plus / moins / aussi + прилагательное + que. Но bon → meilleur, не «plus bon».",
+    "steps": [
+      {
+        "id": "comp-hypo",
+        "kind": "hypothesis",
+        "prompt": "Как устроено сравнение?",
+        "clues": [
+          "Paul est plus grand que Marie.",
+          "Le métro est moins cher que le taxi.",
+          "Elle est aussi rapide que lui."
+        ],
+        "options": [
+          "plus / moins / aussi + прилагательное + que",
+          "Прилагательное получает окончание -er",
+          "Перед прилагательным ставят très",
+          "Сравнение строится только глаголом"
+        ],
+        "correctIndex": 0,
+        "explanation": "plus (более), moins (менее), aussi (так же) + прилагательное + que (чем). Само прилагательное не меняет хвост от сравнения."
+      },
+      {
+        "id": "comp-build",
+        "kind": "build",
+        "prompt": "Собери: «Поезд быстрее автобуса».",
+        "translation": "Поезд быстрее, чем автобус.",
+        "blocks": ["Le train", "est", "plus", "rapide", "que", "le bus"],
+        "answer": ["Le train", "est", "plus", "rapide", "que", "le bus"],
+        "explanation": "plus rapide que — рамка сравнения вокруг прилагательного."
+      },
+      {
+        "id": "comp-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь сравнительную форму bon.",
+        "phrase": "Ce café est ___ que l'autre.",
+        "options": ["meilleur", "plus bon", "plus meilleur", "mieux"],
+        "correctIndex": 0,
+        "explanation": "bon имеет особую форму сравнения: meilleur. «plus bon» — ошибка. (mieux — это для bien, наречия.)",
+        "result": "Ce café est meilleur que l'autre."
+      },
+      {
+        "id": "comp-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode.",
+        "buggy": "Marie est plus bonne en maths que moi.",
+        "bugReport": "«plus bon» instead of meilleur",
+        "options": [
+          "Marie est meilleure en maths que moi.",
+          "Marie est plus meilleure en maths que moi.",
+          "Marie est mieux en maths que moi.",
+          "Marie est la plus bonne en maths que moi."
+        ],
+        "correctIndex": 0,
+        "fixNote": "bon → meilleur (meilleure в ж.р.)",
+        "explanation": "bon → meilleur, согласуется с Marie → meilleure: Marie est meilleure en maths que moi."
+      },
+      {
+        "id": "comp-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Сравнение: plus / moins / aussi + прилагательное + que. Но bon → meilleur.",
+          "Сравнение образуется окончанием -er, как в английском.",
+          "Для сравнения достаточно слова très.",
+          "bon в сравнении становится «plus bon»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Рамка plus … que плюс исключение meilleur."
+      }
+    ]
+  },
+  {
+    "id": "adj-superlatif",
+    "mechanism": "adj-superlatif",
+    "category": "adjectives",
+    "title": "le plus grand — превосходная степень",
+    "question": "Как сказать «самый большой», «лучший»?",
+    "strangeness": "самый большой → le plus grand",
+    "difficulty": "medium",
+    "scenes": ["magasin", "boulangerie"],
+    "insight": "Превосходная степень — артикль + plus / moins + прилагательное: le plus grand. И le meilleur вместо «le plus bon».",
+    "steps": [
+      {
+        "id": "sup-hypo",
+        "kind": "hypothesis",
+        "prompt": "Как образована превосходная степень?",
+        "clues": [
+          "C'est le plus grand musée de la ville.",
+          "C'est la plus belle plage de la région.",
+          "C'est le moins cher du magasin."
+        ],
+        "options": [
+          "Артикль (le / la / les) + plus / moins + прилагательное",
+          "Просто plus + прилагательное без артикля",
+          "Прилагательное с окончанием -est",
+          "très + прилагательное"
+        ],
+        "correctIndex": 0,
+        "explanation": "Превосходная степень обязательно с артиклем: le / la / les plus (или moins) + прилагательное."
+      },
+      {
+        "id": "sup-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь превосходную степень.",
+        "phrase": "C'est ___ belle ville de France.",
+        "options": ["la plus", "le plus", "plus", "la plus de"],
+        "correctIndex": 0,
+        "explanation": "ville — женский род → la plus belle ville. Артикль обязателен.",
+        "result": "C'est la plus belle ville de France."
+      },
+      {
+        "id": "sup-fix",
+        "kind": "fixCalque",
+        "prompt": "Почини: «лучший» — не «le plus bon».",
+        "phrase": "C'est le plus bon restaurant de la ville.",
+        "options": [
+          "C'est le meilleur restaurant de la ville.",
+          "C'est le plus meilleur restaurant de la ville.",
+          "C'est le plus bon restaurant de la ville.",
+          "C'est le mieux restaurant de la ville."
+        ],
+        "correctIndex": 0,
+        "explanation": "bon → meilleur и в превосходной: le meilleur restaurant.",
+        "result": "C'est le meilleur restaurant de la ville."
+      },
+      {
+        "id": "sup-scene",
+        "kind": "scene",
+        "prompt": "Сцена: boulangerie.",
+        "situation": "Ты хвалишь пекарню и говоришь, что у них лучший круассан в городе.",
+        "options": [
+          "C'est le meilleur croissant de la ville.",
+          "C'est le plus bon croissant de la ville.",
+          "C'est le meilleur croissant de la ville le plus.",
+          "C'est meilleur croissant de la ville."
+        ],
+        "correctIndex": 0,
+        "explanation": "le meilleur croissant — лучший; артикль обязателен."
+      },
+      {
+        "id": "sup-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Превосходная: артикль + plus / moins + прилагательное (le plus grand). bon → le meilleur.",
+          "Превосходная степень не требует артикля.",
+          "Превосходная образуется окончанием -est.",
+          "«Лучший» по-французски — le plus bon."
+        ],
+        "correctIndex": 0,
+        "explanation": "Артикль + plus + прилагательное, и исключение le meilleur."
+      }
+    ]
+  }
+]

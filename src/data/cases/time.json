@@ -1,0 +1,567 @@
+[
+  {
+    "id": "passe-imparfait",
+    "mechanism": "passe-compose",
+    "category": "time",
+    "title": "Камера прошлого: фон или щелчок",
+    "question": "j'étais fatigué (фон) vs je suis rentré (событие) — две камеры одного прошлого.",
+    "strangeness": "imparfait = фон, passé composé = щелчок",
+    "difficulty": "hard",
+    "scenes": ["ecole", "voisins", "cours"],
+    "insight": "imparfait — это фон и состояние, passé composé — щелчок камеры: событие случилось.",
+    "steps": [
+      {
+        "id": "pi-strange",
+        "kind": "strangeness",
+        "prompt": "Зачем в одной фразе два разных прошедших?",
+        "phrase": "J'étais fatigué, donc je suis rentré.",
+        "options": [
+          "Усталость — это фон (imparfait), возвращение — событие (passé composé)",
+          "Это ошибка, нужно одно время",
+          "Оба глагола в будущем",
+          "Разница только в вежливости"
+        ],
+        "correctIndex": 0,
+        "explanation": "j'étais fatigué — длящийся фон. je suis rentré — точечное событие на этом фоне."
+      },
+      {
+        "id": "pi-sort",
+        "kind": "sort",
+        "prompt": "Разложи по камерам: фон (imparfait) или событие (passé composé)?",
+        "baskets": [
+          {
+            "id": "fond",
+            "label": "фон / состояние — imparfait"
+          },
+          {
+            "id": "event",
+            "label": "событие / щелчок — passé composé"
+          }
+        ],
+        "items": [
+          {
+            "text": "J'étais fatigué.",
+            "basket": "fond"
+          },
+          {
+            "text": "Je suis rentré.",
+            "basket": "event"
+          },
+          {
+            "text": "Il faisait froid.",
+            "basket": "fond"
+          },
+          {
+            "text": "J'ai oublié mes clés.",
+            "basket": "event"
+          },
+          {
+            "text": "Quand j'étais petit...",
+            "basket": "fond"
+          }
+        ],
+        "explanation": "Длящееся, описательное → imparfait. Завершённое, одноразовое → passé composé."
+      },
+      {
+        "id": "pi-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "J'ai oublié mes clés.",
+        "tokens": [
+          {
+            "fr": "J'",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "ai oublié",
+            "ru": "забыл (событие)",
+            "role": "passé composé"
+          },
+          {
+            "fr": "mes clés",
+            "ru": "ключи",
+            "role": "что"
+          }
+        ],
+        "note": "passé composé = avoir/être + причастие. Щелчок: событие случилось."
+      },
+      {
+        "id": "pi-explain",
+        "kind": "explainError",
+        "prompt": "Почему «Hier, je mangeais une pizza et soudain le téléphone sonnait» звучит странно?",
+        "phrase": "...soudain le téléphone sonnait.",
+        "options": [
+          "Резкое событие «soudain» требует passé composé: a sonné",
+          "Нужно futur proche",
+          "Нужно убрать подлежащее",
+          "imparfait здесь идеален"
+        ],
+        "correctIndex": 0,
+        "explanation": "Внезапное событие — щелчок: le téléphone a sonné. imparfait sonnait дал бы «звонил фоном»."
+      },
+      {
+        "id": "pi-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "imparfait — фон и состояние, passé composé — событие-щелчок.",
+          "Оба времени означают одно и то же.",
+          "passé composé всегда про привычки.",
+          "imparfait используется только в вопросах."
+        ],
+        "correctIndex": 0,
+        "explanation": "Фон vs щелчок камеры."
+      }
+    ]
+  },
+  {
+    "id": "futur-proche",
+    "mechanism": "futur-proche",
+    "category": "time",
+    "title": "je vais faire — живое будущее",
+    "question": "Зачем сложное будущее, если есть простое aller + инфинитив?",
+    "strangeness": "je ferai → je vais faire",
+    "difficulty": "easy",
+    "scenes": ["telephone", "administration", "voisins"],
+    "insight": "futur proche = je vais + инфинитив. Самый живой и частотный способ говорить о будущем.",
+    "steps": [
+      {
+        "id": "fp-hypo",
+        "kind": "hypothesis",
+        "prompt": "Как устроено живое будущее?",
+        "clues": [
+          "Je vais le faire.",
+          "On va manger.",
+          "Je vais appeler l'école.",
+          "Tu vas adorer."
+        ],
+        "options": [
+          "aller (vais/va/vas) + инфинитив",
+          "Глагол в прошедшем времени",
+          "Это всегда движение «идти куда-то»",
+          "Это вопросы"
+        ],
+        "correctIndex": 0,
+        "explanation": "Спрягаем aller и добавляем инфинитив. je vais faire — «я сейчас/скоро сделаю»."
+      },
+      {
+        "id": "fp-build",
+        "kind": "build",
+        "prompt": "Собери: «Мне придётся отменить встречу».",
+        "translation": "Я собираюсь быть вынужденным отменить rendez-vous.",
+        "blocks": ["Je", "vais", "devoir", "annuler", "mon rendez-vous"],
+        "answer": ["Je", "vais", "devoir", "annuler", "mon rendez-vous"],
+        "explanation": "Je vais devoir annuler mon rendez-vous. Тут целая цепочка: futur proche + devoir + блок."
+      },
+      {
+        "id": "fp-mutate",
+        "kind": "mutation",
+        "prompt": "Мутация: «Мы сейчас поедим».",
+        "phrase": "Je vais le faire.",
+        "options": ["On va manger.", "Nous mangeons hier.", "On va mangé.", "On manger va."],
+        "correctIndex": 0,
+        "explanation": "on (разговорное «мы») + va + инфинитив: on va manger."
+      },
+      {
+        "id": "fp-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je vais appeler l'école.",
+        "tokens": [
+          {
+            "fr": "Je vais",
+            "ru": "я сейчас / я собираюсь",
+            "role": "aller (futur proche)"
+          },
+          {
+            "fr": "appeler",
+            "ru": "позвонить",
+            "role": "инфинитив"
+          },
+          {
+            "fr": "l'école",
+            "ru": "в школу",
+            "role": "куда / кому"
+          }
+        ],
+        "note": "futur proche = aller (vais/va/vas) + инфинитив. После vais — всегда инфинитив."
+      },
+      {
+        "id": "fp-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "futur proche = je vais + инфинитив — самое живое будущее.",
+          "futur proche — это прошедшее время.",
+          "После aller нужен спрягаемый глагол.",
+          "futur proche всегда означает физическое движение."
+        ],
+        "correctIndex": 0,
+        "explanation": "Будущее без боли."
+      }
+    ]
+  },
+  {
+    "id": "depuis-pendant",
+    "mechanism": "depuis",
+    "category": "time",
+    "title": "depuis / pendant / il y a — три способа про время",
+    "question": "С каких пор, как долго, как давно — три разных слова.",
+    "strangeness": "depuis = с тех пор · pendant = в течение · il y a = тому назад",
+    "difficulty": "medium",
+    "scenes": ["administration", "voisins", "cours"],
+    "insight": "depuis — с какого момента (и ещё длится), pendant — сколько длилось, il y a — как давно случилось.",
+    "steps": [
+      {
+        "id": "dep-hypo",
+        "kind": "hypothesis",
+        "prompt": "Чем эти слова отличаются?",
+        "clues": [
+          "J'habite ici depuis 2020.",
+          "J'ai travaillé pendant deux heures.",
+          "Je suis arrivé il y a trois jours."
+        ],
+        "options": [
+          "depuis — с какого момента, pendant — как долго, il y a — как давно",
+          "Это синонимы, разницы нет",
+          "Все три означают будущее",
+          "Все три — это предлоги места"
+        ],
+        "correctIndex": 0,
+        "explanation": "depuis = с момента и до сих пор; pendant = длительность; il y a = сколько времени назад."
+      },
+      {
+        "id": "dep-sort",
+        "kind": "sort",
+        "prompt": "Разложи по смыслу времени.",
+        "baskets": [
+          {
+            "id": "depuis",
+            "label": "с какого момента (depuis)"
+          },
+          {
+            "id": "pendant",
+            "label": "как долго (pendant)"
+          },
+          {
+            "id": "ilya",
+            "label": "как давно (il y a)"
+          }
+        ],
+        "items": [
+          {
+            "text": "depuis deux ans",
+            "basket": "depuis"
+          },
+          {
+            "text": "pendant une heure",
+            "basket": "pendant"
+          },
+          {
+            "text": "il y a trois jours",
+            "basket": "ilya"
+          },
+          {
+            "text": "depuis ce matin",
+            "basket": "depuis"
+          },
+          {
+            "text": "pendant les vacances",
+            "basket": "pendant"
+          }
+        ],
+        "explanation": "depuis смотрит из настоящего назад к началу; pendant — отрезок; il y a — точка в прошлом."
+      },
+      {
+        "id": "dep-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь слово: «Я учу французский уже шесть месяцев (и продолжаю)».",
+        "phrase": "J'apprends le français ___ six mois.",
+        "options": ["depuis", "pendant", "il y a", "dans"],
+        "correctIndex": 0,
+        "explanation": "Действие началось и ещё длится → depuis. J'apprends le français depuis six mois.",
+        "result": "J'apprends le français depuis six mois."
+      },
+      {
+        "id": "dep-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "J'habite ici depuis 2020.",
+        "tokens": [
+          {
+            "fr": "J'habite",
+            "ru": "я живу",
+            "role": "présent (длится)"
+          },
+          {
+            "fr": "ici",
+            "ru": "здесь",
+            "role": "где"
+          },
+          {
+            "fr": "depuis 2020",
+            "ru": "с 2020 года",
+            "role": "с какого момента (depuis)"
+          }
+        ],
+        "note": "depuis + начало действия, которое ещё длится → глагол в présent."
+      },
+      {
+        "id": "dep-own",
+        "kind": "ownPhrase",
+        "prompt": "Составь 3 фразы про себя через depuis (что длится до сих пор).",
+        "pattern": "___ depuis ___ .",
+        "examples": [
+          "J'apprends le français depuis six mois.",
+          "J'habite en France depuis deux ans.",
+          "Je travaille ici depuis janvier.",
+          "Je l'attends depuis vingt minutes.",
+          "Je connais Paul depuis longtemps.",
+          "Je suis là depuis ce matin.",
+          "Il pleut depuis hier."
+        ],
+        "minCount": 3
+      },
+      {
+        "id": "dep-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "depuis — с какого момента, pendant — как долго, il y a — как давно.",
+          "depuis и il y a — это одно и то же.",
+          "pendant означает «тому назад».",
+          "Все три слова требуют будущего времени."
+        ],
+        "correctIndex": 0,
+        "explanation": "Три разных кнопки для связи события со временем."
+      }
+    ]
+  },
+  {
+    "id": "recit-timeline",
+    "mechanism": "imparfait",
+    "category": "time",
+    "title": "Таймлайн рассказа: фон и щелчки",
+    "question": "Размечай историю: что длилось фоном, а что щёлкнуло как событие.",
+    "strangeness": "imparfait тянется, passé composé щёлкает",
+    "difficulty": "hard",
+    "scenes": ["voisins", "cours"],
+    "insight": "В рассказе imparfait рисует фон и привычку, а passé composé отмечает каждое событие-щелчок.",
+    "steps": [
+      {
+        "id": "rt-timeline1",
+        "kind": "timeline",
+        "prompt": "Размечь фразу: где фон (imparfait), а где щелчок (passé composé)?",
+        "segments": [
+          {
+            "text": "Quand j'étais petit",
+            "role": "fond"
+          },
+          {
+            "text": "j'habitais à Lyon",
+            "role": "fond"
+          },
+          {
+            "text": "puis on a déménagé",
+            "role": "event"
+          }
+        ],
+        "explanation": "«был маленьким» и «жил в Лионе» — длящийся фон (imparfait). «переехали» — событие-щелчок (passé composé)."
+      },
+      {
+        "id": "rt-code",
+        "kind": "code",
+        "prompt": "Вскрытие фона и щелчка.",
+        "phrase": "Il faisait froid, donc je suis rentré.",
+        "tokens": [
+          {
+            "fr": "Il faisait froid",
+            "ru": "было холодно (фон)",
+            "role": "imparfait"
+          },
+          {
+            "fr": "donc",
+            "ru": "поэтому",
+            "role": "связка"
+          },
+          {
+            "fr": "je suis rentré",
+            "ru": "я вернулся (событие)",
+            "role": "passé composé"
+          }
+        ],
+        "note": "Фон ставит сцену, щелчок двигает сюжет."
+      },
+      {
+        "id": "rt-timeline2",
+        "kind": "timeline",
+        "prompt": "Ещё раз: размечь рассказ.",
+        "segments": [
+          {
+            "text": "Je dormais",
+            "role": "fond"
+          },
+          {
+            "text": "quand le téléphone a sonné",
+            "role": "event"
+          }
+        ],
+        "explanation": "«спал» — фон (imparfait), «зазвонил телефон» — внезапный щелчок (passé composé)."
+      },
+      {
+        "id": "rt-scene",
+        "kind": "scene",
+        "prompt": "Сцена: рассказ соседям.",
+        "situation": "Ты описываешь вечер: шёл дождь (длящийся фон), и тут ты решил остаться дома (событие-щелчок).",
+        "options": [
+          "Il pleuvait, donc je suis resté à la maison.",
+          "Il a plu, donc je restais à la maison.",
+          "Il pleuvait, donc je restais à la maison.",
+          "Il a plu, donc je suis resté à la maison hier toujours."
+        ],
+        "correctIndex": 0,
+        "explanation": "Дождь — длящийся фон → imparfait (il pleuvait). Решение остаться — точечное событие → passé composé (je suis resté, с être и согласованием)."
+      },
+      {
+        "id": "rt-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "imparfait рисует фон/привычку, passé composé отмечает событие-щелчок.",
+          "Оба времени означают одно и то же.",
+          "passé composé всегда фон.",
+          "imparfait отмечает резкие события."
+        ],
+        "correctIndex": 0,
+        "explanation": "Фон vs щелчок — основа любого рассказа."
+      }
+    ]
+  },
+  {
+    "id": "microsignaux",
+    "mechanism": "microsignaux",
+    "category": "time",
+    "title": "déjà / encore / toujours / jamais",
+    "question": "Маленькие слова, которые сильно меняют смысл времени.",
+    "strangeness": "уже / ещё / всегда / никогда",
+    "difficulty": "medium",
+    "scenes": ["cafe", "cours", "voisins"],
+    "insight": "Микросигналы déjà (уже), encore (ещё/опять), toujours (всё ещё/всегда), jamais (никогда) меняют смысл фразы.",
+    "steps": [
+      {
+        "id": "ms-deja",
+        "kind": "cloze",
+        "prompt": "Вставь микросигнал: «Ты уже поел?»",
+        "phrase": "Tu as ___ mangé ?",
+        "options": ["déjà", "encore", "jamais", "toujours"],
+        "correctIndex": 0,
+        "explanation": "«уже» в этом месте → déjà. Tu as déjà mangé ?",
+        "result": "Tu as déjà mangé ?"
+      },
+      {
+        "id": "ms-jamais",
+        "kind": "cloze",
+        "prompt": "Вставь: «Я никогда этого не видел».",
+        "phrase": "Je n'ai ___ vu ça.",
+        "options": ["jamais", "déjà", "encore", "toujours"],
+        "correctIndex": 0,
+        "explanation": "«никогда» → ne … jamais. Je n'ai jamais vu ça.",
+        "result": "Je n'ai jamais vu ça."
+      },
+      {
+        "id": "ms-sort",
+        "kind": "sort",
+        "prompt": "Сопоставь микросигнал и смысл.",
+        "baskets": [
+          {
+            "id": "deja",
+            "label": "уже (déjà)"
+          },
+          {
+            "id": "encore",
+            "label": "ещё / опять (encore)"
+          },
+          {
+            "id": "jamais",
+            "label": "никогда (jamais)"
+          }
+        ],
+        "items": [
+          {
+            "text": "C'est déjà fini.",
+            "basket": "deja"
+          },
+          {
+            "text": "Encore une fois.",
+            "basket": "encore"
+          },
+          {
+            "text": "Je n'y vais jamais.",
+            "basket": "jamais"
+          },
+          {
+            "text": "Tu es déjà là ?",
+            "basket": "deja"
+          },
+          {
+            "text": "Il pleut encore.",
+            "basket": "encore"
+          }
+        ],
+        "explanation": "déjà — уже произошло; encore — ещё/снова; jamais — никогда (с ne)."
+      },
+      {
+        "id": "ms-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Tu as déjà mangé ?",
+        "tokens": [
+          {
+            "fr": "Tu as",
+            "ru": "ты (вспомог. avoir)",
+            "role": "passé composé"
+          },
+          {
+            "fr": "déjà",
+            "ru": "уже",
+            "role": "микросигнал (между avoir и причастием)"
+          },
+          {
+            "fr": "mangé",
+            "ru": "поел",
+            "role": "причастие"
+          }
+        ],
+        "note": "В passé composé микросигнал déjà встаёт между avoir и причастием: as déjà mangé."
+      },
+      {
+        "id": "ms-scene",
+        "kind": "scene",
+        "prompt": "Сцена: cafe.",
+        "situation": "Друг предлагает добавки, но ты сыт. Скажи: «Нет, спасибо, я уже поел».",
+        "options": [
+          "Non merci, j'ai déjà mangé.",
+          "Non merci, j'ai mangé jamais.",
+          "Non merci, je mange déjà.",
+          "Non merci, j'ai encore mangé jamais."
+        ],
+        "correctIndex": 0,
+        "explanation": "«уже поел» → passé composé с déjà между avoir и причастием: j'ai déjà mangé."
+      },
+      {
+        "id": "ms-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "déjà (уже), encore (ещё/опять), toujours (всё ещё/всегда), jamais (никогда) меняют смысл времени.",
+          "Эти слова ничего не меняют.",
+          "déjà значит «никогда».",
+          "jamais используется без ne."
+        ],
+        "correctIndex": 0,
+        "explanation": "Маленькие слова — большая разница."
+      }
+    ]
+  }
+]

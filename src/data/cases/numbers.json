@@ -1,0 +1,449 @@
+[
+  {
+    "id": "nombres",
+    "mechanism": "nombres",
+    "category": "numbers",
+    "title": "Числа: французская математика после 60",
+    "question": "Почему 80 — это quatre-vingts, «четыре двадцатки»?",
+    "strangeness": "70 = 60+10, 80 = 4×20, 90 = 4×20+10",
+    "difficulty": "medium",
+    "scenes": ["magasin", "transport", "cafe"],
+    "insight": "До 60 числа обычные. Дальше — счёт через 20: 70 = soixante-dix (60+10), 80 = quatre-vingts (4×20), 90 = quatre-vingt-dix.",
+    "steps": [
+      {
+        "id": "nb-strange",
+        "kind": "strangeness",
+        "prompt": "Что значит quatre-vingts?",
+        "phrase": "quatre-vingts",
+        "options": [
+          "80 — буквально «четыре двадцатки» (4 × 20)",
+          "24 — «четыре и двадцать»",
+          "420 — четыре, затем двадцать",
+          "Это «четверг» сокращённо"
+        ],
+        "correctIndex": 0,
+        "explanation": "vingt = 20, quatre-vingts = 4 × 20 = 80. Французы считают десятки через двадцатки."
+      },
+      {
+        "id": "nb-hypo",
+        "kind": "hypothesis",
+        "prompt": "Как устроены числа после 60?",
+        "clues": ["70 = soixante-dix", "80 = quatre-vingts", "90 = quatre-vingt-dix"],
+        "options": [
+          "Их строят сложением и умножением: 60+10, 4×20, 4×20+10",
+          "Для них есть отдельные простые слова",
+          "Это порядковые числительные",
+          "Они одинаковые во всех числах"
+        ],
+        "correctIndex": 0,
+        "explanation": "70 = 60+10 (soixante-dix), 80 = 4×20 (quatre-vingts), 90 = 4×20+10 (quatre-vingt-dix). Никаких septante/nonante в стандартном французском."
+      },
+      {
+        "id": "nb-cloze",
+        "kind": "cloze",
+        "prompt": "Собери число 75 = 60 + 15.",
+        "phrase": "75 = soixante-___",
+        "options": ["quinze", "dix-cinq", "cinq", "septante-cinq"],
+        "correctIndex": 0,
+        "explanation": "75 = 60 + 15 = soixante-quinze. (septante — это бельгийский/швейцарский вариант, не стандарт.)",
+        "result": "soixante-quinze"
+      },
+      {
+        "id": "nb-cloze2",
+        "kind": "cloze",
+        "prompt": "Собери число 90 = 4×20 + 10.",
+        "phrase": "90 = quatre-vingt-___",
+        "options": ["dix", "onze", "zéro", "nonante"],
+        "correctIndex": 0,
+        "explanation": "90 = 80 + 10 = quatre-vingt-dix. (nonante — швейцарский/бельгийский вариант.)",
+        "result": "quatre-vingt-dix"
+      },
+      {
+        "id": "nb-code",
+        "kind": "code",
+        "prompt": "Вскрытие числа 95.",
+        "phrase": "quatre-vingt-quinze",
+        "tokens": [
+          { "fr": "quatre-vingt", "ru": "4 × 20 = 80", "role": "основа" },
+          { "fr": "quinze", "ru": "15", "role": "прибавка" }
+        ],
+        "note": "80 = quatre-vingts (с s), но quatre-vingt-quinze / quatre-vingt-cinq — без s, когда дальше идёт число."
+      },
+      {
+        "id": "nb-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "После 60 — счёт через 20: 70=60+10, 80=4×20, 90=4×20+10.",
+          "Все числа во французском — отдельные простые слова.",
+          "quatre-vingts значит 24.",
+          "70 во Франции всегда говорят septante."
+        ],
+        "correctIndex": 0,
+        "explanation": "Это сбивает с толку только первые пару раз — потом считается само."
+      }
+    ]
+  },
+  {
+    "id": "lheure",
+    "mechanism": "lheure",
+    "category": "numbers",
+    "title": "Который час",
+    "question": "Как сказать «полвторого» и «без четверти восемь»?",
+    "strangeness": "et quart · et demie · moins le quart",
+    "difficulty": "easy",
+    "scenes": ["transport", "administration", "voisins"],
+    "insight": "Время: Il est … heures (+ et quart / et demie / moins le quart). midi — полдень, minuit — полночь.",
+    "steps": [
+      {
+        "id": "hr-hypo",
+        "kind": "hypothesis",
+        "prompt": "Как французы называют время?",
+        "clues": ["Il est trois heures.", "Il est midi.", "Il est sept heures et demie."],
+        "options": [
+          "Il est … heures для времени; midi/minuit — полдень/полночь",
+          "C'est … heures, всегда с c'est",
+          "Время выражают через avoir",
+          "Время — это всегда вопрос"
+        ],
+        "correctIndex": 0,
+        "explanation": "«Сейчас столько-то» — безличное Il est … heures. 12:00 = midi, 00:00 = minuit."
+      },
+      {
+        "id": "hr-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь начало: «Сейчас два часа».",
+        "phrase": "___ deux heures.",
+        "options": ["Il est", "C'est", "Il y a", "Il fait"],
+        "correctIndex": 0,
+        "explanation": "Время — безличное Il est: Il est deux heures.",
+        "result": "Il est deux heures."
+      },
+      {
+        "id": "hr-cloze2",
+        "kind": "cloze",
+        "prompt": "Вставь: «полчетвёртого» (3:30).",
+        "phrase": "Il est trois heures ___ .",
+        "options": ["et demie", "et trente", "moins demie", "demi-heure"],
+        "correctIndex": 0,
+        "explanation": "+30 минут → et demie (demie согласуется с heure). 3:15 → et quart, 2:45 → trois heures moins le quart.",
+        "result": "Il est trois heures et demie."
+      },
+      {
+        "id": "hr-code",
+        "kind": "code",
+        "prompt": "Вскрытие: 7:45.",
+        "phrase": "Il est huit heures moins le quart.",
+        "tokens": [
+          { "fr": "Il est", "ru": "сейчас", "role": "безличное время" },
+          { "fr": "huit heures", "ru": "восемь часов", "role": "час" },
+          { "fr": "moins le quart", "ru": "без четверти", "role": "−15 минут" }
+        ],
+        "note": "«без четверти восемь» = huit heures moins le quart = 7:45."
+      },
+      {
+        "id": "hr-scene",
+        "kind": "scene",
+        "prompt": "Сцена: transport.",
+        "situation": "Ты на остановке и хочешь узнать у прохожего, который час.",
+        "options": [
+          "Excusez-moi, vous avez l'heure ?",
+          "Quelle heure ?",
+          "Heure combien s'il vous plaît ?",
+          "Temps quel maintenant ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Естественно: «Excusez-moi, vous avez l'heure ?» (или «Quelle heure est-il ?»)."
+      },
+      {
+        "id": "hr-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Il est … heures (+ et quart / et demie / moins le quart); midi/minuit — полдень/полночь.",
+          "Время выражают через C'est.",
+          "et quart значит «полчаса».",
+          "midi — это полночь."
+        ],
+        "correctIndex": 0,
+        "explanation": "Четыре кнопки — и любое время названо."
+      }
+    ]
+  },
+  {
+    "id": "prix",
+    "mechanism": "prix",
+    "category": "numbers",
+    "title": "Цены: сколько это стоит?",
+    "question": "Как спросить цену и понять ответ?",
+    "strangeness": "c'est combien / ça fait combien",
+    "difficulty": "easy",
+    "scenes": ["magasin", "boulangerie", "cafe"],
+    "insight": "Спросить цену: C'est combien ? / Ça fait combien ? Ответ: Ça fait … euros.",
+    "steps": [
+      {
+        "id": "px-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что объединяет эти фразы?",
+        "clues": ["C'est combien ?", "Ça fait combien ?", "Ça coûte combien ?"],
+        "options": [
+          "Это разные способы спросить «сколько стоит?»",
+          "Это формы прошедшего времени",
+          "Это приветствия",
+          "combien означает «когда»"
+        ],
+        "correctIndex": 0,
+        "explanation": "combien = сколько. C'est combien ? / Ça fait combien ? / Ça coûte combien ? — все спрашивают цену."
+      },
+      {
+        "id": "px-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь слово: «Багет — сколько?»",
+        "phrase": "Une baguette, c'est ___ ?",
+        "options": ["combien", "quel prix", "combien de prix", "quoi"],
+        "correctIndex": 0,
+        "explanation": "«C'est combien ?» — стандартный вопрос о цене. Une baguette, c'est combien ?",
+        "result": "Une baguette, c'est combien ?"
+      },
+      {
+        "id": "px-scene",
+        "kind": "scene",
+        "prompt": "Сцена: boulangerie.",
+        "situation": "Ты хочешь узнать, сколько стоит круассан.",
+        "options": [
+          "C'est combien, le croissant ?",
+          "Combien argent le croissant ?",
+          "Le croissant prix ?",
+          "Quel est le montant exact du croissant ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Просто и естественно: «C'est combien, le croissant ?»"
+      },
+      {
+        "id": "px-code",
+        "kind": "code",
+        "prompt": "Вскрытие ответа.",
+        "phrase": "Ça fait cinq euros.",
+        "tokens": [
+          { "fr": "Ça fait", "ru": "получается / выходит", "role": "итог суммы" },
+          { "fr": "cinq euros", "ru": "пять евро", "role": "сумма" }
+        ],
+        "note": "На кассе цену называют через «Ça fait … euros»."
+      },
+      {
+        "id": "px-simpler",
+        "kind": "simpler",
+        "prompt": "Скажи проще (A1/A2): как спросить цену?",
+        "phrase": "Pourriez-vous m'indiquer le prix, s'il vous plaît ?",
+        "options": [
+          "C'est combien ?",
+          "Je requiers le prix immédiatement.",
+          "Prix combien donner ?",
+          "Le prix, est-ce que ça serait possible de savoir ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Короче и надёжнее: «C'est combien ?»"
+      },
+      {
+        "id": "px-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Спросить цену: C'est combien ? / Ça fait combien ? Ответ: Ça fait … euros.",
+          "Цену во Франции не спрашивают.",
+          "combien значит «когда».",
+          "Цену называют через il y a."
+        ],
+        "correctIndex": 0,
+        "explanation": "Две короткие фразы закрывают любую покупку."
+      }
+    ]
+  },
+  {
+    "id": "date",
+    "mechanism": "date",
+    "category": "numbers",
+    "title": "Дни, месяцы, даты",
+    "question": "Почему le 3 mai (число), но le premier mai (первое)?",
+    "strangeness": "le + число + месяц; только 1-е — le premier",
+    "difficulty": "easy",
+    "scenes": ["administration", "cours", "voisins"],
+    "insight": "Дата: le + число + месяц (le 3 mai). Только первое число — le premier. Дни и месяцы пишутся со строчной буквы.",
+    "steps": [
+      {
+        "id": "dt-hypo",
+        "kind": "hypothesis",
+        "prompt": "Как французы называют дату?",
+        "clues": ["lundi, mardi, mercredi", "janvier, février, mars", "le 5 mai"],
+        "options": [
+          "le + число + месяц; есть список дней и месяцев",
+          "Месяц + число без артикля",
+          "Дата всегда с заглавной буквы",
+          "Число всегда порядковое (третье, пятое)"
+        ],
+        "correctIndex": 0,
+        "explanation": "Дата собирается как le + обычное число + месяц: le 5 mai. Дни недели и месяцы — со строчной."
+      },
+      {
+        "id": "dt-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь: «1 мая».",
+        "phrase": "le ___ mai",
+        "options": ["premier", "un", "une", "first"],
+        "correctIndex": 0,
+        "explanation": "Только первое число — порядковое: le premier mai. (Остальные — обычные числа.)",
+        "result": "le premier mai"
+      },
+      {
+        "id": "dt-cloze2",
+        "kind": "cloze",
+        "prompt": "Вставь: «3 мая».",
+        "phrase": "le ___ mai",
+        "options": ["trois", "troisième", "trois de", "3-ème"],
+        "correctIndex": 0,
+        "explanation": "Со 2-го числа — обычное число: le trois mai (не «третье»).",
+        "result": "le trois mai"
+      },
+      {
+        "id": "dt-sort",
+        "kind": "sort",
+        "prompt": "Разложи: день недели или месяц?",
+        "baskets": [
+          { "id": "jour", "label": "день недели" },
+          { "id": "mois", "label": "месяц" }
+        ],
+        "items": [
+          { "text": "lundi", "basket": "jour" },
+          { "text": "mai", "basket": "mois" },
+          { "text": "vendredi", "basket": "jour" },
+          { "text": "août", "basket": "mois" },
+          { "text": "dimanche", "basket": "jour" },
+          { "text": "décembre", "basket": "mois" }
+        ],
+        "explanation": "Дни: lundi…dimanche. Месяцы: janvier…décembre. Все со строчной буквы."
+      },
+      {
+        "id": "dt-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "le premier mai",
+        "tokens": [
+          { "fr": "le", "ru": "(артикль даты)", "role": "перед числом" },
+          { "fr": "premier", "ru": "первое", "role": "единственное порядковое в датах" },
+          { "fr": "mai", "ru": "май", "role": "месяц со строчной буквы" }
+        ],
+        "note": "le premier (1-е) — порядковое; le deux, le trois… — обычные числа."
+      },
+      {
+        "id": "dt-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Дата: le + число + месяц (le 3 mai). Только 1-е — le premier. Дни/месяцы со строчной.",
+          "Дата — это месяц + число с заглавной буквы.",
+          "Все числа в датах порядковые.",
+          "Дни недели пишут с большой буквы."
+        ],
+        "correctIndex": 0,
+        "explanation": "Одна формула — и любая дата готова."
+      }
+    ]
+  },
+  {
+    "id": "quantites",
+    "mechanism": "quantites",
+    "category": "numbers",
+    "title": "Количество: un peu de, un kilo de",
+    "question": "Почему beaucoup DE pain, а не beaucoup du pain?",
+    "strangeness": "после количества — всегда de",
+    "difficulty": "medium",
+    "scenes": ["boulangerie", "magasin", "cafe"],
+    "insight": "После слов количества — всегда de (или d' перед гласной): un peu de, beaucoup de, un kilo de, une bouteille de. Не du/des.",
+    "steps": [
+      {
+        "id": "qt-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что общего у этих выражений?",
+        "clues": [
+          "un peu de pain",
+          "beaucoup de monde",
+          "un kilo de pommes",
+          "une bouteille d'eau"
+        ],
+        "options": [
+          "После количества идёт de (а не du/de la/des)",
+          "После количества идёт du",
+          "Количество требует артикля le",
+          "Это формы прошедшего времени"
+        ],
+        "correctIndex": 0,
+        "explanation": "un peu, beaucoup, un kilo, une bouteille — слова количества. После них всегда de: beaucoup de monde, un kilo de pommes."
+      },
+      {
+        "id": "qt-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь: «немного хлеба».",
+        "phrase": "un peu ___ pain",
+        "options": ["de", "du", "le", "des"],
+        "correctIndex": 0,
+        "explanation": "После количества → de: un peu de pain (не «du pain»).",
+        "result": "un peu de pain"
+      },
+      {
+        "id": "qt-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode.",
+        "buggy": "beaucoup du monde",
+        "bugReport": "du after a quantity word",
+        "options": [
+          "beaucoup de monde",
+          "beaucoup des monde",
+          "beaucoup le monde",
+          "beaucoup de la monde"
+        ],
+        "correctIndex": 0,
+        "fixNote": "after a quantity word → de",
+        "explanation": "После beaucoup — de, без артикля: beaucoup de monde («много народу»)."
+      },
+      {
+        "id": "qt-scene",
+        "kind": "scene",
+        "prompt": "Сцена: boulangerie.",
+        "situation": "Ты хочешь купить килограмм яблок на рынке.",
+        "options": [
+          "Un kilo de pommes, s'il vous plaît.",
+          "Un kilo des pommes, s'il vous plaît.",
+          "Un kilo pommes, s'il vous plaît.",
+          "Un kilo de les pommes, s'il vous plaît."
+        ],
+        "correctIndex": 0,
+        "explanation": "Мера + de + продукт: un kilo de pommes."
+      },
+      {
+        "id": "qt-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "une bouteille d'eau",
+        "tokens": [
+          { "fr": "une bouteille", "ru": "бутылка", "role": "мера количества" },
+          { "fr": "d'", "ru": "(de перед гласной)", "role": "de → d'" },
+          { "fr": "eau", "ru": "вода", "role": "что именно" }
+        ],
+        "note": "Количество + de; перед гласной de → d': une bouteille d'eau."
+      },
+      {
+        "id": "qt-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "После количества — всегда de: un peu de, beaucoup de, un kilo de, une bouteille de.",
+          "После количества ставят du / des.",
+          "Количество требует артикля le.",
+          "beaucoup употребляется без de."
+        ],
+        "correctIndex": 0,
+        "explanation": "Слово количества → de, и всё."
+      }
+    ]
+  }
+]

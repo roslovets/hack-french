@@ -1,0 +1,723 @@
+[
+  {
+    "id": "scene-cafe",
+    "mechanism": "voudrais",
+    "category": "scenes",
+    "title": "Сцена: заказ в кафе",
+    "question": "Проведи живой диалог в кафе от bonjour до bonne journée.",
+    "strangeness": "вежливый заказ как мини-квест",
+    "difficulty": "easy",
+    "scenes": ["cafe"],
+    "insight": "В кафе хватает каркаса: bonjour → je voudrais → s'il vous plaît → merci.",
+    "steps": [
+      {
+        "id": "cafe-dlg",
+        "kind": "dialogue",
+        "prompt": "Диалог-квест: ответь официанту на каждой реплике.",
+        "scene": "cafe",
+        "intro": "Ты заходишь в кафе. Официант подходит к столику.",
+        "turns": [
+          {
+            "npc": "Bonjour ! Qu'est-ce que je vous sers ?",
+            "npcRu": "Здравствуйте! Что вам подать?",
+            "options": [
+              "Bonjour ! Je voudrais un café, s'il vous plaît.",
+              "Café.",
+              "Je veux un café maintenant."
+            ],
+            "correctIndex": 0,
+            "explanation": "bonjour + je voudrais + s'il vous plaît — вежливо и естественно."
+          },
+          {
+            "npc": "Un café. Et avec ceci ?",
+            "npcRu": "Кофе. Что-нибудь ещё?",
+            "options": ["Ce sera tout, merci.", "Rien, donne.", "Fini café."],
+            "correctIndex": 0,
+            "explanation": "«Ce sera tout, merci» — «это всё, спасибо»."
+          },
+          {
+            "npc": "Très bien. Ça fait 2 euros.",
+            "npcRu": "Хорошо. С вас 2 евро.",
+            "options": ["Tenez. Bonne journée !", "Argent, voilà.", "Ok, bye."],
+            "correctIndex": 0,
+            "explanation": "«Tenez» (вот, держите) + bonne journée закрывают сцену."
+          }
+        ]
+      },
+      {
+        "id": "cafe-simpler",
+        "kind": "simpler",
+        "prompt": "Скажи проще (A1/A2): как попросить счёт?",
+        "phrase": "Serait-il possible d'avoir l'addition, s'il vous plaît ?",
+        "options": [
+          "L'addition, s'il vous plaît.",
+          "Je requiers l'addition immédiatement.",
+          "Addition donner moi.",
+          "Possible addition est-ce que serait ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Проще и надёжнее: «L'addition, s'il vous plaît.» Понятно и вежливо."
+      },
+      {
+        "id": "cafe-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je voudrais un café, s'il vous plaît.",
+        "tokens": [
+          {
+            "fr": "Je voudrais",
+            "ru": "я бы хотел",
+            "role": "вежливое желание (условное от vouloir)"
+          },
+          { "fr": "un café", "ru": "кофе", "role": "заказ" },
+          { "fr": "s'il vous plaît", "ru": "пожалуйста", "role": "вежливость" }
+        ],
+        "note": "je voudrais мягче, чем je veux."
+      },
+      {
+        "id": "cafe-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "В кафе хватает каркаса bonjour → je voudrais → s'il vous plaît → merci.",
+          "В кафе нужно говорить только сложными фразами.",
+          "Bonjour в кафе можно пропустить.",
+          "Счёт во Франции не просят."
+        ],
+        "correctIndex": 0,
+        "explanation": "Простой вежливый каркас работает везде."
+      }
+    ]
+  },
+  {
+    "id": "scene-medecin",
+    "mechanism": "avoir-mal",
+    "category": "scenes",
+    "title": "Сцена: у врача",
+    "question": "Опиши симптомы и пойми назначение.",
+    "strangeness": "avoir mal à + вежливые уточнения",
+    "difficulty": "medium",
+    "scenes": ["medecin", "pharmacie"],
+    "insight": "У врача: «j'ai mal à…» для симптома + вежливые уточнения про дозировку.",
+    "steps": [
+      {
+        "id": "med-dlg",
+        "kind": "dialogue",
+        "prompt": "Диалог-квест: ответь врачу.",
+        "scene": "medecin",
+        "intro": "Ты на приёме у врача.",
+        "turns": [
+          {
+            "npc": "Bonjour, qu'est-ce qui ne va pas ?",
+            "npcRu": "Здравствуйте, что вас беспокоит?",
+            "options": [
+              "J'ai mal à la gorge depuis deux jours.",
+              "Gorge mal moi.",
+              "Je suis malade de gorge."
+            ],
+            "correctIndex": 0,
+            "explanation": "avoir mal à + часть тела, плюс depuis для длительности."
+          },
+          {
+            "npc": "Vous avez de la fièvre ?",
+            "npcRu": "Температура есть?",
+            "options": [
+              "Oui, j'ai un peu de fièvre.",
+              "Oui, je suis fièvre.",
+              "Fièvre beaucoup oui."
+            ],
+            "correctIndex": 0,
+            "explanation": "Состояние через avoir: j'ai de la fièvre."
+          },
+          {
+            "npc": "Je vais vous prescrire un médicament.",
+            "npcRu": "Я выпишу вам лекарство.",
+            "options": [
+              "D'accord, merci. Combien de fois par jour ?",
+              "Quoi médicament ?",
+              "Ok médicament."
+            ],
+            "correctIndex": 0,
+            "explanation": "Уточнение дозировки: «Combien de fois par jour ?»"
+          }
+        ]
+      },
+      {
+        "id": "med-find",
+        "kind": "findMechanisms",
+        "prompt": "Какие механизмы спрятаны в этой фразе? Отметь все.",
+        "phrase": "Je vais prendre rendez-vous chez le spécialiste.",
+        "options": [
+          { "label": "futur proche (je vais)", "present": true },
+          { "label": "chez + специалист", "present": true },
+          { "label": "prendre rendez-vous (блок)", "present": true },
+          { "label": "passé composé", "present": false },
+          { "label": "местоимение en", "present": false }
+        ],
+        "explanation": "je vais (futur proche) + prendre rendez-vous (устойчивый блок) + chez le spécialiste (пространство человека)."
+      },
+      {
+        "id": "med-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "J'ai mal à la gorge depuis deux jours.",
+        "tokens": [
+          { "fr": "J'ai mal", "ru": "у меня болит", "role": "avoir mal = боль" },
+          { "fr": "à la gorge", "ru": "в горле", "role": "à + часть тела" },
+          { "fr": "depuis deux jours", "ru": "уже два дня", "role": "depuis = длительность" }
+        ],
+        "note": "avoir mal à + часть тела; depuis для «уже сколько-то времени»."
+      },
+      {
+        "id": "med-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "У врача: j'ai mal à… для симптома + вежливые уточнения про дозировку.",
+          "Симптом описывают через être.",
+          "Дозировку спрашивать не принято.",
+          "avoir mal à не используется с частями тела."
+        ],
+        "correctIndex": 0,
+        "explanation": "Боль через avoir mal à + чёткие уточнения."
+      }
+    ]
+  },
+  {
+    "id": "scene-magasin",
+    "mechanism": "je-peux",
+    "category": "scenes",
+    "title": "Сцена: в магазине одежды",
+    "question": "Спроси размер, выбери и оплати.",
+    "strangeness": "vous avez… ? + je peux payer par carte ?",
+    "difficulty": "easy",
+    "scenes": ["magasin"],
+    "insight": "В магазине: «Est-ce que vous avez…?» для наличия и «Je peux payer par carte ?» на кассе.",
+    "steps": [
+      {
+        "id": "mag-dlg",
+        "kind": "dialogue",
+        "prompt": "Диалог-квест: ответь продавцу.",
+        "scene": "magasin",
+        "intro": "Ты в магазине одежды, к тебе подходит продавец.",
+        "turns": [
+          {
+            "npc": "Bonjour, je peux vous aider ?",
+            "npcRu": "Здравствуйте, вам помочь?",
+            "options": [
+              "Oui, est-ce que vous avez une autre taille ?",
+              "Taille autre ?",
+              "Je veux une taille."
+            ],
+            "correctIndex": 0,
+            "explanation": "est-ce que vous avez…? — вежливый вопрос о наличии."
+          },
+          {
+            "npc": "Quelle taille cherchez-vous ?",
+            "npcRu": "Какой размер вы ищете?",
+            "options": ["Je cherche du M, s'il vous plaît.", "M moi.", "Donne M."],
+            "correctIndex": 0,
+            "explanation": "«Je cherche du M» — естественно про размер."
+          },
+          {
+            "npc": "Le voici. Vous payez comment ?",
+            "npcRu": "Вот, пожалуйста. Как будете платить?",
+            "options": ["Je peux payer par carte ?", "Carte.", "Argent non, carte."],
+            "correctIndex": 0,
+            "explanation": "Je peux payer par carte ? — вежливый вопрос-разрешение."
+          }
+        ]
+      },
+      {
+        "id": "mag-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Est-ce que vous avez une autre taille ?",
+        "tokens": [
+          { "fr": "Est-ce que", "ru": "разве / ли", "role": "маркер вопроса" },
+          { "fr": "vous avez", "ru": "у вас есть", "role": "avoir о наличии" },
+          { "fr": "une autre taille", "ru": "другой размер", "role": "объект запроса" }
+        ],
+        "note": "Est-ce que ставит вопрос без инверсии — самый простой способ."
+      },
+      {
+        "id": "mag-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь на кассе: «Я могу заплатить картой?»",
+        "phrase": "Je peux ___ par carte ?",
+        "options": ["payer", "paye", "payé", "payant"],
+        "correctIndex": 0,
+        "explanation": "После pouvoir идёт инфинитив: je peux payer. Je peux payer par carte ?",
+        "result": "Je peux payer par carte ?"
+      },
+      {
+        "id": "mag-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "В магазине: «Est-ce que vous avez…?» для наличия и «Je peux payer par carte ?» на кассе.",
+          "В магазине нельзя спрашивать про размер.",
+          "Оплату картой не уточняют.",
+          "Vous avez требует прошедшего времени."
+        ],
+        "correctIndex": 0,
+        "explanation": "Наличие → vous avez…?; оплата → je peux payer par carte ?"
+      }
+    ]
+  },
+  {
+    "id": "scene-boulangerie",
+    "mechanism": "en",
+    "category": "scenes",
+    "title": "Сцена: в булочной",
+    "question": "Купи багет и круассаны, спроси цену и уйди вежливо.",
+    "strangeness": "j'en prends deux — en заменяет «круассаны»",
+    "difficulty": "easy",
+    "scenes": ["boulangerie"],
+    "insight": "В булочной en заменяет уже названный товар: «j'en prends deux» = «возьму два (их)».",
+    "steps": [
+      {
+        "id": "boul-dlg",
+        "kind": "dialogue",
+        "prompt": "Диалог-квест: ответь продавщице в булочной.",
+        "scene": "boulangerie",
+        "intro": "Ты заходишь в булочную утром. За прилавком продавщица.",
+        "turns": [
+          {
+            "npc": "Bonjour ! Vous désirez ?",
+            "npcRu": "Здравствуйте! Что желаете?",
+            "options": [
+              "Bonjour ! Je voudrais une baguette, s'il vous plaît.",
+              "Baguette donne.",
+              "Je veux baguette une."
+            ],
+            "correctIndex": 0,
+            "explanation": "bonjour + je voudrais + une baguette + s'il vous plaît — вежливо и естественно."
+          },
+          {
+            "npc": "Une baguette. Et avec ceci ? Des croissants ?",
+            "npcRu": "Багет. Что-нибудь ещё? Круассаны?",
+            "options": [
+              "Oui, j'en prends deux, s'il vous plaît.",
+              "Oui, je prends deux croissant.",
+              "Oui, j'en prends deux croissants."
+            ],
+            "correctIndex": 0,
+            "explanation": "en заменяет «круассаны», поэтому само слово не повторяют: j'en prends deux."
+          },
+          {
+            "npc": "Très bien. Ça vous fera 3 euros 50.",
+            "npcRu": "Хорошо. С вас 3 евро 50.",
+            "options": ["Voilà. Merci, bonne journée !", "Argent voilà.", "Ok, merci bye."],
+            "correctIndex": 0,
+            "explanation": "«Voilà» при оплате + merci + bonne journée закрывают сцену."
+          }
+        ]
+      },
+      {
+        "id": "boul-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Oui, j'en prends deux, s'il vous plaît.",
+        "tokens": [
+          { "fr": "Oui", "ru": "да", "role": "согласие" },
+          { "fr": "j'en prends", "ru": "я их беру", "role": "en заменяет «круассаны»" },
+          { "fr": "deux", "ru": "два", "role": "количество" },
+          { "fr": "s'il vous plaît", "ru": "пожалуйста", "role": "вежливость" }
+        ],
+        "note": "При количестве товар не повторяют — его заменяет en перед глаголом."
+      },
+      {
+        "id": "boul-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь: «Да, возьму два (их)».",
+        "phrase": "Oui, j'___ prends deux.",
+        "options": ["en", "le", "les", "y"],
+        "correctIndex": 0,
+        "explanation": "en заменяет существительное с количеством: j'en prends deux = беру два (круассана).",
+        "result": "Oui, j'en prends deux."
+      },
+      {
+        "id": "boul-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Когда называешь количество, товар заменяет en: «j'en prends deux».",
+          "При количестве товар всегда повторяют полностью.",
+          "en заменяет только людей, не предметы.",
+          "en ставится после глагола: prends en deux."
+        ],
+        "correctIndex": 0,
+        "explanation": "en перед глаголом заменяет уже названный товар, особенно с числом."
+      }
+    ]
+  },
+  {
+    "id": "scene-ecole",
+    "mechanism": "secours",
+    "category": "scenes",
+    "title": "Сцена: отвести ребёнка в школу",
+    "question": "Отведи ребёнка, объясни, что чуть опоздал, и попроси повторить помедленнее.",
+    "strangeness": "фразы-выручалочки, когда не успел и не расслышал",
+    "difficulty": "medium",
+    "scenes": ["ecole", "creche"],
+    "insight": "Выручалочки на каждый день: «Excusez-moi du retard» и «Vous pouvez répéter plus lentement ?».",
+    "steps": [
+      {
+        "id": "ecole-dlg",
+        "kind": "dialogue",
+        "prompt": "Диалог-квест: ответь воспитательнице у школы.",
+        "scene": "ecole",
+        "intro": "Ты приводишь ребёнка в школу и немного опоздал. К тебе подходит воспитательница.",
+        "turns": [
+          {
+            "npc": "Bonjour ! Les enfants sont déjà en classe.",
+            "npcRu": "Здравствуйте! Дети уже в классе.",
+            "options": [
+              "Bonjour, excusez-moi du retard, on est un peu en retard.",
+              "Bonjour, désolé retard.",
+              "Bonjour, je suis en retard beaucoup pardon."
+            ],
+            "correctIndex": 0,
+            "explanation": "«Excusez-moi du retard» — стандартное вежливое извинение за опоздание."
+          },
+          {
+            "npc": "Ce n'est pas grave. N'oubliez pas le mot dans le cahier.",
+            "npcRu": "Ничего страшного. Не забудьте записку в тетради.",
+            "options": [
+              "Pardon, vous pouvez répéter plus lentement, s'il vous plaît ?",
+              "Répète encore vite.",
+              "Quoi ? Parle plus."
+            ],
+            "correctIndex": 0,
+            "explanation": "«Vous pouvez répéter plus lentement ?» — вежливая просьба повторить медленнее (vous)."
+          },
+          {
+            "npc": "Bien sûr. Il faut signer le mot dans le cahier.",
+            "npcRu": "Конечно. Нужно подписать записку в тетради.",
+            "options": [
+              "D'accord, merci beaucoup. Bonne journée !",
+              "Ok, compris, bye.",
+              "Oui oui, signer cahier."
+            ],
+            "correctIndex": 0,
+            "explanation": "«D'accord, merci beaucoup» + bonne journée закрывают разговор вежливо."
+          }
+        ]
+      },
+      {
+        "id": "ecole-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Pardon, vous pouvez répéter plus lentement, s'il vous plaît ?",
+        "tokens": [
+          { "fr": "Pardon", "ru": "извините", "role": "мягкое начало просьбы" },
+          { "fr": "vous pouvez", "ru": "вы можете", "role": "pouvoir (вежливое «вы»)" },
+          { "fr": "répéter", "ru": "повторить", "role": "инфинитив после pouvoir" },
+          { "fr": "plus lentement", "ru": "медленнее", "role": "plus + наречие" },
+          { "fr": "s'il vous plaît", "ru": "пожалуйста", "role": "вежливость" }
+        ],
+        "note": "После vous pouvez идёт инфинитив; «медленнее» = plus lentement."
+      },
+      {
+        "id": "ecole-mutation",
+        "kind": "mutation",
+        "prompt": "Мутация: попроси то же самое, но «погромче».",
+        "phrase": "Vous pouvez répéter plus lentement ?",
+        "options": [
+          "Vous pouvez répéter plus fort ?",
+          "Vous pouvez répétez plus fort ?",
+          "Vous pouvez répéter plus fortement ?",
+          "Vous pouvez répéter plus haut ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "После pouvoir — инфинитив répéter; «громче» о голосе — plus fort."
+      },
+      {
+        "id": "ecole-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Две выручалочки: «Excusez-moi du retard» и «Vous pouvez répéter plus lentement ?».",
+          "За опоздание во Франции не извиняются.",
+          "Просьбу повторить выражают через être.",
+          "После vous pouvez ставят глагол в настоящем времени."
+        ],
+        "correctIndex": 0,
+        "explanation": "Извинение за опоздание + вежливая просьба повторить медленнее выручают в любой ситуации."
+      }
+    ]
+  },
+  {
+    "id": "scene-administration",
+    "mechanism": "avoir-besoin",
+    "category": "scenes",
+    "title": "Сцена: в префектуре",
+    "question": "Объясни, что нужна справка, что у тебя запись и что не хватает документа.",
+    "strangeness": "avoir besoin de + нехватка документа",
+    "difficulty": "medium",
+    "scenes": ["administration"],
+    "insight": "В префектуре основа — «J'ai besoin de…» (мне нужно) и «J'ai rendez-vous» (у меня запись).",
+    "steps": [
+      {
+        "id": "admin-dlg",
+        "kind": "dialogue",
+        "prompt": "Диалог-квест: ответь сотруднику префектуры.",
+        "scene": "administration",
+        "intro": "Ты в префектуре у окошка. Сотрудник смотрит на тебя.",
+        "turns": [
+          {
+            "npc": "Bonjour, c'est à quel sujet ?",
+            "npcRu": "Здравствуйте, по какому вопросу?",
+            "options": [
+              "Bonjour, j'ai besoin d'une attestation, s'il vous plaît.",
+              "Bonjour, attestation moi besoin.",
+              "Bonjour, je besoin une attestation."
+            ],
+            "correctIndex": 0,
+            "explanation": "«J'ai besoin de» + élision перед гласной: d'une attestation."
+          },
+          {
+            "npc": "Vous avez un rendez-vous ?",
+            "npcRu": "У вас есть запись?",
+            "options": [
+              "Oui, j'ai rendez-vous à dix heures.",
+              "Oui, je suis rendez-vous.",
+              "Oui, j'ai un rendez à dix heures."
+            ],
+            "correctIndex": 0,
+            "explanation": "«avoir rendez-vous» — устойчивый блок; без артикля: j'ai rendez-vous."
+          },
+          {
+            "npc": "Il me manque un justificatif de domicile.",
+            "npcRu": "Мне не хватает подтверждения места жительства.",
+            "options": [
+              "Ah, il me manque un document. Je peux le rapporter demain ?",
+              "Document pas là. Demain ?",
+              "Je n'ai pas document, problème."
+            ],
+            "correctIndex": 0,
+            "explanation": "«Il me manque un document» — мне не хватает документа; вежливое уточнение про завтра."
+          }
+        ]
+      },
+      {
+        "id": "admin-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Bonjour, j'ai besoin d'une attestation, s'il vous plaît.",
+        "tokens": [
+          { "fr": "Bonjour", "ru": "здравствуйте", "role": "вежливое начало" },
+          { "fr": "j'ai besoin", "ru": "мне нужно", "role": "avoir besoin = потребность" },
+          { "fr": "d'une attestation", "ru": "справка", "role": "de → d' перед гласной" },
+          { "fr": "s'il vous plaît", "ru": "пожалуйста", "role": "вежливость" }
+        ],
+        "note": "avoir besoin de + предмет; de сливается в d' перед гласной."
+      },
+      {
+        "id": "admin-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь: «Мне нужна справка».",
+        "phrase": "J'ai besoin ___ attestation.",
+        "options": ["d'une", "de une", "d'un", "de la"],
+        "correctIndex": 0,
+        "explanation": "attestation — женского рода и с гласной: de + une → d'une attestation.",
+        "result": "J'ai besoin d'une attestation."
+      },
+      {
+        "id": "admin-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "В префектуре каркас — «J'ai besoin de…» и «J'ai rendez-vous».",
+          "Потребность выражают через je suis besoin.",
+          "Запись — это je suis rendez-vous.",
+          "После besoin артикль не меняется перед гласной."
+        ],
+        "correctIndex": 0,
+        "explanation": "Потребность через avoir besoin de, запись через avoir rendez-vous — основа любого визита."
+      }
+    ]
+  },
+  {
+    "id": "scene-telephone",
+    "mechanism": "voudrais",
+    "category": "scenes",
+    "title": "Сцена: перенести запись по телефону",
+    "question": "Позвони, чтобы перенести запись, попроси повторить и подтверди.",
+    "strangeness": "je voudrais déplacer + переспрос по телефону",
+    "difficulty": "medium",
+    "scenes": ["telephone"],
+    "insight": "По телефону: «Je voudrais déplacer mon rendez-vous» + переспрос «Vous pouvez répéter ?».",
+    "steps": [
+      {
+        "id": "tel-dlg",
+        "kind": "dialogue",
+        "prompt": "Диалог-квест: ответь по телефону.",
+        "scene": "telephone",
+        "intro": "Ты звонишь, чтобы перенести запись. На том конце отвечает секретарь.",
+        "turns": [
+          {
+            "npc": "Cabinet médical, bonjour, je vous écoute.",
+            "npcRu": "Медицинский кабинет, здравствуйте, слушаю вас.",
+            "options": [
+              "Bonjour, je voudrais déplacer mon rendez-vous, s'il vous plaît.",
+              "Bonjour, je veux changer rendez-vous.",
+              "Bonjour, déplacer rendez-vous moi."
+            ],
+            "correctIndex": 0,
+            "explanation": "«Je voudrais déplacer mon rendez-vous» — вежливо и по делу."
+          },
+          {
+            "npc": "Je peux vous proposer jeudi à quatorze heures.",
+            "npcRu": "Могу предложить вам четверг в четырнадцать часов.",
+            "options": [
+              "Pardon, vous pouvez répéter, s'il vous plaît ?",
+              "Quoi ? Encore dire.",
+              "Répète, j'entends pas."
+            ],
+            "correctIndex": 0,
+            "explanation": "«Vous pouvez répéter ?» — вежливый переспрос, особенно по телефону."
+          },
+          {
+            "npc": "Jeudi à quatorze heures, ça vous convient ?",
+            "npcRu": "Четверг в четырнадцать часов, вам подходит?",
+            "options": [
+              "Oui, c'est parfait. Merci beaucoup !",
+              "Oui ok bien.",
+              "Oui, je suis d'accord beaucoup."
+            ],
+            "correctIndex": 0,
+            "explanation": "«C'est parfait, merci beaucoup» подтверждает и закрывает звонок."
+          }
+        ]
+      },
+      {
+        "id": "tel-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je voudrais déplacer mon rendez-vous, s'il vous plaît.",
+        "tokens": [
+          { "fr": "Je voudrais", "ru": "я бы хотел", "role": "вежливое условное от vouloir" },
+          { "fr": "déplacer", "ru": "перенести", "role": "инфинитив после voudrais" },
+          { "fr": "mon rendez-vous", "ru": "мою запись", "role": "объект (mon — м.р.)" },
+          { "fr": "s'il vous plaît", "ru": "пожалуйста", "role": "вежливость" }
+        ],
+        "note": "После je voudrais идёт инфинитив: voudrais déplacer."
+      },
+      {
+        "id": "tel-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь: «Я бы хотел перенести мою запись».",
+        "phrase": "Je voudrais ___ mon rendez-vous.",
+        "options": ["déplacer", "déplace", "déplacé", "déplaçant"],
+        "correctIndex": 0,
+        "explanation": "После je voudrais всегда инфинитив: je voudrais déplacer.",
+        "result": "Je voudrais déplacer mon rendez-vous."
+      },
+      {
+        "id": "tel-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "По телефону: «Je voudrais déplacer…» + переспрос «Vous pouvez répéter ?».",
+          "После je voudrais ставят настоящее время.",
+          "По телефону переспрашивать невежливо.",
+          "Запись переносят через je suis déplacer."
+        ],
+        "correctIndex": 0,
+        "explanation": "Вежливая просьба voudrais + инфинитив и спокойный переспрос решают звонок."
+      }
+    ]
+  },
+  {
+    "id": "scene-transport",
+    "mechanism": "est-ce-que",
+    "category": "scenes",
+    "title": "Сцена: транспорт и билет",
+    "question": "Купи билет, спроси направление и пересадку, узнай, не опаздывает ли автобус.",
+    "strangeness": "Est-ce que…? для простых вопросов в транспорте",
+    "difficulty": "easy",
+    "scenes": ["transport"],
+    "insight": "В транспорте «Est-ce que…?» ставит вопрос без инверсии: про направление, пересадку и опоздание.",
+    "steps": [
+      {
+        "id": "trans-dlg",
+        "kind": "dialogue",
+        "prompt": "Диалог-квест: ответь в кассе и на остановке.",
+        "scene": "transport",
+        "intro": "Ты в транспортной кассе, потом на остановке. К тебе обращается сотрудник.",
+        "turns": [
+          {
+            "npc": "Bonjour, qu'est-ce qu'il vous faut ?",
+            "npcRu": "Здравствуйте, что вам нужно?",
+            "options": [
+              "Bonjour, je voudrais un ticket, s'il vous plaît.",
+              "Bonjour, ticket donne.",
+              "Bonjour, je veux ticket un."
+            ],
+            "correctIndex": 0,
+            "explanation": "bonjour + je voudrais un ticket + s'il vous plaît — вежливо и понятно."
+          },
+          {
+            "npc": "Voilà votre ticket. Bonne journée !",
+            "npcRu": "Вот ваш билет. Хорошего дня!",
+            "options": [
+              "Merci ! Est-ce qu'il faut changer pour aller au centre ?",
+              "Changer où centre ?",
+              "Est-ce que changer centre il faut ?"
+            ],
+            "correctIndex": 0,
+            "explanation": "«Est-ce qu'il faut changer ?» — вопрос про пересадку без инверсии; qu' перед il."
+          },
+          {
+            "npc": "Oui, changez à la station Bastille.",
+            "npcRu": "Да, пересаживайтесь на станции Бастилия.",
+            "options": [
+              "D'accord, merci. Est-ce que le bus est en retard ?",
+              "Bus retard est-ce que ?",
+              "Le bus est retard, oui ?"
+            ],
+            "correctIndex": 0,
+            "explanation": "«Est-ce que le bus est en retard ?» — естественный вопрос про опоздание."
+          }
+        ]
+      },
+      {
+        "id": "trans-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Est-ce que le bus est en retard ?",
+        "tokens": [
+          { "fr": "Est-ce que", "ru": "ли / разве", "role": "маркер вопроса без инверсии" },
+          { "fr": "le bus", "ru": "автобус", "role": "подлежащее" },
+          { "fr": "est en retard", "ru": "опаздывает", "role": "être en retard = опаздывать" }
+        ],
+        "note": "Est-ce que ставит вопрос без перестановки слов — самый простой способ."
+      },
+      {
+        "id": "trans-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь: «Нужно ли делать пересадку?»",
+        "phrase": "___ il faut changer ?",
+        "options": ["Est-ce qu'", "Est-ce que", "Est que", "Qu'est-ce"],
+        "correctIndex": 0,
+        "explanation": "Перед il (гласный звук) que → qu': est-ce qu'il faut changer ?",
+        "result": "Est-ce qu'il faut changer ?"
+      },
+      {
+        "id": "trans-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "«Est-ce que…?» ставит вопрос без инверсии; перед гласной — qu'.",
+          "Est-ce que требует перестановки подлежащего и глагола.",
+          "Опоздание выражают через avoir retard.",
+          "Est-ce que нельзя ставить в начале фразы."
+        ],
+        "correctIndex": 0,
+        "explanation": "Est-ce que — простой каркас вопроса; перед гласной que сливается в qu'."
+      }
+    ]
+  }
+]

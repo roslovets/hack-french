@@ -1,0 +1,262 @@
+/**
+ * Hack French domain model.
+ *
+ * Product entities (see docs): Mechanism, Case, Clue, Autopsy, Hack,
+ * Anti-hack, Scene, Mission, Insight. A case consists of ordered steps —
+ * each step implements one of the task mechanics.
+ */
+
+/** Task step type (mechanic). */
+export type TaskKind =
+  | 'strangeness' // 1. Find the oddity
+  | 'hypothesis' // 2. Pick a hypothesis
+  | 'code' // 3. Break down like code
+  | 'build' // 4. Build the phrase from blocks
+  | 'collapse' // 12. Collapse the phrase
+  | 'expand' // 13. Expand the phrase
+  | 'fixCalque' // 16. Fix the calque
+  | 'scene' // 30. Scene with a reaction choice
+  | 'mutation' // 10. Phrase mutation
+  | 'ownPhrase' // 34. Compose your own phrase from life
+  | 'catch' // 35. Catch it in real life
+  | 'insight' // 36. "Insight" card
+  | 'oddOneOut' // 7. Find the odd phrase out
+  | 'explainError' // 17. Explain the error
+  | 'cloze' // 23. Guess the missing mechanism
+  | 'sort' // 45. Sort into baskets
+  | 'order' // 33. Level of directness / register
+  | 'debug' // 18. French Debug Mode
+  | 'compare' // 19. Compare two phrases
+  | 'trap' // 44. Translator's trap (false friends)
+  | 'simpler' // 49. Say it simpler
+  | 'timeline' // 25. Event timeline: background or click
+  | 'dialogue' // 31. Dialogue quest
+  | 'findMechanisms'; // 46. Find mechanisms in a live phrase
+
+/** Case difficulty. */
+export type Difficulty = 'easy' | 'medium' | 'hard';
+
+interface BaseStep {
+  id: string;
+  kind: TaskKind;
+}
+
+/** Mechanic kinds that reduce to picking one correct option. */
+export type ChoiceKind =
+  | 'strangeness'
+  | 'hypothesis'
+  | 'expand'
+  | 'fixCalque'
+  | 'scene'
+  | 'mutation'
+  | 'oddOneOut'
+  | 'explainError'
+  | 'cloze'
+  | 'collapse'
+  | 'insight'
+  | 'compare'
+  | 'trap'
+  | 'simpler';
+
+/** A step with one correct answer out of several options. */
+export interface ChoiceStep extends BaseStep {
+  kind: ChoiceKind;
+  prompt: string;
+  /** The phrase under investigation (the clue). */
+  phrase?: string;
+  /** Two or more phrases to compare (the "compare two phrases" mechanic). */
+  phrases?: string[];
+  /** List of clues (for a hypothesis / mini-investigation). */
+  clues?: string[];
+  /** Description of an everyday situation (for a scene). */
+  situation?: string;
+  options: string[];
+  correctIndex: number;
+  explanation: string;
+  /** The full "correct" phrase shown after answering (collapse / cloze). */
+  result?: string;
+}
+
+/** A single "autopsy" block of a phrase. */
+export interface CodeToken {
+  fr: string;
+  ru: string;
+  role?: string;
+}
+
+/** Breaking a phrase down like code. */
+export interface CodeStep extends BaseStep {
+  kind: 'code';
+  prompt?: string;
+  phrase: string;
+  tokens: CodeToken[];
+  note?: string;
+}
+
+/** Building a phrase from blocks. */
+export interface BuildStep extends BaseStep {
+  kind: 'build';
+  prompt: string;
+  translation?: string;
+  blocks: string[];
+  answer: string[];
+  explanation?: string;
+}
+
+/** Compose your own phrase from life (free input). */
+export interface OwnPhraseStep extends BaseStep {
+  kind: 'ownPhrase';
+  prompt: string;
+  pattern: string;
+  examples: string[];
+  minCount: number;
+}
+
+/** Catch the mechanism in real life (a mission outside the app). */
+export interface CatchStep extends BaseStep {
+  kind: 'catch';
+  prompt: string;
+  targets: string[];
+  hint?: string;
+}
+
+export interface SortBasket {
+  id: string;
+  label: string;
+}
+
+export interface SortItem {
+  text: string;
+  basket: string;
+}
+
+/** Sorting phrases into mechanism baskets. */
+export interface SortStep extends BaseStep {
+  kind: 'sort';
+  prompt: string;
+  baskets: SortBasket[];
+  items: SortItem[];
+  explanation?: string;
+}
+
+/** Order phrases along a scale (directness / politeness). */
+export interface OrderStep extends BaseStep {
+  kind: 'order';
+  prompt: string;
+  scaleLow: string;
+  scaleHigh: string;
+  /** Already in the correct order (low to high); shuffled when shown. */
+  items: string[];
+  explanation?: string;
+}
+
+/** French Debug Mode — find and fix a bug in a phrase. */
+export interface DebugStep extends BaseStep {
+  kind: 'debug';
+  buggy: string;
+  bugReport: string;
+  prompt: string;
+  options: string[];
+  correctIndex: number;
+  fixNote: string;
+  explanation?: string;
+}
+
+/** Timeline segment: background (imparfait) or a "click" event (passé composé). */
+export interface TimelineSegment {
+  text: string;
+  role: 'fond' | 'event';
+}
+
+/** Event timeline — mark parts of a phrase as background or click. */
+export interface TimelineStep extends BaseStep {
+  kind: 'timeline';
+  prompt: string;
+  segments: TimelineSegment[];
+  explanation?: string;
+}
+
+/** A single turn of a dialogue quest. */
+export interface DialogueTurn {
+  npc: string;
+  npcRu?: string;
+  options: string[];
+  correctIndex: number;
+  explanation?: string;
+}
+
+/** Dialogue quest — a mini-dialogue of several turns. */
+export interface DialogueStep extends BaseStep {
+  kind: 'dialogue';
+  prompt: string;
+  scene?: string;
+  intro?: string;
+  turns: DialogueTurn[];
+  explanation?: string;
+}
+
+/** A candidate mechanism for the "find mechanisms in a live phrase" mechanic. */
+export interface MechanismTag {
+  label: string;
+  present: boolean;
+}
+
+/** Find mechanisms in a live phrase — select all the hidden mechanisms. */
+export interface FindMechanismsStep extends BaseStep {
+  kind: 'findMechanisms';
+  prompt: string;
+  phrase: string;
+  options: MechanismTag[];
+  explanation?: string;
+}
+
+export type TaskStep =
+  | ChoiceStep
+  | CodeStep
+  | BuildStep
+  | OwnPhraseStep
+  | CatchStep
+  | SortStep
+  | OrderStep
+  | DebugStep
+  | TimelineStep
+  | DialogueStep
+  | FindMechanismsStep;
+
+/** Mechanism — a specific French thing that gets hacked. */
+export interface Mechanism {
+  id: string;
+  token: string;
+  name: string;
+  blurb: string;
+}
+
+/** A section of the topic map (for grouping cases). */
+export interface Category {
+  id: string;
+  title: string;
+  subtitle: string;
+  order: number;
+}
+
+/** An everyday scene. */
+export interface Scene {
+  id: string;
+  name: string;
+  emoji: string;
+}
+
+/** Case — the investigation of a single mechanism. */
+export interface Case {
+  id: string;
+  mechanism: string;
+  category: string;
+  title: string;
+  question: string;
+  strangeness: string;
+  difficulty: Difficulty;
+  isBoss?: boolean;
+  scenes: string[];
+  steps: TaskStep[];
+  insight: string;
+}

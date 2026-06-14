@@ -1,0 +1,407 @@
+[
+  {
+    "id": "refl-base",
+    "mechanism": "refl-base",
+    "category": "reflexives",
+    "title": "je me lave — глагол, который делает сам себя",
+    "question": "Зачем во «je me lave» это лишнее me? По-русски просто «я моюсь».",
+    "strangeness": "я моюсь → je me lave",
+    "difficulty": "easy",
+    "scenes": ["creche", "medecin"],
+    "insight": "Возвратный глагол тащит местоимение перед собой: je me lave, tu te laves — действие направлено на самого себя.",
+    "steps": [
+      {
+        "id": "base-strange",
+        "kind": "strangeness",
+        "prompt": "Что делает me в этой фразе?",
+        "phrase": "Je me lave.",
+        "options": [
+          "Показывает, что действие направлено на самого себя («моюсь»)",
+          "Это сокращение от «moi»",
+          "Это отрицание",
+          "Это артикль"
+        ],
+        "correctIndex": 0,
+        "explanation": "me = «себя». Глагол как бы делает действие сам с собой: je me lave — я мою себя, моюсь."
+      },
+      {
+        "id": "base-hypo",
+        "kind": "hypothesis",
+        "prompt": "Как меняется возвратное местоимение?",
+        "clues": ["je me lave", "tu te laves", "il se lave", "nous nous lavons"],
+        "options": [
+          "Оно меняется вместе с подлежащим и стоит перед глаголом",
+          "Оно всегда se",
+          "Оно стоит после глагола",
+          "Оно не меняется"
+        ],
+        "correctIndex": 0,
+        "explanation": "me / te / se / nous / vous / se подстраиваются под подлежащее и стоят перед глаголом."
+      },
+      {
+        "id": "base-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je me lave les mains.",
+        "tokens": [
+          { "fr": "Je", "ru": "я", "role": "кто" },
+          { "fr": "me", "ru": "себе", "role": "возвратное местоимение" },
+          { "fr": "lave", "ru": "мою", "role": "глагол" },
+          { "fr": "les mains", "ru": "руки", "role": "что именно" }
+        ],
+        "note": "Буквально «я себе мою руки». Возвратное me стоит перед глаголом."
+      },
+      {
+        "id": "base-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь возвратное местоимение для tu.",
+        "phrase": "Tu ___ laves.",
+        "options": ["te", "se", "me", "vous"],
+        "correctIndex": 0,
+        "explanation": "Для tu возвратное местоимение — te: tu te laves.",
+        "result": "Tu te laves."
+      },
+      {
+        "id": "base-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Возвратный глагол тащит местоимение (me / te / se …) перед собой — действие на самого себя.",
+          "Возвратное местоимение всегда se.",
+          "Возвратное местоимение стоит после глагола.",
+          "me — это «мне» в смысле адресата."
+        ],
+        "correctIndex": 0,
+        "explanation": "me / te / se меняются с подлежащим и стоят перед глаголом."
+      }
+    ]
+  },
+  {
+    "id": "refl-appeler",
+    "mechanism": "refl-appeler",
+    "category": "reflexives",
+    "title": "Je m'appelle — «меня зовут» буквально «я себя зову»",
+    "question": "Почему самое первое знакомство строится через возвратный глагол?",
+    "strangeness": "меня зовут Анна → je m'appelle Anna",
+    "difficulty": "easy",
+    "scenes": ["cours", "administration"],
+    "insight": "s'appeler — возвратный: je m'appelle = «я себя зову» = «меня зовут». Перед гласной me → m'.",
+    "steps": [
+      {
+        "id": "appeler-strange",
+        "kind": "strangeness",
+        "prompt": "Что буквально значит Je m'appelle Paul?",
+        "phrase": "Je m'appelle Paul.",
+        "options": [
+          "«Я себя зову Поль» = «меня зовут Поль»",
+          "«Я звоню Полю»",
+          "«Мой телефон — Поль»",
+          "«Я зову Поля»"
+        ],
+        "correctIndex": 0,
+        "explanation": "appeler — «звать», s'appeler — «зваться». Je m'appelle = я себя зову = меня зовут."
+      },
+      {
+        "id": "appeler-hypo",
+        "kind": "hypothesis",
+        "prompt": "Как меняется s'appeler по лицам?",
+        "clues": ["Je m'appelle Anna.", "Tu t'appelles comment ?", "Il s'appelle Marc."],
+        "options": [
+          "Возвратное местоимение меняется: m' / t' / s' (перед гласной)",
+          "Оно всегда me",
+          "Глагол не возвратный",
+          "Местоимение стоит после глагола"
+        ],
+        "correctIndex": 0,
+        "explanation": "me/te/se перед гласной сокращаются: m'appelle, t'appelles, s'appelle."
+      },
+      {
+        "id": "appeler-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь возвратное местоимение.",
+        "phrase": "Elle ___ appelle Marie.",
+        "options": ["s'", "se", "m'", "t'"],
+        "correctIndex": 0,
+        "explanation": "Для elle — se, а перед гласной → s': elle s'appelle Marie.",
+        "result": "Elle s'appelle Marie."
+      },
+      {
+        "id": "appeler-dialogue",
+        "kind": "dialogue",
+        "prompt": "Диалог: первое знакомство на курсах.",
+        "scene": "cours",
+        "intro": "Сосед по парте поворачивается к тебе.",
+        "turns": [
+          {
+            "npc": "Bonjour ! Comment tu t'appelles ?",
+            "npcRu": "Привет! Как тебя зовут?",
+            "options": [
+              "Je m'appelle Anna.",
+              "Je appelle Anna.",
+              "Mon appelle Anna.",
+              "Je suis appelle Anna."
+            ],
+            "correctIndex": 0,
+            "explanation": "«Меня зовут Анна» → Je m'appelle Anna (возвратный, me → m' перед гласной)."
+          },
+          {
+            "npc": "Enchanté ! Et lui, comment il s'appelle ?",
+            "npcRu": "Приятно! А его как зовут?",
+            "options": [
+              "Il s'appelle Marc.",
+              "Il m'appelle Marc.",
+              "Il appelle Marc.",
+              "Il se appelle Marc."
+            ],
+            "correctIndex": 0,
+            "explanation": "Для il → se, перед гласной s': il s'appelle Marc."
+          }
+        ]
+      },
+      {
+        "id": "appeler-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "s'appeler — возвратный: je m'appelle = «меня зовут» (буквально «я себя зову»).",
+          "s'appeler значит «звонить по телефону».",
+          "«Меня зовут» переводится je suis appelé.",
+          "appeler никогда не бывает возвратным."
+        ],
+        "correctIndex": 0,
+        "explanation": "Знакомство во французском — через возвратный s'appeler."
+      }
+    ]
+  },
+  {
+    "id": "refl-routine",
+    "mechanism": "refl-routine",
+    "category": "reflexives",
+    "title": "Распорядок дня — почти всё возвратное",
+    "question": "Почему вставать, ложиться, одеваться по-французски — возвратные глаголы?",
+    "strangeness": "встаю → je me lève",
+    "difficulty": "medium",
+    "scenes": ["creche", "ecole"],
+    "insight": "Распорядок дня — сплошь возвратные: se lever, se coucher, se réveiller, s'habiller — действие над собой.",
+    "steps": [
+      {
+        "id": "routine-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что общего у глаголов распорядка дня?",
+        "clues": ["Je me lève à 7h.", "Il se couche tard.", "Nous nous habillons vite."],
+        "options": [
+          "Они возвратные: действие направлено на самого себя",
+          "Они все в прошедшем времени",
+          "Они не требуют подлежащего",
+          "Они никогда не меняются"
+        ],
+        "correctIndex": 0,
+        "explanation": "Вставать, ложиться, одеваться — действия над собой, поэтому se lever, se coucher, s'habiller. Местоимение меняется с лицом: nous nous habillons."
+      },
+      {
+        "id": "routine-build",
+        "kind": "build",
+        "prompt": "Собери: «Утром я встаю в семь часов».",
+        "translation": "Утром я встаю в семь часов.",
+        "blocks": ["Le matin", "je", "me", "lève", "à sept heures"],
+        "answer": ["Le matin", "je", "me", "lève", "à sept heures"],
+        "explanation": "se lever возвратный: je me lève. Возвратное me стоит перед глаголом."
+      },
+      {
+        "id": "routine-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь возвратное местоимение для nous.",
+        "phrase": "Nous ___ couchons tôt.",
+        "options": ["nous", "se", "me", "vous"],
+        "correctIndex": 0,
+        "explanation": "Для nous возвратное местоимение — тоже nous: nous nous couchons (подлежащее nous + возвратное nous).",
+        "result": "Nous nous couchons tôt."
+      },
+      {
+        "id": "routine-compare",
+        "kind": "compare",
+        "prompt": "Сравни. Что добавляет se во второй фразе?",
+        "phrases": ["Il lève la main.", "Il se lève."],
+        "options": [
+          "se lève = он встаёт (сам себя поднимает); lève la main = поднимает руку",
+          "Это одно и то же",
+          "se lève = поднимает кого-то другого",
+          "Вторая фраза неправильная"
+        ],
+        "correctIndex": 0,
+        "explanation": "Без se глагол действует на объект (lève la main — поднимает руку). С se — на себя (se lève — встаёт)."
+      },
+      {
+        "id": "routine-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Распорядок дня — сплошь возвратные: se lever, se coucher, se réveiller, s'habiller.",
+          "Глаголы распорядка дня не бывают возвратными.",
+          "se lever значит «поднимать предмет».",
+          "Для nous возвратное местоимение — se."
+        ],
+        "correctIndex": 0,
+        "explanation": "Рутина = действия над собой = возвратные глаголы."
+      }
+    ]
+  },
+  {
+    "id": "refl-passe",
+    "mechanism": "refl-passe",
+    "category": "reflexives",
+    "title": "Je me suis levé — возвратные в прошедшем с être",
+    "question": "Почему возвратные в passé composé идут с être, а не с avoir?",
+    "strangeness": "я встал → je me suis levé",
+    "difficulty": "hard",
+    "scenes": ["medecin", "telephone"],
+    "insight": "В passé composé все возвратные глаголы строятся с être, а причастие согласуется: je me suis levé(e), elle s'est couchée.",
+    "steps": [
+      {
+        "id": "passe-hypo",
+        "kind": "hypothesis",
+        "prompt": "Какой вспомогательный глагол берут возвратные в прошедшем?",
+        "clues": ["Je me suis levé.", "Elle s'est levée.", "Nous nous sommes couchés."],
+        "options": [
+          "être (suis, est, sommes…), и причастие согласуется",
+          "avoir (ai, a, avons…)",
+          "Никакой, глагол стоит один",
+          "И avoir, и être одновременно"
+        ],
+        "correctIndex": 0,
+        "explanation": "Возвратные всегда с être в passé composé. Причастие согласуется в роде и числе: levé / levée / levés."
+      },
+      {
+        "id": "passe-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь причастие. Речь о женщине.",
+        "phrase": "Elle s'est ___ tôt.",
+        "options": ["couchée", "couché", "couchés", "coucher"],
+        "correctIndex": 0,
+        "explanation": "С être причастие согласуется: для elle → couchée (женский род, +e).",
+        "result": "Elle s'est couchée tôt."
+      },
+      {
+        "id": "passe-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode.",
+        "buggy": "Elle a se levé à six heures.",
+        "bugReport": "reflexive verb built with avoir",
+        "options": [
+          "Elle s'est levée à six heures.",
+          "Elle a se levée à six heures.",
+          "Elle est se levé à six heures.",
+          "Elle s'a levée à six heures."
+        ],
+        "correctIndex": 0,
+        "fixNote": "reflexive → être + agreement",
+        "explanation": "Возвратный глагол в прошедшем — с être: elle s'est levée (и причастие согласовано в женском роде)."
+      },
+      {
+        "id": "passe-scene",
+        "kind": "scene",
+        "prompt": "Сцена: médecin.",
+        "situation": "Врач спрашивает, во сколько ты встал сегодня. Ты (мужчина) встал в 6 утра.",
+        "options": [
+          "Je me suis levé à six heures.",
+          "Je m'ai levé à six heures.",
+          "J'ai me levé à six heures.",
+          "Je me suis lever à six heures."
+        ],
+        "correctIndex": 0,
+        "explanation": "Возвратный + être: je me suis levé. (Мужской род — без -e на причастии.)"
+      },
+      {
+        "id": "passe-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "В passé composé возвратные — с être, причастие согласуется: je me suis levé(e).",
+          "Возвратные в прошедшем берут avoir.",
+          "Причастие возвратных никогда не меняется.",
+          "Возвратные не употребляются в прошедшем."
+        ],
+        "correctIndex": 0,
+        "explanation": "être + согласование причастия — закон для возвратных в прошедшем."
+      }
+    ]
+  },
+  {
+    "id": "refl-reciproque",
+    "mechanism": "refl-reciproque",
+    "category": "reflexives",
+    "title": "on se voit — «друг друга» и «так делается»",
+    "question": "Почему «увидимся» и «так говорят» оба строятся через se?",
+    "strangeness": "увидимся → on se voit",
+    "difficulty": "medium",
+    "scenes": ["cafe", "voisins"],
+    "insight": "se — это не только «себя»: on se voit (видимся = друг друга) и ça se dit (так говорят = так принято).",
+    "steps": [
+      {
+        "id": "recip-strange",
+        "kind": "strangeness",
+        "prompt": "Что значит se в этой фразе?",
+        "phrase": "On se voit demain.",
+        "options": [
+          "«Друг друга»: увидимся (мы видим друг друга)",
+          "«Себя»: видим самих себя",
+          "Это будущее время",
+          "Это отрицание"
+        ],
+        "correctIndex": 0,
+        "explanation": "Здесь se — взаимное действие: «видим друг друга». On se voit demain = увидимся завтра."
+      },
+      {
+        "id": "recip-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что общего у этих фраз?",
+        "clues": ["On se voit demain.", "Ils s'écrivent souvent.", "Nous nous comprenons bien."],
+        "options": [
+          "se = «друг друга» (взаимное действие)",
+          "se = «себя» в каждом случае",
+          "se здесь лишнее",
+          "se = «никогда»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Видеть друг друга, писать друг другу, понимать друг друга — взаимное se. Возможно только во множественном (on / ils / nous)."
+      },
+      {
+        "id": "recip-compare",
+        "kind": "compare",
+        "prompt": "Сравни. Что значит вторая фраза?",
+        "phrases": ["Il se regarde dans le miroir.", "Ils se regardent."],
+        "options": [
+          "«Они смотрят друг на друга» (взаимно)",
+          "«Они смотрят на себя» каждый в зеркало",
+          "«Он смотрит на них»",
+          "То же самое, что и первая"
+        ],
+        "correctIndex": 0,
+        "explanation": "Первая — на себя (в зеркало). Вторая — друг на друга. Множественное подлежащее открывает взаимное значение."
+      },
+      {
+        "id": "recip-cloze",
+        "kind": "cloze",
+        "prompt": "«Так говорят / так принято». Вставь местоимение.",
+        "phrase": "— On peut dire ça ? — Oui, ça ___ dit.",
+        "options": ["se", "te", "me", "nous"],
+        "correctIndex": 0,
+        "explanation": "ça se dit = «так говорят / так принято». Ещё одно значение se — «так делается»: ça se mange, ça se fait.",
+        "result": "Oui, ça se dit."
+      },
+      {
+        "id": "recip-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "se — это ещё «друг друга» (on se voit) и «так делается» (ça se dit).",
+          "se всегда значит только «себя».",
+          "on se voit значит «вижу себя».",
+          "ça se dit значит «это сказано мной»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Три значения se: себя, друг друга, безличное «так делается»."
+      }
+    ]
+  }
+]

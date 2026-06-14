@@ -1,0 +1,417 @@
+[
+  {
+    "id": "un-une",
+    "mechanism": "un-une",
+    "category": "articles",
+    "title": "un / une — объект впервые входит в кадр",
+    "question": "Почему j'ai une question, а не просто j'ai question?",
+    "strangeness": "j'ai question → j'ai une question",
+    "difficulty": "easy",
+    "scenes": ["cours", "administration", "magasin"],
+    "insight": "un / une включают камеру «новый объект»: он впервые появляется в разговоре.",
+    "steps": [
+      {
+        "id": "un-camera",
+        "kind": "strangeness",
+        "prompt": "Камера языка. Что делает un в этой фразе?",
+        "phrase": "J'ai acheté un livre.",
+        "options": [
+          "Вводит новый объект, которого ещё не было в разговоре",
+          "Показывает, что книга уже известна",
+          "Означает «весь класс книг вообще»",
+          "Это сокращение от une"
+        ],
+        "correctIndex": 0,
+        "explanation": "un / une — режим «первое появление». Объект новый, неопределённый, входит в кадр."
+      },
+      {
+        "id": "un-fix",
+        "kind": "fixCalque",
+        "prompt": "Русский мозг выбросил артикль. Почини.",
+        "phrase": "J'ai question.",
+        "options": [
+          "J'ai une question.",
+          "J'ai la question.",
+          "J'ai de la question.",
+          "J'ai des question."
+        ],
+        "correctIndex": 0,
+        "explanation": "Новый, впервые названный объект — une question. Голым существительное стоять не может.",
+        "result": "J'ai une question."
+      },
+      {
+        "id": "un-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "C'est une bonne idée.",
+        "tokens": [
+          { "fr": "C'est", "ru": "это есть", "role": "c'est" },
+          { "fr": "une", "ru": "(новая) одна", "role": "камера: новый объект" },
+          { "fr": "bonne idée", "ru": "хорошая идея", "role": "что именно" }
+        ],
+        "note": "Даже к идее нужен артикль: «c'est bonne idée» — нельзя."
+      },
+      {
+        "id": "un-scene",
+        "kind": "scene",
+        "prompt": "Сцена: cours de français.",
+        "situation": "Ты хочешь сказать преподавателю, что у тебя есть вопрос. Первый раз вводишь этот «вопрос» в разговор.",
+        "options": [
+          "J'ai une question.",
+          "J'ai la question.",
+          "J'ai question.",
+          "J'ai des questions une."
+        ],
+        "correctIndex": 0,
+        "explanation": "Новый объект → un / une. J'ai une question."
+      },
+      {
+        "id": "un-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "un / une — камера «новый объект впервые в кадре».",
+          "un / une означают «весь класс предметов».",
+          "un / une ставятся только после глагола être.",
+          "un / une — это формы множественного числа."
+        ],
+        "correctIndex": 0,
+        "explanation": "Первое появление объекта — почти всегда un / une."
+      }
+    ]
+  },
+  {
+    "id": "le-la-les",
+    "mechanism": "le-la-les",
+    "category": "articles",
+    "title": "le / la / les — известный объект или категория",
+    "question": "Почему le livre est sur la table, если по-русски артиклей нет вообще?",
+    "strangeness": "le / la / les — «уже известно» или «вообще»",
+    "difficulty": "easy",
+    "scenes": ["cafe", "magasin"],
+    "insight": "le / la / les наводят камеру на уже известный объект или на категорию целиком.",
+    "steps": [
+      {
+        "id": "le-hypo",
+        "kind": "hypothesis",
+        "prompt": "Сравни улики. Когда появляется le / la / les?",
+        "clues": ["Le livre est sur la table.", "J'aime le café.", "Les enfants dorment."],
+        "options": [
+          "Когда объект уже известен или речь о категории в целом",
+          "Когда объект новый и неопределённый",
+          "Только в вопросах",
+          "Только в прошедшем времени"
+        ],
+        "correctIndex": 0,
+        "explanation": "le / la / les = «эта конкретная вещь, о которой мы знаем» или «весь класс»: j'aime le café — кофе как категория."
+      },
+      {
+        "id": "le-camera-sort",
+        "kind": "sort",
+        "prompt": "Разложи по камерам: новый объект (un) или известный / категория (le)?",
+        "baskets": [
+          { "id": "new", "label": "un / une — новый объект" },
+          { "id": "known", "label": "le / la / les — известный / категория" }
+        ],
+        "items": [
+          { "text": "J'ai acheté un livre.", "basket": "new" },
+          { "text": "Le livre est sur la table.", "basket": "known" },
+          { "text": "J'aime le café.", "basket": "known" },
+          { "text": "Il y a un problème.", "basket": "new" },
+          { "text": "Les enfants dorment.", "basket": "known" }
+        ],
+        "explanation": "un — первое появление; le — уже известно или категория целиком."
+      },
+      {
+        "id": "le-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "J'aime le café.",
+        "tokens": [
+          { "fr": "J'", "ru": "я", "role": "кто" },
+          { "fr": "aime", "ru": "люблю", "role": "что делаю" },
+          { "fr": "le café", "ru": "кофе (как категорию)", "role": "камера: категория" }
+        ],
+        "note": "Люблю не «порцию кофе», а кофе вообще → le."
+      },
+      {
+        "id": "le-scene",
+        "kind": "scene",
+        "prompt": "Сцена: разговор о вкусах в кафе.",
+        "situation": "Тебя спрашивают, что ты любишь. Ты говоришь о кофе как о категории целиком — что тебе нравится кофе вообще.",
+        "options": ["J'aime le café.", "J'aime un café.", "J'aime du café.", "J'aime café."],
+        "correctIndex": 0,
+        "explanation": "Любишь кофе как категорию → le café. (du café было бы про порцию, un café — про одну чашку.)"
+      },
+      {
+        "id": "le-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "le / la / les — это «уже известно» или «категория целиком».",
+          "le / la / les всегда вводят новый объект.",
+          "le / la / les ставятся только во множественном числе.",
+          "le / la / les означают количество."
+        ],
+        "correctIndex": 0,
+        "explanation": "Камера наведена на известное или общее."
+      }
+    ]
+  },
+  {
+    "id": "du",
+    "mechanism": "du",
+    "category": "articles",
+    "title": "du / de la / des — порция и неопределённое количество",
+    "question": "Почему je veux du café, если это просто «кофе»?",
+    "strangeness": "je veux café → je veux du café",
+    "difficulty": "medium",
+    "scenes": ["cafe", "boulangerie"],
+    "insight": "du / de la / des включают режим «порция / некоторое количество», а не весь объект.",
+    "steps": [
+      {
+        "id": "du-strange",
+        "kind": "strangeness",
+        "prompt": "Что добавляет du?",
+        "phrase": "Je veux du café.",
+        "options": [
+          "«Некоторое количество кофе», а не весь кофе мира",
+          "Это прошедшее время",
+          "Du означает «мой»",
+          "Это вопрос"
+        ],
+        "correctIndex": 0,
+        "explanation": "du = de + le, режим «порция / масса». Хочу не всё, а немного — du café."
+      },
+      {
+        "id": "du-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je mange du pain.",
+        "tokens": [
+          { "fr": "Je", "ru": "я", "role": "кто" },
+          { "fr": "mange", "ru": "ем", "role": "что делаю" },
+          { "fr": "du pain", "ru": "(немного) хлеба", "role": "камера: порция" }
+        ],
+        "note": "du pain — кусок/некоторое количество хлеба, не «весь хлеб»."
+      },
+      {
+        "id": "du-fix",
+        "kind": "fixCalque",
+        "prompt": "Почини кальку.",
+        "phrase": "Je veux café.",
+        "options": [
+          "Je veux du café.",
+          "Je veux le café.",
+          "Je veux un café entier.",
+          "Je veux de café."
+        ],
+        "correctIndex": 0,
+        "explanation": "Хочешь порцию → du café. (le café было бы «люблю кофе вообще».)",
+        "result": "Je veux du café."
+      },
+      {
+        "id": "du-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь правильный артикль воды.",
+        "phrase": "Je voudrais ___ eau, s'il vous plaît.",
+        "options": ["de l'", "le", "un", "des"],
+        "correctIndex": 0,
+        "explanation": "Вода — масса, перед гласной de la → de l'. Je voudrais de l'eau.",
+        "result": "Je voudrais de l'eau, s'il vous plaît."
+      },
+      {
+        "id": "du-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "du / de la / des — это режим «порция / некоторое количество».",
+          "du / de la / des означают «весь объект».",
+          "du / de la / des используются только во множественном числе.",
+          "du / de la / des — формы прошедшего времени."
+        ],
+        "correctIndex": 0,
+        "explanation": "Камера берёт кусочек массы."
+      }
+    ]
+  },
+  {
+    "id": "camera-categorie-portion",
+    "mechanism": "camera",
+    "category": "articles",
+    "title": "j'aime le café, но je veux du café",
+    "question": "Одно слово «кофе» — две разные камеры. В чём разница?",
+    "strangeness": "люблю категорию — хочу порцию",
+    "difficulty": "medium",
+    "scenes": ["cafe", "boulangerie"],
+    "insight": "Люблю категорию (le), хочу порцию (du). Глагол подсказывает камеру.",
+    "steps": [
+      {
+        "id": "cam-compare",
+        "kind": "oddOneOut",
+        "prompt": "Где речь о категории целиком, а где о порции? Найди «порцию».",
+        "options": [
+          "J'aime le fromage.",
+          "Je déteste les tomates.",
+          "J'adore le chocolat.",
+          "Je mange du pain."
+        ],
+        "correctIndex": 3,
+        "explanation": "aimer / détester / adorer → категория (le, les). А manger / vouloir → порция (du). Je mange du pain выбивается."
+      },
+      {
+        "id": "cam-sort",
+        "kind": "sort",
+        "prompt": "Разложи фразы по камерам.",
+        "baskets": [
+          { "id": "cat", "label": "категория (le / la / les)" },
+          { "id": "portion", "label": "порция / количество (du / de la / des)" }
+        ],
+        "items": [
+          { "text": "J'aime le fromage.", "basket": "cat" },
+          { "text": "Je veux du fromage.", "basket": "portion" },
+          { "text": "Je mange du pain.", "basket": "portion" },
+          { "text": "Je déteste les tomates.", "basket": "cat" },
+          { "text": "Je voudrais de la soupe.", "basket": "portion" }
+        ],
+        "explanation": "Чувство (любить/ненавидеть) → категория. Действие с веществом (есть/хотеть) → порция."
+      },
+      {
+        "id": "cam-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je mange du pain.",
+        "tokens": [
+          { "fr": "Je", "ru": "я", "role": "кто" },
+          { "fr": "mange", "ru": "ем", "role": "действие с веществом → порция" },
+          { "fr": "du pain", "ru": "(немного) хлеба", "role": "камера: порция (de + le)" }
+        ],
+        "note": "manger тянет порцию: du pain, а не le pain. du = de + le."
+      },
+      {
+        "id": "cam-scene",
+        "kind": "scene",
+        "prompt": "Сцена: завтрак в boulangerie.",
+        "situation": "Ты не объясняешь, что любишь хлеб вообще, — ты прямо сейчас ешь немного хлеба. Как сказать?",
+        "options": [
+          "Je mange du pain.",
+          "Je mange le pain.",
+          "Je mange un pain.",
+          "Je mange de pain."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ешь некоторое количество → du pain. (le pain — хлеб как категория; un pain — целый батон.)"
+      },
+      {
+        "id": "cam-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Люблю категорию (le), хочу порцию (du). Глагол подсказывает камеру.",
+          "le и du — это одно и то же, разницы нет.",
+          "После всех глаголов идёт du.",
+          "Категория всегда требует un."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ключевой инсайт для еды и кафе."
+      }
+    ]
+  },
+  {
+    "id": "pas-de",
+    "mechanism": "pas-de",
+    "category": "articles",
+    "title": "Почему после отрицания появляется de?",
+    "question": "J'ai une voiture, но je n'ai pas de voiture — куда делся артикль?",
+    "strangeness": "une voiture → pas de voiture",
+    "difficulty": "medium",
+    "scenes": ["administration", "magasin"],
+    "insight": "После отрицания неопределённый объект схлопывается в de: pas de voiture.",
+    "steps": [
+      {
+        "id": "pasde-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что происходит при отрицании?",
+        "clues": [
+          "J'ai une voiture. → Je n'ai pas de voiture.",
+          "Je veux du café. → Je ne veux pas de café.",
+          "Il y a des places. → Il n'y a pas de places."
+        ],
+        "options": [
+          "Неопределённый артикль (un/du/des) превращается в de",
+          "Артикль становится le",
+          "Объект полностью исчезает без замены",
+          "Появляется местоимение en"
+        ],
+        "correctIndex": 0,
+        "explanation": "Камера: при отрицании неопределённый объект исчезает из кадра и сворачивается в de."
+      },
+      {
+        "id": "pasde-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode.",
+        "buggy": "Je n'ai pas une voiture.",
+        "bugReport": "indefinite article kept after negation",
+        "options": [
+          "Je n'ai pas de voiture.",
+          "Je n'ai pas la voiture.",
+          "Je ne ai pas voiture.",
+          "Je n'ai de pas voiture."
+        ],
+        "correctIndex": 0,
+        "fixNote": "une → de after a negation",
+        "explanation": "После pas неопределённый артикль → de: je n'ai pas de voiture."
+      },
+      {
+        "id": "pasde-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь правильную форму.",
+        "phrase": "Désolé, il n'y a pas ___ places.",
+        "options": ["de", "des", "les", "du"],
+        "correctIndex": 0,
+        "explanation": "Отрицание + неопределённое → de. Il n'y a pas de places.",
+        "result": "Il n'y a pas de places."
+      },
+      {
+        "id": "pasde-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je n'ai pas de voiture.",
+        "tokens": [
+          { "fr": "Je n'", "ru": "я не", "role": "начало отрицания (ne → n')" },
+          { "fr": "ai", "ru": "имею", "role": "avoir" },
+          { "fr": "pas", "ru": "не", "role": "вторая часть отрицания" },
+          { "fr": "de voiture", "ru": "машины", "role": "une → de после отрицания" }
+        ],
+        "note": "ne перед гласной → n'. Утвердительное une voiture при отрицании сворачивается в de voiture."
+      },
+      {
+        "id": "pasde-scene",
+        "kind": "scene",
+        "prompt": "Сцена: administration.",
+        "situation": "В окне тебя спрашивают, есть ли у тебя машина. Машины у тебя нет. Как ответить?",
+        "options": [
+          "Je n'ai pas de voiture.",
+          "Je n'ai pas une voiture.",
+          "Je n'ai pas la voiture.",
+          "Je ne ai pas de voiture."
+        ],
+        "correctIndex": 0,
+        "explanation": "После отрицания une → de: je n'ai pas de voiture. (И ne перед гласной даёт n'ai, а не ne ai.)"
+      },
+      {
+        "id": "pasde-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "После отрицания неопределённый объект схлопывается в de.",
+          "После отрицания всегда ставится le.",
+          "Отрицание не влияет на артикли.",
+          "После pas артикль удваивается."
+        ],
+        "correctIndex": 0,
+        "explanation": "Pas de — устойчивый сдвиг камеры."
+      }
+    ]
+  }
+]

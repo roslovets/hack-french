@@ -1,0 +1,506 @@
+[
+  {
+    "id": "boss-ecole",
+    "mechanism": "secours",
+    "category": "boss",
+    "title": "БОСС: звонок в школу — ребёнок заболел",
+    "question": "Объедини несколько механизмов в одном телефонном разговоре.",
+    "strangeness": "il faut + avoir + спасатели + chez в одной сцене",
+    "difficulty": "hard",
+    "isBoss": true,
+    "scenes": ["telephone", "ecole", "medecin"],
+    "insight": "Босс-файт проверяет не правило, а способность действовать: собери механизмы в живой разговор.",
+    "steps": [
+      {
+        "id": "boss1-greet",
+        "kind": "scene",
+        "prompt": "Реплика 1. Ты звонишь в школу. Секретарь снимает трубку.",
+        "situation": "Téléphone. Нужно поздороваться и представиться родителем.",
+        "options": [
+          "Bonjour, je suis le père de Léo.",
+          "Léo père moi.",
+          "C'est moi, école ?",
+          "Allô donne Léo."
+        ],
+        "correctIndex": 0,
+        "explanation": "Сначала bonjour — социальный протокол. Затем je suis le père de… (роль через être)."
+      },
+      {
+        "id": "boss2-state",
+        "kind": "scene",
+        "prompt": "Реплика 2. Объясни, что у ребёнка температура.",
+        "situation": "Нужно сказать «У моего сына температура» через avoir.",
+        "options": [
+          "Mon fils a de la fièvre.",
+          "Mon fils est fièvre.",
+          "Mon fils fait la fièvre.",
+          "Mon fils a la fièvre froid."
+        ],
+        "correctIndex": 0,
+        "explanation": "Состояние через avoir + порция de la: mon fils a de la fièvre."
+      },
+      {
+        "id": "boss3-repeat",
+        "kind": "scene",
+        "prompt": "Реплика 3. Секретарь быстро тараторит. Ты не понял.",
+        "situation": "Нужен вежливый спасатель.",
+        "options": [
+          "Pardon, vous pouvez répéter plus lentement, s'il vous plaît ?",
+          "Quoi ? Parlez normal.",
+          "Je comprends rien du tout.",
+          "Encore, vite."
+        ],
+        "correctIndex": 0,
+        "explanation": "Фраза-спасатель: вежливо просим повторить медленнее."
+      },
+      {
+        "id": "boss4-build",
+        "kind": "build",
+        "prompt": "Реплика 4. Собери: «Надо записаться к врачу».",
+        "translation": "Надо взять rendez-vous.",
+        "blocks": ["Il", "faut", "prendre", "rendez-vous"],
+        "answer": ["Il", "faut", "prendre", "rendez-vous"],
+        "explanation": "il faut + инфинитив: il faut prendre rendez-vous."
+      },
+      {
+        "id": "boss5-chez",
+        "kind": "cloze",
+        "prompt": "Реплика 5. «Я веду его к врачу».",
+        "phrase": "Je vais l'emmener ___ le médecin.",
+        "options": ["chez", "à", "dans", "de"],
+        "correctIndex": 0,
+        "explanation": "К врачу как к человеку → chez. Je vais l'emmener chez le médecin.",
+        "result": "Je vais l'emmener chez le médecin."
+      },
+      {
+        "id": "boss6-close",
+        "kind": "scene",
+        "prompt": "Реплика 6. Заверши разговор.",
+        "situation": "Нужно вежливо попрощаться.",
+        "options": [
+          "Merci beaucoup, bonne journée !",
+          "Ok bye.",
+          "Fini, au revoir vite.",
+          "Voilà, quoi."
+        ],
+        "correctIndex": 0,
+        "explanation": "Merci + bonne journée закрывают разговор по протоколу."
+      },
+      {
+        "id": "boss-ecole-insight",
+        "kind": "insight",
+        "prompt": "Озарение после босса.",
+        "options": [
+          "Реальная сцена — это сборка механизмов: bonjour, avoir, спасатели, il faut, chez.",
+          "В разговоре достаточно одного правила.",
+          "Босс-файт проверяет только артикли.",
+          "В телефоне не нужен bonjour."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ты применил пять механизмов в одной живой ситуации."
+      }
+    ]
+  },
+  {
+    "id": "boss-boulangerie",
+    "mechanism": "en",
+    "category": "boss",
+    "title": "БОСС: булочная по полному протоколу",
+    "question": "Войти, поздороваться, заказать, свернуть объект в en, заплатить, уйти.",
+    "strangeness": "bonjour + je voudrais + en + camera в одной сцене",
+    "difficulty": "hard",
+    "isBoss": true,
+    "scenes": ["boulangerie"],
+    "insight": "Один поход в булочную задействует приветствие, вежливую просьбу, en и режим порции.",
+    "steps": [
+      {
+        "id": "bb1-greet",
+        "kind": "scene",
+        "prompt": "Реплика 1. Ты входишь.",
+        "situation": "Boulangerie. С чего начинается любой заказ во Франции?",
+        "options": ["Bonjour !", "Je veux pain.", "Donnez baguette.", "Combien ?"],
+        "correctIndex": 0,
+        "explanation": "Сначала bonjour — без него никак."
+      },
+      {
+        "id": "bb2-order",
+        "kind": "scene",
+        "prompt": "Реплика 2. Закажи багет вежливо.",
+        "situation": "Нужно вежливо попросить одну багетку.",
+        "options": [
+          "Je voudrais une baguette, s'il vous plaît.",
+          "Je veux une baguette.",
+          "Baguette pour moi.",
+          "Il faut une baguette."
+        ],
+        "correctIndex": 0,
+        "explanation": "je voudrais + une baguette (новый объект → une) + s'il vous plaît."
+      },
+      {
+        "id": "bb3-en",
+        "kind": "scene",
+        "prompt": "Реплика 3. Продавец: «Et avec ça ? Combien de croissants ?» Ты хочешь два.",
+        "situation": "Объект (croissants) уже в разговоре — не повторяй его.",
+        "options": [
+          "J'en prends deux.",
+          "Je prends deux.",
+          "Je les prends deux.",
+          "Je prends deux croissants en."
+        ],
+        "correctIndex": 0,
+        "explanation": "en сворачивает croissants: j'en prends deux."
+      },
+      {
+        "id": "bb4-camera",
+        "kind": "cloze",
+        "prompt": "Реплика 4. Добавь немного хлеба для дома.",
+        "phrase": "Et aussi ___ pain, s'il vous plaît.",
+        "options": ["du", "le", "un", "des"],
+        "correctIndex": 0,
+        "explanation": "Порция/масса хлеба → du pain.",
+        "result": "Et aussi du pain, s'il vous plaît."
+      },
+      {
+        "id": "bb5-price",
+        "kind": "scene",
+        "prompt": "Реплика 5. Спроси цену.",
+        "situation": "Хочешь узнать, сколько всё стоит.",
+        "options": [
+          "Ça fait combien ?",
+          "Combien argent ?",
+          "Prix quoi ?",
+          "C'est combien il faut ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ça fait combien ? или C'est combien ? — естественный вопрос о цене."
+      },
+      {
+        "id": "bb6-close",
+        "kind": "scene",
+        "prompt": "Реплика 6. Уходишь.",
+        "situation": "Заверши взаимодействие по протоколу.",
+        "options": ["Merci, bonne journée !", "Bye.", "Fini.", "Voilà."],
+        "correctIndex": 0,
+        "explanation": "Merci + bonne journée закрывают сцену."
+      },
+      {
+        "id": "boss-boul-insight",
+        "kind": "insight",
+        "prompt": "Озарение после босса.",
+        "options": [
+          "Поход в булочную = bonjour + je voudrais + en + режим порции (du).",
+          "В булочной достаточно показать пальцем.",
+          "en здесь не нужен.",
+          "Цену во Франции не спрашивают."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ты прошёл реальную сцену целиком."
+      }
+    ]
+  },
+  {
+    "id": "boss-medecin",
+    "mechanism": "avoir-mal",
+    "category": "boss",
+    "title": "БОСС: звонок врачу — описать симптомы",
+    "question": "Позвони врачу, опиши симптомы через avoir mal à / avoir de la fièvre и узнай дозировку.",
+    "strangeness": "avoir mal à + de la fièvre + combien de fois + спасатель в одной сцене",
+    "difficulty": "hard",
+    "isBoss": true,
+    "scenes": ["medecin", "pharmacie", "telephone"],
+    "insight": "Описать болезнь по телефону — это сборка механизмов: bonjour, avoir mal à, de la fièvre, спасатель и вопрос о дозировке.",
+    "steps": [
+      {
+        "id": "bossmed-greet",
+        "kind": "scene",
+        "prompt": "Реплика 1. Ты звонишь в кабинет врача. Секретарь снимает трубку.",
+        "situation": "Téléphone. Нужно поздороваться и сказать, что хочешь записаться на приём.",
+        "options": [
+          "Bonjour, je voudrais prendre rendez-vous, s'il vous plaît.",
+          "Bonjour, je veux docteur maintenant.",
+          "Allô, rendez-vous moi vite.",
+          "Bonjour, donnez médecin."
+        ],
+        "correctIndex": 0,
+        "explanation": "Сначала bonjour, затем вежливая просьба je voudrais prendre rendez-vous."
+      },
+      {
+        "id": "bossmed-mal",
+        "kind": "scene",
+        "prompt": "Реплика 2. Объясни, что у тебя болит горло.",
+        "situation": "Нужно сказать «У меня болит горло» через avoir mal à.",
+        "options": [
+          "J'ai mal à la gorge.",
+          "Je suis mal la gorge.",
+          "J'ai douleur gorge.",
+          "Ma gorge est mal."
+        ],
+        "correctIndex": 0,
+        "explanation": "Боль через avoir mal à + le/la: à + la gorge → à la gorge. J'ai mal à la gorge."
+      },
+      {
+        "id": "bossmed-fievre",
+        "kind": "scene",
+        "prompt": "Реплика 3. Добавь, что у сына температура.",
+        "situation": "Нужно сказать «У моего сына температура» через avoir + de la.",
+        "options": [
+          "Mon fils a de la fièvre.",
+          "Mon fils est fièvre.",
+          "Mon fils a la fièvre chaud.",
+          "Mon fils fait fièvre."
+        ],
+        "correctIndex": 0,
+        "explanation": "Состояние через avoir + порция de la: mon fils a de la fièvre."
+      },
+      {
+        "id": "bossmed-repeat",
+        "kind": "scene",
+        "prompt": "Реплика 4. Врач называет лекарство, но говорит быстро. Ты не понял.",
+        "situation": "Нужен вежливый спасатель: попроси повторить медленнее.",
+        "options": [
+          "Vous pouvez répéter plus lentement, s'il vous plaît ?",
+          "Quoi ? Encore une fois vite.",
+          "Je comprends rien, parlez.",
+          "Répétez normal s'il vous plaît."
+        ],
+        "correctIndex": 0,
+        "explanation": "Фраза-спасатель: вежливо просим повторить медленнее — plus lentement."
+      },
+      {
+        "id": "bossmed-dosage",
+        "kind": "build",
+        "prompt": "Реплика 5. Собери вопрос о дозировке: «Сколько раз в день?».",
+        "translation": "Спроси, сколько раз в день принимать лекарство.",
+        "blocks": ["Combien", "de", "fois", "par", "jour", "?"],
+        "answer": ["Combien", "de", "fois", "par", "jour", "?"],
+        "explanation": "Combien de fois par jour ? — естественный вопрос о частоте приёма."
+      },
+      {
+        "id": "bossmed-pharmacie",
+        "kind": "scene",
+        "prompt": "Реплика 6. Скажи, что пойдёшь в аптеку, и попрощайся.",
+        "situation": "Нужно сказать «Я пойду в аптеку» и вежливо закончить.",
+        "options": [
+          "Je vais aller à la pharmacie. Merci beaucoup, bonne journée !",
+          "Moi pharmacie. Bye.",
+          "Je vais dans pharmacie, fini.",
+          "Pharmacie maintenant, au revoir vite."
+        ],
+        "correctIndex": 0,
+        "explanation": "Je vais aller à la pharmacie (à + la) + вежливое закрытие merci beaucoup, bonne journée."
+      },
+      {
+        "id": "boss-medecin-insight",
+        "kind": "insight",
+        "prompt": "Озарение после босса.",
+        "options": [
+          "Описать болезнь по телефону = bonjour + avoir mal à + de la fièvre + спасатель + combien de fois par jour.",
+          "Врачу достаточно сказать «болит».",
+          "Дозировку по телефону не уточняют.",
+          "По телефону bonjour не нужен."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ты собрал механизмы avoir mal à, de la fièvre и вопрос о дозировке в одной живой сцене."
+      }
+    ]
+  },
+  {
+    "id": "boss-administration",
+    "mechanism": "avoir-besoin",
+    "category": "boss",
+    "title": "БОСС: префектура — не хватает документа",
+    "question": "На приёме в префектуре: скажи, что у тебя rendez-vous, что не хватает документа и что нужна справка.",
+    "strangeness": "rendez-vous + il manque + avoir besoin de + следующий шаг в одной сцене",
+    "difficulty": "hard",
+    "isBoss": true,
+    "scenes": ["administration", "telephone"],
+    "insight": "Поход в префектуру — это сборка механизмов: bonjour, j'ai rendez-vous, il manque, j'ai besoin de и вопрос о следующем шаге.",
+    "steps": [
+      {
+        "id": "bossadmin-greet",
+        "kind": "scene",
+        "prompt": "Реплика 1. Ты подходишь к окошку в префектуре.",
+        "situation": "Administration. Поздоровайся и скажи, что у тебя назначен приём.",
+        "options": [
+          "Bonjour, j'ai un rendez-vous à dix heures.",
+          "Bonjour, moi rendez-vous ici.",
+          "Salut, je rendez-vous maintenant.",
+          "Bonjour, j'ai un rendez-vous dans dix heures."
+        ],
+        "correctIndex": 0,
+        "explanation": "Bonjour + j'ai un rendez-vous (avoir + un). Время через à: à dix heures."
+      },
+      {
+        "id": "bossadmin-manque",
+        "kind": "scene",
+        "prompt": "Реплика 2. Служащий говорит, что в твоём досье не хватает документа.",
+        "situation": "Повтори своими словами: «Не хватает одного документа».",
+        "options": [
+          "Il manque un document, c'est ça ?",
+          "Il manque le document est parti.",
+          "Document n'est pas là pour moi.",
+          "Je manque un document."
+        ],
+        "correctIndex": 0,
+        "explanation": "Безличное il manque + un document: il manque un document. C'est ça ? — вежливое уточнение."
+      },
+      {
+        "id": "bossadmin-besoin",
+        "kind": "scene",
+        "prompt": "Реплика 3. Объясни, что тебе нужна справка.",
+        "situation": "Нужно сказать «Мне нужна справка» через avoir besoin de.",
+        "options": [
+          "J'ai besoin d'une attestation.",
+          "Je besoin une attestation.",
+          "J'ai besoin une attestation.",
+          "Je suis besoin de l'attestation."
+        ],
+        "correctIndex": 0,
+        "explanation": "avoir besoin de + объект; de + une → d'une (élision). J'ai besoin d'une attestation."
+      },
+      {
+        "id": "bossadmin-build",
+        "kind": "build",
+        "prompt": "Реплика 4. Собери вопрос: «Мне нужно прийти ещё раз?».",
+        "translation": "Спроси, надо ли вернуться (прийти снова).",
+        "blocks": ["Je", "dois", "revenir", "?"],
+        "answer": ["Je", "dois", "revenir", "?"],
+        "explanation": "devoir + инфинитив: je dois revenir ? — «мне нужно вернуться?»."
+      },
+      {
+        "id": "bossadmin-repeat",
+        "kind": "scene",
+        "prompt": "Реплика 5. Служащий объясняет следующий шаг, но быстро. Ты не уловил.",
+        "situation": "Нужен вежливый спасатель: попроси повторить медленнее.",
+        "options": [
+          "Pardon, vous pouvez répéter plus lentement, s'il vous plaît ?",
+          "Quoi ? Dites encore vite.",
+          "Je comprends pas, parlez.",
+          "Encore, normal s'il vous plaît."
+        ],
+        "correctIndex": 0,
+        "explanation": "Фраза-спасатель: вежливо просим повторить медленнее."
+      },
+      {
+        "id": "bossadmin-close",
+        "kind": "scene",
+        "prompt": "Реплика 6. Поблагодари и попрощайся.",
+        "situation": "Заверши приём по протоколу.",
+        "options": [
+          "Merci beaucoup, bonne journée !",
+          "Ok, fini, bye.",
+          "Voilà, au revoir vite.",
+          "Merci, je pars."
+        ],
+        "correctIndex": 0,
+        "explanation": "Merci beaucoup + bonne journée закрывают взаимодействие."
+      },
+      {
+        "id": "boss-administration-insight",
+        "kind": "insight",
+        "prompt": "Озарение после босса.",
+        "options": [
+          "Поход в префектуру = bonjour + j'ai rendez-vous + il manque + j'ai besoin de + вопрос о следующем шаге.",
+          "В префектуре достаточно показать паспорт.",
+          "il manque и avoir besoin de — это одно и то же.",
+          "Справку просят без bonjour."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ты собрал il manque, avoir besoin de и вопрос о следующем шаге в одной живой сцене."
+      }
+    ]
+  },
+  {
+    "id": "boss-telephone",
+    "mechanism": "voudrais",
+    "category": "boss",
+    "title": "БОСС: перенести приём по телефону",
+    "question": "Позвони в кабинет, чтобы перенести приём: представься, попроси перенести, переспроси время и подтверди.",
+    "strangeness": "je voudrais déplacer + спасатель + подтверждение времени в одной сцене",
+    "difficulty": "hard",
+    "isBoss": true,
+    "scenes": ["telephone"],
+    "insight": "Перенести приём по телефону — это сборка механизмов: bonjour + представление, je voudrais déplacer, спасатель и подтверждение нового времени.",
+    "steps": [
+      {
+        "id": "bosstel-greet",
+        "kind": "scene",
+        "prompt": "Реплика 1. Ты звонишь в кабинет. Секретарь снимает трубку.",
+        "situation": "Téléphone. Поздоровайся и представься.",
+        "options": [
+          "Bonjour, c'est Madame Petrova.",
+          "Allô, Petrova moi.",
+          "Bonjour, je Petrova ici.",
+          "C'est moi, vous savez ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "По телефону представляются через c'est: Bonjour, c'est Madame Petrova."
+      },
+      {
+        "id": "bosstel-deplacer",
+        "kind": "scene",
+        "prompt": "Реплика 2. Скажи, зачем звонишь: хочешь перенести приём.",
+        "situation": "Нужно вежливо сказать «Я хотел бы перенести свой приём».",
+        "options": [
+          "Je voudrais déplacer mon rendez-vous.",
+          "Je veux changer rendez-vous.",
+          "Je voudrais déplace mon rendez-vous.",
+          "Je dois déplacer le rendez-vous moi."
+        ],
+        "correctIndex": 0,
+        "explanation": "je voudrais + инфинитив déplacer + mon rendez-vous. Je voudrais déplacer mon rendez-vous."
+      },
+      {
+        "id": "bosstel-repeat",
+        "kind": "scene",
+        "prompt": "Реплика 3. Секретарь называет новое время, но ты не расслышал.",
+        "situation": "Нужен вежливый спасатель: попроси повторить медленнее.",
+        "options": [
+          "Vous pouvez répéter plus lentement, s'il vous plaît ?",
+          "Quoi ? L'heure encore vite.",
+          "Je sais pas, répétez.",
+          "Encore le temps, normal."
+        ],
+        "correctIndex": 0,
+        "explanation": "Фраза-спасатель: вежливо просим повторить медленнее — plus lentement."
+      },
+      {
+        "id": "bosstel-confirm",
+        "kind": "cloze",
+        "prompt": "Реплика 4. Подтверди новое время: «Значит, в четверг в десять часов?».",
+        "phrase": "Donc, jeudi ___ dix heures, c'est ça ?",
+        "options": ["à", "en", "de", "dans"],
+        "correctIndex": 0,
+        "explanation": "Точное время вводится через à: à dix heures. Donc, jeudi à dix heures, c'est ça ?",
+        "result": "Donc, jeudi à dix heures, c'est ça ?"
+      },
+      {
+        "id": "bosstel-thanks",
+        "kind": "scene",
+        "prompt": "Реплика 5. Поблагодари и попрощайся.",
+        "situation": "Заверши звонок по протоколу.",
+        "options": [
+          "Merci beaucoup, bonne journée !",
+          "Ok merci, bye.",
+          "Voilà, au revoir vite.",
+          "C'est bon, je raccroche."
+        ],
+        "correctIndex": 0,
+        "explanation": "Merci beaucoup + bonne journée закрывают телефонный разговор."
+      },
+      {
+        "id": "boss-telephone-insight",
+        "kind": "insight",
+        "prompt": "Озарение после босса.",
+        "options": [
+          "Перенести приём = bonjour + c'est… + je voudrais déplacer + спасатель + подтверждение времени через à.",
+          "По телефону представляться не нужно.",
+          "je voudrais — это приказ, а не вежливая просьба.",
+          "Новое время не подтверждают."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ты собрал je voudrais déplacer, спасатель и подтверждение нового времени в одном звонке."
+      }
+    ]
+  }
+]

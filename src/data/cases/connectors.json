@@ -1,0 +1,402 @@
+[
+  {
+    "id": "logique",
+    "mechanism": "logique",
+    "category": "connectors",
+    "title": "parce que / donc — причина и следствие",
+    "question": "Как связать «почему» и «поэтому» в одну мысль?",
+    "strangeness": "parce que = причина, donc = следствие",
+    "difficulty": "medium",
+    "scenes": ["ecole", "voisins", "cours"],
+    "insight": "parce que вводит причину («потому что»), donc — следствие («поэтому»).",
+    "steps": [
+      {
+        "id": "log-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь связку: «Я опоздал, потому что были пробки».",
+        "phrase": "Je suis en retard ___ il y a des bouchons.",
+        "options": ["parce qu'il y a", "donc il y a", "mais il y a", "alors il y a"],
+        "correctIndex": 0,
+        "explanation": "Причина → parce que (перед гласной → parce qu'). Je suis en retard parce qu'il y a des bouchons.",
+        "result": "Je suis en retard parce qu'il y a des bouchons."
+      },
+      {
+        "id": "log-build",
+        "kind": "build",
+        "prompt": "Собери: «Идёт дождь, поэтому я остаюсь дома».",
+        "translation": "Дождь → следствие.",
+        "blocks": ["Il pleut", "donc", "je reste", "à la maison"],
+        "answer": ["Il pleut", "donc", "je reste", "à la maison"],
+        "explanation": "Il pleut, donc je reste à la maison. donc вводит следствие."
+      },
+      {
+        "id": "log-compare",
+        "kind": "compare",
+        "prompt": "Одна мысль — два порядка. В чём разница?",
+        "phrases": ["Je reste parce qu'il pleut.", "Il pleut, donc je reste."],
+        "options": [
+          "parce que вводит причину после факта; donc — следствие после причины",
+          "Это одинаковые предложения",
+          "parce que = поэтому, donc = потому что",
+          "donc ставится только в начале"
+        ],
+        "correctIndex": 0,
+        "explanation": "«остаюсь, потому что дождь» (причина после) vs «дождь, поэтому остаюсь» (следствие после)."
+      },
+      {
+        "id": "log-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je suis en retard parce qu'il y a des bouchons.",
+        "tokens": [
+          { "fr": "Je suis en retard", "ru": "я опаздываю", "role": "факт" },
+          { "fr": "parce qu'", "ru": "потому что", "role": "коннектор причины (élision перед il)" },
+          { "fr": "il y a", "ru": "есть / имеется", "role": "оборот" },
+          { "fr": "des bouchons", "ru": "пробки", "role": "причина" }
+        ],
+        "note": "parce que → parce qu' перед гласной (il)."
+      },
+      {
+        "id": "log-mutation",
+        "kind": "mutation",
+        "prompt": "Поменяй причину на следствие: оставь смысл, но начни с факта-причины.",
+        "phrase": "Je reste à la maison parce qu'il pleut.",
+        "options": [
+          "Il pleut, donc je reste à la maison.",
+          "Il pleut, parce que je reste à la maison.",
+          "Il pleut, mais je reste à la maison.",
+          "Je reste à la maison donc il pleut."
+        ],
+        "correctIndex": 0,
+        "explanation": "Причину выносим вперёд, следствие вводим через donc: Il pleut, donc je reste à la maison."
+      },
+      {
+        "id": "log-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "parce que — причина «потому что», donc — следствие «поэтому».",
+          "parce que и donc означают одно и то же.",
+          "donc вводит причину.",
+          "parce que ставится только в конце."
+        ],
+        "correctIndex": 0,
+        "explanation": "Причина ↔ следствие — два разных коннектора."
+      }
+    ]
+  },
+  {
+    "id": "connecteurs",
+    "mechanism": "connecteurs",
+    "category": "connectors",
+    "title": "mais / si / quand — но, если, когда",
+    "question": "Три коннектора, которые строят длинную мысль.",
+    "strangeness": "mais = но, si = если, quand = когда",
+    "difficulty": "medium",
+    "scenes": ["telephone", "voisins", "cours"],
+    "insight": "mais — противопоставление «но», si — условие «если», quand — время «когда».",
+    "steps": [
+      {
+        "id": "con-mais",
+        "kind": "cloze",
+        "prompt": "Вставь: «Я хочу прийти, но не могу».",
+        "phrase": "Je veux venir, ___ je ne peux pas.",
+        "options": ["mais", "donc", "parce que", "si"],
+        "correctIndex": 0,
+        "explanation": "Противопоставление → mais. Je veux venir, mais je ne peux pas.",
+        "result": "Je veux venir, mais je ne peux pas."
+      },
+      {
+        "id": "con-quand",
+        "kind": "cloze",
+        "prompt": "Вставь: «Когда придёшь — позвони мне».",
+        "phrase": "___ tu arrives, appelle-moi.",
+        "options": ["Quand", "Si", "Mais", "Donc"],
+        "correctIndex": 0,
+        "explanation": "Время → quand. Quand tu arrives, appelle-moi.",
+        "result": "Quand tu arrives, appelle-moi."
+      },
+      {
+        "id": "con-compare",
+        "kind": "compare",
+        "prompt": "si или quand? В чём разница?",
+        "phrases": ["Si tu veux, on y va.", "Quand tu veux, on y va."],
+        "options": [
+          "si — условие («если захочешь»); quand — время («когда захочешь»)",
+          "si и quand — синонимы",
+          "si — это «но», quand — «потому что»",
+          "quand вводит условие"
+        ],
+        "correctIndex": 0,
+        "explanation": "si = при условии; quand = в момент времени. Тонко, но по-разному."
+      },
+      {
+        "id": "con-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Quand tu arrives, appelle-moi.",
+        "tokens": [
+          { "fr": "Quand", "ru": "когда", "role": "коннектор времени" },
+          { "fr": "tu arrives", "ru": "ты приходишь", "role": "придаточное" },
+          { "fr": "appelle-moi", "ru": "позвони мне", "role": "повеление (impératif + moi)" }
+        ],
+        "note": "quand вводит момент времени, а не условие."
+      },
+      {
+        "id": "con-mutation",
+        "kind": "mutation",
+        "prompt": "Замени «когда» на «если»: сделай это условием, а не временем.",
+        "phrase": "Quand tu veux, on y va.",
+        "options": [
+          "Si tu veux, on y va.",
+          "Mais tu veux, on y va.",
+          "Donc tu veux, on y va.",
+          "Quand si tu veux, on y va."
+        ],
+        "correctIndex": 0,
+        "explanation": "Условие «если захочешь» → si. Si tu veux, on y va."
+      },
+      {
+        "id": "con-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "mais — но, si — если (условие), quand — когда (время).",
+          "mais, si, quand означают одно и то же.",
+          "si всегда про время.",
+          "quand вводит противопоставление."
+        ],
+        "correctIndex": 0,
+        "explanation": "Три кнопки для длинной мысли."
+      }
+    ]
+  },
+  {
+    "id": "alors-comme",
+    "mechanism": "alors",
+    "category": "connectors",
+    "title": "alors / comme — «ну/тогда» и «так как»",
+    "question": "Когда alors, а когда comme — два очень разных слова.",
+    "strangeness": "alors — разговорный переключатель, comme — причина в начале фразы",
+    "difficulty": "medium",
+    "scenes": ["cafe", "voisins", "cours"],
+    "insight": "alors — разговорное «ну/тогда/поэтому», переключатель речи; comme в начале предложения = «так как», вводит причину.",
+    "steps": [
+      {
+        "id": "alors-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь связку: «Так как идёт дождь, я беру зонт».",
+        "phrase": "___ il pleut, je prends un parapluie.",
+        "options": ["Comme", "Alors", "Mais", "Donc"],
+        "correctIndex": 0,
+        "explanation": "Причина в начале фразы → Comme. Comme il pleut, je prends un parapluie.",
+        "result": "Comme il pleut, je prends un parapluie."
+      },
+      {
+        "id": "alors-compare",
+        "kind": "compare",
+        "prompt": "Два слова — две роли. В чём разница?",
+        "phrases": ["Alors, on y va ?", "Comme il est tard, je rentre."],
+        "options": [
+          "alors — разговорный переключатель («ну, тогда?»); comme в начале = причина («так как поздно»)",
+          "alors и comme — синонимы",
+          "alors вводит причину, comme — следствие",
+          "comme значит «но», alors значит «если»"
+        ],
+        "correctIndex": 0,
+        "explanation": "«Alors, on y va ?» = «Ну что, идём?» (переключатель). «Comme il est tard» = «Так как поздно» (причина)."
+      },
+      {
+        "id": "alors-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Comme il pleut, je reste.",
+        "tokens": [
+          { "fr": "Comme", "ru": "так как", "role": "коннектор причины в начале фразы" },
+          { "fr": "il pleut", "ru": "идёт дождь", "role": "причина" },
+          { "fr": "je reste", "ru": "я остаюсь", "role": "следствие" }
+        ],
+        "note": "Comme в начале предложения вводит причину; следствие идёт после запятой."
+      },
+      {
+        "id": "alors-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "alors — разговорное «ну/тогда/поэтому»; comme в начале фразы = «так как» (причина).",
+          "alors и comme означают одно и то же.",
+          "comme всегда значит «как» и не бывает причиной.",
+          "alors можно ставить только в конце фразы."
+        ],
+        "correctIndex": 0,
+        "explanation": "Два разных инструмента: переключатель речи и ввод причины."
+      }
+    ]
+  },
+  {
+    "id": "avant-apres",
+    "mechanism": "avant-apres",
+    "category": "connectors",
+    "title": "avant de / après avoir — до и после действия",
+    "question": "Как сказать «перед тем как…» и «после того как…»?",
+    "strangeness": "avant de + инфинитив, après avoir + причастие",
+    "difficulty": "hard",
+    "scenes": ["voisins", "cours", "administration"],
+    "insight": "avant de + инфинитив («перед тем как сделать»), après avoir + причастие («после того как сделал»), pendant que + придаточное («пока»).",
+    "steps": [
+      {
+        "id": "avap-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь связку: «Перед тем как уйти, закрой дверь».",
+        "phrase": "___ partir, ferme la porte.",
+        "options": ["Avant de", "Après avoir", "Pendant que", "Avant que"],
+        "correctIndex": 0,
+        "explanation": "До действия + инфинитив → Avant de partir. Avant de partir, ferme la porte.",
+        "result": "Avant de partir, ferme la porte."
+      },
+      {
+        "id": "avap-build",
+        "kind": "build",
+        "prompt": "Собери: «Поев, я выхожу».",
+        "translation": "После того как поел → выхожу.",
+        "blocks": ["Après avoir", "mangé", "je sors"],
+        "answer": ["Après avoir", "mangé", "je sors"],
+        "explanation": "Après avoir mangé, je sors. après avoir + причастие (mangé) = «после того как поел»."
+      },
+      {
+        "id": "avap-compare",
+        "kind": "compare",
+        "prompt": "Две конструкции времени. В чём разница?",
+        "phrases": ["avant de partir", "après avoir mangé"],
+        "options": [
+          "avant de + инфинитив = до действия; après avoir + причастие = после действия",
+          "обе означают «во время действия»",
+          "avant de = после, après avoir = до",
+          "обе требуют придаточного с que"
+        ],
+        "correctIndex": 0,
+        "explanation": "avant de partir = «перед тем как уйти» (до); après avoir mangé = «поев» (после)."
+      },
+      {
+        "id": "avap-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Après avoir mangé, je sors.",
+        "tokens": [
+          { "fr": "Après avoir", "ru": "после того как", "role": "блок прошедшего действия" },
+          { "fr": "mangé", "ru": "поел", "role": "причастие (participe passé)" },
+          { "fr": "je sors", "ru": "я выхожу", "role": "главное действие" }
+        ],
+        "note": "après avoir + причастие; avant de + инфинитив (avant de manger)."
+      },
+      {
+        "id": "avap-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "avant de + инфинитив (до действия), après avoir + причастие (после действия), pendant que + придаточное (пока).",
+          "avant de и après avoir означают одно и то же.",
+          "после après avoir всегда идёт инфинитив.",
+          "avant de требует причастия."
+        ],
+        "correctIndex": 0,
+        "explanation": "До → avant de + инфинитив; после → après avoir + причастие."
+      }
+    ]
+  },
+  {
+    "id": "sequence",
+    "mechanism": "sequence",
+    "category": "connectors",
+    "title": "d'abord / ensuite / enfin — по шагам",
+    "question": "Как разложить мысль по порядку: сначала, потом, наконец?",
+    "strangeness": "ступеньки порядка действий",
+    "difficulty": "easy",
+    "scenes": ["cours", "administration", "cafe"],
+    "insight": "Чтобы выстроить шаги по порядку: d'abord (сначала) → ensuite / puis (потом) → enfin (наконец).",
+    "steps": [
+      {
+        "id": "seq-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что делают эти слова?",
+        "clues": ["D'abord, je me lève.", "Ensuite, je prends un café.", "Enfin, je pars."],
+        "options": [
+          "Расставляют действия по порядку: сначала → потом → наконец",
+          "Это формы прошедшего времени",
+          "Это вопросы",
+          "Они означают место"
+        ],
+        "correctIndex": 0,
+        "explanation": "d'abord — первый шаг, ensuite/puis — следующий, enfin — последний. Ступеньки последовательности."
+      },
+      {
+        "id": "seq-sort",
+        "kind": "sort",
+        "prompt": "Разложи слова-ступеньки по месту в последовательности.",
+        "baskets": [
+          { "id": "start", "label": "начало" },
+          { "id": "mid", "label": "середина" },
+          { "id": "end", "label": "конец" }
+        ],
+        "items": [
+          { "text": "D'abord", "basket": "start" },
+          { "text": "Pour commencer", "basket": "start" },
+          { "text": "Ensuite", "basket": "mid" },
+          { "text": "Puis", "basket": "mid" },
+          { "text": "Enfin", "basket": "end" }
+        ],
+        "explanation": "Начало: d'abord, pour commencer. Середина: ensuite, puis. Конец: enfin."
+      },
+      {
+        "id": "seq-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь первый шаг: «Сначала я звоню, потом прихожу».",
+        "phrase": "___, j'appelle, ensuite je viens.",
+        "options": ["D'abord", "Enfin", "Mais", "Donc"],
+        "correctIndex": 0,
+        "explanation": "Первый шаг → d'abord. D'abord, j'appelle, ensuite je viens.",
+        "result": "D'abord, j'appelle, ensuite je viens."
+      },
+      {
+        "id": "seq-code",
+        "kind": "code",
+        "prompt": "Вскрытие последовательности.",
+        "phrase": "D'abord, je me lève, ensuite je pars.",
+        "tokens": [
+          { "fr": "D'abord", "ru": "сначала", "role": "шаг 1" },
+          { "fr": "je me lève", "ru": "встаю", "role": "действие 1" },
+          { "fr": "ensuite", "ru": "потом", "role": "шаг 2" },
+          { "fr": "je pars", "ru": "ухожу", "role": "действие 2" }
+        ],
+        "note": "d'abord и ensuite ставятся в начале своей части, обычно с запятой."
+      },
+      {
+        "id": "seq-own",
+        "kind": "ownPhrase",
+        "prompt": "Опиши своё утро по шагам — 3 фразы со ступеньками.",
+        "pattern": "D'abord ___, ensuite ___, enfin ___ .",
+        "examples": [
+          "D'abord, je prends une douche.",
+          "Ensuite, je prends le petit-déjeuner.",
+          "Enfin, je vais au travail.",
+          "Puis, je bois un café.",
+          "Pour commencer, je me réveille."
+        ],
+        "minCount": 3
+      },
+      {
+        "id": "seq-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "d'abord (сначала) → ensuite / puis (потом) → enfin (наконец).",
+          "Эти слова означают одно и то же.",
+          "enfin ставится в начале последовательности.",
+          "d'abord вводит причину."
+        ],
+        "correctIndex": 0,
+        "explanation": "Три ступеньки — и можно объяснить рецепт, маршрут или свой день."
+      }
+    ]
+  }
+]

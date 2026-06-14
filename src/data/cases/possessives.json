@@ -1,0 +1,410 @@
+[
+  {
+    "id": "poss-mon-ma",
+    "mechanism": "poss-mon-ma",
+    "category": "possessives",
+    "title": "mon, ma, mes — мой по предмету, а не по мне",
+    "question": "Почему mon frère, но ma sœur? Ведь хозяин один — я.",
+    "strangeness": "mon livre · ma table · mes clés",
+    "difficulty": "easy",
+    "scenes": ["administration", "voisins"],
+    "insight": "mon / ma / mes выбираются по роду и числу ПРЕДМЕТА, а не по говорящему: mon frère, ma sœur, mes amis.",
+    "steps": [
+      {
+        "id": "monma-hypo",
+        "kind": "hypothesis",
+        "prompt": "От чего зависит выбор mon / ma / mes?",
+        "clues": ["mon livre (м.р.)", "ma voiture (ж.р.)", "mes clés (мн.ч.)"],
+        "options": [
+          "От рода и числа предмета, которым владеют",
+          "От рода говорящего",
+          "От того, мужчина или женщина владелец",
+          "От первой буквы существительного всегда"
+        ],
+        "correctIndex": 0,
+        "explanation": "mon — для мужского рода, ma — для женского, mes — для множественного. Важен предмет, а не владелец."
+      },
+      {
+        "id": "monma-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь правильную форму «мой».",
+        "phrase": "___ voiture est rouge.",
+        "options": ["Ma", "Mon", "Mes", "Me"],
+        "correctIndex": 0,
+        "explanation": "voiture — женский род, единственное число → ma voiture.",
+        "result": "Ma voiture est rouge."
+      },
+      {
+        "id": "monma-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "mon frère et ma sœur",
+        "tokens": [
+          { "fr": "mon", "ru": "мой", "role": "м.р. → mon" },
+          { "fr": "frère", "ru": "брат", "role": "существительное м.р." },
+          { "fr": "et", "ru": "и", "role": "связка" },
+          { "fr": "ma", "ru": "моя", "role": "ж.р. → ma" },
+          { "fr": "sœur", "ru": "сестра", "role": "существительное ж.р." }
+        ],
+        "note": "Один владелец (я), но форма разная: предмет диктует mon или ma."
+      },
+      {
+        "id": "monma-scene",
+        "kind": "scene",
+        "prompt": "Сцена: administration.",
+        "situation": "В окне ты протягиваешь документы и говоришь «это мои документы».",
+        "options": [
+          "Ce sont mes papiers.",
+          "Ce sont ma papiers.",
+          "Ce sont mon papiers.",
+          "Ce sont mes papier."
+        ],
+        "correctIndex": 0,
+        "explanation": "papiers — множественное число → mes papiers."
+      },
+      {
+        "id": "monma-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "mon / ma / mes выбираются по роду и числу предмета, а не по говорящему.",
+          "mon / ma / mes зависят от пола владельца.",
+          "Для всех предметов используется mon.",
+          "mes — это форма мужского рода."
+        ],
+        "correctIndex": 0,
+        "explanation": "Притяжательное согласуется с предметом."
+      }
+    ]
+  },
+  {
+    "id": "poss-son-sa",
+    "mechanism": "poss-son-sa",
+    "category": "possessives",
+    "title": "sa femme — это его или её жена?",
+    "question": "Почему son и sa не говорят, мужчина владелец или женщина?",
+    "strangeness": "sa femme = и его, и её жена",
+    "difficulty": "medium",
+    "scenes": ["voisins", "telephone"],
+    "insight": "son / sa / ses выбираются по предмету, а не по владельцу: sa femme — и его, и её жена; род определяет контекст.",
+    "steps": [
+      {
+        "id": "sonsa-strange",
+        "kind": "strangeness",
+        "prompt": "В чём ловушка для русского мозга?",
+        "phrase": "sa femme",
+        "options": [
+          "sa зависит от предмета (femme, ж.р.), а не от пола владельца",
+          "sa значит только «её»",
+          "sa значит только «его»",
+          "sa — это форма множественного числа"
+        ],
+        "correctIndex": 0,
+        "explanation": "femme — женский род, поэтому sa. Кто владелец — мужчина или женщина — из самого слова не видно: sa femme = и «его жена», и «её жена»."
+      },
+      {
+        "id": "sonsa-hypo",
+        "kind": "hypothesis",
+        "prompt": "Сравни. От чего зависит son / sa?",
+        "clues": [
+          "Pierre aime sa mère.",
+          "Marie aime sa mère.",
+          "Pierre cherche son livre.",
+          "Marie cherche son livre."
+        ],
+        "options": [
+          "От рода предмета: mère (ж.р.) → sa, livre (м.р.) → son",
+          "От пола владельца: Pierre → son, Marie → sa",
+          "От того, кто говорит",
+          "son и sa взаимозаменяемы"
+        ],
+        "correctIndex": 0,
+        "explanation": "И у Пьера, и у Мари — sa mère и son livre. Форма зависит только от предмета, не от владельца."
+      },
+      {
+        "id": "sonsa-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь форму для «свои ключи».",
+        "phrase": "Marc cherche ___ clés.",
+        "options": ["ses", "sa", "son", "leurs"],
+        "correctIndex": 0,
+        "explanation": "clés — множественное число → ses clés, независимо от того, что Marc — мужчина.",
+        "result": "Marc cherche ses clés."
+      },
+      {
+        "id": "sonsa-compare",
+        "kind": "compare",
+        "prompt": "Чем отличается son livre у Пьера и у Мари?",
+        "phrases": ["Pierre lit son livre.", "Marie lit son livre."],
+        "options": [
+          "Ничем: son зависит от предмета (livre, м.р.), а не от владельца",
+          "У Пьера son, у Мари должно быть sa",
+          "У Мари нужно sien",
+          "У Пьера son, у Мари ses"
+        ],
+        "correctIndex": 0,
+        "explanation": "livre — мужской род, поэтому son в обоих случаях. Пол владельца роли не играет."
+      },
+      {
+        "id": "sonsa-scene",
+        "kind": "scene",
+        "prompt": "Сцена: voisins.",
+        "situation": "Сосед Поль вышел искать свою жену. Ты говоришь подруге: «Поль ищет свою жену».",
+        "options": [
+          "Paul cherche sa femme.",
+          "Paul cherche son femme.",
+          "Paul cherche ses femme.",
+          "Paul cherche sa mari."
+        ],
+        "correctIndex": 0,
+        "explanation": "femme — женский род → sa femme, хотя владелец — мужчина."
+      },
+      {
+        "id": "sonsa-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "son / sa / ses выбираются по предмету, а не по владельцу: sa femme — и его, и её.",
+          "son — для мужчины-владельца, sa — для женщины-владельца.",
+          "son и sa зависят от того, кто говорит.",
+          "Для всех предметов используется son."
+        ],
+        "correctIndex": 0,
+        "explanation": "Главная ловушка: согласование с предметом, а не с владельцем."
+      }
+    ]
+  },
+  {
+    "id": "poss-mon-amie",
+    "mechanism": "poss-mon-amie",
+    "category": "possessives",
+    "title": "mon amie — почему mon перед женским словом?",
+    "question": "amie — женского рода, почему тогда mon amie, а не ma amie?",
+    "strangeness": "ma amie → mon amie",
+    "difficulty": "medium",
+    "scenes": ["cours", "telephone"],
+    "insight": "Перед словом с гласной (или немой h) даже у женского рода ставят mon / ton / son: mon amie, ton école, son histoire.",
+    "steps": [
+      {
+        "id": "amie-strange",
+        "kind": "strangeness",
+        "prompt": "Почему mon amie, если amie — женского рода?",
+        "phrase": "mon amie",
+        "options": [
+          "Перед гласной ma превращается в mon — для звучности",
+          "amie на самом деле мужского рода",
+          "mon здесь значит «мужчина»",
+          "Это ошибка, надо ma amie"
+        ],
+        "correctIndex": 0,
+        "explanation": "«ma amie» звучало бы с зиянием двух гласных, поэтому перед гласной берут mon: mon amie. Слово остаётся женского рода (mon amie est gentille)."
+      },
+      {
+        "id": "amie-hypo",
+        "kind": "hypothesis",
+        "prompt": "Когда у женского слова всё равно mon / ton / son?",
+        "clues": ["mon amie", "ton école", "son histoire", "mon habitude"],
+        "options": [
+          "Когда слово начинается с гласной или немой h",
+          "Когда слово длиннее пяти букв",
+          "Всегда, у любого женского слова",
+          "Только в множественном числе"
+        ],
+        "correctIndex": 0,
+        "explanation": "Перед гласной и немой h (histoire, habitude) женский род берёт mon / ton / son вместо ma / ta / sa."
+      },
+      {
+        "id": "amie-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode.",
+        "buggy": "Ma amie habite à Lyon.",
+        "bugReport": "ma before a vowel",
+        "options": [
+          "Mon amie habite à Lyon.",
+          "Ma amie habite à Lyon.",
+          "Mes amie habite à Lyon.",
+          "Ma amie habit à Lyon."
+        ],
+        "correctIndex": 0,
+        "fixNote": "ma → mon before a vowel",
+        "explanation": "Перед гласной ma → mon: mon amie. Слово при этом остаётся женского рода."
+      },
+      {
+        "id": "amie-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь притяжательное перед école.",
+        "phrase": "C'est ___ école.",
+        "options": ["mon", "ma", "mes", "m'"],
+        "correctIndex": 0,
+        "explanation": "école — женский род, но начинается с гласной → mon école.",
+        "result": "C'est mon école."
+      },
+      {
+        "id": "amie-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Перед гласной (и немой h) даже у женского рода ставят mon / ton / son.",
+          "amie — слово мужского рода.",
+          "mon ставится перед любым женским словом.",
+          "Перед гласной притяжательное вообще опускают."
+        ],
+        "correctIndex": 0,
+        "explanation": "Правило звучности: mon amie, ton école, son histoire."
+      }
+    ]
+  },
+  {
+    "id": "poss-notre-leur",
+    "mechanism": "poss-notre-leur",
+    "category": "possessives",
+    "title": "notre, votre, leur — когда владельцев несколько",
+    "question": "Как сказать «наш дом», «их дети»? И почему leur без -s, а leurs с -s?",
+    "strangeness": "leur voiture (одна) → leurs voitures (несколько)",
+    "difficulty": "medium",
+    "scenes": ["voisins", "administration"],
+    "insight": "Несколько владельцев: notre / votre / leur для одного предмета, nos / vos / leurs — для нескольких.",
+    "steps": [
+      {
+        "id": "notre-hypo",
+        "kind": "hypothesis",
+        "prompt": "Как устроены притяжательные для нескольких владельцев?",
+        "clues": ["notre maison", "nos enfants", "leur voiture", "leurs amis"],
+        "options": [
+          "Один предмет → notre / votre / leur; несколько → nos / vos / leurs",
+          "Форма зависит от рода предмета",
+          "leur всегда с -s",
+          "notre и nos — это одно и то же"
+        ],
+        "correctIndex": 0,
+        "explanation": "У нескольких владельцев род предмета не важен: важно только число. Один предмет — notre / votre / leur; много — nos / vos / leurs."
+      },
+      {
+        "id": "notre-cloze",
+        "kind": "cloze",
+        "prompt": "Соседи моют одну общую машину. Вставь форму.",
+        "phrase": "Les voisins lavent ___ voiture.",
+        "options": ["leur", "leurs", "son", "notre"],
+        "correctIndex": 0,
+        "explanation": "Машина одна → leur voiture (без -s), хотя соседей несколько.",
+        "result": "Les voisins lavent leur voiture."
+      },
+      {
+        "id": "notre-debug",
+        "kind": "debug",
+        "prompt": "French Debug Mode.",
+        "buggy": "Nous cherchons notres clés.",
+        "bugReport": "notre not pluralized before a plural noun",
+        "options": [
+          "Nous cherchons nos clés.",
+          "Nous cherchons notres clés.",
+          "Nous cherchons notre clés.",
+          "Nous cherchons leurs clés."
+        ],
+        "correctIndex": 0,
+        "fixNote": "notre → nos before a plural noun",
+        "explanation": "Перед множественным числом notre → nos: nos clés. Формы «notres» не существует."
+      },
+      {
+        "id": "notre-scene",
+        "kind": "scene",
+        "prompt": "Сцена: voisins.",
+        "situation": "Ты показываешь на детей во дворе и говоришь «это наши дети».",
+        "options": [
+          "Ce sont nos enfants.",
+          "Ce sont notre enfants.",
+          "Ce sont notres enfants.",
+          "Ce sont leur enfants."
+        ],
+        "correctIndex": 0,
+        "explanation": "enfants — множественное число → nos enfants."
+      },
+      {
+        "id": "notre-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Несколько владельцев: notre / votre / leur для одного предмета, nos / vos / leurs — для нескольких.",
+          "У нескольких владельцев притяжательное зависит от рода предмета.",
+          "leur всегда пишется с -s.",
+          "notre и nos означают разных владельцев."
+        ],
+        "correctIndex": 0,
+        "explanation": "Число предмета решает: leur voiture, но leurs amis."
+      }
+    ]
+  },
+  {
+    "id": "poss-a-moi",
+    "mechanism": "poss-a-moi",
+    "category": "possessives",
+    "title": "le livre de Marie — у французов нет 's",
+    "question": "Как сказать «книга Мари» и «это моё», если нет английского 's?",
+    "strangeness": "Marie's book → le livre de Marie",
+    "difficulty": "medium",
+    "scenes": ["magasin", "cafe"],
+    "insight": "Принадлежность выражается через de (le livre de Marie — нет 's) и через être à + местоимение (c'est à moi).",
+    "steps": [
+      {
+        "id": "amoi-strange",
+        "kind": "strangeness",
+        "prompt": "Как французы показывают, чья книга?",
+        "phrase": "le livre de Marie",
+        "options": [
+          "Через de: «книга от Мари», порядок обратный русскому",
+          "Через апостроф-s, как в английском",
+          "Ставят имя владельца перед предметом",
+          "Через артикль la"
+        ],
+        "correctIndex": 0,
+        "explanation": "Принадлежность строится так: предмет + de + владелец. «Marie livre» или «Marie's» — нельзя. Только le livre de Marie."
+      },
+      {
+        "id": "amoi-fix",
+        "kind": "fixCalque",
+        "prompt": "Почини кальку «Marie книга».",
+        "phrase": "Marie livre",
+        "options": ["le livre de Marie", "Marie livre", "livre Marie", "le Marie livre"],
+        "correctIndex": 0,
+        "explanation": "Предмет идёт первым, затем de + владелец: le livre de Marie.",
+        "result": "le livre de Marie"
+      },
+      {
+        "id": "amoi-hypo",
+        "kind": "hypothesis",
+        "prompt": "Как сказать «это моё / твоё / Поля»?",
+        "clues": ["C'est à moi.", "C'est à toi.", "Ce stylo est à Paul."],
+        "options": [
+          "être à + местоимение или имя: c'est à moi",
+          "être de + местоимение",
+          "avoir à + местоимение",
+          "c'est mon без предмета"
+        ],
+        "correctIndex": 0,
+        "explanation": "Принадлежность-сказуемое строится через être à: c'est à moi (это моё), ce stylo est à Paul (эта ручка Поля)."
+      },
+      {
+        "id": "amoi-scene",
+        "kind": "scene",
+        "prompt": "Сцена: cafe.",
+        "situation": "Официант показывает на сумку и спрашивает, чья она. Она твоя. Ты отвечаешь «это моё».",
+        "options": ["C'est à moi.", "C'est de moi.", "C'est à je.", "C'est mon."],
+        "correctIndex": 0,
+        "explanation": "«Это моё» как ответ о принадлежности → c'est à moi (à + ударное местоимение moi)."
+      },
+      {
+        "id": "amoi-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "Принадлежность — через de (le livre de Marie) и через être à (c'est à moi).",
+          "Французы используют апостроф-s, как в английском.",
+          "Владелец всегда ставится перед предметом.",
+          "«Это моё» переводится c'est de moi."
+        ],
+        "correctIndex": 0,
+        "explanation": "Два инструмента: de для «чей предмет» и à для «это чьё-то»."
+      }
+    ]
+  }
+]

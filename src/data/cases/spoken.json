@@ -1,0 +1,388 @@
+[
+  {
+    "id": "on",
+    "mechanism": "on",
+    "category": "spoken",
+    "title": "on вместо nous — разговорное «мы»",
+    "question": "Французы редко говорят nous allons. Почему?",
+    "strangeness": "nous allons → on va",
+    "difficulty": "easy",
+    "scenes": ["voisins", "cafe", "cours"],
+    "insight": "on — разговорное «мы» без формального пафоса. И глагол при нём — как для il/elle.",
+    "steps": [
+      {
+        "id": "on-strange",
+        "kind": "strangeness",
+        "prompt": "Что необычного в on va manger?",
+        "phrase": "On va manger.",
+        "options": [
+          "on значит «мы», но глагол стоит как для он/она (va)",
+          "Это безличная фраза без смысла",
+          "on — это вопрос",
+          "Это прошедшее время"
+        ],
+        "correctIndex": 0,
+        "explanation": "on = разговорное «мы». Спрягается как 3 лицо ед.: on va, on mange, on y va."
+      },
+      {
+        "id": "on-convert",
+        "kind": "fixCalque",
+        "prompt": "Пересобери из учебникового в живое: «Nous allons manger».",
+        "phrase": "Nous allons manger.",
+        "options": ["On va manger.", "On allons manger.", "Nous va manger.", "On vont manger."],
+        "correctIndex": 0,
+        "explanation": "Живая речь: on va manger. Глагол в 3 лице ед.",
+        "result": "On va manger."
+      },
+      {
+        "id": "on-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "On y va ?",
+        "tokens": [
+          { "fr": "On", "ru": "мы (разговорное)", "role": "кто" },
+          { "fr": "y", "ru": "туда", "role": "à + место" },
+          { "fr": "va", "ru": "идём", "role": "3 лицо ед." }
+        ],
+        "note": "Три механизма в двух словах: on + y + va."
+      },
+      {
+        "id": "on-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь правильную форму глагола при on.",
+        "phrase": "On ___ au cinéma ce soir ?",
+        "options": ["va", "vont", "allons", "vas"],
+        "correctIndex": 0,
+        "explanation": "on берёт форму 3 лица ед.: on va.",
+        "result": "On va au cinéma ce soir ?"
+      },
+      {
+        "id": "on-catch",
+        "kind": "catch",
+        "prompt": "Миссия.",
+        "targets": ["on va", "on y va", "on peut"],
+        "hint": "Поймай в речи on вместо nous. Особенно «on y va ?»"
+      },
+      {
+        "id": "on-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "on — разговорное «мы», глагол при нём как для il/elle.",
+          "on всегда значит «они».",
+          "on требует глагол в форме nous.",
+          "on используется только письменно."
+        ],
+        "correctIndex": 0,
+        "explanation": "Звучи живо, а не как учебник."
+      }
+    ]
+  },
+  {
+    "id": "ne-drop",
+    "mechanism": "ne-drop",
+    "category": "spoken",
+    "title": "Почему ne часто исчезает в речи",
+    "question": "Пишут je ne sais pas, а слышишь je sais pas. Где ne?",
+    "strangeness": "je ne sais pas → je sais pas",
+    "difficulty": "easy",
+    "scenes": ["voisins", "cafe", "cours"],
+    "insight": "В разговорной речи ne часто выпадает: остаётся pas. Понимать это критично на слух.",
+    "steps": [
+      {
+        "id": "ned-written",
+        "kind": "expand",
+        "prompt": "Написано — vs — звучит. Как это прозвучит в живой речи?",
+        "phrase": "Je ne sais pas.",
+        "options": [
+          "Je sais pas. / Chais pas.",
+          "Je suis sais pas.",
+          "Je ne sais.",
+          "Je sais ne pas."
+        ],
+        "correctIndex": 0,
+        "explanation": "ne выпадает, иногда je suis → chuis, je sais → chais: «chais pas»."
+      },
+      {
+        "id": "ned-sort",
+        "kind": "sort",
+        "prompt": "Разложи: письменная (нейтральная) форма vs разговорная.",
+        "baskets": [
+          { "id": "ecrit", "label": "письменно / нейтрально" },
+          { "id": "oral", "label": "разговорно" }
+        ],
+        "items": [
+          { "text": "Je ne sais pas.", "basket": "ecrit" },
+          { "text": "Je sais pas.", "basket": "oral" },
+          { "text": "Ce n'est pas grave.", "basket": "ecrit" },
+          { "text": "C'est pas grave.", "basket": "oral" },
+          { "text": "Je n'ai pas compris.", "basket": "ecrit" }
+        ],
+        "explanation": "На письме ne сохраняется, в живой речи часто выпадает."
+      },
+      {
+        "id": "ned-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Je sais pas.",
+        "tokens": [
+          { "fr": "Je", "ru": "я", "role": "кто" },
+          { "fr": "sais", "ru": "знаю", "role": "глагол" },
+          { "fr": "pas", "ru": "не", "role": "остаток отрицания" }
+        ],
+        "note": "В письме было бы «Je ne sais pas» — но ne выпало, отрицание держит pas."
+      },
+      {
+        "id": "ned-scene",
+        "kind": "scene",
+        "prompt": "Сцена: cafe.",
+        "situation": "Друг спрашивает, во сколько закрывается кафе. Ты не знаешь. Ответь в живой разговорной речи.",
+        "options": ["Je sais pas.", "Je ne sais.", "Je sais ne pas.", "Je pas sais."],
+        "correctIndex": 0,
+        "explanation": "В разговоре ne выпадает: «Je sais pas». На письме — «Je ne sais pas»."
+      },
+      {
+        "id": "ned-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "В живой речи ne часто выпадает — остаётся pas.",
+          "ne нельзя опускать никогда.",
+          "Отрицание делается только через ne.",
+          "pas всегда стоит перед глаголом."
+        ],
+        "correctIndex": 0,
+        "explanation": "Слушай pas, а не ne."
+      }
+    ]
+  },
+  {
+    "id": "est-ce-que",
+    "mechanism": "est-ce-que",
+    "category": "spoken",
+    "title": "est-ce que — это просто кнопка вопроса",
+    "question": "Длинно и страшно? На самом деле est-ce que — маркер «сейчас будет вопрос».",
+    "strangeness": "est-ce que = «сейчас вопрос»",
+    "difficulty": "easy",
+    "scenes": ["administration", "magasin", "cours"],
+    "insight": "est-ce que — это просто маркер вопроса. Ставь его перед обычной фразой — и готово.",
+    "steps": [
+      {
+        "id": "ecq-hypo",
+        "kind": "hypothesis",
+        "prompt": "Зачем нужен est-ce que?",
+        "clues": [
+          "Est-ce que tu viens ?",
+          "Est-ce que je peux entrer ?",
+          "Est-ce qu'il y a du lait ?"
+        ],
+        "options": [
+          "Это маркер вопроса: ставится перед обычной фразой",
+          "Это вежливое приветствие",
+          "Это прошедшее время",
+          "Это отрицание"
+        ],
+        "correctIndex": 0,
+        "explanation": "est-ce que приклеивается спереди, а дальше идёт обычный порядок слов. Не нужно ничего инвертировать."
+      },
+      {
+        "id": "ecq-build",
+        "kind": "build",
+        "prompt": "Собери вопрос: «Можно мне войти?»",
+        "translation": "Можно ли мне войти?",
+        "blocks": ["Est-ce que", "je", "peux", "entrer"],
+        "answer": ["Est-ce que", "je", "peux", "entrer"],
+        "explanation": "Est-ce que je peux entrer ? Маркер + обычная фраza je peux entrer."
+      },
+      {
+        "id": "ecq-natural",
+        "kind": "scene",
+        "prompt": "Выбери естественную (нейтральную) фразу.",
+        "situation": "Ты у двери кабинета и хочешь спросить, можно ли войти. Нейтрально, не слишком формально.",
+        "options": [
+          "Est-ce que je peux entrer ?",
+          "Entrer je peux ?",
+          "Puis-je l'entrer ?",
+          "Je peux entrer est-ce que ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Est-ce que je peux entrer ? — нейтральный регистр. Разговорный вариант: «Je peux entrer ?»"
+      },
+      {
+        "id": "ecq-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Est-ce que tu viens ?",
+        "tokens": [
+          { "fr": "Est-ce que", "ru": "сейчас будет вопрос", "role": "маркер вопроса" },
+          { "fr": "tu", "ru": "ты", "role": "кто" },
+          { "fr": "viens", "ru": "идёшь", "role": "глагол" }
+        ],
+        "note": "Маркер приклеивается спереди, а дальше — обычный порядок слов tu viens."
+      },
+      {
+        "id": "ecq-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "est-ce que — это просто кнопка вопроса перед обычной фразой.",
+          "est-ce que требует инверсии после себя.",
+          "est-ce que ставится в конце фразы.",
+          "est-ce que — это отрицание."
+        ],
+        "correctIndex": 0,
+        "explanation": "Не бойся длины — это один блок."
+      }
+    ]
+  },
+  {
+    "id": "quest-ce-que",
+    "mechanism": "quest-ce-que",
+    "category": "spoken",
+    "title": "qu'est-ce que — без паники",
+    "question": "Длинная конструкция, а на деле просто «что …?».",
+    "strangeness": "qu'est-ce que = «что» (один блок)",
+    "difficulty": "easy",
+    "scenes": ["cours", "magasin", "voisins"],
+    "insight": "qu'est-ce que — застывший блок «что …?». Ставь его перед обычной фразой — и готово.",
+    "steps": [
+      {
+        "id": "qqc-hypo",
+        "kind": "hypothesis",
+        "prompt": "Что общего у этих улик?",
+        "clues": ["Qu'est-ce que tu fais ?", "Qu'est-ce que c'est ?", "Qu'est-ce que tu veux ?"],
+        "options": [
+          "qu'est-ce que — это блок «что …?» перед обычной фразой",
+          "Это отрицание",
+          "Это прошедшее время",
+          "qu'est-ce que означает «почему»"
+        ],
+        "correctIndex": 0,
+        "explanation": "qu'est-ce que приклеивается спереди, а дальше идёт обычный порядок слов: qu'est-ce que + tu fais."
+      },
+      {
+        "id": "qqc-code",
+        "kind": "code",
+        "prompt": "Вскрытие застывшего блока.",
+        "phrase": "Qu'est-ce que tu fais ?",
+        "tokens": [
+          { "fr": "Qu'est-ce que", "ru": "что …?", "role": "застывший блок" },
+          { "fr": "tu fais", "ru": "ты делаешь", "role": "обычная фраза" }
+        ],
+        "note": "Не разбирай по словам — бери целым куском «что …?»."
+      },
+      {
+        "id": "qqc-build",
+        "kind": "build",
+        "prompt": "Собери вопрос: «Что ты хочешь?»",
+        "translation": "Что ты хочешь?",
+        "blocks": ["Qu'est-ce que", "tu", "veux"],
+        "answer": ["Qu'est-ce que", "tu", "veux"],
+        "explanation": "Qu'est-ce que tu veux ? Блок + обычная фраза tu veux."
+      },
+      {
+        "id": "qqc-natural",
+        "kind": "scene",
+        "prompt": "Выбери естественный вопрос «Что это?».",
+        "situation": "Ты показываешь на незнакомый предмет и спрашиваешь, что это.",
+        "options": [
+          "Qu'est-ce que c'est ?",
+          "Que c'est quoi ?",
+          "C'est qu'est-ce que ?",
+          "Qu'est-ce c'est que ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Qu'est-ce que c'est ? — нейтрально. Разговорный вариант: «C'est quoi ?»"
+      },
+      {
+        "id": "qqc-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "qu'est-ce que — застывший блок «что …?» перед обычной фразой.",
+          "qu'est-ce que требует инверсии после себя.",
+          "qu'est-ce que означает «почему».",
+          "qu'est-ce que ставится в конце фразы."
+        ],
+        "correctIndex": 0,
+        "explanation": "Один блок — и вопрос «что …?» готов."
+      }
+    ]
+  },
+  {
+    "id": "ca-va",
+    "mechanism": "ca-va",
+    "category": "spoken",
+    "title": "ça va — швейцарский нож разговора",
+    "question": "Одно ça va работает как приветствие, состояние, согласие и проверка.",
+    "strangeness": "ça va ? · ça va · ça va pas · ça te va ?",
+    "difficulty": "easy",
+    "scenes": ["voisins", "cafe", "cours"],
+    "insight": "ça va — это и «как дела?», и «нормально», и «не очень», и «тебе подходит?».",
+    "steps": [
+      {
+        "id": "cv-hypo",
+        "kind": "hypothesis",
+        "prompt": "Сколько работ у ça va?",
+        "clues": ["Ça va ?", "Ça va.", "Ça va pas.", "Ça te va ?"],
+        "options": [
+          "Приветствие, состояние, согласие и проверка — всё сразу",
+          "Только «привет»",
+          "Это прошедшее время",
+          "ça va означает «спасибо»"
+        ],
+        "correctIndex": 0,
+        "explanation": "ça va ? — как дела; ça va — нормально; ça va pas — не очень; ça te va ? — тебе подходит?"
+      },
+      {
+        "id": "cv-scene",
+        "kind": "scene",
+        "prompt": "Сцена: voisins.",
+        "situation": "Встретил соседа. Поздоровайся и спроси, как дела.",
+        "options": [
+          "Bonjour, ça va ?",
+          "Salut, ça va est-ce que ?",
+          "Bonjour, comment ça va toi va ?",
+          "Ça bonjour va ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "«Bonjour, ça va ?» — стандартное лёгкое приветствие."
+      },
+      {
+        "id": "cv-cloze",
+        "kind": "cloze",
+        "prompt": "Вставь форму: «Тебе так подходит?»",
+        "phrase": "Ça te ___ ?",
+        "options": ["va", "vas", "aller", "vais"],
+        "correctIndex": 0,
+        "explanation": "«Ça te va ?» — тебе подходит/устраивает? Глагол в форме ça va.",
+        "result": "Ça te va ?"
+      },
+      {
+        "id": "cv-code",
+        "kind": "code",
+        "prompt": "Вскрытие.",
+        "phrase": "Ça te va ?",
+        "tokens": [
+          { "fr": "Ça", "ru": "это", "role": "подлежащее" },
+          { "fr": "te", "ru": "тебе", "role": "косвенное дополнение" },
+          { "fr": "va", "ru": "подходит", "role": "3 лицо ед." }
+        ],
+        "note": "То же va, что и в «ça va», но с te получается «тебе подходит?»."
+      },
+      {
+        "id": "cv-insight",
+        "kind": "insight",
+        "prompt": "Озарение.",
+        "options": [
+          "ça va — приветствие, состояние, согласие и проверка одновременно.",
+          "ça va значит только «спасибо».",
+          "ça va — это вопросительное слово.",
+          "ça va нельзя использовать как ответ."
+        ],
+        "correctIndex": 0,
+        "explanation": "Самая универсальная разговорная связка."
+      }
+    ]
+  }
+]
