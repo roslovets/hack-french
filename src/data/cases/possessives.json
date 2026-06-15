@@ -40,11 +40,31 @@
         "prompt": "Вскрытие.",
         "phrase": "mon frère et ma sœur",
         "tokens": [
-          { "fr": "mon", "ru": "мой", "role": "м.р. → mon" },
-          { "fr": "frère", "ru": "брат", "role": "существительное м.р." },
-          { "fr": "et", "ru": "и", "role": "связка" },
-          { "fr": "ma", "ru": "моя", "role": "ж.р. → ma" },
-          { "fr": "sœur", "ru": "сестра", "role": "существительное ж.р." }
+          {
+            "fr": "mon",
+            "ru": "мой",
+            "role": "м.р. → mon"
+          },
+          {
+            "fr": "frère",
+            "ru": "брат",
+            "role": "существительное м.р."
+          },
+          {
+            "fr": "et",
+            "ru": "и",
+            "role": "связка"
+          },
+          {
+            "fr": "ma",
+            "ru": "моя",
+            "role": "ж.р. → ma"
+          },
+          {
+            "fr": "sœur",
+            "ru": "сестра",
+            "role": "существительное ж.р."
+          }
         ],
         "note": "Один владелец (я), но форма разная: предмет диктует mon или ma."
       },
@@ -61,6 +81,36 @@
         ],
         "correctIndex": 0,
         "explanation": "papiers — множественное число → mes papiers."
+      },
+      {
+        "id": "poss-mon-ma-x1",
+        "kind": "explainError",
+        "prompt": "Почему так нельзя сказать?",
+        "phrase": "Ma amie habite à Paris.",
+        "options": [
+          "Перед существительным женского рода, начинающимся с гласной, вместо ma ставится mon: mon amie.",
+          "Слово amie на самом деле мужского рода, поэтому нужно mon amie.",
+          "Здесь нужно mes, потому что речь идёт о подруге: mes amie.",
+          "Нужно ma amie, но без e на конце: ma ami."
+        ],
+        "correctIndex": 0,
+        "explanation": "Перед словом женского рода, начинающимся с гласной или немого h, ma меняется на mon ради благозвучия (чтобы не было ma-a): mon amie, mon école, mon histoire. Слово при этом остаётся женского рода.",
+        "result": "Mon amie habite à Paris."
+      },
+      {
+        "id": "poss-mon-ma-x2",
+        "kind": "fixCalque",
+        "prompt": "Женщина говорит о своём брате. Исправь кальку.",
+        "phrase": "Ma frère est médecin.",
+        "options": [
+          "Mon frère est médecin.",
+          "Ma frère est médecin.",
+          "Mes frère est médecin.",
+          "Mon frères est médecin."
+        ],
+        "correctIndex": 0,
+        "explanation": "Форма выбирается по роду предмета, а не по полу говорящего: frère — мужского рода и в единственном числе, поэтому mon frère — даже если говорит женщина.",
+        "result": "Mon frère est médecin."
       },
       {
         "id": "monma-insight",
@@ -160,6 +210,25 @@
         "explanation": "femme — женский род → sa femme, хотя владелец — мужчина."
       },
       {
+        "id": "poss-son-sa-x1",
+        "kind": "oddOneOut",
+        "prompt": "Перед существительным женского рода, начинающимся с гласной (или немого h), вместо sa ставят son ради благозвучия. Три формы верные, одна — лишняя. Найди её.",
+        "options": ["son amie", "son école", "son histoire", "sa amie"],
+        "correctIndex": 3,
+        "explanation": "Перед гласной (или немым h) женский род всё равно берёт son ради благозвучия: son amie, son école, son histoire. Форма «sa amie» неверна — нужно son amie.",
+        "result": "son amie"
+      },
+      {
+        "id": "poss-son-sa-x2",
+        "kind": "fixCalque",
+        "prompt": "Речь о муже подруги — «её муж». Русский мозг выбирает форму «по владелице» (женщина → sa). Исправь на правильный французский.",
+        "phrase": "sa mari",
+        "options": ["son mari", "sa mari", "sa marie", "son marie"],
+        "correctIndex": 0,
+        "explanation": "Форма зависит от предмета, а не от владельца: mari — мужского рода, поэтому всегда son mari, даже если владелец — женщина («её муж»).",
+        "result": "son mari"
+      },
+      {
         "id": "sonsa-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -238,6 +307,43 @@
         "correctIndex": 0,
         "explanation": "école — женский род, но начинается с гласной → mon école.",
         "result": "C'est mon école."
+      },
+      {
+        "id": "poss-mon-amie-x1",
+        "kind": "fixCalque",
+        "prompt": "Русскоговорящий по логике рода написал «ma» перед гласной. Исправь на идиоматичный французский.",
+        "phrase": "Ma amie habite à Lyon.",
+        "options": [
+          "Mon amie habite à Lyon.",
+          "Ma amie habite à Lyon.",
+          "Ma'amie habite à Lyon.",
+          "Mienne amie habite à Lyon."
+        ],
+        "correctIndex": 0,
+        "explanation": "Перед словом с гласной (или немым h) у женского рода ставят mon / ton / son, а не ma / ta / sa: ma amie → mon amie. Это нужно, чтобы избежать зияния двух гласных.",
+        "result": "Mon amie habite à Lyon."
+      },
+      {
+        "id": "poss-mon-amie-x2",
+        "kind": "compare",
+        "prompt": "Почему здесь снова ma, хотя слово amie начинается с гласной?",
+        "phrases": ["mon amie", "ma meilleure amie"],
+        "options": [
+          "Во второй фразе притяжательное стоит перед прилагательным meilleure (на согласную), а не перед amie, поэтому возвращается обычное женское ma.",
+          "ma meilleure amie — это ошибка, правильно «mon meilleure amie».",
+          "Разница только в стиле: обе формы взаимозаменяемы перед amie.",
+          "Во второй фразе amie стало мужского рода из-за прилагательного."
+        ],
+        "correctIndex": 0,
+        "explanation": "Правило mon/ton/son смотрит на ПЕРВЫЙ звук СЛЕДУЮЩЕГО слова. Если между притяжательным и существительным вклинивается прилагательное на согласную (meilleure, petite, bonne), берём обычное ma: ma meilleure amie, ma petite amie."
+      },
+      {
+        "id": "poss-mon-amie-x3",
+        "kind": "oddOneOut",
+        "prompt": "Три фразы следуют правилу «гласная/немой h → mon». Найди ту, что НЕ вписывается.",
+        "options": ["mon histoire", "mon horloge", "ma harpe", "mon habitude"],
+        "correctIndex": 2,
+        "explanation": "При немом h работает правило гласной (mon histoire, mon horloge, mon habitude). Но h «придыхательное» (h aspiré), как в harpe, honte, héros, ведёт себя как согласная: связки нет, поэтому остаётся ma harpe — она и выбивается из ряда."
       },
       {
         "id": "amie-insight",
@@ -320,6 +426,50 @@
         "explanation": "enfants — множественное число → nos enfants."
       },
       {
+        "id": "poss-notre-leur-x1",
+        "kind": "mutation",
+        "prompt": "Соседи держат двух собак (несколько предметов на нескольких владельцев). Выбери правильную форму.",
+        "phrase": "Les voisins promènent leur chien.",
+        "options": [
+          "Les voisins promènent leurs chiens.",
+          "Les voisins promènent leur chiens.",
+          "Les voisins promènent leurs chien.",
+          "Les voisins promènent nos chiens."
+        ],
+        "correctIndex": 0,
+        "explanation": "leur согласуется не с числом владельцев, а с числом предметов: одна собака — leur chien, несколько — leurs chiens (и -s у обоих слов). Форма должна согласоваться: leurs chiens, а не leur chiens или leurs chien.",
+        "result": "Les voisins promènent leurs chiens."
+      },
+      {
+        "id": "poss-notre-leur-x2",
+        "kind": "compare",
+        "prompt": "В чём разница между этими двумя фразами?",
+        "phrases": ["C'est leur voiture.", "Ce sont leurs voitures."],
+        "options": [
+          "В первой — одна машина на нескольких владельцев, во второй — несколько машин; число leur/leurs зависит от числа машин, а не владельцев.",
+          "В первой машина одного человека, во второй — нескольких; leur указывает на одного хозяина, leurs — на многих.",
+          "Разницы в смысле нет, leur и leurs взаимозаменяемы.",
+          "Во второй фразе ошибка: после leurs нельзя ставить существительное во множественном числе."
+        ],
+        "correctIndex": 0,
+        "explanation": "Владельцев в обоих случаях несколько (leur/leurs = «их»). Различие только в числе предмета: leur voiture — одна машина, leurs voitures — несколько. -s ставится по предмету, не по хозяевам."
+      },
+      {
+        "id": "poss-notre-leur-x3",
+        "kind": "fixCalque",
+        "prompt": "Русский говорит «их паспорта» дословно и путает форму. Исправь на правильный французский (Administration).",
+        "phrase": "Les clients montrent leur passeports.",
+        "options": [
+          "Les clients montrent leurs passeports.",
+          "Les clients montrent leur passeports.",
+          "Les clients montrent leurs passeport.",
+          "Les clients montrent ses passeports."
+        ],
+        "correctIndex": 0,
+        "explanation": "Каждый клиент показывает свой паспорт, паспортов несколько — значит leurs passeports (-s и у leurs, и у существительного). leur passeports рассогласовано; ses passeports означало бы «его/её» (один владелец).",
+        "result": "Les clients montrent leurs passeports."
+      },
+      {
         "id": "notre-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -391,6 +541,38 @@
         "options": ["C'est à moi.", "C'est de moi.", "C'est à je.", "C'est mon."],
         "correctIndex": 0,
         "explanation": "«Это моё» как ответ о принадлежности → c'est à moi (à + ударное местоимение moi)."
+      },
+      {
+        "id": "poss-a-moi-x1",
+        "kind": "cloze",
+        "prompt": "Кому принадлежит зонт? Вставь слово после à.",
+        "phrase": "— C'est ton parapluie ? — Oui, il est à ___.",
+        "options": ["moi", "je", "me", "mon"],
+        "correctIndex": 0,
+        "explanation": "После à в конструкции принадлежности (être à) ставится ударное местоимение: moi, toi, lui, elle, nous, vous, eux, elles. Формы je, me, mon здесь невозможны.",
+        "result": "Oui, il est à moi."
+      },
+      {
+        "id": "poss-a-moi-x2",
+        "kind": "oddOneOut",
+        "prompt": "Найди фразу, где принадлежность построена НЕправильно.",
+        "options": ["la voiture de mon frère", "le sac de Julie", "les clés de Paul", "Sophie sac"],
+        "correctIndex": 3,
+        "explanation": "По-французски принадлежность строится «вещь + de + владелец»: le sac de Julie. «Sophie sac» — это калька с английского 's, такого порядка во французском нет."
+      },
+      {
+        "id": "poss-a-moi-x3",
+        "kind": "compare",
+        "prompt": "Обе фразы про сумку Мари. В чём разница?",
+        "phrases": ["le sac de Marie", "ce sac est à Marie"],
+        "options": [
+          "Первая — это словосочетание (называет предмет: «сумка Мари»); вторая — целое предложение, которое утверждает, что сумка принадлежит Мари.",
+          "Первая значит «сумка для Мари» (подарок), вторая — «сумка Мари» (её собственность).",
+          "Первая — разговорная, вторая — грубая ошибка, так говорить нельзя.",
+          "Они полностью одинаковы и взаимозаменяемы в любом контексте."
+        ],
+        "correctIndex": 0,
+        "explanation": "«le sac de Marie» — это именная группа (предмет с указанием владельца через de). «ce sac est à Marie» — полное предложение с être à, которое заявляет о принадлежности. Обе фразы правильные."
       },
       {
         "id": "amoi-insight",

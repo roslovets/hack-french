@@ -224,6 +224,21 @@
         "explanation": "avoir besoin de + объект, плюс s'il vous plaît для вежливости."
       },
       {
+        "id": "avoir-besoin-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский говорит «мне нужен отдых» через дательный падеж — и калькой выкидывает глагол. Почини фразу.",
+        "phrase": "Je besoin de repos.",
+        "options": [
+          "J'ai besoin de repos.",
+          "Je suis besoin de repos.",
+          "Il me besoin de repos.",
+          "Je besoin du repos."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Мне нужно» по-французски — это «иметь нужду»: обязательно avoir + besoin de. Нельзя ни выбросить глагол (Je besoin…), ни заменить его на être. После besoin de здесь нет артикля: de repos, а не du repos.",
+        "result": "J'ai besoin de repos."
+      },
+      {
         "id": "besoin-insight",
         "kind": "insight",
         "prompt": "Озарение дня.",
@@ -307,6 +322,31 @@
         "correctIndex": 0,
         "explanation": "Третье лицо avoir — a. Mon fils a trois ans.",
         "result": "Mon fils a trois ans."
+      },
+      {
+        "id": "avoir-age-x1",
+        "kind": "scene",
+        "prompt": "Сцена у врача. Что ответить?",
+        "situation": "Вы на приёме у врача. Медсестра спрашивает, сколько лет вашей дочери. Ей семь.",
+        "options": ["Elle a sept ans.", "Elle est sept ans.", "Elle a sept.", "Elle est sept."],
+        "correctIndex": 0,
+        "explanation": "Возраст по-французски выражают глаголом avoir и обязательно со словом ans: elle a sept ans. Вариант с être (elle est) — калька с русского «ей семь», а без ans фраза звучит незавершённо.",
+        "result": "Elle a sept ans."
+      },
+      {
+        "id": "avoir-age-x2",
+        "kind": "mutation",
+        "prompt": "Та же мысль, но теперь на «вы». Поставь возраст в нужную форму.",
+        "phrase": "J'ai vingt ans.",
+        "options": [
+          "Vous avez vingt ans.",
+          "Vous êtes vingt ans.",
+          "Vous avez vingt.",
+          "Vous êtes vingt."
+        ],
+        "correctIndex": 0,
+        "explanation": "Сам глагол avoir меняется по лицам (j'ai → vous avez), но сама конструкция возраста остаётся: всегда avoir + число + ans. Вариант с être и вариант без ans неверны.",
+        "result": "Vous avez vingt ans."
       },
       {
         "id": "age-insight",
@@ -400,6 +440,31 @@
           }
         ],
         "note": "tête — женский род, поэтому à la. Для мужского было бы au (à + le)."
+      },
+      {
+        "id": "avoir-mal-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский говорит дословно «моя нога болит». Исправь на идиоматичный французский.",
+        "phrase": "Ma jambe fait mal.",
+        "options": [
+          "J'ai mal à la jambe.",
+          "Ma jambe a mal.",
+          "Je fais mal à la jambe.",
+          "J'ai mal la jambe."
+        ],
+        "correctIndex": 0,
+        "explanation": "Боль по-французски выражают через avoir mal à + часть тела, а не через «часть тела + делать/иметь боль». Правильно: j'ai mal à la jambe.",
+        "result": "J'ai mal à la jambe."
+      },
+      {
+        "id": "avoir-mal-x2",
+        "kind": "cloze",
+        "prompt": "Вставь слитную форму предлога: «У меня болят ноги» (les pieds).",
+        "phrase": "J'ai mal ___ pieds.",
+        "options": ["aux", "à les", "à", "au"],
+        "correctIndex": 0,
+        "explanation": "Перед множественным числом à + les сливаются в aux: j'ai mal aux pieds. Формы «à les» не существует.",
+        "result": "J'ai mal aux pieds."
       },
       {
         "id": "mal-insight",
@@ -530,6 +595,16 @@
         ],
         "correctIndex": 0,
         "explanation": "Температура воздуха — il fait chaud. (Je suis chaud — про человека и звучит двусмысленно; il y a здесь не подходит.)"
+      },
+      {
+        "id": "meteo-x1",
+        "kind": "cloze",
+        "prompt": "Вставь правильный безличный оборот.",
+        "phrase": "Prends un parapluie, ___ des nuages dehors.",
+        "options": ["il y a", "il fait", "il est", "c'est"],
+        "correctIndex": 0,
+        "explanation": "С существительными-явлениями (des nuages, du brouillard, du soleil) работает il y a. Оборот il fait сюда не подходит: il fait идёт с прилагательными (il fait froid, il fait beau), а здесь стоит существительное nuages.",
+        "result": "Prends un parapluie, il y a des nuages dehors."
       },
       {
         "id": "met-insight",

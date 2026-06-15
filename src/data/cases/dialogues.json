@@ -69,10 +69,63 @@
             "ru": "я бы хотел",
             "role": "вежливое желание (условное от vouloir)"
           },
-          { "fr": "un café", "ru": "кофе", "role": "заказ" },
-          { "fr": "s'il vous plaît", "ru": "пожалуйста", "role": "вежливость" }
+          {
+            "fr": "un café",
+            "ru": "кофе",
+            "role": "заказ"
+          },
+          {
+            "fr": "s'il vous plaît",
+            "ru": "пожалуйста",
+            "role": "вежливость"
+          }
         ],
         "note": "je voudrais мягче, чем je veux."
+      },
+      {
+        "id": "scene-cafe-x1",
+        "kind": "fixCalque",
+        "prompt": "Русское «Я хочу два круассана» переводят в лоб. Сделай по-французски вежливо.",
+        "phrase": "Je veux deux croissants.",
+        "options": [
+          "Je voudrais deux croissants, s'il vous plaît.",
+          "Je veux deux croissants, s'il vous plaît.",
+          "J'ai envie deux croissants.",
+          "Je veux avoir deux croissants."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Je veux» звучит как требование (как русское «Я хочу» в лоб). Стандарт заказа — условное «je voudrais» + «s'il vous plaît». «J'ai envie» требует предлог de (j'ai envie de…) и значит «мне хочется», не для заказа. «Je veux avoir» — калька, так не говорят.",
+        "result": "Je voudrais deux croissants, s'il vous plaît."
+      },
+      {
+        "id": "scene-cafe-x2",
+        "kind": "compare",
+        "prompt": "В чём разница между двумя репликами в кафе?",
+        "phrases": ["Je veux un café.", "Je voudrais un café."],
+        "options": [
+          "«Je voudrais» — вежливая просьба (условное наклонение); «je veux» звучит резко, как требование.",
+          "«Je veux» вежливее, потому что это настоящее время.",
+          "Это полные синонимы, разницы в вежливости нет.",
+          "«Je voudrais» — прошедшее время, а «je veux» — настоящее."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Voudrais» — условное наклонение глагола vouloir; оно смягчает желание до вежливой просьбы. «Je veux» в кафе звучит как приказ. Это не прошедшее время.",
+        "result": "Je voudrais un café, s'il vous plaît."
+      },
+      {
+        "id": "scene-cafe-x3",
+        "kind": "scene",
+        "prompt": "Та же «кнопка вежливости» работает и для вопроса. Выбери уместную реплику.",
+        "situation": "Кафе. Тебе нужно вежливо спросить у официанта, есть ли у них чай без кофеина.",
+        "options": [
+          "Je voudrais savoir si vous avez du thé sans caféine, s'il vous plaît.",
+          "Je veux savoir si vous avez du thé sans caféine.",
+          "Je voudrais de savoir si vous avez du thé.",
+          "Je veux que vous me dites si vous avez du thé."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Je voudrais savoir…» — вежливый способ задать вопрос (условное + инфинитив, без предлога de). «Je veux savoir» звучит требовательно. «Je voudrais de savoir» — лишний de. В последнем варианте после que нужен субжонктив (que vous me disiez), а не «dites».",
+        "result": "Je voudrais savoir si vous avez du thé sans caféine, s'il vous plaît."
       },
       {
         "id": "cafe-insight",
@@ -148,11 +201,26 @@
         "prompt": "Какие механизмы спрятаны в этой фразе? Отметь все.",
         "phrase": "Je vais prendre rendez-vous chez le spécialiste.",
         "options": [
-          { "label": "futur proche (je vais)", "present": true },
-          { "label": "chez + специалист", "present": true },
-          { "label": "prendre rendez-vous (блок)", "present": true },
-          { "label": "passé composé", "present": false },
-          { "label": "местоимение en", "present": false }
+          {
+            "label": "futur proche (je vais)",
+            "present": true
+          },
+          {
+            "label": "chez + специалист",
+            "present": true
+          },
+          {
+            "label": "prendre rendez-vous (блок)",
+            "present": true
+          },
+          {
+            "label": "passé composé",
+            "present": false
+          },
+          {
+            "label": "местоимение en",
+            "present": false
+          }
         ],
         "explanation": "je vais (futur proche) + prendre rendez-vous (устойчивый блок) + chez le spécialiste (пространство человека)."
       },
@@ -162,11 +230,78 @@
         "prompt": "Вскрытие.",
         "phrase": "J'ai mal à la gorge depuis deux jours.",
         "tokens": [
-          { "fr": "J'ai mal", "ru": "у меня болит", "role": "avoir mal = боль" },
-          { "fr": "à la gorge", "ru": "в горле", "role": "à + часть тела" },
-          { "fr": "depuis deux jours", "ru": "уже два дня", "role": "depuis = длительность" }
+          {
+            "fr": "J'ai mal",
+            "ru": "у меня болит",
+            "role": "avoir mal = боль"
+          },
+          {
+            "fr": "à la gorge",
+            "ru": "в горле",
+            "role": "à + часть тела"
+          },
+          {
+            "fr": "depuis deux jours",
+            "ru": "уже два дня",
+            "role": "depuis = длительность"
+          }
         ],
         "note": "avoir mal à + часть тела; depuis для «уже сколько-то времени»."
+      },
+      {
+        "id": "scene-medecin-x1",
+        "kind": "cloze",
+        "prompt": "Вставь правильную форму: у пациента болит живот.",
+        "phrase": "J'ai mal ___ ventre depuis ce matin.",
+        "options": ["au", "à le", "à la", "aux"],
+        "correctIndex": 0,
+        "explanation": "После «avoir mal à» предлог à сливается с артиклем: à + le = au (ventre — мужской род). Форма «à le» во французском не существует.",
+        "result": "J'ai mal au ventre depuis ce matin."
+      },
+      {
+        "id": "scene-medecin-x2",
+        "kind": "fixCalque",
+        "prompt": "Русское «у меня болит голова» дословно перевели. Исправь на идиоматичный французский.",
+        "phrase": "Ma tête fait mal.",
+        "options": [
+          "J'ai mal à la tête.",
+          "Je suis mal à la tête.",
+          "Ma tête a mal.",
+          "J'ai mal de tête."
+        ],
+        "correctIndex": 0,
+        "explanation": "Французы говорят не «голова болит», а «я имею боль в голове»: подлежащее (человек) + avoir mal à + орган. «Ma tête fait mal» — калька с русского и звучит неестественно.",
+        "result": "J'ai mal à la tête."
+      },
+      {
+        "id": "scene-medecin-x3",
+        "kind": "compare",
+        "prompt": "В чём разница между этими двумя фразами?",
+        "phrases": ["J'ai mal aux dents.", "Cette piqûre fait mal."],
+        "options": [
+          "«avoir mal à» — у меня самого болит орган; «faire mal» — что-то причиняет боль (укол, действие).",
+          "Это полные синонимы, можно использовать любую.",
+          "«avoir mal à» — про будущее, «faire mal» — про прошлое.",
+          "«avoir mal à» — вежливо, «faire mal» — грубо."
+        ],
+        "correctIndex": 0,
+        "explanation": "«avoir mal à + орган» описывает собственный симптом («у меня болит…»), а «faire mal» значит «причинять боль» — подлежащее тут источник боли (укол, удар). Это разные конструкции.",
+        "result": "J'ai mal aux dents."
+      },
+      {
+        "id": "scene-medecin-x4",
+        "kind": "explainError",
+        "prompt": "Почему эта фраза неверна?",
+        "phrase": "Je suis mal à l'estomac.",
+        "options": [
+          "Боль выражают через глагол avoir, а не être: нужно «J'ai mal à l'estomac».",
+          "«estomac» женского рода, поэтому нужно «à la»: «Je suis mal à la estomac».",
+          "Перед гласной нужно «à le»: «Je suis mal à le estomac».",
+          "Нужно убрать артикль: «J'ai mal à estomac»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Симптом строится через «avoir mal à», а не «être mal à». «Je suis mal» значит «мне плохо/некомфортно» вообще, а не «у меня болит желудок». Перед гласной артикль le сокращается: à + l' = «à l'estomac». Правильно: «J'ai mal à l'estomac».",
+        "result": "J'ai mal à l'estomac."
       },
       {
         "id": "med-insight",
@@ -234,9 +369,21 @@
         "prompt": "Вскрытие.",
         "phrase": "Est-ce que vous avez une autre taille ?",
         "tokens": [
-          { "fr": "Est-ce que", "ru": "разве / ли", "role": "маркер вопроса" },
-          { "fr": "vous avez", "ru": "у вас есть", "role": "avoir о наличии" },
-          { "fr": "une autre taille", "ru": "другой размер", "role": "объект запроса" }
+          {
+            "fr": "Est-ce que",
+            "ru": "разве / ли",
+            "role": "маркер вопроса"
+          },
+          {
+            "fr": "vous avez",
+            "ru": "у вас есть",
+            "role": "avoir о наличии"
+          },
+          {
+            "fr": "une autre taille",
+            "ru": "другой размер",
+            "role": "объект запроса"
+          }
         ],
         "note": "Est-ce que ставит вопрос без инверсии — самый простой способ."
       },
@@ -249,6 +396,49 @@
         "correctIndex": 0,
         "explanation": "После pouvoir идёт инфинитив: je peux payer. Je peux payer par carte ?",
         "result": "Je peux payer par carte ?"
+      },
+      {
+        "id": "scene-magasin-x1",
+        "kind": "scene",
+        "prompt": "В магазине одежды ты нашёл футболку и хочешь её примерить. Что сказать продавцу?",
+        "situation": "Ты держишь футболку и хочешь зайти в примерочную.",
+        "options": [
+          "Est-ce que je peux essayer ce t-shirt ?",
+          "Est-ce que je peux essaie ce t-shirt ?",
+          "Est-ce que je peux à essayer ce t-shirt ?",
+          "Est-ce que je peux essayant ce t-shirt ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "После «je peux» всегда идёт инфинитив без предлога: «je peux essayer» (можно мне примерить). Спрягаемая форма «essaie», деепричастие «essayant» и предлог «à» здесь не нужны."
+      },
+      {
+        "id": "scene-magasin-x2",
+        "kind": "fixCalque",
+        "prompt": "Исправь кальку с русского. «Можно мне померить это?» по-французски строится не через отдельное «можно».",
+        "phrase": "On peut moi essayer ça ?",
+        "options": [
+          "Je peux essayer ça ?",
+          "Peut moi essayer ça ?",
+          "Possible moi essayer ça ?",
+          "Je peux à essayer ça ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Русское «можно мне» передаётся через «je peux + инфинитив», а не дословным «on peut moi» или «possible moi». Правильно: «Je peux essayer ça ?».",
+        "result": "Je peux essayer ça ?"
+      },
+      {
+        "id": "scene-magasin-x3",
+        "kind": "compare",
+        "prompt": "Обе фразы используют глагол pouvoir. В чём разница между «je peux» и «vous pouvez»?",
+        "phrases": ["Je peux essayer ce modèle ?", "Est-ce que vous pouvez me montrer ce modèle ?"],
+        "options": [
+          "«Je peux» — ты просишь разрешения сделать что-то сам («можно мне примерить»), а «vous pouvez» — ты вежливо просишь продавца сделать что-то для тебя («можете показать мне»).",
+          "Разницы нет: «je peux» и «vous pouvez» взаимозаменяемы в магазине.",
+          "«Je peux» обращено к продавцу, а «vous pouvez» — к себе самому.",
+          "Обе фразы просят разрешения примерить вещь, просто разными словами."
+        ],
+        "correctIndex": 0,
+        "explanation": "Один и тот же глагол pouvoir меняет смысл с лицом: «je peux + инфинитив» — просьба о разрешении для себя, «vous pouvez + инфинитив» — вежливая просьба к собеседнику что-то сделать. Местоимение «me» показывает, что действие направлено на тебя."
       },
       {
         "id": "mag-insight",
@@ -320,10 +510,26 @@
         "prompt": "Вскрытие.",
         "phrase": "Oui, j'en prends deux, s'il vous plaît.",
         "tokens": [
-          { "fr": "Oui", "ru": "да", "role": "согласие" },
-          { "fr": "j'en prends", "ru": "я их беру", "role": "en заменяет «круассаны»" },
-          { "fr": "deux", "ru": "два", "role": "количество" },
-          { "fr": "s'il vous plaît", "ru": "пожалуйста", "role": "вежливость" }
+          {
+            "fr": "Oui",
+            "ru": "да",
+            "role": "согласие"
+          },
+          {
+            "fr": "j'en prends",
+            "ru": "я их беру",
+            "role": "en заменяет «круассаны»"
+          },
+          {
+            "fr": "deux",
+            "ru": "два",
+            "role": "количество"
+          },
+          {
+            "fr": "s'il vous plaît",
+            "ru": "пожалуйста",
+            "role": "вежливость"
+          }
         ],
         "note": "При количестве товар не повторяют — его заменяет en перед глаголом."
       },
@@ -336,6 +542,49 @@
         "correctIndex": 0,
         "explanation": "en заменяет существительное с количеством: j'en prends deux = беру два (круассана).",
         "result": "Oui, j'en prends deux."
+      },
+      {
+        "id": "scene-boulangerie-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский говорит «возьму два» и роняет en. Почини по-французски.",
+        "phrase": "Oui, je prends deux, s'il vous plaît.",
+        "options": [
+          "Oui, j'en prends deux, s'il vous plaît.",
+          "Oui, je prends en deux, s'il vous plaît.",
+          "Oui, je les prends deux, s'il vous plaît.",
+          "Oui, j'en prends les deux, s'il vous plaît."
+        ],
+        "correctIndex": 0,
+        "explanation": "По-русски «возьму два» обходится без местоимения, но во французском при числительном товар заменяется на en, и en стоит ПЕРЕД глаголом: «j'en prends deux».",
+        "result": "Oui, j'en prends deux, s'il vous plaît."
+      },
+      {
+        "id": "scene-boulangerie-x2",
+        "kind": "scene",
+        "prompt": "Сцена: в булочной.",
+        "situation": "Продавщица показывает багеты. Ты хочешь один багет и говоришь это, не повторяя слово «багет».",
+        "options": [
+          "J'en prends un, s'il vous plaît.",
+          "Je prends un, s'il vous plaît.",
+          "J'en prends, s'il vous plaît.",
+          "Je le prends un, s'il vous plaît."
+        ],
+        "correctIndex": 0,
+        "explanation": "Чтобы не повторять «багет», ставим en перед глаголом, а числительное «un» — после: «j'en prends un». Без числа «j'en prends» означало бы «возьму немного», а это не про штучный багет."
+      },
+      {
+        "id": "scene-boulangerie-x3",
+        "kind": "explainError",
+        "prompt": "Почему фраза неверна?",
+        "phrase": "Oui, je prends deux, s'il vous plaît.",
+        "options": [
+          "Без названного товара число повисает: нужно en перед глаголом — «j'en prends deux».",
+          "Нужно добавить артикль перед deux: «je prends les deux».",
+          "Здесь нужно местоимение les: «je les prends deux».",
+          "Глагол неверен, надо «je fais deux»."
+        ],
+        "correctIndex": 0,
+        "explanation": "По-русски «возьму два» работает без местоимения, но во французском prendre deux нельзя оставить без объекта: уже названный товар заменяет en перед глаголом — «j'en prends deux»."
       },
       {
         "id": "boul-insight",
@@ -411,11 +660,31 @@
         "prompt": "Вскрытие.",
         "phrase": "Pardon, vous pouvez répéter plus lentement, s'il vous plaît ?",
         "tokens": [
-          { "fr": "Pardon", "ru": "извините", "role": "мягкое начало просьбы" },
-          { "fr": "vous pouvez", "ru": "вы можете", "role": "pouvoir (вежливое «вы»)" },
-          { "fr": "répéter", "ru": "повторить", "role": "инфинитив после pouvoir" },
-          { "fr": "plus lentement", "ru": "медленнее", "role": "plus + наречие" },
-          { "fr": "s'il vous plaît", "ru": "пожалуйста", "role": "вежливость" }
+          {
+            "fr": "Pardon",
+            "ru": "извините",
+            "role": "мягкое начало просьбы"
+          },
+          {
+            "fr": "vous pouvez",
+            "ru": "вы можете",
+            "role": "pouvoir (вежливое «вы»)"
+          },
+          {
+            "fr": "répéter",
+            "ru": "повторить",
+            "role": "инфинитив после pouvoir"
+          },
+          {
+            "fr": "plus lentement",
+            "ru": "медленнее",
+            "role": "plus + наречие"
+          },
+          {
+            "fr": "s'il vous plaît",
+            "ru": "пожалуйста",
+            "role": "вежливость"
+          }
         ],
         "note": "После vous pouvez идёт инфинитив; «медленнее» = plus lentement."
       },
@@ -432,6 +701,60 @@
         ],
         "correctIndex": 0,
         "explanation": "После pouvoir — инфинитив répéter; «громче» о голосе — plus fort."
+      },
+      {
+        "id": "scene-ecole-x1",
+        "kind": "fixCalque",
+        "prompt": "Русская калька: ты опоздал и говоришь «Извините за опоздание». Как это сказать по-французски?",
+        "phrase": "Désolé pour le retard que je suis en retard.",
+        "options": [
+          "Excusez-moi du retard.",
+          "Excusez-moi pour je suis en retard.",
+          "Pardon que je suis tard.",
+          "Désolé je suis retard."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Извините за опоздание» — это «Excusez-moi du retard» (de + le → du, дальше существительное le retard). Нельзя вставлять целое предложение «que je suis en retard» и нельзя сказать «je suis retard» — опоздание это «le retard», а «опаздывать» — «être en retard».",
+        "result": "Excusez-moi du retard."
+      },
+      {
+        "id": "scene-ecole-x2",
+        "kind": "cloze",
+        "prompt": "Не расслышал номер кабинета — вежливо переспроси одним словом.",
+        "phrase": "Vous avez dit quelle salle, ___ ?",
+        "options": ["pardon", "s'il vous plaît bien", "de retard", "plus lentement"],
+        "correctIndex": 0,
+        "explanation": "«Pardon ?» в конце переспроса — короткая фраза-спасатель: «простите?», «как-как?». «S'il vous plaît bien» не существует, «de retard» и «plus lentement» здесь не по смыслу.",
+        "result": "Vous avez dit quelle salle, pardon ?"
+      },
+      {
+        "id": "scene-ecole-x3",
+        "kind": "scene",
+        "prompt": "Сцена у школы.",
+        "situation": "Воспитательница быстро тараторит расписание, ты ничего не успел разобрать. Что сказать?",
+        "options": [
+          "Vous pouvez parler moins vite, s'il vous plaît ?",
+          "Vous pouvez parler plus vite, s'il vous plaît ?",
+          "Vous pouvez parler moins fort, s'il vous plaît ?",
+          "Je peux parler moins vite ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Если говорят слишком быстро, просим «moins vite» (медленнее) — синоним «plus lentement». «Plus vite» — наоборот, быстрее; «moins fort» — про громкость; «Je peux…» переводит просьбу на себя.",
+        "result": "Vous pouvez parler moins vite, s'il vous plaît ?"
+      },
+      {
+        "id": "scene-ecole-x4",
+        "kind": "compare",
+        "prompt": "Сравни две фразы-спасателя.",
+        "phrases": ["Excusez-moi du retard.", "Excusez-moi de vous déranger."],
+        "options": [
+          "Первая извиняется за опоздание, вторая — за то, что отвлекаешь/беспокоишь собеседника.",
+          "Обе означают одно и то же — «извините за опоздание».",
+          "Первая вежливее и используется только на «вы», вторая — только на «ты».",
+          "Первая — про беспокойство, вторая — про опоздание."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Excusez-moi du retard» — извинение за опоздание; «Excusez-moi de vous déranger» — извинение за то, что побеспокоил/отвлёк. После «excusez-moi de» идёт глагол (de vous déranger), после «excusez-moi du» — существительное (du retard)."
       },
       {
         "id": "ecole-insight",
@@ -507,10 +830,26 @@
         "prompt": "Вскрытие.",
         "phrase": "Bonjour, j'ai besoin d'une attestation, s'il vous plaît.",
         "tokens": [
-          { "fr": "Bonjour", "ru": "здравствуйте", "role": "вежливое начало" },
-          { "fr": "j'ai besoin", "ru": "мне нужно", "role": "avoir besoin = потребность" },
-          { "fr": "d'une attestation", "ru": "справка", "role": "de → d' перед гласной" },
-          { "fr": "s'il vous plaît", "ru": "пожалуйста", "role": "вежливость" }
+          {
+            "fr": "Bonjour",
+            "ru": "здравствуйте",
+            "role": "вежливое начало"
+          },
+          {
+            "fr": "j'ai besoin",
+            "ru": "мне нужно",
+            "role": "avoir besoin = потребность"
+          },
+          {
+            "fr": "d'une attestation",
+            "ru": "справка",
+            "role": "de → d' перед гласной"
+          },
+          {
+            "fr": "s'il vous plaît",
+            "ru": "пожалуйста",
+            "role": "вежливость"
+          }
         ],
         "note": "avoir besoin de + предмет; de сливается в d' перед гласной."
       },
@@ -523,6 +862,61 @@
         "correctIndex": 0,
         "explanation": "attestation — женского рода и с гласной: de + une → d'une attestation.",
         "result": "J'ai besoin d'une attestation."
+      },
+      {
+        "id": "scene-administration-x1",
+        "kind": "cloze",
+        "prompt": "Вставь правильную форму: «Мне нужен этот формуляр» (le formulaire — конкретный).",
+        "phrase": "J'ai besoin ___ formulaire pour la demande.",
+        "options": ["du", "de le", "de", "des"],
+        "correctIndex": 0,
+        "explanation": "После «avoir besoin de» предлог de сливается с артиклем le → du: «j'ai besoin du formulaire». Форма «de le» во французском не существует, «de formulaire» — без артикля для конкретного исчисляемого, «des» — это de + les (множественное), а formulaire тут в единственном.",
+        "result": "J'ai besoin du formulaire pour la demande."
+      },
+      {
+        "id": "scene-administration-x2",
+        "kind": "fixCalque",
+        "prompt": "Русское «мне нужно» — это не «я есть нужда». Исправь кальку.",
+        "phrase": "Je suis besoin d'une attestation.",
+        "options": [
+          "J'ai besoin d'une attestation.",
+          "Je suis besoin d'une attestation.",
+          "J'ai besoin une attestation.",
+          "Je besoin d'une attestation."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Нужно» во французском — это глагол avoir (иметь), а не être: «j'ai besoin de…». И всегда нужен предлог de (тут d' перед гласной): без него «j'ai besoin une attestation» неверно.",
+        "result": "J'ai besoin d'une attestation."
+      },
+      {
+        "id": "scene-administration-x3",
+        "kind": "trap",
+        "prompt": "«У меня запись (на приём)». Какая форма верна?",
+        "phrase": "J'ai rendez-vous à 14 heures.",
+        "options": [
+          "J'ai rendez-vous à 14 heures.",
+          "J'ai un rendez-vous de besoin à 14 heures.",
+          "Je suis rendez-vous à 14 heures.",
+          "J'ai besoin de rendez-vous à 14 heures."
+        ],
+        "correctIndex": 0,
+        "explanation": "«У меня запись» — устойчивое «j'ai rendez-vous» без артикля (как «j'ai faim»). Это другая конструкция, чем «avoir besoin de»: «rendez-vous de besoin» — бессмыслица, а «je suis rendez-vous» путает avoir и être.",
+        "result": "J'ai rendez-vous à 14 heures."
+      },
+      {
+        "id": "scene-administration-x4",
+        "kind": "scene",
+        "prompt": "Сотрудник говорит, что в вашем досье не хватает одного документа. Что ответить?",
+        "situation": "В префектуре: сотрудник проверяет ваши бумаги и сообщает, что одного документа не хватает.",
+        "options": [
+          "D'accord, il me manque un document. J'ai besoin d'un justificatif de domicile.",
+          "D'accord, je manque un document et j'ai besoin un justificatif.",
+          "D'accord, il manque moi un document, j'ai besoin de justificatif.",
+          "D'accord, j'ai besoin que un document de justificatif."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Не хватает» — безличное «il me manque…» (= мне не хватает), а «мне нужно» — «j'ai besoin de» (тут d'un перед гласной). «Je manque» значит «я отсутствую», «il manque moi» — неверный порядок (надо me), а «besoin» без de невозможен.",
+        "result": "Il me manque un document. J'ai besoin d'un justificatif de domicile."
       },
       {
         "id": "admin-insight",
@@ -598,10 +992,26 @@
         "prompt": "Вскрытие.",
         "phrase": "Je voudrais déplacer mon rendez-vous, s'il vous plaît.",
         "tokens": [
-          { "fr": "Je voudrais", "ru": "я бы хотел", "role": "вежливое условное от vouloir" },
-          { "fr": "déplacer", "ru": "перенести", "role": "инфинитив после voudrais" },
-          { "fr": "mon rendez-vous", "ru": "мою запись", "role": "объект (mon — м.р.)" },
-          { "fr": "s'il vous plaît", "ru": "пожалуйста", "role": "вежливость" }
+          {
+            "fr": "Je voudrais",
+            "ru": "я бы хотел",
+            "role": "вежливое условное от vouloir"
+          },
+          {
+            "fr": "déplacer",
+            "ru": "перенести",
+            "role": "инфинитив после voudrais"
+          },
+          {
+            "fr": "mon rendez-vous",
+            "ru": "мою запись",
+            "role": "объект (mon — м.р.)"
+          },
+          {
+            "fr": "s'il vous plaît",
+            "ru": "пожалуйста",
+            "role": "вежливость"
+          }
         ],
         "note": "После je voudrais идёт инфинитив: voudrais déplacer."
       },
@@ -614,6 +1024,59 @@
         "correctIndex": 0,
         "explanation": "После je voudrais всегда инфинитив: je voudrais déplacer.",
         "result": "Je voudrais déplacer mon rendez-vous."
+      },
+      {
+        "id": "scene-telephone-x1",
+        "kind": "compare",
+        "prompt": "Сравни два звонка администратору. В чём настоящая разница?",
+        "phrases": ["Je veux déplacer mon rendez-vous.", "Je voudrais déplacer mon rendez-vous."],
+        "options": [
+          "Первое звучит как сухое требование; второе — вежливая просьба в условном наклонении (conditionnel), и именно его говорят по телефону.",
+          "Разницы по смыслу нет, второе — просто разговорное сокращение первого.",
+          "Первое вежливее, потому что глагол «veux» короче и мягче.",
+          "Второе означает прошедшее время: «я хотел перенести»."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Je veux» — прямое «я хочу» (звучит как требование). «Je voudrais» — условное наклонение «я бы хотел», стандартная вежливая просьба; по телефону и в любом сервисе берите именно его."
+      },
+      {
+        "id": "scene-telephone-x2",
+        "kind": "fixCalque",
+        "prompt": "Русское «Можете повторить?» перевели дословно. Почини на живой французский.",
+        "phrase": "Vous pouvez répéter une fois encore, oui ?",
+        "options": [
+          "Vous pouvez répéter, s'il vous plaît ?",
+          "Vous pouvez répéter une fois encore, oui ?",
+          "Vous pouvez dire encore une fois moi, s'il vous plaît ?",
+          "Pouvez répéter vous, s'il vous plaît ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Стандартный переспрос по телефону — «Vous pouvez répéter, s'il vous plaît ?». Калька с «ещё раз, да?» и сбитый порядок слов звучат не по-французски.",
+        "result": "Vous pouvez répéter, s'il vous plaît ?"
+      },
+      {
+        "id": "scene-telephone-x3",
+        "kind": "cloze",
+        "prompt": "Вежливо назови удобное время. Вставь форму глагола.",
+        "phrase": "Je ___ plutôt venir jeudi matin, si c'est possible.",
+        "options": ["voudrais", "veux", "voudrai", "voudrait"],
+        "correctIndex": 0,
+        "explanation": "Форма 1-го лица единственного числа в conditionnel — «je voudrais» (с -s). «je veux» — настойчивое «я хочу», «je voudrai» — будущее время «захочу», «voudrait» — это «он/она бы хотел(а)».",
+        "result": "Je voudrais plutôt venir jeudi matin, si c'est possible."
+      },
+      {
+        "id": "scene-telephone-x4",
+        "kind": "scene",
+        "prompt": "Téléphone: связь плохая, ты не расслышал новую дату записи. Что сказать?",
+        "situation": "Ты звонишь, чтобы перенести запись. Администратор быстро называет новое время, но ты не расслышал из-за плохой связи.",
+        "options": [
+          "Pardon, je n'ai pas bien entendu, vous pouvez répéter, s'il vous plaît ?",
+          "Quoi ? Répétez !",
+          "Vous devez parler plus fort, là.",
+          "Pardon, je veux entendre encore, parlez."
+        ],
+        "correctIndex": 0,
+        "explanation": "По телефону вежливо признают, что не расслышали: «Pardon, je n'ai pas bien entendu, vous pouvez répéter, s'il vous plaît ?». «Quoi ? Répétez !» и «Vous devez parler plus fort» звучат как приказ, а «je veux entendre encore» — калька-требование."
       },
       {
         "id": "tel-insight",
@@ -689,9 +1152,21 @@
         "prompt": "Вскрытие.",
         "phrase": "Est-ce que le bus est en retard ?",
         "tokens": [
-          { "fr": "Est-ce que", "ru": "ли / разве", "role": "маркер вопроса без инверсии" },
-          { "fr": "le bus", "ru": "автобус", "role": "подлежащее" },
-          { "fr": "est en retard", "ru": "опаздывает", "role": "être en retard = опаздывать" }
+          {
+            "fr": "Est-ce que",
+            "ru": "ли / разве",
+            "role": "маркер вопроса без инверсии"
+          },
+          {
+            "fr": "le bus",
+            "ru": "автобус",
+            "role": "подлежащее"
+          },
+          {
+            "fr": "est en retard",
+            "ru": "опаздывает",
+            "role": "être en retard = опаздывать"
+          }
         ],
         "note": "Est-ce que ставит вопрос без перестановки слов — самый простой способ."
       },
@@ -704,6 +1179,48 @@
         "correctIndex": 0,
         "explanation": "Перед il (гласный звук) que → qu': est-ce qu'il faut changer ?",
         "result": "Est-ce qu'il faut changer ?"
+      },
+      {
+        "id": "scene-transport-x1",
+        "kind": "explainError",
+        "prompt": "Турист в кассе сказал так. Почему это неправильно?",
+        "phrase": "Est-ce que va le bus à la gare ?",
+        "options": [
+          "После «est-ce que» сохраняется прямой порядок «подлежащее + глагол», поэтому нужно «est-ce que le bus va».",
+          "Слово «bus» нельзя использовать с «est-ce que», нужно сказать «autobus».",
+          "После «est-ce que» глагол всегда ставится в конце предложения.",
+          "Перед «est-ce que» обязательно нужен предлог «à»."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Est-ce que» — это готовая «кнопка вопроса»: после неё идёт обычный порядок «подлежащее + глагол» (le bus va), а не инверсия «va le bus». Правильно: «Est-ce que le bus va à la gare ?»."
+      },
+      {
+        "id": "scene-transport-x2",
+        "kind": "scene",
+        "prompt": "Ты на остановке и хочешь узнать у прохожего, идёт ли этот автобус в центр. Что сказать?",
+        "situation": "На остановке: спрашиваешь у прохожего, едет ли этот автобус в центр.",
+        "options": [
+          "Est-ce que ce bus va au centre ?",
+          "Va ce bus est-ce que au centre ?",
+          "Est-ce que ce bus aller au centre ?",
+          "Ce bus est-ce que va au centre ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Вопрос строится так: «Est-ce que» + подлежащее + глагол в личной форме: «Est-ce que ce bus va au centre ?». «Est-ce que» стоит в начале, а глагол спрягается (va, не aller)."
+      },
+      {
+        "id": "scene-transport-x3",
+        "kind": "compare",
+        "prompt": "Чем отличаются эти два вопроса в транспорте?",
+        "phrases": ["Est-ce que tu vas à la gare ?", "Où est-ce que tu vas ?"],
+        "options": [
+          "Первый — вопрос «да/нет» (едешь ли на вокзал), второй спрашивает место назначения («куда»): вопросительное слово ставится перед «est-ce que».",
+          "Первый вопрос вежливый, а второй грубый.",
+          "Первый — про будущее, а второй — про настоящее время.",
+          "Разницы нет, оба означают «куда ты едешь»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Без вопросительного слова «est-ce que» даёт вопрос «да/нет». Чтобы спросить деталь, вопросительное слово (où, quand, comment) ставится ПЕРЕД «est-ce que»: «Où est-ce que tu vas ?»."
       },
       {
         "id": "trans-insight",

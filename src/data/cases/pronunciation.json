@@ -52,15 +52,36 @@
         "kind": "sort",
         "prompt": "Где будет liaison, а где нет?",
         "baskets": [
-          { "id": "yes", "label": "связка есть (перед гласной)" },
-          { "id": "no", "label": "связки нет (перед согласной)" }
+          {
+            "id": "yes",
+            "label": "связка есть (перед гласной)"
+          },
+          {
+            "id": "no",
+            "label": "связки нет (перед согласной)"
+          }
         ],
         "items": [
-          { "text": "les enfants", "basket": "yes" },
-          { "text": "les copains", "basket": "no" },
-          { "text": "vous avez", "basket": "yes" },
-          { "text": "vous parlez", "basket": "no" },
-          { "text": "deux amis", "basket": "yes" }
+          {
+            "text": "les enfants",
+            "basket": "yes"
+          },
+          {
+            "text": "les copains",
+            "basket": "no"
+          },
+          {
+            "text": "vous avez",
+            "basket": "yes"
+          },
+          {
+            "text": "vous parlez",
+            "basket": "no"
+          },
+          {
+            "text": "deux amis",
+            "basket": "yes"
+          }
         ],
         "explanation": "Гласная в начале следующего слова → связка. Согласная → связки нет."
       },
@@ -70,11 +91,47 @@
         "prompt": "Вскрытие.",
         "phrase": "les enfants",
         "tokens": [
-          { "fr": "les", "ru": "артикль мн.ч.", "role": "финальная s обычно немая" },
-          { "fr": "‿", "ru": "звучит как «з»", "role": "связка" },
-          { "fr": "enfants", "ru": "дети", "role": "начинается с гласной" }
+          {
+            "fr": "les",
+            "ru": "артикль мн.ч.",
+            "role": "финальная s обычно немая"
+          },
+          {
+            "fr": "‿",
+            "ru": "звучит как «з»",
+            "role": "связка"
+          },
+          {
+            "fr": "enfants",
+            "ru": "дети",
+            "role": "начинается с гласной"
+          }
         ],
         "note": "enfants начинается с гласной, поэтому немая s в les оживает: «ле‿занфан». Финальная s в enfants остаётся немой."
+      },
+      {
+        "id": "liaison-x1",
+        "kind": "oddOneOut",
+        "prompt": "Связка появляется не всегда. В трёх случаях немая согласная оживает перед гласной — а в одном связки НЕ бывает. Найди исключение.",
+        "options": ["les‿amis", "vous‿êtes", "un grand‿arbre", "et alors"],
+        "correctIndex": 3,
+        "explanation": "После союза et (и) связка НИКОГДА не делается: говорят «э алор», а не «э-т-алор». В остальных трёх немая согласная оживает перед гласной: s → [z] (les‿amis, vous‿êtes), d → [t] (un grand‿arbre).",
+        "result": "et alors → «э алор» (без связки)"
+      },
+      {
+        "id": "liaison-x2",
+        "kind": "compare",
+        "prompt": "В обоих словосочетаниях связка есть, но согласная звучит по-разному. В чём различие?",
+        "phrases": ["vous‿avez", "un grand‿homme"],
+        "options": [
+          "В vous‿avez буква s звучит как [z], а в grand‿homme буква d звучит как [t]",
+          "В обоих случаях оживает звук [z]",
+          "Связка есть только в vous‿avez; в grand‿homme её нет",
+          "В grand‿homme связка звучит как [d], потому что d читается как написано"
+        ],
+        "correctIndex": 0,
+        "explanation": "При связке финальная s озвончается и звучит как [z]: vous‿avez → «ву-заве». А финальная d, наоборот, оглушается и звучит как [t]: un grand‿homme → «гран-том» (h в homme немая). Поэтому одна и та же связка даёт разные звуки.",
+        "result": "vous‿avez → «ву-заве», un grand‿homme → «гран-том»"
       },
       {
         "id": "liai-insight",
@@ -143,16 +200,40 @@
         "kind": "sort",
         "prompt": "Разложи: финальная согласная немая или звучит?",
         "baskets": [
-          { "id": "silent", "label": "немая" },
-          { "id": "sounded", "label": "звучит" }
+          {
+            "id": "silent",
+            "label": "немая"
+          },
+          {
+            "id": "sounded",
+            "label": "звучит"
+          }
         ],
         "items": [
-          { "text": "petit", "basket": "silent" },
-          { "text": "sac", "basket": "sounded" },
-          { "text": "grand", "basket": "silent" },
-          { "text": "neuf", "basket": "sounded" },
-          { "text": "vous", "basket": "silent" },
-          { "text": "hôtel", "basket": "sounded" }
+          {
+            "text": "petit",
+            "basket": "silent"
+          },
+          {
+            "text": "sac",
+            "basket": "sounded"
+          },
+          {
+            "text": "grand",
+            "basket": "silent"
+          },
+          {
+            "text": "neuf",
+            "basket": "sounded"
+          },
+          {
+            "text": "vous",
+            "basket": "silent"
+          },
+          {
+            "text": "hôtel",
+            "basket": "sounded"
+          }
         ],
         "explanation": "c, r, f, l («CaReFuL») обычно звучат (sac, neuf, hôtel). Большинство других финальных согласных — немые."
       },
@@ -162,11 +243,52 @@
         "prompt": "Вскрытие.",
         "phrase": "un petit sac",
         "tokens": [
-          { "fr": "un", "ru": "один", "role": "финальная n назализуется" },
-          { "fr": "petit", "ru": "маленький", "role": "финальная t немая" },
-          { "fr": "sac", "ru": "мешок", "role": "финальная c звучит (CaReFuL)" }
+          {
+            "fr": "un",
+            "ru": "один",
+            "role": "финальная n назализуется"
+          },
+          {
+            "fr": "petit",
+            "ru": "маленький",
+            "role": "финальная t немая"
+          },
+          {
+            "fr": "sac",
+            "ru": "мешок",
+            "role": "финальная c звучит (CaReFuL)"
+          }
         ],
         "note": "petit → «пёти» (t немая), а sac → «сак» (c из «CaReFuL» звучит)."
+      },
+      {
+        "id": "lettres-muettes-x1",
+        "kind": "explainError",
+        "prompt": "Ученик услышал «пёти ша» и записал это как «un peti chat». Почему это ошибка?",
+        "phrase": "un peti chat",
+        "options": [
+          "Прилагательное «petit» пишется с финальной t, хотя на слух она немая — буква есть, просто не звучит.",
+          "Правильно «un peti chât»: над a нужен циркумфлекс.",
+          "Здесь нужен глагол, а не прилагательное: «un petit chat» вообще неверно.",
+          "«chat» лишнее — по-французски достаточно сказать «un peti»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Финальная согласная часто немая, но в написании сохраняется: «petit» произносится «пёти», однако t обязательна. Немая ≠ отсутствующая. (А «chât» не существует — слово пишется «chat».)",
+        "result": "un petit chat"
+      },
+      {
+        "id": "lettres-muettes-x2",
+        "kind": "compare",
+        "prompt": "Финальная согласная: где звучит, а где молчит? В чём разница?",
+        "phrases": ["petit", "hiver"],
+        "options": [
+          "В «petit» финальная t немая, а в «hiver» финальная r звучит — r входит в «CaReFuL» (c, r, f, l читаются чаще).",
+          "Обе финальные согласные немые — слышно «пёти» и «иве».",
+          "Обе финальные согласные звучат — слышно «пётит» и «ивер».",
+          "В «petit» t звучит, а в «hiver» r немая — это исключение."
+        ],
+        "correctIndex": 0,
+        "explanation": "Большинство финальных согласных немые (t в «petit» → «пёти»), но c, r, f, l («CaReFuL») чаще читаются: r в «hiver» произносится — «ивер»."
       },
       {
         "id": "muet-insight",
@@ -227,17 +349,44 @@
         "kind": "sort",
         "prompt": "Разложи слова по носовому звуку.",
         "baskets": [
-          { "id": "an", "label": "an/en — «ан»" },
-          { "id": "on", "label": "on — «он»" },
-          { "id": "in", "label": "in/un — «эн»" }
+          {
+            "id": "an",
+            "label": "an/en — «ан»"
+          },
+          {
+            "id": "on",
+            "label": "on — «он»"
+          },
+          {
+            "id": "in",
+            "label": "in/un — «эн»"
+          }
         ],
         "items": [
-          { "text": "grand", "basket": "an" },
-          { "text": "enfant", "basket": "an" },
-          { "text": "bon", "basket": "on" },
-          { "text": "maison", "basket": "on" },
-          { "text": "vin", "basket": "in" },
-          { "text": "pain", "basket": "in" }
+          {
+            "text": "grand",
+            "basket": "an"
+          },
+          {
+            "text": "enfant",
+            "basket": "an"
+          },
+          {
+            "text": "bon",
+            "basket": "on"
+          },
+          {
+            "text": "maison",
+            "basket": "on"
+          },
+          {
+            "text": "vin",
+            "basket": "in"
+          },
+          {
+            "text": "pain",
+            "basket": "in"
+          }
         ],
         "explanation": "an/en → «ан» (grand, enfant), on → «он» (bon, maison), in/ain/un → «эн» (vin, pain)."
       },
@@ -255,11 +404,48 @@
         "prompt": "Вскрытие.",
         "phrase": "un bon vin",
         "tokens": [
-          { "fr": "un", "ru": "один", "role": "носовой «эн»" },
-          { "fr": "bon", "ru": "хороший", "role": "носовой «он»" },
-          { "fr": "vin", "ru": "вино", "role": "носовой «эн»" }
+          {
+            "fr": "un",
+            "ru": "один",
+            "role": "носовой «эн»"
+          },
+          {
+            "fr": "bon",
+            "ru": "хороший",
+            "role": "носовой «он»"
+          },
+          {
+            "fr": "vin",
+            "ru": "вино",
+            "role": "носовой «эн»"
+          }
         ],
         "note": "Три носовых подряд: «эн-бон-вэн», нигде n не звучит отдельной согласной."
+      },
+      {
+        "id": "nasales-x1",
+        "kind": "compare",
+        "prompt": "Сравни мужской и женский род. Что меняется в звуке?",
+        "phrases": ["bon", "bonne"],
+        "options": [
+          "В bon — носовой звук «он в нос», n не читается; в bonne двойная nn + e «гасят» носовой: гласный обычный, n чётко слышно",
+          "Оба слова читаются одинаково: разница только в написании, на слух не различить",
+          "В bon n читается, а в bonne n не читается — наоборот",
+          "В bonne носовой звук сильнее, чем в bon, потому что букв n две"
+        ],
+        "correctIndex": 0,
+        "explanation": "Носовой звук возникает, когда гласный + одна n/m стоят в конце или перед согласной (bon = «бон в нос», n отдельно не звучит). Но если за n идёт гласная или n удвоена (nn), назализация исчезает: bonne читается с обычным «о» и чётким n.",
+        "result": "bon [бон в нос] → bonne [бонн, n слышно]"
+      },
+      {
+        "id": "nasales-x2",
+        "kind": "cloze",
+        "prompt": "Вставь нужную форму. Подсказка: одна форма носовая, другая — нет.",
+        "phrase": "Mon ___ est sympa et ma voisine aussi.",
+        "options": ["voisin", "voisine", "voisain", "voisinne"],
+        "correctIndex": 0,
+        "explanation": "К слову voisin (мужской род) гласный + одна n в конце даёт носовой «эн в нос», n отдельно не звучит [vwazɛ̃]. Женская форма voisine читается без носового — с обычным «и» и слышимым n [vwazin], потому что за n идёт гласная. Варианты voisain и voisinne не существуют.",
+        "result": "Mon voisin est sympa et ma voisine aussi."
       },
       {
         "id": "nas-insight",
@@ -346,17 +532,53 @@
         "kind": "sort",
         "prompt": "Где слова сливаются (élision), а где нет?",
         "baskets": [
-          { "id": "yes", "label": "сливается (перед гласной)" },
-          { "id": "no", "label": "не сливается (перед согласной)" }
+          {
+            "id": "yes",
+            "label": "сливается (перед гласной)"
+          },
+          {
+            "id": "no",
+            "label": "не сливается (перед согласной)"
+          }
         ],
         "items": [
-          { "text": "le + ami → l'ami", "basket": "yes" },
-          { "text": "le + café → le café", "basket": "no" },
-          { "text": "de + eau → d'eau", "basket": "yes" },
-          { "text": "de + Paris → de Paris", "basket": "no" },
-          { "text": "que + il → qu'il", "basket": "yes" }
+          {
+            "text": "le + ami → l'ami",
+            "basket": "yes"
+          },
+          {
+            "text": "le + café → le café",
+            "basket": "no"
+          },
+          {
+            "text": "de + eau → d'eau",
+            "basket": "yes"
+          },
+          {
+            "text": "de + Paris → de Paris",
+            "basket": "no"
+          },
+          {
+            "text": "que + il → qu'il",
+            "basket": "yes"
+          }
         ],
         "explanation": "Гласная в начале следующего слова → élision. Согласная → слова остаются раздельными."
+      },
+      {
+        "id": "elision-x1",
+        "kind": "mutation",
+        "prompt": "Сделай отрицание правильным: перед гласной короткое слово сливается.",
+        "phrase": "Je ne aime pas le café.",
+        "options": [
+          "Je n'aime pas le café.",
+          "Je ne aime pas le café.",
+          "Je ne'aime pas le café.",
+          "Je n aime pas le café."
+        ],
+        "correctIndex": 0,
+        "explanation": "Перед гласной «ne» теряет «e» и сливается через апостроф: ne + aime → n'aime. Апостроф пишется сразу после «n», без пробела.",
+        "result": "Je n'aime pas le café."
       },
       {
         "id": "eli-insight",
@@ -417,16 +639,40 @@
         "kind": "sort",
         "prompt": "Разложи: как пишут vs как звучит в речи.",
         "baskets": [
-          { "id": "ecrit", "label": "как пишут" },
-          { "id": "oral", "label": "как звучит" }
+          {
+            "id": "ecrit",
+            "label": "как пишут"
+          },
+          {
+            "id": "oral",
+            "label": "как звучит"
+          }
         ],
         "items": [
-          { "text": "je suis", "basket": "ecrit" },
-          { "text": "chuis", "basket": "oral" },
-          { "text": "tu es", "basket": "ecrit" },
-          { "text": "t'es", "basket": "oral" },
-          { "text": "il y a", "basket": "ecrit" },
-          { "text": "y a", "basket": "oral" }
+          {
+            "text": "je suis",
+            "basket": "ecrit"
+          },
+          {
+            "text": "chuis",
+            "basket": "oral"
+          },
+          {
+            "text": "tu es",
+            "basket": "ecrit"
+          },
+          {
+            "text": "t'es",
+            "basket": "oral"
+          },
+          {
+            "text": "il y a",
+            "basket": "ecrit"
+          },
+          {
+            "text": "y a",
+            "basket": "oral"
+          }
         ],
         "explanation": "На письме — полные формы. В живой речи — сжатые: chuis, t'es, y a."
       },
@@ -443,6 +689,45 @@
         ],
         "correctIndex": 0,
         "explanation": "tu es → «t'es». (Заметь: t'es = tu es, а не «t'est» — est это глагол être.)"
+      },
+      {
+        "id": "reductions-x1",
+        "kind": "collapse",
+        "prompt": "Сосед в коридоре спрашивает, есть ли горячая вода. Как «Il y a» прозвучит в его быстрой речи?",
+        "phrase": "Il y a de l'eau chaude ?",
+        "options": [
+          "Y a de l'eau chaude ?",
+          "L'y a de l'eau chaude ?",
+          "Il a de l'eau chaude ?",
+          "Ya l'eau chaude ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "В живой речи «il y a» сжимается до «y a» [ja]: «il» проглатывается. «Il a» — это другой глагол (avoir, «у него есть»), а не оборот «есть». «L'y a» и «Ya l'eau» — несуществующие формы.",
+        "result": "Y a de l'eau chaude ?"
+      },
+      {
+        "id": "reductions-x2",
+        "kind": "cloze",
+        "prompt": "Прохожий быстро спрашивает время. Что он на самом деле произнёс вместо «Tu as l'heure ?»",
+        "phrase": "___ l'heure ?",
+        "options": ["T'as", "Tu'as", "T'es", "Ta"],
+        "correctIndex": 0,
+        "explanation": "Перед гласной «tu as» сливается в «t'as» (tu теряет «u»): «t'as l'heure ?». «T'es» — это «tu es» («ты есть»), не подходит по смыслу. «Tu'as» не бывает, а «ta» — это притяжательное «твоя».",
+        "result": "T'as l'heure ?"
+      },
+      {
+        "id": "reductions-x3",
+        "kind": "scene",
+        "prompt": "Ты влетаешь на занятие позже всех. Как по-разговорному бросить «Я опоздал»?",
+        "situation": "Ты вбегаешь в аудиторию с опозданием и хочешь быстро извиниться.",
+        "options": [
+          "Chuis en retard.",
+          "Chais en retard.",
+          "Chuis pas en retard.",
+          "Je suis chuis en retard."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Je suis» в быстрой речи сжимается до «chuis» [ʃɥi]: «chuis en retard» = «je suis en retard». «Chais» — это сжатое «je sais» («я знаю»), другой глагол. «Chuis pas» добавляет отрицание («я НЕ опоздал»), а «je suis chuis» дублирует одно и то же."
       },
       {
         "id": "red-insight",

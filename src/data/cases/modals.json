@@ -89,6 +89,21 @@
         "minCount": 3
       },
       {
+        "id": "voudrais-x1",
+        "kind": "fixCalque",
+        "prompt": "Почини форму: учащийся хотел вежливо попросить счёт, но написал je voudrai без -s — это будущее время, а не «хотел бы». Где настоящая «кнопка вежливости»?",
+        "phrase": "Je voudrai l'addition, s'il vous plaît.",
+        "options": [
+          "Je voudrais l'addition, s'il vous plaît.",
+          "Je voudrai l'addition, s'il vous plaît.",
+          "Je veux l'addition, s'il vous plaît.",
+          "Je voudrez l'addition, s'il vous plaît."
+        ],
+        "correctIndex": 0,
+        "explanation": "Вежливая просьба — это conditionnel: je voudrais (с -s на конце). Без -s (je voudrai) это futur «захочу», а не «хотел бы»; je veux звучит как требование; форма je voudrez неверна — окончание -ez идёт с vous, а не с je.",
+        "result": "Je voudrais l'addition, s'il vous plaît."
+      },
+      {
         "id": "voud-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -163,6 +178,30 @@
           "Il faut attendre un peu."
         ],
         "minCount": 3
+      },
+      {
+        "id": "il-faut-x1",
+        "kind": "compare",
+        "prompt": "В чём разница между этими двумя фразами?",
+        "phrases": ["Il faut partir.", "Je dois partir."],
+        "options": [
+          "«Il faut partir» — безличное «надо (уходить)», никто конкретно не назван; «Je dois partir» — лично «я должен уйти», обязанность привязана ко мне.",
+          "«Il faut partir» — про будущее, а «Je dois partir» — про прошлое.",
+          "«Il faut partir» — вежливая форма, а «Je dois partir» — грубая.",
+          "Это одно и то же, разницы в значении нет."
+        ],
+        "correctIndex": 0,
+        "explanation": "il faut — безличный оборот: говорит «надо», не называя, кто должен. А devoir (je dois) спрягается по лицам и прямо указывает, КТО обязан."
+      },
+      {
+        "id": "il-faut-x2",
+        "kind": "fixCalque",
+        "prompt": "Русское «надо идти» переводят дословно. Где правильно?",
+        "phrase": "Je faut aller.",
+        "options": ["Il faut y aller.", "Je faut aller.", "Je faux aller.", "Nous fallons aller."],
+        "correctIndex": 0,
+        "explanation": "Глагол falloir безличный: существует ТОЛЬКО форма «il faut». Его нельзя спрягать по лицам — нет ни «je faut», ни «nous fallons». «Надо идти» = Il faut y aller.",
+        "result": "Il faut y aller."
       },
       {
         "id": "faut-insight",
@@ -257,6 +296,31 @@
         "explanation": "Тот же каркас je peux + инфинитив: ouvrir la fenêtre."
       },
       {
+        "id": "je-peux-x1",
+        "kind": "cloze",
+        "prompt": "После je peux всегда идёт чистый инфинитив. Заполни пропуск так, чтобы вышло вежливое «можно мне...» в кафе.",
+        "phrase": "Excusez-moi, est-ce que je peux ___ un café, s'il vous plaît ?",
+        "options": ["prendre", "prends", "de prendre", "à prendre"],
+        "correctIndex": 0,
+        "explanation": "После je peux глагол стоит в чистом инфинитиве без предлога: je peux prendre. Личная форма (prends) и предлоги de / à здесь ошибочны — этим je peux и удобен: одна форма для «я могу» и «можно мне».",
+        "result": "Excusez-moi, est-ce que je peux prendre un café, s'il vous plaît ?"
+      },
+      {
+        "id": "je-peux-x2",
+        "kind": "fixCalque",
+        "prompt": "Калька с русского «Можно мне заплатить картой?». Что звучит по-французски естественно?",
+        "phrase": "Je peux à payer par carte ?",
+        "options": [
+          "Je peux payer par carte ?",
+          "Je peux à payer par carte ?",
+          "Je peux que je paie par carte ?",
+          "Possible payer par carte ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "je peux напрямую цепляет инфинитив — никакого à, никакого que je paie. Та же кнопка je peux + инфинитив передаёт здесь «можно мне заплатить...».",
+        "result": "Je peux payer par carte ?"
+      },
+      {
         "id": "peux-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -349,6 +413,31 @@
         "note": "devoir (je dois) + инфинитив, без de. Называет, кто именно обязан."
       },
       {
+        "id": "je-dois-x1",
+        "kind": "cloze",
+        "prompt": "Вставь нужную форму: в окошке администрации ты говоришь о своей личной обязанности.",
+        "phrase": "Je ___ apporter ma carte d'identité.",
+        "options": ["dois", "doit", "faut", "dois de"],
+        "correctIndex": 0,
+        "explanation": "С «je» глагол devoir принимает форму «dois»: je dois + инфинитив = «я должен». «doit» — это форма для il/elle, «faut» существует только в безличном «il faut» (нельзя «je faut»), а после devoir не ставится предлог «de».",
+        "result": "Je dois apporter ma carte d'identité."
+      },
+      {
+        "id": "je-dois-x2",
+        "kind": "fixCalque",
+        "prompt": "Русское «я должен перезвонить» тянет вставить лишнее слово. Найди правильный французский.",
+        "phrase": "Je dois de rappeler demain.",
+        "options": [
+          "Je dois rappeler demain.",
+          "Je dois de rappeler demain.",
+          "Je suis dois rappeler demain.",
+          "Je dois à rappeler demain."
+        ],
+        "correctIndex": 0,
+        "explanation": "После devoir инфинитив идёт напрямую, без предлога: je dois rappeler. Ни «de», ни «à» здесь не нужны, и devoir не образуется через «être» — это кальки, которых во французском нет.",
+        "result": "Je dois rappeler demain."
+      },
+      {
         "id": "dois-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -434,6 +523,31 @@
           }
         ],
         "note": "on берёт форму 3 л. ед.: on peut. После — инфинитив (тут с y перед ним)."
+      },
+      {
+        "id": "on-peut-x1",
+        "kind": "cloze",
+        "prompt": "Вставь пропущенное слово: вы заходите в кафе и спрашиваете официанта, можно ли заказывать.",
+        "phrase": "On peut ___ ?",
+        "options": ["commander", "commande", "commandons", "commandé"],
+        "correctIndex": 0,
+        "explanation": "После on peut всегда идёт инфинитив (pouvoir + инфинитив), поэтому «commander», а не спрягаемая форма «commande/commandons» и не причастие «commandé».",
+        "result": "On peut commander ?"
+      },
+      {
+        "id": "on-peut-x2",
+        "kind": "fixCalque",
+        "prompt": "Почини кальку с русского «Можем туда идти? / Пойдём?» — носители говорят это одной устойчивой фразой.",
+        "phrase": "On peut aller là ?",
+        "options": [
+          "On peut y aller ?",
+          "On peut aller là ?",
+          "On peut y va ?",
+          "On y peut aller ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "«Туда» здесь — местоимение y, и оно стоит прямо перед инфинитивом, которым управляет: on peut y aller ?. Калька «aller là» звучит коряво; «y va» — спряжение вместо инфинитива; «on y peut» — y оторвали от своего глагола.",
+        "result": "On peut y aller ?"
       },
       {
         "id": "onp-insight",

@@ -49,10 +49,26 @@
         "prompt": "Вскрытие.",
         "phrase": "Je suis en retard parce qu'il y a des bouchons.",
         "tokens": [
-          { "fr": "Je suis en retard", "ru": "я опаздываю", "role": "факт" },
-          { "fr": "parce qu'", "ru": "потому что", "role": "коннектор причины (élision перед il)" },
-          { "fr": "il y a", "ru": "есть / имеется", "role": "оборот" },
-          { "fr": "des bouchons", "ru": "пробки", "role": "причина" }
+          {
+            "fr": "Je suis en retard",
+            "ru": "я опаздываю",
+            "role": "факт"
+          },
+          {
+            "fr": "parce qu'",
+            "ru": "потому что",
+            "role": "коннектор причины (élision перед il)"
+          },
+          {
+            "fr": "il y a",
+            "ru": "есть / имеется",
+            "role": "оборот"
+          },
+          {
+            "fr": "des bouchons",
+            "ru": "пробки",
+            "role": "причина"
+          }
         ],
         "note": "parce que → parce qu' перед гласной (il)."
       },
@@ -69,6 +85,36 @@
         ],
         "correctIndex": 0,
         "explanation": "Причину выносим вперёд, следствие вводим через donc: Il pleut, donc je reste à la maison."
+      },
+      {
+        "id": "logique-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский ставит «потому что» в начале — но здесь нужна не причина, а следствие. Почини фразу: «На улице холодно, поэтому я надеваю пальто».",
+        "phrase": "Il fait froid, parce que je mets un manteau.",
+        "options": [
+          "Il fait froid, donc je mets un manteau.",
+          "Il fait froid, parce que je mets un manteau.",
+          "Donc il fait froid, je mets un manteau.",
+          "Je mets un manteau, donc il fait froid."
+        ],
+        "correctIndex": 0,
+        "explanation": "Холод — причина, пальто — следствие. Следствие вводится через donc («поэтому»): «Il fait froid, donc je mets un manteau». С parce que получилось бы «холодно, потому что я надеваю пальто» — причина и следствие меняются местами, смысл ломается.",
+        "result": "Il fait froid, donc je mets un manteau."
+      },
+      {
+        "id": "logique-x2",
+        "kind": "scene",
+        "prompt": "Учитель спрашивает, почему ты не сделал упражнение. Назови причину.",
+        "situation": "На уроке французского учитель спрашивает, почему ты не выполнил упражнение. Ты объясняешь причину.",
+        "options": [
+          "Je n'ai pas fait l'exercice parce que j'étais malade.",
+          "Je n'ai pas fait l'exercice donc j'étais malade.",
+          "J'étais malade parce que je n'ai pas fait l'exercice.",
+          "Je n'ai pas fait l'exercice pourquoi j'étais malade."
+        ],
+        "correctIndex": 0,
+        "explanation": "Причину вводит parce que: «Je n'ai pas fait l'exercice parce que j'étais malade». Donc дало бы следствие («поэтому я заболел»), вариант с перестановкой говорит, что болезнь вызвана невыполнением, а pourquoi — это вопрос «почему?», связкой «потому что» он быть не может.",
+        "result": "Je n'ai pas fait l'exercice parce que j'étais malade."
       },
       {
         "id": "log-insight",
@@ -136,9 +182,21 @@
         "prompt": "Вскрытие.",
         "phrase": "Quand tu arrives, appelle-moi.",
         "tokens": [
-          { "fr": "Quand", "ru": "когда", "role": "коннектор времени" },
-          { "fr": "tu arrives", "ru": "ты приходишь", "role": "придаточное" },
-          { "fr": "appelle-moi", "ru": "позвони мне", "role": "повеление (impératif + moi)" }
+          {
+            "fr": "Quand",
+            "ru": "когда",
+            "role": "коннектор времени"
+          },
+          {
+            "fr": "tu arrives",
+            "ru": "ты приходишь",
+            "role": "придаточное"
+          },
+          {
+            "fr": "appelle-moi",
+            "ru": "позвони мне",
+            "role": "повеление (impératif + moi)"
+          }
         ],
         "note": "quand вводит момент времени, а не условие."
       },
@@ -155,6 +213,40 @@
         ],
         "correctIndex": 0,
         "explanation": "Условие «если захочешь» → si. Si tu veux, on y va."
+      },
+      {
+        "id": "connecteurs-x1",
+        "kind": "hypothesis",
+        "prompt": "Посмотри на эти фразы с quand про будущее. Какое правило ты выводишь?",
+        "clues": [
+          "Quand tu arriveras, appelle-moi.",
+          "Quand il fera beau, on sortira.",
+          "Quand je serai grand, je voyagerai."
+        ],
+        "options": [
+          "После quand о будущем французский ставит будущее время (futur), хотя по-русски здесь настоящее («когда придёшь»).",
+          "После quand всегда идёт настоящее время, как в русском.",
+          "После quand нужен инфинитив без подлежащего.",
+          "После quand глагол всегда стоит в прошедшем времени."
+        ],
+        "correctIndex": 0,
+        "explanation": "Главное отличие от русского: если quand вводит будущее событие, по-французски глагол ставится в futur (Quand tu arriveras…), тогда как русский использует настоящее («когда придёшь»). Это частая ошибка-калька.",
+        "result": "Quand tu arriveras, appelle-moi."
+      },
+      {
+        "id": "connecteurs-x2",
+        "kind": "fixCalque",
+        "prompt": "Исправь кальку: перед il условие si должно слиться.",
+        "phrase": "Si il pleut, je reste à la maison.",
+        "options": [
+          "S'il pleut, je reste à la maison.",
+          "Si'l pleut, je reste à la maison.",
+          "S'ils pleut, je reste à la maison.",
+          "Sil pleut, je reste à la maison."
+        ],
+        "correctIndex": 0,
+        "explanation": "Условный союз si перед il сливается в s'il (элизия). Здесь подлежащее единственное — il pleut, поэтому s'ils (множественное) не подходит. Перед elle/elles слияния нет — там остаётся si elle.",
+        "result": "S'il pleut, je reste à la maison."
       },
       {
         "id": "con-insight",
@@ -212,11 +304,86 @@
         "prompt": "Вскрытие.",
         "phrase": "Comme il pleut, je reste.",
         "tokens": [
-          { "fr": "Comme", "ru": "так как", "role": "коннектор причины в начале фразы" },
-          { "fr": "il pleut", "ru": "идёт дождь", "role": "причина" },
-          { "fr": "je reste", "ru": "я остаюсь", "role": "следствие" }
+          {
+            "fr": "Comme",
+            "ru": "так как",
+            "role": "коннектор причины в начале фразы"
+          },
+          {
+            "fr": "il pleut",
+            "ru": "идёт дождь",
+            "role": "причина"
+          },
+          {
+            "fr": "je reste",
+            "ru": "я остаюсь",
+            "role": "следствие"
+          }
         ],
         "note": "Comme в начале предложения вводит причину; следствие идёт после запятой."
+      },
+      {
+        "id": "alors-comme-x1",
+        "kind": "scene",
+        "prompt": "Вы в кафе с другом. Официант принёс счёт, друг спрашивает: «On y va ?» Вы соглашаетесь и хотите сказать «Ну, тогда пошли!». Что выбрать?",
+        "situation": "Café / Restaurant: пора уходить, друг говорит «On y va ?», вы соглашаетесь.",
+        "options": [
+          "Alors, on y va !",
+          "Comme, on y va !",
+          "Comme on y va !",
+          "Alors qu'on y va !"
+        ],
+        "correctIndex": 0,
+        "explanation": "Разговорное alors в начале реплики = «ну/тогда» — переключатель речи, реакция на сказанное. Comme так не работает: оно вводит причину («так как»), а не «ну/тогда».",
+        "result": "Alors, on y va !"
+      },
+      {
+        "id": "alors-comme-x2",
+        "kind": "fixCalque",
+        "prompt": "Русское «тогда» в значении «ну тогда / в таком случае» здесь перевели как comme. Исправь.",
+        "phrase": "Tu as fini ? Comme on part.",
+        "options": [
+          "Tu as fini ? Alors on part.",
+          "Tu as fini ? Comme on part.",
+          "Tu as fini ? Comme ça on part.",
+          "Tu as fini ? Parce qu'on part."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Ты закончил? Тогда идём» — это вывод/реакция, значит alors, а не comme. Comme в начале фразы означает «так как» (причина), и тут оно ломает смысл.",
+        "result": "Tu as fini ? Alors on part."
+      },
+      {
+        "id": "alors-comme-x3",
+        "kind": "oddOneOut",
+        "prompt": "В трёх фразах comme правильно вводит причину («так как») в начале. В одной — нет. Найди ошибку.",
+        "options": [
+          "Comme tu es là, on commence.",
+          "Comme il est tard, je rentre.",
+          "Comme je suis fatigué, je dors.",
+          "Comme on part, à demain !"
+        ],
+        "correctIndex": 3,
+        "explanation": "В первых трёх comme = «так как» вводит причину перед следствием. В «Comme on part, à demain !» нет причинно-следственной связи — здесь по смыслу нужно alors («ну, мы уходим, до завтра»).",
+        "result": "Alors on part, à demain !"
+      },
+      {
+        "id": "alors-comme-x4",
+        "kind": "hypothesis",
+        "prompt": "Посмотри на четыре примера. Что определяет выбор между alors и comme?",
+        "clues": [
+          "Comme il pleut, je reste à la maison.",
+          "Il pleut, alors je reste à la maison.",
+          "Comme tu insistes, je viens.",
+          "Tu insistes ? Alors je viens."
+        ],
+        "options": [
+          "Comme ставит причину В НАЧАЛЕ (перед следствием); alors стоит после факта и вводит следствие/реакцию («поэтому/тогда»).",
+          "Comme и alors взаимозаменяемы, разницы в смысле нет.",
+          "Comme вводит следствие, а alors — причину.",
+          "Alors всегда стоит в начале предложения, а comme — только в конце."
+        ],
+        "correctIndex": 0,
+        "explanation": "Comme открывает фразу причиной (Comme X, Y = «так как X, Y»). Alors идёт после факта и вводит вывод или реакцию («поэтому/тогда»). Они не взаимозаменяемы и занимают разные позиции."
       },
       {
         "id": "alors-insight",
@@ -283,11 +450,77 @@
         "prompt": "Вскрытие.",
         "phrase": "Après avoir mangé, je sors.",
         "tokens": [
-          { "fr": "Après avoir", "ru": "после того как", "role": "блок прошедшего действия" },
-          { "fr": "mangé", "ru": "поел", "role": "причастие (participe passé)" },
-          { "fr": "je sors", "ru": "я выхожу", "role": "главное действие" }
+          {
+            "fr": "Après avoir",
+            "ru": "после того как",
+            "role": "блок прошедшего действия"
+          },
+          {
+            "fr": "mangé",
+            "ru": "поел",
+            "role": "причастие (participe passé)"
+          },
+          {
+            "fr": "je sors",
+            "ru": "я выхожу",
+            "role": "главное действие"
+          }
         ],
         "note": "après avoir + причастие; avant de + инфинитив (avant de manger)."
+      },
+      {
+        "id": "avant-apres-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский переводит «После того как она пришла, она села» дословно. Исправь на идиоматичный французский.",
+        "phrase": "Après elle est venue, elle s'est assise.",
+        "options": [
+          "Après être venue, elle s'est assise.",
+          "Après avoir venue, elle s'est assise.",
+          "Après venir, elle s'est assise.",
+          "Après elle venir, elle s'est assise."
+        ],
+        "correctIndex": 0,
+        "explanation": "Глаголы движения (venir) и возвратные спрягаются с être: «après être + причастие». При être причастие согласуется с подлежащим — она пришла → venue (e).",
+        "result": "Après être venue, elle s'est assise."
+      },
+      {
+        "id": "avant-apres-x2",
+        "kind": "cloze",
+        "prompt": "Вставь связку: «Пока я готовлю, ты накрываешь на стол» — два действия одновременно, разные подлежащие.",
+        "phrase": "___ je prépare le repas, tu mets la table.",
+        "options": ["Pendant que", "Avant de", "Après avoir", "Avant que"],
+        "correctIndex": 0,
+        "explanation": "Когда действия идут одновременно и подлежащие разные, нужно «pendant que» + спрягаемый глагол. «Avant de / après avoir» требуют одного подлежащего и не передают одновременность.",
+        "result": "Pendant que je prépare le repas, tu mets la table."
+      },
+      {
+        "id": "avant-apres-x3",
+        "kind": "explainError",
+        "prompt": "Почему эта фраза неверна?",
+        "phrase": "Avant de tu pars, ferme la fenêtre.",
+        "options": [
+          "«Avant de» требует инфинитив того же подлежащего, а не спрягаемый глагол с «tu»; нужно «Avant de partir» или «Avant que tu (ne) partes».",
+          "«Avant de» вообще не существует, правильно только «après».",
+          "Порядок слов: «ferme la fenêtre» должно стоять в начале.",
+          "«Avant de» требует причастие, нужно «avant de parti»."
+        ],
+        "correctIndex": 0,
+        "explanation": "После «avant de» идёт инфинитив (avant de partir), и это работает только при одном подлежащем. Если подлежащее другое и названо явно («tu»), нужна другая конструкция: «avant que tu (ne) partes» с subjonctif.",
+        "result": "Avant de partir, ferme la fenêtre."
+      },
+      {
+        "id": "avant-apres-x4",
+        "kind": "scene",
+        "prompt": "Сцена: cours de français.",
+        "situation": "Ты объясняешь преподавателю свой порядок действий: «Сначала я прочитал текст, а потом ответил на вопросы».",
+        "options": [
+          "Après avoir lu le texte, j'ai répondu aux questions.",
+          "Après avoir lu le texte, j'ai répondu à les questions.",
+          "Avant de lire le texte, j'ai répondu aux questions.",
+          "Après lire le texte, j'ai répondu aux questions."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Après avoir + причастие» = «после того как сделал»: après avoir lu. С глаголом répondre предлог à + les сливается в «aux»: répondre aux questions."
       },
       {
         "id": "avap-insight",
@@ -334,16 +567,40 @@
         "kind": "sort",
         "prompt": "Разложи слова-ступеньки по месту в последовательности.",
         "baskets": [
-          { "id": "start", "label": "начало" },
-          { "id": "mid", "label": "середина" },
-          { "id": "end", "label": "конец" }
+          {
+            "id": "start",
+            "label": "начало"
+          },
+          {
+            "id": "mid",
+            "label": "середина"
+          },
+          {
+            "id": "end",
+            "label": "конец"
+          }
         ],
         "items": [
-          { "text": "D'abord", "basket": "start" },
-          { "text": "Pour commencer", "basket": "start" },
-          { "text": "Ensuite", "basket": "mid" },
-          { "text": "Puis", "basket": "mid" },
-          { "text": "Enfin", "basket": "end" }
+          {
+            "text": "D'abord",
+            "basket": "start"
+          },
+          {
+            "text": "Pour commencer",
+            "basket": "start"
+          },
+          {
+            "text": "Ensuite",
+            "basket": "mid"
+          },
+          {
+            "text": "Puis",
+            "basket": "mid"
+          },
+          {
+            "text": "Enfin",
+            "basket": "end"
+          }
         ],
         "explanation": "Начало: d'abord, pour commencer. Середина: ensuite, puis. Конец: enfin."
       },
@@ -363,10 +620,26 @@
         "prompt": "Вскрытие последовательности.",
         "phrase": "D'abord, je me lève, ensuite je pars.",
         "tokens": [
-          { "fr": "D'abord", "ru": "сначала", "role": "шаг 1" },
-          { "fr": "je me lève", "ru": "встаю", "role": "действие 1" },
-          { "fr": "ensuite", "ru": "потом", "role": "шаг 2" },
-          { "fr": "je pars", "ru": "ухожу", "role": "действие 2" }
+          {
+            "fr": "D'abord",
+            "ru": "сначала",
+            "role": "шаг 1"
+          },
+          {
+            "fr": "je me lève",
+            "ru": "встаю",
+            "role": "действие 1"
+          },
+          {
+            "fr": "ensuite",
+            "ru": "потом",
+            "role": "шаг 2"
+          },
+          {
+            "fr": "je pars",
+            "ru": "ухожу",
+            "role": "действие 2"
+          }
         ],
         "note": "d'abord и ensuite ставятся в начале своей части, обычно с запятой."
       },
@@ -383,6 +656,23 @@
           "Pour commencer, je me réveille."
         ],
         "minCount": 3
+      },
+      {
+        "id": "sequence-x1",
+        "kind": "compare",
+        "prompt": "Оба слова переводятся «наконец», но это не одно и то же. В чём разница?",
+        "phrases": [
+          "D'abord on visite, ensuite on déjeune, enfin on rentre.",
+          "On voulait rester, mais finalement on est rentrés."
+        ],
+        "options": [
+          "«enfin» закрывает перечень шагов (последняя ступенька: сначала… потом… наконец), а «finalement» значит «в итоге, в конце концов» — после раздумий или смены плана, и это не ступенька списка.",
+          "«enfin» и «finalement» полностью взаимозаменяемы, разницы в значении нет — выбор зависит только от длины фразы.",
+          "«enfin» означает «в конце концов, после колебаний», а «finalement» — это последний шаг в перечислении после «d'abord» и «ensuite».",
+          "«enfin» используется только в прошедшем времени, а «finalement» — только в настоящем."
+        ],
+        "correctIndex": 0,
+        "explanation": "«enfin» — это последняя ступенька в цепочке шагов (d'abord → ensuite → enfin). «finalement» означает «в итоге / в конце концов» (часто после смены плана) и не входит в ряд d'abord/ensuite."
       },
       {
         "id": "seq-insight",

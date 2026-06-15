@@ -101,6 +101,62 @@
         "explanation": "Внезапное событие — щелчок: le téléphone a sonné. imparfait sonnait дал бы «звонил фоном»."
       },
       {
+        "id": "passe-imparfait-x1",
+        "kind": "cloze",
+        "prompt": "Фон прервался щелчком. Какое время для прерванного действия?",
+        "phrase": "Je ___ la télé quand on a frappé à la porte.",
+        "options": ["regardais", "ai regardé", "regarde", "regardai"],
+        "correctIndex": 0,
+        "explanation": "Длящееся действие-фон («смотрел телевизор») идёт в imparfait, а внезапное событие, которое его прерывает («постучали»), — в passé composé. Поэтому здесь нужен imparfait: regardais."
+      },
+      {
+        "id": "passe-imparfait-x2",
+        "kind": "compare",
+        "prompt": "Одно и то же время суток, но две разные камеры. В чём разница?",
+        "phrases": ["Hier, il pleuvait.", "Hier, il a plu."],
+        "options": [
+          "«Il pleuvait» описывает дождь как фон/обстановку (шёл дождь), а «il a plu» подаёт его как завершившийся факт-событие (прошёл дождь).",
+          "«Il pleuvait» — это будущее в прошедшем, а «il a plu» — настоящее время.",
+          "Разницы по смыслу нет, это просто два стиля одной и той же фразы.",
+          "«Il a plu» описывает длительный фон, а «il pleuvait» — мгновенное событие; то есть наоборот."
+        ],
+        "correctIndex": 0,
+        "explanation": "Imparfait (pleuvait) рисует фон и состояние — каким был день; passé composé (a plu) подаёт то же самое как состоявшееся событие с границами. Это и есть выбор «камеры»."
+      },
+      {
+        "id": "passe-imparfait-x3",
+        "kind": "scene",
+        "prompt": "На уроке французского вы рассказываете, что делали, когда вошёл преподаватель. Как сказать «я писал упражнение, когда он вошёл»?",
+        "situation": "Cours de français: вы описываете прерванное действие — длящийся фон плюс внезапное событие.",
+        "options": [
+          "J'écrivais l'exercice quand il est entré.",
+          "J'ai écrit l'exercice quand il entrait.",
+          "J'écrivais l'exercice quand il entrait.",
+          "J'ai écrit l'exercice quand il est entré."
+        ],
+        "correctIndex": 0,
+        "explanation": "Длящийся фон («писал») — imparfait (écrivais), а короткое событие, которое его прерывает («вошёл»), — passé composé (est entré). Поэтому: J'écrivais... quand il est entré."
+      },
+      {
+        "id": "passe-imparfait-x4",
+        "kind": "hypothesis",
+        "prompt": "Посмотри на примеры и выведи правило: какое время выбирают для повторяющейся привычки в прошлом, а какое — для одного раза?",
+        "clues": [
+          "Quand j'étais petit, j'allais à l'école à pied.",
+          "Tous les étés, nous allions à la mer.",
+          "Hier, je suis allé à l'école en bus.",
+          "L'été dernier, nous sommes allés à la mer une fois."
+        ],
+        "options": [
+          "Привычное, регулярно повторявшееся действие в прошлом идёт в imparfait, а единичное завершённое событие — в passé composé.",
+          "Imparfait используется только для отрицательных фраз, а passé composé — только для утвердительных.",
+          "Выбор времени зависит только от подлежащего: с «je» — imparfait, с «nous» — passé composé.",
+          "Passé composé обозначает привычку, а imparfait — однократное событие."
+        ],
+        "correctIndex": 0,
+        "explanation": "Маркеры «quand j'étais petit», «tous les étés» сигналят о привычке/повторении — это imparfait; «hier», «une fois» указывают на единичное событие — это passé composé."
+      },
+      {
         "id": "pi-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -186,6 +242,36 @@
           }
         ],
         "note": "futur proche = aller (vais/va/vas) + инфинитив. После vais — всегда инфинитив."
+      },
+      {
+        "id": "futur-proche-x1",
+        "kind": "explainError",
+        "prompt": "Где ошибка? «Je vais ne pas venir.»",
+        "phrase": "Je vais ne pas venir.",
+        "options": [
+          "Отрицание ne... pas должно обхватывать вспомогательный глагол aller, а не инфинитив: правильно «Je ne vais pas venir».",
+          "После aller инфинитив venir надо заменить на причастие: «Je vais ne pas venu».",
+          "Глагол venir нельзя использовать в futur proche, нужен только faire.",
+          "Здесь не хватает предлога de перед инфинитивом: «Je vais ne pas de venir»."
+        ],
+        "correctIndex": 0,
+        "explanation": "В futur proche спрягается только aller, поэтому отрицание ne... pas ставится вокруг него: «Je ne vais pas + инфинитив». Инфинитив остаётся целым и стоит после pas.",
+        "result": "Je ne vais pas venir."
+      },
+      {
+        "id": "futur-proche-x2",
+        "kind": "scene",
+        "prompt": "Сцена: телефон.",
+        "situation": "Вы звоните в школу и хотите сказать, что перезвоните позже.",
+        "options": [
+          "Je vais vous rappeler plus tard.",
+          "Je rappellerais vous plus tard.",
+          "Je vais vous rappeler hier.",
+          "Je suis allé vous rappeler plus tard."
+        ],
+        "correctIndex": 0,
+        "explanation": "Futur proche «je vais + инфинитив» — самый живой способ сообщить о ближайшем намерении: «Je vais vous rappeler» (я вам перезвоню). Местоимение vous стоит перед инфинитивом.",
+        "result": "Je vais vous rappeler plus tard."
       },
       {
         "id": "fp-insight",
@@ -324,6 +410,35 @@
         "minCount": 3
       },
       {
+        "id": "depuis-pendant-x1",
+        "kind": "fixCalque",
+        "prompt": "Хочешь сказать «Я ездил в Париж два года назад», но по привычке ставишь pendant. Почини кальку.",
+        "phrase": "J'ai visité Paris pendant deux ans.",
+        "options": [
+          "J'ai visité Paris il y a deux ans.",
+          "J'ai visité Paris depuis deux ans.",
+          "J'ai visité Paris pendant deux ans.",
+          "J'ai visité Paris il y a depuis deux ans."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Два года назад» (как давно случилось) — это il y a deux ans. Pendant deux ans значило бы «в течение двух лет» (как долго длился визит), что для одной поездки неверно; depuis невозможно, потому что действие уже закончено.",
+        "result": "J'ai visité Paris il y a deux ans."
+      },
+      {
+        "id": "depuis-pendant-x2",
+        "kind": "compare",
+        "prompt": "В чём разница между этими двумя фразами?",
+        "phrases": ["J'ai travaillé ici pendant cinq ans.", "Je travaille ici depuis cinq ans."],
+        "options": [
+          "Первая — работа закончилась (длилась пять лет в прошлом), вторая — всё ещё работаю (начал пять лет назад и продолжаю).",
+          "Первая — всё ещё работаю, вторая — работа уже закончилась.",
+          "Обе значат одно и то же, разница только в стиле.",
+          "Первая — про будущее, вторая — про прошлое."
+        ],
+        "correctIndex": 0,
+        "explanation": "pendant + прошедшее время = действие завершено, указана его длительность. depuis + настоящее время = действие началось в прошлом и длится до сих пор."
+      },
+      {
         "id": "dep-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -422,6 +537,61 @@
         ],
         "correctIndex": 0,
         "explanation": "Дождь — длящийся фон → imparfait (il pleuvait). Решение остаться — точечное событие → passé composé (je suis resté, с être и согласованием)."
+      },
+      {
+        "id": "recit-timeline-x1",
+        "kind": "cloze",
+        "prompt": "Фон тянулся — а потом щёлкнуло. Вставь правильную форму:",
+        "phrase": "Je dormais quand le téléphone ___.",
+        "options": ["a sonné", "sonnait", "sonne", "avait sonné"],
+        "correctIndex": 0,
+        "explanation": "«Je dormais» (imparfait) — длящийся фон, который прерывается внезапным событием-щелчком, а для него нужен passé composé: a sonné. «Sonnait» (imparfait) описал бы привычку или фон, а не один резкий момент; «sonne» — présent; «avait sonné» (plus-que-parfait) означало бы, что телефон прозвонил ещё раньше."
+      },
+      {
+        "id": "recit-timeline-x2",
+        "kind": "explainError",
+        "prompt": "Почему эта фраза-рассказ звучит неправильно?",
+        "phrase": "Hier, il pleuvait beaucoup, alors je restais à la maison toute la journée.",
+        "options": [
+          "«Je restais» здесь должно быть passé composé (je suis resté): это завершённое единичное событие того дня, ограниченное «toute la journée», а не привычка.",
+          "«Il pleuvait» нужно заменить на passé composé, потому что дождь — это всегда щелчок.",
+          "Ошибка в слове «beaucoup»: после imparfait наречия не ставятся.",
+          "Нужно убрать «hier», потому что imparfait не сочетается с указанием времени."
+        ],
+        "correctIndex": 0,
+        "explanation": "Дождь — это фон (il pleuvait, imparfait, верно), но «я остался дома весь день» — завершённое событие конкретного дня, ограниченное рамкой «toute la journée», поэтому нужен passé composé: je suis resté. Imparfait «je restais» означал бы привычку («бывало, оставался»)."
+      },
+      {
+        "id": "recit-timeline-x3",
+        "kind": "compare",
+        "prompt": "Imparfait или passé composé — одно меняет смысл. В чём разница?",
+        "phrases": [
+          "Quand j'étais petit, je jouais au foot tous les samedis.",
+          "Samedi dernier, j'ai joué au foot avec mes voisins."
+        ],
+        "options": [
+          "Первая фраза — привычка-фон в прошлом (imparfait), вторая — одно завершённое событие в конкретную субботу (passé composé).",
+          "Обе фразы означают одно и то же, разница только стилистическая.",
+          "Первая описывает одно событие, а вторая — повторяющуюся привычку.",
+          "Разница только во времени: первая о настоящем, вторая о прошлом."
+        ],
+        "correctIndex": 0,
+        "explanation": "Imparfait (je jouais) рисует регулярную привычку и фон детства; passé composé (j'ai joué) отмечает единичное завершённое событие в конкретный день. Маркер «tous les samedis» тянет к imparfait, «samedi dernier» — к passé composé."
+      },
+      {
+        "id": "recit-timeline-x4",
+        "kind": "fixCalque",
+        "prompt": "«soudain» сигналит о щелчке. Исправь время в этой фразе:",
+        "phrase": "Pendant que je lisais, soudain quelqu'un frappait à la porte.",
+        "options": [
+          "Pendant que je lisais, soudain quelqu'un a frappé à la porte.",
+          "Pendant que je lisais, soudain quelqu'un frappe à la porte.",
+          "Pendant que je lis, soudain quelqu'un frappait à la porte.",
+          "Pendant que je lisais, soudain quelqu'un avait frappé à la porte."
+        ],
+        "correctIndex": 0,
+        "result": "Pendant que je lisais, soudain quelqu'un a frappé à la porte.",
+        "explanation": "Чтение — длящийся фон (je lisais, imparfait, верно), но «soudain quelqu'un a frappé» — резкий щелчок-событие, поэтому нужен passé composé: a frappé. Слово «soudain» прямо сигналит о единичном моменте; «frappe» — présent, а «avait frappé» (plus-que-parfait) поставило бы стук раньше чтения."
       },
       {
         "id": "rt-insight",
@@ -548,6 +718,35 @@
         ],
         "correctIndex": 0,
         "explanation": "«уже поел» → passé composé с déjà между avoir и причастием: j'ai déjà mangé."
+      },
+      {
+        "id": "microsignaux-x1",
+        "kind": "compare",
+        "prompt": "Оба предложения верны, но микросигнал меняет смысл. В чём разница?",
+        "phrases": ["Il travaille encore.", "Il travaille toujours."],
+        "options": [
+          "«encore» = он всё ещё работает (действие не закончилось, прямо сейчас); «toujours» = он по-прежнему работает (положение сохраняется, ещё не на пенсии).",
+          "«encore» = он никогда не работает; «toujours» = он опять работает.",
+          "«encore» = он уже отработал; «toujours» = он работает временно.",
+          "Разницы нет: «encore» и «toujours» всегда взаимозаменяемы."
+        ],
+        "correctIndex": 0,
+        "explanation": "И «encore», и «toujours» могут значить «всё ещё». «encore» подчёркивает, что действие сейчас не закончилось, а «toujours» — что положение по-прежнему сохраняется/привычно: «Il travaille toujours» = он до сих пор (всё так же) работает."
+      },
+      {
+        "id": "microsignaux-x2",
+        "kind": "fixCalque",
+        "prompt": "Русское «Я ещё не закончил» скалькировали с неправильным местом «encore». Исправь.",
+        "phrase": "Je n'ai encore pas fini.",
+        "options": [
+          "Je n'ai pas encore fini.",
+          "Je n'ai encore pas fini.",
+          "Je n'encore ai pas fini.",
+          "Je ne pas encore ai fini."
+        ],
+        "correctIndex": 0,
+        "explanation": "В отрицании «encore» (ещё) ставится ПОСЛЕ «pas»: «pas encore» = «ещё не». Правильно: «Je n'ai pas encore fini».",
+        "result": "Je n'ai pas encore fini."
       },
       {
         "id": "ms-insight",

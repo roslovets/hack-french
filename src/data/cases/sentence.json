@@ -83,6 +83,21 @@
         "minCount": 3
       },
       {
+        "id": "cest-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский про суп говорит «Это очень вкусно», но согласовал прилагательное с la soupe. Почини кальку.",
+        "phrase": "La soupe ? C'est très bonne.",
+        "options": [
+          "C'est très bon.",
+          "C'est très bonne.",
+          "Elle est très bonne.",
+          "C'est très bons."
+        ],
+        "correctIndex": 0,
+        "explanation": "После безличного c'est прилагательное всегда стоит в форме мужского рода единственного числа (bon) — c'est даёт обобщённую оценку «это (всё)», а не согласуется с конкретным словом la soupe. Согласовать род можно было бы только через elle est très bonne, но тогда это уже не c'est-оценка.",
+        "result": "C'est très bon."
+      },
+      {
         "id": "cest-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -180,6 +195,20 @@
         "explanation": "Тот же каркас il y a + объект + обстоятельство."
       },
       {
+        "id": "ilya-x1",
+        "kind": "compare",
+        "prompt": "Сравни две фразы. В чём разница и что общего?",
+        "phrases": ["Il y a une chaise.", "Il y a trois chaises."],
+        "options": [
+          "«Il y a» не меняется: оно одинаково и для одного предмета, и для нескольких — меняется только существительное (une chaise → trois chaises).",
+          "Перед множественным числом «il y a» превращается в «ils y ont», потому что подлежащее становится множественным.",
+          "Во второй фразе нужно «il y ont», так как глагол avoir согласуется с числом предметов.",
+          "Различие в том, что «il y a» используется только для одного предмета, а для нескольких берут «il y sont»."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Il y a» — застывшая безличная форма: она остаётся неизменной независимо от того, один предмет или много. Меняется только существительное после неё (une chaise → trois chaises), а само «il y a» никогда не становится «ils y ont» или «il y sont»."
+      },
+      {
         "id": "ilya-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -248,12 +277,71 @@
         "prompt": "Вскрытие.",
         "phrase": "C'est une bonne idée.",
         "tokens": [
-          { "fr": "C'", "ru": "это", "role": "ce" },
-          { "fr": "est", "ru": "есть", "role": "être" },
-          { "fr": "une", "ru": "(одна)", "role": "артикль — обязателен после c'est" },
-          { "fr": "bonne idée", "ru": "хорошая идея", "role": "что именно" }
+          {
+            "fr": "C'",
+            "ru": "это",
+            "role": "ce"
+          },
+          {
+            "fr": "est",
+            "ru": "есть",
+            "role": "être"
+          },
+          {
+            "fr": "une",
+            "ru": "(одна)",
+            "role": "артикль — обязателен после c'est"
+          },
+          {
+            "fr": "bonne idée",
+            "ru": "хорошая идея",
+            "role": "что именно"
+          }
         ],
         "note": "После c'est существительное идёт с артиклем; для профессии-роли используют il est без артикля."
+      },
+      {
+        "id": "cest-il-est-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский говорит «Он врач» и калькирует: «Il est un médecin». Почини.",
+        "phrase": "Il est un médecin.",
+        "options": ["Il est médecin.", "Il est un médecin.", "C'est médecin.", "Il a un médecin."],
+        "correctIndex": 0,
+        "explanation": "После «il est» профессия идёт БЕЗ артикля: «Il est médecin». Артикль (un médecin) нужен только с «c'est»: «C'est un médecin».",
+        "result": "Il est médecin."
+      },
+      {
+        "id": "cest-il-est-x2",
+        "kind": "scene",
+        "prompt": "Сосед во дворе хочет представить вам нового жильца по имени.",
+        "situation": "Во дворе сосед кивает на незнакомца: «Это Поль, наш новый сосед».",
+        "options": [
+          "C'est Paul, notre nouveau voisin.",
+          "Il est Paul, notre nouveau voisin.",
+          "Il est un nouveau voisin Paul.",
+          "C'est voisin."
+        ],
+        "correctIndex": 0,
+        "explanation": "Когда представляем человека по имени, используем «c'est»: «C'est Paul». С именем собственным «il est» не ставят, а «c'est» без артикля (C'est voisin) невозможно."
+      },
+      {
+        "id": "cest-il-est-x3",
+        "kind": "hypothesis",
+        "prompt": "Посмотри на улики. Когда роль идёт без артикля, а когда с артиклем?",
+        "clues": [
+          "Il est médecin.",
+          "Elle est avocate.",
+          "C'est un bon médecin.",
+          "C'est une avocate connue."
+        ],
+        "options": [
+          "«Il/elle est» + профессия без артикля; но как только появляется артикль с определением, переходим на «c'est» + un/une.",
+          "Артикль ставится всегда, просто «il est» его «проглатывает» в речи.",
+          "«C'est» и «il est» взаимозаменяемы, разница только в вежливости.",
+          "С прилагательным используют «il est», а без прилагательного — «c'est»."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Il est médecin» — голая профессия без артикля. Как только появляется артикль с определением (un bon médecin, une avocate connue), нужно «c'est» + un/une, а не «il est»."
       },
       {
         "id": "cie-insight",
@@ -300,16 +388,40 @@
         "kind": "sort",
         "prompt": "Разложи блоки по «двигателю» — какой глагол внутри.",
         "baskets": [
-          { "id": "avoir", "label": "avoir-блоки" },
-          { "id": "faire", "label": "faire-блоки" },
-          { "id": "prendre", "label": "prendre-блоки" }
+          {
+            "id": "avoir",
+            "label": "avoir-блоки"
+          },
+          {
+            "id": "faire",
+            "label": "faire-блоки"
+          },
+          {
+            "id": "prendre",
+            "label": "prendre-блоки"
+          }
         ],
         "items": [
-          { "text": "avoir besoin de", "basket": "avoir" },
-          { "text": "avoir envie de", "basket": "avoir" },
-          { "text": "avoir mal à", "basket": "avoir" },
-          { "text": "faire attention", "basket": "faire" },
-          { "text": "prendre rendez-vous", "basket": "prendre" }
+          {
+            "text": "avoir besoin de",
+            "basket": "avoir"
+          },
+          {
+            "text": "avoir envie de",
+            "basket": "avoir"
+          },
+          {
+            "text": "avoir mal à",
+            "basket": "avoir"
+          },
+          {
+            "text": "faire attention",
+            "basket": "faire"
+          },
+          {
+            "text": "prendre rendez-vous",
+            "basket": "prendre"
+          }
         ],
         "explanation": "У каждого блока свой «двигатель»: avoir (besoin/envie/mal), faire (attention), prendre (rendez-vous)."
       },
@@ -327,6 +439,59 @@
           "Fais attention !"
         ],
         "minCount": 3
+      },
+      {
+        "id": "blocs-x1",
+        "kind": "fixCalque",
+        "prompt": "Русское «Мне нужна помощь» собрали пословно. Почини на готовый блок.",
+        "phrase": "Je suis besoin d'aide.",
+        "options": [
+          "J'ai besoin d'aide.",
+          "Je suis besoin d'aide.",
+          "J'ai besoin de l'aide de.",
+          "Je fais besoin d'aide."
+        ],
+        "correctIndex": 0,
+        "result": "J'ai besoin d'aide.",
+        "explanation": "Блок целиком — «avoir besoin de», с глаголом avoir, а не être (не «je suis besoin»). Русское «мне нужно» сюда не переносится дословно."
+      },
+      {
+        "id": "blocs-x2",
+        "kind": "cloze",
+        "prompt": "Запись к врачу. Какой глагол «запускает» блок?",
+        "phrase": "Je voudrais ___ rendez-vous avec le médecin.",
+        "options": ["prendre", "faire", "avoir", "donner"],
+        "correctIndex": 0,
+        "result": "Je voudrais prendre rendez-vous avec le médecin.",
+        "explanation": "Готовый блок «prendre rendez-vous» = записаться на приём. «Двигатель» внутри — prendre, а не faire или donner; собирать пословно нельзя."
+      },
+      {
+        "id": "blocs-x3",
+        "kind": "scene",
+        "prompt": "У врача. Хочешь сказать, что у тебя болит голова.",
+        "situation": "На приёме у врача: нужно пожаловаться, что болит голова.",
+        "options": [
+          "J'ai mal à la tête.",
+          "Ma tête fait mal à moi.",
+          "Je suis mal à la tête.",
+          "Ma tête est douleur."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Болит» по-французски — готовый блок «avoir mal à» + часть тела: J'ai mal à la tête. Пословный перевод русского «моя голова болит» не работает."
+      },
+      {
+        "id": "blocs-x4",
+        "kind": "explainError",
+        "prompt": "Фраза собрана пословно. Почему она неверна?",
+        "phrase": "Je paie attention à la route.",
+        "options": [
+          "Блок — «faire attention», а не «payer attention»: нужен глагол faire (Je fais attention à la route).",
+          "Нужен предлог «de» вместо «à»: Je paie attention de la route.",
+          "«Attention» здесь должно стоять во множественном числе: Je paie attentions.",
+          "Глагол payer надо поставить в passé composé: J'ai payé attention à la route."
+        ],
+        "correctIndex": 0,
+        "explanation": "Готовый блок — «faire attention (à)» = быть внимательным/осторожным. «Payer attention» — калька с английского pay attention; по-французски это собирается блоком с faire."
       },
       {
         "id": "blocs-insight",
@@ -413,12 +578,52 @@
         "prompt": "Вскрытие цепочки.",
         "phrase": "Je vais à l'école demain.",
         "tokens": [
-          { "fr": "Je", "ru": "я", "role": "кто" },
-          { "fr": "vais", "ru": "иду", "role": "что делаю" },
-          { "fr": "à l'école", "ru": "в школу", "role": "куда" },
-          { "fr": "demain", "ru": "завтра", "role": "когда" }
+          {
+            "fr": "Je",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "vais",
+            "ru": "иду",
+            "role": "что делаю"
+          },
+          {
+            "fr": "à l'école",
+            "ru": "в школу",
+            "role": "куда"
+          },
+          {
+            "fr": "demain",
+            "ru": "завтра",
+            "role": "когда"
+          }
         ],
         "note": "Каркас «кто → действие → куда → когда» работает для большинства простых фраз."
+      },
+      {
+        "id": "ordre-mots-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский порядок «Я в школу иду» (глагол в конце) — это калька. Почини по-французски.",
+        "phrase": "Je à l'école vais.",
+        "options": [
+          "Je vais à l'école.",
+          "Je à l'école vais.",
+          "À l'école je vais.",
+          "Vais à l'école je."
+        ],
+        "correctIndex": 0,
+        "explanation": "Во французском глагол идёт сразу за подлежащим: кто → действие → куда. Нельзя сдвигать глагол в конец, как в русском «я в школу иду»."
+      },
+      {
+        "id": "ordre-mots-x2",
+        "kind": "cloze",
+        "prompt": "Куда встаёт наречие частоты? Заполни пропуск.",
+        "phrase": "Je mange ___ au restaurant.",
+        "options": ["souvent", "souvent je", "à souvent", "le souvent"],
+        "correctIndex": 0,
+        "explanation": "Наречие частоты (souvent, toujours, parfois) ставится сразу после спрягаемого глагола, а не перед ним, как в русском «я часто ем». Цепочка не ломается: кто → действие → наречие → где.",
+        "result": "Je mange souvent au restaurant."
       },
       {
         "id": "ord-insight",

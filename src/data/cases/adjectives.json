@@ -45,10 +45,26 @@
         "prompt": "Вскрытие.",
         "phrase": "un film français intéressant",
         "tokens": [
-          { "fr": "un", "ru": "(новый) один", "role": "артикль" },
-          { "fr": "film", "ru": "фильм", "role": "существительное" },
-          { "fr": "français", "ru": "французский", "role": "национальность — после" },
-          { "fr": "intéressant", "ru": "интересный", "role": "оценка — после" }
+          {
+            "fr": "un",
+            "ru": "(новый) один",
+            "role": "артикль"
+          },
+          {
+            "fr": "film",
+            "ru": "фильм",
+            "role": "существительное"
+          },
+          {
+            "fr": "français",
+            "ru": "французский",
+            "role": "национальность — после"
+          },
+          {
+            "fr": "intéressant",
+            "ru": "интересный",
+            "role": "оценка — после"
+          }
         ],
         "note": "Оба прилагательных стоят после существительного. Перед — нельзя."
       },
@@ -68,6 +84,15 @@
         "options": ["un sac noir", "un noir sac", "une sac noir", "un sac noire"],
         "correctIndex": 0,
         "explanation": "Прилагательное после существительного и в мужском роде: un sac noir."
+      },
+      {
+        "id": "adj-place-apres-x1",
+        "kind": "cloze",
+        "prompt": "Собери фразу «зелёная сумка». Что вставить вместо пропуска?",
+        "phrase": "un sac ___",
+        "options": ["vert", "verte", "vert sac", "le vert"],
+        "correctIndex": 0,
+        "explanation": "Прилагательное цвета стоит ПОСЛЕ существительного: un sac vert. Слово sac — мужского рода (артикль un уже это показывает), поэтому форма vert, без -e. Verte — женский род (une voiture verte), здесь не подходит. Vert sac — русский порядок (прилагательное перед существительным), так нельзя. Le vert — это «зелёный цвет» как существительное, а не прилагательное."
       },
       {
         "id": "apres-insight",
@@ -115,10 +140,26 @@
         "prompt": "Вскрытие.",
         "phrase": "une petite maison blanche",
         "tokens": [
-          { "fr": "une", "ru": "(новая) одна", "role": "артикль ж.р." },
-          { "fr": "petite", "ru": "маленькая", "role": "petit + e (ж.р.) — перед" },
-          { "fr": "maison", "ru": "дом", "role": "существительное ж.р." },
-          { "fr": "blanche", "ru": "белая", "role": "blanc → blanche (ж.р.) — после" }
+          {
+            "fr": "une",
+            "ru": "(новая) одна",
+            "role": "артикль ж.р."
+          },
+          {
+            "fr": "petite",
+            "ru": "маленькая",
+            "role": "petit + e (ж.р.) — перед"
+          },
+          {
+            "fr": "maison",
+            "ru": "дом",
+            "role": "существительное ж.р."
+          },
+          {
+            "fr": "blanche",
+            "ru": "белая",
+            "role": "blanc → blanche (ж.р.) — после"
+          }
         ],
         "note": "Оба прилагательных согласованы с maison (ж.р.). blanc меняется нестандартно: blanc → blanche."
       },
@@ -147,6 +188,23 @@
         "correctIndex": 0,
         "explanation": "sœurs — женский род, множественное число → content + e + s = contentes.",
         "result": "Mes sœurs sont contentes."
+      },
+      {
+        "id": "adj-accord-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский говорит «зелёные яблоки» и пишет: «des pommes vert». Прилагательное забыло согласоваться. Pomme — слово женского рода, и здесь оно во множественном числе. Какой вариант исправляет фразу?",
+        "phrase": "des pommes vert",
+        "options": ["des pommes vertes", "des pommes verts", "des pommes verte", "des pommes vert"],
+        "correctIndex": 0,
+        "explanation": "Pomme — женского рода и стоит во множественном числе, поэтому прилагательное vert получает сразу два хвоста: -e (женский род) + -s (множественное число) = vertes. Вариант «verts» — только множественное число без женского рода; «verte» — женский род, но без множественного числа; «vert» — базовая мужская форма единственного числа."
+      },
+      {
+        "id": "adj-accord-x2",
+        "kind": "oddOneOut",
+        "prompt": "Три словосочетания собраны правильно: прилагательное согласовано с существительным. Одно — улика с ошибкой согласования. Найди лишнее.",
+        "options": ["un grand jardin", "une grande table", "des petits chats", "une petit fille"],
+        "correctIndex": 3,
+        "explanation": "В «une petit fille» прилагательное не согласовано: fille — женского рода (артикль une это подтверждает), значит нужна форма petite → «une petite fille». Остальные верны: «un grand jardin» (мужской род, ед. ч.), «une grande table» (женский род +e), «des petits chats» (мужской род, мн. ч. +s)."
       },
       {
         "id": "accord-insight",
@@ -193,16 +251,40 @@
         "kind": "sort",
         "prompt": "Куда обычно встаёт прилагательное — перед или после существительного?",
         "baskets": [
-          { "id": "avant", "label": "перед (grand, petit, bon…)" },
-          { "id": "apres", "label": "после (цвет, национальность, длинные)" }
+          {
+            "id": "avant",
+            "label": "перед (grand, petit, bon…)"
+          },
+          {
+            "id": "apres",
+            "label": "после (цвет, национальность, длинные)"
+          }
         ],
         "items": [
-          { "text": "grand", "basket": "avant" },
-          { "text": "rouge", "basket": "apres" },
-          { "text": "bon", "basket": "avant" },
-          { "text": "français", "basket": "apres" },
-          { "text": "petit", "basket": "avant" },
-          { "text": "intéressant", "basket": "apres" }
+          {
+            "text": "grand",
+            "basket": "avant"
+          },
+          {
+            "text": "rouge",
+            "basket": "apres"
+          },
+          {
+            "text": "bon",
+            "basket": "avant"
+          },
+          {
+            "text": "français",
+            "basket": "apres"
+          },
+          {
+            "text": "petit",
+            "basket": "avant"
+          },
+          {
+            "text": "intéressant",
+            "basket": "apres"
+          }
         ],
         "explanation": "Короткие оценочные — перед; цвет, национальность и длинные описания — после."
       },
@@ -233,6 +315,45 @@
         ],
         "correctIndex": 0,
         "explanation": "bon — из группы коротких частотных, стоит перед: un bon restaurant."
+      },
+      {
+        "id": "adj-place-avant-x1",
+        "kind": "cloze",
+        "prompt": "Соседка показывает квартиру. Куда встаёт короткое частотное прилагательное? Выберите правильный вариант.",
+        "phrase": "Ils ont acheté une ___ dans le quartier.",
+        "options": ["belle maison", "maison belle", "maison bel", "bel maison"],
+        "correctIndex": 0,
+        "explanation": "Beau входит в группу коротких частотных прилагательных (BAGS) и идёт ПЕРЕД существительным: une belle maison. Форма bel — только перед существительным мужского рода на гласную (un bel homme), а maison — женского рода.",
+        "result": "Ils ont acheté une belle maison dans le quartier."
+      },
+      {
+        "id": "adj-place-avant-x2",
+        "kind": "fixCalque",
+        "prompt": "Русский порядок «существительное + прилагательное» подвёл. Как сказать правильно?",
+        "phrase": "C'est un appartement nouveau au rez-de-chaussée.",
+        "options": [
+          "C'est un nouvel appartement au rez-de-chaussée.",
+          "C'est un nouveau appartement au rez-de-chaussée.",
+          "C'est un appartement nouvel au rez-de-chaussée.",
+          "C'est un nouvelle appartement au rez-de-chaussée."
+        ],
+        "correctIndex": 0,
+        "explanation": "Nouveau — короткое частотное прилагательное, оно идёт ПЕРЕД существительным. А перед словом мужского рода, начинающимся с гласной (appartement), форма меняется на nouvel: un nouvel appartement.",
+        "result": "C'est un nouvel appartement au rez-de-chaussée."
+      },
+      {
+        "id": "adj-place-avant-x3",
+        "kind": "oddOneOut",
+        "prompt": "Три фразы построены по правилу, одна — нет. Найдите ошибку в порядке слов.",
+        "options": [
+          "une jolie fleur",
+          "un vin rouge",
+          "un japonais restaurant",
+          "une vieille dame"
+        ],
+        "correctIndex": 2,
+        "explanation": "Национальность идёт ПОСЛЕ существительного: un restaurant japonais. А joli и vieux — короткие частотные (BAGS), они стоят перед: une jolie fleur, une vieille dame. Цвет тоже после: un vin rouge.",
+        "result": "un restaurant japonais"
       },
       {
         "id": "avant-insight",
@@ -312,6 +433,49 @@
         "correctIndex": 0,
         "fixNote": "bon → meilleur (meilleure в ж.р.)",
         "explanation": "bon → meilleur, согласуется с Marie → meilleure: Marie est meilleure en maths que moi."
+      },
+      {
+        "id": "adj-comparatif-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский говорит «такой же быстрый, как». Исправь кальку.",
+        "phrase": "Cette voiture est aussi rapide comme l'autre.",
+        "options": [
+          "Cette voiture est aussi rapide que l'autre.",
+          "Cette voiture est aussi rapide comme l'autre.",
+          "Cette voiture est si rapide que l'autre.",
+          "Cette voiture est aussi rapide que l'autre est."
+        ],
+        "correctIndex": 0,
+        "explanation": "Равенство тоже идёт через рамку aussi … que, а не через comme: русское «как» здесь переводится que, а не comme. «si … que» значит «настолько…, что» (следствие), а лишний est в конце не нужен.",
+        "result": "Cette voiture est aussi rapide que l'autre."
+      },
+      {
+        "id": "adj-comparatif-x2",
+        "kind": "compare",
+        "prompt": "В чём разница между двумя сравнениями?",
+        "phrases": ["Le train est plus cher que le bus.", "Le train est moins cher que le bus."],
+        "options": [
+          "plus = «дороже», moins = «менее дорогой», то есть «дешевле»",
+          "plus и moins значат одно и то же, разница только в стиле",
+          "plus = «дешевле», moins = «дороже»",
+          "moins que используется только с людьми, plus que — с вещами"
+        ],
+        "correctIndex": 0,
+        "explanation": "Рамка одна (… cher que le bus), меняется только слово степени: plus поднимает признак («дороже»), moins опускает его («менее дорогой» = дешевле)."
+      },
+      {
+        "id": "adj-comparatif-x3",
+        "kind": "scene",
+        "prompt": "В магазине ты выбираешь между двумя сумками и говоришь, что эта меньше другой.",
+        "situation": "В магазине ты сравниваешь две сумки: эта меньше той.",
+        "options": [
+          "Ce sac est plus petit que l'autre.",
+          "Ce sac est plus petit comme l'autre.",
+          "Ce sac est le plus petit que l'autre.",
+          "Ce sac est aussi petit que l'autre."
+        ],
+        "correctIndex": 0,
+        "explanation": "«меньше, чем» = plus petit que (рамка plus + прилагательное + que). «comme» здесь нельзя; «le plus … que» — это уже превосходная степень («самый…»), а «aussi … que» значит «такой же…, как» (равенство, а не «меньше»)."
       },
       {
         "id": "comp-insight",
@@ -395,6 +559,48 @@
         ],
         "correctIndex": 0,
         "explanation": "le meilleur croissant — лучший; артикль обязателен."
+      },
+      {
+        "id": "adj-superlatif-x1",
+        "kind": "explainError",
+        "prompt": "Найди ошибку: прилагательное после существительного.",
+        "phrase": "C'est la rue plus longue de la ville.",
+        "options": [
+          "Пропущен артикль перед plus: у прилагательных, стоящих после существительного, артикль повторяется — la rue la plus longue.",
+          "Нужно moins вместо plus, потому что речь о длине.",
+          "longue должно быть мужского рода: la rue la plus long.",
+          "После plus нужен предлог de: la rue plus de longue."
+        ],
+        "correctIndex": 0,
+        "explanation": "Если прилагательное стоит ПОСЛЕ существительного, артикль ставится дважды: la rue la plus longue. Артикль согласуется с существительным в роде и числе.",
+        "result": "C'est la rue la plus longue de la ville."
+      },
+      {
+        "id": "adj-superlatif-x2",
+        "kind": "cloze",
+        "prompt": "Вставь превосходную степень с moins.",
+        "phrase": "C'est le gâteau ___ cher de la boulangerie.",
+        "options": ["le moins", "moins le", "le moins de", "plus moins"],
+        "correctIndex": 0,
+        "explanation": "«Самый дешёвый» = «наименее дорогой»: le moins cher. Превосходная степень с moins строится так же, как с plus: артикль + moins + прилагательное.",
+        "result": "C'est le gâteau le moins cher de la boulangerie."
+      },
+      {
+        "id": "adj-superlatif-x3",
+        "kind": "compare",
+        "prompt": "В чём разница?",
+        "phrases": [
+          "C'est la meilleure boulangerie du quartier.",
+          "C'est ici qu'on mange le mieux."
+        ],
+        "options": [
+          "meilleur — превосходная степень прилагательного (описывает существительное), а le mieux — превосходная степень наречия (описывает глагол/действие).",
+          "Разницы нет, meilleur и mieux взаимозаменяемы.",
+          "meilleur используется только во множественном числе, а mieux — в единственном.",
+          "le mieux — это сравнительная степень, а meilleure — превосходная."
+        ],
+        "correctIndex": 0,
+        "explanation": "le/la meilleur(e) — превосходная степень для bon (прилагательное, согласуется с существительным); le mieux — превосходная степень для bien (наречие, описывает, как происходит действие)."
       },
       {
         "id": "sup-insight",

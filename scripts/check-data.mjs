@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
- * Структурная проверка контента (дела/механизмы/категории/сцены).
- * НЕ проверяет правильность французского — это делает ревью носителем/C2.
- * Запуск: `bun run data:check`. Падает с кодом 1 при структурных ошибках.
+ * Structural integrity check for the content (cases/mechanisms/categories/scenes).
+ * Does NOT check French correctness — that's the job of the native/C2 review.
+ * Run with `bun run data:check`. Exits with code 1 on structural errors.
  */
 import { readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
@@ -20,11 +20,14 @@ const mechIds = new Set(mechanisms.map((m) => m.id));
 const catIds = new Set(categories.map((c) => c.id));
 const sceneIds = new Set(scenes.map((s) => s.id));
 
-/** Виды шагов с одним правильным вариантом (options + correctIndex). */
+/** Step kinds with a single correct option (options + correctIndex). */
 const CHOICE = new Set([
   'strangeness', 'hypothesis', 'expand', 'fixCalque', 'scene', 'mutation',
   'oddOneOut', 'explainError', 'cloze', 'collapse', 'insight', 'compare', 'trap', 'simpler',
 ]);
+
+/** Minimum steps per case by difficulty (boss cases use a fixed floor of 10). */
+const STEP_FLOOR = { easy: 7, medium: 8, hard: 9 };
 
 const errors = [];
 const caseIds = new Set();
@@ -95,6 +98,12 @@ for (const file of readdirSync(casesDir)) {
     });
 
     if (c.steps.at(-1)?.kind !== 'insight') errors.push(`${at}: последний шаг не insight (${c.steps.at(-1)?.kind})`);
+
+    // Product invariant: minimum steps per case, scaled by difficulty so depth
+    // grows with hardness without padding simple cases (see AGENTS.md).
+    const floor = c.isBoss ? 10 : (STEP_FLOOR[c.difficulty] ?? 7);
+    if (c.steps.length < floor)
+      errors.push(`${at}: только ${c.steps.length} шагов (нужно >=${floor} для ${c.isBoss ? 'boss' : c.difficulty})`);
   }
 }
 

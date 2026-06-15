@@ -87,6 +87,46 @@
         "explanation": "Merci + bonne journée закрывают разговор по протоколу."
       },
       {
+        "id": "boss-ecole-x1",
+        "kind": "fixCalque",
+        "prompt": "Реплика-связка. По-русски «у ребёнка температура» хочется сказать через «быть». Исправь кальку для звонка в школу.",
+        "phrase": "Mon enfant est température.",
+        "options": [
+          "Mon enfant a de la fièvre.",
+          "Mon enfant est de la fièvre.",
+          "Mon enfant a température.",
+          "Mon enfant est en fièvre."
+        ],
+        "correctIndex": 0,
+        "explanation": "По-французски температуру и симптомы «имеют», а не «являются»: avoir + партитив de la — «avoir de la fièvre». Калька с être и пропуск артикля неверны.",
+        "result": "Mon enfant a de la fièvre."
+      },
+      {
+        "id": "boss-ecole-x2",
+        "kind": "compare",
+        "prompt": "Реплика-связка. Ты называешь, куда поведёшь ребёнка. Чем отличаются эти две фразы?",
+        "phrases": ["Je l'emmène chez le médecin.", "Je l'emmène à l'hôpital."],
+        "options": [
+          "«chez» ставится перед человеком (chez le médecin), а «à» — перед местом/учреждением (à l'hôpital).",
+          "Это полные синонимы, «chez» и «à» взаимозаменяемы перед любым словом.",
+          "«chez» используется для женского рода, а «à» — для мужского.",
+          "«chez» означает движение, а «à» — что ты уже находишься внутри."
+        ],
+        "correctIndex": 0,
+        "explanation": "Перед человеком (врач, дантист, друг) идёт chez: «chez le médecin». Перед местом/учреждением — à: «à l'hôpital», «à l'école». Сказать «à le médecin» нельзя.",
+        "result": "Je l'emmène chez le médecin."
+      },
+      {
+        "id": "boss-ecole-x3",
+        "kind": "cloze",
+        "prompt": "Реплика-связка. Секретарь снова говорит слишком быстро. Вежливо попроси повторить медленнее.",
+        "phrase": "Pardon, vous pouvez répéter plus ___, s'il vous plaît ?",
+        "options": ["lentement", "lent", "lentationomique", "lenteur"],
+        "correctIndex": 0,
+        "explanation": "После глагола нужно наречие: «répéter plus lentement» (повторить медленнее). «lent» — прилагательное, «lenteur» — существительное (медлительность), они сюда не подходят.",
+        "result": "Pardon, vous pouvez répéter plus lentement, s'il vous plaît ?"
+      },
+      {
         "id": "boss-ecole-insight",
         "kind": "insight",
         "prompt": "Озарение после босса.",
@@ -182,6 +222,51 @@
         "options": ["Merci, bonne journée !", "Bye.", "Fini.", "Voilà."],
         "correctIndex": 0,
         "explanation": "Merci + bonne journée закрывают сцену."
+      },
+      {
+        "id": "boss-boulangerie-x1",
+        "kind": "mutation",
+        "prompt": "Продавец: «Vous voulez du pain ?» Ты хочешь немного. Сверни «du pain» в en, но сохрани количество.",
+        "phrase": "Je veux un peu de pain.",
+        "options": [
+          "J'en veux un peu.",
+          "Je veux un peu.",
+          "J'en veux un peu de pain.",
+          "Je le veux un peu."
+        ],
+        "correctIndex": 0,
+        "explanation": "En заменяет «du / de la / de + существительное» (здесь du pain), а выражение количества «un peu» остаётся: «j'en veux un peu». Само слово pain больше не повторяется, en стоит перед глаголом.",
+        "result": "J'en veux un peu."
+      },
+      {
+        "id": "boss-boulangerie-x2",
+        "kind": "explainError",
+        "prompt": "Продавец: «Vous voulez des baguettes ?» Покупатель отвечает так. Почему это неправильно?",
+        "phrase": "Oui, je veux trois.",
+        "options": [
+          "Пропущено en: при ответе с числом нужно «j'en veux trois», потому что en замещает «de baguettes».",
+          "Нужно сказать «je veux trois baguettes» — число с en употреблять нельзя.",
+          "Ошибка в глаголе: надо «je voudrais», а en тут вообще не нужен.",
+          "Надо «je les veux trois», потому что вещь уже названа — нужен les."
+        ],
+        "correctIndex": 0,
+        "explanation": "Когда отвечаешь числом или количеством, существительное (de baguettes) заменяется на en, а число сохраняется: «J'en veux trois». Без en фраза «je veux trois» по-французски незакончена.",
+        "result": "Oui, j'en veux trois."
+      },
+      {
+        "id": "boss-boulangerie-x3",
+        "kind": "compare",
+        "prompt": "Сравни две правильные реплики в булочной. В чём разница между en и les?",
+        "phrases": ["J'en prends deux.", "Je les prends."],
+        "options": [
+          "En замещает «de + предмет» и идёт с количеством (две штуки из общего), а les — это конкретные, уже названные предметы целиком.",
+          "Разницы нет: en и les взаимозаменяемы перед глаголом.",
+          "En — для еды, les — для людей; выбор зависит от одушевлённости.",
+          "Les ставится после глагола, а en — перед, в этом вся разница."
+        ],
+        "correctIndex": 0,
+        "explanation": "En заменяет «de + существительное» и используется с количеством («двух из них»), а les — прямое дополнение для конкретных, полностью названных предметов («беру их»). Оба стоят перед глаголом.",
+        "result": "J'en prends deux. / Je les prends."
       },
       {
         "id": "boss-boul-insight",
@@ -290,6 +375,50 @@
         "explanation": "Je vais aller à la pharmacie (à + la) + вежливое закрытие merci beaucoup, bonne journée."
       },
       {
+        "id": "boss-medecin-x1",
+        "kind": "cloze",
+        "prompt": "Вставь правильную форму. У ребёнка болит живот — какой предлог с артиклем нужен после avoir mal?",
+        "phrase": "Mon fils a mal ___ ventre.",
+        "options": ["au", "à le", "à la", "aux"],
+        "correctIndex": 0,
+        "explanation": "После avoir mal предлог à сливается с артиклем мужского рода le: à + le = au. «Ventre» мужского рода, поэтому avoir mal au ventre. Формы «à le» во французском не существует.",
+        "result": "Mon fils a mal au ventre."
+      },
+      {
+        "id": "boss-medecin-x2",
+        "kind": "fixCalque",
+        "prompt": "Русское «У меня болит горло» часто переводят дословно. Выбери правильный французский вариант.",
+        "phrase": "Ma gorge fait mal.",
+        "options": [
+          "J'ai mal à la gorge.",
+          "Je suis mal à la gorge.",
+          "J'ai mal de ma gorge.",
+          "Ma gorge est malade."
+        ],
+        "correctIndex": 0,
+        "explanation": "Французы говорят не «горло болит», а «я имею боль в…»: avoir mal à + определённый артикль (la gorge → à la gorge). Используется avoir, а не être, и артикль la, а не притяжательное ma.",
+        "result": "J'ai mal à la gorge."
+      },
+      {
+        "id": "boss-medecin-x3",
+        "kind": "hypothesis",
+        "prompt": "Посмотри на примеры с avoir mal à и сформулируй правило про предлог и артикль перед частью тела.",
+        "clues": [
+          "J'ai mal à la tête.",
+          "Il a mal au dos.",
+          "Elle a mal aux dents.",
+          "Nous avons mal à l'oreille."
+        ],
+        "options": [
+          "Предлог à сливается с артиклем по роду и числу: à la, à l' (перед гласной), au (= à+le), aux (= à+les).",
+          "После avoir mal всегда ставится только à la, независимо от рода и числа части тела.",
+          "Артикль перед частью тела опускается, а à пишется отдельно: «à tête», «à dos».",
+          "Вместо артикля используется притяжательное местоимение: à ma tête, à son dos."
+        ],
+        "correctIndex": 0,
+        "explanation": "В avoir mal à часть тела идёт с определённым артиклем, а à сливается с ним: à la (ж.р.), à l' (перед гласной/h немой), au (à+le, м.р.), aux (à+les, мн.ч.). Притяжательные местоимения здесь не используются."
+      },
+      {
         "id": "boss-medecin-insight",
         "kind": "insight",
         "prompt": "Озарение после босса.",
@@ -396,6 +525,45 @@
         "explanation": "Merci beaucoup + bonne journée закрывают взаимодействие."
       },
       {
+        "id": "boss-administration-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский говорит «Мне нужна справка» и строит фразу как «Я имею нужду справку». Почини кальку — выбери правильный французский.",
+        "phrase": "J'ai besoin une attestation.",
+        "options": [
+          "J'ai besoin d'une attestation.",
+          "J'ai besoin une attestation.",
+          "Je besoin d'une attestation.",
+          "J'ai besoin à une attestation."
+        ],
+        "correctIndex": 0,
+        "explanation": "После «avoir besoin» всегда идёт предлог «de»: j'ai besoin de + существительное. Перед гласной «de une» сливается в «d'une». Без «de» конструкция неверна, а «à» здесь не используется.",
+        "result": "J'ai besoin d'une attestation."
+      },
+      {
+        "id": "boss-administration-x2",
+        "kind": "cloze",
+        "prompt": "Заполни пропуск. Тебе нужен именно тот конкретный штамп (le tampon), о котором сказал служащий.",
+        "phrase": "Pour mon dossier, j'ai besoin ___ tampon de la mairie.",
+        "options": ["du", "de le", "de", "le"],
+        "correctIndex": 0,
+        "explanation": "«de» обязательно сливается с артиклем «le» в «du»: besoin de + le tampon → besoin du tampon. Форма «de le» во французском запрещена, а без «de» или без артикля фраза неверна.",
+        "result": "Pour mon dossier, j'ai besoin du tampon de la mairie."
+      },
+      {
+        "id": "boss-administration-x3",
+        "kind": "compare",
+        "prompt": "Оба способа сказать «мне нужно прийти ещё раз» правильны. В чём разница?",
+        "phrases": ["J'ai besoin de revenir.", "Il faut que je revienne."],
+        "options": [
+          "«J'ai besoin de» подчёркивает мою личную потребность, а «il faut que» + subjonctif — внешнюю необходимость или правило.",
+          "«J'ai besoin de» — это будущее время, а «il faut que» — настоящее.",
+          "«J'ai besoin de» вежливее, а «il faut que» — грубо и так говорить нельзя.",
+          "Разницы нет, «il faut que» — это просто сокращение от «j'ai besoin de»."
+        ],
+        "correctIndex": 0,
+        "explanation": "«J'ai besoin de + инфинитив» выражает мою собственную потребность; «il faut que + subjonctif» (que je revienne) выражает необходимость/обязанность со стороны (правило, обстоятельства). Оба корректны, но акцент разный."
+      },
+      {
         "id": "boss-administration-insight",
         "kind": "insight",
         "prompt": "Озарение после босса.",
@@ -487,6 +655,58 @@
         ],
         "correctIndex": 0,
         "explanation": "Merci beaucoup + bonne journée закрывают телефонный разговор."
+      },
+      {
+        "id": "boss-telephone-x1",
+        "kind": "fixCalque",
+        "prompt": "Реплика-кант. По телефону хочешь вежливо попросить перенести приём. Какой вариант звучит идиоматично?",
+        "phrase": "Je veux déplacer mon rendez-vous, s'il vous plaît.",
+        "options": [
+          "Je voudrais déplacer mon rendez-vous, s'il vous plaît.",
+          "Je veux déplacer mon rendez-vous, s'il vous plaît.",
+          "J'ai envie de déplacer mon rendez-vous, s'il vous plaît.",
+          "Je dois vouloir déplacer mon rendez-vous, s'il vous plaît."
+        ],
+        "correctIndex": 0,
+        "explanation": "Прямое «je veux» (хочу) по телефону звучит грубо, как приказ. Вежливая просьба — это условное наклонение «je voudrais» (хотел бы), безопасная кнопка вежливости.",
+        "result": "Je voudrais déplacer mon rendez-vous, s'il vous plaît."
+      },
+      {
+        "id": "boss-telephone-x2",
+        "kind": "compare",
+        "prompt": "Сравни две фразы. В чём разница между «je veux» и «je voudrais»?",
+        "phrases": ["Je veux parler au docteur.", "Je voudrais parler au docteur."],
+        "options": [
+          "Первая звучит резко, почти как требование; вторая — вежливая просьба в условном наклонении.",
+          "Первая вежливее, потому что «veux» — это форма уважения; вторая невежлива.",
+          "Разницы нет, это просто два написания одного слова.",
+          "Первая — про будущее, вторая — про прошлое."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Je veux» — настоящее время глагола vouloir, звучит прямо и требовательно. «Je voudrais» — условное наклонение (conditionnel), смягчает просьбу: «я хотел бы»."
+      },
+      {
+        "id": "boss-telephone-x3",
+        "kind": "cloze",
+        "prompt": "Реплика к секретарю. Вежливо спроси, можно ли вместо этого прийти в пятницу.",
+        "phrase": "Est-ce que je ___ venir vendredi à la place ?",
+        "options": ["pourrais", "veux", "voudrais", "vais"],
+        "correctIndex": 0,
+        "explanation": "Для вежливого «не мог бы я…» берут условное наклонение глагола pouvoir — «pourrais». Оно из той же «безопасной» семьи, что и «voudrais», и смягчает вопрос.",
+        "result": "Est-ce que je pourrais venir vendredi à la place ?"
+      },
+      {
+        "id": "boss-telephone-x4",
+        "kind": "oddOneOut",
+        "prompt": "Три из этих телефонных реплик — вежливые. Найди ту, что звучит грубо и не вписывается.",
+        "options": [
+          "Je voudrais un autre créneau, s'il vous plaît.",
+          "Je veux un autre créneau, tout de suite.",
+          "Je voudrais savoir s'il reste de la place jeudi.",
+          "Je voudrais déplacer mon rendez-vous, si c'est possible."
+        ],
+        "correctIndex": 1,
+        "explanation": "Три фразы используют вежливое «je voudrais» (+ s'il vous plaît / si c'est possible). Лишняя — «je veux… tout de suite» (хочу… немедленно): прямое настоящее время плюс требование звучит грубо по телефону."
       },
       {
         "id": "boss-telephone-insight",

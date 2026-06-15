@@ -44,10 +44,26 @@
         "prompt": "Вскрытие.",
         "phrase": "Je me lave les mains.",
         "tokens": [
-          { "fr": "Je", "ru": "я", "role": "кто" },
-          { "fr": "me", "ru": "себе", "role": "возвратное местоимение" },
-          { "fr": "lave", "ru": "мою", "role": "глагол" },
-          { "fr": "les mains", "ru": "руки", "role": "что именно" }
+          {
+            "fr": "Je",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "me",
+            "ru": "себе",
+            "role": "возвратное местоимение"
+          },
+          {
+            "fr": "lave",
+            "ru": "мою",
+            "role": "глагол"
+          },
+          {
+            "fr": "les mains",
+            "ru": "руки",
+            "role": "что именно"
+          }
         ],
         "note": "Буквально «я себе мою руки». Возвратное me стоит перед глаголом."
       },
@@ -60,6 +76,30 @@
         "correctIndex": 0,
         "explanation": "Для tu возвратное местоимение — te: tu te laves.",
         "result": "Tu te laves."
+      },
+      {
+        "id": "refl-base-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский говорит «я моюсь» одним словом и переносит это во французский. Исправь кальку.",
+        "phrase": "Je lave.",
+        "options": ["Je me lave.", "Je me lave moi.", "Je lave moi.", "Me je lave."],
+        "correctIndex": 0,
+        "explanation": "«Я моюсь» — действие, направленное на самого себя, поэтому нужно возвратное местоимение me перед глаголом: je me lave. Без него «Je lave.» повисает: laver — переходный глагол, он требует дополнения («Je lave quoi?»).",
+        "result": "Je me lave."
+      },
+      {
+        "id": "refl-base-x2",
+        "kind": "compare",
+        "prompt": "В чём разница между этими двумя фразами?",
+        "phrases": ["Je lave la voiture.", "Je me lave."],
+        "options": [
+          "В первой действие направлено на внешний объект (машину), во второй — на самого себя, поэтому появляется возвратное me.",
+          "Это одно и то же, me просто вежливая форма.",
+          "Первая фраза в настоящем времени, вторая — в прошедшем.",
+          "Вторая фраза неправильная: me здесь лишнее."
+        ],
+        "correctIndex": 0,
+        "explanation": "Без местоимения глагол laver переходит на внешний объект: je lave la voiture. С возвратным me действие возвращается на подлежащее: je me lave = «я моюсь». Именно me превращает глагол в возвратный."
       },
       {
         "id": "base-insight",
@@ -159,6 +199,36 @@
         ]
       },
       {
+        "id": "refl-appeler-x1",
+        "kind": "fixCalque",
+        "prompt": "Русское «меня зовут Анна» тянет перевести буквально. Как сказать это правильно по-французски?",
+        "phrase": "Me appellent Anna.",
+        "options": [
+          "Je m'appelle Anna.",
+          "Mon nom appelle Anna.",
+          "Je appelle Anna.",
+          "On me appelle Anna."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Меня зовут» по-французски — это возвратный глагол s'appeler: je m'appelle буквально «я себя зову». Дословная калька с русского («меня зовут») не работает. Перед гласной возвратное me сокращается до m': je m'appelle. «Je appelle» (без возвратного и без элизии) и «on me appelle» (без элизии) — ошибки.",
+        "result": "Je m'appelle Anna."
+      },
+      {
+        "id": "refl-appeler-x2",
+        "kind": "scene",
+        "prompt": "В администрации сотрудник спрашивает имя вашей дочери. Что вы ответите?",
+        "situation": "Вы заполняете документы в администрации. Чиновник спрашивает, как зовут вашу дочь.",
+        "options": [
+          "Elle s'appelle Sophie.",
+          "Elle appelle Sophie.",
+          "Elle se appelle Sophie.",
+          "Elle l'appelle Sophie."
+        ],
+        "correctIndex": 0,
+        "explanation": "В 3-м лице s'appeler даёт elle s'appelle: возвратное se перед гласной обязательно сокращается до s'. «Elle se appelle» (без элизии) и «elle appelle» (без возвратного, тогда это «она звонит Софи») — ошибки. «Elle l'appelle» значит «она называет её Софи», а не «её зовут».",
+        "result": "Elle s'appelle Sophie."
+      },
+      {
         "id": "appeler-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -230,6 +300,45 @@
         ],
         "correctIndex": 0,
         "explanation": "Без se глагол действует на объект (lève la main — поднимает руку). С se — на себя (se lève — встаёт)."
+      },
+      {
+        "id": "refl-routine-x1",
+        "kind": "fixCalque",
+        "prompt": "Русское «я одеваюсь» перевели дословно. Исправь на идиоматичный французский.",
+        "phrase": "Je habille.",
+        "options": ["Je m'habille.", "Je me habille.", "J'habille.", "Je m'habite."],
+        "correctIndex": 0,
+        "explanation": "«Одеваться» — возвратный глагол s'habiller: нужно местоимение me, а перед гласной оно сокращается в m'. Без местоимения j'habille значит «я одеваю (кого-то другого)».",
+        "result": "Je m'habille."
+      },
+      {
+        "id": "refl-routine-x2",
+        "kind": "scene",
+        "prompt": "В яслях воспитатель спрашивает, во сколько ребёнок просыпается. Что естественно ответить?",
+        "situation": "Crèche: воспитатель спрашивает про утро ребёнка.",
+        "options": [
+          "Il se réveille à sept heures.",
+          "Il réveille à sept heures.",
+          "Il est réveille à sept heures.",
+          "Il se réveil à sept heures."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Просыпаться» — возвратный глагол se réveiller; в 3-м лице ед. ч. нужно местоимение se и форма réveille. Без se глагол значит «будит кого-то».",
+        "result": "Il se réveille à sept heures."
+      },
+      {
+        "id": "refl-routine-x3",
+        "kind": "oddOneOut",
+        "prompt": "Три фразы — про действие над собой (возвратные). Найди ту, где se лишнее.",
+        "options": [
+          "Je me lave les mains.",
+          "Il se couche tard.",
+          "Je me regarde la télé.",
+          "Elle s'habille vite."
+        ],
+        "correctIndex": 2,
+        "explanation": "Смотреть телевизор — не действие над собой: правильно je regarde la télé, без me. Остальные — настоящие возвратные глаголы рутины (se laver, se coucher, s'habiller).",
+        "result": "Je regarde la télé."
       },
       {
         "id": "routine-insight",
@@ -312,6 +421,55 @@
         "explanation": "Возвратный + être: je me suis levé. (Мужской род — без -e на причастии.)"
       },
       {
+        "id": "refl-passe-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский думает «я помылся» через «иметь» (avoir). Исправь кальку на правильный французский.",
+        "phrase": "Je m'ai lavé.",
+        "options": ["Je me suis lavé.", "Je m'ai lavé.", "Je me lavé.", "J'ai me lavé."],
+        "correctIndex": 0,
+        "explanation": "Все возвратные глаголы в passé composé строятся с être, а не с avoir: je me suis lavé. Вариант «je m'ai lavé» — калька с русского «иметь». «Je me lavé» — без вспомогательного глагола, «j'ai me lavé» — и avoir, и неверный порядок.",
+        "result": "Je me suis lavé."
+      },
+      {
+        "id": "refl-passe-x2",
+        "kind": "cloze",
+        "prompt": "Поставь отрицание в passé composé. Куда встают ne … pas вокруг возвратного глагола?",
+        "phrase": "Ce matin, je ___ levé tôt.",
+        "options": ["ne me suis pas", "me ne suis pas", "ne me pas suis", "ne suis me pas"],
+        "correctIndex": 0,
+        "explanation": "Местоимение «me» приклеено к être, поэтому ne … pas обнимает блок «me suis»: ne me suis pas levé. Отрицание окружает вспомогательный глагол вместе с возвратным местоимением.",
+        "result": "Ce matin, je ne me suis pas levé tôt."
+      },
+      {
+        "id": "refl-passe-x3",
+        "kind": "compare",
+        "prompt": "В чём разница в согласовании причастия в этих двух фразах (обе сказаны женщиной)?",
+        "phrases": ["Elle s'est lavée.", "Elle s'est lavé les mains."],
+        "options": [
+          "В первой причастие согласуется (lavée), а во второй прямое дополнение «les mains» стоит после глагола, поэтому согласования нет: lavé.",
+          "Обе формы согласуются с подлежащим, поэтому в обеих должно быть lavée.",
+          "Согласование зависит от того, утро это или вечер.",
+          "Во второй фразе нужно avoir, потому что есть дополнение «les mains»."
+        ],
+        "correctIndex": 0,
+        "explanation": "С возвратными причастие согласуется с прямым дополнением, если оно стоит ПЕРЕД глаголом (здесь это «se»): elle s'est lavée. Но если прямое дополнение идёт ПОСЛЕ (les mains), согласования нет: elle s'est lavé les mains.",
+        "result": "Elle s'est lavée. / Elle s'est lavé les mains."
+      },
+      {
+        "id": "refl-passe-x4",
+        "kind": "oddOneOut",
+        "prompt": "Все фразы — возвратные глаголы в passé composé. Какая построена НЕПРАВИЛЬНО?",
+        "options": [
+          "Ils se sont couchés tard.",
+          "Nous nous sommes réveillés.",
+          "Elle s'est habillée.",
+          "Tu as te dépêché."
+        ],
+        "correctIndex": 3,
+        "explanation": "Возвратные требуют être: tu t'es dépêché, а не «tu as te dépêché». Остальные правильны: ils se sont couchés, nous nous sommes réveillés, elle s'est habillée — везде être и согласование причастия с подлежащим.",
+        "result": "Tu t'es dépêché."
+      },
+      {
         "id": "passe-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -388,6 +546,48 @@
         "correctIndex": 0,
         "explanation": "ça se dit = «так говорят / так принято». Ещё одно значение se — «так делается»: ça se mange, ça se fait.",
         "result": "Oui, ça se dit."
+      },
+      {
+        "id": "refl-reciproque-x1",
+        "kind": "fixCalque",
+        "phrase": "Nous nous téléphonons l'un à l'autre ce soir.",
+        "prompt": "Русское «созвонимся вечером» тянет на кальку. Как сказать естественно?",
+        "options": [
+          "On se téléphone ce soir.",
+          "Nous téléphonons nous ce soir.",
+          "On téléphone l'un l'autre ce soir.",
+          "Nous nous téléphonons l'un à l'autre ce soir."
+        ],
+        "correctIndex": 0,
+        "result": "On se téléphone ce soir.",
+        "explanation": "«Друг другу» уже сидит в se: on se téléphone = созвонимся. Добавлять l'un à l'autre не нужно — это избыточно и звучит как калька (а téléphoner требует à: l'un à l'autre)."
+      },
+      {
+        "id": "refl-reciproque-x2",
+        "kind": "scene",
+        "situation": "Друг хочет уйти, не попрощавшись с хозяевами. Вы говорите: «так не делается / это не принято».",
+        "prompt": "Что сказать другу?",
+        "options": [
+          "Ça ne se fait pas.",
+          "Ça ne fait pas.",
+          "On ne le fait pas ça.",
+          "Ça ne se passe pas."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Так не делается / это не принято» — это ça ne se fait pas (то же пассивное se, что в ça se dit). Без se — ça ne fait pas — фраза разваливается; se passer — это «происходить», другое значение."
+      },
+      {
+        "id": "refl-reciproque-x3",
+        "kind": "oddOneOut",
+        "prompt": "В трёх фразах se значит «друг друга» или «так делается». Где se значит «себя»?",
+        "options": [
+          "On se voit ce soir.",
+          "Les voisins se parlent.",
+          "Ça se dit en français.",
+          "Il se lave avant de sortir."
+        ],
+        "correctIndex": 3,
+        "explanation": "Il se lave — настоящее возвратное se: он моет себя. Остальные — взаимное (on se voit, les voisins se parlent = друг друга) и пассивное (ça se dit = так говорят)."
       },
       {
         "id": "recip-insight",

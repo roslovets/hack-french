@@ -64,6 +64,31 @@
         "explanation": "Глагол должен стоять между ne и pas: Je ne comprends pas."
       },
       {
+        "id": "neg-cadre-x1",
+        "kind": "cloze",
+        "prompt": "Вставь нужную часть рамки перед гласной.",
+        "phrase": "Il ___ a pas faim.",
+        "options": ["n'", "ne", "non", "n"],
+        "correctIndex": 0,
+        "explanation": "Перед гласной (a, e, i, o, u, h немое) ne превращается в n' с апострофом: il a → il n'a pas. Без апострофа («ne a») сказать нельзя.",
+        "result": "Il n'a pas faim."
+      },
+      {
+        "id": "neg-cadre-x2",
+        "kind": "fixCalque",
+        "prompt": "Русское «не» одно, а французская рамка — две части. Исправь кальку.",
+        "phrase": "Tu parles pas français.",
+        "options": [
+          "Tu ne parles pas français.",
+          "Tu ne parles français.",
+          "Tu parles ne pas français.",
+          "Tu pas ne parles français."
+        ],
+        "correctIndex": 0,
+        "explanation": "Отрицание — рамка из двух частей вокруг глагола: ne перед глаголом, pas после. Одной части (как русское «не») недостаточно — нужны обе.",
+        "result": "Tu ne parles pas français."
+      },
+      {
         "id": "cadre-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -146,6 +171,51 @@
         "explanation": "«Больше не» — это рамка ne … plus вокруг глагола: Je ne fume plus. «pas plus» — калька, так нельзя."
       },
       {
+        "id": "neg-plus-x1",
+        "kind": "trap",
+        "prompt": "«Plus» выглядит как «больше». Где здесь ловушка? Выбери фразу, где plus значит ИМЕННО «больше не».",
+        "phrase": "plus",
+        "options": [
+          "Je n'ai plus faim.",
+          "J'ai plus de travail qu'avant.",
+          "Parle plus fort, s'il te plaît.",
+          "Il y a plus de monde aujourd'hui."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка faux-ami: само слово plus похоже на «больше». Но «больше не» получается ТОЛЬКО в связке с ne: «Je n'ai plus faim» — «я больше не голоден». Без ne (j'ai plus de travail, parle plus fort, il y a plus de monde) plus значит «больше / более», то есть наоборот.",
+        "result": "Je n'ai plus faim."
+      },
+      {
+        "id": "neg-plus-x2",
+        "kind": "fixCalque",
+        "prompt": "Русское «Я больше не работаю здесь» дословно дало неправильную фразу. Исправь её.",
+        "phrase": "Je travaille ne plus ici.",
+        "options": [
+          "Je ne travaille plus ici.",
+          "Je ne plus travaille ici.",
+          "Je travaille plus ne ici.",
+          "Je ne travaille pas plus ici."
+        ],
+        "correctIndex": 0,
+        "explanation": "Отрицание обнимает спрягаемый глагол: ne ставится ПЕРЕД глаголом, а plus — ПОСЛЕ. Получается «Je ne travaille plus ici». Нельзя сцеплять ne plus вместе или менять их местами.",
+        "result": "Je ne travaille plus ici."
+      },
+      {
+        "id": "neg-plus-x3",
+        "kind": "compare",
+        "prompt": "В чём разница между этими двумя фразами?",
+        "phrases": ["Je ne mange pas de viande.", "Je ne mange plus de viande."],
+        "options": [
+          "Первая — простое отрицание «я не ем мяса»; вторая — «я больше не ем мяса», то есть раньше ел, а теперь прекратил.",
+          "Обе значат одно и то же, plus и pas здесь полностью взаимозаменяемы.",
+          "Первая значит «я больше не ем мяса», вторая — «я ем больше мяса».",
+          "Вторая фраза грамматически неверна: после plus нельзя ставить de."
+        ],
+        "correctIndex": 0,
+        "explanation": "ne … pas — нейтральное отрицание («не делаю»). ne … plus добавляет смысл прекращения: действие было раньше и теперь остановилось — «больше не». Поэтому «ne mange plus» = «раньше ел, теперь перестал».",
+        "result": "Je ne mange plus de viande."
+      },
+      {
         "id": "plus-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -217,6 +287,51 @@
         ],
         "correctIndex": 0,
         "explanation": "«Никогда не курю» → Je ne fume jamais. Второе pas не нужно: jamais само закрывает рамку."
+      },
+      {
+        "id": "neg-jamais-x1",
+        "kind": "explainError",
+        "prompt": "Эта фраза звучит как «никогда не пью вино», но француз слышит ошибку. Почему?",
+        "phrase": "Je ne bois jamais du vin.",
+        "options": [
+          "После ne … jamais частичный артикль du сворачивается в de: правильно «je ne bois jamais de vin».",
+          "Глагол bois стоит не в том лице — нужно boive.",
+          "Слово jamais должно идти перед глаголом: «je ne jamais bois vin».",
+          "Здесь вообще нельзя использовать jamais — только pas."
+        ],
+        "correctIndex": 0,
+        "explanation": "Как и после pas, после ne … jamais неопределённый и частичный артикль (un/une/du/de la/des) сворачивается в de: «je ne bois jamais de vin». Форма du сохранилась бы только в утверждении.",
+        "result": "Je ne bois jamais de vin."
+      },
+      {
+        "id": "neg-jamais-x2",
+        "kind": "fixCalque",
+        "prompt": "Русский говорит «Я никогда не ем мясо» и строит фразу по-русски. Исправь на идиоматичный французский.",
+        "phrase": "Je jamais ne mange de la viande.",
+        "options": [
+          "Je ne mange jamais de viande.",
+          "Je ne jamais mange de la viande.",
+          "Je ne mange pas jamais de viande.",
+          "Je mange jamais la viande."
+        ],
+        "correctIndex": 0,
+        "explanation": "Рамка такая: ne — перед глаголом, jamais — после него (ne mange jamais). Двух отрицаний pas + jamais не бывает, а частичный артикль после jamais сворачивается в de: «de viande».",
+        "result": "Je ne mange jamais de viande."
+      },
+      {
+        "id": "neg-jamais-x3",
+        "kind": "compare",
+        "prompt": "Обе фразы с ne … jamais. Почему в одной de, а в другой остаётся le?",
+        "phrases": ["Je ne bois jamais de café.", "Je ne bois jamais le café du distributeur."],
+        "options": [
+          "В первой частичный артикль (du café → de), потому что речь о кофе вообще. Во второй le — определённый артикль конкретного кофе (из автомата), он после отрицания не меняется.",
+          "Обе фразы одинаковы, le и de здесь взаимозаменяемы.",
+          "Во второй фразе ошибка: после jamais всегда должно быть de, надо «jamais de café du distributeur».",
+          "В первой фразе ошибка: после boire нужен определённый артикль le."
+        ],
+        "correctIndex": 0,
+        "explanation": "Свёртка в de касается только неопределённого/частичного артикля (du/de la/des → de). Определённый артикль конкретного предмета (le café du distributeur — кофе именно из автомата) после отрицания сохраняется.",
+        "result": "Je ne bois jamais de café. / Je ne bois jamais le café du distributeur."
       },
       {
         "id": "jamais-insight",
@@ -295,6 +410,45 @@
         ],
         "correctIndex": 0,
         "explanation": "Никого (о людях) → ne … personne: Je ne connais personne ici. Второе pas не нужно."
+      },
+      {
+        "id": "neg-rien-personne-x1",
+        "kind": "fixCalque",
+        "prompt": "Русское «Я никого не видел» часто переводят дословно. Исправь кальку.",
+        "phrase": "J'ai vu personne.",
+        "options": [
+          "Je n'ai vu personne.",
+          "Je n'ai personne vu.",
+          "Je n'ai rien vu personne.",
+          "J'ai ne vu personne."
+        ],
+        "correctIndex": 0,
+        "explanation": "В passé composé personne стоит ПОСЛЕ причастия: ne (n') + вспомогательный глагол + причастие + personne → «Je n'ai vu personne». Этим personne отличается от rien, которое в той же конструкции встаёт ПЕРЕД причастием: «Je n'ai rien vu».",
+        "result": "Je n'ai vu personne."
+      },
+      {
+        "id": "neg-rien-personne-x2",
+        "kind": "oddOneOut",
+        "prompt": "В трёх фразах выбор rien / personne правильный. Найди фразу, где слово выбрано неверно.",
+        "options": [
+          "Je ne connais personne ici.",
+          "Il n'y a rien à manger.",
+          "Je ne vois rien sur la table.",
+          "Je ne mange personne."
+        ],
+        "correctIndex": 3,
+        "explanation": "rien — о вещах, personne — о людях. «Je ne mange personne» буквально значит «я никого не ем» — едят пищу, а не людей, поэтому нужно rien: «Je ne mange rien» («я ничего не ем»). В остальных фразах выбор верный: connaître personne (о людях), rien à manger / rien sur la table (о вещах).",
+        "result": "Je ne mange rien."
+      },
+      {
+        "id": "neg-rien-personne-x3",
+        "kind": "cloze",
+        "prompt": "Звонишь, но трубку никто не берёт. Вставь нужное слово.",
+        "phrase": "J'appelle, mais ___ ne répond.",
+        "options": ["personne", "rien", "quelqu'un", "jamais"],
+        "correctIndex": 0,
+        "explanation": "Отвечает по телефону человек, значит «никто» = personne. Здесь personne — подлежащее, поэтому оно стоит ПЕРЕД глаголом, а ne — после него: «personne ne répond». rien значило бы «ничто» (о вещах), quelqu'un — «кто-то» (без отрицания), jamais — «никогда».",
+        "result": "J'appelle, mais personne ne répond."
       },
       {
         "id": "rien-insight",
@@ -377,6 +531,65 @@
         ],
         "correctIndex": 0,
         "explanation": "Первая — настоящее отрицание (не ем мяса, pas de viande). Вторая — ограничение ne … que: ем только овощи (des légumes сохраняется)."
+      },
+      {
+        "id": "neg-que-x1",
+        "kind": "compare",
+        "prompt": "Сравни две фразы. В чём разница?",
+        "phrases": ["Je n'ai pas 5 euros.", "Je n'ai que 5 euros."],
+        "options": [
+          "Первая — настоящее отрицание («у меня НЕТ 5 евро»); вторая — ограничение «у меня только 5 евро»",
+          "Обе значат одно и то же, просто вторая вежливее",
+          "Первая значит «у меня только 5 евро», вторая — «у меня совсем нет денег»",
+          "Здесь que просто усиливает отрицание pas"
+        ],
+        "correctIndex": 0,
+        "explanation": "Je n'ai pas 5 euros — обычное отрицание ne … pas: у меня НЕТ пяти евро. Je n'ai que 5 euros — рамка ne … que = «только»: у меня всего 5 евро. Одна и та же на вид «отрицательная» обёртка даёт противоположные смыслы."
+      },
+      {
+        "id": "neg-que-x2",
+        "kind": "fixCalque",
+        "prompt": "Русское «Я ем только овощи» перевели дословно. Исправь на идиоматичный французский.",
+        "phrase": "Je mange seulement que des légumes.",
+        "options": [
+          "Je ne mange que des légumes.",
+          "Je mange seulement que des légumes.",
+          "Je ne mange pas que des légumes.",
+          "Je ne mange que de légumes."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Только» передаётся рамкой ne … que: ne — перед глаголом, que — перед ограничиваемым словом. Дублировать с seulement нельзя (либо seulement, либо ne … que). А после que артикль остаётся полным: des légumes, не «de légumes».",
+        "result": "Je ne mange que des légumes."
+      },
+      {
+        "id": "neg-que-x3",
+        "kind": "debug",
+        "buggy": "Je ne mange que de pain.",
+        "bugReport": "Артикль свернули в de, как при отрицании. Но que — это не отрицание.",
+        "prompt": "«Я ем только хлеб». Какой вариант правильный?",
+        "options": [
+          "Je ne mange que du pain.",
+          "Je ne mange que de pain.",
+          "Je ne mange pas de pain.",
+          "Je ne mange que le pain."
+        ],
+        "correctIndex": 0,
+        "fixNote": "que du pain — артикль сохраняется",
+        "explanation": "Сворачивание артикля в de — это правило отрицания (pas de pain). Но ne … que = «только», а не отрицание, поэтому частичный артикль НЕ сворачивается: que du pain. Вариант «que le pain» сместил бы смысл на «только этот конкретный хлеб»."
+      },
+      {
+        "id": "neg-que-x4",
+        "kind": "scene",
+        "prompt": "Ты в булочной, тебе нужен всего один багет. Как сказать пекарю?",
+        "situation": "В булочной ты хочешь сказать, что возьмёшь только один багет.",
+        "options": [
+          "Je ne prends qu'une baguette.",
+          "Je ne prends que une baguette.",
+          "Je ne prends pas une baguette.",
+          "Je prends seulement qu'une baguette."
+        ],
+        "correctIndex": 0,
+        "explanation": "ne … que = «только»: «возьму только один багет». Перед гласной que обязательно сокращается: qu'une (не «que une»). Вариант с pas сказал бы «я НЕ беру багет», а seulement + que — недопустимое удвоение."
       },
       {
         "id": "que-insight",

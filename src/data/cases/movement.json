@@ -118,6 +118,35 @@
         "explanation": "Человек/специалист → chez. Учреждение/место → à / au."
       },
       {
+        "id": "chez-x1",
+        "kind": "fixCalque",
+        "prompt": "Русское «иду к парикмахеру» тянет на au. Почини фразу.",
+        "phrase": "Je vais au coiffeur.",
+        "options": [
+          "Je vais chez le coiffeur.",
+          "Je vais à le coiffeur.",
+          "Je vais au coiffeur.",
+          "Je vais en coiffeur."
+        ],
+        "correctIndex": 0,
+        "explanation": "К человеку или специалисту идут через chez: chez le coiffeur, chez le médecin. Форма au coiffeur встречается в разговорной речи, но стандартный вариант — chez le coiffeur; à le невозможно (даёт au).",
+        "result": "Je vais chez le coiffeur."
+      },
+      {
+        "id": "chez-x2",
+        "kind": "scene",
+        "prompt": "Сосед спрашивает, куда ты собрался. Ты идёшь в аптеку за лекарством. Что сказать?",
+        "situation": "Аптека — это здание/место, а не человек.",
+        "options": [
+          "Je vais à la pharmacie.",
+          "Je vais chez la pharmacie.",
+          "Je vais au pharmacie.",
+          "Je vais à pharmacie."
+        ],
+        "correctIndex": 0,
+        "explanation": "Аптека — это место, поэтому à la pharmacie. chez идёт только к человеку (chez le pharmacien — к самому фармацевту), но не к зданию; pharmacie женского рода, поэтому не au, и артикль la обязателен."
+      },
+      {
         "id": "chez-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -210,6 +239,51 @@
           "Je vais chercher des médicaments."
         ],
         "minCount": 3
+      },
+      {
+        "id": "aller-chercher-x1",
+        "kind": "fixCalque",
+        "prompt": "Русское «Я схожу за дочкой в садик» часто переводят дословно. Исправь кальку.",
+        "phrase": "Je vais aller pour ma fille à la crèche.",
+        "options": [
+          "Je vais chercher ma fille à la crèche.",
+          "Je vais aller à ma fille à la crèche.",
+          "Je vais prendre pour ma fille à la crèche.",
+          "Je vais trouver ma fille à la crèche."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Сходить/пойти за кем-то» — это aller chercher qqn, без предлога pour и без «à». Конструкции с pour, à или trouver здесь не работают.",
+        "result": "Je vais chercher ma fille à la crèche."
+      },
+      {
+        "id": "aller-chercher-x2",
+        "kind": "scene",
+        "prompt": "Сцена: ты пришёл в садик и говоришь воспитательнице, что забираешь сына.",
+        "situation": "В садике (Crèche). Ты подходишь к воспитательнице, чтобы забрать сына домой.",
+        "options": [
+          "Bonjour, je viens chercher mon fils.",
+          "Bonjour, je cherche mon fils.",
+          "Bonjour, je viens trouver mon fils.",
+          "Bonjour, je vais à mon fils."
+        ],
+        "correctIndex": 0,
+        "explanation": "venir chercher qqn = «прийти забрать». «Je cherche mon fils» прозвучит как «я (потерял и) ищу сына», а не «забираю».",
+        "result": "Bonjour, je viens chercher mon fils."
+      },
+      {
+        "id": "aller-chercher-x3",
+        "kind": "trap",
+        "prompt": "Ловушка: chercher похоже на «to search». Где здесь «забрать», а не «искать»?",
+        "phrase": "Tu peux passer chercher le pain à la boulangerie ?",
+        "options": [
+          "Можешь зайти забрать хлеб в булочной?",
+          "Можешь поискать хлеб в булочной?",
+          "Можешь найти хлеб в булочной?",
+          "Можешь сходить за поиском хлеба в булочную?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: в бытовом блоке aller/venir/passer chercher слово chercher значит не «искать», а «забрать, зайти за». passer chercher le pain = «зайти забрать хлеб».",
+        "result": "Можешь зайти забрать хлеб в булочной?"
       },
       {
         "id": "ac-insight",
@@ -345,6 +419,35 @@
         "note": "à + le → au. «à le magasin» не пишут никогда."
       },
       {
+        "id": "au-aux-x1",
+        "kind": "mutation",
+        "prompt": "Сделай предлог «à» слитным с артиклем правильно.",
+        "phrase": "Je parle à les voisins.",
+        "options": [
+          "Je parle aux voisins.",
+          "Je parle à les voisins.",
+          "Je parle au voisins.",
+          "Je parle des voisins."
+        ],
+        "correctIndex": 0,
+        "explanation": "Перед множественным «les» предлог «à» обязательно слипается: à + les = aux. Форма «à les» во французском не существует. «Au» — это à + le, только единственное число, поэтому «au voisins» неверно. «Des voisins» — это de + les и означает «о соседях» (parler de), другой смысл.",
+        "result": "Je parle aux voisins."
+      },
+      {
+        "id": "au-aux-x2",
+        "kind": "compare",
+        "prompt": "Почему «au» слиплось, а «à la» — нет?",
+        "phrases": ["Je vais au marché.", "Je vais à la gare."],
+        "options": [
+          "«à» слипается с «le» и «les» (→ au, aux), но НЕ слипается с «la» и «l'».",
+          "«à» слипается с любым артиклем, кроме мужского рода.",
+          "«au» и «à la» — это одно и то же, разница только в произношении.",
+          "«à la» — это ошибка, правильно всегда «au»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Стяжение работает только с «le» (→ au) и «les» (→ aux). С «la» и «l'» предлог остаётся раздельным: à la gare, à l'école. То же с «de»: du, des, но de la, de l'. «Marché» мужского рода → au, «gare» женского → à la."
+      },
+      {
         "id": "auaux-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -464,6 +567,39 @@
           }
         ],
         "note": "sur = «на поверхности». Предлог места идёт перед группой la table."
+      },
+      {
+        "id": "prepositions-x1",
+        "kind": "fixCalque",
+        "prompt": "Эта фраза собрана «по-русски». Почини предлог: кот сидит ПОД стулом.",
+        "phrase": "Le chat est dans la chaise.",
+        "options": [
+          "Le chat est sous la chaise.",
+          "Le chat est sur la chaise.",
+          "Le chat est devant la chaise.",
+          "Le chat est dans la chaise."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Под» — это sous, а не dans («в») или sur («на»). Dans la chaise значило бы «внутри стула», sur la chaise — «на стуле», devant — «перед». Нужно sous la chaise."
+      },
+      {
+        "id": "prepositions-x2",
+        "kind": "hypothesis",
+        "prompt": "Посмотри на примеры и выбери верное правило для devant и derrière.",
+        "clues": [
+          "La voiture est devant la maison.",
+          "Le jardin est derrière la maison.",
+          "Il attend devant la porte.",
+          "Le chat se cache derrière le canapé."
+        ],
+        "options": [
+          "devant — «перед» (спереди), derrière — «за/сзади».",
+          "devant — «за/сзади», derrière — «перед».",
+          "devant — «на», derrière — «под».",
+          "devant — «внутри», derrière — «снаружи»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Devant означает «перед» (спереди от объекта), а derrière — «за / сзади». Это горизонтальная ось «спереди — сзади», в отличие от sur/sous («на — под»)."
       },
       {
         "id": "prep-insight",
@@ -590,6 +726,33 @@
         ],
         "correctIndex": 0,
         "explanation": "Уйти/отбыть → partir: je pars maintenant. arriver/venir — про прибытие сюда."
+      },
+      {
+        "id": "aller-venir-x1",
+        "kind": "compare",
+        "prompt": "В чём разница между этими двумя фразами?",
+        "phrases": ["Je viens de Paris.", "Je vais à Paris."],
+        "options": [
+          "venir de — откуда движение (источник, «я из Парижа»), aller à — куда движение (цель, «я еду в Париж»).",
+          "venir значит «приходить пешком», а aller — «ехать на транспорте».",
+          "Обе фразы значат одно и то же; venir и aller — синонимы.",
+          "venir — это прошедшее время, а aller — настоящее."
+        ],
+        "correctIndex": 0,
+        "explanation": "venir смотрит на источник и берёт de (venir de Paris = «я из Парижа»), aller смотрит на цель и берёт à (aller à Paris = «еду в Париж»). Способ передвижения тут ни при чём."
+      },
+      {
+        "id": "aller-venir-x2",
+        "kind": "oddOneOut",
+        "prompt": "Три фразы звучат естественно, одна — нет. Найди ошибку.",
+        "options": [
+          "Je pars en vacances.",
+          "J'arrive dans cinq minutes.",
+          "Je viens de Lyon.",
+          "Je vais de Lyon."
+        ],
+        "correctIndex": 3,
+        "explanation": "Источник («откуда») передаёт venir de: je viens de Lyon. У aller источника не бывает — aller берёт цель с à/en, поэтому «je vais de Lyon» невозможно."
       },
       {
         "id": "av-insight",

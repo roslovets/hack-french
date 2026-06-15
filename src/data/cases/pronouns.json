@@ -69,6 +69,46 @@
         "note": "[кто] [кому] [что сделал] — устойчивый каркас."
       },
       {
+        "id": "lui-leur-x1",
+        "kind": "cloze",
+        "prompt": "Учительница на собрании говорит про родителей: «Я им объясняю урок». Вставь нужное слово.",
+        "phrase": "Je ___ explique la leçon.",
+        "options": ["leur", "leurs", "les", "lui"],
+        "correctIndex": 0,
+        "explanation": "expliquer строится как expliquer qqch à qqn, поэтому «им» — косвенный объект leur (à plusieurs personnes). Это местоимение всегда без -s (leurs — это притяжательное «их»). les — прямой объект, lui — для одного человека.",
+        "result": "Je leur explique la leçon."
+      },
+      {
+        "id": "lui-leur-x2",
+        "kind": "fixCalque",
+        "prompt": "Русский порядок «Я звоню ему» дал кальку. Почини на правильный французский.",
+        "phrase": "Je téléphone lui.",
+        "options": [
+          "Je lui téléphone.",
+          "Je le téléphone.",
+          "Je téléphone à lui.",
+          "Je lui le téléphone."
+        ],
+        "correctIndex": 0,
+        "explanation": "téléphoner идёт с à qqn, значит «ему» — это lui, и оно встаёт ПЕРЕД глаголом: je lui téléphone. le — прямой объект (téléphoner так не строится), Je téléphone à lui звучит ненатурально, а Je lui le téléphone — бессмыслица.",
+        "result": "Je lui téléphone."
+      },
+      {
+        "id": "lui-leur-x3",
+        "kind": "compare",
+        "prompt": "Чем отличаются эти две фразы?",
+        "phrases": ["Je le vois.", "Je lui parle."],
+        "options": [
+          "le — прямой объект («его вижу», voir qqn), а lui — косвенный объект «кому» (parler à qqn); местоимение задаёт сам глагол.",
+          "Разницы по смыслу нет, le и lui взаимозаменяемы перед глаголом.",
+          "le — для мужчин, lui — для женщин.",
+          "le ставится перед глаголом, а lui — после глагола."
+        ],
+        "correctIndex": 0,
+        "explanation": "Выбор местоимения задаёт глагол: voir qqn (прямой объект) → le/la, parler à qqn (косвенный, «кому») → lui. Оба стоят перед глаголом, и lui одинаково для «ему» и «ей».",
+        "result": "Je lui parle."
+      },
+      {
         "id": "lui-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -168,6 +208,35 @@
         ],
         "correctIndex": 0,
         "explanation": "téléphoner à quelqu'un → косвенный объект lui, перед глаголом: je lui téléphone."
+      },
+      {
+        "id": "le-vs-lui-x1",
+        "kind": "fixCalque",
+        "prompt": "Русское «помогаю ему» — дательный падеж. Но во французском глагол aider управляет ПРЯМЫМ объектом. Исправь кальку.",
+        "phrase": "Je lui aide avec les devoirs.",
+        "options": [
+          "Je l'aide avec les devoirs.",
+          "Je lui aide avec les devoirs.",
+          "Je lui aide les devoirs.",
+          "Je l'aide à lui avec les devoirs."
+        ],
+        "correctIndex": 0,
+        "explanation": "Падеж задаёт французский глагол, а не русский. Aider qqn — прямой объект, поэтому «его/её» = le/la (здесь l'), а не lui: Je l'aide.",
+        "result": "Je l'aide avec les devoirs."
+      },
+      {
+        "id": "le-vs-lui-x2",
+        "kind": "compare",
+        "prompt": "Обе фразы верны. В чём разница между le и lui здесь?",
+        "phrases": ["Je le regarde.", "Je lui réponds."],
+        "options": [
+          "Regarder qqn — прямой объект (le = «его»), répondre à qqn — «к кому» (lui = «ему»): местоимение выбирает конструкция глагола.",
+          "Le — для людей, lui — для предметов.",
+          "Le — настоящее время, lui — прошедшее.",
+          "Le — мужской род, lui — женский род."
+        ],
+        "correctIndex": 0,
+        "explanation": "Выбор le/lui диктует управление глагола: regarder qqn — прямой объект (le/la), répondre à qqn — косвенный, «к кому» (lui/leur). Род и одушевлённость тут ни при чём."
       },
       {
         "id": "levslui-insight",
@@ -278,6 +347,16 @@
         "prompt": "Миссия.",
         "targets": ["on y va", "j'y vais", "j'y pense"],
         "hint": "Поймай в речи фразу с y — особенно «on y va ?»"
+      },
+      {
+        "id": "y-x1",
+        "kind": "cloze",
+        "prompt": "y прячет не только место, но и идею с à. Penser à quelque chose → ? Вставь пропущенное.",
+        "phrase": "— Tu penses à ton rendez-vous chez le médecin ? — Oui, ___ pense.",
+        "options": ["j'y", "j'en", "je le", "je y"],
+        "correctIndex": 0,
+        "explanation": "Глагол penser управляет предлогом à (penser à qqch), поэтому всё «à + идея» сворачивается в y: j'y pense. Перед гласной обязательна элизия je → j', значит «je y» неверно; en заменяет конструкцию с de, а le — прямое дополнение без предлога.",
+        "result": "Oui, j'y pense."
       },
       {
         "id": "y-insight",
@@ -414,6 +493,21 @@
         "minCount": 4
       },
       {
+        "id": "en-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский говорит «у меня их три» как «j'ai trois». Француз так не скажет — где ошибка?",
+        "phrase": "Tu as des pommes ? — Oui, j'ai trois.",
+        "options": [
+          "Oui, j'en ai trois.",
+          "Oui, j'ai en trois.",
+          "Oui, j'ai trois d'elles.",
+          "Oui, j'ai trois en."
+        ],
+        "correctIndex": 0,
+        "explanation": "Когда после числа предмет не повторяют, по-русски можно сказать просто «у меня три», но во французском обязательно нужно en: «j'en ai trois». En стоит перед глаголом и заменяет «их / этого»; в конце фразы (j'ai trois en) или после глагола (j'ai en trois) его ставить нельзя.",
+        "result": "Oui, j'en ai trois."
+      },
+      {
         "id": "en-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -517,6 +611,46 @@
         "explanation": "te должно стоять перед le: je te le donne, а не «le te»."
       },
       {
+        "id": "double-pronoms-x1",
+        "kind": "cloze",
+        "prompt": "Третье лицо + третье лицо: вставь местоимения в нужном порядке.",
+        "phrase": "— Tu donnes le livre à Paul ? — Oui, je ___ donne.",
+        "options": ["le lui", "lui le", "lui en", "la lui"],
+        "correctIndex": 0,
+        "explanation": "Группа le/la/les идёт ПЕРЕД lui/leur. «Это» = le (livre — мужской род), «ему» = lui, значит je le lui donne.",
+        "result": "Oui, je le lui donne."
+      },
+      {
+        "id": "double-pronoms-x2",
+        "kind": "fixCalque",
+        "prompt": "Русская калька «я ему это покупаю». Почини порядок.",
+        "phrase": "Je lui l'achète.",
+        "options": [
+          "Je le lui achète.",
+          "Je l'achète lui.",
+          "Je lui le achète.",
+          "Je l'lui achète."
+        ],
+        "correctIndex": 0,
+        "explanation": "В русском «ему это» звучит естественно, но во французском le/la идёт перед lui/leur: je le lui achète. Перед гласной le→l' тут не нужно, потому что после него стоит lui, а не глагол.",
+        "result": "Je le lui achète."
+      },
+      {
+        "id": "double-pronoms-x3",
+        "kind": "scene",
+        "prompt": "По телефону просишь прислать тебе фото.",
+        "situation": "Звонишь подруге: у неё есть фотография, и ты хочешь, чтобы она прислала её именно тебе.",
+        "options": [
+          "Tu peux me l'envoyer ?",
+          "Tu peux le m'envoyer ?",
+          "Tu peux m'le envoyer ?",
+          "Tu peux te le envoyer ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Группа me/te/nous/vous идёт ПЕРЕД le/la/les: me + la → me l' перед гласной (envoyer). Получается «Tu peux me l'envoyer ?».",
+        "result": "Tu peux me l'envoyer ?"
+      },
+      {
         "id": "dbl-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -598,6 +732,31 @@
           }
         ],
         "note": "Живой разговорный вопрос «что это?». ça повторяет и уточняет «это»."
+      },
+      {
+        "id": "ca-x1",
+        "kind": "fixCalque",
+        "prompt": "Русское «Это мне подходит» часто переводят дословно. Найди идиоматичный французский вариант.",
+        "phrase": "Ça va à moi.",
+        "options": ["Ça me va.", "Ça va à moi.", "Ça va bien pour moi.", "C'est me va."],
+        "correctIndex": 0,
+        "explanation": "С ça безударное местоимение-дополнение ставится ПЕРЕД глаголом: «ça me va» (это мне подходит/идёт). Ударная форма «à moi» здесь калька с русского и звучит неправильно.",
+        "result": "Ça me va."
+      },
+      {
+        "id": "ca-x2",
+        "kind": "compare",
+        "prompt": "В чём разница между ça и c' в этих двух фразах?",
+        "phrases": ["Ça t'intéresse ?", "C'est intéressant."],
+        "options": [
+          "ça — местоимение «это» при любом глаголе (подлежащее или дополнение), а c' — это форма ce, которая ставится только перед être.",
+          "ça используется в вопросах, а c' — в утверждениях.",
+          "ça — для людей, а c' — для предметов.",
+          "Это одно и то же, ça — просто разговорный вариант c'."
+        ],
+        "correctIndex": 0,
+        "explanation": "ça — полноценное местоимение «это» при любом глаголе (ça t'intéresse, ça marche, j'aime ça). Перед глаголом être используется ce → c'est, а не ça. Поэтому «c'est intéressant», но «ça t'intéresse».",
+        "result": "Ça t'intéresse ? — C'est intéressant."
       },
       {
         "id": "ca-insight",
@@ -690,6 +849,30 @@
         "options": ["Je te rappelle.", "Je rappelle toi.", "Je rappelle te.", "Je toi rappelle."],
         "correctIndex": 0,
         "explanation": "te (тебе) — клитик перед глаголом: je te rappelle. Не «rappelle toi»."
+      },
+      {
+        "id": "me-te-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский порядок слов сбивает с толку. Исправь фразу «Он говорит мне».",
+        "phrase": "Il parle me.",
+        "options": ["Il me parle.", "Il parle me.", "Il parle à me.", "Il me parle me."],
+        "correctIndex": 0,
+        "explanation": "me / te / nous / vous всегда стоят ПЕРЕД глаголом, а не после, как в русском. Поэтому «он мне говорит» — il me parle, а не «il parle me».",
+        "result": "Il me parle."
+      },
+      {
+        "id": "me-te-x2",
+        "kind": "compare",
+        "prompt": "Сравни две фразы. В чём разница в форме местоимения?",
+        "phrases": ["Il me parle.", "Il m'aime."],
+        "options": [
+          "Перед гласной me превращается в m' (выпадает e), но смысл и место не меняются.",
+          "Во второй фразе местоимение другое — m' значит «его», а не «меня».",
+          "Во второй фразе местоимение стоит после глагола, поэтому пишется m'.",
+          "m' — это сокращение от mon, то есть «мой»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Перед гласной (или немой h) me теряет e и пишется m': me aime → m'aime. То же самое с te → t'. Место (перед глаголом) и значение («меня/тебя») не меняются."
       },
       {
         "id": "mt-insight",

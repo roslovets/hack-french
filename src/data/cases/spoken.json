@@ -40,9 +40,21 @@
         "prompt": "Вскрытие.",
         "phrase": "On y va ?",
         "tokens": [
-          { "fr": "On", "ru": "мы (разговорное)", "role": "кто" },
-          { "fr": "y", "ru": "туда", "role": "à + место" },
-          { "fr": "va", "ru": "идём", "role": "3 лицо ед." }
+          {
+            "fr": "On",
+            "ru": "мы (разговорное)",
+            "role": "кто"
+          },
+          {
+            "fr": "y",
+            "ru": "туда",
+            "role": "à + место"
+          },
+          {
+            "fr": "va",
+            "ru": "идём",
+            "role": "3 лицо ед."
+          }
         ],
         "note": "Три механизма в двух словах: on + y + va."
       },
@@ -62,6 +74,24 @@
         "prompt": "Миссия.",
         "targets": ["on va", "on y va", "on peut"],
         "hint": "Поймай в речи on вместо nous. Особенно «on y va ?»"
+      },
+      {
+        "id": "on-x1",
+        "kind": "hypothesis",
+        "prompt": "Глагол при on — как у il/elle, в единственном числе. А что происходит с прилагательным или причастием? Посмотри на примеры и выведи правило.",
+        "clues": [
+          "On est prêts à partir.",
+          "On est arrivés en retard.",
+          "Nous, les filles, on est contentes."
+        ],
+        "options": [
+          "Глагол при on стоит в единственном числе, но прилагательное и причастие согласуются по смыслу — во множественном числе (и по роду реальных людей).",
+          "Раз глагол при on в единственном числе, то и прилагательное с причастием всегда в единственном числе мужского рода.",
+          "Прилагательное и причастие при on всегда в женском роде, потому что on по форме похоже на безличное местоимение.",
+          "Согласование вообще не нужно: при on прилагательное и причастие никогда не меняют форму."
+        ],
+        "correctIndex": 0,
+        "explanation": "Когда on значит «мы», глагол остаётся в единственном числе (как у il/elle), но прилагательные и причастия согласуются по смыслу — во множественном числе и по реальному роду говорящих: on est prêts, on est contentes."
       },
       {
         "id": "on-insight",
@@ -108,15 +138,36 @@
         "kind": "sort",
         "prompt": "Разложи: письменная (нейтральная) форма vs разговорная.",
         "baskets": [
-          { "id": "ecrit", "label": "письменно / нейтрально" },
-          { "id": "oral", "label": "разговорно" }
+          {
+            "id": "ecrit",
+            "label": "письменно / нейтрально"
+          },
+          {
+            "id": "oral",
+            "label": "разговорно"
+          }
         ],
         "items": [
-          { "text": "Je ne sais pas.", "basket": "ecrit" },
-          { "text": "Je sais pas.", "basket": "oral" },
-          { "text": "Ce n'est pas grave.", "basket": "ecrit" },
-          { "text": "C'est pas grave.", "basket": "oral" },
-          { "text": "Je n'ai pas compris.", "basket": "ecrit" }
+          {
+            "text": "Je ne sais pas.",
+            "basket": "ecrit"
+          },
+          {
+            "text": "Je sais pas.",
+            "basket": "oral"
+          },
+          {
+            "text": "Ce n'est pas grave.",
+            "basket": "ecrit"
+          },
+          {
+            "text": "C'est pas grave.",
+            "basket": "oral"
+          },
+          {
+            "text": "Je n'ai pas compris.",
+            "basket": "ecrit"
+          }
         ],
         "explanation": "На письме ne сохраняется, в живой речи часто выпадает."
       },
@@ -126,9 +177,21 @@
         "prompt": "Вскрытие.",
         "phrase": "Je sais pas.",
         "tokens": [
-          { "fr": "Je", "ru": "я", "role": "кто" },
-          { "fr": "sais", "ru": "знаю", "role": "глагол" },
-          { "fr": "pas", "ru": "не", "role": "остаток отрицания" }
+          {
+            "fr": "Je",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "sais",
+            "ru": "знаю",
+            "role": "глагол"
+          },
+          {
+            "fr": "pas",
+            "ru": "не",
+            "role": "остаток отрицания"
+          }
         ],
         "note": "В письме было бы «Je ne sais pas» — но ne выпало, отрицание держит pas."
       },
@@ -140,6 +203,40 @@
         "options": ["Je sais pas.", "Je ne sais.", "Je sais ne pas.", "Je pas sais."],
         "correctIndex": 0,
         "explanation": "В разговоре ne выпадает: «Je sais pas». На письме — «Je ne sais pas»."
+      },
+      {
+        "id": "ne-drop-x1",
+        "kind": "hypothesis",
+        "prompt": "Послушай разговорную речь. Что именно выпадает, а что обязательно остаётся?",
+        "clues": [
+          "J'ai pas faim.",
+          "C'est pas grave.",
+          "Y a pas de problème.",
+          "Je peux pas venir."
+        ],
+        "options": [
+          "Выпадает ne, а второе слово (pas) остаётся — именно оно несёт отрицание",
+          "Выпадает pas, а ne остаётся и несёт отрицание",
+          "Выпадают оба слова, отрицание понятно по интонации",
+          "Выпадает то ne, то pas — без разницы, какое именно"
+        ],
+        "correctIndex": 0,
+        "explanation": "В разговорной речи исчезает именно ne; pas (или rien, jamais, plus) остаётся и несёт всё отрицание. Поэтому на слух нужно ловить второе слово."
+      },
+      {
+        "id": "ne-drop-x2",
+        "kind": "explainError",
+        "prompt": "Русскоязычный решил «упростить» отрицание и сказал это вместо «Я не знаю». Почему вышла ошибка?",
+        "phrase": "Je sais.",
+        "options": [
+          "Он выбросил pas вместо ne — а ведь именно pas несёт отрицание; без него фраза значит «Я знаю»",
+          "Ошибки нет: ne и pas одинаковы, можно убрать любое из двух",
+          "Нужно было оставить оба слова, в речи ne никогда не выпадает",
+          "Глагол sais написан неверно, надо savoir"
+        ],
+        "correctIndex": 0,
+        "explanation": "В разговоре выпадает ne, но pas остаётся обязательно. Если убрать pas, отрицание исчезает: «Je sais» = «Я знаю». Разговорная форма — «Je sais pas».",
+        "result": "Je sais pas."
       },
       {
         "id": "ned-insight",
@@ -214,11 +311,52 @@
         "prompt": "Вскрытие.",
         "phrase": "Est-ce que tu viens ?",
         "tokens": [
-          { "fr": "Est-ce que", "ru": "сейчас будет вопрос", "role": "маркер вопроса" },
-          { "fr": "tu", "ru": "ты", "role": "кто" },
-          { "fr": "viens", "ru": "идёшь", "role": "глагол" }
+          {
+            "fr": "Est-ce que",
+            "ru": "сейчас будет вопрос",
+            "role": "маркер вопроса"
+          },
+          {
+            "fr": "tu",
+            "ru": "ты",
+            "role": "кто"
+          },
+          {
+            "fr": "viens",
+            "ru": "идёшь",
+            "role": "глагол"
+          }
         ],
         "note": "Маркер приклеивается спереди, а дальше — обычный порядок слов tu viens."
+      },
+      {
+        "id": "est-ce-que-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский слышит «вопрос» и пытается сделать инверсию. Но est-ce que уже сделал вопрос. Почини фразу «Который час?».",
+        "phrase": "Est-ce que avez-vous l'heure ?",
+        "options": [
+          "Est-ce que vous avez l'heure ?",
+          "Est-ce que avez-vous l'heure ?",
+          "Est-ce qu'avez-vous l'heure ?",
+          "Est-ce que vous avez-vous l'heure ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "После est-ce que идёт ОБЫЧНЫЙ порядок: подлежащее + глагол (vous avez). Инверсия (avez-vous) тут лишняя — est-ce que уже превратил фразу в вопрос, второй раз делать вопрос не нужно.",
+        "result": "Est-ce que vous avez l'heure ?"
+      },
+      {
+        "id": "est-ce-que-x2",
+        "kind": "compare",
+        "prompt": "Чем отличаются эти два вопроса?",
+        "phrases": ["Tu viens ?", "Est-ce que tu viens ?"],
+        "options": [
+          "Ничем по смыслу: первый — вопрос одной интонацией, второй — тот же вопрос с явной «кнопкой» est-ce que. Оба нейтральны.",
+          "Первый — утверждение, второй — вопрос; только est-ce que делает фразу вопросом.",
+          "Второй вежливее и официальнее, а первый — грубый.",
+          "Второй стоит в будущем времени, а первый — в настоящем."
+        ],
+        "correctIndex": 0,
+        "explanation": "Смысл одинаковый. «Tu viens ?» — вопрос только восходящей интонацией; «Est-ce que tu viens ?» — тот же вопрос с явным маркером est-ce que. Оба нейтральны в разговоре; est-ce que ничего не меняет в порядке слов и не добавляет официальности (официальный регистр — это как раз инверсия viens-tu ?)."
       },
       {
         "id": "ecq-insight",
@@ -266,8 +404,16 @@
         "prompt": "Вскрытие застывшего блока.",
         "phrase": "Qu'est-ce que tu fais ?",
         "tokens": [
-          { "fr": "Qu'est-ce que", "ru": "что …?", "role": "застывший блок" },
-          { "fr": "tu fais", "ru": "ты делаешь", "role": "обычная фраза" }
+          {
+            "fr": "Qu'est-ce que",
+            "ru": "что …?",
+            "role": "застывший блок"
+          },
+          {
+            "fr": "tu fais",
+            "ru": "ты делаешь",
+            "role": "обычная фраза"
+          }
         ],
         "note": "Не разбирай по словам — бери целым куском «что …?»."
       },
@@ -293,6 +439,35 @@
         ],
         "correctIndex": 0,
         "explanation": "Qu'est-ce que c'est ? — нейтрально. Разговорный вариант: «C'est quoi ?»"
+      },
+      {
+        "id": "quest-ce-que-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский ставит «что» в начало и переводит дальше слово за словом. Почини кальку.",
+        "phrase": "Quoi tu cherches ?",
+        "options": [
+          "Qu'est-ce que tu cherches ?",
+          "Quoi est-ce que tu cherches ?",
+          "Que tu cherches ?",
+          "Qu'est-ce tu cherches ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "«Что …?» в начале обычной фразы — это целый блок qu'est-ce que (никогда не quoi и не голое que). Меняется только хвост: qu'est-ce que + tu cherches. Quoi стоит лишь в конце: Tu cherches quoi ?",
+        "result": "Qu'est-ce que tu cherches ?"
+      },
+      {
+        "id": "quest-ce-que-x2",
+        "kind": "compare",
+        "prompt": "Один блок, а хвост разный. В чём разница?",
+        "phrases": ["Qu'est-ce que tu manges ?", "Qu'est-ce qui sent bon ?"],
+        "options": [
+          "qu'est-ce que — когда «что» это объект (есть своё подлежащее, например tu); qu'est-ce qui — когда «что» само и есть подлежащее.",
+          "qu'est-ce que — для еды, qu'est-ce qui — для запахов и вещей.",
+          "qu'est-ce que — вежливая форма, qu'est-ce qui — разговорная.",
+          "qu'est-ce que — про настоящее, qu'est-ce qui — про прошлое."
+        ],
+        "correctIndex": 0,
+        "explanation": "Блок «что …?» оканчивается на que, если у фразы уже есть подлежащее (tu manges), и на qui, если само «что» — подлежащее (Qu'est-ce qui sent bon ? = «Что пахнет так вкусно?»). Это единственная разница."
       },
       {
         "id": "qqc-insight",
@@ -364,11 +539,52 @@
         "prompt": "Вскрытие.",
         "phrase": "Ça te va ?",
         "tokens": [
-          { "fr": "Ça", "ru": "это", "role": "подлежащее" },
-          { "fr": "te", "ru": "тебе", "role": "косвенное дополнение" },
-          { "fr": "va", "ru": "подходит", "role": "3 лицо ед." }
+          {
+            "fr": "Ça",
+            "ru": "это",
+            "role": "подлежащее"
+          },
+          {
+            "fr": "te",
+            "ru": "тебе",
+            "role": "косвенное дополнение"
+          },
+          {
+            "fr": "va",
+            "ru": "подходит",
+            "role": "3 лицо ед."
+          }
         ],
         "note": "То же va, что и в «ça va», но с te получается «тебе подходит?»."
+      },
+      {
+        "id": "ca-va-x1",
+        "kind": "compare",
+        "prompt": "Сравни две фразы. Что добавляет te во второй?",
+        "phrases": ["Ça va ?", "Ça te va ?"],
+        "options": [
+          "«Ça va ?» спрашивает о самочувствии («как ты?»), а «Ça te va ?» — подходит ли это тебе (предложение, время встречи, одежда)",
+          "«Ça va ?» — это вопрос, а «Ça te va ?» — то же самое, только вежливее",
+          "«Ça va ?» про настоящее, а «Ça te va ?» про будущее время",
+          "«Ça va ?» обращено к одному человеку, а «Ça te va ?» — к нескольким"
+        ],
+        "correctIndex": 0,
+        "explanation": "Без местоимения «Ça va ?» = «как дела / всё в порядке?». Добавив «te» (косвенное дополнение, «тебе»), получаем «Ça te va ?» = «тебе это подходит / устраивает?» — о предложении, времени встречи, одежде. Тот же глагол va, но смысл меняет именно te."
+      },
+      {
+        "id": "ca-va-x2",
+        "kind": "fixCalque",
+        "prompt": "На «Ça va ?» хочешь ответить «так себе». Русское «комси-комса» калькой звучит так. Исправь:",
+        "phrase": "Comme ça, comme ça.",
+        "options": [
+          "Comme ci, comme ça.",
+          "Comme ça, comme ça.",
+          "Comme ça, comme ci.",
+          "Comme et comme."
+        ],
+        "correctIndex": 0,
+        "explanation": "Идиома «так себе» — «Comme ci, comme ça» (буквально «как это, как то»): сначала «ci», потом «ça», именно в этом порядке. «Comme ça, comme ça» — калька-ошибка. Можно ответить и проще: «Bof» или «Ça peut aller».",
+        "result": "Comme ci, comme ça."
       },
       {
         "id": "cv-insight",

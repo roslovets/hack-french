@@ -64,10 +64,42 @@
         "prompt": "Вскрытие числа 95.",
         "phrase": "quatre-vingt-quinze",
         "tokens": [
-          { "fr": "quatre-vingt", "ru": "4 × 20 = 80", "role": "основа" },
-          { "fr": "quinze", "ru": "15", "role": "прибавка" }
+          {
+            "fr": "quatre-vingt",
+            "ru": "4 × 20 = 80",
+            "role": "основа"
+          },
+          {
+            "fr": "quinze",
+            "ru": "15",
+            "role": "прибавка"
+          }
         ],
         "note": "80 = quatre-vingts (с s), но quatre-vingt-quinze / quatre-vingt-cinq — без s, когда дальше идёт число."
+      },
+      {
+        "id": "nombres-x1",
+        "kind": "explainError",
+        "prompt": "Где ошибка в записи числа 81?",
+        "phrase": "quatre-vingts-un",
+        "options": [
+          "Когда после quatre-vingt идёт ещё число, «s» не пишется: правильно quatre-vingt-un.",
+          "Числа после 80 вообще не существуют, нужно говорить soixante-vingt-un.",
+          "«s» здесь не нужен, потому что 81 — нечётное число.",
+          "Ошибка в дефисе: правильно quatre vingts un, без чёрточек."
+        ],
+        "correctIndex": 0,
+        "explanation": "quatre-vingts пишется с «s» только когда это ровно 80 (4×20 целиком). Если за ним следует ещё число, «s» исчезает: quatre-vingt-un (81), quatre-vingt-deux (82), quatre-vingt-dix (90).",
+        "result": "quatre-vingt-un"
+      },
+      {
+        "id": "nombres-x2",
+        "kind": "scene",
+        "prompt": "Сцена: transport.",
+        "situation": "В автобусе кондуктор называет цену штрафа: «Ça fait soixante et onze euros».",
+        "options": ["71 евро", "61 евро", "91 евро", "76 евро"],
+        "correctIndex": 0,
+        "explanation": "soixante et onze = 60 + 11 = 71. На «1» и «11» десятки 60 и 70 берут et: soixante et un (61), soixante et onze (71). А вот 81 и 91 идут без et: quatre-vingt-un, quatre-vingt-onze."
       },
       {
         "id": "nb-insight",
@@ -135,9 +167,21 @@
         "prompt": "Вскрытие: 7:45.",
         "phrase": "Il est huit heures moins le quart.",
         "tokens": [
-          { "fr": "Il est", "ru": "сейчас", "role": "безличное время" },
-          { "fr": "huit heures", "ru": "восемь часов", "role": "час" },
-          { "fr": "moins le quart", "ru": "без четверти", "role": "−15 минут" }
+          {
+            "fr": "Il est",
+            "ru": "сейчас",
+            "role": "безличное время"
+          },
+          {
+            "fr": "huit heures",
+            "ru": "восемь часов",
+            "role": "час"
+          },
+          {
+            "fr": "moins le quart",
+            "ru": "без четверти",
+            "role": "−15 минут"
+          }
         ],
         "note": "«без четверти восемь» = huit heures moins le quart = 7:45."
       },
@@ -154,6 +198,21 @@
         ],
         "correctIndex": 0,
         "explanation": "Естественно: «Excusez-moi, vous avez l'heure ?» (или «Quelle heure est-il ?»)."
+      },
+      {
+        "id": "lheure-x1",
+        "kind": "mutation",
+        "prompt": "Полдень с половиной (12:30). Какой вариант верный?",
+        "phrase": "Il est midi et demie.",
+        "options": [
+          "Il est midi et demi.",
+          "Il est midi et demie.",
+          "Il est douze heures et demie.",
+          "Il est midi heures et demie."
+        ],
+        "correctIndex": 0,
+        "explanation": "После midi и minuit (мужской род) пишут «et demi» БЕЗ -e: midi et demi, minuit et demi. А после heure(s) (женский род) — «et demie» с -e: deux heures et demie. И midi/minuit никогда не идут со словом heures.",
+        "result": "Il est midi et demi."
       },
       {
         "id": "hr-insight",
@@ -225,8 +284,16 @@
         "prompt": "Вскрытие ответа.",
         "phrase": "Ça fait cinq euros.",
         "tokens": [
-          { "fr": "Ça fait", "ru": "получается / выходит", "role": "итог суммы" },
-          { "fr": "cinq euros", "ru": "пять евро", "role": "сумма" }
+          {
+            "fr": "Ça fait",
+            "ru": "получается / выходит",
+            "role": "итог суммы"
+          },
+          {
+            "fr": "cinq euros",
+            "ru": "пять евро",
+            "role": "сумма"
+          }
         ],
         "note": "На кассе цену называют через «Ça fait … euros»."
       },
@@ -243,6 +310,21 @@
         ],
         "correctIndex": 0,
         "explanation": "Короче и надёжнее: «C'est combien ?»"
+      },
+      {
+        "id": "prix-x1",
+        "kind": "fixCalque",
+        "prompt": "Русское «Сколько это стоит?» перевели дословно с лишним «дорого». Исправь на живой французский.",
+        "phrase": "Combien ça coûte cher ?",
+        "options": [
+          "Ça coûte combien ?",
+          "Combien c'est cher ?",
+          "Ça fait cher combien ?",
+          "Combien coûte cher ça ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Цену спрашивают «Ça coûte combien ?» или «C'est combien ?». Слово «cher» («дорого») сюда не вставляют — это калька с русского: «combien» уже значит «сколько». Остальные варианты ломают порядок слов и оставляют лишнее «cher».",
+        "result": "Ça coûte combien ?"
       },
       {
         "id": "px-insight",
@@ -309,16 +391,40 @@
         "kind": "sort",
         "prompt": "Разложи: день недели или месяц?",
         "baskets": [
-          { "id": "jour", "label": "день недели" },
-          { "id": "mois", "label": "месяц" }
+          {
+            "id": "jour",
+            "label": "день недели"
+          },
+          {
+            "id": "mois",
+            "label": "месяц"
+          }
         ],
         "items": [
-          { "text": "lundi", "basket": "jour" },
-          { "text": "mai", "basket": "mois" },
-          { "text": "vendredi", "basket": "jour" },
-          { "text": "août", "basket": "mois" },
-          { "text": "dimanche", "basket": "jour" },
-          { "text": "décembre", "basket": "mois" }
+          {
+            "text": "lundi",
+            "basket": "jour"
+          },
+          {
+            "text": "mai",
+            "basket": "mois"
+          },
+          {
+            "text": "vendredi",
+            "basket": "jour"
+          },
+          {
+            "text": "août",
+            "basket": "mois"
+          },
+          {
+            "text": "dimanche",
+            "basket": "jour"
+          },
+          {
+            "text": "décembre",
+            "basket": "mois"
+          }
         ],
         "explanation": "Дни: lundi…dimanche. Месяцы: janvier…décembre. Все со строчной буквы."
       },
@@ -328,11 +434,33 @@
         "prompt": "Вскрытие.",
         "phrase": "le premier mai",
         "tokens": [
-          { "fr": "le", "ru": "(артикль даты)", "role": "перед числом" },
-          { "fr": "premier", "ru": "первое", "role": "единственное порядковое в датах" },
-          { "fr": "mai", "ru": "май", "role": "месяц со строчной буквы" }
+          {
+            "fr": "le",
+            "ru": "(артикль даты)",
+            "role": "перед числом"
+          },
+          {
+            "fr": "premier",
+            "ru": "первое",
+            "role": "единственное порядковое в датах"
+          },
+          {
+            "fr": "mai",
+            "ru": "май",
+            "role": "месяц со строчной буквы"
+          }
         ],
         "note": "le premier (1-е) — порядковое; le deux, le trois… — обычные числа."
+      },
+      {
+        "id": "date-x1",
+        "kind": "fixCalque",
+        "prompt": "Русскоязычный написал «1 мая» как «le un Mai». Исправь на правильный французский.",
+        "phrase": "le un Mai",
+        "options": ["le premier mai", "le un mai", "le premier Mai", "premier le mai"],
+        "correctIndex": 0,
+        "explanation": "Для первого числа берётся порядковое premier (не un), а названия месяцев пишутся со строчной буквы: le premier mai.",
+        "result": "le premier mai"
       },
       {
         "id": "dt-insight",
@@ -425,11 +553,52 @@
         "prompt": "Вскрытие.",
         "phrase": "une bouteille d'eau",
         "tokens": [
-          { "fr": "une bouteille", "ru": "бутылка", "role": "мера количества" },
-          { "fr": "d'", "ru": "(de перед гласной)", "role": "de → d'" },
-          { "fr": "eau", "ru": "вода", "role": "что именно" }
+          {
+            "fr": "une bouteille",
+            "ru": "бутылка",
+            "role": "мера количества"
+          },
+          {
+            "fr": "d'",
+            "ru": "(de перед гласной)",
+            "role": "de → d'"
+          },
+          {
+            "fr": "eau",
+            "ru": "вода",
+            "role": "что именно"
+          }
         ],
         "note": "Количество + de; перед гласной de → d': une bouteille d'eau."
+      },
+      {
+        "id": "quantites-x1",
+        "kind": "fixCalque",
+        "prompt": "Исправь кальку: после количества — не du.",
+        "phrase": "Il y a trop du sucre dans ce café.",
+        "options": [
+          "Il y a trop de sucre dans ce café.",
+          "Il y a trop du sucre dans ce café.",
+          "Il y a trop de la sucre dans ce café.",
+          "Il y a trop des sucres dans ce café."
+        ],
+        "correctIndex": 0,
+        "explanation": "После слова количества (trop, beaucoup, un peu...) идёт только de/d', а не du/de la/des. Поэтому «слишком много сахара» — trop DE sucre, не trop du sucre.",
+        "result": "Il y a trop de sucre dans ce café."
+      },
+      {
+        "id": "quantites-x2",
+        "kind": "oddOneOut",
+        "prompt": "Найди ошибку: где после количества стоит НЕ de?",
+        "options": [
+          "beaucoup de monde",
+          "un kilo de pommes",
+          "assez de la patience",
+          "un peu d'eau"
+        ],
+        "correctIndex": 2,
+        "explanation": "После количества всегда de/d': beaucoup de, un kilo de, un peu d'. Поэтому «assez de la patience» — ошибка; правильно «assez de patience».",
+        "result": "assez de patience"
       },
       {
         "id": "qt-insight",

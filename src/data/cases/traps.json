@@ -69,10 +69,47 @@
         "prompt": "Вскрытие.",
         "phrase": "Je sais nager.",
         "tokens": [
-          { "fr": "Je sais", "ru": "я умею", "role": "savoir = знать факт / уметь" },
-          { "fr": "nager", "ru": "плавать", "role": "инфинитив навыка" }
+          {
+            "fr": "Je sais",
+            "ru": "я умею",
+            "role": "savoir = знать факт / уметь"
+          },
+          {
+            "fr": "nager",
+            "ru": "плавать",
+            "role": "инфинитив навыка"
+          }
         ],
         "note": "savoir + инфинитив = уметь что-то делать."
+      },
+      {
+        "id": "savoir-connaitre-x1",
+        "kind": "fixCalque",
+        "prompt": "Русское «Я знаю эту песню» перевели в лоб. Почини.",
+        "phrase": "Je sais cette chanson.",
+        "options": [
+          "Je connais cette chanson.",
+          "Je sais cette chanson.",
+          "Je sais de cette chanson.",
+          "Je connais à cette chanson."
+        ],
+        "correctIndex": 0,
+        "explanation": "Песня — это объект, с которым ты знаком, поэтому нужен connaître: «Je connais cette chanson». Savoir берёт факт (savoir que…) или умение (savoir + инфинитив), но не прямое дополнение-объект вроде песни или человека.",
+        "result": "Je connais cette chanson."
+      },
+      {
+        "id": "savoir-connaitre-x2",
+        "kind": "scene",
+        "prompt": "На курсах французского сосед по парте спрашивает, в каком году пала Берлинская стена. Ты помнишь дату. Что ответить?",
+        "situation": "На уроке тебя спросили про историческую дату, и ты её помнишь.",
+        "options": [
+          "Oui, je sais : c'était en 1989.",
+          "Oui, je connais : c'était en 1989.",
+          "Oui, je connais ça en 1989.",
+          "Oui, je sais 1989."
+        ],
+        "correctIndex": 0,
+        "explanation": "Знание факта (дата, ответ на вопрос) — это savoir, причём здесь он стоит без дополнения: «je sais». Connaître так не используется, а «je sais 1989» нельзя — savoir не берёт число как прямой объект, факт вводится через двоеточие или que."
       },
       {
         "id": "sc-insight",
@@ -145,8 +182,16 @@
         "prompt": "Вскрытие.",
         "phrase": "J'attends le bus.",
         "tokens": [
-          { "fr": "J'attends", "ru": "я жду", "role": "attendre = ждать (не «посещать»)" },
-          { "fr": "le bus", "ru": "автобус", "role": "прямое дополнение без de/pour" }
+          {
+            "fr": "J'attends",
+            "ru": "я жду",
+            "role": "attendre = ждать (не «посещать»)"
+          },
+          {
+            "fr": "le bus",
+            "ru": "автобус",
+            "role": "прямое дополнение без de/pour"
+          }
         ],
         "note": "1 лицо: j'attends — с s; никаких pour после attendre."
       },
@@ -163,6 +208,51 @@
         ],
         "correctIndex": 0,
         "explanation": "Купить книгу → книжный магазин = la librairie (а bibliothèque — библиотека). Je vais à la librairie acheter un roman."
+      },
+      {
+        "id": "faux-amis-x1",
+        "kind": "trap",
+        "prompt": "Капкан: assister ≠ «ассистировать/помогать». Глагол assister à = присутствовать, посещать. Скажи «Я посещаю (присутствую на) занятие».",
+        "phrase": "J'assiste au cours.",
+        "options": [
+          "J'assiste au cours.",
+          "J'aide le cours.",
+          "J'attends le cours.",
+          "Je visite le cours."
+        ],
+        "correctIndex": 0,
+        "explanation": "Assister à = присутствовать, посещать (мероприятие, занятие), а не «ассистировать/помогать» — это aider. Поэтому «посещаю занятие» — j'assiste au cours.",
+        "result": "J'assiste au cours."
+      },
+      {
+        "id": "faux-amis-x2",
+        "kind": "fixCalque",
+        "prompt": "Русское «журнал» тянет за собой journal, но это ложный друг. Исправь кальку: «Я читаю журнал».",
+        "phrase": "Je lis un journal.",
+        "options": [
+          "Je lis un magazine.",
+          "Je lis un journal.",
+          "Je lis une librairie.",
+          "Je lis un jurnal."
+        ],
+        "correctIndex": 0,
+        "explanation": "Journal по-французски = газета, а «журнал» (глянцевый, иллюстрированный) — un magazine (или une revue). Поэтому «читаю журнал» — je lis un magazine.",
+        "result": "Je lis un magazine."
+      },
+      {
+        "id": "faux-amis-x3",
+        "kind": "compare",
+        "prompt": "Ещё один капкан: actuellement похоже на «actually», но значит другое. В чём разница между этими словами?",
+        "phrases": ["Actuellement, je cherche un travail.", "Je ne sais pas réellement pourquoi."],
+        "options": [
+          "Actuellement = «в настоящее время, сейчас», а réellement = «действительно, реально»; actuellement не значит «на самом деле».",
+          "Оба слова значат «на самом деле» и взаимозаменяемы.",
+          "Actuellement = «действительно», а réellement = «сейчас».",
+          "Actuellement — это прошедшее время от réellement."
+        ],
+        "correctIndex": 0,
+        "explanation": "Actuellement — ложный друг: оно значит «в настоящее время, сейчас» (не «на самом деле» — это en fait / vraiment). Réellement = «действительно, реально».",
+        "result": "Actuellement, je cherche un travail."
       },
       {
         "id": "fa-insight",
@@ -209,15 +299,36 @@
         "kind": "sort",
         "prompt": "Разложи: намеренное действие или пассивное восприятие?",
         "baskets": [
-          { "id": "intent", "label": "намеренно — regarder / écouter" },
-          { "id": "percept", "label": "восприятие — voir / entendre" }
+          {
+            "id": "intent",
+            "label": "намеренно — regarder / écouter"
+          },
+          {
+            "id": "percept",
+            "label": "восприятие — voir / entendre"
+          }
         ],
         "items": [
-          { "text": "Je regarde la télé.", "basket": "intent" },
-          { "text": "J'entends un bruit.", "basket": "percept" },
-          { "text": "J'écoute de la musique.", "basket": "intent" },
-          { "text": "Je vois la mer.", "basket": "percept" },
-          { "text": "Je regarde les photos.", "basket": "intent" }
+          {
+            "text": "Je regarde la télé.",
+            "basket": "intent"
+          },
+          {
+            "text": "J'entends un bruit.",
+            "basket": "percept"
+          },
+          {
+            "text": "J'écoute de la musique.",
+            "basket": "intent"
+          },
+          {
+            "text": "Je vois la mer.",
+            "basket": "percept"
+          },
+          {
+            "text": "Je regarde les photos.",
+            "basket": "intent"
+          }
         ],
         "explanation": "regarder/écouter — ты решаешь смотреть/слушать. voir/entendre — само попадает в глаза/уши."
       },
@@ -237,8 +348,16 @@
         "prompt": "Вскрытие.",
         "phrase": "Tu entends ce bruit ?",
         "tokens": [
-          { "fr": "Tu entends", "ru": "ты слышишь", "role": "entendre = пассивно слышать" },
-          { "fr": "ce bruit", "ru": "этот шум", "role": "объект восприятия" }
+          {
+            "fr": "Tu entends",
+            "ru": "ты слышишь",
+            "role": "entendre = пассивно слышать"
+          },
+          {
+            "fr": "ce bruit",
+            "ru": "этот шум",
+            "role": "объект восприятия"
+          }
         ],
         "note": "Непроизвольно слышать → entendre (не écouter = слушать намеренно)."
       },
@@ -255,6 +374,35 @@
         ],
         "correctIndex": 0,
         "explanation": "Намеренно слушать → écouter. J'écoute de la musique."
+      },
+      {
+        "id": "perception-x1",
+        "kind": "fixCalque",
+        "prompt": "Видеозвонок завис. Русское «я тебя не вижу» — это пассивное восприятие глазами, а не намеренное «смотрю на тебя». Исправь кальку.",
+        "phrase": "Désolé, je ne te regarde pas, l'image a gelé.",
+        "options": [
+          "Désolé, je ne te vois pas, l'image a gelé.",
+          "Désolé, je ne te regarde pas, l'image a gelé.",
+          "Désolé, je ne t'écoute pas, l'image a gelé.",
+          "Désolé, je ne te aperçois pas, l'image a gelé."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Не вижу» — пассивное восприятие глазами, значит voir: «je ne te vois pas». Regarder — намеренно смотреть на кого-то, но изображение пропало само. Écouter — про слух. Apercevoir требует элизии (je ne t'aperçois pas), да и значит «замечать», а не нейтральное «видеть».",
+        "result": "Désolé, je ne te vois pas, l'image a gelé."
+      },
+      {
+        "id": "perception-x2",
+        "kind": "scene",
+        "prompt": "На уроке преподаватель пишет на доске мелко. Текст просто не различим глазами — это пассивное восприятие, не намеренное «смотрю». Что сказать?",
+        "situation": "Cours de français: преподаватель что-то написал на доске, но почерк мелкий и ты с задней парты не можешь разобрать буквы. Вежливо предупреждаешь.",
+        "options": [
+          "Désolée, je ne vois pas bien ce qui est écrit au tableau.",
+          "Désolée, je ne regarde pas bien ce qui est écrit au tableau.",
+          "Désolée, je n'écoute pas bien ce qui est écrit au tableau.",
+          "Désolée, je n'entends pas bien ce qui est écrit au tableau."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ты не можешь физически различить написанное — это пассивное восприятие глазами, значит voir: «je ne vois pas bien». Regarder означало бы, что ты намеренно не смотришь на доску, а тут проблема в том, что глаза не разбирают мелкий текст. Écouter/entendre — про слух, к написанному не подходят."
       },
       {
         "id": "pc-insight",
@@ -323,18 +471,82 @@
         "kind": "sort",
         "prompt": "Разложи кальку и правильную форму по корзинам.",
         "baskets": [
-          { "id": "calque", "label": "Калька (неверно)" },
-          { "id": "correct", "label": "Правильная форма" }
+          {
+            "id": "calque",
+            "label": "Калька (неверно)"
+          },
+          {
+            "id": "correct",
+            "label": "Правильная форма"
+          }
         ],
         "items": [
-          { "text": "Je veux café.", "basket": "calque" },
-          { "text": "Je veux du café.", "basket": "correct" },
-          { "text": "Je suis 30 ans.", "basket": "calque" },
-          { "text": "J'ai 30 ans.", "basket": "correct" },
-          { "text": "Je vais à médecin.", "basket": "calque" },
-          { "text": "Je vais chez le médecin.", "basket": "correct" }
+          {
+            "text": "Je veux café.",
+            "basket": "calque"
+          },
+          {
+            "text": "Je veux du café.",
+            "basket": "correct"
+          },
+          {
+            "text": "Je suis 30 ans.",
+            "basket": "calque"
+          },
+          {
+            "text": "J'ai 30 ans.",
+            "basket": "correct"
+          },
+          {
+            "text": "Je vais à médecin.",
+            "basket": "calque"
+          },
+          {
+            "text": "Je vais chez le médecin.",
+            "basket": "correct"
+          }
         ],
         "explanation": "du café — частичный артикль (немного кофе); avoir для возраста (J'ai 30 ans); chez + человек/специалист (chez le médecin)."
+      },
+      {
+        "id": "calques-russes-x1",
+        "kind": "fixCalque",
+        "prompt": "Почини кальку: «иду к врачу/к стоматологу» русский мозг переводит через à/au.",
+        "phrase": "Je vais au dentiste.",
+        "options": [
+          "Je vais chez le dentiste.",
+          "Je vais au dentiste.",
+          "Je vais à le dentiste.",
+          "Je vais dans le dentiste."
+        ],
+        "correctIndex": 0,
+        "explanation": "Когда идёшь К ЧЕЛОВЕКУ (врач, стоматолог, парикмахер, друзья), направление и местонахождение передаются через chez: «к стоматологу» = chez le dentiste. Au/à le/dans тут не годятся: «à le» вообще невозможно (стянулось бы в au), а au dentiste — частая калька с русского «к».",
+        "result": "Je vais chez le dentiste."
+      },
+      {
+        "id": "calques-russes-x2",
+        "kind": "explainError",
+        "prompt": "Почему эта фраза звучит не по-французски?",
+        "phrase": "Je vois une rouge voiture.",
+        "options": [
+          "Большинство французских прилагательных (особенно цвет) ставятся ПОСЛЕ существительного: une voiture rouge. Русский ставит прилагательное перед — отсюда калька.",
+          "Слово voiture мужского рода, поэтому нужно un rouge voiture.",
+          "Прилагательное rouge должно согласоваться в числе: une rouges voiture.",
+          "Между rouge и voiture нужен предлог de: une rouge de voiture."
+        ],
+        "correctIndex": 0,
+        "explanation": "В русском прилагательное стоит перед существительным («красная машина»), и мозг копирует этот порядок. Но во французском большинство описательных прилагательных, и все цвета, идут ПОСЛЕ существительного: une voiture rouge. (Перед существительным стоит лишь короткая группа: petit, grand, beau, jeune, bon…)",
+        "result": "Je vois une voiture rouge."
+      },
+      {
+        "id": "calques-russes-x3",
+        "kind": "cloze",
+        "prompt": "У врача ты жалуешься на головную боль. Вставь пропуск.",
+        "phrase": "Docteur, j'ai mal ___ tête.",
+        "options": ["à la", "la", "à", "au"],
+        "correctIndex": 0,
+        "explanation": "«Болит голова» по-французски — avoir mal À + часть тела с артиклем: j'ai mal à la tête (tête — женский род → à la). Русская калька «болит голова» теряет предлог и артикль, отсюда ошибки «mal la tête» или «mal tête». Au (= à + le) тут не подходит — это мужской род.",
+        "result": "Docteur, j'ai mal à la tête."
       },
       {
         "id": "calq-5",
@@ -413,6 +625,64 @@
         "result": "J'assiste à un cours de français."
       },
       {
+        "id": "faux-amis-2-x1",
+        "kind": "fixCalque",
+        "prompt": "Студент хочет сказать «В настоящее время я живу в Лионе», но калькирует английское actually. Исправь на идиоматичный французский.",
+        "phrase": "Actuellement, je vis à Lyon, mais en fait je suis né à Paris.",
+        "options": [
+          "Actuellement, je vis à Lyon, mais en fait je suis né à Paris.",
+          "En réalité, je vis à Lyon, mais actuellement je suis né à Paris.",
+          "Vraiment, je vis à Lyon, mais actuellement je suis né à Paris."
+        ],
+        "correctIndex": 0,
+        "explanation": "actuellement = «в настоящее время, сейчас», а не «на самом деле». Английское «actually» по-французски — en fait / en réalité.",
+        "result": "Actuellement, je vis à Lyon, mais en fait je suis né à Paris."
+      },
+      {
+        "id": "faux-amis-2-x2",
+        "kind": "oddOneOut",
+        "prompt": "Три фразы переводят ложного друга правильно по смыслу, одна — нет. Найди ошибку.",
+        "options": [
+          "Je vais éventuellement venir = «Возможно, я приду».",
+          "Elle est très sensible = «Она очень чувствительная».",
+          "J'assiste à la réunion = «Я присутствую на собрании».",
+          "Je dois passer un examen = «Я должен сдать экзамен»."
+        ],
+        "correctIndex": 3,
+        "explanation": "passer un examen значит «сдавать» (проходить) экзамен, а не «сдать успешно». Успешно сдать — réussir un examen. Остальные три перевода верны.",
+        "result": ""
+      },
+      {
+        "id": "faux-amis-2-x3",
+        "kind": "scene",
+        "prompt": "В администрации (Administration) чиновник спрашивает, какой у тебя сейчас адрес. Ответь.",
+        "situation": "В администрации просят назвать твой нынешний адрес.",
+        "options": [
+          "Voici mon adresse actuelle.",
+          "Voici mon adresse éventuelle.",
+          "Voici mon adresse sensible.",
+          "Voici mon adresse réelle."
+        ],
+        "correctIndex": 0,
+        "explanation": "actuel(le) = «нынешний, теперешний», а не «реальный». éventuel = «возможный», sensible = «чувствительный», réel = «реальный» — здесь не подходят.",
+        "result": "Voici mon adresse actuelle."
+      },
+      {
+        "id": "faux-amis-2-x4",
+        "kind": "explainError",
+        "prompt": "Объясни, почему эта фраза неправильна.",
+        "phrase": "Je voudrais assister mon ami avec ses devoirs.",
+        "options": [
+          "assister à значит «присутствовать на», а в значении «помогать» нужен глагол aider: aider mon ami à faire ses devoirs.",
+          "После assister всегда нужен предлог de, а не à.",
+          "Ошибка в слове devoirs: правильно travaux.",
+          "assister нельзя ставить в условном наклонении (voudrais)."
+        ],
+        "correctIndex": 0,
+        "explanation": "assister à = «присутствовать на», это ложный друг английского «to assist» (помогать). «Помогать кому-то» — aider quelqu'un.",
+        "result": "Je voudrais aider mon ami à faire ses devoirs."
+      },
+      {
         "id": "fa2-5",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -467,16 +737,40 @@
         "kind": "sort",
         "prompt": "Разложи по смыслу: точка/счёт или длительность/наполнение?",
         "baskets": [
-          { "id": "point", "label": "Точка / счёт (an, jour, matin)" },
-          { "id": "duree", "label": "Длительность / наполнение (année, journée, matinée)" }
+          {
+            "id": "point",
+            "label": "Точка / счёт (an, jour, matin)"
+          },
+          {
+            "id": "duree",
+            "label": "Длительность / наполнение (année, journée, matinée)"
+          }
         ],
         "items": [
-          { "text": "Il a 25 ans.", "basket": "point" },
-          { "text": "Toute l'année.", "basket": "duree" },
-          { "text": "Tous les jours.", "basket": "point" },
-          { "text": "Une belle journée.", "basket": "duree" },
-          { "text": "Ce matin.", "basket": "point" },
-          { "text": "Toute la matinée.", "basket": "duree" }
+          {
+            "text": "Il a 25 ans.",
+            "basket": "point"
+          },
+          {
+            "text": "Toute l'année.",
+            "basket": "duree"
+          },
+          {
+            "text": "Tous les jours.",
+            "basket": "point"
+          },
+          {
+            "text": "Une belle journée.",
+            "basket": "duree"
+          },
+          {
+            "text": "Ce matin.",
+            "basket": "point"
+          },
+          {
+            "text": "Toute la matinée.",
+            "basket": "duree"
+          }
         ],
         "explanation": "Счёт и фиксированный момент → an/jour/matin. Протяжённость и содержание отрезка → année/journée/matinée."
       },
@@ -486,7 +780,11 @@
         "prompt": "Вскрытие.",
         "phrase": "Bonne journée !",
         "tokens": [
-          { "fr": "Bonne", "ru": "хорошего", "role": "прилагательное ж.р., согласовано с journée" },
+          {
+            "fr": "Bonne",
+            "ru": "хорошего",
+            "role": "прилагательное ж.р., согласовано с journée"
+          },
           {
             "fr": "journée",
             "ru": "дня (всего, с наполнением)",
@@ -494,6 +792,50 @@
           }
         ],
         "note": "Пожелание охватывает весь день целиком → journée (длительность), не jour (точка)."
+      },
+      {
+        "id": "an-annee-x1",
+        "kind": "scene",
+        "prompt": "Сосед уходит и желает тебе провести хороший вечер целиком — не просто «добрый вечер» при встрече. Что он говорит?",
+        "situation": "Сосед прощается с тобой у подъезда вечером и желает приятно провести весь оставшийся вечер.",
+        "options": ["Bonne soirée !", "Bon soir !", "Bonne année !", "Bon an !"],
+        "correctIndex": 0,
+        "explanation": "При прощании желают наполненный отрезок времени — длительную форму: soirée (а не точку soir). «Bonsoir» (одним словом) — это приветствие при встрече, а пожелание на расставание — «Bonne soirée !».",
+        "result": "Bonne soirée !"
+      },
+      {
+        "id": "an-annee-x2",
+        "kind": "fixCalque",
+        "prompt": "Русское «мне 30 лет» тянет сказать год как длительность. Исправь на идиоматичный французский.",
+        "phrase": "J'ai trente années.",
+        "options": [
+          "J'ai trente ans.",
+          "J'ai trente années.",
+          "Je suis trente ans.",
+          "J'ai trente an."
+        ],
+        "correctIndex": 0,
+        "explanation": "При счёте лет (возраст — это число, единица счёта) употребляется an: «J'ai trente ans». Année — это длительность/наполненный отрезок, а не единица счёта. Заметь и «J'ai» (иметь годы), а не «Je suis».",
+        "result": "J'ai trente ans."
+      },
+      {
+        "id": "an-annee-x3",
+        "kind": "hypothesis",
+        "prompt": "Посмотри на пары и выведи правило выбора формы.",
+        "clues": [
+          "Il a passé toute la journée à lire.",
+          "On se voit dans trois jours.",
+          "Quelle belle matinée !",
+          "Je me lève tous les matins à sept heures."
+        ],
+        "options": [
+          "Длинная форма (journée, matinée) — про наполненный, проживаемый отрезок; короткая (jour, matin) — про счёт дней/точку во времени.",
+          "Длинная форма всегда женского рода, поэтому её ставят после прилагательного, а короткую — до.",
+          "Короткая форма употребляется в прошедшем времени, а длинная — в настоящем.",
+          "Длинная форма нужна во множественном числе, короткая — в единственном."
+        ],
+        "correctIndex": 0,
+        "explanation": "jour/matin/an — счёт и точка во времени («dans trois jours», «tous les matins»); journée/matinée/année — длительность и наполнение прожитого отрезка («toute la journée», «quelle belle matinée»). Род и число тут ни при чём."
       },
       {
         "id": "anan-5",
@@ -565,11 +907,77 @@
         "prompt": "Вскрытие.",
         "phrase": "Tu me manques.",
         "tokens": [
-          { "fr": "Tu", "ru": "ты", "role": "подлежащее = тот, кого не хватает" },
-          { "fr": "me", "ru": "мне", "role": "дополнение = тот, кто скучает" },
-          { "fr": "manques", "ru": "недостаёшь", "role": "manquer à qqn, согласован с tu" }
+          {
+            "fr": "Tu",
+            "ru": "ты",
+            "role": "подлежащее = тот, кого не хватает"
+          },
+          {
+            "fr": "me",
+            "ru": "мне",
+            "role": "дополнение = тот, кто скучает"
+          },
+          {
+            "fr": "manques",
+            "ru": "недостаёшь",
+            "role": "manquer à qqn, согласован с tu"
+          }
         ],
         "note": "Перевод буквально: «ты мне недостаёшь» = «я по тебе скучаю». Подлежащее перевёрнуто относительно русского."
+      },
+      {
+        "id": "verbes-pieges-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский говорит «Я скучаю по тебе» дословно. Исправь кальку.",
+        "phrase": "Je manque toi.",
+        "options": ["Tu me manques.", "Je te manque.", "Je manque de toi.", "Je m'ennuie toi."],
+        "correctIndex": 0,
+        "explanation": "У manquer всё перевёрнуто: тот, по кому скучают, — подлежащее, а скучающий — местоимение-дополнение. «Я скучаю по тебе» = «Tu me manques» (буквально «ты мне недостаёшь»). «Je te manque» значит обратное — «ты по мне скучаешь»; «manquer de qqch» — это «испытывать нехватку чего-то».",
+        "result": "Tu me manques."
+      },
+      {
+        "id": "verbes-pieges-x2",
+        "kind": "scene",
+        "prompt": "По телефону ты говоришь маме, что приедешь навестить её в выходные. Как сказать?",
+        "situation": "Звонишь маме и обещаешь навестить её в эти выходные.",
+        "options": [
+          "Je vais te rendre visite ce week-end.",
+          "Je vais te visiter ce week-end.",
+          "Je vais visiter toi ce week-end.",
+          "Je vais te rendre une visite ce week-end."
+        ],
+        "correctIndex": 0,
+        "explanation": "Навестить человека — rendre visite à qqn (с местоимением: te rendre visite, без артикля). Visiter относится к местам (музей, город), а не к людям; «visiter toi» вообще не строится.",
+        "result": "Je vais te rendre visite ce week-end."
+      },
+      {
+        "id": "verbes-pieges-x3",
+        "kind": "hypothesis",
+        "prompt": "Посмотри на эти три фразы с plaire. Какое правило управляет глаголом?",
+        "clues": ["Ce film me plaît.", "Ce film te plaît.", "Ce film plaît à mes amis."],
+        "options": [
+          "Тот, кому нравится, стоит в дополнении (me, te, à + кто-то), а подлежащее — сама вещь, которая нравится.",
+          "Тот, кому нравится, всегда подлежащее, как aimer в русском «я люблю».",
+          "Plaire требует прямого дополнения без предлога, как visiter.",
+          "Plaire ставит и того, кому нравится, и саму вещь в одну и ту же роль."
+        ],
+        "correctIndex": 0,
+        "explanation": "Plaire строится наоборот: подлежащее — вещь, которая нравится (ce film, согласует глагол → plaît), а человек идёт дополнением (me, te, lui или à + имя). Поэтому «мне это нравится» = «Ça me plaît»."
+      },
+      {
+        "id": "verbes-pieges-x4",
+        "kind": "mutation",
+        "prompt": "Переведи «Tu me manques» в прошедшее: «я по тебе соскучился». Какая форма верна?",
+        "phrase": "Tu me manques.",
+        "options": [
+          "Tu m'as manqué.",
+          "Je t'ai manqué.",
+          "Tu m'as manquée.",
+          "Je me suis manqué de toi."
+        ],
+        "correctIndex": 0,
+        "explanation": "Подлежащим остаётся тот, по кому скучают (tu), а скучающий — местоимение me. В passé composé manquer берёт avoir: «Tu m'as manqué». Причастие НЕ согласуется: «me» здесь косвенное дополнение (manquer à qqn), поэтому «manquée» с -e неверно, даже если говорит женщина. «Je t'ai manqué» значит обратное — «ты по мне соскучился».",
+        "result": "Tu m'as manqué."
       },
       {
         "id": "vp-5",
@@ -645,16 +1053,40 @@
         "kind": "sort",
         "prompt": "Что вставить в пропуск — très или beaucoup?",
         "baskets": [
-          { "id": "tres", "label": "très (перед прилагательным)" },
-          { "id": "beaucoup", "label": "beaucoup (с глаголом)" }
+          {
+            "id": "tres",
+            "label": "très (перед прилагательным)"
+          },
+          {
+            "id": "beaucoup",
+            "label": "beaucoup (с глаголом)"
+          }
         ],
         "items": [
-          { "text": "Elle est ___ belle.", "basket": "tres" },
-          { "text": "Il travaille ___.", "basket": "beaucoup" },
-          { "text": "C'est ___ cher.", "basket": "tres" },
-          { "text": "J'aime ___ ce livre.", "basket": "beaucoup" },
-          { "text": "Je suis ___ fatigué.", "basket": "tres" },
-          { "text": "Il voyage ___.", "basket": "beaucoup" }
+          {
+            "text": "Elle est ___ belle.",
+            "basket": "tres"
+          },
+          {
+            "text": "Il travaille ___.",
+            "basket": "beaucoup"
+          },
+          {
+            "text": "C'est ___ cher.",
+            "basket": "tres"
+          },
+          {
+            "text": "J'aime ___ ce livre.",
+            "basket": "beaucoup"
+          },
+          {
+            "text": "Je suis ___ fatigué.",
+            "basket": "tres"
+          },
+          {
+            "text": "Il voyage ___.",
+            "basket": "beaucoup"
+          }
         ],
         "explanation": "Перед прилагательным (belle, cher, fatigué) — très; при глаголе (travaille, aime, voyage) — beaucoup."
       },
@@ -667,6 +1099,33 @@
         "correctIndex": 0,
         "explanation": "aimer — глагол, значит beaucoup: je t'aime beaucoup. «très» и «très beaucoup» здесь невозможны.",
         "result": "Je t'aime beaucoup."
+      },
+      {
+        "id": "tres-beaucoup-x1",
+        "kind": "scene",
+        "prompt": "В кафе ты пробуешь десерт и хочешь сказать, что он очень вкусный. Какая фраза верна?",
+        "situation": "В кафе официант спрашивает, нравится ли тебе пирожное. Ты хочешь сказать: «Очень вкусно!»",
+        "options": [
+          "C'est très bon !",
+          "C'est beaucoup bon !",
+          "C'est très bien bon !",
+          "Ça aime beaucoup !"
+        ],
+        "correctIndex": 0,
+        "explanation": "«Очень» перед прилагательным (bon) — это всегда très, а не beaucoup. Beaucoup ставится только при глаголе, поэтому «c'est beaucoup bon» невозможно."
+      },
+      {
+        "id": "tres-beaucoup-x2",
+        "kind": "oddOneOut",
+        "prompt": "В трёх фразах «очень» выбрано правильно, а в одной — нет. Найди ошибку.",
+        "options": [
+          "Il travaille beaucoup.",
+          "Elle est très gentille.",
+          "Je voyage très.",
+          "Ce plat est très épicé."
+        ],
+        "correctIndex": 2,
+        "explanation": "«Je voyage très» — ошибка: при глаголе (voyager) нужно beaucoup → «je voyage beaucoup». Très сочетается только с прилагательным или наречием, а не с глаголом."
       },
       {
         "id": "tb-insight",
@@ -757,6 +1216,28 @@
         "explanation": "Прав → avoir raison; согласен → être d'accord: Tu as raison, je suis d'accord."
       },
       {
+        "id": "raison-accord-x1",
+        "kind": "compare",
+        "prompt": "Обе фразы — реакция на собеседника. В чём разница?",
+        "phrases": ["Tu as raison.", "Je suis d'accord avec toi."],
+        "options": [
+          "«Tu as raison» — ты объективно прав (иметь правоту, глагол avoir); «Je suis d'accord» — я разделяю твоё мнение (глагол être). Разные глаголы.",
+          "Это полные синонимы, просто «avoir raison» — письменный вариант, а «être d'accord» — разговорный.",
+          "«Tu as raison» говорят только о фактах, а «Je suis d'accord» — только о планах на будущее.",
+          "В обеих фразах нужен глагол être, просто в первой он спрятан в «as»."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Avoir raison» = быть правым (иметь правоту, глагол avoir), а «être d'accord (avec)» = быть согласным, разделять мнение (глагол être). Два разных глагола и два разных оттенка: правота против согласия."
+      },
+      {
+        "id": "raison-accord-x2",
+        "kind": "oddOneOut",
+        "prompt": "Три фразы построены правильно, одна — с ошибкой. Найди ошибку.",
+        "options": ["J'ai d'accord.", "Tu as raison.", "Je suis d'accord.", "Il a tort."],
+        "correctIndex": 0,
+        "explanation": "Зеркало этой темы: «прав/неправ» — это avoir raison / avoir tort (глагол avoir), а «согласен» — être d'accord (глагол être). «J'ai d'accord» — калька с avoir; правильно «Je suis d'accord»."
+      },
+      {
         "id": "ra-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -801,20 +1282,56 @@
         "kind": "sort",
         "prompt": "Какой предлог «в» нужен для каждого места?",
         "baskets": [
-          { "id": "a", "label": "à (город)" },
-          { "id": "en", "label": "en (страна ж.р.)" },
-          { "id": "au", "label": "au (страна м.р.)" },
-          { "id": "aux", "label": "aux (мн.ч.)" }
+          {
+            "id": "a",
+            "label": "à (город)"
+          },
+          {
+            "id": "en",
+            "label": "en (страна ж.р.)"
+          },
+          {
+            "id": "au",
+            "label": "au (страна м.р.)"
+          },
+          {
+            "id": "aux",
+            "label": "aux (мн.ч.)"
+          }
         ],
         "items": [
-          { "text": "Paris", "basket": "a" },
-          { "text": "Lyon", "basket": "a" },
-          { "text": "France", "basket": "en" },
-          { "text": "Italie", "basket": "en" },
-          { "text": "Japon", "basket": "au" },
-          { "text": "Portugal", "basket": "au" },
-          { "text": "États-Unis", "basket": "aux" },
-          { "text": "Pays-Bas", "basket": "aux" }
+          {
+            "text": "Paris",
+            "basket": "a"
+          },
+          {
+            "text": "Lyon",
+            "basket": "a"
+          },
+          {
+            "text": "France",
+            "basket": "en"
+          },
+          {
+            "text": "Italie",
+            "basket": "en"
+          },
+          {
+            "text": "Japon",
+            "basket": "au"
+          },
+          {
+            "text": "Portugal",
+            "basket": "au"
+          },
+          {
+            "text": "États-Unis",
+            "basket": "aux"
+          },
+          {
+            "text": "Pays-Bas",
+            "basket": "aux"
+          }
         ],
         "explanation": "Города (Paris, Lyon) → à. France, Italie (ж.р.) → en. Japon, Portugal (м.р.) → au. États-Unis, Pays-Bas (мн.ч.) → aux."
       },
@@ -857,6 +1374,42 @@
         ],
         "correctIndex": 0,
         "explanation": "Portugal — мужского рода → au Portugal."
+      },
+      {
+        "id": "prepositions-pays-x1",
+        "kind": "oddOneOut",
+        "prompt": "Здесь четыре пары «предлог + страна». В трёх предлог выбран правильно. Найди ошибку.",
+        "options": ["en France", "au Japon", "aux Pays-Bas", "en Canada"],
+        "correctIndex": 3,
+        "explanation": "Canada — страна мужского рода, поэтому нужен предлог au: «au Canada». En ставится только перед странами женского рода (en France) и перед мужскими, начинающимися с гласной (en Iran)."
+      },
+      {
+        "id": "prepositions-pays-x2",
+        "kind": "fixCalque",
+        "prompt": "«Я лечу в США». Русское «в» здесь сбивает. Выбери правильный французский вариант.",
+        "phrase": "Je vais à États-Unis cet été.",
+        "options": [
+          "Je vais aux États-Unis cet été.",
+          "Je vais en États-Unis cet été.",
+          "Je vais au États-Unis cet été.",
+          "Je vais à les États-Unis cet été."
+        ],
+        "correctIndex": 0,
+        "explanation": "États-Unis — страна во множественном числе, поэтому предлог «в» передаётся через aux: «aux États-Unis». Так же говорят aux Pays-Bas, aux Philippines."
+      },
+      {
+        "id": "prepositions-pays-x3",
+        "kind": "compare",
+        "prompt": "Iran и Portugal — оба мужского рода. Но предлог «в» перед ними разный. Почему?",
+        "phrases": ["Je vais en Iran.", "Je vais au Portugal."],
+        "options": [
+          "Iran начинается с гласной, поэтому мужской род даёт en, а не au; Portugal начинается с согласной, поэтому остаётся au.",
+          "Iran женского рода, а Portugal мужского, поэтому предлоги разные.",
+          "En всегда ставится перед короткими названиями, а au — перед длинными.",
+          "Это исключения, которые нужно просто запомнить без всякого правила."
+        ],
+        "correctIndex": 0,
+        "explanation": "Перед страной мужского рода обычно стоит au, но если название начинается с гласной, для благозвучия используют en: en Iran, en Israël, en Irak. Portugal начинается с согласной, поэтому сохраняется au Portugal."
       },
       {
         "id": "pays-insight",
@@ -957,6 +1510,49 @@
         "result": "Je téléphone à ma mère."
       },
       {
+        "id": "rection-verbes-x1",
+        "kind": "scene",
+        "prompt": "Звонишь подруге и хочешь сказать, что весь день думал о ней. Что выбрать?",
+        "situation": "Ты звонишь подруге и в конце разговора признаёшься, что весь день думал о ней.",
+        "options": [
+          "J'ai pensé à toi toute la journée.",
+          "J'ai pensé de toi toute la journée.",
+          "J'ai pensé toi toute la journée.",
+          "J'ai pensé sur toi toute la journée."
+        ],
+        "correctIndex": 0,
+        "explanation": "Глагол penser требует предлога à: penser à qqn / qqch = думать о ком-то / о чём-то. Вариантов «penser de/sur» в этом значении нет, и предлог опускать нельзя."
+      },
+      {
+        "id": "rection-verbes-x2",
+        "kind": "explainError",
+        "prompt": "Почему эта фраза неправильная?",
+        "phrase": "Le soir, ma sœur joue le piano.",
+        "options": [
+          "После jouer перед музыкальным инструментом нужен предлог de (+ артикль): jouer du piano.",
+          "Нужно поставить предлог à: jouer au piano, потому что это инструмент.",
+          "Ошибка только в артикле: правильно «joue un piano».",
+          "Глагол jouer вообще не употребляется с инструментами, нужен глагол faire."
+        ],
+        "correctIndex": 0,
+        "explanation": "С музыкальными инструментами jouer управляется предлогом de + слитный артикль: jouer du piano, jouer de la guitare. Предлог à (jouer à) — только для игр и спорта.",
+        "result": "Le soir, ma sœur joue du piano."
+      },
+      {
+        "id": "rection-verbes-x3",
+        "kind": "mutation",
+        "prompt": "«Я интересуюсь историей». Выбери правильную французскую фразу.",
+        "phrase": "Je m'intéresse à l'histoire.",
+        "options": [
+          "Je m'intéresse à l'histoire.",
+          "Je m'intéresse de l'histoire.",
+          "Je m'intéresse l'histoire.",
+          "Je m'intéresse pour l'histoire."
+        ],
+        "correctIndex": 0,
+        "explanation": "Глагол s'intéresser управляется предлогом à: s'intéresser à qqch = интересоваться чем-то. Как и у penser à, предлог нужно запоминать вместе с глаголом — «de/pour» здесь не подходят."
+      },
+      {
         "id": "rec-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -1050,6 +1646,33 @@
         "explanation": "Возвратное + артикль: je me brosse les dents (не «mes dents»)."
       },
       {
+        "id": "parties-du-corps-x1",
+        "kind": "mutation",
+        "prompt": "У ребёнка болит зуб. Русское «болит его зуб» тянет на притяжательное, но француз так не скажет. Почини фразу.",
+        "phrase": "L'enfant a mal à sa dent.",
+        "options": [
+          "L'enfant a mal à la dent.",
+          "L'enfant a mal à sa dent.",
+          "L'enfant a mal à la dent de lui."
+        ],
+        "correctIndex": 0,
+        "explanation": "С частями тела французский ставит определённый артикль, а не притяжательное: владельца уже показывает подлежащее (l'enfant). Поэтому «sa dent» меняем на «la dent». Вариант «la dent de lui» — калька, так не говорят.",
+        "result": "L'enfant a mal à la dent."
+      },
+      {
+        "id": "parties-du-corps-x2",
+        "kind": "compare",
+        "prompt": "Обе фразы про мытьё рук и обе правильные. В чём разница?",
+        "phrases": ["Je me lave les mains.", "Je lui lave les mains."],
+        "options": [
+          "В первой я мою свои руки, во второй — руки другого человека; владельца показывает местоимение (me / lui), а часть тела всегда идёт с артиклем les.",
+          "Во второй фразе грамматическая ошибка: с частями тела нельзя использовать lui.",
+          "Разницы в смысле нет, lui — это просто более вежливый вариант me."
+        ],
+        "correctIndex": 0,
+        "explanation": "Чья это часть тела, показывает возвратное или косвенное местоимение перед глаголом: me — свои руки, lui — руки другого. Сама часть тела при этом стоит с определённым артиклем (les mains), а не с притяжательным."
+      },
+      {
         "id": "corps-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -1140,6 +1763,51 @@
         "correctIndex": 0,
         "explanation": "«За двадцать минут» (сколько ушло на дело) → en vingt minutes.",
         "result": "J'ai tout rangé en vingt minutes."
+      },
+      {
+        "id": "temps-dans-en-x1",
+        "kind": "fixCalque",
+        "prompt": "«Я прочитал книгу за два дня». Здесь «за» — это длительность. Исправь кальку.",
+        "phrase": "J'ai lu le livre dans deux jours.",
+        "options": [
+          "J'ai lu le livre en deux jours.",
+          "J'ai lu le livre dans deux jours.",
+          "J'ai lu le livre pour deux jours.",
+          "J'ai lu le livre il y a deux jours."
+        ],
+        "correctIndex": 0,
+        "explanation": "«За X» в смысле «сколько времени ушло на дело» = en X. Dans X — это «через X» (момент в будущем), pour — про срок «на сколько», а il y a X — «X назад».",
+        "result": "J'ai lu le livre en deux jours."
+      },
+      {
+        "id": "temps-dans-en-x2",
+        "kind": "scene",
+        "prompt": "Ты говоришь по телефону и хочешь сказать, что перезвонишь через десять минут.",
+        "situation": "По телефону: обещаешь перезвонить через десять минут.",
+        "options": [
+          "Je te rappelle dans dix minutes.",
+          "Je te rappelle en dix minutes.",
+          "Je te rappelle il y a dix minutes.",
+          "Je te rappelle pour dix minutes."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Через десять минут» — это момент в будущем, поэтому dans dix minutes. En означало бы «за десять минут» (длительность), а il y a — «десять минут назад».",
+        "result": "Je te rappelle dans dix minutes."
+      },
+      {
+        "id": "temps-dans-en-x3",
+        "kind": "explainError",
+        "prompt": "Человек хотел сказать «Он доехал за полчаса» (длительность). Почему фраза неверна?",
+        "phrase": "Il est arrivé dans une demi-heure.",
+        "options": [
+          "Для длительности «за полчаса» нужно en une demi-heure; dans означает «через полчаса» (в будущем).",
+          "Нужно сказать pour une demi-heure, потому что речь о сроке.",
+          "Ошибка в глаголе: с временем всегда используется avoir, а не être.",
+          "Demi-heure пишется без дефиса, поэтому фраза неправильная."
+        ],
+        "correctIndex": 0,
+        "explanation": "«За полчаса» (сколько ушло на путь) = en une demi-heure. Dans une demi-heure значит «через полчаса», момент в будущем, что противоречит прошедшему est arrivé.",
+        "result": "Il est arrivé en une demi-heure."
       },
       {
         "id": "dansen-insight",

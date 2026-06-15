@@ -45,9 +45,21 @@
         "prompt": "Вскрытие.",
         "phrase": "C'est une bonne idée.",
         "tokens": [
-          { "fr": "C'est", "ru": "это есть", "role": "c'est" },
-          { "fr": "une", "ru": "(новая) одна", "role": "камера: новый объект" },
-          { "fr": "bonne idée", "ru": "хорошая идея", "role": "что именно" }
+          {
+            "fr": "C'est",
+            "ru": "это есть",
+            "role": "c'est"
+          },
+          {
+            "fr": "une",
+            "ru": "(новая) одна",
+            "role": "камера: новый объект"
+          },
+          {
+            "fr": "bonne idée",
+            "ru": "хорошая идея",
+            "role": "что именно"
+          }
         ],
         "note": "Даже к идее нужен артикль: «c'est bonne idée» — нельзя."
       },
@@ -64,6 +76,30 @@
         ],
         "correctIndex": 0,
         "explanation": "Новый объект → un / une. J'ai une question."
+      },
+      {
+        "id": "un-une-x1",
+        "kind": "compare",
+        "prompt": "Один объект — две камеры. В чём разница?",
+        "phrases": ["Je cherche un livre.", "Je cherche le livre."],
+        "options": [
+          "un livre — любая книга, объект впервые входит в кадр; le livre — конкретная, уже известная книга",
+          "un livre — мужской род, le livre — женский род",
+          "un livre — единственное число, le livre — множественное",
+          "Разницы нет, un и le полностью взаимозаменяемы"
+        ],
+        "correctIndex": 0,
+        "explanation": "un / une вводят новый, ещё неизвестный объект («какая-то книга»), а le / la указывают на конкретный, уже знакомый собеседнику («та самая книга»)."
+      },
+      {
+        "id": "un-une-x2",
+        "kind": "cloze",
+        "prompt": "Новый объект входит в кадр. Какой артикль?",
+        "phrase": "Bonjour, je voudrais ___ baguette, s'il vous plaît.",
+        "options": ["une", "un", "la", "des"],
+        "correctIndex": 0,
+        "explanation": "Объект впервые появляется в разговоре, поэтому нужен неопределённый артикль; baguette — слово женского рода, значит une.",
+        "result": "Bonjour, je voudrais une baguette, s'il vous plaît."
       },
       {
         "id": "un-insight",
@@ -110,15 +146,36 @@
         "kind": "sort",
         "prompt": "Разложи по камерам: новый объект (un) или известный / категория (le)?",
         "baskets": [
-          { "id": "new", "label": "un / une — новый объект" },
-          { "id": "known", "label": "le / la / les — известный / категория" }
+          {
+            "id": "new",
+            "label": "un / une — новый объект"
+          },
+          {
+            "id": "known",
+            "label": "le / la / les — известный / категория"
+          }
         ],
         "items": [
-          { "text": "J'ai acheté un livre.", "basket": "new" },
-          { "text": "Le livre est sur la table.", "basket": "known" },
-          { "text": "J'aime le café.", "basket": "known" },
-          { "text": "Il y a un problème.", "basket": "new" },
-          { "text": "Les enfants dorment.", "basket": "known" }
+          {
+            "text": "J'ai acheté un livre.",
+            "basket": "new"
+          },
+          {
+            "text": "Le livre est sur la table.",
+            "basket": "known"
+          },
+          {
+            "text": "J'aime le café.",
+            "basket": "known"
+          },
+          {
+            "text": "Il y a un problème.",
+            "basket": "new"
+          },
+          {
+            "text": "Les enfants dorment.",
+            "basket": "known"
+          }
         ],
         "explanation": "un — первое появление; le — уже известно или категория целиком."
       },
@@ -128,9 +185,21 @@
         "prompt": "Вскрытие.",
         "phrase": "J'aime le café.",
         "tokens": [
-          { "fr": "J'", "ru": "я", "role": "кто" },
-          { "fr": "aime", "ru": "люблю", "role": "что делаю" },
-          { "fr": "le café", "ru": "кофе (как категорию)", "role": "камера: категория" }
+          {
+            "fr": "J'",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "aime",
+            "ru": "люблю",
+            "role": "что делаю"
+          },
+          {
+            "fr": "le café",
+            "ru": "кофе (как категорию)",
+            "role": "камера: категория"
+          }
         ],
         "note": "Люблю не «порцию кофе», а кофе вообще → le."
       },
@@ -142,6 +211,30 @@
         "options": ["J'aime le café.", "J'aime un café.", "J'aime du café.", "J'aime café."],
         "correctIndex": 0,
         "explanation": "Любишь кофе как категорию → le café. (du café было бы про порцию, un café — про одну чашку.)"
+      },
+      {
+        "id": "le-la-les-x1",
+        "kind": "cloze",
+        "prompt": "За столом в кафе. Вставь нужный артикль.",
+        "phrase": "Passe-moi ___ sel, s'il te plaît.",
+        "options": ["le", "un", "la", "des"],
+        "correctIndex": 0,
+        "explanation": "Соль на столе — конкретный, известный обоим предмет, поэтому le (определённый артикль). Un sel значило бы «какую-то соль» (нелепо), la sel — ошибка в роде (sel мужского рода), des sel — ошибка в числе.",
+        "result": "Passe-moi le sel, s'il te plaît."
+      },
+      {
+        "id": "le-la-les-x2",
+        "kind": "compare",
+        "prompt": "Оба раза стоит le. Но камера наведена по-разному. В чём разница?",
+        "phrases": ["J'adore le chocolat.", "Je voudrais le chocolat qui est sur l'étagère."],
+        "options": [
+          "В первом le — это категория целиком («шоколад вообще»), во втором — конкретный, известный предмет («тот самый шоколад на полке»).",
+          "В первом le значит «весь», во втором — «немного»: это разные количества шоколада.",
+          "В первом случае le обязателен, во втором его можно убрать без изменения смысла.",
+          "Разницы в значении le нет: меняется только глагол, а артикль работает одинаково."
+        ],
+        "correctIndex": 0,
+        "explanation": "Определённый артикль le делает две вещи: с глаголами вкуса (adorer, aimer) он указывает на категорию целиком, а с уточнением (qui est sur l'étagère) — на конкретный, уже известный предмет."
       },
       {
         "id": "le-insight",
@@ -189,9 +282,21 @@
         "prompt": "Вскрытие.",
         "phrase": "Je mange du pain.",
         "tokens": [
-          { "fr": "Je", "ru": "я", "role": "кто" },
-          { "fr": "mange", "ru": "ем", "role": "что делаю" },
-          { "fr": "du pain", "ru": "(немного) хлеба", "role": "камера: порция" }
+          {
+            "fr": "Je",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "mange",
+            "ru": "ем",
+            "role": "что делаю"
+          },
+          {
+            "fr": "du pain",
+            "ru": "(немного) хлеба",
+            "role": "камера: порция"
+          }
         ],
         "note": "du pain — кусок/некоторое количество хлеба, не «весь хлеб»."
       },
@@ -219,6 +324,49 @@
         "correctIndex": 0,
         "explanation": "Вода — масса, перед гласной de la → de l'. Je voudrais de l'eau.",
         "result": "Je voudrais de l'eau, s'il vous plaît."
+      },
+      {
+        "id": "du-x1",
+        "kind": "compare",
+        "prompt": "В чём разница между этими фразами?",
+        "phrases": ["J'aime le café.", "Je bois du café."],
+        "options": [
+          "le café = кофе вообще, как явление/вкус (определённый артикль); du café = некоторое количество кофе, порция (частичный артикль)",
+          "le café и du café — это просто стилистические варианты, смысл один и тот же",
+          "le café — это про один конкретный кофе на столе, du café — про много чашек",
+          "du café употребляют в вопросах, а le café — в утверждениях"
+        ],
+        "correctIndex": 0,
+        "explanation": "С глаголами вкуса/чувства (aimer, adorer, détester) идёт определённый артикль le/la — речь о явлении в целом. С глаголами потребления (boire, manger, vouloir) идёт частичный du/de la — речь о некотором количестве."
+      },
+      {
+        "id": "du-x2",
+        "kind": "scene",
+        "prompt": "Официант спросил, будете ли вы вино. Вы отказываетесь. Что сказать?",
+        "situation": "В ресторане официант предлагает вино, но вы не пьёте алкоголь и хотите вежливо отказаться.",
+        "options": [
+          "Non merci, je ne prends pas de vin.",
+          "Non merci, je ne prends pas du vin.",
+          "Non merci, je ne prends pas le vin.",
+          "Non merci, je ne prends pas de la vin."
+        ],
+        "correctIndex": 0,
+        "explanation": "После отрицания частичный артикль du / de la / des превращается в de (или d' перед гласной): pas de vin. Поэтому du/de la/le здесь неверны.",
+        "result": "Non merci, je ne prends pas de vin."
+      },
+      {
+        "id": "du-x3",
+        "kind": "hypothesis",
+        "prompt": "Сформулируй правило выбора формы частичного артикля.",
+        "clues": ["du pain", "de la confiture", "de l'eau", "des croissants"],
+        "options": [
+          "Форма зависит от рода и числа слова: du — муж. род, de la — жен. род, de l' — перед гласной/немой h, des — множественное число",
+          "Форма зависит от первой буквы слова: du перед согласной, de la перед гласной",
+          "du и de la выбираются случайно, это синонимы",
+          "des используют только для еды, а du и de la — для напитков"
+        ],
+        "correctIndex": 0,
+        "explanation": "Частичный артикль согласуется с существительным: du (= de + le) для мужского рода, de la для женского, de l' перед гласной или немым h, des (= de + les) для множественного числа."
       },
       {
         "id": "du-insight",
@@ -264,15 +412,36 @@
         "kind": "sort",
         "prompt": "Разложи фразы по камерам.",
         "baskets": [
-          { "id": "cat", "label": "категория (le / la / les)" },
-          { "id": "portion", "label": "порция / количество (du / de la / des)" }
+          {
+            "id": "cat",
+            "label": "категория (le / la / les)"
+          },
+          {
+            "id": "portion",
+            "label": "порция / количество (du / de la / des)"
+          }
         ],
         "items": [
-          { "text": "J'aime le fromage.", "basket": "cat" },
-          { "text": "Je veux du fromage.", "basket": "portion" },
-          { "text": "Je mange du pain.", "basket": "portion" },
-          { "text": "Je déteste les tomates.", "basket": "cat" },
-          { "text": "Je voudrais de la soupe.", "basket": "portion" }
+          {
+            "text": "J'aime le fromage.",
+            "basket": "cat"
+          },
+          {
+            "text": "Je veux du fromage.",
+            "basket": "portion"
+          },
+          {
+            "text": "Je mange du pain.",
+            "basket": "portion"
+          },
+          {
+            "text": "Je déteste les tomates.",
+            "basket": "cat"
+          },
+          {
+            "text": "Je voudrais de la soupe.",
+            "basket": "portion"
+          }
         ],
         "explanation": "Чувство (любить/ненавидеть) → категория. Действие с веществом (есть/хотеть) → порция."
       },
@@ -282,9 +451,21 @@
         "prompt": "Вскрытие.",
         "phrase": "Je mange du pain.",
         "tokens": [
-          { "fr": "Je", "ru": "я", "role": "кто" },
-          { "fr": "mange", "ru": "ем", "role": "действие с веществом → порция" },
-          { "fr": "du pain", "ru": "(немного) хлеба", "role": "камера: порция (de + le)" }
+          {
+            "fr": "Je",
+            "ru": "я",
+            "role": "кто"
+          },
+          {
+            "fr": "mange",
+            "ru": "ем",
+            "role": "действие с веществом → порция"
+          },
+          {
+            "fr": "du pain",
+            "ru": "(немного) хлеба",
+            "role": "камера: порция (de + le)"
+          }
         ],
         "note": "manger тянет порцию: du pain, а не le pain. du = de + le."
       },
@@ -301,6 +482,45 @@
         ],
         "correctIndex": 0,
         "explanation": "Ешь некоторое количество → du pain. (le pain — хлеб как категория; un pain — целый батон.)"
+      },
+      {
+        "id": "camera-categorie-portion-x1",
+        "kind": "cloze",
+        "prompt": "Глагол подсказывает камеру. Что вставить?",
+        "phrase": "Je déteste le thé, mais ce matin je bois ___ thé.",
+        "options": ["du", "le", "de la", "des"],
+        "correctIndex": 0,
+        "explanation": "После глагола отношения (détester) — категория целиком: le thé. Но «пью некоторое количество» — это порция, частичный артикль мужского рода: du thé. (de la — для женского рода, des — для множественного; thé здесь — мужской род в единственном числе.)",
+        "result": "Je déteste le thé, mais ce matin je bois du thé."
+      },
+      {
+        "id": "camera-categorie-portion-x2",
+        "kind": "compare",
+        "prompt": "Две правильные фразы. В чём разница смысла?",
+        "phrases": ["J'aime le café.", "Je bois du café."],
+        "options": [
+          "Первая — про кофе как категорию (люблю кофе вообще), вторая — про порцию (пью некоторое количество кофе).",
+          "Разницы нет, le и du взаимозаменяемы перед едой и напитками.",
+          "Первая — про конкретную чашку кофе на столе, вторая — про кофе вообще.",
+          "Первая в настоящем времени, вторая — в прошедшем."
+        ],
+        "correctIndex": 0,
+        "explanation": "Глаголы отношения (aimer, adorer, détester) берут категорию целиком — le / la / les. Глаголы потребления (boire, manger, vouloir) берут порцию — частичный артикль du / de la / des."
+      },
+      {
+        "id": "camera-categorie-portion-x3",
+        "kind": "explainError",
+        "prompt": "Фраза неверна для заказа в boulangerie. Почему?",
+        "phrase": "Je voudrais le pain, s'il vous plaît.",
+        "options": [
+          "«Хочу» — это про порцию, нужен частичный артикль: du pain (немного хлеба), а не категория le pain.",
+          "Глагол vouloir вообще не сочетается с артиклем.",
+          "Слово pain женского рода, нужно la pain.",
+          "Нужно поставить pain во множественное число: les pains."
+        ],
+        "correctIndex": 0,
+        "explanation": "С глаголом желания/потребления (vouloir) просят порцию: du pain. Le pain звучало бы как «хлеб как класс» или «тот самый, конкретный хлеб», что при заказе неуместно.",
+        "result": "Je voudrais du pain, s'il vous plaît."
       },
       {
         "id": "cam-insight",
@@ -378,10 +598,26 @@
         "prompt": "Вскрытие.",
         "phrase": "Je n'ai pas de voiture.",
         "tokens": [
-          { "fr": "Je n'", "ru": "я не", "role": "начало отрицания (ne → n')" },
-          { "fr": "ai", "ru": "имею", "role": "avoir" },
-          { "fr": "pas", "ru": "не", "role": "вторая часть отрицания" },
-          { "fr": "de voiture", "ru": "машины", "role": "une → de после отрицания" }
+          {
+            "fr": "Je n'",
+            "ru": "я не",
+            "role": "начало отрицания (ne → n')"
+          },
+          {
+            "fr": "ai",
+            "ru": "имею",
+            "role": "avoir"
+          },
+          {
+            "fr": "pas",
+            "ru": "не",
+            "role": "вторая часть отрицания"
+          },
+          {
+            "fr": "de voiture",
+            "ru": "машины",
+            "role": "une → de после отрицания"
+          }
         ],
         "note": "ne перед гласной → n'. Утвердительное une voiture при отрицании сворачивается в de voiture."
       },
@@ -398,6 +634,35 @@
         ],
         "correctIndex": 0,
         "explanation": "После отрицания une → de: je n'ai pas de voiture. (И ne перед гласной даёт n'ai, а не ne ai.)"
+      },
+      {
+        "id": "pas-de-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский держит артикль после отрицания, а французский его роняет. Почини кальку.",
+        "phrase": "Je ne mange pas du pain le matin.",
+        "options": [
+          "Je ne mange pas de pain le matin.",
+          "Je ne mange pas du pain le matin.",
+          "Je ne mange pas le pain le matin.",
+          "Je ne mange pas un pain le matin."
+        ],
+        "correctIndex": 0,
+        "explanation": "После отрицания неопределённый или частичный объект (un/une/des/du/de la) схлопывается в de: pas de pain. Формы du и un здесь ошибочны, а le менял бы смысл на конкретный хлеб.",
+        "result": "Je ne mange pas de pain le matin."
+      },
+      {
+        "id": "pas-de-x2",
+        "kind": "compare",
+        "prompt": "В одной фразе артикль исчез, в другой выжил. В чём разница?",
+        "phrases": ["Je n'ai pas de voiture.", "Ce n'est pas une voiture."],
+        "options": [
+          "После être артикль не схлопывается: правило pas de работает только для прямого дополнения (как у avoir), а не для именной части сказуемого.",
+          "Разница случайна: можно было сказать и Je n'ai pas une voiture, и Ce n'est pas de voiture.",
+          "Артикль исчезает только во множественном числе, а une остаётся потому, что слово женского рода.",
+          "Во второй фразе ошибка: правильно Ce n'est pas de voiture, артикль всегда схлопывается."
+        ],
+        "correctIndex": 0,
+        "explanation": "Схлопывание в de срабатывает для прямого дополнения отрицаемого глагола (j'ai → je n'ai pas de). После être (c'est → ce n'est pas) именная часть сохраняет un/une/des: Ce n'est pas une voiture."
       },
       {
         "id": "pasde-insight",

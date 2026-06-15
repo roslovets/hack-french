@@ -84,6 +84,35 @@
         "hint": "Замечай, как каждый разговор обрамляется bonjour … bonne journée."
       },
       {
+        "id": "bonjour-x1",
+        "kind": "fixCalque",
+        "prompt": "Русскоговорящий заходит в магазин и сразу переводит свой вопрос на французский, пропуская ритуал. Почини фразу так, чтобы она звучала по-французски вежливо.",
+        "phrase": "Vous avez du pain ?",
+        "options": [
+          "Bonjour, vous avez du pain ?",
+          "Vous avez du pain, bonjour ?",
+          "Excusez-moi, vous avez du pain ?",
+          "Vous avez du pain ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Во Франции «bonjour» — это входной билет: он идёт ПЕРЕД вопросом, а не после и не вместо него. «Excusez-moi» — это извинение за беспокойство, оно не заменяет приветствие; без «bonjour» в начале даже корректный вопрос звучит грубо.",
+        "result": "Bonjour, vous avez du pain ?"
+      },
+      {
+        "id": "bonjour-x2",
+        "kind": "compare",
+        "prompt": "Обе фразы — приветствия при входе в разговор. В чём разница в регистре?",
+        "phrases": ["Bonjour, madame.", "Coucou !"],
+        "options": [
+          "«Bonjour, madame» — нейтрально-вежливо и уместно с незнакомцем; «Coucou» — фамильярно, только для близких и друзей.",
+          "Они полностью взаимозаменяемы, разницы в вежливости нет.",
+          "«Coucou» вежливее и формальнее, чем «Bonjour, madame».",
+          "«Bonjour, madame» можно говорить только мужчине, а «Coucou» — только женщине."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Bonjour (madame/monsieur)» — стандартный вежливый билет к незнакомцу в магазине или администрации; «Coucou» — тёплое и фамильярное приветствие, уместное лишь с друзьями и близкими."
+      },
+      {
         "id": "bj-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -160,6 +189,35 @@
         "prompt": "Миссия.",
         "targets": ["vous pouvez répéter", "plus lentement", "je n'ai pas compris"],
         "hint": "В следующий раз, когда не поймёшь, используй спасатель вместо паники."
+      },
+      {
+        "id": "secours-x1",
+        "kind": "fixCalque",
+        "prompt": "Калька с русского «Я не понимаю вас». Где правильный французский?",
+        "phrase": "Je ne comprends pas vous.",
+        "options": [
+          "Je ne vous comprends pas.",
+          "Je ne comprends pas vous.",
+          "Je ne pas vous comprends.",
+          "Je vous ne comprends pas."
+        ],
+        "correctIndex": 0,
+        "explanation": "Местоимение-дополнение (vous, te, le…) во французском стоит ПЕРЕД глаголом, внутри связки ne … pas: «Je ne vous comprends pas». Поставить «vous» в конец — типичная калька с русского.",
+        "result": "Je ne vous comprends pas."
+      },
+      {
+        "id": "secours-x2",
+        "kind": "scene",
+        "prompt": "Сцена: téléphone. Плохая связь, собеседник что-то сказал, ты не расслышал. Что ответить вежливо?",
+        "situation": "По телефону связь плохая, ты не расслышал, что сказали.",
+        "options": [
+          "Vous pouvez répéter ? Je n'ai pas bien entendu.",
+          "Vous pouvez parler ? Je n'écoute pas.",
+          "Répétez ! Je comprends pas.",
+          "Quoi ? J'entends rien."
+        ],
+        "correctIndex": 0,
+        "explanation": "Спасатель по телефону — попросить повторить + сказать, что плохо РАССЛЫШАЛ: «entendre» (слышать), а не «écouter» (слушать намеренно). «Je n'écoute pas» значит «я не слушаю» — грубо. Голый приказ «Répétez !» без рамки вежливости и «Quoi ?» звучат резко."
       },
       {
         "id": "sec-insight",
@@ -278,6 +336,45 @@
         "note": "При vous глагол берёт окончание -ez: vous pouvez. С tu было бы «tu peux m'aider ?»."
       },
       {
+        "id": "tu-vous-x1",
+        "kind": "fixCalque",
+        "prompt": "Русский пишет коллеге-ровеснику, с которым давно на «ты», но по-французски машинально ставит vous «для вежливости». Почини.",
+        "phrase": "Vous venez prendre un café avec moi ce midi ?",
+        "options": [
+          "Tu viens prendre un café avec moi ce midi ?",
+          "Vous venez prendre un café avec moi ce midi ?",
+          "Tu venez prendre un café avec moi ce midi ?",
+          "Vous viens prendre un café avec moi ce midi ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "С близким ровесником-коллегой по-французски говорят на tu — «вежливое vous» здесь звучит холодно и отстранённо. И глагол должен согласоваться: tu → viens (а не venez).",
+        "result": "Tu viens prendre un café avec moi ce midi ?"
+      },
+      {
+        "id": "tu-vous-x2",
+        "kind": "cloze",
+        "prompt": "Vous — это не всегда «вы из уважения». Здесь вы обращаетесь к двум подругам сразу. Какая форма глагола?",
+        "phrase": "Salut les filles ! Vous ___ libres samedi soir ?",
+        "options": ["êtes", "es", "est", "sommes"],
+        "correctIndex": 0,
+        "explanation": "Vous как простое множественное число («вы оба/все») требует той же формы глагола, что и вежливое vous: vous êtes. Формы es (для tu) и est (для il/elle) тут не подходят.",
+        "result": "Salut les filles ! Vous êtes libres samedi soir ?"
+      },
+      {
+        "id": "tu-vous-x3",
+        "kind": "oddOneOut",
+        "prompt": "Три фразы уместны при первом контакте с незнакомым взрослым. Одна — нет. Найди лишнюю.",
+        "options": [
+          "Bonjour, vous avez l'heure, s'il vous plaît ?",
+          "Excusez-moi, vous pouvez répéter ?",
+          "Tu sais où est la gare ?",
+          "Pardon, vous savez où se trouve la poste ?"
+        ],
+        "correctIndex": 2,
+        "explanation": "С незнакомым взрослым в нейтральной ситуации (улица, магазин, администрация) французы обращаются на vous; tu здесь звучит фамильярно и невежливо. Остальные три корректны.",
+        "result": "Tu sais où est la gare ? → Vous savez où est la gare ?"
+      },
+      {
         "id": "tv-insight",
         "kind": "insight",
         "prompt": "Озарение.",
@@ -331,16 +428,73 @@
         "kind": "sort",
         "prompt": "Разложи формулы: вход в разговор vs выход из него.",
         "baskets": [
-          { "id": "in", "label": "вход / начало" },
-          { "id": "out", "label": "выход / завершение" }
+          {
+            "id": "in",
+            "label": "вход / начало"
+          },
+          {
+            "id": "out",
+            "label": "выход / завершение"
+          }
         ],
         "items": [
-          { "text": "Bonjour !", "basket": "in" },
-          { "text": "Bonne journée !", "basket": "out" },
-          { "text": "Excusez-moi…", "basket": "in" },
-          { "text": "Merci, au revoir !", "basket": "out" }
+          {
+            "text": "Bonjour !",
+            "basket": "in"
+          },
+          {
+            "text": "Bonne journée !",
+            "basket": "out"
+          },
+          {
+            "text": "Excusez-moi…",
+            "basket": "in"
+          },
+          {
+            "text": "Merci, au revoir !",
+            "basket": "out"
+          }
         ],
         "explanation": "Bonjour и excusez-moi открывают разговор; bonne journée и merci, au revoir его закрывают."
+      },
+      {
+        "id": "politesse-x1",
+        "kind": "fixCalque",
+        "prompt": "Русское «Дайте багет» переносят к прилавку boulangerie. Почему по-французски это звучит грубо и как сказать вежливо?",
+        "phrase": "Donnez-moi une baguette.",
+        "options": [
+          "Je voudrais une baguette, s'il vous plaît.",
+          "Donnez une baguette maintenant.",
+          "Je veux une baguette.",
+          "Baguette, s'il vous plaît, donnez-moi vite."
+        ],
+        "correctIndex": 0,
+        "explanation": "Голый императив «Donnez-moi…» звучит как приказ. Просьбу смягчают условным «je voudrais» («я хотел(а) бы») и обязательным «s'il vous plaît» — это часть протокола, а не вежливая добавка.",
+        "result": "Je voudrais une baguette, s'il vous plaît."
+      },
+      {
+        "id": "politesse-x2",
+        "kind": "cloze",
+        "prompt": "Заполни пропуск так, чтобы получилась естественная вежливая просьба у продавца.",
+        "phrase": "Bonjour, je voudrais un pain au chocolat, ___.",
+        "options": ["s'il vous plaît", "s'il te plaît", "merci", "de rien"],
+        "correctIndex": 0,
+        "explanation": "С незнакомым продавцом обращаются на «вы», поэтому просьбу закрывают формальным «s'il vous plaît». «s'il te plaît» — только на «ты»; «merci» рано (заказ ещё не выполнили); «de rien» («не за что») — это ответ на благодарность, а не просьба.",
+        "result": "Bonjour, je voudrais un pain au chocolat, s'il vous plaît."
+      },
+      {
+        "id": "politesse-x3",
+        "kind": "compare",
+        "prompt": "В чём разница между этими двумя формулами на выходе из магазина?",
+        "phrases": ["Merci, au revoir !", "Merci, bonne journée !"],
+        "options": [
+          "Обе корректно завершают разговор; «au revoir» нейтрально прощается, а «bonne journée» добавляет пожелание хорошего дня и звучит чуть теплее.",
+          "«Bonne journée» невежливо: так говорят только близким друзьям.",
+          "«Au revoir» — ошибка, по-французски прощаются только словом «bonne journée».",
+          "Разницы нет: «bonne journée» — это дословный перевод «au revoir»."
+        ],
+        "correctIndex": 0,
+        "explanation": "И «au revoir», и «bonne journée» — стандартные формулы завершения разговора. «Au revoir» просто прощается, «bonne journée» добавляет пожелание; часто их соединяют: «Au revoir, bonne journée !»."
       },
       {
         "id": "pol-insight",
@@ -405,6 +559,64 @@
         "correctIndex": 0,
         "explanation": "Сожаление о проступке (опоздание) → «Je suis désolé pour le retard.»",
         "result": "Je suis désolé pour le retard."
+      },
+      {
+        "id": "excuses-x1",
+        "kind": "scene",
+        "prompt": "Сцена: voisins. Вы случайно затопили соседа снизу — серьёзный проступок. Что сказать?",
+        "situation": "Вы случайно затопили соседа снизу и пришли извиниться за причинённый ущерб.",
+        "options": [
+          "Je suis vraiment désolé, je vais tout arranger.",
+          "Pardon, je vais tout arranger.",
+          "Excusez-moi, je vais tout arranger.",
+          "Pardon ? Je vais tout arranger."
+        ],
+        "correctIndex": 0,
+        "explanation": "За настоящий проступок с ущербом нужно сожаление: «je suis désolé». «Pardon / excusez-moi» лишь привлекают внимание или просят пройти и звучат слишком легковесно для серьёзной вины. «Pardon ?» с вопросом вообще значит «Что?».",
+        "result": "Je suis vraiment désolé, je vais tout arranger."
+      },
+      {
+        "id": "excuses-x2",
+        "kind": "trap",
+        "prompt": "Сосед что-то сказал, а вы не расслышали и хотите переспросить «Что? Повторите?». Что сказать?",
+        "options": [
+          "Pardon ?",
+          "Je suis désolé ?",
+          "Désolé pour le dérangement ?",
+          "Je m'excuse de ce malentendu ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: «Pardon ?» с вопросительной интонацией значит «Что? Повторите, пожалуйста». Фразы с «désolé / je m'excuse» выражают сожаление о проступке и для переспрашивания не годятся.",
+        "result": "Pardon ?"
+      },
+      {
+        "id": "excuses-x3",
+        "kind": "fixCalque",
+        "prompt": "Русское «Извините, как пройти к вокзалу?» перевели дословно как извинение за вину. Исправь.",
+        "phrase": "Je suis désolé, où est la gare ?",
+        "options": [
+          "Excusez-moi, où est la gare ?",
+          "Je suis désolé, où est la gare ?",
+          "Je m'excuse, où est la gare ?",
+          "Désolé que la gare ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Чтобы вежливо обратиться к незнакомцу и привлечь внимание, нужно «excusez-moi», а не «je suis désolé» (это сожаление о проступке). «Je m'excuse» считается невежливым: извинение даёт другой, а не ты сам себе.",
+        "result": "Excusez-moi, où est la gare ?"
+      },
+      {
+        "id": "excuses-x4",
+        "kind": "oddOneOut",
+        "prompt": "Три фразы привлекают внимание или просят пройти. Найди лишнюю — ту, что выражает сожаление о проступке.",
+        "options": [
+          "Je suis désolé d'avoir cassé votre vase.",
+          "Pardon, je peux passer ?",
+          "Excusez-moi, vous avez l'heure ?",
+          "Pardon, est-ce que cette place est libre ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "«Je suis désolé d'avoir cassé votre vase» выражает сожаление о реальном проступке. Остальные — «pardon / excusez-moi» — лишь привлекают внимание или просят пройти, без признания вины.",
+        "result": "Je suis désolé d'avoir cassé votre vase."
       },
       {
         "id": "exc-insight",
