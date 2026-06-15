@@ -86,7 +86,13 @@ export default function OwnPhraseTask({ step, boss, onComplete }: Props) {
               add();
             }
           }}
-          slotProps={{ input: { sx: { fontFamily: mono } } }}
+          slotProps={{
+            input: { sx: { fontFamily: mono } },
+            // This field holds French. Tag its language and turn off the browser's
+            // spellcheck/autocorrect so correct French isn't underlined or "fixed"
+            // against the Russian UI dictionary.
+            htmlInput: { lang: 'fr', spellCheck: false, autoCorrect: 'off' },
+          }}
         />
         <Button
           variant="contained"
