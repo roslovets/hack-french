@@ -104,6 +104,18 @@
         "result": "Je voudrais l'addition, s'il vous plaît."
       },
       {
+        "id": "voudrais-m1",
+        "kind": "catch",
+        "prompt": "Поймай вежливую «кнопку» в реальной жизни: в кафе, у кассы, по телефону или в видео слушай, как французы просят что-то через je voudrais, а не je veux.",
+        "hint": "В следующий раз, когда будешь смотреть французское видео или заказывать что-то, замечай форму на -drais в начале просьбы: это je voudrais («я хотел бы»), мягкая просьба. Поймай себя на желании сказать je veux — и переключись на je voudrais.",
+        "targets": [
+          "je voudrais un café",
+          "je voudrais réserver une table",
+          "je voudrais juste une baguette",
+          "je voudrais parler à Madame Martin"
+        ]
+      },
+      {
         "id": "voud-insight",
         "kind": "insight",
         "prompt": "Озарение.",

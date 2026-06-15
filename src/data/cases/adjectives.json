@@ -95,6 +95,30 @@
         "explanation": "Прилагательное цвета стоит ПОСЛЕ существительного: un sac vert. Слово sac — мужского рода (артикль un уже это показывает), поэтому форма vert, без -e. Verte — женский род (une voiture verte), здесь не подходит. Vert sac — русский порядок (прилагательное перед существительным), так нельзя. Le vert — это «зелёный цвет» как существительное, а не прилагательное."
       },
       {
+        "id": "adj-place-apres-m1",
+        "kind": "catch",
+        "prompt": "Поймай в жизни «существительное + прилагательное цвета/качества» во французском порядке.",
+        "hint": "Замечай вокруг себя предметы и описывай их вслух по-французски — сначала вещь, потом прилагательное. В следующий раз, увидев в меню или на ценнике французское название, проверь: прилагательное стоит ПОСЛЕ слова?",
+        "targets": ["un café noir", "une chaise blanche", "un sac vert", "une table ronde"]
+      },
+      {
+        "id": "adj-place-apres-m2",
+        "kind": "ownPhrase",
+        "prompt": "Составь свои фразы по модели «вещь + прилагательное после неё». Минимум 3.",
+        "pattern": "un / une ___ ___ (существительное + прилагательное)",
+        "examples": [
+          "une chemise blanche",
+          "un pull bleu",
+          "une pomme verte",
+          "un manteau noir",
+          "une maison moderne",
+          "un livre intéressant",
+          "une robe rouge",
+          "un chat noir"
+        ],
+        "minCount": 3
+      },
+      {
         "id": "apres-insight",
         "kind": "insight",
         "prompt": "Озарение.",

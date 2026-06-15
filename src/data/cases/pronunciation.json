@@ -134,6 +134,30 @@
         "result": "vous‿avez → «ву-заве», un grand‿homme → «гран-том»"
       },
       {
+        "id": "liaison-m1",
+        "kind": "catch",
+        "prompt": "Поймай liaison в живой речи: услышь, как немая согласная оживает перед гласной и склеивает два слова в один поток.",
+        "hint": "Замечай местоимения и короткие слова перед гласной: после vous, nous, les, des, un, ils ты услышишь призвук «з» или «н», которого нет на письме. В следующий раз, слушая французскую речь (видео, песня, диктор в метро), лови момент, где «s» или «n» вдруг звучит.",
+        "targets": ["vous‿avez", "nous‿allons", "les‿enfants", "un‿ami"]
+      },
+      {
+        "id": "liaison-m2",
+        "kind": "ownPhrase",
+        "prompt": "Составь свои фразы с обязательной liaison: после «nous avons» идёт слово с гласной, и немая «s» оживает в призвук «з» — «нуза-вон».",
+        "pattern": "Nous avons ___ .",
+        "examples": [
+          "Nous avons un chien.",
+          "Nous avons une question.",
+          "Nous avons attendu longtemps.",
+          "Nous avons étudié le français.",
+          "Nous avons oublié les clés.",
+          "Nous avons invité nos voisins.",
+          "Nous avons assez de temps.",
+          "Nous avons aimé le film."
+        ],
+        "minCount": 3
+      },
+      {
         "id": "liai-insight",
         "kind": "insight",
         "prompt": "Озарение.",

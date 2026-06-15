@@ -113,6 +113,30 @@
         "result": "Mon frère est médecin."
       },
       {
+        "id": "poss-mon-ma-m1",
+        "kind": "catch",
+        "prompt": "Поймай в речи и на письме случаи, где «мой / моя / мои» выбирается по роду и числу ПРЕДМЕТА, а не по говорящему.",
+        "hint": "Замечай связку «mon / ma / mes + существительное» и сразу спрашивай себя: какого рода и числа сам предмет? Услышав mon, поймай мысль: слово после него мужского рода — или женского, но начинается с гласной (mon amie). ma всегда тянет за собой женский род на согласную.",
+        "targets": ["mon frère", "ma sœur", "mes parents", "mon amie"]
+      },
+      {
+        "id": "poss-mon-ma-m2",
+        "kind": "ownPhrase",
+        "prompt": "Составь 3 свои фразы про то, что у тебя есть, выбирая mon или ma по роду самого предмета.",
+        "pattern": "C'est ___ .",
+        "examples": [
+          "C'est mon livre.",
+          "C'est ma table.",
+          "C'est mon téléphone.",
+          "C'est ma voiture.",
+          "C'est mon adresse.",
+          "C'est ma sœur.",
+          "C'est mon frère.",
+          "C'est ma question."
+        ],
+        "minCount": 3
+      },
+      {
         "id": "monma-insight",
         "kind": "insight",
         "prompt": "Озарение.",

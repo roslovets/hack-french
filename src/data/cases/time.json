@@ -157,6 +157,18 @@
         "explanation": "Маркеры «quand j'étais petit», «tous les étés» сигналят о привычке/повторении — это imparfait; «hier», «une fois» указывают на единичное событие — это passé composé."
       },
       {
+        "id": "passe-imparfait-m1",
+        "kind": "catch",
+        "prompt": "В следующем рассказе о прошлом (друг, подкаст, сериал) поймай момент, где сталкиваются две камеры: фон (imparfait) и щелчок (passé composé).",
+        "hint": "Замечай связки «фон + soudain/tout à coup/quand + событие»: фон тянется (j'étais, il faisait, je dormais), а потом одно действие щёлкает и прерывает его (j'ai entendu, il est arrivé). Поймай себя на вопросе «это длилось или случилось один раз?» — и сразу поймёшь, какая камера включена.",
+        "targets": [
+          "Je dormais quand le téléphone a sonné.",
+          "Il faisait beau, alors on est sortis.",
+          "Avant, je prenais le bus tous les jours.",
+          "Tout à coup, quelqu'un est entré."
+        ]
+      },
+      {
         "id": "pi-insight",
         "kind": "insight",
         "prompt": "Озарение.",

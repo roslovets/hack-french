@@ -128,6 +128,35 @@
         "result": "Je voudrais savoir si vous avez du thé sans caféine, s'il vous plaît."
       },
       {
+        "id": "scene-cafe-m1",
+        "kind": "catch",
+        "prompt": "Поймай вежливую «кнопку заказа» в реальном кафе или в видео с французами.",
+        "hint": "В следующий раз, услышав заказ у стойки, замечай, как француз почти никогда не говорит «je veux» — он смягчает просьбу через «je voudrais» или «je vais prendre». Поймай себя на том, что тоже начинаешь с этой формы.",
+        "targets": [
+          "Je voudrais un café, s'il vous plaît",
+          "Je vais prendre une eau plate",
+          "Vous auriez un croissant ?",
+          "Je voudrais l'addition, s'il vous plaît"
+        ]
+      },
+      {
+        "id": "scene-cafe-m2",
+        "kind": "ownPhrase",
+        "prompt": "Составь свои вежливые заказы в кафе по этому каркасу. Подставь напиток или блюдо.",
+        "pattern": "Je voudrais ___, s'il vous plaît.",
+        "examples": [
+          "Je voudrais un café, s'il vous plaît.",
+          "Je voudrais un thé au citron, s'il vous plaît.",
+          "Je voudrais deux croissants, s'il vous plaît.",
+          "Je voudrais une carafe d'eau, s'il vous plaît.",
+          "Je voudrais un chocolat chaud, s'il vous plaît.",
+          "Je voudrais l'addition, s'il vous plaît.",
+          "Je voudrais un verre de vin rouge, s'il vous plaît.",
+          "Je voudrais une part de tarte aux pommes, s'il vous plaît."
+        ],
+        "minCount": 3
+      },
+      {
         "id": "cafe-insight",
         "kind": "insight",
         "prompt": "Озарение.",

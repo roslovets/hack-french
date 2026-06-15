@@ -127,6 +127,34 @@
         "result": "Pardon, vous pouvez répéter plus lentement, s'il vous plaît ?"
       },
       {
+        "id": "boss-ecole-m1",
+        "kind": "catch",
+        "prompt": "Поймай в живой речи (фильм, подкаст, разговор) «фразы-спасатели» — короткие готовые формулы, которыми носители выкручиваются, когда не поняли или нужно выиграть время.",
+        "targets": [
+          "Pardon, vous pouvez répéter ?",
+          "Vous pouvez parler plus lentement, s'il vous plaît ?",
+          "Désolé, je n'ai pas compris.",
+          "Comment ça s'écrit ?"
+        ],
+        "hint": "В следующий раз, когда смотришь сериал или говоришь по телефону по-французски, лови момент, где человек не понял или замешкался. Замечай, какую короткую формулу он использует, чтобы не оборвать разговор, — и запиши её себе в «аптечку»."
+      },
+      {
+        "id": "boss-ecole-m2",
+        "kind": "ownPhrase",
+        "prompt": "Собери свою «аптечку» вежливых просьб для телефонного разговора: попроси повторить, говорить медленнее или объяснить иначе. Составь минимум 3 фразы по шаблону.",
+        "pattern": "Vous pouvez ___, s'il vous plaît ?",
+        "examples": [
+          "Vous pouvez répéter, s'il vous plaît ?",
+          "Vous pouvez parler plus lentement, s'il vous plaît ?",
+          "Vous pouvez épeler votre nom, s'il vous plaît ?",
+          "Vous pouvez patienter un instant, s'il vous plaît ?",
+          "Vous pouvez me rappeler plus tard, s'il vous plaît ?",
+          "Vous pouvez me passer le secrétariat, s'il vous plaît ?",
+          "Vous pouvez me confirmer l'heure du rendez-vous, s'il vous plaît ?"
+        ],
+        "minCount": 3
+      },
+      {
         "id": "boss-ecole-insight",
         "kind": "insight",
         "prompt": "Озарение после босса.",

@@ -89,6 +89,30 @@
         "result": "Tu ne parles pas français."
       },
       {
+        "id": "neg-cadre-m1",
+        "kind": "catch",
+        "prompt": "Поймай рамку ne … pas в живой французской речи: услышь, как отрицание обнимает глагол с двух сторон.",
+        "hint": "Замечай в подкастах и роликах две части вокруг глагола: сначала ne (или n' перед гласной), потом pas. В быстрой разговорной речи ne часто проглатывают — поймай себя на том, что слышишь только pas, и мысленно восстанови полную рамку.",
+        "targets": ["je ne sais pas", "ce n'est pas grave", "je ne comprends pas", "il n'y a pas"]
+      },
+      {
+        "id": "neg-cadre-m2",
+        "kind": "ownPhrase",
+        "prompt": "Составь свои отрицания: оберни глагол рамкой ne … pas. Не забудь n' перед гласной.",
+        "pattern": "Je ne ___ pas ___ .",
+        "examples": [
+          "Je ne mange pas de viande.",
+          "Je ne parle pas espagnol.",
+          "Je ne comprends pas la question.",
+          "Je ne travaille pas le dimanche.",
+          "Je n'aime pas le café.",
+          "Je n'habite pas à Paris.",
+          "Je ne connais pas cette ville.",
+          "Je n'ai pas le temps."
+        ],
+        "minCount": 3
+      },
+      {
         "id": "cadre-insight",
         "kind": "insight",
         "prompt": "Озарение.",

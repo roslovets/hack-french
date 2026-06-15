@@ -102,6 +102,30 @@
         "explanation": "Без местоимения глагол laver переходит на внешний объект: je lave la voiture. С возвратным me действие возвращается на подлежащее: je me lave = «я моюсь». Именно me превращает глагол в возвратный."
       },
       {
+        "id": "refl-base-m1",
+        "kind": "catch",
+        "prompt": "Поймай возвратный глагол в реальной речи: француз говорит о себе и ставит перед глаголом маленькое me/te/se.",
+        "hint": "Замечай, когда глагол получает «двойника» прямо перед собой: за этим почти всегда — действие на самого себя. Поймай себя на кальке «я моюсь = je lave» и достраивай местоимение: je me lave.",
+        "targets": ["je me lève", "tu te laves", "il se couche", "je me lave les mains"]
+      },
+      {
+        "id": "refl-base-m2",
+        "kind": "ownPhrase",
+        "prompt": "Составь свои фразы про утро и заботу о себе: возьми je и поставь нужное местоимение me перед глаголом.",
+        "pattern": "Je me ___ .",
+        "examples": [
+          "Je me lave",
+          "Je me lève",
+          "Je me couche",
+          "Je me repose",
+          "Je me brosse les dents",
+          "Je me lave les mains",
+          "Je me prépare",
+          "Je me réveille"
+        ],
+        "minCount": 3
+      },
+      {
         "id": "base-insight",
         "kind": "insight",
         "prompt": "Озарение.",

@@ -102,6 +102,35 @@
         "explanation": "soixante et onze = 60 + 11 = 71. На «1» и «11» десятки 60 и 70 берут et: soixante et un (61), soixante et onze (71). А вот 81 и 91 идут без et: quatre-vingt-un, quatre-vingt-onze."
       },
       {
+        "id": "nombres-m1",
+        "kind": "catch",
+        "prompt": "Поймай в реальной жизни число «после 60», построенное по французской математике (через 20).",
+        "hint": "Замечай цены, время и номера. В кассе, в кафе и в транспорте слушай хвост числа: услышишь «soixante…», «quatre-vingt…» — поймай, из чего оно собрано (60+что-то или 4×20+что-то). Поймай себя на том, что мысленно раскладываешь его на куски.",
+        "targets": [
+          "soixante-dix euros",
+          "quatre-vingts",
+          "quatre-vingt-dix",
+          "quatre-vingt-quinze"
+        ]
+      },
+      {
+        "id": "nombres-m2",
+        "kind": "ownPhrase",
+        "prompt": "Составь свои фразы с числами после 60. Назови цену, возраст или номер, собирая число по французской математике.",
+        "pattern": "Ça fait ___ euros.",
+        "examples": [
+          "Ça fait soixante-dix euros.",
+          "Ça fait soixante-quinze euros.",
+          "Ça fait quatre-vingts euros.",
+          "Ça fait quatre-vingt-deux euros.",
+          "Ça fait quatre-vingt-dix euros.",
+          "Ça fait quatre-vingt-quinze euros.",
+          "Ça fait soixante-douze euros.",
+          "Ça fait quatre-vingt-dix-neuf euros."
+        ],
+        "minCount": 3
+      },
+      {
         "id": "nb-insight",
         "kind": "insight",
         "prompt": "Озарение.",

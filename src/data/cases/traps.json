@@ -112,6 +112,35 @@
         "explanation": "Знание факта (дата, ответ на вопрос) — это savoir, причём здесь он стоит без дополнения: «je sais». Connaître так не используется, а «je sais 1989» нельзя — savoir не берёт число как прямой объект, факт вводится через двоеточие или que."
       },
       {
+        "id": "savoir-connaitre-m1",
+        "kind": "catch",
+        "prompt": "Поймай в реальной речи (фильм, песня, разговор) разницу между savoir и connaître.",
+        "hint": "Замечай: когда после глагола идёт ЧЕЛОВЕК или МЕСТО — почти всегда connaître; когда идёт ФАКТ (que…, où…, pourquoi…) или ДЕЙСТВИЕ в инфинитиве (nager, conduire) — savoir. Поймай себя на ошибке: если хочешь сказать «я знаю этого человека», не лепи sais.",
+        "targets": [
+          "Je connais ce restaurant",
+          "Tu sais où il habite ?",
+          "Elle sait nager",
+          "Je ne connais pas Marie"
+        ]
+      },
+      {
+        "id": "savoir-connaitre-m2",
+        "kind": "ownPhrase",
+        "prompt": "Составь свои фразы с savoir (факт или умение). Подставь факт или действие в инфинитиве.",
+        "pattern": "Je sais ___ .",
+        "examples": [
+          "Je sais conduire.",
+          "Je sais nager.",
+          "Je sais où elle travaille.",
+          "Je sais que tu as raison.",
+          "Je sais parler un peu français.",
+          "Je sais pourquoi il est parti.",
+          "Je sais faire la cuisine.",
+          "Je sais que c'est difficile."
+        ],
+        "minCount": 3
+      },
+      {
         "id": "sc-insight",
         "kind": "insight",
         "prompt": "Озарение.",

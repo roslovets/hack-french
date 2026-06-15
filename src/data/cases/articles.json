@@ -102,6 +102,35 @@
         "result": "Bonjour, je voudrais une baguette, s'il vous plaît."
       },
       {
+        "id": "un-une-m1",
+        "kind": "catch",
+        "prompt": "На неделю стань охотником за un / une. Лови момент, когда объект впервые входит в кадр — и его помечают неопределённым артиклем.",
+        "hint": "Замечай в речи, подкастах и YouTube любое существительное, которое называют ВПЕРВЫЕ: перед ним почти всегда un (м. р.) или une (ж. р.). Поймай себя на русском рефлексе «выбросить артикль» (j'ai question) и мысленно вставь un / une. В следующий раз, когда сам захочешь сказать «у меня есть…», проверь: новый объект → нужен un / une.",
+        "targets": [
+          "j'ai une question",
+          "il y a un problème",
+          "c'est une bonne idée",
+          "je voudrais un café"
+        ]
+      },
+      {
+        "id": "un-une-m2",
+        "kind": "ownPhrase",
+        "prompt": "Введи в разговор новый объект. Составь свои фразы с un / une — следи за родом существительного.",
+        "pattern": "J'ai un / une ___.",
+        "examples": [
+          "J'ai une question.",
+          "J'ai un problème.",
+          "J'ai une idée.",
+          "J'ai un rendez-vous.",
+          "J'ai une réunion.",
+          "J'ai un chat.",
+          "J'ai une voiture.",
+          "J'ai un projet."
+        ],
+        "minCount": 3
+      },
+      {
         "id": "un-insight",
         "kind": "insight",
         "prompt": "Озарение.",

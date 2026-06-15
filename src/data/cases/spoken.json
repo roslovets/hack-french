@@ -94,6 +94,23 @@
         "explanation": "Когда on значит «мы», глагол остаётся в единственном числе (как у il/elle), но прилагательные и причастия согласуются по смыслу — во множественном числе и по реальному роду говорящих: on est prêts, on est contentes."
       },
       {
+        "id": "on-m1",
+        "kind": "ownPhrase",
+        "prompt": "Составь живые разговорные фразы про «мы» с on. Помни: глагол — как у il/elle.",
+        "pattern": "On ___ .",
+        "examples": [
+          "On y va !",
+          "On verra demain.",
+          "On mange à midi ?",
+          "On habite à Lyon.",
+          "On a fini, on rentre.",
+          "On se voit ce soir ?",
+          "On prend un café ?",
+          "On est arrivés."
+        ],
+        "minCount": 3
+      },
+      {
         "id": "on-insight",
         "kind": "insight",
         "prompt": "Озарение.",

@@ -117,6 +117,18 @@
         "result": "Je n'ai pas fait l'exercice parce que j'étais malade."
       },
       {
+        "id": "logique-m1",
+        "kind": "catch",
+        "prompt": "Поймай в живой речи связки причины и следствия: услышь parce que («потому что») и donc («поэтому») в реальном разговоре, подкасте или видео.",
+        "hint": "Замечай момент, когда француз объясняет причину: после parce que всегда идёт целое предложение (подлежащее + глагол), а не просто существительное. А donc лови там, где из факта делают вывод — часто прямо в начале фразы. Поймай себя на ошибке: если тянет сказать «потому что» в значении «поэтому», остановись и переключись на donc.",
+        "targets": [
+          "parce que je suis fatigué",
+          "donc je prends le bus",
+          "Il pleut, donc on annule.",
+          "C'est fermé parce que c'est dimanche."
+        ]
+      },
+      {
         "id": "log-insight",
         "kind": "insight",
         "prompt": "Озарение.",
