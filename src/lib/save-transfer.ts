@@ -25,6 +25,8 @@ interface SaveData {
   /** caseId -> when the insight was collected; text/mechanism rehydrated from data. */
   insightsAt: Record<string, number>;
   caughtMissions: string[];
+  /** stepId -> real-world catch log (timestamp + optional note). */
+  missionLog: Record<string, { at: number; note?: string }>;
   ownPhrases: Record<string, string[]>;
   review: Record<string, ReviewEntry>;
 }
@@ -64,6 +66,7 @@ export function exportSave(state: ProgressState, appVersion = '0.1.0'): string {
       caseSteps: state.caseSteps,
       insightsAt,
       caughtMissions: state.caughtMissions,
+      missionLog: state.missionLog,
       ownPhrases: state.ownPhrases,
       review: state.review,
     },
@@ -171,6 +174,16 @@ export function importSave(text: string): ImportResult {
     (id): id is string => typeof id === 'string' && allStepIds.has(id),
   );
 
+  // Mission log: keep entries for known step ids; cap the free-text note.
+  const missionLog: Record<string, { at: number; note?: string }> = {};
+  for (const [stepId, raw] of Object.entries(asRecord(data.missionLog))) {
+    if (!allStepIds.has(stepId)) continue;
+    const r = asRecord(raw);
+    const entry: { at: number; note?: string } = { at: num(r.at, file.exportedAt ?? 0) };
+    if (typeof r.note === 'string' && r.note.trim()) entry.note = r.note.trim().slice(0, 280);
+    missionLog[stepId] = entry;
+  }
+
   const state: ProgressState = {
     ...initialProgress,
     version: PROGRESS_VERSION,
@@ -179,6 +192,7 @@ export function importSave(text: string): ImportResult {
     insights,
     ownPhrases,
     caughtMissions,
+    missionLog,
     xp: Math.max(0, num(data.xp, 0)),
     review,
     reviewStreak: Math.max(0, num(data.reviewStreak, 0)),

@@ -17,8 +17,9 @@ interface Props {
 }
 
 export default function CatchTask({ step, boss, onComplete }: Props) {
-  const { state, catchMission } = useProgress();
+  const { state, catchMission, logMission } = useProgress();
   const accepted = state.caughtMissions.includes(step.id);
+  const logged = Boolean(state.missionLog[step.id]);
 
   function accept() {
     catchMission(step.id);
@@ -70,20 +71,42 @@ export default function CatchTask({ step, boss, onComplete }: Props) {
         </Stack>
       </Box>
 
-      {accepted ? (
+      {!accepted ? (
+        <Button variant="contained" color="success" startIcon={<RadarOutlined />} onClick={accept}>
+          Беру миссию
+        </Button>
+      ) : logged ? (
         <Alert
           icon={<TaskAltOutlined fontSize="inherit" />}
           severity="success"
           variant="outlined"
           sx={{ borderRadius: 2 }}
         >
-          Миссия в журнале. Когда поймаешь механизм в живой речи — ты официально начал чувствовать
-          французский.
+          Поймано в реальности 🎯 Так язык переходит из приложения в жизнь. Добавить заметку «где
+          встретил» можно в Журнале миссий.
         </Alert>
       ) : (
-        <Button variant="contained" color="success" startIcon={<RadarOutlined />} onClick={accept}>
-          Беру миссию
-        </Button>
+        <Stack spacing={1.5}>
+          <Alert
+            icon={<TaskAltOutlined fontSize="inherit" />}
+            severity="info"
+            variant="outlined"
+            sx={{ borderRadius: 2 }}
+          >
+            Миссия в журнале. Поймай механизм в живой речи — а потом отметь поимку здесь или в
+            Журнале миссий.
+          </Alert>
+          <Box>
+            <Button
+              variant="contained"
+              color="success"
+              startIcon={<TaskAltOutlined />}
+              onClick={() => logMission(step.id)}
+            >
+              Поймал в реальности
+            </Button>
+          </Box>
+        </Stack>
       )}
     </Box>
   );

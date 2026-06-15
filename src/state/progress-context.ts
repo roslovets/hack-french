@@ -8,6 +8,14 @@ export interface CollectedInsight {
   at: number;
 }
 
+/** A real-world catch: the learner confirmed using/hearing the mechanism in life. */
+export interface MissionCatch {
+  /** When it was logged (timestamp). */
+  at: number;
+  /** Optional reflection: where it was heard / what was said. */
+  note?: string;
+}
+
 /** Spaced-repetition schedule for a single case. */
 export interface ReviewEntry {
   /** When the case will "cool down" again and become due for review (timestamp). */
@@ -29,8 +37,10 @@ export interface ProgressState {
   insights: CollectedInsight[];
   /** stepId -> the user's own phrases. */
   ownPhrases: Record<string, string[]>;
-  /** ids of completed "catch it in real life" missions. */
+  /** ids of accepted "catch it in real life" missions (taken on, not necessarily caught yet). */
   caughtMissions: string[];
+  /** stepId -> real-world catch log (confirmed used/heard in life + optional note). */
+  missionLog: Record<string, MissionCatch>;
   xp: number;
   /** caseId -> review schedule. */
   review: Record<string, ReviewEntry>;
@@ -50,6 +60,7 @@ export const initialProgress: ProgressState = {
   insights: [],
   ownPhrases: {},
   caughtMissions: [],
+  missionLog: {},
   xp: 0,
   review: {},
   reviewStreak: 0,
@@ -68,6 +79,8 @@ export type ProgressAction =
     }
   | { type: 'SAVE_OWN_PHRASES'; stepId: string; phrases: string[] }
   | { type: 'CATCH_MISSION'; stepId: string }
+  | { type: 'LOG_MISSION'; stepId: string; at: number; note?: string }
+  | { type: 'UNLOG_MISSION'; stepId: string }
   | { type: 'RESET_CASE'; caseId: string; stepIds: string[]; stepXp: number; caseBonus: number }
   | { type: 'REVIEW_GRADE'; caseId: string; correct: boolean; intervals: number[]; at: number }
   | { type: 'IMPORT'; state: ProgressState }
@@ -111,6 +124,26 @@ export function progressReducer(state: ProgressState, action: ProgressAction): P
       if (state.caughtMissions.includes(action.stepId)) return state;
       return { ...state, caughtMissions: [...state.caughtMissions, action.stepId] };
     }
+    case 'LOG_MISSION': {
+      // Logging a real-world catch also implies the mission was accepted.
+      const caughtMissions = state.caughtMissions.includes(action.stepId)
+        ? state.caughtMissions
+        : [...state.caughtMissions, action.stepId];
+      return {
+        ...state,
+        caughtMissions,
+        missionLog: {
+          ...state.missionLog,
+          [action.stepId]: { at: action.at, ...(action.note ? { note: action.note } : {}) },
+        },
+      };
+    }
+    case 'UNLOG_MISSION': {
+      if (!state.missionLog[action.stepId]) return state;
+      const missionLog = { ...state.missionLog };
+      delete missionLog[action.stepId];
+      return { ...state, missionLog };
+    }
     case 'RESET_CASE': {
       const doneSteps = state.caseSteps[action.caseId]?.length ?? 0;
       const wasCompleted = state.completedCases.includes(action.caseId);
@@ -122,6 +155,8 @@ export function progressReducer(state: ProgressState, action: ProgressAction): P
       const stepIdSet = new Set(action.stepIds);
       const review = { ...state.review };
       delete review[action.caseId];
+      const missionLog = { ...state.missionLog };
+      for (const stepId of action.stepIds) delete missionLog[stepId];
       return {
         ...state,
         completedCases: state.completedCases.filter((id) => id !== action.caseId),
@@ -129,6 +164,7 @@ export function progressReducer(state: ProgressState, action: ProgressAction): P
         insights: state.insights.filter((i) => i.caseId !== action.caseId),
         ownPhrases,
         caughtMissions: state.caughtMissions.filter((id) => !stepIdSet.has(id)),
+        missionLog,
         review,
         xp: Math.max(0, state.xp - xpRemoved),
       };
@@ -170,6 +206,8 @@ export interface ProgressContextValue {
   completeCase: (caseId: string, mechanism: string, insight: string, isBoss?: boolean) => void;
   saveOwnPhrases: (stepId: string, phrases: string[]) => void;
   catchMission: (stepId: string) => void;
+  logMission: (stepId: string, note?: string) => void;
+  unlogMission: (stepId: string) => void;
   resetCase: (caseId: string) => void;
   gradeReview: (caseId: string, correct: boolean) => void;
   importProgress: (next: ProgressState) => void;

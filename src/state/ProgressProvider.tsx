@@ -60,6 +60,14 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     dispatch({ type: 'CATCH_MISSION', stepId });
   }, []);
 
+  const logMission = useCallback((stepId: string, note?: string) => {
+    dispatch({ type: 'LOG_MISSION', stepId, at: Date.now(), note: note?.trim() || undefined });
+  }, []);
+
+  const unlogMission = useCallback((stepId: string) => {
+    dispatch({ type: 'UNLOG_MISSION', stepId });
+  }, []);
+
   const resetCase = useCallback((caseId: string) => {
     const caseItem = getCase(caseId);
     const stepIds = caseItem?.steps.map((s) => s.id) ?? [];
@@ -92,6 +100,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       completeCase,
       saveOwnPhrases,
       catchMission,
+      logMission,
+      unlogMission,
       resetCase,
       gradeReview,
       importProgress,
@@ -106,6 +116,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       completeCase,
       saveOwnPhrases,
       catchMission,
+      logMission,
+      unlogMission,
       resetCase,
       gradeReview,
       importProgress,
