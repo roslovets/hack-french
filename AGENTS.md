@@ -77,6 +77,7 @@ Conventions enforced by `data:check`:
 - The **last step of every case is `kind: "insight"`**, and its correct option restates the case `insight`.
 - `correctIndex` in range; `compare` needs ≥2 `phrases`; `build.answer` is a permutation of `build.blocks`; `sort` items reference declared baskets; `dialogue` turn `correctIndex` in range.
 - **Every category has ≥5 cases** (product invariant).
+- **Minimum steps per case, scaled by difficulty:** `easy` ≥7, `medium` ≥8, `hard` ≥9, `isBoss` ≥10 (the `insight` step counts). Depth should grow with difficulty — but never pad: every step must teach or test something real (see [Editing content](#editing-content), point 5).
 
 ## Editing content
 
@@ -117,5 +118,6 @@ GitHub Actions → GitHub Pages (`.github/workflows/deploy.yml`): Bun build, the
 ## Working agreement
 
 - Branch off `main`; **commit or push only when asked.** The user controls repo creation, pushes, and deploys.
+- **Commit messages follow [Conventional Commits](https://www.conventionalcommits.org/):** `type(scope): summary`, where `type` is one of `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, or `revert`; `scope` is optional (e.g. `content`, `review`, `theme`). Keep the summary imperative and lowercase. Example: `feat(content): add reflexive-verbs boss case`.
 - Match existing code style and comment density (English comments). Keep diffs focused.
 - When unsure about a French rule, verify with an independent review rather than guessing — correctness beats speed here.
