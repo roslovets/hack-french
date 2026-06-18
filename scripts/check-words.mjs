@@ -20,6 +20,7 @@ const words = readdirSync(lexiconDir)
   .filter((f) => f.endsWith('.json'))
   .flatMap((f) => read(path.join(lexiconDir, f)));
 const mechanics = read(path.join(dataDir, 'word-mechanics.json'));
+const categories = read(path.join(dataDir, 'word-categories.json'));
 
 const wordIds = new Set(words.map((w) => w.id));
 const mechanicIds = new Set(mechanics.map((m) => m.id));
@@ -41,6 +42,8 @@ const CHOICE = new Set([
 
 const errors = [];
 const caseIds = new Set();
+const curriculumThemes = new Set();
+const bossCaseIds = new Set();
 let nCases = 0;
 let nSteps = 0;
 
@@ -65,6 +68,8 @@ for (const file of readdirSync(casesDir)) {
     const at = `${file} › ${c.id}`;
     if (caseIds.has(c.id)) errors.push(`${at}: дубликат id дела`);
     caseIds.add(c.id);
+    if (c.isBoss) bossCaseIds.add(c.id);
+    else if (c.theme) curriculumThemes.add(c.theme);
     if (!Array.isArray(c.wordIds) || c.wordIds.length === 0) errors.push(`${at}: нет wordIds`);
     for (const wid of c.wordIds ?? []) {
       if (!wordIds.has(wid)) errors.push(`${at}: неизвестное слово «${wid}»`);
@@ -118,7 +123,25 @@ for (const file of readdirSync(casesDir)) {
   }
 }
 
-console.log(`Слова: ${words.length} · дела о словах: ${nCases} · шаги: ${nSteps} · механики: ${mechanicIds.size}`);
+// Categories must reference real themes + bosses, and cover every curriculum theme.
+const categorizedThemes = new Set();
+for (const cat of categories) {
+  for (const t of cat.themes ?? []) {
+    categorizedThemes.add(t);
+    if (!curriculumThemes.has(t))
+      errors.push(`word-categories: «${cat.id}» ссылается на несуществующую тему «${t}»`);
+  }
+  if (cat.bossId && !bossCaseIds.has(cat.bossId))
+    errors.push(`word-categories: «${cat.id}» ссылается на несуществующего босса «${cat.bossId}»`);
+}
+for (const t of curriculumThemes) {
+  if (!categorizedThemes.has(t))
+    errors.push(`word-categories: тема «${t}» не входит ни в одну категорию`);
+}
+
+console.log(
+  `Слова: ${words.length} · дела о словах: ${nCases} · шаги: ${nSteps} · механики: ${mechanicIds.size} · категории: ${categories.length}`,
+);
 
 if (errors.length) {
   console.error(`\n❌ структурных ошибок: ${errors.length}`);

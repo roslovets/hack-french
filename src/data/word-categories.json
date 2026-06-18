@@ -1,0 +1,38 @@
+[
+  {
+    "id": "table",
+    "title": "Еда и кафе",
+    "themes": ["boulangerie", "cafe", "nourriture"],
+    "bossId": "wc-boss-table"
+  },
+  {
+    "id": "home",
+    "title": "Дом и одежда",
+    "themes": ["maison", "vetements"],
+    "bossId": "wc-boss-maison-vetements"
+  },
+  {
+    "id": "people",
+    "title": "Человек и семья",
+    "themes": ["corps", "famille"],
+    "bossId": "wc-boss-corps-famille"
+  },
+  {
+    "id": "city",
+    "title": "Город и транспорт",
+    "themes": ["ville", "transport"],
+    "bossId": "wc-boss-transport"
+  },
+  {
+    "id": "school",
+    "title": "Школа и общение",
+    "themes": ["ecole", "politesse"],
+    "bossId": "wc-boss-ecole-politesse"
+  },
+  {
+    "id": "verbs",
+    "title": "Глаголы и время",
+    "themes": ["perception", "connaissance", "prendre", "temps"],
+    "bossId": "wc-boss-verbes"
+  }
+]

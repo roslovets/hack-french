@@ -1,5 +1,6 @@
-import type { Word, WordCase, WordMechanic } from '@/types';
+import type { Word, WordCase, WordCategory, WordMechanic } from '@/types';
 
+import wordCategoriesJson from '../word-categories.json';
 import wordMechanicsJson from '../word-mechanics.json';
 
 /**
@@ -27,6 +28,7 @@ const collect = <T>(mods: Record<string, T[]>): T[] =>
 
 export const words: Word[] = collect(lexiconModules);
 export const wordMechanics = wordMechanicsJson as WordMechanic[];
+export const wordCategories = wordCategoriesJson as WordCategory[];
 export const wordCases: WordCase[] = collect(caseModules);
 
 const wordById = new Map(words.map((w) => [w.id, w]));

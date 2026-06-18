@@ -389,6 +389,15 @@ export interface WordMechanic {
   primaryDimension: WordDimension;
 }
 
+/** Groups themes (and their domain boss) into one section of the «Слова» screen,
+ *  so the theme list stays navigable as the lexicon scales toward 1000 words. */
+export interface WordCategory {
+  id: string;
+  title: string;
+  themes: string[]; // curriculum case `theme` values in this category
+  bossId?: string; // the domain boss that covers these themes
+}
+
 /** M01 — guess the word from three contexts before seeing the translation. */
 export interface WordContextStep extends BaseStep {
   kind: 'wordContext';
