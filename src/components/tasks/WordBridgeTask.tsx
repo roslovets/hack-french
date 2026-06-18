@@ -20,17 +20,18 @@ interface Props {
   boss?: boolean;
   completed: boolean;
   onComplete: () => void;
+  shuffleKey?: string;
 }
 
 /** M06 — lean on an English cognate to pin down the French word. */
-export default function WordBridgeTask({ step, boss, completed, onComplete }: Props) {
+export default function WordBridgeTask({ step, boss, completed, onComplete, shuffleKey }: Props) {
   const options = useMemo(
     () =>
       seededShuffle(
         step.options.map((text, originalIndex) => ({ text, originalIndex })),
-        step.id,
+        shuffleKey ?? step.id,
       ),
-    [step.id, step.options],
+    [shuffleKey, step.id, step.options],
   );
 
   const [selected, setSelected] = useState<number | null>(null);

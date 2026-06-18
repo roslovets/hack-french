@@ -9,6 +9,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import TaskRenderer from '@/components/tasks/TaskRenderer';
 import { getWord, getWordCase } from '@/data/words';
 import { buildWordSession } from '@/lib/word-lab';
+import { useNow } from '@/lib/useNow';
 import { mono } from '@/theme';
 import type { Word } from '@/types';
 
@@ -21,6 +22,7 @@ export default function WordSessionPage() {
   const navigate = useNavigate();
   const [params] = useSearchParams();
   const { state, gradeWordDimension } = useProgress();
+  const now = useNow();
 
   // Optional themed drill: /words/session?case=<id> restricts the session to one
   // theme's words. Without it, the daily mixed session covers all words.
@@ -28,21 +30,32 @@ export default function WordSessionPage() {
   const sessionOpts = themeCase
     ? {
         wordIds: themeCase.wordIds,
-        limit: Math.max(8, themeCase.wordIds.length * 2),
+        // ~one exercise per word so a repeat rotates to each word's weakest
+        // (least-practised) facet instead of cramming the whole theme every time.
+        limit: Math.max(6, themeCase.wordIds.length),
         maxNew: themeCase.wordIds.length,
+        now,
       }
-    : { limit: 12 };
+    : { limit: 12, now };
   const makeSession = (run: number) =>
     buildWordSession(
       state,
       `wl-${themeCase?.id ?? 'all'}-${Object.keys(state.wordMastery).length}-${run}`,
       sessionOpts,
     );
+  // A salt that shifts as mastery grows, so re-drilling the same theme reshuffles
+  // option order (the answer isn't in the same spot every time).
+  const progressSig = () =>
+    Object.values(state.wordMastery).reduce(
+      (n, wm) => n + Object.values(wm.dims).reduce((m, d) => m + (d ? d.strength : 0), 0),
+      0,
+    );
 
   // Session is rebuilt on "Ещё раз" with a fresh seed so the order varies; the
   // seed also shifts as more words are introduced.
   const [runId, setRunId] = useState(0);
   const [session, setSession] = useState(() => makeSession(0));
+  const [salt, setSalt] = useState(() => `0-${progressSig()}`);
   const [index, setIndex] = useState(0);
   const [answered, setAnswered] = useState(false);
   const [correct, setCorrect] = useState(0);
@@ -92,6 +105,7 @@ export default function WordSessionPage() {
                 const nextRun = runId + 1;
                 setRunId(nextRun);
                 setSession(makeSession(nextRun));
+                setSalt(`${nextRun}-${progressSig()}`);
                 setIndex(0);
                 setAnswered(false);
                 setCorrect(0);
@@ -190,6 +204,7 @@ export default function WordSessionPage() {
           step={item.step}
           completed={false}
           onComplete={handleComplete}
+          shuffleKey={`${item.step.id}:${salt}`}
         />
 
         <Stack

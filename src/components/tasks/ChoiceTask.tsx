@@ -31,16 +31,18 @@ interface Props {
   boss?: boolean;
   completed: boolean;
   onComplete: () => void;
+  /** Vary option order across sessions (Word Lab); defaults to a stable per-step order. */
+  shuffleKey?: string;
 }
 
-export default function ChoiceTask({ step, boss, completed, onComplete }: Props) {
+export default function ChoiceTask({ step, boss, completed, onComplete, shuffleKey }: Props) {
   const options = useMemo(
     () =>
       seededShuffle(
         step.options.map((text, originalIndex) => ({ text, originalIndex })),
-        step.id,
+        shuffleKey ?? step.id,
       ),
-    [step.id, step.options],
+    [shuffleKey, step.id, step.options],
   );
 
   const [selected, setSelected] = useState<number | null>(null);

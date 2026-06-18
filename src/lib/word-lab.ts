@@ -166,12 +166,15 @@ function spreadMechanics(items: WordSessionItem[]): WordSessionItem[] {
 export function buildWordSession(
   state: ProgressState,
   seed: string,
-  opts: { limit?: number; maxNew?: number; wordIds?: string[] } = {},
+  opts: { limit?: number; maxNew?: number; wordIds?: string[]; now?: number } = {},
 ): WordSessionItem[] {
   // Optional themed drill: restrict the whole session to one theme's words.
   const only = opts.wordIds && opts.wordIds.length ? new Set(opts.wordIds) : null;
   const limit = opts.limit ?? 12;
   const maxNew = opts.maxNew ?? 5;
+  // Only dimensions whose review time has actually arrived count as "due"; without
+  // a clock (now omitted) everything is treated as due, preserving old behaviour.
+  const now = opts.now ?? Infinity;
   const all = allWordSteps().filter((it) => !only || only.has(it.wordId));
   const byWord = new Map<string, WordSessionItem[]>();
   for (const it of all) {
@@ -180,13 +183,32 @@ export function buildWordSession(
     else byWord.set(it.wordId, [it]);
   }
 
+  const strengthOf = (wid: string, dim: WordDimension) =>
+    state.wordMastery[wid]?.dims[dim]?.strength ?? 0;
+
   const result: WordSessionItem[] = [];
   const used = new Set<WordSessionItem>();
+  const usedDims = new Map<string, Set<WordDimension>>();
   const push = (it: WordSessionItem | undefined) => {
-    if (it && !used.has(it)) {
-      used.add(it);
-      result.push(it);
-    }
+    if (!it || used.has(it)) return;
+    used.add(it);
+    const set = usedDims.get(it.wordId) ?? new Set<WordDimension>();
+    set.add(it.dimension);
+    usedDims.set(it.wordId, set);
+    result.push(it);
+  };
+
+  // Pick a word's next step: weakest dimension first, skipping dimensions already
+  // shown this session — so a repeat drills a *different* facet, not the same card.
+  const pickForWord = (wid: string, salt: string): WordSessionItem | undefined => {
+    const steps = (byWord.get(wid) ?? []).filter((it) => !used.has(it));
+    if (!steps.length) return undefined;
+    const seen = usedDims.get(wid);
+    const fresh = seen ? steps.filter((it) => !seen.has(it.dimension)) : steps;
+    const pool = fresh.length ? fresh : steps;
+    const minStrength = Math.min(...pool.map((it) => strengthOf(wid, it.dimension)));
+    const weakest = pool.filter((it) => strengthOf(wid, it.dimension) === minStrength);
+    return seededShuffle(weakest, `${seed}-${wid}-${salt}`)[0];
   };
 
   // 1) New words: have steps but no mastery yet, lowest frequencyRank first.
@@ -195,29 +217,46 @@ export function buildWordSession(
     .sort((a, b) => a.frequencyRank - b.frequencyRank)
     .slice(0, maxNew)
     .map((w) => w.id);
-  for (const wid of newWordIds) {
-    push(seededShuffle(byWord.get(wid) ?? [], `${seed}-${wid}`)[0]);
-  }
+  for (const wid of newWordIds) push(pickForWord(wid, 'new'));
 
   // 2) Due reviews: introduced words, most-overdue dimension first.
   const dueList: WordDimDue[] = [];
   for (const [wid, wm] of Object.entries(state.wordMastery)) {
+    if (only && !only.has(wid)) continue;
     for (const dim of SCHEDULED_DIMENSIONS) {
       const d = wm.dims[dim];
-      if (d) dueList.push({ wordId: wid, dimension: dim, due: d.due });
+      if (d && d.due <= now) dueList.push({ wordId: wid, dimension: dim, due: d.due });
     }
   }
   dueList.sort((a, b) => a.due - b.due);
   for (const due of dueList) {
     if (result.length >= limit) break;
-    const items = (byWord.get(due.wordId) ?? []).filter((it) => it.dimension === due.dimension);
+    const items = (byWord.get(due.wordId) ?? []).filter(
+      (it) => it.dimension === due.dimension && !used.has(it),
+    );
     push(seededShuffle(items, `${seed}-${due.wordId}-${due.dimension}`)[0]);
   }
 
-  // 3) Top up with any remaining steps if the session is still short.
-  for (const it of seededShuffle(all, seed)) {
-    if (result.length >= limit) break;
-    push(it);
+  // 3) Top up by rotating through words, each pass taking the weakest dimension
+  //    not yet shown — keeps a short (or repeated) session varied, not one card twice.
+  const rotation = [
+    ...newWordIds,
+    ...seededShuffle(
+      [...byWord.keys()].filter((w) => !newWordIds.includes(w)),
+      seed,
+    ),
+  ];
+  for (let pass = 0; result.length < limit; pass += 1) {
+    let added = false;
+    for (const wid of rotation) {
+      if (result.length >= limit) break;
+      const it = pickForWord(wid, `top${pass}`);
+      if (it) {
+        push(it);
+        added = true;
+      }
+    }
+    if (!added) break;
   }
 
   return spreadMechanics(result).slice(0, limit);

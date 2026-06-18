@@ -22,9 +22,11 @@ interface Props {
   boss?: boolean;
   completed: boolean;
   onComplete: () => void;
+  /** Word Lab: salt for option order so repeats aren't identical. Grammar omits it. */
+  shuffleKey?: string;
 }
 
-export default function TaskRenderer({ step, boss, completed, onComplete }: Props) {
+export default function TaskRenderer({ step, boss, completed, onComplete, shuffleKey }: Props) {
   switch (step.kind) {
     case 'strangeness':
     case 'hypothesis':
@@ -40,7 +42,15 @@ export default function TaskRenderer({ step, boss, completed, onComplete }: Prop
     case 'compare':
     case 'trap':
     case 'simpler':
-      return <ChoiceTask step={step} boss={boss} completed={completed} onComplete={onComplete} />;
+      return (
+        <ChoiceTask
+          step={step}
+          boss={boss}
+          completed={completed}
+          onComplete={onComplete}
+          shuffleKey={shuffleKey}
+        />
+      );
     case 'timeline':
       return <TimelineTask step={step} boss={boss} completed={completed} onComplete={onComplete} />;
     case 'dialogue':
@@ -60,18 +70,38 @@ export default function TaskRenderer({ step, boss, completed, onComplete }: Prop
     case 'catch':
       return <CatchTask step={step} boss={boss} onComplete={onComplete} />;
     case 'sort':
-      return <SortTask step={step} boss={boss} completed={completed} onComplete={onComplete} />;
+      return (
+        <SortTask
+          step={step}
+          boss={boss}
+          completed={completed}
+          onComplete={onComplete}
+          shuffleKey={shuffleKey}
+        />
+      );
     case 'order':
       return <OrderTask step={step} boss={boss} completed={completed} onComplete={onComplete} />;
     case 'debug':
       return <DebugTask step={step} boss={boss} completed={completed} onComplete={onComplete} />;
     case 'wordContext':
       return (
-        <WordContextTask step={step} boss={boss} completed={completed} onComplete={onComplete} />
+        <WordContextTask
+          step={step}
+          boss={boss}
+          completed={completed}
+          onComplete={onComplete}
+          shuffleKey={shuffleKey}
+        />
       );
     case 'wordBridge':
       return (
-        <WordBridgeTask step={step} boss={boss} completed={completed} onComplete={onComplete} />
+        <WordBridgeTask
+          step={step}
+          boss={boss}
+          completed={completed}
+          onComplete={onComplete}
+          shuffleKey={shuffleKey}
+        />
       );
     case 'wordHint':
       return <WordHintTask step={step} boss={boss} completed={completed} onComplete={onComplete} />;
@@ -79,7 +109,13 @@ export default function TaskRenderer({ step, boss, completed, onComplete }: Prop
       return <WordMnemonicTask step={step} boss={boss} onComplete={onComplete} />;
     case 'soundTwin':
       return (
-        <SoundTwinTask step={step} boss={boss} completed={completed} onComplete={onComplete} />
+        <SoundTwinTask
+          step={step}
+          boss={boss}
+          completed={completed}
+          onComplete={onComplete}
+          shuffleKey={shuffleKey}
+        />
       );
     default:
       return null;

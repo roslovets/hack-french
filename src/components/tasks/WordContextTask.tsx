@@ -18,17 +18,18 @@ interface Props {
   boss?: boolean;
   completed: boolean;
   onComplete: () => void;
+  shuffleKey?: string;
 }
 
 /** M01 — three French contexts share one word; guess its meaning before the reveal. */
-export default function WordContextTask({ step, boss, completed, onComplete }: Props) {
+export default function WordContextTask({ step, boss, completed, onComplete, shuffleKey }: Props) {
   const options = useMemo(
     () =>
       seededShuffle(
         step.options.map((text, originalIndex) => ({ text, originalIndex })),
-        step.id,
+        shuffleKey ?? step.id,
       ),
-    [step.id, step.options],
+    [shuffleKey, step.id, step.options],
   );
 
   const [selected, setSelected] = useState<number | null>(null);

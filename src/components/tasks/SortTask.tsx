@@ -24,10 +24,14 @@ interface Props {
   boss?: boolean;
   completed: boolean;
   onComplete: () => void;
+  shuffleKey?: string;
 }
 
-export default function SortTask({ step, boss, completed, onComplete }: Props) {
-  const items = useMemo(() => seededShuffle(step.items, `${step.id}-items`), [step.id, step.items]);
+export default function SortTask({ step, boss, completed, onComplete, shuffleKey }: Props) {
+  const items = useMemo(
+    () => seededShuffle(step.items, `${shuffleKey ?? step.id}-items`),
+    [shuffleKey, step.id, step.items],
+  );
 
   const [assign, setAssign] = useState<Record<number, string>>(() =>
     completed ? Object.fromEntries(items.map((it, i) => [i, it.basket])) : {},
