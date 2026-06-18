@@ -3,11 +3,11 @@ import { useState } from 'react';
 import ArrowForwardOutlined from '@mui/icons-material/ArrowForwardOutlined';
 import CheckCircleOutlined from '@mui/icons-material/CheckCircleOutlined';
 import MenuBookOutlined from '@mui/icons-material/MenuBookOutlined';
-import { Box, Button, Card, LinearProgress, Stack, Typography } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import { Box, Button, Card, Chip, LinearProgress, Stack, Typography } from '@mui/material';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 
 import TaskRenderer from '@/components/tasks/TaskRenderer';
-import { getWord } from '@/data/words';
+import { getWord, getWordCase } from '@/data/words';
 import { buildWordSession } from '@/lib/word-lab';
 import { mono } from '@/theme';
 import type { Word } from '@/types';
@@ -19,14 +19,30 @@ import WordDossier from '@/components/words/WordDossier';
 
 export default function WordSessionPage() {
   const navigate = useNavigate();
+  const [params] = useSearchParams();
   const { state, gradeWordDimension } = useProgress();
+
+  // Optional themed drill: /words/session?case=<id> restricts the session to one
+  // theme's words. Without it, the daily mixed session covers all words.
+  const themeCase = params.get('case') ? getWordCase(params.get('case') ?? '') : undefined;
+  const sessionOpts = themeCase
+    ? {
+        wordIds: themeCase.wordIds,
+        limit: Math.max(8, themeCase.wordIds.length * 2),
+        maxNew: themeCase.wordIds.length,
+      }
+    : { limit: 12 };
+  const makeSession = (run: number) =>
+    buildWordSession(
+      state,
+      `wl-${themeCase?.id ?? 'all'}-${Object.keys(state.wordMastery).length}-${run}`,
+      sessionOpts,
+    );
 
   // Session is rebuilt on "Ещё раз" with a fresh seed so the order varies; the
   // seed also shifts as more words are introduced.
   const [runId, setRunId] = useState(0);
-  const [session, setSession] = useState(() =>
-    buildWordSession(state, `wl-${Object.keys(state.wordMastery).length}-0`, { limit: 12 }),
-  );
+  const [session, setSession] = useState(() => makeSession(0));
   const [index, setIndex] = useState(0);
   const [answered, setAnswered] = useState(false);
   const [correct, setCorrect] = useState(0);
@@ -75,13 +91,7 @@ export default function WordSessionPage() {
               onClick={() => {
                 const nextRun = runId + 1;
                 setRunId(nextRun);
-                setSession(
-                  buildWordSession(
-                    state,
-                    `wl-${Object.keys(state.wordMastery).length}-${nextRun}`,
-                    { limit: 12 },
-                  ),
-                );
+                setSession(makeSession(nextRun));
                 setIndex(0);
                 setAnswered(false);
                 setCorrect(0);
@@ -130,6 +140,14 @@ export default function WordSessionPage() {
         >
           ← Выйти
         </Button>
+        {themeCase ? (
+          <Chip
+            label={`Тема: ${themeCase.title}`}
+            size="small"
+            variant="outlined"
+            sx={{ fontWeight: 600 }}
+          />
+        ) : null}
         <Box sx={{ flex: 1 }} />
         {word ? (
           <>

@@ -166,11 +166,13 @@ function spreadMechanics(items: WordSessionItem[]): WordSessionItem[] {
 export function buildWordSession(
   state: ProgressState,
   seed: string,
-  opts: { limit?: number; maxNew?: number } = {},
+  opts: { limit?: number; maxNew?: number; wordIds?: string[] } = {},
 ): WordSessionItem[] {
+  // Optional themed drill: restrict the whole session to one theme's words.
+  const only = opts.wordIds && opts.wordIds.length ? new Set(opts.wordIds) : null;
   const limit = opts.limit ?? 12;
   const maxNew = opts.maxNew ?? 5;
-  const all = allWordSteps();
+  const all = allWordSteps().filter((it) => !only || only.has(it.wordId));
   const byWord = new Map<string, WordSessionItem[]>();
   for (const it of all) {
     const list = byWord.get(it.wordId);

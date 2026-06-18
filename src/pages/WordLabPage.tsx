@@ -216,9 +216,23 @@ export default function WordLabPage() {
                 color={pct === 100 ? 'success' : 'primary'}
                 sx={{ mb: 0.75 }}
               />
-              <Typography variant="caption" color="text.secondary" sx={{ fontFamily: mono }}>
+              <Typography
+                variant="caption"
+                color="text.secondary"
+                sx={{ fontFamily: mono, display: 'block', mb: 1.5 }}
+              >
                 {solid}/{c.wordIds.length} слов закреплено
               </Typography>
+              <Button
+                size="small"
+                variant="outlined"
+                color="inherit"
+                startIcon={<PlayArrowOutlined />}
+                onClick={() => void navigate(`/words/session?case=${c.id}`)}
+                sx={{ borderColor: 'divider' }}
+              >
+                Тренировать тему
+              </Button>
             </Card>
           );
         })}
