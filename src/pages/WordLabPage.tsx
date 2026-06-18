@@ -90,7 +90,13 @@ function ThemeCard({
   onTrain: (caseId: string) => void;
 }) {
   const solid = c.wordIds.filter((id) => wordTier(state, id) === 'solid').length;
-  const pct = c.wordIds.length ? Math.round((solid / c.wordIds.length) * 100) : 0;
+  // Average mastery moves with every correct answer (unlike the "solid" milestone),
+  // so a single drill visibly advances the bar.
+  const avg = c.wordIds.length
+    ? Math.round(
+        (c.wordIds.reduce((s, id) => s + wordMasteryScore(state, id), 0) / c.wordIds.length) * 100,
+      )
+    : 0;
   return (
     <Card sx={{ p: 2.5, borderLeft: '3px solid', borderLeftColor: 'primary.main' }}>
       <Stack direction="row" spacing={1} sx={{ alignItems: 'center', mb: 1.5 }}>
@@ -124,8 +130,8 @@ function ThemeCard({
       </Stack>
       <LinearProgress
         variant="determinate"
-        value={pct}
-        color={pct === 100 ? 'success' : 'primary'}
+        value={avg}
+        color={avg === 100 ? 'success' : 'primary'}
         sx={{ mb: 0.75 }}
       />
       <Typography
@@ -133,7 +139,7 @@ function ThemeCard({
         color="text.secondary"
         sx={{ fontFamily: mono, display: 'block', mb: 1.5 }}
       >
-        {solid}/{c.wordIds.length} слов закреплено
+        {avg}% владения · {solid}/{c.wordIds.length} закреплено
       </Typography>
       <Button
         size="small"
@@ -331,6 +337,11 @@ export default function WordLabPage() {
       {sections.map((section) => {
         const allIds = section.cases.flatMap((c) => c.wordIds);
         const solid = allIds.filter((id) => wordTier(state, id) === 'solid').length;
+        const avg = allIds.length
+          ? Math.round(
+              (allIds.reduce((s, id) => s + wordMasteryScore(state, id), 0) / allIds.length) * 100,
+            )
+          : 0;
         return (
           <Box key={section.key} sx={{ mb: 5 }}>
             <Stack
@@ -342,7 +353,7 @@ export default function WordLabPage() {
                 {section.title}
               </Typography>
               <Typography variant="caption" color="text.secondary" sx={{ fontFamily: mono }}>
-                {solid}/{allIds.length} закреплено
+                {avg}% · {solid}/{allIds.length} закреплено
               </Typography>
             </Stack>
             <Box sx={GRID_SX}>
