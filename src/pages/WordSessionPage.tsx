@@ -14,6 +14,7 @@ import type { Word } from '@/types';
 
 import { useProgress } from '@/state/useProgress';
 
+import SpeakButton from '@/components/words/SpeakButton';
 import WordDossier from '@/components/words/WordDossier';
 
 export default function WordSessionPage() {
@@ -131,18 +132,21 @@ export default function WordSessionPage() {
         </Button>
         <Box sx={{ flex: 1 }} />
         {word ? (
-          <Button
-            size="small"
-            color="inherit"
-            startIcon={<MenuBookOutlined />}
-            onClick={() => setDossier(word)}
-            sx={{ color: 'text.secondary' }}
-          >
-            слово:{' '}
-            <Box component="span" sx={{ fontFamily: mono, fontWeight: 700, ml: 0.5 }}>
-              {word.lemma}
-            </Box>
-          </Button>
+          <>
+            <SpeakButton text={word.lemma} src={word.audio?.isolated} />
+            <Button
+              size="small"
+              color="inherit"
+              startIcon={<MenuBookOutlined />}
+              onClick={() => setDossier(word)}
+              sx={{ color: 'text.secondary' }}
+            >
+              слово:{' '}
+              <Box component="span" sx={{ fontFamily: mono, fontWeight: 700, ml: 0.5 }}>
+                {word.lemma}
+              </Box>
+            </Button>
+          </>
         ) : null}
       </Stack>
 

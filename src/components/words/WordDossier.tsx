@@ -22,6 +22,8 @@ import type { Word, WordDimension } from '@/types';
 
 import { useProgress } from '@/state/useProgress';
 
+import SpeakButton from './SpeakButton';
+
 const DIMENSION_LABEL: Record<WordDimension, string> = {
   visualRecognition: 'Узнавание',
   contextualUnderstanding: 'В контексте',
@@ -48,9 +50,14 @@ function DossierBody({ word, onClose }: { word: Word; onClose: () => void }) {
         sx={{ justifyContent: 'space-between', alignItems: 'flex-start', mb: 1 }}
       >
         <Box>
-          <Typography sx={{ fontFamily: display, fontWeight: 800, fontSize: 30, lineHeight: 1.1 }}>
-            {word.displayForm ?? word.lemma}
-          </Typography>
+          <Stack direction="row" spacing={0.5} sx={{ alignItems: 'center' }}>
+            <Typography
+              sx={{ fontFamily: display, fontWeight: 800, fontSize: 30, lineHeight: 1.1 }}
+            >
+              {word.displayForm ?? word.lemma}
+            </Typography>
+            <SpeakButton text={word.lemma} src={word.audio?.isolated} />
+          </Stack>
           <Stack direction="row" spacing={1} sx={{ mt: 0.75, flexWrap: 'wrap', gap: 0.75 }}>
             <Chip label={word.pos} size="small" variant="outlined" />
             {word.gender ? (

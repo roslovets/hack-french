@@ -13,7 +13,8 @@
     "format:check": "prettier --check \"src/**/*.{ts,tsx,css,json}\"",
     "typecheck": "tsc -b --noEmit",
     "data:check": "node scripts/check-data.mjs",
-    "words:check": "node scripts/check-words.mjs"
+    "words:check": "node scripts/check-words.mjs",
+    "audio:gen": "node scripts/gen-audio.mjs"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

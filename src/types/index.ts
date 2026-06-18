@@ -338,6 +338,16 @@ export interface ContrastPair {
   wordId?: string; // optional cross-link to another Word
 }
 
+/** Pre-recorded audio clips for a word (Word Lab spec §9.2). Optional — when a
+ *  clip is absent the UI falls back to browser text-to-speech. Paths are relative
+ *  to the app base (e.g. "audio/wl-cafe-cafe.mp3"). */
+export interface AudioSet {
+  isolated?: string;
+  slow?: string;
+  shortPhrase?: string;
+  naturalPhrase?: string;
+}
+
 /** A vocabulary word — a multi-layer dossier, not a flat translation pair. */
 export interface Word {
   id: string;
@@ -346,6 +356,7 @@ export interface Word {
   pos: Pos;
   gender?: 'm' | 'f';
   ipa?: string;
+  audio?: AudioSet; // optional pre-recorded clips; UI falls back to TTS
   translationsRu: string[];
   translationsEn: string[];
   semanticCore: string; // RU: the meaning beneath the translations
