@@ -24,6 +24,12 @@
     "primaryDimension": "personalUsage"
   },
   {
+    "id": "M10",
+    "token": "double-sonore",
+    "label": "Звуковой двойник",
+    "primaryDimension": "listeningRecognition"
+  },
+  {
     "id": "M12",
     "token": "collocations",
     "label": "Магниты слов",

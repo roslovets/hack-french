@@ -12,13 +12,15 @@ import type { ProgressState } from '@/state/progress-context';
 import type { ReviewTier } from './review';
 import { seededShuffle } from './shuffle';
 
-/** Dimensions we actually drive scheduling on (audio-based listening is deferred). */
+/** Dimensions we drive scheduling on. listeningRecognition is included; words
+ *  without an audio step simply have no listening entry and aren't penalised. */
 export const SCHEDULED_DIMENSIONS: WordDimension[] = [
   'visualRecognition',
   'contextualUnderstanding',
   'contrastiveUnderstanding',
   'collocationKnowledge',
   'activeRecall',
+  'listeningRecognition',
 ];
 
 export interface WordSessionItem {
@@ -41,16 +43,36 @@ function allWordSteps(): WordSessionItem[] {
   return items;
 }
 
-/** Per-word aggregate mastery in [0,1], averaged over scheduled dimensions. */
+/** Which scheduled dimensions a word actually has steps for (memoised). */
+let _dimsByWord: Map<string, Set<WordDimension>> | null = null;
+function scheduledDimsFor(wordId: string): WordDimension[] {
+  if (!_dimsByWord) {
+    _dimsByWord = new Map();
+    for (const c of wordCases) {
+      for (const s of c.steps) {
+        if (!s.wordId || !s.dimension) continue;
+        const set = _dimsByWord.get(s.wordId) ?? new Set<WordDimension>();
+        set.add(s.dimension);
+        _dimsByWord.set(s.wordId, set);
+      }
+    }
+  }
+  const avail = _dimsByWord.get(wordId);
+  const dims = SCHEDULED_DIMENSIONS.filter((d) => avail?.has(d));
+  return dims.length ? dims : SCHEDULED_DIMENSIONS;
+}
+
+/** Per-word aggregate mastery in [0,1], averaged over the dimensions the word trains. */
 export function wordMasteryScore(state: ProgressState, wordId: string): number {
   const wm = state.wordMastery[wordId];
   if (!wm) return 0;
   const CAP = 4; // strength at which a dimension counts as fully solid
+  const dims = scheduledDimsFor(wordId);
   let sum = 0;
-  for (const dim of SCHEDULED_DIMENSIONS) {
+  for (const dim of dims) {
     sum += Math.min(1, (wm.dims[dim]?.strength ?? 0) / CAP);
   }
-  return sum / SCHEDULED_DIMENSIONS.length;
+  return sum / dims.length;
 }
 
 /** Per-word tier, reusing review.ts tier semantics. */

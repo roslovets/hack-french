@@ -35,7 +35,8 @@ export type TaskKind =
   | 'wordContext' // 50. Word Lab — guess the word from three contexts
   | 'wordBridge' // 51. Word Lab — English cognate bridge
   | 'wordHint' // 52. Word Lab — hint-ladder active recall
-  | 'wordMnemonic'; // 53. Word Lab — personal mnemonic (free input)
+  | 'wordMnemonic' // 53. Word Lab — personal mnemonic (free input)
+  | 'soundTwin'; // 54. Word Lab — hear it, pick the right spelling (M10)
 
 /** Case difficulty. */
 export type Difficulty = 'easy' | 'medium' | 'hard';
@@ -235,7 +236,8 @@ export type TaskStep =
   | WordContextStep
   | WordBridgeStep
   | WordHintStep
-  | WordMnemonicStep;
+  | WordMnemonicStep
+  | SoundTwinStep;
 
 /** Mechanism — a specific French thing that gets hacked. */
 export interface Mechanism {
@@ -421,4 +423,15 @@ export interface WordMnemonicStep extends BaseStep {
   kind: 'wordMnemonic';
   prompt: string;
   examples?: string[]; // optional suggestion chips
+}
+
+/** M10 — play audio, pick which similar-sounding spelling was heard. */
+export interface SoundTwinStep extends BaseStep {
+  kind: 'soundTwin';
+  prompt: string;
+  audioText: string; // the French text that is spoken (never shown before answering)
+  audioSrc?: string; // optional clip path; otherwise synthesized
+  options: string[]; // candidate spellings (minimal pairs / sound-alikes)
+  correctIndex: number;
+  explanation: string;
 }

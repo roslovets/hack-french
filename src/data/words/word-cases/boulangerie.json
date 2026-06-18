@@ -105,6 +105,18 @@
           "Англичанину больно (pain) — а француз приносит ему хлеб (pain).",
           "PAIN на витрине булочной — без боли, только хлеб."
         ]
+      },
+      {
+        "id": "wc-boul-pain-sound",
+        "kind": "soundTwin",
+        "wordId": "pain",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "pain",
+        "options": ["pain", "bain", "vin", "main"],
+        "correctIndex": 0,
+        "explanation": "У всех один носовой /ɛ̃/, различается первый согласный: pain /pɛ̃/ (хлеб), bain /bɛ̃/ (ванна), vin /vɛ̃/ (вино), main /mɛ̃/ (рука)."
       }
     ]
   }

@@ -10,6 +10,7 @@ import FindMechanismsTask from './FindMechanismsTask';
 import OrderTask from './OrderTask';
 import OwnPhraseTask from './OwnPhraseTask';
 import SortTask from './SortTask';
+import SoundTwinTask from './SoundTwinTask';
 import TimelineTask from './TimelineTask';
 import WordBridgeTask from './WordBridgeTask';
 import WordContextTask from './WordContextTask';
@@ -76,6 +77,10 @@ export default function TaskRenderer({ step, boss, completed, onComplete }: Prop
       return <WordHintTask step={step} boss={boss} completed={completed} onComplete={onComplete} />;
     case 'wordMnemonic':
       return <WordMnemonicTask step={step} boss={boss} onComplete={onComplete} />;
+    case 'soundTwin':
+      return (
+        <SoundTwinTask step={step} boss={boss} completed={completed} onComplete={onComplete} />
+      );
     default:
       return null;
   }

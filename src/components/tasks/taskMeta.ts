@@ -8,6 +8,7 @@ import ExtensionOutlined from '@mui/icons-material/ExtensionOutlined';
 import FilterAltOutlined from '@mui/icons-material/FilterAltOutlined';
 import ForumOutlined from '@mui/icons-material/ForumOutlined';
 import GppMaybeOutlined from '@mui/icons-material/GppMaybeOutlined';
+import HearingOutlined from '@mui/icons-material/HearingOutlined';
 import HandymanOutlined from '@mui/icons-material/HandymanOutlined';
 import LightbulbOutlined from '@mui/icons-material/LightbulbOutlined';
 import ManageSearchOutlined from '@mui/icons-material/ManageSearchOutlined';
@@ -64,6 +65,7 @@ export const taskMeta: Record<TaskKind, TaskMeta> = {
   wordBridge: { label: 'Английский мост', icon: CompareArrowsOutlined, tone: 'teal' },
   wordHint: { label: 'Вспомни слово', icon: LightbulbOutlined, tone: 'gold' },
   wordMnemonic: { label: 'Своя ассоциация', icon: EditNoteOutlined, tone: 'teal' },
+  soundTwin: { label: 'Звуковой двойник', icon: HearingOutlined, tone: 'teal' },
 };
 
 export const toneColor: Record<Tone, string> = {

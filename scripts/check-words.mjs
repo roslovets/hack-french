@@ -32,7 +32,7 @@ const DIMENSIONS = new Set([
 
 /** Choice-style kinds: need options + correctIndex (+ explanation). */
 const CHOICE = new Set([
-  'wordContext', 'wordBridge', 'compare', 'trap', 'oddOneOut', 'scene', 'mutation',
+  'wordContext', 'wordBridge', 'soundTwin', 'compare', 'trap', 'oddOneOut', 'scene', 'mutation',
   'fixCalque', 'explainError', 'cloze', 'expand', 'collapse', 'simpler', 'hypothesis', 'strangeness',
 ]);
 
@@ -95,6 +95,8 @@ for (const file of readdirSync(casesDir)) {
         errors.push(`${w}: wordContext требует >=2 contexts`);
       if (s.kind === 'wordBridge' && (typeof s.bridge !== 'string' || !s.bridge.trim()))
         errors.push(`${w}: wordBridge без bridge`);
+      if (s.kind === 'soundTwin' && (typeof s.audioText !== 'string' || !s.audioText.trim()))
+        errors.push(`${w}: soundTwin без audioText`);
       if (s.kind === 'wordHint') {
         if (typeof s.answer !== 'string' || !s.answer.trim()) errors.push(`${w}: wordHint без answer`);
         if (!Array.isArray(s.hints) || s.hints.length < 1) errors.push(`${w}: wordHint без hints`);

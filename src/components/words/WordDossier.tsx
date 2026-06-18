@@ -13,8 +13,9 @@ import {
   Stack,
   TextField,
   Typography,
+  useMediaQuery,
 } from '@mui/material';
-import { alpha } from '@mui/material/styles';
+import { alpha, type Theme } from '@mui/material/styles';
 
 import { wordMasteryScore } from '@/lib/word-lab';
 import { display, mono } from '@/theme';
@@ -195,32 +196,16 @@ function DossierBody({ word, onClose }: { word: Word; onClose: () => void }) {
       </Stack>
       <Stack spacing={0.85}>
         {DIMENSION_ORDER.map((dim) => {
-          const deferred = dim === 'listeningRecognition';
           const strength = wm?.dims[dim]?.strength ?? 0;
           const value = Math.min(100, (strength / STRENGTH_CAP) * 100);
           return (
             <Box key={dim} sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
-              <Typography
-                variant="caption"
-                sx={{ width: 104, color: deferred ? 'text.disabled' : 'text.secondary' }}
-              >
+              <Typography variant="caption" sx={{ width: 104, color: 'text.secondary' }}>
                 {DIMENSION_LABEL[dim]}
               </Typography>
               <Box sx={{ flex: 1 }}>
-                <LinearProgress
-                  variant="determinate"
-                  value={deferred ? 0 : value}
-                  color="success"
-                  sx={{ opacity: deferred ? 0.35 : 1 }}
-                />
+                <LinearProgress variant="determinate" value={value} color="success" />
               </Box>
-              {deferred ? (
-                <Typography variant="caption" color="text.disabled" sx={{ width: 40 }}>
-                  скоро
-                </Typography>
-              ) : (
-                <Box sx={{ width: 40 }} />
-              )}
             </Box>
           );
         })}
@@ -231,8 +216,10 @@ function DossierBody({ word, onClose }: { word: Word; onClose: () => void }) {
 
 /** Multi-layer word card (Word Lab spec §8) with an editable personal mnemonic. */
 export default function WordDossier({ word, onClose }: { word: Word | null; onClose: () => void }) {
+  // On phones the dossier is content-heavy — go full-screen instead of a cramped card.
+  const fullScreen = useMediaQuery<Theme>((theme) => theme.breakpoints.down('sm'));
   return (
-    <Dialog open={Boolean(word)} onClose={onClose} maxWidth="sm" fullWidth>
+    <Dialog open={Boolean(word)} onClose={onClose} maxWidth="sm" fullWidth fullScreen={fullScreen}>
       {word ? <DossierBody word={word} onClose={onClose} /> : null}
     </Dialog>
   );

@@ -312,6 +312,18 @@
         "answer": "sembler",
         "hints": ["Начинается на s…", "7 букв; родственно англ. semblance", "Il ___ fatigué."],
         "explanation": "sembler — «казаться». «Il semble fatigué» — он кажется/выглядит усталым. «Il me semble que…» — мне кажется, что…"
+      },
+      {
+        "id": "wc-perception-voir-sound",
+        "kind": "soundTwin",
+        "wordId": "voir",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "voir",
+        "options": ["voir", "boire", "soir", "noir"],
+        "correctIndex": 0,
+        "explanation": "Одинаковая концовка /-waʁ/, различается начало: voir /vwaʁ/ (видеть), boire /bwaʁ/ (пить), soir /swaʁ/ (вечер), noir /nwaʁ/ (чёрный)."
       }
     ]
   }
