@@ -1,0 +1,273 @@
+[
+  {
+    "id": "wl-vetements-vetement",
+    "lemma": "vêtement",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɛt.mɑ̃/",
+    "translationsRu": ["предмет одежды", "одежда"],
+    "translationsEn": ["garment", "clothes"],
+    "semanticCore": "Любой предмет одежды; во множественном числе (les vêtements) — одежда в целом.",
+    "collocations": [
+      {
+        "fr": "acheter des vêtements",
+        "ru": "покупать одежду"
+      },
+      {
+        "fr": "des vêtements chauds",
+        "ru": "тёплая одежда"
+      },
+      {
+        "fr": "changer de vêtements",
+        "ru": "переодеться"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "habits",
+        "note": "les vêtements — нейтральное «одежда»; les habits — то же, но чуть более разговорно/устаревше. В быту чаще говорят vêtements."
+      }
+    ],
+    "frequencyRank": 450,
+    "level": "A2",
+    "tags": ["vetements", "general"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-vetements-robe",
+    "lemma": "robe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁɔb/",
+    "translationsRu": ["платье"],
+    "translationsEn": ["dress", "gown"],
+    "semanticCore": "Цельное женское платье; иногда — мантия (судьи, священника).",
+    "collocations": [
+      {
+        "fr": "une robe longue",
+        "ru": "длинное платье"
+      },
+      {
+        "fr": "une robe de mariée",
+        "ru": "свадебное платье"
+      },
+      {
+        "fr": "essayer une robe",
+        "ru": "примерить платье"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "robe (англ.)",
+        "note": "Англ. robe = халат, мантия. Фр. robe = платье; банный халат — un peignoir / une robe de chambre. Ложный друг."
+      }
+    ],
+    "frequencyRank": 500,
+    "level": "A2",
+    "tags": ["vetements", "femme"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-vetements-pantalon",
+    "lemma": "pantalon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɑ̃.ta.lɔ̃/",
+    "translationsRu": ["брюки"],
+    "translationsEn": ["trousers", "pants"],
+    "semanticCore": "Брюки; в отличие от русского, во французском это единственное число — un pantalon.",
+    "collocations": [
+      {
+        "fr": "un pantalon noir",
+        "ru": "чёрные брюки"
+      },
+      {
+        "fr": "un pantalon serré",
+        "ru": "узкие (обтягивающие) брюки"
+      },
+      {
+        "fr": "essayer un pantalon",
+        "ru": "примерить брюки"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pants (англ.)",
+        "note": "Брит. pants = трусы, амер. pants = брюки. Фр. un pantalon = брюки; трусы — un slip / une culotte."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["vetements", "bas"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-vetements-chemise",
+    "lemma": "chemise",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʃə.miz/",
+    "translationsRu": ["рубашка"],
+    "translationsEn": ["shirt"],
+    "semanticCore": "Рубашка с воротником и пуговицами (обычно мужская); также — папка для бумаг.",
+    "collocations": [
+      {
+        "fr": "une chemise blanche",
+        "ru": "белая рубашка"
+      },
+      {
+        "fr": "repasser une chemise",
+        "ru": "гладить рубашку"
+      },
+      {
+        "fr": "le col de la chemise",
+        "ru": "воротник рубашки"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tee-shirt",
+        "note": "une chemise — рубашка с воротником и пуговицами; un tee-shirt — простая футболка. Это разные вещи."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["vetements", "haut"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-vetements-chaussure",
+    "lemma": "chaussure",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʃo.syʁ/",
+    "translationsRu": ["обувь", "туфля"],
+    "translationsEn": ["shoe", "footwear"],
+    "semanticCore": "Обувь; обычно во множественном (les chaussures), как пара на ногах.",
+    "collocations": [
+      {
+        "fr": "une paire de chaussures",
+        "ru": "пара обуви"
+      },
+      {
+        "fr": "des chaussures de sport",
+        "ru": "спортивная обувь, кроссовки"
+      },
+      {
+        "fr": "enlever ses chaussures",
+        "ru": "снять обувь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chaussette",
+        "note": "chaussure — обувь (на ноге снаружи); chaussette — носок (на ноге внутри обуви). Похожи, но это разные вещи."
+      }
+    ],
+    "frequencyRank": 550,
+    "level": "A2",
+    "tags": ["vetements", "pieds"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-vetements-manteau",
+    "lemma": "manteau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mɑ̃.to/",
+    "translationsRu": ["пальто"],
+    "translationsEn": ["coat", "overcoat"],
+    "semanticCore": "Пальто — тёплая верхняя одежда; во множественном des manteaux.",
+    "collocations": [
+      {
+        "fr": "un manteau d'hiver",
+        "ru": "зимнее пальто"
+      },
+      {
+        "fr": "mettre son manteau",
+        "ru": "надеть пальто"
+      },
+      {
+        "fr": "un manteau chaud",
+        "ru": "тёплое пальто"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "veste",
+        "note": "un manteau — длинное тёплое пальто (для улицы зимой); une veste — куртка/пиджак (короче, легче)."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["vetements", "hiver"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-vetements-pull",
+    "lemma": "pull",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pyl/",
+    "translationsRu": ["свитер", "джемпер"],
+    "translationsEn": ["sweater", "jumper"],
+    "semanticCore": "Свитер, джемпер; сокращение от pull-over (то, что натягивают через голову).",
+    "collocations": [
+      {
+        "fr": "un pull en laine",
+        "ru": "шерстяной свитер"
+      },
+      {
+        "fr": "mettre un pull",
+        "ru": "надеть свитер"
+      },
+      {
+        "fr": "un pull chaud",
+        "ru": "тёплый свитер"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pull (англ. глагол)",
+        "note": "Англ. «to pull» = тянуть. Фр. un pull — это существительное «свитер» (от pull-over), а не глагол."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["vetements", "haut"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-vetements-porter",
+    "lemma": "porter",
+    "pos": "verb",
+    "ipa": "/pɔʁ.te/",
+    "translationsRu": ["носить (одежду)", "нести"],
+    "translationsEn": ["to wear", "to carry"],
+    "semanticCore": "Быть одетым во что-то (носить одежду); также — нести (держать и перемещать груз).",
+    "collocations": [
+      {
+        "fr": "porter une robe",
+        "ru": "носить платье, быть в платье"
+      },
+      {
+        "fr": "porter des lunettes",
+        "ru": "носить очки"
+      },
+      {
+        "fr": "porter une valise",
+        "ru": "нести чемодан"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mettre",
+        "note": "porter — носить, быть одетым (состояние); mettre — надеть (момент, действие). Elle porte / elle met une robe."
+      }
+    ],
+    "frequencyRank": 200,
+    "level": "A2",
+    "tags": ["vetements", "verbe"],
+    "caseIds": ["wc-vetements"]
+  }
+]

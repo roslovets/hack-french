@@ -15,7 +15,10 @@ const wordsDir = path.join(dataDir, 'words');
 const casesDir = path.join(wordsDir, 'word-cases');
 const read = (p) => JSON.parse(readFileSync(p, 'utf8'));
 
-const words = read(path.join(wordsDir, 'words.json'));
+const lexiconDir = path.join(wordsDir, 'lexicon');
+const words = readdirSync(lexiconDir)
+  .filter((f) => f.endsWith('.json'))
+  .flatMap((f) => read(path.join(lexiconDir, f)));
 const mechanics = read(path.join(dataDir, 'word-mechanics.json'));
 
 const wordIds = new Set(words.map((w) => w.id));
@@ -44,7 +47,7 @@ let nSteps = 0;
 // Duplicate word ids
 const seenWord = new Set();
 for (const w of words) {
-  if (seenWord.has(w.id)) errors.push(`words.json: дубликат id слова «${w.id}»`);
+  if (seenWord.has(w.id)) errors.push(`lexicon: дубликат id слова «${w.id}»`);
   seenWord.add(w.id);
 }
 

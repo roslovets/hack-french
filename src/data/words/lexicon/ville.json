@@ -1,0 +1,275 @@
+[
+  {
+    "id": "wl-ville-aller",
+    "lemma": "aller",
+    "pos": "verb",
+    "ipa": "/a.le/",
+    "translationsRu": ["идти", "ехать", "направляться"],
+    "translationsEn": ["to go"],
+    "semanticCore": "Двигаться куда-то (от себя к цели). Базовый глагол перемещения и направления.",
+    "collocations": [
+      {
+        "fr": "aller à la gare",
+        "ru": "идти/ехать на вокзал"
+      },
+      {
+        "fr": "aller tout droit",
+        "ru": "идти прямо"
+      },
+      {
+        "fr": "aller au centre-ville",
+        "ru": "ехать в центр города"
+      },
+      {
+        "fr": "Comment on va à la poste ?",
+        "ru": "Как пройти на почту?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "venir",
+        "note": "aller — движение ОТ говорящего к цели (туда); venir — движение К говорящему/собеседнику (сюда). Главная пара направления."
+      }
+    ],
+    "frequencyRank": 25,
+    "level": "A2",
+    "tags": ["ville", "mouvement", "direction"],
+    "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-ville-venir",
+    "lemma": "venir",
+    "pos": "verb",
+    "ipa": "/və.niʁ/",
+    "translationsRu": ["приходить", "приезжать", "прибывать"],
+    "translationsEn": ["to come"],
+    "semanticCore": "Двигаться К говорящему или к точке, где он находится. Зеркало для aller.",
+    "collocations": [
+      {
+        "fr": "venir avec moi",
+        "ru": "пойти со мной"
+      },
+      {
+        "fr": "Tu viens ?",
+        "ru": "Ты идёшь? / Идём?"
+      },
+      {
+        "fr": "venir à pied",
+        "ru": "прийти пешком"
+      },
+      {
+        "fr": "Il vient de la gare.",
+        "ru": "Он идёт с вокзала (сюда)."
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "aller",
+        "note": "venir = двигаться сюда (к говорящему); aller = двигаться туда (от говорящего). По-русски оба часто «идти», но направление противоположное."
+      }
+    ],
+    "frequencyRank": 45,
+    "level": "A2",
+    "tags": ["ville", "mouvement", "direction"],
+    "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-ville-tourner",
+    "lemma": "tourner",
+    "pos": "verb",
+    "ipa": "/tuʁ.ne/",
+    "translationsRu": ["поворачивать", "сворачивать"],
+    "translationsEn": ["to turn"],
+    "semanticCore": "Менять направление движения — повернуть налево или направо.",
+    "collocations": [
+      {
+        "fr": "tourner à droite",
+        "ru": "повернуть направо"
+      },
+      {
+        "fr": "tourner à gauche",
+        "ru": "повернуть налево"
+      },
+      {
+        "fr": "tourner au coin de la rue",
+        "ru": "повернуть на углу улицы"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "continuer",
+        "note": "tourner — сменить направление (свернуть); continuer — не менять направление, идти дальше. На перекрёстке это противоположные команды."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["ville", "mouvement", "direction"],
+    "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-ville-continuer",
+    "lemma": "continuer",
+    "pos": "verb",
+    "ipa": "/kɔ̃.ti.nɥe/",
+    "translationsRu": ["продолжать", "идти дальше"],
+    "translationsEn": ["to continue", "to keep going"],
+    "semanticCore": "Не останавливаться и не сворачивать — продолжать движение в том же направлении.",
+    "collocations": [
+      {
+        "fr": "continuer tout droit",
+        "ru": "идти прямо дальше"
+      },
+      {
+        "fr": "continuer jusqu'au feu",
+        "ru": "идти до светофора"
+      },
+      {
+        "fr": "continuer sur cette rue",
+        "ru": "идти дальше по этой улице"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tourner",
+        "note": "continuer — оставаться на том же направлении; tourner — свернуть. Указывая дорогу, выбираешь одно из двух."
+      }
+    ],
+    "frequencyRank": 330,
+    "level": "A2",
+    "tags": ["ville", "mouvement", "direction"],
+    "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-ville-traverser",
+    "lemma": "traverser",
+    "pos": "verb",
+    "ipa": "/tʁa.vɛʁ.se/",
+    "translationsRu": ["переходить", "пересекать"],
+    "translationsEn": ["to cross"],
+    "semanticCore": "Пройти с одной стороны на другую — через улицу, площадь, мост.",
+    "collocations": [
+      {
+        "fr": "traverser la rue",
+        "ru": "перейти улицу"
+      },
+      {
+        "fr": "traverser au passage piéton",
+        "ru": "перейти по пешеходному переходу"
+      },
+      {
+        "fr": "traverser le pont",
+        "ru": "перейти мост"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "passer",
+        "note": "traverser — пересечь поперёк, с одной стороны на другую (la rue); passer — проходить мимо/через (passer devant, passer par). Не одно и то же."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["ville", "mouvement", "direction"],
+    "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-ville-monter",
+    "lemma": "monter",
+    "pos": "verb",
+    "ipa": "/mɔ̃.te/",
+    "translationsRu": ["подниматься", "садиться (в транспорт)", "входить"],
+    "translationsEn": ["to go up", "to get on"],
+    "semanticCore": "Движение вверх: подняться по лестнице/улице ИЛИ войти в транспорт (monter dans le bus).",
+    "collocations": [
+      {
+        "fr": "monter dans le bus",
+        "ru": "сесть в автобус"
+      },
+      {
+        "fr": "monter les escaliers",
+        "ru": "подняться по лестнице"
+      },
+      {
+        "fr": "monter la rue",
+        "ru": "идти вверх по улице"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "descendre",
+        "note": "monter — вверх / сесть в транспорт; descendre — вниз / выйти из транспорта. В метро и автобусе это пара «зайти/выйти»."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["ville", "mouvement", "transport"],
+    "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-ville-descendre",
+    "lemma": "descendre",
+    "pos": "verb",
+    "ipa": "/de.sɑ̃dʁ/",
+    "translationsRu": ["спускаться", "выходить (из транспорта)"],
+    "translationsEn": ["to go down", "to get off"],
+    "semanticCore": "Движение вниз: спуститься по лестнице/улице ИЛИ выйти из транспорта (descendre du bus).",
+    "collocations": [
+      {
+        "fr": "descendre du bus",
+        "ru": "выйти из автобуса"
+      },
+      {
+        "fr": "descendre à la prochaine station",
+        "ru": "выйти на следующей станции"
+      },
+      {
+        "fr": "descendre les escaliers",
+        "ru": "спуститься по лестнице"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "monter",
+        "note": "descendre — вниз / выйти из транспорта; monter — вверх / зайти. «Je descends à Châtelet» = я выхожу на Шатле."
+      }
+    ],
+    "frequencyRank": 470,
+    "level": "A2",
+    "tags": ["ville", "mouvement", "transport"],
+    "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-ville-rue",
+    "lemma": "rue",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁy/",
+    "translationsRu": ["улица"],
+    "translationsEn": ["street"],
+    "semanticCore": "Улица в городе — дорога с домами по сторонам, где ходят люди.",
+    "collocations": [
+      {
+        "fr": "dans la rue",
+        "ru": "на улице"
+      },
+      {
+        "fr": "au bout de la rue",
+        "ru": "в конце улицы"
+      },
+      {
+        "fr": "traverser la rue",
+        "ru": "перейти улицу"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "route",
+        "note": "la rue — улица в городе (с домами); la route — дорога/трасса между городами. Англ. «route» сбивает: это НЕ «rue»."
+      }
+    ],
+    "frequencyRank": 210,
+    "level": "A2",
+    "tags": ["ville", "lieu"],
+    "caseIds": ["wc-ville"]
+  }
+]

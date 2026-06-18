@@ -1,0 +1,195 @@
+[
+  {
+    "id": "voir",
+    "lemma": "voir",
+    "pos": "verb",
+    "ipa": "/vwaʁ/",
+    "translationsRu": ["видеть", "увидеть"],
+    "translationsEn": ["to see"],
+    "semanticCore": "Воспринимать глазами без усилия: образ сам попадает в поле зрения. Также «встретиться, повидаться» и «понимать» (je vois = понятно).",
+    "collocations": [
+      {
+        "fr": "voir un film",
+        "ru": "посмотреть фильм"
+      },
+      {
+        "fr": "voir le médecin",
+        "ru": "сходить к врачу (показаться врачу)"
+      },
+      {
+        "fr": "je vois",
+        "ru": "понятно / ясно"
+      },
+      {
+        "fr": "on verra",
+        "ru": "посмотрим / там видно будет"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "regarder",
+        "note": "voir — видеть (образ сам попадает в глаза, пассивно); regarder — смотреть, направлять взгляд (намеренно, активно)."
+      }
+    ],
+    "frequencyRank": 35,
+    "level": "A2",
+    "tags": ["perception", "verbe", "vue"],
+    "caseIds": ["wc-perception"]
+  },
+  {
+    "id": "regarder",
+    "lemma": "regarder",
+    "pos": "verb",
+    "ipa": "/ʁə.ɡaʁ.de/",
+    "translationsRu": ["смотреть", "глядеть"],
+    "translationsEn": ["to look (at)", "to watch"],
+    "semanticCore": "Намеренно направлять взгляд на что-то, разглядывать или наблюдать. Прямое дополнение без предлога: regarder la télé. В быту также «касаться»: ça ne te regarde pas.",
+    "collocations": [
+      {
+        "fr": "regarder la télé",
+        "ru": "смотреть телевизор"
+      },
+      {
+        "fr": "regarder par la fenêtre",
+        "ru": "смотреть в окно"
+      },
+      {
+        "fr": "Regarde !",
+        "ru": "Смотри!"
+      },
+      {
+        "fr": "ça ne te regarde pas",
+        "ru": "это тебя не касается"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "voir",
+        "note": "regarder — смотреть намеренно (направляешь взгляд); voir — видеть (образ сам попадает в глаза)."
+      },
+      {
+        "with": "regard (англ. regard)",
+        "note": "Англ. \"regard\" чаще значит «уважение, отношение», а фр. regarder — буквально «смотреть на». Совпадение помогает запомнить, но не путай оттенки."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A2",
+    "tags": ["perception", "verbe", "vue"],
+    "caseIds": ["wc-perception"]
+  },
+  {
+    "id": "entendre",
+    "lemma": "entendre",
+    "pos": "verb",
+    "ipa": "/ɑ̃.tɑ̃dʁ/",
+    "translationsRu": ["слышать"],
+    "translationsEn": ["to hear"],
+    "semanticCore": "Воспринимать звук ушами без усилия: звук сам доходит до тебя. Также «entendre parler de» — слышать о чём-то.",
+    "collocations": [
+      {
+        "fr": "entendre du bruit",
+        "ru": "слышать шум"
+      },
+      {
+        "fr": "je n'entends rien",
+        "ru": "я ничего не слышу"
+      },
+      {
+        "fr": "entendre parler de",
+        "ru": "слышать о чём-то"
+      },
+      {
+        "fr": "tu m'entends ?",
+        "ru": "ты меня слышишь?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "écouter",
+        "note": "entendre — слышать (звук сам доходит, пассивно); écouter — слушать (намеренно прислушиваешься, активно)."
+      },
+      {
+        "with": "attendre",
+        "note": "Ложный друг по форме: attendre = ждать, а entendre = слышать. Различай по приставке: at- (ждать) против en- (слышать)."
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A2",
+    "tags": ["perception", "verbe", "ouïe"],
+    "caseIds": ["wc-perception"]
+  },
+  {
+    "id": "ecouter",
+    "lemma": "écouter",
+    "pos": "verb",
+    "ipa": "/e.ku.te/",
+    "translationsRu": ["слушать"],
+    "translationsEn": ["to listen (to)"],
+    "semanticCore": "Намеренно прислушиваться, направлять внимание на звук. Прямое дополнение без предлога: écouter la radio. Также «слушаться»: écouter ses parents.",
+    "collocations": [
+      {
+        "fr": "écouter de la musique",
+        "ru": "слушать музыку"
+      },
+      {
+        "fr": "écouter la radio",
+        "ru": "слушать радио"
+      },
+      {
+        "fr": "Écoute-moi !",
+        "ru": "Слушай меня!"
+      },
+      {
+        "fr": "écouter ses parents",
+        "ru": "слушаться родителей"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "entendre",
+        "note": "écouter — слушать намеренно (прислушиваешься); entendre — слышать (звук сам доходит до ушей)."
+      }
+    ],
+    "frequencyRank": 230,
+    "level": "A2",
+    "tags": ["perception", "verbe", "ouïe"],
+    "caseIds": ["wc-perception"]
+  },
+  {
+    "id": "sembler",
+    "lemma": "sembler",
+    "pos": "verb",
+    "ipa": "/sɑ̃.ble/",
+    "translationsRu": ["казаться", "выглядеть (как будто)"],
+    "translationsEn": ["to seem", "to appear"],
+    "semanticCore": "Производить впечатление, выглядеть каким-то на основе того, что видишь или слышишь: il semble fatigué. Безличное «il semble que» / «il me semble» — кажется, что…",
+    "collocations": [
+      {
+        "fr": "il semble fatigué",
+        "ru": "он выглядит усталым"
+      },
+      {
+        "fr": "ça me semble bizarre",
+        "ru": "мне это кажется странным"
+      },
+      {
+        "fr": "il me semble que",
+        "ru": "мне кажется, что"
+      },
+      {
+        "fr": "à ce qu'il semble",
+        "ru": "судя по всему"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "paraître",
+        "note": "sembler и paraître оба значат «казаться»; sembler чуть более субъективно («по моему впечатлению»), paraître — «представляться внешне». В быту почти взаимозаменяемы."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["perception", "verbe", "impression"],
+    "caseIds": ["wc-perception"]
+  }
+]

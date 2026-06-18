@@ -1,0 +1,281 @@
+[
+  {
+    "id": "wl-transport-train",
+    "lemma": "train",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tʁɛ̃/",
+    "translationsRu": ["поезд"],
+    "translationsEn": ["train"],
+    "semanticCore": "Рельсовый транспорт между городами; на него садятся, его можно успеть или опоздать.",
+    "collocations": [
+      {
+        "fr": "prendre le train",
+        "ru": "ехать на поезде / сесть на поезд"
+      },
+      {
+        "fr": "rater le train",
+        "ru": "опоздать на поезд"
+      },
+      {
+        "fr": "le train de huit heures",
+        "ru": "поезд на восемь часов"
+      },
+      {
+        "fr": "monter dans le train",
+        "ru": "сесть в поезд"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "être en train de",
+        "note": "train также в обороте «être en train de + инфинитив» = «быть в процессе» (Je suis en train de manger — я как раз ем); к поезду это отношения не имеет."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["transport", "voyage"],
+    "caseIds": ["wc-transport"]
+  },
+  {
+    "id": "wl-transport-voiture",
+    "lemma": "voiture",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vwa.tyʁ/",
+    "translationsRu": ["машина", "автомобиль"],
+    "translationsEn": ["car"],
+    "semanticCore": "Личный автомобиль; на нём ездят, его водят и паркуют. Также вагон поезда.",
+    "collocations": [
+      {
+        "fr": "conduire une voiture",
+        "ru": "водить машину"
+      },
+      {
+        "fr": "en voiture",
+        "ru": "на машине"
+      },
+      {
+        "fr": "garer la voiture",
+        "ru": "припарковать машину"
+      },
+      {
+        "fr": "louer une voiture",
+        "ru": "арендовать машину"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "wagon",
+        "note": "В поезде пассажирский вагон — la voiture (voiture 12), а le wagon чаще про грузовой/товарный вагон. «Машина» как механизм — la machine, а не la voiture."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["transport", "route"],
+    "caseIds": ["wc-transport"]
+  },
+  {
+    "id": "wl-transport-bus",
+    "lemma": "bus",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bys/",
+    "translationsRu": ["автобус"],
+    "translationsEn": ["bus"],
+    "semanticCore": "Городской или междугородний автобус; на него садятся на остановке.",
+    "collocations": [
+      {
+        "fr": "prendre le bus",
+        "ru": "ехать на автобусе"
+      },
+      {
+        "fr": "l'arrêt de bus",
+        "ru": "автобусная остановка"
+      },
+      {
+        "fr": "rater le bus",
+        "ru": "опоздать на автобус"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "car",
+        "note": "le bus — городской автобус (короткие поездки); le car — междугородний/туристический автобус. Англ. «car» = машина, но фр. le car = автобус дальнего следования."
+      }
+    ],
+    "frequencyRank": 450,
+    "level": "A2",
+    "tags": ["transport", "ville"],
+    "caseIds": ["wc-transport"]
+  },
+  {
+    "id": "wl-transport-velo",
+    "lemma": "vélo",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ve.lo/",
+    "translationsRu": ["велосипед"],
+    "translationsEn": ["bike", "bicycle"],
+    "semanticCore": "Велосипед; самое обычное разговорное слово, на нём «делают вело» и ездят «à vélo».",
+    "collocations": [
+      {
+        "fr": "faire du vélo",
+        "ru": "кататься на велосипеде"
+      },
+      {
+        "fr": "à vélo",
+        "ru": "на велосипеде"
+      },
+      {
+        "fr": "un vélo électrique",
+        "ru": "электровелосипед"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bicyclette",
+        "note": "le vélo — обычное живое слово; la bicyclette звучит старомодно/официально. Значат одно, но в речи почти всегда говорят vélo."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["transport", "loisir"],
+    "caseIds": ["wc-transport"]
+  },
+  {
+    "id": "wl-transport-avion",
+    "lemma": "avion",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.vjɔ̃/",
+    "translationsRu": ["самолёт"],
+    "translationsEn": ["plane", "airplane"],
+    "semanticCore": "Самолёт; на нём летают, берут билет на самолёт, путешествуют по воздуху.",
+    "collocations": [
+      {
+        "fr": "prendre l'avion",
+        "ru": "лететь на самолёте"
+      },
+      {
+        "fr": "en avion",
+        "ru": "самолётом / на самолёте"
+      },
+      {
+        "fr": "un billet d'avion",
+        "ru": "билет на самолёт"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "aéroport",
+        "note": "l'avion — сам самолёт, l'aéroport — аэропорт (место). Не путать с гнездом слов: летят в avion, а вылетают из aéroport."
+      }
+    ],
+    "frequencyRank": 550,
+    "level": "A2",
+    "tags": ["transport", "voyage"],
+    "caseIds": ["wc-transport"]
+  },
+  {
+    "id": "wl-transport-gare",
+    "lemma": "gare",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɡaʁ/",
+    "translationsRu": ["вокзал"],
+    "translationsEn": ["station", "train station"],
+    "semanticCore": "Железнодорожный вокзал; место, откуда отходят поезда, где покупают билет и ждут.",
+    "collocations": [
+      {
+        "fr": "à la gare",
+        "ru": "на вокзале / на вокзал"
+      },
+      {
+        "fr": "la gare de Lyon",
+        "ru": "Лионский вокзал (в Париже)"
+      },
+      {
+        "fr": "la gare routière",
+        "ru": "автовокзал"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "garage",
+        "note": "la gare — вокзал, а le garage — гараж/автосервис. Похожи на вид, но разные слова. Также «gare !» в речи = «осторожно!»."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["transport", "voyage"],
+    "caseIds": ["wc-transport"]
+  },
+  {
+    "id": "wl-transport-billet",
+    "lemma": "billet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bi.jɛ/",
+    "translationsRu": ["билет"],
+    "translationsEn": ["ticket"],
+    "semanticCore": "Билет с местом или на дальнюю поездку (поезд, самолёт, концерт); также банкнота.",
+    "collocations": [
+      {
+        "fr": "un billet de train",
+        "ru": "билет на поезд"
+      },
+      {
+        "fr": "réserver un billet",
+        "ru": "забронировать билет"
+      },
+      {
+        "fr": "un billet de vingt euros",
+        "ru": "купюра в двадцать евро"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ticket",
+        "note": "le billet — на поезд, самолёт, концерт (часто с местом, бронируют); le ticket — мелкий билетик на метро/автобус или чек. Поездку на TGV берут billet, на метро — ticket."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["transport", "voyage"],
+    "caseIds": ["wc-transport"]
+  },
+  {
+    "id": "wl-transport-partir",
+    "lemma": "partir",
+    "pos": "verb",
+    "ipa": "/paʁ.tiʁ/",
+    "translationsRu": ["уезжать", "отправляться", "уходить"],
+    "translationsEn": ["to leave", "to depart"],
+    "semanticCore": "Покидать место, отправляться в путь; о человеке и о транспорте, который трогается.",
+    "collocations": [
+      {
+        "fr": "partir en vacances",
+        "ru": "уехать в отпуск"
+      },
+      {
+        "fr": "partir à huit heures",
+        "ru": "выезжать в восемь часов"
+      },
+      {
+        "fr": "le train part",
+        "ru": "поезд отправляется"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "quitter",
+        "note": "partir = уезжать/уходить (без дополнения: je pars); quitter ТРЕБУЕТ дополнения: quitter Paris, quitter qqn (покинуть кого/что-то конкретное)."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["transport", "voyage"],
+    "caseIds": ["wc-transport"]
+  }
+]

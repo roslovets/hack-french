@@ -1,0 +1,269 @@
+[
+  {
+    "id": "wl-prendre",
+    "lemma": "prendre",
+    "pos": "verb",
+    "ipa": "/pʁɑ̃dʁ/",
+    "translationsRu": ["брать", "взять", "принимать"],
+    "translationsEn": ["to take"],
+    "semanticCore": "Самый общий глагол «взять / принять»: предмет в руку, транспорт, еду и напитки, время. База, от которой расходятся остальные глаголы темы.",
+    "collocations": [
+      {
+        "fr": "prendre un café",
+        "ru": "взять / выпить кофе"
+      },
+      {
+        "fr": "prendre le bus",
+        "ru": "сесть на автобус, поехать на автобусе"
+      },
+      {
+        "fr": "prendre une décision",
+        "ru": "принять решение"
+      },
+      {
+        "fr": "prendre son temps",
+        "ru": "не торопиться (букв. брать своё время)"
+      },
+      {
+        "fr": "prendre une photo",
+        "ru": "сделать фото"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "apporter",
+        "note": "prendre = взять (себе); apporter = принести (к кому-то). Берёшь — prendre, несёшь с собой — apporter."
+      },
+      {
+        "with": "amener",
+        "note": "prendre un livre — взять вещь; amener un ami — привести человека. amener о людях, prendre — о предметах/транспорте."
+      }
+    ],
+    "frequencyRank": 65,
+    "level": "A2",
+    "tags": ["verbe-action", "quotidien", "prendre"],
+    "caseIds": ["wc-prendre"]
+  },
+  {
+    "id": "wl-recevoir",
+    "lemma": "recevoir",
+    "pos": "verb",
+    "ipa": "/ʁə.sə.vwaʁ/",
+    "translationsRu": ["получать", "получить", "принимать (гостей)"],
+    "translationsEn": ["to receive", "to get"],
+    "semanticCore": "Получать то, что приходит извне: письмо, подарок, зарплату; а также «принимать» гостей у себя.",
+    "collocations": [
+      {
+        "fr": "recevoir une lettre",
+        "ru": "получить письмо"
+      },
+      {
+        "fr": "recevoir un cadeau",
+        "ru": "получить подарок"
+      },
+      {
+        "fr": "recevoir des amis",
+        "ru": "принимать друзей (в гостях)"
+      },
+      {
+        "fr": "recevoir un message",
+        "ru": "получить сообщение"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "prendre",
+        "note": "recevoir = получить (что-то приходит к тебе само); prendre = взять (ты берёшь активно). Письмо recevoir, чашку prendre."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["verbe-action", "quotidien", "prendre"],
+    "caseIds": ["wc-prendre"]
+  },
+  {
+    "id": "wl-apporter",
+    "lemma": "apporter",
+    "pos": "verb",
+    "ipa": "/a.pɔʁ.te/",
+    "translationsRu": ["приносить", "принести"],
+    "translationsEn": ["to bring (a thing)"],
+    "semanticCore": "Приносить ПРЕДМЕТ к месту или к человеку. Внутри сидит porter (нести): a-porter = «принести нечто».",
+    "collocations": [
+      {
+        "fr": "apporter un cadeau",
+        "ru": "принести подарок"
+      },
+      {
+        "fr": "apporter du vin",
+        "ru": "принести вино"
+      },
+      {
+        "fr": "apporter une réponse",
+        "ru": "дать ответ (принести ответ)"
+      },
+      {
+        "fr": "apporter de l'aide",
+        "ru": "оказать помощь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "amener",
+        "note": "apporter — ПРЕДМЕТ (porter = нести): apporter un gâteau. amener — ЧЕЛОВЕКА/животное (mener = вести): amener un ami."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["verbe-action", "quotidien", "prendre"],
+    "caseIds": ["wc-prendre"]
+  },
+  {
+    "id": "wl-amener",
+    "lemma": "amener",
+    "pos": "verb",
+    "ipa": "/a.mə.ne/",
+    "translationsRu": ["приводить (человека)", "привести", "привезти (кого-то)"],
+    "translationsEn": ["to bring (a person)"],
+    "semanticCore": "Приводить/привозить ЧЕЛОВЕКА (или животное) к месту или к кому-то. Внутри сидит mener (вести): a-mener = «привести кого-то».",
+    "collocations": [
+      {
+        "fr": "amener un ami",
+        "ru": "привести друга"
+      },
+      {
+        "fr": "amener les enfants à l'école",
+        "ru": "отвести детей в школу"
+      },
+      {
+        "fr": "amener quelqu'un à la gare",
+        "ru": "отвезти кого-то на вокзал"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "apporter",
+        "note": "amener ведёт ЧЕЛОВЕКА (mener): amener sa sœur. apporter несёт ПРЕДМЕТ (porter): apporter un livre."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["verbe-action", "quotidien", "prendre"],
+    "caseIds": ["wc-prendre"]
+  },
+  {
+    "id": "wl-rendre",
+    "lemma": "rendre",
+    "pos": "verb",
+    "ipa": "/ʁɑ̃dʁ/",
+    "translationsRu": ["возвращать", "вернуть", "отдавать (обратно)", "делать (каким-то)"],
+    "translationsEn": ["to give back", "to return", "to make (someone something)"],
+    "semanticCore": "Отдавать обратно то, что брал (rendre un livre). Второе значение — «делать каким-то»: rendre + прилагательное (rendre heureux).",
+    "collocations": [
+      {
+        "fr": "rendre un livre",
+        "ru": "вернуть книгу"
+      },
+      {
+        "fr": "rendre l'argent",
+        "ru": "вернуть деньги"
+      },
+      {
+        "fr": "rendre visite à quelqu'un",
+        "ru": "навестить кого-то"
+      },
+      {
+        "fr": "rendre heureux",
+        "ru": "делать счастливым"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "prendre",
+        "note": "prendre = взять; rendre = вернуть взятое. Рифмуются и значат противоположное: prends → rends обратно."
+      },
+      {
+        "with": "faire",
+        "note": "rendre + прилагательное = «делать каким-то» (Ça me rend triste). «Делать вещь» — это faire, не rendre."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["verbe-action", "quotidien", "prendre"],
+    "caseIds": ["wc-prendre"]
+  },
+  {
+    "id": "wl-garder",
+    "lemma": "garder",
+    "pos": "verb",
+    "ipa": "/ɡaʁ.de/",
+    "translationsRu": ["хранить", "оставлять (себе)", "присматривать", "сохранять"],
+    "translationsEn": ["to keep", "to look after"],
+    "semanticCore": "Держать у себя и не отдавать: оставить вещь себе, сохранить, а также присматривать за ребёнком/животным.",
+    "collocations": [
+      {
+        "fr": "garder un enfant",
+        "ru": "присматривать за ребёнком"
+      },
+      {
+        "fr": "garder le silence",
+        "ru": "хранить молчание"
+      },
+      {
+        "fr": "garder la monnaie",
+        "ru": "оставить сдачу себе"
+      },
+      {
+        "fr": "garder un secret",
+        "ru": "хранить секрет"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rendre",
+        "note": "garder = оставить себе (не отдавать); rendre = вернуть. Продавцу: «Gardez la monnaie» — сдачу не возвращайте, оставьте."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["verbe-action", "quotidien", "prendre"],
+    "caseIds": ["wc-prendre"]
+  },
+  {
+    "id": "wl-choisir",
+    "lemma": "choisir",
+    "pos": "verb",
+    "ipa": "/ʃwa.ziʁ/",
+    "translationsRu": ["выбирать", "выбрать"],
+    "translationsEn": ["to choose"],
+    "semanticCore": "Брать одно из нескольких: остановить выбор на варианте — в кафе, в магазине, в жизни.",
+    "collocations": [
+      {
+        "fr": "choisir un plat",
+        "ru": "выбрать блюдо"
+      },
+      {
+        "fr": "choisir entre deux options",
+        "ru": "выбрать из двух вариантов"
+      },
+      {
+        "fr": "bien choisir",
+        "ru": "сделать хороший выбор"
+      },
+      {
+        "fr": "choisir un cadeau",
+        "ru": "выбрать подарок"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "prendre",
+        "note": "choisir = выбрать (решить, какое); prendre = взять (заказать, получить). В кафе: сначала on choisit (решаем), потом on prend (заказываем)."
+      }
+    ],
+    "frequencyRank": 360,
+    "level": "A2",
+    "tags": ["verbe-action", "quotidien", "prendre"],
+    "caseIds": ["wc-prendre"]
+  }
+]

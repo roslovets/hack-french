@@ -1,55 +1,33 @@
 import type { Word, WordCase, WordMechanic } from '@/types';
 
 import wordMechanicsJson from '../word-mechanics.json';
-import bossCases from './word-cases/boss.json';
-import boulangerieCases from './word-cases/boulangerie.json';
-import cafeCases from './word-cases/cafe.json';
-import corpsCases from './word-cases/corps.json';
-import ecoleCases from './word-cases/ecole.json';
-import familleCases from './word-cases/famille.json';
-import maisonCases from './word-cases/maison.json';
-import nourritureCases from './word-cases/nourriture.json';
-import perceptionCases from './word-cases/perception.json';
-import politesseCases from './word-cases/politesse.json';
-import prendreCases from './word-cases/prendre.json';
-import savoirCases from './word-cases/savoir.json';
-import tempsCases from './word-cases/temps.json';
-import transportCases from './word-cases/transport.json';
-import vetementsCases from './word-cases/vetements.json';
-import villeCases from './word-cases/ville.json';
-import wordsJson from './words.json';
 
 /**
  * Word Lab content loader — the vocabulary-trainer analogue of `src/data/index.ts`.
- * This is the only place word JSON is cast to domain types. Kept separate from the
- * grammar loader so word-cases never enter the grammar `cases` array (different
- * invariants + progress namespace). Imported only by the lazy `/words` routes.
+ * Lexicon entries (lexicon/<theme>.json) and word-cases (word-cases/<theme>.json)
+ * are split one file per theme and loaded via Vite's glob, so adding a theme is just
+ * a new file — no edits here. This is the only place word JSON becomes domain types.
+ * Imported only by the lazy `/words` routes, so it stays out of the main bundle.
  */
 
-export const words = wordsJson as Word[];
+const lexiconModules = import.meta.glob<Word[]>('./lexicon/*.json', {
+  eager: true,
+  import: 'default',
+});
+const caseModules = import.meta.glob<WordCase[]>('./word-cases/*.json', {
+  eager: true,
+  import: 'default',
+});
 
+/** Flatten glob results in a deterministic (path-sorted) order. */
+const collect = <T>(mods: Record<string, T[]>): T[] =>
+  Object.keys(mods)
+    .sort()
+    .flatMap((k) => mods[k] ?? []);
+
+export const words: Word[] = collect(lexiconModules);
 export const wordMechanics = wordMechanicsJson as WordMechanic[];
-
-const wordCaseFiles = [
-  boulangerieCases,
-  cafeCases,
-  ecoleCases,
-  maisonCases,
-  familleCases,
-  nourritureCases,
-  corpsCases,
-  vetementsCases,
-  transportCases,
-  perceptionCases,
-  politesseCases,
-  prendreCases,
-  savoirCases,
-  tempsCases,
-  villeCases,
-  bossCases,
-];
-
-export const wordCases: WordCase[] = wordCaseFiles.flat() as unknown as WordCase[];
+export const wordCases: WordCase[] = collect(caseModules);
 
 const wordById = new Map(words.map((w) => [w.id, w]));
 const wordCaseById = new Map(wordCases.map((c) => [c.id, c]));

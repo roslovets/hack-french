@@ -1,0 +1,286 @@
+[
+  {
+    "id": "wl-cafe-cafe",
+    "lemma": "café",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ka.fe/",
+    "translationsRu": ["кофе", "кафе"],
+    "translationsEn": ["coffee", "café"],
+    "semanticCore": "И напиток (кофе), и заведение, где его пьют (кафе) — одно слово на оба значения.",
+    "collocations": [
+      {
+        "fr": "un café, s'il vous plaît",
+        "ru": "один кофе, пожалуйста"
+      },
+      {
+        "fr": "un café au lait",
+        "ru": "кофе с молоком"
+      },
+      {
+        "fr": "prendre un café",
+        "ru": "выпить кофе"
+      },
+      {
+        "fr": "aller au café",
+        "ru": "пойти в кафе"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "thé",
+        "note": "café — кофе (из зёрен); thé — чай (из листьев). Оба горячие напитки, но разные."
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A1",
+    "tags": ["cafe", "boisson", "lieu"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "wl-cafe-the",
+    "lemma": "thé",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/te/",
+    "translationsRu": ["чай"],
+    "translationsEn": ["tea"],
+    "semanticCore": "Горячий напиток из заваренных листьев; мужской род (un thé).",
+    "collocations": [
+      {
+        "fr": "un thé au citron",
+        "ru": "чай с лимоном"
+      },
+      {
+        "fr": "un thé vert",
+        "ru": "зелёный чай"
+      },
+      {
+        "fr": "boire du thé",
+        "ru": "пить чай"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "café",
+        "note": "thé — чай; café — кофе. Не путай также с англ. «the»: по-французски «the» — это чай, а не артикль."
+      }
+    ],
+    "frequencyRank": 450,
+    "level": "A1",
+    "tags": ["cafe", "boisson"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "wl-cafe-eau",
+    "lemma": "eau",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/o/",
+    "translationsRu": ["вода"],
+    "translationsEn": ["water"],
+    "semanticCore": "Вода как напиток и вещество; женский род (l'eau, de l'eau).",
+    "collocations": [
+      {
+        "fr": "un verre d'eau",
+        "ru": "стакан воды"
+      },
+      {
+        "fr": "de l'eau plate",
+        "ru": "вода без газа"
+      },
+      {
+        "fr": "de l'eau gazeuse",
+        "ru": "вода с газом"
+      },
+      {
+        "fr": "une carafe d'eau",
+        "ru": "графин воды (из-под крана)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vin",
+        "note": "eau — вода (бесплатна, можно попросить карафку); vin — вино. В кафе путать дорого."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A1",
+    "tags": ["cafe", "boisson"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "wl-cafe-addition",
+    "lemma": "addition",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/a.di.sjɔ̃/",
+    "translationsRu": ["счёт (к оплате)", "сложение"],
+    "translationsEn": ["bill", "check", "addition"],
+    "semanticCore": "В кафе/ресторане — счёт, который приносят к оплате (буквально «сложение» сумм).",
+    "collocations": [
+      {
+        "fr": "l'addition, s'il vous plaît",
+        "ru": "счёт, пожалуйста"
+      },
+      {
+        "fr": "demander l'addition",
+        "ru": "попросить счёт"
+      },
+      {
+        "fr": "payer l'addition",
+        "ru": "оплатить счёт"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "facture",
+        "note": "addition — счёт в кафе/ресторане; facture — счёт-фактура (от фирмы, в отеле, за услуги)."
+      },
+      {
+        "with": "addition (англ.)",
+        "note": "Англ. «addition» = добавление/сложение. Во фр. кафе addition = счёт. Полезный ложный друг наоборот."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A1",
+    "tags": ["cafe", "argent", "faux-ami"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "wl-cafe-commander",
+    "lemma": "commander",
+    "pos": "verb",
+    "ipa": "/kɔ.mɑ̃.de/",
+    "translationsRu": ["заказывать", "сделать заказ"],
+    "translationsEn": ["to order"],
+    "semanticCore": "Сделать заказ (в кафе, ресторане, магазине); назвать, что хочешь получить.",
+    "collocations": [
+      {
+        "fr": "commander un café",
+        "ru": "заказать кофе"
+      },
+      {
+        "fr": "je voudrais commander",
+        "ru": "я хотел бы сделать заказ"
+      },
+      {
+        "fr": "prendre la commande",
+        "ru": "принять заказ"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "commander (англ. command)",
+        "note": "Похоже на англ. «command» (приказывать), но в кафе commander = заказывать. Связь есть, но значение мягче."
+      }
+    ],
+    "frequencyRank": 500,
+    "level": "A1",
+    "tags": ["cafe", "verbe", "faux-ami"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "wl-cafe-serveur",
+    "lemma": "serveur",
+    "displayForm": "serveur / serveuse",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɛʁ.vœʁ/",
+    "translationsRu": ["официант"],
+    "translationsEn": ["waiter", "server"],
+    "semanticCore": "Человек, который принимает заказ и приносит блюда в кафе/ресторане.",
+    "collocations": [
+      {
+        "fr": "appeler le serveur",
+        "ru": "позвать официанта"
+      },
+      {
+        "fr": "demander au serveur",
+        "ru": "спросить у официанта"
+      },
+      {
+        "fr": "le serveur apporte les plats",
+        "ru": "официант приносит блюда"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "garçon",
+        "note": "serveur — нейтральное слово «официант». Окликать «Garçon !» сегодня старомодно и высокомерно; вежливо — «Excusez-moi, monsieur»."
+      }
+    ],
+    "frequencyRank": 800,
+    "level": "A1",
+    "tags": ["cafe", "personne", "metier"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "wl-cafe-terrasse",
+    "lemma": "terrasse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/te.ʁas/",
+    "translationsRu": ["терраса", "уличные столики кафе"],
+    "translationsEn": ["terrace", "outdoor seating"],
+    "semanticCore": "Столики кафе под открытым небом, на улице; «en terrasse» — сидеть снаружи.",
+    "collocations": [
+      {
+        "fr": "en terrasse",
+        "ru": "на террасе (на улице)"
+      },
+      {
+        "fr": "s'installer en terrasse",
+        "ru": "устроиться на террасе"
+      },
+      {
+        "fr": "une table en terrasse",
+        "ru": "столик на улице"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "terrace (англ.)",
+        "note": "Англ. «terrace» — терраса/площадка; фр. «terrasse» (с двумя s) в кафе значит уличные столики. Хороший английский мост."
+      }
+    ],
+    "frequencyRank": 900,
+    "level": "A1",
+    "tags": ["cafe", "lieu"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "wl-cafe-sucre",
+    "lemma": "sucre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sykʁ/",
+    "translationsRu": ["сахар"],
+    "translationsEn": ["sugar"],
+    "semanticCore": "Сахар; то, что добавляют в кофе или чай для сладости.",
+    "collocations": [
+      {
+        "fr": "avec du sucre",
+        "ru": "с сахаром"
+      },
+      {
+        "fr": "sans sucre",
+        "ru": "без сахара"
+      },
+      {
+        "fr": "un morceau de sucre",
+        "ru": "кусочек сахара"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sel",
+        "note": "sucre — сахар (сладкий); sel — соль (солёная). На столе кафе оба бывают рядом — не перепутай."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A1",
+    "tags": ["cafe", "nourriture"],
+    "caseIds": ["wc-cafe"]
+  }
+]

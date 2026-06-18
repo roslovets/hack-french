@@ -1,0 +1,289 @@
+[
+  {
+    "id": "wl-corps-corps",
+    "lemma": "corps",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔʁ/",
+    "translationsRu": ["тело", "корпус"],
+    "translationsEn": ["body"],
+    "semanticCore": "Тело человека или животного целиком; также «корпус» (войск, текста) в переносном смысле.",
+    "collocations": [
+      {
+        "fr": "le corps humain",
+        "ru": "человеческое тело"
+      },
+      {
+        "fr": "tout le corps",
+        "ru": "всё тело"
+      },
+      {
+        "fr": "les parties du corps",
+        "ru": "части тела"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "corpse (англ.)",
+        "note": "Похоже на англ. corpse (труп), но фр. corps — это живое тело вообще. Труп — un cadavre."
+      },
+      {
+        "with": "le cœur",
+        "note": "corps /kɔʁ/ (тело) и cœur /kœʁ/ (сердце) звучат близко, но это разные слова: тело против сердца."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["corps", "anatomie"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-corps-tete",
+    "lemma": "tête",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tɛt/",
+    "translationsRu": ["голова"],
+    "translationsEn": ["head"],
+    "semanticCore": "Голова как часть тела, а также «ум, рассудок» в выражениях.",
+    "collocations": [
+      {
+        "fr": "avoir mal à la tête",
+        "ru": "болит голова"
+      },
+      {
+        "fr": "de la tête aux pieds",
+        "ru": "с головы до ног"
+      },
+      {
+        "fr": "hocher la tête",
+        "ru": "кивать головой"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "le visage",
+        "note": "tête — вся голова; le visage — лицо (передняя часть). «Болит голова» = à la tête, а не au visage."
+      }
+    ],
+    "frequencyRank": 280,
+    "level": "A2",
+    "tags": ["corps", "anatomie"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-corps-main",
+    "lemma": "main",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mɛ̃/",
+    "translationsRu": ["рука (кисть)"],
+    "translationsEn": ["hand"],
+    "semanticCore": "Кисть руки — то, чем берут и держат; не вся рука целиком.",
+    "collocations": [
+      {
+        "fr": "se laver les mains",
+        "ru": "мыть руки"
+      },
+      {
+        "fr": "serrer la main",
+        "ru": "пожать руку"
+      },
+      {
+        "fr": "donner un coup de main",
+        "ru": "помочь, подсобить"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "le bras",
+        "note": "main — это кисть; le bras — вся рука от плеча. «Держать в руке» = dans la main, «взять на руки» = dans les bras."
+      },
+      {
+        "with": "main (англ.)",
+        "note": "Похоже на англ. main (главный), но фр. main — это «рука (кисть)». Ложный друг."
+      }
+    ],
+    "frequencyRank": 200,
+    "level": "A2",
+    "tags": ["corps", "anatomie"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-corps-pied",
+    "lemma": "pied",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pje/",
+    "translationsRu": ["нога (ступня)"],
+    "translationsEn": ["foot"],
+    "semanticCore": "Ступня — то, на чём стоят; не вся нога. Отсюда «à pied» — пешком.",
+    "collocations": [
+      {
+        "fr": "aller à pied",
+        "ru": "идти пешком"
+      },
+      {
+        "fr": "avoir mal aux pieds",
+        "ru": "болят ноги (ступни)"
+      },
+      {
+        "fr": "de la tête aux pieds",
+        "ru": "с головы до ног"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "la jambe",
+        "note": "pied — ступня; la jambe — вся нога. «Идти пешком» = à pied, а сломать можно la jambe."
+      }
+    ],
+    "frequencyRank": 260,
+    "level": "A2",
+    "tags": ["corps", "anatomie"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-corps-dos",
+    "lemma": "dos",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/do/",
+    "translationsRu": ["спина"],
+    "translationsEn": ["back"],
+    "semanticCore": "Спина — задняя часть тела от шеи до поясницы.",
+    "collocations": [
+      {
+        "fr": "avoir mal au dos",
+        "ru": "болит спина"
+      },
+      {
+        "fr": "dormir sur le dos",
+        "ru": "спать на спине"
+      },
+      {
+        "fr": "tourner le dos",
+        "ru": "повернуться спиной"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "la dose",
+        "note": "dos /do/ (спина) — конечная s немая; la dose /doz/ (доза) звучит со звонким z. Разные слова, не путать на слух."
+      }
+    ],
+    "frequencyRank": 500,
+    "level": "A2",
+    "tags": ["corps", "anatomie"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-corps-ventre",
+    "lemma": "ventre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɑ̃tʁ/",
+    "translationsRu": ["живот"],
+    "translationsEn": ["belly", "stomach"],
+    "semanticCore": "Живот как внешняя часть тела (где болит, бурчит, лежат на нём).",
+    "collocations": [
+      {
+        "fr": "avoir mal au ventre",
+        "ru": "болит живот"
+      },
+      {
+        "fr": "se coucher sur le ventre",
+        "ru": "лечь на живот"
+      },
+      {
+        "fr": "avoir le ventre vide",
+        "ru": "быть голодным (пустой желудок)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "l'estomac",
+        "note": "ventre — живот снаружи (болит le ventre); l'estomac (m) — желудок как орган внутри. В быту «болит живот» = mal au ventre."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["corps", "santé"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-corps-malade",
+    "lemma": "malade",
+    "pos": "adj",
+    "ipa": "/ma.lad/",
+    "translationsRu": ["больной"],
+    "translationsEn": ["sick", "ill"],
+    "semanticCore": "Болеющий, нездоровый; может быть и существительным «больной (пациент)».",
+    "collocations": [
+      {
+        "fr": "tomber malade",
+        "ru": "заболеть"
+      },
+      {
+        "fr": "être malade",
+        "ru": "быть больным, болеть"
+      },
+      {
+        "fr": "gravement malade",
+        "ru": "тяжело больной"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "malady (англ.)",
+        "note": "Англ. malady (недуг) — это существительное; фр. malade — прилагательное «больной». Болезнь по-французски — la maladie."
+      },
+      {
+        "with": "la maladie",
+        "note": "malade — «больной» (прилагательное); la maladie — «болезнь» (существительное). Не путать: être malade = болеть, une maladie = болезнь."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["corps", "santé"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-corps-medecin",
+    "lemma": "médecin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/med.sɛ̃/",
+    "translationsRu": ["врач", "доктор"],
+    "translationsEn": ["doctor", "physician"],
+    "semanticCore": "Врач — человек, который лечит; le médecin традиционно мужского рода даже о женщине.",
+    "collocations": [
+      {
+        "fr": "aller chez le médecin",
+        "ru": "идти к врачу"
+      },
+      {
+        "fr": "appeler un médecin",
+        "ru": "вызвать врача"
+      },
+      {
+        "fr": "le médecin de famille",
+        "ru": "семейный врач"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "la médecine",
+        "note": "le médecin — врач (человек); la médecine — медицина (наука). Звучат почти одинаково, но одно — кто лечит, другое — что изучают."
+      },
+      {
+        "with": "le docteur",
+        "note": "le médecin — врач по профессии; le docteur — обращение «доктор» (Bonjour, docteur). К врачу идут chez le médecin, но зовут его docteur."
+      }
+    ],
+    "frequencyRank": 450,
+    "level": "A2",
+    "tags": ["corps", "santé"],
+    "caseIds": ["wc-corps"]
+  }
+]

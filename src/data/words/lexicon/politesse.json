@@ -1,0 +1,251 @@
+[
+  {
+    "id": "wl-politesse-vouloir",
+    "lemma": "vouloir",
+    "pos": "verb",
+    "ipa": "/vu.lwaʁ/",
+    "translationsRu": ["хотеть", "желать"],
+    "translationsEn": ["to want", "to wish"],
+    "semanticCore": "Желание, воля; в вежливой просьбе смягчается формой «je voudrais».",
+    "collocations": [
+      {
+        "fr": "je voudrais un café",
+        "ru": "я бы хотел кофе"
+      },
+      {
+        "fr": "vouloir dire",
+        "ru": "означать (хотеть сказать)"
+      },
+      {
+        "fr": "si vous voulez",
+        "ru": "если хотите"
+      },
+      {
+        "fr": "vouloir bien",
+        "ru": "охотно согласиться, не возражать"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "je veux",
+        "note": "«je veux» — прямое «хочу», звучит резко; «je voudrais» — вежливое «я бы хотел». В просьбах используют voudrais."
+      },
+      {
+        "with": "pouvoir",
+        "note": "vouloir = хотеть (желание); pouvoir = мочь (возможность). «Je voudrais» — желаю; «je peux» — могу."
+      }
+    ],
+    "frequencyRank": 25,
+    "level": "A2",
+    "tags": ["politesse", "demande", "verbe-modal"],
+    "caseIds": ["wc-politesse"]
+  },
+  {
+    "id": "wl-politesse-svp",
+    "lemma": "s'il vous plaît",
+    "pos": "expr",
+    "ipa": "/sil vu plɛ/",
+    "translationsRu": ["пожалуйста"],
+    "translationsEn": ["please"],
+    "semanticCore": "Вежливое «пожалуйста» при просьбе; дословно «если вам это угодно».",
+    "collocations": [
+      {
+        "fr": "un café, s'il vous plaît",
+        "ru": "кофе, пожалуйста"
+      },
+      {
+        "fr": "s'il te plaît",
+        "ru": "пожалуйста (на «ты»)"
+      },
+      {
+        "fr": "oui, s'il vous plaît",
+        "ru": "да, пожалуйста"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "merci",
+        "note": "s'il vous plaît — просьба («пожалуйста, дайте»); merci — благодарность («спасибо»). Их нельзя путать местами."
+      },
+      {
+        "with": "s'il te plaît",
+        "note": "s'il vous plaît — на «вы» / к незнакомым; s'il te plaît — на «ты» / к близким. Различие vous / te."
+      }
+    ],
+    "frequencyRank": 60,
+    "level": "A1",
+    "tags": ["politesse", "demande", "formule"],
+    "caseIds": ["wc-politesse"]
+  },
+  {
+    "id": "wl-politesse-pardon",
+    "lemma": "pardon",
+    "pos": "expr",
+    "ipa": "/paʁ.dɔ̃/",
+    "translationsRu": ["извините", "простите", "прошу прощения"],
+    "translationsEn": ["sorry", "excuse me", "pardon"],
+    "semanticCore": "Лёгкое извинение или способ привлечь внимание / переспросить.",
+    "collocations": [
+      {
+        "fr": "pardon, je peux passer ?",
+        "ru": "извините, можно пройти?"
+      },
+      {
+        "fr": "demander pardon",
+        "ru": "просить прощения"
+      },
+      {
+        "fr": "pardon ?",
+        "ru": "простите? (не расслышал)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "désolé",
+        "note": "pardon — лёгкое, быстрое извинение (толкнул, переспросил); je suis désolé — за что-то посерьёзнее (опоздание, отказ)."
+      }
+    ],
+    "frequencyRank": 220,
+    "level": "A1",
+    "tags": ["politesse", "excuse", "formule"],
+    "caseIds": ["wc-politesse"]
+  },
+  {
+    "id": "wl-politesse-desole",
+    "lemma": "désolé",
+    "displayForm": "désolé / désolée",
+    "pos": "adj",
+    "ipa": "/de.zɔ.le/",
+    "translationsRu": ["сожалеющий", "виноватый («мне жаль»)"],
+    "translationsEn": ["sorry"],
+    "semanticCore": "«Мне жаль» — извинение за что-то ощутимое (опоздание, отказ, плохую новость).",
+    "collocations": [
+      {
+        "fr": "je suis désolé",
+        "ru": "мне жаль, извините"
+      },
+      {
+        "fr": "désolé pour le retard",
+        "ru": "извините за опоздание"
+      },
+      {
+        "fr": "désolé de vous déranger",
+        "ru": "извините за беспокойство"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "desolate (англ.)",
+        "note": "Англ. «desolate» = опустошённый, безлюдный. Фр. désolé = «мне жаль». Ложный друг."
+      },
+      {
+        "with": "pardon",
+        "note": "désolé — извинение за что-то серьёзнее; pardon — лёгкое «простите» (переспросить, пройти)."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A2",
+    "tags": ["politesse", "excuse", "faux-ami"],
+    "caseIds": ["wc-politesse"]
+  },
+  {
+    "id": "wl-politesse-deranger",
+    "lemma": "déranger",
+    "pos": "verb",
+    "ipa": "/de.ʁɑ̃.ʒe/",
+    "translationsRu": ["беспокоить", "мешать", "отвлекать"],
+    "translationsEn": ["to disturb", "to bother"],
+    "semanticCore": "Мешать кому-то, нарушать покой; ключевой глагол вежливых оговорок.",
+    "collocations": [
+      {
+        "fr": "excusez-moi de vous déranger",
+        "ru": "извините за беспокойство"
+      },
+      {
+        "fr": "je ne voudrais pas vous déranger",
+        "ru": "не хотел бы вас беспокоить"
+      },
+      {
+        "fr": "ça ne vous dérange pas si… ?",
+        "ru": "вы не против, если…?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "deranged (англ.)",
+        "note": "Англ. «deranged» = сумасшедший, невменяемый. Фр. déranger = мягкое «беспокоить, мешать». Ложный друг."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["politesse", "demande", "faux-ami", "verbe"],
+    "caseIds": ["wc-politesse"]
+  },
+  {
+    "id": "wl-politesse-refuser",
+    "lemma": "refuser",
+    "pos": "verb",
+    "ipa": "/ʁə.fy.ze/",
+    "translationsRu": ["отказывать", "отказываться", "отвергать"],
+    "translationsEn": ["to refuse", "to decline"],
+    "semanticCore": "Не принять, отклонить — предложение, приглашение или действие.",
+    "collocations": [
+      {
+        "fr": "refuser une invitation",
+        "ru": "отклонить приглашение"
+      },
+      {
+        "fr": "refuser de répondre",
+        "ru": "отказаться отвечать"
+      },
+      {
+        "fr": "refuser poliment",
+        "ru": "вежливо отказать"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "accepter",
+        "note": "refuser = отказываться; accepter = соглашаться, принимать. Противоположности."
+      }
+    ],
+    "frequencyRank": 550,
+    "level": "A2",
+    "tags": ["politesse", "refus", "verbe"],
+    "caseIds": ["wc-politesse"]
+  },
+  {
+    "id": "wl-politesse-gentil",
+    "lemma": "gentil",
+    "displayForm": "gentil / gentille",
+    "pos": "adj",
+    "ipa": "/ʒɑ̃.ti/",
+    "translationsRu": ["добрый", "любезный", "милый"],
+    "translationsEn": ["kind", "nice"],
+    "semanticCore": "Добрый, приветливый по характеру или поступку (не «мягкий на ощупь»).",
+    "collocations": [
+      {
+        "fr": "c'est gentil de votre part",
+        "ru": "как мило с вашей стороны"
+      },
+      {
+        "fr": "il est très gentil",
+        "ru": "он очень добрый"
+      },
+      {
+        "fr": "une gentille fille",
+        "ru": "добрая девочка"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "gentle (англ.)",
+        "note": "Англ. «gentle» = мягкий, нежный (на ощупь) — это фр. doux. Фр. gentil = добрый, любезный. Ложный друг."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["politesse", "qualite", "faux-ami", "adjectif"],
+    "caseIds": ["wc-politesse"]
+  }
+]

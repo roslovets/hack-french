@@ -1,0 +1,193 @@
+[
+  {
+    "id": "wl-savoir",
+    "lemma": "savoir",
+    "pos": "verb",
+    "ipa": "/sa.vwaʁ/",
+    "translationsRu": ["знать", "уметь"],
+    "translationsEn": ["to know (a fact)", "to know how to"],
+    "semanticCore": "Знание факта или информации; с инфинитивом — освоенный навык («уметь»).",
+    "collocations": [
+      {
+        "fr": "savoir nager",
+        "ru": "уметь плавать"
+      },
+      {
+        "fr": "savoir que…",
+        "ru": "знать, что…"
+      },
+      {
+        "fr": "savoir où / comment",
+        "ru": "знать где / как"
+      },
+      {
+        "fr": "je ne sais pas",
+        "ru": "я не знаю"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "connaître",
+        "note": "savoir = знать факт / уметь (+ que, où, инфинитив); connaître = быть знакомым с человеком/местом (+ прямое дополнение).",
+        "wordId": "wl-connaitre"
+      },
+      {
+        "with": "pouvoir",
+        "note": "savoir nager = иметь навык (научился); pouvoir nager = иметь возможность сейчас.",
+        "wordId": "wl-pouvoir"
+      }
+    ],
+    "frequencyRank": 40,
+    "level": "A2",
+    "tags": ["connaissance", "verbe"],
+    "caseIds": ["wc-savoir"]
+  },
+  {
+    "id": "wl-connaitre",
+    "lemma": "connaître",
+    "pos": "verb",
+    "ipa": "/kɔ.nɛtʁ/",
+    "translationsRu": ["знать", "быть знакомым с"],
+    "translationsEn": ["to know", "to be familiar with"],
+    "semanticCore": "Быть знакомым с кем-то или чем-то — человеком, местом, темой; всегда с прямым дополнением.",
+    "collocations": [
+      {
+        "fr": "connaître quelqu'un",
+        "ru": "знать кого-то"
+      },
+      {
+        "fr": "connaître la ville",
+        "ru": "знать город"
+      },
+      {
+        "fr": "connaître bien un sujet",
+        "ru": "хорошо знать тему"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "savoir",
+        "note": "connaître + существительное (быть знакомым); savoir + que / où / инфинитив (знать факт, уметь). Связку que берёт только savoir.",
+        "wordId": "wl-savoir"
+      }
+    ],
+    "frequencyRank": 95,
+    "level": "A2",
+    "tags": ["connaissance", "verbe"],
+    "caseIds": ["wc-savoir"]
+  },
+  {
+    "id": "wl-comprendre",
+    "lemma": "comprendre",
+    "pos": "verb",
+    "ipa": "/kɔ̃.pʁɑ̃dʁ/",
+    "translationsRu": ["понимать", "включать в себя"],
+    "translationsEn": ["to understand", "to comprise"],
+    "semanticCore": "Понимать смысл; второе значение — «включать в себя, содержать» (о цене, наборе).",
+    "collocations": [
+      {
+        "fr": "comprendre la question",
+        "ru": "понимать вопрос"
+      },
+      {
+        "fr": "je ne comprends pas",
+        "ru": "я не понимаю"
+      },
+      {
+        "fr": "le prix comprend…",
+        "ru": "в цену входит…"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "comprehend (англ.)",
+        "note": "Англ. comprehend = понимать — настоящий родственник comprendre, тот же латинский корень. Не ложный друг."
+      },
+      {
+        "with": "apprendre",
+        "note": "comprendre = понимать (схватить смысл); apprendre = учить(ся). Похожи по форме (-prendre), но разные действия.",
+        "wordId": "wl-apprendre"
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A2",
+    "tags": ["connaissance", "verbe"],
+    "caseIds": ["wc-savoir"]
+  },
+  {
+    "id": "wl-pouvoir",
+    "lemma": "pouvoir",
+    "pos": "verb",
+    "ipa": "/pu.vwaʁ/",
+    "translationsRu": ["мочь", "иметь возможность"],
+    "translationsEn": ["can", "to be able to", "may"],
+    "semanticCore": "Иметь возможность или разрешение что-то сделать (+ инфинитив); как существительное le pouvoir — власть.",
+    "collocations": [
+      {
+        "fr": "je peux t'aider",
+        "ru": "я могу тебе помочь"
+      },
+      {
+        "fr": "tu peux fermer la fenêtre ?",
+        "ru": "ты можешь закрыть окно?"
+      },
+      {
+        "fr": "on ne peut pas fumer ici",
+        "ru": "здесь нельзя курить"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "savoir",
+        "note": "pouvoir = мочь сейчас (возможность/разрешение); savoir + инфинитив = уметь (есть навык).",
+        "wordId": "wl-savoir"
+      },
+      {
+        "with": "power (англ.)",
+        "note": "Существительное le pouvoir = власть/сила, как англ. power; глагол pouvoir = «мочь». Один корень — удобный мост."
+      }
+    ],
+    "frequencyRank": 25,
+    "level": "A2",
+    "tags": ["connaissance", "verbe", "modal"],
+    "caseIds": ["wc-savoir"]
+  },
+  {
+    "id": "wl-apprendre",
+    "lemma": "apprendre",
+    "pos": "verb",
+    "ipa": "/a.pʁɑ̃dʁ/",
+    "translationsRu": ["учить", "учиться", "узнавать (новость)"],
+    "translationsEn": ["to learn", "to find out"],
+    "semanticCore": "Осваивать знание или навык (учить, изучать); также «узнать новость».",
+    "collocations": [
+      {
+        "fr": "apprendre le français",
+        "ru": "учить французский"
+      },
+      {
+        "fr": "apprendre à conduire",
+        "ru": "учиться водить"
+      },
+      {
+        "fr": "apprendre une nouvelle",
+        "ru": "узнать новость"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "apprehend (англ.)",
+        "note": "Ложный друг: англ. apprehend = задержать / опасаться, а фр. apprendre = учить(ся), узнавать."
+      },
+      {
+        "with": "comprendre",
+        "note": "apprendre = осваивать (учить); comprendre = понимать (схватить смысл). Сначала apprend, потом comprend.",
+        "wordId": "wl-comprendre"
+      }
+    ],
+    "frequencyRank": 160,
+    "level": "A2",
+    "tags": ["connaissance", "verbe"],
+    "caseIds": ["wc-savoir"]
+  }
+]

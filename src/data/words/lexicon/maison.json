@@ -1,0 +1,327 @@
+[
+  {
+    "id": "wl-maison-maison",
+    "lemma": "maison",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mɛ.zɔ̃/",
+    "translationsRu": ["дом", "жилище"],
+    "translationsEn": ["house", "home"],
+    "semanticCore": "Дом как жилище и как «у себя»: место, куда возвращаешься.",
+    "collocations": [
+      {
+        "fr": "rentrer à la maison",
+        "ru": "вернуться домой"
+      },
+      {
+        "fr": "rester à la maison",
+        "ru": "оставаться дома"
+      },
+      {
+        "fr": "une maison de campagne",
+        "ru": "загородный дом"
+      },
+      {
+        "fr": "la maison d'à côté",
+        "ru": "соседний дом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "appartement",
+        "note": "maison = (отдельный) дом; appartement = квартира в доме. «Дома» в смысле «у себя» — всегда à la maison."
+      },
+      {
+        "with": "foyer",
+        "note": "maison = здание/жилище; foyer = домашний очаг, семья как «дом» (более тёплое, абстрактное)."
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A1",
+    "tags": ["maison", "logement"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-maison-cle",
+    "lemma": "clé",
+    "displayForm": "clé / clef",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kle/",
+    "translationsRu": ["ключ"],
+    "translationsEn": ["key"],
+    "semanticCore": "Ключ, которым запирают и отпирают; также «ключ» к разгадке.",
+    "collocations": [
+      {
+        "fr": "la clé de la porte",
+        "ru": "ключ от двери"
+      },
+      {
+        "fr": "fermer à clé",
+        "ru": "запереть на ключ"
+      },
+      {
+        "fr": "perdre ses clés",
+        "ru": "потерять ключи"
+      },
+      {
+        "fr": "un trousseau de clés",
+        "ru": "связка ключей"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "serrure",
+        "note": "clé = ключ; serrure = замо́к (то, куда вставляют ключ). Их легко перепутать по-русски «замок/ключ»."
+      },
+      {
+        "with": "clef",
+        "note": "clé и clef — два написания одного слова, оба верны; читаются одинаково /kle/."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A1",
+    "tags": ["maison", "objet"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-maison-porte",
+    "lemma": "porte",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɔʁt/",
+    "translationsRu": ["дверь"],
+    "translationsEn": ["door"],
+    "semanticCore": "Дверь как вход и как то, что закрывают/запирают.",
+    "collocations": [
+      {
+        "fr": "fermer la porte",
+        "ru": "закрыть дверь"
+      },
+      {
+        "fr": "la porte d'entrée",
+        "ru": "входная дверь"
+      },
+      {
+        "fr": "frapper à la porte",
+        "ru": "стучать в дверь"
+      },
+      {
+        "fr": "fermer la porte à clé",
+        "ru": "запереть дверь на ключ"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "portail",
+        "note": "porte = дверь (в доме, комнате); portail = ворота / большая калитка во двор."
+      },
+      {
+        "with": "fenêtre",
+        "note": "porte = дверь (через неё входят); fenêtre = окно (через него смотрят и проветривают)."
+      }
+    ],
+    "frequencyRank": 230,
+    "level": "A1",
+    "tags": ["maison", "objet"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-maison-fenetre",
+    "lemma": "fenêtre",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fə.nɛtʁ/",
+    "translationsRu": ["окно"],
+    "translationsEn": ["window"],
+    "semanticCore": "Окно в стене и окно на экране компьютера.",
+    "collocations": [
+      {
+        "fr": "ouvrir la fenêtre",
+        "ru": "открыть окно"
+      },
+      {
+        "fr": "près de la fenêtre",
+        "ru": "у окна"
+      },
+      {
+        "fr": "la fenêtre donne sur la rue",
+        "ru": "окно выходит на улицу"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vitre",
+        "note": "fenêtre = окно (вся конструкция); vitre = (оконное) стекло. Разбить можно la vitre, открыть — la fenêtre."
+      },
+      {
+        "with": "porte",
+        "note": "fenêtre = окно; porte = дверь. Не путать: оба «проёма» в стене, но разные."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A1",
+    "tags": ["maison", "objet"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-maison-table",
+    "lemma": "table",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tabl/",
+    "translationsRu": ["стол"],
+    "translationsEn": ["table"],
+    "semanticCore": "Стол как мебель и как «застолье»: место, за которое садятся есть.",
+    "collocations": [
+      {
+        "fr": "passer à table",
+        "ru": "садиться за стол (есть)"
+      },
+      {
+        "fr": "mettre la table",
+        "ru": "накрывать на стол"
+      },
+      {
+        "fr": "une table pour deux",
+        "ru": "столик на двоих"
+      },
+      {
+        "fr": "sur la table",
+        "ru": "на столе"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chaise",
+        "note": "table = стол; chaise = стул. За table садятся, на chaise сидят."
+      },
+      {
+        "with": "bureau",
+        "note": "table = (обеденный) стол; bureau = письменный стол, рабочий стол / кабинет."
+      }
+    ],
+    "frequencyRank": 200,
+    "level": "A1",
+    "tags": ["maison", "meuble"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-maison-lit",
+    "lemma": "lit",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/li/",
+    "translationsRu": ["кровать", "постель"],
+    "translationsEn": ["bed"],
+    "semanticCore": "Кровать как мебель и постель, куда ложатся спать.",
+    "collocations": [
+      {
+        "fr": "aller au lit",
+        "ru": "ложиться спать"
+      },
+      {
+        "fr": "faire son lit",
+        "ru": "застилать постель"
+      },
+      {
+        "fr": "un grand lit",
+        "ru": "большая (двуспальная) кровать"
+      },
+      {
+        "fr": "au lit",
+        "ru": "в постели / спать"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "canapé",
+        "note": "lit = кровать (для сна); canapé = диван (в гостиной)."
+      },
+      {
+        "with": "lit (англ.)",
+        "note": "Фр. lit = кровать; англ. «lit» = освещённый. Пишутся одинаково — ложный друг. Конечная t не читается: /li/."
+      }
+    ],
+    "frequencyRank": 340,
+    "level": "A1",
+    "tags": ["maison", "meuble"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-maison-mur",
+    "lemma": "mur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/myʁ/",
+    "translationsRu": ["стена"],
+    "translationsEn": ["wall"],
+    "semanticCore": "Стена комнаты или здания: вертикальная плоскость, ограничивающая помещение.",
+    "collocations": [
+      {
+        "fr": "sur le mur",
+        "ru": "на стене"
+      },
+      {
+        "fr": "un mur blanc",
+        "ru": "белая стена"
+      },
+      {
+        "fr": "accrocher au mur",
+        "ru": "повесить на стену"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sol",
+        "note": "mur = стена (вертикально); sol = пол (внизу). Не путать при описании комнаты."
+      },
+      {
+        "with": "plafond",
+        "note": "mur = стена; plafond = потолок (сверху)."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A1",
+    "tags": ["maison", "structure"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-maison-etage",
+    "lemma": "étage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.taʒ/",
+    "translationsRu": ["этаж"],
+    "translationsEn": ["floor", "storey"],
+    "semanticCore": "Этаж здания — но французский счёт сдвинут: наземный зовётся rez-de-chaussée.",
+    "collocations": [
+      {
+        "fr": "au premier étage",
+        "ru": "на втором этаже (по фр. счёту — первом над наземным)"
+      },
+      {
+        "fr": "monter à l'étage",
+        "ru": "подняться наверх / на этаж выше"
+      },
+      {
+        "fr": "un immeuble de cinq étages",
+        "ru": "пятиэтажный дом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rez-de-chaussée",
+        "note": "étage = этаж над землёй; rez-de-chaussée = наземный («нулевой») этаж. Поэтому premier étage = русский 2-й этаж."
+      },
+      {
+        "with": "escalier",
+        "note": "étage = этаж (уровень); escalier = лестница (по ней поднимаются между этажами)."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A1",
+    "tags": ["maison", "logement"],
+    "caseIds": ["wc-maison"]
+  }
+]

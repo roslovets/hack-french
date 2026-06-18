@@ -1,0 +1,285 @@
+[
+  {
+    "id": "wl-temps-deja",
+    "lemma": "déjà",
+    "pos": "adv",
+    "ipa": "/de.ʒa/",
+    "translationsRu": ["уже", "когда-то раньше"],
+    "translationsEn": ["already", "before", "yet"],
+    "semanticCore": "Действие случилось раньше ожидаемого момента — «уже».",
+    "collocations": [
+      {
+        "fr": "C'est déjà fini.",
+        "ru": "Это уже закончилось."
+      },
+      {
+        "fr": "J'ai déjà mangé.",
+        "ru": "Я уже поел."
+      },
+      {
+        "fr": "Il est déjà tard.",
+        "ru": "Уже поздно."
+      },
+      {
+        "fr": "Tu es déjà là ?",
+        "ru": "Ты уже здесь?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "encore",
+        "note": "déjà = уже (раньше срока); encore = ещё / всё ещё. «Уже сделал» — déjà; «ещё не сделал» — pas encore."
+      },
+      {
+        "with": "maintenant",
+        "note": "déjà = уже (раньше, чем думали); maintenant = сейчас (в данный момент). «Уже поздно» ≠ «сейчас поздно»."
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A2",
+    "tags": ["temps", "adverbe"],
+    "caseIds": ["wc-temps"]
+  },
+  {
+    "id": "wl-temps-toujours",
+    "lemma": "toujours",
+    "pos": "adv",
+    "ipa": "/tu.ʒuʁ/",
+    "translationsRu": ["всегда", "всё ещё"],
+    "translationsEn": ["always", "still"],
+    "semanticCore": "Постоянно, без исключений («всегда»), либо продолжается до сих пор («всё ещё»).",
+    "collocations": [
+      {
+        "fr": "comme toujours",
+        "ru": "как всегда"
+      },
+      {
+        "fr": "pour toujours",
+        "ru": "навсегда"
+      },
+      {
+        "fr": "Il est toujours là.",
+        "ru": "Он всё ещё здесь. / Он всегда здесь."
+      },
+      {
+        "fr": "toujours pas",
+        "ru": "всё ещё нет"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "encore",
+        "note": "В значении «всё ещё» toujours и encore близки (il dort toujours = il dort encore), но toujours — это ещё и «всегда» (привычка), а encore — «ещё раз / добавка»."
+      },
+      {
+        "with": "jamais",
+        "note": "Прямая пара: toujours = всегда; jamais = никогда. Противоположности на шкале частоты."
+      }
+    ],
+    "frequencyRank": 70,
+    "level": "A2",
+    "tags": ["temps", "fréquence", "adverbe"],
+    "caseIds": ["wc-temps"]
+  },
+  {
+    "id": "wl-temps-parfois",
+    "lemma": "parfois",
+    "pos": "adv",
+    "ipa": "/paʁ.fwa/",
+    "translationsRu": ["иногда", "порой"],
+    "translationsEn": ["sometimes", "at times"],
+    "semanticCore": "Время от времени, не всегда и не никогда — где-то посередине шкалы частоты.",
+    "collocations": [
+      {
+        "fr": "Parfois je me trompe.",
+        "ru": "Иногда я ошибаюсь."
+      },
+      {
+        "fr": "Il vient parfois le soir.",
+        "ru": "Он иногда приходит вечером."
+      },
+      {
+        "fr": "parfois… parfois…",
+        "ru": "то… то…"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "souvent",
+        "note": "parfois = иногда (редко-средне); souvent = часто (много раз). И то и другое — «не всегда», но souvent чаще."
+      },
+      {
+        "with": "quelquefois",
+        "note": "parfois и quelquefois — синонимы («иногда»); parfois чуть более употребительно и нейтрально."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["temps", "fréquence", "adverbe"],
+    "caseIds": ["wc-temps"]
+  },
+  {
+    "id": "wl-temps-souvent",
+    "lemma": "souvent",
+    "pos": "adv",
+    "ipa": "/su.vɑ̃/",
+    "translationsRu": ["часто"],
+    "translationsEn": ["often"],
+    "semanticCore": "Много раз, регулярно — высокая частота, но не «всегда».",
+    "collocations": [
+      {
+        "fr": "le plus souvent",
+        "ru": "чаще всего"
+      },
+      {
+        "fr": "trop souvent",
+        "ru": "слишком часто"
+      },
+      {
+        "fr": "assez souvent",
+        "ru": "довольно часто"
+      },
+      {
+        "fr": "Je viens souvent ici.",
+        "ru": "Я часто сюда прихожу."
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "parfois",
+        "note": "souvent = часто (много раз); parfois = иногда (изредка). souvent — выше по шкале частоты."
+      },
+      {
+        "with": "toujours",
+        "note": "souvent = часто, но с исключениями; toujours = всегда, без исключений."
+      }
+    ],
+    "frequencyRank": 150,
+    "level": "A2",
+    "tags": ["temps", "fréquence", "adverbe"],
+    "caseIds": ["wc-temps"]
+  },
+  {
+    "id": "wl-temps-jamais",
+    "lemma": "jamais",
+    "pos": "adv",
+    "ipa": "/ʒa.mɛ/",
+    "translationsRu": ["никогда", "когда-либо"],
+    "translationsEn": ["never", "ever"],
+    "semanticCore": "Ноль раз на шкале частоты («никогда», с ne); в вопросе и после si — «когда-либо».",
+    "collocations": [
+      {
+        "fr": "ne… jamais",
+        "ru": "никогда"
+      },
+      {
+        "fr": "jamais de la vie",
+        "ru": "ни за что на свете"
+      },
+      {
+        "fr": "plus jamais",
+        "ru": "больше никогда"
+      },
+      {
+        "fr": "à jamais",
+        "ru": "навсегда"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "toujours",
+        "note": "jamais = никогда (с ne: Je ne fume jamais); toujours = всегда. Противоположные концы шкалы."
+      },
+      {
+        "with": "déjà",
+        "note": "В вопросе они спорят: Tu as déjà vu ça ? = «ты уже это видел?»; As-tu jamais vu ça ? = «видел ли ты это когда-либо?». jamais тут = «когда-либо», не «никогда»."
+      }
+    ],
+    "frequencyRank": 130,
+    "level": "A2",
+    "tags": ["temps", "fréquence", "négation", "adverbe"],
+    "caseIds": ["wc-temps"]
+  },
+  {
+    "id": "wl-temps-maintenant",
+    "lemma": "maintenant",
+    "pos": "adv",
+    "ipa": "/mɛ̃t.nɑ̃/",
+    "translationsRu": ["сейчас", "теперь"],
+    "translationsEn": ["now"],
+    "semanticCore": "В данный, текущий момент — точка «сейчас» на временной оси.",
+    "collocations": [
+      {
+        "fr": "à partir de maintenant",
+        "ru": "начиная с этого момента"
+      },
+      {
+        "fr": "dès maintenant",
+        "ru": "прямо сейчас, уже сейчас"
+      },
+      {
+        "fr": "Maintenant, on y va.",
+        "ru": "Теперь идём."
+      },
+      {
+        "fr": "jusqu'à maintenant",
+        "ru": "до сих пор"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "déjà",
+        "note": "maintenant = сейчас (текущий момент); déjà = уже (раньше ожидаемого). «Сделай сейчас» (maintenant) ≠ «уже сделал» (déjà)."
+      },
+      {
+        "with": "bientôt",
+        "note": "maintenant = сейчас (в этот момент); bientôt = скоро (в ближайшем будущем, ещё не наступило)."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A2",
+    "tags": ["temps", "moment", "adverbe"],
+    "caseIds": ["wc-temps"]
+  },
+  {
+    "id": "wl-temps-bientot",
+    "lemma": "bientôt",
+    "pos": "adv",
+    "ipa": "/bjɛ̃.to/",
+    "translationsRu": ["скоро", "вскоре"],
+    "translationsEn": ["soon"],
+    "semanticCore": "Через короткое время, в ближайшем будущем — «скоро».",
+    "collocations": [
+      {
+        "fr": "À bientôt !",
+        "ru": "До скорого!"
+      },
+      {
+        "fr": "Il arrive bientôt.",
+        "ru": "Он скоро придёт."
+      },
+      {
+        "fr": "bientôt fini",
+        "ru": "скоро закончится"
+      },
+      {
+        "fr": "très bientôt",
+        "ru": "очень скоро"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "maintenant",
+        "note": "bientôt = скоро (ещё не сейчас, в будущем); maintenant = сейчас (уже в этот момент)."
+      },
+      {
+        "with": "tôt",
+        "note": "bientôt = скоро (через малое время); tôt = рано (раньше обычного срока). «Скоро» ≠ «рано»."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["temps", "futur", "adverbe"],
+    "caseIds": ["wc-temps"]
+  }
+]

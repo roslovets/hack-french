@@ -1,0 +1,274 @@
+[
+  {
+    "id": "wl-famille-famille",
+    "lemma": "famille",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fa.mij/",
+    "translationsRu": ["семья"],
+    "translationsEn": ["family"],
+    "semanticCore": "Группа близких родственников; также весь род в широком смысле.",
+    "collocations": [
+      {
+        "fr": "une grande famille",
+        "ru": "большая семья"
+      },
+      {
+        "fr": "en famille",
+        "ru": "всей семьёй, по-семейному"
+      },
+      {
+        "fr": "fonder une famille",
+        "ru": "создать семью"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "parents",
+        "note": "la famille — вся семья/род; les parents — только родители (мама и папа)."
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-famille-mere",
+    "lemma": "mère",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mɛʁ/",
+    "translationsRu": ["мать"],
+    "translationsEn": ["mother"],
+    "semanticCore": "Родительница; женщина-родитель в семье.",
+    "collocations": [
+      {
+        "fr": "la fête des mères",
+        "ru": "День матери"
+      },
+      {
+        "fr": "une mère de famille",
+        "ru": "мать семейства"
+      },
+      {
+        "fr": "la mère de Léa",
+        "ru": "мать Леа"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mer",
+        "note": "Омофоны: la mère (мать) и la mer (море) звучат одинаково /mɛʁ/; различает только написание и контекст."
+      }
+    ],
+    "frequencyRank": 130,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-famille-pere",
+    "lemma": "père",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɛʁ/",
+    "translationsRu": ["отец"],
+    "translationsEn": ["father"],
+    "semanticCore": "Родитель-мужчина в семье.",
+    "collocations": [
+      {
+        "fr": "la fête des pères",
+        "ru": "День отца"
+      },
+      {
+        "fr": "un père de famille",
+        "ru": "отец семейства"
+      },
+      {
+        "fr": "ressembler à son père",
+        "ru": "быть похожим на отца"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "paire",
+        "note": "Омофоны: le père (отец) и une paire (пара) звучат одинаково /pɛʁ/; различает только написание и контекст."
+      }
+    ],
+    "frequencyRank": 135,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-famille-fils",
+    "lemma": "fils",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fis/",
+    "translationsRu": ["сын"],
+    "translationsEn": ["son"],
+    "semanticCore": "Ребёнок мужского пола по отношению к родителям.",
+    "collocations": [
+      {
+        "fr": "un fils unique",
+        "ru": "единственный сын"
+      },
+      {
+        "fr": "le fils aîné",
+        "ru": "старший сын"
+      },
+      {
+        "fr": "mon fils a dix ans",
+        "ru": "моему сыну десять лет"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fil",
+        "note": "le fils (сын) читается /fis/ со звуком s; le fil (нить) — /fil/ со звуком l. Во множественном пишутся одинаково: les fils."
+      }
+    ],
+    "frequencyRank": 160,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-famille-fille",
+    "lemma": "fille",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fij/",
+    "translationsRu": ["дочь", "девочка"],
+    "translationsEn": ["daughter", "girl"],
+    "semanticCore": "В родственном контексте — дочь; в общем — девочка или девушка.",
+    "collocations": [
+      {
+        "fr": "une petite fille",
+        "ru": "маленькая девочка"
+      },
+      {
+        "fr": "la fille aînée",
+        "ru": "старшая дочь"
+      },
+      {
+        "fr": "ma fille a huit ans",
+        "ru": "моей дочери восемь лет"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "garçon",
+        "note": "fille (девочка/дочь) — женского пола; le garçon (мальчик), le fils (сын) — мужского."
+      }
+    ],
+    "frequencyRank": 150,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-famille-frere",
+    "lemma": "frère",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fʁɛʁ/",
+    "translationsRu": ["брат"],
+    "translationsEn": ["brother"],
+    "semanticCore": "Сын тех же родителей по отношению к другому ребёнку.",
+    "collocations": [
+      {
+        "fr": "un grand frère",
+        "ru": "старший брат"
+      },
+      {
+        "fr": "un petit frère",
+        "ru": "младший брат"
+      },
+      {
+        "fr": "un frère et une sœur",
+        "ru": "брат и сестра"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sœur",
+        "note": "le frère — брат (мужской род), la sœur — сестра (женский). Часто идут в паре."
+      }
+    ],
+    "frequencyRank": 175,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-famille-soeur",
+    "lemma": "sœur",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sœʁ/",
+    "translationsRu": ["сестра"],
+    "translationsEn": ["sister"],
+    "semanticCore": "Дочь тех же родителей по отношению к другому ребёнку.",
+    "collocations": [
+      {
+        "fr": "une grande sœur",
+        "ru": "старшая сестра"
+      },
+      {
+        "fr": "une petite sœur",
+        "ru": "младшая сестра"
+      },
+      {
+        "fr": "ma sœur aînée",
+        "ru": "моя старшая сестра"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cœur",
+        "note": "Пишутся с лигатурой œ: sœur (сестра) и cœur (сердце); читаются /sœʁ/ и /kœʁ/."
+      }
+    ],
+    "frequencyRank": 180,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-famille-enfant",
+    "lemma": "enfant",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɑ̃.fɑ̃/",
+    "translationsRu": ["ребёнок", "дитя"],
+    "translationsEn": ["child"],
+    "semanticCore": "Маленький человек; также сын или дочь любого возраста по отношению к родителям.",
+    "collocations": [
+      {
+        "fr": "un enfant",
+        "ru": "ребёнок"
+      },
+      {
+        "fr": "avoir des enfants",
+        "ru": "иметь детей"
+      },
+      {
+        "fr": "un livre pour enfants",
+        "ru": "детская книга"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fille / fils",
+        "note": "enfant — ребёнок любого пола (un/une enfant); fils — именно сын, fille — именно дочь."
+      }
+    ],
+    "frequencyRank": 120,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  }
+]

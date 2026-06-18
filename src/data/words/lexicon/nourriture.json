@@ -1,0 +1,337 @@
+[
+  {
+    "id": "wl-nourriture-manger",
+    "lemma": "manger",
+    "pos": "verb",
+    "ipa": "/mɑ̃.ʒe/",
+    "translationsRu": ["есть", "кушать"],
+    "translationsEn": ["to eat"],
+    "semanticCore": "Принимать пищу — основной глагол еды; «manger» можно и без дополнения (просто «есть, питаться»), и с ним (manger une pomme).",
+    "collocations": [
+      {
+        "fr": "manger au restaurant",
+        "ru": "есть в ресторане"
+      },
+      {
+        "fr": "manger sainement",
+        "ru": "питаться правильно"
+      },
+      {
+        "fr": "de quoi manger",
+        "ru": "что-нибудь поесть"
+      },
+      {
+        "fr": "manger un morceau",
+        "ru": "перекусить"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "boire",
+        "note": "manger — есть (твёрдую пищу); boire — пить (напитки). За столом нужны оба глагола."
+      },
+      {
+        "with": "prendre",
+        "note": "manger un plat — именно «есть» блюдо; prendre un plat — «взять, заказать» его в кафе. В ресторане чаще говорят prendre."
+      }
+    ],
+    "frequencyRank": 150,
+    "level": "A2",
+    "tags": ["nourriture", "verbe", "repas"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-nourriture-repas",
+    "lemma": "repas",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁə.pa/",
+    "translationsRu": ["приём пищи", "еда (завтрак/обед/ужин)", "трапеза"],
+    "translationsEn": ["meal"],
+    "semanticCore": "Приём пищи целиком — завтрак, обед или ужин; событие за столом, а не отдельное блюдо. Форма одинакова в ед. и мн. числе: un repas / des repas.",
+    "collocations": [
+      {
+        "fr": "prendre un repas",
+        "ru": "принимать пищу"
+      },
+      {
+        "fr": "un repas léger",
+        "ru": "лёгкая еда"
+      },
+      {
+        "fr": "préparer le repas",
+        "ru": "готовить еду"
+      },
+      {
+        "fr": "un bon repas",
+        "ru": "хорошая трапеза"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "plat",
+        "note": "repas — весь приём пищи (закуска + основное + десерт); plat — одно блюдо внутри него."
+      },
+      {
+        "with": "nourriture",
+        "note": "repas — приём пищи как событие (завтрак, обед); nourriture — еда как вещество, пропитание вообще."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["nourriture", "repas"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-nourriture-fruit",
+    "lemma": "fruit",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fʁɥi/",
+    "translationsRu": ["фрукт"],
+    "translationsEn": ["fruit"],
+    "semanticCore": "Фрукт — сладкий плод (яблоко, банан, апельсин); мужской род: un fruit, des fruits.",
+    "collocations": [
+      {
+        "fr": "un jus de fruits",
+        "ru": "фруктовый сок"
+      },
+      {
+        "fr": "manger un fruit",
+        "ru": "съесть фрукт"
+      },
+      {
+        "fr": "des fruits frais",
+        "ru": "свежие фрукты"
+      },
+      {
+        "fr": "une salade de fruits",
+        "ru": "фруктовый салат"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "légume",
+        "note": "fruit — сладкий плод (яблоко, груша); légume — овощ (морковь, картофель). Во французском их разделяют так же чётко, как в русском."
+      },
+      {
+        "with": "fruit (англ.)",
+        "note": "Англ. «fruit» = фрукт, тот же смысл и почти то же написание. Удобный мост: только читается /fʁɥi/, конечная t не звучит."
+      }
+    ],
+    "frequencyRank": 400,
+    "level": "A2",
+    "tags": ["nourriture", "aliment"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-nourriture-legume",
+    "lemma": "légume",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/le.ɡym/",
+    "translationsRu": ["овощ"],
+    "translationsEn": ["vegetable"],
+    "semanticCore": "Овощ — морковь, картофель, помидор и т. п.; мужской род, хотя оканчивается на -e: un légume.",
+    "collocations": [
+      {
+        "fr": "des légumes verts",
+        "ru": "зелёные овощи"
+      },
+      {
+        "fr": "une soupe de légumes",
+        "ru": "овощной суп"
+      },
+      {
+        "fr": "manger des légumes",
+        "ru": "есть овощи"
+      },
+      {
+        "fr": "des légumes de saison",
+        "ru": "сезонные овощи"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "légume (≠ англ. legume)",
+        "note": "Англ. «legume» — узко «бобовое» (горох, фасоль). Фр. légume — любой овощ. Ложный друг: фр. слово шире."
+      },
+      {
+        "with": "fruit",
+        "note": "légume — овощ (несладкий, чаще в горячих блюдах); fruit — фрукт (сладкий плод). Не путать категории."
+      }
+    ],
+    "frequencyRank": 550,
+    "level": "A2",
+    "tags": ["nourriture", "aliment"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-nourriture-viande",
+    "lemma": "viande",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vjɑ̃d/",
+    "translationsRu": ["мясо"],
+    "translationsEn": ["meat"],
+    "semanticCore": "Мясо как продукт (говядина, свинина, курица) — то, что едят; женский род: la viande. Рыба (poisson) к viande не относится.",
+    "collocations": [
+      {
+        "fr": "de la viande rouge",
+        "ru": "красное мясо"
+      },
+      {
+        "fr": "manger de la viande",
+        "ru": "есть мясо"
+      },
+      {
+        "fr": "viande ou poisson ?",
+        "ru": "мясо или рыба?"
+      },
+      {
+        "fr": "un morceau de viande",
+        "ru": "кусок мяса"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poisson",
+        "note": "viande — мясо (животных, птицы); poisson — рыба. В меню их обычно противопоставляют: «viande ou poisson ?»"
+      },
+      {
+        "with": "chair",
+        "note": "viande — мясо как еда (на тарелке, в магазине); chair — плоть, мякоть (тела, плода). Едят la viande, а не la chair."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["nourriture", "aliment"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-nourriture-poisson",
+    "lemma": "poisson",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pwa.sɔ̃/",
+    "translationsRu": ["рыба"],
+    "translationsEn": ["fish"],
+    "semanticCore": "Рыба — и живая, и как блюдо; мужской род: un poisson. Двойная ss даёт глухой /s/: /pwasɔ̃/ — иначе получится poison (яд).",
+    "collocations": [
+      {
+        "fr": "manger du poisson",
+        "ru": "есть рыбу"
+      },
+      {
+        "fr": "du poisson frais",
+        "ru": "свежая рыба"
+      },
+      {
+        "fr": "un poisson grillé",
+        "ru": "рыба на гриле"
+      },
+      {
+        "fr": "poisson d'avril",
+        "ru": "первоапрельская шутка"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poison",
+        "note": "poisson /pwasɔ̃/ (ss = /s/) — рыба; poison /pwazɔ̃/ (одна s = /z/) — яд. Опасная пара: меняется только звук s/z."
+      },
+      {
+        "with": "viande",
+        "note": "poisson — рыба; viande — мясо. В меню обычно стоят рядом как два разных раздела."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["nourriture", "aliment"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-nourriture-fromage",
+    "lemma": "fromage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fʁɔ.maʒ/",
+    "translationsRu": ["сыр"],
+    "translationsEn": ["cheese"],
+    "semanticCore": "Сыр; во Франции его едят отдельным курсом — после основного блюда и перед десертом. Мужской род: le fromage.",
+    "collocations": [
+      {
+        "fr": "un plateau de fromages",
+        "ru": "сырная тарелка"
+      },
+      {
+        "fr": "du fromage de chèvre",
+        "ru": "козий сыр"
+      },
+      {
+        "fr": "un sandwich au fromage",
+        "ru": "бутерброд с сыром"
+      },
+      {
+        "fr": "fromage ou dessert ?",
+        "ru": "сыр или десерт?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "dessert",
+        "note": "Во французской трапезе le fromage идёт перед десертом как отдельный курс; классический выбор — «fromage ou dessert ?». Это не сладкое."
+      },
+      {
+        "with": "cheese (англ.)",
+        "note": "Совсем не похоже на англ. «cheese» — мост не работает, слово нужно просто запомнить: fromage."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["nourriture", "aliment"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-nourriture-plat",
+    "lemma": "plat",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pla/",
+    "translationsRu": ["блюдо", "кушанье", "основное блюдо"],
+    "translationsEn": ["dish", "course"],
+    "semanticCore": "Блюдо — приготовленная еда на тарелке; «le plat (principal)» — основное (второе) блюдо в меню. Мужской род, конечная t не читается: /pla/.",
+    "collocations": [
+      {
+        "fr": "le plat principal",
+        "ru": "основное блюдо"
+      },
+      {
+        "fr": "le plat du jour",
+        "ru": "блюдо дня"
+      },
+      {
+        "fr": "un plat chaud",
+        "ru": "горячее блюдо"
+      },
+      {
+        "fr": "goûter un plat",
+        "ru": "попробовать блюдо"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "plat (прил. «плоский»)",
+        "note": "plat — ещё и прилагательное «плоский, без газа»: de l'eau plate (вода без газа), un pays plat (равнинная страна). Существительное le plat — блюдо."
+      },
+      {
+        "with": "repas",
+        "note": "plat — одно блюдо; repas — весь приём пищи, в который входит несколько plats (entrée, plat, dessert)."
+      }
+    ],
+    "frequencyRank": 450,
+    "level": "A2",
+    "tags": ["nourriture", "repas"],
+    "caseIds": ["wc-nourriture"]
+  }
+]
