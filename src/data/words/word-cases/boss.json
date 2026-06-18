@@ -1,5 +1,171 @@
 [
   {
+    "id": "wc-boss-boulangerie",
+    "title": "Босс: в булочной",
+    "theme": "boulangerie",
+    "level": "A1",
+    "isBoss": true,
+    "wordIds": ["pain", "baguette", "encore"],
+    "steps": [
+      {
+        "id": "wc-boss-boulangerie-pain-ctx",
+        "kind": "wordContext",
+        "wordId": "pain",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты заходишь в булочную утром. Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Bonjour, je voudrais du pain, s'il vous plaît.",
+          "Vous préférez du pain blanc ou du pain complet ?",
+          "Ce pain sort tout juste du four."
+        ],
+        "options": ["хлеб", "сыр", "масло", "мука"],
+        "correctIndex": 0,
+        "explanation": "pain (m) — хлеб. «du pain» — немного хлеба (частичный артикль). Осторожно: англ. pain = «боль» (по-французски la douleur), это ложный друг."
+      },
+      {
+        "id": "wc-boss-boulangerie-baguette-ctx",
+        "kind": "wordContext",
+        "wordId": "baguette",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Продавщица показывает на полку с хлебом. Что значит выделенное слово здесь, в булочной?",
+        "contexts": [
+          "Une baguette bien cuite, s'il vous plaît.",
+          "La baguette est encore chaude.",
+          "Je coupe la baguette en deux pour le sandwich."
+        ],
+        "options": ["багет (длинный белый хлеб)", "булочка с изюмом", "нож для хлеба", "корзинка"],
+        "correctIndex": 0,
+        "explanation": "baguette (f) — багет, длинный тонкий батон. У слова есть и другое значение — «палочка» (baguette magique — волшебная палочка), но в булочной речь именно о хлебе."
+      },
+      {
+        "id": "wc-boss-boulangerie-baguette-collo",
+        "kind": "sort",
+        "wordId": "baguette",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Ты делаешь заказ. Какие сочетания со словом baguette звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une baguette bien cuite",
+            "basket": "ok"
+          },
+          {
+            "text": "une demi-baguette",
+            "basket": "ok"
+          },
+          {
+            "text": "une baguette tradition",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une baguette",
+            "basket": "no"
+          },
+          {
+            "text": "un litre de baguette",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Багет заказывают, выбирают пропечённость и сорт: «une baguette bien cuite» (хорошо пропечённый), «une demi-baguette» (полбагета), «une baguette tradition» (по традиционному рецепту). «boire une baguette» (пить багет) и «un litre de baguette» (литр багета) — бессмыслица: багет не пьют и не меряют литрами."
+      },
+      {
+        "id": "wc-boss-boulangerie-encore-cmp",
+        "kind": "compare",
+        "wordId": "encore",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Продавщица спрашивает, всё ли тебе. В чём разница между этими двумя фразами со словом encore?",
+        "phrases": [
+          "Vous voulez encore quelque chose ?",
+          "Il est neuf heures et la boulangerie est encore ouverte."
+        ],
+        "options": [
+          "В первой encore — «ещё» (добавка, что-то сверх), во второй — «всё ещё» (по-прежнему).",
+          "В обеих encore значит «снова, заново».",
+          "В первой encore — «всё ещё», во второй — «ещё, добавка».",
+          "В обеих encore значит «уже»."
+        ],
+        "correctIndex": 0,
+        "explanation": "У encore два частых значения. «encore quelque chose ?» — «ещё что-нибудь?» (добавка). «encore ouverte» — «всё ещё открыта» (по-прежнему, не закрылась). Контекст подсказывает, какое из значений нужно."
+      },
+      {
+        "id": "wc-boss-boulangerie-encore-ctx",
+        "kind": "wordContext",
+        "wordId": "encore",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Тебе очень понравился хлеб. Что значит encore в этих репликах у прилавка?",
+        "contexts": [
+          "C'était délicieux, j'en veux encore un.",
+          "Donnez-moi encore deux croissants, s'il vous plaît.",
+          "Tu en veux encore ?"
+        ],
+        "options": ["ещё (дополнительное количество)", "меньше", "бесплатно", "вчера"],
+        "correctIndex": 0,
+        "explanation": "Здесь encore — «ещё» в смысле добавки / дополнительного количества: «encore un» — ещё один, «encore deux croissants» — ещё два круассана. Часто идёт вместе с en: «j'en veux encore»."
+      },
+      {
+        "id": "wc-boss-boulangerie-encore-bridge",
+        "kind": "wordBridge",
+        "wordId": "encore",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет закрепить encore. Что оно значит?",
+        "bridge": "В английском «Encore!» кричат на концерте — «ещё, сыграйте на бис». Это то же французское слово.",
+        "options": ["ещё / снова", "хватит", "тише", "быстрее"],
+        "correctIndex": 0,
+        "explanation": "encore = «ещё, снова». Английское «Encore!» (просьба сыграть ещё раз) заимствовано из французского и ведёт прямо к значению."
+      },
+      {
+        "id": "wc-boss-boulangerie-pain-trap",
+        "kind": "trap",
+        "wordId": "pain",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг: англ. pain = «боль». Как по-французски попросить «немного хлеба»?",
+        "phrases": ["Je voudrais du pain, s'il vous plaît.", "J'ai mal au dos."],
+        "options": ["du pain", "de la douleur", "du mal", "de la peine"],
+        "correctIndex": 0,
+        "explanation": "Хлеб — le pain: «du pain» (немного хлеба). Англ. pain («боль») сбивает, но по-французски «боль» — la douleur, а «мне больно» — «j'ai mal». «de la peine» — это горе / огорчение, тоже не хлеб."
+      },
+      {
+        "id": "wc-boss-boulangerie-baguette-hint",
+        "kind": "wordHint",
+        "wordId": "baguette",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: длинный тонкий французский хлеб с хрустящей корочкой, который покупают в булочной каждый день.",
+        "answer": "baguette",
+        "hints": ["Начинается на b…", "Женский род, 8 букв: une ___", "Une ___, s'il vous plaît !"],
+        "explanation": "baguette (f) — багет. В булочной просят: «Une baguette, s'il vous plaît.» То же слово значит и «палочка» (например, baguette magique), но в булочной — хлеб."
+      },
+      {
+        "id": "wc-boss-boulangerie-pain-sound",
+        "kind": "soundTwin",
+        "wordId": "pain",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Финальная проверка слуха. Послушай и выбери, какое слово произнесли.",
+        "audioText": "pain",
+        "options": ["pain", "bain", "vin", "main"],
+        "correctIndex": 0,
+        "explanation": "У всех один носовой звук /ɛ̃/ на конце, различается первый согласный: pain /pɛ̃/ (хлеб), bain /bɛ̃/ (ванна), vin /vɛ̃/ (вино), main /mɛ̃/ (рука). Это разные слова, а не омофоны."
+      }
+    ]
+  },
+  {
     "id": "wc-boss-cafe",
     "title": "Босс: в кафе",
     "theme": "cafe",
@@ -428,6 +594,1715 @@
         "options": ["note", "botte", "hotte", "noter"],
         "correctIndex": 0,
         "explanation": "note /nɔt/ (оценка), botte /bɔt/ (сапог), hotte /ɔt/ (вытяжка), noter /nɔte/ (отмечать, ставить оценку). Это разные слова: слушай первый звук и концовку."
+      }
+    ]
+  },
+  {
+    "id": "wc-boss-maison",
+    "title": "Босс: дом и вещи",
+    "theme": "maison",
+    "level": "A1",
+    "isBoss": true,
+    "wordIds": [
+      "wl-maison-maison",
+      "wl-maison-etage",
+      "wl-maison-cle",
+      "wl-maison-porte",
+      "wl-maison-mur",
+      "wl-maison-fenetre",
+      "wl-maison-table",
+      "wl-maison-lit"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-maison-maison-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-maison",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты идёшь в гости к другу. Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Tu viens chez moi, à la maison ?",
+          "Ils ont une petite maison près du parc.",
+          "Je rentre à la maison vers six heures."
+        ],
+        "options": ["дом (жилище)", "комната", "квартира", "семья"],
+        "correctIndex": 0,
+        "explanation": "maison (f) — дом как жилище. «à la maison» — дома / домой. Квартира — un appartement, комната — une pièce / une chambre."
+      },
+      {
+        "id": "wc-boss-maison-maison-collo",
+        "kind": "sort",
+        "wordId": "wl-maison-maison",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Подходишь к дому друга. Какие сочетания со словом maison звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "rentrer à la maison",
+            "basket": "ok"
+          },
+          {
+            "text": "une maison de campagne",
+            "basket": "ok"
+          },
+          {
+            "text": "rester à la maison",
+            "basket": "ok"
+          },
+          {
+            "text": "manger une maison",
+            "basket": "no"
+          },
+          {
+            "text": "une maison liquide",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«rentrer / rester à la maison», «une maison de campagne» — естественно. «manger une maison» (есть дом) и «une maison liquide» (жидкий дом) — бессмыслица."
+      },
+      {
+        "id": "wc-boss-maison-etage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-etage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Друг написал, где он живёт. Что значит выделенное слово?",
+        "contexts": [
+          "J'habite au troisième étage.",
+          "Monte à l'étage, c'est la porte de gauche.",
+          "L'ascenseur est en panne, on prend l'escalier jusqu'à l'étage."
+        ],
+        "options": ["этаж", "лестница", "лифт", "подъезд"],
+        "correctIndex": 0,
+        "explanation": "étage (m) — этаж. Лестница — un escalier, лифт — un ascenseur, подъезд — une entrée. «monter à l'étage» — подняться на этаж."
+      },
+      {
+        "id": "wc-boss-maison-etage-trap",
+        "kind": "trap",
+        "wordId": "wl-maison-etage",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг живёт «au premier étage». На каком этаже искать его по-русски?",
+        "phrases": [
+          "Le rez-de-chaussée, c'est le niveau de la rue.",
+          "J'habite au premier étage, juste au-dessus."
+        ],
+        "options": [
+          "на втором — нижний этаж зовётся le rez-de-chaussée",
+          "на первом — premier значит «первый»",
+          "на третьем — premier значит «третий»",
+          "на нулевом — premier значит «нулевой»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка счёта этажей: наземный этаж — le rez-de-chaussée, и только над ним идёт le premier étage. Поэтому «premier étage» = русский второй этаж."
+      },
+      {
+        "id": "wc-boss-maison-cle-hint",
+        "kind": "wordHint",
+        "wordId": "wl-maison-cle",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: маленький металлический предмет, которым друг открывает входную дверь.",
+        "answer": "clé",
+        "hints": [
+          "Начинается на c…",
+          "3 буквы, женский род, есть accent aigu",
+          "J'ai oublié mes ___s à la maison."
+        ],
+        "explanation": "clé (f) — ключ. Пишется clé или clef, читается /kle/. Во множественном — des clés."
+      },
+      {
+        "id": "wc-boss-maison-porte-cmp",
+        "kind": "compare",
+        "wordId": "wl-maison-porte",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Друг открыл дверь. В чём разница между этими двумя фразами?",
+        "phrases": ["Ferme la porte, s'il te plaît.", "Ferme la porte à clé."],
+        "options": [
+          "Первая — просто закрыть (притворить) дверь; вторая — запереть её на ключ.",
+          "Это полные синонимы, разницы нет.",
+          "Первая значит запереть на ключ, вторая — просто прикрыть.",
+          "Вторая значит «открыть дверь ключом»."
+        ],
+        "correctIndex": 0,
+        "explanation": "fermer la porte — закрыть (притворить) дверь. Чтобы сказать «запереть на ключ», добавляют à clé: fermer la porte à clé."
+      },
+      {
+        "id": "wc-boss-maison-mur-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-maison-mur",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Друг показывает квартиру. Послушай и выбери, какое слово произнесли.",
+        "audioText": "mur",
+        "options": ["mur", "pur", "peur", "mer"],
+        "correctIndex": 0,
+        "explanation": "mur /myʁ/ (стена), pur /pyʁ/ (чистый), peur /pœʁ/ (страх), mer /mɛʁ/ (море). Это разные слова, не омофоны: слушай гласный."
+      },
+      {
+        "id": "wc-boss-maison-mur-collo",
+        "kind": "sort",
+        "wordId": "wl-maison-mur",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Друг рассказывает про стены в комнате. Какие сочетания со словом mur звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un tableau au mur",
+            "basket": "ok"
+          },
+          {
+            "text": "les murs sont blancs",
+            "basket": "ok"
+          },
+          {
+            "text": "accrocher une photo au mur",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un mur",
+            "basket": "no"
+          },
+          {
+            "text": "un mur sucré",
+            "basket": "no"
+          }
+        ],
+        "explanation": "На стену вешают картины (un tableau au mur, accrocher une photo au mur), стены бывают белыми (les murs sont blancs). «boire un mur» (пить стену) и «un mur sucré» (сладкая стена) — бессмыслица."
+      },
+      {
+        "id": "wc-boss-maison-fenetre-trap",
+        "kind": "trap",
+        "wordId": "wl-maison-fenetre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг открывает окно проветрить. Как по-французски «окно» в стене?",
+        "phrases": ["Ouvre la fenêtre, il fait chaud.", "La vitre de la fenêtre est sale."],
+        "options": ["une fenêtre", "une vitre", "une window", "un fenster"],
+        "correctIndex": 0,
+        "explanation": "Окно — une fenêtre. «une vitre» — это стекло окна, а не само окно. «window» — английское, «fenster» — немецкое; во французском их нет."
+      },
+      {
+        "id": "wc-boss-maison-table-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-maison-table",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Вы садитесь в гостиной. Три слова — мебель, на которую можно поставить чашку или сесть. Найди лишнее.",
+        "options": ["la table", "la chaise", "le canapé", "la clé"],
+        "correctIndex": 3,
+        "explanation": "Стол (la table), стул (la chaise) и диван (le canapé) — мебель в комнате. Ключ (la clé) — лишний: это не мебель, а отдельный предмет."
+      },
+      {
+        "id": "wc-boss-maison-table-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-table",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Друг зовёт пить чай. Что значит выделенное слово?",
+        "contexts": [
+          "Les clés sont sur la table.",
+          "On passe à table !",
+          "Mets les tasses sur la table."
+        ],
+        "options": ["стол", "стул", "тарелка", "скатерть"],
+        "correctIndex": 0,
+        "explanation": "table (f) — стол. «passer à table» — садиться за стол (есть). «sur la table» — на столе. Стул — une chaise."
+      },
+      {
+        "id": "wc-boss-maison-lit-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-maison-lit",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Уже поздно, пора спать. Послушай и выбери, какое слово произнесли.",
+        "audioText": "lit",
+        "options": ["lit", "lait", "riz", "nid"],
+        "correctIndex": 0,
+        "explanation": "lit /li/ (кровать), lait /lɛ/ (молоко), riz /ʁi/ (рис), nid /ni/ (гнездо). Это разные слова, не омофоны: слушай гласный и начало."
+      },
+      {
+        "id": "wc-boss-maison-lit-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-lit",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Финал визита: ты возвращаешься домой и ложишься спать. Что значит выделенное слово?",
+        "contexts": [
+          "Je vais au lit, je suis fatigué.",
+          "Fais ton lit avant de partir.",
+          "Le chat dort au pied du lit."
+        ],
+        "options": ["кровать", "диван", "одеяло", "комната"],
+        "correctIndex": 0,
+        "explanation": "lit (m) — кровать. «aller au lit» — ложиться спать, «faire son lit» — застилать постель. Диван — un canapé."
+      }
+    ]
+  },
+  {
+    "id": "wc-boss-perception",
+    "title": "Босс: видеть и слышать",
+    "theme": "perception",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": ["voir", "regarder", "entendre", "ecouter", "sembler"],
+    "steps": [
+      {
+        "id": "wc-boss-perception-voir-ctx",
+        "kind": "wordContext",
+        "wordId": "voir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты выходишь из дома утром. Одно слово связывает все три сцены — что оно значит?",
+        "contexts": [
+          "Je vois le bus arriver au loin.",
+          "On ne voit rien, il y a trop de brouillard.",
+          "Tu vois cet homme là-bas, près du kiosque ?"
+        ],
+        "options": [
+          "видеть (образ сам попадает в глаза)",
+          "смотреть намеренно",
+          "слышать",
+          "искать"
+        ],
+        "correctIndex": 0,
+        "explanation": "voir — «видеть»: образ сам попадает в поле зрения, без усилия. «Je vois le bus arriver» — я вижу, как подъезжает автобус; «on ne voit rien» — ничего не видно."
+      },
+      {
+        "id": "wc-boss-perception-voir-regarder-cmp",
+        "kind": "compare",
+        "wordId": "regarder",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Главная пара дня — «видеть» и «смотреть». В чём разница между этими фразами?",
+        "phrases": ["Je vois la vitrine en passant.", "Je regarde la vitrine avec attention."],
+        "options": [
+          "voir = видеть (образ сам попадает в глаза); regarder = смотреть намеренно (направляешь взгляд)",
+          "Это синонимы, разницы нет",
+          "voir = смотреть намеренно; regarder = видеть мимоходом",
+          "voir = слышать; regarder = видеть"
+        ],
+        "correctIndex": 0,
+        "explanation": "voir — пассивно «видеть» (витрина сама попадает в глаза, когда проходишь мимо). regarder — активно «смотреть» (намеренно рассматриваешь витрину). Та же пара, что русские «видеть/смотреть»."
+      },
+      {
+        "id": "wc-boss-perception-regarder-collo",
+        "kind": "sort",
+        "wordId": "regarder",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Дома вечером ты что-то смотришь. Какие сочетания с regarder звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "regarder la télé",
+            "basket": "ok"
+          },
+          {
+            "text": "regarder un film",
+            "basket": "ok"
+          },
+          {
+            "text": "regarder par la fenêtre",
+            "basket": "ok"
+          },
+          {
+            "text": "regarder de la musique",
+            "basket": "no"
+          },
+          {
+            "text": "regarder à la télé",
+            "basket": "no"
+          }
+        ],
+        "explanation": "regarder берёт прямое дополнение без предлога: regarder la télé / un film / par la fenêtre. Музыку «слушают» (écouter de la musique), а не «regarder». И телевизор смотрят без предлога à: «regarder la télé», а не «regarder à la télé»."
+      },
+      {
+        "id": "wc-boss-perception-entendre-ctx",
+        "kind": "wordContext",
+        "wordId": "entendre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "На улице вокруг тебя звуки. Что значит повторяющееся слово?",
+        "contexts": [
+          "J'entends une sirène au loin.",
+          "Parle plus fort, je ne t'entends pas.",
+          "Tu entends ce bruit bizarre ?"
+        ],
+        "options": ["слышать (звук сам доходит до ушей)", "слушать намеренно", "видеть", "молчать"],
+        "correctIndex": 0,
+        "explanation": "entendre — «слышать»: звук сам доходит до тебя, без усилия. «J'entends une sirène» — я слышу сирену; «je ne t'entends pas» — я тебя не слышу (плохо доходит звук)."
+      },
+      {
+        "id": "wc-boss-perception-entendre-trap",
+        "kind": "trap",
+        "wordId": "entendre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Похожие по форме «J'entends quelqu'un» и «J'attends quelqu'un». Что на самом деле значит entendre?",
+        "options": ["слышать кого-то", "ждать кого-то", "понимать кого-то", "звать кого-то"],
+        "correctIndex": 0,
+        "explanation": "Ловушка по форме: entendre = «слышать», а очень похожее attendre = «ждать». Различай по приставке: en-tendre (слышать) против at-tendre (ждать). «J'attends quelqu'un» = я кого-то жду."
+      },
+      {
+        "id": "wc-boss-perception-entendre-ecouter-cmp",
+        "kind": "compare",
+        "wordId": "ecouter",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Вторая пара дня — «слышать» и «слушать». В чём разница между этими фразами?",
+        "phrases": [
+          "J'entends la musique du voisin à travers le mur.",
+          "J'écoute ma playlist dans le métro."
+        ],
+        "options": [
+          "entendre = слышать (звук сам доходит); écouter = слушать намеренно (направляешь внимание)",
+          "Это синонимы, разницы нет",
+          "entendre = слушать намеренно; écouter = слышать случайно",
+          "entendre = видеть; écouter = слышать"
+        ],
+        "correctIndex": 0,
+        "explanation": "entendre — пассивно «слышать» (музыка соседа сама доходит сквозь стену). écouter — активно «слушать» (ты сам ставишь плейлист и слушаешь). Это звуковой аналог пары voir/regarder."
+      },
+      {
+        "id": "wc-boss-perception-ecouter-collo",
+        "kind": "sort",
+        "wordId": "ecouter",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с écouter звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "écouter de la musique",
+            "basket": "ok"
+          },
+          {
+            "text": "écouter la radio",
+            "basket": "ok"
+          },
+          {
+            "text": "écouter ses parents",
+            "basket": "ok"
+          },
+          {
+            "text": "écouter la télé",
+            "basket": "no"
+          },
+          {
+            "text": "écouter à la radio",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественны: écouter de la musique / la radio, écouter ses parents (слушаться). Телевизор «смотрят» (regarder la télé), а не «écouter». И дополнение идёт без предлога: «écouter la radio», а не «écouter à la radio»."
+      },
+      {
+        "id": "wc-boss-perception-sembler-ctx",
+        "kind": "wordContext",
+        "wordId": "sembler",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "К концу дня ты делишься впечатлениями. Что значит повторяющееся слово?",
+        "contexts": [
+          "Cette rue semble plus calme le soir.",
+          "Tu sembles fatigué après cette journée.",
+          "Il me semble que le magasin est déjà fermé."
+        ],
+        "options": [
+          "казаться, производить впечатление",
+          "видеть своими глазами",
+          "слышать",
+          "знать наверняка"
+        ],
+        "correctIndex": 0,
+        "explanation": "sembler — «казаться»: что-то выглядит каким-то по твоему впечатлению, без уверенности. «tu sembles fatigué» (ты выглядишь усталым), «il me semble que…» (мне кажется, что…)."
+      },
+      {
+        "id": "wc-boss-perception-voir-twin",
+        "kind": "soundTwin",
+        "wordId": "voir",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Проверка слуха. Послушай и выбери, какое слово произнесли.",
+        "audioText": "voir",
+        "options": ["voir", "boire", "soir", "noir"],
+        "correctIndex": 0,
+        "explanation": "Одинаковая концовка /-waʁ/, различается начало: voir /vwaʁ/ (видеть), boire /bwaʁ/ (пить), soir /swaʁ/ (вечер), noir /nwaʁ/ (чёрный). Это разные слова, а не омофоны."
+      },
+      {
+        "id": "wc-boss-perception-sembler-hint",
+        "kind": "wordHint",
+        "wordId": "sembler",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Финал. Вспомни глагол: производить впечатление, выглядеть каким-то — «казаться».",
+        "answer": "sembler",
+        "hints": [
+          "Начинается на s…",
+          "7 букв; родственно англ. semblance «видимость»",
+          "Il me ___ que tu as raison."
+        ],
+        "explanation": "sembler — «казаться». «Tu sembles fatigué» — ты кажешься/выглядишь усталым. «Il me semble que…» — мне кажется, что… Родственно англ. semblance (видимость), resemble (быть похожим)."
+      }
+    ]
+  },
+  {
+    "id": "wc-boss-politesse",
+    "title": "Босс: вежливость и просьбы",
+    "theme": "politesse",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-politesse-pardon",
+      "wl-politesse-deranger",
+      "wl-politesse-vouloir",
+      "wl-politesse-svp",
+      "wl-politesse-gentil",
+      "wl-politesse-refuser",
+      "wl-politesse-desole"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-politesse-pardon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-politesse-pardon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты входишь в магазин и протискиваешься к прилавку. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Pardon, je peux passer ?",
+          "Pardon, vous avez l'heure ?",
+          "Oh, pardon ! Je ne vous avais pas vu."
+        ],
+        "options": ["извините, простите", "спасибо", "пожалуйста", "здравствуйте"],
+        "correctIndex": 0,
+        "explanation": "pardon — «извините / простите». Им просят пройти, вежливо заговаривают с незнакомцем и извиняются за лёгкую оплошность. Короче и легче, чем «je suis désolé»."
+      },
+      {
+        "id": "wc-boss-politesse-pardon-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-politesse-pardon",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три фразы — это вежливое «извините / простите». Найди лишнюю (там pardon значит совсем другое).",
+        "options": [
+          "Pardon, je peux passer ?",
+          "Pardon ? Je n'ai pas entendu.",
+          "Je vous demande pardon.",
+          "Le roi a accordé son pardon au prisonnier."
+        ],
+        "correctIndex": 3,
+        "explanation": "В первых трёх pardon — вежливое извинение или переспрос. Лишняя — последняя: в «accorder son pardon» (даровать прощение) le pardon — существительное «помилование, прощение», а не повседневное «извините»."
+      },
+      {
+        "id": "wc-boss-politesse-deranger-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-politesse-deranger",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Продавец занят с другим клиентом. Ты подходишь осторожно. Что значит выделенный глагол?",
+        "contexts": [
+          "Excusez-moi de vous déranger.",
+          "Je ne voudrais pas vous déranger.",
+          "Ça ne vous dérange pas si j'attends ici ?"
+        ],
+        "options": ["беспокоить, мешать, отвлекать", "помогать", "благодарить", "приглашать"],
+        "correctIndex": 0,
+        "explanation": "déranger — беспокоить, мешать, отвлекать. «Excusez-moi de vous déranger» — «извините за беспокойство»; «Ça ne vous dérange pas si… ?» — «вы не против, если…?»"
+      },
+      {
+        "id": "wc-boss-politesse-deranger-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-politesse-deranger",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какой глагол произнесли.",
+        "audioText": "déranger",
+        "options": ["déranger", "ranger", "arranger", "mélanger"],
+        "correctIndex": 0,
+        "explanation": "déranger /deʁɑ̃ʒe/ (беспокоить), ranger /ʁɑ̃ʒe/ (убирать, раскладывать по местам), arranger /aʁɑ̃ʒe/ (устраивать, улаживать), mélanger /melɑ̃ʒe/ (смешивать). Это разные слова, не омофоны: они рифмуются на -anger, но различаются началом."
+      },
+      {
+        "id": "wc-boss-politesse-vouloir-cmp",
+        "kind": "compare",
+        "wordId": "wl-politesse-vouloir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Пора сказать, что тебе нужно. В чём разница между этими двумя формами от vouloir?",
+        "phrases": ["Je veux ce livre.", "Je voudrais ce livre, s'il vous plaît."],
+        "options": [
+          "«Je veux» — прямое «я хочу», звучит резко; «je voudrais» — «я бы хотел», вежливая просьба.",
+          "Это полные синонимы, разницы по вежливости нет.",
+          "«Je veux» вежливее, а «je voudrais» — грубее.",
+          "«Je voudrais» значит «я не хочу»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Оба — от vouloir (хотеть). «Je veux» звучит как требование. В магазине, кафе, у врача вежливо говорят «je voudrais…» (я бы хотел…): условное наклонение смягчает просьбу."
+      },
+      {
+        "id": "wc-boss-politesse-vouloir-hint",
+        "kind": "wordHint",
+        "wordId": "wl-politesse-vouloir",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: он значит «хотеть, желать»; его вежливая форма «je voudrais» открывает почти любую просьбу.",
+        "answer": "vouloir",
+        "hints": [
+          "Начинается на v…",
+          "Неправильный глагол; «я хочу» — je veux",
+          "Родственно англ. «voluntary» (по своей воле): vou___"
+        ],
+        "explanation": "vouloir — хотеть, желать. Формы: je veux (хочу), vous voulez (вы хотите), вежливо je voudrais (я бы хотел). Корень vol- («воля») виден в англ. «voluntary»."
+      },
+      {
+        "id": "wc-boss-politesse-svp-sort",
+        "kind": "sort",
+        "wordId": "wl-politesse-svp",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Добавляешь к просьбе «пожалуйста». Где s'il vous plaît / s'il te plaît звучит естественно, а где — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "Un sac, s'il vous plaît.",
+            "basket": "ok"
+          },
+          {
+            "text": "Aide-moi, s'il te plaît.",
+            "basket": "ok"
+          },
+          {
+            "text": "Oui, s'il vous plaît.",
+            "basket": "ok"
+          },
+          {
+            "text": "Merci, s'il vous plaît.",
+            "basket": "no"
+          },
+          {
+            "text": "s'il vous plaît beaucoup",
+            "basket": "no"
+          }
+        ],
+        "explanation": "s'il vous plaît / s'il te plaît добавляют к просьбе или к согласию («Oui, s'il vous plaît» — «Да, пожалуйста»). Нельзя «Merci, s'il vous plaît» (спасибо — уже не просьба) и нет формы «s'il vous plaît beaucoup» (это не merci beaucoup)."
+      },
+      {
+        "id": "wc-boss-politesse-svp-hint",
+        "kind": "wordHint",
+        "wordId": "wl-politesse-svp",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни выражение: вежливое слово в конце просьбы; на письме его часто сокращают до S.V.P.",
+        "answer": "s'il vous plaît",
+        "hints": [
+          "Начинается на s'il…",
+          "Дословно: «если вам это угодно» (s'il + vous + plaît)",
+          "Un sac, ___ ."
+        ],
+        "explanation": "s'il vous plaît — «пожалуйста». Состоит из si (если) + il + vous + plaît (от plaire — нравиться). На «ты»: s'il te plaît."
+      },
+      {
+        "id": "wc-boss-politesse-gentil-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-politesse-gentil",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Продавец помог тебе найти нужное. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "C'est très gentil de votre part.",
+          "Le vendeur est vraiment gentil.",
+          "Elle est gentille avec tout le monde."
+        ],
+        "options": ["добрый, любезный, милый", "тихий, мягкий на ощупь", "красивый", "богатый"],
+        "correctIndex": 0,
+        "explanation": "gentil(le) — добрый, любезный, милый (о человеке, поступке). «C'est gentil de votre part» — «как мило с вашей стороны». Женский род — gentille."
+      },
+      {
+        "id": "wc-boss-politesse-gentil-trap",
+        "kind": "trap",
+        "wordId": "wl-politesse-gentil",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг. Англ. «gentle» = мягкий, нежный (о прикосновении). А что значит французское gentil?",
+        "phrases": ["Il est très gentil.", "C'est gentil de votre part."],
+        "options": [
+          "добрый, любезный (о человеке)",
+          "мягкий, нежный на ощупь",
+          "благородный, дворянский",
+          "медленный, осторожный"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: англ. «gentle» (мягкий, нежный) — это по-французски doux. А gentil значит «добрый, любезный» по характеру: «он добрый», «мило с вашей стороны»."
+      },
+      {
+        "id": "wc-boss-politesse-refuser-cmp",
+        "kind": "compare",
+        "wordId": "wl-politesse-refuser",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Тебе предлагают доставку на дом, но ты не хочешь. В чём разница между двумя конструкциями с refuser?",
+        "phrases": ["Il a refusé mon invitation.", "Elle refuse de payer en ligne."],
+        "options": [
+          "«refuser + существительное» — отвергнуть что-то (приглашение); «refuser de + инфинитив» — отказываться что-то делать.",
+          "В первой refuser значит «соглашаться», во второй — «отказываться».",
+          "Это две формы одного смысла, разницы в построении нет.",
+          "«refuser de» можно ставить только с существительным, а не с глаголом."
+        ],
+        "correctIndex": 0,
+        "explanation": "refuser — отказывать(ся), отвергать. С существительным: «refuser une invitation» (отклонить приглашение). С действием нужен предлог de: «refuser de payer» (отказываться платить)."
+      },
+      {
+        "id": "wc-boss-politesse-refuser-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-politesse-refuser",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три фразы — это вежливый отказ. Найди лишнюю (это, наоборот, согласие).",
+        "options": [
+          "Non, merci, c'est gentil.",
+          "Je préfère refuser.",
+          "Je suis désolé, je ne peux pas.",
+          "Avec plaisir, volontiers !"
+        ],
+        "correctIndex": 3,
+        "explanation": "«Non, merci, c'est gentil», «Je préfère refuser» и «Je suis désolé, je ne peux pas» — вежливые отказы. «Avec plaisir, volontiers !» («с удовольствием, охотно!») — наоборот, согласие. Оно лишнее."
+      },
+      {
+        "id": "wc-boss-politesse-desole-trap",
+        "kind": "trap",
+        "wordId": "wl-politesse-desole",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Уходишь и извиняешься, что ничего не купил. Ложный друг: англ. «desolate» = опустошённый, безлюдный. Как сказать «мне очень жаль»?",
+        "phrases": ["Je suis désolé.", "Je suis désolé de vous avoir dérangé."],
+        "options": [
+          "Je suis désolé.",
+          "Je suis désolé значит «я опустошён».",
+          "Je suis fatigué.",
+          "Je suis content."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: «désolé» похоже на англ. «desolate» (опустошённый, безлюдный), но французское «je suis désolé(e)» — это вежливое «мне жаль / извините». Женщина скажет «désolée»."
+      }
+    ]
+  },
+  {
+    "id": "wc-boss-prendre",
+    "title": "Босс: брать и приносить",
+    "theme": "prendre",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-recevoir",
+      "wl-choisir",
+      "wl-apporter",
+      "wl-amener",
+      "wl-prendre",
+      "wl-rendre",
+      "wl-garder"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-prendre-recevoir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-recevoir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Финал темы «брать и приносить». Всё начинается с приглашения. Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "J'ai reçu une invitation pour samedi soir.",
+          "Ce soir, on reçoit des amis à dîner.",
+          "Elle a reçu un message : la fête est à vingt heures."
+        ],
+        "options": [
+          "получать (что-то приходит) ; принимать гостей",
+          "брать самому в руку",
+          "возвращать обратно",
+          "оставлять себе"
+        ],
+        "correctIndex": 0,
+        "explanation": "recevoir — получать то, что приходит извне (une invitation, un message), и «принимать» гостей: recevoir des amis. Не путай с prendre (брать самому). Седиль ç перед o/u сохраняет звук /s/: reçu, je reçois."
+      },
+      {
+        "id": "wc-boss-prendre-choisir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-choisir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Перед визитом надо решить, с чем пойти. Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "On hésite : du vin rouge ou du vin blanc ? Il faut choisir.",
+          "J'ai choisi un bon bordeaux pour ce soir.",
+          "C'est difficile de choisir entre les deux bouteilles."
+        ],
+        "options": [
+          "выбирать (остановиться на одном из нескольких)",
+          "получать в подарок",
+          "возвращать обратно",
+          "приносить предмет"
+        ],
+        "correctIndex": 0,
+        "explanation": "choisir — остановить выбор на одном из вариантов: choisir entre deux bouteilles. Группа на -ir с удвоением: je choisis, nous choisissons, j'ai choisi."
+      },
+      {
+        "id": "wc-boss-prendre-apporter-amener-cmp",
+        "kind": "compare",
+        "wordId": "wl-apporter",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Главная пара темы. Ты несёшь бутылку и зовёшь с собой сестру. В чём разница между этими двумя фразами?",
+        "phrases": ["J'apporte une bouteille de vin.", "J'amène ma sœur."],
+        "options": [
+          "apporter — ПРЕДМЕТ (porter = нести); amener — ЧЕЛОВЕКА (mener = вести)",
+          "Это синонимы, разницы нет",
+          "apporter — человека; amener — предмет",
+          "Оба значат «получать»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Внутри apporter — porter (нести вещь): apporter une bouteille. Внутри amener — mener (вести кого-то): amener sa sœur. Правило: предмет → apporter, человек/животное → amener."
+      },
+      {
+        "id": "wc-boss-prendre-amener-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-amener",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "С тремя из этих дополнений amener звучит естественно. Найди лишнее — с ним нужен apporter.",
+        "options": ["amener un ami", "amener les enfants", "amener le chien", "amener un gâteau"],
+        "correctIndex": 3,
+        "explanation": "amener ведёт живых: un ami, les enfants, le chien. Торт (предмет) не amène, а apporte: apporter un gâteau. Это и есть граница apporter/amener."
+      },
+      {
+        "id": "wc-boss-prendre-apporter-sort",
+        "kind": "sort",
+        "wordId": "wl-apporter",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Ты собираешься в гости. Какие сочетания с apporter звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "apporter le dessert",
+            "basket": "ok"
+          },
+          {
+            "text": "apporter une bouteille",
+            "basket": "ok"
+          },
+          {
+            "text": "apporter des fleurs",
+            "basket": "ok"
+          },
+          {
+            "text": "apporter ses enfants",
+            "basket": "no"
+          },
+          {
+            "text": "apporter sa femme",
+            "basket": "no"
+          }
+        ],
+        "explanation": "apporter носит предметы: le dessert, une bouteille, des fleurs. Людей не «приносят»: «apporter ses enfants / sa femme» — ошибка, нужно amener (amener ses enfants, venir avec sa femme)."
+      },
+      {
+        "id": "wc-boss-prendre-prendre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-prendre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Пора в путь. Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Pour y aller, on prend le métro.",
+          "Prends ton manteau, il fait froid.",
+          "À table, je prends encore un peu de fromage."
+        ],
+        "options": [
+          "брать / взять: транспорт, предмет, еду",
+          "приводить человека",
+          "возвращать обратно",
+          "принимать гостей"
+        ],
+        "correctIndex": 0,
+        "explanation": "prendre — самый общий «брать»: транспорт (prendre le métro), вещь (prendre son manteau), еду (prendre du fromage). Формы: je prends, tu prends, il prend, nous prenons."
+      },
+      {
+        "id": "wc-boss-prendre-prendre-sort",
+        "kind": "sort",
+        "wordId": "wl-prendre",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с prendre звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "prendre le bus",
+            "basket": "ok"
+          },
+          {
+            "text": "prendre une photo",
+            "basket": "ok"
+          },
+          {
+            "text": "prendre une décision",
+            "basket": "ok"
+          },
+          {
+            "text": "prendre visite à un ami",
+            "basket": "no"
+          },
+          {
+            "text": "prendre le silence",
+            "basket": "no"
+          }
+        ],
+        "explanation": "prendre берёт транспорт, фото, решение. Но «навестить» — это rendre visite à un ami (не prendre), а молчание «хранят»: garder le silence."
+      },
+      {
+        "id": "wc-boss-prendre-rendre-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-rendre",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "За ужином разговор пошёл быстро. Послушай и выбери, какой глагол произнесли.",
+        "audioText": "rendre",
+        "options": ["rendre", "vendre", "tendre", "fendre"],
+        "correctIndex": 0,
+        "explanation": "Все звучат похоже на /ɑ̃dʁ/, но различаются началом: rendre /ʁɑ̃dʁ/ (возвращать), vendre /vɑ̃dʁ/ (продавать), tendre /tɑ̃dʁ/ (протягивать; нежный), fendre /fɑ̃dʁ/ (раскалывать). Это разные слова, а не омофоны: лови первый согласный."
+      },
+      {
+        "id": "wc-boss-prendre-garder-rendre-cmp",
+        "kind": "compare",
+        "wordId": "wl-garder",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Хозяйка налила тебе кофе и протянула сдачу за такси. В чём разница между этими двумя фразами?",
+        "phrases": ["Gardez la monnaie.", "Rendez-moi la monnaie, s'il vous plaît."],
+        "options": [
+          "garder = оставьте себе (не возвращайте); rendre = верните мне",
+          "Это синонимы, разницы нет",
+          "garder = верните; rendre = оставьте себе",
+          "Оба значат «возьмите»"
+        ],
+        "correctIndex": 0,
+        "explanation": "garder la monnaie — оставьте сдачу себе (чаевые). rendre la monnaie — верните мне сдачу. Противоположные действия с одной и той же monnaie: garder = держать у себя, rendre = отдать обратно."
+      },
+      {
+        "id": "wc-boss-prendre-recevoir-trap",
+        "kind": "trap",
+        "wordId": "wl-recevoir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "На прощание тебе дают «un reçu» за заказанное такси. Ложный друг: глагол recevoir = получать. Что значит существительное le reçu?",
+        "phrases": ["Voici votre reçu, monsieur.", "J'ai reçu votre message, merci."],
+        "options": [
+          "квитанция, чек (бумажка о платеже)",
+          "приём гостей",
+          "получение (сам факт)",
+          "рецепт блюда"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: reçu — это причастие от recevoir («j'ai reçu» = я получил), но существительное le reçu значит «квитанция, чек». «Рецепт блюда» — la recette; «приём гостей» — une réception."
+      },
+      {
+        "id": "wc-boss-prendre-rendre-hint",
+        "kind": "wordHint",
+        "wordId": "wl-rendre",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вечер кончается. Вспомни глагол: «отдать обратно» взятое (одолженную книгу, деньги). Рифмуется с prendre.",
+        "answer": "rendre",
+        "hints": [
+          "Начинается на r…",
+          "6 букв: как prendre, но без p в начале",
+          "Je dois te ___ le livre que tu m'as prêté."
+        ],
+        "explanation": "rendre — вернуть взятое: rendre un livre, rendre l'argent. Цепочка-рифма: «tu prends, puis tu rends» — берёшь, потом возвращаешь. Второе значение — «делать каким-то»: rendre heureux."
+      },
+      {
+        "id": "wc-boss-prendre-choisir-hint",
+        "kind": "wordHint",
+        "wordId": "wl-choisir",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Озарение темы: «брать» — это про действие, а это — про решение. Вспомни глагол: «остановиться на одном из вариантов» (в меню, среди подарков).",
+        "answer": "choisir",
+        "hints": [
+          "Начинается на ch…",
+          "7 букв, заканчивается на -ir",
+          "C'est difficile de ___ entre les deux."
+        ],
+        "explanation": "choisir — выбирать одно из нескольких. Группа на -ir с удвоением: je choisis, nous choisissons. Сначала on choisit (решаешь), потом on prend (берёшь/заказываешь выбранное)."
+      }
+    ]
+  },
+  {
+    "id": "wc-boss-savoir",
+    "title": "Босс: знать и уметь",
+    "theme": "savoir",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": ["wl-savoir", "wl-connaitre", "wl-comprendre", "wl-pouvoir", "wl-apprendre"],
+    "steps": [
+      {
+        "id": "wc-boss-savoir-savoir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-savoir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Первый день в языковой школе. На стойке тебя спрашивают. Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Vous savez déjà parler un peu français ?",
+          "Je ne sais pas où est ma salle.",
+          "Tu sais à quelle heure commence le cours ?"
+        ],
+        "options": [
+          "знать факт / уметь делать",
+          "быть знакомым с человеком или местом",
+          "хотеть",
+          "учить наизусть"
+        ],
+        "correctIndex": 0,
+        "explanation": "savoir — знать информацию (savoir où, à quelle heure…) и уметь (savoir + инфинитив: savoir parler). Знакомство с человеком или местом — это уже connaître."
+      },
+      {
+        "id": "wc-boss-savoir-connaitre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-connaitre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Тебя знакомят с группой. Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Tu connais déjà quelqu'un dans le groupe ?",
+          "Je connais bien ce quartier.",
+          "Elle connaît un bon café juste à côté."
+        ],
+        "options": [
+          "быть знакомым с (человеком, местом, темой)",
+          "знать точный факт или цифру",
+          "уметь делать",
+          "узнавать новость"
+        ],
+        "correctIndex": 0,
+        "explanation": "connaître — быть знакомым: с человеком, местом, темой. Всегда с прямым дополнением (connaître quelqu'un, connaître le quartier), без que и без инфинитива."
+      },
+      {
+        "id": "wc-boss-savoir-savoir-cmp",
+        "kind": "compare",
+        "wordId": "wl-savoir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Тест на уровень. savoir и connaître — главная пара темы. В чём разница здесь?",
+        "phrases": ["Je connais cette chanson.", "Je sais qu'elle est française."],
+        "options": [
+          "connaître = быть знакомым (с песней); savoir = знать факт (что она французская)",
+          "Это синонимы, разницы нет",
+          "connaître = знать факт; savoir = быть знакомым",
+          "Оба здесь значат «уметь»"
+        ],
+        "correctIndex": 0,
+        "explanation": "connaître + существительное (быть знакомым: connaître la chanson). savoir + придаточное с que/où/comment или + инфинитив (уметь). Связку que берёт только savoir, не connaître."
+      },
+      {
+        "id": "wc-boss-savoir-pouvoir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pouvoir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Объясняют правила школы. Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Vous pouvez utiliser le wifi gratuitement.",
+          "On ne peut pas manger dans la salle.",
+          "Tu peux répéter, s'il te plaît ?"
+        ],
+        "options": [
+          "мочь: иметь возможность, разрешение или вежливая просьба",
+          "уметь благодаря тренировке",
+          "хотеть",
+          "быть должным"
+        ],
+        "correctIndex": 0,
+        "explanation": "pouvoir + инфинитив = «мочь»: возможность (vous pouvez utiliser), разрешение (on ne peut pas manger), вежливая просьба (tu peux répéter ?). Формы: je peux, tu peux, il peut."
+      },
+      {
+        "id": "wc-boss-savoir-comprendre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-comprendre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Начинается урок. Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Je ne comprends pas cette consigne.",
+          "Tu comprends ce que dit le prof ?",
+          "Le tarif comprend les manuels."
+        ],
+        "options": [
+          "понимать; а также включать в себя",
+          "переводить вслух",
+          "забывать",
+          "повторять за учителем"
+        ],
+        "correctIndex": 0,
+        "explanation": "comprendre — прежде всего «понимать» (la consigne, ce que dit le prof). Третья сцена — второе значение: «включать в себя» (Le tarif comprend… = в стоимость входит…)."
+      },
+      {
+        "id": "wc-boss-savoir-apprendre-trap",
+        "kind": "trap",
+        "wordId": "wl-apprendre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг. Что значит apprendre во фразе «J'apprends le français depuis un an» ?",
+        "phrases": ["J'apprends le français depuis un an.", "J'ai appris la nouvelle ce matin."],
+        "options": [
+          "учить(ся), изучать; а также узнать (новость)",
+          "арестовать, схватить",
+          "опасаться, страшиться",
+          "одобрять"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: apprendre похоже на англ. to apprehend (задержать, опасаться), но значит «учить(ся)»: apprendre le français — изучать французский. Второе значение — «узнать новость»: apprendre la nouvelle."
+      },
+      {
+        "id": "wc-boss-savoir-connaitre-collo",
+        "kind": "sort",
+        "wordId": "wl-connaitre",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "На перемене разговор о городе. Какие сочетания с connaître звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "connaître la ville",
+            "basket": "ok"
+          },
+          {
+            "text": "connaître quelqu'un de vue",
+            "basket": "ok"
+          },
+          {
+            "text": "connaître bien le sujet",
+            "basket": "ok"
+          },
+          {
+            "text": "connaître que c'est loin",
+            "basket": "no"
+          },
+          {
+            "text": "connaître parler français",
+            "basket": "no"
+          }
+        ],
+        "explanation": "connaître берёт прямое дополнение: connaître la ville / quelqu'un / le sujet. Связку que («connaître que…») и инфинитив («connaître parler») берёт savoir, не connaître."
+      },
+      {
+        "id": "wc-boss-savoir-pouvoir-cmp",
+        "kind": "compare",
+        "wordId": "wl-pouvoir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Зашёл разговор о вождении. pouvoir и savoir оба переводят «уметь/мочь». В чём разница здесь?",
+        "phrases": ["Je sais conduire.", "Je ne peux pas conduire ce soir, j'ai bu."],
+        "options": [
+          "savoir = уметь (есть навык); pouvoir = мочь сейчас (есть возможность)",
+          "Это синонимы, разницы нет",
+          "savoir = мочь сейчас; pouvoir = уметь вообще",
+          "Оба здесь значат «хотеть»"
+        ],
+        "correctIndex": 0,
+        "explanation": "savoir conduire = владею навыком вождения (научился). pouvoir conduire = есть возможность сесть за руль в данный момент. Выпил → навык остался (sais), но возможности нет (ne peux pas)."
+      },
+      {
+        "id": "wc-boss-savoir-comprendre-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-comprendre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три фразы — про comprendre «понимать», и одна лишняя, где глагол значит другое. Найди лишнюю.",
+        "options": [
+          "Je ne comprends pas la grammaire.",
+          "Tu comprends mon accent ?",
+          "Elle comprend très vite.",
+          "Le prix comprend le déjeuner."
+        ],
+        "correctIndex": 3,
+        "explanation": "В первых трёх comprendre = «понимать» (грамматику, акцент, быстро схватывать). Лишняя — последняя: «Le prix comprend le déjeuner» — здесь comprendre значит «включать в себя» (в цену входит обед)."
+      },
+      {
+        "id": "wc-boss-savoir-savoir-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-savoir",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Проверка слуха. Послушай и выбери, какое слово произнесли.",
+        "audioText": "savoir",
+        "options": ["savoir", "avoir", "savon", "savant"],
+        "correctIndex": 0,
+        "explanation": "savoir /sa.vwaʁ/ (знать, уметь), avoir /a.vwaʁ/ (иметь), savon /sa.vɔ̃/ (мыло), savant /sa.vɑ̃/ (учёный). Это разные слова, не омофоны: слушай начало и концовку."
+      },
+      {
+        "id": "wc-boss-savoir-apprendre-hint",
+        "kind": "wordHint",
+        "wordId": "wl-apprendre",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: «осваивать знание или навык» (изучать) и «узнать новость».",
+        "answer": "apprendre",
+        "hints": [
+          "Начинается на a…",
+          "Спрягается как prendre: j'apprends, il apprend",
+          "J'___ le français. / J'ai ___ la nouvelle."
+        ],
+        "explanation": "apprendre — учить(ся), изучать (apprendre le français) и узнать новость (apprendre la nouvelle). «Учить кого-то» — apprendre à quelqu'un: Il m'apprend à conduire."
+      },
+      {
+        "id": "wc-boss-savoir-pouvoir-hint",
+        "kind": "wordHint",
+        "wordId": "wl-pouvoir",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Финал. Вспомни глагол: «мочь» — иметь возможность или разрешение (+ инфинитив).",
+        "answer": "pouvoir",
+        "hints": [
+          "Начинается на p…",
+          "Неправильный: je peux, tu peux, il peut",
+          "Tu ___ m'aider ? / On ne ___ pas fumer ici."
+        ],
+        "explanation": "pouvoir + инфинитив = «мочь»: возможность, разрешение, вежливая просьба. Формы: je peux, tu peux, il peut, nous pouvons. Существительное le pouvoir = власть."
+      }
+    ]
+  },
+  {
+    "id": "wc-boss-temps",
+    "title": "Босс: время и частота",
+    "theme": "temps",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-temps-maintenant",
+      "wl-temps-deja",
+      "wl-temps-souvent",
+      "wl-temps-parfois",
+      "wl-temps-jamais",
+      "wl-temps-toujours",
+      "wl-temps-bientot"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-temps-maintenant-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-temps-maintenant",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Утро, ты планируешь день. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Bon, je me lève maintenant, il est déjà tard.",
+          "Maintenant, on prend le café et on part.",
+          "Tu es prêt ? Alors on y va maintenant."
+        ],
+        "options": [
+          "сейчас, теперь (в этот самый момент)",
+          "скоро (через короткое время)",
+          "уже (раньше срока)",
+          "всегда"
+        ],
+        "correctIndex": 0,
+        "explanation": "maintenant = «сейчас, теперь»: текущий момент (on y va maintenant) или новое нынешнее положение дел (maintenant, on prend le café). Это точка «сейчас», а не будущее (bientôt) и не «уже» (déjà)."
+      },
+      {
+        "id": "wc-boss-temps-deja-cmp",
+        "kind": "compare",
+        "wordId": "wl-temps-deja",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Ты уже позавтракал, пока думал. В чём разница между déjà и maintenant здесь?",
+        "phrases": ["J'ai déjà pris mon café.", "Je prends mon café maintenant."],
+        "options": [
+          "déjà = уже (кофе выпит раньше, до этого момента); maintenant = сейчас (пью прямо в этот момент)",
+          "Это синонимы, разницы нет",
+          "déjà = сейчас; maintenant = уже",
+          "Оба значат «скоро»"
+        ],
+        "correctIndex": 0,
+        "explanation": "déjà подчёркивает, что действие свершилось раньше (кофе уже выпит). maintenant — действие происходит в текущий момент. «Уже выпил» ≠ «пью сейчас»."
+      },
+      {
+        "id": "wc-boss-temps-souvent-collo",
+        "kind": "sort",
+        "wordId": "wl-temps-souvent",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Ты описываешь свои привычки за день. Какие сочетания с souvent звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "très souvent",
+            "basket": "ok"
+          },
+          {
+            "text": "assez souvent",
+            "basket": "ok"
+          },
+          {
+            "text": "le plus souvent",
+            "basket": "ok"
+          },
+          {
+            "text": "trop souvent",
+            "basket": "ok"
+          },
+          {
+            "text": "beaucoup souvent",
+            "basket": "no"
+          },
+          {
+            "text": "souvent fois",
+            "basket": "no"
+          }
+        ],
+        "explanation": "souvent усиливают наречиями: très / assez / trop / le plus souvent. А «beaucoup souvent» и «souvent fois» — кальки, по-французски так не говорят (нужно très souvent или просто souvent)."
+      },
+      {
+        "id": "wc-boss-temps-souvent-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-temps-souvent",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Проверка слуха. Послушай и выбери, какое слово произнесли.",
+        "audioText": "souvent",
+        "options": ["souvent", "couvent", "savant", "suivant"],
+        "correctIndex": 0,
+        "explanation": "Все оканчиваются на носовой /ɑ̃/ и звучат похоже: souvent /suvɑ̃/ (часто), couvent /kuvɑ̃/ (монастырь), savant /savɑ̃/ (учёный), suivant /sɥivɑ̃/ (следующий). Это разные слова, не омофоны: слушай начало."
+      },
+      {
+        "id": "wc-boss-temps-parfois-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-temps-parfois",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "По дороге ты думаешь, как часто что-то делаешь. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Parfois, je vais au travail à pied.",
+          "Le bus est parfois en retard le matin.",
+          "Elle déjeune parfois avec ses collègues."
+        ],
+        "options": ["иногда (время от времени)", "всегда (каждый раз)", "часто (много раз)", "уже"],
+        "correctIndex": 0,
+        "explanation": "parfois = «иногда»: время от времени, не всегда и не никогда. На шкале частоты parfois стоит ниже, чем souvent («часто»)."
+      },
+      {
+        "id": "wc-boss-temps-parfois-cmp",
+        "kind": "compare",
+        "wordId": "wl-temps-parfois",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "parfois и souvent — соседи на шкале частоты. В чём разница в этих двух фразах?",
+        "phrases": ["Je prends parfois le métro.", "Je prends souvent le métro."],
+        "options": [
+          "parfois = иногда (изредка); souvent = часто (регулярно, много раз)",
+          "Это синонимы, разницы нет",
+          "parfois = часто; souvent = иногда",
+          "Оба значат «всегда»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Оба значат «не всегда», но souvent (часто) выше по частоте, чем parfois (иногда). je prends parfois le métro = изредка; je prends souvent le métro = регулярно."
+      },
+      {
+        "id": "wc-boss-temps-jamais-trap",
+        "kind": "trap",
+        "wordId": "wl-temps-jamais",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Коллега спрашивает: «As-tu jamais pris ce train ?» (без ne). Ловушка: что значит jamais здесь?",
+        "phrases": ["As-tu jamais pris ce train ?", "Je ne prends jamais ce train."],
+        "options": ["когда-либо (хоть раз) — в вопросе без ne", "никогда", "уже", "часто"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: jamais ≠ только «никогда». Без ne — в вопросе или после si — jamais значит «когда-либо»: As-tu jamais pris ce train ? = «Ты когда-либо ездил на этом поезде?». «Никогда» получается лишь в паре ne… jamais (je ne prends jamais)."
+      },
+      {
+        "id": "wc-boss-temps-jamais-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-temps-jamais",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова отвечают на вопрос «как часто?». Найди лишнее (оно про другое).",
+        "options": ["jamais", "souvent", "parfois", "maintenant"],
+        "correctIndex": 3,
+        "explanation": "jamais (никогда), souvent (часто), parfois (иногда) — это шкала частоты: как часто. maintenant («сейчас») — про текущий момент, не про частоту. Оно лишнее."
+      },
+      {
+        "id": "wc-boss-temps-toujours-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-temps-toujours",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Внимание к хитрости: у toujours два значения. Что оно значит в КАЖДОЙ из этих сцен?",
+        "contexts": [
+          "Mon chef est toujours de bonne humeur le matin.",
+          "Il est midi et il pleut toujours.",
+          "Il est minuit et le café d'en face est toujours ouvert."
+        ],
+        "options": [
+          "1-я — «всегда» (привычка); 2-я — «всё ещё» (длится до сих пор); 3-я — «всё ещё / по-прежнему»",
+          "Везде только «всегда»",
+          "Везде только «всё ещё»",
+          "Везде «иногда»"
+        ],
+        "correctIndex": 0,
+        "explanation": "toujours = «всегда» (toujours de bonne humeur — постоянная черта) и «всё ещё» (il pleut toujours — дождь продолжается; à minuit le café est toujours ouvert — по-прежнему открыт в столь поздний час). Контекст решает: привычка → «всегда»; длящееся действие → «всё ещё»."
+      },
+      {
+        "id": "wc-boss-temps-bientot-cmp",
+        "kind": "compare",
+        "wordId": "wl-temps-bientot",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Конец дня, ты собираешься уходить. В чём разница между maintenant и bientôt здесь?",
+        "phrases": ["Je pars maintenant.", "Je pars bientôt."],
+        "options": [
+          "maintenant = сейчас (уже ухожу в этот момент); bientôt = скоро (ещё не сейчас, чуть позже)",
+          "Это синонимы, разницы нет",
+          "maintenant = скоро; bientôt = сейчас",
+          "Оба значат «уже»"
+        ],
+        "correctIndex": 0,
+        "explanation": "maintenant — действие происходит в данный момент (ухожу прямо сейчас). bientôt — действие в ближайшем будущем, ещё не наступило (уйду вот-вот). Не путать «сейчас» и «скоро». À bientôt ! — «До скорого!»."
+      },
+      {
+        "id": "wc-boss-temps-deja-hint",
+        "kind": "wordHint",
+        "wordId": "wl-temps-deja",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Финальная проверка. Вспомни наречие: «уже» — действие свершилось раньше, чем ожидалось.",
+        "answer": "déjà",
+        "hints": [
+          "Начинается на d…",
+          "4 буквы, два надстрочных знака: é (accent aigu) и à (accent grave) — d-é-j-à",
+          "J'ai ___ mangé. / Il est ___ tard."
+        ],
+        "explanation": "déjà = «уже»: действие произошло раньше срока (j'ai déjà mangé) или момент наступил раньше, чем думали (il est déjà tard). Пишется с двумя надстрочными знаками: é (accent aigu) и à (accent grave). Не путать с maintenant («сейчас»)."
+      }
+    ]
+  },
+  {
+    "id": "wc-boss-ville",
+    "title": "Босс: в городе",
+    "theme": "ville",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-ville-aller",
+      "wl-ville-venir",
+      "wl-ville-rue",
+      "wl-ville-tourner",
+      "wl-ville-continuer",
+      "wl-ville-traverser",
+      "wl-ville-monter",
+      "wl-ville-descendre"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-ville-aller-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ville-aller",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты в незнакомом городе и спрашиваешь дорогу. Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Pardon, pour aller à la gare, s'il vous plaît ?",
+          "On va au centre-ville à pied, c'est tout près.",
+          "Je vais à la poste, et après je rentre."
+        ],
+        "options": [
+          "идти / ехать (туда, от себя к цели)",
+          "приходить (сюда, к говорящему)",
+          "оставаться на месте",
+          "возвращаться домой"
+        ],
+        "correctIndex": 0,
+        "explanation": "aller — двигаться от себя к цели: aller à la gare, aller au centre-ville. Формы: je vais, tu vas, on va, il/elle va. «Pour aller à…» — стандартный способ спросить дорогу."
+      },
+      {
+        "id": "wc-boss-ville-venir-cmp",
+        "kind": "compare",
+        "wordId": "wl-ville-venir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Прохожий зовёт тебя с собой. В чём разница направления между aller и venir?",
+        "phrases": ["Je vais au marché, c'est par là.", "Tu viens avec moi au marché ?"],
+        "options": [
+          "aller — двигаться ТУДА, от говорящего к цели; venir — двигаться СЮДА, к говорящему или вместе с ним.",
+          "Это полные синонимы, разницы в направлении нет.",
+          "aller — только пешком, venir — только на транспорте.",
+          "venir — двигаться туда, aller — оставаться на месте."
+        ],
+        "correctIndex": 0,
+        "explanation": "aller = идти/ехать от себя к цели (туда); venir = идти к говорящему или присоединиться к нему (сюда, со мной). По-русски оба часто «идти», но направление противоположное: «Tu viens ?» = «Идёшь с нами?»."
+      },
+      {
+        "id": "wc-boss-ville-venir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ville-venir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол в этих репликах?",
+        "contexts": [
+          "Venez, je vous montre la rue, c'est juste là.",
+          "Elle vient à pied, ce n'est pas loin.",
+          "Tu viens avec nous ou tu restes ici ?"
+        ],
+        "options": [
+          "приходить / идти сюда (к говорящему или с ним)",
+          "уходить далеко в сторону",
+          "поворачивать за угол",
+          "подниматься наверх"
+        ],
+        "correctIndex": 0,
+        "explanation": "venir — двигаться к говорящему или вместе с ним. Формы: je viens, tu viens, il/elle vient, nous venons, vous venez, ils viennent. «Venez !» — «Идите (сюда) / Пойдёмте!»."
+      },
+      {
+        "id": "wc-boss-ville-rue-trap",
+        "kind": "trap",
+        "wordId": "wl-ville-rue",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ты идёшь по городу. Ложный друг: англ. «route» сбивает. Как сказать «Я живу на этой улице»?",
+        "phrases": ["J'habite dans cette rue.", "La route entre les deux villes est longue."],
+        "options": [
+          "J'habite dans cette rue.",
+          "J'habite dans cette route.",
+          "Je traverse cette route en ville.",
+          "Je tourne dans cette route."
+        ],
+        "correctIndex": 0,
+        "explanation": "la rue — улица в городе, с домами по сторонам; живут «dans la rue». la route — дорога/трасса между городами, где не живут и по которой не «сворачивают в городе». Англ. «route» похоже на «rue», но это разные слова. Правильно: «J'habite dans cette rue»."
+      },
+      {
+        "id": "wc-boss-ville-tourner-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ville-tourner",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Тебе объясняют маршрут. Что значит выделенный глагол?",
+        "contexts": [
+          "Tournez à droite après la boulangerie.",
+          "Vous tournez à gauche au feu rouge.",
+          "On tourne au coin de la rue, puis c'est tout droit."
+        ],
+        "options": [
+          "поворачивать / сворачивать (менять направление)",
+          "идти прямо, не меняя направления",
+          "переходить улицу на другую сторону",
+          "останавливаться и ждать"
+        ],
+        "correctIndex": 0,
+        "explanation": "tourner — менять направление: tourner à droite (направо), tourner à gauche (налево), tourner au coin (свернуть за угол)."
+      },
+      {
+        "id": "wc-boss-ville-continuer-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-ville-continuer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "После поворота тебе говорят идти дальше. Три команды меняют направление. Найди ту, что велит НЕ сворачивать, а идти прямо.",
+        "options": [
+          "tournez à droite",
+          "continuez tout droit",
+          "tournez à gauche au feu",
+          "prenez la première à droite"
+        ],
+        "correctIndex": 1,
+        "explanation": "«continuer tout droit» = идти прямо, НЕ менять направление. Остальные три — повороты: tourner à droite/à gauche и «prendre la première à droite» (свернуть в первую улицу направо)."
+      },
+      {
+        "id": "wc-boss-ville-continuer-hint",
+        "kind": "wordHint",
+        "wordId": "wl-ville-continuer",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: то, что велят делать, когда нужно идти дальше прямо, не сворачивая.",
+        "answer": "continuer",
+        "hints": [
+          "Начинается на c…",
+          "Похоже на англ. «continue»; окончание -er, одинарное n в continu-",
+          "___ tout droit jusqu'au feu !"
+        ],
+        "explanation": "continuer — продолжать, идти дальше в том же направлении: «Continuez tout droit» = «Идите прямо дальше». Англ. «continue» — надёжный мост."
+      },
+      {
+        "id": "wc-boss-ville-traverser-collo",
+        "kind": "sort",
+        "wordId": "wl-ville-traverser",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Дальше нужно перейти на другую сторону. Какие сочетания с traverser звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "traverser la rue",
+            "basket": "ok"
+          },
+          {
+            "text": "traverser au passage piéton",
+            "basket": "ok"
+          },
+          {
+            "text": "traverser la place",
+            "basket": "ok"
+          },
+          {
+            "text": "traverser dans le bus",
+            "basket": "no"
+          },
+          {
+            "text": "traverser les escaliers",
+            "basket": "no"
+          }
+        ],
+        "explanation": "traverser — пересечь что-то поперёк: la rue, la place, le pont. Лучше — au passage piéton (по пешеходному переходу). «traverser dans le bus» и «traverser les escaliers» так не говорят: в транспорт садятся (monter dans le bus), а по лестнице поднимаются/спускаются (monter/descendre les escaliers)."
+      },
+      {
+        "id": "wc-boss-ville-monter-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-ville-monter",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "У остановки решаешь сесть в автобус. Послушай и выбери, какое слово произнесли.",
+        "audioText": "monter",
+        "options": ["monter", "montre", "montrer", "monde"],
+        "correctIndex": 0,
+        "explanation": "Все начинаются с носового /mɔ̃/, но это разные слова: monter /mɔ̃te/ (подниматься, садиться в транспорт), montre /mɔ̃tʁ/ (наручные часы), montrer /mɔ̃tʁe/ (показывать), monde /mɔ̃d/ (мир; люди). Слушай концовку."
+      },
+      {
+        "id": "wc-boss-ville-monter-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ville-monter",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Подъехал автобус. Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "On monte dans le bus à cet arrêt.",
+          "Montez par l'avant, s'il vous plaît.",
+          "Il faut monter cette rue, c'est tout en haut."
+        ],
+        "options": [
+          "подниматься / садиться в транспорт (вверх или внутрь)",
+          "спускаться / выходить из транспорта",
+          "переходить улицу",
+          "поворачивать за угол"
+        ],
+        "correctIndex": 0,
+        "explanation": "monter — движение вверх или внутрь: monter dans le bus (сесть в автобус), monter la rue (идти вверх по улице). Предлог при транспорте — monter DANS le bus."
+      },
+      {
+        "id": "wc-boss-ville-descendre-cmp",
+        "kind": "compare",
+        "wordId": "wl-ville-descendre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Доехал до нужной остановки. В чём разница между monter и descendre в транспорте?",
+        "phrases": ["Je monte dans le bus à Opéra.", "Je descends du bus à Châtelet."],
+        "options": [
+          "monter dans — зайти, сесть в транспорт; descendre de — выйти из транспорта.",
+          "monter — выйти, descendre — зайти.",
+          "Оба значат «ехать», разницы нет.",
+          "monter — только для метро, descendre — только для автобуса."
+        ],
+        "correctIndex": 0,
+        "explanation": "monter dans le bus/le métro = зайти, сесть; descendre du bus/du métro = выйти. Запомни предлоги: monter DANS, descendre DE. «Je descends à Châtelet» = «Я выхожу на Шатле»."
       }
     ]
   }
