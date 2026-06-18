@@ -189,5 +189,132 @@
     "level": "A2",
     "tags": ["connaissance", "verbe"],
     "caseIds": ["wc-savoir"]
+  },
+  {
+    "id": "wl-savoir-penser",
+    "lemma": "penser",
+    "pos": "verb",
+    "ipa": "/pɑ̃.se/",
+    "translationsRu": ["думать", "размышлять"],
+    "translationsEn": ["to think", "to intend"],
+    "semanticCore": "Обдумывать что-то в уме или иметь мнение; penser à — думать о чём-то/ком-то, penser + инфинитив — собираться сделать.",
+    "collocations": [
+      {
+        "fr": "penser à quelqu'un",
+        "ru": "думать о ком-то"
+      },
+      {
+        "fr": "qu'est-ce que tu en penses ?",
+        "ru": "что ты об этом думаешь?"
+      },
+      {
+        "fr": "je pense que oui",
+        "ru": "думаю, что да"
+      },
+      {
+        "fr": "penser à fermer la porte",
+        "ru": "не забыть закрыть дверь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "croire",
+        "note": "penser que = думать, считать (рассудком, мнение); croire que = верить, полагать (скорее с долей веры/убеждения). Часто взаимозаменяемы, но croire ближе к «верить».",
+        "wordId": "wl-savoir-croire"
+      },
+      {
+        "with": "savoir",
+        "note": "penser que = думать, предполагать (это моё мнение); savoir que = знать наверняка (это факт). Je pense qu'il vient ≠ Je sais qu'il vient.",
+        "wordId": "wl-savoir"
+      }
+    ],
+    "frequencyRank": 70,
+    "level": "A2",
+    "tags": ["connaissance", "verbe"],
+    "caseIds": ["wc-savoir"]
+  },
+  {
+    "id": "wl-savoir-croire",
+    "lemma": "croire",
+    "pos": "verb",
+    "ipa": "/kʁwaʁ/",
+    "translationsRu": ["верить", "считать", "полагать"],
+    "translationsEn": ["to believe", "to think"],
+    "semanticCore": "Принимать что-то за правду или иметь мнение с оттенком убеждённости; croire à/en — верить во что-то или кого-то.",
+    "collocations": [
+      {
+        "fr": "je crois que oui",
+        "ru": "думаю, что да"
+      },
+      {
+        "fr": "croire à quelque chose",
+        "ru": "верить во что-то"
+      },
+      {
+        "fr": "croire en Dieu",
+        "ru": "верить в Бога"
+      },
+      {
+        "fr": "je n'en crois pas mes yeux",
+        "ru": "не верю своим глазам"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "penser",
+        "note": "croire que = верить, полагать (есть оттенок веры/убеждения); penser que = думать, считать (рассудком). Je crois qu'il a raison ближе к «я склонен верить».",
+        "wordId": "wl-savoir-penser"
+      },
+      {
+        "with": "creed / credible (англ.)",
+        "note": "Хороший мост: croire — от лат. credere, как англ. creed (символ веры) и credible (правдоподобный). Корень cred- = верить."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A2",
+    "tags": ["connaissance", "verbe"],
+    "caseIds": ["wc-savoir"]
+  },
+  {
+    "id": "wl-savoir-oublier",
+    "lemma": "oublier",
+    "pos": "verb",
+    "ipa": "/u.bli.je/",
+    "translationsRu": ["забывать", "забыть"],
+    "translationsEn": ["to forget"],
+    "semanticCore": "Не удержать в памяти или упустить из виду; oublier de + инфинитив — забыть что-то сделать.",
+    "collocations": [
+      {
+        "fr": "oublier son nom",
+        "ru": "забыть его имя"
+      },
+      {
+        "fr": "oublier de fermer la porte",
+        "ru": "забыть закрыть дверь"
+      },
+      {
+        "fr": "n'oublie pas !",
+        "ru": "не забудь!"
+      },
+      {
+        "fr": "j'ai oublié mes clés",
+        "ru": "я забыл ключи"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "publier (фр.)",
+        "note": "Не путать по звучанию: oublier = забывать, а publier = публиковать. Разные слова, похоже звучат."
+      },
+      {
+        "with": "apprendre",
+        "note": "oublier = забывать (терять из памяти); apprendre = учить, осваивать. Это противоположные направления: учишь, чтобы не забыть.",
+        "wordId": "wl-apprendre"
+      }
+    ],
+    "frequencyRank": 220,
+    "level": "A2",
+    "tags": ["connaissance", "verbe"],
+    "caseIds": ["wc-savoir"]
   }
 ]

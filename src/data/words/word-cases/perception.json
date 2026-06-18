@@ -4,7 +4,16 @@
     "title": "Смотреть, видеть, слушать, слышать",
     "theme": "perception",
     "level": "A2",
-    "wordIds": ["voir", "regarder", "entendre", "ecouter", "sembler"],
+    "wordIds": [
+      "voir",
+      "regarder",
+      "entendre",
+      "ecouter",
+      "sembler",
+      "wl-perception-sentir",
+      "wl-perception-remarquer",
+      "wl-perception-toucher"
+    ],
     "steps": [
       {
         "id": "wc-perception-voir-ctx",
@@ -324,6 +333,202 @@
         "options": ["voir", "boire", "soir", "noir"],
         "correctIndex": 0,
         "explanation": "Одинаковая концовка /-waʁ/, различается начало: voir /vwaʁ/ (видеть), boire /bwaʁ/ (пить), soir /swaʁ/ (вечер), noir /nwaʁ/ (чёрный)."
+      },
+      {
+        "id": "wc-perception-sentir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-perception-sentir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mmm, ça sent bon dans la cuisine !",
+          "Je sens une odeur de café.",
+          "Aujourd'hui je me sens fatigué."
+        ],
+        "options": [
+          "чувствовать / нюхать / пахнуть (воспринимать телом)",
+          "видеть глазами",
+          "слышать ушами",
+          "говорить вслух"
+        ],
+        "correctIndex": 0,
+        "explanation": "sentir — воспринимать телом: «пахнуть» (ça sent bon), «нюхать/чувствовать запах» (je sens une odeur) и в возвратной форме «чувствовать себя» (je me sens fatigué)."
+      },
+      {
+        "id": "wc-perception-sentir-collo",
+        "kind": "sort",
+        "wordId": "wl-perception-sentir",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с sentir звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "ça sent bon",
+            "basket": "ok"
+          },
+          {
+            "text": "sentir une odeur",
+            "basket": "ok"
+          },
+          {
+            "text": "je me sens bien",
+            "basket": "ok"
+          },
+          {
+            "text": "sentir une odeur bonne",
+            "basket": "no"
+          },
+          {
+            "text": "ça sent bonne",
+            "basket": "no"
+          }
+        ],
+        "explanation": "После sentir в значении «пахнуть» идёт наречие, неизменяемое: ça sent bon (а не «bonne»). Естественны sentir une odeur и возвратное je me sens bien. «Une odeur bonne» — неудачный порядок; говорят une bonne odeur."
+      },
+      {
+        "id": "wc-perception-sentir-toucher-cmp",
+        "kind": "compare",
+        "wordId": "wl-perception-sentir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "sentir и toucher оба про тело. В чём здесь разница?",
+        "phrases": ["Je sens le froid sur ma peau.", "Je touche la glace avec ma main."],
+        "options": [
+          "sentir = ощущать то, что доходит до тебя (холод сам чувствуется); toucher = самому прикасаться рукой",
+          "Это синонимы, разницы нет",
+          "sentir = трогать рукой; toucher = ощущать запах",
+          "sentir = видеть; toucher = слышать"
+        ],
+        "correctIndex": 0,
+        "explanation": "sentir — пассивное ощущение: холод сам доходит до кожи (je sens le froid). toucher — активное действие рукой: ты сам прикасаешься (je touche la glace). Та же логика «само доходит / сам направляешь», что у voir/regarder."
+      },
+      {
+        "id": "wc-perception-sentir-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-perception-sentir",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "sentir",
+        "options": ["sentir", "mentir", "sortir", "partir"],
+        "correctIndex": 0,
+        "explanation": "Все оканчиваются на /-tiʁ/, но начало разное: sentir /sɑ̃.tiʁ/ (чувствовать), mentir /mɑ̃.tiʁ/ (врать), sortir /sɔʁ.tiʁ/ (выходить), partir /paʁ.tiʁ/ (уезжать)."
+      },
+      {
+        "id": "wc-perception-remarquer-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-perception-remarquer",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать remarquer. Что оно значит?",
+        "bridge": "remarquer — родственник английского remarkable «заметный, выдающийся»: то, что бросается в глаза, что замечают.",
+        "options": ["замечать, обращать внимание", "забывать", "ремонтировать", "повторять"],
+        "correctIndex": 0,
+        "explanation": "remarquer = «замечать». Английское remarkable («заметный») — тот же корень: речь о том, что выделяется и привлекает внимание."
+      },
+      {
+        "id": "wc-perception-remarquer-trap",
+        "kind": "trap",
+        "wordId": "wl-perception-remarquer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Похоже на англ. to remark («высказать замечание»). Что на самом деле значит «J'ai remarqué une erreur» ?",
+        "options": [
+          "Я заметил ошибку (обратил внимание)",
+          "Я сделал замечание об ошибке вслух",
+          "Я исправил ошибку",
+          "Я повторил ошибку"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: фр. remarquer — «заметить, обратить внимание» (про восприятие), а не «высказать замечание». «Сказать вслух» — это faire remarquer que… или faire une remarque. «J'ai remarqué une erreur» = я заметил ошибку."
+      },
+      {
+        "id": "wc-perception-remarquer-voir-cmp",
+        "kind": "compare",
+        "wordId": "wl-perception-remarquer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "voir и remarquer — оба про глаза. В чём здесь разница?",
+        "phrases": ["J'ai vu la photo sur le mur.", "J'ai remarqué un détail sur la photo."],
+        "options": [
+          "voir = просто видеть (образ попал в глаза); remarquer = заметить, выделить деталь из фона",
+          "Это синонимы, разницы нет",
+          "voir = заметить деталь; remarquer = смутно видеть",
+          "voir = слышать; remarquer = нюхать"
+        ],
+        "correctIndex": 0,
+        "explanation": "voir — образ просто попал в поле зрения (j'ai vu la photo). remarquer — ты выделил конкретную деталь, обратил на неё внимание (j'ai remarqué un détail). Можно voir что-то целиком, но не remarquer мелочь внутри."
+      },
+      {
+        "id": "wc-perception-toucher-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-perception-toucher",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать toucher. Что оно значит?",
+        "bridge": "toucher — прямой родственник английского to touch: и «прикасаться», и переносно «трогать» (ça me touche = it touches me).",
+        "options": ["трогать, касаться", "поворачивать", "учить", "терять"],
+        "correctIndex": 0,
+        "explanation": "toucher = «трогать, касаться». Английское to touch — тот же корень и в прямом, и в переносном смысле. Только помни оборот toucher un salaire — «получать зарплату»."
+      },
+      {
+        "id": "wc-perception-toucher-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-perception-toucher",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ne touche pas, c'est chaud !",
+          "Ton message m'a beaucoup touché.",
+          "Il touche un bon salaire."
+        ],
+        "options": [
+          "трогать / касаться (и переносно — растрогать, получать)",
+          "видеть",
+          "слушать",
+          "пахнуть"
+        ],
+        "correctIndex": 0,
+        "explanation": "toucher — «трогать, касаться»: ne touche pas (не трогай). Переносно «растрогать» (ton message m'a touché) и в быту «получать» деньги (toucher un salaire)."
+      },
+      {
+        "id": "wc-perception-toucher-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-perception-toucher",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "toucher",
+        "options": ["toucher", "tousser", "doucher", "bouger"],
+        "correctIndex": 0,
+        "explanation": "Похожие по звучанию, но разные слова: toucher /tu.ʃe/ (трогать), tousser /tu.se/ (кашлять), doucher /du.ʃe/ (обливать; se doucher — принимать душ), bouger /bu.ʒe/ (двигаться)."
+      },
+      {
+        "id": "wc-perception-toucher-hint",
+        "kind": "wordHint",
+        "wordId": "wl-perception-toucher",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: самому прикасаться к чему-то рукой — «трогать, касаться».",
+        "answer": "toucher",
+        "hints": [
+          "Начинается на t…",
+          "7 букв; прямой родственник англ. to touch",
+          "Ne ___ pas, c'est chaud !"
+        ],
+        "explanation": "toucher — «трогать, касаться». «Ne touche pas !» — не трогай! Переносно: ça me touche — это меня трогает."
       }
     ]
   }

@@ -191,5 +191,128 @@
     "level": "A2",
     "tags": ["perception", "verbe", "impression"],
     "caseIds": ["wc-perception"]
+  },
+  {
+    "id": "wl-perception-sentir",
+    "lemma": "sentir",
+    "pos": "verb",
+    "ipa": "/sɑ̃.tiʁ/",
+    "translationsRu": ["чувствовать", "нюхать", "пахнуть"],
+    "translationsEn": ["to smell", "to feel"],
+    "semanticCore": "Воспринимать через тело — запах, ощущение, предчувствие. Может значить «нюхать» (sentir une fleur), «пахнуть» (ça sent bon) и «чувствовать» (sentir le danger). В возвратной форме se sentir — «чувствовать себя» (je me sens bien).",
+    "collocations": [
+      {
+        "fr": "ça sent bon",
+        "ru": "вкусно/приятно пахнет"
+      },
+      {
+        "fr": "sentir une odeur",
+        "ru": "чувствовать запах"
+      },
+      {
+        "fr": "se sentir bien / mal",
+        "ru": "чувствовать себя хорошо / плохо"
+      },
+      {
+        "fr": "sentir le danger",
+        "ru": "чувствовать опасность"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ressentir",
+        "note": "sentir — чувствовать физически (запах, прикосновение) или предчувствовать; ressentir — переживать внутри, об эмоции или сильном ощущении: ressentir de la joie, ressentir une douleur."
+      },
+      {
+        "with": "toucher",
+        "note": "sentir — воспринимать ощущение (что-то само доходит до тебя: je sens le froid); toucher — самому прикасаться рукой (je touche le mur)."
+      }
+    ],
+    "frequencyRank": 240,
+    "level": "A2",
+    "tags": ["perception", "verbe", "odorat"],
+    "caseIds": ["wc-perception"]
+  },
+  {
+    "id": "wl-perception-remarquer",
+    "lemma": "remarquer",
+    "pos": "verb",
+    "ipa": "/ʁə.maʁ.ke/",
+    "translationsRu": ["замечать", "обращать внимание"],
+    "translationsEn": ["to notice", "to spot"],
+    "semanticCore": "Заметить что-то, обратить внимание на деталь, которая бросилась в глаза: j'ai remarqué un détail. Не «высказывать замечание» — это ложный друг английского to remark. Оборот faire remarquer que — «обратить (чьё-то) внимание на то, что».",
+    "collocations": [
+      {
+        "fr": "remarquer un détail",
+        "ru": "заметить деталь"
+      },
+      {
+        "fr": "se faire remarquer",
+        "ru": "привлекать к себе внимание"
+      },
+      {
+        "fr": "faire remarquer que",
+        "ru": "обратить внимание (указать) на то, что"
+      },
+      {
+        "fr": "tu as remarqué ?",
+        "ru": "ты заметил?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "to remark (англ.)",
+        "note": "Ложный друг: англ. to remark — «высказать замечание, заметить вслух»; фр. remarquer — «заметить, обратить внимание» (про восприятие, а не про слова). «Сделать замечание вслух» — это faire remarquer / faire une remarque."
+      },
+      {
+        "with": "voir",
+        "note": "voir — просто видеть (образ попадает в глаза); remarquer — заметить, выделить из фона то, на что обратил внимание: j'ai vu la photo, mais je n'ai pas remarqué le détail."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["perception", "verbe", "attention"],
+    "caseIds": ["wc-perception"]
+  },
+  {
+    "id": "wl-perception-toucher",
+    "lemma": "toucher",
+    "pos": "verb",
+    "ipa": "/tu.ʃe/",
+    "translationsRu": ["трогать", "касаться", "дотрагиваться"],
+    "translationsEn": ["to touch"],
+    "semanticCore": "Самому прикасаться к чему-то рукой или телом: ne touche pas ! Также переносно «трогать» (об эмоции: ça me touche) и в быту «получать деньги» (toucher un salaire).",
+    "collocations": [
+      {
+        "fr": "ne pas toucher",
+        "ru": "не трогать"
+      },
+      {
+        "fr": "toucher du bois",
+        "ru": "постучать по дереву (чтобы не сглазить)"
+      },
+      {
+        "fr": "ça me touche",
+        "ru": "это меня трогает (растрогало)"
+      },
+      {
+        "fr": "toucher un salaire",
+        "ru": "получать зарплату"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sentir",
+        "note": "toucher — самому прикасаться рукой (je touche la table); sentir — ощущать то, что доходит до тебя, или нюхать (je sens la chaleur, je sens le café)."
+      },
+      {
+        "with": "to touch (англ.)",
+        "note": "Совпадает с англ. to touch и в прямом смысле «прикасаться», и в переносном «трогать (эмоционально)»: ça me touche = it touches me. Надёжный мост, но помни про оборот toucher un salaire — «получать зарплату»."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A2",
+    "tags": ["perception", "verbe", "toucher"],
+    "caseIds": ["wc-perception"]
   }
 ]

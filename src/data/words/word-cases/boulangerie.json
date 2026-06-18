@@ -4,7 +4,16 @@
     "title": "В булочной",
     "theme": "boulangerie",
     "level": "A1",
-    "wordIds": ["pain", "encore", "baguette"],
+    "wordIds": [
+      "pain",
+      "encore",
+      "baguette",
+      "wl-boulangerie-croissant",
+      "wl-boulangerie-gateau",
+      "wl-boulangerie-tarte",
+      "frais",
+      "tranche"
+    ],
     "steps": [
       {
         "id": "wc-boul-pain-ctx",
@@ -59,15 +68,36 @@
         "mechanic": "M12",
         "prompt": "Какие сочетания со словом pain звучат естественно, а какие — нет?",
         "baskets": [
-          { "id": "ok", "label": "Естественно" },
-          { "id": "no", "label": "Так не говорят" }
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
         ],
         "items": [
-          { "text": "acheter du pain", "basket": "ok" },
-          { "text": "une tranche de pain", "basket": "ok" },
-          { "text": "du pain frais", "basket": "ok" },
-          { "text": "boire du pain", "basket": "no" },
-          { "text": "conduire le pain", "basket": "no" }
+          {
+            "text": "acheter du pain",
+            "basket": "ok"
+          },
+          {
+            "text": "une tranche de pain",
+            "basket": "ok"
+          },
+          {
+            "text": "du pain frais",
+            "basket": "ok"
+          },
+          {
+            "text": "boire du pain",
+            "basket": "no"
+          },
+          {
+            "text": "conduire le pain",
+            "basket": "no"
+          }
         ],
         "explanation": "С pain естественны: acheter/couper du pain, une tranche de pain, du pain frais. «boire du pain» и «conduire le pain» — бессмыслица."
       },
@@ -117,6 +147,284 @@
         "options": ["pain", "bain", "vin", "main"],
         "correctIndex": 0,
         "explanation": "У всех один носовой /ɛ̃/, различается первый согласный: pain /pɛ̃/ (хлеб), bain /bɛ̃/ (ванна), vin /vɛ̃/ (вино), main /mɛ̃/ (рука)."
+      },
+      {
+        "id": "wc-boulangerie-croissant-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-boulangerie-croissant",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je prends un café et un croissant.",
+          "Les croissants sont encore chauds.",
+          "Un croissant au beurre, s'il vous plaît."
+        ],
+        "options": ["круассан", "булочка с изюмом", "печенье", "блин"],
+        "correctIndex": 0,
+        "explanation": "croissant (m) — круассан, слоёная булочка-полумесяц. В булочной с кофе берут именно его."
+      },
+      {
+        "id": "wc-boulangerie-croissant-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-boulangerie-croissant",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит croissant?",
+        "bridge": "Это же английское «croissant» — то самое слоёное «круассан», которое заказывают в кафе. Слово пришло в английский прямо из французского.",
+        "options": ["круассан", "пончик", "тост", "вафля"],
+        "correctIndex": 0,
+        "explanation": "croissant (m) — круассан. Английское «croissant» взято из французского без изменений, поэтому узнаётся сразу."
+      },
+      {
+        "id": "wc-boulangerie-croissant-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-boulangerie-croissant",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "croissant",
+        "options": ["croissant", "croissance", "croisé", "croix"],
+        "correctIndex": 0,
+        "explanation": "Все начинаются с «croi-», но звучат по-разному: croissant /kʁwa.sɑ̃/ (круассан), croissance /kʁwa.sɑ̃s/ (рост), croisé /kʁwa.ze/ (скрещённый), croix /kʁwa/ (крест)."
+      },
+      {
+        "id": "wc-boulangerie-gateau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-boulangerie-gateau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "C'est l'anniversaire de Léa, on achète un gâteau.",
+          "Je voudrais une part de gâteau au chocolat.",
+          "Le gâteau est trop sucré pour moi."
+        ],
+        "options": ["торт, пирожное", "хлеб", "сок", "конфета"],
+        "correctIndex": 0,
+        "explanation": "gâteau (m) — торт или пирожное, пышная сладкая выпечка к десерту или празднику."
+      },
+      {
+        "id": "wc-boulangerie-gateau-sort",
+        "kind": "sort",
+        "wordId": "wl-boulangerie-gateau",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом gâteau звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un gâteau d'anniversaire",
+            "basket": "ok"
+          },
+          {
+            "text": "une part de gâteau",
+            "basket": "ok"
+          },
+          {
+            "text": "un gâteau au chocolat",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un gâteau",
+            "basket": "no"
+          },
+          {
+            "text": "conduire un gâteau",
+            "basket": "no"
+          }
+        ],
+        "explanation": "С gâteau естественны: un gâteau d'anniversaire, une part de gâteau, un gâteau au chocolat. «boire un gâteau» (пить торт) и «conduire un gâteau» (вести торт) — бессмыслица: торт едят, а не пьют и не водят."
+      },
+      {
+        "id": "wc-boulangerie-gateau-hint",
+        "kind": "wordHint",
+        "wordId": "wl-boulangerie-gateau",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: пышная сладкая выпечка, которую приносят на день рождения со свечами.",
+        "answer": "gâteau",
+        "hints": [
+          "Начинается на g…, есть знак «^» (accent circonflexe)",
+          "6 букв, заканчивается на -eau",
+          "Un ___ d'anniversaire."
+        ],
+        "explanation": "gâteau (m) — торт. Например: «un gâteau d'anniversaire» — торт на день рождения. Во множественном — gâteaux."
+      },
+      {
+        "id": "wc-boulangerie-tarte-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-boulangerie-tarte",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Une tarte aux pommes, s'il vous plaît.",
+          "Cette tarte au citron est délicieuse.",
+          "Je coupe une part de tarte."
+        ],
+        "options": ["открытый пирог, тарт", "суп", "салат", "булочка"],
+        "correctIndex": 0,
+        "explanation": "tarte (f) — открытый пирог (тарт) на тонкой тестяной основе с начинкой сверху: aux pommes, au citron."
+      },
+      {
+        "id": "wc-boulangerie-tarte-cmp",
+        "kind": "compare",
+        "wordId": "wl-boulangerie-tarte",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "tarte и gâteau легко спутать. В чём разница здесь?",
+        "phrases": ["une tarte aux pommes", "un gâteau au chocolat"],
+        "options": [
+          "tarte — открытый пирог на тонкой основе; gâteau — пышный торт/кекс",
+          "Это синонимы, разницы нет",
+          "tarte — это торт, gâteau — пирог",
+          "tarte всегда солёная, gâteau всегда сладкий"
+        ],
+        "correctIndex": 0,
+        "explanation": "tarte (f) — открытый пирог на тонком тесте с начинкой сверху (aux pommes). gâteau (m) — пышная выпечка из бисквитного теста (au chocolat). Разный вид и тесто."
+      },
+      {
+        "id": "wc-boulangerie-tarte-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-boulangerie-tarte",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — сладкая выпечка из булочной. Найди лишнее.",
+        "options": ["la tarte", "le gâteau", "le croissant", "la voiture"],
+        "correctIndex": 3,
+        "explanation": "tarte, gâteau и croissant — выпечка из булочной. la voiture (машина) — самозванец, к еде отношения не имеет."
+      },
+      {
+        "id": "wc-boulangerie-frais-trap",
+        "kind": "trap",
+        "wordId": "frais",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«Сегодня прохладно». Как сказать по-французски?",
+        "options": [
+          "Il fait frais.",
+          "Il fait fresh.",
+          "Il est frais aujourd'hui le temps.",
+          "Il fait fraîche."
+        ],
+        "correctIndex": 0,
+        "explanation": "О погоде «прохладно» — «il fait frais» (безличное, мужской род). «fresh» — английское слово, во французском его нет; «il fait fraîche» — ошибка согласования (frais здесь не меняется)."
+      },
+      {
+        "id": "wc-boulangerie-frais-cmp",
+        "kind": "compare",
+        "wordId": "frais",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "frais и froid часто путают. В чём разница здесь?",
+        "phrases": ["du pain frais", "de l'eau froide"],
+        "options": [
+          "frais — свежий/прохладный (приятно); froid — холодный (сильнее)",
+          "Это синонимы, разницы нет",
+          "frais — холодный, froid — свежий",
+          "Оба значат «горячий»"
+        ],
+        "correctIndex": 0,
+        "explanation": "frais — «свежий» (свежий хлеб) или «прохладный» (приятно); froid — «холодный» (сильнее, часто неприятно). du pain frais — свежий хлеб; de l'eau froide — холодная вода."
+      },
+      {
+        "id": "wc-boulangerie-frais-sort",
+        "kind": "sort",
+        "wordId": "frais",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Где frais сочетается естественно, а где — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "du pain frais",
+            "basket": "ok"
+          },
+          {
+            "text": "il fait frais",
+            "basket": "ok"
+          },
+          {
+            "text": "des œufs frais",
+            "basket": "ok"
+          },
+          {
+            "text": "un couteau frais",
+            "basket": "no"
+          },
+          {
+            "text": "une voiture fraîche",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественно: du pain frais (свежий хлеб), il fait frais (прохладно), des œufs frais (свежие яйца). «un couteau frais» (свежий нож) и «une voiture fraîche» (свежая машина) так не говорят: frais о предметах не используется."
+      },
+      {
+        "id": "wc-boulangerie-tranche-ctx",
+        "kind": "wordContext",
+        "wordId": "tranche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Une tranche de pain, s'il vous plaît.",
+          "Je coupe le jambon en tranches.",
+          "Tu veux une tranche de gâteau ?"
+        ],
+        "options": ["ломтик, кусок", "нож", "тарелка", "крошка"],
+        "correctIndex": 0,
+        "explanation": "tranche (f) — тонкий ровный отрезанный ломтик: une tranche de pain, de jambon, de gâteau."
+      },
+      {
+        "id": "wc-boulangerie-tranche-cmp",
+        "kind": "compare",
+        "wordId": "tranche",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "tranche и morceau легко перепутать. В чём разница здесь?",
+        "phrases": ["une tranche de pain", "un morceau de pain"],
+        "options": [
+          "tranche — тонкий ровный ломтик; morceau — кусок любой формы",
+          "Это синонимы, разницы нет",
+          "tranche — большой кусок, morceau — тонкий ломтик",
+          "Оба значат «крошка»"
+        ],
+        "correctIndex": 0,
+        "explanation": "tranche — тонкий ровно отрезанный ломтик (как нарезка). morceau — кусок любой формы и размера (отломанный). Поэтому «une tranche de jambon», но «un morceau de fromage»."
+      },
+      {
+        "id": "wc-boulangerie-tranche-hint",
+        "kind": "wordHint",
+        "wordId": "tranche",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: тонкий ровный кусок, который отрезают от хлеба, сыра или ветчины.",
+        "answer": "tranche",
+        "hints": [
+          "Начинается на t…, женский род",
+          "7 букв, есть носовой звук «-an-»",
+          "Une ___ de pain, s'il vous plaît."
+        ],
+        "explanation": "tranche (f) — ломтик. В булочной/магазине просят: «une tranche de pain», «une tranche de jambon»."
       }
     ]
   }

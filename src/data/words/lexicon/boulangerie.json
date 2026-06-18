@@ -150,5 +150,115 @@
     "level": "A2",
     "tags": ["boulangerie", "nourriture"],
     "caseIds": []
+  },
+  {
+    "id": "wl-boulangerie-croissant",
+    "lemma": "croissant",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kʁwa.sɑ̃/",
+    "translationsRu": ["круассан"],
+    "translationsEn": ["croissant"],
+    "semanticCore": "Слоёная булочка-полумесяц из сдобного теста, классическая французская выпечка к завтраку.",
+    "collocations": [
+      {
+        "fr": "un croissant au beurre",
+        "ru": "круассан на сливочном масле"
+      },
+      {
+        "fr": "un café et un croissant",
+        "ru": "кофе и круассан"
+      },
+      {
+        "fr": "des croissants chauds",
+        "ru": "тёплые круассаны"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pain",
+        "note": "pain — обычный хлеб; croissant — сладковатая слоёная виенуазери (выпечка), а не хлеб для бутербродов."
+      },
+      {
+        "with": "croissance",
+        "note": "croissant также причастие/прилагательное «растущий» (la lune croissante — растущая луна); не путать с однокоренным croissance — «рост»."
+      }
+    ],
+    "frequencyRank": 900,
+    "level": "A1",
+    "tags": ["boulangerie", "nourriture"],
+    "caseIds": ["wc-boulangerie"]
+  },
+  {
+    "id": "wl-boulangerie-gateau",
+    "lemma": "gâteau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɡɑ.to/",
+    "translationsRu": ["торт", "пирожное"],
+    "translationsEn": ["cake"],
+    "semanticCore": "Сладкая выпечка к десерту или празднику — от целого торта до отдельного пирожного.",
+    "collocations": [
+      {
+        "fr": "un gâteau d'anniversaire",
+        "ru": "торт на день рождения"
+      },
+      {
+        "fr": "une part de gâteau",
+        "ru": "кусок торта"
+      },
+      {
+        "fr": "un gâteau au chocolat",
+        "ru": "шоколадный торт"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tarte",
+        "note": "gâteau — пышный торт/кекс из бисквитного теста; tarte — открытый пирог на тонкой основе с начинкой сверху."
+      }
+    ],
+    "frequencyRank": 750,
+    "level": "A1",
+    "tags": ["boulangerie", "nourriture"],
+    "caseIds": ["wc-boulangerie"]
+  },
+  {
+    "id": "wl-boulangerie-tarte",
+    "lemma": "tarte",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/taʁt/",
+    "translationsRu": ["пирог", "тарт"],
+    "translationsEn": ["pie", "tart"],
+    "semanticCore": "Открытый пирог на тонкой основе из теста с начинкой (фрукты, крем) сверху.",
+    "collocations": [
+      {
+        "fr": "une tarte aux pommes",
+        "ru": "яблочный пирог"
+      },
+      {
+        "fr": "une part de tarte",
+        "ru": "кусок пирога"
+      },
+      {
+        "fr": "une tarte au citron",
+        "ru": "лимонный тарт"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "gâteau",
+        "note": "tarte — открытый пирог на тонкой тестяной основе; gâteau — пышный торт/кекс. Разный вид и тесто."
+      },
+      {
+        "with": "tort",
+        "note": "tarte (пирог) и tort (вина, неправота, в avoir tort — «быть неправым») звучат близко, но это разные слова."
+      }
+    ],
+    "frequencyRank": 1100,
+    "level": "A1",
+    "tags": ["boulangerie", "nourriture"],
+    "caseIds": ["wc-boulangerie"]
   }
 ]

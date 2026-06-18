@@ -4,7 +4,16 @@
     "title": "Знать, понимать, уметь",
     "theme": "connaissance",
     "level": "A2",
-    "wordIds": ["wl-savoir", "wl-connaitre", "wl-comprendre", "wl-pouvoir", "wl-apprendre"],
+    "wordIds": [
+      "wl-savoir",
+      "wl-connaitre",
+      "wl-comprendre",
+      "wl-pouvoir",
+      "wl-apprendre",
+      "wl-savoir-penser",
+      "wl-savoir-croire",
+      "wl-savoir-oublier"
+    ],
     "steps": [
       {
         "id": "wc-savoir-savoir-ctx",
@@ -245,6 +254,321 @@
           "comprendre = comprehend: «я схватил (com-) и взял (prendre) смысл» — значит понял.",
           "Цена comprend завтрак — она «вмещает» его; так же ум «вмещает» смысл = понимает."
         ]
+      },
+      {
+        "id": "wc-savoir-penser-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-savoir-penser",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Je pense à toi.",
+          "Qu'est-ce que tu en penses ?",
+          "Je pense que c'est une bonne idée."
+        ],
+        "options": [
+          "думать, размышлять, иметь мнение",
+          "знать наверняка",
+          "забывать",
+          "уметь делать"
+        ],
+        "correctIndex": 0,
+        "explanation": "penser = думать: penser à (думать о ком-то/чём-то), penser que (считать, что…). Это мнение, а не факт — в отличие от savoir («знать наверняка»)."
+      },
+      {
+        "id": "wc-savoir-penser-cmp",
+        "kind": "compare",
+        "wordId": "wl-savoir-penser",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "penser и savoir оба бывают «+ que». В чём разница здесь?",
+        "phrases": ["Je pense qu'il vient.", "Je sais qu'il vient."],
+        "options": [
+          "penser que = думаю, предполагаю (мнение); savoir que = знаю наверняка (факт)",
+          "Это синонимы, разницы нет",
+          "penser que = знаю наверняка; savoir que = предполагаю",
+          "Оба значат «верить»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Je pense qu'il vient — это моё предположение/мнение. Je sais qu'il vient — у меня есть точная информация. savoir = факт, penser = мнение."
+      },
+      {
+        "id": "wc-savoir-penser-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-savoir-penser",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери услышанное слово.",
+        "audioText": "penser",
+        "options": ["penser", "passer", "danser", "poser"],
+        "correctIndex": 0,
+        "explanation": "penser /pɑ̃.se/ = думать. Похоже звучат, но это другие глаголы: passer (проходить), danser (танцевать), poser (класть). Различай по началу слова."
+      },
+      {
+        "id": "wc-savoir-croire-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-savoir-croire",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский корень поможет узнать croire. Что оно значит?",
+        "bridge": "croire — от латинского credere, как англ. creed (символ веры) и credible (правдоподобный). Корень cred- = верить.",
+        "options": ["верить, полагать", "расти", "пересекать", "пить"],
+        "correctIndex": 0,
+        "explanation": "croire = верить, считать. Тот же корень, что в англ. creed / credible (лат. credere). croire à = верить во что-то, croire que = полагать, что…"
+      },
+      {
+        "id": "wc-savoir-croire-cmp",
+        "kind": "compare",
+        "wordId": "wl-savoir-croire",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "penser и croire — близкая пара. В чём оттенок разницы здесь?",
+        "phrases": ["Je pense qu'il a raison.", "Je crois qu'il a raison."],
+        "options": [
+          "penser = считаю (рассудком, мнение); croire = склонен верить (с оттенком веры/убеждения)",
+          "penser = верю; croire = знаю факт",
+          "Это совсем разные действия, не связаны",
+          "Оба значат «забывать»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Оба передают мнение и часто взаимозаменяемы, но croire несёт оттенок веры/убеждённости, а penser — рассудочного мнения. croire ещё значит «верить»: croire en Dieu."
+      },
+      {
+        "id": "wc-savoir-oublier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-savoir-oublier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "J'ai oublié mes clés.",
+          "N'oublie pas le rendez-vous !",
+          "Il oublie toujours mon nom."
+        ],
+        "options": ["забывать", "терять (ронять)", "учить наизусть", "находить"],
+        "correctIndex": 0,
+        "explanation": "oublier = забывать: oublier quelque chose (забыть вещь/имя), oublier de + инфинитив (забыть сделать), n'oublie pas (не забудь)."
+      },
+      {
+        "id": "wc-savoir-oublier-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-savoir-oublier",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери услышанное слово.",
+        "audioText": "oublier",
+        "options": ["oublier", "publier", "plier", "trier"],
+        "correctIndex": 0,
+        "explanation": "oublier /u.bli.je/ = забывать. Похоже звучат: publier (публиковать), plier (складывать), trier (сортировать) — но это другие слова. oublier начинается с гласного «у-»."
+      },
+      {
+        "id": "wc-savoir-oublier-hint",
+        "kind": "wordHint",
+        "wordId": "wl-savoir-oublier",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: «не удержать в памяти», противоположность «учить». Берёт de + инфинитив.",
+        "answer": "oublier",
+        "hints": [
+          "Начинается на o…",
+          "7 букв, обычный глагол на -ier",
+          "N'___ pas tes clés ! / J'ai ___ son nom."
+        ],
+        "explanation": "oublier = забывать. Формы: j'oublie, tu oublies, il oublie, nous oublions. oublier de + инфинитив = забыть что-то сделать."
+      },
+      {
+        "id": "wc-savoir-savoir-trap",
+        "kind": "trap",
+        "wordId": "wl-savoir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Выбери правильный перевод: «Я знаю, что он прав».",
+        "options": [
+          "Je sais qu'il a raison.",
+          "Je connais qu'il a raison.",
+          "Je pense qu'il a raison.",
+          "Je peux qu'il a raison."
+        ],
+        "correctIndex": 0,
+        "explanation": "Связку que берёт savoir, не connaître: Je sais que… Вариант с pense меняет смысл на «думаю» (мнение), а «connaître que» и «peux que» — грамматически неверны."
+      },
+      {
+        "id": "wc-savoir-savoir-odd2",
+        "kind": "oddOneOut",
+        "wordId": "wl-savoir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три глагола можно поставить перед «que», а один — нет. Найди лишний.",
+        "options": ["savoir", "penser", "croire", "connaître"],
+        "correctIndex": 3,
+        "explanation": "savoir que, penser que, croire que — все берут придаточное с que. А connaître так не работает: оно требует прямого дополнения (connaître quelqu'un), а не «connaître que…»."
+      },
+      {
+        "id": "wc-savoir-connaitre-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-connaitre",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери услышанное слово.",
+        "audioText": "connaître",
+        "options": ["connaître", "connecter", "commencer", "conduire"],
+        "correctIndex": 0,
+        "explanation": "connaître /kɔ.nɛtʁ/ = быть знакомым. Похоже начинаются: connecter (соединять), commencer (начинать), conduire (вести машину) — но это другие глаголы."
+      },
+      {
+        "id": "wc-savoir-connaitre-hint",
+        "kind": "wordHint",
+        "wordId": "wl-connaitre",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: «быть знакомым» с человеком, местом или темой. Только с прямым дополнением, без que.",
+        "answer": "connaître",
+        "hints": [
+          "Начинается на c…",
+          "Есть «î» с циркумфлексом: conna_tre",
+          "Tu ___ ma sœur ? / Je ___ bien Paris."
+        ],
+        "explanation": "connaître = быть знакомым: connaître quelqu'un / la ville / un sujet. Формы: je connais, tu connais, il connaît (î сохраняется перед t)."
+      },
+      {
+        "id": "wc-savoir-comprendre-sort",
+        "kind": "sort",
+        "wordId": "wl-comprendre",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с comprendre звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "comprendre la question",
+            "basket": "ok"
+          },
+          {
+            "text": "je ne comprends pas",
+            "basket": "ok"
+          },
+          {
+            "text": "le prix comprend le café",
+            "basket": "ok"
+          },
+          {
+            "text": "comprendre à nager",
+            "basket": "no"
+          },
+          {
+            "text": "comprendre à la question",
+            "basket": "no"
+          }
+        ],
+        "explanation": "comprendre = понимать (la question, quelqu'un) и «включать в себя» (le prix comprend…). Берёт прямое дополнение, без предлога à: «comprendre à la question» и «comprendre à nager» неверны — это поле savoir/apprendre."
+      },
+      {
+        "id": "wc-savoir-comprendre-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-comprendre",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери услышанное слово.",
+        "audioText": "comprendre",
+        "options": ["comprendre", "apprendre", "surprendre", "reprendre"],
+        "correctIndex": 0,
+        "explanation": "comprendre /kɔ̃.pʁɑ̃dʁ/ = понимать. Семья на -prendre: apprendre (учить), surprendre (удивлять), reprendre (возобновлять). Различай по приставке."
+      },
+      {
+        "id": "wc-savoir-pouvoir-trap",
+        "kind": "trap",
+        "wordId": "wl-pouvoir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Выбери правильный перевод: «Я умею плавать, но сегодня не могу».",
+        "options": [
+          "Je sais nager, mais aujourd'hui je ne peux pas.",
+          "Je peux nager, mais aujourd'hui je ne sais pas.",
+          "Je connais nager, mais aujourd'hui je ne peux pas.",
+          "Je sais nager, mais aujourd'hui je ne sais pas."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Уметь» (есть навык) = savoir nager; «мочь сейчас» (есть возможность) = pouvoir. Болен → навык остался (je sais), но возможности нет (je ne peux pas). «Connaître nager» неверно."
+      },
+      {
+        "id": "wc-savoir-pouvoir-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-pouvoir",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери услышанное слово.",
+        "audioText": "pouvoir",
+        "options": ["pouvoir", "vouloir", "savoir", "devoir"],
+        "correctIndex": 0,
+        "explanation": "pouvoir /pu.vwaʁ/ = мочь. Семья модальных на -oir: vouloir (хотеть), savoir (знать/уметь), devoir (быть должным). Различай по началу слова."
+      },
+      {
+        "id": "wc-savoir-apprendre-cmp",
+        "kind": "compare",
+        "wordId": "wl-apprendre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "apprendre и oublier — противоположные действия. В чём разница здесь?",
+        "phrases": ["J'apprends les verbes.", "J'oublie les verbes."],
+        "options": [
+          "apprendre = осваивать, учить (в память входит); oublier = забывать (из памяти уходит)",
+          "Это синонимы, разницы нет",
+          "apprendre = забывать; oublier = учить",
+          "Оба значат «понимать»"
+        ],
+        "correctIndex": 0,
+        "explanation": "apprendre = учить, осваивать (знание входит в память). oublier = забывать (знание уходит). Учишь как раз для того, чтобы не oublier."
+      },
+      {
+        "id": "wc-savoir-apprendre-sort",
+        "kind": "sort",
+        "wordId": "wl-apprendre",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с apprendre звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "apprendre le français",
+            "basket": "ok"
+          },
+          {
+            "text": "apprendre à conduire",
+            "basket": "ok"
+          },
+          {
+            "text": "apprendre une nouvelle",
+            "basket": "ok"
+          },
+          {
+            "text": "apprendre que nager",
+            "basket": "no"
+          },
+          {
+            "text": "apprendre de français",
+            "basket": "no"
+          }
+        ],
+        "explanation": "apprendre берёт прямое дополнение (apprendre le français), инфинитив через à (apprendre à conduire) и значит «узнать» (apprendre une nouvelle). «apprendre de français» и «apprendre que nager» — неверные конструкции."
       }
     ]
   }
