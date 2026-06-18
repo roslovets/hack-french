@@ -20,8 +20,12 @@ export default function WordSessionPage() {
   const navigate = useNavigate();
   const { state, gradeWordDimension } = useProgress();
 
-  // Built once on mount (Phase 1: stable order; due-driven seed comes later).
-  const [session] = useState(() => buildWordSession(state, 'wordlab-v1', { limit: 12 }));
+  // Session is rebuilt on "Ещё раз" with a fresh seed so the order varies; the
+  // seed also shifts as more words are introduced.
+  const [runId, setRunId] = useState(0);
+  const [session, setSession] = useState(() =>
+    buildWordSession(state, `wl-${Object.keys(state.wordMastery).length}-0`, { limit: 12 }),
+  );
   const [index, setIndex] = useState(0);
   const [answered, setAnswered] = useState(false);
   const [correct, setCorrect] = useState(0);
@@ -50,7 +54,8 @@ export default function WordSessionPage() {
             Сессия пройдена
           </Typography>
           <Typography color="text.secondary" sx={{ mb: 3 }}>
-            {correct} из {session.length} — владение словами подросло. Слова со сбоем вернутся
+            {correct} из {session.length} верно · затронуто слов:{' '}
+            {new Set(session.map((s) => s.wordId)).size}. Владение подросло; слова со сбоем вернутся
             раньше.
           </Typography>
           <Stack
@@ -67,6 +72,15 @@ export default function WordSessionPage() {
               color="inherit"
               sx={{ borderColor: 'divider' }}
               onClick={() => {
+                const nextRun = runId + 1;
+                setRunId(nextRun);
+                setSession(
+                  buildWordSession(
+                    state,
+                    `wl-${Object.keys(state.wordMastery).length}-${nextRun}`,
+                    { limit: 12 },
+                  ),
+                );
                 setIndex(0);
                 setAnswered(false);
                 setCorrect(0);

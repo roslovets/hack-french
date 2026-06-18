@@ -78,6 +78,12 @@ export default function WordLabPage() {
       )
     : 0;
   const dueWords = new Set(dueWordDimensions(state, now).map((d) => d.wordId)).size;
+  const trainedIds = new Set(
+    wordCases.flatMap((c) =>
+      c.steps.map((s) => s.wordId).filter((id): id is string => Boolean(id)),
+    ),
+  );
+  const newCount = [...trainedIds].filter((id) => !state.wordMastery[id]).length;
 
   return (
     <Box>
@@ -119,7 +125,12 @@ export default function WordLabPage() {
         />
       </Stack>
 
-      <Stack direction="row" spacing={1.5} useFlexGap sx={{ flexWrap: 'wrap', mb: 5 }}>
+      <Stack
+        direction="row"
+        spacing={1.5}
+        useFlexGap
+        sx={{ flexWrap: 'wrap', mb: 5, alignItems: 'center' }}
+      >
         <Button
           variant="contained"
           size="large"
@@ -128,6 +139,16 @@ export default function WordLabPage() {
         >
           Начать сессию
         </Button>
+        {newCount > 0 || dueWords > 0 ? (
+          <Typography variant="body2" color="text.secondary">
+            {[
+              newCount > 0 ? `${newCount} новых` : null,
+              dueWords > 0 ? `${dueWords} к повторению` : null,
+            ]
+              .filter(Boolean)
+              .join(' · ')}
+          </Typography>
+        ) : null}
       </Stack>
 
       <Typography variant="h6" sx={{ fontWeight: 800, mb: 2 }}>
