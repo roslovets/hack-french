@@ -70,6 +70,41 @@
           { "text": "conduire le pain", "basket": "no" }
         ],
         "explanation": "С pain естественны: acheter/couper du pain, une tranche de pain, du pain frais. «boire du pain» и «conduire le pain» — бессмыслица."
+      },
+      {
+        "id": "wc-boul-encore-bridge",
+        "kind": "wordBridge",
+        "wordId": "encore",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет запомнить encore. Что оно значит?",
+        "bridge": "В английском «Encore!» кричат на концерте — «ещё, сыграйте на бис».",
+        "options": ["ещё / снова", "хватит", "сначала", "медленно"],
+        "correctIndex": 0,
+        "explanation": "encore = «ещё, снова». Английское «Encore!» (просьба сыграть ещё) — прямой мост к значению."
+      },
+      {
+        "id": "wc-boul-baguette-hint",
+        "kind": "wordHint",
+        "wordId": "baguette",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: длинный белый французский хлеб, который покупают в булочной.",
+        "answer": "baguette",
+        "hints": ["Начинается на b…", "8 букв", "Une ___, s'il vous plaît."],
+        "explanation": "baguette (f) — багет. В булочной просят: «Une baguette, s'il vous plaît.»"
+      },
+      {
+        "id": "wc-boul-pain-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "pain",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для pain (хлеб), чтобы не путать с английским pain (боль).",
+        "examples": [
+          "Англичанину больно (pain) — а француз приносит ему хлеб (pain).",
+          "PAIN на витрине булочной — без боли, только хлеб."
+        ]
       }
     ]
   }

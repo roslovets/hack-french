@@ -11,7 +11,10 @@ import OrderTask from './OrderTask';
 import OwnPhraseTask from './OwnPhraseTask';
 import SortTask from './SortTask';
 import TimelineTask from './TimelineTask';
+import WordBridgeTask from './WordBridgeTask';
 import WordContextTask from './WordContextTask';
+import WordHintTask from './WordHintTask';
+import WordMnemonicTask from './WordMnemonicTask';
 
 interface Props {
   step: TaskStep;
@@ -65,6 +68,14 @@ export default function TaskRenderer({ step, boss, completed, onComplete }: Prop
       return (
         <WordContextTask step={step} boss={boss} completed={completed} onComplete={onComplete} />
       );
+    case 'wordBridge':
+      return (
+        <WordBridgeTask step={step} boss={boss} completed={completed} onComplete={onComplete} />
+      );
+    case 'wordHint':
+      return <WordHintTask step={step} boss={boss} completed={completed} onComplete={onComplete} />;
+    case 'wordMnemonic':
+      return <WordMnemonicTask step={step} boss={boss} onComplete={onComplete} />;
     default:
       return null;
   }

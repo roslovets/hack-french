@@ -67,6 +67,8 @@ export interface ProgressState {
   reviewBest: number;
   /** Word Lab: wordId -> per-dimension mastery + personal data. */
   wordMastery: Record<string, WordMastery>;
+  /** Word Lab (M29): stepId -> hint level used to recall (0 = clean recall). */
+  wordHintLog: Record<string, number>;
 }
 
 export const PROGRESS_VERSION = 1;
@@ -85,6 +87,7 @@ export const initialProgress: ProgressState = {
   reviewStreak: 0,
   reviewBest: 0,
   wordMastery: {},
+  wordHintLog: {},
 };
 
 export type ProgressAction =
@@ -111,6 +114,8 @@ export type ProgressAction =
       intervals: number[];
       at: number;
     }
+  | { type: 'SAVE_WORD_MNEMONIC'; wordId: string; mnemonic: string }
+  | { type: 'LOG_WORD_HINT'; stepId: string; level: number }
   | { type: 'IMPORT'; state: ProgressState }
   | { type: 'RESET' };
 
@@ -246,6 +251,22 @@ export function progressReducer(state: ProgressState, action: ProgressAction): P
         },
       };
     }
+    case 'SAVE_WORD_MNEMONIC': {
+      const wm = state.wordMastery[action.wordId] ?? { dims: {} };
+      return {
+        ...state,
+        wordMastery: {
+          ...state.wordMastery,
+          [action.wordId]: { ...wm, mnemonic: action.mnemonic || undefined },
+        },
+      };
+    }
+    case 'LOG_WORD_HINT': {
+      return {
+        ...state,
+        wordHintLog: { ...state.wordHintLog, [action.stepId]: action.level },
+      };
+    }
     case 'IMPORT':
       return { ...action.state, version: PROGRESS_VERSION };
     case 'RESET':
@@ -264,6 +285,8 @@ export interface ProgressContextValue {
   logMission: (stepId: string, note?: string) => void;
   unlogMission: (stepId: string) => void;
   gradeWordDimension: (wordId: string, dimension: WordDimension, correct: boolean) => void;
+  saveWordMnemonic: (wordId: string, mnemonic: string) => void;
+  logWordHint: (stepId: string, level: number) => void;
   resetCase: (caseId: string) => void;
   gradeReview: (caseId: string, correct: boolean) => void;
   importProgress: (next: ProgressState) => void;

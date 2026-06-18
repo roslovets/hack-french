@@ -61,6 +61,9 @@ export const taskMeta: Record<TaskKind, TaskMeta> = {
   dialogue: { label: 'Диалог-квест', icon: ForumOutlined, tone: 'amber' },
   findMechanisms: { label: 'Найди механизмы', icon: ManageSearchOutlined, tone: 'accent' },
   wordContext: { label: 'Угадай слово', icon: TranslateOutlined, tone: 'accent' },
+  wordBridge: { label: 'Английский мост', icon: CompareArrowsOutlined, tone: 'teal' },
+  wordHint: { label: 'Вспомни слово', icon: LightbulbOutlined, tone: 'gold' },
+  wordMnemonic: { label: 'Своя ассоциация', icon: EditNoteOutlined, tone: 'teal' },
 };
 
 export const toneColor: Record<Tone, string> = {

@@ -32,7 +32,10 @@ export type TaskKind =
   | 'timeline' // 25. Event timeline: background or click
   | 'dialogue' // 31. Dialogue quest
   | 'findMechanisms' // 46. Find mechanisms in a live phrase
-  | 'wordContext'; // 50. Word Lab — guess the word from three contexts
+  | 'wordContext' // 50. Word Lab — guess the word from three contexts
+  | 'wordBridge' // 51. Word Lab — English cognate bridge
+  | 'wordHint' // 52. Word Lab — hint-ladder active recall
+  | 'wordMnemonic'; // 53. Word Lab — personal mnemonic (free input)
 
 /** Case difficulty. */
 export type Difficulty = 'easy' | 'medium' | 'hard';
@@ -229,7 +232,10 @@ export type TaskStep =
   | TimelineStep
   | DialogueStep
   | FindMechanismsStep
-  | WordContextStep;
+  | WordContextStep
+  | WordBridgeStep
+  | WordHintStep
+  | WordMnemonicStep;
 
 /** Mechanism — a specific French thing that gets hacked. */
 export interface Mechanism {
@@ -378,4 +384,30 @@ export interface WordContextStep extends BaseStep {
   options: string[]; // candidate lemmas / meanings
   correctIndex: number;
   explanation: string;
+}
+
+/** M06 — use an English cognate as a bridge to the French word. */
+export interface WordBridgeStep extends BaseStep {
+  kind: 'wordBridge';
+  prompt: string;
+  bridge: string; // the English anchor / cognate note
+  options: string[];
+  correctIndex: number;
+  explanation: string;
+}
+
+/** M29 — recall the word with a progressive hint ladder. */
+export interface WordHintStep extends BaseStep {
+  kind: 'wordHint';
+  prompt: string;
+  answer: string; // target lemma (matched accent-/case-insensitively)
+  hints: string[]; // progressive hints, revealed one at a time
+  explanation: string;
+}
+
+/** M09 — capture a personal mnemonic for the word (free input, always passes). */
+export interface WordMnemonicStep extends BaseStep {
+  kind: 'wordMnemonic';
+  prompt: string;
+  examples?: string[]; // optional suggestion chips
 }

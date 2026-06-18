@@ -5,13 +5,27 @@
  * files survive the addition of new cases. See README → «Перенос сейва».
  */
 import { cases, getCase } from '@/data';
+import { wordCases, words } from '@/data/words';
 
 import {
   initialProgress,
   PROGRESS_VERSION,
   type ProgressState,
   type ReviewEntry,
+  type WordMastery,
 } from '@/state/progress-context';
+
+import type { WordDimension } from '@/types';
+
+const WORD_DIMENSIONS: WordDimension[] = [
+  'visualRecognition',
+  'contextualUnderstanding',
+  'listeningRecognition',
+  'contrastiveUnderstanding',
+  'collocationKnowledge',
+  'activeRecall',
+  'personalUsage',
+];
 
 const FORMAT = 'hack-french-save';
 const FORMAT_VERSION = 1;
@@ -29,6 +43,10 @@ interface SaveData {
   missionLog: Record<string, { at: number; note?: string }>;
   ownPhrases: Record<string, string[]>;
   review: Record<string, ReviewEntry>;
+  /** Word Lab: per-word mastery + personal data. */
+  wordMastery: Record<string, WordMastery>;
+  /** Word Lab: stepId -> hint level used (M29 analytics). */
+  wordHintLog: Record<string, number>;
 }
 
 export interface SaveFile {
@@ -69,6 +87,8 @@ export function exportSave(state: ProgressState, appVersion = '0.1.0'): string {
       missionLog: state.missionLog,
       ownPhrases: state.ownPhrases,
       review: state.review,
+      wordMastery: state.wordMastery,
+      wordHintLog: state.wordHintLog,
     },
   };
   return JSON.stringify(file, null, 2);
@@ -184,6 +204,43 @@ export function importSave(text: string): ImportResult {
     missionLog[stepId] = entry;
   }
 
+  // Word Lab mastery: keep known word ids; clamp per-dimension entries; cap the mnemonic.
+  const validWordIds = new Set(words.map((w) => w.id));
+  const wordDimSet = new Set<string>(WORD_DIMENSIONS);
+  const wordMastery: Record<string, WordMastery> = {};
+  for (const [wid, raw] of Object.entries(asRecord(data.wordMastery))) {
+    if (!validWordIds.has(wid)) continue;
+    const r = asRecord(raw);
+    const dims: WordMastery['dims'] = {};
+    for (const [dim, draw] of Object.entries(asRecord(r.dims))) {
+      if (!wordDimSet.has(dim)) continue;
+      const d = asRecord(draw);
+      dims[dim as WordDimension] = {
+        strength: Math.max(0, num(d.strength, 0)),
+        intervalIdx: clampInt(num(d.intervalIdx, 0), 0, 10),
+        due: num(d.due, 0),
+        reviewed: num(d.reviewed, 0),
+      };
+    }
+    const entry: WordMastery = { dims };
+    if (typeof r.mnemonic === 'string' && r.mnemonic.trim()) {
+      entry.mnemonic = r.mnemonic.trim().slice(0, 280);
+    }
+    if (typeof r.introducedAt === 'number' && Number.isFinite(r.introducedAt)) {
+      entry.introducedAt = r.introducedAt;
+    }
+    wordMastery[wid] = entry;
+  }
+
+  // Word Lab hint log: keep entries for known word-case step ids.
+  const validWordStepIds = new Set(wordCases.flatMap((c) => c.steps.map((s) => s.id)));
+  const wordHintLog: Record<string, number> = {};
+  for (const [stepId, lvl] of Object.entries(asRecord(data.wordHintLog))) {
+    if (validWordStepIds.has(stepId) && typeof lvl === 'number' && Number.isFinite(lvl)) {
+      wordHintLog[stepId] = Math.max(0, Math.round(lvl));
+    }
+  }
+
   const state: ProgressState = {
     ...initialProgress,
     version: PROGRESS_VERSION,
@@ -193,6 +250,8 @@ export function importSave(text: string): ImportResult {
     ownPhrases,
     caughtMissions,
     missionLog,
+    wordMastery,
+    wordHintLog,
     xp: Math.max(0, num(data.xp, 0)),
     review,
     reviewStreak: Math.max(0, num(data.reviewStreak, 0)),

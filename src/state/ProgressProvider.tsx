@@ -86,6 +86,14 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     [],
   );
 
+  const saveWordMnemonic = useCallback((wordId: string, mnemonic: string) => {
+    dispatch({ type: 'SAVE_WORD_MNEMONIC', wordId, mnemonic: mnemonic.trim() });
+  }, []);
+
+  const logWordHint = useCallback((stepId: string, level: number) => {
+    dispatch({ type: 'LOG_WORD_HINT', stepId, level });
+  }, []);
+
   const resetCase = useCallback((caseId: string) => {
     const caseItem = getCase(caseId);
     const stepIds = caseItem?.steps.map((s) => s.id) ?? [];
@@ -121,6 +129,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       logMission,
       unlogMission,
       gradeWordDimension,
+      saveWordMnemonic,
+      logWordHint,
       resetCase,
       gradeReview,
       importProgress,
@@ -138,6 +148,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       logMission,
       unlogMission,
       gradeWordDimension,
+      saveWordMnemonic,
+      logWordHint,
       resetCase,
       gradeReview,
       importProgress,

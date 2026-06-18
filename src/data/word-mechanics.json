@@ -18,6 +18,12 @@
     "primaryDimension": "contrastiveUnderstanding"
   },
   {
+    "id": "M09",
+    "token": "mnemonique",
+    "label": "Своя ассоциация",
+    "primaryDimension": "personalUsage"
+  },
+  {
     "id": "M12",
     "token": "collocations",
     "label": "Магниты слов",
