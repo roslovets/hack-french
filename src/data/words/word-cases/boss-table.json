@@ -1,0 +1,410 @@
+[
+  {
+    "id": "wc-boss-table",
+    "title": "Босс: за столом",
+    "theme": "boulangerie",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-cafe-terrasse",
+      "wl-cafe-commander",
+      "wl-cafe-cafe",
+      "wl-cafe-eau",
+      "wl-cafe-serveur",
+      "wl-cafe-addition",
+      "wl-nourriture-repas",
+      "wl-nourriture-plat",
+      "wl-nourriture-viande",
+      "wl-nourriture-poisson",
+      "wl-nourriture-fromage",
+      "wl-nourriture-fruit",
+      "wl-nourriture-legume",
+      "wl-nourriture-manger",
+      "pain",
+      "baguette",
+      "tranche",
+      "frais",
+      "encore"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-table-terrasse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cafe-terrasse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Большой финал: целый обед за столом. Сначала вы выбираете, где сесть. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Il fait beau, on s'installe en terrasse ?",
+          "Vous avez une table en terrasse, près de la rue ?",
+          "La terrasse est pleine, mais il reste de la place à l'intérieur."
+        ],
+        "options": ["открытые столики кафе на улице", "кухня", "касса", "кладовая"],
+        "correctIndex": 0,
+        "explanation": "terrasse (f) — уличные столики кафе под открытым небом. «en terrasse» — сидеть снаружи; противопоставляется «à l'intérieur» (внутри зала)."
+      },
+      {
+        "id": "wc-boss-table-serveur-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-cafe-serveur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Вы садитесь, и к столику подходят разные люди. Кто здесь лишний — он не работает в кафе?",
+        "options": ["le serveur", "la serveuse", "le patron", "le boulanger"],
+        "correctIndex": 3,
+        "explanation": "В зале кафе работают le serveur / la serveuse (официант/официантка) и le patron (хозяин заведения). le boulanger (пекарь) — лишний: он печёт хлеб в булочной, а не обслуживает за столиком."
+      },
+      {
+        "id": "wc-boss-table-commander-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cafe-commander",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Официант готов принять заказ. Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Vous avez choisi ? Vous voulez commander ?",
+          "Je vais commander le plat du jour.",
+          "On commande à boire d'abord, et à manger après ?"
+        ],
+        "options": [
+          "заказывать (в кафе, ресторане)",
+          "командовать, приказывать",
+          "готовить блюдо",
+          "оплачивать счёт"
+        ],
+        "correctIndex": 0,
+        "explanation": "commander — делать заказ в кафе или ресторане: «commander le plat du jour». Существительное une commande — заказ. Значение «командовать» здесь ни при чём, а платить — payer."
+      },
+      {
+        "id": "wc-boss-table-cafe-cmp",
+        "kind": "compare",
+        "wordId": "wl-cafe-cafe",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Начинаете с напитков. В чём разница между этими двумя фразами со словом café?",
+        "phrases": [
+          "Un café et un verre d'eau, s'il vous plaît.",
+          "On s'est retrouvés au café du coin."
+        ],
+        "options": [
+          "В первой café — напиток (чашка кофе), во второй — заведение (кафе на углу).",
+          "В обеих café значит «кофе-напиток».",
+          "В обеих café значит «кафе-заведение».",
+          "В первой café — заведение, во второй — напиток."
+        ],
+        "correctIndex": 0,
+        "explanation": "café (m) — это и «кофе» (напиток: un café), и «кафе» (заведение: au café). «Un café» в заказе — чашка кофе; «au café du coin» — в кафе на углу."
+      },
+      {
+        "id": "wc-boss-table-eau-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-cafe-eau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "За столом всё это можно ПИТЬ — кроме одного. Найди лишнее: это едят, а не пьют.",
+        "options": ["de l'eau", "un café", "un thé", "du fromage"],
+        "correctIndex": 3,
+        "explanation": "Воду, кофе и чай пьют (boire de l'eau / un café / un thé). du fromage (сыр) — лишний: сыр едят (manger du fromage), а не пьют. Здесь сталкиваются напитки из кафе и еда — слушай, что с чем сочетается."
+      },
+      {
+        "id": "wc-boss-table-eau-sort",
+        "kind": "sort",
+        "wordId": "wl-cafe-eau",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Просишь к еде воды. Какие сочетания со словом eau звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une carafe d'eau",
+            "basket": "ok"
+          },
+          {
+            "text": "un verre d'eau",
+            "basket": "ok"
+          },
+          {
+            "text": "de l'eau plate",
+            "basket": "ok"
+          },
+          {
+            "text": "une tranche d'eau",
+            "basket": "no"
+          },
+          {
+            "text": "manger de l'eau",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Воду подают в графине или стакане и бывает без газа: «une carafe d'eau», «un verre d'eau», «de l'eau plate». «une tranche d'eau» (ломтик воды) и «manger de l'eau» (есть воду) — бессмыслица: воду не нарезают и не едят, а пьют."
+      },
+      {
+        "id": "wc-boss-table-repas-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nourriture-repas",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Переходите к еде. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Le déjeuner est mon repas préféré.",
+          "On prend trois repas par jour : matin, midi et soir.",
+          "Merci, c'était un excellent repas !"
+        ],
+        "options": [
+          "приём пищи целиком (завтрак/обед/ужин)",
+          "одно блюдо в меню",
+          "продукты в магазине",
+          "кухня в доме"
+        ],
+        "correctIndex": 0,
+        "explanation": "repas (m) — приём пищи как событие: завтрак, обед или ужин («trois repas par jour»). Это не отдельное блюдо (это plat) и не еда-вещество (nourriture). Форма одна в ед. и мн. числе: un repas / des repas."
+      },
+      {
+        "id": "wc-boss-table-plat-cmp",
+        "kind": "compare",
+        "wordId": "wl-nourriture-plat",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Главная пара темы еды. В чём разница между repas и plat в этих фразах?",
+        "phrases": [
+          "Ce repas comprend une entrée, un plat et un dessert.",
+          "Le plat principal, c'est du poisson."
+        ],
+        "options": [
+          "repas — весь приём пищи целиком; plat — одно блюдо внутри него (например, основное).",
+          "repas — одно блюдо; plat — весь приём пищи.",
+          "Это полные синонимы, разницы нет.",
+          "repas — только завтрак; plat — только ужин."
+        ],
+        "correctIndex": 0,
+        "explanation": "repas — весь приём пищи, в который входит несколько блюд (entrée, plat, dessert). plat — одно блюдо; «le plat principal» — основное (второе) блюдо. Одно вложено в другое."
+      },
+      {
+        "id": "wc-boss-table-viande-poisson-cmp",
+        "kind": "compare",
+        "wordId": "wl-nourriture-viande",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Официант предлагает выбрать основное. В чём разница между viande и poisson?",
+        "phrases": ["Comme plat, je prends de la viande.", "Moi, je préfère le poisson."],
+        "options": [
+          "viande — мясо (говядина, свинина, курица); poisson — рыба.",
+          "viande — рыба; poisson — мясо.",
+          "Это синонимы: оба значат «мясо».",
+          "viande — овощи; poisson — фрукты."
+        ],
+        "correctIndex": 0,
+        "explanation": "viande (f) — мясо (животных и птицы); poisson (m) — рыба. В меню их обычно противопоставляют отдельными разделами: «viande ou poisson ?». Рыба к viande не относится."
+      },
+      {
+        "id": "wc-boss-table-poisson-trap",
+        "kind": "trap",
+        "wordId": "wl-nourriture-poisson",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Опасная пара на слух: poisson и poison. Как заказать «рыбу», а не «яд»?",
+        "phrases": ["Je voudrais du poisson, s'il vous plaît.", "Attention, c'est du poison !"],
+        "options": [
+          "du poisson — двойная ss даёт глухой /s/: /pwasɔ̃/ (рыба)",
+          "du poison — одна s между гласными даёт /z/, но это «рыба»",
+          "разницы нет, это одно и то же слово",
+          "оба слова значат «яд»"
+        ],
+        "correctIndex": 0,
+        "explanation": "poisson /pwasɔ̃/ (двойная ss = глухой /s/) — рыба. poison /pwazɔ̃/ (одна s между гласными = звонкий /z/) — яд. Меняется только звук s/z, а смысл — противоположный: пиши рыбу с двумя s."
+      },
+      {
+        "id": "wc-boss-table-fromage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nourriture-fromage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "После основного блюда официант предлагает ещё один курс. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Vous prendrez du fromage avant le dessert ?",
+          "Un plateau de fromages pour la table, s'il vous plaît.",
+          "Ce fromage de chèvre est délicieux."
+        ],
+        "options": ["сыр", "десерт", "соус", "хлеб"],
+        "correctIndex": 0,
+        "explanation": "fromage (m) — сыр. Во французской трапезе его подают отдельным курсом — после основного блюда и перед десертом: классический выбор «fromage ou dessert ?». «un plateau de fromages» — сырная тарелка."
+      },
+      {
+        "id": "wc-boss-table-fruit-legume-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-nourriture-legume",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три из этих слов — овощи (légumes). Найди лишнее: это фрукт.",
+        "options": ["une carotte", "une tomate", "une pomme de terre", "une pomme"],
+        "correctIndex": 3,
+        "explanation": "Морковь (une carotte), помидор (une tomate) и картофель (une pomme de terre) — это légumes (овощи). Лишнее — une pomme (яблоко): это fruit (фрукт). Осторожно: «pomme de terre» (картофель) — овощ, а «pomme» (яблоко) — фрукт."
+      },
+      {
+        "id": "wc-boss-table-fruit-hint",
+        "kind": "wordHint",
+        "wordId": "wl-nourriture-fruit",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: сладкий плод на десерт — яблоко, банан, апельсин.",
+        "answer": "fruit",
+        "hints": [
+          "Начинается на f…",
+          "Мужской род, родственно англ. «fruit»: un ___",
+          "Une salade de ___s pour le dessert."
+        ],
+        "explanation": "fruit (m) — фрукт. Мост из английского: «fruit» пишется почти так же, но читается /fʁɥi/, конечная t не звучит. Противоположность — légume (овощ)."
+      },
+      {
+        "id": "wc-boss-table-manger-sort",
+        "kind": "sort",
+        "wordId": "wl-nourriture-manger",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "За столом всё это можно ЕСТЬ — или нельзя. Какие сочетания с manger звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "manger de la viande",
+            "basket": "ok"
+          },
+          {
+            "text": "manger du fromage",
+            "basket": "ok"
+          },
+          {
+            "text": "manger une tranche de pain",
+            "basket": "ok"
+          },
+          {
+            "text": "manger un café",
+            "basket": "no"
+          },
+          {
+            "text": "manger de l'eau",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Едят твёрдую пищу: «manger de la viande / du fromage / une tranche de pain». Напитки не «едят», а пьют: «un café» и «de l'eau» — boire, а не manger. Здесь сходятся еда (nourriture) и напитки из кафе."
+      },
+      {
+        "id": "wc-boss-table-pain-ctx",
+        "kind": "wordContext",
+        "wordId": "pain",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "К столу приносят корзинку из булочной. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "On peut avoir encore un peu de pain, s'il vous plaît ?",
+          "Le pain est offert avec le repas.",
+          "Je mange le fromage avec du pain."
+        ],
+        "options": ["хлеб", "масло", "соль", "салфетка"],
+        "correctIndex": 0,
+        "explanation": "pain (m) — хлеб. За столом его подают к еде, часто бесплатно («le pain est offert»). Осторожно: англ. «pain» = «боль» (по-французски la douleur) — классический ложный друг."
+      },
+      {
+        "id": "wc-boss-table-tranche-odd",
+        "kind": "oddOneOut",
+        "wordId": "tranche",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "«Une tranche de…» — ломтик. С тремя словами это естественно, а с одним — нет. Найди лишнее.",
+        "options": [
+          "une tranche de pain",
+          "une tranche de fromage",
+          "une tranche de viande",
+          "une tranche d'eau"
+        ],
+        "correctIndex": 3,
+        "explanation": "Ломтик отрезают от твёрдого: «une tranche de pain / de fromage / de viande» (хлеб, сыр, мясо). «une tranche d'eau» (ломтик воды) — бессмыслица: воду не нарезают. Здесь сходятся хлеб (булочная) и напиток (кафе)."
+      },
+      {
+        "id": "wc-boss-table-baguette-hint",
+        "kind": "wordHint",
+        "wordId": "baguette",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: длинный тонкий французский хлеб с хрустящей корочкой, который кладут в корзинку на столе.",
+        "answer": "baguette",
+        "hints": [
+          "Начинается на b…",
+          "Женский род, 8 букв: une ___",
+          "Une ___ tradition, bien cuite."
+        ],
+        "explanation": "baguette (f) — багет, длинный тонкий батон. В булочной просят: «Une baguette, s'il vous plaît». То же слово значит и «палочка», но за столом — это хлеб."
+      },
+      {
+        "id": "wc-boss-table-frais-cmp",
+        "kind": "compare",
+        "wordId": "frais",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Хвалишь еду и просишь воды. В чём разница между двумя значениями frais в этих фразах?",
+        "phrases": [
+          "Ce pain est tout frais, il sort du four.",
+          "Je voudrais de l'eau bien fraîche."
+        ],
+        "options": [
+          "В первой frais — «свежий» (только что испечён); во второй fraîche — «прохладный» (о температуре воды).",
+          "В обеих frais значит «холодный, ледяной».",
+          "В первой frais — «прохладный», во второй — «несвежий».",
+          "В обеих frais значит «дорогой»."
+        ],
+        "correctIndex": 0,
+        "explanation": "frais / fraîche имеет два смысла. О хлебе — «свежий» (недавно испечён). О воде или погоде — «прохладный»: «de l'eau fraîche» (прохладная вода). В женском роде — fraîche. Это слабее, чем froid (холодный)."
+      },
+      {
+        "id": "wc-boss-table-encore-ctx",
+        "kind": "wordContext",
+        "wordId": "encore",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Тебе всё понравилось, и ты просишь добавки. Что значит encore в этих репликах за столом?",
+        "contexts": [
+          "C'est délicieux ! J'en veux encore un peu.",
+          "Vous voulez encore du pain ?",
+          "Apportez-nous encore une carafe d'eau, s'il vous plaît."
+        ],
+        "options": ["ещё (добавка, дополнительное количество)", "меньше", "уже хватит", "вчера"],
+        "correctIndex": 0,
+        "explanation": "Здесь encore — «ещё» в смысле добавки: «encore un peu» (ещё немного), «encore du pain» (ещё хлеба), «encore une carafe» (ещё графин). Часто идёт с en: «j'en veux encore»."
+      },
+      {
+        "id": "wc-boss-table-addition-trap",
+        "kind": "trap",
+        "wordId": "wl-cafe-addition",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Обед окончен. Ложный друг: англ. «addition» = сложение. Как попросить счёт к оплате?",
+        "phrases": ["L'addition, s'il vous plaît.", "Le compte en banque est vide."],
+        "options": [
+          "L'addition, s'il vous plaît.",
+          "Le compte, s'il vous plaît.",
+          "La facture, s'il vous plaît.",
+          "Le calcul, s'il vous plaît."
+        ],
+        "correctIndex": 0,
+        "explanation": "Счёт в кафе или ресторане — l'addition, а не «le compte» (банковский счёт), не «la facture» (счёт-фактура у фирмы или в отеле) и не «le calcul» (вычисление). Англ. «addition» (сложение) сбивает, но по-французски это слово как раз и значит «счёт»."
+      }
+    ]
+  }
+]

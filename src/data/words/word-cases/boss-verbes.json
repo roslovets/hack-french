@@ -1,0 +1,413 @@
+[
+  {
+    "id": "wc-boss-verbes",
+    "title": "Босс: глаголы и время",
+    "theme": "perception",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "voir",
+      "regarder",
+      "entendre",
+      "ecouter",
+      "sembler",
+      "wl-savoir",
+      "wl-connaitre",
+      "wl-comprendre",
+      "wl-pouvoir",
+      "wl-prendre",
+      "wl-rendre",
+      "wl-apporter",
+      "wl-amener",
+      "wl-temps-deja",
+      "wl-temps-toujours",
+      "wl-temps-jamais",
+      "wl-temps-maintenant"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-verbes-voir-ctx",
+        "kind": "wordContext",
+        "wordId": "voir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Утро. Ты просыпаешься и выглядываешь в окно. Одно слово связывает все три сцены — что оно значит?",
+        "contexts": [
+          "Je vois déjà le soleil entre les immeubles.",
+          "D'ici, on voit toute la rue.",
+          "Tu vois le bus là-bas, au bout de la rue ?"
+        ],
+        "options": [
+          "видеть (образ сам попадает в глаза)",
+          "смотреть намеренно",
+          "слышать",
+          "казаться"
+        ],
+        "correctIndex": 0,
+        "explanation": "voir — «видеть»: образ сам попадает в поле зрения, без усилия. «Je vois le soleil», «on voit toute la rue». Намеренно «смотреть» — это уже regarder."
+      },
+      {
+        "id": "wc-boss-verbes-voir-regarder-cmp",
+        "kind": "compare",
+        "wordId": "regarder",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Главная пара восприятия — «видеть» и «смотреть». В чём разница между этими фразами?",
+        "phrases": ["Je vois la pluie par la fenêtre.", "Je regarde la météo à la télé."],
+        "options": [
+          "voir = видеть (образ сам попадает в глаза); regarder = смотреть намеренно (направляешь взгляд)",
+          "Это синонимы, разницы нет",
+          "voir = смотреть намеренно; regarder = видеть мимоходом",
+          "voir = слышать; regarder = видеть"
+        ],
+        "correctIndex": 0,
+        "explanation": "voir — пассивно «видеть» (дождь сам попадает в глаза, когда смотришь в окно). regarder — активно «смотреть», направлять взгляд (смотреть прогноз по телевизору). Дополнение у regarder идёт без предлога: regarder la météo."
+      },
+      {
+        "id": "wc-boss-verbes-entendre-ecouter-cmp",
+        "kind": "compare",
+        "wordId": "ecouter",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Звуковая пара: «слышать» и «слушать». В чём разница между этими фразами?",
+        "phrases": [
+          "J'entends la radio du voisin à travers le mur.",
+          "J'écoute les infos en buvant mon café."
+        ],
+        "options": [
+          "entendre = слышать (звук сам доходит до ушей); écouter = слушать намеренно (направляешь внимание)",
+          "Это синонимы, разницы нет",
+          "entendre = слушать намеренно; écouter = слышать случайно",
+          "entendre = видеть; écouter = слышать"
+        ],
+        "correctIndex": 0,
+        "explanation": "entendre — пассивно «слышать» (радио соседа само доходит сквозь стену). écouter — активно «слушать», ты сам включаешь и слушаешь новости. Это звуковой аналог пары voir/regarder."
+      },
+      {
+        "id": "wc-boss-verbes-entendre-trap",
+        "kind": "trap",
+        "wordId": "entendre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "По форме похожи «J'entends le bus» и «J'attends le bus». Что на самом деле значит entendre?",
+        "phrases": ["J'entends le bus qui arrive.", "J'attends le bus depuis dix minutes."],
+        "options": ["слышать (звук автобуса доходит до ушей)", "ждать", "понимать", "догонять"],
+        "correctIndex": 0,
+        "explanation": "Ловушка по форме: entendre = «слышать», а очень похожее attendre = «ждать». Различай по приставке: en-tendre (слышать) против at-tendre (ждать). «J'attends le bus» = я жду автобус."
+      },
+      {
+        "id": "wc-boss-verbes-savoir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-savoir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "На остановке к тебе обращается прохожий. Что значит повторяющийся глагол?",
+        "contexts": [
+          "Vous savez où est l'arrêt du 21 ?",
+          "Je sais que le musée ouvre à dix heures.",
+          "Tu sais conduire ?"
+        ],
+        "options": ["знать факт / уметь делать", "быть знакомым с человеком", "хотеть", "видеть"],
+        "correctIndex": 0,
+        "explanation": "savoir — знать информацию (savoir où, savoir que) и уметь (savoir + инфинитив: savoir conduire). Знакомство с человеком или местом — это уже connaître."
+      },
+      {
+        "id": "wc-boss-verbes-savoir-connaitre-cmp",
+        "kind": "compare",
+        "wordId": "wl-connaitre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Прохожий объясняет дорогу. В чём разница между savoir и connaître здесь?",
+        "phrases": ["Je connais bien ce quartier.", "Je sais où se trouve la gare."],
+        "options": [
+          "connaître = быть знакомым (с кварталом); savoir = знать факт (где находится вокзал)",
+          "Это синонимы, разницы нет",
+          "connaître = знать факт; savoir = быть знакомым",
+          "Оба значат «уметь»"
+        ],
+        "correctIndex": 0,
+        "explanation": "connaître + существительное (быть знакомым: connaître le quartier). savoir + придаточное (savoir où, que, comment…) или + инфинитив (уметь). Связку où/que берёт только savoir, не connaître."
+      },
+      {
+        "id": "wc-boss-verbes-savoir-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-savoir",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Проверка слуха. Послушай и выбери, какое слово произнесли.",
+        "audioText": "savoir",
+        "options": ["savoir", "savon", "saveur", "avoir"],
+        "correctIndex": 0,
+        "explanation": "savoir /savwaʁ/ (знать), savon /savɔ̃/ (мыло), saveur /savœʁ/ (вкус, привкус), avoir /avwaʁ/ (иметь). Это разные слова, не омофоны: слушай начало и гласные."
+      },
+      {
+        "id": "wc-boss-verbes-comprendre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-comprendre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты в кассе музея. Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Je ne comprends pas bien le tarif.",
+          "Vous comprenez l'anglais ?",
+          "Le billet comprend l'audioguide."
+        ],
+        "options": [
+          "понимать; а также включать в себя",
+          "только громко говорить",
+          "забывать",
+          "переводить"
+        ],
+        "correctIndex": 0,
+        "explanation": "comprendre — прежде всего «понимать» (le tarif, l'anglais). Третья сцена показывает второе значение: «включать в себя» — «Le billet comprend l'audioguide» = в билет входит аудиогид."
+      },
+      {
+        "id": "wc-boss-verbes-pouvoir-savoir-cmp",
+        "kind": "compare",
+        "wordId": "wl-pouvoir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "pouvoir и savoir оба переводят русским «мочь / уметь». В чём разница здесь?",
+        "phrases": ["Je sais lire le russe.", "Je ne peux pas lire : j'ai oublié mes lunettes."],
+        "options": [
+          "savoir = уметь (есть навык); pouvoir = мочь сейчас (есть возможность)",
+          "Это синонимы, разницы нет",
+          "savoir = мочь сейчас; pouvoir = уметь вообще",
+          "Оба значат «хотеть»"
+        ],
+        "correctIndex": 0,
+        "explanation": "savoir lire = владею навыком чтения (научился). pouvoir lire = есть возможность прочитать сейчас. Без очков навык остался (je sais), но возможности нет (je ne peux pas)."
+      },
+      {
+        "id": "wc-boss-verbes-verbs-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-temps-maintenant",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — это глаголы (действия). Найди лишнее: оно не глагол, а наречие времени.",
+        "options": ["regarder", "comprendre", "prendre", "maintenant"],
+        "correctIndex": 3,
+        "explanation": "regarder (смотреть), comprendre (понимать), prendre (брать) — глаголы, обозначают действия. maintenant («сейчас, теперь») — наречие времени, а не глагол. Оно лишнее. Здесь сошлись сразу три темы: восприятие, знание и «брать»."
+      },
+      {
+        "id": "wc-boss-verbes-prendre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-prendre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты собираешься в город. Один глагол повторяется во всех трёх сценах. Что он значит?",
+        "contexts": [
+          "Je prends un café avant de partir.",
+          "On prend le métro ou le bus ?",
+          "Prends ton temps, rien ne presse."
+        ],
+        "options": [
+          "брать / взять: предмет, транспорт, время",
+          "возвращать обратно",
+          "получать по почте",
+          "приносить кому-то"
+        ],
+        "correctIndex": 0,
+        "explanation": "prendre — самый общий «брать»: напиток (prendre un café), транспорт (prendre le métro), время (prendre son temps). Формы: je prends, tu prends, il prend, nous prenons."
+      },
+      {
+        "id": "wc-boss-verbes-prendre-rendre-cmp",
+        "kind": "compare",
+        "wordId": "wl-rendre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "prendre и rendre рифмуются, но противоположны. В чём разница здесь?",
+        "phrases": [
+          "Je prends ce livre à la bibliothèque.",
+          "Je dois rendre ce livre avant lundi."
+        ],
+        "options": [
+          "prendre = беру (на время); rendre = возвращаю взятое обратно",
+          "Это синонимы, разницы нет",
+          "prendre = возвращаю; rendre = беру",
+          "Оба значат «оставить себе»"
+        ],
+        "correctIndex": 0,
+        "explanation": "prendre — взять; rendre — вернуть то, что взял (rendre un livre, rendre l'argent). Запомни рифму: tu prends, puis tu rends (берёшь, потом возвращаешь)."
+      },
+      {
+        "id": "wc-boss-verbes-prendre-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-prendre",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какой глагол произнесли.",
+        "audioText": "prendre",
+        "options": ["prendre", "rendre", "vendre", "pendre"],
+        "correctIndex": 0,
+        "explanation": "prendre /pʁɑ̃dʁ/ (брать), rendre /ʁɑ̃dʁ/ (возвращать), vendre /vɑ̃dʁ/ (продавать), pendre /pɑ̃dʁ/ (вешать). Все рифмуются на -endre, но различаются началом. Это разные слова, не омофоны."
+      },
+      {
+        "id": "wc-boss-verbes-apporter-apprendre-cmp",
+        "kind": "compare",
+        "wordId": "wl-apporter",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Похожие по звучанию apporter и apprendre — из разных тем. В чём разница здесь?",
+        "phrases": ["J'apporte le dessert pour ce soir.", "J'apprends le français depuis un an."],
+        "options": [
+          "apporter = приносить предмет (внутри porter «нести»); apprendre = учить(ся), изучать",
+          "Это синонимы, разницы нет",
+          "apporter = учить(ся); apprendre = приносить предмет",
+          "Оба значат «получать»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Не путай по звучанию: apporter содержит porter («нести») → «приносить» предмет (apporter le dessert). apprendre содержит prendre, но значит «учить(ся), изучать» (apprendre le français). Разные темы, разные глаголы."
+      },
+      {
+        "id": "wc-boss-verbes-amener-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-amener",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "С тремя дополнениями amener («приводить кого-то») звучит нормально. Найди лишнее — с ним нужен apporter.",
+        "options": [
+          "amener un ami",
+          "amener les enfants",
+          "amener le chien",
+          "amener une bouteille"
+        ],
+        "correctIndex": 3,
+        "explanation": "amener ведёт живых: un ami, les enfants, le chien (внутри mener «вести»). Бутылку (предмет) не amène, а apporte: apporter une bouteille. Это и есть граница apporter/amener — предмет против человека."
+      },
+      {
+        "id": "wc-boss-verbes-collo-sort",
+        "kind": "sort",
+        "wordId": "wl-prendre",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Глаголы дня + время. Какие сочетания звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "prendre le bus maintenant",
+            "basket": "ok"
+          },
+          {
+            "text": "rendre les livres à temps",
+            "basket": "ok"
+          },
+          {
+            "text": "écouter de la musique",
+            "basket": "ok"
+          },
+          {
+            "text": "comprendre la question",
+            "basket": "ok"
+          },
+          {
+            "text": "regarder de la musique",
+            "basket": "no"
+          },
+          {
+            "text": "apporter ma sœur à la fête",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественны: prendre le bus, rendre les livres à temps (вовремя), écouter de la musique, comprendre la question. Музыку «слушают» (écouter), а не «regarder». Сестру (человека) не apporte, а amène: amener ma sœur. Здесь смешаны сразу четыре темы."
+      },
+      {
+        "id": "wc-boss-verbes-deja-maintenant-cmp",
+        "kind": "compare",
+        "wordId": "wl-temps-deja",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Время в городе. déjà и maintenant оба про время. В чём разница здесь?",
+        "phrases": ["J'ai déjà pris mon billet.", "Je prends mon billet maintenant."],
+        "options": [
+          "déjà = уже (билет взят раньше, до этого момента); maintenant = сейчас (беру в этот момент)",
+          "Это синонимы, разницы нет",
+          "déjà = сейчас; maintenant = уже",
+          "Оба значат «скоро»"
+        ],
+        "correctIndex": 0,
+        "explanation": "déjà ставит акцент на то, что действие уже свершилось раньше срока (j'ai déjà pris). maintenant указывает на текущий момент (je prends maintenant). «Уже взял билет» ≠ «беру билет сейчас»."
+      },
+      {
+        "id": "wc-boss-verbes-toujours-cmp",
+        "kind": "compare",
+        "wordId": "wl-temps-toujours",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Хитрость: у toujours два значения. Какое здесь в каждой фразе?",
+        "phrases": ["Il comprend toujours vite.", "Il est midi et le musée est toujours fermé."],
+        "options": [
+          "1-е = «всегда» (привычка); 2-е = «всё ещё» (продолжается до сих пор)",
+          "Оба раза «всегда»",
+          "Оба раза «всё ещё»",
+          "1-е = «всё ещё»; 2-е = «всегда»"
+        ],
+        "correctIndex": 0,
+        "explanation": "toujours = «всегда» (toujours vite — постоянная черта) и «всё ещё» (toujours fermé — музей до сих пор закрыт). Контекст решает: с привычкой → «всегда»; с длящимся состоянием → «всё ещё»."
+      },
+      {
+        "id": "wc-boss-verbes-jamais-trap",
+        "kind": "trap",
+        "wordId": "wl-temps-jamais",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ловушка. Что значит jamais в вопросе «As-tu jamais pris le métro à Paris ?» (без ne)?",
+        "options": ["когда-либо (хоть раз)", "никогда", "уже", "часто"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: jamais ≠ только «никогда». Без ne — в вопросе или после si — jamais значит «когда-либо»: «As-tu jamais pris le métro ?» = «Ты когда-либо ездил на метро?». «Никогда» получается лишь в паре ne… jamais (Je ne prends jamais le métro)."
+      },
+      {
+        "id": "wc-boss-verbes-time-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-temps-maintenant",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — наречия времени. Найди лишнее: оно не про время, а глагол восприятия.",
+        "options": ["maintenant", "déjà", "toujours", "entendre"],
+        "correctIndex": 3,
+        "explanation": "maintenant (сейчас), déjà (уже), toujours (всегда / всё ещё) — наречия времени. entendre («слышать») — глагол восприятия, а не наречие времени. Оно лишнее: тут пересеклись темы «время» и «восприятие»."
+      },
+      {
+        "id": "wc-boss-verbes-sembler-savoir-cmp",
+        "kind": "compare",
+        "wordId": "sembler",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Финал дня: впечатление против уверенности. В чём разница между sembler и savoir здесь?",
+        "phrases": ["Il me semble que le magasin est fermé.", "Je sais que le magasin est fermé."],
+        "options": [
+          "sembler = кажется (впечатление, без уверенности); savoir = знаю точно (есть факт)",
+          "Это синонимы, разницы нет",
+          "sembler = знаю точно; savoir = кажется",
+          "Оба значат «вижу»"
+        ],
+        "correctIndex": 0,
+        "explanation": "«Il me semble que…» — мне так кажется, без уверенности (sembler — впечатление). «Je sais que…» — я знаю наверняка, это факт (savoir — знание). Восприятие подсказывает впечатление, savoir даёт уверенность."
+      },
+      {
+        "id": "wc-boss-verbes-sembler-hint",
+        "kind": "wordHint",
+        "wordId": "sembler",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Финал. Вспомни глагол: производить впечатление, выглядеть каким-то — «казаться».",
+        "answer": "sembler",
+        "hints": [
+          "Начинается на s…",
+          "7 букв; родственно англ. semblance «видимость»",
+          "Il me ___ que tu as raison."
+        ],
+        "explanation": "sembler — «казаться». «Tu sembles fatigué» — ты кажешься/выглядишь усталым. «Il me semble que…» — мне кажется, что… Родственно англ. semblance (видимость), resemble (быть похожим)."
+      }
+    ]
+  }
+]

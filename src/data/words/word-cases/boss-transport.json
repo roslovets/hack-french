@@ -1,0 +1,446 @@
+[
+  {
+    "id": "wc-boss-transport",
+    "title": "Босс: в пути",
+    "theme": "ville",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-ville-aller",
+      "wl-ville-venir",
+      "wl-ville-tourner",
+      "wl-ville-continuer",
+      "wl-ville-traverser",
+      "wl-ville-monter",
+      "wl-ville-descendre",
+      "wl-ville-rue",
+      "wl-transport-train",
+      "wl-transport-voiture",
+      "wl-transport-bus",
+      "wl-transport-velo",
+      "wl-transport-avion",
+      "wl-transport-gare",
+      "wl-transport-billet",
+      "wl-transport-partir"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-transport-billet-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport-billet",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты планируешь поездку и заходишь на сайт перевозчика. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Je voudrais réserver un billet pour Lyon.",
+          "Le billet est moins cher si on part le matin.",
+          "Tu as pris ton billet de train ?"
+        ],
+        "options": [
+          "билет (на поезд, самолёт, с местом)",
+          "расписание",
+          "чек из магазина",
+          "мелкий билетик на метро"
+        ],
+        "correctIndex": 0,
+        "explanation": "billet (m) — билет на дальнюю поездку, часто с местом: «un billet de train», «réserver un billet». На метро или автобус берут другой — un ticket. У billet есть и значение «банкнота» (un billet de vingt euros), но здесь речь о поездке."
+      },
+      {
+        "id": "wc-boss-transport-gare-trap",
+        "kind": "trap",
+        "wordId": "wl-transport-gare",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ты собираешься на вокзал. Похожие на вид слова сбивают: как сказать «Я еду на вокзал»?",
+        "phrases": ["Je vais à la gare prendre mon train.", "Je gare la voiture devant le garage."],
+        "options": [
+          "Je vais à la gare.",
+          "Je vais au garage.",
+          "Je vais à la gare routière prendre le train.",
+          "Je vais garer la voiture."
+        ],
+        "correctIndex": 0,
+        "explanation": "la gare — железнодорожный вокзал, откуда уходят поезда. Не путай: le garage — гараж/автосервис, а глагол garer — «парковать» (je gare la voiture). «la gare routière» — это автовокзал (для автобусов), а не для поездов, так что для поезда он не подходит."
+      },
+      {
+        "id": "wc-boss-transport-train-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport-train",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты на вокзале, смотришь на табло. Что значит выделенное слово здесь?",
+        "contexts": [
+          "Le train de huit heures part du quai numéro 4.",
+          "On a failli rater le train !",
+          "Ce train s'arrête à toutes les gares."
+        ],
+        "options": ["поезд", "вагон-ресторан", "путь, рельсы", "очередь к кассе"],
+        "correctIndex": 0,
+        "explanation": "train (m) — поезд. «prendre le train» — ехать на поезде, «rater le train» — опоздать на поезд, «le train de huit heures» — поезд на восемь часов. Осторожно с оборотом «être en train de + инфинитив» (быть в процессе) — к поезду он отношения не имеет."
+      },
+      {
+        "id": "wc-boss-transport-billet-collo",
+        "kind": "sort",
+        "wordId": "wl-transport-billet",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Ты у автомата покупаешь билет. Какие сочетания со словом billet звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un billet de train",
+            "basket": "ok"
+          },
+          {
+            "text": "réserver un billet",
+            "basket": "ok"
+          },
+          {
+            "text": "un billet aller-retour",
+            "basket": "ok"
+          },
+          {
+            "text": "conduire un billet",
+            "basket": "no"
+          },
+          {
+            "text": "un billet à vélo",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Билет бронируют и берут на поездку: «un billet de train», «réserver un billet», «un billet aller-retour» (туда-обратно). «conduire un billet» (вести билет) и «un billet à vélo» (билет на велосипед) — бессмыслица: «à vélo» значит «на велосипеде», билет тут ни при чём, и билет не водят."
+      },
+      {
+        "id": "wc-boss-transport-partir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport-partir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Объявляют отправление. Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Le train part dans cinq minutes !",
+          "On part à huit heures, sois à l'heure.",
+          "Je pars en vacances demain."
+        ],
+        "options": [
+          "уезжать, отправляться, трогаться",
+          "приезжать, прибывать",
+          "опаздывать",
+          "оставаться, ждать"
+        ],
+        "correctIndex": 0,
+        "explanation": "partir — уезжать, отправляться: о человеке (je pars) и о транспорте, который трогается (le train part). Формы: je pars, tu pars, il/elle part, nous partons. «partir en vacances» — уехать в отпуск."
+      },
+      {
+        "id": "wc-boss-transport-partir-cmp",
+        "kind": "compare",
+        "wordId": "wl-transport-partir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "На вокзале сходятся два глагола движения. В чём разница между aller и partir в этих фразах?",
+        "phrases": ["Je vais à la gare.", "Je pars de la gare à neuf heures."],
+        "options": [
+          "aller — направляться К цели (на вокзал); partir — отправляться, покидать точку (с вокзала).",
+          "Это полные синонимы, разницы нет.",
+          "aller — уезжать прочь; partir — приходить к цели.",
+          "aller — только пешком, partir — только на поезде."
+        ],
+        "correctIndex": 0,
+        "explanation": "aller à… — двигаться к цели (aller à la gare = на вокзал). partir — отправляться, покидать место (partir de la gare = уехать с вокзала). Антоним partir по смыслу — arriver (прибывать), а не aller."
+      },
+      {
+        "id": "wc-boss-transport-aller-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ville-aller",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты приехал в чужой город и спрашиваешь дорогу. Что значит выделенный глагол?",
+        "contexts": [
+          "Pardon, pour aller au musée, s'il vous plaît ?",
+          "On va à l'hôtel à pied, c'est tout près.",
+          "Je vais au centre, tu viens avec moi ?"
+        ],
+        "options": [
+          "идти / ехать (туда, от себя к цели)",
+          "приходить (сюда, к говорящему)",
+          "уезжать из города",
+          "оставаться на месте"
+        ],
+        "correctIndex": 0,
+        "explanation": "aller — двигаться от себя к цели: «aller au musée», «aller au centre». Формы: je vais, tu vas, on va, il/elle va. «Pour aller à… ?» — стандартный способ спросить дорогу."
+      },
+      {
+        "id": "wc-boss-transport-venir-cmp",
+        "kind": "compare",
+        "wordId": "wl-ville-venir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Прохожий предлагает помочь. В чём разница направления между aller и venir?",
+        "phrases": ["Je vais vers la place, c'est par là.", "Venez, je vous montre le chemin."],
+        "options": [
+          "aller — двигаться ТУДА, от говорящего к цели; venir — двигаться СЮДА, к говорящему или вместе с ним.",
+          "Это полные синонимы, разницы в направлении нет.",
+          "aller — приходить сюда, venir — уходить туда.",
+          "venir — только про транспорт, aller — только пешком."
+        ],
+        "correctIndex": 0,
+        "explanation": "aller = идти/ехать от себя к цели (туда); venir = идти к говорящему или с ним (сюда). «Venez !» — «Идите (сюда) / Пойдёмте!». По-русски оба часто «идти», но направление противоположное."
+      },
+      {
+        "id": "wc-boss-transport-rue-trap",
+        "kind": "trap",
+        "wordId": "wl-ville-rue",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ты идёшь по городу к остановке. Ложный друг: англ. «route». Как сказать «вокзал в конце этой улицы»?",
+        "phrases": [
+          "La gare est au bout de cette rue.",
+          "La route entre les deux villes est longue."
+        ],
+        "options": [
+          "au bout de cette rue",
+          "au bout de cette route",
+          "au bout de ce chemin de fer",
+          "au bout de cette avenue routière"
+        ],
+        "correctIndex": 0,
+        "explanation": "la rue — улица в городе, с домами по сторонам. la route — дорога/трасса между городами, в городе так не говорят. Англ. «route» похоже на «rue», но это разные слова. Правильно: «au bout de cette rue»."
+      },
+      {
+        "id": "wc-boss-transport-tourner-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ville-tourner",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Тебе объясняют, как дойти до остановки. Что значит выделенный глагол?",
+        "contexts": [
+          "Tournez à droite après le pont.",
+          "Vous tournez à gauche au feu.",
+          "On tourne au coin, et l'arrêt est juste là."
+        ],
+        "options": [
+          "поворачивать, сворачивать (менять направление)",
+          "идти прямо, не сворачивая",
+          "переходить на другую сторону",
+          "останавливаться и ждать"
+        ],
+        "correctIndex": 0,
+        "explanation": "tourner — менять направление: tourner à droite (направо), tourner à gauche (налево), tourner au coin (свернуть за угол)."
+      },
+      {
+        "id": "wc-boss-transport-continuer-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-ville-continuer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три команды велят сменить направление. Найди ту, что велит, наоборот, идти прямо, не сворачивая.",
+        "options": [
+          "tournez à droite",
+          "continuez tout droit",
+          "tournez à gauche au feu",
+          "prenez la première à droite"
+        ],
+        "correctIndex": 1,
+        "explanation": "«continuer tout droit» = идти прямо, НЕ менять направление. Остальные три — повороты: tourner à droite / à gauche и «prendre la première à droite» (свернуть в первую улицу направо)."
+      },
+      {
+        "id": "wc-boss-transport-traverser-collo",
+        "kind": "sort",
+        "wordId": "wl-ville-traverser",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Чтобы дойти до остановки, нужно перейти на другую сторону. Где traverser звучит естественно, а где — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "traverser la rue",
+            "basket": "ok"
+          },
+          {
+            "text": "traverser au passage piéton",
+            "basket": "ok"
+          },
+          {
+            "text": "traverser la place jusqu'à l'arrêt",
+            "basket": "ok"
+          },
+          {
+            "text": "traverser dans le bus",
+            "basket": "no"
+          },
+          {
+            "text": "traverser le train",
+            "basket": "no"
+          }
+        ],
+        "explanation": "traverser — пересечь что-то поперёк: la rue, la place. Лучше — au passage piéton (по переходу). «traverser dans le bus» и «traverser le train» так не говорят: в транспорт садятся (monter dans le bus), из него выходят (descendre du train)."
+      },
+      {
+        "id": "wc-boss-transport-bus-monter-cmp",
+        "kind": "compare",
+        "wordId": "wl-transport-bus",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Подошёл автобус, потом ты выйдешь на нужной остановке. В чём разница между monter и descendre в транспорте?",
+        "phrases": ["Je monte dans le bus à l'arrêt Opéra.", "Je descends du bus à Châtelet."],
+        "options": [
+          "monter dans — зайти, сесть в транспорт; descendre de — выйти из транспорта.",
+          "monter — выйти, descendre — зайти.",
+          "Оба значат «ехать», разницы нет.",
+          "monter — только для поезда, descendre — только для автобуса."
+        ],
+        "correctIndex": 0,
+        "explanation": "monter dans le bus / le train = зайти, сесть; descendre du bus / du train = выйти. Запомни предлоги: monter DANS, descendre DE. «Je descends à Châtelet» = «Я выхожу на Шатле»."
+      },
+      {
+        "id": "wc-boss-transport-descendre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ville-descendre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Едешь в автобусе и готовишься к выходу. Что значит выделенный глагол?",
+        "contexts": [
+          "Je descends à la prochaine station.",
+          "Vous descendez ici ou au terminus ?",
+          "On descend du bus et on continue à pied."
+        ],
+        "options": [
+          "спускаться / выходить из транспорта",
+          "подниматься / садиться в транспорт",
+          "поворачивать за угол",
+          "оставаться на месте"
+        ],
+        "correctIndex": 0,
+        "explanation": "descendre — движение вниз или наружу: descendre du bus (выйти из автобуса), descendre à la prochaine station (выйти на следующей станции). Предлог при транспорте — descendre DU bus."
+      },
+      {
+        "id": "wc-boss-transport-vehicle-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-transport-velo",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — это транспорт, на котором едут. Найди лишнее: оно обозначает не средство передвижения, а действие.",
+        "options": ["le vélo", "la voiture", "le train", "traverser"],
+        "correctIndex": 3,
+        "explanation": "le vélo (велосипед), la voiture (машина), le train (поезд) — транспорт. Лишнее — traverser: это глагол «переходить, пересекать», а не средство передвижения."
+      },
+      {
+        "id": "wc-boss-transport-mode-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-ville-monter",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три сочетания «глагол движения + транспорт» звучат естественно. Найди то, которого по-французски не говорят.",
+        "options": [
+          "monter dans le bus",
+          "descendre du train",
+          "partir en voiture",
+          "traverser le vélo"
+        ],
+        "correctIndex": 3,
+        "explanation": "Естественны: «monter dans le bus» (сесть в автобус), «descendre du train» (выйти из поезда), «partir en voiture» (уехать на машине). «traverser le vélo» — бессмыслица: велосипед не «пересекают»; на нём ездят — «à vélo», «faire du vélo»."
+      },
+      {
+        "id": "wc-boss-transport-voiture-collo",
+        "kind": "sort",
+        "wordId": "wl-transport-voiture",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "На следующий день ты пересаживаешься на машину. Какие сочетания со словом voiture звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "conduire une voiture",
+            "basket": "ok"
+          },
+          {
+            "text": "en voiture",
+            "basket": "ok"
+          },
+          {
+            "text": "garer la voiture",
+            "basket": "ok"
+          },
+          {
+            "text": "voler en voiture",
+            "basket": "no"
+          },
+          {
+            "text": "faire du vélo en voiture",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Машину водят и паркуют: «conduire une voiture», «garer la voiture», ездят «en voiture». «voler en voiture» (лететь на машине) — летают на самолёте (en avion). «faire du vélo en voiture» — бессмыслица: одновременно ехать на велосипеде и в машине нельзя."
+      },
+      {
+        "id": "wc-boss-transport-velo-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-transport-velo",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "На остановке проката слышишь название транспорта. Послушай и выбери, какое слово произнесли.",
+        "audioText": "vélo",
+        "options": ["vélo", "vol", "veau", "voile"],
+        "correctIndex": 0,
+        "explanation": "vélo /velo/ (велосипед), vol /vɔl/ (полёт; кража), veau /vo/ (телёнок; телятина), voile /vwal/ (парус; вуаль). Это разные слова, не омофоны: слушай гласные и концовку."
+      },
+      {
+        "id": "wc-boss-transport-avion-hint",
+        "kind": "wordHint",
+        "wordId": "wl-transport-avion",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: транспорт, на котором летят далеко по воздуху; на него берут «un billet d'…».",
+        "answer": "avion",
+        "hints": [
+          "Начинается на a…",
+          "Мужской род, с артиклем — l'avion; родственно англ. «aviation»",
+          "On prend l'___ pour partir loin."
+        ],
+        "explanation": "avion (m) — самолёт. «prendre l'avion» — лететь, «en avion» — самолётом, «un billet d'avion» — билет на самолёт. Садятся «dans l'avion» (monter dans l'avion). Аэропорт — l'aéroport."
+      },
+      {
+        "id": "wc-boss-transport-partir-hint",
+        "kind": "wordHint",
+        "wordId": "wl-transport-partir",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Финал пути. Вспомни глагол: «уезжать, отправляться, трогаться» — то, что делает поезд, когда покидает вокзал.",
+        "answer": "partir",
+        "hints": [
+          "Начинается на p…",
+          "Неправильный глагол; «я уезжаю» — je pars",
+          "Le train va ___ : dépêche-toi !"
+        ],
+        "explanation": "partir — уезжать, отправляться. Формы: je pars, tu pars, il/elle part, nous partons, vous partez, ils partent. «partir en vacances» — уехать в отпуск, «le train part» — поезд отправляется. В отличие от quitter, partir не требует дополнения: «je pars»."
+      }
+    ]
+  }
+]

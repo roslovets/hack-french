@@ -1,0 +1,402 @@
+[
+  {
+    "id": "wc-boss-corps-famille",
+    "title": "Босс: человек и семья",
+    "theme": "corps",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-corps-corps",
+      "wl-corps-tete",
+      "wl-corps-main",
+      "wl-corps-pied",
+      "wl-corps-dos",
+      "wl-corps-ventre",
+      "wl-corps-malade",
+      "wl-corps-medecin",
+      "wl-famille-famille",
+      "wl-famille-mere",
+      "wl-famille-pere",
+      "wl-famille-fils",
+      "wl-famille-fille",
+      "wl-famille-frere",
+      "wl-famille-soeur",
+      "wl-famille-enfant"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-corps-famille-famille-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille-famille",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Финальный босс двух тем: тело и семья. Начнём с дома. Одно слово связывает все три сцены — что оно значит?",
+        "contexts": [
+          "On passe le dimanche en famille.",
+          "C'est une grande famille : cinq enfants !",
+          "Le médecin de famille nous connaît depuis longtemps."
+        ],
+        "options": ["семья", "родители", "дом", "родственник (один человек)"],
+        "correctIndex": 0,
+        "explanation": "famille (f) — семья, весь круг близких. «en famille» — всей семьёй; «une grande famille» — большая семья; «le médecin de famille» — семейный врач. Только родители (мама и папа) — это les parents, а не toute la famille."
+      },
+      {
+        "id": "wc-boss-corps-famille-mere-trap",
+        "kind": "trap",
+        "wordId": "wl-famille-mere",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "На слух «ma mère» легко спутать с «la mer». Как сказать «моя мать»?",
+        "phrases": ["Ma mère prépare le déjeuner.", "Nous allons à la mer cet été."],
+        "options": ["ma mère", "ma mer", "ma maire", "ma mère-mer"],
+        "correctIndex": 0,
+        "explanation": "Мать — la mère: «ma mère». На слух совпадает с la mer (море) и le maire (мэр) — все звучат /mɛʁ/, но это разные слова, различает написание и контекст. «Моя мать» — только ma mère."
+      },
+      {
+        "id": "wc-boss-corps-famille-pere-hint",
+        "kind": "wordHint",
+        "wordId": "wl-famille-pere",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: родитель-мужчина в семье; в паре с матерью.",
+        "answer": "père",
+        "hints": [
+          "Начинается на p…",
+          "4 буквы, мужской род, есть accent grave: le ___",
+          "La fête des ___s — праздник в его честь."
+        ],
+        "explanation": "père (m) — отец. «un père de famille» — отец семейства, «la fête des pères» — День отца. Звучит /pɛʁ/, как une paire (пара), но это разные слова."
+      },
+      {
+        "id": "wc-boss-corps-famille-fils-cmp",
+        "kind": "compare",
+        "wordId": "wl-famille-fils",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "У тебя двое детей. В чём разница между этими двумя фразами?",
+        "phrases": ["J'ai un fils de dix ans.", "J'ai une fille de huit ans."],
+        "options": [
+          "fils — сын (мальчик); fille — дочь (девочка).",
+          "fils — дочь; fille — сын.",
+          "Это синонимы, оба значат «ребёнок».",
+          "fils — младший ребёнок; fille — старший."
+        ],
+        "correctIndex": 0,
+        "explanation": "le fils — сын (читается /fis/, со звуком s), la fille — дочь или девочка. Это пара по полу: сын против дочери. «Ребёнок» вообще, без указания пола, — un enfant."
+      },
+      {
+        "id": "wc-boss-corps-famille-fille-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille-fille",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Слово fille всплывает в трёх ситуациях. Что оно значит в каждой?",
+        "contexts": [
+          "Ma fille a huit ans.",
+          "Une petite fille joue dans le parc.",
+          "C'est la fille aînée de la famille."
+        ],
+        "options": ["дочь или девочка (по контексту)", "только дочь", "только подруга", "сестра"],
+        "correctIndex": 0,
+        "explanation": "fille (f) — это и «дочь» (ma fille, la fille aînée), и просто «девочка/девушка» (une petite fille). Контекст показывает, родственная это связь или возраст. Мальчик — un garçon, сын — un fils."
+      },
+      {
+        "id": "wc-boss-corps-famille-frere-sort",
+        "kind": "sort",
+        "wordId": "wl-famille-frere",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Ты рассказываешь о братьях и сёстрах. Какие сочетания звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un grand frère",
+            "basket": "ok"
+          },
+          {
+            "text": "un petit frère",
+            "basket": "ok"
+          },
+          {
+            "text": "un frère et une sœur",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un frère",
+            "basket": "no"
+          },
+          {
+            "text": "un frère en laine",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Брат бывает старшим (un grand frère) и младшим (un petit frère), часто идёт в паре «un frère et une sœur». «boire un frère» (пить брата) и «un frère en laine» (шерстяной брат) — бессмыслица: en laine говорят про свитер (un pull en laine), а не про человека."
+      },
+      {
+        "id": "wc-boss-corps-famille-soeur-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-famille-soeur",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "sœur",
+        "options": ["sœur", "cœur", "peur", "sueur"],
+        "correctIndex": 0,
+        "explanation": "sœur /sœʁ/ (сестра), cœur /kœʁ/ (сердце), peur /pœʁ/ (страх), sueur /sɥœʁ/ (пот). Все близки по звучанию, но это разные слова: слушай первый звук. sœur и cœur ещё и пишутся с лигатурой œ."
+      },
+      {
+        "id": "wc-boss-corps-famille-corps-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-corps-corps",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Переходим ко второй теме — тело. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Le corps humain a deux cents os.",
+          "Après le sport, tout le corps me fait mal.",
+          "Apprenons les parties du corps : la tête, les mains, les pieds."
+        ],
+        "options": ["тело (целиком)", "труп", "только грудная клетка", "одежда"],
+        "correctIndex": 0,
+        "explanation": "corps (m) — тело человека целиком (конечная s немая, читается /kɔʁ/). «le corps humain», «tout le corps», «les parties du corps». Похоже на англ. corpse (труп), но это ложный друг: труп по-французски — un cadavre."
+      },
+      {
+        "id": "wc-boss-corps-famille-tete-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-corps-tete",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Самочувствие с утра. Что значит повторяющееся слово?",
+        "contexts": [
+          "J'ai mal à la tête depuis ce matin.",
+          "Il hoche la tête pour dire oui.",
+          "De la tête aux pieds, il est trempé."
+        ],
+        "options": ["голова", "лицо", "шея", "волосы"],
+        "correctIndex": 0,
+        "explanation": "tête (f) — голова целиком. «avoir mal à la tête» — болит голова, «hocher la tête» — кивать, «de la tête aux pieds» — с головы до ног. Лицо (передняя часть) — le visage; «болит голова» — именно à la tête."
+      },
+      {
+        "id": "wc-boss-corps-famille-main-trap",
+        "kind": "trap",
+        "wordId": "wl-corps-main",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг: англ. main = «главный». Что значит фр. main и как сказать «помыть руки»?",
+        "phrases": [
+          "Je me lave les mains avant de manger.",
+          "On se serre la main pour dire bonjour."
+        ],
+        "options": [
+          "main — рука (кисть); se laver les mains — мыть руки",
+          "main — «главный»; se laver les mains — мыть главное",
+          "main — лицо; se laver les mains — умываться",
+          "main — палец; se laver les mains — мыть пальцы"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: англ. main («главный») сбивает, но фр. la main — это «рука (кисть)». «se laver les mains» — мыть руки, «se serrer la main» — пожать руку. Вся рука от плеча — le bras, а кисть — la main."
+      },
+      {
+        "id": "wc-boss-corps-famille-pied-cmp",
+        "kind": "compare",
+        "wordId": "wl-corps-pied",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Болят ноги после прогулки. В чём разница между этими двумя фразами?",
+        "phrases": [
+          "J'ai mal aux pieds, mes chaussures sont trop petites.",
+          "Je me suis cassé la jambe au ski."
+        ],
+        "options": [
+          "pied — ступня (на ней стоят, à pied = пешком); jambe — вся нога целиком.",
+          "pied — вся нога; jambe — только ступня.",
+          "Это синонимы, разницы нет.",
+          "pied — рука; jambe — нога."
+        ],
+        "correctIndex": 0,
+        "explanation": "le pied — ступня: «avoir mal aux pieds» (натёр ступни), «aller à pied» (идти пешком). la jambe — вся нога от бедра: сломать можно la jambe, а не le pied. Аналогия: main (кисть) и bras (вся рука)."
+      },
+      {
+        "id": "wc-boss-corps-famille-dos-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-corps-dos",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "dos",
+        "options": ["dos", "beau", "mot", "sot"],
+        "correctIndex": 0,
+        "explanation": "Все оканчиваются на /o/ и различаются началом: dos /do/ (спина), beau /bo/ (красивый), mot /mo/ (слово), sot /so/ (глупый). У dos конечная s немая. Это разные слова, а не омофоны."
+      },
+      {
+        "id": "wc-boss-corps-famille-ventre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-corps-ventre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ребёнок жалуется. Что значит повторяющееся слово?",
+        "contexts": [
+          "L'enfant a mal au ventre.",
+          "Le bébé dort sur le ventre.",
+          "J'ai le ventre vide, je n'ai rien mangé."
+        ],
+        "options": ["живот", "спина", "грудь", "горло"],
+        "correctIndex": 0,
+        "explanation": "ventre (m) — живот снаружи. «avoir mal au ventre» — болит живот, «dormir sur le ventre» — спать на животе, «avoir le ventre vide» — быть голодным. Желудок-орган внутри — l'estomac, но в быту «болит живот» = mal au ventre."
+      },
+      {
+        "id": "wc-boss-corps-famille-malade-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-corps-malade",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "В семье кто-то слёг. Что значит выделенное слово?",
+        "contexts": [
+          "Mon fils est malade, il a de la fièvre.",
+          "Elle est tombée malade hier soir.",
+          "Reste au lit si tu es malade."
+        ],
+        "options": ["больной, нездоровый", "усталый", "голодный", "болезнь (сущ.)"],
+        "correctIndex": 0,
+        "explanation": "malade — прилагательное «больной»: «être malade» (болеть), «tomber malade» (заболеть). Не путай с существительным la maladie (болезнь): malade = какой (больной), maladie = что (болезнь). Англ. malady — это «недуг» (сущ.), а malade — прилагательное."
+      },
+      {
+        "id": "wc-boss-corps-famille-medecin-trap",
+        "kind": "trap",
+        "wordId": "wl-corps-medecin",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Пора к врачу. Звучат почти одинаково «le médecin» и «la médecine». Как сказать «идти к врачу»?",
+        "phrases": ["Je vais chez le médecin demain.", "Elle fait des études de médecine."],
+        "options": [
+          "aller chez le médecin",
+          "aller chez la médecine",
+          "aller chez le docteur de médecine",
+          "aller à la médecin"
+        ],
+        "correctIndex": 0,
+        "explanation": "le médecin — врач (человек): «aller chez le médecin» (идти к врачу). la médecine — медицина (наука, которую изучают). Их легко спутать на слух, но человек и наука — разные слова. К врачу обращаются «Bonjour, docteur»."
+      },
+      {
+        "id": "wc-boss-corps-famille-cross-ventre-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-corps-ventre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Кросс-тема: ты представляешь свою семью. Три слова — члены семьи, одно — нет. Найди лишнее.",
+        "options": ["le père", "la sœur", "le frère", "le ventre"],
+        "correctIndex": 3,
+        "explanation": "le père (отец), la sœur (сестра), le frère (брат) — члены семьи. Лишнее — le ventre (живот): это часть тела из другой темы, а не родственник."
+      },
+      {
+        "id": "wc-boss-corps-famille-cross-soeur-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-famille-soeur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Кросс-тема: теперь наоборот. Три слова — части тела, одно — нет. Найди лишнее.",
+        "options": ["la tête", "la main", "le dos", "la sœur"],
+        "correctIndex": 3,
+        "explanation": "la tête (голова), la main (рука), le dos (спина) — части тела. Лишнее — la sœur (сестра): это член семьи, а не часть тела."
+      },
+      {
+        "id": "wc-boss-corps-famille-cross-collo-sort",
+        "kind": "sort",
+        "wordId": "wl-famille-famille",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Кросс-тема: тело и семья смешиваются. Какие сочетания звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "le médecin de famille",
+            "basket": "ok"
+          },
+          {
+            "text": "une mère de famille",
+            "basket": "ok"
+          },
+          {
+            "text": "un père de famille",
+            "basket": "ok"
+          },
+          {
+            "text": "le ventre de la famille",
+            "basket": "no"
+          },
+          {
+            "text": "le médecin du dos",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественны: «le médecin de famille» (семейный врач), «une mère / un père de famille» (мать/отец семейства). «le ventre de la famille» (живот семьи) и «le médecin du dos» (врач спины) — так не говорят: врача называют по специальности, а не по части тела."
+      },
+      {
+        "id": "wc-boss-corps-famille-cross-mal-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-corps-tete",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Кросс-тема: жалобы у врача. С тремя словами «avoir mal à…» звучит правильно. Найди фразу, где так не говорят.",
+        "options": [
+          "avoir mal à la tête",
+          "avoir mal au dos",
+          "avoir mal au ventre",
+          "avoir mal à la famille"
+        ],
+        "correctIndex": 3,
+        "explanation": "«avoir mal à…» работает с частями тела: à la tête (голова), au dos (спина), au ventre (живот). «avoir mal à la famille» — бессмыслица: болеть может тело, а не семья. Семья — из другой темы, в эту конструкцию не подставляется."
+      },
+      {
+        "id": "wc-boss-corps-famille-enfant-cmp",
+        "kind": "compare",
+        "wordId": "wl-famille-enfant",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Последний рывок. В чём разница между этими двумя фразами?",
+        "phrases": ["J'ai trois enfants.", "J'ai deux fils et une fille."],
+        "options": [
+          "enfant — ребёнок любого пола; fils / fille уточняют пол (сын / дочь).",
+          "enfant — только мальчик; fille — только девочка.",
+          "Это синонимы, разницы нет.",
+          "enfant — взрослый ребёнок; fils — маленький."
+        ],
+        "correctIndex": 0,
+        "explanation": "un enfant — ребёнок безотносительно пола (un/une enfant): «trois enfants» — трое детей. Когда пол важен, говорят un fils (сын) и une fille (дочь). «Deux fils et une fille» как раз и есть «trois enfants»."
+      },
+      {
+        "id": "wc-boss-corps-famille-medecin-hint",
+        "kind": "wordHint",
+        "wordId": "wl-corps-medecin",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Финал босса. Вспомни слово: человек, который лечит больных; к нему идут, когда заболел.",
+        "answer": "médecin",
+        "hints": [
+          "Начинается на m…",
+          "Мужской род даже о женщине: le ___; есть accent aigu",
+          "On va chez le ___ quand on est malade."
+        ],
+        "explanation": "médecin (m) — врач. «aller chez le médecin» — идти к врачу, «le médecin de famille» — семейный врач. Не путай с la médecine (медицина, наука). Босс пройден: тело и семья собраны вместе."
+      }
+    ]
+  }
+]

@@ -1,0 +1,398 @@
+[
+  {
+    "id": "wc-boss-maison-vetements",
+    "title": "Босс: дом и одежда",
+    "theme": "maison",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-maison-maison",
+      "wl-maison-etage",
+      "wl-maison-porte",
+      "wl-maison-cle",
+      "wl-maison-fenetre",
+      "wl-maison-mur",
+      "wl-maison-table",
+      "wl-maison-lit",
+      "wl-vetements-vetement",
+      "wl-vetements-manteau",
+      "wl-vetements-pull",
+      "wl-vetements-chemise",
+      "wl-vetements-robe",
+      "wl-vetements-pantalon",
+      "wl-vetements-chaussure",
+      "wl-vetements-porter"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-maison-vetements-maison-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-maison",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Финальное дело: ты собираешься и едешь в гости. Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je rentre à la maison vers six heures.",
+          "Ils ont une grande maison près du parc.",
+          "Reste à la maison, il pleut trop fort."
+        ],
+        "options": ["дом, жилище", "квартира", "комната", "семья"],
+        "correctIndex": 0,
+        "explanation": "maison (f) — дом как жилище. «à la maison» — дома / домой. Квартира — un appartement, комната — une pièce / une chambre."
+      },
+      {
+        "id": "wc-boss-maison-vetements-etage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-etage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Друг объясняет, как тебя найти в доме. Что значит выделенное слово?",
+        "contexts": [
+          "J'habite au troisième étage.",
+          "Monte à l'étage, c'est la deuxième porte.",
+          "L'ascenseur est en panne, prends l'escalier jusqu'à mon étage."
+        ],
+        "options": ["этаж", "лестница", "лифт", "подъезд"],
+        "correctIndex": 0,
+        "explanation": "étage (m) — этаж. Лестница — un escalier, лифт — un ascenseur. «monter à l'étage» — подняться на этаж."
+      },
+      {
+        "id": "wc-boss-maison-vetements-etage-trap",
+        "kind": "trap",
+        "wordId": "wl-maison-etage",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг живёт «au premier étage». На какой русский этаж тебе подниматься?",
+        "phrases": [
+          "Le rez-de-chaussée, c'est le niveau de la rue.",
+          "J'habite au premier étage, juste au-dessus."
+        ],
+        "options": [
+          "на второй — наземный этаж зовётся le rez-de-chaussée, и только над ним идёт le premier étage",
+          "на первый — premier значит «первый»",
+          "на третий — счёт сдвинут на два",
+          "на нулевой — premier и есть наземный"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка счёта этажей: наземный этаж — le rez-de-chaussée, и лишь над ним начинается le premier étage. Поэтому «premier étage» = русский второй этаж."
+      },
+      {
+        "id": "wc-boss-maison-vetements-cle-hint",
+        "kind": "wordHint",
+        "wordId": "wl-maison-cle",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: маленький металлический предмет, которым отпирают входную дверь.",
+        "answer": "clé",
+        "hints": [
+          "Начинается на c…",
+          "3 буквы, женский род, есть accent aigu; возможно и написание clef",
+          "J'ai oublié mes ___s à la maison."
+        ],
+        "explanation": "clé (f) — ключ. Пишется clé или clef, читается /kle/. Во множественном — des clés."
+      },
+      {
+        "id": "wc-boss-maison-vetements-porte-cmp",
+        "kind": "compare",
+        "wordId": "wl-maison-porte",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Ты входишь, друг просит закрыть за тобой. В чём разница между этими двумя фразами?",
+        "phrases": ["Ferme la porte, s'il te plaît.", "Ferme la porte à clé."],
+        "options": [
+          "Первая — просто притворить дверь; вторая — запереть её на ключ.",
+          "Это полные синонимы, разницы нет.",
+          "Первая значит запереть на ключ, вторая — просто прикрыть.",
+          "Вторая значит «открыть дверь ключом»."
+        ],
+        "correctIndex": 0,
+        "explanation": "fermer la porte — закрыть (притворить) дверь. Чтобы «запереть на ключ», добавляют à clé: fermer la porte à clé."
+      },
+      {
+        "id": "wc-boss-maison-vetements-fenetre-trap",
+        "kind": "trap",
+        "wordId": "wl-maison-fenetre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В комнате душно, друг хочет проветрить. Как по-французски «окно» в стене?",
+        "phrases": ["Ouvre la fenêtre, il fait chaud.", "La vitre de la fenêtre est sale."],
+        "options": ["une fenêtre", "une vitre", "une window", "un fenster"],
+        "correctIndex": 0,
+        "explanation": "Окно — une fenêtre. «une vitre» — это (оконное) стекло, а не само окно. «window» — английское, «fenster» — немецкое; во французском их нет."
+      },
+      {
+        "id": "wc-boss-maison-vetements-mur-collo",
+        "kind": "sort",
+        "wordId": "wl-maison-mur",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Друг показывает комнату и стены. Какие сочетания со словом mur звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "les murs sont blancs",
+            "basket": "ok"
+          },
+          {
+            "text": "accrocher un tableau au mur",
+            "basket": "ok"
+          },
+          {
+            "text": "une photo au mur",
+            "basket": "ok"
+          },
+          {
+            "text": "porter un mur",
+            "basket": "no"
+          },
+          {
+            "text": "un mur en laine",
+            "basket": "no"
+          }
+        ],
+        "explanation": "На стену вешают (accrocher au mur, une photo au mur), стены бывают белыми (les murs sont blancs). «porter un mur» (носить стену) и «un mur en laine» (шерстяная стена) — бессмыслица: en laine говорят про свитер (un pull en laine), а не про стену."
+      },
+      {
+        "id": "wc-boss-maison-vetements-mur-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-maison-mur",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "mur",
+        "options": ["mur", "pur", "peur", "mer"],
+        "correctIndex": 0,
+        "explanation": "mur /myʁ/ (стена), pur /pyʁ/ (чистый), peur /pœʁ/ (страх), mer /mɛʁ/ (море). Это разные слова, не омофоны: слушай гласный."
+      },
+      {
+        "id": "wc-boss-maison-vetements-table-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-maison-table",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Перекрёстное дело. Три слова — мебель и части комнаты, одно — предмет одежды. Найди лишнее.",
+        "options": ["la table", "le lit", "le mur", "la chemise"],
+        "correctIndex": 3,
+        "explanation": "Стол (la table), кровать (le lit) и стена (le mur) — это про дом, комнату. Рубашка (la chemise) — одежда: она лишняя в этом ряду."
+      },
+      {
+        "id": "wc-boss-maison-vetements-lit-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-lit",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Уже поздно, друг стелет тебе на ночь. Что значит выделенное слово?",
+        "contexts": [
+          "Ton lit est prêt dans la chambre d'amis.",
+          "Je vais au lit, je suis fatigué.",
+          "Le chat dort au pied du lit."
+        ],
+        "options": ["кровать, постель", "диван", "одеяло", "комната"],
+        "correctIndex": 0,
+        "explanation": "lit (m) — кровать, постель. «aller au lit» — ложиться спать, «faire son lit» — застилать постель. Диван — un canapé."
+      },
+      {
+        "id": "wc-boss-maison-vetements-vetement-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements-vetement",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Утро у друга: пора одеваться. Что значит выделенное слово?",
+        "contexts": [
+          "Prends des vêtements chauds, il fait froid dehors.",
+          "Je dois acheter des vêtements pour l'hiver.",
+          "Range tes vêtements dans l'armoire."
+        ],
+        "options": ["одежда, предметы одежды", "обувь", "бельё для постели", "ткань в рулоне"],
+        "correctIndex": 0,
+        "explanation": "vêtement (m) — предмет одежды; во множественном les vêtements — одежда в целом. «des vêtements chauds» — тёплая одежда, «changer de vêtements» — переодеться."
+      },
+      {
+        "id": "wc-boss-maison-vetements-manteau-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-vetements-manteau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Перекрёстное дело. Три слова — то, что носят на себе, одно — часть дома. Найди лишнее.",
+        "options": ["le manteau", "le pull", "le pantalon", "la fenêtre"],
+        "correctIndex": 3,
+        "explanation": "Пальто (le manteau), свитер (le pull) и брюки (le pantalon) — одежда, её носят. Окно (la fenêtre) — часть дома: оно лишнее."
+      },
+      {
+        "id": "wc-boss-maison-vetements-manteau-collo",
+        "kind": "sort",
+        "wordId": "wl-vetements-manteau",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "На улице холодно, ты собираешься выходить. Какие сочетания со словом manteau звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "mettre son manteau",
+            "basket": "ok"
+          },
+          {
+            "text": "un manteau d'hiver",
+            "basket": "ok"
+          },
+          {
+            "text": "un manteau chaud",
+            "basket": "ok"
+          },
+          {
+            "text": "fermer un manteau à clé",
+            "basket": "no"
+          },
+          {
+            "text": "habiter dans un manteau",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Пальто надевают (mettre son manteau), оно бывает зимним и тёплым (un manteau d'hiver / chaud). «fermer un manteau à clé» (запереть пальто на ключ) и «habiter dans un manteau» (жить в пальто) — бессмыслица: à clé и habiter относятся к двери и дому, а не к одежде."
+      },
+      {
+        "id": "wc-boss-maison-vetements-pull-trap",
+        "kind": "trap",
+        "wordId": "wl-vetements-pull",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг: англ. «to pull» = тянуть. Что значит французское un pull?",
+        "phrases": ["Mets un pull, il fait froid.", "Un pull en laine bien chaud."],
+        "options": ["свитер, джемпер", "ручка, рычаг (чтобы тянуть)", "тяга, сила", "крючок"],
+        "correctIndex": 0,
+        "explanation": "Ловушка по форме: англ. «to pull» — глагол «тянуть», а французское un pull — существительное «свитер» (от pull-over, то, что натягивают через голову). «mettre un pull» — надеть свитер."
+      },
+      {
+        "id": "wc-boss-maison-vetements-robe-trap",
+        "kind": "trap",
+        "wordId": "wl-vetements-robe",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг: англ. «robe» часто значит «халат». Что значит французское une robe?",
+        "phrases": ["Elle porte une belle robe rouge.", "Une robe de mariée toute blanche."],
+        "options": ["платье", "банный халат", "мантия судьи", "одеяло"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: англ. «robe» переводят как «халат», но французское une robe — это платье. Банный халат — un peignoir или une robe de chambre, а не просто une robe."
+      },
+      {
+        "id": "wc-boss-maison-vetements-pantalon-collo",
+        "kind": "sort",
+        "wordId": "wl-vetements-pantalon",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Ты выбираешь, что надеть. Какие сочетания со словом pantalon звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un pantalon noir",
+            "basket": "ok"
+          },
+          {
+            "text": "essayer un pantalon",
+            "basket": "ok"
+          },
+          {
+            "text": "un pantalon trop serré",
+            "basket": "ok"
+          },
+          {
+            "text": "mettre un pantalon aux pieds",
+            "basket": "no"
+          },
+          {
+            "text": "ouvrir le pantalon avec une clé",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Брюки чёрные, их примеряют, они бывают узкими (un pantalon noir / serré, essayer un pantalon). Важно: по-французски это единственное число — un pantalon. «mettre un pantalon aux pieds» (надеть брюки на ноги) и «ouvrir le pantalon avec une clé» относятся к обуви (aux pieds) и двери (avec une clé), а не к брюкам."
+      },
+      {
+        "id": "wc-boss-maison-vetements-chaussure-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-vetements-chaussure",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Перекрёстное дело. Ты собираешься уходить. Три слова — то, что надевают на тело, одно — мебель. Найди лишнее.",
+        "options": ["la chaussure", "le manteau", "la robe", "la table"],
+        "correctIndex": 3,
+        "explanation": "Обувь (la chaussure), пальто (le manteau) и платье (la robe) надевают, носят на себе. Стол (la table) — мебель: он лишний."
+      },
+      {
+        "id": "wc-boss-maison-vetements-porter-cmp",
+        "kind": "compare",
+        "wordId": "wl-vetements-porter",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Перекрёстное дело: глагол porter связывает одежду и дом. В чём разница между этими фразами?",
+        "phrases": ["Elle porte une robe rouge.", "Il porte la table dans la chambre."],
+        "options": [
+          "В первой porter — «носить (быть одетым)»; во второй — «нести (перемещать груз)».",
+          "В обеих porter значит «носить одежду».",
+          "В обеих porter значит «нести что-то тяжёлое».",
+          "В первой porter — «нести», во второй — «носить одежду»."
+        ],
+        "correctIndex": 0,
+        "explanation": "У porter два значения. С одеждой — «носить, быть одетым»: «elle porte une robe». С предметом — «нести, перемещать»: «il porte la table». Контекст подсказывает, какое из значений."
+      },
+      {
+        "id": "wc-boss-maison-vetements-porter-trap",
+        "kind": "trap",
+        "wordId": "wl-vetements-porter",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг уже одет в пальто и стоит у двери. porter или mettre — как сказать «он носит пальто» (он сейчас в нём)?",
+        "phrases": ["Il porte un manteau noir aujourd'hui.", "Il met son manteau avant de sortir."],
+        "options": [
+          "porter — носить, быть одетым (состояние); mettre — надеть (момент действия)",
+          "porter — надеть в этот момент; mettre — носить постоянно",
+          "это полные синонимы, разницы нет",
+          "porter — снимать одежду; mettre — носить"
+        ],
+        "correctIndex": 0,
+        "explanation": "porter — носить, быть уже одетым (состояние): «il porte un manteau». mettre — надеть, сам момент действия: «il met son manteau avant de sortir». «Он сейчас в пальто» = «il porte un manteau»."
+      },
+      {
+        "id": "wc-boss-maison-vetements-chemise-hint",
+        "kind": "wordHint",
+        "wordId": "wl-vetements-chemise",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Финал. Вспомни слово: верхняя одежда с воротником и пуговицами, которую гладят и носят, например, на работу.",
+        "answer": "chemise",
+        "hints": [
+          "Начинается на ch…",
+          "Женский род, 7 букв: une ___",
+          "Je dois repasser ma ___ blanche."
+        ],
+        "explanation": "chemise (f) — рубашка (с воротником и пуговицами). «une chemise blanche», «repasser une chemise» — гладить рубашку. Простая футболка — это un tee-shirt, другое слово."
+      }
+    ]
+  }
+]
