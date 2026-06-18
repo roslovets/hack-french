@@ -19,8 +19,9 @@ import {
   Toolbar,
   Tooltip,
   Typography,
+  useMediaQuery,
 } from '@mui/material';
-import { alpha } from '@mui/material/styles';
+import { alpha, type Theme } from '@mui/material/styles';
 import { NavLink, Outlet } from 'react-router-dom';
 
 import { dueCaseIds } from '@/lib/review';
@@ -52,49 +53,54 @@ function NavItem({
   end: boolean;
   badge?: number;
 }) {
+  // Labels are hidden below md (icons-only); show the tooltip only then.
+  const labelHidden = useMediaQuery<Theme>((theme) => theme.breakpoints.down('md'));
   return (
-    <NavLink to={to} end={end} style={{ textDecoration: 'none' }}>
-      {({ isActive }) => (
-        <Stack
-          direction="row"
-          spacing={0.75}
-          sx={{
-            px: 1.5,
-            py: 0.75,
-            borderRadius: 2,
-            color: isActive ? 'primary.main' : 'text.secondary',
-            backgroundColor: (t) => (isActive ? alpha(t.palette.primary.main, 0.1) : 'transparent'),
-            transition: 'all 140ms ease',
-            '&:hover': { color: 'text.primary' },
-            alignItems: 'center',
-          }}
-        >
-          <Badge
-            badgeContent={badge}
-            max={99}
+    <Tooltip title={labelHidden ? label : ''} arrow>
+      <NavLink to={to} end={end} style={{ textDecoration: 'none' }}>
+        {({ isActive }) => (
+          <Stack
+            direction="row"
+            spacing={0.75}
             sx={{
-              '& .MuiBadge-badge': {
-                backgroundColor: '#e8b24a',
-                color: '#1a1712',
-                fontSize: 9.5,
-                fontWeight: 800,
-                minWidth: 15,
-                height: 15,
-                px: 0.5,
-              },
+              px: { xs: 0.75, md: 1.5 },
+              py: 0.75,
+              borderRadius: 2,
+              color: isActive ? 'primary.main' : 'text.secondary',
+              backgroundColor: (t) =>
+                isActive ? alpha(t.palette.primary.main, 0.1) : 'transparent',
+              transition: 'all 140ms ease',
+              '&:hover': { color: 'text.primary' },
+              alignItems: 'center',
             }}
           >
-            <Icon sx={{ fontSize: 19 }} />
-          </Badge>
-          <Typography
-            variant="body2"
-            sx={{ fontWeight: 700, display: { xs: 'none', sm: 'block' } }}
-          >
-            {label}
-          </Typography>
-        </Stack>
-      )}
-    </NavLink>
+            <Badge
+              badgeContent={badge}
+              max={99}
+              sx={{
+                '& .MuiBadge-badge': {
+                  backgroundColor: '#e8b24a',
+                  color: '#1a1712',
+                  fontSize: 9.5,
+                  fontWeight: 800,
+                  minWidth: 15,
+                  height: 15,
+                  px: 0.5,
+                },
+              }}
+            >
+              <Icon sx={{ fontSize: 19 }} />
+            </Badge>
+            <Typography
+              variant="body2"
+              sx={{ fontWeight: 700, whiteSpace: 'nowrap', display: { xs: 'none', md: 'block' } }}
+            >
+              {label}
+            </Typography>
+          </Stack>
+        )}
+      </NavLink>
+    </Tooltip>
   );
 }
 
@@ -120,11 +126,11 @@ export default function AppLayout() {
         }}
       >
         <Container maxWidth="lg">
-          <Toolbar disableGutters sx={{ gap: 1 }}>
+          <Toolbar disableGutters sx={{ gap: { xs: 0.5, md: 1 } }}>
             <NavLink to="/" style={{ textDecoration: 'none' }}>
               <Stack direction="row" spacing={1.25} sx={{ alignItems: 'center' }}>
                 <BrandMark size={30} />
-                <Box sx={{ lineHeight: 1 }}>
+                <Box sx={{ lineHeight: 1, display: { xs: 'none', sm: 'block' } }}>
                   <Typography
                     sx={{
                       fontFamily: display,
@@ -153,7 +159,7 @@ export default function AppLayout() {
 
             <Box sx={{ flex: 1 }} />
 
-            <Stack direction="row" spacing={0.5} sx={{ alignItems: 'center' }}>
+            <Stack direction="row" spacing={{ xs: 0.25, md: 0.5 }} sx={{ alignItems: 'center' }}>
               {navItems.map((item) => (
                 <NavItem
                   key={item.to}
