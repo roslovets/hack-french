@@ -1,0 +1,76 @@
+[
+  {
+    "id": "wc-boulangerie",
+    "title": "В булочной",
+    "theme": "boulangerie",
+    "level": "A1",
+    "wordIds": ["pain", "encore", "baguette"],
+    "steps": [
+      {
+        "id": "wc-boul-pain-ctx",
+        "kind": "wordContext",
+        "wordId": "pain",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": ["Je vais acheter du pain.", "Le pain est encore chaud.", "Tu veux du pain ?"],
+        "options": ["хлеб", "вода", "сыр", "деньги"],
+        "correctIndex": 0,
+        "explanation": "pain (m) — хлеб. Осторожно: английское pain = боль (douleur). Это ложный друг."
+      },
+      {
+        "id": "wc-boul-baguette-ctx",
+        "kind": "wordContext",
+        "wordId": "baguette",
+        "dimension": "visualRecognition",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в булочной?",
+        "contexts": [
+          "Une baguette, s'il vous plaît.",
+          "La baguette est encore chaude.",
+          "Je coupe la baguette en deux."
+        ],
+        "options": ["багет (длинный хлеб)", "печенье", "сумка", "нож"],
+        "correctIndex": 0,
+        "explanation": "baguette (f) — багет. Слово значит и «палочка», но в булочной речь о хлебе."
+      },
+      {
+        "id": "wc-boul-encore-cmp",
+        "kind": "compare",
+        "wordId": "encore",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "encore и toujours часто путают. В чём разница здесь?",
+        "phrases": ["Tu veux encore du café ?", "Je bois toujours du café le matin."],
+        "options": [
+          "encore = ещё (добавка/повтор), toujours = всегда (привычка)",
+          "Это синонимы, разницы нет",
+          "encore = всегда, toujours = ещё",
+          "Оба значат «уже»"
+        ],
+        "correctIndex": 0,
+        "explanation": "encore — «ещё / добавка»: encore du café. toujours — «всегда» (привычка) или «всё ещё». Отсюда путаница."
+      },
+      {
+        "id": "wc-boul-pain-collo",
+        "kind": "sort",
+        "wordId": "pain",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом pain звучат естественно, а какие — нет?",
+        "baskets": [
+          { "id": "ok", "label": "Естественно" },
+          { "id": "no", "label": "Так не говорят" }
+        ],
+        "items": [
+          { "text": "acheter du pain", "basket": "ok" },
+          { "text": "une tranche de pain", "basket": "ok" },
+          { "text": "du pain frais", "basket": "ok" },
+          { "text": "boire du pain", "basket": "no" },
+          { "text": "conduire le pain", "basket": "no" }
+        ],
+        "explanation": "С pain естественны: acheter/couper du pain, une tranche de pain, du pain frais. «boire du pain» и «conduire le pain» — бессмыслица."
+      }
+    ]
+  }
+]

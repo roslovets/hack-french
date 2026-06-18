@@ -5,6 +5,7 @@ import EventRepeatOutlined from '@mui/icons-material/EventRepeatOutlined';
 import LightbulbOutlined from '@mui/icons-material/LightbulbOutlined';
 import RadarOutlined from '@mui/icons-material/RadarOutlined';
 import SettingsOutlined from '@mui/icons-material/SettingsOutlined';
+import TranslateOutlined from '@mui/icons-material/TranslateOutlined';
 import TravelExploreOutlined from '@mui/icons-material/TravelExploreOutlined';
 import {
   AppBar,
@@ -35,6 +36,7 @@ const navItems = [
   { to: '/review', label: 'Повторение', icon: EventRepeatOutlined, end: false },
   { to: '/insights', label: 'Озарения', icon: LightbulbOutlined, end: false },
   { to: '/missions', label: 'Миссии', icon: RadarOutlined, end: false },
+  { to: '/words', label: 'Слова', icon: TranslateOutlined, end: false },
 ];
 
 function NavItem({
@@ -100,6 +102,11 @@ export default function AppLayout() {
   const { state } = useProgress();
   const now = useNow(60 * 60 * 1000);
   const dueCount = dueCaseIds(state, now).length;
+  // Word Lab due count — computed from state alone (no word-content import here,
+  // keeping word JSON out of the always-loaded main bundle).
+  const dueWords = Object.values(state.wordMastery).filter((wm) =>
+    Object.values(wm.dims).some((d) => d != null && d.due <= now),
+  ).length;
 
   return (
     <Box sx={{ minHeight: '100dvh', display: 'flex', flexDirection: 'column' }}>
@@ -148,7 +155,11 @@ export default function AppLayout() {
 
             <Stack direction="row" spacing={0.5} sx={{ alignItems: 'center' }}>
               {navItems.map((item) => (
-                <NavItem key={item.to} {...item} badge={item.to === '/review' ? dueCount : 0} />
+                <NavItem
+                  key={item.to}
+                  {...item}
+                  badge={item.to === '/review' ? dueCount : item.to === '/words' ? dueWords : 0}
+                />
               ))}
             </Stack>
 

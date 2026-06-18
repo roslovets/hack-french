@@ -1,0 +1,118 @@
+[
+  {
+    "id": "pain",
+    "lemma": "pain",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɛ̃/",
+    "translationsRu": ["хлеб"],
+    "translationsEn": ["bread"],
+    "semanticCore": "Хлеб как продукт и часть еды.",
+    "collocations": [
+      { "fr": "acheter du pain", "ru": "купить хлеб" },
+      { "fr": "une tranche de pain", "ru": "ломтик хлеба" },
+      { "fr": "du pain frais", "ru": "свежий хлеб" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pain (англ.)",
+        "note": "Англ. pain = боль (douleur), а фр. pain = хлеб. Классический ложный друг."
+      }
+    ],
+    "frequencyRank": 120,
+    "level": "A1",
+    "tags": ["boulangerie", "nourriture"],
+    "caseIds": ["wc-boulangerie"]
+  },
+  {
+    "id": "baguette",
+    "lemma": "baguette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ba.ɡɛt/",
+    "translationsRu": ["багет"],
+    "translationsEn": ["baguette"],
+    "semanticCore": "Длинный белый хлеб; в булочной слово значит именно его.",
+    "collocations": [
+      { "fr": "une baguette tradition", "ru": "багет «традисьон»" },
+      { "fr": "couper la baguette", "ru": "разрезать багет" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "baguette (палочка)",
+        "note": "baguette также «палочка» (для еды, дирижёрская), но в булочной — это хлеб."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A1",
+    "tags": ["boulangerie", "nourriture"],
+    "caseIds": ["wc-boulangerie"]
+  },
+  {
+    "id": "encore",
+    "lemma": "encore",
+    "pos": "adv",
+    "ipa": "/ɑ̃.kɔʁ/",
+    "translationsRu": ["ещё", "снова", "всё ещё"],
+    "translationsEn": ["still", "again", "more"],
+    "semanticCore": "Повтор или добавка («ещё»), либо продолжение («всё ещё»).",
+    "collocations": [
+      { "fr": "encore un café", "ru": "ещё один кофе" },
+      { "fr": "encore une fois", "ru": "ещё раз" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "toujours",
+        "note": "encore = ещё / всё ещё (повтор, добавка); toujours = всегда (привычка). Их часто путают."
+      }
+    ],
+    "frequencyRank": 80,
+    "level": "A1",
+    "tags": ["temps", "quantité"],
+    "caseIds": ["wc-boulangerie"]
+  },
+  {
+    "id": "frais",
+    "lemma": "frais",
+    "displayForm": "frais / fraîche",
+    "pos": "adj",
+    "translationsRu": ["свежий", "прохладный"],
+    "translationsEn": ["fresh", "cool"],
+    "semanticCore": "Свежий (недавний) или прохладный (о погоде, напитке).",
+    "collocations": [
+      { "fr": "du pain frais", "ru": "свежий хлеб" },
+      { "fr": "il fait frais", "ru": "прохладно" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "froid",
+        "note": "frais = прохладный/свежий (приятно); froid = холодный (сильнее, неприятнее)."
+      }
+    ],
+    "frequencyRank": 250,
+    "level": "A1",
+    "tags": ["boulangerie", "adjectif"],
+    "caseIds": []
+  },
+  {
+    "id": "tranche",
+    "lemma": "tranche",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tʁɑ̃ʃ/",
+    "translationsRu": ["ломтик", "кусок"],
+    "translationsEn": ["slice"],
+    "semanticCore": "Тонкий ровный отрезанный кусок (хлеба, сыра, ветчины).",
+    "collocations": [
+      { "fr": "une tranche de pain", "ru": "ломтик хлеба" },
+      { "fr": "une tranche de jambon", "ru": "ломтик ветчины" }
+    ],
+    "contrastPairs": [
+      { "with": "morceau", "note": "tranche — тонкий ровный ломтик; morceau — кусок любой формы." }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["boulangerie", "nourriture"],
+    "caseIds": []
+  }
+]

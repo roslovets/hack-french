@@ -10,6 +10,8 @@ const InsightsPage = lazy(() => import('@/pages/InsightsPage'));
 const MissionsPage = lazy(() => import('@/pages/MissionsPage'));
 const ReviewPage = lazy(() => import('@/pages/ReviewPage'));
 const SettingsPage = lazy(() => import('@/pages/SettingsPage'));
+const WordLabPage = lazy(() => import('@/pages/WordLabPage'));
+const WordSessionPage = lazy(() => import('@/pages/WordSessionPage'));
 
 /**
  * Remount CasePage when the case changes (keyed by :id), otherwise the internal
@@ -30,6 +32,8 @@ export default function App() {
         <Route path="/review" element={<ReviewPage />} />
         <Route path="/insights" element={<InsightsPage />} />
         <Route path="/missions" element={<MissionsPage />} />
+        <Route path="/words" element={<WordLabPage />} />
+        <Route path="/words/session" element={<WordSessionPage />} />
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="*" element={<HomePage />} />
       </Route>

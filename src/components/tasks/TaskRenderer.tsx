@@ -11,6 +11,7 @@ import OrderTask from './OrderTask';
 import OwnPhraseTask from './OwnPhraseTask';
 import SortTask from './SortTask';
 import TimelineTask from './TimelineTask';
+import WordContextTask from './WordContextTask';
 
 interface Props {
   step: TaskStep;
@@ -60,6 +61,10 @@ export default function TaskRenderer({ step, boss, completed, onComplete }: Prop
       return <OrderTask step={step} boss={boss} completed={completed} onComplete={onComplete} />;
     case 'debug':
       return <DebugTask step={step} boss={boss} completed={completed} onComplete={onComplete} />;
+    case 'wordContext':
+      return (
+        <WordContextTask step={step} boss={boss} completed={completed} onComplete={onComplete} />
+      );
     default:
       return null;
   }

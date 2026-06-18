@@ -1,5 +1,7 @@
 import { createContext } from 'react';
 
+import type { WordDimension } from '@/types';
+
 /** A collected insight (for the collection). */
 export interface CollectedInsight {
   caseId: string;
@@ -14,6 +16,21 @@ export interface MissionCatch {
   at: number;
   /** Optional reflection: where it was heard / what was said. */
   note?: string;
+}
+
+/** Per-dimension spaced-repetition state for one word (parallels ReviewEntry). */
+export interface DimensionState {
+  strength: number;
+  intervalIdx: number;
+  due: number;
+  reviewed: number;
+}
+
+/** Word Lab mastery for one word: independent per-dimension scheduling + personal data. */
+export interface WordMastery {
+  dims: Partial<Record<WordDimension, DimensionState>>;
+  mnemonic?: string;
+  introducedAt?: number;
 }
 
 /** Spaced-repetition schedule for a single case. */
@@ -48,6 +65,8 @@ export interface ProgressState {
   reviewStreak: number;
   /** Best review streak. */
   reviewBest: number;
+  /** Word Lab: wordId -> per-dimension mastery + personal data. */
+  wordMastery: Record<string, WordMastery>;
 }
 
 export const PROGRESS_VERSION = 1;
@@ -65,6 +84,7 @@ export const initialProgress: ProgressState = {
   review: {},
   reviewStreak: 0,
   reviewBest: 0,
+  wordMastery: {},
 };
 
 export type ProgressAction =
@@ -83,6 +103,14 @@ export type ProgressAction =
   | { type: 'UNLOG_MISSION'; stepId: string }
   | { type: 'RESET_CASE'; caseId: string; stepIds: string[]; stepXp: number; caseBonus: number }
   | { type: 'REVIEW_GRADE'; caseId: string; correct: boolean; intervals: number[]; at: number }
+  | {
+      type: 'GRADE_WORD_DIMENSION';
+      wordId: string;
+      dimension: WordDimension;
+      correct: boolean;
+      intervals: number[];
+      at: number;
+    }
   | { type: 'IMPORT'; state: ProgressState }
   | { type: 'RESET' };
 
@@ -191,6 +219,33 @@ export function progressReducer(state: ProgressState, action: ProgressAction): P
         reviewBest: Math.max(state.reviewBest, newStreak),
       };
     }
+    case 'GRADE_WORD_DIMENSION': {
+      const wm = state.wordMastery[action.wordId] ?? { dims: {} };
+      const prev = wm.dims[action.dimension];
+      const lastIdx = action.intervals.length - 1;
+      const newIdx = action.correct ? Math.min((prev?.intervalIdx ?? -1) + 1, lastIdx) : 0;
+      const dueMs = action.intervals[newIdx] ?? action.intervals[0] ?? 0;
+      const prevStrength = prev?.strength ?? 0;
+      return {
+        ...state,
+        wordMastery: {
+          ...state.wordMastery,
+          [action.wordId]: {
+            ...wm,
+            introducedAt: wm.introducedAt ?? action.at,
+            dims: {
+              ...wm.dims,
+              [action.dimension]: {
+                strength: action.correct ? prevStrength + 1 : Math.max(0, prevStrength - 1),
+                intervalIdx: newIdx,
+                due: action.at + dueMs,
+                reviewed: action.at,
+              },
+            },
+          },
+        },
+      };
+    }
     case 'IMPORT':
       return { ...action.state, version: PROGRESS_VERSION };
     case 'RESET':
@@ -208,6 +263,7 @@ export interface ProgressContextValue {
   catchMission: (stepId: string) => void;
   logMission: (stepId: string, note?: string) => void;
   unlogMission: (stepId: string) => void;
+  gradeWordDimension: (wordId: string, dimension: WordDimension, correct: boolean) => void;
   resetCase: (caseId: string) => void;
   gradeReview: (caseId: string, correct: boolean) => void;
   importProgress: (next: ProgressState) => void;

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "M01",
+    "token": "contexte",
+    "label": "Угадай по сценам",
+    "primaryDimension": "contextualUnderstanding"
+  },
+  {
+    "id": "M06",
+    "token": "pont-anglais",
+    "label": "Английский мост",
+    "primaryDimension": "visualRecognition"
+  },
+  {
+    "id": "M07",
+    "token": "faux-amis",
+    "label": "Ложные друзья",
+    "primaryDimension": "contrastiveUnderstanding"
+  },
+  {
+    "id": "M12",
+    "token": "collocations",
+    "label": "Магниты слов",
+    "primaryDimension": "collocationKnowledge"
+  },
+  {
+    "id": "M18",
+    "token": "duel",
+    "label": "Дуэль слов",
+    "primaryDimension": "contrastiveUnderstanding"
+  },
+  {
+    "id": "M22",
+    "token": "dialogue",
+    "label": "Диалог с последствиями",
+    "primaryDimension": "contextualUnderstanding"
+  },
+  {
+    "id": "M29",
+    "token": "rappel",
+    "label": "Воскрешение слова",
+    "primaryDimension": "activeRecall"
+  },
+  { "id": "M30", "token": "boss", "label": "Босс-битва", "primaryDimension": "activeRecall" }
+]

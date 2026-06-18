@@ -1,0 +1,178 @@
+/**
+ * Word Lab scheduling — the vocabulary-trainer analogue of `lib/review.ts`.
+ * Pure functions, no side effects. Phase 1 builds a simple session from all
+ * word-case steps (new words first); dimension-driven due scheduling arrives in
+ * a later phase. Per-word mastery aggregates the 7 dimensions.
+ */
+import { wordCases, words } from '@/data/words';
+import type { TaskStep, WordDimension } from '@/types';
+
+import type { ProgressState } from '@/state/progress-context';
+
+import type { ReviewTier } from './review';
+import { seededShuffle } from './shuffle';
+
+/** Dimensions we actually drive scheduling on (audio-based listening is deferred). */
+export const SCHEDULED_DIMENSIONS: WordDimension[] = [
+  'visualRecognition',
+  'contextualUnderstanding',
+  'contrastiveUnderstanding',
+  'collocationKnowledge',
+  'activeRecall',
+];
+
+export interface WordSessionItem {
+  step: TaskStep;
+  wordId: string;
+  dimension: WordDimension;
+  caseTitle: string;
+}
+
+/** Every trainable step across word-cases, tagged with its word/dimension/case. */
+function allWordSteps(): WordSessionItem[] {
+  const items: WordSessionItem[] = [];
+  for (const c of wordCases) {
+    for (const s of c.steps) {
+      if (s.wordId && s.dimension) {
+        items.push({ step: s, wordId: s.wordId, dimension: s.dimension, caseTitle: c.title });
+      }
+    }
+  }
+  return items;
+}
+
+/** Per-word aggregate mastery in [0,1], averaged over scheduled dimensions. */
+export function wordMasteryScore(state: ProgressState, wordId: string): number {
+  const wm = state.wordMastery[wordId];
+  if (!wm) return 0;
+  const CAP = 4; // strength at which a dimension counts as fully solid
+  let sum = 0;
+  for (const dim of SCHEDULED_DIMENSIONS) {
+    sum += Math.min(1, (wm.dims[dim]?.strength ?? 0) / CAP);
+  }
+  return sum / SCHEDULED_DIMENSIONS.length;
+}
+
+/** Per-word tier, reusing review.ts tier semantics. */
+export function wordTier(state: ProgressState, wordId: string): ReviewTier {
+  const wm = state.wordMastery[wordId];
+  if (!wm || Object.keys(wm.dims).length === 0) return 'locked';
+  const score = wordMasteryScore(state, wordId);
+  if (score >= 0.75) return 'solid';
+  if (score >= 0.34) return 'learning';
+  return 'fresh';
+}
+
+export interface WordDimDue {
+  wordId: string;
+  dimension: WordDimension;
+  due: number;
+}
+
+/** (word, dimension) pairs whose scheduled review time has arrived, oldest first. */
+export function dueWordDimensions(state: ProgressState, now: number): WordDimDue[] {
+  const out: WordDimDue[] = [];
+  for (const [wordId, wm] of Object.entries(state.wordMastery)) {
+    for (const dim of SCHEDULED_DIMENSIONS) {
+      const d = wm.dims[dim];
+      if (d && d.due <= now) out.push({ wordId, dimension: dim, due: d.due });
+    }
+  }
+  return out.sort((a, b) => a.due - b.due);
+}
+
+/** The weakest scheduled dimension for a word (the next thing worth training). */
+export function weakestDimension(state: ProgressState, wordId: string): WordDimension {
+  const wm = state.wordMastery[wordId];
+  let best: WordDimension = SCHEDULED_DIMENSIONS[0] ?? 'visualRecognition';
+  let bestStrength = Infinity;
+  for (const dim of SCHEDULED_DIMENSIONS) {
+    const s = wm?.dims[dim]?.strength ?? 0;
+    if (s < bestStrength) {
+      bestStrength = s;
+      best = dim;
+    }
+  }
+  return best;
+}
+
+/** Avoid two adjacent items sharing the same mechanic (best-effort, single pass). */
+function spreadMechanics(items: WordSessionItem[]): WordSessionItem[] {
+  const out = [...items];
+  for (let i = 1; i < out.length; i += 1) {
+    const prev = out[i - 1]?.step.mechanic;
+    const cur = out[i];
+    if (prev && cur && cur.step.mechanic === prev) {
+      const j = out.findIndex((it, k) => k > i && it.step.mechanic !== prev);
+      const swap = j > i ? out[j] : undefined;
+      if (swap) {
+        out[i] = swap;
+        out[j] = cur;
+      }
+    }
+  }
+  return out;
+}
+
+/**
+ * Build a daily session: new words first (lowest frequency rank, one intro step
+ * each), then due reviews (most-overdue dimension first), topped up with any
+ * remaining steps, then spread so the same mechanic doesn't repeat back-to-back.
+ */
+export function buildWordSession(
+  state: ProgressState,
+  seed: string,
+  opts: { limit?: number; maxNew?: number } = {},
+): WordSessionItem[] {
+  const limit = opts.limit ?? 12;
+  const maxNew = opts.maxNew ?? 5;
+  const all = allWordSteps();
+  const byWord = new Map<string, WordSessionItem[]>();
+  for (const it of all) {
+    const list = byWord.get(it.wordId);
+    if (list) list.push(it);
+    else byWord.set(it.wordId, [it]);
+  }
+
+  const result: WordSessionItem[] = [];
+  const used = new Set<WordSessionItem>();
+  const push = (it: WordSessionItem | undefined) => {
+    if (it && !used.has(it)) {
+      used.add(it);
+      result.push(it);
+    }
+  };
+
+  // 1) New words: have steps but no mastery yet, lowest frequencyRank first.
+  const newWordIds = words
+    .filter((w) => byWord.has(w.id) && !state.wordMastery[w.id])
+    .sort((a, b) => a.frequencyRank - b.frequencyRank)
+    .slice(0, maxNew)
+    .map((w) => w.id);
+  for (const wid of newWordIds) {
+    push(seededShuffle(byWord.get(wid) ?? [], `${seed}-${wid}`)[0]);
+  }
+
+  // 2) Due reviews: introduced words, most-overdue dimension first.
+  const dueList: WordDimDue[] = [];
+  for (const [wid, wm] of Object.entries(state.wordMastery)) {
+    for (const dim of SCHEDULED_DIMENSIONS) {
+      const d = wm.dims[dim];
+      if (d) dueList.push({ wordId: wid, dimension: dim, due: d.due });
+    }
+  }
+  dueList.sort((a, b) => a.due - b.due);
+  for (const due of dueList) {
+    if (result.length >= limit) break;
+    const items = (byWord.get(due.wordId) ?? []).filter((it) => it.dimension === due.dimension);
+    push(seededShuffle(items, `${seed}-${due.wordId}-${due.dimension}`)[0]);
+  }
+
+  // 3) Top up with any remaining steps if the session is still short.
+  for (const it of seededShuffle(all, seed)) {
+    if (result.length >= limit) break;
+    push(it);
+  }
+
+  return spreadMechanics(result).slice(0, limit);
+}

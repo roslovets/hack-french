@@ -31,7 +31,8 @@ export type TaskKind =
   | 'simpler' // 49. Say it simpler
   | 'timeline' // 25. Event timeline: background or click
   | 'dialogue' // 31. Dialogue quest
-  | 'findMechanisms'; // 46. Find mechanisms in a live phrase
+  | 'findMechanisms' // 46. Find mechanisms in a live phrase
+  | 'wordContext'; // 50. Word Lab — guess the word from three contexts
 
 /** Case difficulty. */
 export type Difficulty = 'easy' | 'medium' | 'hard';
@@ -39,6 +40,12 @@ export type Difficulty = 'easy' | 'medium' | 'hard';
 interface BaseStep {
   id: string;
   kind: TaskKind;
+  /** Word Lab only: which word this step trains (grammar cases omit these). */
+  wordId?: string;
+  /** Word Lab only: which mastery dimension this step grades. */
+  dimension?: WordDimension;
+  /** Word Lab only: the learning-mechanic id (M01–M30) for variety scheduling. */
+  mechanic?: MechanicId;
 }
 
 /** Mechanic kinds that reduce to picking one correct option. */
@@ -221,7 +228,8 @@ export type TaskStep =
   | DebugStep
   | TimelineStep
   | DialogueStep
-  | FindMechanismsStep;
+  | FindMechanismsStep
+  | WordContextStep;
 
 /** Mechanism — a specific French thing that gets hacked. */
 export interface Mechanism {
@@ -259,4 +267,115 @@ export interface Case {
   scenes: string[];
   steps: TaskStep[];
   insight: string;
+}
+
+// ── Word Lab (vocabulary trainer) ───────────────────────────────────────────
+// A separate content world that reuses the TaskStep renderer engine. Word-cases
+// are NOT mixed into the grammar `cases` array (different invariants + state).
+
+/** Independent mastery dimensions tracked per word (Word Lab spec §5). */
+export type WordDimension =
+  | 'visualRecognition'
+  | 'contextualUnderstanding'
+  | 'listeningRecognition' // declared but not scheduled yet (audio deferred)
+  | 'contrastiveUnderstanding'
+  | 'collocationKnowledge'
+  | 'activeRecall'
+  | 'personalUsage';
+
+/** Learning-mechanic id from the Word Lab spec (M01–M30). */
+export type MechanicId =
+  | 'M01'
+  | 'M02'
+  | 'M03'
+  | 'M04'
+  | 'M05'
+  | 'M06'
+  | 'M07'
+  | 'M08'
+  | 'M09'
+  | 'M10'
+  | 'M11'
+  | 'M12'
+  | 'M13'
+  | 'M14'
+  | 'M15'
+  | 'M16'
+  | 'M17'
+  | 'M18'
+  | 'M19'
+  | 'M20'
+  | 'M21'
+  | 'M22'
+  | 'M23'
+  | 'M24'
+  | 'M25'
+  | 'M26'
+  | 'M27'
+  | 'M28'
+  | 'M29'
+  | 'M30';
+
+export type WordLevel = 'A1' | 'A2' | 'B1' | 'B2';
+export type Pos = 'noun' | 'verb' | 'adj' | 'adv' | 'prep' | 'conj' | 'pron' | 'expr';
+
+/** A typical word combination (Word Lab spec §9.4 / mechanic M12). */
+export interface Collocation {
+  fr: string;
+  ru: string;
+}
+
+/** A confusable word/expression (false friend, near-synonym, register twin). */
+export interface ContrastPair {
+  with: string;
+  note: string; // RU explanation of the distinction
+  wordId?: string; // optional cross-link to another Word
+}
+
+/** A vocabulary word — a multi-layer dossier, not a flat translation pair. */
+export interface Word {
+  id: string;
+  lemma: string;
+  displayForm?: string;
+  pos: Pos;
+  gender?: 'm' | 'f';
+  ipa?: string;
+  translationsRu: string[];
+  translationsEn: string[];
+  semanticCore: string; // RU: the meaning beneath the translations
+  collocations: Collocation[];
+  contrastPairs: ContrastPair[];
+  frequencyRank: number; // drives intro order
+  level: WordLevel;
+  tags: string[];
+  caseIds: string[];
+}
+
+/** A word-case: a themed cluster of words + the steps that train them. */
+export interface WordCase {
+  id: string;
+  title: string;
+  theme: string; // free-text theme, NOT a grammar category id
+  level: WordLevel;
+  isBoss?: boolean;
+  wordIds: string[];
+  steps: TaskStep[]; // reuses the same TaskStep union + renderers
+}
+
+/** Word Lab mechanic registry entry (analogue of Mechanism for grammar). */
+export interface WordMechanic {
+  id: MechanicId;
+  token: string;
+  label: string;
+  primaryDimension: WordDimension;
+}
+
+/** M01 — guess the word from three contexts before seeing the translation. */
+export interface WordContextStep extends BaseStep {
+  kind: 'wordContext';
+  prompt: string;
+  contexts: string[]; // three French sentences featuring the hidden word
+  options: string[]; // candidate lemmas / meanings
+  correctIndex: number;
+  explanation: string;
 }

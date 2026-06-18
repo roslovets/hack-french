@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useReducer, type ReactNode } from 'rea
 
 import { getCase } from '@/data';
 import { loadJSON, saveJSON } from '@/lib/storage';
+import type { WordDimension } from '@/types';
 
 import {
   initialProgress,
@@ -20,6 +21,9 @@ const BOSS_XP = 120;
 /** Review interval scale: 1 → 3 → 7 → 21 → 60 days (in ms). */
 const DAY_MS = 24 * 60 * 60 * 1000;
 const REVIEW_INTERVALS = [1, 3, 7, 21, 60].map((d) => d * DAY_MS);
+// Word dimensions cool faster than grammar cases: first review within hours,
+// so a freshly-introduced word resurfaces inside the same/next session.
+const WORD_INTERVALS = [0.25, 1, 3, 7, 16, 40].map((d) => d * DAY_MS);
 
 function init(): ProgressState {
   const stored = loadJSON<ProgressState>(STORAGE_KEY, initialProgress);
@@ -68,6 +72,20 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     dispatch({ type: 'UNLOG_MISSION', stepId });
   }, []);
 
+  const gradeWordDimension = useCallback(
+    (wordId: string, dimension: WordDimension, correct: boolean) => {
+      dispatch({
+        type: 'GRADE_WORD_DIMENSION',
+        wordId,
+        dimension,
+        correct,
+        intervals: WORD_INTERVALS,
+        at: Date.now(),
+      });
+    },
+    [],
+  );
+
   const resetCase = useCallback((caseId: string) => {
     const caseItem = getCase(caseId);
     const stepIds = caseItem?.steps.map((s) => s.id) ?? [];
@@ -102,6 +120,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       catchMission,
       logMission,
       unlogMission,
+      gradeWordDimension,
       resetCase,
       gradeReview,
       importProgress,
@@ -118,6 +137,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       catchMission,
       logMission,
       unlogMission,
+      gradeWordDimension,
       resetCase,
       gradeReview,
       importProgress,

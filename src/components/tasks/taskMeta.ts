@@ -20,6 +20,7 @@ import StorefrontOutlined from '@mui/icons-material/StorefrontOutlined';
 import SwapVertOutlined from '@mui/icons-material/SwapVertOutlined';
 import type { SvgIconComponent } from '@mui/icons-material';
 import TimelineOutlined from '@mui/icons-material/TimelineOutlined';
+import TranslateOutlined from '@mui/icons-material/TranslateOutlined';
 import TravelExploreOutlined from '@mui/icons-material/TravelExploreOutlined';
 import UnfoldLessOutlined from '@mui/icons-material/UnfoldLessOutlined';
 import UnfoldMoreOutlined from '@mui/icons-material/UnfoldMoreOutlined';
@@ -59,6 +60,7 @@ export const taskMeta: Record<TaskKind, TaskMeta> = {
   timeline: { label: 'Таймлайн события', icon: TimelineOutlined, tone: 'amber' },
   dialogue: { label: 'Диалог-квест', icon: ForumOutlined, tone: 'amber' },
   findMechanisms: { label: 'Найди механизмы', icon: ManageSearchOutlined, tone: 'accent' },
+  wordContext: { label: 'Угадай слово', icon: TranslateOutlined, tone: 'accent' },
 };
 
 export const toneColor: Record<Tone, string> = {
