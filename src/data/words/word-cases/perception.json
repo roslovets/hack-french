@@ -1,0 +1,318 @@
+[
+  {
+    "id": "wc-perception",
+    "title": "Смотреть, видеть, слушать, слышать",
+    "theme": "perception",
+    "level": "A2",
+    "wordIds": ["voir", "regarder", "entendre", "ecouter", "sembler"],
+    "steps": [
+      {
+        "id": "wc-perception-voir-ctx",
+        "kind": "wordContext",
+        "wordId": "voir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je vois la mer depuis ma fenêtre.",
+          "On va voir un film ce soir.",
+          "Demain je vais voir le médecin."
+        ],
+        "options": ["видеть (образ сам попадает в глаза)", "слышать", "ждать", "искать"],
+        "correctIndex": 0,
+        "explanation": "voir — «видеть»: образ сам попадает в поле зрения, без усилия. Отсюда и «voir un film» (посмотреть фильм), «voir le médecin» (показаться врачу)."
+      },
+      {
+        "id": "wc-perception-voir-bridge",
+        "kind": "wordBridge",
+        "wordId": "voir",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать voir. Что оно значит?",
+        "bridge": "voir — родственник английских vision и visible (всё от латинского videre «видеть»).",
+        "options": ["видеть", "слышать", "касаться", "молчать"],
+        "correctIndex": 0,
+        "explanation": "voir = «видеть». Английские vision / visible идут от того же латинского videre — надёжный мост к значению."
+      },
+      {
+        "id": "wc-perception-regarder-ctx",
+        "kind": "wordContext",
+        "wordId": "regarder",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит повторяющееся слово в этих сценах?",
+        "contexts": [
+          "Le soir, je regarde la télé.",
+          "Regarde ce beau coucher de soleil !",
+          "Elle regarde par la fenêtre."
+        ],
+        "options": [
+          "смотреть, направлять взгляд (намеренно)",
+          "видеть случайно",
+          "слышать",
+          "читать"
+        ],
+        "correctIndex": 0,
+        "explanation": "regarder — «смотреть»: ты намеренно направляешь взгляд. Дополнение идёт без предлога: regarder la télé, regarder le coucher de soleil."
+      },
+      {
+        "id": "wc-perception-regarder-bridge",
+        "kind": "wordBridge",
+        "wordId": "regarder",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский даёт подсказку для regarder. Что оно значит?",
+        "bridge": "В английском есть глагол to regard «смотреть на, рассматривать» — тот же корень, что и regarder.",
+        "options": ["смотреть на, разглядывать", "забывать", "слушать", "бежать"],
+        "correctIndex": 0,
+        "explanation": "regarder = «смотреть на». Английское to regard (рассматривать) — общий корень. Только осторожно: чаще англ. regard значит «уважение», а фр. regarder — буквально «смотреть»."
+      },
+      {
+        "id": "wc-perception-voir-regarder-cmp",
+        "kind": "compare",
+        "wordId": "regarder",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "voir и regarder часто путают. В чём здесь разница?",
+        "phrases": ["Je vois la tour Eiffel d'ici.", "Je regarde la tour Eiffel."],
+        "options": [
+          "voir = видеть (образ сам попадает в глаза); regarder = смотреть намеренно (направляешь взгляд)",
+          "Это синонимы, разницы нет",
+          "voir = смотреть намеренно; regarder = видеть случайно",
+          "voir = слышать; regarder = видеть"
+        ],
+        "correctIndex": 0,
+        "explanation": "voir — пассивно «видеть» (образ сам попадает в глаза: je vois la tour). regarder — активно «смотреть» (направляешь взгляд: je regarde la tour). Это главная пара русских «видеть/смотреть»."
+      },
+      {
+        "id": "wc-perception-regarder-collo",
+        "kind": "sort",
+        "wordId": "regarder",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с regarder звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "regarder la télé",
+            "basket": "ok"
+          },
+          {
+            "text": "regarder par la fenêtre",
+            "basket": "ok"
+          },
+          {
+            "text": "regarder un match",
+            "basket": "ok"
+          },
+          {
+            "text": "regarder de la musique",
+            "basket": "no"
+          },
+          {
+            "text": "regarder de la télé",
+            "basket": "no"
+          }
+        ],
+        "explanation": "regarder берёт прямое дополнение с определённым артиклем: regarder la télé / un match / par la fenêtre. Музыку «слушают» (écouter de la musique), а не «regarder». И телевизор смотрят целиком: regarder la télé, а не «regarder de la télé» с частичным артиклем."
+      },
+      {
+        "id": "wc-perception-entendre-ctx",
+        "kind": "wordContext",
+        "wordId": "entendre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово связывает все три сцены. Что оно значит?",
+        "contexts": [
+          "J'entends du bruit dans la rue.",
+          "Parle plus fort, je ne t'entends pas.",
+          "J'ai entendu parler de ce restaurant."
+        ],
+        "options": [
+          "слышать (звук сам доходит до ушей)",
+          "слушать намеренно",
+          "видеть",
+          "понимать язык"
+        ],
+        "correctIndex": 0,
+        "explanation": "entendre — «слышать»: звук сам доходит до тебя, без усилия. Отсюда «entendre du bruit» и оборот «entendre parler de» — слышать о чём-то."
+      },
+      {
+        "id": "wc-perception-entendre-trap",
+        "kind": "trap",
+        "wordId": "entendre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«J'entends quelqu'un» и похожее «J'attends quelqu'un». Что на самом деле значит entendre?",
+        "options": ["слышать кого-то", "ждать кого-то", "понимать кого-то", "звать кого-то"],
+        "correctIndex": 0,
+        "explanation": "Ловушка по форме: entendre = «слышать», а очень похожее attendre = «ждать». Различай по приставке: en-tendre (слышать) против at-tendre (ждать). «J'attends quelqu'un» = я кого-то жду."
+      },
+      {
+        "id": "wc-perception-ecouter-ctx",
+        "kind": "wordContext",
+        "wordId": "ecouter",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит повторяющееся слово в этих сценах?",
+        "contexts": [
+          "J'écoute de la musique dans le métro.",
+          "Écoute-moi, c'est important.",
+          "Le matin, elle écoute la radio."
+        ],
+        "options": [
+          "слушать намеренно (прислушиваться)",
+          "слышать случайно",
+          "смотреть",
+          "говорить"
+        ],
+        "correctIndex": 0,
+        "explanation": "écouter — «слушать»: ты намеренно направляешь внимание на звук. Дополнение без предлога: écouter de la musique, écouter la radio, écoute-moi."
+      },
+      {
+        "id": "wc-perception-entendre-ecouter-cmp",
+        "kind": "compare",
+        "wordId": "ecouter",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "entendre и écouter — это «слышать» и «слушать». В чём разница здесь?",
+        "phrases": ["J'entends la radio du voisin.", "J'écoute la radio le matin."],
+        "options": [
+          "entendre = слышать (звук сам доходит); écouter = слушать намеренно (прислушиваешься)",
+          "Это синонимы, разницы нет",
+          "entendre = слушать намеренно; écouter = слышать случайно",
+          "entendre = видеть; écouter = слышать"
+        ],
+        "correctIndex": 0,
+        "explanation": "entendre — пассивно «слышать» (радио соседа само доходит до ушей). écouter — активно «слушать» (ты сам включаешь и слушаешь радио). Та же пара, что voir/regarder, только для звука."
+      },
+      {
+        "id": "wc-perception-ecouter-collo",
+        "kind": "sort",
+        "wordId": "ecouter",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с écouter звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "écouter de la musique",
+            "basket": "ok"
+          },
+          {
+            "text": "écouter la radio",
+            "basket": "ok"
+          },
+          {
+            "text": "écouter ses parents",
+            "basket": "ok"
+          },
+          {
+            "text": "écouter la télé",
+            "basket": "no"
+          },
+          {
+            "text": "écouter à la musique",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественны: écouter de la musique / la radio, écouter ses parents (слушаться). Телевизор «смотрят» (regarder la télé), а не «écouter». И дополнение идёт без предлога: écouter la musique, а не «écouter à la musique»."
+      },
+      {
+        "id": "wc-perception-odd",
+        "kind": "oddOneOut",
+        "wordId": "sembler",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три глагола — про органы чувств. Какой здесь лишний?",
+        "options": ["voir", "entendre", "écouter", "sembler"],
+        "correctIndex": 3,
+        "explanation": "voir (видеть), entendre (слышать), écouter (слушать) — глаголы восприятия органами чувств. sembler — «казаться»: оно описывает впечатление, а не само восприятие. Поэтому оно лишнее."
+      },
+      {
+        "id": "wc-perception-sembler-ctx",
+        "kind": "wordContext",
+        "wordId": "sembler",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il semble fatigué aujourd'hui.",
+          "Ça me semble bizarre.",
+          "Il me semble que tu as raison."
+        ],
+        "options": ["казаться, производить впечатление", "видеть", "хотеть", "знать точно"],
+        "correctIndex": 0,
+        "explanation": "sembler — «казаться»: что-то выглядит каким-то по твоему впечатлению. «il semble fatigué» (он выглядит усталым), «il me semble que…» (мне кажется, что…)."
+      },
+      {
+        "id": "wc-perception-sembler-bridge",
+        "kind": "wordBridge",
+        "wordId": "sembler",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать sembler. Что оно значит?",
+        "bridge": "sembler — родственник английского semblance «видимость, кажущийся облик» и глагола to resemble «быть похожим».",
+        "options": ["казаться, выглядеть как будто", "слышать", "ломать", "продавать"],
+        "correctIndex": 0,
+        "explanation": "sembler = «казаться». Английское semblance («видимость») и resemble («напоминать») — тот же корень: речь о том, каким что-то кажется."
+      },
+      {
+        "id": "wc-perception-ecouter-hint",
+        "kind": "wordHint",
+        "wordId": "ecouter",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: намеренно прислушиваться, направлять внимание на звук (музыку, радио).",
+        "answer": "écouter",
+        "hints": [
+          "Начинается на é…",
+          "7 букв, есть accent aigu на первой букве",
+          "___ de la musique."
+        ],
+        "explanation": "écouter — «слушать» (активно). Просьба: «Écoute-moi !» Музыку именно écouter, а не entendre."
+      },
+      {
+        "id": "wc-perception-entendre-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "entendre",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для entendre (слышать), чтобы не путать с attendre (ждать).",
+        "examples": [
+          "EN-tendre — звук ВХОДИТ (en-) в ухо сам собой: я его слышу.",
+          "AT-tendre — стою и жду (at the door); EN-tendre — слышу, как кто-то подходит."
+        ]
+      },
+      {
+        "id": "wc-perception-sembler-hint",
+        "kind": "wordHint",
+        "wordId": "sembler",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: производить впечатление, выглядеть каким-то — «казаться».",
+        "answer": "sembler",
+        "hints": ["Начинается на s…", "7 букв; родственно англ. semblance", "Il ___ fatigué."],
+        "explanation": "sembler — «казаться». «Il semble fatigué» — он кажется/выглядит усталым. «Il me semble que…» — мне кажется, что…"
+      }
+    ]
+  }
+]

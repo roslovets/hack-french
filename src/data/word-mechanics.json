@@ -30,6 +30,12 @@
     "primaryDimension": "collocationKnowledge"
   },
   {
+    "id": "M17",
+    "token": "imposteur",
+    "label": "Найди самозванца",
+    "primaryDimension": "contrastiveUnderstanding"
+  },
+  {
     "id": "M18",
     "token": "duel",
     "label": "Дуэль слов",

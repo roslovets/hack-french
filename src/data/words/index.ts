@@ -2,6 +2,9 @@ import type { Word, WordCase, WordMechanic } from '@/types';
 
 import wordMechanicsJson from '../word-mechanics.json';
 import boulangerieCases from './word-cases/boulangerie.json';
+import cafeCases from './word-cases/cafe.json';
+import perceptionCases from './word-cases/perception.json';
+import savoirCases from './word-cases/savoir.json';
 import wordsJson from './words.json';
 
 /**
@@ -15,7 +18,7 @@ export const words = wordsJson as Word[];
 
 export const wordMechanics = wordMechanicsJson as WordMechanic[];
 
-const wordCaseFiles = [boulangerieCases];
+const wordCaseFiles = [boulangerieCases, cafeCases, perceptionCases, savoirCases];
 
 export const wordCases: WordCase[] = wordCaseFiles.flat() as unknown as WordCase[];
 

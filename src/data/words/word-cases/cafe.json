@@ -1,0 +1,300 @@
+[
+  {
+    "id": "wc-cafe",
+    "title": "В кафе",
+    "theme": "cafe",
+    "level": "A1",
+    "wordIds": [
+      "wl-cafe-cafe",
+      "wl-cafe-the",
+      "wl-cafe-eau",
+      "wl-cafe-addition",
+      "wl-cafe-commander",
+      "wl-cafe-serveur",
+      "wl-cafe-terrasse",
+      "wl-cafe-sucre"
+    ],
+    "steps": [
+      {
+        "id": "wc-cafe-cafe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cafe-cafe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит здесь?",
+        "contexts": [
+          "Un café, s'il vous plaît.",
+          "Je prends un café au lait.",
+          "On va au café après le travail ?"
+        ],
+        "options": ["кофе (или кафе)", "чай", "сок", "стакан"],
+        "correctIndex": 0,
+        "explanation": "café (m) — это и «кофе» (напиток: un café), и «кафе» (заведение: au café). В первых двух сценах — напиток, в третьей — заведение."
+      },
+      {
+        "id": "wc-cafe-cafe-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-cafe-cafe",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать café с первого взгляда. Что оно значит?",
+        "bridge": "Англ. «coffee» и «café» — родственники: тот же корень, те же буквы c-a-f. Узнать легко.",
+        "options": ["кофе / кафе", "молоко", "вода", "счёт"],
+        "correctIndex": 0,
+        "explanation": "café = «кофе» и «кафе». Англ. «coffee» / «café» — прямой мост: одинаковый корень."
+      },
+      {
+        "id": "wc-cafe-the-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cafe-the",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je voudrais un thé, s'il vous plaît.",
+          "Un thé au citron, c'est possible ?",
+          "Elle boit du thé le soir."
+        ],
+        "options": ["чай", "кофе", "вода", "сахар"],
+        "correctIndex": 0,
+        "explanation": "thé (m) — чай. Пишется с буквой h и accent aigu на e: t-h-é."
+      },
+      {
+        "id": "wc-cafe-the-hint",
+        "kind": "wordHint",
+        "wordId": "wl-cafe-the",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: горячий напиток из листьев, который заваривают; часто пьют с лимоном или с мёдом.",
+        "answer": "thé",
+        "hints": [
+          "Начинается на t…",
+          "3 буквы, есть accent aigu",
+          "Un ___ au citron, s'il vous plaît."
+        ],
+        "explanation": "thé (m) — чай. Не путай с английским «the»: по-французски «the» вообще не слово, это чай."
+      },
+      {
+        "id": "wc-cafe-eau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cafe-eau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Une carafe d'eau, s'il vous plaît.",
+          "Je voudrais de l'eau plate.",
+          "Vous avez de l'eau gazeuse ?"
+        ],
+        "options": ["вода", "вино", "сок", "лёд"],
+        "correctIndex": 0,
+        "explanation": "eau (f) — вода. eau plate — без газа, eau gazeuse — с газом. В кафе можно бесплатно попросить «une carafe d'eau» (графин воды из-под крана)."
+      },
+      {
+        "id": "wc-cafe-eau-collo",
+        "kind": "sort",
+        "wordId": "wl-cafe-eau",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом eau звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un verre d'eau",
+            "basket": "ok"
+          },
+          {
+            "text": "de l'eau gazeuse",
+            "basket": "ok"
+          },
+          {
+            "text": "une bouteille d'eau",
+            "basket": "ok"
+          },
+          {
+            "text": "manger de l'eau",
+            "basket": "no"
+          },
+          {
+            "text": "une tranche d'eau",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Воду пьют (boire) и наливают в стакан/бутылку: un verre / une bouteille d'eau, de l'eau gazeuse. «manger de l'eau» (есть воду) и «une tranche d'eau» (ломтик воды) — бессмыслица."
+      },
+      {
+        "id": "wc-cafe-addition-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cafe-addition",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в кафе?",
+        "contexts": [
+          "L'addition, s'il vous plaît !",
+          "On peut avoir l'addition ?",
+          "L'addition est un peu salée…"
+        ],
+        "options": ["счёт (к оплате)", "сложение в математике", "адрес", "заказ"],
+        "correctIndex": 0,
+        "explanation": "В кафе addition (f) — это счёт, который приносят к оплате. (В математике то же слово значит «сложение», но в кафе — счёт.) «L'addition est salée» — шутка про слишком большой счёт."
+      },
+      {
+        "id": "wc-cafe-addition-trap",
+        "kind": "trap",
+        "wordId": "wl-cafe-addition",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг. Англ. «addition» = сложение, но в кафе нужен «счёт». Как попросить счёт?",
+        "phrases": ["L'addition, s'il vous plaît.", "Le compte, s'il vous plaît."],
+        "options": [
+          "L'addition, s'il vous plaît.",
+          "Le compte, s'il vous plaît.",
+          "Le score, s'il vous plaît.",
+          "La facture, s'il vous plaît."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: «счёт» в кафе — это l'addition, а не «le compte» (банковский счёт) и не «la facture» (счёт-фактура у фирмы/в отеле). Англ. «addition» сбивает: по-французски это слово как раз и значит «счёт»."
+      },
+      {
+        "id": "wc-cafe-commander-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cafe-commander",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Vous avez choisi ? Je peux prendre votre commande ?",
+          "Je voudrais commander, s'il vous plaît.",
+          "On commande deux cafés et une eau."
+        ],
+        "options": ["заказывать", "командовать", "оплачивать", "готовить"],
+        "correctIndex": 0,
+        "explanation": "commander — заказывать (в кафе, ресторане). Существительное une commande — заказ. «Командовать» — это другое значение, в кафе не используется."
+      },
+      {
+        "id": "wc-cafe-commander-hint",
+        "kind": "wordHint",
+        "wordId": "wl-cafe-commander",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: то, что ты делаешь, когда говоришь официанту, что хочешь съесть или выпить.",
+        "answer": "commander",
+        "hints": [
+          "Начинается на c…",
+          "Похоже на англ. «command», но значит «заказывать»",
+          "Je voudrais ___, s'il vous plaît."
+        ],
+        "explanation": "commander — заказывать. Осторожно: похоже на англ. «command» (приказывать), но в кафе это «сделать заказ»."
+      },
+      {
+        "id": "wc-cafe-serveur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cafe-serveur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Кто это — слово из трёх сцен?",
+        "contexts": [
+          "Le serveur apporte les cafés.",
+          "Je demande l'addition au serveur.",
+          "Le serveur est très sympathique."
+        ],
+        "options": ["официант", "повар", "клиент", "хозяин"],
+        "correctIndex": 0,
+        "explanation": "serveur (m) — официант (serveuse — официантка). Он принимает заказ и приносит блюда. Повар — cuisinier, клиент — client."
+      },
+      {
+        "id": "wc-cafe-serveur-cmp",
+        "kind": "compare",
+        "wordId": "wl-cafe-serveur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "serveur и garçon. В чём разница, когда зовёшь официанта?",
+        "phrases": ["Excusez-moi, monsieur, l'addition s'il vous plaît.", "Garçon, l'addition !"],
+        "options": [
+          "serveur — нейтральное слово; обращаться лучше «monsieur». «Garçon !» — старомодно и звучит свысока.",
+          "Это полные синонимы, разницы в вежливости нет.",
+          "«Garçon» вежливее, чем «monsieur».",
+          "serveur значит «повар», garçon — «официант»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Официант — le serveur. Но окликать его «Garçon !» сегодня звучит старомодно и высокомерно; вежливо — «Excusez-moi, monsieur/madame»."
+      },
+      {
+        "id": "wc-cafe-terrasse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cafe-terrasse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On s'installe en terrasse ?",
+          "Il fait beau, prenons un café en terrasse.",
+          "La terrasse est pleine ce soir."
+        ],
+        "options": ["открытая площадка кафе на улице", "кухня", "туалет", "касса"],
+        "correctIndex": 0,
+        "explanation": "terrasse (f) — столики кафе на улице, под открытым небом. «en terrasse» — сидеть снаружи. Любимое место в хорошую погоду."
+      },
+      {
+        "id": "wc-cafe-terrasse-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-cafe-terrasse",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит terrasse?",
+        "bridge": "Англ. «terrace» — открытая площадка / терраса. Французское «terrasse» — то же слово с двумя s.",
+        "options": ["терраса / уличные столики кафе", "лестница", "крыша", "сад"],
+        "correctIndex": 0,
+        "explanation": "terrasse = терраса, уличные столики. Англ. «terrace» — прямой мост; запомни лишнюю s и -e на конце."
+      },
+      {
+        "id": "wc-cafe-sucre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cafe-sucre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Tu prends du sucre dans ton café ?",
+          "Un café sans sucre, s'il vous plaît.",
+          "Il y a du sucre sur la table."
+        ],
+        "options": ["сахар", "соль", "молоко", "ложка"],
+        "correctIndex": 0,
+        "explanation": "sucre (m) — сахар. «avec / sans sucre» — с сахаром / без сахара. Соль — sel, молоко — lait."
+      },
+      {
+        "id": "wc-cafe-sucre-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-cafe-sucre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Что из этого НЕ кладут в кофе и не подают к нему? Найди лишнее.",
+        "options": ["le sucre", "le lait", "la crème", "le sel"],
+        "correctIndex": 3,
+        "explanation": "В кофе кладут сахар (sucre), молоко (lait) или сливки (crème). Соль (sel) — лишняя: её в кофе не кладут."
+      },
+      {
+        "id": "wc-cafe-commander-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-cafe-commander",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для commander (заказывать), чтобы не путать с англ. «command» (приказывать).",
+        "examples": [
+          "В кафе ты не «командуешь» — ты commander (заказываешь): «Je voudrais commander».",
+          "Командир (command) отдаёт приказ, а ты в кафе мягко делаешь commande — заказ."
+        ]
+      }
+    ]
+  }
+]

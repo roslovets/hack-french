@@ -1,0 +1,251 @@
+[
+  {
+    "id": "wc-savoir",
+    "title": "Знать, понимать, уметь",
+    "theme": "connaissance",
+    "level": "A2",
+    "wordIds": ["wl-savoir", "wl-connaitre", "wl-comprendre", "wl-pouvoir", "wl-apprendre"],
+    "steps": [
+      {
+        "id": "wc-savoir-savoir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-savoir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": ["Je sais où elle habite.", "Tu sais nager ?", "Il ne sait pas la réponse."],
+        "options": ["знать факт / уметь делать", "быть знакомым с человеком", "хотеть", "видеть"],
+        "correctIndex": 0,
+        "explanation": "savoir — знать информацию (Je sais où…) и уметь (savoir + инфинитив: savoir nager). Знакомство с человеком/местом — это уже connaître."
+      },
+      {
+        "id": "wc-savoir-connaitre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-connaitre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Je connais bien Paris.",
+          "Tu connais ma sœur ?",
+          "Elle connaît cette chanson."
+        ],
+        "options": [
+          "быть знакомым с (человеком, местом, темой)",
+          "знать точный факт",
+          "уметь делать",
+          "учить наизусть"
+        ],
+        "correctIndex": 0,
+        "explanation": "connaître — быть знакомым: с человеком, местом, произведением. Всегда с прямым дополнением (connaître Paris, connaître quelqu'un), без que."
+      },
+      {
+        "id": "wc-savoir-savoir-cmp",
+        "kind": "compare",
+        "wordId": "wl-savoir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "savoir и connaître — главная пара темы. В чём разница здесь?",
+        "phrases": ["Je connais cette ville.", "Je sais où elle se trouve."],
+        "options": [
+          "connaître = быть знакомым (с городом); savoir = знать факт (где он находится)",
+          "Это синонимы, разницы нет",
+          "connaître = знать факт; savoir = быть знакомым",
+          "Оба значат «уметь»"
+        ],
+        "correctIndex": 0,
+        "explanation": "connaître + существительное (быть знакомым: connaître la ville). savoir + информация/придаточное (savoir où, que, comment…) или + инфинитив (уметь). Связку que берёт только savoir."
+      },
+      {
+        "id": "wc-savoir-comprendre-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-comprendre",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать comprendre. Что оно значит?",
+        "bridge": "Английское to comprehend = понимать, постигать — тот же латинский корень, что и у comprendre.",
+        "options": ["понимать", "сравнивать", "обещать", "начинать"],
+        "correctIndex": 0,
+        "explanation": "comprendre = понимать. Англ. comprehend — прямой родственник. Бонус: comprendre значит ещё и «включать в себя» (Le prix comprend le petit-déjeuner)."
+      },
+      {
+        "id": "wc-savoir-comprendre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-comprendre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Je ne comprends pas la question.",
+          "Tu comprends le français ?",
+          "Le prix comprend le petit-déjeuner."
+        ],
+        "options": [
+          "понимать; а также включать в себя",
+          "только громко говорить",
+          "забывать",
+          "переводить"
+        ],
+        "correctIndex": 0,
+        "explanation": "comprendre — прежде всего «понимать» (la question, le français). Третья сцена показывает второе значение: «включать в себя» (Le prix comprend… = в цену входит…)."
+      },
+      {
+        "id": "wc-savoir-pouvoir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pouvoir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Je peux t'aider ?",
+          "On ne peut pas fumer ici.",
+          "Tu peux fermer la fenêtre ?"
+        ],
+        "options": [
+          "мочь: иметь возможность или разрешение",
+          "хотеть",
+          "уметь (благодаря тренировке)",
+          "быть должным"
+        ],
+        "correctIndex": 0,
+        "explanation": "pouvoir + инфинитив = «мочь»: возможность (Je peux t'aider), разрешение (On ne peut pas fumer), вежливая просьба (Tu peux fermer…). Формы: je peux, tu peux, il peut."
+      },
+      {
+        "id": "wc-savoir-pouvoir-cmp",
+        "kind": "compare",
+        "wordId": "wl-pouvoir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "pouvoir и savoir оба переводят «уметь/мочь». В чём разница здесь?",
+        "phrases": ["Je sais nager.", "Je ne peux pas nager aujourd'hui, je suis malade."],
+        "options": [
+          "savoir = уметь (есть навык); pouvoir = мочь сейчас (есть возможность)",
+          "Это синонимы, разницы нет",
+          "savoir = мочь сейчас; pouvoir = уметь вообще",
+          "Оба значат «хотеть»"
+        ],
+        "correctIndex": 0,
+        "explanation": "savoir nager = владею навыком плавания (научился). pouvoir nager = есть возможность поплыть в данный момент. Болен → навык остался (sais), но возможности нет (ne peux pas)."
+      },
+      {
+        "id": "wc-savoir-apprendre-trap",
+        "kind": "trap",
+        "wordId": "wl-apprendre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ловушка ложного друга. Что значит apprendre в «J'apprends le français» ?",
+        "options": ["учить, учиться (изучать)", "арестовать, схватить", "опасаться", "одобрять"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: apprendre похоже на англ. apprehend (задержать, опасаться), но значит «учить(ся)»: apprendre le français — изучать французский. Ещё apprendre = «узнавать новость»: J'ai appris la nouvelle."
+      },
+      {
+        "id": "wc-savoir-apprendre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-apprendre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": ["J'apprends l'espagnol.", "Il apprend vite.", "J'ai appris la nouvelle hier."],
+        "options": [
+          "учить(ся), изучать; а также узнать (новость)",
+          "преподавать кому-то",
+          "забывать",
+          "повторять вслух"
+        ],
+        "correctIndex": 0,
+        "explanation": "apprendre = «учиться, изучать» (apprendre l'espagnol) и «узнать новость» (apprendre la nouvelle). «Учить кого-то» — это apprendre à quelqu'un (Il m'apprend à conduire)."
+      },
+      {
+        "id": "wc-savoir-connaitre-collo",
+        "kind": "sort",
+        "wordId": "wl-connaitre",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с connaître звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "connaître quelqu'un",
+            "basket": "ok"
+          },
+          {
+            "text": "connaître la ville",
+            "basket": "ok"
+          },
+          {
+            "text": "connaître bien un sujet",
+            "basket": "ok"
+          },
+          {
+            "text": "connaître que c'est vrai",
+            "basket": "no"
+          },
+          {
+            "text": "connaître nager",
+            "basket": "no"
+          }
+        ],
+        "explanation": "connaître берёт прямое дополнение: connaître quelqu'un / la ville / un sujet. Связку que («connaître que…») и инфинитив («connaître nager») берёт savoir, не connaître."
+      },
+      {
+        "id": "wc-savoir-pouvoir-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-pouvoir",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать pouvoir. Что значит le pouvoir как существительное?",
+        "bridge": "Глагол pouvoir = «мочь»; существительное le pouvoir = «власть, сила» — сравните с англ. power.",
+        "options": ["власть, сила", "бедность", "погода", "пыль"],
+        "correctIndex": 0,
+        "explanation": "le pouvoir (сущ.) = власть/сила, как англ. power. Глагол pouvoir = «мочь». Один корень — это мост: иметь силу = мочь."
+      },
+      {
+        "id": "wc-savoir-savoir-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-savoir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три глагола про знание/умение — и один лишний. Найди лишний.",
+        "options": ["savoir", "connaître", "apprendre", "manger"],
+        "correctIndex": 3,
+        "explanation": "savoir, connaître, apprendre — поле «знать / уметь / учиться». manger («есть, кушать») сюда не относится — оно лишнее."
+      },
+      {
+        "id": "wc-savoir-savoir-hint",
+        "kind": "wordHint",
+        "wordId": "wl-savoir",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: «знать факт» и «уметь» (с инфинитивом). Берёт que и où.",
+        "answer": "savoir",
+        "hints": [
+          "Начинается на s…",
+          "6 букв, заканчивается на -oir",
+          "Je ___ nager. / Je ___ que c'est vrai."
+        ],
+        "explanation": "savoir — знать (факт, информацию) и уметь (savoir + инфинитив). Формы: je sais, tu sais, il sait, nous savons."
+      },
+      {
+        "id": "wc-savoir-comprendre-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-comprendre",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для comprendre (понимать), опираясь на английское comprehend.",
+        "examples": [
+          "comprendre = comprehend: «я схватил (com-) и взял (prendre) смысл» — значит понял.",
+          "Цена comprend завтрак — она «вмещает» его; так же ум «вмещает» смысл = понимает."
+        ]
+      }
+    ]
+  }
+]

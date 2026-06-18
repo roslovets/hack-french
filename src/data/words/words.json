@@ -9,9 +9,18 @@
     "translationsEn": ["bread"],
     "semanticCore": "Хлеб как продукт и часть еды.",
     "collocations": [
-      { "fr": "acheter du pain", "ru": "купить хлеб" },
-      { "fr": "une tranche de pain", "ru": "ломтик хлеба" },
-      { "fr": "du pain frais", "ru": "свежий хлеб" }
+      {
+        "fr": "acheter du pain",
+        "ru": "купить хлеб"
+      },
+      {
+        "fr": "une tranche de pain",
+        "ru": "ломтик хлеба"
+      },
+      {
+        "fr": "du pain frais",
+        "ru": "свежий хлеб"
+      }
     ],
     "contrastPairs": [
       {
@@ -34,8 +43,14 @@
     "translationsEn": ["baguette"],
     "semanticCore": "Длинный белый хлеб; в булочной слово значит именно его.",
     "collocations": [
-      { "fr": "une baguette tradition", "ru": "багет «традисьон»" },
-      { "fr": "couper la baguette", "ru": "разрезать багет" }
+      {
+        "fr": "une baguette tradition",
+        "ru": "багет «традисьон»"
+      },
+      {
+        "fr": "couper la baguette",
+        "ru": "разрезать багет"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,8 +72,14 @@
     "translationsEn": ["still", "again", "more"],
     "semanticCore": "Повтор или добавка («ещё»), либо продолжение («всё ещё»).",
     "collocations": [
-      { "fr": "encore un café", "ru": "ещё один кофе" },
-      { "fr": "encore une fois", "ru": "ещё раз" }
+      {
+        "fr": "encore un café",
+        "ru": "ещё один кофе"
+      },
+      {
+        "fr": "encore une fois",
+        "ru": "ещё раз"
+      }
     ],
     "contrastPairs": [
       {
@@ -80,8 +101,14 @@
     "translationsEn": ["fresh", "cool"],
     "semanticCore": "Свежий (недавний) или прохладный (о погоде, напитке).",
     "collocations": [
-      { "fr": "du pain frais", "ru": "свежий хлеб" },
-      { "fr": "il fait frais", "ru": "прохладно" }
+      {
+        "fr": "du pain frais",
+        "ru": "свежий хлеб"
+      },
+      {
+        "fr": "il fait frais",
+        "ru": "прохладно"
+      }
     ],
     "contrastPairs": [
       {
@@ -104,15 +131,692 @@
     "translationsEn": ["slice"],
     "semanticCore": "Тонкий ровный отрезанный кусок (хлеба, сыра, ветчины).",
     "collocations": [
-      { "fr": "une tranche de pain", "ru": "ломтик хлеба" },
-      { "fr": "une tranche de jambon", "ru": "ломтик ветчины" }
+      {
+        "fr": "une tranche de pain",
+        "ru": "ломтик хлеба"
+      },
+      {
+        "fr": "une tranche de jambon",
+        "ru": "ломтик ветчины"
+      }
     ],
     "contrastPairs": [
-      { "with": "morceau", "note": "tranche — тонкий ровный ломтик; morceau — кусок любой формы." }
+      {
+        "with": "morceau",
+        "note": "tranche — тонкий ровный ломтик; morceau — кусок любой формы."
+      }
     ],
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["boulangerie", "nourriture"],
     "caseIds": []
+  },
+  {
+    "id": "wl-cafe-cafe",
+    "lemma": "café",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ka.fe/",
+    "translationsRu": ["кофе", "кафе"],
+    "translationsEn": ["coffee", "café"],
+    "semanticCore": "И напиток (кофе), и заведение, где его пьют (кафе) — одно слово на оба значения.",
+    "collocations": [
+      {
+        "fr": "un café, s'il vous plaît",
+        "ru": "один кофе, пожалуйста"
+      },
+      {
+        "fr": "un café au lait",
+        "ru": "кофе с молоком"
+      },
+      {
+        "fr": "prendre un café",
+        "ru": "выпить кофе"
+      },
+      {
+        "fr": "aller au café",
+        "ru": "пойти в кафе"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "thé",
+        "note": "café — кофе (из зёрен); thé — чай (из листьев). Оба горячие напитки, но разные."
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A1",
+    "tags": ["cafe", "boisson", "lieu"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "wl-cafe-the",
+    "lemma": "thé",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/te/",
+    "translationsRu": ["чай"],
+    "translationsEn": ["tea"],
+    "semanticCore": "Горячий напиток из заваренных листьев; мужской род (un thé).",
+    "collocations": [
+      {
+        "fr": "un thé au citron",
+        "ru": "чай с лимоном"
+      },
+      {
+        "fr": "un thé vert",
+        "ru": "зелёный чай"
+      },
+      {
+        "fr": "boire du thé",
+        "ru": "пить чай"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "café",
+        "note": "thé — чай; café — кофе. Не путай также с англ. «the»: по-французски «the» — это чай, а не артикль."
+      }
+    ],
+    "frequencyRank": 450,
+    "level": "A1",
+    "tags": ["cafe", "boisson"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "wl-cafe-eau",
+    "lemma": "eau",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/o/",
+    "translationsRu": ["вода"],
+    "translationsEn": ["water"],
+    "semanticCore": "Вода как напиток и вещество; женский род (l'eau, de l'eau).",
+    "collocations": [
+      {
+        "fr": "un verre d'eau",
+        "ru": "стакан воды"
+      },
+      {
+        "fr": "de l'eau plate",
+        "ru": "вода без газа"
+      },
+      {
+        "fr": "de l'eau gazeuse",
+        "ru": "вода с газом"
+      },
+      {
+        "fr": "une carafe d'eau",
+        "ru": "графин воды (из-под крана)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vin",
+        "note": "eau — вода (бесплатна, можно попросить карафку); vin — вино. В кафе путать дорого."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A1",
+    "tags": ["cafe", "boisson"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "wl-cafe-addition",
+    "lemma": "addition",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/a.di.sjɔ̃/",
+    "translationsRu": ["счёт (к оплате)", "сложение"],
+    "translationsEn": ["bill", "check", "addition"],
+    "semanticCore": "В кафе/ресторане — счёт, который приносят к оплате (буквально «сложение» сумм).",
+    "collocations": [
+      {
+        "fr": "l'addition, s'il vous plaît",
+        "ru": "счёт, пожалуйста"
+      },
+      {
+        "fr": "demander l'addition",
+        "ru": "попросить счёт"
+      },
+      {
+        "fr": "payer l'addition",
+        "ru": "оплатить счёт"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "facture",
+        "note": "addition — счёт в кафе/ресторане; facture — счёт-фактура (от фирмы, в отеле, за услуги)."
+      },
+      {
+        "with": "addition (англ.)",
+        "note": "Англ. «addition» = добавление/сложение. Во фр. кафе addition = счёт. Полезный ложный друг наоборот."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A1",
+    "tags": ["cafe", "argent", "faux-ami"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "wl-cafe-commander",
+    "lemma": "commander",
+    "pos": "verb",
+    "ipa": "/kɔ.mɑ̃.de/",
+    "translationsRu": ["заказывать", "сделать заказ"],
+    "translationsEn": ["to order"],
+    "semanticCore": "Сделать заказ (в кафе, ресторане, магазине); назвать, что хочешь получить.",
+    "collocations": [
+      {
+        "fr": "commander un café",
+        "ru": "заказать кофе"
+      },
+      {
+        "fr": "je voudrais commander",
+        "ru": "я хотел бы сделать заказ"
+      },
+      {
+        "fr": "prendre la commande",
+        "ru": "принять заказ"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "commander (англ. command)",
+        "note": "Похоже на англ. «command» (приказывать), но в кафе commander = заказывать. Связь есть, но значение мягче."
+      }
+    ],
+    "frequencyRank": 500,
+    "level": "A1",
+    "tags": ["cafe", "verbe", "faux-ami"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "wl-cafe-serveur",
+    "lemma": "serveur",
+    "displayForm": "serveur / serveuse",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɛʁ.vœʁ/",
+    "translationsRu": ["официант"],
+    "translationsEn": ["waiter", "server"],
+    "semanticCore": "Человек, который принимает заказ и приносит блюда в кафе/ресторане.",
+    "collocations": [
+      {
+        "fr": "appeler le serveur",
+        "ru": "позвать официанта"
+      },
+      {
+        "fr": "demander au serveur",
+        "ru": "спросить у официанта"
+      },
+      {
+        "fr": "le serveur apporte les plats",
+        "ru": "официант приносит блюда"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "garçon",
+        "note": "serveur — нейтральное слово «официант». Окликать «Garçon !» сегодня старомодно и высокомерно; вежливо — «Excusez-moi, monsieur»."
+      }
+    ],
+    "frequencyRank": 800,
+    "level": "A1",
+    "tags": ["cafe", "personne", "metier"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "wl-cafe-terrasse",
+    "lemma": "terrasse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/te.ʁas/",
+    "translationsRu": ["терраса", "уличные столики кафе"],
+    "translationsEn": ["terrace", "outdoor seating"],
+    "semanticCore": "Столики кафе под открытым небом, на улице; «en terrasse» — сидеть снаружи.",
+    "collocations": [
+      {
+        "fr": "en terrasse",
+        "ru": "на террасе (на улице)"
+      },
+      {
+        "fr": "s'installer en terrasse",
+        "ru": "устроиться на террасе"
+      },
+      {
+        "fr": "une table en terrasse",
+        "ru": "столик на улице"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "terrace (англ.)",
+        "note": "Англ. «terrace» — терраса/площадка; фр. «terrasse» (с двумя s) в кафе значит уличные столики. Хороший английский мост."
+      }
+    ],
+    "frequencyRank": 900,
+    "level": "A1",
+    "tags": ["cafe", "lieu"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "wl-cafe-sucre",
+    "lemma": "sucre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sykʁ/",
+    "translationsRu": ["сахар"],
+    "translationsEn": ["sugar"],
+    "semanticCore": "Сахар; то, что добавляют в кофе или чай для сладости.",
+    "collocations": [
+      {
+        "fr": "avec du sucre",
+        "ru": "с сахаром"
+      },
+      {
+        "fr": "sans sucre",
+        "ru": "без сахара"
+      },
+      {
+        "fr": "un morceau de sucre",
+        "ru": "кусочек сахара"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sel",
+        "note": "sucre — сахар (сладкий); sel — соль (солёная). На столе кафе оба бывают рядом — не перепутай."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A1",
+    "tags": ["cafe", "nourriture"],
+    "caseIds": ["wc-cafe"]
+  },
+  {
+    "id": "voir",
+    "lemma": "voir",
+    "pos": "verb",
+    "ipa": "/vwaʁ/",
+    "translationsRu": ["видеть", "увидеть"],
+    "translationsEn": ["to see"],
+    "semanticCore": "Воспринимать глазами без усилия: образ сам попадает в поле зрения. Также «встретиться, повидаться» и «понимать» (je vois = понятно).",
+    "collocations": [
+      {
+        "fr": "voir un film",
+        "ru": "посмотреть фильм"
+      },
+      {
+        "fr": "voir le médecin",
+        "ru": "сходить к врачу (показаться врачу)"
+      },
+      {
+        "fr": "je vois",
+        "ru": "понятно / ясно"
+      },
+      {
+        "fr": "on verra",
+        "ru": "посмотрим / там видно будет"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "regarder",
+        "note": "voir — видеть (образ сам попадает в глаза, пассивно); regarder — смотреть, направлять взгляд (намеренно, активно)."
+      }
+    ],
+    "frequencyRank": 35,
+    "level": "A2",
+    "tags": ["perception", "verbe", "vue"],
+    "caseIds": ["wc-perception"]
+  },
+  {
+    "id": "regarder",
+    "lemma": "regarder",
+    "pos": "verb",
+    "ipa": "/ʁə.ɡaʁ.de/",
+    "translationsRu": ["смотреть", "глядеть"],
+    "translationsEn": ["to look (at)", "to watch"],
+    "semanticCore": "Намеренно направлять взгляд на что-то, разглядывать или наблюдать. Прямое дополнение без предлога: regarder la télé. В быту также «касаться»: ça ne te regarde pas.",
+    "collocations": [
+      {
+        "fr": "regarder la télé",
+        "ru": "смотреть телевизор"
+      },
+      {
+        "fr": "regarder par la fenêtre",
+        "ru": "смотреть в окно"
+      },
+      {
+        "fr": "Regarde !",
+        "ru": "Смотри!"
+      },
+      {
+        "fr": "ça ne te regarde pas",
+        "ru": "это тебя не касается"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "voir",
+        "note": "regarder — смотреть намеренно (направляешь взгляд); voir — видеть (образ сам попадает в глаза)."
+      },
+      {
+        "with": "regard (англ. regard)",
+        "note": "Англ. \"regard\" чаще значит «уважение, отношение», а фр. regarder — буквально «смотреть на». Совпадение помогает запомнить, но не путай оттенки."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A2",
+    "tags": ["perception", "verbe", "vue"],
+    "caseIds": ["wc-perception"]
+  },
+  {
+    "id": "entendre",
+    "lemma": "entendre",
+    "pos": "verb",
+    "ipa": "/ɑ̃.tɑ̃dʁ/",
+    "translationsRu": ["слышать"],
+    "translationsEn": ["to hear"],
+    "semanticCore": "Воспринимать звук ушами без усилия: звук сам доходит до тебя. Также «entendre parler de» — слышать о чём-то.",
+    "collocations": [
+      {
+        "fr": "entendre du bruit",
+        "ru": "слышать шум"
+      },
+      {
+        "fr": "je n'entends rien",
+        "ru": "я ничего не слышу"
+      },
+      {
+        "fr": "entendre parler de",
+        "ru": "слышать о чём-то"
+      },
+      {
+        "fr": "tu m'entends ?",
+        "ru": "ты меня слышишь?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "écouter",
+        "note": "entendre — слышать (звук сам доходит, пассивно); écouter — слушать (намеренно прислушиваешься, активно)."
+      },
+      {
+        "with": "attendre",
+        "note": "Ложный друг по форме: attendre = ждать, а entendre = слышать. Различай по приставке: at- (ждать) против en- (слышать)."
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A2",
+    "tags": ["perception", "verbe", "ouïe"],
+    "caseIds": ["wc-perception"]
+  },
+  {
+    "id": "ecouter",
+    "lemma": "écouter",
+    "pos": "verb",
+    "ipa": "/e.ku.te/",
+    "translationsRu": ["слушать"],
+    "translationsEn": ["to listen (to)"],
+    "semanticCore": "Намеренно прислушиваться, направлять внимание на звук. Прямое дополнение без предлога: écouter la radio. Также «слушаться»: écouter ses parents.",
+    "collocations": [
+      {
+        "fr": "écouter de la musique",
+        "ru": "слушать музыку"
+      },
+      {
+        "fr": "écouter la radio",
+        "ru": "слушать радио"
+      },
+      {
+        "fr": "Écoute-moi !",
+        "ru": "Слушай меня!"
+      },
+      {
+        "fr": "écouter ses parents",
+        "ru": "слушаться родителей"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "entendre",
+        "note": "écouter — слушать намеренно (прислушиваешься); entendre — слышать (звук сам доходит до ушей)."
+      }
+    ],
+    "frequencyRank": 230,
+    "level": "A2",
+    "tags": ["perception", "verbe", "ouïe"],
+    "caseIds": ["wc-perception"]
+  },
+  {
+    "id": "sembler",
+    "lemma": "sembler",
+    "pos": "verb",
+    "ipa": "/sɑ̃.ble/",
+    "translationsRu": ["казаться", "выглядеть (как будто)"],
+    "translationsEn": ["to seem", "to appear"],
+    "semanticCore": "Производить впечатление, выглядеть каким-то на основе того, что видишь или слышишь: il semble fatigué. Безличное «il semble que» / «il me semble» — кажется, что…",
+    "collocations": [
+      {
+        "fr": "il semble fatigué",
+        "ru": "он выглядит усталым"
+      },
+      {
+        "fr": "ça me semble bizarre",
+        "ru": "мне это кажется странным"
+      },
+      {
+        "fr": "il me semble que",
+        "ru": "мне кажется, что"
+      },
+      {
+        "fr": "à ce qu'il semble",
+        "ru": "судя по всему"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "paraître",
+        "note": "sembler и paraître оба значат «казаться»; sembler чуть более субъективно («по моему впечатлению»), paraître — «представляться внешне». В быту почти взаимозаменяемы."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["perception", "verbe", "impression"],
+    "caseIds": ["wc-perception"]
+  },
+  {
+    "id": "wl-savoir",
+    "lemma": "savoir",
+    "pos": "verb",
+    "ipa": "/sa.vwaʁ/",
+    "translationsRu": ["знать", "уметь"],
+    "translationsEn": ["to know (a fact)", "to know how to"],
+    "semanticCore": "Знание факта или информации; с инфинитивом — освоенный навык («уметь»).",
+    "collocations": [
+      {
+        "fr": "savoir nager",
+        "ru": "уметь плавать"
+      },
+      {
+        "fr": "savoir que…",
+        "ru": "знать, что…"
+      },
+      {
+        "fr": "savoir où / comment",
+        "ru": "знать где / как"
+      },
+      {
+        "fr": "je ne sais pas",
+        "ru": "я не знаю"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "connaître",
+        "note": "savoir = знать факт / уметь (+ que, où, инфинитив); connaître = быть знакомым с человеком/местом (+ прямое дополнение).",
+        "wordId": "wl-connaitre"
+      },
+      {
+        "with": "pouvoir",
+        "note": "savoir nager = иметь навык (научился); pouvoir nager = иметь возможность сейчас.",
+        "wordId": "wl-pouvoir"
+      }
+    ],
+    "frequencyRank": 40,
+    "level": "A2",
+    "tags": ["connaissance", "verbe"],
+    "caseIds": ["wc-savoir"]
+  },
+  {
+    "id": "wl-connaitre",
+    "lemma": "connaître",
+    "pos": "verb",
+    "ipa": "/kɔ.nɛtʁ/",
+    "translationsRu": ["знать", "быть знакомым с"],
+    "translationsEn": ["to know", "to be familiar with"],
+    "semanticCore": "Быть знакомым с кем-то или чем-то — человеком, местом, темой; всегда с прямым дополнением.",
+    "collocations": [
+      {
+        "fr": "connaître quelqu'un",
+        "ru": "знать кого-то"
+      },
+      {
+        "fr": "connaître la ville",
+        "ru": "знать город"
+      },
+      {
+        "fr": "connaître bien un sujet",
+        "ru": "хорошо знать тему"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "savoir",
+        "note": "connaître + существительное (быть знакомым); savoir + que / où / инфинитив (знать факт, уметь). Связку que берёт только savoir.",
+        "wordId": "wl-savoir"
+      }
+    ],
+    "frequencyRank": 95,
+    "level": "A2",
+    "tags": ["connaissance", "verbe"],
+    "caseIds": ["wc-savoir"]
+  },
+  {
+    "id": "wl-comprendre",
+    "lemma": "comprendre",
+    "pos": "verb",
+    "ipa": "/kɔ̃.pʁɑ̃dʁ/",
+    "translationsRu": ["понимать", "включать в себя"],
+    "translationsEn": ["to understand", "to comprise"],
+    "semanticCore": "Понимать смысл; второе значение — «включать в себя, содержать» (о цене, наборе).",
+    "collocations": [
+      {
+        "fr": "comprendre la question",
+        "ru": "понимать вопрос"
+      },
+      {
+        "fr": "je ne comprends pas",
+        "ru": "я не понимаю"
+      },
+      {
+        "fr": "le prix comprend…",
+        "ru": "в цену входит…"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "comprehend (англ.)",
+        "note": "Англ. comprehend = понимать — настоящий родственник comprendre, тот же латинский корень. Не ложный друг."
+      },
+      {
+        "with": "apprendre",
+        "note": "comprendre = понимать (схватить смысл); apprendre = учить(ся). Похожи по форме (-prendre), но разные действия.",
+        "wordId": "wl-apprendre"
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A2",
+    "tags": ["connaissance", "verbe"],
+    "caseIds": ["wc-savoir"]
+  },
+  {
+    "id": "wl-pouvoir",
+    "lemma": "pouvoir",
+    "pos": "verb",
+    "ipa": "/pu.vwaʁ/",
+    "translationsRu": ["мочь", "иметь возможность"],
+    "translationsEn": ["can", "to be able to", "may"],
+    "semanticCore": "Иметь возможность или разрешение что-то сделать (+ инфинитив); как существительное le pouvoir — власть.",
+    "collocations": [
+      {
+        "fr": "je peux t'aider",
+        "ru": "я могу тебе помочь"
+      },
+      {
+        "fr": "tu peux fermer la fenêtre ?",
+        "ru": "ты можешь закрыть окно?"
+      },
+      {
+        "fr": "on ne peut pas fumer ici",
+        "ru": "здесь нельзя курить"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "savoir",
+        "note": "pouvoir = мочь сейчас (возможность/разрешение); savoir + инфинитив = уметь (есть навык).",
+        "wordId": "wl-savoir"
+      },
+      {
+        "with": "power (англ.)",
+        "note": "Существительное le pouvoir = власть/сила, как англ. power; глагол pouvoir = «мочь». Один корень — удобный мост."
+      }
+    ],
+    "frequencyRank": 25,
+    "level": "A2",
+    "tags": ["connaissance", "verbe", "modal"],
+    "caseIds": ["wc-savoir"]
+  },
+  {
+    "id": "wl-apprendre",
+    "lemma": "apprendre",
+    "pos": "verb",
+    "ipa": "/a.pʁɑ̃dʁ/",
+    "translationsRu": ["учить", "учиться", "узнавать (новость)"],
+    "translationsEn": ["to learn", "to find out"],
+    "semanticCore": "Осваивать знание или навык (учить, изучать); также «узнать новость».",
+    "collocations": [
+      {
+        "fr": "apprendre le français",
+        "ru": "учить французский"
+      },
+      {
+        "fr": "apprendre à conduire",
+        "ru": "учиться водить"
+      },
+      {
+        "fr": "apprendre une nouvelle",
+        "ru": "узнать новость"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "apprehend (англ.)",
+        "note": "Ложный друг: англ. apprehend = задержать / опасаться, а фр. apprendre = учить(ся), узнавать."
+      },
+      {
+        "with": "comprendre",
+        "note": "apprendre = осваивать (учить); comprendre = понимать (схватить смысл). Сначала apprend, потом comprend.",
+        "wordId": "wl-comprendre"
+      }
+    ],
+    "frequencyRank": 160,
+    "level": "A2",
+    "tags": ["connaissance", "verbe"],
+    "caseIds": ["wc-savoir"]
   }
 ]
