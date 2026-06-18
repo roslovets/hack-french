@@ -1,0 +1,348 @@
+[
+  {
+    "id": "wc-prendre",
+    "title": "Брать, получать, приносить",
+    "theme": "prendre",
+    "level": "A2",
+    "wordIds": [
+      "wl-prendre",
+      "wl-recevoir",
+      "wl-apporter",
+      "wl-amener",
+      "wl-rendre",
+      "wl-garder",
+      "wl-choisir"
+    ],
+    "steps": [
+      {
+        "id": "wc-prendre-prendre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-prendre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Один глагол повторяется во всех трёх сценах. Что он значит?",
+        "contexts": ["Je prends un café.", "On prend le bus à huit heures.", "Prends ton temps !"],
+        "options": [
+          "брать / взять: предмет, транспорт, время",
+          "возвращать обратно",
+          "получать по почте",
+          "выбирать из нескольких"
+        ],
+        "correctIndex": 0,
+        "explanation": "prendre — самый общий «брать»: напиток (prendre un café), транспорт (prendre le bus), время (prendre son temps). Формы: je prends, tu prends, il prend, nous prenons."
+      },
+      {
+        "id": "wc-prendre-prendre-sort",
+        "kind": "sort",
+        "wordId": "wl-prendre",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с prendre звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "prendre une décision",
+            "basket": "ok"
+          },
+          {
+            "text": "prendre le métro",
+            "basket": "ok"
+          },
+          {
+            "text": "prendre une photo",
+            "basket": "ok"
+          },
+          {
+            "text": "prendre visite à un ami",
+            "basket": "no"
+          },
+          {
+            "text": "prendre le silence",
+            "basket": "no"
+          }
+        ],
+        "explanation": "prendre берёт предметы, транспорт, решение, фото. Но «навестить» — это rendre visite à un ami (не prendre), а молчание «хранят» — garder le silence."
+      },
+      {
+        "id": "wc-prendre-recevoir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-recevoir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "J'ai reçu une lettre ce matin.",
+          "Elle reçoit un cadeau pour son anniversaire.",
+          "Ce soir, nous recevons des amis."
+        ],
+        "options": [
+          "получать (что-то приходит) ; принимать гостей",
+          "брать самому в руку",
+          "возвращать обратно",
+          "оставлять себе"
+        ],
+        "correctIndex": 0,
+        "explanation": "recevoir — получать то, что приходит извне (lettre, cadeau, message), а также «принимать» гостей (recevoir des amis). Седиль (ç) ставится перед o и u, чтобы сохранить звук /s/: reçu, je reçois, il reçoit."
+      },
+      {
+        "id": "wc-prendre-recevoir-cmp",
+        "kind": "compare",
+        "wordId": "wl-recevoir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "recevoir и prendre оба про «взять что-то». В чём разница здесь?",
+        "phrases": ["Je reçois un cadeau.", "Je prends un café."],
+        "options": [
+          "recevoir = получаю (приходит ко мне само); prendre = беру (активно сам)",
+          "Это синонимы, разницы нет",
+          "recevoir = беру сам; prendre = мне дают",
+          "Оба значат «возвращаю»"
+        ],
+        "correctIndex": 0,
+        "explanation": "recevoir — кто-то даёт, ты получаешь (cadeau, lettre). prendre — ты сам берёшь действие в свои руки (un café, le bus). Подарок recevoir, чашку prendre."
+      },
+      {
+        "id": "wc-prendre-apporter-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-apporter",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "J'apporte le dessert.",
+          "Il apporte une bouteille de vin.",
+          "Apporte-moi mon manteau, s'il te plaît."
+        ],
+        "options": [
+          "приносить ПРЕДМЕТ (к месту, к человеку)",
+          "приводить человека",
+          "выбирать из нескольких",
+          "присматривать"
+        ],
+        "correctIndex": 0,
+        "explanation": "apporter — приносить ПРЕДМЕТ: le dessert, une bouteille, le manteau. Внутри porter (нести). Человека не apporte, а amène."
+      },
+      {
+        "id": "wc-prendre-apporter-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-apporter",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Корень -porter поможет узнать apporter. Что оно значит?",
+        "bridge": "В apporter спрятан porter (нести) — тот же латинский корень portare, что в англ. porter (носильщик в отеле) и transport. a- = «к, в сторону» → apporter = «нести к».",
+        "options": ["приносить (нести к кому-то)", "уносить навсегда", "выбирать", "получать"],
+        "correctIndex": 0,
+        "explanation": "Корень -porter = «нести» (ср. англ. porter, transport — от лат. portare). apporter = «при-нести» предмет к кому-то."
+      },
+      {
+        "id": "wc-prendre-amener-cmp",
+        "kind": "compare",
+        "wordId": "wl-amener",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Главная пара темы: apporter и amener. В чём разница здесь?",
+        "phrases": ["J'apporte un gâteau.", "J'amène ma sœur."],
+        "options": [
+          "apporter — ПРЕДМЕТ (porter = нести); amener — ЧЕЛОВЕКА (mener = вести)",
+          "Это синонимы, разницы нет",
+          "apporter — человека; amener — предмет",
+          "Оба значат «уносить»"
+        ],
+        "correctIndex": 0,
+        "explanation": "apporter содержит porter (нести вещь): apporter un gâteau. amener содержит mener (вести кого-то): amener sa sœur. Правило: предмет → apporter, человек/животное → amener."
+      },
+      {
+        "id": "wc-prendre-amener-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-amener",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "С тремя из этих дополнений amener звучит нормально. Найди лишнее (с ним нужен apporter).",
+        "options": [
+          "amener un ami",
+          "amener les enfants",
+          "amener le chien",
+          "amener une bouteille"
+        ],
+        "correctIndex": 3,
+        "explanation": "amener ведёт живых: un ami, les enfants, le chien. Бутылку (предмет) не amène, а apporte: apporter une bouteille. Это и есть граница apporter/amener."
+      },
+      {
+        "id": "wc-prendre-rendre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-rendre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Je dois rendre ce livre à la bibliothèque.",
+          "Il m'a rendu l'argent.",
+          "Cette musique me rend heureux."
+        ],
+        "options": [
+          "возвращать (отдавать обратно) ; делать (каким-то)",
+          "брать себе",
+          "получать по почте",
+          "выбирать"
+        ],
+        "correctIndex": 0,
+        "explanation": "rendre — отдавать обратно (rendre le livre, rendre l'argent) и «делать каким-то»: rendre + прилагательное (me rend heureux = делает меня счастливым)."
+      },
+      {
+        "id": "wc-prendre-rendre-cmp",
+        "kind": "compare",
+        "wordId": "wl-rendre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "prendre и rendre рифмуются, но противоположны. В чём разница здесь?",
+        "phrases": ["Je prends ton stylo.", "Je te rends ton stylo."],
+        "options": [
+          "prendre = беру; rendre = возвращаю взятое обратно",
+          "Это синонимы, разницы нет",
+          "prendre = возвращаю; rendre = беру",
+          "Оба значат «оставить себе»"
+        ],
+        "correctIndex": 0,
+        "explanation": "prendre — взять; rendre — вернуть то, что взял. Запомни рифму: tu prends, puis tu rends (берёшь, потом возвращаешь)."
+      },
+      {
+        "id": "wc-prendre-garder-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-garder",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Gardez la monnaie.",
+          "Je garde les enfants ce soir.",
+          "Il faut garder le silence ici."
+        ],
+        "options": [
+          "оставлять себе ; присматривать ; хранить",
+          "возвращать обратно",
+          "выбирать",
+          "приносить"
+        ],
+        "correctIndex": 0,
+        "explanation": "garder — держать у себя: оставить (gardez la monnaie = сдачу себе), присматривать (garder les enfants), хранить (garder le silence / un secret)."
+      },
+      {
+        "id": "wc-prendre-garder-cmp",
+        "kind": "compare",
+        "wordId": "wl-garder",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "В кафе: garder или rendre? В чём разница здесь?",
+        "phrases": ["Gardez la monnaie.", "Rendez-moi la monnaie, s'il vous plaît."],
+        "options": [
+          "garder = оставьте себе (не возвращайте); rendre = верните мне",
+          "Это синонимы, разницы нет",
+          "garder = верните; rendre = оставьте себе",
+          "Оба значат «возьмите»"
+        ],
+        "correctIndex": 0,
+        "explanation": "garder la monnaie = оставьте сдачу себе (чаевые). rendre la monnaie = верните мне сдачу. Противоположные действия с одной и той же monnaie."
+      },
+      {
+        "id": "wc-prendre-choisir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-choisir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Vous avez choisi ?",
+          "Je choisis le plat du jour.",
+          "C'est difficile de choisir entre les deux."
+        ],
+        "options": [
+          "выбирать (остановиться на одном из нескольких)",
+          "получать",
+          "возвращать",
+          "приносить"
+        ],
+        "correctIndex": 0,
+        "explanation": "choisir — выбрать одно из вариантов: «Vous avez choisi ?» — официант спрашивает, выбрали ли вы. choisir entre… — выбирать между. Формы: je choisis, nous choisissons."
+      },
+      {
+        "id": "wc-prendre-choisir-cmp",
+        "kind": "compare",
+        "wordId": "wl-choisir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "В ресторане идут подряд choisir и prendre. В чём разница здесь?",
+        "phrases": ["J'ai choisi : je prends le poulet.", "Je prends le poulet."],
+        "options": [
+          "choisir = решить, какое блюдо; prendre = заказать/взять выбранное",
+          "Это синонимы, разницы нет",
+          "choisir = заказать; prendre = подумать",
+          "Оба значат «получить»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Сначала on choisit (решаешь в уме, что хочешь), потом on prend (озвучиваешь заказ: «je prends le poulet»). choisir — мысль, prendre — заказ."
+      },
+      {
+        "id": "wc-prendre-recevoir-trap",
+        "kind": "trap",
+        "wordId": "wl-recevoir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ловушка ложного друга. Что значит la recette в «Donne-moi la recette de ce gâteau» ?",
+        "options": ["рецепт (кулинарный)", "квитанция, чек", "приём (визит)", "получение"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: recevoir = получать, и кажется, что la recette — это «получение/расписка». Но la recette = рецепт (блюда). «Квитанция, чек» — это le reçu или le ticket."
+      },
+      {
+        "id": "wc-prendre-rendre-hint",
+        "kind": "wordHint",
+        "wordId": "wl-rendre",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: «отдать обратно» взятое (книгу, деньги). Рифмуется с prendre.",
+        "answer": "rendre",
+        "hints": [
+          "Начинается на r…",
+          "6 букв: как prendre, но без p в начале",
+          "Je dois ___ ce livre à la bibliothèque."
+        ],
+        "explanation": "rendre — вернуть взятое: rendre un livre, rendre l'argent. Также rendre + прилагательное = «делать каким-то» (rendre heureux)."
+      },
+      {
+        "id": "wc-prendre-choisir-hint",
+        "kind": "wordHint",
+        "wordId": "wl-choisir",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: «остановиться на одном из вариантов» (в меню, в магазине).",
+        "answer": "choisir",
+        "hints": [
+          "Начинается на ch…",
+          "7 букв, заканчивается на -ir",
+          "Vous avez ___ ? — спрашивает официант."
+        ],
+        "explanation": "choisir — выбирать. Группа на -ir с удвоением: je choisis, nous choisissons. Vous avez choisi ? = «Вы выбрали?»."
+      },
+      {
+        "id": "wc-prendre-prendre-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-prendre",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию, чтобы не путать prendre (взять) и rendre (вернуть).",
+        "examples": [
+          "prendre на P — «Положил в карман» (взял себе). rendre на R — «Расстался, вернул».",
+          "Рифма-цепочка: «Je prends, puis je rends» — сначала беру, потом возвращаю."
+        ]
+      }
+    ]
+  }
+]

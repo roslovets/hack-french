@@ -1,0 +1,290 @@
+[
+  {
+    "id": "wc-maison",
+    "title": "Дом и повседневные вещи",
+    "theme": "maison",
+    "level": "A1",
+    "wordIds": [
+      "wl-maison-maison",
+      "wl-maison-cle",
+      "wl-maison-porte",
+      "wl-maison-fenetre",
+      "wl-maison-table",
+      "wl-maison-lit",
+      "wl-maison-mur",
+      "wl-maison-etage"
+    ],
+    "steps": [
+      {
+        "id": "wc-maison-maison-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-maison",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je rentre à la maison après le travail.",
+          "Ils ont acheté une grande maison à la campagne.",
+          "Reste à la maison, il pleut."
+        ],
+        "options": ["дом (жилище)", "комната", "квартира", "семья"],
+        "correctIndex": 0,
+        "explanation": "maison (f) — дом как жилище. «à la maison» — дома / домой. Квартира — un appartement, комната — une pièce / une chambre."
+      },
+      {
+        "id": "wc-maison-maison-collo",
+        "kind": "sort",
+        "wordId": "wl-maison-maison",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом maison звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "rentrer à la maison",
+            "basket": "ok"
+          },
+          {
+            "text": "une maison de campagne",
+            "basket": "ok"
+          },
+          {
+            "text": "rester à la maison",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une maison",
+            "basket": "no"
+          },
+          {
+            "text": "une maison plate",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«rentrer / rester à la maison», «une maison de campagne» — естественно. «boire une maison» (пить дом) и «une maison plate» (плоский дом, по аналогии с eau plate) — бессмыслица."
+      },
+      {
+        "id": "wc-maison-cle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-cle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai perdu mes clés.",
+          "La clé est sous le paillasson.",
+          "Tu as la clé de la porte ?"
+        ],
+        "options": ["ключ", "замок", "ручка двери", "звонок"],
+        "correctIndex": 0,
+        "explanation": "clé (f) — ключ. Замок — une serrure, дверная ручка — une poignée. Слово можно писать и clé, и clef — произносится одинаково /kle/."
+      },
+      {
+        "id": "wc-maison-cle-hint",
+        "kind": "wordHint",
+        "wordId": "wl-maison-cle",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: маленький металлический предмет, которым открывают и закрывают дверь.",
+        "answer": "clé",
+        "hints": ["Начинается на c…", "3 буквы, есть accent aigu", "J'ai perdu mes ___s."],
+        "explanation": "clé (f) — ключ. Пишется clé или clef, читается /kle/. Во множественном — des clés."
+      },
+      {
+        "id": "wc-maison-porte-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-porte",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ferme la porte, s'il te plaît.",
+          "On frappe à la porte.",
+          "La porte d'entrée est rouge."
+        ],
+        "options": ["дверь", "окно", "стена", "ключ"],
+        "correctIndex": 0,
+        "explanation": "porte (f) — дверь. «la porte d'entrée» — входная дверь, «frapper à la porte» — стучать в дверь. Окно — une fenêtre."
+      },
+      {
+        "id": "wc-maison-porte-cmp",
+        "kind": "compare",
+        "wordId": "wl-maison-porte",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "fermer la porte и fermer la porte à clé. В чём разница?",
+        "phrases": ["Ferme la porte.", "Ferme la porte à clé."],
+        "options": [
+          "«fermer la porte» — просто закрыть дверь; «fermer la porte à clé» — запереть на ключ.",
+          "Это полные синонимы, разницы нет.",
+          "«fermer la porte» значит запереть на ключ, а «à clé» — просто прикрыть.",
+          "Второе значит «открыть дверь ключом»."
+        ],
+        "correctIndex": 0,
+        "explanation": "fermer la porte — закрыть (притворить) дверь. Чтобы сказать «запереть на ключ», добавляют à clé: fermer la porte à clé."
+      },
+      {
+        "id": "wc-maison-fenetre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-fenetre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ouvre la fenêtre, il fait chaud.",
+          "Le chat dort près de la fenêtre.",
+          "La fenêtre donne sur le jardin."
+        ],
+        "options": ["окно", "дверь", "балкон", "потолок"],
+        "correctIndex": 0,
+        "explanation": "fenêtre (f) — окно. Обрати внимание на accent circonflexe: f-e-n-ê-t-r-e. «donner sur» — выходить на (окно выходит в сад)."
+      },
+      {
+        "id": "wc-maison-fenetre-trap",
+        "kind": "trap",
+        "wordId": "wl-maison-fenetre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В компьютере «окно» — это window. А «окно» в стене дома — как по-французски?",
+        "options": ["une fenêtre", "un fenster", "une window", "un vitre"],
+        "correctIndex": 0,
+        "explanation": "Окно (в стене и на экране) — une fenêtre. «window» — английское, «fenster» — немецкое; во французском их нет. «vitre» (f) — это стекло окна, а не само окно."
+      },
+      {
+        "id": "wc-maison-table-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-table",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les clés sont sur la table.",
+          "On passe à table !",
+          "Une table pour deux, s'il vous plaît."
+        ],
+        "options": ["стол", "стул", "тарелка", "скатерть"],
+        "correctIndex": 0,
+        "explanation": "table (f) — стол. «passer à table» — садиться за стол (есть). «une table pour deux» — столик на двоих. Стул — une chaise."
+      },
+      {
+        "id": "wc-maison-table-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-maison-table",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит table?",
+        "bridge": "Англ. «table» — стол; пишется точно так же. Только читается по-французски /tabl/, без английского звука.",
+        "options": ["стол", "стул", "доска", "блюдо"],
+        "correctIndex": 0,
+        "explanation": "table = стол. Англ. «table» — прямой мост: те же буквы. Различается только произношение."
+      },
+      {
+        "id": "wc-maison-lit-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-lit",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je vais au lit, je suis fatigué.",
+          "Le chat dort sur mon lit.",
+          "Fais ton lit avant de partir."
+        ],
+        "options": ["кровать", "диван", "одеяло", "комната"],
+        "correctIndex": 0,
+        "explanation": "lit (m) — кровать. «aller au lit» — ложиться спать, «faire son lit» — застилать постель. Диван — un canapé."
+      },
+      {
+        "id": "wc-maison-lit-trap",
+        "kind": "trap",
+        "wordId": "wl-maison-lit",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово lit пишется как англ. «lit» (зажжённый, освещённый). Что оно значит по-французски?",
+        "options": ["кровать", "освещённый", "буква", "литр"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: фр. lit (m) — это «кровать», а не англ. «lit» (освещённый). Конечная t не читается: /li/. Литр — un litre, буква — une lettre."
+      },
+      {
+        "id": "wc-maison-mur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-mur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il y a un tableau sur le mur.",
+          "Les murs sont blancs.",
+          "Le chat saute par-dessus le mur."
+        ],
+        "options": ["стена", "пол", "потолок", "крыша"],
+        "correctIndex": 0,
+        "explanation": "mur (m) — стена. «sur le mur» — на стене. Пол — le sol, потолок — le plafond, крыша — le toit."
+      },
+      {
+        "id": "wc-maison-mur-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-maison-mur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — части того, из чего сделана комната. Найди лишнее.",
+        "options": ["le mur", "le sol", "le plafond", "la clé"],
+        "correctIndex": 3,
+        "explanation": "Стена (le mur), пол (le sol) и потолок (le plafond) — части комнаты. Ключ (la clé) — лишний: это не часть комнаты, а отдельный предмет."
+      },
+      {
+        "id": "wc-maison-etage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maison-etage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'habite au troisième étage.",
+          "L'appartement est au premier étage.",
+          "Il monte à l'étage."
+        ],
+        "options": ["этаж", "лестница", "лифт", "подъезд"],
+        "correctIndex": 0,
+        "explanation": "étage (m) — этаж. Важно: «le premier étage» — это второй этаж по-русски, потому что нижний называют le rez-de-chaussée (первый/наземный). Лестница — un escalier, лифт — un ascenseur."
+      },
+      {
+        "id": "wc-maison-etage-trap",
+        "kind": "trap",
+        "wordId": "wl-maison-etage",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг написал, что живёт «au premier étage». На каком этаже его искать по-русски?",
+        "options": [
+          "на втором — нижний этаж зовётся le rez-de-chaussée",
+          "на первом — premier значит «первый»",
+          "на любом — слово не про этаж",
+          "на нулевом — premier значит «нулевой»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка счёта этажей: нижний (наземный) этаж — le rez-de-chaussée, и только над ним идёт le premier étage. Поэтому «premier étage» = русский второй этаж."
+      },
+      {
+        "id": "wc-maison-maison-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-maison-maison",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для maison (дом), чтобы запомнить женский род (une maison) и носовой звук на конце /mɛ.zɔ̃/.",
+        "examples": [
+          "«Майонез» начинается так же: maiso… — но дом это la maison, она «своя», женского рода.",
+          "Представь тёплый дом, куда ты «rentres à la maison» — возвращаешься к себе, к la maison."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,315 @@
+[
+  {
+    "id": "wc-ville",
+    "title": "Движение по городу",
+    "theme": "ville",
+    "level": "A2",
+    "wordIds": [
+      "wl-ville-aller",
+      "wl-ville-venir",
+      "wl-ville-tourner",
+      "wl-ville-continuer",
+      "wl-ville-traverser",
+      "wl-ville-monter",
+      "wl-ville-descendre",
+      "wl-ville-rue"
+    ],
+    "steps": [
+      {
+        "id": "wc-ville-aller-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ville-aller",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On va au centre-ville à pied ?",
+          "Pour aller à la gare, c'est tout droit.",
+          "Je vais à la poste, tu viens ?"
+        ],
+        "options": ["идти / ехать (куда-то)", "приходить (сюда)", "оставаться", "искать"],
+        "correctIndex": 0,
+        "explanation": "aller — двигаться куда-то, от себя к цели: aller à la gare, aller au centre-ville. Формы: je vais, tu vas, on va, il/elle va."
+      },
+      {
+        "id": "wc-ville-aller-venir-cmp",
+        "kind": "compare",
+        "wordId": "wl-ville-venir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "aller и venir. В чём разница направления?",
+        "phrases": ["Je vais à la gare.", "Tu viens à la gare avec moi ?"],
+        "options": [
+          "aller — двигаться ТУДА, от говорящего к цели; venir — двигаться СЮДА, к говорящему или с ним.",
+          "Это полные синонимы, разницы нет.",
+          "aller — для пешком, venir — только на транспорте.",
+          "venir — двигаться туда, aller — оставаться на месте."
+        ],
+        "correctIndex": 0,
+        "explanation": "aller = идти/ехать от себя к цели (туда); venir = идти к говорящему или присоединиться к нему (сюда, со мной). По-русски оба часто «идти», но направление противоположное."
+      },
+      {
+        "id": "wc-ville-venir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ville-venir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Tu viens avec nous au marché ?",
+          "Elle vient à pied, ce n'est pas loin.",
+          "Venez, je vous montre la rue."
+        ],
+        "options": [
+          "приходить / идти сюда (к говорящему)",
+          "уходить далеко",
+          "поворачивать",
+          "продавать"
+        ],
+        "correctIndex": 0,
+        "explanation": "venir — двигаться к говорящему или вместе с ним: «Tu viens ?» = «Идёшь (с нами)?». Формы: je viens, tu viens, il/elle vient, vous venez."
+      },
+      {
+        "id": "wc-ville-tourner-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ville-tourner",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит, когда указывают дорогу?",
+        "contexts": [
+          "Tournez à droite après la boulangerie.",
+          "Vous tournez à gauche au feu.",
+          "On tourne au coin de la rue."
+        ],
+        "options": [
+          "поворачивать / сворачивать",
+          "идти прямо",
+          "переходить улицу",
+          "останавливаться"
+        ],
+        "correctIndex": 0,
+        "explanation": "tourner — менять направление: tourner à droite (направо), tourner à gauche (налево). На перекрёстке это «свернуть»."
+      },
+      {
+        "id": "wc-ville-tourner-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-ville-tourner",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит tourner?",
+        "bridge": "Англ. «to turn» и фр. «tourner» — родственники (тот же латинский корень tornare, что и в «tour», «turn»). «Tournez à droite» = «Turn right».",
+        "options": ["поворачивать", "идти прямо", "подниматься", "переходить"],
+        "correctIndex": 0,
+        "explanation": "tourner = поворачивать. Англ. «turn» / «tour» — надёжный мост: «Tournez à droite» = «Turn right»."
+      },
+      {
+        "id": "wc-ville-continuer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ville-continuer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в указании дороги?",
+        "contexts": [
+          "Continuez tout droit jusqu'au feu.",
+          "Vous continuez sur cette rue pendant 200 mètres.",
+          "On continue ou on tourne ?"
+        ],
+        "options": [
+          "продолжать идти (прямо, не сворачивая)",
+          "повернуть",
+          "остановиться",
+          "вернуться назад"
+        ],
+        "correctIndex": 0,
+        "explanation": "continuer — не сворачивать, идти дальше в том же направлении: «Continuez tout droit» = «Идите прямо дальше»."
+      },
+      {
+        "id": "wc-ville-continuer-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-ville-continuer",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит continuer?",
+        "bridge": "Англ. «to continue» и фр. «continuer» — почти одно слово: тот же корень continu-. «Continuez» = «Continue».",
+        "options": ["продолжать, идти дальше", "поворачивать", "переходить", "выходить"],
+        "correctIndex": 0,
+        "explanation": "continuer = продолжать. Англ. «continue» — прямой мост; запомни французское окончание -er и одинарное n в continu-."
+      },
+      {
+        "id": "wc-ville-tourner-continuer-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-ville-continuer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три команды меняют направление или ведут в сторону. Найди ту, что велит НЕ сворачивать.",
+        "options": [
+          "tourner à droite",
+          "tourner à gauche",
+          "continuer tout droit",
+          "prendre la première à droite"
+        ],
+        "correctIndex": 2,
+        "explanation": "«continuer tout droit» = идти прямо, НЕ менять направление. Остальные три — это повороты (tourner à droite/à gauche, prendre la première à droite — свернуть в первую улицу направо)."
+      },
+      {
+        "id": "wc-ville-traverser-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ville-traverser",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Traversez la rue au passage piéton.",
+          "Pour aller au parc, il faut traverser le pont.",
+          "Attention en traversant, les voitures vont vite ici."
+        ],
+        "options": [
+          "переходить / пересекать (с одной стороны на другую)",
+          "идти вдоль улицы",
+          "подниматься",
+          "сворачивать"
+        ],
+        "correctIndex": 0,
+        "explanation": "traverser — пройти с одной стороны на другую: traverser la rue (перейти улицу), traverser le pont (перейти мост). Лучше — au passage piéton (по пешеходному переходу)."
+      },
+      {
+        "id": "wc-ville-traverser-collo",
+        "kind": "sort",
+        "wordId": "wl-ville-traverser",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с traverser звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "traverser la rue",
+            "basket": "ok"
+          },
+          {
+            "text": "traverser le pont",
+            "basket": "ok"
+          },
+          {
+            "text": "traverser au passage piéton",
+            "basket": "ok"
+          },
+          {
+            "text": "traverser dans le bus",
+            "basket": "no"
+          },
+          {
+            "text": "traverser les escaliers",
+            "basket": "no"
+          }
+        ],
+        "explanation": "traverser — пересечь что-то поперёк: la rue, le pont, la place. «traverser dans le bus» и «traverser les escaliers» так не говорят — в транспорт садятся (monter dans le bus), а по лестнице поднимаются/спускаются (monter/descendre les escaliers)."
+      },
+      {
+        "id": "wc-ville-monter-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ville-monter",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что их объединяет?",
+        "contexts": [
+          "On monte dans le bus à cet arrêt.",
+          "Montez par l'escalator, c'est plus rapide.",
+          "Il faut monter cette rue, c'est en haut."
+        ],
+        "options": [
+          "подниматься / садиться в транспорт",
+          "спускаться / выходить",
+          "переходить улицу",
+          "поворачивать"
+        ],
+        "correctIndex": 0,
+        "explanation": "monter — движение вверх (monter l'escalier, monter la rue) ИЛИ войти в транспорт (monter dans le bus). В обоих случаях идея — «вверх / внутрь»."
+      },
+      {
+        "id": "wc-ville-monter-descendre-cmp",
+        "kind": "compare",
+        "wordId": "wl-ville-descendre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "monter и descendre в транспорте. В чём разница?",
+        "phrases": ["Je monte dans le bus à Opéra.", "Je descends du bus à Châtelet."],
+        "options": [
+          "monter dans — зайти/сесть в транспорт; descendre de — выйти из транспорта.",
+          "monter — выйти, descendre — зайти.",
+          "Оба значат «ехать», разницы нет.",
+          "monter — для метро, descendre — только для автобуса."
+        ],
+        "correctIndex": 0,
+        "explanation": "monter dans le bus/le métro = зайти, сесть; descendre du bus/du métro = выйти. Запомни предлоги: monter DANS, descendre DE. «Je descends à Châtelet» = «Я выхожу на Шатле»."
+      },
+      {
+        "id": "wc-ville-descendre-hint",
+        "kind": "wordHint",
+        "wordId": "wl-ville-descendre",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: то, что ты делаешь, когда выходишь из автобуса или спускаешься по лестнице вниз.",
+        "answer": "descendre",
+        "hints": [
+          "Начинается на d…",
+          "Похоже на англ. «descend» (спускаться)",
+          "Je ___ du bus à la prochaine station."
+        ],
+        "explanation": "descendre — спускаться / выходить из транспорта. Антоним к monter. Англ. «descend» помогает вспомнить: оба про движение вниз."
+      },
+      {
+        "id": "wc-ville-rue-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ville-rue",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il y a beaucoup de monde dans la rue aujourd'hui.",
+          "La pharmacie est au bout de la rue.",
+          "Traversez la rue et tournez à gauche."
+        ],
+        "options": ["улица", "дорога между городами / трасса", "площадь", "мост"],
+        "correctIndex": 0,
+        "explanation": "la rue (f) — улица в городе, с домами по сторонам: «dans la rue» (на улице), «au bout de la rue» (в конце улицы)."
+      },
+      {
+        "id": "wc-ville-rue-trap",
+        "kind": "trap",
+        "wordId": "wl-ville-rue",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг. Англ. «route» сбивает. Как сказать «Я живу на этой улице»?",
+        "options": [
+          "J'habite dans cette rue.",
+          "J'habite sur cette route.",
+          "J'habite dans cette route.",
+          "J'habite sur cette rue."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: la rue — улица в городе (живут «dans la rue»), а la route — дорога/трасса между городами. Англ. «route» похоже на «rue», но это разные слова. Правильно: «J'habite dans cette rue»."
+      },
+      {
+        "id": "wc-ville-aller-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-ville-aller",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для пары aller / venir, чтобы не путать направление.",
+        "examples": [
+          "aller = «А-ллё, я ухожу ТУДА» (от себя к цели); venir = идти СЮДА, к тому, кто зовёт.",
+          "Стрелка от себя → aller (туда); стрелка к себе → venir (сюда). «Tu viens ?» — позови движение к себе."
+        ]
+      }
+    ]
+  }
+]

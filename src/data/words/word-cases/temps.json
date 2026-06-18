@@ -1,0 +1,293 @@
+[
+  {
+    "id": "wc-temps",
+    "title": "Время: уже, всегда, иногда",
+    "theme": "temps",
+    "level": "A2",
+    "wordIds": [
+      "wl-temps-deja",
+      "wl-temps-toujours",
+      "wl-temps-parfois",
+      "wl-temps-souvent",
+      "wl-temps-jamais",
+      "wl-temps-maintenant",
+      "wl-temps-bientot"
+    ],
+    "steps": [
+      {
+        "id": "wc-temps-deja-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-temps-deja",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": ["J'ai déjà mangé.", "C'est déjà fini ?", "Il est déjà tard."],
+        "options": ["уже (раньше ожидаемого)", "сейчас, в этот момент", "скоро", "никогда"],
+        "correctIndex": 0,
+        "explanation": "déjà = «уже»: действие произошло раньше срока (j'ai déjà mangé) или момент наступил раньше, чем думали (il est déjà tard). Не путать с maintenant («сейчас»)."
+      },
+      {
+        "id": "wc-temps-deja-cmp",
+        "kind": "compare",
+        "wordId": "wl-temps-deja",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "déjà и maintenant оба про время. В чём разница здесь?",
+        "phrases": ["J'ai déjà fini.", "Je finis maintenant."],
+        "options": [
+          "déjà = уже (закончил раньше); maintenant = сейчас (заканчиваю в этот момент)",
+          "Это синонимы, разницы нет",
+          "déjà = сейчас; maintenant = уже",
+          "Оба значат «скоро»"
+        ],
+        "correctIndex": 0,
+        "explanation": "déjà ставит акцент на то, что действие уже свершилось (раньше ожидаемого). maintenant указывает на текущий момент («сейчас»). «Уже закончил» ≠ «заканчиваю сейчас»."
+      },
+      {
+        "id": "wc-temps-toujours-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-temps-toujours",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "Elle est toujours en retard.",
+          "Comme toujours, il sourit.",
+          "Je t'aimerai pour toujours."
+        ],
+        "options": ["всегда / постоянно", "иногда", "уже", "скоро"],
+        "correctIndex": 0,
+        "explanation": "Здесь toujours = «всегда» (привычка, постоянство): toujours en retard (всегда опаздывает), comme toujours (как всегда), pour toujours (навсегда). У toujours есть и второе значение — «всё ещё» — его разберём отдельно."
+      },
+      {
+        "id": "wc-temps-toujours-cmp",
+        "kind": "compare",
+        "wordId": "wl-temps-toujours",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Хитрость темы: у toujours два значения. Какое здесь в каждой фразе?",
+        "phrases": ["Il est toujours gentil avec moi.", "Il est huit heures et il dort toujours."],
+        "options": [
+          "1-е = «всегда» (привычка); 2-е = «всё ещё» (продолжается до сих пор)",
+          "Оба раза «всегда»",
+          "Оба раза «всё ещё»",
+          "1-е = «всё ещё»; 2-е = «всегда»"
+        ],
+        "correctIndex": 0,
+        "explanation": "toujours = «всегда» (toujours gentil — постоянная черта) и «всё ещё» (il dort toujours — продолжает спать). Контекст решает: с привычкой → «всегда»; с длящимся действием → «всё ещё»."
+      },
+      {
+        "id": "wc-temps-souvent-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-temps-souvent",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Je vais souvent au cinéma.",
+          "Il pleut souvent ici.",
+          "Le plus souvent, je prends le métro."
+        ],
+        "options": ["часто (много раз)", "редко", "никогда", "сейчас"],
+        "correctIndex": 0,
+        "explanation": "souvent = «часто»: много раз, регулярно (souvent au cinéma, il pleut souvent). Устойчивое le plus souvent = «чаще всего»."
+      },
+      {
+        "id": "wc-temps-souvent-collo",
+        "kind": "sort",
+        "wordId": "wl-temps-souvent",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с souvent звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "le plus souvent",
+            "basket": "ok"
+          },
+          {
+            "text": "trop souvent",
+            "basket": "ok"
+          },
+          {
+            "text": "assez souvent",
+            "basket": "ok"
+          },
+          {
+            "text": "très souvent",
+            "basket": "ok"
+          },
+          {
+            "text": "beaucoup souvent",
+            "basket": "no"
+          },
+          {
+            "text": "souvent fois",
+            "basket": "no"
+          }
+        ],
+        "explanation": "souvent усиливают наречиями: trop / assez / très / le plus souvent. А вот «beaucoup souvent» и «souvent fois» — кальки, по-французски так не говорят (нужно très souvent, souvent)."
+      },
+      {
+        "id": "wc-temps-parfois-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-temps-parfois",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Parfois, je me trompe.",
+          "Il vient parfois le dimanche.",
+          "Elle est parfois fatiguée."
+        ],
+        "options": ["иногда (время от времени)", "всегда", "часто", "уже"],
+        "correctIndex": 0,
+        "explanation": "parfois = «иногда»: время от времени, не всегда и не никогда. Стоит на шкале частоты ниже, чем souvent."
+      },
+      {
+        "id": "wc-temps-parfois-cmp",
+        "kind": "compare",
+        "wordId": "wl-temps-parfois",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "parfois и souvent — соседи на шкале частоты. В чём разница?",
+        "phrases": ["Je mange parfois de la viande.", "Je mange souvent de la viande."],
+        "options": [
+          "parfois = иногда (изредка); souvent = часто (много раз)",
+          "Это синонимы, разницы нет",
+          "parfois = часто; souvent = иногда",
+          "Оба значат «всегда»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Оба значат «не всегда», но souvent (часто) — выше по частоте, чем parfois (иногда). je mange parfois = редко-средне; je mange souvent = регулярно."
+      },
+      {
+        "id": "wc-temps-jamais-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-temps-jamais",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": ["Je ne fume jamais.", "Elle n'est jamais en retard.", "On ne sait jamais."],
+        "options": ["никогда (вместе с ne)", "всегда", "иногда", "уже"],
+        "correctIndex": 0,
+        "explanation": "jamais = «никогда», но в отрицании работает в паре с ne: ne… jamais (Je ne fume jamais). Без ne смысл меняется на «когда-либо» — это разберём в ловушке."
+      },
+      {
+        "id": "wc-temps-jamais-trap",
+        "kind": "trap",
+        "wordId": "wl-temps-jamais",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ловушка. Что значит jamais в вопросе «As-tu jamais visité Paris ?» (без ne)?",
+        "options": ["когда-либо (хоть раз)", "никогда", "уже", "часто"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: jamais ≠ только «никогда». Без ne — в вопросе или после si — jamais значит «когда-либо»: As-tu jamais visité Paris ? = «Ты когда-либо был в Париже?». «Никогда» получается лишь в паре ne… jamais."
+      },
+      {
+        "id": "wc-temps-jamais-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-temps-jamais",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — про частоту (как часто). Найди лишнее.",
+        "options": ["jamais", "souvent", "parfois", "bientôt"],
+        "correctIndex": 3,
+        "explanation": "jamais (никогда), souvent (часто), parfois (иногда) — это шкала частоты: как часто. bientôt («скоро») — про момент в будущем, не про частоту. Оно лишнее."
+      },
+      {
+        "id": "wc-temps-maintenant-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-temps-maintenant",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "On y va maintenant.",
+          "Maintenant, j'habite à Lyon.",
+          "Il est libre maintenant."
+        ],
+        "options": ["сейчас, теперь (текущий момент)", "уже (раньше срока)", "скоро", "всегда"],
+        "correctIndex": 0,
+        "explanation": "maintenant = «сейчас, теперь»: текущий момент (on y va maintenant) или новое нынешнее положение дел (maintenant j'habite à Lyon)."
+      },
+      {
+        "id": "wc-temps-maintenant-hint",
+        "kind": "wordHint",
+        "wordId": "wl-temps-maintenant",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни наречие: «сейчас, в данный момент». Антоним к «потом».",
+        "answer": "maintenant",
+        "hints": [
+          "Начинается на m…",
+          "10 букв, заканчивается на -ant",
+          "On y va ___ ! / ___ , j'habite à Lyon."
+        ],
+        "explanation": "maintenant = «сейчас, теперь». Полезный приём для запоминания: внутри прячется main («рука») + tenant («держа») — «держа в руке», то есть прямо сейчас."
+      },
+      {
+        "id": "wc-temps-bientot-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-temps-bientot",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": ["Le train arrive bientôt.", "À bientôt !", "Ce sera bientôt fini."],
+        "options": ["скоро (в ближайшем будущем)", "сейчас", "уже", "иногда"],
+        "correctIndex": 0,
+        "explanation": "bientôt = «скоро»: через короткое время (le train arrive bientôt, bientôt fini). À bientôt ! — «До скорого!»."
+      },
+      {
+        "id": "wc-temps-bientot-cmp",
+        "kind": "compare",
+        "wordId": "wl-temps-bientot",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "bientôt и maintenant — оба про близкое время. В чём разница?",
+        "phrases": ["Le bus part maintenant.", "Le bus part bientôt."],
+        "options": [
+          "maintenant = сейчас (уже в этот момент); bientôt = скоро (ещё не сейчас, чуть позже)",
+          "Это синонимы, разницы нет",
+          "maintenant = скоро; bientôt = сейчас",
+          "Оба значат «уже»"
+        ],
+        "correctIndex": 0,
+        "explanation": "maintenant — действие происходит в данный момент (автобус уже отъезжает). bientôt — действие в ближайшем будущем, ещё не наступило (отъедет вот-вот). Не путать «сейчас» и «скоро»."
+      },
+      {
+        "id": "wc-temps-bientot-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-temps-bientot",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для bientôt («скоро»), опираясь на его части.",
+        "examples": [
+          "bientôt = bien + tôt («хорошо» + «рано»): «довольно рано» → совсем скоро наступит.",
+          "À bientôt ! на прощание — «увидимся скоро»: представь, как машешь рукой, зная, что встреча близко."
+        ]
+      },
+      {
+        "id": "wc-temps-toujours-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-temps-toujours",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для toujours, чтобы удержать оба значения: «всегда» и «всё ещё».",
+        "examples": [
+          "toujours звучит как «ту жур» → «все дни» (tous les jours): всё, что каждый день — это всегда.",
+          "pour toujours = «навсегда»: подумай о фразе, которую говорят близкому человеку, — она склеит слово со значением «всегда»."
+        ]
+      }
+    ]
+  }
+]

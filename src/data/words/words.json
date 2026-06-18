@@ -818,5 +818,1697 @@
     "level": "A2",
     "tags": ["connaissance", "verbe"],
     "caseIds": ["wc-savoir"]
+  },
+  {
+    "id": "wl-ecole-ecole",
+    "lemma": "école",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.kɔl/",
+    "translationsRu": ["школа"],
+    "translationsEn": ["school"],
+    "semanticCore": "Школа как место, где учатся дети; в частности начальная школа (l'école primaire). Женский род: l'école.",
+    "collocations": [
+      {
+        "fr": "aller à l'école",
+        "ru": "ходить в школу"
+      },
+      {
+        "fr": "à l'école",
+        "ru": "в школе / в школу"
+      },
+      {
+        "fr": "l'école primaire",
+        "ru": "начальная школа"
+      },
+      {
+        "fr": "après l'école",
+        "ru": "после школы"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "université",
+        "note": "école — школа (для детей); université — университет (для взрослых студентов). У детей именно école."
+      }
+    ],
+    "frequencyRank": 130,
+    "level": "A1",
+    "tags": ["ecole", "lieu", "enfant"],
+    "caseIds": ["wc-ecole"]
+  },
+  {
+    "id": "wl-ecole-maitresse",
+    "lemma": "maîtresse",
+    "displayForm": "maître / maîtresse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mɛ.tʁɛs/",
+    "translationsRu": ["учительница (в начальной школе)"],
+    "translationsEn": ["(primary-school) teacher", "mistress"],
+    "semanticCore": "Учительница начальной школы; так её называют сами дети (le maître — учитель). Слово маркировано младшей школой, не университетом.",
+    "collocations": [
+      {
+        "fr": "la maîtresse d'école",
+        "ru": "школьная учительница"
+      },
+      {
+        "fr": "demander à la maîtresse",
+        "ru": "спросить у учительницы"
+      },
+      {
+        "fr": "Maîtresse, j'ai fini !",
+        "ru": "Учительница, я закончил!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "professeur",
+        "note": "maîtresse / maître — учитель(ница) в начальной школе (так зовут дети); professeur (le/la prof) — преподаватель в коллеже, лицее, университете."
+      },
+      {
+        "with": "mistress (англ.)",
+        "note": "Ложный друг: англ. mistress часто = «любовница». Фр. maîtresse d'école — это просто учительница начальных классов. Будь осторожен с переводом."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A1",
+    "tags": ["ecole", "personne", "metier", "faux-ami"],
+    "caseIds": ["wc-ecole"]
+  },
+  {
+    "id": "wl-ecole-eleve",
+    "lemma": "élève",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.lɛv/",
+    "translationsRu": ["ученик", "ученица"],
+    "translationsEn": ["pupil", "student"],
+    "semanticCore": "Ученик школы — тот, кого учат. Одна форма для мальчика и девочки, меняется только артикль: un élève / une élève.",
+    "collocations": [
+      {
+        "fr": "un bon élève",
+        "ru": "хороший ученик"
+      },
+      {
+        "fr": "une nouvelle élève",
+        "ru": "новая ученица"
+      },
+      {
+        "fr": "les élèves de la classe",
+        "ru": "ученики класса"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "étudiant",
+        "note": "élève — ученик школы (дети); étudiant — студент университета (взрослые). У ребёнка — élève."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A1",
+    "tags": ["ecole", "personne", "enfant"],
+    "caseIds": ["wc-ecole"]
+  },
+  {
+    "id": "wl-ecole-cartable",
+    "lemma": "cartable",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kaʁ.tabl/",
+    "translationsRu": ["школьный портфель", "ранец"],
+    "translationsEn": ["schoolbag", "satchel"],
+    "semanticCore": "Сумка-портфель школьника, в которой носят тетради и учебники; мужской род: un cartable.",
+    "collocations": [
+      {
+        "fr": "préparer son cartable",
+        "ru": "собрать портфель"
+      },
+      {
+        "fr": "un cartable lourd",
+        "ru": "тяжёлый портфель"
+      },
+      {
+        "fr": "mettre les cahiers dans le cartable",
+        "ru": "положить тетради в портфель"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sac à dos",
+        "note": "cartable — именно школьный портфель/ранец; sac à dos — обычный рюкзак (для похода, поездки). У школьника чаще cartable."
+      }
+    ],
+    "frequencyRank": 1100,
+    "level": "A1",
+    "tags": ["ecole", "objet", "enfant"],
+    "caseIds": ["wc-ecole"]
+  },
+  {
+    "id": "wl-ecole-devoirs",
+    "lemma": "devoirs",
+    "displayForm": "les devoirs",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/də.vwaʁ/",
+    "translationsRu": ["домашнее задание", "уроки (на дом)"],
+    "translationsEn": ["homework"],
+    "semanticCore": "Домашнее задание — то, что ученик делает дома после школы. В этом значении всегда во множественном числе: les devoirs (faire ses devoirs).",
+    "collocations": [
+      {
+        "fr": "faire ses devoirs",
+        "ru": "делать домашнее задание"
+      },
+      {
+        "fr": "les devoirs de maths",
+        "ru": "домашка по математике"
+      },
+      {
+        "fr": "j'ai des devoirs ce soir",
+        "ru": "у меня сегодня уроки на вечер"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "le devoir (ед. ч.)",
+        "note": "В единственном числе le devoir = «долг, обязанность» (или контрольная работа). Домашнее задание — всегда множественное: les devoirs."
+      },
+      {
+        "with": "devoir (глагол)",
+        "note": "Тот же корень — глагол devoir = «быть должным, должен». Существительное les devoirs (домашка) — это «то, что должен сделать дома»."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A1",
+    "tags": ["ecole", "etude", "enfant"],
+    "caseIds": ["wc-ecole"]
+  },
+  {
+    "id": "wl-ecole-cantine",
+    "lemma": "cantine",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kɑ̃.tin/",
+    "translationsRu": ["школьная столовая"],
+    "translationsEn": ["canteen", "school cafeteria"],
+    "semanticCore": "Школьная столовая, где дети обедают в середине дня; женский род: la cantine.",
+    "collocations": [
+      {
+        "fr": "manger à la cantine",
+        "ru": "обедать в столовой"
+      },
+      {
+        "fr": "le menu de la cantine",
+        "ru": "меню столовой"
+      },
+      {
+        "fr": "rester à la cantine le midi",
+        "ru": "оставаться в столовой в обед"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "restaurant",
+        "note": "cantine — столовая при школе/работе (для своих, по расписанию); restaurant — ресторан (для всех, по выбору). У школьника — la cantine."
+      },
+      {
+        "with": "canteen (англ.)",
+        "note": "Английский мост: англ. canteen = столовая (на работе, в школе). Фр. cantine значит то же самое."
+      }
+    ],
+    "frequencyRank": 900,
+    "level": "A1",
+    "tags": ["ecole", "lieu", "nourriture"],
+    "caseIds": ["wc-ecole"]
+  },
+  {
+    "id": "wl-ecole-recreation",
+    "lemma": "récréation",
+    "displayForm": "récréation (la récré)",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁe.kʁe.a.sjɔ̃/",
+    "translationsRu": ["перемена (в школе)"],
+    "translationsEn": ["recess", "break"],
+    "semanticCore": "Перемена в школе — время, когда дети выходят во двор поиграть и отдохнуть между уроками. В разговоре сокращают: la récré.",
+    "collocations": [
+      {
+        "fr": "pendant la récréation",
+        "ru": "во время перемены"
+      },
+      {
+        "fr": "jouer dans la cour à la récré",
+        "ru": "играть во дворе на перемене"
+      },
+      {
+        "fr": "la cloche sonne la récréation",
+        "ru": "звонок на перемену"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vacances",
+        "note": "récréation — короткая перемена между уроками (минуты); les vacances — каникулы (недели). Не путай масштаб."
+      },
+      {
+        "with": "recreation (англ.)",
+        "note": "Английский мост: англ. recreation = отдых, развлечение. Фр. récréation в школе — перемена (отдых между уроками). Тот же корень."
+      }
+    ],
+    "frequencyRank": 1000,
+    "level": "A1",
+    "tags": ["ecole", "temps", "enfant"],
+    "caseIds": ["wc-ecole"]
+  },
+  {
+    "id": "wl-ecole-note",
+    "lemma": "note",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/nɔt/",
+    "translationsRu": ["оценка (отметка)"],
+    "translationsEn": ["grade", "mark"],
+    "semanticCore": "Оценка за работу в школе — обычно по шкале от 0 до 20 во Франции. Женский род: une note. (Также «записка» и «нота», но в школе — оценка.)",
+    "collocations": [
+      {
+        "fr": "avoir une bonne note",
+        "ru": "получить хорошую оценку"
+      },
+      {
+        "fr": "une mauvaise note",
+        "ru": "плохая оценка"
+      },
+      {
+        "fr": "15 sur 20",
+        "ru": "15 из 20"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "note (англ.)",
+        "note": "Ложный друг: англ. note = записка, заметка. Фр. note в школе = оценка, отметка. Записка по-французски — un mot или une note (по контексту), но школьная note — это балл."
+      }
+    ],
+    "frequencyRank": 350,
+    "level": "A1",
+    "tags": ["ecole", "etude", "faux-ami"],
+    "caseIds": ["wc-ecole"]
+  },
+  {
+    "id": "wl-maison-maison",
+    "lemma": "maison",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mɛ.zɔ̃/",
+    "translationsRu": ["дом", "жилище"],
+    "translationsEn": ["house", "home"],
+    "semanticCore": "Дом как жилище и как «у себя»: место, куда возвращаешься.",
+    "collocations": [
+      {
+        "fr": "rentrer à la maison",
+        "ru": "вернуться домой"
+      },
+      {
+        "fr": "rester à la maison",
+        "ru": "оставаться дома"
+      },
+      {
+        "fr": "une maison de campagne",
+        "ru": "загородный дом"
+      },
+      {
+        "fr": "la maison d'à côté",
+        "ru": "соседний дом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "appartement",
+        "note": "maison = (отдельный) дом; appartement = квартира в доме. «Дома» в смысле «у себя» — всегда à la maison."
+      },
+      {
+        "with": "foyer",
+        "note": "maison = здание/жилище; foyer = домашний очаг, семья как «дом» (более тёплое, абстрактное)."
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A1",
+    "tags": ["maison", "logement"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-maison-cle",
+    "lemma": "clé",
+    "displayForm": "clé / clef",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kle/",
+    "translationsRu": ["ключ"],
+    "translationsEn": ["key"],
+    "semanticCore": "Ключ, которым запирают и отпирают; также «ключ» к разгадке.",
+    "collocations": [
+      {
+        "fr": "la clé de la porte",
+        "ru": "ключ от двери"
+      },
+      {
+        "fr": "fermer à clé",
+        "ru": "запереть на ключ"
+      },
+      {
+        "fr": "perdre ses clés",
+        "ru": "потерять ключи"
+      },
+      {
+        "fr": "un trousseau de clés",
+        "ru": "связка ключей"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "serrure",
+        "note": "clé = ключ; serrure = замо́к (то, куда вставляют ключ). Их легко перепутать по-русски «замок/ключ»."
+      },
+      {
+        "with": "clef",
+        "note": "clé и clef — два написания одного слова, оба верны; читаются одинаково /kle/."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A1",
+    "tags": ["maison", "objet"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-maison-porte",
+    "lemma": "porte",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɔʁt/",
+    "translationsRu": ["дверь"],
+    "translationsEn": ["door"],
+    "semanticCore": "Дверь как вход и как то, что закрывают/запирают.",
+    "collocations": [
+      {
+        "fr": "fermer la porte",
+        "ru": "закрыть дверь"
+      },
+      {
+        "fr": "la porte d'entrée",
+        "ru": "входная дверь"
+      },
+      {
+        "fr": "frapper à la porte",
+        "ru": "стучать в дверь"
+      },
+      {
+        "fr": "fermer la porte à clé",
+        "ru": "запереть дверь на ключ"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "portail",
+        "note": "porte = дверь (в доме, комнате); portail = ворота / большая калитка во двор."
+      },
+      {
+        "with": "fenêtre",
+        "note": "porte = дверь (через неё входят); fenêtre = окно (через него смотрят и проветривают)."
+      }
+    ],
+    "frequencyRank": 230,
+    "level": "A1",
+    "tags": ["maison", "objet"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-maison-fenetre",
+    "lemma": "fenêtre",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fə.nɛtʁ/",
+    "translationsRu": ["окно"],
+    "translationsEn": ["window"],
+    "semanticCore": "Окно в стене и окно на экране компьютера.",
+    "collocations": [
+      {
+        "fr": "ouvrir la fenêtre",
+        "ru": "открыть окно"
+      },
+      {
+        "fr": "près de la fenêtre",
+        "ru": "у окна"
+      },
+      {
+        "fr": "la fenêtre donne sur la rue",
+        "ru": "окно выходит на улицу"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vitre",
+        "note": "fenêtre = окно (вся конструкция); vitre = (оконное) стекло. Разбить можно la vitre, открыть — la fenêtre."
+      },
+      {
+        "with": "porte",
+        "note": "fenêtre = окно; porte = дверь. Не путать: оба «проёма» в стене, но разные."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A1",
+    "tags": ["maison", "objet"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-maison-table",
+    "lemma": "table",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tabl/",
+    "translationsRu": ["стол"],
+    "translationsEn": ["table"],
+    "semanticCore": "Стол как мебель и как «застолье»: место, за которое садятся есть.",
+    "collocations": [
+      {
+        "fr": "passer à table",
+        "ru": "садиться за стол (есть)"
+      },
+      {
+        "fr": "mettre la table",
+        "ru": "накрывать на стол"
+      },
+      {
+        "fr": "une table pour deux",
+        "ru": "столик на двоих"
+      },
+      {
+        "fr": "sur la table",
+        "ru": "на столе"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chaise",
+        "note": "table = стол; chaise = стул. За table садятся, на chaise сидят."
+      },
+      {
+        "with": "bureau",
+        "note": "table = (обеденный) стол; bureau = письменный стол, рабочий стол / кабинет."
+      }
+    ],
+    "frequencyRank": 200,
+    "level": "A1",
+    "tags": ["maison", "meuble"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-maison-lit",
+    "lemma": "lit",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/li/",
+    "translationsRu": ["кровать", "постель"],
+    "translationsEn": ["bed"],
+    "semanticCore": "Кровать как мебель и постель, куда ложатся спать.",
+    "collocations": [
+      {
+        "fr": "aller au lit",
+        "ru": "ложиться спать"
+      },
+      {
+        "fr": "faire son lit",
+        "ru": "застилать постель"
+      },
+      {
+        "fr": "un grand lit",
+        "ru": "большая (двуспальная) кровать"
+      },
+      {
+        "fr": "au lit",
+        "ru": "в постели / спать"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "canapé",
+        "note": "lit = кровать (для сна); canapé = диван (в гостиной)."
+      },
+      {
+        "with": "lit (англ.)",
+        "note": "Фр. lit = кровать; англ. «lit» = освещённый. Пишутся одинаково — ложный друг. Конечная t не читается: /li/."
+      }
+    ],
+    "frequencyRank": 340,
+    "level": "A1",
+    "tags": ["maison", "meuble"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-maison-mur",
+    "lemma": "mur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/myʁ/",
+    "translationsRu": ["стена"],
+    "translationsEn": ["wall"],
+    "semanticCore": "Стена комнаты или здания: вертикальная плоскость, ограничивающая помещение.",
+    "collocations": [
+      {
+        "fr": "sur le mur",
+        "ru": "на стене"
+      },
+      {
+        "fr": "un mur blanc",
+        "ru": "белая стена"
+      },
+      {
+        "fr": "accrocher au mur",
+        "ru": "повесить на стену"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sol",
+        "note": "mur = стена (вертикально); sol = пол (внизу). Не путать при описании комнаты."
+      },
+      {
+        "with": "plafond",
+        "note": "mur = стена; plafond = потолок (сверху)."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A1",
+    "tags": ["maison", "structure"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-maison-etage",
+    "lemma": "étage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.taʒ/",
+    "translationsRu": ["этаж"],
+    "translationsEn": ["floor", "storey"],
+    "semanticCore": "Этаж здания — но французский счёт сдвинут: наземный зовётся rez-de-chaussée.",
+    "collocations": [
+      {
+        "fr": "au premier étage",
+        "ru": "на втором этаже (по фр. счёту — первом над наземным)"
+      },
+      {
+        "fr": "monter à l'étage",
+        "ru": "подняться наверх / на этаж выше"
+      },
+      {
+        "fr": "un immeuble de cinq étages",
+        "ru": "пятиэтажный дом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rez-de-chaussée",
+        "note": "étage = этаж над землёй; rez-de-chaussée = наземный («нулевой») этаж. Поэтому premier étage = русский 2-й этаж."
+      },
+      {
+        "with": "escalier",
+        "note": "étage = этаж (уровень); escalier = лестница (по ней поднимаются между этажами)."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A1",
+    "tags": ["maison", "logement"],
+    "caseIds": ["wc-maison"]
+  },
+  {
+    "id": "wl-politesse-vouloir",
+    "lemma": "vouloir",
+    "pos": "verb",
+    "ipa": "/vu.lwaʁ/",
+    "translationsRu": ["хотеть", "желать"],
+    "translationsEn": ["to want", "to wish"],
+    "semanticCore": "Желание, воля; в вежливой просьбе смягчается формой «je voudrais».",
+    "collocations": [
+      {
+        "fr": "je voudrais un café",
+        "ru": "я бы хотел кофе"
+      },
+      {
+        "fr": "vouloir dire",
+        "ru": "означать (хотеть сказать)"
+      },
+      {
+        "fr": "si vous voulez",
+        "ru": "если хотите"
+      },
+      {
+        "fr": "vouloir bien",
+        "ru": "охотно согласиться, не возражать"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "je veux",
+        "note": "«je veux» — прямое «хочу», звучит резко; «je voudrais» — вежливое «я бы хотел». В просьбах используют voudrais."
+      },
+      {
+        "with": "pouvoir",
+        "note": "vouloir = хотеть (желание); pouvoir = мочь (возможность). «Je voudrais» — желаю; «je peux» — могу."
+      }
+    ],
+    "frequencyRank": 25,
+    "level": "A2",
+    "tags": ["politesse", "demande", "verbe-modal"],
+    "caseIds": ["wc-politesse"]
+  },
+  {
+    "id": "wl-politesse-svp",
+    "lemma": "s'il vous plaît",
+    "pos": "expr",
+    "ipa": "/sil vu plɛ/",
+    "translationsRu": ["пожалуйста"],
+    "translationsEn": ["please"],
+    "semanticCore": "Вежливое «пожалуйста» при просьбе; дословно «если вам это угодно».",
+    "collocations": [
+      {
+        "fr": "un café, s'il vous plaît",
+        "ru": "кофе, пожалуйста"
+      },
+      {
+        "fr": "s'il te plaît",
+        "ru": "пожалуйста (на «ты»)"
+      },
+      {
+        "fr": "oui, s'il vous plaît",
+        "ru": "да, пожалуйста"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "merci",
+        "note": "s'il vous plaît — просьба («пожалуйста, дайте»); merci — благодарность («спасибо»). Их нельзя путать местами."
+      },
+      {
+        "with": "s'il te plaît",
+        "note": "s'il vous plaît — на «вы» / к незнакомым; s'il te plaît — на «ты» / к близким. Различие vous / te."
+      }
+    ],
+    "frequencyRank": 60,
+    "level": "A1",
+    "tags": ["politesse", "demande", "formule"],
+    "caseIds": ["wc-politesse"]
+  },
+  {
+    "id": "wl-politesse-pardon",
+    "lemma": "pardon",
+    "pos": "expr",
+    "ipa": "/paʁ.dɔ̃/",
+    "translationsRu": ["извините", "простите", "прошу прощения"],
+    "translationsEn": ["sorry", "excuse me", "pardon"],
+    "semanticCore": "Лёгкое извинение или способ привлечь внимание / переспросить.",
+    "collocations": [
+      {
+        "fr": "pardon, je peux passer ?",
+        "ru": "извините, можно пройти?"
+      },
+      {
+        "fr": "demander pardon",
+        "ru": "просить прощения"
+      },
+      {
+        "fr": "pardon ?",
+        "ru": "простите? (не расслышал)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "désolé",
+        "note": "pardon — лёгкое, быстрое извинение (толкнул, переспросил); je suis désolé — за что-то посерьёзнее (опоздание, отказ)."
+      }
+    ],
+    "frequencyRank": 220,
+    "level": "A1",
+    "tags": ["politesse", "excuse", "formule"],
+    "caseIds": ["wc-politesse"]
+  },
+  {
+    "id": "wl-politesse-desole",
+    "lemma": "désolé",
+    "displayForm": "désolé / désolée",
+    "pos": "adj",
+    "ipa": "/de.zɔ.le/",
+    "translationsRu": ["сожалеющий", "виноватый («мне жаль»)"],
+    "translationsEn": ["sorry"],
+    "semanticCore": "«Мне жаль» — извинение за что-то ощутимое (опоздание, отказ, плохую новость).",
+    "collocations": [
+      {
+        "fr": "je suis désolé",
+        "ru": "мне жаль, извините"
+      },
+      {
+        "fr": "désolé pour le retard",
+        "ru": "извините за опоздание"
+      },
+      {
+        "fr": "désolé de vous déranger",
+        "ru": "извините за беспокойство"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "desolate (англ.)",
+        "note": "Англ. «desolate» = опустошённый, безлюдный. Фр. désolé = «мне жаль». Ложный друг."
+      },
+      {
+        "with": "pardon",
+        "note": "désolé — извинение за что-то серьёзнее; pardon — лёгкое «простите» (переспросить, пройти)."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A2",
+    "tags": ["politesse", "excuse", "faux-ami"],
+    "caseIds": ["wc-politesse"]
+  },
+  {
+    "id": "wl-politesse-deranger",
+    "lemma": "déranger",
+    "pos": "verb",
+    "ipa": "/de.ʁɑ̃.ʒe/",
+    "translationsRu": ["беспокоить", "мешать", "отвлекать"],
+    "translationsEn": ["to disturb", "to bother"],
+    "semanticCore": "Мешать кому-то, нарушать покой; ключевой глагол вежливых оговорок.",
+    "collocations": [
+      {
+        "fr": "excusez-moi de vous déranger",
+        "ru": "извините за беспокойство"
+      },
+      {
+        "fr": "je ne voudrais pas vous déranger",
+        "ru": "не хотел бы вас беспокоить"
+      },
+      {
+        "fr": "ça ne vous dérange pas si… ?",
+        "ru": "вы не против, если…?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "deranged (англ.)",
+        "note": "Англ. «deranged» = сумасшедший, невменяемый. Фр. déranger = мягкое «беспокоить, мешать». Ложный друг."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["politesse", "demande", "faux-ami", "verbe"],
+    "caseIds": ["wc-politesse"]
+  },
+  {
+    "id": "wl-politesse-refuser",
+    "lemma": "refuser",
+    "pos": "verb",
+    "ipa": "/ʁə.fy.ze/",
+    "translationsRu": ["отказывать", "отказываться", "отвергать"],
+    "translationsEn": ["to refuse", "to decline"],
+    "semanticCore": "Не принять, отклонить — предложение, приглашение или действие.",
+    "collocations": [
+      {
+        "fr": "refuser une invitation",
+        "ru": "отклонить приглашение"
+      },
+      {
+        "fr": "refuser de répondre",
+        "ru": "отказаться отвечать"
+      },
+      {
+        "fr": "refuser poliment",
+        "ru": "вежливо отказать"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "accepter",
+        "note": "refuser = отказываться; accepter = соглашаться, принимать. Противоположности."
+      }
+    ],
+    "frequencyRank": 550,
+    "level": "A2",
+    "tags": ["politesse", "refus", "verbe"],
+    "caseIds": ["wc-politesse"]
+  },
+  {
+    "id": "wl-politesse-gentil",
+    "lemma": "gentil",
+    "displayForm": "gentil / gentille",
+    "pos": "adj",
+    "ipa": "/ʒɑ̃.ti/",
+    "translationsRu": ["добрый", "любезный", "милый"],
+    "translationsEn": ["kind", "nice"],
+    "semanticCore": "Добрый, приветливый по характеру или поступку (не «мягкий на ощупь»).",
+    "collocations": [
+      {
+        "fr": "c'est gentil de votre part",
+        "ru": "как мило с вашей стороны"
+      },
+      {
+        "fr": "il est très gentil",
+        "ru": "он очень добрый"
+      },
+      {
+        "fr": "une gentille fille",
+        "ru": "добрая девочка"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "gentle (англ.)",
+        "note": "Англ. «gentle» = мягкий, нежный (на ощупь) — это фр. doux. Фр. gentil = добрый, любезный. Ложный друг."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["politesse", "qualite", "faux-ami", "adjectif"],
+    "caseIds": ["wc-politesse"]
+  },
+  {
+    "id": "wl-prendre",
+    "lemma": "prendre",
+    "pos": "verb",
+    "ipa": "/pʁɑ̃dʁ/",
+    "translationsRu": ["брать", "взять", "принимать"],
+    "translationsEn": ["to take"],
+    "semanticCore": "Самый общий глагол «взять / принять»: предмет в руку, транспорт, еду и напитки, время. База, от которой расходятся остальные глаголы темы.",
+    "collocations": [
+      {
+        "fr": "prendre un café",
+        "ru": "взять / выпить кофе"
+      },
+      {
+        "fr": "prendre le bus",
+        "ru": "сесть на автобус, поехать на автобусе"
+      },
+      {
+        "fr": "prendre une décision",
+        "ru": "принять решение"
+      },
+      {
+        "fr": "prendre son temps",
+        "ru": "не торопиться (букв. брать своё время)"
+      },
+      {
+        "fr": "prendre une photo",
+        "ru": "сделать фото"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "apporter",
+        "note": "prendre = взять (себе); apporter = принести (к кому-то). Берёшь — prendre, несёшь с собой — apporter."
+      },
+      {
+        "with": "amener",
+        "note": "prendre un livre — взять вещь; amener un ami — привести человека. amener о людях, prendre — о предметах/транспорте."
+      }
+    ],
+    "frequencyRank": 65,
+    "level": "A2",
+    "tags": ["verbe-action", "quotidien", "prendre"],
+    "caseIds": ["wc-prendre"]
+  },
+  {
+    "id": "wl-recevoir",
+    "lemma": "recevoir",
+    "pos": "verb",
+    "ipa": "/ʁə.sə.vwaʁ/",
+    "translationsRu": ["получать", "получить", "принимать (гостей)"],
+    "translationsEn": ["to receive", "to get"],
+    "semanticCore": "Получать то, что приходит извне: письмо, подарок, зарплату; а также «принимать» гостей у себя.",
+    "collocations": [
+      {
+        "fr": "recevoir une lettre",
+        "ru": "получить письмо"
+      },
+      {
+        "fr": "recevoir un cadeau",
+        "ru": "получить подарок"
+      },
+      {
+        "fr": "recevoir des amis",
+        "ru": "принимать друзей (в гостях)"
+      },
+      {
+        "fr": "recevoir un message",
+        "ru": "получить сообщение"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "prendre",
+        "note": "recevoir = получить (что-то приходит к тебе само); prendre = взять (ты берёшь активно). Письмо recevoir, чашку prendre."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["verbe-action", "quotidien", "prendre"],
+    "caseIds": ["wc-prendre"]
+  },
+  {
+    "id": "wl-apporter",
+    "lemma": "apporter",
+    "pos": "verb",
+    "ipa": "/a.pɔʁ.te/",
+    "translationsRu": ["приносить", "принести"],
+    "translationsEn": ["to bring (a thing)"],
+    "semanticCore": "Приносить ПРЕДМЕТ к месту или к человеку. Внутри сидит porter (нести): a-porter = «принести нечто».",
+    "collocations": [
+      {
+        "fr": "apporter un cadeau",
+        "ru": "принести подарок"
+      },
+      {
+        "fr": "apporter du vin",
+        "ru": "принести вино"
+      },
+      {
+        "fr": "apporter une réponse",
+        "ru": "дать ответ (принести ответ)"
+      },
+      {
+        "fr": "apporter de l'aide",
+        "ru": "оказать помощь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "amener",
+        "note": "apporter — ПРЕДМЕТ (porter = нести): apporter un gâteau. amener — ЧЕЛОВЕКА/животное (mener = вести): amener un ami."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["verbe-action", "quotidien", "prendre"],
+    "caseIds": ["wc-prendre"]
+  },
+  {
+    "id": "wl-amener",
+    "lemma": "amener",
+    "pos": "verb",
+    "ipa": "/a.mə.ne/",
+    "translationsRu": ["приводить (человека)", "привести", "привезти (кого-то)"],
+    "translationsEn": ["to bring (a person)"],
+    "semanticCore": "Приводить/привозить ЧЕЛОВЕКА (или животное) к месту или к кому-то. Внутри сидит mener (вести): a-mener = «привести кого-то».",
+    "collocations": [
+      {
+        "fr": "amener un ami",
+        "ru": "привести друга"
+      },
+      {
+        "fr": "amener les enfants à l'école",
+        "ru": "отвести детей в школу"
+      },
+      {
+        "fr": "amener quelqu'un à la gare",
+        "ru": "отвезти кого-то на вокзал"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "apporter",
+        "note": "amener ведёт ЧЕЛОВЕКА (mener): amener sa sœur. apporter несёт ПРЕДМЕТ (porter): apporter un livre."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["verbe-action", "quotidien", "prendre"],
+    "caseIds": ["wc-prendre"]
+  },
+  {
+    "id": "wl-rendre",
+    "lemma": "rendre",
+    "pos": "verb",
+    "ipa": "/ʁɑ̃dʁ/",
+    "translationsRu": ["возвращать", "вернуть", "отдавать (обратно)", "делать (каким-то)"],
+    "translationsEn": ["to give back", "to return", "to make (someone something)"],
+    "semanticCore": "Отдавать обратно то, что брал (rendre un livre). Второе значение — «делать каким-то»: rendre + прилагательное (rendre heureux).",
+    "collocations": [
+      {
+        "fr": "rendre un livre",
+        "ru": "вернуть книгу"
+      },
+      {
+        "fr": "rendre l'argent",
+        "ru": "вернуть деньги"
+      },
+      {
+        "fr": "rendre visite à quelqu'un",
+        "ru": "навестить кого-то"
+      },
+      {
+        "fr": "rendre heureux",
+        "ru": "делать счастливым"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "prendre",
+        "note": "prendre = взять; rendre = вернуть взятое. Рифмуются и значат противоположное: prends → rends обратно."
+      },
+      {
+        "with": "faire",
+        "note": "rendre + прилагательное = «делать каким-то» (Ça me rend triste). «Делать вещь» — это faire, не rendre."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["verbe-action", "quotidien", "prendre"],
+    "caseIds": ["wc-prendre"]
+  },
+  {
+    "id": "wl-garder",
+    "lemma": "garder",
+    "pos": "verb",
+    "ipa": "/ɡaʁ.de/",
+    "translationsRu": ["хранить", "оставлять (себе)", "присматривать", "сохранять"],
+    "translationsEn": ["to keep", "to look after"],
+    "semanticCore": "Держать у себя и не отдавать: оставить вещь себе, сохранить, а также присматривать за ребёнком/животным.",
+    "collocations": [
+      {
+        "fr": "garder un enfant",
+        "ru": "присматривать за ребёнком"
+      },
+      {
+        "fr": "garder le silence",
+        "ru": "хранить молчание"
+      },
+      {
+        "fr": "garder la monnaie",
+        "ru": "оставить сдачу себе"
+      },
+      {
+        "fr": "garder un secret",
+        "ru": "хранить секрет"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rendre",
+        "note": "garder = оставить себе (не отдавать); rendre = вернуть. Продавцу: «Gardez la monnaie» — сдачу не возвращайте, оставьте."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["verbe-action", "quotidien", "prendre"],
+    "caseIds": ["wc-prendre"]
+  },
+  {
+    "id": "wl-choisir",
+    "lemma": "choisir",
+    "pos": "verb",
+    "ipa": "/ʃwa.ziʁ/",
+    "translationsRu": ["выбирать", "выбрать"],
+    "translationsEn": ["to choose"],
+    "semanticCore": "Брать одно из нескольких: остановить выбор на варианте — в кафе, в магазине, в жизни.",
+    "collocations": [
+      {
+        "fr": "choisir un plat",
+        "ru": "выбрать блюдо"
+      },
+      {
+        "fr": "choisir entre deux options",
+        "ru": "выбрать из двух вариантов"
+      },
+      {
+        "fr": "bien choisir",
+        "ru": "сделать хороший выбор"
+      },
+      {
+        "fr": "choisir un cadeau",
+        "ru": "выбрать подарок"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "prendre",
+        "note": "choisir = выбрать (решить, какое); prendre = взять (заказать, получить). В кафе: сначала on choisit (решаем), потом on prend (заказываем)."
+      }
+    ],
+    "frequencyRank": 360,
+    "level": "A2",
+    "tags": ["verbe-action", "quotidien", "prendre"],
+    "caseIds": ["wc-prendre"]
+  },
+  {
+    "id": "wl-temps-deja",
+    "lemma": "déjà",
+    "pos": "adv",
+    "ipa": "/de.ʒa/",
+    "translationsRu": ["уже", "когда-то раньше"],
+    "translationsEn": ["already", "before", "yet"],
+    "semanticCore": "Действие случилось раньше ожидаемого момента — «уже».",
+    "collocations": [
+      {
+        "fr": "C'est déjà fini.",
+        "ru": "Это уже закончилось."
+      },
+      {
+        "fr": "J'ai déjà mangé.",
+        "ru": "Я уже поел."
+      },
+      {
+        "fr": "Il est déjà tard.",
+        "ru": "Уже поздно."
+      },
+      {
+        "fr": "Tu es déjà là ?",
+        "ru": "Ты уже здесь?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "encore",
+        "note": "déjà = уже (раньше срока); encore = ещё / всё ещё. «Уже сделал» — déjà; «ещё не сделал» — pas encore."
+      },
+      {
+        "with": "maintenant",
+        "note": "déjà = уже (раньше, чем думали); maintenant = сейчас (в данный момент). «Уже поздно» ≠ «сейчас поздно»."
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A2",
+    "tags": ["temps", "adverbe"],
+    "caseIds": ["wc-temps"]
+  },
+  {
+    "id": "wl-temps-toujours",
+    "lemma": "toujours",
+    "pos": "adv",
+    "ipa": "/tu.ʒuʁ/",
+    "translationsRu": ["всегда", "всё ещё"],
+    "translationsEn": ["always", "still"],
+    "semanticCore": "Постоянно, без исключений («всегда»), либо продолжается до сих пор («всё ещё»).",
+    "collocations": [
+      {
+        "fr": "comme toujours",
+        "ru": "как всегда"
+      },
+      {
+        "fr": "pour toujours",
+        "ru": "навсегда"
+      },
+      {
+        "fr": "Il est toujours là.",
+        "ru": "Он всё ещё здесь. / Он всегда здесь."
+      },
+      {
+        "fr": "toujours pas",
+        "ru": "всё ещё нет"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "encore",
+        "note": "В значении «всё ещё» toujours и encore близки (il dort toujours = il dort encore), но toujours — это ещё и «всегда» (привычка), а encore — «ещё раз / добавка»."
+      },
+      {
+        "with": "jamais",
+        "note": "Прямая пара: toujours = всегда; jamais = никогда. Противоположности на шкале частоты."
+      }
+    ],
+    "frequencyRank": 70,
+    "level": "A2",
+    "tags": ["temps", "fréquence", "adverbe"],
+    "caseIds": ["wc-temps"]
+  },
+  {
+    "id": "wl-temps-parfois",
+    "lemma": "parfois",
+    "pos": "adv",
+    "ipa": "/paʁ.fwa/",
+    "translationsRu": ["иногда", "порой"],
+    "translationsEn": ["sometimes", "at times"],
+    "semanticCore": "Время от времени, не всегда и не никогда — где-то посередине шкалы частоты.",
+    "collocations": [
+      {
+        "fr": "Parfois je me trompe.",
+        "ru": "Иногда я ошибаюсь."
+      },
+      {
+        "fr": "Il vient parfois le soir.",
+        "ru": "Он иногда приходит вечером."
+      },
+      {
+        "fr": "parfois… parfois…",
+        "ru": "то… то…"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "souvent",
+        "note": "parfois = иногда (редко-средне); souvent = часто (много раз). И то и другое — «не всегда», но souvent чаще."
+      },
+      {
+        "with": "quelquefois",
+        "note": "parfois и quelquefois — синонимы («иногда»); parfois чуть более употребительно и нейтрально."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["temps", "fréquence", "adverbe"],
+    "caseIds": ["wc-temps"]
+  },
+  {
+    "id": "wl-temps-souvent",
+    "lemma": "souvent",
+    "pos": "adv",
+    "ipa": "/su.vɑ̃/",
+    "translationsRu": ["часто"],
+    "translationsEn": ["often"],
+    "semanticCore": "Много раз, регулярно — высокая частота, но не «всегда».",
+    "collocations": [
+      {
+        "fr": "le plus souvent",
+        "ru": "чаще всего"
+      },
+      {
+        "fr": "trop souvent",
+        "ru": "слишком часто"
+      },
+      {
+        "fr": "assez souvent",
+        "ru": "довольно часто"
+      },
+      {
+        "fr": "Je viens souvent ici.",
+        "ru": "Я часто сюда прихожу."
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "parfois",
+        "note": "souvent = часто (много раз); parfois = иногда (изредка). souvent — выше по шкале частоты."
+      },
+      {
+        "with": "toujours",
+        "note": "souvent = часто, но с исключениями; toujours = всегда, без исключений."
+      }
+    ],
+    "frequencyRank": 150,
+    "level": "A2",
+    "tags": ["temps", "fréquence", "adverbe"],
+    "caseIds": ["wc-temps"]
+  },
+  {
+    "id": "wl-temps-jamais",
+    "lemma": "jamais",
+    "pos": "adv",
+    "ipa": "/ʒa.mɛ/",
+    "translationsRu": ["никогда", "когда-либо"],
+    "translationsEn": ["never", "ever"],
+    "semanticCore": "Ноль раз на шкале частоты («никогда», с ne); в вопросе и после si — «когда-либо».",
+    "collocations": [
+      {
+        "fr": "ne… jamais",
+        "ru": "никогда"
+      },
+      {
+        "fr": "jamais de la vie",
+        "ru": "ни за что на свете"
+      },
+      {
+        "fr": "plus jamais",
+        "ru": "больше никогда"
+      },
+      {
+        "fr": "à jamais",
+        "ru": "навсегда"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "toujours",
+        "note": "jamais = никогда (с ne: Je ne fume jamais); toujours = всегда. Противоположные концы шкалы."
+      },
+      {
+        "with": "déjà",
+        "note": "В вопросе они спорят: Tu as déjà vu ça ? = «ты уже это видел?»; As-tu jamais vu ça ? = «видел ли ты это когда-либо?». jamais тут = «когда-либо», не «никогда»."
+      }
+    ],
+    "frequencyRank": 130,
+    "level": "A2",
+    "tags": ["temps", "fréquence", "négation", "adverbe"],
+    "caseIds": ["wc-temps"]
+  },
+  {
+    "id": "wl-temps-maintenant",
+    "lemma": "maintenant",
+    "pos": "adv",
+    "ipa": "/mɛ̃t.nɑ̃/",
+    "translationsRu": ["сейчас", "теперь"],
+    "translationsEn": ["now"],
+    "semanticCore": "В данный, текущий момент — точка «сейчас» на временной оси.",
+    "collocations": [
+      {
+        "fr": "à partir de maintenant",
+        "ru": "начиная с этого момента"
+      },
+      {
+        "fr": "dès maintenant",
+        "ru": "прямо сейчас, уже сейчас"
+      },
+      {
+        "fr": "Maintenant, on y va.",
+        "ru": "Теперь идём."
+      },
+      {
+        "fr": "jusqu'à maintenant",
+        "ru": "до сих пор"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "déjà",
+        "note": "maintenant = сейчас (текущий момент); déjà = уже (раньше ожидаемого). «Сделай сейчас» (maintenant) ≠ «уже сделал» (déjà)."
+      },
+      {
+        "with": "bientôt",
+        "note": "maintenant = сейчас (в этот момент); bientôt = скоро (в ближайшем будущем, ещё не наступило)."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A2",
+    "tags": ["temps", "moment", "adverbe"],
+    "caseIds": ["wc-temps"]
+  },
+  {
+    "id": "wl-temps-bientot",
+    "lemma": "bientôt",
+    "pos": "adv",
+    "ipa": "/bjɛ̃.to/",
+    "translationsRu": ["скоро", "вскоре"],
+    "translationsEn": ["soon"],
+    "semanticCore": "Через короткое время, в ближайшем будущем — «скоро».",
+    "collocations": [
+      {
+        "fr": "À bientôt !",
+        "ru": "До скорого!"
+      },
+      {
+        "fr": "Il arrive bientôt.",
+        "ru": "Он скоро придёт."
+      },
+      {
+        "fr": "bientôt fini",
+        "ru": "скоро закончится"
+      },
+      {
+        "fr": "très bientôt",
+        "ru": "очень скоро"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "maintenant",
+        "note": "bientôt = скоро (ещё не сейчас, в будущем); maintenant = сейчас (уже в этот момент)."
+      },
+      {
+        "with": "tôt",
+        "note": "bientôt = скоро (через малое время); tôt = рано (раньше обычного срока). «Скоро» ≠ «рано»."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["temps", "futur", "adverbe"],
+    "caseIds": ["wc-temps"]
+  },
+  {
+    "id": "wl-ville-aller",
+    "lemma": "aller",
+    "pos": "verb",
+    "ipa": "/a.le/",
+    "translationsRu": ["идти", "ехать", "направляться"],
+    "translationsEn": ["to go"],
+    "semanticCore": "Двигаться куда-то (от себя к цели). Базовый глагол перемещения и направления.",
+    "collocations": [
+      {
+        "fr": "aller à la gare",
+        "ru": "идти/ехать на вокзал"
+      },
+      {
+        "fr": "aller tout droit",
+        "ru": "идти прямо"
+      },
+      {
+        "fr": "aller au centre-ville",
+        "ru": "ехать в центр города"
+      },
+      {
+        "fr": "Comment on va à la poste ?",
+        "ru": "Как пройти на почту?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "venir",
+        "note": "aller — движение ОТ говорящего к цели (туда); venir — движение К говорящему/собеседнику (сюда). Главная пара направления."
+      }
+    ],
+    "frequencyRank": 25,
+    "level": "A2",
+    "tags": ["ville", "mouvement", "direction"],
+    "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-ville-venir",
+    "lemma": "venir",
+    "pos": "verb",
+    "ipa": "/və.niʁ/",
+    "translationsRu": ["приходить", "приезжать", "прибывать"],
+    "translationsEn": ["to come"],
+    "semanticCore": "Двигаться К говорящему или к точке, где он находится. Зеркало для aller.",
+    "collocations": [
+      {
+        "fr": "venir avec moi",
+        "ru": "пойти со мной"
+      },
+      {
+        "fr": "Tu viens ?",
+        "ru": "Ты идёшь? / Идём?"
+      },
+      {
+        "fr": "venir à pied",
+        "ru": "прийти пешком"
+      },
+      {
+        "fr": "Il vient de la gare.",
+        "ru": "Он идёт с вокзала (сюда)."
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "aller",
+        "note": "venir = двигаться сюда (к говорящему); aller = двигаться туда (от говорящего). По-русски оба часто «идти», но направление противоположное."
+      }
+    ],
+    "frequencyRank": 45,
+    "level": "A2",
+    "tags": ["ville", "mouvement", "direction"],
+    "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-ville-tourner",
+    "lemma": "tourner",
+    "pos": "verb",
+    "ipa": "/tuʁ.ne/",
+    "translationsRu": ["поворачивать", "сворачивать"],
+    "translationsEn": ["to turn"],
+    "semanticCore": "Менять направление движения — повернуть налево или направо.",
+    "collocations": [
+      {
+        "fr": "tourner à droite",
+        "ru": "повернуть направо"
+      },
+      {
+        "fr": "tourner à gauche",
+        "ru": "повернуть налево"
+      },
+      {
+        "fr": "tourner au coin de la rue",
+        "ru": "повернуть на углу улицы"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "continuer",
+        "note": "tourner — сменить направление (свернуть); continuer — не менять направление, идти дальше. На перекрёстке это противоположные команды."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["ville", "mouvement", "direction"],
+    "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-ville-continuer",
+    "lemma": "continuer",
+    "pos": "verb",
+    "ipa": "/kɔ̃.ti.nɥe/",
+    "translationsRu": ["продолжать", "идти дальше"],
+    "translationsEn": ["to continue", "to keep going"],
+    "semanticCore": "Не останавливаться и не сворачивать — продолжать движение в том же направлении.",
+    "collocations": [
+      {
+        "fr": "continuer tout droit",
+        "ru": "идти прямо дальше"
+      },
+      {
+        "fr": "continuer jusqu'au feu",
+        "ru": "идти до светофора"
+      },
+      {
+        "fr": "continuer sur cette rue",
+        "ru": "идти дальше по этой улице"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tourner",
+        "note": "continuer — оставаться на том же направлении; tourner — свернуть. Указывая дорогу, выбираешь одно из двух."
+      }
+    ],
+    "frequencyRank": 330,
+    "level": "A2",
+    "tags": ["ville", "mouvement", "direction"],
+    "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-ville-traverser",
+    "lemma": "traverser",
+    "pos": "verb",
+    "ipa": "/tʁa.vɛʁ.se/",
+    "translationsRu": ["переходить", "пересекать"],
+    "translationsEn": ["to cross"],
+    "semanticCore": "Пройти с одной стороны на другую — через улицу, площадь, мост.",
+    "collocations": [
+      {
+        "fr": "traverser la rue",
+        "ru": "перейти улицу"
+      },
+      {
+        "fr": "traverser au passage piéton",
+        "ru": "перейти по пешеходному переходу"
+      },
+      {
+        "fr": "traverser le pont",
+        "ru": "перейти мост"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "passer",
+        "note": "traverser — пересечь поперёк, с одной стороны на другую (la rue); passer — проходить мимо/через (passer devant, passer par). Не одно и то же."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["ville", "mouvement", "direction"],
+    "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-ville-monter",
+    "lemma": "monter",
+    "pos": "verb",
+    "ipa": "/mɔ̃.te/",
+    "translationsRu": ["подниматься", "садиться (в транспорт)", "входить"],
+    "translationsEn": ["to go up", "to get on"],
+    "semanticCore": "Движение вверх: подняться по лестнице/улице ИЛИ войти в транспорт (monter dans le bus).",
+    "collocations": [
+      {
+        "fr": "monter dans le bus",
+        "ru": "сесть в автобус"
+      },
+      {
+        "fr": "monter les escaliers",
+        "ru": "подняться по лестнице"
+      },
+      {
+        "fr": "monter la rue",
+        "ru": "идти вверх по улице"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "descendre",
+        "note": "monter — вверх / сесть в транспорт; descendre — вниз / выйти из транспорта. В метро и автобусе это пара «зайти/выйти»."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["ville", "mouvement", "transport"],
+    "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-ville-descendre",
+    "lemma": "descendre",
+    "pos": "verb",
+    "ipa": "/de.sɑ̃dʁ/",
+    "translationsRu": ["спускаться", "выходить (из транспорта)"],
+    "translationsEn": ["to go down", "to get off"],
+    "semanticCore": "Движение вниз: спуститься по лестнице/улице ИЛИ выйти из транспорта (descendre du bus).",
+    "collocations": [
+      {
+        "fr": "descendre du bus",
+        "ru": "выйти из автобуса"
+      },
+      {
+        "fr": "descendre à la prochaine station",
+        "ru": "выйти на следующей станции"
+      },
+      {
+        "fr": "descendre les escaliers",
+        "ru": "спуститься по лестнице"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "monter",
+        "note": "descendre — вниз / выйти из транспорта; monter — вверх / зайти. «Je descends à Châtelet» = я выхожу на Шатле."
+      }
+    ],
+    "frequencyRank": 470,
+    "level": "A2",
+    "tags": ["ville", "mouvement", "transport"],
+    "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-ville-rue",
+    "lemma": "rue",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁy/",
+    "translationsRu": ["улица"],
+    "translationsEn": ["street"],
+    "semanticCore": "Улица в городе — дорога с домами по сторонам, где ходят люди.",
+    "collocations": [
+      {
+        "fr": "dans la rue",
+        "ru": "на улице"
+      },
+      {
+        "fr": "au bout de la rue",
+        "ru": "в конце улицы"
+      },
+      {
+        "fr": "traverser la rue",
+        "ru": "перейти улицу"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "route",
+        "note": "la rue — улица в городе (с домами); la route — дорога/трасса между городами. Англ. «route» сбивает: это НЕ «rue»."
+      }
+    ],
+    "frequencyRank": 210,
+    "level": "A2",
+    "tags": ["ville", "lieu"],
+    "caseIds": ["wc-ville"]
   }
 ]

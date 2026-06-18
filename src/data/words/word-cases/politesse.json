@@ -1,0 +1,324 @@
+[
+  {
+    "id": "wc-politesse",
+    "title": "Просьбы, вежливость, отказ",
+    "theme": "politesse",
+    "level": "A2",
+    "wordIds": [
+      "wl-politesse-vouloir",
+      "wl-politesse-svp",
+      "wl-politesse-pardon",
+      "wl-politesse-desole",
+      "wl-politesse-deranger",
+      "wl-politesse-refuser",
+      "wl-politesse-gentil"
+    ],
+    "steps": [
+      {
+        "id": "wc-politesse-vouloir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-politesse-vouloir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово (в разных формах) во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je voudrais un café, s'il vous plaît.",
+          "Vous voulez quelque chose à boire ?",
+          "Elle veut partir tôt ce soir."
+        ],
+        "options": ["хотеть, желать", "мочь", "знать", "должен"],
+        "correctIndex": 0,
+        "explanation": "vouloir — хотеть, желать. Формы: je veux (хочу), vous voulez (вы хотите). Вежливая просьба — «je voudrais» (я бы хотел/хотела), это мягче, чем прямое «je veux»."
+      },
+      {
+        "id": "wc-politesse-vouloir-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-politesse-vouloir",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать корень vouloir. Что значит это слово?",
+        "bridge": "Англ. «voluntary» / «volition» — действие по своей воле, по желанию. Тот же латинский корень vol- («хотеть») сидит и в vouloir.",
+        "options": ["хотеть, желать", "видеть", "говорить", "идти"],
+        "correctIndex": 0,
+        "explanation": "vouloir = хотеть. Англ. «voluntary» (добровольный) и «volition» (воля) — родственники по корню vol-: делать что-то потому, что хочешь."
+      },
+      {
+        "id": "wc-politesse-vouloir-cmp",
+        "kind": "compare",
+        "wordId": "wl-politesse-vouloir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Je veux и je voudrais. В чём разница, когда что-то просишь?",
+        "phrases": ["Je veux un café.", "Je voudrais un café, s'il vous plaît."],
+        "options": [
+          "«Je veux» — прямое «я хочу», звучит резко; «je voudrais» — «я бы хотел», вежливая просьба.",
+          "Это полные синонимы, разницы по вежливости нет.",
+          "«Je veux» вежливее, а «je voudrais» — грубее.",
+          "«Je voudrais» значит «я не хочу»."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Je veux» (хочу) звучит как требование — детям так делают замечание. В магазине, кафе, у врача вежливо говорят «je voudrais…» (я бы хотел…), это условное наклонение смягчает просьбу."
+      },
+      {
+        "id": "wc-politesse-svp-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-politesse-svp",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно и то же выражение во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Un café, s'il vous plaît.",
+          "Pouvez-vous répéter, s'il vous plaît ?",
+          "Entrez, s'il vous plaît."
+        ],
+        "options": ["пожалуйста (при просьбе)", "спасибо", "извините", "до свидания"],
+        "correctIndex": 0,
+        "explanation": "s'il vous plaît — «пожалуйста» в просьбе (дословно «если вам это угодно»). С незнакомыми и на «вы» — vous; близким и на «ты» — s'il te plaît. Это просьба, а не благодарность (спасибо — merci)."
+      },
+      {
+        "id": "wc-politesse-svp-sort",
+        "kind": "sort",
+        "wordId": "wl-politesse-svp",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Где «пожалуйста» по-французски звучит естественно, а где — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "Un thé, s'il vous plaît.",
+            "basket": "ok"
+          },
+          {
+            "text": "s'il te plaît, aide-moi",
+            "basket": "ok"
+          },
+          {
+            "text": "Merci, s'il vous plaît.",
+            "basket": "no"
+          },
+          {
+            "text": "Oui, s'il te plaît.",
+            "basket": "ok"
+          },
+          {
+            "text": "s'il vous plaît beaucoup",
+            "basket": "no"
+          }
+        ],
+        "explanation": "s'il vous plaît / s'il te plaît добавляют к просьбе или к согласию («Oui, s'il te plaît» — «Да, пожалуйста»). Нельзя «Merci, s'il vous plaît» (спасибо — это уже не просьба) и нет формы «s'il vous plaît beaucoup» (это не merci beaucoup)."
+      },
+      {
+        "id": "wc-politesse-svp-hint",
+        "kind": "wordHint",
+        "wordId": "wl-politesse-svp",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни выражение: вежливое слово, которое добавляют в конце просьбы; на письме его часто сокращают до S.V.P.",
+        "answer": "s'il vous plaît",
+        "hints": [
+          "Начинается на s'il…",
+          "Дословно: «если вам это угодно» (s'il + vous + plaît)",
+          "Un café, ___ ."
+        ],
+        "explanation": "s'il vous plaît — «пожалуйста». Состоит из si (если) + il + vous + plaît (от plaire — нравиться). На «ты»: s'il te plaît."
+      },
+      {
+        "id": "wc-politesse-pardon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-politesse-pardon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Pardon, je peux passer ?",
+          "Pardon, je n'ai pas compris.",
+          "Oh, pardon ! Je vous ai bousculé."
+        ],
+        "options": ["извините (простите)", "спасибо", "привет", "пожалуйста"],
+        "correctIndex": 0,
+        "explanation": "pardon — «извините / простите». Им просят пройти, переспрашивают и извиняются за лёгкую оплошность (толкнули). Короче и легче, чем «je suis désolé»."
+      },
+      {
+        "id": "wc-politesse-pardon-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-politesse-pardon",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит pardon?",
+        "bridge": "Англ. «pardon?» / «I beg your pardon» — «простите?», «извините». То же слово, тот же смысл.",
+        "options": ["извините, простите", "спасибо", "до свидания", "конечно"],
+        "correctIndex": 0,
+        "explanation": "pardon = извините. Англ. «pardon» — прямой мост: и переспрашивают («Pardon ?»), и извиняются («Pardon !»)."
+      },
+      {
+        "id": "wc-politesse-desole-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-politesse-desole",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово (в разных формах) во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je suis désolé, je suis en retard.",
+          "Désolée, je ne peux pas venir.",
+          "Il est vraiment désolé pour le retard."
+        ],
+        "options": [
+          "сожалеющий, виноватый («мне жаль»)",
+          "уставший",
+          "опустошённый, заброшенный",
+          "довольный"
+        ],
+        "correctIndex": 0,
+        "explanation": "désolé(e) — «мне жаль, извините». «Je suis désolé» (мужчина) / «désolée» (женщина) — извинение за что-то посерьёзнее, чем pardon: опоздание, отказ, плохую новость."
+      },
+      {
+        "id": "wc-politesse-desole-trap",
+        "kind": "trap",
+        "wordId": "wl-politesse-desole",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг. Англ. «desolate» = опустошённый, безлюдный. А как по-французски сказать «мне очень жаль»?",
+        "phrases": ["Je suis désolé.", "Je suis désolé de vous déranger."],
+        "options": [
+          "Je suis désolé.",
+          "Je suis désolé значит «я опустошён».",
+          "Je suis fatigué.",
+          "Je suis content."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: «désolé» похоже на англ. «desolate» (опустошённый, безлюдный), но во французском «je suis désolé» — это вежливое «мне жаль / извините». Не «я опустошён»."
+      },
+      {
+        "id": "wc-politesse-deranger-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-politesse-deranger",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово (в разных формах) во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Excusez-moi de vous déranger.",
+          "Je ne voudrais pas vous déranger.",
+          "Ça ne vous dérange pas si j'ouvre la fenêtre ?"
+        ],
+        "options": ["беспокоить, мешать", "помогать", "благодарить", "приглашать"],
+        "correctIndex": 0,
+        "explanation": "déranger — беспокоить, мешать. «Excusez-moi de vous déranger» — «извините за беспокойство». «Ça ne vous dérange pas si… ?» — «вы не против, если…?»"
+      },
+      {
+        "id": "wc-politesse-deranger-trap",
+        "kind": "trap",
+        "wordId": "wl-politesse-deranger",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг. Англ. «deranged» = сумасшедший, невменяемый. А что значит французское déranger?",
+        "phrases": ["Je ne veux pas vous déranger.", "Excusez-moi de vous déranger."],
+        "options": [
+          "беспокоить, мешать кому-то",
+          "сводить с ума",
+          "наводить порядок",
+          "соглашаться"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: англ. «deranged» (безумный) сбивает. Французское déranger — мягкое «беспокоить, мешать»: «извините, что отвлекаю». Никакого «безумия»."
+      },
+      {
+        "id": "wc-politesse-refuser-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-politesse-refuser",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово (в разных формах) во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il a refusé mon invitation.",
+          "Je ne peux pas refuser un café.",
+          "Elle refuse de répondre."
+        ],
+        "options": ["отказывать(ся), отвергать", "соглашаться", "забывать", "повторять"],
+        "correctIndex": 0,
+        "explanation": "refuser — отказываться, отвергать. «refuser une invitation» — отклонить приглашение; «refuser de + инфинитив» — отказываться что-то делать («refuse de répondre» — отказывается отвечать)."
+      },
+      {
+        "id": "wc-politesse-refuser-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-politesse-refuser",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит refuser?",
+        "bridge": "Англ. глагол «to refuse» — отказывать(ся). Французское refuser — то же слово с -er на конце.",
+        "options": ["отказывать(ся)", "возвращать", "ремонтировать", "путать"],
+        "correctIndex": 0,
+        "explanation": "refuser = отказываться. Англ. «refuse» — прямой мост. Только во французском это правильный глагол на -er: je refuse, il a refusé."
+      },
+      {
+        "id": "wc-politesse-gentil-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-politesse-gentil",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово (в разных формах) во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "C'est très gentil de votre part.",
+          "Le serveur est gentil.",
+          "Elle est gentille avec tout le monde."
+        ],
+        "options": ["добрый, любезный", "тихий, мягкий (на ощупь)", "красивый", "богатый"],
+        "correctIndex": 0,
+        "explanation": "gentil(le) — добрый, любезный (о человеке, поступке). «C'est gentil de votre part» — «как мило с вашей стороны». Женский род — gentille."
+      },
+      {
+        "id": "wc-politesse-gentil-trap",
+        "kind": "trap",
+        "wordId": "wl-politesse-gentil",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг. Англ. «gentle» = мягкий, нежный (о прикосновении). А что значит французское gentil?",
+        "phrases": ["Il est très gentil.", "C'est gentil de votre part."],
+        "options": [
+          "добрый, любезный (о человеке)",
+          "мягкий, нежный на ощупь",
+          "благородный, дворянский",
+          "медленный, осторожный"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: англ. «gentle» (мягкий, нежный) — это по-французски doux. А gentil значит «добрый, любезный» по характеру: «он добрый», «мило с вашей стороны»."
+      },
+      {
+        "id": "wc-politesse-refuser-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-politesse-refuser",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три выражения — вежливый отказ или извинение. Найди лишнее (это согласие).",
+        "options": [
+          "Non, merci.",
+          "Je suis désolé, je ne peux pas.",
+          "Avec plaisir !",
+          "Je préfère refuser."
+        ],
+        "correctIndex": 2,
+        "explanation": "«Non, merci», «Je suis désolé, je ne peux pas» и «Je préfère refuser» — вежливые отказы. «Avec plaisir !» («с удовольствием!») — наоборот, согласие. Оно лишнее."
+      },
+      {
+        "id": "wc-politesse-gentil-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-politesse-gentil",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для gentil (добрый, любезный), чтобы не путать с англ. «gentle» (мягкий, нежный).",
+        "examples": [
+          "Англ. «gentle» — про мягкое прикосновение, а фр. gentil — про доброе сердце: «Il est gentil» = «он добрый».",
+          "gentil звучит как «джентльмен» — джентльмен добр и любезен с другими (final -l не читается: «жанти»)."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "id": "wc-ecole",
+    "title": "Школа ребёнка",
+    "theme": "ecole",
+    "level": "A1",
+    "wordIds": [
+      "wl-ecole-ecole",
+      "wl-ecole-maitresse",
+      "wl-ecole-eleve",
+      "wl-ecole-cartable",
+      "wl-ecole-devoirs",
+      "wl-ecole-cantine",
+      "wl-ecole-recreation",
+      "wl-ecole-note"
+    ],
+    "steps": [
+      {
+        "id": "wc-ecole-ecole-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecole-ecole",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ma fille va à l'école tous les matins.",
+          "L'école commence à huit heures et demie.",
+          "On se retrouve devant l'école après les cours ?"
+        ],
+        "options": ["школа", "университет", "работа", "магазин"],
+        "correctIndex": 0,
+        "explanation": "école (f) — школа (для детей). «aller à l'école» — ходить в школу. Университет — université, для взрослых студентов."
+      },
+      {
+        "id": "wc-ecole-ecole-collo",
+        "kind": "sort",
+        "wordId": "wl-ecole-ecole",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом école звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "aller à l'école",
+            "basket": "ok"
+          },
+          {
+            "text": "l'école primaire",
+            "basket": "ok"
+          },
+          {
+            "text": "après l'école",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une école",
+            "basket": "no"
+          },
+          {
+            "text": "une tranche d'école",
+            "basket": "no"
+          }
+        ],
+        "explanation": "В школу ходят (aller à l'école), бывает начальная школа (l'école primaire), что-то делают после школы (après l'école). «boire une école» (пить школу) и «une tranche d'école» (ломтик школы) — бессмыслица."
+      },
+      {
+        "id": "wc-ecole-maitresse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecole-maitresse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Кто это — слово из трёх сцен?",
+        "contexts": [
+          "Maîtresse, j'ai une question !",
+          "La maîtresse explique la leçon au tableau.",
+          "Ma maîtresse de CP est très gentille."
+        ],
+        "options": ["учительница начальной школы", "директор", "мама", "уборщица"],
+        "correctIndex": 0,
+        "explanation": "maîtresse (f) — учительница начальной школы; так её зовут сами дети (учитель — le maître). CP — первый класс начальной школы."
+      },
+      {
+        "id": "wc-ecole-maitresse-trap",
+        "kind": "trap",
+        "wordId": "wl-ecole-maitresse",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг. Англ. «mistress» часто значит «любовница». Что значит «la maîtresse» в школе?",
+        "phrases": ["La maîtresse écrit au tableau.", "La maîtresse corrige les cahiers."],
+        "options": ["учительница начальной школы", "любовница", "хозяйка дома", "директриса"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: англ. «mistress» часто переводят как «любовница», но фр. «la maîtresse (d'école)» — это просто учительница начальных классов. В школьном контексте никакого второго смысла нет."
+      },
+      {
+        "id": "wc-ecole-eleve-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecole-eleve",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Кто это — слово из трёх сцен?",
+        "contexts": [
+          "C'est un bon élève, il travaille bien.",
+          "Il y a une nouvelle élève dans la classe.",
+          "Les élèves écoutent la maîtresse."
+        ],
+        "options": ["ученик / ученица", "учитель", "родитель", "директор"],
+        "correctIndex": 0,
+        "explanation": "élève — ученик или ученица (одна форма на оба пола, меняется артикль: un élève / une élève). Студент университета — étudiant; у школьника — élève."
+      },
+      {
+        "id": "wc-ecole-eleve-cmp",
+        "kind": "compare",
+        "wordId": "wl-ecole-eleve",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "élève и étudiant. В чём разница?",
+        "phrases": [
+          "Mon fils est élève à l'école primaire.",
+          "Ma sœur est étudiante à l'université."
+        ],
+        "options": [
+          "élève — ученик школы (дети); étudiant — студент университета (взрослые).",
+          "Это полные синонимы, разницы нет.",
+          "élève — студент вуза; étudiant — школьник.",
+          "élève — учитель; étudiant — ученик."
+        ],
+        "correctIndex": 0,
+        "explanation": "élève — школьник (в школе); étudiant — студент (в университете). У ребёнка в школе — élève."
+      },
+      {
+        "id": "wc-ecole-cartable-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecole-cartable",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что это за предмет — слово из трёх сцен?",
+        "contexts": [
+          "Mets tes cahiers dans ton cartable !",
+          "Son cartable est trop lourd ce matin.",
+          "Il a oublié son cartable à la maison."
+        ],
+        "options": ["школьный портфель", "тетрадь", "парта", "пенал"],
+        "correctIndex": 0,
+        "explanation": "cartable (m) — школьный портфель/ранец, в котором носят тетради и учебники. Тетрадь — un cahier, парта — un pupitre."
+      },
+      {
+        "id": "wc-ecole-cartable-hint",
+        "kind": "wordHint",
+        "wordId": "wl-ecole-cartable",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: сумка школьника, в которой он носит тетради и учебники.",
+        "answer": "cartable",
+        "hints": [
+          "Начинается на c…",
+          "8 букв, мужской род: un ___",
+          "Mets tes cahiers dans ton ___ !"
+        ],
+        "explanation": "cartable (m) — школьный портфель. Не путай с «sac à dos» (обычный рюкзак): у школьника обычно именно cartable."
+      },
+      {
+        "id": "wc-ecole-devoirs-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecole-devoirs",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Tu as fait tes devoirs ?",
+          "J'ai beaucoup de devoirs ce soir.",
+          "Les devoirs de maths sont difficiles."
+        ],
+        "options": ["домашнее задание", "обязанности по дому", "оценки", "учебники"],
+        "correctIndex": 0,
+        "explanation": "les devoirs (m, мн. ч.) — домашнее задание. «faire ses devoirs» — делать уроки. В этом значении слово всегда во множественном числе."
+      },
+      {
+        "id": "wc-ecole-devoirs-trap",
+        "kind": "trap",
+        "wordId": "wl-ecole-devoirs",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Внимание к числу. Как сказать «домашнее задание»?",
+        "phrases": ["faire ses devoirs", "le devoir du citoyen"],
+        "options": [
+          "faire ses devoirs",
+          "faire son devoir",
+          "faire ses obligations",
+          "faire ses leçons de maison"
+        ],
+        "correctIndex": 0,
+        "explanation": "Домашнее задание — всегда множественное: les devoirs, «faire ses devoirs». В единственном числе «le devoir» значит «долг, обязанность» (le devoir du citoyen — долг гражданина). «leçons de maison» — калька с английского, так не говорят."
+      },
+      {
+        "id": "wc-ecole-cantine-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecole-cantine",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le midi, les enfants mangent à la cantine.",
+          "Aujourd'hui, à la cantine, il y a du poulet.",
+          "Mon fils reste à la cantine ce midi."
+        ],
+        "options": ["школьная столовая", "спортзал", "класс", "библиотека"],
+        "correctIndex": 0,
+        "explanation": "cantine (f) — школьная столовая, где дети обедают в обед (le midi). «manger à la cantine» — обедать в столовой."
+      },
+      {
+        "id": "wc-ecole-cantine-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-ecole-cantine",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит cantine?",
+        "bridge": "Англ. «canteen» — столовая (на работе, в школе, в армии). Французское «cantine» — то же самое.",
+        "options": ["столовая", "кухня дома", "буфет в театре", "кафе на улице"],
+        "correctIndex": 0,
+        "explanation": "cantine = столовая при школе или работе. Англ. «canteen» — прямой мост: то же значение, почти то же слово."
+      },
+      {
+        "id": "wc-ecole-recreation-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecole-recreation",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Pendant la récréation, les enfants jouent dans la cour.",
+          "La cloche sonne : c'est la récréation !",
+          "On a dix minutes de récréation entre les cours."
+        ],
+        "options": ["перемена (в школе)", "урок", "каникулы", "звонок"],
+        "correctIndex": 0,
+        "explanation": "récréation (f) — короткая перемена между уроками, когда дети выходят во двор. В разговоре сокращают: la récré. Каникулы — это les vacances (недели, не минуты)."
+      },
+      {
+        "id": "wc-ecole-recreation-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-ecole-recreation",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит récréation в школе?",
+        "bridge": "Англ. «recreation» — отдых, развлечение. Французское «récréation» в школе — перемена (время отдыха между уроками). Тот же корень.",
+        "options": [
+          "перемена / отдых между уроками",
+          "контрольная работа",
+          "домашнее задание",
+          "оценка"
+        ],
+        "correctIndex": 0,
+        "explanation": "récréation = перемена. Англ. «recreation» (отдых) — хороший мост: перемена и есть отдых между уроками. Запомни accent aigu: ré-cré-a-tion."
+      },
+      {
+        "id": "wc-ecole-note-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecole-note",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в школе?",
+        "contexts": [
+          "Il a eu une bonne note en français.",
+          "15 sur 20, c'est une très bonne note !",
+          "Elle est triste à cause d'une mauvaise note."
+        ],
+        "options": ["оценка (отметка)", "записка", "музыкальная нота", "счёт"],
+        "correctIndex": 0,
+        "explanation": "В школе note (f) — оценка, отметка (во Франции обычно из 20: 15 sur 20). У слова есть и другие значения (записка, нота), но в школе — это балл."
+      },
+      {
+        "id": "wc-ecole-note-trap",
+        "kind": "trap",
+        "wordId": "wl-ecole-note",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг. Англ. «note» = записка/заметка. Что значит школьная «une bonne note»?",
+        "phrases": ["Il a eu une bonne note.", "J'ai pris une note dans mon carnet."],
+        "options": ["хорошая оценка", "хорошая записка", "красивая нота", "большой счёт"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: англ. «note» — это записка/заметка, но фр. «une bonne note» в школе — хорошая оценка. По форме слово одно, а школьное значение — балл."
+      },
+      {
+        "id": "wc-ecole-note-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-ecole-note",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для note (оценка), чтобы не путать с англ. «note» (записка).",
+        "examples": [
+          "Учитель ставит note (оценку) в дневник — это не записка, а балл из 20.",
+          "«Bonne note» звучит почти как «хорошая нота» — пусть хорошая оценка звучит для тебя как приятная нота."
+        ]
+      }
+    ]
+  }
+]
