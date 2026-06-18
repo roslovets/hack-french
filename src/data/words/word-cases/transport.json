@@ -1,0 +1,328 @@
+[
+  {
+    "id": "wc-transport",
+    "title": "Транспорт и поездки",
+    "theme": "transport",
+    "level": "A2",
+    "wordIds": [
+      "wl-transport-train",
+      "wl-transport-voiture",
+      "wl-transport-bus",
+      "wl-transport-velo",
+      "wl-transport-avion",
+      "wl-transport-gare",
+      "wl-transport-billet",
+      "wl-transport-partir"
+    ],
+    "steps": [
+      {
+        "id": "wc-transport-train-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport-train",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On prend le train pour Lyon demain.",
+          "Le train part à huit heures.",
+          "J'ai raté le train de ce matin."
+        ],
+        "options": ["поезд", "вокзал", "билет", "автобус"],
+        "correctIndex": 0,
+        "explanation": "le train (m) — поезд. «prendre le train» — ехать на поезде, «rater le train» — опоздать на поезд. Вокзал — la gare, билет — un billet."
+      },
+      {
+        "id": "wc-transport-train-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-transport-train",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит train?",
+        "bridge": "Англ. «train» — поезд; пишется точно так же. Только читается по-французски /tʁɛ̃/, с носовым «-эн» на конце и без «-эйн».",
+        "options": ["поезд", "автобус", "самолёт", "дорога"],
+        "correctIndex": 0,
+        "explanation": "train = поезд. Англ. «train» — прямой мост: те же буквы. Различается только произношение: фр. /tʁɛ̃/ (носовое), не «трэйн»."
+      },
+      {
+        "id": "wc-transport-voiture-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport-voiture",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "On y va en voiture, c'est plus rapide.",
+          "Elle apprend à conduire une voiture.",
+          "Où est-ce qu'on peut garer la voiture ?"
+        ],
+        "options": ["машина (автомобиль)", "повозка", "дорога", "водитель"],
+        "correctIndex": 0,
+        "explanation": "la voiture (f) — машина, автомобиль. «en voiture» — на машине, «conduire une voiture» — водить, «garer la voiture» — парковать."
+      },
+      {
+        "id": "wc-transport-voiture-trap",
+        "kind": "trap",
+        "wordId": "wl-transport-voiture",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В поезде объявляют: «Votre place est dans la voiture 12». Что такое voiture здесь?",
+        "options": [
+          "вагон поезда (с местами для пассажиров)",
+          "ваша личная машина",
+          "тележка с едой",
+          "место у окна"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: la voiture — это не только «машина». В поезде la voiture = пассажирский вагон (voiture 12 = вагон 12). Грузовой вагон — le wagon, а механизм/станок — la machine."
+      },
+      {
+        "id": "wc-transport-bus-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport-bus",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je prends le bus pour aller au travail.",
+          "L'arrêt de bus est juste là.",
+          "Dépêche-toi, on va rater le bus !"
+        ],
+        "options": ["автобус", "поезд", "остановка", "метро"],
+        "correctIndex": 0,
+        "explanation": "le bus (m) — городской автобус. «prendre le bus» — ехать на автобусе, «l'arrêt de bus» — остановка. Конечная s читается: /bys/."
+      },
+      {
+        "id": "wc-transport-bus-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-transport-bus",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово. Какое из написанных совпадает с тем, что прозвучало?",
+        "audioText": "bus",
+        "options": ["bus", "puce", "russe", "bouc"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало bus /bys/ — автобус. Похожие, но разные слова: puce /pys/ (блоха) и russe /ʁys/ (русский) различаются только согласным; bouc /buk/ (козёл) — другая гласная /u/. Слушай начало и гласную."
+      },
+      {
+        "id": "wc-transport-bus-cmp",
+        "kind": "compare",
+        "wordId": "wl-transport-bus",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le bus и le car. В чём разница?",
+        "phrases": [
+          "Je prends le bus pour aller au centre-ville.",
+          "On prend le car pour aller à Marseille."
+        ],
+        "options": [
+          "le bus — городской автобус (короткие поездки); le car — междугородний/туристический автобус.",
+          "Это полные синонимы, разницы нет.",
+          "le bus — за городом, le car — только в городе.",
+          "le car по-французски значит «машина»."
+        ],
+        "correctIndex": 0,
+        "explanation": "le bus — внутри города (l'arrêt de bus). le car — между городами или экскурсионный (un car pour Marseille). Внимание: фр. le car ≠ англ. «car» (машина)."
+      },
+      {
+        "id": "wc-transport-velo-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport-velo",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Le week-end, on fait du vélo à la campagne.",
+          "Je vais au bureau à vélo.",
+          "Il s'est acheté un vélo électrique."
+        ],
+        "options": ["велосипед", "мотоцикл", "самокат", "прогулка"],
+        "correctIndex": 0,
+        "explanation": "le vélo (m) — велосипед. «faire du vélo» — кататься на велосипеде, «à vélo» — на велосипеде. Самое обычное разговорное слово."
+      },
+      {
+        "id": "wc-transport-velo-cmp",
+        "kind": "compare",
+        "wordId": "wl-transport-velo",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le vélo и la bicyclette. В чём разница?",
+        "phrases": ["Je fais du vélo tous les jours.", "Ma grand-mère a une vieille bicyclette."],
+        "options": [
+          "Значат одно (велосипед), но vélo — обычное живое слово, а bicyclette звучит старомодно/официально.",
+          "vélo — детский, bicyclette — взрослый.",
+          "vélo — это руль, bicyclette — всё устройство целиком.",
+          "Это разные виды транспорта."
+        ],
+        "correctIndex": 0,
+        "explanation": "vélo и bicyclette — синонимы, но в живой речи почти всегда говорят le vélo. la bicyclette звучит устаревше или нарочито официально."
+      },
+      {
+        "id": "wc-transport-avion-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport-avion",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On prend l'avion pour aller au Japon.",
+          "Voyager en avion, c'est rapide mais cher.",
+          "J'ai réservé un billet d'avion pour juillet."
+        ],
+        "options": ["самолёт", "аэропорт", "билет", "поезд"],
+        "correctIndex": 0,
+        "explanation": "l'avion (m) — самолёт. «prendre l'avion» — лететь, «en avion» — самолётом, «un billet d'avion» — билет на самолёт. Аэропорт — l'aéroport."
+      },
+      {
+        "id": "wc-transport-avion-sort",
+        "kind": "sort",
+        "wordId": "wl-transport-avion",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с avion звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "prendre l'avion",
+            "basket": "ok"
+          },
+          {
+            "text": "voyager en avion",
+            "basket": "ok"
+          },
+          {
+            "text": "un billet d'avion",
+            "basket": "ok"
+          },
+          {
+            "text": "conduire l'avion",
+            "basket": "no"
+          },
+          {
+            "text": "monter sur l'avion",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«prendre l'avion», «en avion», «un billet d'avion» — естественно. Самолётом не «conduire» (это про машину; самолётом управляет le pilote — on pilote un avion), и садятся не «sur l'avion», а «dans l'avion» (monter dans l'avion)."
+      },
+      {
+        "id": "wc-transport-gare-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport-gare",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Rendez-vous à la gare à dix heures.",
+          "Le train part de la gare de Lyon.",
+          "On achète les billets à la gare."
+        ],
+        "options": ["вокзал", "остановка", "перрон", "аэропорт"],
+        "correctIndex": 0,
+        "explanation": "la gare (f) — железнодорожный вокзал. «à la gare» — на вокзале/на вокзал, «la gare de Lyon» — Лионский вокзал. Автовокзал — la gare routière."
+      },
+      {
+        "id": "wc-transport-gare-trap",
+        "kind": "trap",
+        "wordId": "wl-transport-gare",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово la gare похоже на «гараж». Как правильно сказать «Встретимся на вокзале»?",
+        "options": [
+          "On se retrouve à la gare.",
+          "On se retrouve au garage.",
+          "On se retrouve à la garage.",
+          "On se retrouve au gare."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: la gare — вокзал (женский род, à la gare), а le garage — гараж/автосервис. Правильно «à la gare». «gare !» в речи также значит «осторожно!»."
+      },
+      {
+        "id": "wc-transport-billet-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport-billet",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai acheté un billet de train pour Bordeaux.",
+          "Tu as réservé ton billet d'avion ?",
+          "Il me reste un billet de vingt euros."
+        ],
+        "options": ["билет (а также банкнота)", "касса", "очередь", "место"],
+        "correctIndex": 0,
+        "explanation": "le billet (m) — билет (на поезд, самолёт, концерт), а также банкнота (un billet de vingt euros). «réserver un billet» — забронировать билет."
+      },
+      {
+        "id": "wc-transport-billet-cmp",
+        "kind": "compare",
+        "wordId": "wl-transport-billet",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un billet и un ticket. В чём разница?",
+        "phrases": ["Je prends un billet de train pour Nice.", "Il faut un ticket pour le métro."],
+        "options": [
+          "le billet — на поезд/самолёт/концерт (часто с местом, бронируют); le ticket — мелкий билетик на метро/автобус или чек.",
+          "Это полные синонимы, разницы нет.",
+          "le billet — на метро, le ticket — на самолёт.",
+          "le ticket по-французски значит «деньги»."
+        ],
+        "correctIndex": 0,
+        "explanation": "le billet — поездка с местом или дальняя (billet de train, d'avion, de concert). le ticket — короткая поездка или чек (ticket de métro, ticket de caisse). На TGV берут billet, на метро — ticket."
+      },
+      {
+        "id": "wc-transport-partir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport-partir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Один глагол во всех трёх сценах. Что он значит?",
+        "contexts": [
+          "On part en vacances samedi.",
+          "Le train part dans cinq minutes.",
+          "Je dois partir, il est tard."
+        ],
+        "options": ["уезжать / отправляться / уходить", "приезжать", "оставаться", "возвращаться"],
+        "correctIndex": 0,
+        "explanation": "partir — покидать место, отправляться: о человеке (je dois partir) и о транспорте (le train part). «partir en vacances» — уехать в отпуск. Формы: je pars, tu pars, il part, nous partons."
+      },
+      {
+        "id": "wc-transport-partir-cmp",
+        "kind": "compare",
+        "wordId": "wl-transport-partir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "partir и quitter оба про «уезжать/покидать». В чём разница в построении фразы?",
+        "phrases": ["Je pars demain.", "Je quitte Paris demain."],
+        "options": [
+          "partir — без дополнения (je pars); quitter ТРЕБУЕТ дополнения: quitter Paris, quitter quelqu'un.",
+          "Это полные синонимы, строятся одинаково.",
+          "partir всегда с дополнением, quitter — без него.",
+          "quitter значит «приезжать»."
+        ],
+        "correctIndex": 0,
+        "explanation": "partir можно сказать «голым»: «Je pars» (я уезжаю). quitter обязательно требует, ЧТО покидаешь: «Je quitte Paris», «Je quitte mon travail». Нельзя сказать «Je quitte» без дополнения."
+      },
+      {
+        "id": "wc-transport-avion-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-transport-avion",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для avion (самолёт), чтобы запомнить мужской род (un avion) несмотря на гласную в конце.",
+        "examples": [
+          "«Un avion» — представь одного пилота-мужчину в кабине: он «un», самолёт мужского рода.",
+          "Связка «prendre l'avion»: l'avion с апострофом, а в речи «un avion» — слышишь носовое -on, как в un, garçon — мужской ряд."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,341 @@
+[
+  {
+    "id": "wc-corps",
+    "title": "Тело и здоровье",
+    "theme": "corps",
+    "level": "A2",
+    "wordIds": [
+      "wl-corps-corps",
+      "wl-corps-tete",
+      "wl-corps-main",
+      "wl-corps-pied",
+      "wl-corps-dos",
+      "wl-corps-ventre",
+      "wl-corps-malade",
+      "wl-corps-medecin"
+    ],
+    "steps": [
+      {
+        "id": "wc-corps-corps-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-corps-corps",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le sport est bon pour le corps.",
+          "Elle a mal dans tout le corps.",
+          "Le médecin examine le corps du patient."
+        ],
+        "options": ["тело", "сердце", "лицо", "кожа"],
+        "correctIndex": 0,
+        "explanation": "corps (m) — тело целиком. «tout le corps» — всё тело, «le corps humain» — человеческое тело. На конце p и s не читаются: /kɔʁ/."
+      },
+      {
+        "id": "wc-corps-corps-collo",
+        "kind": "sort",
+        "wordId": "wl-corps-corps",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом corps звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "le corps humain",
+            "basket": "ok"
+          },
+          {
+            "text": "les parties du corps",
+            "basket": "ok"
+          },
+          {
+            "text": "tout le corps",
+            "basket": "ok"
+          },
+          {
+            "text": "boire le corps",
+            "basket": "no"
+          },
+          {
+            "text": "un corps frais",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественны: «le corps humain», «les parties du corps», «tout le corps». «boire le corps» (пить тело) и «un corps frais» (свежее тело) — бессмыслица."
+      },
+      {
+        "id": "wc-corps-tete-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-corps-tete",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "J'ai mal à la tête.",
+          "Mets un chapeau sur la tête.",
+          "Il a hoché la tête pour dire oui."
+        ],
+        "options": ["голова", "рука", "спина", "живот"],
+        "correctIndex": 0,
+        "explanation": "tête (f) — голова. «avoir mal à la tête» — болит голова, «hocher la tête» — кивать. Обрати внимание на accent circonflexe: t-ê-t-e, /tɛt/."
+      },
+      {
+        "id": "wc-corps-tete-collo",
+        "kind": "sort",
+        "wordId": "wl-corps-tete",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом tête звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "avoir mal à la tête",
+            "basket": "ok"
+          },
+          {
+            "text": "de la tête aux pieds",
+            "basket": "ok"
+          },
+          {
+            "text": "hocher la tête",
+            "basket": "ok"
+          },
+          {
+            "text": "manger la tête",
+            "basket": "no"
+          },
+          {
+            "text": "avoir mal de la tête",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественны: «avoir mal à la tête», «de la tête aux pieds» (с головы до ног), «hocher la tête». Боль — всегда «mal À la tête», а не «mal DE la tête». «manger la tête» — бессмыслица."
+      },
+      {
+        "id": "wc-corps-main-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-corps-main",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово связывает все три сцены. Что оно значит?",
+        "contexts": [
+          "Lave-toi les mains avant de manger.",
+          "Il m'a serré la main.",
+          "Prends le verre dans ta main droite."
+        ],
+        "options": ["рука (кисть)", "нога (ступня)", "палец", "плечо"],
+        "correctIndex": 0,
+        "explanation": "main (f) — кисть руки (то, чем берут и держат). «se laver les mains» — мыть руки, «serrer la main» — пожать руку. Вся рука от плеча — le bras."
+      },
+      {
+        "id": "wc-corps-main-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-corps-main",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "main",
+        "options": ["main", "pain", "bain", "sain"],
+        "correctIndex": 0,
+        "explanation": "Одинаковая концовка /-ɛ̃/, различается первый звук: main /mɛ̃/ (рука), pain /pɛ̃/ (хлеб), bain /bɛ̃/ (ванна), sain /sɛ̃/ (здоровый). Это не омофоны — слушай начало слова."
+      },
+      {
+        "id": "wc-corps-pied-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-corps-pied",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит повторяющееся слово в этих сценах?",
+        "contexts": [
+          "Je vais au travail à pied.",
+          "J'ai mal aux pieds après la marche.",
+          "Mets tes chaussures, tu as froid aux pieds."
+        ],
+        "options": ["нога (ступня)", "рука (кисть)", "колено", "голова"],
+        "correctIndex": 0,
+        "explanation": "pied (m) — ступня, то, на чём стоят. «à pied» — пешком, «avoir mal aux pieds» — болят ноги (ступни). Вся нога — la jambe. Конечная d не читается: /pje/."
+      },
+      {
+        "id": "wc-corps-pied-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-corps-pied",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — части ноги. Найди лишнее.",
+        "options": ["le pied", "la jambe", "le genou", "la main"],
+        "correctIndex": 3,
+        "explanation": "le pied (ступня), la jambe (нога), le genou (колено) — всё про ноги. la main (кисть руки) — лишняя: это про руку, а не про ногу."
+      },
+      {
+        "id": "wc-corps-dos-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-corps-dos",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai mal au dos depuis ce matin.",
+          "Elle dort toujours sur le dos.",
+          "Il m'a tourné le dos sans rien dire."
+        ],
+        "options": ["спина", "живот", "грудь", "плечо"],
+        "correctIndex": 0,
+        "explanation": "dos (m) — спина. «avoir mal au dos» — болит спина, «dormir sur le dos» — спать на спине, «tourner le dos» — повернуться спиной. Конечная s не читается: /do/."
+      },
+      {
+        "id": "wc-corps-dos-trap",
+        "kind": "trap",
+        "wordId": "wl-corps-dos",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово dos читается /до/, как русское «до». А что оно значит по-французски?",
+        "options": ["спина", "доза лекарства", "нота «до»", "дом, жильё"],
+        "correctIndex": 0,
+        "explanation": "Ловушка по звучанию: фр. dos (m) — это «спина», /do/, конечная s немая. Доза — une dose /doz/ (со звонкой z), музыкальная нота «до» — do, а дом — une maison. Не путай похожие звуки."
+      },
+      {
+        "id": "wc-corps-ventre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-corps-ventre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "J'ai mal au ventre, j'ai trop mangé.",
+          "Le bébé dort sur le ventre.",
+          "Après le repas, il a le ventre plein."
+        ],
+        "options": ["живот", "спина", "голова", "горло"],
+        "correctIndex": 0,
+        "explanation": "ventre (m) — живот (внешняя часть тела). «avoir mal au ventre» — болит живот, «sur le ventre» — на животе, «le ventre plein» — сытый (полный живот)."
+      },
+      {
+        "id": "wc-corps-ventre-cmp",
+        "kind": "compare",
+        "wordId": "wl-corps-ventre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "ventre и estomac. Когда что говорить?",
+        "phrases": ["J'ai mal au ventre.", "J'ai l'estomac fragile."],
+        "options": [
+          "ventre — живот снаружи (где обычно «болит живот»); estomac — желудок как орган внутри",
+          "Это полные синонимы, разницы нет",
+          "ventre — это желудок-орган, а estomac — живот снаружи",
+          "ventre — спина, estomac — живот"
+        ],
+        "correctIndex": 0,
+        "explanation": "В быту «болит живот» = «J'ai mal au ventre» (внешняя часть). l'estomac (m) — желудок как орган; о нём говорят про пищеварение: «l'estomac fragile» (слабый желудок). Русское «живот» чаще = le ventre."
+      },
+      {
+        "id": "wc-corps-malade-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-corps-malade",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово связывает все три сцены. Что оно значит?",
+        "contexts": [
+          "Je suis malade, je reste à la maison.",
+          "Mon fils est tombé malade hier.",
+          "Elle se sent malade depuis deux jours."
+        ],
+        "options": ["больной", "усталый", "голодный", "грустный"],
+        "correctIndex": 0,
+        "explanation": "malade — «больной» (прилагательное). «être malade» — болеть, «tomber malade» — заболеть. Форма не меняется в роде: il est malade / elle est malade."
+      },
+      {
+        "id": "wc-corps-malade-trap",
+        "kind": "trap",
+        "wordId": "wl-corps-malade",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Похоже на англ. malady (недуг). Но какой частью речи и чем является malade по-французски?",
+        "options": [
+          "прилагательное «больной» (être malade — болеть); болезнь — la maladie",
+          "существительное «болезнь»",
+          "глагол «болеть»",
+          "прилагательное «грустный»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: англ. malady — существительное «недуг», а фр. malade — прилагательное «больной» (être malade). Сама болезнь по-французски — la maladie. Не путай malade (больной) и la maladie (болезнь)."
+      },
+      {
+        "id": "wc-corps-medecin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-corps-medecin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит повторяющееся слово в этих сценах?",
+        "contexts": [
+          "Je vais chez le médecin demain.",
+          "Appelle un médecin, c'est urgent !",
+          "Le médecin m'a donné une ordonnance."
+        ],
+        "options": ["врач", "лекарство", "аптека", "медсестра"],
+        "correctIndex": 0,
+        "explanation": "médecin (m) — врач. «aller chez le médecin» — идти к врачу, «appeler un médecin» — вызвать врача. Слово всегда мужского рода, даже о женщине: le médecin. Читается /med.sɛ̃/."
+      },
+      {
+        "id": "wc-corps-medecin-cmp",
+        "kind": "compare",
+        "wordId": "wl-corps-medecin",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le médecin и la médecine. В чём разница?",
+        "phrases": ["Mon frère est médecin.", "Mon frère étudie la médecine."],
+        "options": [
+          "le médecin — врач (человек); la médecine — медицина (наука, которую изучают)",
+          "Это синонимы, разницы нет",
+          "le médecin — медицина, la médecine — врач",
+          "le médecin — лекарство, la médecine — больница"
+        ],
+        "correctIndex": 0,
+        "explanation": "Опасная пара: le médecin — это врач (человек, «est médecin»); la médecine — медицина как наука («étudier la médecine»). Лекарство — это ещё третье слово: un médicament."
+      },
+      {
+        "id": "wc-corps-medecin-hint",
+        "kind": "wordHint",
+        "wordId": "wl-corps-medecin",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: человек, который лечит больных и выписывает лекарства.",
+        "answer": "médecin",
+        "hints": [
+          "Начинается на mé…",
+          "7 букв, мужской род даже о женщине: le ___",
+          "Je vais chez le ___."
+        ],
+        "explanation": "médecin (m) — врач. «aller chez le médecin». Не путай с la médecine (медицина-наука) и un médicament (лекарство)."
+      },
+      {
+        "id": "wc-corps-corps-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-corps-corps",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для corps (тело), чтобы запомнить немые буквы на конце — пишется corps, а читается просто /kɔʁ/.",
+        "examples": [
+          "Английское «corps» (войсковой корпус) пишется так же и тоже читается без конечных согласных — мост к фр. corps.",
+          "Представь: всё тело (le corps) на месте, но буквы p и s «спрятались» и молчат — остаётся только /kɔʁ/."
+        ]
+      }
+    ]
+  }
+]

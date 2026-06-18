@@ -2510,5 +2510,1449 @@
     "level": "A2",
     "tags": ["ville", "lieu"],
     "caseIds": ["wc-ville"]
+  },
+  {
+    "id": "wl-famille-famille",
+    "lemma": "famille",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fa.mij/",
+    "translationsRu": ["семья"],
+    "translationsEn": ["family"],
+    "semanticCore": "Группа близких родственников; также весь род в широком смысле.",
+    "collocations": [
+      {
+        "fr": "une grande famille",
+        "ru": "большая семья"
+      },
+      {
+        "fr": "en famille",
+        "ru": "всей семьёй, по-семейному"
+      },
+      {
+        "fr": "fonder une famille",
+        "ru": "создать семью"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "parents",
+        "note": "la famille — вся семья/род; les parents — только родители (мама и папа)."
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-famille-mere",
+    "lemma": "mère",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mɛʁ/",
+    "translationsRu": ["мать"],
+    "translationsEn": ["mother"],
+    "semanticCore": "Родительница; женщина-родитель в семье.",
+    "collocations": [
+      {
+        "fr": "la fête des mères",
+        "ru": "День матери"
+      },
+      {
+        "fr": "une mère de famille",
+        "ru": "мать семейства"
+      },
+      {
+        "fr": "la mère de Léa",
+        "ru": "мать Леа"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mer",
+        "note": "Омофоны: la mère (мать) и la mer (море) звучат одинаково /mɛʁ/; различает только написание и контекст."
+      }
+    ],
+    "frequencyRank": 130,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-famille-pere",
+    "lemma": "père",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɛʁ/",
+    "translationsRu": ["отец"],
+    "translationsEn": ["father"],
+    "semanticCore": "Родитель-мужчина в семье.",
+    "collocations": [
+      {
+        "fr": "la fête des pères",
+        "ru": "День отца"
+      },
+      {
+        "fr": "un père de famille",
+        "ru": "отец семейства"
+      },
+      {
+        "fr": "ressembler à son père",
+        "ru": "быть похожим на отца"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "paire",
+        "note": "Омофоны: le père (отец) и une paire (пара) звучат одинаково /pɛʁ/; различает только написание и контекст."
+      }
+    ],
+    "frequencyRank": 135,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-famille-fils",
+    "lemma": "fils",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fis/",
+    "translationsRu": ["сын"],
+    "translationsEn": ["son"],
+    "semanticCore": "Ребёнок мужского пола по отношению к родителям.",
+    "collocations": [
+      {
+        "fr": "un fils unique",
+        "ru": "единственный сын"
+      },
+      {
+        "fr": "le fils aîné",
+        "ru": "старший сын"
+      },
+      {
+        "fr": "mon fils a dix ans",
+        "ru": "моему сыну десять лет"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fil",
+        "note": "le fils (сын) читается /fis/ со звуком s; le fil (нить) — /fil/ со звуком l. Во множественном пишутся одинаково: les fils."
+      }
+    ],
+    "frequencyRank": 160,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-famille-fille",
+    "lemma": "fille",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fij/",
+    "translationsRu": ["дочь", "девочка"],
+    "translationsEn": ["daughter", "girl"],
+    "semanticCore": "В родственном контексте — дочь; в общем — девочка или девушка.",
+    "collocations": [
+      {
+        "fr": "une petite fille",
+        "ru": "маленькая девочка"
+      },
+      {
+        "fr": "la fille aînée",
+        "ru": "старшая дочь"
+      },
+      {
+        "fr": "ma fille a huit ans",
+        "ru": "моей дочери восемь лет"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "garçon",
+        "note": "fille (девочка/дочь) — женского пола; le garçon (мальчик), le fils (сын) — мужского."
+      }
+    ],
+    "frequencyRank": 150,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-famille-frere",
+    "lemma": "frère",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fʁɛʁ/",
+    "translationsRu": ["брат"],
+    "translationsEn": ["brother"],
+    "semanticCore": "Сын тех же родителей по отношению к другому ребёнку.",
+    "collocations": [
+      {
+        "fr": "un grand frère",
+        "ru": "старший брат"
+      },
+      {
+        "fr": "un petit frère",
+        "ru": "младший брат"
+      },
+      {
+        "fr": "un frère et une sœur",
+        "ru": "брат и сестра"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sœur",
+        "note": "le frère — брат (мужской род), la sœur — сестра (женский). Часто идут в паре."
+      }
+    ],
+    "frequencyRank": 175,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-famille-soeur",
+    "lemma": "sœur",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sœʁ/",
+    "translationsRu": ["сестра"],
+    "translationsEn": ["sister"],
+    "semanticCore": "Дочь тех же родителей по отношению к другому ребёнку.",
+    "collocations": [
+      {
+        "fr": "une grande sœur",
+        "ru": "старшая сестра"
+      },
+      {
+        "fr": "une petite sœur",
+        "ru": "младшая сестра"
+      },
+      {
+        "fr": "ma sœur aînée",
+        "ru": "моя старшая сестра"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cœur",
+        "note": "Пишутся с лигатурой œ: sœur (сестра) и cœur (сердце); читаются /sœʁ/ и /kœʁ/."
+      }
+    ],
+    "frequencyRank": 180,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-famille-enfant",
+    "lemma": "enfant",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɑ̃.fɑ̃/",
+    "translationsRu": ["ребёнок", "дитя"],
+    "translationsEn": ["child"],
+    "semanticCore": "Маленький человек; также сын или дочь любого возраста по отношению к родителям.",
+    "collocations": [
+      {
+        "fr": "un enfant",
+        "ru": "ребёнок"
+      },
+      {
+        "fr": "avoir des enfants",
+        "ru": "иметь детей"
+      },
+      {
+        "fr": "un livre pour enfants",
+        "ru": "детская книга"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fille / fils",
+        "note": "enfant — ребёнок любого пола (un/une enfant); fils — именно сын, fille — именно дочь."
+      }
+    ],
+    "frequencyRank": 120,
+    "level": "A1",
+    "tags": ["famille", "personnes"],
+    "caseIds": ["wc-famille"]
+  },
+  {
+    "id": "wl-nourriture-manger",
+    "lemma": "manger",
+    "pos": "verb",
+    "ipa": "/mɑ̃.ʒe/",
+    "translationsRu": ["есть", "кушать"],
+    "translationsEn": ["to eat"],
+    "semanticCore": "Принимать пищу — основной глагол еды; «manger» можно и без дополнения (просто «есть, питаться»), и с ним (manger une pomme).",
+    "collocations": [
+      {
+        "fr": "manger au restaurant",
+        "ru": "есть в ресторане"
+      },
+      {
+        "fr": "manger sainement",
+        "ru": "питаться правильно"
+      },
+      {
+        "fr": "de quoi manger",
+        "ru": "что-нибудь поесть"
+      },
+      {
+        "fr": "manger un morceau",
+        "ru": "перекусить"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "boire",
+        "note": "manger — есть (твёрдую пищу); boire — пить (напитки). За столом нужны оба глагола."
+      },
+      {
+        "with": "prendre",
+        "note": "manger un plat — именно «есть» блюдо; prendre un plat — «взять, заказать» его в кафе. В ресторане чаще говорят prendre."
+      }
+    ],
+    "frequencyRank": 150,
+    "level": "A2",
+    "tags": ["nourriture", "verbe", "repas"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-nourriture-repas",
+    "lemma": "repas",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁə.pa/",
+    "translationsRu": ["приём пищи", "еда (завтрак/обед/ужин)", "трапеза"],
+    "translationsEn": ["meal"],
+    "semanticCore": "Приём пищи целиком — завтрак, обед или ужин; событие за столом, а не отдельное блюдо. Форма одинакова в ед. и мн. числе: un repas / des repas.",
+    "collocations": [
+      {
+        "fr": "prendre un repas",
+        "ru": "принимать пищу"
+      },
+      {
+        "fr": "un repas léger",
+        "ru": "лёгкая еда"
+      },
+      {
+        "fr": "préparer le repas",
+        "ru": "готовить еду"
+      },
+      {
+        "fr": "un bon repas",
+        "ru": "хорошая трапеза"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "plat",
+        "note": "repas — весь приём пищи (закуска + основное + десерт); plat — одно блюдо внутри него."
+      },
+      {
+        "with": "nourriture",
+        "note": "repas — приём пищи как событие (завтрак, обед); nourriture — еда как вещество, пропитание вообще."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["nourriture", "repas"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-nourriture-fruit",
+    "lemma": "fruit",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fʁɥi/",
+    "translationsRu": ["фрукт"],
+    "translationsEn": ["fruit"],
+    "semanticCore": "Фрукт — сладкий плод (яблоко, банан, апельсин); мужской род: un fruit, des fruits.",
+    "collocations": [
+      {
+        "fr": "un jus de fruits",
+        "ru": "фруктовый сок"
+      },
+      {
+        "fr": "manger un fruit",
+        "ru": "съесть фрукт"
+      },
+      {
+        "fr": "des fruits frais",
+        "ru": "свежие фрукты"
+      },
+      {
+        "fr": "une salade de fruits",
+        "ru": "фруктовый салат"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "légume",
+        "note": "fruit — сладкий плод (яблоко, груша); légume — овощ (морковь, картофель). Во французском их разделяют так же чётко, как в русском."
+      },
+      {
+        "with": "fruit (англ.)",
+        "note": "Англ. «fruit» = фрукт, тот же смысл и почти то же написание. Удобный мост: только читается /fʁɥi/, конечная t не звучит."
+      }
+    ],
+    "frequencyRank": 400,
+    "level": "A2",
+    "tags": ["nourriture", "aliment"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-nourriture-legume",
+    "lemma": "légume",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/le.ɡym/",
+    "translationsRu": ["овощ"],
+    "translationsEn": ["vegetable"],
+    "semanticCore": "Овощ — морковь, картофель, помидор и т. п.; мужской род, хотя оканчивается на -e: un légume.",
+    "collocations": [
+      {
+        "fr": "des légumes verts",
+        "ru": "зелёные овощи"
+      },
+      {
+        "fr": "une soupe de légumes",
+        "ru": "овощной суп"
+      },
+      {
+        "fr": "manger des légumes",
+        "ru": "есть овощи"
+      },
+      {
+        "fr": "des légumes de saison",
+        "ru": "сезонные овощи"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "légume (≠ англ. legume)",
+        "note": "Англ. «legume» — узко «бобовое» (горох, фасоль). Фр. légume — любой овощ. Ложный друг: фр. слово шире."
+      },
+      {
+        "with": "fruit",
+        "note": "légume — овощ (несладкий, чаще в горячих блюдах); fruit — фрукт (сладкий плод). Не путать категории."
+      }
+    ],
+    "frequencyRank": 550,
+    "level": "A2",
+    "tags": ["nourriture", "aliment"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-nourriture-viande",
+    "lemma": "viande",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vjɑ̃d/",
+    "translationsRu": ["мясо"],
+    "translationsEn": ["meat"],
+    "semanticCore": "Мясо как продукт (говядина, свинина, курица) — то, что едят; женский род: la viande. Рыба (poisson) к viande не относится.",
+    "collocations": [
+      {
+        "fr": "de la viande rouge",
+        "ru": "красное мясо"
+      },
+      {
+        "fr": "manger de la viande",
+        "ru": "есть мясо"
+      },
+      {
+        "fr": "viande ou poisson ?",
+        "ru": "мясо или рыба?"
+      },
+      {
+        "fr": "un morceau de viande",
+        "ru": "кусок мяса"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poisson",
+        "note": "viande — мясо (животных, птицы); poisson — рыба. В меню их обычно противопоставляют: «viande ou poisson ?»"
+      },
+      {
+        "with": "chair",
+        "note": "viande — мясо как еда (на тарелке, в магазине); chair — плоть, мякоть (тела, плода). Едят la viande, а не la chair."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["nourriture", "aliment"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-nourriture-poisson",
+    "lemma": "poisson",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pwa.sɔ̃/",
+    "translationsRu": ["рыба"],
+    "translationsEn": ["fish"],
+    "semanticCore": "Рыба — и живая, и как блюдо; мужской род: un poisson. Двойная ss даёт глухой /s/: /pwasɔ̃/ — иначе получится poison (яд).",
+    "collocations": [
+      {
+        "fr": "manger du poisson",
+        "ru": "есть рыбу"
+      },
+      {
+        "fr": "du poisson frais",
+        "ru": "свежая рыба"
+      },
+      {
+        "fr": "un poisson grillé",
+        "ru": "рыба на гриле"
+      },
+      {
+        "fr": "poisson d'avril",
+        "ru": "первоапрельская шутка"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poison",
+        "note": "poisson /pwasɔ̃/ (ss = /s/) — рыба; poison /pwazɔ̃/ (одна s = /z/) — яд. Опасная пара: меняется только звук s/z."
+      },
+      {
+        "with": "viande",
+        "note": "poisson — рыба; viande — мясо. В меню обычно стоят рядом как два разных раздела."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["nourriture", "aliment"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-nourriture-fromage",
+    "lemma": "fromage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fʁɔ.maʒ/",
+    "translationsRu": ["сыр"],
+    "translationsEn": ["cheese"],
+    "semanticCore": "Сыр; во Франции его едят отдельным курсом — после основного блюда и перед десертом. Мужской род: le fromage.",
+    "collocations": [
+      {
+        "fr": "un plateau de fromages",
+        "ru": "сырная тарелка"
+      },
+      {
+        "fr": "du fromage de chèvre",
+        "ru": "козий сыр"
+      },
+      {
+        "fr": "un sandwich au fromage",
+        "ru": "бутерброд с сыром"
+      },
+      {
+        "fr": "fromage ou dessert ?",
+        "ru": "сыр или десерт?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "dessert",
+        "note": "Во французской трапезе le fromage идёт перед десертом как отдельный курс; классический выбор — «fromage ou dessert ?». Это не сладкое."
+      },
+      {
+        "with": "cheese (англ.)",
+        "note": "Совсем не похоже на англ. «cheese» — мост не работает, слово нужно просто запомнить: fromage."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["nourriture", "aliment"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-nourriture-plat",
+    "lemma": "plat",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pla/",
+    "translationsRu": ["блюдо", "кушанье", "основное блюдо"],
+    "translationsEn": ["dish", "course"],
+    "semanticCore": "Блюдо — приготовленная еда на тарелке; «le plat (principal)» — основное (второе) блюдо в меню. Мужской род, конечная t не читается: /pla/.",
+    "collocations": [
+      {
+        "fr": "le plat principal",
+        "ru": "основное блюдо"
+      },
+      {
+        "fr": "le plat du jour",
+        "ru": "блюдо дня"
+      },
+      {
+        "fr": "un plat chaud",
+        "ru": "горячее блюдо"
+      },
+      {
+        "fr": "goûter un plat",
+        "ru": "попробовать блюдо"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "plat (прил. «плоский»)",
+        "note": "plat — ещё и прилагательное «плоский, без газа»: de l'eau plate (вода без газа), un pays plat (равнинная страна). Существительное le plat — блюдо."
+      },
+      {
+        "with": "repas",
+        "note": "plat — одно блюдо; repas — весь приём пищи, в который входит несколько plats (entrée, plat, dessert)."
+      }
+    ],
+    "frequencyRank": 450,
+    "level": "A2",
+    "tags": ["nourriture", "repas"],
+    "caseIds": ["wc-nourriture"]
+  },
+  {
+    "id": "wl-corps-corps",
+    "lemma": "corps",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔʁ/",
+    "translationsRu": ["тело", "корпус"],
+    "translationsEn": ["body"],
+    "semanticCore": "Тело человека или животного целиком; также «корпус» (войск, текста) в переносном смысле.",
+    "collocations": [
+      {
+        "fr": "le corps humain",
+        "ru": "человеческое тело"
+      },
+      {
+        "fr": "tout le corps",
+        "ru": "всё тело"
+      },
+      {
+        "fr": "les parties du corps",
+        "ru": "части тела"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "corpse (англ.)",
+        "note": "Похоже на англ. corpse (труп), но фр. corps — это живое тело вообще. Труп — un cadavre."
+      },
+      {
+        "with": "le cœur",
+        "note": "corps /kɔʁ/ (тело) и cœur /kœʁ/ (сердце) звучат близко, но это разные слова: тело против сердца."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["corps", "anatomie"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-corps-tete",
+    "lemma": "tête",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tɛt/",
+    "translationsRu": ["голова"],
+    "translationsEn": ["head"],
+    "semanticCore": "Голова как часть тела, а также «ум, рассудок» в выражениях.",
+    "collocations": [
+      {
+        "fr": "avoir mal à la tête",
+        "ru": "болит голова"
+      },
+      {
+        "fr": "de la tête aux pieds",
+        "ru": "с головы до ног"
+      },
+      {
+        "fr": "hocher la tête",
+        "ru": "кивать головой"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "le visage",
+        "note": "tête — вся голова; le visage — лицо (передняя часть). «Болит голова» = à la tête, а не au visage."
+      }
+    ],
+    "frequencyRank": 280,
+    "level": "A2",
+    "tags": ["corps", "anatomie"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-corps-main",
+    "lemma": "main",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mɛ̃/",
+    "translationsRu": ["рука (кисть)"],
+    "translationsEn": ["hand"],
+    "semanticCore": "Кисть руки — то, чем берут и держат; не вся рука целиком.",
+    "collocations": [
+      {
+        "fr": "se laver les mains",
+        "ru": "мыть руки"
+      },
+      {
+        "fr": "serrer la main",
+        "ru": "пожать руку"
+      },
+      {
+        "fr": "donner un coup de main",
+        "ru": "помочь, подсобить"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "le bras",
+        "note": "main — это кисть; le bras — вся рука от плеча. «Держать в руке» = dans la main, «взять на руки» = dans les bras."
+      },
+      {
+        "with": "main (англ.)",
+        "note": "Похоже на англ. main (главный), но фр. main — это «рука (кисть)». Ложный друг."
+      }
+    ],
+    "frequencyRank": 200,
+    "level": "A2",
+    "tags": ["corps", "anatomie"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-corps-pied",
+    "lemma": "pied",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pje/",
+    "translationsRu": ["нога (ступня)"],
+    "translationsEn": ["foot"],
+    "semanticCore": "Ступня — то, на чём стоят; не вся нога. Отсюда «à pied» — пешком.",
+    "collocations": [
+      {
+        "fr": "aller à pied",
+        "ru": "идти пешком"
+      },
+      {
+        "fr": "avoir mal aux pieds",
+        "ru": "болят ноги (ступни)"
+      },
+      {
+        "fr": "de la tête aux pieds",
+        "ru": "с головы до ног"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "la jambe",
+        "note": "pied — ступня; la jambe — вся нога. «Идти пешком» = à pied, а сломать можно la jambe."
+      }
+    ],
+    "frequencyRank": 260,
+    "level": "A2",
+    "tags": ["corps", "anatomie"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-corps-dos",
+    "lemma": "dos",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/do/",
+    "translationsRu": ["спина"],
+    "translationsEn": ["back"],
+    "semanticCore": "Спина — задняя часть тела от шеи до поясницы.",
+    "collocations": [
+      {
+        "fr": "avoir mal au dos",
+        "ru": "болит спина"
+      },
+      {
+        "fr": "dormir sur le dos",
+        "ru": "спать на спине"
+      },
+      {
+        "fr": "tourner le dos",
+        "ru": "повернуться спиной"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "la dose",
+        "note": "dos /do/ (спина) — конечная s немая; la dose /doz/ (доза) звучит со звонким z. Разные слова, не путать на слух."
+      }
+    ],
+    "frequencyRank": 500,
+    "level": "A2",
+    "tags": ["corps", "anatomie"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-corps-ventre",
+    "lemma": "ventre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɑ̃tʁ/",
+    "translationsRu": ["живот"],
+    "translationsEn": ["belly", "stomach"],
+    "semanticCore": "Живот как внешняя часть тела (где болит, бурчит, лежат на нём).",
+    "collocations": [
+      {
+        "fr": "avoir mal au ventre",
+        "ru": "болит живот"
+      },
+      {
+        "fr": "se coucher sur le ventre",
+        "ru": "лечь на живот"
+      },
+      {
+        "fr": "avoir le ventre vide",
+        "ru": "быть голодным (пустой желудок)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "l'estomac",
+        "note": "ventre — живот снаружи (болит le ventre); l'estomac (m) — желудок как орган внутри. В быту «болит живот» = mal au ventre."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["corps", "santé"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-corps-malade",
+    "lemma": "malade",
+    "pos": "adj",
+    "ipa": "/ma.lad/",
+    "translationsRu": ["больной"],
+    "translationsEn": ["sick", "ill"],
+    "semanticCore": "Болеющий, нездоровый; может быть и существительным «больной (пациент)».",
+    "collocations": [
+      {
+        "fr": "tomber malade",
+        "ru": "заболеть"
+      },
+      {
+        "fr": "être malade",
+        "ru": "быть больным, болеть"
+      },
+      {
+        "fr": "gravement malade",
+        "ru": "тяжело больной"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "malady (англ.)",
+        "note": "Англ. malady (недуг) — это существительное; фр. malade — прилагательное «больной». Болезнь по-французски — la maladie."
+      },
+      {
+        "with": "la maladie",
+        "note": "malade — «больной» (прилагательное); la maladie — «болезнь» (существительное). Не путать: être malade = болеть, une maladie = болезнь."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["corps", "santé"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-corps-medecin",
+    "lemma": "médecin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/med.sɛ̃/",
+    "translationsRu": ["врач", "доктор"],
+    "translationsEn": ["doctor", "physician"],
+    "semanticCore": "Врач — человек, который лечит; le médecin традиционно мужского рода даже о женщине.",
+    "collocations": [
+      {
+        "fr": "aller chez le médecin",
+        "ru": "идти к врачу"
+      },
+      {
+        "fr": "appeler un médecin",
+        "ru": "вызвать врача"
+      },
+      {
+        "fr": "le médecin de famille",
+        "ru": "семейный врач"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "la médecine",
+        "note": "le médecin — врач (человек); la médecine — медицина (наука). Звучат почти одинаково, но одно — кто лечит, другое — что изучают."
+      },
+      {
+        "with": "le docteur",
+        "note": "le médecin — врач по профессии; le docteur — обращение «доктор» (Bonjour, docteur). К врачу идут chez le médecin, но зовут его docteur."
+      }
+    ],
+    "frequencyRank": 450,
+    "level": "A2",
+    "tags": ["corps", "santé"],
+    "caseIds": ["wc-corps"]
+  },
+  {
+    "id": "wl-vetements-vetement",
+    "lemma": "vêtement",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɛt.mɑ̃/",
+    "translationsRu": ["предмет одежды", "одежда"],
+    "translationsEn": ["garment", "clothes"],
+    "semanticCore": "Любой предмет одежды; во множественном числе (les vêtements) — одежда в целом.",
+    "collocations": [
+      {
+        "fr": "acheter des vêtements",
+        "ru": "покупать одежду"
+      },
+      {
+        "fr": "des vêtements chauds",
+        "ru": "тёплая одежда"
+      },
+      {
+        "fr": "changer de vêtements",
+        "ru": "переодеться"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "habits",
+        "note": "les vêtements — нейтральное «одежда»; les habits — то же, но чуть более разговорно/устаревше. В быту чаще говорят vêtements."
+      }
+    ],
+    "frequencyRank": 450,
+    "level": "A2",
+    "tags": ["vetements", "general"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-vetements-robe",
+    "lemma": "robe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁɔb/",
+    "translationsRu": ["платье"],
+    "translationsEn": ["dress", "gown"],
+    "semanticCore": "Цельное женское платье; иногда — мантия (судьи, священника).",
+    "collocations": [
+      {
+        "fr": "une robe longue",
+        "ru": "длинное платье"
+      },
+      {
+        "fr": "une robe de mariée",
+        "ru": "свадебное платье"
+      },
+      {
+        "fr": "essayer une robe",
+        "ru": "примерить платье"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "robe (англ.)",
+        "note": "Англ. robe = халат, мантия. Фр. robe = платье; банный халат — un peignoir / une robe de chambre. Ложный друг."
+      }
+    ],
+    "frequencyRank": 500,
+    "level": "A2",
+    "tags": ["vetements", "femme"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-vetements-pantalon",
+    "lemma": "pantalon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɑ̃.ta.lɔ̃/",
+    "translationsRu": ["брюки"],
+    "translationsEn": ["trousers", "pants"],
+    "semanticCore": "Брюки; в отличие от русского, во французском это единственное число — un pantalon.",
+    "collocations": [
+      {
+        "fr": "un pantalon noir",
+        "ru": "чёрные брюки"
+      },
+      {
+        "fr": "un pantalon serré",
+        "ru": "узкие (обтягивающие) брюки"
+      },
+      {
+        "fr": "essayer un pantalon",
+        "ru": "примерить брюки"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pants (англ.)",
+        "note": "Брит. pants = трусы, амер. pants = брюки. Фр. un pantalon = брюки; трусы — un slip / une culotte."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["vetements", "bas"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-vetements-chemise",
+    "lemma": "chemise",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʃə.miz/",
+    "translationsRu": ["рубашка"],
+    "translationsEn": ["shirt"],
+    "semanticCore": "Рубашка с воротником и пуговицами (обычно мужская); также — папка для бумаг.",
+    "collocations": [
+      {
+        "fr": "une chemise blanche",
+        "ru": "белая рубашка"
+      },
+      {
+        "fr": "repasser une chemise",
+        "ru": "гладить рубашку"
+      },
+      {
+        "fr": "le col de la chemise",
+        "ru": "воротник рубашки"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tee-shirt",
+        "note": "une chemise — рубашка с воротником и пуговицами; un tee-shirt — простая футболка. Это разные вещи."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["vetements", "haut"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-vetements-chaussure",
+    "lemma": "chaussure",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʃo.syʁ/",
+    "translationsRu": ["обувь", "туфля"],
+    "translationsEn": ["shoe", "footwear"],
+    "semanticCore": "Обувь; обычно во множественном (les chaussures), как пара на ногах.",
+    "collocations": [
+      {
+        "fr": "une paire de chaussures",
+        "ru": "пара обуви"
+      },
+      {
+        "fr": "des chaussures de sport",
+        "ru": "спортивная обувь, кроссовки"
+      },
+      {
+        "fr": "enlever ses chaussures",
+        "ru": "снять обувь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chaussette",
+        "note": "chaussure — обувь (на ноге снаружи); chaussette — носок (на ноге внутри обуви). Похожи, но это разные вещи."
+      }
+    ],
+    "frequencyRank": 550,
+    "level": "A2",
+    "tags": ["vetements", "pieds"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-vetements-manteau",
+    "lemma": "manteau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mɑ̃.to/",
+    "translationsRu": ["пальто"],
+    "translationsEn": ["coat", "overcoat"],
+    "semanticCore": "Пальто — тёплая верхняя одежда; во множественном des manteaux.",
+    "collocations": [
+      {
+        "fr": "un manteau d'hiver",
+        "ru": "зимнее пальто"
+      },
+      {
+        "fr": "mettre son manteau",
+        "ru": "надеть пальто"
+      },
+      {
+        "fr": "un manteau chaud",
+        "ru": "тёплое пальто"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "veste",
+        "note": "un manteau — длинное тёплое пальто (для улицы зимой); une veste — куртка/пиджак (короче, легче)."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["vetements", "hiver"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-vetements-pull",
+    "lemma": "pull",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pyl/",
+    "translationsRu": ["свитер", "джемпер"],
+    "translationsEn": ["sweater", "jumper"],
+    "semanticCore": "Свитер, джемпер; сокращение от pull-over (то, что натягивают через голову).",
+    "collocations": [
+      {
+        "fr": "un pull en laine",
+        "ru": "шерстяной свитер"
+      },
+      {
+        "fr": "mettre un pull",
+        "ru": "надеть свитер"
+      },
+      {
+        "fr": "un pull chaud",
+        "ru": "тёплый свитер"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pull (англ. глагол)",
+        "note": "Англ. «to pull» = тянуть. Фр. un pull — это существительное «свитер» (от pull-over), а не глагол."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["vetements", "haut"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-vetements-porter",
+    "lemma": "porter",
+    "pos": "verb",
+    "ipa": "/pɔʁ.te/",
+    "translationsRu": ["носить (одежду)", "нести"],
+    "translationsEn": ["to wear", "to carry"],
+    "semanticCore": "Быть одетым во что-то (носить одежду); также — нести (держать и перемещать груз).",
+    "collocations": [
+      {
+        "fr": "porter une robe",
+        "ru": "носить платье, быть в платье"
+      },
+      {
+        "fr": "porter des lunettes",
+        "ru": "носить очки"
+      },
+      {
+        "fr": "porter une valise",
+        "ru": "нести чемодан"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mettre",
+        "note": "porter — носить, быть одетым (состояние); mettre — надеть (момент, действие). Elle porte / elle met une robe."
+      }
+    ],
+    "frequencyRank": 200,
+    "level": "A2",
+    "tags": ["vetements", "verbe"],
+    "caseIds": ["wc-vetements"]
+  },
+  {
+    "id": "wl-transport-train",
+    "lemma": "train",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tʁɛ̃/",
+    "translationsRu": ["поезд"],
+    "translationsEn": ["train"],
+    "semanticCore": "Рельсовый транспорт между городами; на него садятся, его можно успеть или опоздать.",
+    "collocations": [
+      {
+        "fr": "prendre le train",
+        "ru": "ехать на поезде / сесть на поезд"
+      },
+      {
+        "fr": "rater le train",
+        "ru": "опоздать на поезд"
+      },
+      {
+        "fr": "le train de huit heures",
+        "ru": "поезд на восемь часов"
+      },
+      {
+        "fr": "monter dans le train",
+        "ru": "сесть в поезд"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "être en train de",
+        "note": "train также в обороте «être en train de + инфинитив» = «быть в процессе» (Je suis en train de manger — я как раз ем); к поезду это отношения не имеет."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["transport", "voyage"],
+    "caseIds": ["wc-transport"]
+  },
+  {
+    "id": "wl-transport-voiture",
+    "lemma": "voiture",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vwa.tyʁ/",
+    "translationsRu": ["машина", "автомобиль"],
+    "translationsEn": ["car"],
+    "semanticCore": "Личный автомобиль; на нём ездят, его водят и паркуют. Также вагон поезда.",
+    "collocations": [
+      {
+        "fr": "conduire une voiture",
+        "ru": "водить машину"
+      },
+      {
+        "fr": "en voiture",
+        "ru": "на машине"
+      },
+      {
+        "fr": "garer la voiture",
+        "ru": "припарковать машину"
+      },
+      {
+        "fr": "louer une voiture",
+        "ru": "арендовать машину"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "wagon",
+        "note": "В поезде пассажирский вагон — la voiture (voiture 12), а le wagon чаще про грузовой/товарный вагон. «Машина» как механизм — la machine, а не la voiture."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["transport", "route"],
+    "caseIds": ["wc-transport"]
+  },
+  {
+    "id": "wl-transport-bus",
+    "lemma": "bus",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bys/",
+    "translationsRu": ["автобус"],
+    "translationsEn": ["bus"],
+    "semanticCore": "Городской или междугородний автобус; на него садятся на остановке.",
+    "collocations": [
+      {
+        "fr": "prendre le bus",
+        "ru": "ехать на автобусе"
+      },
+      {
+        "fr": "l'arrêt de bus",
+        "ru": "автобусная остановка"
+      },
+      {
+        "fr": "rater le bus",
+        "ru": "опоздать на автобус"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "car",
+        "note": "le bus — городской автобус (короткие поездки); le car — междугородний/туристический автобус. Англ. «car» = машина, но фр. le car = автобус дальнего следования."
+      }
+    ],
+    "frequencyRank": 450,
+    "level": "A2",
+    "tags": ["transport", "ville"],
+    "caseIds": ["wc-transport"]
+  },
+  {
+    "id": "wl-transport-velo",
+    "lemma": "vélo",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ve.lo/",
+    "translationsRu": ["велосипед"],
+    "translationsEn": ["bike", "bicycle"],
+    "semanticCore": "Велосипед; самое обычное разговорное слово, на нём «делают вело» и ездят «à vélo».",
+    "collocations": [
+      {
+        "fr": "faire du vélo",
+        "ru": "кататься на велосипеде"
+      },
+      {
+        "fr": "à vélo",
+        "ru": "на велосипеде"
+      },
+      {
+        "fr": "un vélo électrique",
+        "ru": "электровелосипед"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bicyclette",
+        "note": "le vélo — обычное живое слово; la bicyclette звучит старомодно/официально. Значат одно, но в речи почти всегда говорят vélo."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["transport", "loisir"],
+    "caseIds": ["wc-transport"]
+  },
+  {
+    "id": "wl-transport-avion",
+    "lemma": "avion",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.vjɔ̃/",
+    "translationsRu": ["самолёт"],
+    "translationsEn": ["plane", "airplane"],
+    "semanticCore": "Самолёт; на нём летают, берут билет на самолёт, путешествуют по воздуху.",
+    "collocations": [
+      {
+        "fr": "prendre l'avion",
+        "ru": "лететь на самолёте"
+      },
+      {
+        "fr": "en avion",
+        "ru": "самолётом / на самолёте"
+      },
+      {
+        "fr": "un billet d'avion",
+        "ru": "билет на самолёт"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "aéroport",
+        "note": "l'avion — сам самолёт, l'aéroport — аэропорт (место). Не путать с гнездом слов: летят в avion, а вылетают из aéroport."
+      }
+    ],
+    "frequencyRank": 550,
+    "level": "A2",
+    "tags": ["transport", "voyage"],
+    "caseIds": ["wc-transport"]
+  },
+  {
+    "id": "wl-transport-gare",
+    "lemma": "gare",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɡaʁ/",
+    "translationsRu": ["вокзал"],
+    "translationsEn": ["station", "train station"],
+    "semanticCore": "Железнодорожный вокзал; место, откуда отходят поезда, где покупают билет и ждут.",
+    "collocations": [
+      {
+        "fr": "à la gare",
+        "ru": "на вокзале / на вокзал"
+      },
+      {
+        "fr": "la gare de Lyon",
+        "ru": "Лионский вокзал (в Париже)"
+      },
+      {
+        "fr": "la gare routière",
+        "ru": "автовокзал"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "garage",
+        "note": "la gare — вокзал, а le garage — гараж/автосервис. Похожи на вид, но разные слова. Также «gare !» в речи = «осторожно!»."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["transport", "voyage"],
+    "caseIds": ["wc-transport"]
+  },
+  {
+    "id": "wl-transport-billet",
+    "lemma": "billet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bi.jɛ/",
+    "translationsRu": ["билет"],
+    "translationsEn": ["ticket"],
+    "semanticCore": "Билет с местом или на дальнюю поездку (поезд, самолёт, концерт); также банкнота.",
+    "collocations": [
+      {
+        "fr": "un billet de train",
+        "ru": "билет на поезд"
+      },
+      {
+        "fr": "réserver un billet",
+        "ru": "забронировать билет"
+      },
+      {
+        "fr": "un billet de vingt euros",
+        "ru": "купюра в двадцать евро"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ticket",
+        "note": "le billet — на поезд, самолёт, концерт (часто с местом, бронируют); le ticket — мелкий билетик на метро/автобус или чек. Поездку на TGV берут billet, на метро — ticket."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["transport", "voyage"],
+    "caseIds": ["wc-transport"]
+  },
+  {
+    "id": "wl-transport-partir",
+    "lemma": "partir",
+    "pos": "verb",
+    "ipa": "/paʁ.tiʁ/",
+    "translationsRu": ["уезжать", "отправляться", "уходить"],
+    "translationsEn": ["to leave", "to depart"],
+    "semanticCore": "Покидать место, отправляться в путь; о человеке и о транспорте, который трогается.",
+    "collocations": [
+      {
+        "fr": "partir en vacances",
+        "ru": "уехать в отпуск"
+      },
+      {
+        "fr": "partir à huit heures",
+        "ru": "выезжать в восемь часов"
+      },
+      {
+        "fr": "le train part",
+        "ru": "поезд отправляется"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "quitter",
+        "note": "partir = уезжать/уходить (без дополнения: je pars); quitter ТРЕБУЕТ дополнения: quitter Paris, quitter qqn (покинуть кого/что-то конкретное)."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["transport", "voyage"],
+    "caseIds": ["wc-transport"]
   }
 ]

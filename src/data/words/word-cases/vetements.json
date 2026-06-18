@@ -1,0 +1,308 @@
+[
+  {
+    "id": "wc-vetements",
+    "title": "Одежда",
+    "theme": "vetements",
+    "level": "A2",
+    "wordIds": [
+      "wl-vetements-vetement",
+      "wl-vetements-robe",
+      "wl-vetements-pantalon",
+      "wl-vetements-chemise",
+      "wl-vetements-chaussure",
+      "wl-vetements-manteau",
+      "wl-vetements-pull",
+      "wl-vetements-porter"
+    ],
+    "steps": [
+      {
+        "id": "wc-vetements-vetement-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements-vetement",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je n'ai rien à me mettre, je dois acheter des vêtements.",
+          "Range tes vêtements dans l'armoire.",
+          "Ce magasin vend des vêtements pour enfants."
+        ],
+        "options": ["одежда / предмет одежды", "обувь", "ткань", "шкаф"],
+        "correctIndex": 0,
+        "explanation": "vêtement (m) — предмет одежды; во множественном «les vêtements» — одежда вообще. Обувь — les chaussures, ткань — le tissu, шкаф — l'armoire."
+      },
+      {
+        "id": "wc-vetements-vetement-sort",
+        "kind": "sort",
+        "wordId": "wl-vetements-vetement",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом vêtement(s) звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "acheter des vêtements",
+            "basket": "ok"
+          },
+          {
+            "text": "des vêtements chauds",
+            "basket": "ok"
+          },
+          {
+            "text": "changer de vêtements",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un vêtement",
+            "basket": "no"
+          },
+          {
+            "text": "un vêtement rapide",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«acheter des vêtements», «des vêtements chauds» (тёплая одежда), «changer de vêtements» (переодеться) — естественно. «boire un vêtement» (пить одежду) и «un vêtement rapide» (быстрая одежда) — бессмыслица."
+      },
+      {
+        "id": "wc-vetements-robe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements-robe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Elle porte une jolie robe rouge.",
+          "Pour le mariage, j'ai acheté une robe longue.",
+          "Cette robe te va très bien."
+        ],
+        "options": ["платье", "халат", "юбка", "блузка"],
+        "correctIndex": 0,
+        "explanation": "robe (f) — платье (цельное, женское). Юбка — une jupe, блузка — un chemisier. Внимание: халат — это не robe, а un peignoir / une robe de chambre."
+      },
+      {
+        "id": "wc-vetements-robe-trap",
+        "kind": "trap",
+        "wordId": "wl-vetements-robe",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «robe» — это халат, мантия. А фр. robe — это что?",
+        "options": ["платье", "халат", "плащ", "одеяло"],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: фр. une robe — это платье, а не банный халат. Халат — un peignoir или une robe de chambre (дословно «домашнее платье»). Плащ — un imperméable."
+      },
+      {
+        "id": "wc-vetements-pantalon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements-pantalon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ce pantalon est trop serré.",
+          "Je cherche un pantalon noir pour le travail.",
+          "Il a taché son pantalon."
+        ],
+        "options": ["брюки", "рубашка", "ремень", "куртка"],
+        "correctIndex": 0,
+        "explanation": "pantalon (m) — брюки. По-французски слово в единственном числе: un pantalon = одни брюки (по-русски — множественное). Рубашка — une chemise, ремень — une ceinture."
+      },
+      {
+        "id": "wc-vetements-pantalon-trap",
+        "kind": "trap",
+        "wordId": "wl-vetements-pantalon",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "По-русски «брюки» — всегда множественное. А как сказать «одни брюки» по-французски?",
+        "options": [
+          "un pantalon — единственное число",
+          "des pantalons — всегда только множественное",
+          "une pantalon — женский род, единственное",
+          "un pantalons — единственное с -s"
+        ],
+        "correctIndex": 0,
+        "explanation": "Одни брюки = un pantalon (единственное число, мужской род). «des pantalons» — это несколько разных брюк. По-русски наоборот — «брюки» всегда множественное."
+      },
+      {
+        "id": "wc-vetements-chemise-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements-chemise",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il met une chemise blanche pour l'entretien.",
+          "Cette chemise a un col élégant.",
+          "Repasse ta chemise avant de partir."
+        ],
+        "options": ["рубашка", "майка", "галстук", "пиджак"],
+        "correctIndex": 0,
+        "explanation": "chemise (f) — рубашка (с воротником и пуговицами). Майка / футболка — un tee-shirt, галстук — une cravate, пиджак — une veste."
+      },
+      {
+        "id": "wc-vetements-chemise-cmp",
+        "kind": "compare",
+        "wordId": "wl-vetements-chemise",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une chemise и un tee-shirt. В чём разница?",
+        "phrases": ["Il porte une chemise et une cravate.", "Il porte un tee-shirt et un jean."],
+        "options": [
+          "chemise — рубашка с воротником и пуговицами; tee-shirt — простая футболка/майка.",
+          "Это полные синонимы.",
+          "chemise — это футболка, а tee-shirt — рубашка с воротником.",
+          "chemise — мужская, tee-shirt — только женская одежда."
+        ],
+        "correctIndex": 0,
+        "explanation": "une chemise — классическая рубашка (воротник, пуговицы, манжеты). un tee-shirt — простая хлопковая футболка без воротника. Это разные вещи, не синонимы."
+      },
+      {
+        "id": "wc-vetements-chaussure-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements-chaussure",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ces chaussures me font mal aux pieds.",
+          "J'ai acheté une paire de chaussures de sport.",
+          "Enlève tes chaussures avant d'entrer."
+        ],
+        "options": ["обувь / туфли", "носки", "перчатки", "шляпа"],
+        "correctIndex": 0,
+        "explanation": "chaussure (f) — обувь, туфля. Обычно во множественном: les chaussures. «une paire de chaussures» — пара обуви. Носки — les chaussettes (похоже, но другое!)."
+      },
+      {
+        "id": "wc-vetements-chaussure-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-vetements-chaussure",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — то, что носят на ногах. Найди лишнее.",
+        "options": ["les chaussures", "les chaussettes", "les bottes", "le chapeau"],
+        "correctIndex": 3,
+        "explanation": "Обувь (les chaussures), носки (les chaussettes) и сапоги (les bottes) — на ногах. Шляпа (le chapeau) — лишняя: её носят на голове."
+      },
+      {
+        "id": "wc-vetements-manteau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements-manteau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il fait froid, mets ton manteau.",
+          "Elle a accroché son manteau au porte-manteau.",
+          "J'ai acheté un manteau d'hiver très chaud."
+        ],
+        "options": ["пальто", "шарф", "шапка", "свитер"],
+        "correctIndex": 0,
+        "explanation": "manteau (m) — пальто (тёплая верхняя одежда). Шарф — une écharpe, шапка — un bonnet, свитер — un pull. «un manteau d'hiver» — зимнее пальто."
+      },
+      {
+        "id": "wc-vetements-manteau-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-vetements-manteau",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "manteau",
+        "options": ["manteau", "marteau", "gâteau", "château"],
+        "correctIndex": 0,
+        "explanation": "Все оканчиваются на /-to/ и звучат похоже: manteau /mɑ̃to/ (пальто), marteau /maʁto/ (молоток), gâteau /ɡɑto/ (торт), château /ʃɑto/ (замок). Это разные слова, не омофоны: слушай начало."
+      },
+      {
+        "id": "wc-vetements-pull-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-vetements-pull",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит un pull?",
+        "bridge": "От англ. «pull-over» — то, что «натягивают через голову». Французы сократили до un pull. Читается /pyl/, с французским «ю»-звуком.",
+        "options": ["свитер", "куртка", "футболка", "пальто"],
+        "correctIndex": 0,
+        "explanation": "un pull (= un pull-over) — свитер, джемпер. Слово пришло из английского, но во французском это именно свитер. Читается /pyl/."
+      },
+      {
+        "id": "wc-vetements-pull-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-vetements-pull",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "pull",
+        "options": ["pull", "bulle", "nul", "pile"],
+        "correctIndex": 0,
+        "explanation": "pull /pyl/ (свитер), bulle /byl/ (пузырь), nul /nyl/ (нулевой; разг. «никакой»), pile /pil/ (батарейка; стопка). Это разные слова: слушай гласный и концовку."
+      },
+      {
+        "id": "wc-vetements-porter-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements-porter",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит в одежде?",
+        "contexts": [
+          "Aujourd'hui, elle porte une robe bleue.",
+          "Qu'est-ce que tu portes pour la fête ?",
+          "Il porte toujours des chaussures noires."
+        ],
+        "options": ["носить (одежду)", "снимать", "покупать", "стирать"],
+        "correctIndex": 0,
+        "explanation": "porter — носить (быть одетым в что-то). «porter une robe» — быть в платье. Снимать (одежду) — enlever, покупать — acheter, стирать — laver."
+      },
+      {
+        "id": "wc-vetements-porter-cmp",
+        "kind": "compare",
+        "wordId": "wl-vetements-porter",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "porter une robe и mettre une robe. В чём разница?",
+        "phrases": ["Elle porte une robe rouge.", "Elle met une robe rouge."],
+        "options": [
+          "porter — носить, быть одетым (состояние); mettre — надеть (действие, момент).",
+          "Это полные синонимы.",
+          "porter — надеть один раз; mettre — носить постоянно.",
+          "porter — про обувь, mettre — про платья."
+        ],
+        "correctIndex": 0,
+        "explanation": "porter une robe — быть в платье (носить, состояние). mettre une robe — надеть платье (само действие). Глагол porter значит ещё и «нести» (porter une valise — нести чемодан)."
+      },
+      {
+        "id": "wc-vetements-porter-hint",
+        "kind": "wordHint",
+        "wordId": "wl-vetements-porter",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: «быть одетым в что-то» (а также «нести что-то в руках»).",
+        "answer": "porter",
+        "hints": [
+          "Начинается на p…",
+          "Родственно англ. «portable», «porter» (носильщик)",
+          "Elle ___ une robe bleue."
+        ],
+        "explanation": "porter — носить (одежду) и нести (груз). Elle porte une robe = на ней платье; porter une valise = нести чемодан."
+      },
+      {
+        "id": "wc-vetements-vetement-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-vetements-vetement",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для vêtement (одежда), чтобы запомнить accent circonflexe (vê-) и носовой звук на конце /vɛt.mɑ̃/.",
+        "examples": [
+          "«Veste» (пиджак) и vêtement начинаются одинаково — обе про одежду; крышечка ^ как маленькая вешалка над буквой e.",
+          "Представь полный шкаф: каждое утро ты выбираешь un vêtement — один предмет одежды."
+        ]
+      }
+    ]
+  }
+]

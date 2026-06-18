@@ -1,0 +1,300 @@
+[
+  {
+    "id": "wc-nourriture",
+    "title": "Еда и за столом",
+    "theme": "nourriture",
+    "level": "A2",
+    "wordIds": [
+      "wl-nourriture-manger",
+      "wl-nourriture-repas",
+      "wl-nourriture-fruit",
+      "wl-nourriture-legume",
+      "wl-nourriture-viande",
+      "wl-nourriture-poisson",
+      "wl-nourriture-fromage",
+      "wl-nourriture-plat"
+    ],
+    "steps": [
+      {
+        "id": "wc-nourriture-manger-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nourriture-manger",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On mange à huit heures ce soir.",
+          "Les enfants mangent trop de bonbons.",
+          "Je n'ai pas le temps de manger ce midi."
+        ],
+        "options": ["есть, питаться", "пить", "готовить", "покупать"],
+        "correctIndex": 0,
+        "explanation": "manger — есть, питаться. Может стоять и без дополнения («есть вообще»). Пить — boire, готовить — cuisiner / préparer."
+      },
+      {
+        "id": "wc-nourriture-manger-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-nourriture-manger",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какой глагол произнесли.",
+        "audioText": "manger",
+        "options": ["manger", "ranger", "changer", "mélanger"],
+        "correctIndex": 0,
+        "explanation": "Все рифмуются на -anger /ɑ̃ʒe/, но различаются началом: manger /mɑ̃ʒe/ (есть), ranger /ʁɑ̃ʒe/ (убирать, раскладывать), changer /ʃɑ̃ʒe/ (менять), mélanger /melɑ̃ʒe/ (смешивать). Это разные слова, не омофоны: лови первый звук."
+      },
+      {
+        "id": "wc-nourriture-repas-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nourriture-repas",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le déjeuner est le repas principal de la journée.",
+          "Bon repas ! — Merci, à toi aussi.",
+          "Après un bon repas, on a envie de dormir."
+        ],
+        "options": ["приём пищи (завтрак/обед/ужин)", "одно блюдо", "ресторан", "рецепт"],
+        "correctIndex": 0,
+        "explanation": "repas (m) — приём пищи целиком: завтрак (petit-déjeuner), обед (déjeuner) или ужин (dîner). Одно блюдо — un plat, рецепт — une recette. Форма не меняется во мн. числе: des repas."
+      },
+      {
+        "id": "wc-nourriture-repas-sort",
+        "kind": "sort",
+        "wordId": "wl-nourriture-repas",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом repas звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "préparer le repas",
+            "basket": "ok"
+          },
+          {
+            "text": "un repas léger",
+            "basket": "ok"
+          },
+          {
+            "text": "prendre un repas",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un repas",
+            "basket": "no"
+          },
+          {
+            "text": "un repas rapide",
+            "basket": "ok"
+          },
+          {
+            "text": "un repas plat",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«préparer le repas», «un repas léger / rapide», «prendre un repas» — естественно. «boire un repas» (пить приём пищи) — бессмыслица: repas едят, а не пьют. «un repas plat» — тоже не говорят: plat здесь ни к селу (для блюда есть un plat)."
+      },
+      {
+        "id": "wc-nourriture-fruit-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-nourriture-fruit",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит fruit?",
+        "bridge": "Англ. «fruit» — фрукт; пишется почти так же. Только читается по-французски /fʁɥi/, конечная t не звучит.",
+        "options": ["фрукт", "овощ", "сок", "десерт"],
+        "correctIndex": 0,
+        "explanation": "fruit (m) = фрукт. Англ. «fruit» — прямой мост: тот же корень и смысл. Сок — un jus, десерт — un dessert."
+      },
+      {
+        "id": "wc-nourriture-fruit-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-nourriture-fruit",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — это фрукты (des fruits). Найди лишнее.",
+        "options": ["une pomme", "une banane", "une carotte", "une orange"],
+        "correctIndex": 2,
+        "explanation": "Яблоко (une pomme), банан (une banane) и апельсин (une orange) — фрукты. Морковь (une carotte) лишняя: это овощ (un légume), а не фрукт."
+      },
+      {
+        "id": "wc-nourriture-legume-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nourriture-legume",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Mange tes légumes, c'est bon pour la santé.",
+          "Je fais une soupe de légumes.",
+          "Au marché, j'achète des légumes frais."
+        ],
+        "options": ["овощ", "фрукт", "зелень (трава)", "крупа"],
+        "correctIndex": 0,
+        "explanation": "légume (m) — овощ (морковь, картофель, помидор). Несмотря на -e на конце, слово мужского рода: un légume. Фрукт — un fruit."
+      },
+      {
+        "id": "wc-nourriture-legume-trap",
+        "kind": "trap",
+        "wordId": "wl-nourriture-legume",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Французское légume похоже на англ. «legume». Совпадают ли значения?",
+        "options": [
+          "Нет: фр. légume — любой овощ, а англ. legume — только бобовое (горох, фасоль).",
+          "Да, полностью: оба значат «бобовое».",
+          "Да: оба значат «фрукт».",
+          "Нет: légume значит «лёгкий», как англ. light."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: англ. «legume» — узко бобовое (горох, фасоль, чечевица), а фр. légume — любой овощ. Французское слово шире. «Лёгкий» — léger, тут ни при чём."
+      },
+      {
+        "id": "wc-nourriture-viande-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nourriture-viande",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je ne mange pas de viande, je suis végétarien.",
+          "Cette viande est trop cuite.",
+          "Vous prenez de la viande ou du poisson ?"
+        ],
+        "options": ["мясо", "рыба", "овощи", "хлеб"],
+        "correctIndex": 0,
+        "explanation": "viande (f) — мясо (говядина, свинина, курица). Рыба — le poisson, и в меню их прямо противопоставляют: «viande ou poisson ?»"
+      },
+      {
+        "id": "wc-nourriture-viande-cmp",
+        "kind": "compare",
+        "wordId": "wl-nourriture-viande",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«Je mange de la viande» и «Je mange de la chair». В чём разница?",
+        "phrases": ["Je mange de la viande.", "Je mange de la chair."],
+        "options": [
+          "«de la viande» — есть мясо (нормальная еда); «de la chair» звучит как «есть плоть» — так о еде не говорят.",
+          "Разницы нет, это синонимы.",
+          "«viande» — рыба, «chair» — мясо.",
+          "«chair» — правильное слово для еды, «viande» — устаревшее."
+        ],
+        "correctIndex": 0,
+        "explanation": "viande — мясо как еда (на тарелке, в магазине). chair — плоть, мякоть (тела или плода); «manger de la chair» звучит дико. О еде всегда la viande."
+      },
+      {
+        "id": "wc-nourriture-poisson-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nourriture-poisson",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le vendredi, on mange souvent du poisson.",
+          "Ce poisson est très frais.",
+          "Il y a des poissons rouges dans l'aquarium."
+        ],
+        "options": ["рыба", "мясо", "яд", "птица"],
+        "correctIndex": 0,
+        "explanation": "poisson (m) — рыба (и живая, и как блюдо). Внимание: с двумя ss произносится /pwasɔ̃/. Слово poison (с одной s, /pwazɔ̃/) — это яд, совсем другое."
+      },
+      {
+        "id": "wc-nourriture-poisson-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-nourriture-poisson",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли. Внимание на звук s/z!",
+        "audioText": "poisson",
+        "options": ["poisson", "poison", "boisson", "buisson"],
+        "correctIndex": 0,
+        "explanation": "poisson /pwasɔ̃/ (рыба, ss = глухой /s/), poison /pwazɔ̃/ (яд, одна s = звонкий /z/), boisson /bwasɔ̃/ (напиток), buisson /bɥisɔ̃/ (куст). Это разные слова: рыба и яд различаются только звуком s/z."
+      },
+      {
+        "id": "wc-nourriture-poisson-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-nourriture-poisson",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию, чтобы не путать poisson (рыба) и poison (яд) — разница лишь в одной букве s.",
+        "examples": [
+          "Две буквы ss — это как две рыбки рядом: poiSSon. Одна s — одинокий яд: poiSon.",
+          "Свежую рыбу удваивают (две ss = свежо и безопасно), а яд один и коварен (одна s)."
+        ]
+      },
+      {
+        "id": "wc-nourriture-fromage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nourriture-fromage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Vous voulez du fromage ou un dessert ?",
+          "Un plateau de fromages français, s'il vous plaît.",
+          "J'adore le fromage de chèvre."
+        ],
+        "options": ["сыр", "масло", "десерт", "колбаса"],
+        "correctIndex": 0,
+        "explanation": "fromage (m) — сыр. Во Франции его подают отдельным курсом: «fromage ou dessert ?» — сыр или десерт. Масло — le beurre."
+      },
+      {
+        "id": "wc-nourriture-fromage-hint",
+        "kind": "wordHint",
+        "wordId": "wl-nourriture-fromage",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: молочный продукт, который во Франции едят отдельным курсом перед десертом (камамбер, бри, козий…).",
+        "answer": "fromage",
+        "hints": [
+          "Начинается на f…",
+          "Мужской род: le ___",
+          "Un plateau de ___s — сырная тарелка."
+        ],
+        "explanation": "fromage (m) — сыр. На англ. не похоже совсем (cheese), поэтому слово надо просто запомнить. Сырная тарелка — un plateau de fromages."
+      },
+      {
+        "id": "wc-nourriture-plat-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nourriture-plat",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах о еде?",
+        "contexts": [
+          "Comme plat principal, je prends du poisson.",
+          "Quel est le plat du jour ?",
+          "C'est mon plat préféré."
+        ],
+        "options": ["блюдо (кушанье)", "меню", "стол", "официант"],
+        "correctIndex": 0,
+        "explanation": "plat (m) — блюдо, кушанье. «le plat principal» — основное (второе) блюдо, «le plat du jour» — блюдо дня. Меню — la carte / le menu."
+      },
+      {
+        "id": "wc-nourriture-plat-trap",
+        "kind": "trap",
+        "wordId": "wl-nourriture-plat",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В кафе слышишь «de l'eau plate». Речь о блюде из воды?",
+        "options": [
+          "Нет: plate здесь — прилагательное «без газа» (вода негазированная). Существительное le plat — это блюдо.",
+          "Да, это водяное блюдо дня.",
+          "Да: plate всегда значит «блюдо».",
+          "Нет: plate значит «горячая»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: plat — ещё и прилагательное «плоский, без газа». «de l'eau plate» — вода без газа (в отличие от l'eau gazeuse). Существительное le plat (блюдо) — другое слово, мужского рода."
+      }
+    ]
+  }
+]

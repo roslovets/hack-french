@@ -1,0 +1,341 @@
+[
+  {
+    "id": "wc-famille",
+    "title": "Семья",
+    "theme": "famille",
+    "level": "A1",
+    "wordIds": [
+      "wl-famille-famille",
+      "wl-famille-mere",
+      "wl-famille-pere",
+      "wl-famille-fils",
+      "wl-famille-fille",
+      "wl-famille-frere",
+      "wl-famille-soeur",
+      "wl-famille-enfant"
+    ],
+    "steps": [
+      {
+        "id": "wc-famille-famille-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille-famille",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai une grande famille.",
+          "Toute la famille est à table.",
+          "Le dimanche, on déjeune en famille."
+        ],
+        "options": ["семья", "родители", "дом", "друзья"],
+        "correctIndex": 0,
+        "explanation": "famille (f) — семья. «en famille» — всей семьёй, по-семейному. Родители (только мама и папа) — les parents, друзья — les amis."
+      },
+      {
+        "id": "wc-famille-famille-collo",
+        "kind": "sort",
+        "wordId": "wl-famille-famille",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом famille звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une grande famille",
+            "basket": "ok"
+          },
+          {
+            "text": "un repas en famille",
+            "basket": "ok"
+          },
+          {
+            "text": "fonder une famille",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une famille",
+            "basket": "no"
+          },
+          {
+            "text": "une famille rapide",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«une grande famille» (большая семья), «un repas en famille» (семейная трапеза), «fonder une famille» (создать семью) — естественно. «boire une famille» и «une famille rapide» — бессмыслица."
+      },
+      {
+        "id": "wc-famille-mere-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille-mere",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ma mère travaille à l'hôpital.",
+          "C'est la fête des mères dimanche.",
+          "Sa mère prépare le dîner."
+        ],
+        "options": ["мать", "сестра", "бабушка", "тётя"],
+        "correctIndex": 0,
+        "explanation": "mère (f) — мать. «la fête des mères» — День матери. Бабушка — la grand-mère, тётя — la tante, сестра — la sœur."
+      },
+      {
+        "id": "wc-famille-mere-cmp",
+        "kind": "compare",
+        "wordId": "wl-famille-mere",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "ma mère и ma belle-mère. В чём разница?",
+        "phrases": ["Je téléphone à ma mère.", "Je téléphone à ma belle-mère."],
+        "options": [
+          "«ma mère» — родная мать; «ma belle-mère» — свекровь/тёща или мачеха.",
+          "Это одно и то же, belle- просто вежливее.",
+          "«belle-mère» значит «красивая мать».",
+          "«mère» — мачеха, а «belle-mère» — родная мать."
+        ],
+        "correctIndex": 0,
+        "explanation": "mère — родная мать. Приставка belle-/beau- даёт родню по браку: la belle-mère — свекровь, тёща или мачеха. Дословно «belle» и правда «красивая», но здесь это устойчивая приставка родства, а не комплимент."
+      },
+      {
+        "id": "wc-famille-pere-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille-pere",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mon père aime le football.",
+          "Le père de Léa est médecin.",
+          "Il ressemble à son père."
+        ],
+        "options": ["отец", "брат", "дедушка", "сын"],
+        "correctIndex": 0,
+        "explanation": "père (m) — отец. «ressembler à son père» — быть похожим на отца. Дедушка — le grand-père, брат — le frère, сын — le fils."
+      },
+      {
+        "id": "wc-famille-pere-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-famille-pere",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — мужчины в семье. Найди лишнее.",
+        "options": ["le père", "le frère", "le fils", "la mère"],
+        "correctIndex": 3,
+        "explanation": "Отец (le père), брат (le frère) и сын (le fils) — мужчины (мужской род, артикль le). Мать (la mère) — женщина, женский род: она лишняя."
+      },
+      {
+        "id": "wc-famille-fils-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille-fils",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ils ont un fils et une fille.",
+          "Mon fils a dix ans.",
+          "C'est le fils du voisin."
+        ],
+        "options": ["сын", "брат", "отец", "племянник"],
+        "correctIndex": 0,
+        "explanation": "fils (m) — сын. Форма не меняется в единственном и множественном числе: un fils, des fils. Племянник — le neveu, брат — le frère."
+      },
+      {
+        "id": "wc-famille-fils-trap",
+        "kind": "trap",
+        "wordId": "wl-famille-fils",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово fils пишется как «нити» (le fil во множественном — les fils). Как оно читается в значении «сын»?",
+        "options": [
+          "/fis/ — буква l не читается, а s читается",
+          "/fil/ — как «нить»",
+          "/fi/ — ни l, ни s не читаются",
+          "/fils/ — читается всё подряд"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка чтения: fils «сын» читается /fis/ — l немое, а конечная s, наоборот, звучит. Это не то же, что le fil «нить» (/fil/), хотя во множественном они пишутся одинаково: les fils."
+      },
+      {
+        "id": "wc-famille-fils-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-famille-fils",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "fils",
+        "options": ["fil", "fils", "ville", "file"],
+        "correctIndex": 1,
+        "explanation": "fils «сын» звучит /fis/ — со звуком s. Похожие, но другие слова: fil «нить» (/fil/), ville «город» (/vil/), file «очередь/ряд» (/fil/) — все со звуком l, без s."
+      },
+      {
+        "id": "wc-famille-fille-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille-fille",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ils ont deux filles.",
+          "Ma fille fait ses devoirs.",
+          "La fille de mon frère a cinq ans."
+        ],
+        "options": ["дочь", "сестра", "мать", "тётя"],
+        "correctIndex": 0,
+        "explanation": "fille (f) здесь — дочь («ma fille» — моя дочь). У слова есть и второе значение — «девочка/девушка» (une petite fille). Сестра — la sœur, тётя — la tante."
+      },
+      {
+        "id": "wc-famille-fille-cmp",
+        "kind": "compare",
+        "wordId": "wl-famille-fille",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "ma fille и une fille. Почему одно и то же слово, а смысл разный?",
+        "phrases": ["Ma fille a huit ans.", "Une fille joue dans le parc."],
+        "options": [
+          "С притяжательным/родственным контекстом fille = дочь; без него часто = девочка/девушка.",
+          "«fille» всегда значит только «дочь».",
+          "«fille» всегда значит только «девочка».",
+          "«ma fille» — девочка, «une fille» — дочь."
+        ],
+        "correctIndex": 0,
+        "explanation": "fille — слово с двумя смыслами. «ma fille», «la fille de…» — это дочь (родство). «une fille», «une petite fille» — девочка/девушка. Контекст и притяжательное слово показывают, что имеется в виду."
+      },
+      {
+        "id": "wc-famille-fille-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-famille-fille",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "fille",
+        "options": ["ville", "file", "fil", "fille"],
+        "correctIndex": 3,
+        "explanation": "fille звучит /fij/ — с мягким «й» на конце (ll здесь даёт звук /j/). Похожие слова другие: ville «город» (/vil/), file «ряд» (/fil/), fil «нить» (/fil/) — все с обычным l."
+      },
+      {
+        "id": "wc-famille-frere-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille-frere",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Mon frère est plus grand que moi.",
+          "J'ai un frère et une sœur.",
+          "Le frère de Paul habite à Lyon."
+        ],
+        "options": ["брат", "сын", "друг", "отец"],
+        "correctIndex": 0,
+        "explanation": "frère (m) — брат. «un frère et une sœur» — брат и сестра. Друг — un ami, сын — le fils."
+      },
+      {
+        "id": "wc-famille-frere-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-famille-frere",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит frère?",
+        "bridge": "Англ. «fraternal» (братский) и «fraternity» — от того же латинского корня frater, что и фр. frère. Виден общий кусок fr…r.",
+        "options": ["брат", "друг", "свободный", "страх"],
+        "correctIndex": 0,
+        "explanation": "frère = брат. Мост — англ. «fraternal/fraternity» (братский, братство): общий латинский корень frater. Свободный — libre, страх — la peur."
+      },
+      {
+        "id": "wc-famille-frere-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-famille-frere",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "frère",
+        "options": ["faire", "frais", "frère", "fier"],
+        "correctIndex": 2,
+        "explanation": "frère звучит /fʁɛʁ/ — с двумя «р». Похожие реальные слова другие: faire «делать» (/fɛʁ/), frais «свежий» (/fʁɛ/), fier «гордый» (/fjɛʁ/)."
+      },
+      {
+        "id": "wc-famille-soeur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille-soeur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ma sœur étudie à Paris.",
+          "J'ai une grande sœur.",
+          "La sœur de Marc s'appelle Julie."
+        ],
+        "options": ["сестра", "мать", "дочь", "подруга"],
+        "correctIndex": 0,
+        "explanation": "sœur (f) — сестра. Пишется через лигатуру œ: s-œ-u-r. «une grande sœur» — старшая сестра. Подруга — une amie, дочь — la fille."
+      },
+      {
+        "id": "wc-famille-soeur-hint",
+        "kind": "wordHint",
+        "wordId": "wl-famille-soeur",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: дочь тех же родителей, что и ты (по-русски — сестра).",
+        "answer": "sœur",
+        "hints": [
+          "Начинается на s…",
+          "Внутри лигатура œ (как в cœur — сердце)",
+          "J'ai une grande ___."
+        ],
+        "explanation": "sœur (f) — сестра. Пишется с лигатурой œ — как в cœur «сердце». Читается /sœʁ/. Брат — le frère."
+      },
+      {
+        "id": "wc-famille-enfant-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille-enfant",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ils ont trois enfants.",
+          "L'enfant joue dans le jardin.",
+          "C'est un livre pour enfants."
+        ],
+        "options": ["ребёнок", "взрослый", "родитель", "ученик"],
+        "correctIndex": 0,
+        "explanation": "enfant (m/f) — ребёнок. Род зависит от пола ребёнка: un enfant / une enfant, но слово одно. Взрослый — un adulte, родитель — un parent."
+      },
+      {
+        "id": "wc-famille-enfant-trap",
+        "kind": "trap",
+        "wordId": "wl-famille-enfant",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Французы говорят «mes parents». Это значит…",
+        "options": [
+          "мои родители (мама и папа)",
+          "мои родственники вообще (дяди, тёти, кузены)",
+          "мои дети",
+          "мои близкие друзья"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка похожего слова: фр. les parents — это именно «родители» (мама и папа), а не русские «родственники вообще». Родня в широком смысле — la famille или les proches. Дети — les enfants."
+      },
+      {
+        "id": "wc-famille-enfant-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-famille-enfant",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для enfant (ребёнок), чтобы запомнить носовые звуки /ɑ̃.fɑ̃/ и что род зависит от пола (un / une enfant).",
+        "examples": [
+          "«ан-ФАН»: ребёнок — твой главный «фан», который гудит в нос дважды: enf-ant.",
+          "Представь конкретного знакомого ребёнка и скажи: un enfant (мальчик) / une enfant (девочка) — слово то же, меняется лишь артикль."
+        ]
+      }
+    ]
+  }
+]

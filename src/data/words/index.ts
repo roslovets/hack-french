@@ -4,13 +4,18 @@ import wordMechanicsJson from '../word-mechanics.json';
 import bossCases from './word-cases/boss.json';
 import boulangerieCases from './word-cases/boulangerie.json';
 import cafeCases from './word-cases/cafe.json';
+import corpsCases from './word-cases/corps.json';
 import ecoleCases from './word-cases/ecole.json';
+import familleCases from './word-cases/famille.json';
 import maisonCases from './word-cases/maison.json';
+import nourritureCases from './word-cases/nourriture.json';
 import perceptionCases from './word-cases/perception.json';
 import politesseCases from './word-cases/politesse.json';
 import prendreCases from './word-cases/prendre.json';
 import savoirCases from './word-cases/savoir.json';
 import tempsCases from './word-cases/temps.json';
+import transportCases from './word-cases/transport.json';
+import vetementsCases from './word-cases/vetements.json';
 import villeCases from './word-cases/ville.json';
 import wordsJson from './words.json';
 
@@ -30,6 +35,11 @@ const wordCaseFiles = [
   cafeCases,
   ecoleCases,
   maisonCases,
+  familleCases,
+  nourritureCases,
+  corpsCases,
+  vetementsCases,
+  transportCases,
   perceptionCases,
   politesseCases,
   prendreCases,
