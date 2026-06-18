@@ -30,10 +30,15 @@ export interface WordSessionItem {
   caseTitle: string;
 }
 
-/** Every trainable step across word-cases, tagged with its word/dimension/case. */
+/** Regular (non-boss) word-cases — the daily curriculum. */
+export const curriculumCases = wordCases.filter((c) => !c.isBoss);
+/** Boss word-cases (M30) — capstones, launched explicitly, not in the daily session. */
+export const bossCases = wordCases.filter((c) => c.isBoss);
+
+/** Every trainable step across the curriculum (boss cases excluded). */
 function allWordSteps(): WordSessionItem[] {
   const items: WordSessionItem[] = [];
-  for (const c of wordCases) {
+  for (const c of curriculumCases) {
     for (const s of c.steps) {
       if (s.wordId && s.dimension) {
         items.push({ step: s, wordId: s.wordId, dimension: s.dimension, caseTitle: c.title });
@@ -43,12 +48,12 @@ function allWordSteps(): WordSessionItem[] {
   return items;
 }
 
-/** Which scheduled dimensions a word actually has steps for (memoised). */
+/** Which scheduled dimensions a word actually has steps for (memoised, curriculum only). */
 let _dimsByWord: Map<string, Set<WordDimension>> | null = null;
 function scheduledDimsFor(wordId: string): WordDimension[] {
   if (!_dimsByWord) {
     _dimsByWord = new Map();
-    for (const c of wordCases) {
+    for (const c of curriculumCases) {
       for (const s of c.steps) {
         if (!s.wordId || !s.dimension) continue;
         const set = _dimsByWord.get(s.wordId) ?? new Set<WordDimension>();
@@ -60,6 +65,23 @@ function scheduledDimsFor(wordId: string): WordDimension[] {
   const avail = _dimsByWord.get(wordId);
   const dims = SCHEDULED_DIMENSIONS.filter((d) => avail?.has(d));
   return dims.length ? dims : SCHEDULED_DIMENSIONS;
+}
+
+/** A boss (M30) unlocks once every word it tests is at least at the "learning" tier. */
+export function bossUnlocked(state: ProgressState, wordIds: string[]): boolean {
+  if (wordIds.length === 0) return false;
+  return wordIds.every((id) => {
+    const tier = wordTier(state, id);
+    return tier === 'learning' || tier === 'solid';
+  });
+}
+
+/** How many of the boss's words are ready (>= learning) — for the lock progress label. */
+export function bossReadyCount(state: ProgressState, wordIds: string[]): number {
+  return wordIds.filter((id) => {
+    const tier = wordTier(state, id);
+    return tier === 'learning' || tier === 'solid';
+  }).length;
 }
 
 /** Per-word aggregate mastery in [0,1], averaged over the dimensions the word trains. */

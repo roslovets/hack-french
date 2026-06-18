@@ -1,6 +1,7 @@
 import type { Word, WordCase, WordMechanic } from '@/types';
 
 import wordMechanicsJson from '../word-mechanics.json';
+import bossCases from './word-cases/boss.json';
 import boulangerieCases from './word-cases/boulangerie.json';
 import cafeCases from './word-cases/cafe.json';
 import ecoleCases from './word-cases/ecole.json';
@@ -35,6 +36,7 @@ const wordCaseFiles = [
   savoirCases,
   tempsCases,
   villeCases,
+  bossCases,
 ];
 
 export const wordCases: WordCase[] = wordCaseFiles.flat() as unknown as WordCase[];

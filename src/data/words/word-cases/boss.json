@@ -1,0 +1,434 @@
+[
+  {
+    "id": "wc-boss-cafe",
+    "title": "Босс: в кафе",
+    "theme": "cafe",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-cafe-terrasse",
+      "wl-cafe-serveur",
+      "wl-cafe-commander",
+      "wl-cafe-cafe",
+      "wl-cafe-sucre",
+      "wl-cafe-the",
+      "wl-cafe-eau",
+      "wl-cafe-addition"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-cafe-terrasse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cafe-terrasse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты приходишь в кафе. Что значит выделенное слово?",
+        "contexts": [
+          "Il fait beau, on s'installe en terrasse ?",
+          "Vous avez une table en terrasse ?",
+          "La terrasse donne sur la place."
+        ],
+        "options": ["открытые столики кафе на улице", "вход", "касса", "кухня"],
+        "correctIndex": 0,
+        "explanation": "terrasse (f) — уличные столики кафе, под открытым небом. «en terrasse» — сидеть снаружи; «s'installer en terrasse» — расположиться на террасе."
+      },
+      {
+        "id": "wc-boss-cafe-serveur-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-cafe-serveur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "За столики приходит обслуживать персонал кафе. Кто здесь лишний — не работает в зале?",
+        "options": ["le serveur", "la serveuse", "le patron", "le facteur"],
+        "correctIndex": 3,
+        "explanation": "В кафе работают le serveur / la serveuse (официант/официантка) и le patron (хозяин). le facteur — почтальон, он лишний: к обслуживанию в зале отношения не имеет."
+      },
+      {
+        "id": "wc-boss-cafe-commander-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cafe-commander",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Официант подходит к столику. Что значит выделенный глагол?",
+        "contexts": [
+          "Vous avez choisi ? Vous désirez commander ?",
+          "Je voudrais commander, s'il vous plaît.",
+          "On commande tout de suite ou on attend ?"
+        ],
+        "options": ["заказывать", "командовать", "платить", "выбирать блюдо в меню"],
+        "correctIndex": 0,
+        "explanation": "commander — заказывать (в кафе, ресторане). Существительное une commande — заказ. «Командовать» — другое значение, в кафе не используется."
+      },
+      {
+        "id": "wc-boss-cafe-cafe-cmp",
+        "kind": "compare",
+        "wordId": "wl-cafe-cafe",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Ты делаешь заказ. В чём разница между этими двумя фразами со словом café?",
+        "phrases": ["Un café, s'il vous plaît.", "On se retrouve au café ?"],
+        "options": [
+          "В первой café — напиток (чашка кофе), во второй — заведение (кафе).",
+          "В обеих café значит «кофе-напиток».",
+          "В обеих café значит «кафе-заведение».",
+          "В первой café — заведение, во второй — напиток."
+        ],
+        "correctIndex": 0,
+        "explanation": "café (m) — это и «кофе» (напиток: un café), и «кафе» (заведение: au café). «Un café» — закажи чашку; «au café» — встретимся в заведении."
+      },
+      {
+        "id": "wc-boss-cafe-sucre-collo",
+        "kind": "sort",
+        "wordId": "wl-cafe-sucre",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Тебе принесли кофе с сахаром. Какие сочетания со словом sucre звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un café sans sucre",
+            "basket": "ok"
+          },
+          {
+            "text": "un morceau de sucre",
+            "basket": "ok"
+          },
+          {
+            "text": "trop de sucre",
+            "basket": "ok"
+          },
+          {
+            "text": "boire du sucre",
+            "basket": "no"
+          },
+          {
+            "text": "une bouteille de sucre",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Сахар добавляют и считают кусочками: «un morceau de sucre», «sans sucre», «trop de sucre». «boire du sucre» (пить сахар) и «une bouteille de sucre» (бутылка сахара) — бессмыслица: сахар не пьют и не разливают по бутылкам."
+      },
+      {
+        "id": "wc-boss-cafe-the-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-cafe-the",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Сосед заказывает напиток. Послушай и выбери, какое слово произнесли.",
+        "audioText": "thé",
+        "options": ["thé", "dé", "nez", "blé"],
+        "correctIndex": 0,
+        "explanation": "Все звучат похоже на /e/ в конце, но различаются началом: thé /te/ (чай), dé /de/ (игральная кость), nez /ne/ (нос), blé /ble/ (пшеница). Это разные слова, а не омофоны."
+      },
+      {
+        "id": "wc-boss-cafe-eau-collo",
+        "kind": "sort",
+        "wordId": "wl-cafe-eau",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Ты просишь ещё и воды. Какие сочетания со словом eau звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une carafe d'eau",
+            "basket": "ok"
+          },
+          {
+            "text": "de l'eau gazeuse",
+            "basket": "ok"
+          },
+          {
+            "text": "un verre d'eau",
+            "basket": "ok"
+          },
+          {
+            "text": "mâcher de l'eau",
+            "basket": "no"
+          },
+          {
+            "text": "une tranche d'eau",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Воду наливают и подают в графине/стакане: «une carafe d'eau», «un verre d'eau», «de l'eau gazeuse». «mâcher de l'eau» (жевать воду) и «une tranche d'eau» (ломтик воды) — бессмыслица: воду не жуют и не нарезают ломтиками."
+      },
+      {
+        "id": "wc-boss-cafe-serveur-cmp",
+        "kind": "compare",
+        "wordId": "wl-cafe-serveur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Пора позвать официанта. В чём разница между этими двумя обращениями?",
+        "phrases": ["Excusez-moi, monsieur, s'il vous plaît.", "Garçon, l'addition !"],
+        "options": [
+          "Первая — вежливо и нейтрально; «Garçon !» сегодня звучит старомодно и свысока.",
+          "Это полные синонимы, разницы в вежливости нет.",
+          "«Garçon !» вежливее, чем «Excusez-moi, monsieur».",
+          "Первая обращена к повару, вторая — к официанту."
+        ],
+        "correctIndex": 0,
+        "explanation": "Официант — le serveur. Окликать его «Garçon !» сегодня звучит старомодно и высокомерно; вежливо — «Excusez-moi, monsieur/madame, s'il vous plaît»."
+      },
+      {
+        "id": "wc-boss-cafe-addition-trap",
+        "kind": "trap",
+        "wordId": "wl-cafe-addition",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг: англ. «addition» = сложение. Как в кафе попросить счёт к оплате?",
+        "phrases": ["L'addition, s'il vous plaît.", "Le compte, s'il vous plaît."],
+        "options": [
+          "L'addition, s'il vous plaît.",
+          "Le compte, s'il vous plaît.",
+          "La facture, s'il vous plaît.",
+          "Le calcul, s'il vous plaît."
+        ],
+        "correctIndex": 0,
+        "explanation": "Счёт в кафе — l'addition, а не «le compte» (банковский счёт), не «la facture» (счёт-фактура у фирмы/в отеле) и не «le calcul» (вычисление). Англ. «addition» сбивает: по-французски это слово как раз и значит «счёт»."
+      },
+      {
+        "id": "wc-boss-cafe-addition-hint",
+        "kind": "wordHint",
+        "wordId": "wl-cafe-addition",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: бумажка, которую официант приносит в конце, чтобы ты заплатил за всё съеденное и выпитое.",
+        "answer": "addition",
+        "hints": ["Начинается на a…", "Женский род; пишется с двумя d", "L'___, s'il vous plaît !"],
+        "explanation": "addition (f) — счёт к оплате. «L'addition, s'il vous plaît !» — фраза, которой просят счёт. Не путай с англ. «addition» (сложение)."
+      },
+      {
+        "id": "wc-boss-cafe-cafe-hint",
+        "kind": "wordHint",
+        "wordId": "wl-cafe-cafe",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: и горячий бодрящий напиток в чашке, и само заведение, куда ты пришёл.",
+        "answer": "café",
+        "hints": [
+          "Начинается на c…",
+          "Родственно англ. «coffee» / «café»; есть accent aigu на конце",
+          "Un ___, s'il vous plaît."
+        ],
+        "explanation": "café (m) — и «кофе» (напиток: un café), и «кафе» (заведение: au café). Пишется с accent aigu: c-a-f-é."
+      }
+    ]
+  },
+  {
+    "id": "wc-boss-ecole",
+    "title": "Босс: школа ребёнка",
+    "theme": "ecole",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-ecole-ecole",
+      "wl-ecole-maitresse",
+      "wl-ecole-eleve",
+      "wl-ecole-cartable",
+      "wl-ecole-recreation",
+      "wl-ecole-cantine",
+      "wl-ecole-devoirs",
+      "wl-ecole-note"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-ecole-ecole-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecole-ecole",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Утро. Ведёшь ребёнка. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Dépêche-toi, on va être en retard à l'école !",
+          "L'école de mon fils est juste au coin de la rue.",
+          "À huit heures et demie, les portes de l'école s'ouvrent."
+        ],
+        "options": ["школа", "детский сад", "университет", "стадион"],
+        "correctIndex": 0,
+        "explanation": "école (f) — школа для детей. «aller à l'école» — ходить в школу. Детский сад — l'école maternelle или la crèche; университет (для взрослых) — l'université."
+      },
+      {
+        "id": "wc-boss-ecole-ecole-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-ecole-ecole",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "école",
+        "options": ["école", "étole", "étoile", "écolo"],
+        "correctIndex": 0,
+        "explanation": "école /ekɔl/ (школа), étole /etɔl/ (палантин, накидка), étoile /etwal/ (звезда), écolo /ekɔlo/ (разг. «эколог, зелёный»). Это разные слова, не омофоны: слушай гласные и концовку."
+      },
+      {
+        "id": "wc-boss-ecole-maitresse-trap",
+        "kind": "trap",
+        "wordId": "wl-ecole-maitresse",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "У дверей встречает «la maîtresse». Ложный друг: англ. «mistress» часто значит «любовница». Что это слово значит в школе?",
+        "phrases": [
+          "La maîtresse accueille les élèves à la porte.",
+          "La maîtresse explique la leçon au tableau."
+        ],
+        "options": ["учительница начальной школы", "любовница", "директриса", "хозяйка дома"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: англ. «mistress» переводят как «любовница», но фр. «la maîtresse (d'école)» — это просто учительница начальных классов, так её зовут сами дети. Директриса — la directrice."
+      },
+      {
+        "id": "wc-boss-ecole-eleve-cmp",
+        "kind": "compare",
+        "wordId": "wl-ecole-eleve",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Твой ребёнок — élève. В чём разница между élève и étudiant?",
+        "phrases": [
+          "Mon fils est un bon élève à l'école primaire.",
+          "Ma grande sœur est étudiante à l'université."
+        ],
+        "options": [
+          "élève — школьник (в школе); étudiant — студент (в университете).",
+          "élève — студент вуза; étudiant — школьник.",
+          "Это полные синонимы, разницы нет.",
+          "élève — учитель; étudiant — ученик."
+        ],
+        "correctIndex": 0,
+        "explanation": "élève — ученик школы (одна форма на оба пола: un élève / une élève); étudiant — студент университета. У ребёнка в школе — élève, не étudiant."
+      },
+      {
+        "id": "wc-boss-ecole-cartable-hint",
+        "kind": "wordHint",
+        "wordId": "wl-ecole-cartable",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: сумка школьника, в которой он носит тетради и учебники.",
+        "answer": "cartable",
+        "hints": [
+          "Начинается на c…",
+          "8 букв, мужской род: un ___",
+          "Mets tes cahiers dans ton ___ !"
+        ],
+        "explanation": "cartable (m) — школьный портфель/ранец. Не путай с «sac à dos» (обычный рюкзак): у школьника обычно именно cartable."
+      },
+      {
+        "id": "wc-boss-ecole-recreation-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecole-recreation",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Звенит звонок посреди уроков. Что значит выделенное слово?",
+        "contexts": [
+          "La cloche sonne : c'est la récréation !",
+          "Pendant la récréation, les enfants jouent dans la cour.",
+          "On a dix minutes de récréation entre deux cours."
+        ],
+        "options": ["перемена (в школе)", "каникулы", "урок", "обед"],
+        "correctIndex": 0,
+        "explanation": "récréation (f) — короткая перемена между уроками, когда дети выходят во двор. В разговоре сокращают: la récré. Каникулы — это les vacances (это недели, а не минуты)."
+      },
+      {
+        "id": "wc-boss-ecole-cantine-collo",
+        "kind": "sort",
+        "wordId": "wl-ecole-cantine",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Полдень, обед. Какие сочетания со словом cantine звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "manger à la cantine",
+            "basket": "ok"
+          },
+          {
+            "text": "le menu de la cantine",
+            "basket": "ok"
+          },
+          {
+            "text": "il reste à la cantine ce midi",
+            "basket": "ok"
+          },
+          {
+            "text": "conduire une cantine",
+            "basket": "no"
+          },
+          {
+            "text": "une cantine de lait",
+            "basket": "no"
+          }
+        ],
+        "explanation": "В столовой едят (manger à la cantine), у неё есть меню (le menu de la cantine), ребёнок остаётся обедать (rester à la cantine). «conduire une cantine» (вести столовую) и «une cantine de lait» (столовая молока) — бессмыслица."
+      },
+      {
+        "id": "wc-boss-ecole-devoirs-trap",
+        "kind": "trap",
+        "wordId": "wl-ecole-devoirs",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Вечером дома. Внимание к числу: как правильно сказать «делать домашнее задание»?",
+        "phrases": ["Tu as fait tes devoirs ?", "Le devoir d'un citoyen, c'est de voter."],
+        "options": [
+          "faire ses devoirs",
+          "faire son devoir",
+          "faire ses obligations",
+          "faire ses leçons de maison"
+        ],
+        "correctIndex": 0,
+        "explanation": "Домашнее задание — всегда во множественном числе: les devoirs, «faire ses devoirs». В единственном числе «le devoir» значит «долг, обязанность». «leçons de maison» — калька с английского, так не говорят."
+      },
+      {
+        "id": "wc-boss-ecole-note-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-ecole-note",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Учитель ставит оценки. Три фразы — про школьную оценку. Найди лишнюю (где note значит другое).",
+        "options": [
+          "Il a eu une bonne note en français.",
+          "15 sur 20, c'est une excellente note !",
+          "Elle a une mauvaise note en maths.",
+          "J'ai laissé une note sur le frigo."
+        ],
+        "correctIndex": 3,
+        "explanation": "В первых трёх note (f) — школьная оценка (из 20). Лишняя — последняя: «laisser une note sur le frigo» (оставить записку на холодильнике), здесь note значит «записка», а не «оценка»."
+      },
+      {
+        "id": "wc-boss-ecole-note-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-ecole-note",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Финальная проверка слуха. Послушай и выбери, какое слово произнесли.",
+        "audioText": "note",
+        "options": ["note", "botte", "hotte", "noter"],
+        "correctIndex": 0,
+        "explanation": "note /nɔt/ (оценка), botte /bɔt/ (сапог), hotte /ɔt/ (вытяжка), noter /nɔte/ (отмечать, ставить оценку). Это разные слова: слушай первый звук и концовку."
+      }
+    ]
+  }
+]
