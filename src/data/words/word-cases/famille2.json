@@ -1,0 +1,311 @@
+[
+  {
+    "id": "wc-famille2",
+    "title": "Родственники",
+    "theme": "famille2",
+    "level": "A2",
+    "wordIds": [
+      "wl-famille2-grandpere",
+      "wl-famille2-grandmere",
+      "wl-famille2-oncle",
+      "wl-famille2-tante",
+      "wl-famille2-cousin",
+      "wl-famille2-mari",
+      "wl-famille2-femme",
+      "wl-famille2-voisin"
+    ],
+    "steps": [
+      {
+        "id": "wc-famille2-grandpere-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille2-grandpere",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mon grand-père a quatre-vingts ans.",
+          "Le dimanche, on va chez mon grand-père.",
+          "Mon grand-père me raconte des histoires."
+        ],
+        "options": ["дедушка", "отец", "дядя", "старший брат"],
+        "correctIndex": 0,
+        "explanation": "grand-père (m) — дедушка, отец одного из родителей. Пишется через дефис; множественное — des grands-pères. Отец — le père, дядя — l'oncle."
+      },
+      {
+        "id": "wc-famille2-grandpere-sort",
+        "kind": "sort",
+        "wordId": "wl-famille2-grandpere",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом grand-père звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "mon grand-père paternel",
+            "basket": "ok"
+          },
+          {
+            "text": "chez mon grand-père",
+            "basket": "ok"
+          },
+          {
+            "text": "un vieux grand-père",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un grand-père",
+            "basket": "no"
+          },
+          {
+            "text": "un grand-père rapide",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«mon grand-père paternel» (по отцу), «chez mon grand-père» (у дедушки) — естественно. «boire un grand-père» (пить дедушку) и «un grand-père rapide» (быстрый дедушка) — бессмыслица."
+      },
+      {
+        "id": "wc-famille2-grandmere-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille2-grandmere",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ma grand-mère fait un très bon gâteau.",
+          "C'est la recette de ma grand-mère.",
+          "Ma grand-mère habite à la campagne."
+        ],
+        "options": ["бабушка", "мама", "тётя", "соседка"],
+        "correctIndex": 0,
+        "explanation": "grand-mère (f) — бабушка, мать одного из родителей. Пара к ней — le grand-père; вместе — les grands-parents. Мама — la mère, тётя — la tante."
+      },
+      {
+        "id": "wc-famille2-grandmere-cmp",
+        "kind": "compare",
+        "wordId": "wl-famille2-grandmere",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "ma grand-mère и mes grands-parents. В чём разница?",
+        "phrases": ["Je téléphone à ma grand-mère.", "Je vais chez mes grands-parents."],
+        "options": [
+          "«grand-mère» — только бабушка; «grands-parents» — бабушка и дедушка вместе.",
+          "Это полные синонимы, разницы нет.",
+          "«grand-mère» — бабушка и дедушка, а «grands-parents» — только бабушка.",
+          "«grands-parents» значит «прабабушка и прадедушка»."
+        ],
+        "correctIndex": 0,
+        "explanation": "la grand-mère — именно бабушка. les grands-parents — обобщающее слово: бабушка и дедушка вместе. Прародители (прабабушка/прадедушка) — les arrière-grands-parents."
+      },
+      {
+        "id": "wc-famille2-oncle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille2-oncle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mon oncle est le frère de mon père.",
+          "J'adore mon oncle Marc.",
+          "On passe l'été chez mon oncle."
+        ],
+        "options": ["дядя", "дедушка", "двоюродный брат", "сосед"],
+        "correctIndex": 0,
+        "explanation": "oncle (m) — дядя, брат отца или матери (или муж тёти). Артикль сливается: mon oncle, l'oncle. Двоюродный брат — le cousin."
+      },
+      {
+        "id": "wc-famille2-oncle-trap",
+        "kind": "trap",
+        "wordId": "wl-famille2-oncle",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово oncle похоже на ongle. Что значит oncle?",
+        "options": ["дядя", "ноготь", "угол", "тётя"],
+        "correctIndex": 0,
+        "explanation": "Ловушка похожих слов: oncle (m) /ɔ̃kl/ — дядя, а ongle (m) /ɔ̃ɡl/ — ноготь. Различает звук k/g и буквы c/g. Угол — un angle, тётя — la tante."
+      },
+      {
+        "id": "wc-famille2-tante-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille2-tante",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ma tante habite à Lyon.",
+          "Ma tante est la sœur de ma mère.",
+          "On rend visite à ma tante ce week-end."
+        ],
+        "options": ["тётя", "бабушка", "двоюродная сестра", "жена"],
+        "correctIndex": 0,
+        "explanation": "tante (f) — тётя, сестра отца или матери (или жена дяди). Пара к ней — l'oncle. Двоюродная сестра — la cousine, жена — la femme."
+      },
+      {
+        "id": "wc-famille2-tante-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-famille2-tante",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "tante",
+        "options": ["tante", "tonte", "teinte", "pente"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало tante (тётя) /tɑ̃t/. Похожие по звучанию, но другие: tonte (стрижка) /tɔ̃t/ и teinte (оттенок) /tɛ̃t/ отличаются носовым гласным, pente (склон) /pɑ̃t/ — начальным звуком p. А вот tente (палатка) — полный омофон tante: на слух их не различить, только по написанию."
+      },
+      {
+        "id": "wc-famille2-cousin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille2-cousin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mon cousin a le même âge que moi.",
+          "C'est le fils de mon oncle.",
+          "Je joue souvent avec mon cousin."
+        ],
+        "options": ["двоюродный брат", "родной брат", "племянник", "сосед"],
+        "correctIndex": 0,
+        "explanation": "cousin (m) — двоюродный брат (сын дяди или тёти). Двоюродная сестра — la cousine. Родной брат — le frère, племянник — le neveu."
+      },
+      {
+        "id": "wc-famille2-cousin-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-famille2-cousin",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "cousin",
+        "options": ["cousin", "coussin", "raisin", "bassin"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало cousin (кузен) /ku.zɛ̃/ со звуком z. Coussin (подушка) /ku.sɛ̃/ — со звуком s. Raisin (виноград) /ʁɛ.zɛ̃/, bassin (бассейн, таз) /ba.sɛ̃/ — другие начала."
+      },
+      {
+        "id": "wc-famille2-mari-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille2-mari",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Mon mari travaille à l'hôpital.",
+          "Le mari de ma sœur s'appelle Paul.",
+          "Elle parle souvent de son mari."
+        ],
+        "options": ["муж", "жена", "отец", "сосед"],
+        "correctIndex": 0,
+        "explanation": "mari (m) — муж. «mon mari» — мой муж, «le mari de ma sœur» — муж моей сестры. Жена — la femme, отец — le père."
+      },
+      {
+        "id": "wc-famille2-mari-trap",
+        "kind": "trap",
+        "wordId": "wl-famille2-mari",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "le mari и marié звучат похоже. Что значит существительное le mari?",
+        "options": ["муж", "женатый", "свадьба", "брак"],
+        "correctIndex": 0,
+        "explanation": "le mari (m) — муж (существительное). marié — женатый / новобрачный (прилагательное): il est marié — он женат. Свадьба — le mariage, брак — le mariage / l'union."
+      },
+      {
+        "id": "wc-famille2-femme-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille2-femme",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Слово femme значит и «жена», и «женщина». В какой сцене это именно «жена»?",
+        "contexts": [
+          "Je vous présente ma femme, Claire.",
+          "Une femme attend devant la porte.",
+          "C'est une femme très gentille."
+        ],
+        "options": [
+          "в первой — «ma femme» значит «моя жена»",
+          "во второй — «une femme» там значит «жена»",
+          "в третьей — «une femme» там значит «жена»",
+          "ни в одной — femme всегда значит только «женщина»"
+        ],
+        "correctIndex": 0,
+        "explanation": "femme (f) — и «женщина», и «жена». С притяжательным словом «ma femme» = моя жена; с артиклем «une femme» = (некая) женщина. Внимание к произношению: femme читается /fam/, а не /fɛm/."
+      },
+      {
+        "id": "wc-famille2-femme-trap",
+        "kind": "trap",
+        "wordId": "wl-famille2-femme",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как на самом деле читается femme?",
+        "options": [
+          "/fam/ — буквы «emme» дают звук «a»",
+          "/fɛm/ — как пишется, так и читается",
+          "/fœm/ — с округлым «ё»",
+          "/fɑ̃/ — с носовым звуком, как femme похоже на «fan»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Орфографическая ловушка: femme читается /fam/ — здесь «emme» даёт звук «a». Не путать с faim (голод) /fɛ̃/, где носовой звук."
+      },
+      {
+        "id": "wc-famille2-voisin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-famille2-voisin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mon voisin écoute de la musique très fort.",
+          "Le voisin d'à côté a un chien.",
+          "Je dis bonjour à mes voisins le matin."
+        ],
+        "options": ["сосед", "двоюродный брат", "прохожий", "друг"],
+        "correctIndex": 0,
+        "explanation": "voisin (m) — сосед, кто живёт рядом. «le voisin d'à côté» — сосед рядом, «mes voisins» — мои соседи. Соседка — la voisine. Не родственник: cousin — это кузен."
+      },
+      {
+        "id": "wc-famille2-voisin-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-famille2-voisin",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — это родственники. Найди лишнее.",
+        "options": ["l'oncle", "la tante", "le cousin", "le voisin"],
+        "correctIndex": 3,
+        "explanation": "l'oncle (дядя), la tante (тётя) и le cousin (кузен) — родственники. le voisin (сосед) — лишний: он не из семьи, а просто живёт рядом."
+      },
+      {
+        "id": "wc-famille2-cousin-hint",
+        "kind": "wordHint",
+        "wordId": "wl-famille2-cousin",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: сын твоего дяди или тёти — кто он тебе?",
+        "answer": "cousin",
+        "hints": [
+          "Начинается на c…",
+          "6 букв, звучит /ku.zɛ̃/ через z",
+          "C'est le fils de mon oncle : mon ___."
+        ],
+        "explanation": "cousin (m) — двоюродный брат. Двоюродная сестра — la cousine. Осторожно с похожим coussin (подушка) — там звук s, а не z."
+      },
+      {
+        "id": "wc-famille2-grandmere-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-famille2-grandmere",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для grand-mère (бабушка), чтобы запомнить дефис и пару с grand-père.",
+        "examples": [
+          "«Grand» (большой) + «mère» (мать) = «большая мама» = бабушка; та же логика в grand-père = «большой папа» = дедушка.",
+          "Представь, как ты приходишь chez tes grands-parents: grand-mère встречает с пирогом, grand-père рассказывает истории — два слова всегда рядом."
+        ]
+      }
+    ]
+  }
+]

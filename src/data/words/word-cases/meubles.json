@@ -1,0 +1,333 @@
+[
+  {
+    "id": "wc-meubles",
+    "title": "Мебель",
+    "theme": "meubles",
+    "level": "A2",
+    "wordIds": [
+      "wl-meubles-meuble",
+      "wl-meubles-canape",
+      "wl-meubles-armoire",
+      "wl-meubles-frigo",
+      "wl-meubles-four",
+      "wl-meubles-lampe",
+      "wl-meubles-tapis",
+      "wl-meubles-rideau"
+    ],
+    "steps": [
+      {
+        "id": "wc-meubles-meuble-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meubles-meuble",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ce meuble est trop lourd, on ne peut pas le déplacer.",
+          "J'ai acheté un meuble ancien au marché.",
+          "Il y a un magasin de meubles près d'ici."
+        ],
+        "options": ["предмет мебели", "комната", "стена", "ремонт"],
+        "correctIndex": 0,
+        "explanation": "un meuble (m) — один предмет мебели (стол, шкаф, кровать). «Мебель» в целом по-французски обычно les meubles во множественном или le mobilier."
+      },
+      {
+        "id": "wc-meubles-meuble-cmp",
+        "kind": "compare",
+        "wordId": "wl-meubles-meuble",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un meuble и le mobilier. В чём разница?",
+        "phrases": ["J'ai acheté un meuble.", "Tout le mobilier est neuf."],
+        "options": [
+          "un meuble — один предмет (можно посчитать); le mobilier — вся обстановка как одно целое.",
+          "Это полные синонимы, разницы нет.",
+          "un meuble — вся мебель; le mobilier — только один предмет.",
+          "le mobilier значит «мобильный телефон»."
+        ],
+        "correctIndex": 0,
+        "explanation": "un meuble — отдельный предмет (deux meubles, trois meubles). le mobilier — собирательное «мебель/обстановка», не считается поштучно. «mobilier» не связано с мобильником."
+      },
+      {
+        "id": "wc-meubles-canape-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meubles-canape",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Assieds-toi sur le canapé.",
+          "On a acheté un canapé en cuir.",
+          "Le chat dort sur le canapé du salon."
+        ],
+        "options": ["диван", "кресло", "стул", "кровать"],
+        "correctIndex": 0,
+        "explanation": "un canapé (m) — диван в гостиной. Кресло — un fauteuil, кровать — un lit. Диван-кровать — un canapé-lit."
+      },
+      {
+        "id": "wc-meubles-canape-trap",
+        "kind": "trap",
+        "wordId": "wl-meubles-canape",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "На вечеринке предложили «des canapés». Это точно про диваны?",
+        "options": [
+          "Нет: un canapé — это и диван, и канапе (бутербродик-закуска). Здесь — закуски.",
+          "Да, всегда только диван.",
+          "Нет, canapé — это только напиток.",
+          "Да, это синоним слова «кресло»."
+        ],
+        "correctIndex": 0,
+        "explanation": "У слова canapé два значения: диван и канапе (маленькая закуска). На фуршете «des canapés» — это бутербродики, а не диваны. Контекст подсказывает."
+      },
+      {
+        "id": "wc-meubles-armoire-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meubles-armoire",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Range tes vêtements dans l'armoire.",
+          "L'armoire de la chambre est en bois.",
+          "Elle ouvre l'armoire pour prendre un pull."
+        ],
+        "options": ["шкаф", "ящик", "полка", "комод"],
+        "correctIndex": 0,
+        "explanation": "une armoire (f) — высокий платяной шкаф с дверцами. Полка / стеллаж — une étagère, комод — une commode."
+      },
+      {
+        "id": "wc-meubles-armoire-cmp",
+        "kind": "compare",
+        "wordId": "wl-meubles-armoire",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une armoire и un placard. В чём разница?",
+        "phrases": ["J'ai mis le manteau dans l'armoire.", "Les assiettes sont dans le placard."],
+        "options": [
+          "armoire — отдельно стоящий шкаф (мебель); placard — встроенный стенной шкаф.",
+          "Это одно и то же слово.",
+          "armoire — встроенный шкаф; placard — отдельная мебель.",
+          "placard — это полка на стене."
+        ],
+        "correctIndex": 0,
+        "explanation": "une armoire — шкаф-мебель, его можно подвинуть. un placard — встроенный (стенной) шкаф, часть стены или кухни. На кухне посуда обычно dans le placard."
+      },
+      {
+        "id": "wc-meubles-frigo-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meubles-frigo",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Mets le lait au frigo.",
+          "Le frigo est vide, il faut faire les courses.",
+          "Sors le fromage du frigo."
+        ],
+        "options": ["холодильник", "морозильник", "шкаф", "плита"],
+        "correctIndex": 0,
+        "explanation": "le frigo (m) — холодильник (разговорное). Полное слово — le réfrigérateur. Морозильник — le congélateur, плита — la cuisinière."
+      },
+      {
+        "id": "wc-meubles-frigo-trap",
+        "kind": "trap",
+        "wordId": "wl-meubles-frigo",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В магазине на ценнике написано «réfrigérateur». Это другое, чем frigo?",
+        "options": [
+          "Нет, это то же самое: frigo — разговорное, réfrigérateur — полное официальное слово.",
+          "Да, réfrigérateur — это морозильник.",
+          "Да, réfrigérateur — это микроволновка.",
+          "Нет, оба слова значат «шкаф»."
+        ],
+        "correctIndex": 0,
+        "explanation": "frigo и réfrigérateur — один и тот же прибор. frigo — короткое, разговорное; réfrigérateur — длинное, для этикеток и официальной речи. Морозильник — это congélateur."
+      },
+      {
+        "id": "wc-meubles-four-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meubles-four",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mets le poulet au four à 200 degrés.",
+          "Préchauffe le four, s'il te plaît.",
+          "Le gâteau est encore dans le four."
+        ],
+        "options": ["духовка", "сковорода", "холодильник", "кастрюля"],
+        "correctIndex": 0,
+        "explanation": "le four (m) — духовка. «mettre au four» — поставить в духовку, «préchauffer le four» — разогреть духовку. Сковорода — la poêle."
+      },
+      {
+        "id": "wc-meubles-four-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-meubles-four",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "four",
+        "options": ["four", "fort", "fou", "fourchette"],
+        "correctIndex": 0,
+        "explanation": "four /fuʁ/ — духовка. Похоже звучат: fort /fɔʁ/ (сильный), fou /fu/ (сумасшедший), fourchette /fuʁ.ʃɛt/ (вилка). Это не омофоны — слушай конец слова."
+      },
+      {
+        "id": "wc-meubles-lampe-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-meubles-lampe",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит lampe?",
+        "bridge": "Англ. «lamp» — лампа; почти то же написание (фр. добавляет -e). Читается /lɑ̃p/ с носовым «а».",
+        "options": ["лампа", "лампочка", "свет", "тень"],
+        "correctIndex": 0,
+        "explanation": "une lampe (f) — лампа, светильник (весь прибор). Англ. «lamp» — прямой мост. Лампочка (которую вкручивают) — une ampoule, свет — la lumière."
+      },
+      {
+        "id": "wc-meubles-lampe-cmp",
+        "kind": "compare",
+        "wordId": "wl-meubles-lampe",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une lampe и une ampoule. В чём разница?",
+        "phrases": [
+          "J'ai acheté une lampe pour le salon.",
+          "L'ampoule est grillée, il faut la changer."
+        ],
+        "options": [
+          "lampe — лампа/светильник (весь прибор); ampoule — лампочка внутри него.",
+          "Это синонимы.",
+          "lampe — лампочка; ampoule — большой светильник.",
+          "ampoule значит «свет», а lampe — «тень»."
+        ],
+        "correctIndex": 0,
+        "explanation": "une lampe — прибор целиком (настольная лампа). une ampoule — лампочка, которую вкручивают внутрь. Когда «лампочка перегорела» — c'est l'ampoule, а не la lampe."
+      },
+      {
+        "id": "wc-meubles-tapis-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meubles-tapis",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le chat dort sur le tapis.",
+          "On a mis un tapis rouge dans le salon.",
+          "Essuie tes pieds sur le tapis."
+        ],
+        "options": ["ковёр", "штора", "плед", "пол"],
+        "correctIndex": 0,
+        "explanation": "un tapis (m) — ковёр / коврик на полу. Конечная s не читается: /ta.pi/. Штора — un rideau, пол — le sol."
+      },
+      {
+        "id": "wc-meubles-tapis-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-meubles-tapis",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "tapis",
+        "options": ["tapis", "tableau", "tapir", "tarte"],
+        "correctIndex": 0,
+        "explanation": "tapis /ta.pi/ — ковёр. Похоже звучат: tapir /ta.piʁ/ (тапир, с -r на конце), tableau /ta.blo/ (картина), tarte /taʁt/ (пирог). Конечная -s в tapis немая."
+      },
+      {
+        "id": "wc-meubles-rideau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meubles-rideau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le soir, on tire les rideaux.",
+          "Ouvre les rideaux, il fait sombre.",
+          "Ces rideaux sont trop épais."
+        ],
+        "options": ["штора", "ковёр", "окно", "одеяло"],
+        "correctIndex": 0,
+        "explanation": "un rideau (m) — штора, занавеска. «tirer les rideaux» — задёрнуть шторы. Множественное — des rideaux (с -x). Окно — une fenêtre."
+      },
+      {
+        "id": "wc-meubles-rideau-collo",
+        "kind": "sort",
+        "wordId": "wl-meubles-rideau",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словами про мебель звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "tirer les rideaux",
+            "basket": "ok"
+          },
+          {
+            "text": "mettre le lait au frigo",
+            "basket": "ok"
+          },
+          {
+            "text": "préchauffer le four",
+            "basket": "ok"
+          },
+          {
+            "text": "allumer la lampe",
+            "basket": "ok"
+          },
+          {
+            "text": "boire le rideau",
+            "basket": "no"
+          },
+          {
+            "text": "manger l'armoire",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«tirer les rideaux», «mettre au frigo», «préchauffer le four», «allumer la lampe» — естественные сочетания. «boire le rideau» (пить штору) и «manger l'armoire» (есть шкаф) — бессмыслица."
+      },
+      {
+        "id": "wc-meubles-meuble-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-meubles-meuble",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — бытовая техника на кухне. Найди лишнее.",
+        "options": ["le frigo", "le four", "le micro-ondes", "le tapis"],
+        "correctIndex": 3,
+        "explanation": "le frigo (холодильник), le four (духовка) и le micro-ondes (микроволновка) — кухонная техника. le tapis (ковёр) — лишний: это не техника, а напольное покрытие."
+      },
+      {
+        "id": "wc-meubles-armoire-hint",
+        "kind": "wordHint",
+        "wordId": "wl-meubles-armoire",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: высокий шкаф с дверцами, куда вешают и складывают одежду.",
+        "answer": "armoire",
+        "hints": ["Начинается на a…", "Женского рода: une ___", "Range tes pulls dans l'___."],
+        "explanation": "une armoire (f) — платяной шкаф. Не путать с le placard (встроенный стенной шкаф). Читается /aʁ.mwaʁ/."
+      },
+      {
+        "id": "wc-meubles-canape-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-meubles-canape",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для canapé (диван), чтобы запомнить мужской род (un canapé) и второе значение — «канапе» (закуска).",
+        "examples": [
+          "Русское «канапе» (бутербродик) пишется так же: гости едят канапе, сидя на диване — и то и другое un canapé.",
+          "Представь: ты падаешь на un canapé с тарелкой канапе в руках — одно слово, два смысла, оба мужского рода."
+        ]
+      }
+    ]
+  }
+]

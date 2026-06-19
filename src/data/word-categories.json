@@ -2,19 +2,19 @@
   {
     "id": "table",
     "title": "Еда и кафе",
-    "themes": ["boulangerie", "cafe", "nourriture", "restaurant"],
+    "themes": ["boulangerie", "cafe", "nourriture", "restaurant", "boissons"],
     "bossId": "wc-boss-table"
   },
   {
     "id": "home",
     "title": "Дом и одежда",
-    "themes": ["maison", "vetements", "pieces"],
+    "themes": ["maison", "vetements", "pieces", "meubles"],
     "bossId": "wc-boss-maison-vetements"
   },
   {
     "id": "people",
     "title": "Человек и семья",
-    "themes": ["corps", "famille", "emotions", "sante", "visage"],
+    "themes": ["corps", "famille", "emotions", "sante", "visage", "famille2"],
     "bossId": "wc-boss-corps-famille"
   },
   {
@@ -26,7 +26,7 @@
   {
     "id": "school",
     "title": "Школа и общение",
-    "themes": ["ecole", "politesse", "communication"],
+    "themes": ["ecole", "politesse", "communication", "questions"],
     "bossId": "wc-boss-ecole-politesse"
   },
   {
@@ -38,26 +38,31 @@
   {
     "id": "money",
     "title": "Покупки и деньги",
-    "themes": ["argent", "courses"]
+    "themes": ["argent", "courses"],
+    "bossId": "wc-boss-money"
   },
   {
     "id": "work",
     "title": "Работа",
-    "themes": ["travail", "metiers"]
+    "themes": ["travail", "metiers"],
+    "bossId": "wc-boss-work"
   },
   {
     "id": "weather",
     "title": "Погода и природа",
-    "themes": ["meteo", "animaux", "saisons"]
+    "themes": ["meteo", "animaux", "saisons", "nature2"],
+    "bossId": "wc-boss-weather"
   },
   {
     "id": "leisure",
     "title": "Досуг и интересы",
-    "themes": ["loisirs", "sport"]
+    "themes": ["loisirs", "sport"],
+    "bossId": "wc-boss-leisure"
   },
   {
     "id": "descriptions",
     "title": "Цвета и описания",
-    "themes": ["couleurs", "adjectifs"]
+    "themes": ["couleurs", "adjectifs"],
+    "bossId": "wc-boss-descriptions"
   }
 ]

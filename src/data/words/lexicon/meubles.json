@@ -1,0 +1,310 @@
+[
+  {
+    "id": "wl-meubles-meuble",
+    "lemma": "meuble",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mœbl/",
+    "translationsRu": ["предмет мебели", "мебель (единица)"],
+    "translationsEn": ["piece of furniture", "furniture item"],
+    "semanticCore": "Один предмет обстановки (стол, шкаф, кровать); собирательное «мебель» по-французски обычно les meubles во множественном.",
+    "collocations": [
+      {
+        "fr": "un meuble ancien",
+        "ru": "старинный предмет мебели"
+      },
+      {
+        "fr": "déplacer un meuble",
+        "ru": "передвинуть мебель"
+      },
+      {
+        "fr": "un magasin de meubles",
+        "ru": "мебельный магазин"
+      },
+      {
+        "fr": "des meubles en bois",
+        "ru": "деревянная мебель"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mobilier",
+        "note": "un meuble = один предмет (можно посчитать); le mobilier = вся обстановка как одно собирательное (мебель в целом, неисчисляемо)."
+      },
+      {
+        "with": "meublé",
+        "note": "le meuble = мебель; un (appartement) meublé = меблированная квартира (прилагательное от того же корня)."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["meubles", "logement"],
+    "caseIds": ["wc-meubles"]
+  },
+  {
+    "id": "wl-meubles-canape",
+    "lemma": "canapé",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ka.na.pe/",
+    "translationsRu": ["диван"],
+    "translationsEn": ["sofa", "couch"],
+    "semanticCore": "Мягкий диван в гостиной, на котором сидят несколько человек; не для постоянного сна.",
+    "collocations": [
+      {
+        "fr": "s'asseoir sur le canapé",
+        "ru": "сесть на диван"
+      },
+      {
+        "fr": "un canapé-lit",
+        "ru": "диван-кровать"
+      },
+      {
+        "fr": "un canapé en cuir",
+        "ru": "кожаный диван"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "canapé (закуска)",
+        "note": "Ложный друг внутри французского: un canapé — и диван, и канапе (бутербродик-закуска). Контекст решает."
+      },
+      {
+        "with": "fauteuil",
+        "note": "le canapé = диван (на нескольких); le fauteuil = кресло (на одного, с подлокотниками)."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["meubles", "salon"],
+    "caseIds": ["wc-meubles"]
+  },
+  {
+    "id": "wl-meubles-armoire",
+    "lemma": "armoire",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/aʁ.mwaʁ/",
+    "translationsRu": ["шкаф", "платяной шкаф"],
+    "translationsEn": ["wardrobe", "cupboard"],
+    "semanticCore": "Высокий закрытый шкаф с дверцами, чаще для одежды и белья; стоит, а не встроен.",
+    "collocations": [
+      {
+        "fr": "ranger dans l'armoire",
+        "ru": "убрать в шкаф"
+      },
+      {
+        "fr": "une armoire à pharmacie",
+        "ru": "аптечный шкафчик"
+      },
+      {
+        "fr": "ouvrir l'armoire",
+        "ru": "открыть шкаф"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "placard",
+        "note": "l'armoire = отдельно стоящий шкаф (мебель); le placard = встроенный шкаф / стенной шкаф (часть стены)."
+      },
+      {
+        "with": "étagère",
+        "note": "l'armoire = закрытый шкаф с дверцами; l'étagère = открытая полка / стеллаж без дверец."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A2",
+    "tags": ["meubles", "rangement"],
+    "caseIds": ["wc-meubles"]
+  },
+  {
+    "id": "wl-meubles-frigo",
+    "lemma": "frigo",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fʁi.ɡo/",
+    "translationsRu": ["холодильник"],
+    "translationsEn": ["fridge"],
+    "semanticCore": "Холодильник в обиходной речи; полное réfrigérateur длинное и официальное, frigo — повседневное.",
+    "collocations": [
+      {
+        "fr": "mettre au frigo",
+        "ru": "поставить в холодильник"
+      },
+      {
+        "fr": "sortir du frigo",
+        "ru": "достать из холодильника"
+      },
+      {
+        "fr": "le frigo est vide",
+        "ru": "холодильник пустой"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "réfrigérateur",
+        "note": "frigo = разговорное «холодильник»; réfrigérateur — то же, но полное и официальное слово (на этикетках, в магазине)."
+      },
+      {
+        "with": "congélateur",
+        "note": "le frigo = холодильник (плюс холод); le congélateur = морозильник (минус, заморозка)."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["meubles", "cuisine"],
+    "caseIds": ["wc-meubles"]
+  },
+  {
+    "id": "wl-meubles-four",
+    "lemma": "four",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fuʁ/",
+    "translationsRu": ["духовка", "печь"],
+    "translationsEn": ["oven"],
+    "semanticCore": "Духовой шкаф, в котором запекают; также печь вообще (хлебная, гончарная).",
+    "collocations": [
+      {
+        "fr": "mettre au four",
+        "ru": "поставить в духовку"
+      },
+      {
+        "fr": "un four à micro-ondes",
+        "ru": "микроволновая печь"
+      },
+      {
+        "fr": "préchauffer le four",
+        "ru": "разогреть духовку"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poêle",
+        "note": "le four = духовка (печёт внутри); la poêle = сковорода (жарят сверху на плите)."
+      },
+      {
+        "with": "fourchette",
+        "note": "le four = духовка; la fourchette = вилка — похожее начало, разные слова, не путать на слух."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["meubles", "cuisine"],
+    "caseIds": ["wc-meubles"]
+  },
+  {
+    "id": "wl-meubles-lampe",
+    "lemma": "lampe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/lɑ̃p/",
+    "translationsRu": ["лампа", "светильник"],
+    "translationsEn": ["lamp"],
+    "semanticCore": "Лампа как прибор, дающий свет: настольная, напольная, карманная.",
+    "collocations": [
+      {
+        "fr": "allumer la lampe",
+        "ru": "включить лампу"
+      },
+      {
+        "fr": "une lampe de chevet",
+        "ru": "прикроватная лампа"
+      },
+      {
+        "fr": "une lampe de poche",
+        "ru": "карманный фонарик"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ampoule",
+        "note": "la lampe = лампа / светильник (весь прибор); l'ampoule = лампочка (которую вкручивают внутрь)."
+      },
+      {
+        "with": "lumière",
+        "note": "la lampe = лампа (предмет); la lumière = свет (то, что лампа даёт). «Включить свет» — allumer la lumière."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["meubles", "salon"],
+    "caseIds": ["wc-meubles"]
+  },
+  {
+    "id": "wl-meubles-tapis",
+    "lemma": "tapis",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ta.pi/",
+    "translationsRu": ["ковёр", "коврик"],
+    "translationsEn": ["carpet", "rug"],
+    "semanticCore": "Ковёр или коврик на полу; конечная s не читается, форма одна для ед. и мн. числа.",
+    "collocations": [
+      {
+        "fr": "un tapis de salon",
+        "ru": "ковёр для гостиной"
+      },
+      {
+        "fr": "le tapis de bain",
+        "ru": "коврик для ванной"
+      },
+      {
+        "fr": "le tapis rouge",
+        "ru": "красная дорожка"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tapis (англ. tapestry)",
+        "note": "Ложный друг: фр. tapis = ковёр на полу, а англ. «tapestry» (гобелен) — это фр. tapisserie. Не путать."
+      },
+      {
+        "with": "moquette",
+        "note": "le tapis = отдельный ковёр (можно убрать); la moquette = ковровое покрытие во всю комнату (приклеено к полу)."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["meubles", "salon"],
+    "caseIds": ["wc-meubles"]
+  },
+  {
+    "id": "wl-meubles-rideau",
+    "lemma": "rideau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁi.do/",
+    "translationsRu": ["штора", "занавеска"],
+    "translationsEn": ["curtain"],
+    "semanticCore": "Штора на окне; во множественном rideaux (с x), часто говорят о паре штор.",
+    "collocations": [
+      {
+        "fr": "tirer les rideaux",
+        "ru": "задёрнуть шторы"
+      },
+      {
+        "fr": "ouvrir les rideaux",
+        "ru": "раздвинуть шторы"
+      },
+      {
+        "fr": "des rideaux épais",
+        "ru": "плотные шторы"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "store",
+        "note": "le rideau = тканевая штора (вешают, задёргивают); le store = жалюзи / рулонная штора (поднимают и опускают)."
+      },
+      {
+        "with": "rideaux (мн.)",
+        "note": "Множественное — rideaux с -x, а не -s: un rideau → des rideaux. Конечный -x не читается: /ʁi.do/."
+      }
+    ],
+    "frequencyRank": 690,
+    "level": "A2",
+    "tags": ["meubles", "fenetre"],
+    "caseIds": ["wc-meubles"]
+  }
+]

@@ -1,0 +1,276 @@
+[
+  {
+    "id": "wc-nature2",
+    "title": "Природа",
+    "theme": "nature2",
+    "level": "A1",
+    "wordIds": [
+      "wl-nature2-arbre",
+      "wl-nature2-montagne",
+      "wl-nature2-mer",
+      "wl-nature2-riviere",
+      "wl-nature2-foret",
+      "wl-nature2-plage",
+      "wl-nature2-ciel",
+      "wl-nature2-etoile"
+    ],
+    "steps": [
+      {
+        "id": "wc-nature2-arbre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nature2-arbre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il y a un grand arbre dans le jardin.",
+          "Les enfants grimpent à l'arbre.",
+          "On mange à l'ombre d'un arbre."
+        ],
+        "options": ["дерево", "куст", "цветок", "лист"],
+        "correctIndex": 0,
+        "explanation": "arbre (m) — дерево. «à l'ombre d'un arbre» — в тени дерева. Куст — un buisson, цветок — une fleur, лист — une feuille."
+      },
+      {
+        "id": "wc-nature2-arbre-collo",
+        "kind": "sort",
+        "wordId": "wl-nature2-arbre",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом arbre звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "grimper à un arbre",
+            "basket": "ok"
+          },
+          {
+            "text": "à l'ombre d'un arbre",
+            "basket": "ok"
+          },
+          {
+            "text": "un grand arbre",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un arbre",
+            "basket": "no"
+          },
+          {
+            "text": "un arbre rapide",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«grimper à un arbre», «à l'ombre d'un arbre», «un grand arbre» — естественно. «boire un arbre» (пить дерево) и «un arbre rapide» (быстрое дерево) — бессмыслица."
+      },
+      {
+        "id": "wc-nature2-montagne-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-nature2-montagne",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит montagne?",
+        "bridge": "Англ. «mountain» и фр. montagne — родственники с общим корнем mont-. Узнаёшь начало monta… — это гора.",
+        "options": ["гора", "холм", "долина", "пещера"],
+        "correctIndex": 0,
+        "explanation": "montagne (f) — гора, как англ. «mountain» (общий корень mont-). Холм — une colline, долина — une vallée, пещера — une grotte."
+      },
+      {
+        "id": "wc-nature2-montagne-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nature2-montagne",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Cet été, nous allons à la montagne.",
+          "Le sommet de la montagne est couvert de neige.",
+          "On voit une haute montagne au loin."
+        ],
+        "options": ["гора", "море", "лес", "река"],
+        "correctIndex": 0,
+        "explanation": "montagne (f) — гора. «à la montagne» — в горы / в горах (место отдыха). «le sommet» — вершина. Море — la mer, лес — la forêt."
+      },
+      {
+        "id": "wc-nature2-mer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nature2-mer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "En été, on va à la mer.",
+          "La maison est au bord de la mer.",
+          "J'aime nager dans la mer."
+        ],
+        "options": ["море", "озеро", "река", "пляж"],
+        "correctIndex": 0,
+        "explanation": "mer (f) — море. «au bord de la mer» — на берегу моря, «aller à la mer» — поехать на море. Озеро — un lac, река — une rivière, пляж — une plage."
+      },
+      {
+        "id": "wc-nature2-mer-trap",
+        "kind": "trap",
+        "wordId": "wl-nature2-mer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "На слух mer, mère и maire звучат одинаково /mɛʁ/. Какое слово значит «море»?",
+        "options": ["la mer", "la mère", "le maire", "la mairie"],
+        "correctIndex": 0,
+        "explanation": "Три слова — омофоны /mɛʁ/: la mer — море, la mère — мать, le maire — мэр. А la mairie (мэрия) звучит иначе /mɛ.ʁi/. «Море» — только la mer; различает написание и контекст."
+      },
+      {
+        "id": "wc-nature2-riviere-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nature2-riviere",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Les enfants se baignent dans la rivière.",
+          "Il y a un petit pont sur la rivière.",
+          "On pêche au bord de la rivière."
+        ],
+        "options": ["река", "море", "пруд", "дождь"],
+        "correctIndex": 0,
+        "explanation": "rivière (f) — река (обычно небольшая). «au bord de la rivière» — на берегу реки. Море — la mer, пруд — un étang, дождь — la pluie."
+      },
+      {
+        "id": "wc-nature2-riviere-cmp",
+        "kind": "compare",
+        "wordId": "wl-nature2-riviere",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "rivière и fleuve — обе «реки». В чём разница?",
+        "phrases": ["On se baigne dans la rivière.", "La Seine est un fleuve."],
+        "options": [
+          "rivière — река, впадающая в другую реку; fleuve — большая река, впадающая прямо в море.",
+          "Это полные синонимы, разницы нет.",
+          "rivière — большая река, fleuve — маленький ручей.",
+          "fleuve — это только морской залив."
+        ],
+        "correctIndex": 0,
+        "explanation": "По-французски различают по тому, куда впадает река: fleuve впадает прямо в море (la Seine, la Loire), а rivière — в другую реку. По-русски обе — просто «река»."
+      },
+      {
+        "id": "wc-nature2-foret-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-nature2-foret",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит forêt?",
+        "bridge": "Англ. «forest» = forêt. Accent circonflexe (ê) часто стоит там, где раньше была буква s: forêt ← forest. Так узнаётся «лес».",
+        "options": ["лес", "поле", "сад", "парк"],
+        "correctIndex": 0,
+        "explanation": "forêt (f) — лес, как англ. «forest». Шапочка над ê — след пропавшей s (forest → forêt). Поле — un champ, сад — un jardin, парк — un parc."
+      },
+      {
+        "id": "wc-nature2-foret-hint",
+        "kind": "wordHint",
+        "wordId": "wl-nature2-foret",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: большой массив деревьев, где гуляют и собирают грибы.",
+        "answer": "forêt",
+        "hints": [
+          "Начинается на f…",
+          "Есть accent circonflexe на e — как в англ. forest",
+          "On se promène dans la ___."
+        ],
+        "explanation": "forêt (f) — лес. Пишется с ê (accent circonflexe): f-o-r-ê-t. Конечная t не читается: /fɔ.ʁɛ/."
+      },
+      {
+        "id": "wc-nature2-plage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nature2-plage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On va à la plage cet après-midi.",
+          "Les enfants jouent sur la plage.",
+          "C'est une belle plage de sable."
+        ],
+        "options": ["пляж", "море", "бассейн", "берег реки"],
+        "correctIndex": 0,
+        "explanation": "plage (f) — пляж. «une plage de sable» — песчаный пляж, «aller à la plage» — идти на пляж. Само море — la mer, бассейн — une piscine."
+      },
+      {
+        "id": "wc-nature2-plage-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-nature2-plage",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, что именно прозвучало.",
+        "audioText": "plage",
+        "options": ["plage", "page", "place", "plat"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало plage /plaʒ/ — пляж. Похоже звучат: page /paʒ/ (страница), place /plas/ (место/площадь), plat /pla/ (блюдо/плоский). Это разные слова, не омонимы."
+      },
+      {
+        "id": "wc-nature2-ciel-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nature2-ciel",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le ciel est bleu aujourd'hui.",
+          "Il n'y a pas un nuage dans le ciel.",
+          "La nuit, le ciel est plein d'étoiles."
+        ],
+        "options": ["небо", "облако", "солнце", "воздух"],
+        "correctIndex": 0,
+        "explanation": "ciel (m) — небо. «un ciel bleu» — голубое небо, «un ciel sans nuages» — безоблачное небо. Облако — un nuage, солнце — le soleil."
+      },
+      {
+        "id": "wc-nature2-ciel-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-nature2-ciel",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, что именно прозвучало.",
+        "audioText": "ciel",
+        "options": ["ciel", "sel", "selle", "seul"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало ciel /sjɛl/ — небо. Похоже звучат: sel /sɛl/ (соль), selle /sɛl/ (седло), seul /sœl/ (один). Ciel отличается звуком /j/ (как «й»)."
+      },
+      {
+        "id": "wc-nature2-etoile-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nature2-etoile",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Regarde, une étoile filante !",
+          "Le ciel est plein d'étoiles.",
+          "On a dormi dans un hôtel cinq étoiles."
+        ],
+        "options": ["звезда", "луна", "облако", "молния"],
+        "correctIndex": 0,
+        "explanation": "étoile (f) — звезда. «une étoile filante» — падающая звезда, «un hôtel cinq étoiles» — пятизвёздочный отель. Луна — la lune, облако — un nuage."
+      },
+      {
+        "id": "wc-nature2-etoile-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-nature2-etoile",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для étoile (звезда), чтобы запомнить женский род (une étoile) и звук /e.twal/ — «этуаль».",
+        "examples": [
+          "«Этуаль» — площадь Place de l'Étoile в Париже, от которой лучами расходятся улицы, как лучи звезды. И она — la, женского рода.",
+          "Загадай желание на une étoile filante (падающую звезду) — звезда «своя», женского рода: une étoile."
+        ]
+      }
+    ]
+  }
+]

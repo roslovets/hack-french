@@ -1,0 +1,301 @@
+[
+  {
+    "id": "wc-boissons",
+    "title": "Напитки",
+    "theme": "boissons",
+    "level": "A2",
+    "wordIds": [
+      "wl-boissons-vin",
+      "wl-boissons-biere",
+      "wl-boissons-jus",
+      "wl-boissons-lait",
+      "wl-boissons-soda",
+      "wl-boissons-alcool",
+      "wl-boissons-bouteille",
+      "wl-boissons-verre"
+    ],
+    "steps": [
+      {
+        "id": "wc-boissons-vin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-boissons-vin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Un verre de vin rouge, s'il vous plaît.",
+          "Ce vin blanc est très bon avec le poisson.",
+          "On a bu une bouteille de vin au dîner."
+        ],
+        "options": ["вино", "виноград", "сок", "уксус"],
+        "correctIndex": 0,
+        "explanation": "vin (m) — вино. «vin rouge / vin blanc» — красное / белое вино. Виноград — le raisin, сок — le jus, уксус — le vinaigre."
+      },
+      {
+        "id": "wc-boissons-vin-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-boissons-vin",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "vin",
+        "options": ["vin", "vent", "pain", "bain"],
+        "correctIndex": 0,
+        "explanation": "vin /vɛ̃/ (вино), vent /vɑ̃/ (ветер), pain /pɛ̃/ (хлеб), bain /bɛ̃/ (ванна). Все носовые, но гласные разные — это не омофоны, слушай звук."
+      },
+      {
+        "id": "wc-boissons-biere-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-boissons-biere",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит bière?",
+        "bridge": "Англ. «beer» и фр. bière — близкие родственники: оба пришли из германского «bier». Только фр. bière пишется через -ière и читается /bjɛʁ/.",
+        "options": ["пиво", "вино", "кружка", "ягода"],
+        "correctIndex": 0,
+        "explanation": "bière (f) — пиво. Англ. «beer» — удобный мост. «une bière pression» — разливное пиво. Ягода — une baie (похоже на слух, но это другое слово)."
+      },
+      {
+        "id": "wc-boissons-biere-collo",
+        "kind": "sort",
+        "wordId": "wl-boissons-biere",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом bière звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une bière pression",
+            "basket": "ok"
+          },
+          {
+            "text": "une bière bien fraîche",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une bière",
+            "basket": "ok"
+          },
+          {
+            "text": "une bière carrée",
+            "basket": "no"
+          },
+          {
+            "text": "manger une bière",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«une bière pression» (разливное пиво), «une bière bien fraîche» (хорошо охлаждённое), «boire une bière» — естественно. «une bière carrée» (квадратное пиво) и «manger une bière» (есть пиво) — бессмыслица: пиво пьют, а не едят, и форму «квадратный» к напитку не применяют."
+      },
+      {
+        "id": "wc-boissons-jus-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-boissons-jus",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je voudrais un jus d'orange, s'il vous plaît.",
+          "Les enfants boivent du jus de pomme.",
+          "Ce jus est trop sucré pour moi."
+        ],
+        "options": ["сок", "вино", "молоко", "лёд"],
+        "correctIndex": 0,
+        "explanation": "jus (m) — сок. «jus d'orange» — апельсиновый сок, «jus de pomme» — яблочный. Конечное -s не читается: /ʒy/. Лёд — la glace / les glaçons."
+      },
+      {
+        "id": "wc-boissons-jus-hint",
+        "kind": "wordHint",
+        "wordId": "wl-boissons-jus",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: то, что выжимают из апельсина или яблока и пьют на завтрак.",
+        "answer": "jus",
+        "hints": ["Начинается на j…", "3 буквы, конечная -s не читается", "un ___ d'orange"],
+        "explanation": "jus (m) — сок. «un jus d'orange», «un jus de fruits». Читается /ʒy/, конечная -s немая."
+      },
+      {
+        "id": "wc-boissons-lait-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-boissons-lait",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Un café au lait, s'il vous plaît.",
+          "Il n'y a plus de lait dans le frigo.",
+          "Le bébé boit son lait."
+        ],
+        "options": ["молоко", "сливки", "сок", "чай"],
+        "correctIndex": 0,
+        "explanation": "lait (m) — молоко. «un café au lait» — кофе с молоком. Сливки — la crème, чай — le thé. Конечное -t не читается: /lɛ/."
+      },
+      {
+        "id": "wc-boissons-lait-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-boissons-lait",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "lait",
+        "options": ["lait", "les", "lac", "loup"],
+        "correctIndex": 0,
+        "explanation": "lait /lɛ/ (молоко), les /le/ (артикль мн.ч.), lac /lak/ (озеро), loup /lu/ (волк). Слушай гласный: у lait открытый /ɛ/, у les закрытый /e/."
+      },
+      {
+        "id": "wc-boissons-soda-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-boissons-soda",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит soda по-французски?",
+        "bridge": "Англ. «soda» — газировка; фр. soda пишется так же. Только читается /sɔ.da/, без ударного «о» в конце.",
+        "options": [
+          "сладкая газировка",
+          "минеральная вода",
+          "сода (для выпечки)",
+          "содовый раствор"
+        ],
+        "correctIndex": 0,
+        "explanation": "un soda (m) — сладкий газированный напиток (кола, лимонад). Не путать: пищевая сода — le bicarbonate. Газированная вода без сахара — l'eau gazeuse."
+      },
+      {
+        "id": "wc-boissons-soda-cmp",
+        "kind": "compare",
+        "wordId": "wl-boissons-soda",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un soda и une eau gazeuse. В чём разница?",
+        "phrases": ["Je prends un soda.", "Je prends une eau gazeuse."],
+        "options": [
+          "soda — сладкий газированный напиток (кола, лимонад); eau gazeuse — газированная вода без сахара.",
+          "Это полные синонимы.",
+          "soda — это вода с газом, а eau gazeuse — сладкий лимонад.",
+          "soda — это вода без газа, а eau gazeuse — сок."
+        ],
+        "correctIndex": 0,
+        "explanation": "un soda — сладкая газировка (Coca, limonade). une eau gazeuse — просто газированная вода без сахара. Французы их чётко различают в кафе."
+      },
+      {
+        "id": "wc-boissons-alcool-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-boissons-alcool",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je ne bois pas d'alcool.",
+          "Cette bière contient peu d'alcool.",
+          "L'alcool est interdit aux mineurs."
+        ],
+        "options": ["алкоголь, спиртное", "сок", "лекарство", "запах"],
+        "correctIndex": 0,
+        "explanation": "alcool (m) — алкоголь, спиртное. Пишется с двумя o и без h: a-l-c-o-o-l, читается /al.kɔl/. «sans alcool» — безалкогольный."
+      },
+      {
+        "id": "wc-boissons-alcool-trap",
+        "kind": "trap",
+        "wordId": "wl-boissons-alcool",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как правильно пишется французское слово «алкоголь»?",
+        "options": ["alcool", "alcohol", "alcol", "alkool"],
+        "correctIndex": 0,
+        "explanation": "Ловушка написания: по-французски alcool — два o подряд и БЕЗ h (в отличие от англ. «alcohol»). «alcol», «alkool» — тоже неверно."
+      },
+      {
+        "id": "wc-boissons-bouteille-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-boissons-bouteille",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Une bouteille d'eau, s'il vous plaît.",
+          "Ouvre la bouteille de vin.",
+          "La bouteille est vide."
+        ],
+        "options": ["бутылка", "стакан", "пробка", "банка"],
+        "correctIndex": 0,
+        "explanation": "bouteille (f) — бутылка. «une bouteille d'eau / de vin» — бутылка воды / вина. Стакан — un verre, пробка — un bouchon, банка — une boîte / un bocal."
+      },
+      {
+        "id": "wc-boissons-bouteille-collo",
+        "kind": "sort",
+        "wordId": "wl-boissons-bouteille",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом bouteille звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une bouteille d'eau",
+            "basket": "ok"
+          },
+          {
+            "text": "ouvrir une bouteille",
+            "basket": "ok"
+          },
+          {
+            "text": "une bouteille de vin",
+            "basket": "ok"
+          },
+          {
+            "text": "manger une bouteille",
+            "basket": "no"
+          },
+          {
+            "text": "une bouteille de pain",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«une bouteille d'eau / de vin», «ouvrir une bouteille» — естественно. «manger une bouteille» (есть бутылку) и «une bouteille de pain» (бутылка хлеба) — бессмыслица: бутылку не едят, а хлеб не наливают в бутылку."
+      },
+      {
+        "id": "wc-boissons-verre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-boissons-verre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Un verre d'eau, s'il vous plaît.",
+          "On boit un verre ce soir ?",
+          "La table est en verre."
+        ],
+        "options": ["стакан/бокал; стекло", "бутылка", "тарелка", "ложка"],
+        "correctIndex": 0,
+        "explanation": "verre (m) — стакан или бокал, а также стекло (материал). «un verre d'eau» — стакан воды, «boire un verre» — выпить (по бокальчику), «en verre» — стеклянный."
+      },
+      {
+        "id": "wc-boissons-verre-trap",
+        "kind": "trap",
+        "wordId": "wl-boissons-verre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "verre, vert, vers и ver звучат одинаково — /vɛʁ/. Какое из них значит «стакан / стекло»?",
+        "options": ["verre", "vert", "vers", "ver"],
+        "correctIndex": 0,
+        "explanation": "Все четыре — омофоны /vɛʁ/, на слух не различить: verre = стакан/стекло, vert = зелёный, vers = к / стих, ver = червь. Помогает только написание и контекст. «стакан / стекло» — это verre с двумя r."
+      }
+    ]
+  }
+]

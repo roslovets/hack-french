@@ -1,0 +1,308 @@
+[
+  {
+    "id": "wl-famille2-grandpere",
+    "lemma": "grand-père",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɡʁɑ̃.pɛʁ/",
+    "translationsRu": ["дедушка", "дед"],
+    "translationsEn": ["grandfather", "grandpa"],
+    "semanticCore": "Отец одного из родителей; дед по отцовской или материнской линии.",
+    "collocations": [
+      {
+        "fr": "mon grand-père paternel",
+        "ru": "мой дедушка по отцу"
+      },
+      {
+        "fr": "chez mes grands-parents",
+        "ru": "у бабушки с дедушкой (в гостях)"
+      },
+      {
+        "fr": "le grand-père de Léa",
+        "ru": "дедушка Леа"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "grands-parents",
+        "note": "le grand-père — именно дедушка; les grands-parents — бабушка и дедушка вместе (общее слово)."
+      },
+      {
+        "with": "papi",
+        "note": "grand-père — нейтральное «дедушка»; papi (или papy) — ласковое детское «дедуля», как обращение."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["famille2", "personnes"],
+    "caseIds": ["wc-famille2"]
+  },
+  {
+    "id": "wl-famille2-grandmere",
+    "lemma": "grand-mère",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɡʁɑ̃.mɛʁ/",
+    "translationsRu": ["бабушка"],
+    "translationsEn": ["grandmother", "grandma"],
+    "semanticCore": "Мать одного из родителей; бабушка по отцовской или материнской линии.",
+    "collocations": [
+      {
+        "fr": "ma grand-mère maternelle",
+        "ru": "моя бабушка по матери"
+      },
+      {
+        "fr": "la recette de ma grand-mère",
+        "ru": "бабушкин рецепт"
+      },
+      {
+        "fr": "une vieille grand-mère",
+        "ru": "старенькая бабушка"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "grand-père",
+        "note": "la grand-mère — бабушка (женский род), le grand-père — дедушка (мужской). Идут в паре как les grands-parents."
+      },
+      {
+        "with": "mamie",
+        "note": "grand-mère — нейтральное «бабушка»; mamie (или mémé) — ласковое детское «бабуля», как обращение."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["famille2", "personnes"],
+    "caseIds": ["wc-famille2"]
+  },
+  {
+    "id": "wl-famille2-oncle",
+    "lemma": "oncle",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɔ̃kl/",
+    "translationsRu": ["дядя"],
+    "translationsEn": ["uncle"],
+    "semanticCore": "Брат отца или матери, а также муж тёти.",
+    "collocations": [
+      {
+        "fr": "mon oncle et ma tante",
+        "ru": "мой дядя и моя тётя"
+      },
+      {
+        "fr": "l'oncle d'Amérique",
+        "ru": "богатый дядюшка (из-за океана), нежданное наследство"
+      },
+      {
+        "fr": "chez mon oncle",
+        "ru": "у дяди (в гостях)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tante",
+        "note": "l'oncle — дядя (мужчина), la tante — тётя (женщина). Артикль перед oncle сливается: mon oncle, l'oncle."
+      },
+      {
+        "with": "ongle",
+        "note": "oncle (дядя) /ɔ̃kl/ и ongle (ноготь) /ɔ̃ɡl/ пишутся и звучат почти одинаково; различает звук k/g и буквы c/g."
+      }
+    ],
+    "frequencyRank": 750,
+    "level": "A2",
+    "tags": ["famille2", "personnes"],
+    "caseIds": ["wc-famille2"]
+  },
+  {
+    "id": "wl-famille2-tante",
+    "lemma": "tante",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tɑ̃t/",
+    "translationsRu": ["тётя"],
+    "translationsEn": ["aunt"],
+    "semanticCore": "Сестра отца или матери, а также жена дяди.",
+    "collocations": [
+      {
+        "fr": "ma tante préférée",
+        "ru": "моя любимая тётя"
+      },
+      {
+        "fr": "la tante de Paul",
+        "ru": "тётя Поля"
+      },
+      {
+        "fr": "rendre visite à sa tante",
+        "ru": "навестить тётю"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tente",
+        "note": "Ловушка: la tante (тётя) и la tente (палатка) — омофоны /tɑ̃t/; различает только написание an/en."
+      },
+      {
+        "with": "oncle",
+        "note": "la tante — тётя (женщина), l'oncle — дядя (мужчина). Часто называют вместе: mon oncle et ma tante."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["famille2", "personnes"],
+    "caseIds": ["wc-famille2"]
+  },
+  {
+    "id": "wl-famille2-cousin",
+    "lemma": "cousin",
+    "displayForm": "cousin / cousine",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ku.zɛ̃/",
+    "translationsRu": ["двоюродный брат", "кузен"],
+    "translationsEn": ["cousin"],
+    "semanticCore": "Сын дяди или тёти; двоюродный брат (cousine — двоюродная сестра).",
+    "collocations": [
+      {
+        "fr": "mon cousin germain",
+        "ru": "мой родной двоюродный брат"
+      },
+      {
+        "fr": "un cousin éloigné",
+        "ru": "дальний родственник, троюродный брат"
+      },
+      {
+        "fr": "mes cousins",
+        "ru": "мои двоюродные братья и сёстры"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "coussin",
+        "note": "Ловушка: le cousin (кузен) /ku.zɛ̃/ через z, le coussin (подушка, думка) /ku.sɛ̃/ через s. Разница в звуке z/s и в двойной s."
+      },
+      {
+        "with": "cousine",
+        "note": "le cousin — двоюродный брат (м. р.), la cousine — двоюродная сестра (ж. р.). В м. р. конечная n носовая, в ж. р. читается: /ku.zin/."
+      }
+    ],
+    "frequencyRank": 740,
+    "level": "A2",
+    "tags": ["famille2", "personnes"],
+    "caseIds": ["wc-famille2"]
+  },
+  {
+    "id": "wl-famille2-mari",
+    "lemma": "mari",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ma.ʁi/",
+    "translationsRu": ["муж", "супруг"],
+    "translationsEn": ["husband"],
+    "semanticCore": "Мужчина в браке по отношению к своей жене.",
+    "collocations": [
+      {
+        "fr": "mon mari",
+        "ru": "мой муж"
+      },
+      {
+        "fr": "le mari de ma sœur",
+        "ru": "муж моей сестры"
+      },
+      {
+        "fr": "un bon mari",
+        "ru": "хороший муж"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "marié",
+        "note": "le mari — муж (существительное); marié — женатый / новобрачный (прилагательное, причастие): il est marié — он женат."
+      },
+      {
+        "with": "Marie",
+        "note": "le mari (муж) — ударение и звук /ma.ʁi/; Marie (имя Мари) — то же звучание, но это имя; различает контекст и заглавная буква."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["famille2", "couple"],
+    "caseIds": ["wc-famille2"]
+  },
+  {
+    "id": "wl-famille2-femme",
+    "lemma": "femme",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fam/",
+    "translationsRu": ["жена", "женщина"],
+    "translationsEn": ["wife", "woman"],
+    "semanticCore": "В семейном контексте — жена; в общем смысле — женщина (понимается по контексту и притяжательному слову).",
+    "collocations": [
+      {
+        "fr": "ma femme",
+        "ru": "моя жена"
+      },
+      {
+        "fr": "une femme intelligente",
+        "ru": "умная женщина"
+      },
+      {
+        "fr": "une femme d'affaires",
+        "ru": "деловая женщина, бизнесвумен"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mari",
+        "note": "la femme — жена (или женщина), le mari — муж. «Ma femme» = моя жена, «une femme» = (некая) женщина."
+      },
+      {
+        "with": "faim",
+        "note": "femme читается /fam/ (буквы emme дают звук a!), а не /fɛm/. Не путать с faim (голод) /fɛ̃/, носовой звук."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A2",
+    "tags": ["famille2", "couple"],
+    "caseIds": ["wc-famille2"]
+  },
+  {
+    "id": "wl-famille2-voisin",
+    "lemma": "voisin",
+    "displayForm": "voisin / voisine",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vwa.zɛ̃/",
+    "translationsRu": ["сосед"],
+    "translationsEn": ["neighbour", "neighbor"],
+    "semanticCore": "Человек, который живёт рядом — в соседней квартире, доме или за стеной.",
+    "collocations": [
+      {
+        "fr": "mon voisin de palier",
+        "ru": "сосед по лестничной площадке"
+      },
+      {
+        "fr": "les voisins du dessus",
+        "ru": "соседи сверху"
+      },
+      {
+        "fr": "un voisin bruyant",
+        "ru": "шумный сосед"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "voisine",
+        "note": "le voisin — сосед (м. р.), la voisine — соседка (ж. р.). В м. р. конечная n носовая /vwa.zɛ̃/, в ж. р. читается: /vwa.zin/."
+      },
+      {
+        "with": "cousin",
+        "note": "voisin (сосед) и cousin (кузен) рифмуются на -in /ɛ̃/, но voisin — кто живёт рядом, cousin — родственник."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["famille2", "personnes"],
+    "caseIds": ["wc-famille2"]
+  }
+]

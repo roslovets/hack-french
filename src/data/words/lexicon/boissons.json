@@ -1,0 +1,330 @@
+[
+  {
+    "id": "wl-boissons-vin",
+    "lemma": "vin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɛ̃/",
+    "translationsRu": ["вино"],
+    "translationsEn": ["wine"],
+    "semanticCore": "Вино как напиток за столом: красное, белое или розовое, центр французской трапезы.",
+    "collocations": [
+      {
+        "fr": "du vin rouge",
+        "ru": "красное вино"
+      },
+      {
+        "fr": "un verre de vin",
+        "ru": "бокал вина"
+      },
+      {
+        "fr": "une bouteille de vin",
+        "ru": "бутылка вина"
+      },
+      {
+        "fr": "le vin blanc",
+        "ru": "белое вино"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "raisin",
+        "note": "vin = вино (напиток); raisin = виноград (ягода/фрукт). По-русски корень один, во французском это разные слова."
+      },
+      {
+        "with": "vinaigre",
+        "note": "vin = вино; vinaigre = уксус (буквально «кислое вино», vin aigre). Не перепутать в рецептах."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["boissons", "alcool"],
+    "caseIds": ["wc-boissons"]
+  },
+  {
+    "id": "wl-boissons-biere",
+    "lemma": "bière",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bjɛʁ/",
+    "translationsRu": ["пиво"],
+    "translationsEn": ["beer"],
+    "semanticCore": "Пиво как напиток — в баре или дома, разливное или бутылочное.",
+    "collocations": [
+      {
+        "fr": "une bière pression",
+        "ru": "разливное пиво"
+      },
+      {
+        "fr": "une bière bien fraîche",
+        "ru": "хорошо охлаждённое пиво"
+      },
+      {
+        "fr": "boire une bière",
+        "ru": "пить пиво"
+      },
+      {
+        "fr": "une bière sans alcool",
+        "ru": "безалкогольное пиво"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bière (cercueil)",
+        "note": "Чаще всего bière = пиво, но у этого слова есть и редкое второе значение «погребальные носилки / гроб». В контексте напитков всегда «пиво»."
+      },
+      {
+        "with": "baie",
+        "note": "bière = пиво; baie /bɛ/ = ягода (и залив). Похожи на слух — различай по смыслу."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["boissons", "alcool"],
+    "caseIds": ["wc-boissons"]
+  },
+  {
+    "id": "wl-boissons-jus",
+    "lemma": "jus",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒy/",
+    "translationsRu": ["сок"],
+    "translationsEn": ["juice"],
+    "semanticCore": "Сок из фруктов — на завтрак или как безалкогольный напиток; также «сок» от мяса при готовке.",
+    "collocations": [
+      {
+        "fr": "un jus d'orange",
+        "ru": "апельсиновый сок"
+      },
+      {
+        "fr": "un jus de pomme",
+        "ru": "яблочный сок"
+      },
+      {
+        "fr": "un jus de fruits",
+        "ru": "фруктовый сок"
+      },
+      {
+        "fr": "un jus frais",
+        "ru": "свежевыжатый сок"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "jeu",
+        "note": "jus /ʒy/ = сок; jeu /ʒø/ = игра. Гласные разные: у jus звук /y/ (как нем. ü), у jeu — /ø/."
+      },
+      {
+        "with": "sirop",
+        "note": "jus = сок (прямо из фрукта); sirop = сироп, который разбавляют водой (sirop de menthe и т.п.)."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["boissons", "fruit"],
+    "caseIds": ["wc-boissons"]
+  },
+  {
+    "id": "wl-boissons-lait",
+    "lemma": "lait",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/lɛ/",
+    "translationsRu": ["молоко"],
+    "translationsEn": ["milk"],
+    "semanticCore": "Молоко как напиток и продукт: в кофе, в каше, в стакане у ребёнка.",
+    "collocations": [
+      {
+        "fr": "un café au lait",
+        "ru": "кофе с молоком"
+      },
+      {
+        "fr": "du lait froid",
+        "ru": "холодное молоко"
+      },
+      {
+        "fr": "un verre de lait",
+        "ru": "стакан молока"
+      },
+      {
+        "fr": "le lait entier",
+        "ru": "цельное молоко"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "les",
+        "note": "lait /lɛ/ = молоко; les /le/ = артикль мн.ч. Слышится похоже, но гласный у lait открытый /ɛ/, у les закрытый /e/."
+      },
+      {
+        "with": "crème",
+        "note": "lait = молоко; crème = сливки (гуще и жирнее). «un café crème» ≠ «un café au lait»."
+      }
+    ],
+    "frequencyRank": 500,
+    "level": "A2",
+    "tags": ["boissons", "petit-dejeuner"],
+    "caseIds": ["wc-boissons"]
+  },
+  {
+    "id": "wl-boissons-soda",
+    "lemma": "soda",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɔ.da/",
+    "translationsRu": ["газировка", "сладкая газировка"],
+    "translationsEn": ["soda", "soft drink"],
+    "semanticCore": "Сладкий газированный напиток (кола, лимонад) — не путать с пищевой содой и не с минералкой.",
+    "collocations": [
+      {
+        "fr": "un soda bien frais",
+        "ru": "хорошо охлаждённая газировка"
+      },
+      {
+        "fr": "boire un soda",
+        "ru": "пить газировку"
+      },
+      {
+        "fr": "un soda light",
+        "ru": "газировка без сахара (light)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "soda (англ. baking soda)",
+        "note": "Фр. soda = сладкий газированный напиток. Пищевая сода — le bicarbonate (de soude), а не soda. Ложный друг при готовке."
+      },
+      {
+        "with": "eau gazeuse",
+        "note": "soda = сладкая газировка; eau gazeuse = просто газированная вода без сахара. В кафе их различают."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["boissons", "sans-alcool"],
+    "caseIds": ["wc-boissons"]
+  },
+  {
+    "id": "wl-boissons-alcool",
+    "lemma": "alcool",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/al.kɔl/",
+    "translationsRu": ["алкоголь", "спиртное"],
+    "translationsEn": ["alcohol"],
+    "semanticCore": "Алкоголь как категория спиртных напитков и как вещество; ключевое слово для «sans alcool».",
+    "collocations": [
+      {
+        "fr": "sans alcool",
+        "ru": "безалкогольный"
+      },
+      {
+        "fr": "boire de l'alcool",
+        "ru": "пить спиртное"
+      },
+      {
+        "fr": "un taux d'alcool",
+        "ru": "содержание алкоголя"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "alcohol (англ.)",
+        "note": "Фр. alcool пишется с двумя o и БЕЗ h, в отличие от англ. «alcohol». Частая ошибка в написании."
+      },
+      {
+        "with": "alcoolisé",
+        "note": "alcool = алкоголь (существительное); alcoolisé = алкогольный, содержащий спирт (прилагательное, напр. «une boisson alcoolisée»)."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["boissons", "alcool"],
+    "caseIds": ["wc-boissons"]
+  },
+  {
+    "id": "wl-boissons-bouteille",
+    "lemma": "bouteille",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bu.tɛj/",
+    "translationsRu": ["бутылка"],
+    "translationsEn": ["bottle"],
+    "semanticCore": "Бутылка как ёмкость для напитков: воды, вина, сока; то, что заказывают и открывают за столом.",
+    "collocations": [
+      {
+        "fr": "une bouteille d'eau",
+        "ru": "бутылка воды"
+      },
+      {
+        "fr": "une bouteille de vin",
+        "ru": "бутылка вина"
+      },
+      {
+        "fr": "ouvrir une bouteille",
+        "ru": "открыть бутылку"
+      },
+      {
+        "fr": "une bouteille vide",
+        "ru": "пустая бутылка"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "verre",
+        "note": "bouteille = бутылка (из неё наливают); verre = стакан/бокал (из него пьют). Не перепутать при заказе."
+      },
+      {
+        "with": "carafe",
+        "note": "bouteille = бутылка (закрытая, фабричная); carafe = графин (в него наливают воду или вино за столом). «une carafe d'eau» в кафе бесплатна."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["boissons", "contenant"],
+    "caseIds": ["wc-boissons"]
+  },
+  {
+    "id": "wl-boissons-verre",
+    "lemma": "verre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɛʁ/",
+    "translationsRu": ["стакан", "бокал", "стекло"],
+    "translationsEn": ["glass"],
+    "semanticCore": "Стакан или бокал, из которого пьют, и стекло как материал; «boire un verre» — выпить (по бокальчику).",
+    "collocations": [
+      {
+        "fr": "un verre d'eau",
+        "ru": "стакан воды"
+      },
+      {
+        "fr": "boire un verre",
+        "ru": "выпить (по бокальчику)"
+      },
+      {
+        "fr": "un verre de vin",
+        "ru": "бокал вина"
+      },
+      {
+        "fr": "en verre",
+        "ru": "стеклянный (из стекла)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vert / vers / ver",
+        "note": "verre = стакан/стекло; vert = зелёный; vers = к / стих; ver = червь. Все звучат одинаково — /vɛʁ/ — различай по смыслу и написанию."
+      },
+      {
+        "with": "tasse",
+        "note": "verre = стакан/бокал (для холодного, для вина, воды); tasse = чашка (для горячего: кофе, чая)."
+      }
+    ],
+    "frequencyRank": 450,
+    "level": "A2",
+    "tags": ["boissons", "contenant"],
+    "caseIds": ["wc-boissons"]
+  }
+]

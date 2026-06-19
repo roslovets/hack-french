@@ -1,0 +1,331 @@
+[
+  {
+    "id": "wl-questions-qui",
+    "lemma": "qui",
+    "pos": "pron",
+    "ipa": "/ki/",
+    "translationsRu": ["кто", "который"],
+    "translationsEn": ["who", "whom"],
+    "semanticCore": "Спрашивает о человеке-подлежащем («кто делает?») и связывает части фразы («тот, который»).",
+    "collocations": [
+      {
+        "fr": "Qui est-ce ?",
+        "ru": "Кто это?"
+      },
+      {
+        "fr": "Qui parle ?",
+        "ru": "Кто говорит?"
+      },
+      {
+        "fr": "C'est qui ?",
+        "ru": "Это кто? (разговорно)"
+      },
+      {
+        "fr": "à qui",
+        "ru": "кому / чей"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "que",
+        "note": "qui спрашивает о человеке-подлежащем («кто?»), а que — о предмете-дополнении («что?»): Qui mange ? — Que manges-tu ?"
+      },
+      {
+        "with": "quoi",
+        "note": "qui = «кто» (про человека); quoi = «что» (про вещь, чаще после предлога или в конце): C'est qui ? vs C'est quoi ?"
+      }
+    ],
+    "frequencyRank": 60,
+    "level": "A2",
+    "tags": ["questions", "interrogatif"],
+    "caseIds": ["wc-questions"]
+  },
+  {
+    "id": "wl-questions-quoi",
+    "lemma": "quoi",
+    "pos": "pron",
+    "ipa": "/kwa/",
+    "translationsRu": ["что"],
+    "translationsEn": ["what"],
+    "semanticCore": "Вопрос «что?» о предмете — в разговорной речи и после предлога, а не в начале строгого вопроса.",
+    "collocations": [
+      {
+        "fr": "C'est quoi ?",
+        "ru": "Это что? (разговорно)"
+      },
+      {
+        "fr": "Quoi ?",
+        "ru": "Что? (переспрос)"
+      },
+      {
+        "fr": "à quoi penses-tu ?",
+        "ru": "о чём ты думаешь?"
+      },
+      {
+        "fr": "n'importe quoi",
+        "ru": "что угодно / ерунда"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "que",
+        "note": "que — «что» в начале строгого вопроса (Que veux-tu ?); quoi — «что» в разговорном порядке и после предлога (Tu veux quoi ? / à quoi ?)."
+      },
+      {
+        "with": "qui",
+        "note": "quoi = «что» (про вещь); qui = «кто» (про человека). C'est quoi ? — про предмет, C'est qui ? — про человека."
+      }
+    ],
+    "frequencyRank": 130,
+    "level": "A2",
+    "tags": ["questions", "interrogatif"],
+    "caseIds": ["wc-questions"]
+  },
+  {
+    "id": "wl-questions-ou",
+    "lemma": "où",
+    "pos": "adv",
+    "ipa": "/u/",
+    "translationsRu": ["где", "куда"],
+    "translationsEn": ["where"],
+    "semanticCore": "Спрашивает о месте — и «где» (нахождение), и «куда» (направление); пишется с accent grave, в отличие от ou «или».",
+    "collocations": [
+      {
+        "fr": "Où es-tu ?",
+        "ru": "Где ты?"
+      },
+      {
+        "fr": "Où vas-tu ?",
+        "ru": "Куда ты идёшь?"
+      },
+      {
+        "fr": "D'où viens-tu ?",
+        "ru": "Откуда ты?"
+      },
+      {
+        "fr": "n'importe où",
+        "ru": "где угодно / куда угодно"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ou",
+        "note": "où (с accent grave) = «где/куда»; ou (без знака) = «или». Произносятся одинаково /u/, различает только написание."
+      },
+      {
+        "with": "quand",
+        "note": "où спрашивает о месте («где?»), quand — о времени («когда?»). Оба — вопросительные наречия, но про разное."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A2",
+    "tags": ["questions", "lieu"],
+    "caseIds": ["wc-questions"]
+  },
+  {
+    "id": "wl-questions-quand",
+    "lemma": "quand",
+    "pos": "adv",
+    "ipa": "/kɑ̃/",
+    "translationsRu": ["когда"],
+    "translationsEn": ["when"],
+    "semanticCore": "Спрашивает о времени («когда?») и связывает события во времени («когда…, тогда…»).",
+    "collocations": [
+      {
+        "fr": "Quand pars-tu ?",
+        "ru": "Когда ты уезжаешь?"
+      },
+      {
+        "fr": "C'est pour quand ?",
+        "ru": "Это на когда? / К какому сроку?"
+      },
+      {
+        "fr": "depuis quand",
+        "ru": "с каких пор"
+      },
+      {
+        "fr": "quand même",
+        "ru": "всё-таки / тем не менее"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "quant (à)",
+        "note": "quand = «когда»; quant à = «что касается». Звучат одинаково /kɑ̃/, но quant используется только в обороте quant à."
+      },
+      {
+        "with": "combien de temps",
+        "note": "quand спрашивает о моменте («когда?»), а combien de temps — о длительности («как долго?»)."
+      }
+    ],
+    "frequencyRank": 150,
+    "level": "A2",
+    "tags": ["questions", "temps"],
+    "caseIds": ["wc-questions"]
+  },
+  {
+    "id": "wl-questions-comment",
+    "lemma": "comment",
+    "pos": "adv",
+    "ipa": "/kɔ.mɑ̃/",
+    "translationsRu": ["как", "каким образом"],
+    "translationsEn": ["how"],
+    "semanticCore": "Спрашивает о способе и состоянии («как?»), а также используется в вежливых формулах знакомства и переспроса.",
+    "collocations": [
+      {
+        "fr": "Comment ça va ?",
+        "ru": "Как дела?"
+      },
+      {
+        "fr": "Comment tu t'appelles ?",
+        "ru": "Как тебя зовут?"
+      },
+      {
+        "fr": "Comment ça marche ?",
+        "ru": "Как это работает?"
+      },
+      {
+        "fr": "Comment ?",
+        "ru": "Что? / Как? (переспрос)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "comme",
+        "note": "comment = «как?» в вопросе (Comment vas-tu ?); comme = «как / словно» в сравнении и восклицании (fort comme un lion). Разные слова, не путать."
+      },
+      {
+        "with": "pourquoi",
+        "note": "comment спрашивает о способе («как?»), pourquoi — о причине («почему?»). Comment ? — каким образом; Pourquoi ? — зачем."
+      }
+    ],
+    "frequencyRank": 140,
+    "level": "A2",
+    "tags": ["questions", "maniere"],
+    "caseIds": ["wc-questions"]
+  },
+  {
+    "id": "wl-questions-pourquoi",
+    "lemma": "pourquoi",
+    "pos": "adv",
+    "ipa": "/puʁ.kwa/",
+    "translationsRu": ["почему", "зачем"],
+    "translationsEn": ["why"],
+    "semanticCore": "Спрашивает о причине и цели («почему? зачем?»); буквально «для чего» (pour + quoi).",
+    "collocations": [
+      {
+        "fr": "Pourquoi pas ?",
+        "ru": "Почему бы и нет?"
+      },
+      {
+        "fr": "Pourquoi tu dis ça ?",
+        "ru": "Почему ты это говоришь?"
+      },
+      {
+        "fr": "C'est pourquoi…",
+        "ru": "Вот почему… / Поэтому…"
+      },
+      {
+        "fr": "Pourquoi faire ?",
+        "ru": "Зачем? / Для чего?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "parce que",
+        "note": "pourquoi задаёт вопрос «почему?»; parce que вводит ответ «потому что». Pourquoi ? — Parce que… — это пара вопрос/ответ."
+      },
+      {
+        "with": "pour quoi",
+        "note": "pourquoi (одно слово) = «почему/зачем»; pour quoi (раздельно) = «за что / для чего» в редких конструкциях. Обычно нужно слитное pourquoi."
+      }
+    ],
+    "frequencyRank": 200,
+    "level": "A2",
+    "tags": ["questions", "cause"],
+    "caseIds": ["wc-questions"]
+  },
+  {
+    "id": "wl-questions-combien",
+    "lemma": "combien",
+    "pos": "adv",
+    "ipa": "/kɔ̃.bjɛ̃/",
+    "translationsRu": ["сколько"],
+    "translationsEn": ["how much", "how many"],
+    "semanticCore": "Спрашивает о количестве и цене («сколько?»); перед существительным требует de: combien de.",
+    "collocations": [
+      {
+        "fr": "Ça fait combien ?",
+        "ru": "Сколько это стоит? (на кассе)"
+      },
+      {
+        "fr": "C'est combien ?",
+        "ru": "Сколько это стоит?"
+      },
+      {
+        "fr": "combien de fois",
+        "ru": "сколько раз"
+      },
+      {
+        "fr": "combien de temps",
+        "ru": "сколько времени / как долго"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "combien de",
+        "note": "Перед существительным нужен de без артикля: combien de personnes (сколько людей), а не «combien de la». Само combien — без de: Ça coûte combien ?"
+      },
+      {
+        "with": "quel",
+        "note": "combien спрашивает «сколько?» (количество); quel — «какой/который?» (выбор, признак). Combien de livres ? vs Quel livre ?"
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["questions", "quantite"],
+    "caseIds": ["wc-questions"]
+  },
+  {
+    "id": "wl-questions-quel",
+    "lemma": "quel",
+    "displayForm": "quel / quelle / quels / quelles",
+    "pos": "adj",
+    "ipa": "/kɛl/",
+    "translationsRu": ["какой", "который"],
+    "translationsEn": ["which", "what"],
+    "semanticCore": "Вопросительное прилагательное «какой/который»: согласуется в роде и числе с существительным (quel/quelle/quels/quelles).",
+    "collocations": [
+      {
+        "fr": "Quelle heure est-il ?",
+        "ru": "Который час?"
+      },
+      {
+        "fr": "Quel jour ?",
+        "ru": "Какой день?"
+      },
+      {
+        "fr": "Quel âge as-tu ?",
+        "ru": "Сколько тебе лет? (букв. какой возраст)"
+      },
+      {
+        "fr": "Quelle bonne idée !",
+        "ru": "Какая хорошая идея! (восклицание)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "quelle",
+        "note": "Все четыре формы читаются одинаково /kɛl/, но пишутся по роду/числу: quel jour (m), quelle heure (f), quels livres (m pl), quelles idées (f pl)."
+      },
+      {
+        "with": "qui",
+        "note": "quel — «какой/который» перед существительным (Quel livre ?); qui — «кто» о человеке (Qui est là ?). Quel выбирает из множества, qui спрашивает о лице."
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A2",
+    "tags": ["questions", "interrogatif"],
+    "caseIds": ["wc-questions"]
+  }
+]

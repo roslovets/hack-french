@@ -1,0 +1,406 @@
+[
+  {
+    "id": "wc-boss-work",
+    "title": "Босс: работа",
+    "theme": "travail",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-travail-travail",
+      "wl-travail-metier",
+      "wl-travail-bureau",
+      "wl-travail-collegue",
+      "wl-travail-patron",
+      "wl-travail-employe",
+      "wl-travail-reunion",
+      "wl-travail-salaire",
+      "wl-metiers-professeur",
+      "wl-metiers-ingenieur",
+      "wl-metiers-cuisinier",
+      "wl-metiers-infirmier",
+      "wl-metiers-avocat",
+      "wl-metiers-pompier",
+      "wl-metiers-facteur",
+      "wl-metiers-artiste"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-work-travail-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-travail-travail",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Большой финал по теме «работа»: целый рабочий день. Начинаем с утра. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Tous les matins, je vais au travail en métro.",
+          "En ce moment, j'ai beaucoup de travail.",
+          "Mon frère cherche du travail depuis deux mois."
+        ],
+        "options": [
+          "работа (как занятие, нагрузка и место, куда ходят)",
+          "путешествие, поездка",
+          "профессия, которой владеешь",
+          "зарплата за месяц"
+        ],
+        "correctIndex": 0,
+        "explanation": "travail (m) — работа и как занятие/нагрузка («beaucoup de travail»), и как место («aller au travail»). Осторожно: англ. «travel» (путешествие) — ложный друг, путешествовать — voyager. Множественное особое: des travaux (ремонт, работы)."
+      },
+      {
+        "id": "wc-boss-work-metier-cmp",
+        "kind": "compare",
+        "wordId": "wl-travail-metier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Главная пара темы: travail и métier. В чём разница между этими двумя фразами?",
+        "phrases": ["Aujourd'hui, j'ai trop de travail.", "Cuisinier, c'est un beau métier."],
+        "options": [
+          "travail — работа как занятие/нагрузка или место; métier — профессия, ремесло, которым владеешь.",
+          "travail — профессия; métier — место работы.",
+          "Это полные синонимы, разницы нет.",
+          "travail — зарплата; métier — начальник."
+        ],
+        "correctIndex": 0,
+        "explanation": "travail — работа как занятие, нагрузка или место («trop de travail»). métier — профессия, ремесло, «кем человек работает» («un beau métier», «changer de métier»). Сменить место — changer de travail; сменить профессию — changer de métier."
+      },
+      {
+        "id": "wc-boss-work-bureau-cmp",
+        "kind": "compare",
+        "wordId": "wl-travail-bureau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Ты пришёл на место работы. У слова bureau два значения. В чём разница между этими фразами?",
+        "phrases": ["Le matin, je vais au bureau.", "Mes lunettes sont sur le bureau."],
+        "options": [
+          "В первой bureau — офис/кабинет (помещение); во второй — письменный стол (мебель).",
+          "В обеих bureau значит «офис».",
+          "В обеих bureau значит «письменный стол».",
+          "В первой bureau — стол; во второй — офис."
+        ],
+        "correctIndex": 0,
+        "explanation": "bureau (m) — и помещение (офис/кабинет: «aller au bureau»), и предмет мебели (письменный стол: «sur le bureau»). Обеденный стол — это la table, а рабочий — le bureau. Множественное: des bureaux."
+      },
+      {
+        "id": "wc-boss-work-collegue-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-travail-collegue",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "В офисе тебя встречают люди, с которыми ты работаешь. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Je déjeune souvent avec mes collègues.",
+          "Une collègue m'a beaucoup aidé sur le projet.",
+          "C'est un ancien collègue, on a travaillé ensemble."
+        ],
+        "options": [
+          "коллега, сослуживец (с кем вместе работаешь)",
+          "близкий друг вне работы",
+          "начальник, хозяин",
+          "клиент, посетитель"
+        ],
+        "correctIndex": 0,
+        "explanation": "collègue — человек, с которым вместе работаешь («un collègue de travail»). Одна форма на оба пола, меняется артикль: un collègue / une collègue. Это рабочая связь, а не дружба (ami) и не начальник (patron)."
+      },
+      {
+        "id": "wc-boss-work-patron-trap",
+        "kind": "trap",
+        "wordId": "wl-travail-patron",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг: англ. «patron» = постоянный клиент. Что на самом деле значит фр. patron?",
+        "phrases": [
+          "Je dois demander une journée de congé à mon patron.",
+          "Le patron du café connaît tous les habitués."
+        ],
+        "options": [
+          "начальник или хозяин заведения (тот, на кого работаешь)",
+          "постоянный клиент, посетитель",
+          "коллега по работе",
+          "наёмный работник, служащий"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: англ. «patron» — это клиент, а фр. le patron — наоборот, начальник или ХОЗЯИН заведения («mon patron», «le patron du café»). Женская форма — la patronne. Разговорнее и «человечнее», чем directeur."
+      },
+      {
+        "id": "wc-boss-work-people-money-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-travail-salaire",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Кросс-тема: три из этих слов — ЛЮДИ на работе, а одно — нет. Найди лишнее.",
+        "options": ["le patron", "le collègue", "l'avocat", "le salaire"],
+        "correctIndex": 3,
+        "explanation": "le patron (начальник), le collègue (коллега) и l'avocat (адвокат) — это люди. Лишнее — le salaire (зарплата): это деньги за работу, а не человек. Здесь сходятся темы «работа» (patron, collègue, salaire) и «профессии» (avocat)."
+      },
+      {
+        "id": "wc-boss-work-employe-hint",
+        "kind": "wordHint",
+        "wordId": "wl-travail-employe",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: наёмный работник, служащий — тот, кого нанял работодатель (часто конторская работа).",
+        "answer": "employé",
+        "hints": [
+          "Начинается на e…, родственно англ. «employee».",
+          "Мужской род, женская форма employée: un ___ de bureau.",
+          "Les ___s de l'entreprise sont en grève."
+        ],
+        "explanation": "employé / employée — наёмный работник, служащий («un employé de bureau»). Противоположность — employeur (работодатель, кто нанимает). Служащий (конторский) ≠ ouvrier (рабочий физического труда)."
+      },
+      {
+        "id": "wc-boss-work-reunion-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-travail-reunion",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "В календаре на сегодня — рабочее событие. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Désolé, je ne peux pas, je suis en réunion.",
+          "La réunion de dix heures a duré deux heures.",
+          "On se retrouve dans la salle de réunion ?"
+        ],
+        "options": [
+          "собрание, совещание (несколько человек обсуждают рабочие дела)",
+          "встреча выпускников или родных",
+          "обеденный перерыв",
+          "приём у врача"
+        ],
+        "correctIndex": 0,
+        "explanation": "réunion (f) — рабочее собрание/совещание: «être en réunion», «la salle de réunion». Англ. «reunion» (встреча выпускников/родных) — ложный друг. Встреча один на один (у врача, деловая) — un rendez-vous."
+      },
+      {
+        "id": "wc-boss-work-salaire-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-travail-salaire",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "salaire",
+        "options": ["salaire", "salière", "salade", "célèbre"],
+        "correctIndex": 0,
+        "explanation": "salaire /sa.lɛʁ/ (зарплата), salière /sa.ljɛʁ/ (солонка), salade /sa.lad/ (салат), célèbre /se.lɛbʁ/ (знаменитый). Слова близки по звучанию, но разные: слушай конец слова. Не путать зарплату salaire с солонкой salière."
+      },
+      {
+        "id": "wc-boss-work-salaire-sort",
+        "kind": "sort",
+        "wordId": "wl-travail-salaire",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Конец месяца — речь о деньгах. Какие сочетания со словом salaire звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "toucher son salaire",
+            "basket": "ok"
+          },
+          {
+            "text": "un bon salaire",
+            "basket": "ok"
+          },
+          {
+            "text": "une augmentation de salaire",
+            "basket": "ok"
+          },
+          {
+            "text": "manger son salaire",
+            "basket": "no"
+          },
+          {
+            "text": "conduire un salaire",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Зарплату получают и обсуждают её размер: «toucher son salaire» (получать зарплату), «un bon salaire», «une augmentation de salaire» (прибавка). «manger son salaire» и «conduire un salaire» — бессмыслица: зарплату не едят и не «водят»."
+      },
+      {
+        "id": "wc-boss-work-profession-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-travail-metier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Кросс-тема: три из этих слов — конкретные профессии (люди), а одно — общее понятие. Найди лишнее.",
+        "options": ["un professeur", "un ingénieur", "un avocat", "un métier"],
+        "correctIndex": 3,
+        "explanation": "un professeur (учитель), un ingénieur (инженер) и un avocat (адвокат) — это конкретные профессии, люди. Лишнее — un métier: это само слово «профессия, ремесло», общее понятие, а не отдельный человек. Здесь сходятся «профессии» и «работа»."
+      },
+      {
+        "id": "wc-boss-work-professeur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-metiers-professeur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Переходим к конкретным профессиям. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Ma fille adore son professeur de français.",
+          "Le professeur de maths a donné beaucoup de devoirs.",
+          "Il est professeur dans un lycée à Lyon."
+        ],
+        "options": [
+          "учитель, преподаватель (в школе и в вузе)",
+          "только вузовский профессор",
+          "директор школы",
+          "ученик, студент"
+        ],
+        "correctIndex": 0,
+        "explanation": "professeur — любой учитель или преподаватель, и в школе, и в вузе («un professeur de français», «professeur dans un lycée»). Англ. «professor» (только вузовский) — ложный друг. В разговоре часто сокращают до un/une prof."
+      },
+      {
+        "id": "wc-boss-work-ingenieur-trap",
+        "kind": "trap",
+        "wordId": "wl-metiers-ingenieur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг: англ. «engineer» бывает и машинистом. Что значит фр. ingénieur?",
+        "phrases": [
+          "Mon père est ingénieur dans l'aéronautique.",
+          "Le conducteur du train annonce un retard."
+        ],
+        "options": [
+          "дипломированный инженер (проектирует, решает технические задачи)",
+          "машинист поезда",
+          "техник, который чинит технику",
+          "рабочий на заводе"
+        ],
+        "correctIndex": 0,
+        "explanation": "ingénieur — именно дипломированный инженер («ingénieur dans l'aéronautique»), часто после école d'ingénieurs. Англ. «engineer» сбивает: машинист — это un conducteur de train, а техник, который обслуживает и ремонтирует, — un technicien."
+      },
+      {
+        "id": "wc-boss-work-profession-place-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-travail-bureau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Кросс-тема: три из этих слов — люди (профессии), а одно — место. Найди лишнее.",
+        "options": ["un ingénieur", "un professeur", "un cuisinier", "un bureau"],
+        "correctIndex": 3,
+        "explanation": "un ingénieur (инженер), un professeur (учитель) и un cuisinier (повар) — это люди, профессии. Лишнее — un bureau: это офис/кабинет (или письменный стол), место, а не человек. Здесь сходятся «профессии» (ingénieur, professeur, cuisinier) и «работа» (bureau)."
+      },
+      {
+        "id": "wc-boss-work-cuisinier-trap",
+        "kind": "trap",
+        "wordId": "wl-metiers-cuisinier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Коварная пара: cuisinier и cuisinière. В женском роде это слово значит сразу две вещи. О чём речь во второй фразе?",
+        "phrases": [
+          "Le cuisinier prépare le plat du jour.",
+          "Attention, la cuisinière est encore chaude."
+        ],
+        "options": [
+          "cuisinière здесь — кухонная плита (предмет), а не повар-женщина",
+          "cuisinière здесь — повар-женщина, готовит блюдо",
+          "cuisinière здесь — кухня (комната)",
+          "cuisinière здесь — кастрюля"
+        ],
+        "correctIndex": 0,
+        "explanation": "cuisinier — повар. Женская форма cuisinière значит и «повар (женщина)», и «кухонная плита». «la cuisinière est chaude» — горячая плита, а не человек: подсказывает контекст. Кухня-комната — la cuisine."
+      },
+      {
+        "id": "wc-boss-work-infirmier-trap",
+        "kind": "trap",
+        "wordId": "wl-metiers-infirmier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Похожий корень, противоположные роли: infirmier и infirme. Что значит infirmier?",
+        "phrases": [
+          "L'infirmière fait une piqûre au patient.",
+          "Depuis l'accident, il est infirme."
+        ],
+        "options": [
+          "infirmier(ère) — медсестра/медбрат (ухаживает за больными, помогает врачу)",
+          "infirmier — инвалид, немощный человек",
+          "infirmier — врач, который ставит диагноз",
+          "infirmier — больной, пациент"
+        ],
+        "correctIndex": 0,
+        "explanation": "infirmier / infirmière — медбрат/медсестра: ухаживает за больными, делает уколы, помогает врачу. Не путать с un(e) infirme — инвалид, немощный человек. Врач (ставит диагноз, назначает лечение) — un médecin."
+      },
+      {
+        "id": "wc-boss-work-avocat-trap",
+        "kind": "trap",
+        "wordId": "wl-metiers-avocat",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Одно слово — два мира: avocat. В какой фразе речь о профессии, а в какой — о еде?",
+        "phrases": [
+          "Mon avocat va me défendre au tribunal.",
+          "J'ai mis un avocat bien mûr dans la salade."
+        ],
+        "options": [
+          "В первой avocat — адвокат (юрист в суде); во второй — авокадо (плод).",
+          "В обеих avocat значит «адвокат».",
+          "В обеих avocat значит «авокадо».",
+          "В первой avocat — авокадо; во второй — адвокат."
+        ],
+        "correctIndex": 0,
+        "explanation": "un avocat — это и адвокат (юрист, защищает в суде: «défendre au tribunal»), и авокадо (плод: «un avocat bien mûr»). Различает только контекст: «consulter un avocat» — про юриста, «manger un avocat» — про плод."
+      },
+      {
+        "id": "wc-boss-work-pompier-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-metiers-pompier",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "pompier",
+        "options": ["pompier", "plombier", "panier", "pompon"],
+        "correctIndex": 0,
+        "explanation": "pompier /pɔ̃.pje/ (пожарный), plombier /plɔ̃.bje/ (сантехник), panier /pa.nje/ (корзина), pompon /pɔ̃.pɔ̃/ (помпон). Особенно легко спутать pompier и plombier: огонь тушит pompier, трубы чинит plombier."
+      },
+      {
+        "id": "wc-boss-work-facteur-trap",
+        "kind": "trap",
+        "wordId": "wl-metiers-facteur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Одно слово — два значения: facteur. В какой фразе речь о человеке, а в какой — о причине?",
+        "phrases": [
+          "Le facteur a apporté un colis ce matin.",
+          "Le stress est un facteur de risque important."
+        ],
+        "options": [
+          "В первой facteur — почтальон (разносит почту); во второй — фактор, причина.",
+          "В обеих facteur значит «почтальон».",
+          "В обеих facteur значит «фактор, причина».",
+          "В первой facteur — счёт к оплате; во второй — почтальон."
+        ],
+        "correctIndex": 0,
+        "explanation": "le facteur — это и почтальон («le facteur a apporté un colis»; женская форма factrice), и фактор/причина («un facteur de risque»). Контекст различает. Не путать с la facture — счёт к оплате, который почтальон как раз может и принести."
+      },
+      {
+        "id": "wc-boss-work-artiste-hint",
+        "kind": "wordHint",
+        "wordId": "wl-metiers-artiste",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: человек творческой профессии — художник, музыкант или актёр.",
+        "answer": "artiste",
+        "hints": [
+          "Начинается на a…, родственно англ. «artist».",
+          "Форма одна на оба пола, меняется артикль: un / une ___.",
+          "Un ___ peintre expose ses tableaux."
+        ],
+        "explanation": "artiste — человек творческой профессии: художник, музыкант, актёр. Род зависит от человека (un/une artiste), само слово не меняется. Художник-живописец уточняется как un artiste peintre или un peintre."
+      },
+      {
+        "id": "wc-boss-work-office-people-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-travail-bureau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Финал: трёх из этих людей встретишь в офисе (au bureau), а одного — нет, он работает по вызову. Найди лишнего.",
+        "options": ["un collègue", "un patron", "un employé", "un pompier"],
+        "correctIndex": 3,
+        "explanation": "В офисе работают un collègue (коллега), un patron (начальник) и un employé (служащий). Лишний — un pompier (пожарный): он не сидит в кабинете, а тушит пожары по вызову. Здесь сходятся «работа» (collègue, patron, employé) и «профессии» (pompier)."
+      }
+    ]
+  }
+]

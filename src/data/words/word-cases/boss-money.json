@@ -1,0 +1,402 @@
+[
+  {
+    "id": "wc-boss-money",
+    "title": "Босс: покупки и деньги",
+    "theme": "argent",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-argent-magasin",
+      "wl-courses-marche",
+      "wl-courses-supermarche",
+      "wl-courses-boutique",
+      "wl-courses-client",
+      "wl-courses-vendeur",
+      "wl-argent-acheter",
+      "wl-argent-payer",
+      "wl-argent-carte",
+      "wl-argent-prix",
+      "wl-argent-cher",
+      "wl-courses-soldes",
+      "wl-courses-gratuit",
+      "wl-argent-monnaie",
+      "wl-argent-argent",
+      "wl-courses-cadeau"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-money-magasin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-argent-magasin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Финальное дело: целый день за покупками. Одно слово открывает день и повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je passe au magasin après le travail.",
+          "Ce magasin est ouvert le dimanche.",
+          "Il travaille dans un grand magasin du centre-ville."
+        ],
+        "options": ["магазин", "журнал", "склад", "витрина"],
+        "correctIndex": 0,
+        "explanation": "magasin (m) — магазин: aller au magasin, un grand magasin (универмаг). Ложный друг — англ. «magazine» (журнал): по-французски это un magazine, не magasin."
+      },
+      {
+        "id": "wc-boss-money-marche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-courses-marche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Сначала ты идёшь за свежими продуктами. Что значит выделенное слово?",
+        "contexts": [
+          "Le samedi matin, on va au marché.",
+          "Les tomates sont moins chères au marché.",
+          "Il y a un marché en plein air sur la place."
+        ],
+        "options": ["рынок (открытые прилавки)", "супермаркет", "магазинчик", "касса"],
+        "correctIndex": 0,
+        "explanation": "marché (m) — рынок под открытым небом, где торговцы продают свежие продукты. Супермаркет — un supermarché, магазинчик — une boutique. Следи за accent: marché (с é) — рынок, marche (без é) — ходьба/ступенька."
+      },
+      {
+        "id": "wc-boss-money-places-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-courses-cadeau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Перекрёстное дело. Три слова — места, куда ходят за покупками, одно — то, что покупают. Найди лишнее.",
+        "options": ["le marché", "le supermarché", "le magasin", "le cadeau"],
+        "correctIndex": 3,
+        "explanation": "Рынок (le marché), супермаркет (le supermarché) и магазин (le magasin) — это места, куда идут за покупками. Подарок (le cadeau) — это вещь, которую там покупают: он лишний в ряду мест."
+      },
+      {
+        "id": "wc-boss-money-supermarche-cmp",
+        "kind": "compare",
+        "wordId": "wl-courses-supermarche",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "marché и supermarché. В чём разница?",
+        "phrases": [
+          "Je vais au marché acheter des légumes.",
+          "Je vais au supermarché faire les courses."
+        ],
+        "options": [
+          "marché — открытый рынок с торговцами за прилавками; supermarché — большой магазин самообслуживания.",
+          "Это полные синонимы, разницы нет.",
+          "marché больше супермаркета.",
+          "supermarché — это рынок, а marché — обычный магазин."
+        ],
+        "correctIndex": 0,
+        "explanation": "marché — рынок под открытым небом, продавцы за прилавками. supermarché (super + marché) — большой магазин, где сам набираешь товар с полок и катишь un chariot (тележку)."
+      },
+      {
+        "id": "wc-boss-money-boutique-trap",
+        "kind": "trap",
+        "wordId": "wl-courses-boutique",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "По-русски «бутик» — это про дорогую моду. А что значит фр. boutique?",
+        "phrases": ["Une petite boutique de souvenirs.", "La boutique du coin vend de tout."],
+        "options": [
+          "любой небольшой магазинчик, даже сувенирный",
+          "только дорогой магазин модной одежды",
+          "большой торговый центр",
+          "рынок под открытым небом"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка значения: фр. boutique — любой небольшой магазин (сувениры, цветы, хлеб), не обязательно дорогой. Русское «бутик» — лишь узкая часть этого смысла."
+      },
+      {
+        "id": "wc-boss-money-client-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-courses-client",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "В магазине у прилавка. Что значит выделенное слово?",
+        "contexts": [
+          "Le vendeur s'occupe d'un client.",
+          "Il y a beaucoup de clients aujourd'hui.",
+          "Cette cliente vient ici chaque semaine."
+        ],
+        "options": ["клиент, покупатель", "продавец", "кассир", "охранник"],
+        "correctIndex": 0,
+        "explanation": "client (m) / cliente (f) — покупатель, тот, кого обслуживают. Конечная t немая: /kli.jɑ̃/. Продавец — le vendeur."
+      },
+      {
+        "id": "wc-boss-money-vendeur-cmp",
+        "kind": "compare",
+        "wordId": "wl-courses-vendeur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Две стороны прилавка. Кто кому платит?",
+        "phrases": ["Le vendeur sert le client.", "Le client paie le vendeur."],
+        "options": [
+          "vendeur продаёт и обслуживает; client покупает и платит.",
+          "Это одно и то же лицо.",
+          "client продаёт, vendeur покупает.",
+          "оба — покупатели."
+        ],
+        "correctIndex": 0,
+        "explanation": "le vendeur / la vendeuse (от vendre — продавать) обслуживает — sert. le client (покупатель) платит — paie. Не перепутай, кто кому платит."
+      },
+      {
+        "id": "wc-boss-money-acheter-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-argent-acheter",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je vais acheter du pain et du fromage.",
+          "Elle a acheté un cadeau pour son frère.",
+          "On achète de plus en plus en ligne."
+        ],
+        "options": ["покупать", "продавать", "платить", "заказывать"],
+        "correctIndex": 0,
+        "explanation": "acheter — покупать, приобретать вещь: acheter du pain, acheter un cadeau. В спряжении появляется è: j'achète, tu achètes. Продавать — vendre."
+      },
+      {
+        "id": "wc-boss-money-acheter-lieu-cmp",
+        "kind": "compare",
+        "wordId": "wl-argent-acheter",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M18",
+        "prompt": "Перекрёстное дело: глагол денег (acheter) встречается с местами покупок (courses). Какая фраза верна?",
+        "phrases": ["J'achète des légumes au marché.", "J'achète un pull dans une boutique."],
+        "options": [
+          "acheter qqch au marché / dans une boutique — покупать что-то на рынке / в магазинчике: предлог зависит от места.",
+          "С местами покупок acheter не сочетается — нужен только payer.",
+          "Правильно говорить «acheter le marché» — купить рынок целиком.",
+          "После acheter всегда идёт en: «acheter en marché»."
+        ],
+        "correctIndex": 0,
+        "explanation": "acheter (argent) свободно сочетается с местами (courses): acheter au marché / au supermarché, но acheter dans une boutique / dans un magasin. Предлог разный: au перед marché/supermarché, dans une перед boutique."
+      },
+      {
+        "id": "wc-boss-money-acheter-payer-cmp",
+        "kind": "compare",
+        "wordId": "wl-argent-payer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "acheter и payer. По-русски оба про покупку — в чём разница?",
+        "phrases": ["J'achète une chemise.", "Je paie la chemise à la caisse."],
+        "options": [
+          "acheter — приобретать сам товар (что я беру); payer — отдавать за него деньги (как я расплачиваюсь).",
+          "Это полные синонимы.",
+          "acheter — платить наличными, payer — картой.",
+          "payer — покупать, acheter — продавать."
+        ],
+        "correctIndex": 0,
+        "explanation": "acheter направлен на вещь: acheter une chemise. payer — на деньги/оплату: payer par carte, payer à la caisse. «Я плачу картой» — Je paie par carte, нельзя «j'achète par carte»."
+      },
+      {
+        "id": "wc-boss-money-carte-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-argent-carte",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Слово carte значит разное в зависимости от сцены. Что их объединяет?",
+        "contexts": [
+          "Je paie par carte, s'il vous plaît.",
+          "La carte, s'il vous plaît !",
+          "Tu as une carte de la ville ?"
+        ],
+        "options": [
+          "карта / карточка (банковская, меню, карта местности)",
+          "только банковская карта",
+          "счёт в ресторане",
+          "коробка"
+        ],
+        "correctIndex": 0,
+        "explanation": "la carte (f) покрывает несколько «карт»: банковская (payer par carte), меню в кафе («La carte, s'il vous plaît !»), карта города (une carte de la ville). Конкретное значение даёт ситуация."
+      },
+      {
+        "id": "wc-boss-money-prix-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-argent-prix",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Quel est le prix de ce manteau ?",
+          "Le prix est sur l'étiquette.",
+          "Les prix ont augmenté cette année."
+        ],
+        "options": ["цена, стоимость", "скидка", "сдача", "счёт"],
+        "correctIndex": 0,
+        "explanation": "le prix (m) — цена: «Quel est le prix ?» (Какая цена?), «les prix augmentent» (цены растут). Множественное пишется так же — les prix. То же слово значит «приз» (un prix littéraire)."
+      },
+      {
+        "id": "wc-boss-money-prix-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-argent-prix",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "prix",
+        "options": ["prix", "pré", "bris", "pli"],
+        "correctIndex": 0,
+        "explanation": "Слушай внимательно: prix /pʁi/ (цена), pré /pʁe/ (луг — другой гласный é), bris /bʁi/ (b вместо p, «осколки»), pli /pli/ (l вместо r, «складка»). Это разные слова, а не омофоны; нужное здесь — prix."
+      },
+      {
+        "id": "wc-boss-money-cher-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-argent-cher",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три выражения говорят, что вещь стоит дорого. Найди то, что значит ПРОТИВОПОЛОЖНОЕ — «недорого».",
+        "options": ["c'est cher", "ça coûte cher", "c'est hors de prix", "c'est bon marché"],
+        "correctIndex": 3,
+        "explanation": "«c'est bon marché» = дёшево, недорого — лишнее. Остальные про дороговизну: c'est cher (дорого), ça coûte cher (дорого стоит), c'est hors de prix (заоблачно дорого). Заметь: bon marché неизменяемо — не «bonne marché»."
+      },
+      {
+        "id": "wc-boss-money-soldes-cher-sort",
+        "kind": "sort",
+        "wordId": "wl-courses-soldes",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Перекрёстное дело: распродажа (courses) встречается с ценой и деньгами (argent). Какие сочетания звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "acheter un pull en solde",
+            "basket": "ok"
+          },
+          {
+            "text": "profiter des soldes",
+            "basket": "ok"
+          },
+          {
+            "text": "les prix baissent pendant les soldes",
+            "basket": "ok"
+          },
+          {
+            "text": "payer les soldes au vendeur",
+            "basket": "no"
+          },
+          {
+            "text": "un magasin gratuit pendant les soldes",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественно: acheter en solde (купить по распродаже), profiter des soldes (воспользоваться распродажей), les prix baissent (цены снижаются). «payer les soldes» — бессмыслица: платят за товар (payer un pull), а не «распродажу». «un magasin gratuit» абсурдно: на распродаже цены ниже, но магазин не становится бесплатным."
+      },
+      {
+        "id": "wc-boss-money-gratuit-trap",
+        "kind": "trap",
+        "wordId": "wl-courses-gratuit",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «free» значит и «бесплатный», и «свободный». На кассе говорят «la livraison est ___» (доставка бесплатна). Какое слово?",
+        "phrases": [
+          "La livraison est gratuite à partir de 50 euros.",
+          "L'entrée est libre, mais le concert est payant."
+        ],
+        "options": [
+          "gratuite — бесплатная (не стоит денег)",
+          "libre — свободная (это «без записи / не занято», не про деньги)",
+          "payante — платная (это антоним)",
+          "free — такого слова во французском нет"
+        ],
+        "correctIndex": 0,
+        "explanation": "«Бесплатный» (не стоит денег) — gratuit / gratuite: la livraison est gratuite. «libre» значит «свободный, без записи» (entrée libre). «payant» — платный (антоним). Англ. «free» приходится разделять на gratuit и libre."
+      },
+      {
+        "id": "wc-boss-money-monnaie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-argent-monnaie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "У кассы кассир отдаёт тебе что-то после оплаты. Что значит выделенное слово?",
+        "contexts": [
+          "Voici votre monnaie, merci.",
+          "Vous avez de la monnaie sur 50 euros ?",
+          "Gardez la monnaie !"
+        ],
+        "options": ["сдача, мелочь", "цена", "карта", "чек"],
+        "correctIndex": 0,
+        "explanation": "la monnaie (f) — сдача и мелкие деньги: rendre la monnaie (дать сдачу), «Gardez la monnaie !» (Оставьте сдачу себе!). Также — «валюта» (la monnaie unique — евро)."
+      },
+      {
+        "id": "wc-boss-money-argent-monnaie-cmp",
+        "kind": "compare",
+        "wordId": "wl-argent-argent",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "argent и monnaie. В чём разница?",
+        "phrases": ["Je n'ai pas d'argent sur moi.", "Je n'ai pas de monnaie pour le parking."],
+        "options": [
+          "argent — деньги вообще (есть ли вообще средства); monnaie — мелочь, разменные монеты и сдача.",
+          "Это полные синонимы, разницы нет.",
+          "argent — про монеты, monnaie — про купюры.",
+          "monnaie — деньги вообще, argent — только серебро."
+        ],
+        "correctIndex": 0,
+        "explanation": "argent — деньги как ресурс («У меня нет денег»). monnaie — мелочь/сдача («У меня нет мелочи на парковку»). Англ. «money» обманчиво похоже на monnaie, но «деньги» — это argent. То же argent значит и «серебро» (en argent)."
+      },
+      {
+        "id": "wc-boss-money-cross-sort",
+        "kind": "sort",
+        "wordId": "wl-argent-payer",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Перекрёстное дело: люди (courses) и деньги (argent) в одной кассе. Какие фразы звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "le client paie par carte",
+            "basket": "ok"
+          },
+          {
+            "text": "le vendeur rend la monnaie",
+            "basket": "ok"
+          },
+          {
+            "text": "demander le prix au vendeur",
+            "basket": "ok"
+          },
+          {
+            "text": "acheter le vendeur",
+            "basket": "no"
+          },
+          {
+            "text": "payer l'argent à la cliente",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественно: клиент платит картой (payer par carte), продавец даёт сдачу (rendre la monnaie), спрашивают цену у продавца (demander le prix). «acheter le vendeur» (купить продавца) — бессмыслица: покупают товар, а не человека. «payer l'argent» — ошибка: деньгами расплачиваются, их не «платят»; правильно payer en espèces / payer avec de l'argent."
+      },
+      {
+        "id": "wc-boss-money-cadeau-hint",
+        "kind": "wordHint",
+        "wordId": "wl-courses-cadeau",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Финал дня: ты выходишь из магазина со свёртком для друга. Вспомни слово (courses) из той же сцены, где деньги: вещь, которую покупают (acheter) и дарят кому-то на праздник.",
+        "answer": "cadeau",
+        "hints": [
+          "Начинается на c…",
+          "Мужской род, во множественном на -x: un ___ → des ___x",
+          "J'ai acheté un beau ___ pour ma mère."
+        ],
+        "explanation": "cadeau (m) — подарок. Множественное на -x: un cadeau → des cadeaux. Дарят его глаголом offrir: offrir un cadeau à quelqu'un. Здесь подарок (courses) встречается с покупкой/деньгами (acheter)."
+      }
+    ]
+  }
+]

@@ -1,0 +1,439 @@
+[
+  {
+    "id": "wc-boss-leisure",
+    "title": "Босс: досуг и интересы",
+    "theme": "loisirs",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-loisirs-sport",
+      "wl-loisirs-musique",
+      "wl-loisirs-film",
+      "wl-loisirs-livre",
+      "wl-loisirs-jouer",
+      "wl-loisirs-lire",
+      "wl-loisirs-vacances",
+      "wl-loisirs-fete",
+      "wl-sport-football",
+      "wl-sport-natation",
+      "wl-sport-courir",
+      "wl-sport-equipe",
+      "wl-sport-match",
+      "wl-sport-gagner",
+      "wl-sport-perdre",
+      "wl-sport-ballon"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-leisure-vacances-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-loisirs-vacances",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Лето. Ты планируешь отдых. Одно слово связывает все три сцены — что оно значит?",
+        "contexts": [
+          "On part en vacances la semaine prochaine.",
+          "Les enfants sont en vacances jusqu'en septembre.",
+          "Pendant les vacances, je ne fais rien du tout."
+        ],
+        "options": [
+          "каникулы, отпуск (период отдыха)",
+          "выходные (суббота и воскресенье)",
+          "отгул на один день",
+          "праздник, вечеринка"
+        ],
+        "correctIndex": 0,
+        "explanation": "les vacances — «каникулы, отпуск», длительный период отдыха от работы или учёбы. Слово существует только во множественном числе: partir en vacances, être en vacances. Один нерабочий день — это un congé, а праздник — une fête."
+      },
+      {
+        "id": "wc-boss-leisure-fete-vacances-cmp",
+        "kind": "compare",
+        "wordId": "wl-loisirs-fete",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Оба слова про отдых, но это не одно и то же. В чём разница между этими фразами?",
+        "phrases": ["Je pars en vacances au bord de la mer.", "Ce soir, on fait la fête chez Léa."],
+        "options": [
+          "vacances = каникулы/отпуск (долгий период отдыха); fête = праздник, вечеринка (одно событие)",
+          "Это синонимы, разницы нет",
+          "vacances = вечеринка; fête = отпуск",
+          "Оба значат «выходной день»"
+        ],
+        "correctIndex": 0,
+        "explanation": "les vacances — длительный отдых (отпуск, каникулы): partir en vacances. la fête — праздник или вечеринка, одно событие: faire la fête (гулять, веселиться). Поехать в отпуск ≠ устроить вечеринку."
+      },
+      {
+        "id": "wc-boss-leisure-livre-trap",
+        "kind": "trap",
+        "wordId": "wl-loisirs-livre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ловушка по роду. Что значит «un livre» в «J'ai acheté un livre passionnant» (мужской род)?",
+        "phrases": ["J'ai acheté un livre passionnant.", "Ce paquet pèse une livre."],
+        "options": [
+          "книга (предмет, который читают)",
+          "фунт (мера веса ~500 г)",
+          "свобода",
+          "ливр (старинная монета)"
+        ],
+        "correctIndex": 0,
+        "explanation": "un livre (m) = книга; une livre (f) = фунт (вес или валюта). Род — единственное различие, и оно меняет смысл. «un livre passionnant» — это увлекательная книга, а «une livre» в магазине — это полкило."
+      },
+      {
+        "id": "wc-boss-leisure-lire-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-loisirs-lire",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что ты делаешь с этой книгой? Один глагол повторяется во всех трёх сценах.",
+        "contexts": [
+          "Le soir, j'aime lire au lit.",
+          "Il lit le journal en buvant son café.",
+          "Tu as lu ce roman ?"
+        ],
+        "options": ["читать (воспринимать текст)", "писать", "смеяться", "смотреть телевизор"],
+        "correctIndex": 0,
+        "explanation": "lire — «читать»: водить глазами по тексту и понимать его (lire un livre, lire le journal). Неправильный глагол: je lis, il lit, j'ai lu. Не путать с rire («смеяться»), которое звучит похоже."
+      },
+      {
+        "id": "wc-boss-leisure-lire-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-loisirs-lire",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Проверка слуха. Послушай и выбери, какой глагол произнесли.",
+        "audioText": "lire",
+        "options": ["lire", "rire", "dire", "lier"],
+        "correctIndex": 0,
+        "explanation": "lire /liʁ/ (читать), rire /ʁiʁ/ (смеяться), dire /diʁ/ (говорить, сказать), lier /lje/ (связывать). Это разные слова, не омофоны: слушай первый согласный (l/r/d) и гласную."
+      },
+      {
+        "id": "wc-boss-leisure-film-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-loisirs-film",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Вечер дома. Что значит повторяющееся слово?",
+        "contexts": [
+          "On regarde un film ce soir ?",
+          "C'est un film d'horreur, j'ai eu peur.",
+          "J'ai vu ce film au cinéma la semaine dernière."
+        ],
+        "options": [
+          "фильм, кино (отдельное кинопроизведение)",
+          "сериал (много серий)",
+          "фотография",
+          "плёнка для фотоаппарата"
+        ],
+        "correctIndex": 0,
+        "explanation": "un film — «фильм», отдельное полнометражное кинопроизведение: regarder un film, voir un film. Сериал из многих серий — это une série; здание кинотеатра или кино как искусство — le cinéma."
+      },
+      {
+        "id": "wc-boss-leisure-musique-bruit-trap",
+        "kind": "trap",
+        "wordId": "wl-loisirs-musique",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Не путай похожие по теме слова. В чём разница между этими фразами?",
+        "phrases": ["J'adore cette musique.", "Quel bruit dans la rue !"],
+        "options": [
+          "musique = музыка (организованный, приятный звук); bruit = шум (беспорядочный звук)",
+          "Это синонимы, разницы нет",
+          "musique = шум; bruit = музыка",
+          "Оба значат «песня»"
+        ],
+        "correctIndex": 0,
+        "explanation": "la musique — музыка, организованный приятный звук, который слушают. le bruit — шум, неприятный или просто фоновый звук (машины, стройка). «Сделай музыку тише» — baisse la musique; «сколько шума!» — quel bruit !"
+      },
+      {
+        "id": "wc-boss-leisure-jouer-prep-sort",
+        "kind": "sort",
+        "wordId": "wl-loisirs-jouer",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Глагол jouer и его предлоги (à для игр/спорта, de для инструментов). Что звучит естественно, а что нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "jouer au football",
+            "basket": "ok"
+          },
+          {
+            "text": "jouer du piano",
+            "basket": "ok"
+          },
+          {
+            "text": "jouer de la guitare",
+            "basket": "ok"
+          },
+          {
+            "text": "jouer au tennis",
+            "basket": "ok"
+          },
+          {
+            "text": "jouer du football",
+            "basket": "no"
+          },
+          {
+            "text": "jouer à la guitare",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Игры и спорт берут jouer à: jouer au football, jouer au tennis. Музыкальные инструменты берут jouer de: jouer du piano, jouer de la guitare. Поэтому «jouer du football» и «jouer à la guitare» — ошибки: предлоги перепутаны."
+      },
+      {
+        "id": "wc-boss-leisure-loisirs-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-loisirs-sport",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — это спокойные занятия для досуга дома. Найди лишнее: это вид спорта, а не «тихий» досуг.",
+        "options": ["la musique", "le film", "le livre", "la natation"],
+        "correctIndex": 3,
+        "explanation": "la musique (музыка), le film (фильм), le livre (книга) — спокойные домашние занятия из темы «досуг». la natation (плавание) — вид спорта, физическая активность. Оно лишнее: здесь пересеклись темы «досуг» и «спорт»."
+      },
+      {
+        "id": "wc-boss-leisure-sport-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-loisirs-sport",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Переходим к активному отдыху. Что значит повторяющееся слово?",
+        "contexts": [
+          "Je fais du sport trois fois par semaine.",
+          "Le football est un sport collectif.",
+          "Il va à la salle de sport après le travail."
+        ],
+        "options": [
+          "спорт (физическая активность, вид спорта)",
+          "игра (настольная или карточная)",
+          "матч",
+          "команда"
+        ],
+        "correctIndex": 0,
+        "explanation": "le sport — «спорт»: faire du sport (заниматься спортом), un sport collectif (командный вид спорта), une salle de sport (спортзал). Заметь: спортом «занимаются» (faire du sport), а не «играют». Игра вообще — un jeu, конкретная встреча — un match."
+      },
+      {
+        "id": "wc-boss-leisure-sport-jouer-cmp",
+        "kind": "compare",
+        "wordId": "wl-loisirs-jouer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«Заниматься спортом» и «играть» строятся по-разному. В чём разница между этими фразами?",
+        "phrases": ["Je fais du sport tous les matins.", "Je joue au football le dimanche."],
+        "options": [
+          "faire du sport = заниматься спортом (общее); jouer à = играть в конкретную игру/спорт",
+          "Это синонимы, разницы нет",
+          "faire du sport = играть в футбол; jouer = заниматься спортом вообще",
+          "Оба строятся с предлогом «à»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Спорт как занятие берёт глагол faire: faire du sport, faire de la natation. Конкретные игры с мячом берут jouer à: jouer au football, jouer au tennis. Нельзя сказать «jouer du sport» — это faire du sport."
+      },
+      {
+        "id": "wc-boss-leisure-natation-hint",
+        "kind": "wordHint",
+        "wordId": "wl-sport-natation",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни вид спорта в воде — «плавание» (как занятие, не сам глагол «плыть»).",
+        "answer": "natation",
+        "hints": [
+          "Начинается на n…",
+          "Существительное женского рода; глагол «плавать» — nager",
+          "Faire de la ___ à la piscine."
+        ],
+        "explanation": "la natation — «плавание» как вид спорта или занятие: faire de la natation, un cours de natation. Само действие «плыть» — это глагол nager (je nage). «Я занимаюсь плаванием» = je fais de la natation."
+      },
+      {
+        "id": "wc-boss-leisure-courir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sport-courir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Утренняя пробежка и не только. Что значит этот глагол?",
+        "contexts": [
+          "Je vais courir tous les matins au parc.",
+          "Il court vite, il va gagner la course.",
+          "Dépêche-toi, il faut courir, on est en retard !"
+        ],
+        "options": [
+          "бегать, бежать (быстро двигаться; спешить)",
+          "идти пешком, шагать",
+          "плавать",
+          "прыгать"
+        ],
+        "correctIndex": 0,
+        "explanation": "courir — «бегать, бежать»: двигаться бегом (aller courir, courir vite) и в переносном смысле «спешить, торопиться» (il faut courir). Идти пешком, шагом — это marcher, другой темп движения."
+      },
+      {
+        "id": "wc-boss-leisure-football-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sport-football",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Самый популярный командный спорт. Что значит выделенное слово?",
+        "contexts": [
+          "Mon fils joue au football le mercredi.",
+          "Ce soir, il y a un match de football à la télé.",
+          "C'est un grand joueur de football."
+        ],
+        "options": ["футбол (вид спорта)", "американский футбол", "баскетбол", "регби"],
+        "correctIndex": 0,
+        "explanation": "le football — «футбол» (европейский, англ. soccer). В разговорной речи почти всегда говорят le foot. Американский футбол — это le football américain, его надо уточнять отдельно."
+      },
+      {
+        "id": "wc-boss-leisure-ballon-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-sport-ballon",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова связаны с футбольным матчем. Найди лишнее: его на поле не бывает.",
+        "options": ["le ballon", "l'équipe", "le match", "le livre"],
+        "correctIndex": 3,
+        "explanation": "le ballon (мяч), l'équipe (команда), le match (матч) — всё это про футбол и спорт. le livre (книга) — из темы «досуг», к матчу отношения не имеет. Оно лишнее: здесь столкнулись «спорт» и «досуг»."
+      },
+      {
+        "id": "wc-boss-leisure-ballon-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-sport-ballon",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "ballon",
+        "options": ["ballon", "bâton", "balcon", "bidon"],
+        "correctIndex": 0,
+        "explanation": "ballon /balɔ̃/ (мяч), bâton /bɑtɔ̃/ (палка), balcon /balkɔ̃/ (балкон), bidon /bidɔ̃/ (канистра). Все оканчиваются на -on, но различаются серединой слова. Это разные слова, не омофоны."
+      },
+      {
+        "id": "wc-boss-leisure-equipe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sport-equipe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Кто играет на поле? Что значит повторяющееся слово?",
+        "contexts": [
+          "Notre équipe a très bien joué aujourd'hui.",
+          "L'équipe de France a gagné la coupe.",
+          "Il faut jouer en équipe, pas tout seul."
+        ],
+        "options": [
+          "команда (группа людей вместе)",
+          "приказ, команда (распоряжение)",
+          "болельщик",
+          "тренер"
+        ],
+        "correctIndex": 0,
+        "explanation": "une équipe — «команда» в смысле группы людей, играющих вместе: une équipe de football, jouer en équipe, l'équipe de France. Русское «команда» как приказ — это un ordre, тут не подходит."
+      },
+      {
+        "id": "wc-boss-leisure-match-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sport-match",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Две команды встречаются на поле. Что значит выделенное слово?",
+        "contexts": [
+          "Le match commence à vingt heures.",
+          "On a regardé le match au café.",
+          "C'était un match nul, un partout."
+        ],
+        "options": [
+          "матч (спортивная встреча соперников)",
+          "спичка",
+          "пара, подходящая половинка",
+          "игра вообще, забава"
+        ],
+        "correctIndex": 0,
+        "explanation": "un match — «матч», конкретная спортивная встреча двух соперников: un match de foot, gagner le match, un match nul (ничья). Английское match («спичка») по-французски une allumette — это ложный друг. Игра вообще — un jeu."
+      },
+      {
+        "id": "wc-boss-leisure-gagner-perdre-cmp",
+        "kind": "compare",
+        "wordId": "wl-sport-gagner",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Итог матча. gagner и perdre — пара противоположностей. В чём разница между этими фразами?",
+        "phrases": ["Notre équipe a gagné le match.", "L'autre équipe a perdu le match."],
+        "options": [
+          "gagner = выиграть (победить); perdre = проиграть",
+          "Это синонимы, разницы нет",
+          "gagner = проиграть; perdre = выиграть",
+          "Оба значат «сыграть вничью»"
+        ],
+        "correctIndex": 0,
+        "explanation": "gagner — выигрывать, побеждать (gagner le match). perdre — проигрывать (perdre le match). Прямая пара: одна команда gagne, другая perd. У gagner есть и значение «зарабатывать» (gagner de l'argent), у perdre — «терять» (perdre ses clés)."
+      },
+      {
+        "id": "wc-boss-leisure-perdre-sort",
+        "kind": "sort",
+        "wordId": "wl-sport-perdre",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Слова досуга и спорта вместе. Какие сочетания звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "perdre le match",
+            "basket": "ok"
+          },
+          {
+            "text": "gagner la coupe",
+            "basket": "ok"
+          },
+          {
+            "text": "lire un livre",
+            "basket": "ok"
+          },
+          {
+            "text": "écouter de la musique",
+            "basket": "ok"
+          },
+          {
+            "text": "lire la musique",
+            "basket": "no"
+          },
+          {
+            "text": "courir un match",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественны: perdre le match, gagner la coupe (выиграть кубок), lire un livre, écouter de la musique. Музыку «слушают» (écouter), а «lire la musique» означало бы читать ноты — для обычного слушателя это ошибка. И «courir un match» бессмысленно: матч играют (jouer), а не «бегут». Тут сошлись «спорт» и «досуг»."
+      },
+      {
+        "id": "wc-boss-leisure-fete-insight",
+        "kind": "insight",
+        "wordId": "wl-loisirs-fete",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Команда выиграла — и теперь празднует. Какое главное правило ты вынес из всего дела?",
+        "options": [
+          "Глагол выбирает занятие: faire du sport / de la natation, jouer à un sport, jouer de la musique, lire un livre — а итог матча решают gagner и perdre.",
+          "Все занятия досуга и спорта строятся с глаголом jouer и предлогом à.",
+          "vacances, livre и équipe — это формы одного слова в разных числах.",
+          "gagner и perdre — синонимы и взаимозаменяемы."
+        ],
+        "correctIndex": 0,
+        "explanation": "Главное правило домена: занятие задаёт конструкцию. Спортом и плаванием «занимаются» — faire du sport, faire de la natation; в игры и спорт «играют» — jouer à; на инструменте — jouer de; книгу читают — lire un livre. А исход матча описывают противоположности gagner (выиграть) и perdre (проиграть). После победы команда fait la fête — устраивает праздник."
+      }
+    ]
+  }
+]

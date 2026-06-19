@@ -1,0 +1,290 @@
+[
+  {
+    "id": "wc-questions",
+    "title": "Вопросы",
+    "theme": "questions",
+    "level": "A2",
+    "wordIds": [
+      "wl-questions-qui",
+      "wl-questions-quoi",
+      "wl-questions-ou",
+      "wl-questions-quand",
+      "wl-questions-comment",
+      "wl-questions-pourquoi",
+      "wl-questions-combien",
+      "wl-questions-quel"
+    ],
+    "steps": [
+      {
+        "id": "wc-questions-qui-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-questions-qui",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": ["Qui est à la porte ?", "Qui veut un café ?", "C'est qui, cette fille ?"],
+        "options": ["кто", "что", "где", "когда"],
+        "correctIndex": 0,
+        "explanation": "qui — «кто», вопрос о человеке. «C'est qui ?» — разговорное «это кто?». «Что» — quoi/que, «где» — où."
+      },
+      {
+        "id": "wc-questions-qui-trap",
+        "kind": "trap",
+        "wordId": "wl-questions-qui",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Нужно спросить «Кто говорит?». Какой вариант верный?",
+        "options": ["Qui parle ?", "Que parle ?", "Quoi parle ?", "Où parle ?"],
+        "correctIndex": 0,
+        "explanation": "О человеке-подлежащем спрашивают qui: «Qui parle ?» — «Кто говорит?». que/quoi — это «что» (про предмет), où — «где»; с подлежащим-человеком они не подходят."
+      },
+      {
+        "id": "wc-questions-quoi-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-questions-quoi",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": ["C'est quoi, ça ?", "Tu fais quoi ce soir ?", "À quoi tu penses ?"],
+        "options": ["что", "кто", "сколько", "почему"],
+        "correctIndex": 0,
+        "explanation": "quoi — «что» о предмете. Чаще стоит в конце фразы или после предлога: «Tu fais quoi ?», «À quoi penses-tu ?». «Кто» — qui."
+      },
+      {
+        "id": "wc-questions-quoi-cmp",
+        "kind": "compare",
+        "wordId": "wl-questions-quoi",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Que veux-tu ? и Tu veux quoi ? — в чём разница?",
+        "phrases": ["Que veux-tu ?", "Tu veux quoi ?"],
+        "options": [
+          "Смысл один — «что ты хочешь?»; первое строгое/письменное, второе разговорное.",
+          "Первое значит «кто ты?», второе — «что ты хочешь?».",
+          "Первое о месте, второе о предмете.",
+          "Это полные синонимы без разницы в стиле."
+        ],
+        "correctIndex": 0,
+        "explanation": "Оба — «что ты хочешь?». В строгом вопросе «что» — que в начале (Que veux-tu ?). В разговорном порядке то же «что» становится quoi и уходит в конец (Tu veux quoi ?)."
+      },
+      {
+        "id": "wc-questions-ou-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-questions-ou",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": ["Où es-tu ?", "Où vas-tu en vacances ?", "D'où viens-tu ?"],
+        "options": ["где / куда", "когда", "как", "кто"],
+        "correctIndex": 0,
+        "explanation": "où — «где» (нахождение) и «куда» (направление): «Où es-tu ?» — где; «Où vas-tu ?» — куда. С accent grave, в отличие от ou «или»."
+      },
+      {
+        "id": "wc-questions-ou-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-questions-ou",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери прозвучавшее слово. Варианты похожи по звучанию.",
+        "audioText": "où",
+        "options": ["eau", "haut", "eu", "où"],
+        "correctIndex": 3,
+        "explanation": "Прозвучало où /u/ — «где/куда», звук «у». Другие варианты звучат иначе: eau /o/ — «вода», haut /o/ — «высокий», eu /y/ — «имел» (от avoir). Только où даёт чистый звук /u/."
+      },
+      {
+        "id": "wc-questions-quand-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-questions-quand",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": ["Quand pars-tu ?", "Quand est-ce qu'on mange ?", "Depuis quand tu es là ?"],
+        "options": ["когда", "где", "сколько", "какой"],
+        "correctIndex": 0,
+        "explanation": "quand — «когда», вопрос о времени. «Depuis quand ?» — «с каких пор?». Конечная d не читается: /kɑ̃/. «Где» — où."
+      },
+      {
+        "id": "wc-questions-quand-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-questions-quand",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери прозвучавшее слово. Все они рифмуются.",
+        "audioText": "quand",
+        "options": ["gant", "temps", "vent", "quand"],
+        "correctIndex": 3,
+        "explanation": "Прозвучало quand /kɑ̃/ — «когда», начинается со звука k. Остальные рифмуются на /ɑ̃/, но начинаются иначе: gant /ɡɑ̃/ — «перчатка» (звонкий g), temps /tɑ̃/ — «время» (t), vent /vɑ̃/ — «ветер» (v). Различай по первому звуку."
+      },
+      {
+        "id": "wc-questions-comment-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-questions-comment",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Comment ça va ?",
+          "Comment tu t'appelles ?",
+          "Comment on dit « merci » en russe ?"
+        ],
+        "options": ["как", "почему", "когда", "сколько"],
+        "correctIndex": 0,
+        "explanation": "comment — «как, каким образом». «Comment ça va ?» — «Как дела?», «Comment tu t'appelles ?» — «Как тебя зовут?». «Почему» — pourquoi."
+      },
+      {
+        "id": "wc-questions-comment-sort",
+        "kind": "sort",
+        "wordId": "wl-questions-comment",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с comment звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "Comment ça va ?",
+            "basket": "ok"
+          },
+          {
+            "text": "Comment ça marche ?",
+            "basket": "ok"
+          },
+          {
+            "text": "Comment tu t'appelles ?",
+            "basket": "ok"
+          },
+          {
+            "text": "Comment d'argent ?",
+            "basket": "no"
+          },
+          {
+            "text": "Comment âge as-tu ?",
+            "basket": "no"
+          }
+        ],
+        "explanation": "comment — «как»: «Comment ça va / marche ?», «Comment tu t'appelles ?» естественны. Про количество — combien («Combien d'argent ?»), про возраст — quel («Quel âge as-tu ?»), а не comment."
+      },
+      {
+        "id": "wc-questions-pourquoi-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-questions-pourquoi",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Pourquoi tu pleures ?",
+          "Pourquoi pas ?",
+          "Pourquoi est-ce qu'il est en retard ?"
+        ],
+        "options": ["почему / зачем", "как", "где", "кто"],
+        "correctIndex": 0,
+        "explanation": "pourquoi — «почему, зачем», вопрос о причине. Буквально pour + quoi («для чего»). «Pourquoi pas ?» — «Почему бы и нет?»."
+      },
+      {
+        "id": "wc-questions-pourquoi-trap",
+        "kind": "trap",
+        "wordId": "wl-questions-pourquoi",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "На вопрос «Pourquoi tu es triste ?» какой ответ начинается правильно?",
+        "options": [
+          "Parce que je suis fatigué.",
+          "Pourquoi je suis fatigué.",
+          "Pour que je suis fatigué.",
+          "Parce je suis fatigué."
+        ],
+        "correctIndex": 0,
+        "explanation": "Вопрос «почему?» — pourquoi; ответ «потому что» — parce que: «Parce que je suis fatigué». «pour que» значит «чтобы» (другой смысл), а «parce» без que не используется."
+      },
+      {
+        "id": "wc-questions-combien-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-questions-combien",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ça fait combien ?",
+          "Combien de personnes viennent ?",
+          "Tu en veux combien ?"
+        ],
+        "options": ["сколько", "какой", "когда", "почему"],
+        "correctIndex": 0,
+        "explanation": "combien — «сколько» (количество и цена). «Ça fait combien ?» — «Сколько с меня?». Перед существительным нужен de: «combien de personnes»."
+      },
+      {
+        "id": "wc-questions-combien-cmp",
+        "kind": "compare",
+        "wordId": "wl-questions-combien",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "C'est combien ? и Combien de pommes ? — в чём разница в построении?",
+        "phrases": ["C'est combien ?", "Combien de pommes ?"],
+        "options": [
+          "Перед существительным нужен de (combien de pommes); без существительного combien стоит само (C'est combien ?).",
+          "Это одно и то же, de можно ставить всегда.",
+          "Первое значит «какой?», второе — «сколько?».",
+          "de нужно во втором, потому что pommes женского рода."
+        ],
+        "correctIndex": 0,
+        "explanation": "Само combien — без de: «C'est combien ?», «Ça fait combien ?». Перед существительным — combien de без артикля: «Combien de pommes ?», «Combien de temps ?». de — не про род, а про конструкцию «количество + de + сущ.»."
+      },
+      {
+        "id": "wc-questions-quel-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-questions-quel",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово (в разных формах)?",
+        "contexts": [
+          "Quel jour sommes-nous ?",
+          "Quelle heure est-il ?",
+          "Quels sont tes films préférés ?"
+        ],
+        "options": ["какой / который", "сколько", "где", "как"],
+        "correctIndex": 0,
+        "explanation": "quel — «какой, который». Это прилагательное и согласуется с существительным: quel jour (m), quelle heure (f), quels films (m pl). Все формы читаются одинаково /kɛl/."
+      },
+      {
+        "id": "wc-questions-quel-cmp",
+        "kind": "compare",
+        "wordId": "wl-questions-quel",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Quel film ? и Quelle question ? — почему разные окончания?",
+        "phrases": ["Quel film ?", "Quelle question ?"],
+        "options": [
+          "quel согласуется в роде: film мужского рода → quel, question женского → quelle.",
+          "Это ошибка: всегда нужно писать quel.",
+          "quelle используется во множественном числе, quel — в единственном.",
+          "Разницы нет, оба пишутся как удобно."
+        ],
+        "correctIndex": 0,
+        "explanation": "quel меняет форму по роду и числу существительного: un film (m) → quel film, une question (f) → quelle question, des films → quels films, des questions → quelles questions. На слух все четыре звучат /kɛl/, отличается только написание."
+      },
+      {
+        "id": "wc-questions-quel-hint",
+        "kind": "wordHint",
+        "wordId": "wl-questions-quel",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: вопросительное «какой / который», которое ставят перед существительным и согласуют с ним в роде.",
+        "answer": "quel",
+        "hints": [
+          "Начинается на qu…",
+          "4 формы: quel / quelle / quels / quelles",
+          "___ heure est-il ?"
+        ],
+        "explanation": "quel — «какой/который». Согласуется с существительным: quel âge, quelle heure, quels jours, quelles idées. Все формы читаются /kɛl/."
+      }
+    ]
+  }
+]

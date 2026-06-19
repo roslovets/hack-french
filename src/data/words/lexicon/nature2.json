@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-nature2-arbre",
+    "lemma": "arbre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/aʁbʁ/",
+    "translationsRu": ["дерево"],
+    "translationsEn": ["tree"],
+    "semanticCore": "Дерево как растение со стволом и кроной; основа леса, парка, сада.",
+    "collocations": [
+      {
+        "fr": "un grand arbre",
+        "ru": "большое дерево"
+      },
+      {
+        "fr": "grimper à un arbre",
+        "ru": "лезть на дерево"
+      },
+      {
+        "fr": "à l'ombre d'un arbre",
+        "ru": "в тени дерева"
+      },
+      {
+        "fr": "les feuilles de l'arbre",
+        "ru": "листья дерева"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bois",
+        "note": "arbre = дерево как растение (живое); bois = древесина (материал) или небольшой лес/роща. Стол сделан из bois, в саду растёт un arbre."
+      },
+      {
+        "with": "forêt",
+        "note": "un arbre = одно дерево; une forêt = лес (много деревьев вместе)."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A1",
+    "tags": ["nature2", "vegetation"],
+    "caseIds": ["wc-nature2"]
+  },
+  {
+    "id": "wl-nature2-montagne",
+    "lemma": "montagne",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mɔ̃.taɲ/",
+    "translationsRu": ["гора"],
+    "translationsEn": ["mountain"],
+    "semanticCore": "Гора как высокий рельеф; «à la montagne» — в горах как место отдыха, противоположность морю.",
+    "collocations": [
+      {
+        "fr": "à la montagne",
+        "ru": "в горах / в горы"
+      },
+      {
+        "fr": "une haute montagne",
+        "ru": "высокая гора"
+      },
+      {
+        "fr": "le sommet de la montagne",
+        "ru": "вершина горы"
+      },
+      {
+        "fr": "faire de la montagne",
+        "ru": "заниматься горным туризмом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "colline",
+        "note": "montagne = гора (высокая); colline = холм (невысокая возвышенность). Гора выше холма."
+      },
+      {
+        "with": "mer",
+        "note": "à la montagne = в горах; à la mer = на море. Классическая пара мест отдыха: горы или море."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A1",
+    "tags": ["nature2", "relief"],
+    "caseIds": ["wc-nature2"]
+  },
+  {
+    "id": "wl-nature2-mer",
+    "lemma": "mer",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mɛʁ/",
+    "translationsRu": ["море"],
+    "translationsEn": ["sea"],
+    "semanticCore": "Море как большой солёный водоём; «au bord de la mer» — на побережье как место отдыха.",
+    "collocations": [
+      {
+        "fr": "au bord de la mer",
+        "ru": "на берегу моря / на побережье"
+      },
+      {
+        "fr": "aller à la mer",
+        "ru": "поехать на море"
+      },
+      {
+        "fr": "des fruits de mer",
+        "ru": "морепродукты"
+      },
+      {
+        "fr": "la mer Méditerranée",
+        "ru": "Средиземное море"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mère / maire",
+        "note": "mer (море), mère (мать) и maire (мэр) звучат одинаково /mɛʁ/ — омофоны. Различаются только написанием и смыслом."
+      },
+      {
+        "with": "océan",
+        "note": "la mer = море (меньше, часто у берега); l'océan = океан (огромный, открытый: Atlantique, Pacifique)."
+      }
+    ],
+    "frequencyRank": 460,
+    "level": "A1",
+    "tags": ["nature2", "eau"],
+    "caseIds": ["wc-nature2"]
+  },
+  {
+    "id": "wl-nature2-riviere",
+    "lemma": "rivière",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁi.vjɛʁ/",
+    "translationsRu": ["река"],
+    "translationsEn": ["river"],
+    "semanticCore": "Река (обычно небольшая), впадающая в другую реку, а не прямо в море.",
+    "collocations": [
+      {
+        "fr": "se baigner dans la rivière",
+        "ru": "купаться в реке"
+      },
+      {
+        "fr": "au bord de la rivière",
+        "ru": "на берегу реки"
+      },
+      {
+        "fr": "traverser la rivière",
+        "ru": "перейти реку"
+      },
+      {
+        "fr": "une petite rivière",
+        "ru": "небольшая речка"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fleuve",
+        "note": "rivière = река, впадающая в другую реку; fleuve = большая река, впадающая прямо в море (la Seine, la Loire — des fleuves)."
+      },
+      {
+        "with": "river (англ.)",
+        "note": "англ. «river» = любая река; фр. rivière — только река, не впадающая в море напрямую. Не дословный эквивалент."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A1",
+    "tags": ["nature2", "eau"],
+    "caseIds": ["wc-nature2"]
+  },
+  {
+    "id": "wl-nature2-foret",
+    "lemma": "forêt",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fɔ.ʁɛ/",
+    "translationsRu": ["лес"],
+    "translationsEn": ["forest"],
+    "semanticCore": "Лес как большой массив деревьев; место прогулок, грибов, дикой природы.",
+    "collocations": [
+      {
+        "fr": "se promener dans la forêt",
+        "ru": "гулять по лесу"
+      },
+      {
+        "fr": "une forêt dense",
+        "ru": "густой лес"
+      },
+      {
+        "fr": "au cœur de la forêt",
+        "ru": "в глубине леса"
+      },
+      {
+        "fr": "une forêt de sapins",
+        "ru": "еловый лес"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bois",
+        "note": "forêt = лес (большой); bois = небольшой лесок, роща. «un petit bois» меньше, чем «une forêt»."
+      },
+      {
+        "with": "arbre",
+        "note": "forêt = лес (множество деревьев); arbre = одно дерево. Лес состоит из arbres."
+      }
+    ],
+    "frequencyRank": 690,
+    "level": "A1",
+    "tags": ["nature2", "vegetation"],
+    "caseIds": ["wc-nature2"]
+  },
+  {
+    "id": "wl-nature2-plage",
+    "lemma": "plage",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/plaʒ/",
+    "translationsRu": ["пляж"],
+    "translationsEn": ["beach"],
+    "semanticCore": "Пляж — песчаный или галечный берег у моря, где загорают и купаются.",
+    "collocations": [
+      {
+        "fr": "aller à la plage",
+        "ru": "идти на пляж"
+      },
+      {
+        "fr": "une plage de sable",
+        "ru": "песчаный пляж"
+      },
+      {
+        "fr": "bronzer sur la plage",
+        "ru": "загорать на пляже"
+      },
+      {
+        "fr": "une serviette de plage",
+        "ru": "пляжное полотенце"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mer",
+        "note": "la plage = пляж (берег, песок); la mer = само море (вода). На plage загорают, в mer купаются."
+      },
+      {
+        "with": "page",
+        "note": "plage /plaʒ/ — пляж; page /paʒ/ — страница. Различаются звуком: plage с -l-, page без него."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A1",
+    "tags": ["nature2", "eau"],
+    "caseIds": ["wc-nature2"]
+  },
+  {
+    "id": "wl-nature2-ciel",
+    "lemma": "ciel",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sjɛl/",
+    "translationsRu": ["небо"],
+    "translationsEn": ["sky"],
+    "semanticCore": "Небо над головой: его цвет и облака описывают погоду; ночью на нём звёзды.",
+    "collocations": [
+      {
+        "fr": "un ciel bleu",
+        "ru": "голубое небо"
+      },
+      {
+        "fr": "un ciel sans nuages",
+        "ru": "безоблачное небо"
+      },
+      {
+        "fr": "un ciel étoilé",
+        "ru": "звёздное небо"
+      },
+      {
+        "fr": "sous le ciel",
+        "ru": "под небом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sel",
+        "note": "ciel /sjɛl/ — небо; sel /sɛl/ — соль. Звучат похоже, но ciel с -i- (звук /j/), а sel без него."
+      },
+      {
+        "with": "nuage",
+        "note": "le ciel = небо (всё пространство наверху); le nuage = облако (плавает по небу). Nuages находятся в ciel."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A1",
+    "tags": ["nature2", "ciel"],
+    "caseIds": ["wc-nature2"]
+  },
+  {
+    "id": "wl-nature2-etoile",
+    "lemma": "étoile",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.twal/",
+    "translationsRu": ["звезда"],
+    "translationsEn": ["star"],
+    "semanticCore": "Звезда на ночном небе; также «звезда» как фигура (★) и в выражениях.",
+    "collocations": [
+      {
+        "fr": "une étoile filante",
+        "ru": "падающая звезда"
+      },
+      {
+        "fr": "un ciel plein d'étoiles",
+        "ru": "небо, полное звёзд"
+      },
+      {
+        "fr": "un hôtel cinq étoiles",
+        "ru": "пятизвёздочный отель"
+      },
+      {
+        "fr": "l'étoile du berger",
+        "ru": "вечерняя звезда (Венера)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "soleil",
+        "note": "une étoile = звезда (далёкая, ночью); le soleil = солнце (наша звезда, днём). По-французски солнце обычно не называют étoile в быту."
+      },
+      {
+        "with": "toile",
+        "note": "étoile /e.twal/ — звезда; toile /twal/ — холст, полотно, паутина. Различаются начальным é-."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A1",
+    "tags": ["nature2", "ciel"],
+    "caseIds": ["wc-nature2"]
+  }
+]

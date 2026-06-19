@@ -1,0 +1,394 @@
+[
+  {
+    "id": "wc-boss-descriptions",
+    "title": "Босс: цвета и описания",
+    "theme": "couleurs",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-couleurs-rouge",
+      "wl-couleurs-bleu",
+      "wl-couleurs-vert",
+      "wl-couleurs-jaune",
+      "wl-couleurs-noir",
+      "wl-couleurs-blanc",
+      "wl-couleurs-gris",
+      "wl-couleurs-orange",
+      "wl-adjectifs-grand",
+      "wl-adjectifs-petit",
+      "wl-adjectifs-bon",
+      "wl-adjectifs-mauvais",
+      "wl-adjectifs-beau",
+      "wl-adjectifs-nouveau",
+      "wl-adjectifs-vieux",
+      "wl-adjectifs-jeune"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-descriptions-grand-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adjectifs-grand",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Финальное дело: ты описываешь свой дом и город. Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ils habitent une grande maison.",
+          "Mon frère est très grand.",
+          "Lyon est une grande ville."
+        ],
+        "options": ["большой, высокий", "маленький", "старый", "красивый"],
+        "correctIndex": 0,
+        "explanation": "grand — большой (о размере) и высокий (о росте). В женском роде grande: une grande maison, une grande ville."
+      },
+      {
+        "id": "wc-boss-descriptions-grand-trap",
+        "kind": "trap",
+        "wordId": "wl-adjectifs-grand",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Место прилагательного меняет смысл. «un grand homme» и «un homme grand» — одно и то же?",
+        "phrases": ["C'est un grand homme.", "C'est un homme grand."],
+        "options": [
+          "Нет: «un grand homme» — великий человек; «un homme grand» — высокий мужчина.",
+          "Да, разницы нет, оба значат «высокий».",
+          "Да, оба значат «великий».",
+          "Нет: «un grand homme» — толстый, «un homme grand» — худой."
+        ],
+        "correctIndex": 0,
+        "explanation": "С grand место решает смысл: перед словом (un grand homme) — «великий», после слова (un homme grand) — «высокий». Для роста ставь grand после: il est grand."
+      },
+      {
+        "id": "wc-boss-descriptions-petit-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-adjectifs-petit",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Перекрёстное дело. Три слова — это цвета, одно — размер. Найди лишнее.",
+        "options": ["rouge", "petit", "bleu", "vert"],
+        "correctIndex": 1,
+        "explanation": "rouge (красный), bleu (синий) и vert (зелёный) — цвета. petit (маленький) — лишнее: это размер, а не цвет."
+      },
+      {
+        "id": "wc-boss-descriptions-rouge-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-couleurs-rouge",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты выбираешь, что надеть, и идёшь по городу. Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Elle porte une robe rouge.",
+          "Le feu est rouge, on s'arrête.",
+          "Il commande un verre de vin rouge."
+        ],
+        "options": ["красный", "розовый", "оранжевый", "тёплый"],
+        "correctIndex": 0,
+        "explanation": "rouge — красный. Форма не меняется по роду: un vin rouge, une robe rouge. Розовый — rose."
+      },
+      {
+        "id": "wc-boss-descriptions-vert-trap",
+        "kind": "trap",
+        "wordId": "wl-couleurs-vert",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "У светофора официант говорит /vɛʁ/. Какое из написаний означает «зелёный»?",
+        "phrases": ["Le feu passe au vert, on traverse.", "Il me sert un verre d'eau."],
+        "options": ["vert", "verre", "ver", "vers"],
+        "correctIndex": 0,
+        "explanation": "Все четыре звучат одинаково /vɛʁ/. «Зелёный» — vert (verte в ж. роде). verre — стакан/стекло, ver — червяк, vers — стихи / «к, в направлении». Различают по смыслу и написанию."
+      },
+      {
+        "id": "wc-boss-descriptions-bleu-cmp",
+        "kind": "compare",
+        "wordId": "wl-couleurs-bleu",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Ты описываешь пейзаж за окном. В чём разница между этими двумя фразами?",
+        "phrases": ["Le ciel est bleu.", "L'herbe est verte."],
+        "options": [
+          "bleu — синий/голубой (небо, море); vert — зелёный (трава, листья).",
+          "Это синонимы, оба значат «синий».",
+          "bleu — зелёный, а vert — синий.",
+          "Разница только в роде, цвет один и тот же."
+        ],
+        "correctIndex": 0,
+        "explanation": "bleu = синий/голубой (le ciel est bleu), vert = зелёный (l'herbe est verte). Это два разных цвета, которые легко спутать в природе."
+      },
+      {
+        "id": "wc-boss-descriptions-jaune-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-couleurs-jaune",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало. Они похожи, но это разные слова.",
+        "audioText": "jaune",
+        "options": ["jaune", "jeune", "jeûne"],
+        "correctIndex": 0,
+        "explanation": "jaune /ʒon/ — жёлтый. Похожие: jeune /ʒœn/ — молодой, jeûne /ʒøn/ — пост (воздержание от еды). Звук в середине разный: /o/ против /œ/ и /ø/."
+      },
+      {
+        "id": "wc-boss-descriptions-jaune-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-couleurs-jaune",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Перекрёстное дело. Три слова — цвета, одно — возраст. Найди лишнее.",
+        "options": ["jaune", "jeune", "orange", "gris"],
+        "correctIndex": 1,
+        "explanation": "jaune (жёлтый), orange (оранжевый) и gris (серый) — цвета. jeune (молодой) — лишнее: это возраст, а не цвет. Осторожно: jaune и jeune почти близнецы на слух и на письме."
+      },
+      {
+        "id": "wc-boss-descriptions-orange-trap",
+        "kind": "trap",
+        "wordId": "wl-couleurs-orange",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«Оранжевые туфли» — des chaussures …? Туфли женского рода и во множественном числе.",
+        "options": [
+          "des chaussures orange",
+          "des chaussures oranges",
+          "des chaussures orangées",
+          "des chaussures orangé"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка согласования: orange как цвет НЕ меняется (это название фрукта), поэтому des chaussures orange — без -s и без -e. Сравни: une robe verte (vert согласуется), но une robe orange (orange неизменяемо)."
+      },
+      {
+        "id": "wc-boss-descriptions-vieux-collo",
+        "kind": "sort",
+        "wordId": "wl-adjectifs-vieux",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Перекрёстное дело: формы vieux и его соседей. Какие сочетания звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un vieil ami",
+            "basket": "ok"
+          },
+          {
+            "text": "une vieille maison",
+            "basket": "ok"
+          },
+          {
+            "text": "un vieux manteau gris",
+            "basket": "ok"
+          },
+          {
+            "text": "un vieux ami",
+            "basket": "no"
+          },
+          {
+            "text": "une vieux voiture",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Перед мужским словом на гласную vieux → vieil: «un vieil ami» (не «un vieux ami»). В женском роде всегда vieille: «une vieille maison» (не «une vieux voiture»). «un vieux manteau gris» верно: старое серое пальто."
+      },
+      {
+        "id": "wc-boss-descriptions-noir-cmp",
+        "kind": "compare",
+        "wordId": "wl-couleurs-noir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Уже вечер, темнеет. В чём разница между этими двумя фразами?",
+        "phrases": ["Le chat est noir.", "Il fait noir dehors."],
+        "options": [
+          "Первая — кот чёрного цвета; вторая — на улице темно (безличное «il fait noir»).",
+          "Обе значат «кот чёрный».",
+          "Обе значат «на улице темно».",
+          "Первая значит «темно», вторая — «кот чёрный»."
+        ],
+        "correctIndex": 0,
+        "explanation": "noir — чёрный как цвет: «le chat est noir». Но «il fait noir» — устойчивое безличное выражение «темно» (как «il fait beau», «il fait froid»), а не про цвет предмета."
+      },
+      {
+        "id": "wc-boss-descriptions-blanc-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-couleurs-blanc",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало. Они похожи, но это разные слова.",
+        "audioText": "blanc",
+        "options": ["blanc", "blond", "plan"],
+        "correctIndex": 0,
+        "explanation": "blanc /blɑ̃/ — белый. Похожие: blond /blɔ̃/ — светловолосый, plan /plɑ̃/ — план/карта. Разница в носовом гласном (/ɑ̃/ против /ɔ̃/) и в первом согласном."
+      },
+      {
+        "id": "wc-boss-descriptions-blanc-collo",
+        "kind": "sort",
+        "wordId": "wl-couleurs-blanc",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Внимание к нерегулярному женскому роду blanche. Какие сочетания звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "le vin blanc",
+            "basket": "ok"
+          },
+          {
+            "text": "une chemise blanche",
+            "basket": "ok"
+          },
+          {
+            "text": "une nuit blanche",
+            "basket": "ok"
+          },
+          {
+            "text": "une chemise blanc",
+            "basket": "no"
+          },
+          {
+            "text": "une robe blance",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Женский род blanc нерегулярный: blanc → blanche. «une chemise blanche» (не «blanc»), и пишется через -ch-: «blanche», не «blance». «une nuit blanche» — бессонная ночь. «le vin blanc» — мужской род, blanc верно."
+      },
+      {
+        "id": "wc-boss-descriptions-gris-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-couleurs-gris",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Погода пасмурная, ты описываешь прохожего. Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Aujourd'hui, le ciel est gris.",
+          "Mon grand-père a les cheveux gris.",
+          "Il porte un vieux manteau gris."
+        ],
+        "options": ["серый", "чёрный", "синий", "коричневый"],
+        "correctIndex": 0,
+        "explanation": "gris — серый, цвет между чёрным и белым. «le ciel est gris» — пасмурно, «les cheveux gris» — седые волосы. Женский род — grise."
+      },
+      {
+        "id": "wc-boss-descriptions-petit-cmp",
+        "kind": "compare",
+        "wordId": "wl-adjectifs-petit",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Перекрёстное дело: возраст или размер? В чём разница между этими фразами?",
+        "phrases": ["C'est un petit garçon.", "C'est un jeune homme."],
+        "options": [
+          "petit garçon — маленький мальчик (ребёнок); jeune homme — молодой человек (взрослый).",
+          "Это одно и то же.",
+          "petit garçon — взрослый, jeune homme — ребёнок.",
+          "Оба значат «высокий мальчик»."
+        ],
+        "correctIndex": 0,
+        "explanation": "petit — про маленький размер или возраст ребёнка; jeune — про молодой возраст взрослого. «un petit garçon» — малыш, «un jeune homme» — юноша."
+      },
+      {
+        "id": "wc-boss-descriptions-jeune-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adjectifs-jeune",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "В кафе ты разглядываешь людей. Что значит выделенное слово?",
+        "contexts": [
+          "Une jeune fille entre dans le café.",
+          "C'est un jeune homme très poli.",
+          "Tu es encore trop jeune pour ça."
+        ],
+        "options": ["молодой, юный", "старый", "высокий", "красивый"],
+        "correctIndex": 0,
+        "explanation": "jeune — молодой. Форма одинакова в мужском и женском роде: un jeune homme, une jeune fille. «trop jeune» — слишком молодой."
+      },
+      {
+        "id": "wc-boss-descriptions-vieux-cmp",
+        "kind": "compare",
+        "wordId": "wl-adjectifs-vieux",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Ты сравниваешь две машины у дома. В чём разница по смыслу?",
+        "phrases": ["C'est une vieille voiture.", "C'est une nouvelle voiture."],
+        "options": [
+          "vieille — старая, давняя; nouvelle — новая для хозяина, недавно появившаяся.",
+          "Это одно и то же.",
+          "vieille — новая, nouvelle — старая.",
+          "Обе значат «красивая»."
+        ],
+        "correctIndex": 0,
+        "explanation": "vieux/vieille — старый по возрасту или изношенный; nouveau/nouvelle — новый, недавно появившийся. Это антонимы по «возрасту» вещи."
+      },
+      {
+        "id": "wc-boss-descriptions-nouveau-trap",
+        "kind": "trap",
+        "wordId": "wl-adjectifs-nouveau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг купил «une nouvelle voiture». Обязательно ли она прямо из салона?",
+        "phrases": ["J'ai une nouvelle voiture.", "J'ai acheté une voiture neuve."],
+        "options": [
+          "Нет: nouveau — новый для него (может быть подержанным). Новьё из магазина — neuf (une voiture neuve).",
+          "Да: nouveau всегда значит «совсем новый, из магазина».",
+          "Да: nouveau и neuf — одно и то же.",
+          "Нет: nouveau значит «старый»."
+        ],
+        "correctIndex": 0,
+        "explanation": "nouveau — новый в смысле «другой, недавно появившийся» (может быть б/у). neuf — новёхонький, только что сделанный: «une voiture neuve». «une nouvelle voiture» может быть подержанной."
+      },
+      {
+        "id": "wc-boss-descriptions-beau-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-adjectifs-beau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Перекрёстное дело. Три слова — оценки и качества, одно — цвет. Найди лишнее.",
+        "options": ["beau", "bon", "blanc", "mauvais"],
+        "correctIndex": 2,
+        "explanation": "beau (красивый), bon (хороший) и mauvais (плохой) — оценки и качества. blanc (белый) — лишнее: это цвет, а не оценка."
+      },
+      {
+        "id": "wc-boss-descriptions-bon-trap",
+        "kind": "trap",
+        "wordId": "wl-adjectifs-bon",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ты хвалишь кафе. «хороший» и «хорошо» по-французски — это одно слово?",
+        "phrases": ["C'est un bon café.", "Ce café marche bien."],
+        "options": [
+          "Нет: bon — хороший (прилагательное), bien — хорошо (наречие).",
+          "Да, и то и другое — bon.",
+          "Да, и то и другое — bien.",
+          "Нет: bon — хорошо, bien — хороший."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка bon / bien: un bon café — хороший кофе (прилагательное); il travaille bien — он хорошо работает (наречие). Сравнительная степень bon — meilleur, а не «plus bon»."
+      },
+      {
+        "id": "wc-boss-descriptions-mauvais-hint",
+        "kind": "wordHint",
+        "wordId": "wl-adjectifs-mauvais",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: антоним к bon — то, что говорят про неудачный фильм или плохую погоду.",
+        "answer": "mauvais",
+        "hints": [
+          "Начинается на m…",
+          "Женский род mauvaise; конечная -s не читается: /mo.vɛ/",
+          "Il fait ___ aujourd'hui, il pleut."
+        ],
+        "explanation": "mauvais — плохой, неудачный. Женский род mauvaise: une mauvaise note. «il fait mauvais» — погода плохая. Антоним bon."
+      }
+    ]
+  }
+]

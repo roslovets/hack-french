@@ -1,0 +1,410 @@
+[
+  {
+    "id": "wc-boss-weather",
+    "title": "Босс: погода и природа",
+    "theme": "meteo",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-meteo-temps",
+      "wl-meteo-pluie",
+      "wl-meteo-soleil",
+      "wl-meteo-vent",
+      "wl-meteo-neige",
+      "wl-meteo-chaud",
+      "wl-meteo-nuage",
+      "wl-saisons-saison",
+      "wl-saisons-printemps",
+      "wl-saisons-ete",
+      "wl-saisons-hiver",
+      "wl-saisons-fleur",
+      "wl-saisons-feuille",
+      "wl-saisons-climat",
+      "wl-animaux-animal",
+      "wl-animaux-chat",
+      "wl-animaux-oiseau",
+      "wl-animaux-cheval",
+      "wl-animaux-vache",
+      "wl-animaux-poule"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-weather-temps-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo-temps",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Финальный босс трёх тем: погода, времена года и животные. Включаем радио — диктор начинает со сводки. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Quel temps fait-il aujourd'hui ?",
+          "Demain, le temps sera couvert sur tout le pays.",
+          "On annule la promenade : le temps est vraiment mauvais."
+        ],
+        "options": ["погода", "время", "температура", "сезон"],
+        "correctIndex": 0,
+        "explanation": "У temps (m) два смысла, но здесь везде «погода»: «Quel temps fait-il ?» — какая погода, «le temps est mauvais» — погода плохая. Когда temps значит «время» (avoir le temps), это видно по контексту. Прогноз-сводку называют la météo."
+      },
+      {
+        "id": "wc-boss-weather-temps-trap",
+        "kind": "trap",
+        "wordId": "wl-meteo-temps",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Диктор переходит к долгосрочному прогнозу. Легко спутать «le temps» (погода сегодня) и «le climat» (климат в целом). Как сказать «климат становится мягче»?",
+        "phrases": ["Aujourd'hui, le temps est ensoleillé.", "Ici, le climat devient plus doux."],
+        "options": [
+          "le climat devient plus doux",
+          "le temps devient plus doux",
+          "la saison devient plus douce",
+          "la météo devient plus douce"
+        ],
+        "correctIndex": 0,
+        "explanation": "le temps — погода на сегодня («il fait beau»), а le climat — климат местности в целом, на годы. «Климат теплеет» — это про долгий срок, поэтому le climat, а не le temps. la météo — это прогноз, а saison — время года."
+      },
+      {
+        "id": "wc-boss-weather-pluie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo-pluie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "За окном портится погода. Что значит повторяющееся слово?",
+        "contexts": [
+          "La pluie tombe depuis ce matin.",
+          "On marche sous la pluie sans parapluie.",
+          "Une pluie fine couvre la ville."
+        ],
+        "options": ["дождь", "лужа", "гроза", "зонт"],
+        "correctIndex": 0,
+        "explanation": "pluie (f) — дождь: «la pluie tombe» (идёт дождь), «sous la pluie» (под дождём), «une pluie fine» (мелкий дождь). Зонт — le parapluie (буквально «против дождя»), а «идёт дождь» можно сказать и глаголом: il pleut."
+      },
+      {
+        "id": "wc-boss-weather-soleil-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-meteo-soleil",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Тучи расходятся. Послушай и выбери, какое слово произнесли.",
+        "audioText": "soleil",
+        "options": ["soleil", "sommeil", "pareil", "bouteille"],
+        "correctIndex": 0,
+        "explanation": "soleil /sɔ.lɛj/ (солнце), sommeil /sɔ.mɛj/ (сон), pareil /pa.ʁɛj/ (такой же), bouteille /bu.tɛj/ (бутылка). Все оканчиваются на -eil/-eille /ɛj/ и звучат похоже. soleil различает середина с -l- (не -mm-, как в sommeil)."
+      },
+      {
+        "id": "wc-boss-weather-vent-cmp",
+        "kind": "compare",
+        "wordId": "wl-meteo-vent",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Погода меняется на глазах. В чём разница между этими двумя фразами?",
+        "phrases": ["Il y a du vent aujourd'hui.", "Il y a du soleil aujourd'hui."],
+        "options": [
+          "vent — ветер (дует); soleil — солнце (светит). Оба через «il y a du…», но это разные явления.",
+          "vent — солнце; soleil — ветер.",
+          "Это синонимы, оба про ясную погоду.",
+          "vent — дождь; soleil — снег."
+        ],
+        "correctIndex": 0,
+        "explanation": "le vent — ветер: «il y a du vent» — ветрено, «le vent souffle» — ветер дует. le soleil — солнце: «il y a du soleil» — солнечно. Конструкция «il y a du…» одна, а явления разные. Не путай vent /vɑ̃/ с vin /vɛ̃/ (вино)."
+      },
+      {
+        "id": "wc-boss-weather-nuage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo-nuage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Смотрим на небо. Что значит выделенное слово?",
+        "contexts": [
+          "De gros nuages gris arrivent de l'ouest.",
+          "Le ciel est sans nuages ce matin.",
+          "Le soleil se cache derrière un nuage."
+        ],
+        "options": ["облако, туча", "небо", "туман", "тень"],
+        "correctIndex": 0,
+        "explanation": "nuage (m) — облако или туча: «des nuages gris» (серые тучи), «un ciel sans nuages» (безоблачное небо). Само небо — le ciel: облака плывут по небу. Туман у земли — le brouillard, это другое слово."
+      },
+      {
+        "id": "wc-boss-weather-chaud-sort",
+        "kind": "sort",
+        "wordId": "wl-meteo-chaud",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Ты говоришь о жаре и холоде. Какие сочетания звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "il fait chaud",
+            "basket": "ok"
+          },
+          {
+            "text": "avoir chaud",
+            "basket": "ok"
+          },
+          {
+            "text": "un chocolat chaud",
+            "basket": "ok"
+          },
+          {
+            "text": "il est chaud aujourd'hui (о погоде)",
+            "basket": "no"
+          },
+          {
+            "text": "je suis chaud (= мне жарко)",
+            "basket": "no"
+          }
+        ],
+        "explanation": "О погоде — безличное «il fait chaud» (жарко), о человеке — «avoir chaud» (мне жарко), о предмете — «un chocolat chaud». А «il est chaud» о погоде и «je suis chaud» в значении «мне жарко» — калька: по-французски жара через faire (погода) и avoir (человек), не через être."
+      },
+      {
+        "id": "wc-boss-weather-climat-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-saisons-climat",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Диктор заканчивает долгосрочным обзором. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "La France a un climat tempéré.",
+          "Sur la côte, le climat est doux toute l'année.",
+          "On parle beaucoup du changement climatique."
+        ],
+        "options": ["климат", "погода сегодня", "прогноз", "температура"],
+        "correctIndex": 0,
+        "explanation": "climat (m) — климат местности в целом, на годы: «un climat tempéré» (умеренный климат), «le changement climatique» (изменение климата). Погода на сегодня — le temps, прогноз — la météo. Конечная t немая: /kli.ma/."
+      },
+      {
+        "id": "wc-boss-weather-saison-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-saisons-saison",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Переходим ко второй теме — времена года. Что связывает все три сцены?",
+        "contexts": [
+          "L'année a quatre saisons.",
+          "On mange des fruits de saison.",
+          "Le printemps est ma saison préférée."
+        ],
+        "options": ["время года, сезон", "год", "месяц", "праздник"],
+        "correctIndex": 0,
+        "explanation": "saison (f) — время года или сезон: «les quatre saisons» (четыре времени года), «des fruits de saison» (сезонные фрукты), «ma saison préférée» (любимое время года). Конкретное время года, например весна, — это le printemps."
+      },
+      {
+        "id": "wc-boss-weather-printemps-trap",
+        "kind": "trap",
+        "wordId": "wl-saisons-printemps",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ловушка предлогов: для большинства сезонов «en», а для одного — нет. Как правильно сказать «весной»?",
+        "phrases": ["Au printemps, les arbres fleurissent.", "En été, il fait chaud."],
+        "options": ["au printemps", "en printemps", "à printemps", "dans le printemps"],
+        "correctIndex": 0,
+        "explanation": "Весна — единственный сезон с предлогом «au»: au printemps (весной). У остальных «en»: en été, en automne, en hiver. «En printemps» — частая ошибка; правильно только au printemps."
+      },
+      {
+        "id": "wc-boss-weather-ete-trap",
+        "kind": "trap",
+        "wordId": "wl-saisons-ete",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово été выглядит одинаково в двух разных ролях. Что значит été во второй фразе?",
+        "phrases": ["Nous partons en vacances en été.", "J'ai été malade la semaine dernière."],
+        "options": [
+          "été — причастие глагола être («был»), это не «лето»",
+          "été — «лето» в обеих фразах",
+          "été — «жара»",
+          "été — «отпуск»"
+        ],
+        "correctIndex": 0,
+        "explanation": "l'été (m) — лето: «en été» (летом). Но в «j'ai été malade» été — это причастие глагола être («я был болен»), а не лето. Форма одна, но различает контекст: после avoir (j'ai été) это глагол, а не сезон."
+      },
+      {
+        "id": "wc-boss-weather-hiver-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-saisons-hiver",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Приходят холода. Послушай и выбери, какое слово произнесли.",
+        "audioText": "hiver",
+        "options": ["hiver", "hier", "vert", "ouvert"],
+        "correctIndex": 0,
+        "explanation": "hiver /i.vɛʁ/ (зима) — два слога. Похожи: hier /jɛʁ/ (вчера) — один слог, vert /vɛʁ/ (зелёный), ouvert /u.vɛʁ/ (открытый). h в hiver немое, поэтому говорят «en hiver», «l'hiver»."
+      },
+      {
+        "id": "wc-boss-weather-feuille-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-saisons-feuille",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Осень в парке. Что значит повторяющееся слово?",
+        "contexts": [
+          "En automne, les feuilles tombent.",
+          "Les feuilles mortes couvrent le sol.",
+          "Une feuille rouge se pose sur l'eau."
+        ],
+        "options": ["лист (дерева)", "цветок", "ветка", "трава"],
+        "correctIndex": 0,
+        "explanation": "feuille (f) — лист дерева (и лист бумаги — то же слово): «les feuilles tombent» (листья падают), «les feuilles mortes» (опавшие листья). Цветок — la fleur, это другая часть растения. Здесь речь именно об осенних листьях."
+      },
+      {
+        "id": "wc-boss-weather-fleur-hint",
+        "kind": "wordHint",
+        "wordId": "wl-saisons-fleur",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Весна вернулась. Вспомни слово: яркая часть растения, которую дарят в букете.",
+        "answer": "fleur",
+        "hints": [
+          "Начинается на fl…, женский род",
+          "Родственно англ. flower / floral",
+          "un bouquet de ___s — букет ___ов; «en ___s» — в цвету"
+        ],
+        "explanation": "fleur (f) — цветок: «un bouquet de fleurs» (букет цветов), «en fleurs» (в цвету), «offrir des fleurs» (дарить цветы). Не путай с feuille (лист) и с fleuve (большая река, /flœv/)."
+      },
+      {
+        "id": "wc-boss-weather-animal-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux-animal",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Переходим к третьей теме — животные. Что значит общее для всех сцен слово?",
+        "contexts": [
+          "Le chien est un animal domestique.",
+          "Au zoo, on voit des animaux sauvages.",
+          "Mon animal préféré, c'est le cheval."
+        ],
+        "options": ["животное", "питомец", "дикий зверь", "птица"],
+        "correctIndex": 0,
+        "explanation": "animal (m) — животное вообще: «un animal domestique» (домашнее), «un animal sauvage» (дикое), «mon animal préféré» (любимое). Множественное необычное: un animal → des animaux (как cheval → chevaux). Формы «animals» нет."
+      },
+      {
+        "id": "wc-boss-weather-cheval-hint",
+        "kind": "wordHint",
+        "wordId": "wl-animaux-cheval",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "На ферме. Вспомни слово: большое животное, на котором ездят верхом.",
+        "answer": "cheval",
+        "hints": [
+          "Начинается на ch…, мужской род",
+          "«monter à ___» — ездить верхом",
+          "Множественное необычное: des chev___ (на -aux)"
+        ],
+        "explanation": "cheval (m) — лошадь, конь: «monter à cheval» (ездить верхом), «un cheval blanc» (белая лошадь). Множественное — des chevaux (на -aux), формы «chevals» нет. Меньше и с длинными ушами — это âne (осёл)."
+      },
+      {
+        "id": "wc-boss-weather-oiseau-cmp",
+        "kind": "compare",
+        "wordId": "wl-animaux-oiseau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Во дворе фермы. В чём разница между этими двумя фразами?",
+        "phrases": ["Un oiseau chante dans l'arbre.", "La poule pond des œufs dans le poulailler."],
+        "options": [
+          "oiseau — птица вообще (часто дикая, летает); poule — курица (домашняя птица, несёт яйца).",
+          "oiseau — курица; poule — дикая птица.",
+          "Это синонимы, разницы нет.",
+          "oiseau — петух; poule — птенец."
+        ],
+        "correctIndex": 0,
+        "explanation": "un oiseau — птица в общем смысле: «l'oiseau chante» (птица поёт), «les oiseaux volent» (птицы летают). la poule — конкретно курица-несушка, домашняя птица: «la poule pond des œufs». Курица — частный случай птицы, но называют её именно poule."
+      },
+      {
+        "id": "wc-boss-weather-poule-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux-poule",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Остаёмся на ферме. Что значит повторяющееся слово?",
+        "contexts": [
+          "La poule pond des œufs tous les matins.",
+          "Les poules picorent dans la cour.",
+          "On élève des poules pour leurs œufs."
+        ],
+        "options": ["курица (живая, на ферме)", "курятина (блюдо)", "петух", "утка"],
+        "correctIndex": 0,
+        "explanation": "poule (f) — живая курица-несушка на ферме: «la poule pond des œufs» (курица несёт яйца), «un œuf de poule». А курятина как блюдо — le poulet. Петух — le coq. Не путай живую птицу (poule) с мясом (poulet)."
+      },
+      {
+        "id": "wc-boss-weather-cross-meteo-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-meteo-neige",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Кросс-тема: финальная сборка. Три слова — про погоду, одно — нет. Найди лишнее.",
+        "options": ["la pluie", "la neige", "le vent", "la vache"],
+        "correctIndex": 3,
+        "explanation": "la pluie (дождь), la neige (снег), le vent (ветер) — явления погоды. Лишнее — la vache (корова): это животное из другой темы, а не погода. neige сюда вписана как осадки: «la neige tombe» (идёт снег)."
+      },
+      {
+        "id": "wc-boss-weather-cross-chat-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-animaux-chat",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Кросс-тема: теперь наоборот. Три слова — времена года, одно — нет. Найди лишнее.",
+        "options": ["le printemps", "l'été", "l'hiver", "le chat"],
+        "correctIndex": 3,
+        "explanation": "le printemps (весна), l'été (лето), l'hiver (зима) — времена года. Лишнее — le chat (кот): это животное, а не сезон. Четвёртое время года, которого тут нет, — l'automne (осень)."
+      },
+      {
+        "id": "wc-boss-weather-cross-vache-sort",
+        "kind": "sort",
+        "wordId": "wl-animaux-vache",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Кросс-тема: погода, сезоны и животные перемешиваются. Какие сочетания звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "les vaches mangent de l'herbe en été",
+            "basket": "ok"
+          },
+          {
+            "text": "il fait froid en hiver",
+            "basket": "ok"
+          },
+          {
+            "text": "les oiseaux reviennent au printemps",
+            "basket": "ok"
+          },
+          {
+            "text": "la vache tombe comme la pluie",
+            "basket": "no"
+          },
+          {
+            "text": "il fait cheval aujourd'hui",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественны связки тем: «les vaches mangent de l'herbe en été» (коровы едят траву летом), «il fait froid en hiver», «les oiseaux reviennent au printemps» (птицы возвращаются весной). А «la vache tombe comme la pluie» и «il fait cheval» — бессмыслица: падает дождь/снег, а не корова; «il fait…» сочетается с погодой (froid, chaud), а не с животным."
+      },
+      {
+        "id": "wc-boss-weather-cross-temps-final",
+        "kind": "oddOneOut",
+        "wordId": "wl-meteo-temps",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Финал босса. С тремя словами безличное «il fait…» (о погоде) звучит правильно. Найди фразу, где так не говорят.",
+        "options": ["il fait froid", "il fait chaud", "il fait du vent", "il fait un oiseau"],
+        "correctIndex": 3,
+        "explanation": "«il fait…» описывает погоду: il fait froid (холодно), il fait chaud (жарко), il fait du vent (ветрено). «il fait un oiseau» — бессмыслица: птица не погода. Босс пройден — погода, сезоны и животные собраны вместе."
+      }
+    ]
+  }
+]
