@@ -1,0 +1,326 @@
+[
+  {
+    "id": "wl-animaux-chat",
+    "lemma": "chat",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃa/",
+    "translationsRu": ["кот", "кошка"],
+    "translationsEn": ["cat"],
+    "semanticCore": "Кот/кошка как домашнее животное; по умолчанию un chat обозначает любую кошку независимо от пола.",
+    "collocations": [
+      {
+        "fr": "un chat noir",
+        "ru": "чёрный кот"
+      },
+      {
+        "fr": "le chat ronronne",
+        "ru": "кот мурлычет"
+      },
+      {
+        "fr": "avoir un chat",
+        "ru": "держать кота"
+      },
+      {
+        "fr": "nourrir le chat",
+        "ru": "кормить кота"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chatte",
+        "note": "un chat — кот / кошка вообще (нейтрально); une chatte — именно кошка (самка). По умолчанию говорят un chat."
+      },
+      {
+        "with": "chien",
+        "note": "chat — кот; chien — собака. Не путать: «promener le chien», но кота обычно не выгуливают."
+      }
+    ],
+    "frequencyRank": 220,
+    "level": "A1",
+    "tags": ["animaux", "domestique"],
+    "caseIds": ["wc-animaux"]
+  },
+  {
+    "id": "wl-animaux-chien",
+    "lemma": "chien",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃjɛ̃/",
+    "translationsRu": ["собака", "пёс"],
+    "translationsEn": ["dog"],
+    "semanticCore": "Собака как домашнее животное и спутник человека; самку называют une chienne.",
+    "collocations": [
+      {
+        "fr": "promener le chien",
+        "ru": "выгуливать собаку"
+      },
+      {
+        "fr": "un chien fidèle",
+        "ru": "верный пёс"
+      },
+      {
+        "fr": "le chien aboie",
+        "ru": "собака лает"
+      },
+      {
+        "fr": "un chien de garde",
+        "ru": "сторожевая собака"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chienne",
+        "note": "un chien — собака / пёс (нейтрально или самец); une chienne — собака-самка."
+      },
+      {
+        "with": "loup",
+        "note": "chien — домашняя собака; loup — волк (дикий). Похожи внешне, но разные слова."
+      }
+    ],
+    "frequencyRank": 210,
+    "level": "A1",
+    "tags": ["animaux", "domestique"],
+    "caseIds": ["wc-animaux"]
+  },
+  {
+    "id": "wl-animaux-oiseau",
+    "lemma": "oiseau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/wa.zo/",
+    "translationsRu": ["птица"],
+    "translationsEn": ["bird"],
+    "semanticCore": "Птица — любое летающее существо с перьями и крыльями; множественное des oiseaux.",
+    "collocations": [
+      {
+        "fr": "un petit oiseau",
+        "ru": "маленькая птичка"
+      },
+      {
+        "fr": "l'oiseau chante",
+        "ru": "птица поёт"
+      },
+      {
+        "fr": "les oiseaux volent",
+        "ru": "птицы летают"
+      },
+      {
+        "fr": "un nid d'oiseau",
+        "ru": "птичье гнездо"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poule",
+        "note": "oiseau — птица вообще (часто летающая, дикая); poule — курица (домашняя птица, почти не летает)."
+      },
+      {
+        "with": "œuf",
+        "note": "oiseau — птица; œuf — яйцо. Связаны по смыслу, но это разные слова: oiseau не значит «яйцо»."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A1",
+    "tags": ["animaux", "nature"],
+    "caseIds": ["wc-animaux"]
+  },
+  {
+    "id": "wl-animaux-cheval",
+    "lemma": "cheval",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃ(ə).val/",
+    "translationsRu": ["лошадь", "конь"],
+    "translationsEn": ["horse"],
+    "semanticCore": "Лошадь как крупное животное, на котором ездят верхом; множественное — des chevaux.",
+    "collocations": [
+      {
+        "fr": "monter à cheval",
+        "ru": "ездить верхом"
+      },
+      {
+        "fr": "un cheval blanc",
+        "ru": "белая лошадь"
+      },
+      {
+        "fr": "une course de chevaux",
+        "ru": "скачки"
+      },
+      {
+        "fr": "le cheval galope",
+        "ru": "лошадь скачет галопом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chevaux",
+        "note": "un cheval → des chevaux: слова на -al образуют множественное на -aux. Формы «chevals» нет."
+      },
+      {
+        "with": "âne",
+        "note": "cheval — лошадь / конь; âne — осёл (меньше, с длинными ушами). Не путать."
+      }
+    ],
+    "frequencyRank": 410,
+    "level": "A1",
+    "tags": ["animaux", "ferme"],
+    "caseIds": ["wc-animaux"]
+  },
+  {
+    "id": "wl-animaux-vache",
+    "lemma": "vache",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vaʃ/",
+    "translationsRu": ["корова"],
+    "translationsEn": ["cow"],
+    "semanticCore": "Корова как фермерское животное, дающее молоко; самка крупного рогатого скота.",
+    "collocations": [
+      {
+        "fr": "le lait de vache",
+        "ru": "коровье молоко"
+      },
+      {
+        "fr": "une vache laitière",
+        "ru": "молочная корова"
+      },
+      {
+        "fr": "la vache mange de l'herbe",
+        "ru": "корова ест траву"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bœuf",
+        "note": "vache — корова (самка, молоко); bœuf — бык/вол, а также «говядина» как мясо. Телёнок — un veau."
+      },
+      {
+        "with": "chèvre",
+        "note": "vache — корова; chèvre — коза (меньше, с рожками). Молоко бывает и коровье (de vache), и козье (de chèvre)."
+      }
+    ],
+    "frequencyRank": 470,
+    "level": "A1",
+    "tags": ["animaux", "ferme"],
+    "caseIds": ["wc-animaux"]
+  },
+  {
+    "id": "wl-animaux-lapin",
+    "lemma": "lapin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/la.pɛ̃/",
+    "translationsRu": ["кролик"],
+    "translationsEn": ["rabbit"],
+    "semanticCore": "Кролик — небольшой зверёк с длинными ушами; домашний питомец или животное на ферме.",
+    "collocations": [
+      {
+        "fr": "un lapin blanc",
+        "ru": "белый кролик"
+      },
+      {
+        "fr": "le lapin saute",
+        "ru": "кролик прыгает"
+      },
+      {
+        "fr": "un lapin mange une carotte",
+        "ru": "кролик ест морковку"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "lièvre",
+        "note": "lapin — кролик (домашний, живёт в норе); lièvre — заяц (дикий, крупнее, нор не роет). По-русски часто путают."
+      },
+      {
+        "with": "lapine",
+        "note": "un lapin — кролик (нейтрально или самец); une lapine — крольчиха (самка)."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A1",
+    "tags": ["animaux", "domestique"],
+    "caseIds": ["wc-animaux"]
+  },
+  {
+    "id": "wl-animaux-animal",
+    "lemma": "animal",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.ni.mal/",
+    "translationsRu": ["животное"],
+    "translationsEn": ["animal"],
+    "semanticCore": "Животное — общее слово для любого зверя, птицы или насекомого; множественное des animaux.",
+    "collocations": [
+      {
+        "fr": "un animal sauvage",
+        "ru": "дикое животное"
+      },
+      {
+        "fr": "un animal domestique",
+        "ru": "домашнее животное"
+      },
+      {
+        "fr": "mon animal préféré",
+        "ru": "моё любимое животное"
+      },
+      {
+        "fr": "protéger les animaux",
+        "ru": "защищать животных"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "animaux",
+        "note": "un animal → des animaux: множественное на -aux (как cheval). Формы «animals» нет."
+      },
+      {
+        "with": "bête",
+        "note": "animal — животное (нейтрально, научно); bête — зверь / животное в разговорной речи (а как прилагательное — «глупый»)."
+      }
+    ],
+    "frequencyRank": 250,
+    "level": "A1",
+    "tags": ["animaux", "general"],
+    "caseIds": ["wc-animaux"]
+  },
+  {
+    "id": "wl-animaux-poule",
+    "lemma": "poule",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pul/",
+    "translationsRu": ["курица"],
+    "translationsEn": ["hen", "chicken"],
+    "semanticCore": "Курица-несушка как живая домашняя птица на ферме; несёт яйца, в отличие от блюда poulet.",
+    "collocations": [
+      {
+        "fr": "la poule pond des œufs",
+        "ru": "курица несёт яйца"
+      },
+      {
+        "fr": "un œuf de poule",
+        "ru": "куриное яйцо"
+      },
+      {
+        "fr": "les poules du poulailler",
+        "ru": "куры из курятника"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poulet",
+        "note": "la poule — живая курица-несушка; le poulet — цыплёнок и, главное, курятина (мясо на тарелке)."
+      },
+      {
+        "with": "coq",
+        "note": "poule — курица (самка); coq — петух (самец). Coq — ещё и символ Франции."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A1",
+    "tags": ["animaux", "ferme"],
+    "caseIds": ["wc-animaux"]
+  }
+]

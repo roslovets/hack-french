@@ -1,0 +1,283 @@
+[
+  {
+    "id": "wc-animaux",
+    "title": "Животные",
+    "theme": "animaux",
+    "level": "A1",
+    "wordIds": [
+      "wl-animaux-chat",
+      "wl-animaux-chien",
+      "wl-animaux-oiseau",
+      "wl-animaux-cheval",
+      "wl-animaux-vache",
+      "wl-animaux-lapin",
+      "wl-animaux-animal",
+      "wl-animaux-poule"
+    ],
+    "steps": [
+      {
+        "id": "wc-animaux-chat-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux-chat",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mon chat dort sur le canapé.",
+          "Le chat du voisin est tout noir.",
+          "Tu as vu le chat ? Il est sous la table."
+        ],
+        "options": ["кот, кошка", "собака", "птица", "мышь"],
+        "correctIndex": 0,
+        "explanation": "chat (m) — кот / кошка. По умолчанию говорят un chat (м. род); кошку отдельно — une chatte. Собака — un chien, мышь — une souris."
+      },
+      {
+        "id": "wc-animaux-chat-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-animaux-chat",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Звучит похоже. Какое слово ты услышал — то, что значит «кот»?",
+        "audioText": "chat",
+        "options": ["chaud", "chat", "char", "chou"],
+        "correctIndex": 1,
+        "explanation": "chat /ʃa/ — кот. Похожие: chaud /ʃo/ — горячий, char /ʃaʁ/ — танк/повозка, chou /ʃu/ — капуста. Все начинаются на ch /ʃ/, но гласные разные."
+      },
+      {
+        "id": "wc-animaux-chien-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux-chien",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je promène mon chien tous les matins.",
+          "Attention, le chien aboie !",
+          "C'est un gentil chien, il ne mord pas."
+        ],
+        "options": ["собака", "кот", "лошадь", "волк"],
+        "correctIndex": 0,
+        "explanation": "chien (m) — собака (пёс). Самка — une chienne. «promener le chien» — выгуливать собаку, «aboyer» — лаять. Волк — un loup."
+      },
+      {
+        "id": "wc-animaux-chien-sort",
+        "kind": "sort",
+        "wordId": "wl-animaux-chien",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом chien звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "promener le chien",
+            "basket": "ok"
+          },
+          {
+            "text": "un chien fidèle",
+            "basket": "ok"
+          },
+          {
+            "text": "le chien aboie",
+            "basket": "ok"
+          },
+          {
+            "text": "lire un chien",
+            "basket": "no"
+          },
+          {
+            "text": "un chien salé",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«promener le chien» (выгуливать), «un chien fidèle» (верный пёс), «le chien aboie» (лает) — естественно. «lire un chien» (читать собаку) и «un chien salé» (солёная собака) — бессмыслица."
+      },
+      {
+        "id": "wc-animaux-oiseau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux-oiseau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Un oiseau chante dans l'arbre.",
+          "Les oiseaux volent vers le sud.",
+          "Il y a un petit oiseau sur le balcon."
+        ],
+        "options": ["птица", "пчела", "бабочка", "рыба"],
+        "correctIndex": 0,
+        "explanation": "oiseau (m) — птица. Во множественном — des oiseaux (с -x). «chanter» о птице — петь/щебетать, «voler» — летать. Рыба — un poisson."
+      },
+      {
+        "id": "wc-animaux-oiseau-hint",
+        "kind": "wordHint",
+        "wordId": "wl-animaux-oiseau",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: маленькое существо с крыльями и перьями, которое летает и поёт.",
+        "answer": "oiseau",
+        "hints": [
+          "Начинается на o…",
+          "6 букв, заканчивается на -eau",
+          "Un petit ___ chante dans l'arbre."
+        ],
+        "explanation": "oiseau (m) — птица. Множественное число — des oiseaux (окончание -eau → -eaux). Читается /wa.zo/."
+      },
+      {
+        "id": "wc-animaux-cheval-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux-cheval",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le cheval court dans le champ.",
+          "Elle monte à cheval le week-end.",
+          "Ce cheval est très rapide."
+        ],
+        "options": ["лошадь, конь", "корова", "осёл", "собака"],
+        "correctIndex": 0,
+        "explanation": "cheval (m) — лошадь, конь. «monter à cheval» — кататься верхом. Внимание к множественному: un cheval → des chevaux. Осёл — un âne."
+      },
+      {
+        "id": "wc-animaux-cheval-trap",
+        "kind": "trap",
+        "wordId": "wl-animaux-cheval",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "У тебя одна лошадь, а в загоне их много. Как сказать «лошади» во множественном?",
+        "options": ["des chevaux", "des chevals", "des chevales", "des chevaus"],
+        "correctIndex": 0,
+        "explanation": "Ловушка множественного числа: слова на -al дают -aux. un cheval → des chevaux /ʃ(ə).vo/. Форм «chevals/chevales/chevaus» не существует."
+      },
+      {
+        "id": "wc-animaux-vache-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux-vache",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La vache mange de l'herbe dans le pré.",
+          "On boit le lait de vache.",
+          "Les vaches sont dans le champ."
+        ],
+        "options": ["корова", "коза", "овца", "свинья"],
+        "correctIndex": 0,
+        "explanation": "vache (f) — корова. «le lait de vache» — коровье молоко. Коза — une chèvre, овца — un mouton / une brebis, свинья — un cochon."
+      },
+      {
+        "id": "wc-animaux-vache-cmp",
+        "kind": "compare",
+        "wordId": "wl-animaux-vache",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une vache и un bœuf. В чём разница?",
+        "phrases": ["La vache donne du lait.", "Le bœuf tire la charrette."],
+        "options": [
+          "vache — корова (даёт молоко); bœuf — бык / вол (а также говядина как мясо).",
+          "Это одно и то же животное, просто разные слова.",
+          "vache — это телёнок, а bœuf — взрослая корова.",
+          "vache — самец, bœuf — самка."
+        ],
+        "correctIndex": 0,
+        "explanation": "une vache — корова (самка, даёт молоко). un bœuf — бык/вол; ещё так называют говядину (мясо). Телёнок — un veau."
+      },
+      {
+        "id": "wc-animaux-lapin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux-lapin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le lapin mange une carotte.",
+          "Les enfants ont un lapin blanc.",
+          "Un lapin saute dans le jardin."
+        ],
+        "options": ["кролик", "белка", "мышь", "кошка"],
+        "correctIndex": 0,
+        "explanation": "lapin (m) — кролик. «manger une carotte» — есть морковку, «sauter» — прыгать. Белка — un écureuil, мышь — une souris."
+      },
+      {
+        "id": "wc-animaux-lapin-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-animaux-lapin",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — небольшие животные, которых держат дома или на ферме. Найди лишнее.",
+        "options": ["le lapin", "le chat", "la poule", "la voiture"],
+        "correctIndex": 3,
+        "explanation": "Кролик (le lapin), кот (le chat) и курица (la poule) — животные. Машина (la voiture) — лишняя: это не животное, а предмет."
+      },
+      {
+        "id": "wc-animaux-animal-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux-animal",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le chien est un animal fidèle.",
+          "J'aime tous les animaux.",
+          "Quel est ton animal préféré ?"
+        ],
+        "options": ["животное", "растение", "человек", "питомец-кот"],
+        "correctIndex": 0,
+        "explanation": "animal (m) — животное (общее слово для всех). Множественное — des animaux (как cheval → chevaux). «animal préféré» — любимое животное."
+      },
+      {
+        "id": "wc-animaux-animal-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-animaux-animal",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит animal?",
+        "bridge": "Англ. «animal» — животное; пишется точно так же. Только читается по-французски /a.ni.mal/, с ударением на конце.",
+        "options": ["животное", "растение", "минерал", "насекомое"],
+        "correctIndex": 0,
+        "explanation": "animal = животное. Англ. «animal» — прямой мост: те же буквы. Помни множественное: des animaux."
+      },
+      {
+        "id": "wc-animaux-poule-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux-poule",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La poule pond des œufs.",
+          "Les poules sont dans le poulailler.",
+          "On a acheté une poule à la ferme."
+        ],
+        "options": ["курица", "утка", "гусь", "индейка"],
+        "correctIndex": 0,
+        "explanation": "poule (f) — курица (несушка). «pondre des œufs» — нести яйца, «le poulailler» — курятник. Утка — un canard, гусь — une oie."
+      },
+      {
+        "id": "wc-animaux-poule-trap",
+        "kind": "trap",
+        "wordId": "wl-animaux-poule",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В меню написано «poulet», а во дворе бегает «poule». Это одно и то же?",
+        "options": [
+          "Нет: la poule — живая курица (несушка); le poulet — цыплёнок / курятина на тарелке.",
+          "Да, это просто два написания одного слова.",
+          "poule — это петух, а poulet — курица.",
+          "poule — мясо, poulet — живая птица."
+        ],
+        "correctIndex": 0,
+        "explanation": "la poule — живая курица-несушка; le poulet — молодой цыплёнок и, главное, курятина как блюдо. Петух — un coq."
+      }
+    ]
+  }
+]

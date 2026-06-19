@@ -1,0 +1,302 @@
+[
+  {
+    "id": "wc-restaurant",
+    "title": "В ресторане",
+    "theme": "restaurant",
+    "level": "A2",
+    "wordIds": [
+      "wl-restaurant-restaurant",
+      "wl-restaurant-menu",
+      "wl-restaurant-entree",
+      "wl-restaurant-dessert",
+      "wl-restaurant-reserver",
+      "wl-restaurant-pourboire",
+      "wl-restaurant-fourchette",
+      "wl-restaurant-assiette"
+    ],
+    "steps": [
+      {
+        "id": "wc-restaurant-restaurant-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-restaurant-restaurant",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит restaurant?",
+        "bridge": "Англ. «restaurant» — ресторан; пишется точно так же (слово вообще пришло в английский из французского). Только читается по-французски /ʁɛs.to.ʁɑ̃/, с носовым -an на конце и без звука t.",
+        "options": ["ресторан", "столовая на работе", "магазин", "кухня"],
+        "correctIndex": 0,
+        "explanation": "restaurant (m) — ресторан. Англ. «restaurant» — прямой мост: те же буквы. Заводская/школьная столовая — une cantine, кухня (помещение) — une cuisine."
+      },
+      {
+        "id": "wc-restaurant-restaurant-sort",
+        "kind": "sort",
+        "wordId": "wl-restaurant-restaurant",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом restaurant звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "aller au restaurant",
+            "basket": "ok"
+          },
+          {
+            "text": "un bon restaurant italien",
+            "basket": "ok"
+          },
+          {
+            "text": "réserver dans un restaurant",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un restaurant",
+            "basket": "no"
+          },
+          {
+            "text": "un restaurant plat",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«aller au restaurant» (идти в ресторан), «un bon restaurant italien», «réserver dans un restaurant» — естественно. «boire un restaurant» (пить ресторан) и «un restaurant plat» (плоский ресторан) — бессмыслица."
+      },
+      {
+        "id": "wc-restaurant-menu-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-restaurant-menu",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит во французском ресторане?",
+        "contexts": [
+          "Je prends le menu à 25 euros.",
+          "Le menu du midi comprend une entrée, un plat et un dessert.",
+          "Il y a un menu enfant ?"
+        ],
+        "options": ["комплексный обед (набор блюд по фикс. цене)", "официант", "счёт", "столик"],
+        "correctIndex": 0,
+        "explanation": "le menu — это чаще всего комплекс по фиксированной цене (закуска + горячее + десерт), а не «меню-список». Список всех блюд — la carte. Счёт — l'addition, официант — le serveur."
+      },
+      {
+        "id": "wc-restaurant-menu-cmp",
+        "kind": "compare",
+        "wordId": "wl-restaurant-menu",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«Je prends le menu» и «Je regarde la carte». В чём разница?",
+        "phrases": ["Je prends le menu à 20 euros.", "Je regarde la carte."],
+        "options": [
+          "le menu — готовый набор блюд за фикс. цену; la carte — полный список всех блюд, из которого выбираешь по отдельности.",
+          "Это полные синонимы, разницы нет.",
+          "le menu — список блюд, а la carte — комплексный обед.",
+          "la carte — это карта оплаты, а menu — еда."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка для русского/английского уха: во Франции «меню-список» — это la carte (отсюда «à la carte» — выбирать по отдельности). А le menu — фиксированный набор блюд за одну цену."
+      },
+      {
+        "id": "wc-restaurant-entree-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-restaurant-entree",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в контексте еды?",
+        "contexts": [
+          "Comme entrée, je prends une salade.",
+          "Une soupe en entrée, c'est parfait l'hiver.",
+          "Pas d'entrée pour moi, juste un plat."
+        ],
+        "options": [
+          "закуска (первое блюдо перед горячим)",
+          "вход в зал",
+          "основное блюдо",
+          "вход (билет)"
+        ],
+        "correctIndex": 0,
+        "explanation": "За столом entrée (f) — закуска, первое лёгкое блюдо ПЕРЕД горячим (un plat). Слово буквально значит «вход» — то, с чего «входят» в обед. Внимание: это НЕ основное блюдо (вопреки амер. англ. «entrée»)."
+      },
+      {
+        "id": "wc-restaurant-entree-trap",
+        "kind": "trap",
+        "wordId": "wl-restaurant-entree",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В американском меню «entrée» — это основное блюдо. А во французском ресторане l'entrée — это что?",
+        "options": [
+          "Закуска — лёгкое блюдо ПЕРЕД горячим. Основное блюдо — le plat (principal).",
+          "То же самое — основное горячее блюдо.",
+          "Десерт в конце обеда.",
+          "Напиток перед едой."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: амер. англ. «entrée» = главное блюдо, но фр. entrée = ЗАКУСКА (то, с чего входят в трапезу). Горячее — le plat principal, десерт — le dessert. Закажешь «entrée» как главное — принесут маленькую закуску."
+      },
+      {
+        "id": "wc-restaurant-entree-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-restaurant-entree",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — это последовательные части обеда (les plats d'un repas). Найди лишнее.",
+        "options": ["une entrée", "un plat", "un dessert", "une fourchette"],
+        "correctIndex": 3,
+        "explanation": "Закуска (une entrée), горячее (un plat) и десерт (un dessert) — этапы обеда по порядку. Вилка (une fourchette) лишняя: это столовый прибор, а не блюдо."
+      },
+      {
+        "id": "wc-restaurant-dessert-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-restaurant-dessert",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Comme dessert, je prends une tarte aux pommes.",
+          "Tu veux un dessert ou un café ?",
+          "Le dessert est compris dans le menu."
+        ],
+        "options": ["десерт (сладкое в конце обеда)", "закуска", "пустыня", "блюдо дня"],
+        "correctIndex": 0,
+        "explanation": "dessert (m) — десерт, сладкое в конце трапезы. Пишется с двумя ss и читается /de.sɛʁ/. Не путать с le désert (одна s, /de.zɛʁ/) — пустыня."
+      },
+      {
+        "id": "wc-restaurant-dessert-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-restaurant-dessert",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли. Внимание на звук s/z!",
+        "audioText": "dessert",
+        "options": ["dessert", "désert", "déserte", "désir"],
+        "correctIndex": 0,
+        "explanation": "dessert /de.sɛʁ/ (десерт, две ss = глухой /s/), désert /de.zɛʁ/ (пустыня, одна s = звонкий /z/), déserte /de.zɛʁt/ (пустынный — ж. род прил.), désir /de.ziʁ/ (желание). Десерт и пустыня различаются только звуком s/z."
+      },
+      {
+        "id": "wc-restaurant-reserver-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-restaurant-reserver",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai réservé une table pour deux à 20 heures.",
+          "Il faut réserver à l'avance, c'est complet le week-end.",
+          "Bonjour, je voudrais réserver pour quatre personnes."
+        ],
+        "options": ["бронировать, заказывать (столик)", "оплачивать", "отменять", "обслуживать"],
+        "correctIndex": 0,
+        "explanation": "réserver — бронировать заранее (столик, билет, номер). «réserver une table pour deux» — заказать столик на двоих. Оплачивать — payer, отменять — annuler."
+      },
+      {
+        "id": "wc-restaurant-reserver-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-restaurant-reserver",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать глагол. Что значит réserver?",
+        "bridge": "Англ. «to reserve» — бронировать, резервировать; тот же корень. Фр. réserver читается /ʁe.zɛʁ.ve/: первая s между гласными звучит как /z/.",
+        "options": [
+          "бронировать, резервировать",
+          "сохранять про запас на кухне",
+          "подавать на стол",
+          "готовить"
+        ],
+        "correctIndex": 0,
+        "explanation": "réserver = бронировать, резервировать (англ. «reserve» — прямой мост). В ресторане — réserver une table. Подавать — servir, готовить — préparer / cuisiner."
+      },
+      {
+        "id": "wc-restaurant-pourboire-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-restaurant-pourboire",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On laisse un pourboire au serveur.",
+          "Le service est compris, mais on peut laisser un petit pourboire.",
+          "Il a oublié de laisser un pourboire."
+        ],
+        "options": ["чаевые", "счёт", "сдача", "скидка"],
+        "correctIndex": 0,
+        "explanation": "pourboire (m) — чаевые. Слово склеено из «pour boire» («чтобы выпить») — деньги официанту «на выпить». «laisser un pourboire» — оставить чаевые. Счёт — l'addition, сдача — la monnaie."
+      },
+      {
+        "id": "wc-restaurant-pourboire-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-restaurant-pourboire",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для pourboire (чаевые), опираясь на то, что слово буквально собрано из pour + boire — «чтобы выпить».",
+        "examples": [
+          "Чаевые официанту — это деньги «pour boire», чтобы он выпил за твоё здоровье: pour + boire = pourboire.",
+          "Представь, как оставляешь монетку со словами «c'est pour boire» — отсюда и всё слово целиком."
+        ]
+      },
+      {
+        "id": "wc-restaurant-fourchette-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-restaurant-fourchette",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il me manque une fourchette.",
+          "On mange les frites avec une fourchette.",
+          "La fourchette est à gauche de l'assiette."
+        ],
+        "options": ["вилка", "ложка", "нож", "салфетка"],
+        "correctIndex": 0,
+        "explanation": "fourchette (f) — вилка. Кладут слева от тарелки. Ложка — une cuillère, нож — un couteau, салфетка — une serviette."
+      },
+      {
+        "id": "wc-restaurant-fourchette-hint",
+        "kind": "wordHint",
+        "wordId": "wl-restaurant-fourchette",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: столовый прибор с зубчиками, которым накалывают еду; кладётся слева от тарелки.",
+        "answer": "fourchette",
+        "hints": ["Начинается на f…", "Женский род: une ___", "Внутри прячется «fourche» — вилы."],
+        "explanation": "fourchette (f) — вилка. Корень — fourche (вилы): вилка как маленькие вилы. Нож — un couteau, ложка — une cuillère."
+      },
+      {
+        "id": "wc-restaurant-assiette-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-restaurant-assiette",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le serveur pose l'assiette sur la table.",
+          "Mon assiette est encore pleine.",
+          "Mets une assiette propre pour le dessert."
+        ],
+        "options": ["тарелка", "вилка", "стакан", "поднос"],
+        "correctIndex": 0,
+        "explanation": "assiette (f) — тарелка. «une assiette propre» — чистая тарелка. Стакан — un verre, поднос — un plateau. Внимание на двойную t и звук /a.sjɛt/."
+      },
+      {
+        "id": "wc-restaurant-assiette-trap",
+        "kind": "trap",
+        "wordId": "wl-restaurant-assiette",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг говорит: «Je ne suis pas dans mon assiette.» Он жалуется на тарелку?",
+        "options": [
+          "Нет: «ne pas être dans son assiette» — устойчивое выражение «неважно себя чувствовать», не про посуду.",
+          "Да, он недоволен своей тарелкой в ресторане.",
+          "Да: он говорит, что сидит не за своим столом.",
+          "Нет: это значит «я не голоден»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка идиомы: буквально assiette — тарелка, но «ne pas être dans son assiette» значит «быть не в своей тарелке» — чувствовать себя неважно, не в форме. По смыслу совпадает с русским «не в своей тарелке»."
+      }
+    ]
+  }
+]

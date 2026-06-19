@@ -2,19 +2,19 @@
   {
     "id": "table",
     "title": "Еда и кафе",
-    "themes": ["boulangerie", "cafe", "nourriture"],
+    "themes": ["boulangerie", "cafe", "nourriture", "restaurant"],
     "bossId": "wc-boss-table"
   },
   {
     "id": "home",
     "title": "Дом и одежда",
-    "themes": ["maison", "vetements"],
+    "themes": ["maison", "vetements", "pieces"],
     "bossId": "wc-boss-maison-vetements"
   },
   {
     "id": "people",
     "title": "Человек и семья",
-    "themes": ["corps", "famille", "emotions"],
+    "themes": ["corps", "famille", "emotions", "sante"],
     "bossId": "wc-boss-corps-famille"
   },
   {
@@ -32,7 +32,7 @@
   {
     "id": "verbs",
     "title": "Глаголы и время",
-    "themes": ["perception", "connaissance", "prendre", "temps"],
+    "themes": ["perception", "connaissance", "prendre", "temps", "calendrier"],
     "bossId": "wc-boss-verbes"
   },
   {
@@ -48,7 +48,7 @@
   {
     "id": "weather",
     "title": "Погода и природа",
-    "themes": ["meteo"]
+    "themes": ["meteo", "animaux"]
   },
   {
     "id": "leisure",

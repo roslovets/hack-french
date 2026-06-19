@@ -1,0 +1,308 @@
+[
+  {
+    "id": "wc-sante",
+    "title": "Здоровье",
+    "theme": "sante",
+    "level": "A2",
+    "wordIds": [
+      "wl-sante-sante",
+      "wl-sante-rhume",
+      "wl-sante-fievre",
+      "wl-sante-medicament",
+      "wl-sante-pharmacie",
+      "wl-sante-douleur",
+      "wl-sante-guerir",
+      "wl-sante-ordonnance"
+    ],
+    "steps": [
+      {
+        "id": "wc-sante-sante-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante-sante",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le sport est bon pour la santé.",
+          "Comment va ta santé ?",
+          "Il a une santé de fer."
+        ],
+        "options": ["здоровье", "болезнь", "врач", "сила"],
+        "correctIndex": 0,
+        "explanation": "la santé (f) — здоровье. «bon pour la santé» — полезно для здоровья, «une santé de fer» — железное здоровье. Болезнь — une maladie, врач — un médecin."
+      },
+      {
+        "id": "wc-sante-sante-collo",
+        "kind": "sort",
+        "wordId": "wl-sante-sante",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом santé звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "être en bonne santé",
+            "basket": "ok"
+          },
+          {
+            "text": "bon pour la santé",
+            "basket": "ok"
+          },
+          {
+            "text": "À ta santé !",
+            "basket": "ok"
+          },
+          {
+            "text": "manger la santé",
+            "basket": "no"
+          },
+          {
+            "text": "une santé carrée",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«être en bonne santé» (быть здоровым), «bon pour la santé» (полезно), «À ta santé !» (за здоровье! — тост) — естественно. «manger la santé» (есть здоровье) и «une santé carrée» (квадратное здоровье) — бессмыслица."
+      },
+      {
+        "id": "wc-sante-rhume-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante-rhume",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai attrapé un rhume.",
+          "Avec ce rhume, je n'arrête pas d'éternuer.",
+          "Reste au chaud, ton rhume va passer."
+        ],
+        "options": ["насморк, простуда", "грипп", "кашель", "аллергия"],
+        "correctIndex": 0,
+        "explanation": "un rhume (m) — насморк, лёгкая простуда. «attraper un rhume» — подхватить простуду. Грипп — la grippe (это серьёзнее), кашель — la toux."
+      },
+      {
+        "id": "wc-sante-rhume-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-sante-rhume",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало. Они похожи, но это разные слова.",
+        "audioText": "rhume",
+        "options": ["rhume", "rhum", "ruine"],
+        "correctIndex": 0,
+        "explanation": "rhume /ʁym/ — насморк. Похожие: rhum /ʁɔm/ — ром (напиток), ruine /ʁɥin/ — развалина, разорение. Разница в гласной: «ю» против «о»."
+      },
+      {
+        "id": "wc-sante-fievre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante-fievre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "L'enfant a de la fièvre depuis hier soir.",
+          "Avec la grippe, on a souvent de la fièvre.",
+          "Sa fièvre est montée à 39 degrés."
+        ],
+        "options": ["температура, жар", "озноб", "сыпь", "усталость"],
+        "correctIndex": 0,
+        "explanation": "la fièvre (f) — высокая температура, жар. «avoir de la fièvre» — иметь температуру. Внимание: «температура» как градусы на улице — это la température, а жар при болезни — la fièvre."
+      },
+      {
+        "id": "wc-sante-fievre-trap",
+        "kind": "trap",
+        "wordId": "wl-sante-fievre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "По-русски «у меня температура» = жар. Как сказать это по-французски правильно?",
+        "options": [
+          "J'ai de la fièvre.",
+          "J'ai de la température.",
+          "Je suis fièvre.",
+          "Je fais de la fièvre malade."
+        ],
+        "correctIndex": 0,
+        "explanation": "Жар при болезни — «avoir de la fièvre»: J'ai de la fièvre. Калька «j'ai de la température» звучит неестественно: la température — это градусы (воздуха, тела как измерение), а самочувствие «жар» — la fièvre. «Je suis fièvre» грамматически невозможно."
+      },
+      {
+        "id": "wc-sante-fievre-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-sante-fievre",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало. Они звучат близко, но это разные слова.",
+        "audioText": "fièvre",
+        "options": ["fièvre", "lièvre", "lèvre"],
+        "correctIndex": 0,
+        "explanation": "fièvre /fjɛvʁ/ — жар, температура. Похожие: lièvre /ljɛvʁ/ — заяц, lèvre /lɛvʁ/ — губа. Различаются началом: «фь-» против «ль-»."
+      },
+      {
+        "id": "wc-sante-medicament-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante-medicament",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Prends ce médicament trois fois par jour.",
+          "Ce médicament se vend sans ordonnance.",
+          "Je dois acheter mes médicaments à la pharmacie."
+        ],
+        "options": ["лекарство", "болезнь", "рецепт", "доза"],
+        "correctIndex": 0,
+        "explanation": "un médicament (m) — лекарство, препарат. «prendre un médicament» — принимать лекарство. Рецепт врача — une ordonnance, болезнь — une maladie."
+      },
+      {
+        "id": "wc-sante-medicament-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-sante-medicament",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит médicament?",
+        "bridge": "Англ. «medicament / medication» и лат. корень medic- — тот же, что в «медицина». Французское médicament читается /me.di.ka.mɑ̃/, с носовым на конце.",
+        "options": ["лекарство", "медкомиссия", "медсестра", "медкарта"],
+        "correctIndex": 0,
+        "explanation": "médicament = лекарство. Корень medic- (как в «медицина») — надёжный мост. Не путать с un médecin (врач) — тоже от того же корня, но это человек."
+      },
+      {
+        "id": "wc-sante-pharmacie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante-pharmacie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il y a une pharmacie au coin de la rue.",
+          "La pharmacie est ouverte jusqu'à 20 heures.",
+          "Demande ce sirop à la pharmacie."
+        ],
+        "options": ["аптека", "больница", "поликлиника", "магазин"],
+        "correctIndex": 0,
+        "explanation": "la pharmacie (f) — аптека (зелёный крест на вывеске). Больница — un hôpital, поликлиника — un cabinet médical / une clinique. Аптекарь — un pharmacien / une pharmacienne."
+      },
+      {
+        "id": "wc-sante-pharmacie-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-sante-pharmacie",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит pharmacie?",
+        "bridge": "Англ. «pharmacy» — аптека; в русском есть «фармацевт, фармация». Тот же корень pharma-. Французское pharmacie читается /faʁ.ma.si/.",
+        "options": ["аптека", "ферма", "формула", "фабрика"],
+        "correctIndex": 0,
+        "explanation": "pharmacie = аптека, через знакомый корень pharma- (англ. pharmacy). Не путать с la ferme (ферма) — похоже только на слух по-русски, но пишется и звучит иначе."
+      },
+      {
+        "id": "wc-sante-douleur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante-douleur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai une douleur dans le dos.",
+          "Ce médicament calme la douleur.",
+          "La douleur est revenue cette nuit."
+        ],
+        "options": ["боль", "рана", "слабость", "усталость"],
+        "correctIndex": 0,
+        "explanation": "la douleur (f) — боль. «une douleur dans le dos» — боль в спине, «calmer la douleur» — снять боль. Рана — une blessure, усталость — la fatigue."
+      },
+      {
+        "id": "wc-sante-douleur-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-sante-douleur",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало. Окончание -eur у всех одинаковое, начало — нет.",
+        "audioText": "douleur",
+        "options": ["douleur", "couleur", "chaleur"],
+        "correctIndex": 0,
+        "explanation": "douleur /du.lœʁ/ — боль. Похожие: couleur /ku.lœʁ/ — цвет, chaleur /ʃa.lœʁ/ — жара, тепло. Все на -eur и женского рода, различаются началом слова."
+      },
+      {
+        "id": "wc-sante-guerir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante-guerir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Avec du repos, tu vas vite guérir.",
+          "Ce traitement guérit la plupart des patients.",
+          "Il a enfin guéri de sa grippe."
+        ],
+        "options": ["выздоравливать, вылечить", "заболевать", "уставать", "лечь спать"],
+        "correctIndex": 0,
+        "explanation": "guérir — выздоравливать и вылечивать. «guérir d'une maladie» — выздороветь от болезни, «ce médicament guérit…» — это лекарство лечит… Противоположность — tomber malade (заболеть)."
+      },
+      {
+        "id": "wc-sante-guerir-cmp",
+        "kind": "compare",
+        "wordId": "wl-sante-guerir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "guérir и soigner. В чём разница?",
+        "phrases": ["Le médecin soigne le malade.", "Le malade guérit vite."],
+        "options": [
+          "«soigner» — лечить, ухаживать (процесс); «guérir» — вылечить(ся), стать здоровым (результат).",
+          "Это полные синонимы, разницы нет.",
+          "«soigner» значит выздороветь, а «guérir» — заболеть.",
+          "Оба значат «болеть»."
+        ],
+        "correctIndex": 0,
+        "explanation": "soigner — лечить, ухаживать (сам процесс: врач soigne больного). guérir — добиться выздоровления / выздороветь (результат: больной guérit, лекарство guérit болезнь)."
+      },
+      {
+        "id": "wc-sante-guerir-hint",
+        "kind": "wordHint",
+        "wordId": "wl-sante-guerir",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: снова стать здоровым после болезни.",
+        "answer": "guérir",
+        "hints": [
+          "Начинается на g…",
+          "Глагол на -ir (2-я группа), 6 букв",
+          "Avec du repos, tu vas vite ___."
+        ],
+        "explanation": "guérir — выздоравливать / вылечивать. Глагол 2-й группы: je guéris, il guérit, nous guérissons. Читается /ɡe.ʁiʁ/."
+      },
+      {
+        "id": "wc-sante-ordonnance-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante-ordonnance",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le médecin m'a fait une ordonnance.",
+          "Cet antibiotique se vend seulement sur ordonnance.",
+          "N'oublie pas ton ordonnance à la pharmacie."
+        ],
+        "options": ["рецепт (от врача)", "счёт за лечение", "справка о болезни", "талон к врачу"],
+        "correctIndex": 0,
+        "explanation": "une ordonnance (f) — рецепт от врача (список лекарств). «sur ordonnance» — по рецепту. Не путать с un reçu (чек) или un rendez-vous (запись к врачу)."
+      },
+      {
+        "id": "wc-sante-ordonnance-trap",
+        "kind": "trap",
+        "wordId": "wl-sante-ordonnance",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В кулинарии «рецепт» (как готовить блюдо) и «рецепт» от врача — по-французски РАЗНЫЕ слова. Какое слово на бумажке от врача?",
+        "options": ["une ordonnance", "une recette", "un reçu", "une prescription magique"],
+        "correctIndex": 0,
+        "explanation": "Рецепт от врача — une ordonnance. Ловушка: une recette — это кулинарный рецепт (как готовить), а un reçu — чек/квитанция. По-русски всё «рецепт», но по-французски это три разных слова."
+      }
+    ]
+  }
+]

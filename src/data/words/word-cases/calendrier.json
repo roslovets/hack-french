@@ -1,0 +1,322 @@
+[
+  {
+    "id": "wc-calendrier",
+    "title": "Дни и время",
+    "theme": "calendrier",
+    "level": "A1",
+    "wordIds": [
+      "wl-calendrier-jour",
+      "wl-calendrier-semaine",
+      "wl-calendrier-mois",
+      "wl-calendrier-annee",
+      "wl-calendrier-matin",
+      "wl-calendrier-soir",
+      "wl-calendrier-hier",
+      "wl-calendrier-demain"
+    ],
+    "steps": [
+      {
+        "id": "wc-calendrier-jour-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-calendrier-jour",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Quel jour sommes-nous aujourd'hui ?",
+          "Il travaille tous les jours.",
+          "Bonjour ! Bonne journée."
+        ],
+        "options": ["день", "неделя", "час", "год"],
+        "correctIndex": 0,
+        "explanation": "jour (m) — день. «tous les jours» — каждый день, «quel jour ?» — какой сегодня день. Неделя — une semaine, год — un an / une année."
+      },
+      {
+        "id": "wc-calendrier-jour-cmp",
+        "kind": "compare",
+        "wordId": "wl-calendrier-jour",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "jour и journée. В чём разница?",
+        "phrases": ["J'ai passé trois jours à Paris.", "J'ai passé une bonne journée."],
+        "options": [
+          "jour — день как точка/единица счёта; journée — день как длительность, всё его наполнение.",
+          "Это полные синонимы, разницы нет.",
+          "jour — это утро, а journée — вечер.",
+          "journée значит «неделя», а jour — «день»."
+        ],
+        "correctIndex": 0,
+        "explanation": "jour считают (trois jours, deux fois par jour). journée — день как промежуток с его содержанием: bonne journée ! (хорошего дня!), toute la journée (весь день напролёт)."
+      },
+      {
+        "id": "wc-calendrier-semaine-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-calendrier-semaine",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On se voit la semaine prochaine.",
+          "Il y a sept jours dans une semaine.",
+          "Je travaille cinq jours par semaine."
+        ],
+        "options": ["неделя", "день", "выходные", "месяц"],
+        "correctIndex": 0,
+        "explanation": "semaine (f) — неделя. «la semaine prochaine» — на следующей неделе, «par semaine» — в неделю. Выходные — le week-end, месяц — un mois."
+      },
+      {
+        "id": "wc-calendrier-semaine-collo",
+        "kind": "sort",
+        "wordId": "wl-calendrier-semaine",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом semaine звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "la semaine prochaine",
+            "basket": "ok"
+          },
+          {
+            "text": "la semaine dernière",
+            "basket": "ok"
+          },
+          {
+            "text": "en fin de semaine",
+            "basket": "ok"
+          },
+          {
+            "text": "manger une semaine",
+            "basket": "no"
+          },
+          {
+            "text": "boire la semaine",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«la semaine prochaine / dernière», «en fin de semaine» — естественно. «manger une semaine» (съесть неделю) и «boire la semaine» (пить неделю) — бессмыслица: semaine — это отрезок времени, а не вещь и не еда."
+      },
+      {
+        "id": "wc-calendrier-mois-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-calendrier-mois",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le mois de janvier est froid.",
+          "Je paie le loyer chaque mois.",
+          "Il y a douze mois dans une année."
+        ],
+        "options": ["месяц", "неделя", "год", "день"],
+        "correctIndex": 0,
+        "explanation": "mois (m) — месяц. «chaque mois» — каждый месяц, «le mois de janvier» — месяц январь. Форма не меняется во множественном: un mois → des mois."
+      },
+      {
+        "id": "wc-calendrier-mois-trap",
+        "kind": "trap",
+        "wordId": "wl-calendrier-mois",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "mois и moi звучат похоже: /mwa/. Что значит mois (с -s)?",
+        "options": ["месяц", "я / меня", "мой", "три"],
+        "correctIndex": 0,
+        "explanation": "Ловушка слуха: le mois /mwa/ — месяц, а moi /mwa/ — «я / меня» (c'est moi). Пишутся по-разному, читаются одинаково. «Мой» — mon, «три» — trois."
+      },
+      {
+        "id": "wc-calendrier-mois-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-calendrier-mois",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Слушай и выбери слово, которое прозвучало.",
+        "audioText": "mois",
+        "options": ["mois", "moins", "mais", "mot"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало mois /mwa/ — месяц. Похожие, но другие: moins /mwɛ̃/ — меньше, mais /mɛ/ — но, mot /mo/ — слово. Все читаются по-разному."
+      },
+      {
+        "id": "wc-calendrier-annee-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-calendrier-annee",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Bonne année !",
+          "C'est ma première année à Paris.",
+          "Toute l'année, il fait du sport."
+        ],
+        "options": ["год", "месяц", "день", "неделя"],
+        "correctIndex": 0,
+        "explanation": "année (f) — год (как промежуток). «Bonne année !» — С Новым годом!, «toute l'année» — весь год. Месяц — un mois, день — un jour."
+      },
+      {
+        "id": "wc-calendrier-annee-cmp",
+        "kind": "compare",
+        "wordId": "wl-calendrier-annee",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "an и année — оба «год». В чём разница?",
+        "phrases": ["J'ai vingt ans.", "Bonne année ! C'est une nouvelle année."],
+        "options": [
+          "an — год как единица счёта (возраст, число лет); année — год как промежуток с его наполнением.",
+          "Это полные синонимы, выбор любой.",
+          "an — это «месяц», а année — «год».",
+          "année — прошедший год, an — будущий."
+        ],
+        "correctIndex": 0,
+        "explanation": "Считают в an: j'ai vingt ans, il y a deux ans. О годе как о целом отрезке говорят année: bonne année, toute l'année, cette année. По смыслу — как jour / journée."
+      },
+      {
+        "id": "wc-calendrier-matin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-calendrier-matin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": ["Le matin, je bois un café.", "À demain matin !", "Il part tôt le matin."],
+        "options": ["утро", "вечер", "день", "ночь"],
+        "correctIndex": 0,
+        "explanation": "matin (m) — утро. «le matin» — утром, «tôt le matin» — рано утром. Вечер — le soir, ночь — la nuit."
+      },
+      {
+        "id": "wc-calendrier-matin-trap",
+        "kind": "trap",
+        "wordId": "wl-calendrier-matin",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Конечное -n в matin не читается, а гласная носовая. Как звучит matin?",
+        "options": [
+          "/ma.tɛ̃/ — с носовым «эн» на конце",
+          "/ma.tin/ — с чётким «-тин»",
+          "/ma.ten/ — с «-тэн»",
+          "/ma.ti/ — как «мати»"
+        ],
+        "correctIndex": 0,
+        "explanation": "matin читается /ma.tɛ̃/: -in даёт носовой звук, само n не произносится. Не «матин» по буквам. То же -in /ɛ̃/ услышишь в demain, vin, pain."
+      },
+      {
+        "id": "wc-calendrier-soir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-calendrier-soir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": ["Bonsoir, ça va ?", "Le soir, on regarde un film.", "À ce soir !"],
+        "options": ["вечер", "утро", "ночь", "полдень"],
+        "correctIndex": 0,
+        "explanation": "soir (m) — вечер. «le soir» — вечером, «à ce soir !» — до вечера!, «bonsoir» — добрый вечер. Утро — le matin, ночь — la nuit."
+      },
+      {
+        "id": "wc-calendrier-soir-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-calendrier-soir",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Слушай и выбери слово, которое прозвучало.",
+        "audioText": "soir",
+        "options": ["soir", "soif", "sœur", "noir"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало soir /swaʁ/ — вечер. Похожие: soif /swaf/ — жажда, sœur /sœʁ/ — сестра, noir /nwaʁ/ — чёрный. Слушай конец слова — он у всех разный."
+      },
+      {
+        "id": "wc-calendrier-soir-cmp",
+        "kind": "compare",
+        "wordId": "wl-calendrier-soir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "soir и soirée. В чём разница?",
+        "phrases": ["À ce soir, vers six heures.", "On a passé une bonne soirée ensemble."],
+        "options": [
+          "soir — вечер как момент/точка; soirée — вечер как длительность или вечеринка.",
+          "Это одно и то же слово в разных родах.",
+          "soir — это утро, soirée — вечер.",
+          "soirée значит «ночь»."
+        ],
+        "correctIndex": 0,
+        "explanation": "soir — момент дня: à ce soir, ce soir. soirée — весь вечер как промежуток или мероприятие: bonne soirée !, une soirée entre amis. Та же пара, что jour / journée, an / année."
+      },
+      {
+        "id": "wc-calendrier-hier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-calendrier-hier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Hier, il a plu toute la journée.",
+          "J'ai vu ce film hier soir.",
+          "Avant-hier, c'était lundi."
+        ],
+        "options": ["вчера", "завтра", "сегодня", "потом"],
+        "correctIndex": 0,
+        "explanation": "hier — вчера. «hier soir» — вчера вечером, «avant-hier» — позавчера. Завтра — demain, сегодня — aujourd'hui."
+      },
+      {
+        "id": "wc-calendrier-hier-trap",
+        "kind": "trap",
+        "wordId": "wl-calendrier-hier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В каком предложении hier («вчера») употреблено правильно по смыслу?",
+        "options": [
+          "Hier, je suis allé au cinéma.",
+          "Demain, je suis allé au cinéma hier.",
+          "Hier, j'irai au cinéma la semaine prochaine.",
+          "Hier soir, je mangerai avec mes amis demain."
+        ],
+        "correctIndex": 0,
+        "explanation": "hier — про прошлое, поэтому с ним идёт прошедшее время: «Hier, je suis allé…». Остальные мешают вчера с будущим (irai, mangerai, demain) — это противоречие во времени."
+      },
+      {
+        "id": "wc-calendrier-demain-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-calendrier-demain",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "À demain !",
+          "Demain, je commence un nouveau travail.",
+          "On se voit demain matin."
+        ],
+        "options": ["завтра", "вчера", "сегодня", "вечером"],
+        "correctIndex": 0,
+        "explanation": "demain — завтра. «à demain !» — до завтра!, «demain matin» — завтра утром, «après-demain» — послезавтра. Вчера — hier."
+      },
+      {
+        "id": "wc-calendrier-demain-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-calendrier-demain",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — про время «когда». Найди лишнее.",
+        "options": ["demain", "hier", "aujourd'hui", "semaine"],
+        "correctIndex": 3,
+        "explanation": "demain (завтра), hier (вчера), aujourd'hui (сегодня) — наречия, отвечающие «когда». semaine (неделя) — существительное, единица времени, а не ответ «когда». Поэтому лишнее — semaine."
+      },
+      {
+        "id": "wc-calendrier-demain-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-calendrier-demain",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для demain (завтра), чтобы запомнить носовой конец /də.mɛ̃/ и не путать его с matin.",
+        "examples": [
+          "demain и matin рифмуются на /ɛ̃/ — слепи фразу «demain matin» (завтра утром) и проговори её вслух, чтобы носовой звук закрепился.",
+          "Представь, что «де-» — это завтрашний день, который «де-лаешь» новым: demain = завтра, всегда про будущее (à demain !)."
+        ]
+      }
+    ]
+  }
+]

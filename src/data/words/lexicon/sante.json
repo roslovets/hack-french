@@ -1,0 +1,309 @@
+[
+  {
+    "id": "wl-sante-sante",
+    "lemma": "santé",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sɑ̃.te/",
+    "translationsRu": ["здоровье"],
+    "translationsEn": ["health"],
+    "semanticCore": "Состояние организма — насколько человек здоров; часто в пожеланиях и тостах «À ta santé !».",
+    "collocations": [
+      {
+        "fr": "être en bonne santé",
+        "ru": "быть здоровым"
+      },
+      {
+        "fr": "bon pour la santé",
+        "ru": "полезно для здоровья"
+      },
+      {
+        "fr": "une santé de fer",
+        "ru": "железное здоровье"
+      },
+      {
+        "fr": "À ta santé !",
+        "ru": "За твоё здоровье! (тост)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "maladie",
+        "note": "santé = здоровье (хорошее состояние); maladie = болезнь. Это противоположности."
+      },
+      {
+        "with": "forme",
+        "note": "être en bonne santé = быть здоровым (нет болезней); être en forme = быть в форме, бодрым (хорошее самочувствие, энергия)."
+      }
+    ],
+    "frequencyRank": 360,
+    "level": "A2",
+    "tags": ["sante", "etat"],
+    "caseIds": ["wc-sante"]
+  },
+  {
+    "id": "wl-sante-rhume",
+    "lemma": "rhume",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁym/",
+    "translationsRu": ["насморк", "простуда"],
+    "translationsEn": ["cold", "head cold"],
+    "semanticCore": "Лёгкая простуда с насморком: заложенный нос, чихание — не такая серьёзная, как грипп.",
+    "collocations": [
+      {
+        "fr": "attraper un rhume",
+        "ru": "подхватить простуду"
+      },
+      {
+        "fr": "avoir un gros rhume",
+        "ru": "иметь сильный насморк"
+      },
+      {
+        "fr": "un rhume des foins",
+        "ru": "сенная лихорадка (аллергия на пыльцу)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "grippe",
+        "note": "rhume = лёгкая простуда (насморк); grippe = грипп — серьёзнее, с температурой и ломотой."
+      },
+      {
+        "with": "rhum",
+        "note": "rhume /ʁym/ = насморк; rhum /ʁɔm/ = ром (напиток). Различаются гласной и написанием -e на конце."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["sante", "maladie"],
+    "caseIds": ["wc-sante"]
+  },
+  {
+    "id": "wl-sante-fievre",
+    "lemma": "fièvre",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fjɛvʁ/",
+    "translationsRu": ["температура", "жар", "лихорадка"],
+    "translationsEn": ["fever", "temperature"],
+    "semanticCore": "Повышенная температура тела при болезни (жар) — самочувствие, а не показания градусника воздуха.",
+    "collocations": [
+      {
+        "fr": "avoir de la fièvre",
+        "ru": "иметь температуру (жар)"
+      },
+      {
+        "fr": "une forte fièvre",
+        "ru": "высокая температура"
+      },
+      {
+        "fr": "faire tomber la fièvre",
+        "ru": "сбить температуру"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "température",
+        "note": "fièvre = жар при болезни (avoir de la fièvre); température = температура как измерение (градусы воздуха или тела). «У меня температура» = j'ai de la fièvre."
+      },
+      {
+        "with": "lièvre",
+        "note": "fièvre /fjɛvʁ/ = жар; lièvre /ljɛvʁ/ = заяц. Похожи на слух, различаются началом «фь-/ль-»."
+      }
+    ],
+    "frequencyRank": 690,
+    "level": "A2",
+    "tags": ["sante", "symptome"],
+    "caseIds": ["wc-sante"]
+  },
+  {
+    "id": "wl-sante-medicament",
+    "lemma": "médicament",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/me.di.ka.mɑ̃/",
+    "translationsRu": ["лекарство"],
+    "translationsEn": ["medicine", "medication"],
+    "semanticCore": "Препарат, который принимают, чтобы лечиться: таблетки, сироп, капли.",
+    "collocations": [
+      {
+        "fr": "prendre un médicament",
+        "ru": "принимать лекарство"
+      },
+      {
+        "fr": "un médicament sans ordonnance",
+        "ru": "лекарство без рецепта"
+      },
+      {
+        "fr": "des médicaments contre la toux",
+        "ru": "лекарства от кашля"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "médecin",
+        "note": "médicament = лекарство (вещь); médecin = врач (человек). Корень один (medic-), но не путать."
+      },
+      {
+        "with": "drogue",
+        "note": "médicament = лекарство; drogue = наркотик. Английское «drug» двусмысленно, но французское drogue — почти всегда наркотик."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["sante", "traitement"],
+    "caseIds": ["wc-sante"]
+  },
+  {
+    "id": "wl-sante-pharmacie",
+    "lemma": "pharmacie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/faʁ.ma.si/",
+    "translationsRu": ["аптека"],
+    "translationsEn": ["pharmacy", "chemist's"],
+    "semanticCore": "Место, где покупают лекарства; во Франции узнаётся по зелёному кресту.",
+    "collocations": [
+      {
+        "fr": "aller à la pharmacie",
+        "ru": "идти в аптеку"
+      },
+      {
+        "fr": "une pharmacie de garde",
+        "ru": "дежурная аптека (ночью/в праздники)"
+      },
+      {
+        "fr": "acheter en pharmacie",
+        "ru": "покупать в аптеке"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pharmacien",
+        "note": "pharmacie = аптека (место); pharmacien / pharmacienne = аптекарь, фармацевт (человек)."
+      },
+      {
+        "with": "hôpital",
+        "note": "pharmacie = аптека (продают лекарства); hôpital = больница (лечат, кладут на лечение)."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["sante", "lieu"],
+    "caseIds": ["wc-sante"]
+  },
+  {
+    "id": "wl-sante-douleur",
+    "lemma": "douleur",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/du.lœʁ/",
+    "translationsRu": ["боль"],
+    "translationsEn": ["pain", "ache"],
+    "semanticCore": "Физическая боль в теле; также душевная боль, страдание.",
+    "collocations": [
+      {
+        "fr": "une douleur dans le dos",
+        "ru": "боль в спине"
+      },
+      {
+        "fr": "calmer la douleur",
+        "ru": "снять (унять) боль"
+      },
+      {
+        "fr": "une douleur vive",
+        "ru": "резкая боль"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mal",
+        "note": "douleur = боль (существительное); avoir mal = болеть, испытывать боль (j'ai mal à la tête — у меня болит голова). В разговорной речи чаще говорят avoir mal."
+      },
+      {
+        "with": "couleur",
+        "note": "douleur /du.lœʁ/ = боль; couleur /ku.lœʁ/ = цвет. Похожи на слух, различаются началом «ду-/ку-»."
+      }
+    ],
+    "frequencyRank": 580,
+    "level": "A2",
+    "tags": ["sante", "symptome"],
+    "caseIds": ["wc-sante"]
+  },
+  {
+    "id": "wl-sante-guerir",
+    "lemma": "guérir",
+    "pos": "verb",
+    "ipa": "/ɡe.ʁiʁ/",
+    "translationsRu": ["выздоравливать", "вылечить", "вылечиться"],
+    "translationsEn": ["to heal", "to cure", "to recover"],
+    "semanticCore": "Стать снова здоровым или сделать здоровым — про результат: уйти от болезни.",
+    "collocations": [
+      {
+        "fr": "guérir d'une maladie",
+        "ru": "выздороветь от болезни"
+      },
+      {
+        "fr": "guérir rapidement",
+        "ru": "быстро поправиться"
+      },
+      {
+        "fr": "être complètement guéri",
+        "ru": "полностью выздороветь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "soigner",
+        "note": "guérir = вылечить(ся), стать здоровым (результат); soigner = лечить, ухаживать (процесс). Врач soigne, а пациент guérit."
+      },
+      {
+        "with": "tomber malade",
+        "note": "guérir = выздоравливать; tomber malade = заболевать. Это противоположные действия."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["sante", "action"],
+    "caseIds": ["wc-sante"]
+  },
+  {
+    "id": "wl-sante-ordonnance",
+    "lemma": "ordonnance",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɔʁ.dɔ.nɑ̃s/",
+    "translationsRu": ["рецепт (от врача)"],
+    "translationsEn": ["prescription"],
+    "semanticCore": "Бумага от врача со списком назначенных лекарств; по ней их выдают в аптеке.",
+    "collocations": [
+      {
+        "fr": "faire une ordonnance",
+        "ru": "выписать рецепт"
+      },
+      {
+        "fr": "sur ordonnance",
+        "ru": "по рецепту (только по рецепту)"
+      },
+      {
+        "fr": "un médicament sans ordonnance",
+        "ru": "лекарство без рецепта"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "recette",
+        "note": "ordonnance = рецепт от врача (на лекарства); recette = кулинарный рецепт (как готовить). По-русски оба «рецепт»."
+      },
+      {
+        "with": "reçu",
+        "note": "ordonnance = рецепт врача; reçu = чек, квитанция (подтверждение оплаты). Не путать."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["sante", "document"],
+    "caseIds": ["wc-sante"]
+  }
+]

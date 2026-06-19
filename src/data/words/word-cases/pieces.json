@@ -1,0 +1,308 @@
+[
+  {
+    "id": "wc-pieces",
+    "title": "Комнаты дома",
+    "theme": "pieces",
+    "level": "A1",
+    "wordIds": [
+      "wl-pieces-cuisine",
+      "wl-pieces-chambre",
+      "wl-pieces-salon",
+      "wl-pieces-sdb",
+      "wl-pieces-jardin",
+      "wl-pieces-garage",
+      "wl-pieces-couloir",
+      "wl-pieces-toit"
+    ],
+    "steps": [
+      {
+        "id": "wc-pieces-cuisine-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pieces-cuisine",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Maman prépare le dîner dans la cuisine.",
+          "On mange souvent dans la cuisine.",
+          "La cuisine est petite mais lumineuse."
+        ],
+        "options": ["кухня", "спальня", "столовая", "кладовка"],
+        "correctIndex": 0,
+        "explanation": "cuisine (f) — кухня (комната, где готовят). У слова есть и второе значение — «кухня» как готовка/еда: la cuisine française. Столовая — une salle à manger."
+      },
+      {
+        "id": "wc-pieces-cuisine-collo",
+        "kind": "sort",
+        "wordId": "wl-pieces-cuisine",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом cuisine звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "faire la cuisine",
+            "basket": "ok"
+          },
+          {
+            "text": "la cuisine française",
+            "basket": "ok"
+          },
+          {
+            "text": "dans la cuisine",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une cuisine",
+            "basket": "no"
+          },
+          {
+            "text": "une cuisine rapide à pied",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«faire la cuisine» — готовить, «la cuisine française» — французская кухня, «dans la cuisine» — на кухне. «boire une cuisine» и «une cuisine rapide à pied» — бессмыслица."
+      },
+      {
+        "id": "wc-pieces-chambre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pieces-chambre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je dors dans ma chambre.",
+          "Sa chambre est au premier étage.",
+          "L'hôtel a une chambre libre."
+        ],
+        "options": ["спальня (комната, где спят)", "кухня", "коридор", "квартира"],
+        "correctIndex": 0,
+        "explanation": "chambre (f) — спальня / (отдельная) комната, прежде всего та, где спят, и номер в отеле. «Комната» в широком смысле — une pièce."
+      },
+      {
+        "id": "wc-pieces-chambre-cmp",
+        "kind": "compare",
+        "wordId": "wl-pieces-chambre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "chambre и pièce. В чём разница?",
+        "phrases": ["L'appartement a trois pièces.", "Je range ma chambre."],
+        "options": [
+          "«pièce» — любая комната в счёте помещений; «chambre» — именно спальня / комната для сна.",
+          "Это полные синонимы, разницы нет.",
+          "«pièce» — спальня, а «chambre» — любая комната.",
+          "«chambre» значит «квартира», а «pièce» — «дом»."
+        ],
+        "correctIndex": 0,
+        "explanation": "pièce (f) — комната как единица счёта жилья (un trois-pièces — трёхкомнатная). chambre (f) — конкретно спальня. Поэтому квартиру меряют в pièces, а спят в la chambre."
+      },
+      {
+        "id": "wc-pieces-salon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pieces-salon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On regarde la télé dans le salon.",
+          "Le canapé est dans le salon.",
+          "Les invités attendent au salon."
+        ],
+        "options": ["гостиная", "ванная", "сад", "спальня"],
+        "correctIndex": 0,
+        "explanation": "salon (m) — гостиная (комната, где принимают гостей и отдыхают, там диван и телевизор). Не путать с английским «saloon»."
+      },
+      {
+        "id": "wc-pieces-salon-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-pieces-salon",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, какое из похожих по звучанию ты услышал.",
+        "audioText": "salon",
+        "options": ["salon", "ballon", "talon", "jalon"],
+        "correctIndex": 0,
+        "explanation": "salon /sa.lɔ̃/ — гостиная. Похоже звучат, но это другие слова: ballon /ba.lɔ̃/ — мяч, talon /ta.lɔ̃/ — каблук/пятка, jalon /ʒa.lɔ̃/ — веха. Все отличаются первым звуком."
+      },
+      {
+        "id": "wc-pieces-sdb-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pieces-sdb",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное выражение?",
+        "contexts": [
+          "Je prends une douche dans la salle de bain.",
+          "La salle de bain est à côté de la chambre.",
+          "Il y a une baignoire dans la salle de bain."
+        ],
+        "options": ["ванная комната", "столовая", "прихожая", "балкон"],
+        "correctIndex": 0,
+        "explanation": "la salle de bain (f) — ванная комната (с душем/ванной). Часто пишут и la salle de bains, оба варианта верны. Туалет — les toilettes (отдельно)."
+      },
+      {
+        "id": "wc-pieces-sdb-trap",
+        "kind": "trap",
+        "wordId": "wl-pieces-sdb",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Гость спрашивает, где помыть руки. В какой комнате это делают по-французски?",
+        "options": [
+          "la salle de bain — ванная (там раковина, душ, ванна)",
+          "la cuisine — потому что там вода",
+          "le salon — потому что там гости",
+          "les toilettes — это и есть ванная"
+        ],
+        "correctIndex": 0,
+        "explanation": "la salle de bain — ванная комната, там моются. Внимание: les toilettes (туалет) во Франции обычно отдельно от ванной — это не одна и та же комната, как в английском «bathroom»."
+      },
+      {
+        "id": "wc-pieces-jardin-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-pieces-jardin",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит jardin?",
+        "bridge": "Англ. «garden» — сад; во французском тот же корень, что и в «kindergarten». Фр. jardin /ʒaʁ.dɛ̃/ читается мягко, через ж.",
+        "options": ["сад", "гараж", "забор", "крыша"],
+        "correctIndex": 0,
+        "explanation": "jardin (m) — сад (зелёный участок у дома). Английское «garden» — прямой мост по смыслу и корню. Огород — le potager."
+      },
+      {
+        "id": "wc-pieces-jardin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pieces-jardin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les enfants jouent dans le jardin.",
+          "Il y a des fleurs dans le jardin.",
+          "On déjeune dans le jardin quand il fait beau."
+        ],
+        "options": ["сад", "кухня", "гостиная", "коридор"],
+        "correctIndex": 0,
+        "explanation": "jardin (m) — сад. «dans le jardin» — в саду. Городской парк — un jardin public или un parc."
+      },
+      {
+        "id": "wc-pieces-garage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pieces-garage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La voiture est dans le garage.",
+          "Le vélo est rangé au garage.",
+          "Le garage est fermé à clé."
+        ],
+        "options": ["гараж", "сад", "крыша", "подвал"],
+        "correctIndex": 0,
+        "explanation": "garage (m) — гараж (где стоит машина). У слова есть и второе значение — автосервис: aller au garage = поехать в автомастерскую. Подвал — la cave."
+      },
+      {
+        "id": "wc-pieces-garage-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-pieces-garage",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Это слово английский взял у французского. Что значит garage?",
+        "bridge": "Англ. «garage» — то же слово, родом из французского. Только по-французски g на конце мягкое: /ɡa.ʁaʒ/, без английского «дж».",
+        "options": ["гараж", "сад", "забор", "лестница"],
+        "correctIndex": 0,
+        "explanation": "garage (m) = гараж. Буквы те же, что в английском, но конечное -ge звучит как мягкое ж: /ɡa.ʁaʒ/."
+      },
+      {
+        "id": "wc-pieces-couloir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pieces-couloir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les chambres sont au bout du couloir.",
+          "Il attend dans le couloir.",
+          "Le couloir est long et étroit."
+        ],
+        "options": ["коридор", "лестница", "балкон", "вход"],
+        "correctIndex": 0,
+        "explanation": "couloir (m) — коридор (узкий проход между комнатами). «au bout du couloir» — в конце коридора. Лестница — un escalier."
+      },
+      {
+        "id": "wc-pieces-couloir-hint",
+        "kind": "wordHint",
+        "wordId": "wl-pieces-couloir",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: узкий длинный проход, соединяющий комнаты в доме.",
+        "answer": "couloir",
+        "hints": [
+          "Начинается на cou…",
+          "7 букв, мужской род (un ___)",
+          "Les chambres sont au bout du ___."
+        ],
+        "explanation": "couloir (m) — коридор. Читается /ku.lwaʁ/. В поезде и самолёте это тоже couloir — «проход»."
+      },
+      {
+        "id": "wc-pieces-toit-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pieces-toit",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le toit de la maison est rouge.",
+          "Un oiseau est sur le toit.",
+          "Le toit fuit quand il pleut."
+        ],
+        "options": ["крыша", "стена", "пол", "потолок"],
+        "correctIndex": 0,
+        "explanation": "toit (m) — крыша (сверху дома, снаружи). Конечное -t не читается: /twa/. Потолок (изнутри комнаты) — le plafond."
+      },
+      {
+        "id": "wc-pieces-toit-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-pieces-toit",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — комнаты внутри дома. Найди лишнее.",
+        "options": ["la cuisine", "la chambre", "le salon", "le toit"],
+        "correctIndex": 3,
+        "explanation": "Кухня, спальня и гостиная — комнаты внутри дома. le toit (крыша) — лишнее: это часть дома снаружи, не комната."
+      },
+      {
+        "id": "wc-pieces-toit-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-pieces-toit",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, какое из похожих по звучанию ты услышал.",
+        "audioText": "toit",
+        "options": ["toit", "doigt", "droit", "trois"],
+        "correctIndex": 0,
+        "explanation": "toit /twa/ — крыша. Похоже, но иначе: doigt /dwa/ — палец, droit /dʁwa/ — прямой/право, trois /tʁwa/ — три. Слышно по первому согласному."
+      },
+      {
+        "id": "wc-pieces-chambre-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-pieces-chambre",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для chambre (спальня), чтобы запомнить женский род (une chambre) и носовой звук в начале /ʃɑ̃/.",
+        "examples": [
+          "Англ. «chamber» (палата, покой) — тот же корень: la chambre это «покои», где ты спишь.",
+          "Представь свою спальню и фразу «je vais dans ma chambre» — иду к себе, в la chambre, она «своя», женского рода."
+        ]
+      }
+    ]
+  }
+]

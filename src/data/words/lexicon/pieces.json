@@ -1,0 +1,315 @@
+[
+  {
+    "id": "wl-pieces-cuisine",
+    "lemma": "cuisine",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kɥi.zin/",
+    "translationsRu": ["кухня", "готовка"],
+    "translationsEn": ["kitchen", "cooking"],
+    "semanticCore": "Кухня как комната, где готовят и часто едят; и «кухня» как кулинария, манера готовить.",
+    "collocations": [
+      {
+        "fr": "faire la cuisine",
+        "ru": "готовить (еду)"
+      },
+      {
+        "fr": "la cuisine française",
+        "ru": "французская кухня"
+      },
+      {
+        "fr": "dans la cuisine",
+        "ru": "на кухне"
+      },
+      {
+        "fr": "une cuisine équipée",
+        "ru": "кухня с техникой / встроенная кухня"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "salle à manger",
+        "note": "cuisine = кухня (где готовят); salle à manger = столовая (отдельная комната только для еды)."
+      },
+      {
+        "with": "cuisinier",
+        "note": "la cuisine = кухня / готовка; le cuisinier = повар (человек). Не путать с самим помещением."
+      }
+    ],
+    "frequencyRank": 240,
+    "level": "A1",
+    "tags": ["pieces", "logement"],
+    "caseIds": ["wc-pieces"]
+  },
+  {
+    "id": "wl-pieces-chambre",
+    "lemma": "chambre",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʃɑ̃bʁ/",
+    "translationsRu": ["спальня", "комната"],
+    "translationsEn": ["bedroom", "room"],
+    "semanticCore": "Комната, где спят (спальня), и номер в отеле; начинается с носового /ʃɑ̃/.",
+    "collocations": [
+      {
+        "fr": "une chambre d'hôtel",
+        "ru": "номер в отеле"
+      },
+      {
+        "fr": "ranger sa chambre",
+        "ru": "убираться в (своей) комнате"
+      },
+      {
+        "fr": "une chambre d'amis",
+        "ru": "комната для гостей"
+      },
+      {
+        "fr": "aller dans sa chambre",
+        "ru": "идти к себе в комнату"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pièce",
+        "note": "chambre = спальня / комната для сна; pièce = любая комната как единица счёта (un trois-pièces = трёхкомнатная)."
+      },
+      {
+        "with": "salle",
+        "note": "chambre = спальня; salle = зал / комната по назначению (salle de bain, salle à manger, salle de classe)."
+      }
+    ],
+    "frequencyRank": 260,
+    "level": "A1",
+    "tags": ["pieces", "logement"],
+    "caseIds": ["wc-pieces"]
+  },
+  {
+    "id": "wl-pieces-salon",
+    "lemma": "salon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sa.lɔ̃/",
+    "translationsRu": ["гостиная"],
+    "translationsEn": ["living room", "lounge"],
+    "semanticCore": "Гостиная — комната, где отдыхают, смотрят телевизор и принимают гостей; там диван.",
+    "collocations": [
+      {
+        "fr": "dans le salon",
+        "ru": "в гостиной"
+      },
+      {
+        "fr": "un canapé de salon",
+        "ru": "диван для гостиной"
+      },
+      {
+        "fr": "un salon de coiffure",
+        "ru": "парикмахерский салон"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "saloon (англ.)",
+        "note": "salon = гостиная; англ. «saloon» — бар/салун. Ложный друг: по-французски salon — мирная комната с диваном."
+      },
+      {
+        "with": "séjour",
+        "note": "salon и (salle de) séjour — почти синонимы: гостиная. séjour чаще = общая комната-гостиная, иногда совмещённая со столовой."
+      }
+    ],
+    "frequencyRank": 400,
+    "level": "A1",
+    "tags": ["pieces", "logement"],
+    "caseIds": ["wc-pieces"]
+  },
+  {
+    "id": "wl-pieces-sdb",
+    "lemma": "salle de bain",
+    "displayForm": "salle de bain / salle de bains",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sal.də.bɛ̃/",
+    "translationsRu": ["ванная комната"],
+    "translationsEn": ["bathroom"],
+    "semanticCore": "Комната, где моются: с раковиной, душем и/или ванной; туалет во Франции часто отдельно.",
+    "collocations": [
+      {
+        "fr": "dans la salle de bain",
+        "ru": "в ванной"
+      },
+      {
+        "fr": "une salle de bain avec douche",
+        "ru": "ванная с душем"
+      },
+      {
+        "fr": "la salle de bain est occupée",
+        "ru": "ванная занята"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "toilettes",
+        "note": "salle de bain = ванная (моются); les toilettes = туалет, во Франции обычно отдельная комната. Англ. «bathroom» путает их в одно."
+      },
+      {
+        "with": "bain",
+        "note": "la salle de bain = ванная комната; le bain = (приём) ванны (prendre un bain). Сама ванна-сантехника — la baignoire."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A1",
+    "tags": ["pieces", "logement"],
+    "caseIds": ["wc-pieces"]
+  },
+  {
+    "id": "wl-pieces-jardin",
+    "lemma": "jardin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒaʁ.dɛ̃/",
+    "translationsRu": ["сад"],
+    "translationsEn": ["garden", "yard"],
+    "semanticCore": "Сад / зелёный участок у дома, где растут цветы и где отдыхают; родственно англ. garden.",
+    "collocations": [
+      {
+        "fr": "dans le jardin",
+        "ru": "в саду"
+      },
+      {
+        "fr": "un jardin public",
+        "ru": "(городской) парк, сквер"
+      },
+      {
+        "fr": "le fond du jardin",
+        "ru": "в глубине сада"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "potager",
+        "note": "jardin = сад (цветы, газон, отдых); (jardin) potager = огород (овощи). Декоративный против съедобного."
+      },
+      {
+        "with": "cour",
+        "note": "jardin = сад (зелёный); cour = двор (мощёный, у дома или школы). Не путать зелень и асфальт."
+      }
+    ],
+    "frequencyRank": 350,
+    "level": "A1",
+    "tags": ["pieces", "exterieur"],
+    "caseIds": ["wc-pieces"]
+  },
+  {
+    "id": "wl-pieces-garage",
+    "lemma": "garage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɡa.ʁaʒ/",
+    "translationsRu": ["гараж"],
+    "translationsEn": ["garage"],
+    "semanticCore": "Гараж, где стоит машина; и автомастерская/сервис, куда машину чинить отвозят.",
+    "collocations": [
+      {
+        "fr": "dans le garage",
+        "ru": "в гараже"
+      },
+      {
+        "fr": "garer la voiture au garage",
+        "ru": "поставить машину в гараж"
+      },
+      {
+        "fr": "aller au garage",
+        "ru": "поехать в автосервис"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "garagiste",
+        "note": "le garage = гараж / автосервис (место); le garagiste = автомеханик (человек, который чинит)."
+      },
+      {
+        "with": "parking",
+        "note": "garage = (закрытый) гараж для своей машины; parking = (открытая или общая) парковка, стоянка."
+      }
+    ],
+    "frequencyRank": 500,
+    "level": "A1",
+    "tags": ["pieces", "exterieur"],
+    "caseIds": ["wc-pieces"]
+  },
+  {
+    "id": "wl-pieces-couloir",
+    "lemma": "couloir",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ku.lwaʁ/",
+    "translationsRu": ["коридор"],
+    "translationsEn": ["corridor", "hallway"],
+    "semanticCore": "Коридор — узкий проход, соединяющий комнаты; так же зовут проход в поезде и полосу движения.",
+    "collocations": [
+      {
+        "fr": "au bout du couloir",
+        "ru": "в конце коридора"
+      },
+      {
+        "fr": "dans le couloir",
+        "ru": "в коридоре"
+      },
+      {
+        "fr": "un long couloir",
+        "ru": "длинный коридор"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "entrée",
+        "note": "couloir = коридор (проход между комнатами); l'entrée = прихожая / вход (первое помещение у двери)."
+      },
+      {
+        "with": "escalier",
+        "note": "couloir = коридор (горизонтально, на одном этаже); escalier = лестница (между этажами)."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A1",
+    "tags": ["pieces", "logement"],
+    "caseIds": ["wc-pieces"]
+  },
+  {
+    "id": "wl-pieces-toit",
+    "lemma": "toit",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/twa/",
+    "translationsRu": ["крыша"],
+    "translationsEn": ["roof"],
+    "semanticCore": "Крыша — верх дома снаружи; конечное -t не читается, звучит как /twa/.",
+    "collocations": [
+      {
+        "fr": "le toit de la maison",
+        "ru": "крыша дома"
+      },
+      {
+        "fr": "sur le toit",
+        "ru": "на крыше"
+      },
+      {
+        "fr": "un toit en tuiles",
+        "ru": "черепичная крыша"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "plafond",
+        "note": "toit = крыша (сверху, снаружи дома); plafond = потолок (внутри комнаты, над головой)."
+      },
+      {
+        "with": "toi",
+        "note": "toit /twa/ (крыша) и toi /twa/ (ты) звучат одинаково — омофоны. Различай только по смыслу и написанию."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A1",
+    "tags": ["pieces", "exterieur"],
+    "caseIds": ["wc-pieces"]
+  }
+]

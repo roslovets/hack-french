@@ -1,0 +1,336 @@
+[
+  {
+    "id": "wl-calendrier-jour",
+    "lemma": "jour",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒuʁ/",
+    "translationsRu": ["день", "сутки"],
+    "translationsEn": ["day"],
+    "semanticCore": "День как единица счёта времени и как светлое время суток; считают именно в jours.",
+    "collocations": [
+      {
+        "fr": "tous les jours",
+        "ru": "каждый день"
+      },
+      {
+        "fr": "quel jour sommes-nous ?",
+        "ru": "какой сегодня день (недели)?"
+      },
+      {
+        "fr": "un jour férié",
+        "ru": "праздничный (нерабочий) день"
+      },
+      {
+        "fr": "deux fois par jour",
+        "ru": "два раза в день"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "journée",
+        "note": "jour — день как точка/единица счёта (trois jours); journée — день как длительность и его наполнение (bonne journée, toute la journée)."
+      },
+      {
+        "with": "semaine",
+        "note": "jour — день; semaine — неделя (sept jours). Не путать единицы: par jour ≠ par semaine."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A1",
+    "tags": ["calendrier", "temps"],
+    "caseIds": ["wc-calendrier"]
+  },
+  {
+    "id": "wl-calendrier-semaine",
+    "lemma": "semaine",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sə.mɛn/",
+    "translationsRu": ["неделя"],
+    "translationsEn": ["week"],
+    "semanticCore": "Неделя — отрезок из семи дней; так планируют дела и работу (par semaine, la semaine prochaine).",
+    "collocations": [
+      {
+        "fr": "la semaine prochaine",
+        "ru": "на следующей неделе"
+      },
+      {
+        "fr": "la semaine dernière",
+        "ru": "на прошлой неделе"
+      },
+      {
+        "fr": "en semaine",
+        "ru": "в будни (не в выходные)"
+      },
+      {
+        "fr": "cinq jours par semaine",
+        "ru": "пять дней в неделю"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "week-end",
+        "note": "semaine — вся неделя или будни (en semaine — по будням); le week-end — выходные (суббота-воскресенье)."
+      },
+      {
+        "with": "mois",
+        "note": "semaine — неделя (7 дней); mois — месяц (~4 недели). Разные единицы счёта."
+      }
+    ],
+    "frequencyRank": 260,
+    "level": "A1",
+    "tags": ["calendrier", "temps"],
+    "caseIds": ["wc-calendrier"]
+  },
+  {
+    "id": "wl-calendrier-mois",
+    "lemma": "mois",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mwa/",
+    "translationsRu": ["месяц"],
+    "translationsEn": ["month"],
+    "semanticCore": "Месяц как единица календаря; форма не меняется во множественном (un mois — des mois).",
+    "collocations": [
+      {
+        "fr": "chaque mois",
+        "ru": "каждый месяц"
+      },
+      {
+        "fr": "le mois prochain",
+        "ru": "в следующем месяце"
+      },
+      {
+        "fr": "le mois de juin",
+        "ru": "месяц июнь"
+      },
+      {
+        "fr": "par mois",
+        "ru": "в месяц"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "moi",
+        "note": "mois /mwa/ — месяц; moi /mwa/ — «я / меня» (c'est moi). Звучат одинаково, пишутся по-разному — различай по смыслу."
+      },
+      {
+        "with": "année",
+        "note": "mois — месяц; année — год (douze mois). Не путать единицы: par mois ≠ par an."
+      }
+    ],
+    "frequencyRank": 230,
+    "level": "A1",
+    "tags": ["calendrier", "temps"],
+    "caseIds": ["wc-calendrier"]
+  },
+  {
+    "id": "wl-calendrier-annee",
+    "lemma": "année",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/a.ne/",
+    "translationsRu": ["год"],
+    "translationsEn": ["year"],
+    "semanticCore": "Год как промежуток времени с его наполнением (toute l'année, cette année), в отличие от счётного an.",
+    "collocations": [
+      {
+        "fr": "bonne année !",
+        "ru": "с Новым годом!"
+      },
+      {
+        "fr": "toute l'année",
+        "ru": "весь год / круглый год"
+      },
+      {
+        "fr": "cette année",
+        "ru": "в этом году"
+      },
+      {
+        "fr": "l'année prochaine",
+        "ru": "в следующем году"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "an",
+        "note": "an — год как единица счёта (j'ai vingt ans, il y a deux ans); année — год как промежуток (bonne année, toute l'année). Как jour / journée."
+      },
+      {
+        "with": "mois",
+        "note": "année — год; mois — месяц. В году douze mois."
+      }
+    ],
+    "frequencyRank": 150,
+    "level": "A1",
+    "tags": ["calendrier", "temps"],
+    "caseIds": ["wc-calendrier"]
+  },
+  {
+    "id": "wl-calendrier-matin",
+    "lemma": "matin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ma.tɛ̃/",
+    "translationsRu": ["утро"],
+    "translationsEn": ["morning"],
+    "semanticCore": "Утро как часть суток; «le matin» — по утрам, обычное время для кофе и начала дня.",
+    "collocations": [
+      {
+        "fr": "le matin",
+        "ru": "утром / по утрам"
+      },
+      {
+        "fr": "tôt le matin",
+        "ru": "рано утром"
+      },
+      {
+        "fr": "demain matin",
+        "ru": "завтра утром"
+      },
+      {
+        "fr": "du matin au soir",
+        "ru": "с утра до вечера"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "matinée",
+        "note": "matin — утро как момент (le matin, ce matin); matinée — всё утро как длительность (toute la matinée, bonne matinée). Как jour / journée."
+      },
+      {
+        "with": "soir",
+        "note": "matin — утро; soir — вечер. Пара «du matin au soir» — с утра до вечера."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A1",
+    "tags": ["calendrier", "moment-du-jour"],
+    "caseIds": ["wc-calendrier"]
+  },
+  {
+    "id": "wl-calendrier-soir",
+    "lemma": "soir",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/swaʁ/",
+    "translationsRu": ["вечер"],
+    "translationsEn": ["evening"],
+    "semanticCore": "Вечер как часть суток; «le soir» — по вечерам, время отдыха; в приветствии — bonsoir.",
+    "collocations": [
+      {
+        "fr": "le soir",
+        "ru": "вечером / по вечерам"
+      },
+      {
+        "fr": "ce soir",
+        "ru": "сегодня вечером"
+      },
+      {
+        "fr": "à ce soir !",
+        "ru": "до вечера!"
+      },
+      {
+        "fr": "hier soir",
+        "ru": "вчера вечером"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "soirée",
+        "note": "soir — вечер как момент (ce soir, à ce soir); soirée — вечер как длительность или вечеринка (bonne soirée, une soirée entre amis)."
+      },
+      {
+        "with": "nuit",
+        "note": "soir — вечер (когда ещё бодрствуют); nuit — ночь (когда спят). Bonne soirée ≠ bonne nuit (спокойной ночи)."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A1",
+    "tags": ["calendrier", "moment-du-jour"],
+    "caseIds": ["wc-calendrier"]
+  },
+  {
+    "id": "wl-calendrier-hier",
+    "lemma": "hier",
+    "pos": "adv",
+    "ipa": "/jɛʁ/",
+    "translationsRu": ["вчера"],
+    "translationsEn": ["yesterday"],
+    "semanticCore": "Вчера — день перед сегодняшним; маркер прошлого, обычно с прошедшим временем.",
+    "collocations": [
+      {
+        "fr": "hier soir",
+        "ru": "вчера вечером"
+      },
+      {
+        "fr": "hier matin",
+        "ru": "вчера утром"
+      },
+      {
+        "fr": "avant-hier",
+        "ru": "позавчера"
+      },
+      {
+        "fr": "depuis hier",
+        "ru": "со вчерашнего дня"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "demain",
+        "note": "hier — вчера (прошлое); demain — завтра (будущее). Противоположности на оси времени."
+      },
+      {
+        "with": "aujourd'hui",
+        "note": "hier — вчера; aujourd'hui — сегодня. hier требует прошедшего времени, не будущего."
+      }
+    ],
+    "frequencyRank": 280,
+    "level": "A1",
+    "tags": ["calendrier", "temps"],
+    "caseIds": ["wc-calendrier"]
+  },
+  {
+    "id": "wl-calendrier-demain",
+    "lemma": "demain",
+    "pos": "adv",
+    "ipa": "/də.mɛ̃/",
+    "translationsRu": ["завтра"],
+    "translationsEn": ["tomorrow"],
+    "semanticCore": "Завтра — день после сегодняшнего; маркер ближайшего будущего (à demain, demain matin).",
+    "collocations": [
+      {
+        "fr": "à demain !",
+        "ru": "до завтра!"
+      },
+      {
+        "fr": "demain matin",
+        "ru": "завтра утром"
+      },
+      {
+        "fr": "après-demain",
+        "ru": "послезавтра"
+      },
+      {
+        "fr": "à partir de demain",
+        "ru": "начиная с завтрашнего дня"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "hier",
+        "note": "demain — завтра (будущее); hier — вчера (прошлое). Противоположности на оси времени."
+      },
+      {
+        "with": "matin",
+        "note": "demain /də.mɛ̃/ и matin /ma.tɛ̃/ рифмуются на носовом /ɛ̃/, но demain — «завтра» (наречие), matin — «утро» (существительное). Вместе: demain matin."
+      }
+    ],
+    "frequencyRank": 270,
+    "level": "A1",
+    "tags": ["calendrier", "temps"],
+    "caseIds": ["wc-calendrier"]
+  }
+]

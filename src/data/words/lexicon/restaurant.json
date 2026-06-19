@@ -1,0 +1,325 @@
+[
+  {
+    "id": "wl-restaurant-restaurant",
+    "lemma": "restaurant",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁɛs.to.ʁɑ̃/",
+    "translationsRu": ["ресторан"],
+    "translationsEn": ["restaurant"],
+    "semanticCore": "Заведение, куда приходят поесть за столиком с обслуживанием; «пойти в ресторан» — aller au restaurant.",
+    "collocations": [
+      {
+        "fr": "aller au restaurant",
+        "ru": "идти в ресторан"
+      },
+      {
+        "fr": "un bon restaurant italien",
+        "ru": "хороший итальянский ресторан"
+      },
+      {
+        "fr": "réserver dans un restaurant",
+        "ru": "забронировать в ресторане"
+      },
+      {
+        "fr": "le restaurant est complet",
+        "ru": "в ресторане нет мест"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cantine",
+        "note": "restaurant = ресторан (с обслуживанием); cantine = столовая на работе/в школе (без официантов, по фикс. меню)."
+      },
+      {
+        "with": "brasserie",
+        "note": "restaurant = ресторан вообще; brasserie = пивная-ресторан попроще, где едят почти весь день без брони."
+      }
+    ],
+    "frequencyRank": 360,
+    "level": "A2",
+    "tags": ["restaurant", "lieu"],
+    "caseIds": ["wc-restaurant"]
+  },
+  {
+    "id": "wl-restaurant-menu",
+    "lemma": "menu",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mə.ny/",
+    "translationsRu": ["комплексный обед (по фикс. цене)", "меню"],
+    "translationsEn": ["set menu", "menu"],
+    "semanticCore": "Во французском ресторане le menu — это чаще готовый набор блюд за одну цену (закуска+горячее+десерт), а не список всех блюд (это la carte).",
+    "collocations": [
+      {
+        "fr": "le menu du jour",
+        "ru": "меню дня (комплекс дня)"
+      },
+      {
+        "fr": "un menu à 25 euros",
+        "ru": "комплекс за 25 евро"
+      },
+      {
+        "fr": "le menu enfant",
+        "ru": "детское меню"
+      },
+      {
+        "fr": "le menu du midi",
+        "ru": "обеденный комплекс"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "carte",
+        "note": "menu = фиксированный набор блюд за одну цену; la carte = полный список всех блюд (выбираешь по отдельности — «à la carte»)."
+      },
+      {
+        "with": "menu (англ.)",
+        "note": "Англ. «menu» — это список блюд = фр. la carte. Фр. le menu чаще = комплексный обед. Ложный друг по объёму значения."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["restaurant", "repas"],
+    "caseIds": ["wc-restaurant"]
+  },
+  {
+    "id": "wl-restaurant-entree",
+    "lemma": "entrée",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɑ̃.tʁe/",
+    "translationsRu": ["закуска (первое блюдо)", "вход"],
+    "translationsEn": ["starter", "entrance"],
+    "semanticCore": "За столом entrée — лёгкое первое блюдо перед горячим (то, с чего «входят» в обед); вне еды — вход куда-либо.",
+    "collocations": [
+      {
+        "fr": "comme entrée",
+        "ru": "на закуску, в качестве первого"
+      },
+      {
+        "fr": "une entrée et un plat",
+        "ru": "закуска и горячее"
+      },
+      {
+        "fr": "l'entrée du restaurant",
+        "ru": "вход в ресторан"
+      },
+      {
+        "fr": "une entrée froide",
+        "ru": "холодная закуска"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "entrée (амер. англ.)",
+        "note": "Амер. англ. «entrée» = ОСНОВНОЕ блюдо, а фр. entrée = ЗАКУСКА перед горячим. Опасный ложный друг в меню."
+      },
+      {
+        "with": "plat",
+        "note": "entrée = закуска (первой); le plat (principal) = горячее, основное блюдо (после закуски)."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["restaurant", "repas"],
+    "caseIds": ["wc-restaurant"]
+  },
+  {
+    "id": "wl-restaurant-dessert",
+    "lemma": "dessert",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/de.sɛʁ/",
+    "translationsRu": ["десерт"],
+    "translationsEn": ["dessert"],
+    "semanticCore": "Сладкое блюдо в конце трапезы (торт, мороженое, фрукты), после сыра/горячего.",
+    "collocations": [
+      {
+        "fr": "comme dessert",
+        "ru": "на десерт"
+      },
+      {
+        "fr": "prendre un dessert",
+        "ru": "взять десерт"
+      },
+      {
+        "fr": "le dessert du jour",
+        "ru": "десерт дня"
+      },
+      {
+        "fr": "fromage ou dessert",
+        "ru": "сыр или десерт (выбор в конце)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "désert",
+        "note": "dessert (две ss, /de.sɛʁ/) = десерт; désert (одна s, /de.zɛʁ/) = пустыня. Различаются звуком s/z и числом s."
+      },
+      {
+        "with": "entrée",
+        "note": "dessert = сладкое В КОНЦЕ обеда; entrée = закуска В НАЧАЛЕ. Не путать порядок."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["restaurant", "repas"],
+    "caseIds": ["wc-restaurant"]
+  },
+  {
+    "id": "wl-restaurant-reserver",
+    "lemma": "réserver",
+    "pos": "verb",
+    "ipa": "/ʁe.zɛʁ.ve/",
+    "translationsRu": ["бронировать", "заказывать (столик)"],
+    "translationsEn": ["to reserve", "to book"],
+    "semanticCore": "Заранее закрепить за собой место (столик, номер, билет), чтобы оно ждало именно тебя.",
+    "collocations": [
+      {
+        "fr": "réserver une table",
+        "ru": "заказать столик"
+      },
+      {
+        "fr": "réserver à l'avance",
+        "ru": "бронировать заранее"
+      },
+      {
+        "fr": "réserver pour deux personnes",
+        "ru": "забронировать на двоих"
+      },
+      {
+        "fr": "réserver en ligne",
+        "ru": "бронировать онлайн"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "commander",
+        "note": "réserver = забронировать место заранее; commander = сделать заказ (блюда) у официанта за столом. Сначала réserver, потом commander."
+      },
+      {
+        "with": "annuler",
+        "note": "réserver = забронировать; annuler = отменить бронь. Антонимы в одной ситуации."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["restaurant", "action"],
+    "caseIds": ["wc-restaurant"]
+  },
+  {
+    "id": "wl-restaurant-pourboire",
+    "lemma": "pourboire",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/puʁ.bwaʁ/",
+    "translationsRu": ["чаевые"],
+    "translationsEn": ["tip"],
+    "semanticCore": "Небольшие деньги, оставленные официанту сверх счёта в благодарность; буквально «pour boire» — «на выпить».",
+    "collocations": [
+      {
+        "fr": "laisser un pourboire",
+        "ru": "оставить чаевые"
+      },
+      {
+        "fr": "un petit pourboire",
+        "ru": "небольшие чаевые"
+      },
+      {
+        "fr": "le service est compris",
+        "ru": "обслуживание включено (в счёт)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "addition",
+        "note": "pourboire = чаевые (сверх счёта, по желанию); l'addition = сам счёт за еду. Во Франции service compris, поэтому pourboire необязателен."
+      },
+      {
+        "with": "monnaie",
+        "note": "pourboire = чаевые официанту; la monnaie = сдача / мелочь. Оставить можно la monnaie как pourboire, но это разные понятия."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["restaurant", "argent"],
+    "caseIds": ["wc-restaurant"]
+  },
+  {
+    "id": "wl-restaurant-fourchette",
+    "lemma": "fourchette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fuʁ.ʃɛt/",
+    "translationsRu": ["вилка"],
+    "translationsEn": ["fork"],
+    "semanticCore": "Столовый прибор с зубцами, которым накалывают и подносят еду; кладётся слева от тарелки.",
+    "collocations": [
+      {
+        "fr": "manger avec une fourchette",
+        "ru": "есть вилкой"
+      },
+      {
+        "fr": "une fourchette et un couteau",
+        "ru": "вилка и нож"
+      },
+      {
+        "fr": "poser sa fourchette",
+        "ru": "положить вилку"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "couteau",
+        "note": "fourchette = вилка (слева); couteau = нож (справа). Базовая пара столовых приборов."
+      },
+      {
+        "with": "cuillère",
+        "note": "fourchette = вилка; cuillère = ложка. Оба прибора, но cuillère — для супа и десерта."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["restaurant", "couvert"],
+    "caseIds": ["wc-restaurant"]
+  },
+  {
+    "id": "wl-restaurant-assiette",
+    "lemma": "assiette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/a.sjɛt/",
+    "translationsRu": ["тарелка"],
+    "translationsEn": ["plate"],
+    "semanticCore": "Плоская посуда, на которой подают и едят блюдо; также в идиоме «не в своей тарелке».",
+    "collocations": [
+      {
+        "fr": "une assiette propre",
+        "ru": "чистая тарелка"
+      },
+      {
+        "fr": "vider son assiette",
+        "ru": "доесть всё с тарелки"
+      },
+      {
+        "fr": "une assiette de fromages",
+        "ru": "тарелка с сыром (сырная нарезка)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "plat",
+        "note": "assiette = тарелка (личная, из которой едят); le plat = большое блюдо для подачи на стол ИЛИ кушанье. Слово plat шире."
+      },
+      {
+        "with": "assiette (идиома)",
+        "note": "Буквально assiette = тарелка, но «ne pas être dans son assiette» = неважно себя чувствовать, «быть не в своей тарелке» — не про посуду."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["restaurant", "couvert"],
+    "caseIds": ["wc-restaurant"]
+  }
+]
