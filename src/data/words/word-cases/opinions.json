@@ -1,0 +1,311 @@
+[
+  {
+    "id": "wc-opinions",
+    "title": "Мнение",
+    "theme": "opinions",
+    "level": "A2",
+    "wordIds": [
+      "wl-opinions-avis",
+      "wl-opinions-raison",
+      "wl-opinions-tort",
+      "wl-opinions-accord",
+      "wl-opinions-peutetre",
+      "wl-opinions-biensur",
+      "wl-opinions-vrai",
+      "wl-opinions-faux"
+    ],
+    "steps": [
+      {
+        "id": "wc-opinions-avis-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-opinions-avis",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "À mon avis, ce film est ennuyeux.",
+          "Tout le monde a donné son avis.",
+          "Elle a changé d'avis au dernier moment."
+        ],
+        "options": ["мнение, взгляд", "совет", "новость", "выбор"],
+        "correctIndex": 0,
+        "explanation": "avis (m) — мнение. «à mon avis» — по-моему, «donner son avis» — высказать мнение, «changer d'avis» — передумать. Совет — un conseil."
+      },
+      {
+        "id": "wc-opinions-avis-trap",
+        "kind": "trap",
+        "wordId": "wl-opinions-avis",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «advice» (совет) похоже на avis. Но что значит французское avis?",
+        "options": [
+          "мнение (то, что я думаю) — а «совет» это un conseil",
+          "совет (что тебе стоит сделать)",
+          "объявление о скидках",
+          "согласие на что-то"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: avis ≠ англ. «advice». avis — это мнение («à mon avis» — по-моему). Совет, рекомендация — un conseil: «donne-moi un conseil»."
+      },
+      {
+        "id": "wc-opinions-raison-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-opinions-raison",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Tu as raison, c'est une bonne idée.",
+          "Je pense que vous avez raison.",
+          "Il a raison de partir tôt."
+        ],
+        "options": ["правота (быть правым)", "причина опоздания", "настроение", "усталость"],
+        "correctIndex": 0,
+        "explanation": "В обороте «avoir raison» raison (f) значит правоту: «tu as raison» — ты прав. Дословно — «иметь правоту». У слова есть и значение «причина»: pour cette raison — по этой причине."
+      },
+      {
+        "id": "wc-opinions-raison-sort",
+        "kind": "sort",
+        "wordId": "wl-opinions-raison",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Где raison сочетается естественно, а где — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "tu as raison",
+            "basket": "ok"
+          },
+          {
+            "text": "pour cette raison",
+            "basket": "ok"
+          },
+          {
+            "text": "donner raison à son ami",
+            "basket": "ok"
+          },
+          {
+            "text": "je suis raison",
+            "basket": "no"
+          },
+          {
+            "text": "faire une raison",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Правота идёт с avoir: «avoir raison», «tu as raison». Нельзя «être raison» (être — это для прилагательных), и «faire une raison» так не говорят (есть лишь «se faire une raison» — смириться). «pour cette raison» (по этой причине) и «donner raison à qn» — верны."
+      },
+      {
+        "id": "wc-opinions-tort-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-opinions-tort",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Tu as tort, ce n'est pas vrai.",
+          "J'ai eu tort de lui faire confiance.",
+          "Il a tort sur ce point."
+        ],
+        "options": ["неправота (быть неправым)", "удача", "право выбора", "сила"],
+        "correctIndex": 0,
+        "explanation": "В обороте «avoir tort» tort (m) значит неправоту: «tu as tort» — ты неправ. Это противоположность «avoir raison». Тоже только с глаголом avoir."
+      },
+      {
+        "id": "wc-opinions-tort-cmp",
+        "kind": "compare",
+        "wordId": "wl-opinions-tort",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«Il a raison» и «Il a tort» — в чём разница?",
+        "phrases": ["Il a raison.", "Il a tort."],
+        "options": [
+          "«Il a raison» — он прав; «Il a tort» — он неправ.",
+          "Это синонимы, оба значат «он прав».",
+          "«Il a raison» — он неправ; «Il a tort» — он прав.",
+          "Первое про причину, второе про настроение."
+        ],
+        "correctIndex": 0,
+        "explanation": "Пара противоположностей с avoir: avoir raison = быть правым, avoir tort = быть неправым. «Il a raison» — он прав, «Il a tort» — он неправ."
+      },
+      {
+        "id": "wc-opinions-accord-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-opinions-accord",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je suis d'accord avec toi.",
+          "D'accord, on se voit demain !",
+          "Ils se sont mis d'accord sur le prix."
+        ],
+        "options": ["согласие (согласен)", "приказ", "спор", "выбор блюда"],
+        "correctIndex": 0,
+        "explanation": "accord (m) — согласие. Главный оборот: «être d'accord (avec)» — быть согласным (с). «D'accord !» — хорошо!, договорились! «se mettre d'accord» — договориться."
+      },
+      {
+        "id": "wc-opinions-accord-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-opinions-accord",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит accord?",
+        "bridge": "Англ. «accord / in accordance / agreement» — то же гнездо: согласие, договорённость. Читается по-французски /a.kɔʁ/, конечная d не звучит.",
+        "options": [
+          "согласие, договорённость",
+          "запись (аккорд в музыке только)",
+          "случай",
+          "новость"
+        ],
+        "correctIndex": 0,
+        "explanation": "accord = согласие, договорённость (англ. «accord/agreement»). В речи чаще всего как «d'accord» — согласен, хорошо. Музыкальный аккорд — тоже accord, но это лишь одно из значений."
+      },
+      {
+        "id": "wc-opinions-peutetre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-opinions-peutetre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно выражение во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Peut-être qu'il viendra ce soir.",
+          "— Tu es libre demain ? — Peut-être.",
+          "Elle a peut-être raison."
+        ],
+        "options": ["может быть, возможно", "конечно", "никогда", "снова"],
+        "correctIndex": 0,
+        "explanation": "peut-être — может быть, возможно (неуверенность). «Peut-être qu'il viendra» — может быть, он придёт. Пишется через дефис."
+      },
+      {
+        "id": "wc-opinions-peutetre-trap",
+        "kind": "trap",
+        "wordId": "wl-opinions-peutetre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«Il peut être fatigué» и «Il viendra, peut-être». Где «может быть» = «возможно»?",
+        "phrases": ["Il peut être fatigué.", "Il viendra, peut-être."],
+        "options": [
+          "Во втором: «peut-être» (с дефисом) = возможно. В первом «peut être» (без дефиса) = «может быть уставшим».",
+          "В первом: «peut être» = возможно.",
+          "В обоих одинаково, дефис ничего не меняет.",
+          "Ни в одном — это вообще не про возможность."
+        ],
+        "correctIndex": 0,
+        "explanation": "Дефис решает: «peut-être» — наречие «возможно». «peut être» (без дефиса) — глагол pouvoir + être = «может быть (каким-то)»: il peut être fatigué — он может быть уставшим."
+      },
+      {
+        "id": "wc-opinions-biensur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-opinions-biensur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно выражение во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "— Tu m'aides ? — Bien sûr !",
+          "Bien sûr que je viendrai.",
+          "— C'est gratuit ? — Non, bien sûr que non."
+        ],
+        "options": ["конечно, разумеется", "может быть", "к сожалению", "наоборот"],
+        "correctIndex": 0,
+        "explanation": "bien sûr — конечно, разумеется (полная уверенность). «bien sûr que oui» — конечно да, «bien sûr que non» — конечно нет. Над û — accent circonflexe."
+      },
+      {
+        "id": "wc-opinions-biensur-cmp",
+        "kind": "compare",
+        "wordId": "wl-opinions-biensur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«Bien sûr.» и «Peut-être.» как ответы — в чём разница?",
+        "phrases": ["— Tu viens ? — Bien sûr.", "— Tu viens ? — Peut-être."],
+        "options": [
+          "«Bien sûr» — конечно (уверенное да); «Peut-être» — может быть (неуверенно).",
+          "Оба значат «конечно».",
+          "Оба значат «нет».",
+          "«Bien sûr» — может быть; «Peut-être» — точно да."
+        ],
+        "correctIndex": 0,
+        "explanation": "Это разные степени уверенности: «Bien sûr» — конечно, без сомнений; «Peut-être» — может быть, ещё не решено."
+      },
+      {
+        "id": "wc-opinions-vrai-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-opinions-vrai",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "C'est vrai, je te le promets.",
+          "C'est un vrai ami.",
+          "Cette histoire est vraie."
+        ],
+        "options": ["правда, настоящий, верный", "ложный", "странный", "скучный"],
+        "correctIndex": 0,
+        "explanation": "vrai — правда / верный («c'est vrai» — это правда) и настоящий, подлинный («un vrai ami» — настоящий друг). В женском роде vraie: une histoire vraie."
+      },
+      {
+        "id": "wc-opinions-vrai-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-opinions-vrai",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "vrai",
+        "options": ["vrai", "vert", "frais", "vais"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало vrai /vʁɛ/ — правда/настоящий. Похожие, но другие слова: vert /vɛʁ/ — зелёный, frais /fʁɛ/ — свежий, vais /vɛ/ — (je) vais «иду»."
+      },
+      {
+        "id": "wc-opinions-faux-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-opinions-faux",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Non, c'est faux, je n'ai rien dit.",
+          "Tu as fait un faux numéro.",
+          "Méfie-toi, c'est un faux billet."
+        ],
+        "options": ["ложный, неверный, фальшивый", "правдивый", "новый", "дорогой"],
+        "correctIndex": 0,
+        "explanation": "faux — ложный, неверный («c'est faux» — это неправда) и поддельный, фальшивый («un faux billet» — фальшивая купюра). В женском роде fausse /fos/."
+      },
+      {
+        "id": "wc-opinions-faux-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-opinions-faux",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три ответа подтверждают или сомневаются. Найди лишний — тот, что говорит «это неправда».",
+        "options": ["bien sûr", "peut-être", "tu as raison", "c'est faux"],
+        "correctIndex": 3,
+        "explanation": "«bien sûr» (конечно), «peut-être» (может быть) и «tu as raison» (ты прав) — это согласие или допущение. «c'est faux» (это неправда) — отрицание, поэтому лишнее."
+      },
+      {
+        "id": "wc-opinions-faux-hint",
+        "kind": "wordHint",
+        "wordId": "wl-opinions-faux",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: противоположность vrai — то, что не соответствует правде.",
+        "answer": "faux",
+        "hints": [
+          "Начинается на f…",
+          "4 буквы, читается /fo/, конечная x не звучит",
+          "C'est ___, ce n'est pas vrai."
+        ],
+        "explanation": "faux — ложный, неверный (противоположность vrai). Читается /fo/, x на конце немая. В женском роде — fausse /fos/."
+      }
+    ]
+  }
+]

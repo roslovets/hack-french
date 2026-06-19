@@ -1,0 +1,299 @@
+[
+  {
+    "id": "wc-jours",
+    "title": "Дни недели",
+    "theme": "jours",
+    "level": "A1",
+    "wordIds": [
+      "wl-jours-lundi",
+      "wl-jours-mardi",
+      "wl-jours-mercredi",
+      "wl-jours-jeudi",
+      "wl-jours-vendredi",
+      "wl-jours-samedi",
+      "wl-jours-dimanche",
+      "wl-jours-weekend"
+    ],
+    "steps": [
+      {
+        "id": "wc-jours-lundi-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jours-lundi",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On se voit lundi prochain.",
+          "Le musée est fermé le lundi.",
+          "Lundi, je commence un nouveau travail."
+        ],
+        "options": ["понедельник", "вторник", "выходной", "неделя"],
+        "correctIndex": 0,
+        "explanation": "lundi (m) — понедельник, первый рабочий день недели. Названия дней пишутся с маленькой буквы. Род мужской: un lundi."
+      },
+      {
+        "id": "wc-jours-lundi-cmp",
+        "kind": "compare",
+        "wordId": "wl-jours-lundi",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "lundi и le lundi. В чём разница?",
+        "phrases": ["Je viens lundi.", "Je travaille le lundi."],
+        "options": [
+          "«lundi» (без артикля) — в этот/ближайший понедельник; «le lundi» — по понедельникам, каждую неделю.",
+          "Это полные синонимы, разницы нет.",
+          "«lundi» значит «каждый понедельник», а «le lundi» — один конкретный.",
+          "«le lundi» — это вчера, а «lundi» — завтра."
+        ],
+        "correctIndex": 0,
+        "explanation": "Без артикля lundi — конкретный (ближайший) понедельник. С артиклем le lundi — регулярно, по понедельникам. Это ключевое различие для дней недели."
+      },
+      {
+        "id": "wc-jours-mardi-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jours-mardi",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Mardi, j'ai rendez-vous chez le médecin.",
+          "Le cours de yoga, c'est le mardi soir.",
+          "On est mardi aujourd'hui."
+        ],
+        "options": ["вторник", "среда", "четверг", "март"],
+        "correctIndex": 0,
+        "explanation": "mardi (m) — вторник, второй день недели. Не путать с mars (март). «On est mardi» — сегодня вторник."
+      },
+      {
+        "id": "wc-jours-mardi-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-jours-mardi",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Слушай и выбери слово, которое прозвучало.",
+        "audioText": "mardi",
+        "options": ["mardi", "mercredi", "midi", "mari"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало mardi /maʁ.di/ (вторник). mercredi /mɛʁ.kʁə.di/ — среда, midi /mi.di/ — полдень, mari /ma.ʁi/ — муж. Похоже по звучанию, но значения разные."
+      },
+      {
+        "id": "wc-jours-mercredi-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jours-mercredi",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les enfants n'ont pas école le mercredi après-midi.",
+          "Mercredi, c'est le milieu de la semaine.",
+          "On déjeune ensemble mercredi ?"
+        ],
+        "options": ["среда", "вторник", "пятница", "месяц"],
+        "correctIndex": 0,
+        "explanation": "mercredi (m) — среда, середина недели. Обрати внимание на две r: mer-cre-di."
+      },
+      {
+        "id": "wc-jours-mercredi-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-jours-mercredi",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Слушай и выбери слово, которое прозвучало.",
+        "audioText": "mercredi",
+        "options": ["mercredi", "mardi", "vendredi", "merci"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало mercredi /mɛʁ.kʁə.di/ (среда). mardi — вторник, vendredi — пятница, merci /mɛʁ.si/ — спасибо. Начало mer- общее, но дальше слова расходятся."
+      },
+      {
+        "id": "wc-jours-jeudi-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jours-jeudi",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Jeudi soir, il y a un concert en ville.",
+          "Le marché a lieu le jeudi matin.",
+          "À jeudi !"
+        ],
+        "options": ["четверг", "среда", "суббота", "игра"],
+        "correctIndex": 0,
+        "explanation": "jeudi (m) — четверг. «À jeudi !» — до четверга! Начинается со звука /ʒ/, как в je (я). Не путать с jeu (игра)."
+      },
+      {
+        "id": "wc-jours-jeudi-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-jours-jeudi",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Слушай и выбери слово, которое прозвучало.",
+        "audioText": "jeudi",
+        "options": ["jeudi", "jeu", "jeune", "deux"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало jeudi /ʒø.di/ (четверг). jeu /ʒø/ — игра, jeune /ʒœn/ — молодой, deux /dø/ — два. Все близки по гласному, но это разные слова."
+      },
+      {
+        "id": "wc-jours-vendredi-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jours-vendredi",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Vendredi, c'est presque le week-end !",
+          "Je finis le travail tôt le vendredi.",
+          "On part en vacances vendredi soir."
+        ],
+        "options": ["пятница", "четверг", "воскресенье", "ветер"],
+        "correctIndex": 0,
+        "explanation": "vendredi (m) — пятница, последний рабочий день перед выходными. Начинается с ven-, читается /vɑ̃/ с носовым звуком."
+      },
+      {
+        "id": "wc-jours-vendredi-sort",
+        "kind": "sort",
+        "wordId": "wl-jours-vendredi",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом vendredi звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "vendredi soir",
+            "basket": "ok"
+          },
+          {
+            "text": "le vendredi",
+            "basket": "ok"
+          },
+          {
+            "text": "vendredi prochain",
+            "basket": "ok"
+          },
+          {
+            "text": "le vendredi de mars",
+            "basket": "no"
+          },
+          {
+            "text": "deux vendredis chaud",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«vendredi soir», «le vendredi» (по пятницам), «vendredi prochain» — естественно. «le vendredi de mars» и «deux vendredis chaud» — бессмыслица: дни недели так не сочетаются."
+      },
+      {
+        "id": "wc-jours-samedi-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jours-samedi",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Samedi, on fait les courses au marché.",
+          "Le samedi, je dors plus longtemps.",
+          "Samedi prochain, c'est mon anniversaire."
+        ],
+        "options": ["суббота", "пятница", "воскресенье", "неделя"],
+        "correctIndex": 0,
+        "explanation": "samedi (m) — суббота, первый день выходных. Читается /sam.di/, e в середине почти не слышен."
+      },
+      {
+        "id": "wc-jours-samedi-trap",
+        "kind": "trap",
+        "wordId": "wl-jours-samedi",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Француз пишет: «Je travaille le samedi». Что это значит?",
+        "options": [
+          "он работает по субботам (каждую субботу)",
+          "он работает в эту конкретную субботу",
+          "он не работает в субботу",
+          "он работал в прошлую субботу"
+        ],
+        "correctIndex": 0,
+        "explanation": "Артикль le перед днём недели = регулярность: «le samedi» — по субботам, как правило. Конкретная суббота была бы без артикля: «Je travaille samedi» (в эту субботу)."
+      },
+      {
+        "id": "wc-jours-dimanche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jours-dimanche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le dimanche, beaucoup de magasins sont fermés.",
+          "Dimanche, on déjeune chez mes parents.",
+          "Bon dimanche !"
+        ],
+        "options": ["воскресенье", "суббота", "понедельник", "праздник"],
+        "correctIndex": 0,
+        "explanation": "dimanche (m) — воскресенье, день отдыха; во Франции многие магазины в этот день закрыты. «Bon dimanche !» — хорошего воскресенья!"
+      },
+      {
+        "id": "wc-jours-dimanche-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-jours-dimanche",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — дни недели. Найди лишнее.",
+        "options": ["dimanche", "samedi", "jeudi", "janvier"],
+        "correctIndex": 3,
+        "explanation": "dimanche (воскресенье), samedi (суббота) и jeudi (четверг) — дни недели. janvier (январь) — лишнее: это месяц, а не день недели."
+      },
+      {
+        "id": "wc-jours-weekend-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-jours-weekend",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит week-end?",
+        "bridge": "Англ. «weekend» — выходные; французы взяли это слово как есть, только пишут через дефис: le week-end.",
+        "options": [
+          "выходные (суббота и воскресенье)",
+          "будний день",
+          "неделя целиком",
+          "конец месяца"
+        ],
+        "correctIndex": 0,
+        "explanation": "week-end (m) — выходные, суббота и воскресенье. Прямое заимствование из английского, мужского рода: le week-end. Читается /wi.kɛnd/."
+      },
+      {
+        "id": "wc-jours-weekend-cmp",
+        "kind": "compare",
+        "wordId": "wl-jours-weekend",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le week-end и en semaine. В чём разница?",
+        "phrases": ["Je me repose le week-end.", "Je travaille en semaine."],
+        "options": [
+          "«le week-end» — по выходным (сб-вс); «en semaine» — по будням (пн-пт).",
+          "Это одно и то же, оба значат «всю неделю».",
+          "«le week-end» — будни, а «en semaine» — выходные.",
+          "Оба значат «каждый день»."
+        ],
+        "correctIndex": 0,
+        "explanation": "le week-end — выходные (суббота и воскресенье). en semaine — в будни, в рабочие дни. Это противопоставление: отдых на выходных против работы в будни."
+      },
+      {
+        "id": "wc-jours-mercredi-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-jours-mercredi",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для mercredi (среда), чтобы запомнить две r и не путать с mardi (вторник).",
+        "examples": [
+          "mercredi прячет внутри merci (спасибо) и cri (крик): mer-cre-di. Среда — середина недели, «спасибо, половина прошла».",
+          "mardi короче (вторник идёт раньше), mercredi длиннее на один слог — как будто среда «дальше» по неделе."
+        ]
+      }
+    ]
+  }
+]

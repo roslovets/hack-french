@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-jours-lundi",
+    "lemma": "lundi",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/lœ̃.di/",
+    "translationsRu": ["понедельник"],
+    "translationsEn": ["Monday"],
+    "semanticCore": "Понедельник — первый день недели и обычно первый рабочий день; пишется со строчной буквы.",
+    "collocations": [
+      {
+        "fr": "lundi prochain",
+        "ru": "в следующий понедельник"
+      },
+      {
+        "fr": "le lundi",
+        "ru": "по понедельникам"
+      },
+      {
+        "fr": "lundi matin",
+        "ru": "в понедельник утром"
+      },
+      {
+        "fr": "à lundi !",
+        "ru": "до понедельника!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "le lundi",
+        "note": "lundi (без артикля) — конкретный, ближайший понедельник; le lundi — регулярно, по понедельникам."
+      },
+      {
+        "with": "mardi",
+        "note": "lundi — понедельник (1-й день); mardi — вторник (2-й). Идут подряд, легко спутать порядок."
+      }
+    ],
+    "frequencyRank": 290,
+    "level": "A1",
+    "tags": ["jours", "calendrier"],
+    "caseIds": ["wc-jours"]
+  },
+  {
+    "id": "wl-jours-mardi",
+    "lemma": "mardi",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/maʁ.di/",
+    "translationsRu": ["вторник"],
+    "translationsEn": ["Tuesday"],
+    "semanticCore": "Вторник — второй день недели; по звучанию близок к mercredi и к midi, но это разные слова.",
+    "collocations": [
+      {
+        "fr": "mardi prochain",
+        "ru": "в следующий вторник"
+      },
+      {
+        "fr": "le mardi soir",
+        "ru": "по вторникам вечером"
+      },
+      {
+        "fr": "on est mardi",
+        "ru": "сегодня вторник"
+      },
+      {
+        "fr": "à mardi !",
+        "ru": "до вторника!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mars",
+        "note": "mardi — вторник (день недели); mars /maʁs/ — март (месяц). Похожее начало mar-, но разные понятия."
+      },
+      {
+        "with": "mercredi",
+        "note": "mardi /maʁ.di/ — вторник; mercredi /mɛʁ.kʁə.di/ — среда. Оба на mar-/mer-, идут подряд — частая путаница."
+      }
+    ],
+    "frequencyRank": 310,
+    "level": "A1",
+    "tags": ["jours", "calendrier"],
+    "caseIds": ["wc-jours"]
+  },
+  {
+    "id": "wl-jours-mercredi",
+    "lemma": "mercredi",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mɛʁ.kʁə.di/",
+    "translationsRu": ["среда"],
+    "translationsEn": ["Wednesday"],
+    "semanticCore": "Среда — середина недели; во Франции часто свободный день у школьников после обеда.",
+    "collocations": [
+      {
+        "fr": "mercredi après-midi",
+        "ru": "в среду во второй половине дня"
+      },
+      {
+        "fr": "le mercredi",
+        "ru": "по средам"
+      },
+      {
+        "fr": "mercredi prochain",
+        "ru": "в следующую среду"
+      },
+      {
+        "fr": "à mercredi !",
+        "ru": "до среды!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mardi",
+        "note": "mercredi — среда (3-й день); mardi — вторник (2-й). Похожи на mar-/mer-, идут подряд — легко перепутать."
+      },
+      {
+        "with": "merci",
+        "note": "mercredi /mɛʁ.kʁə.di/ — среда; merci /mɛʁ.si/ — спасибо. Общее начало mer-, но дальше слова расходятся."
+      }
+    ],
+    "frequencyRank": 360,
+    "level": "A1",
+    "tags": ["jours", "calendrier"],
+    "caseIds": ["wc-jours"]
+  },
+  {
+    "id": "wl-jours-jeudi",
+    "lemma": "jeudi",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒø.di/",
+    "translationsRu": ["четверг"],
+    "translationsEn": ["Thursday"],
+    "semanticCore": "Четверг — четвёртый день недели; начинается со звука /ʒ/, как в je.",
+    "collocations": [
+      {
+        "fr": "jeudi soir",
+        "ru": "в четверг вечером"
+      },
+      {
+        "fr": "le jeudi",
+        "ru": "по четвергам"
+      },
+      {
+        "fr": "jeudi prochain",
+        "ru": "в следующий четверг"
+      },
+      {
+        "fr": "à jeudi !",
+        "ru": "до четверга!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "jeu",
+        "note": "jeudi /ʒø.di/ — четверг; jeu /ʒø/ — игра. Одинаковое начало /ʒø/, но jeudi — день, jeu — предмет."
+      },
+      {
+        "with": "vendredi",
+        "note": "jeudi — четверг (4-й день); vendredi — пятница (5-й). Идут подряд в конце рабочей недели."
+      }
+    ],
+    "frequencyRank": 350,
+    "level": "A1",
+    "tags": ["jours", "calendrier"],
+    "caseIds": ["wc-jours"]
+  },
+  {
+    "id": "wl-jours-vendredi",
+    "lemma": "vendredi",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɑ̃.dʁə.di/",
+    "translationsRu": ["пятница"],
+    "translationsEn": ["Friday"],
+    "semanticCore": "Пятница — пятый день и последний рабочий перед выходными; начинается с носового /vɑ̃/.",
+    "collocations": [
+      {
+        "fr": "vendredi soir",
+        "ru": "в пятницу вечером"
+      },
+      {
+        "fr": "le vendredi",
+        "ru": "по пятницам"
+      },
+      {
+        "fr": "vendredi prochain",
+        "ru": "в следующую пятницу"
+      },
+      {
+        "fr": "à vendredi !",
+        "ru": "до пятницы!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vent",
+        "note": "vendredi /vɑ̃.dʁə.di/ — пятница; vent /vɑ̃/ — ветер. Общий носовой звук /vɑ̃/ в начале, но значения разные."
+      },
+      {
+        "with": "week-end",
+        "note": "vendredi — пятница (ещё рабочий день); le week-end — выходные, которые наступают после неё."
+      }
+    ],
+    "frequencyRank": 330,
+    "level": "A1",
+    "tags": ["jours", "calendrier"],
+    "caseIds": ["wc-jours"]
+  },
+  {
+    "id": "wl-jours-samedi",
+    "lemma": "samedi",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sam.di/",
+    "translationsRu": ["суббота"],
+    "translationsEn": ["Saturday"],
+    "semanticCore": "Суббота — первый день выходных; день покупок, рынка и свободного времени.",
+    "collocations": [
+      {
+        "fr": "samedi soir",
+        "ru": "в субботу вечером"
+      },
+      {
+        "fr": "le samedi",
+        "ru": "по субботам"
+      },
+      {
+        "fr": "samedi prochain",
+        "ru": "в следующую субботу"
+      },
+      {
+        "fr": "à samedi !",
+        "ru": "до субботы!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "dimanche",
+        "note": "samedi — суббота; dimanche — воскресенье. Вместе образуют le week-end (выходные)."
+      },
+      {
+        "with": "le samedi",
+        "note": "samedi (без артикля) — ближайшая суббота; le samedi — по субботам, регулярно."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A1",
+    "tags": ["jours", "calendrier"],
+    "caseIds": ["wc-jours"]
+  },
+  {
+    "id": "wl-jours-dimanche",
+    "lemma": "dimanche",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/di.mɑ̃ʃ/",
+    "translationsRu": ["воскресенье"],
+    "translationsEn": ["Sunday"],
+    "semanticCore": "Воскресенье — день отдыха и семьи; во Франции многие магазины в этот день закрыты.",
+    "collocations": [
+      {
+        "fr": "bon dimanche !",
+        "ru": "хорошего воскресенья!"
+      },
+      {
+        "fr": "le dimanche",
+        "ru": "по воскресеньям"
+      },
+      {
+        "fr": "dimanche prochain",
+        "ru": "в следующее воскресенье"
+      },
+      {
+        "fr": "dimanche midi",
+        "ru": "в воскресенье в обед"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "samedi",
+        "note": "dimanche — воскресенье (конец недели); samedi — суббота (перед ним). Вместе — le week-end."
+      },
+      {
+        "with": "lundi",
+        "note": "dimanche — последний день недели; lundi — первый. После dimanche снова начинается lundi."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A1",
+    "tags": ["jours", "calendrier"],
+    "caseIds": ["wc-jours"]
+  },
+  {
+    "id": "wl-jours-weekend",
+    "lemma": "week-end",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/wi.kɛnd/",
+    "translationsRu": ["выходные"],
+    "translationsEn": ["weekend"],
+    "semanticCore": "Выходные — суббота и воскресенье вместе; заимствование из английского, пишется через дефис.",
+    "collocations": [
+      {
+        "fr": "le week-end",
+        "ru": "по выходным / на выходных"
+      },
+      {
+        "fr": "bon week-end !",
+        "ru": "хороших выходных!"
+      },
+      {
+        "fr": "ce week-end",
+        "ru": "в эти выходные"
+      },
+      {
+        "fr": "partir le week-end",
+        "ru": "уезжать на выходные"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "semaine",
+        "note": "le week-end — выходные (сб-вс); en semaine — в будни (пн-пт). Противопоставление отдыха и работы."
+      },
+      {
+        "with": "weekend (англ.)",
+        "note": "Значение то же, что в английском, но во французском пишут через дефис: le week-end, мн. ч. des week-ends."
+      }
+    ],
+    "frequencyRank": 340,
+    "level": "A1",
+    "tags": ["jours", "calendrier"],
+    "caseIds": ["wc-jours"]
+  }
+]

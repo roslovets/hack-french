@@ -1,0 +1,367 @@
+[
+  {
+    "id": "wc-menage",
+    "title": "Дома: действия",
+    "theme": "menage",
+    "level": "A2",
+    "wordIds": [
+      "wl-menage-habiter",
+      "wl-menage-demenager",
+      "wl-menage-nettoyer",
+      "wl-menage-ranger",
+      "wl-menage-allumer",
+      "wl-menage-eteindre",
+      "wl-menage-ouvrir",
+      "wl-menage-fermer"
+    ],
+    "steps": [
+      {
+        "id": "wc-menage-habiter-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-menage-habiter",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Один глагол повторяется во всех трёх сценах. Что он значит?",
+        "contexts": [
+          "J'habite à Paris depuis deux ans.",
+          "Ils habitent dans un petit appartement.",
+          "Tu habites chez tes parents ?"
+        ],
+        "options": [
+          "жить, проживать (где, по какому адресу)",
+          "быть живым, выживать",
+          "переезжать в новое место",
+          "оставаться дома ненадолго"
+        ],
+        "correctIndex": 0,
+        "explanation": "habiter — проживать где-то: habiter à Paris, habiter dans un appartement, habiter chez ses parents. Это про адрес/место, а не «быть живым» (это vivre)."
+      },
+      {
+        "id": "wc-menage-habiter-cmp",
+        "kind": "compare",
+        "wordId": "wl-menage-habiter",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "habiter и vivre оба переводят «жить». В чём разница здесь?",
+        "phrases": ["J'habite à Lyon.", "Je vis seul."],
+        "options": [
+          "habiter = проживать (где, по адресу); vivre = жить вообще (быть живым, с кем-то, как-то)",
+          "Это полные синонимы, разницы нет",
+          "habiter = быть живым; vivre = проживать по адресу",
+          "Оба значат «оставаться дома»"
+        ],
+        "correctIndex": 0,
+        "explanation": "habiter привязан к месту: j'habite à Lyon (адрес). vivre шире: je vis seul (живу один), vivre bien (хорошо жить). Для адреса почти всегда habiter."
+      },
+      {
+        "id": "wc-menage-demenager-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-menage-demenager",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Nous déménageons le mois prochain.",
+          "Ils ont déménagé à Lyon.",
+          "Je dois aider mon frère à déménager samedi."
+        ],
+        "options": [
+          "переезжать (менять жильё, перевозить вещи)",
+          "двигаться, шевелиться",
+          "убирать в квартире",
+          "оставаться на старом месте"
+        ],
+        "correctIndex": 0,
+        "explanation": "déménager — переезжать, менять жильё и перевозить вещи: déménager à Lyon. Внутри ménage (домашнее хозяйство) + dé- (прочь). Не путать с bouger (двигаться телом)."
+      },
+      {
+        "id": "wc-menage-demenager-trap",
+        "kind": "trap",
+        "wordId": "wl-menage-demenager",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "déménager и emménager отличаются одной буквой, но направление разное. Друг написал: «J'emménage dans mon nouvel appartement». Что он делает?",
+        "options": [
+          "въезжает в новую квартиру (обустраивается на новом месте)",
+          "съезжает со старой квартиры",
+          "убирает квартиру перед гостями",
+          "сдаёт квартиру в аренду"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка пары: déménager = съезжать / переезжать (вон из старого), emménager = въезжать (в новое). Раз он dans son nouvel appartement — он именно emménage (въезжает)."
+      },
+      {
+        "id": "wc-menage-nettoyer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-menage-nettoyer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Je nettoie la cuisine après le dîner.",
+          "Il faut nettoyer les vitres, elles sont sales.",
+          "Elle nettoie le sol avec une éponge."
+        ],
+        "options": [
+          "чистить, мыть (удалять грязь с поверхности)",
+          "раскладывать вещи по местам",
+          "выбрасывать старые вещи",
+          "включать бытовую технику"
+        ],
+        "correctIndex": 0,
+        "explanation": "nettoyer — удалять грязь: nettoyer la cuisine, les vitres, le sol. Это про чистоту от грязи, а не про порядок (раскладывать по местам — это ranger)."
+      },
+      {
+        "id": "wc-menage-nettoyer-cmp",
+        "kind": "compare",
+        "wordId": "wl-menage-nettoyer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Оба глагола переводят «убирать». В чём разница здесь?",
+        "phrases": ["Je nettoie le sol.", "Je range mes affaires."],
+        "options": [
+          "nettoyer = отмывать от грязи; ranger = раскладывать вещи по местам",
+          "Это синонимы, разницы нет",
+          "nettoyer = раскладывать по местам; ranger = отмывать",
+          "Оба значат «выбрасывать»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Русское «убирать» = два разных дела. Грязный пол отмывают: nettoyer le sol. Разбросанные вещи раскладывают: ranger ses affaires."
+      },
+      {
+        "id": "wc-menage-ranger-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-menage-ranger",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Range ta chambre, elle est en désordre.",
+          "Il range ses livres sur l'étagère.",
+          "Tu peux ranger la vaisselle ?"
+        ],
+        "options": [
+          "раскладывать по местам, наводить порядок",
+          "отмывать от грязи водой",
+          "переставлять мебель в комнате",
+          "выбрасывать ненужное"
+        ],
+        "correctIndex": 0,
+        "explanation": "ranger — раскладывать по местам, прибирать: ranger sa chambre, ranger les livres, ranger la vaisselle. Это про порядок, не про грязь."
+      },
+      {
+        "id": "wc-menage-ranger-sort",
+        "kind": "sort",
+        "wordId": "wl-menage-ranger",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с ranger звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "ranger sa chambre",
+            "basket": "ok"
+          },
+          {
+            "text": "ranger ses affaires",
+            "basket": "ok"
+          },
+          {
+            "text": "ranger la vaisselle",
+            "basket": "ok"
+          },
+          {
+            "text": "ranger le sol",
+            "basket": "no"
+          },
+          {
+            "text": "ranger les vitres",
+            "basket": "no"
+          }
+        ],
+        "explanation": "ranger раскладывает вещи по местам: la chambre, les affaires, la vaisselle. А вот пол и стёкла не «раскладывают» — их моют: nettoyer le sol, nettoyer les vitres."
+      },
+      {
+        "id": "wc-menage-allumer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-menage-allumer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Allume la lumière, il fait sombre.",
+          "Elle allume la télé pour les infos.",
+          "Il allume une bougie sur le gâteau."
+        ],
+        "options": [
+          "включать, зажигать (свет, прибор, огонь)",
+          "выключать, гасить",
+          "открывать (дверь, окно)",
+          "чинить технику"
+        ],
+        "correctIndex": 0,
+        "explanation": "allumer — давать заработать свету/технике или зажигать огонь: allumer la lumière, la télé, une bougie. Антоним — éteindre."
+      },
+      {
+        "id": "wc-menage-allumer-trap",
+        "kind": "trap",
+        "wordId": "wl-menage-allumer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "По-русски можно сказать «открой свет». Как это правильно по-французски?",
+        "options": [
+          "allumer la lumière — «включить свет»",
+          "ouvrir la lumière — «открыть свет»",
+          "ouvrir la lampe — «открыть лампу»",
+          "fermer la lumière — «закрыть свет»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка кальки: свет «включают», а не «открывают». В стандартном французском только allumer la lumière (а выключить — éteindre la lumière). «ouvrir/fermer la lumière» — ошибка (встречается лишь в некоторых регионах)."
+      },
+      {
+        "id": "wc-menage-eteindre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-menage-eteindre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Éteins la lumière avant de dormir.",
+          "Il éteint la télé à minuit.",
+          "Les pompiers éteignent le feu."
+        ],
+        "options": [
+          "выключать, гасить, тушить",
+          "включать, зажигать",
+          "закрывать на ключ",
+          "убирать со стола"
+        ],
+        "correctIndex": 0,
+        "explanation": "éteindre — прекращать работу света/техники или гасить огонь: éteindre la lumière, la télé, le feu. Формы непростые: j'éteins, il éteint, ils éteignent."
+      },
+      {
+        "id": "wc-menage-eteindre-cmp",
+        "kind": "compare",
+        "wordId": "wl-menage-eteindre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "allumer и éteindre — пара антонимов. В чём разница здесь?",
+        "phrases": ["J'allume la lumière.", "J'éteins la lumière."],
+        "options": [
+          "allumer = включаю / зажигаю; éteindre = выключаю / гашу",
+          "Это синонимы, разницы нет",
+          "allumer = выключаю; éteindre = включаю",
+          "Оба значат «чинить лампу»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Чёткая пара: allumer la lumière (включить свет) ↔ éteindre la lumière (выключить свет). То же с télé, radio, four."
+      },
+      {
+        "id": "wc-menage-ouvrir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-menage-ouvrir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Ouvre la fenêtre, il fait chaud.",
+          "Il ouvre le robinet pour se laver les mains.",
+          "Le magasin ouvre à neuf heures."
+        ],
+        "options": [
+          "открывать (дверь, окно, кран, магазин)",
+          "включать свет и технику",
+          "закрывать, запирать",
+          "переезжать"
+        ],
+        "correctIndex": 0,
+        "explanation": "ouvrir — отворять то, что закрыто: ouvrir la fenêtre, le robinet, и «магазин открывается» — le magasin ouvre. Кран именно ouvrir (открыть), а не allumer."
+      },
+      {
+        "id": "wc-menage-ouvrir-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-menage-ouvrir",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "ouvrir",
+        "options": ["ouvrir", "offrir", "couvrir", "souffrir"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало ouvrir /u.vʁiʁ/ (открывать). Похожи по строению, но другие: offrir /ɔ.fʁiʁ/ (дарить), couvrir /ku.vʁiʁ/ (покрывать), souffrir /su.fʁiʁ/ (страдать). Все на -frir/-vrir, легко перепутать на слух."
+      },
+      {
+        "id": "wc-menage-fermer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-menage-fermer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Ferme la porte, il y a du courant d'air.",
+          "N'oublie pas de fermer le robinet.",
+          "La boulangerie ferme à dix-neuf heures."
+        ],
+        "options": [
+          "закрывать (дверь, кран, магазин); запирать",
+          "выключать свет",
+          "открывать",
+          "чистить"
+        ],
+        "correctIndex": 0,
+        "explanation": "fermer — закрывать то, что открыто: fermer la porte, le robinet, и «магазин закрывается» — le magasin ferme. Запереть на ключ — fermer à clé."
+      },
+      {
+        "id": "wc-menage-fermer-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-menage-fermer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "С тремя дополнениями fermer звучит естественно. Найди лишнее (там нужен éteindre).",
+        "options": [
+          "fermer la porte",
+          "fermer la fenêtre",
+          "fermer le robinet",
+          "fermer la lumière"
+        ],
+        "correctIndex": 3,
+        "explanation": "fermer закрывает дверь, окно, кран. Но свет не «закрывают» — его выключают: éteindre la lumière. «fermer la lumière» — типичная ошибка-калька."
+      },
+      {
+        "id": "wc-menage-eteindre-hint",
+        "kind": "wordHint",
+        "wordId": "wl-menage-eteindre",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: «погасить» свет или огонь, прекратить работу прибора. Антоним к allumer.",
+        "answer": "éteindre",
+        "hints": [
+          "Начинается на é…",
+          "8 букв, заканчивается на -dre, есть носовой -ein-",
+          "___ la lumière avant de dormir."
+        ],
+        "explanation": "éteindre — выключать / гасить. Формы: j'éteins, il éteint, nous éteignons, ils éteignent. Антоним — allumer."
+      },
+      {
+        "id": "wc-menage-habiter-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-menage-habiter",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для habiter, чтобы не путать его с vivre и помнить про немую h в начале (j'habite, с элизией).",
+        "examples": [
+          "В habiter спрятано «habitat» (среда обитания, место жительства) — там, где у тебя адрес: j'habite à…",
+          "h немая: говорим j'habite (как j'aime), а не «je habite». Представь, что h — это дверь без звонка: входишь молча."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,330 @@
+[
+  {
+    "id": "wl-deplacements-marcher",
+    "lemma": "marcher",
+    "pos": "verb",
+    "ipa": "/maʁ.ʃe/",
+    "translationsRu": ["ходить", "идти пешком", "работать (функционировать)"],
+    "translationsEn": ["to walk", "to work (function)"],
+    "semanticCore": "Перемещаться пешком; в разговорном смысле — «работать, действовать» о технике, плане или договорённости (ça marche).",
+    "collocations": [
+      {
+        "fr": "marcher dans la rue",
+        "ru": "идти по улице"
+      },
+      {
+        "fr": "marcher vite",
+        "ru": "идти быстро"
+      },
+      {
+        "fr": "Ça marche !",
+        "ru": "Договорились! / Работает!"
+      },
+      {
+        "fr": "ne pas marcher",
+        "ru": "не работать (о технике)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "conduire",
+        "note": "marcher = идти пешком; conduire = вести машину. По-русски можно «идти/ехать», во французском пешком — marcher, за рулём — conduire."
+      },
+      {
+        "with": "fonctionner",
+        "note": "В значении «работать» marcher — разговорное (ça marche), fonctionner — более нейтральное/техническое (l'appareil fonctionne). Смысл тот же."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["deplacements", "verbe-action", "quotidien"],
+    "caseIds": ["wc-deplacements"]
+  },
+  {
+    "id": "wl-deplacements-conduire",
+    "lemma": "conduire",
+    "pos": "verb",
+    "ipa": "/kɔ̃.dɥiʁ/",
+    "translationsRu": ["водить (машину)", "вести", "отвезти (кого-то)"],
+    "translationsEn": ["to drive", "to lead"],
+    "semanticCore": "Управлять транспортным средством; также «доставить, отвезти» человека куда-либо.",
+    "collocations": [
+      {
+        "fr": "conduire une voiture",
+        "ru": "водить машину"
+      },
+      {
+        "fr": "apprendre à conduire",
+        "ru": "учиться водить"
+      },
+      {
+        "fr": "conduire prudemment",
+        "ru": "вести машину осторожно"
+      },
+      {
+        "fr": "conduire les enfants à l'école",
+        "ru": "отвозить детей в школу"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mener",
+        "note": "conduire = вести машину / отвезти человека; mener = вести за собой, возглавлять (mener une équipe). Транспорт — только conduire."
+      },
+      {
+        "with": "marcher",
+        "note": "conduire — управлять транспортом за рулём; marcher — идти пешком. Не путать русское «ехать/идти»."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["deplacements", "transport", "verbe-action"],
+    "caseIds": ["wc-deplacements"]
+  },
+  {
+    "id": "wl-deplacements-voler",
+    "lemma": "voler",
+    "pos": "verb",
+    "ipa": "/vɔ.le/",
+    "translationsRu": ["летать", "красть", "воровать"],
+    "translationsEn": ["to fly", "to steal"],
+    "semanticCore": "Один глагол с двумя значениями: перемещаться по воздуху и присваивать чужое; контекст выбирает смысл.",
+    "collocations": [
+      {
+        "fr": "voler dans le ciel",
+        "ru": "лететь по небу"
+      },
+      {
+        "fr": "voler de Paris à Rome",
+        "ru": "лететь из Парижа в Рим"
+      },
+      {
+        "fr": "voler un portefeuille",
+        "ru": "украсть кошелёк"
+      },
+      {
+        "fr": "se faire voler son vélo",
+        "ru": "стать жертвой кражи велосипеда"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "voler (летать) / voler (красть)",
+        "note": "Одно слово, два значения. С тем, кто может лететь (oiseau, avion) — «летать»; с дополнением-вещью и вором — «красть». Существительное le vol тоже значит и «полёт», и «кража»."
+      },
+      {
+        "with": "s'envoler",
+        "note": "voler = летать (быть в полёте); s'envoler = взлететь, улететь, унестись (l'avion s'envole). voler — процесс, s'envoler — момент отрыва/исчезновения."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["deplacements", "verbe-action", "polyseme"],
+    "caseIds": ["wc-deplacements"]
+  },
+  {
+    "id": "wl-deplacements-attendre",
+    "lemma": "attendre",
+    "pos": "verb",
+    "ipa": "/a.tɑ̃dʁ/",
+    "translationsRu": ["ждать", "ожидать"],
+    "translationsEn": ["to wait", "to wait for"],
+    "semanticCore": "Оставаться на месте или во времени, пока кто-то/что-то придёт или произойдёт; дополнение идёт без предлога.",
+    "collocations": [
+      {
+        "fr": "attendre le bus",
+        "ru": "ждать автобус"
+      },
+      {
+        "fr": "attendre quelqu'un",
+        "ru": "ждать кого-то"
+      },
+      {
+        "fr": "attendre un enfant",
+        "ru": "ждать ребёнка (быть беременной)"
+      },
+      {
+        "fr": "Attends une minute !",
+        "ru": "Подожди минутку!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "to attend (англ.)",
+        "note": "Ложный друг: фр. attendre = «ждать», а англ. to attend = «присутствовать, посещать». «Посещать собрание» — assister à une réunion, не attendre."
+      },
+      {
+        "with": "entendre",
+        "note": "attendre (ждать) и entendre (слышать) почти одинаково звучат и пишутся; различаются первым звуком: /a.tɑ̃dʁ/ vs /ɑ̃.tɑ̃dʁ/."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A2",
+    "tags": ["deplacements", "verbe-action", "faux-amis"],
+    "caseIds": ["wc-deplacements"]
+  },
+  {
+    "id": "wl-deplacements-rentrer",
+    "lemma": "rentrer",
+    "pos": "verb",
+    "ipa": "/ʁɑ̃.tʁe/",
+    "translationsRu": ["возвращаться", "возвращаться домой"],
+    "translationsEn": ["to return", "to go back home"],
+    "semanticCore": "Двигаться обратно туда, откуда вышел, прежде всего домой; в passé composé спрягается с être.",
+    "collocations": [
+      {
+        "fr": "rentrer à la maison",
+        "ru": "возвращаться домой"
+      },
+      {
+        "fr": "rentrer du travail",
+        "ru": "вернуться с работы"
+      },
+      {
+        "fr": "rentrer de vacances",
+        "ru": "вернуться из отпуска"
+      },
+      {
+        "fr": "rentrer tard",
+        "ru": "вернуться поздно"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rester",
+        "note": "rentrer = двигаться обратно домой; rester = остаться на месте, никуда не идти. «Je rentre» (иду домой) ≠ «Je reste» (остаюсь)."
+      },
+      {
+        "with": "retourner",
+        "note": "rentrer = вернуться (к себе, домой); retourner = вернуться куда-то ещё / снова туда поехать. Домой — обычно rentrer."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["deplacements", "verbe-action", "quotidien"],
+    "caseIds": ["wc-deplacements"]
+  },
+  {
+    "id": "wl-deplacements-rester",
+    "lemma": "rester",
+    "pos": "verb",
+    "ipa": "/ʁɛs.te/",
+    "translationsRu": ["оставаться", "оставаться в наличии"],
+    "translationsEn": ["to stay", "to remain"],
+    "semanticCore": "Не покидать место или состояние; также безличное «остаётся» о том, что есть в наличии (il reste…). В passé composé с être.",
+    "collocations": [
+      {
+        "fr": "rester à la maison",
+        "ru": "оставаться дома"
+      },
+      {
+        "fr": "rester calme",
+        "ru": "оставаться спокойным"
+      },
+      {
+        "fr": "Il reste du pain.",
+        "ru": "Хлеб ещё остался."
+      },
+      {
+        "fr": "rester en contact",
+        "ru": "оставаться на связи"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "to rest (англ.)",
+        "note": "Ложный друг: фр. rester = «оставаться», а англ. to rest = «отдыхать». «Отдыхать» по-французски — se reposer."
+      },
+      {
+        "with": "rentrer",
+        "note": "rester = остаться, не двигаться; rentrer = двигаться обратно домой. Противоположны по движению."
+      }
+    ],
+    "frequencyRank": 280,
+    "level": "A2",
+    "tags": ["deplacements", "verbe-etat", "faux-amis"],
+    "caseIds": ["wc-deplacements"]
+  },
+  {
+    "id": "wl-deplacements-arriver",
+    "lemma": "arriver",
+    "pos": "verb",
+    "ipa": "/a.ʁi.ve/",
+    "translationsRu": ["приходить", "прибывать", "случаться"],
+    "translationsEn": ["to arrive", "to happen"],
+    "semanticCore": "Достигать места назначения; в безличном употреблении — «случаться»; arriver à + инфинитив — «суметь, удаваться». В passé composé с être.",
+    "collocations": [
+      {
+        "fr": "arriver à la gare",
+        "ru": "прибыть на вокзал"
+      },
+      {
+        "fr": "Qu'est-ce qui est arrivé ?",
+        "ru": "Что случилось?"
+      },
+      {
+        "fr": "arriver à faire quelque chose",
+        "ru": "суметь что-то сделать"
+      },
+      {
+        "fr": "arriver en retard",
+        "ru": "прийти с опозданием"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "partir",
+        "note": "arriver = прибывать (приходить в место); partir = уезжать, отправляться. Противоположны: l'arrivée ↔ le départ."
+      },
+      {
+        "with": "se passer",
+        "note": "В значении «случаться» arriver и se passer близки: «Что случилось?» — Qu'est-ce qui est arrivé ? или Qu'est-ce qui s'est passé ?"
+      }
+    ],
+    "frequencyRank": 150,
+    "level": "A2",
+    "tags": ["deplacements", "verbe-action", "polyseme"],
+    "caseIds": ["wc-deplacements"]
+  },
+  {
+    "id": "wl-deplacements-suivre",
+    "lemma": "suivre",
+    "pos": "verb",
+    "ipa": "/sɥivʁ/",
+    "translationsRu": ["следовать", "идти за", "следить"],
+    "translationsEn": ["to follow", "to take (a course)"],
+    "semanticCore": "Двигаться за кем-то/чем-то, идти следом; также «посещать» курс (suivre un cours) и «следить» за развитием событий.",
+    "collocations": [
+      {
+        "fr": "suivre quelqu'un",
+        "ru": "идти за кем-то"
+      },
+      {
+        "fr": "Suivez-moi !",
+        "ru": "Следуйте за мной!"
+      },
+      {
+        "fr": "suivre des cours",
+        "ru": "ходить на занятия, проходить курс"
+      },
+      {
+        "fr": "suivre l'actualité",
+        "ru": "следить за новостями"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "être (je suis)",
+        "note": "Форма je suis принадлежит и suivre (я следую), и être (я есть). «Je suis Marie» двусмысленно; во множественном видно: nous suivons ≠ nous sommes."
+      },
+      {
+        "with": "poursuivre",
+        "note": "suivre = идти за / посещать курс; poursuivre = преследовать, гнаться, а также «продолжать». suivre нейтрально, poursuivre — настойчивее."
+      }
+    ],
+    "frequencyRank": 260,
+    "level": "A2",
+    "tags": ["deplacements", "verbe-action", "etudes"],
+    "caseIds": ["wc-deplacements"]
+  }
+]

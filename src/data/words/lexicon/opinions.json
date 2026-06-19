@@ -1,0 +1,327 @@
+[
+  {
+    "id": "wl-opinions-avis",
+    "lemma": "avis",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.vi/",
+    "translationsRu": ["мнение", "взгляд"],
+    "translationsEn": ["opinion", "view"],
+    "semanticCore": "Личное мнение, точка зрения по вопросу — то, что человек думает.",
+    "collocations": [
+      {
+        "fr": "à mon avis",
+        "ru": "по-моему, на мой взгляд"
+      },
+      {
+        "fr": "changer d'avis",
+        "ru": "передумать, изменить мнение"
+      },
+      {
+        "fr": "donner son avis",
+        "ru": "высказать своё мнение"
+      },
+      {
+        "fr": "être du même avis",
+        "ru": "быть того же мнения"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "conseil",
+        "note": "avis = мнение (что я думаю); conseil = совет (что тебе стоит сделать). Англ. «advice» ближе к conseil, а не к avis."
+      },
+      {
+        "with": "opinion",
+        "note": "avis и opinion оба «мнение»; avis чаще в готовых оборотах (à mon avis), opinion — о более общих взглядах (l'opinion publique)."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["opinions", "communication"],
+    "caseIds": ["wc-opinions"]
+  },
+  {
+    "id": "wl-opinions-raison",
+    "lemma": "raison",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁɛ.zɔ̃/",
+    "translationsRu": ["правота", "причина"],
+    "translationsEn": ["reason", "rightness"],
+    "semanticCore": "Правота (в обороте avoir raison — быть правым) и причина, основание.",
+    "collocations": [
+      {
+        "fr": "avoir raison",
+        "ru": "быть правым"
+      },
+      {
+        "fr": "tu as raison",
+        "ru": "ты прав(а)"
+      },
+      {
+        "fr": "pour cette raison",
+        "ru": "по этой причине"
+      },
+      {
+        "fr": "donner raison à quelqu'un",
+        "ru": "признать чью-то правоту"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tort",
+        "note": "avoir raison = быть правым; avoir tort = быть неправым. Это пара противоположностей, оба с глаголом avoir, не être."
+      },
+      {
+        "with": "cause",
+        "note": "raison = причина/основание (почему так думают или поступают); cause = причина как источник события. «à cause de» — из-за, «pour cette raison» — по этой причине."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["opinions", "communication"],
+    "caseIds": ["wc-opinions"]
+  },
+  {
+    "id": "wl-opinions-tort",
+    "lemma": "tort",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tɔʁ/",
+    "translationsRu": ["неправота", "вина"],
+    "translationsEn": ["wrong", "fault"],
+    "semanticCore": "Неправота (в обороте avoir tort — быть неправым) и вина, ошибка.",
+    "collocations": [
+      {
+        "fr": "avoir tort",
+        "ru": "быть неправым"
+      },
+      {
+        "fr": "tu as tort",
+        "ru": "ты неправ(а)"
+      },
+      {
+        "fr": "à tort",
+        "ru": "ошибочно, напрасно"
+      },
+      {
+        "fr": "donner tort à quelqu'un",
+        "ru": "признать чью-то неправоту"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "raison",
+        "note": "avoir tort = быть неправым; avoir raison = быть правым. Противоположности, обе с avoir."
+      },
+      {
+        "with": "faux",
+        "note": "tort (m) — неправота человека (avoir tort); faux — ложность факта (c'est faux). Прав/неправ — про человека, верно/неверно — про утверждение."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["opinions", "communication"],
+    "caseIds": ["wc-opinions"]
+  },
+  {
+    "id": "wl-opinions-accord",
+    "lemma": "accord",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.kɔʁ/",
+    "translationsRu": ["согласие", "договорённость"],
+    "translationsEn": ["agreement", "accord"],
+    "semanticCore": "Согласие — прежде всего в обороте d'accord («согласен»), а также договорённость.",
+    "collocations": [
+      {
+        "fr": "être d'accord avec",
+        "ru": "быть согласным с"
+      },
+      {
+        "fr": "d'accord !",
+        "ru": "хорошо!, ладно!, договорились!"
+      },
+      {
+        "fr": "se mettre d'accord",
+        "ru": "договориться, прийти к согласию"
+      },
+      {
+        "fr": "tout à fait d'accord",
+        "ru": "полностью согласен"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "agreement (англ.)",
+        "note": "Англ. «accord / agreement» — прямой мост к accord. Но в речи чаще всего это оборот «(être) d'accord» = согласен, а не отдельное слово."
+      },
+      {
+        "with": "avis",
+        "note": "accord = согласие (соглашаюсь с тобой); avis = мнение (что я думаю). «Je suis d'accord» — соглашаюсь; «à mon avis» — по-моему."
+      }
+    ],
+    "frequencyRank": 280,
+    "level": "A2",
+    "tags": ["opinions", "communication"],
+    "caseIds": ["wc-opinions"]
+  },
+  {
+    "id": "wl-opinions-peutetre",
+    "lemma": "peut-être",
+    "pos": "adv",
+    "ipa": "/pø.tɛtʁ/",
+    "translationsRu": ["может быть", "возможно"],
+    "translationsEn": ["maybe", "perhaps"],
+    "semanticCore": "Выражает неуверенность, предположение: «может быть», «возможно».",
+    "collocations": [
+      {
+        "fr": "peut-être que oui",
+        "ru": "может быть, да"
+      },
+      {
+        "fr": "peut-être un jour",
+        "ru": "может быть, однажды"
+      },
+      {
+        "fr": "peut-être bien",
+        "ru": "может быть, и так / пожалуй"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "peut être",
+        "note": "peut-être (через дефис) = «может быть» (наречие); «peut être» (без дефиса) = «может быть» в смысле «способен быть» (il peut être fatigué — он может быть уставшим)."
+      },
+      {
+        "with": "sûrement",
+        "note": "peut-être = возможно (неуверенность); sûrement = наверняка, почти точно. Разная степень уверенности."
+      }
+    ],
+    "frequencyRank": 260,
+    "level": "A2",
+    "tags": ["opinions", "modalite"],
+    "caseIds": ["wc-opinions"]
+  },
+  {
+    "id": "wl-opinions-biensur",
+    "lemma": "bien sûr",
+    "pos": "expr",
+    "ipa": "/bjɛ̃ syʁ/",
+    "translationsRu": ["конечно", "разумеется"],
+    "translationsEn": ["of course", "certainly"],
+    "semanticCore": "Подтверждение очевидного: «конечно», «разумеется» — нет сомнений.",
+    "collocations": [
+      {
+        "fr": "bien sûr que oui",
+        "ru": "конечно да"
+      },
+      {
+        "fr": "bien sûr que non",
+        "ru": "конечно нет"
+      },
+      {
+        "fr": "mais bien sûr !",
+        "ru": "ну конечно же!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bien sur",
+        "note": "bien sûr (с accent circonflexe на û) = «конечно». Без шляпки «sur» — предлог «на», и «bien sur» как «конечно» — ошибка. Шляпка обязательна."
+      },
+      {
+        "with": "peut-être",
+        "note": "bien sûr = конечно (полная уверенность); peut-être = может быть (неуверенность). Противоположные по степени уверенности ответы."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A2",
+    "tags": ["opinions", "modalite"],
+    "caseIds": ["wc-opinions"]
+  },
+  {
+    "id": "wl-opinions-vrai",
+    "lemma": "vrai",
+    "pos": "adj",
+    "ipa": "/vʁɛ/",
+    "translationsRu": ["правда", "верный", "настоящий"],
+    "translationsEn": ["true", "real"],
+    "semanticCore": "Соответствующий действительности (правда, верно) и подлинный (настоящий, не поддельный).",
+    "collocations": [
+      {
+        "fr": "c'est vrai",
+        "ru": "это правда / верно"
+      },
+      {
+        "fr": "un vrai ami",
+        "ru": "настоящий друг"
+      },
+      {
+        "fr": "à vrai dire",
+        "ru": "по правде говоря"
+      },
+      {
+        "fr": "une histoire vraie",
+        "ru": "правдивая история"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "faux",
+        "note": "vrai = правда/настоящий; faux = ложный/поддельный. Прямая пара противоположностей: c'est vrai / c'est faux."
+      },
+      {
+        "with": "réel",
+        "note": "vrai = истинный, правдивый (не выдуманный, не поддельный); réel = реальный, существующий на деле. Часто пересекаются, но vrai чаще про «правда/настоящий», réel — про «существует в реальности»."
+      }
+    ],
+    "frequencyRank": 340,
+    "level": "A2",
+    "tags": ["opinions", "verite"],
+    "caseIds": ["wc-opinions"]
+  },
+  {
+    "id": "wl-opinions-faux",
+    "lemma": "faux",
+    "displayForm": "faux / fausse",
+    "pos": "adj",
+    "ipa": "/fo/",
+    "translationsRu": ["ложный", "неверный", "фальшивый"],
+    "translationsEn": ["false", "fake"],
+    "semanticCore": "Не соответствующий правде (ложный, неверный) и поддельный (фальшивый, ненастоящий).",
+    "collocations": [
+      {
+        "fr": "c'est faux",
+        "ru": "это неправда / неверно"
+      },
+      {
+        "fr": "un faux numéro",
+        "ru": "неправильный (не тот) номер"
+      },
+      {
+        "fr": "un faux ami",
+        "ru": "ложный друг (слово-обманка); ненастоящий друг"
+      },
+      {
+        "fr": "faire fausse route",
+        "ru": "идти по ложному пути, ошибаться"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vrai",
+        "note": "faux = ложный/поддельный; vrai = правда/настоящий. Пара противоположностей: c'est faux / c'est vrai."
+      },
+      {
+        "with": "fausse",
+        "note": "faux — мужской род /fo/; в женском — fausse /fos/ (une fausse adresse). Меняется и написание, и звук на конце."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["opinions", "verite"],
+    "caseIds": ["wc-opinions"]
+  }
+]

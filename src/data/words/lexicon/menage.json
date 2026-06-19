@@ -1,0 +1,302 @@
+[
+  {
+    "id": "wl-menage-habiter",
+    "lemma": "habiter",
+    "pos": "verb",
+    "ipa": "/a.bi.te/",
+    "translationsRu": ["жить", "проживать"],
+    "translationsEn": ["to live", "to reside"],
+    "semanticCore": "Жить = проживать где-то постоянно (адрес, город, дом), а не «быть живым».",
+    "collocations": [
+      {
+        "fr": "habiter à Paris",
+        "ru": "жить в Париже"
+      },
+      {
+        "fr": "habiter en France",
+        "ru": "жить во Франции"
+      },
+      {
+        "fr": "habiter dans un appartement",
+        "ru": "жить в квартире"
+      },
+      {
+        "fr": "habiter chez ses parents",
+        "ru": "жить у родителей"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vivre",
+        "note": "habiter = проживать (где, по какому адресу); vivre = жить вообще (быть живым, жить с кем-то, жить хорошо). «Я живу в Лионе» — j'habite à Lyon."
+      },
+      {
+        "with": "rester",
+        "note": "habiter = постоянно проживать; rester = оставаться (временно): je reste à la maison ce soir — сегодня я остаюсь дома."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["menage", "logement"],
+    "caseIds": ["wc-menage"]
+  },
+  {
+    "id": "wl-menage-demenager",
+    "lemma": "déménager",
+    "pos": "verb",
+    "ipa": "/de.me.na.ʒe/",
+    "translationsRu": ["переезжать"],
+    "translationsEn": ["to move (house)", "to move out"],
+    "semanticCore": "Переезжать — менять жильё, перевозить вещи в новый дом (не просто «двигаться»).",
+    "collocations": [
+      {
+        "fr": "déménager à Lyon",
+        "ru": "переехать в Лион"
+      },
+      {
+        "fr": "déménager dans un grand appartement",
+        "ru": "переехать в большую квартиру"
+      },
+      {
+        "fr": "aider un ami à déménager",
+        "ru": "помочь другу с переездом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "emménager",
+        "note": "déménager = съезжать / переезжать (из старого жилья); emménager = въезжать (в новое). Одна приставка (dé-/em-) меняет направление."
+      },
+      {
+        "with": "bouger",
+        "note": "déménager = менять место жительства; bouger = двигаться, шевелиться (телом). «Не двигайся» — ne bouge pas, а не ne déménage pas."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["menage", "logement"],
+    "caseIds": ["wc-menage"]
+  },
+  {
+    "id": "wl-menage-nettoyer",
+    "lemma": "nettoyer",
+    "pos": "verb",
+    "ipa": "/nɛ.twa.je/",
+    "translationsRu": ["убирать", "чистить", "мыть"],
+    "translationsEn": ["to clean"],
+    "semanticCore": "Чистить = удалять грязь с поверхности или предмета (мыть пол, чистить окна).",
+    "collocations": [
+      {
+        "fr": "nettoyer la cuisine",
+        "ru": "убрать (помыть) кухню"
+      },
+      {
+        "fr": "nettoyer les vitres",
+        "ru": "мыть стёкла"
+      },
+      {
+        "fr": "nettoyer le sol",
+        "ru": "мыть пол"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ranger",
+        "note": "nettoyer = чистить от грязи (помыть, протереть); ranger = раскладывать вещи по местам (наводить порядок). Грязный пол — nettoyer; разбросанные вещи — ranger."
+      },
+      {
+        "with": "laver",
+        "note": "nettoyer = чистить вообще (поверхность, предмет); laver = мыть водой (руки, посуду, бельё). Окна можно nettoyer, руки — laver."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["menage", "tache"],
+    "caseIds": ["wc-menage"]
+  },
+  {
+    "id": "wl-menage-ranger",
+    "lemma": "ranger",
+    "pos": "verb",
+    "ipa": "/ʁɑ̃.ʒe/",
+    "translationsRu": ["убирать", "раскладывать по местам"],
+    "translationsEn": ["to tidy up", "to put away"],
+    "semanticCore": "Раскладывать вещи по местам, наводить порядок (а не отмывать грязь).",
+    "collocations": [
+      {
+        "fr": "ranger sa chambre",
+        "ru": "убрать (прибрать) свою комнату"
+      },
+      {
+        "fr": "ranger ses affaires",
+        "ru": "разложить свои вещи"
+      },
+      {
+        "fr": "ranger la vaisselle",
+        "ru": "убрать посуду (по местам)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "nettoyer",
+        "note": "ranger = навести порядок, разложить по местам; nettoyer = отмыть от грязи. Комнату прибрать (ranger), но пол помыть (nettoyer)."
+      },
+      {
+        "with": "arranger",
+        "note": "ranger = убирать по местам; arranger = устраивать, улаживать (Ça m'arrange — мне это удобно). Похожи, но разные глаголы."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["menage", "tache"],
+    "caseIds": ["wc-menage"]
+  },
+  {
+    "id": "wl-menage-allumer",
+    "lemma": "allumer",
+    "pos": "verb",
+    "ipa": "/a.ly.me/",
+    "translationsRu": ["включать", "зажигать"],
+    "translationsEn": ["to turn on", "to light"],
+    "semanticCore": "Включать прибор или зажигать огонь/свет — давать свету, теплу, технике заработать.",
+    "collocations": [
+      {
+        "fr": "allumer la lumière",
+        "ru": "включить свет"
+      },
+      {
+        "fr": "allumer la télé",
+        "ru": "включить телевизор"
+      },
+      {
+        "fr": "allumer une bougie",
+        "ru": "зажечь свечу"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "éteindre",
+        "note": "allumer = включить / зажечь; éteindre = выключить / погасить. Прямые антонимы: allumer la lumière ↔ éteindre la lumière."
+      },
+      {
+        "with": "ouvrir",
+        "note": "allumer = включить прибор (свет, телевизор); ouvrir = открыть (дверь, кран). По-русски иногда говорят «открой свет», но по-французски только allumer la lumière."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["menage", "objet"],
+    "caseIds": ["wc-menage"]
+  },
+  {
+    "id": "wl-menage-eteindre",
+    "lemma": "éteindre",
+    "pos": "verb",
+    "ipa": "/e.tɛ̃dʁ/",
+    "translationsRu": ["выключать", "тушить", "гасить"],
+    "translationsEn": ["to turn off", "to put out"],
+    "semanticCore": "Выключать прибор или гасить огонь/свет — прекращать работу света, техники, пламени.",
+    "collocations": [
+      {
+        "fr": "éteindre la lumière",
+        "ru": "выключить свет"
+      },
+      {
+        "fr": "éteindre la télé",
+        "ru": "выключить телевизор"
+      },
+      {
+        "fr": "éteindre le feu",
+        "ru": "потушить огонь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "allumer",
+        "note": "éteindre = выключить / погасить; allumer = включить / зажечь. Антонимы: éteindre la télé ↔ allumer la télé."
+      },
+      {
+        "with": "fermer",
+        "note": "éteindre = выключать (свет, технику); fermer = закрывать (дверь, кран). «Выключи свет» — éteins la lumière, не ferme la lumière."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["menage", "objet"],
+    "caseIds": ["wc-menage"]
+  },
+  {
+    "id": "wl-menage-ouvrir",
+    "lemma": "ouvrir",
+    "pos": "verb",
+    "ipa": "/u.vʁiʁ/",
+    "translationsRu": ["открывать"],
+    "translationsEn": ["to open"],
+    "semanticCore": "Открывать то, что было закрыто: дверь, окно, кран, бутылку, магазин.",
+    "collocations": [
+      {
+        "fr": "ouvrir la porte",
+        "ru": "открыть дверь"
+      },
+      {
+        "fr": "ouvrir la fenêtre",
+        "ru": "открыть окно"
+      },
+      {
+        "fr": "ouvrir le robinet",
+        "ru": "открыть кран"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fermer",
+        "note": "ouvrir = открывать; fermer = закрывать. Прямые антонимы: ouvrir la porte ↔ fermer la porte."
+      },
+      {
+        "with": "allumer",
+        "note": "ouvrir = открыть (дверь, окно, кран — физически отворить); allumer = включить (свет, прибор). Кран — ouvrir le robinet, свет — allumer la lumière."
+      }
+    ],
+    "frequencyRank": 250,
+    "level": "A2",
+    "tags": ["menage", "objet"],
+    "caseIds": ["wc-menage"]
+  },
+  {
+    "id": "wl-menage-fermer",
+    "lemma": "fermer",
+    "pos": "verb",
+    "ipa": "/fɛʁ.me/",
+    "translationsRu": ["закрывать"],
+    "translationsEn": ["to close", "to shut"],
+    "semanticCore": "Закрывать то, что было открыто: дверь, окно, кран, магазин; также запирать.",
+    "collocations": [
+      {
+        "fr": "fermer la porte",
+        "ru": "закрыть дверь"
+      },
+      {
+        "fr": "fermer la fenêtre",
+        "ru": "закрыть окно"
+      },
+      {
+        "fr": "fermer la porte à clé",
+        "ru": "запереть дверь на ключ"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ouvrir",
+        "note": "fermer = закрывать; ouvrir = открывать. Антонимы: fermer la fenêtre ↔ ouvrir la fenêtre."
+      },
+      {
+        "with": "éteindre",
+        "note": "fermer = закрывать (дверь, окно, магазин); éteindre = выключать (свет, технику). Телевизор — éteindre la télé, а не fermer la télé."
+      }
+    ],
+    "frequencyRank": 270,
+    "level": "A2",
+    "tags": ["menage", "objet"],
+    "caseIds": ["wc-menage"]
+  }
+]

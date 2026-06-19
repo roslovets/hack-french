@@ -14,7 +14,7 @@
   {
     "id": "home",
     "title": "Дом и одежда",
-    "themes": ["maison", "vetements", "pieces", "meubles", "vetements2", "objets"],
+    "themes": ["maison", "vetements", "pieces", "meubles", "vetements2", "objets", "menage"],
     "bossId": "wc-boss-maison-vetements"
   },
   {
@@ -35,19 +35,36 @@
   {
     "id": "city",
     "title": "Город и транспорт",
-    "themes": ["ville", "transport", "lieux", "voyage", "directions"],
+    "themes": ["ville", "transport", "lieux", "voyage", "directions", "deplacements"],
     "bossId": "wc-boss-transport"
   },
   {
     "id": "school",
     "title": "Школа и общение",
-    "themes": ["ecole", "politesse", "communication", "questions", "etudes", "salutations"],
+    "themes": [
+      "ecole",
+      "politesse",
+      "communication",
+      "questions",
+      "etudes",
+      "salutations",
+      "opinions"
+    ],
     "bossId": "wc-boss-ecole-politesse"
   },
   {
     "id": "verbs",
     "title": "Глаголы и время",
-    "themes": ["perception", "connaissance", "prendre", "temps", "calendrier", "verbes2", "heure"],
+    "themes": [
+      "perception",
+      "connaissance",
+      "prendre",
+      "temps",
+      "calendrier",
+      "verbes2",
+      "heure",
+      "jours"
+    ],
     "bossId": "wc-boss-verbes"
   },
   {
@@ -71,7 +88,7 @@
   {
     "id": "leisure",
     "title": "Досуг и интересы",
-    "themes": ["loisirs", "sport"],
+    "themes": ["loisirs", "sport", "fetes"],
     "bossId": "wc-boss-leisure"
   },
   {

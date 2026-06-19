@@ -1,0 +1,312 @@
+[
+  {
+    "id": "wc-fetes",
+    "title": "Праздники",
+    "theme": "fetes",
+    "level": "A2",
+    "wordIds": [
+      "wl-fetes-noel",
+      "wl-fetes-anniversaire",
+      "wl-fetes-mariage",
+      "wl-fetes-paques",
+      "wl-fetes-invite",
+      "wl-fetes-feter",
+      "wl-fetes-bougie",
+      "wl-fetes-danser"
+    ],
+    "steps": [
+      {
+        "id": "wc-fetes-noel-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fetes-noel",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Joyeux Noël !",
+          "On décore le sapin de Noël.",
+          "À Noël, toute la famille se réunit."
+        ],
+        "options": ["Рождество", "Новый год", "Пасха", "день рождения"],
+        "correctIndex": 0,
+        "explanation": "Noël (m) — Рождество (25 декабря). «Joyeux Noël !» — С Рождеством! Новый год — le Nouvel An, Пасха — Pâques. Обрати внимание на трему: Noël читается /nɔ.ɛl/, два звука раздельно."
+      },
+      {
+        "id": "wc-fetes-noel-trap",
+        "kind": "trap",
+        "wordId": "wl-fetes-noel",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Француз пишет «On se voit au Nouvel An, pas à Noël». О каких двух праздниках речь?",
+        "options": [
+          "Новый год и Рождество — это разные праздники",
+          "Это один и тот же праздник, названный дважды",
+          "Пасха и Рождество",
+          "Рождество и день рождения"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: во Франции Noël (Рождество, 25 декабря) и le Nouvel An (Новый год, 1 января) — два разных праздника. На Рождество говорят «Joyeux Noël !», а на Новый год — «Bonne année !»; это разные дни."
+      },
+      {
+        "id": "wc-fetes-anniversaire-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fetes-anniversaire",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Joyeux anniversaire !",
+          "C'est mon anniversaire demain.",
+          "On a fêté l'anniversaire de mariage de mes parents."
+        ],
+        "options": ["день рождения / годовщина", "праздник вообще", "свадьба", "подарок"],
+        "correctIndex": 0,
+        "explanation": "anniversaire (m) — день рождения, а также годовщина (anniversaire de mariage — годовщина свадьбы). «Joyeux anniversaire !» — С днём рождения! Подарок — un cadeau."
+      },
+      {
+        "id": "wc-fetes-anniversaire-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-fetes-anniversaire",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет корень слова. Что значит anniversaire?",
+        "bridge": "Англ. «anniversary» — годовщина. Тот же латинский корень (anni- «год»), почти те же буквы. Но во французском anniversaire — это ещё и день рождения.",
+        "options": ["день рождения / годовщина", "юбилейный концерт", "календарь", "новоселье"],
+        "correctIndex": 0,
+        "explanation": "anniversaire = день рождения и годовщина. Англ. «anniversary» — прямой мост. Различие: по-английски «birthday» отдельно, по-французски и то и другое — anniversaire."
+      },
+      {
+        "id": "wc-fetes-mariage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fetes-mariage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On est invités à un mariage samedi.",
+          "Leur mariage a eu lieu à l'église.",
+          "C'est leur dixième anniversaire de mariage."
+        ],
+        "options": ["свадьба / брак", "знакомство", "развод", "помолвка"],
+        "correctIndex": 0,
+        "explanation": "mariage (m) — свадьба и брак. «aller à un mariage» — идти на свадьбу. Развод — un divorce, помолвка — des fiançailles."
+      },
+      {
+        "id": "wc-fetes-mariage-trap",
+        "kind": "trap",
+        "wordId": "wl-fetes-mariage",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«Marriage» по-английски пишется с двумя r. А как правильно по-французски?",
+        "options": [
+          "mariage — одна r",
+          "marriage — две r, как в английском",
+          "marriaje — с j",
+          "mariague"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка написания: по-французски mariage — с одной r (от marier). Английское «marriage» с двумя r — частая ошибка. Читается /ma.ʁjaʒ/."
+      },
+      {
+        "id": "wc-fetes-paques-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fetes-paques",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Joyeuses Pâques !",
+          "À Pâques, les enfants cherchent des œufs en chocolat.",
+          "On part chez mamie pour Pâques."
+        ],
+        "options": ["Пасха", "Рождество", "Масленица", "карнавал"],
+        "correctIndex": 0,
+        "explanation": "Pâques — Пасха. Символ — шоколадные яйца (œufs en chocolat), которые «прячут» для детей. «Joyeuses Pâques !» — С Пасхой! (прилагательное во множественном). Не путать с Noël (Рождество)."
+      },
+      {
+        "id": "wc-fetes-paques-cmp",
+        "kind": "compare",
+        "wordId": "wl-fetes-paques",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Pâques и Noël. В чём разница между этими праздниками?",
+        "phrases": ["À Pâques, on mange des œufs en chocolat.", "À Noël, on décore le sapin."],
+        "options": [
+          "Pâques — Пасха (весна, шоколадные яйца); Noël — Рождество (зима, ёлка).",
+          "Это два названия одного зимнего праздника.",
+          "Pâques — Рождество, а Noël — Пасха.",
+          "Оба слова значат «Новый год»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Pâques — весенняя Пасха (œufs en chocolat, кролик), Noël — зимнее Рождество (sapin, ёлка). Разные сезоны, разные символы. Оба берут предлог à: à Pâques, à Noël."
+      },
+      {
+        "id": "wc-fetes-invite-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fetes-invite",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il y a cinquante invités au mariage.",
+          "Les invités arrivent à vingt heures.",
+          "C'est une invitée de la mariée."
+        ],
+        "options": ["гость (приглашённый)", "хозяин праздника", "официант", "сосед"],
+        "correctIndex": 0,
+        "explanation": "invité (m) / invitée (f) — гость, приглашённый (на праздник). От глагола inviter — приглашать. Хозяин (кто приглашает) — l'hôte."
+      },
+      {
+        "id": "wc-fetes-invite-sort",
+        "kind": "sort",
+        "wordId": "wl-fetes-invite",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом invité звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "inviter des amis",
+            "basket": "ok"
+          },
+          {
+            "text": "la liste des invités",
+            "basket": "ok"
+          },
+          {
+            "text": "accueillir les invités",
+            "basket": "ok"
+          },
+          {
+            "text": "manger un invité",
+            "basket": "no"
+          },
+          {
+            "text": "un invité plat",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«inviter des amis» (пригласить друзей), «la liste des invités» (список гостей), «accueillir les invités» (встречать гостей) — естественно. «manger un invité» (съесть гостя) и «un invité plat» — бессмыслица."
+      },
+      {
+        "id": "wc-fetes-feter-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fetes-feter",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол?",
+        "contexts": [
+          "On fête Noël en famille.",
+          "Comment tu fêtes ton anniversaire ?",
+          "Ils ont fêté leur mariage toute la nuit."
+        ],
+        "options": ["праздновать / отмечать", "готовить еду", "поздравлять", "приглашать"],
+        "correctIndex": 0,
+        "explanation": "fêter — праздновать, отмечать (от la fête — праздник). «fêter Noël / son anniversaire». Поздравлять — féliciter, приглашать — inviter."
+      },
+      {
+        "id": "wc-fetes-feter-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-fetes-feter",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "fêter",
+        "options": ["fêter", "jeter", "prêter", "acheter"],
+        "correctIndex": 0,
+        "explanation": "Все оканчиваются на -ter и похожи на слух, но это разные глаголы: fêter /fe.te/ (праздновать), jeter /ʒə.te/ (бросать), prêter /pʁɛ.te/ (давать взаймы), acheter /aʃ.te/ (покупать). Нужное — fêter."
+      },
+      {
+        "id": "wc-fetes-feter-hint",
+        "kind": "wordHint",
+        "wordId": "wl-fetes-feter",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: «отмечать» праздник — Рождество, день рождения, свадьбу.",
+        "answer": "fêter",
+        "hints": [
+          "Образован от la fête (праздник)",
+          "Начинается на f, есть accent circonflexe",
+          "On ___ Noël en famille."
+        ],
+        "explanation": "fêter — праздновать, отмечать. От la fête. Читается /fe.te/. Примеры: fêter Noël, fêter son anniversaire."
+      },
+      {
+        "id": "wc-fetes-bougie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fetes-bougie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il y a sept bougies sur le gâteau.",
+          "Souffle les bougies et fais un vœu !",
+          "On allume des bougies pour le dîner."
+        ],
+        "options": ["свеча", "спичка", "тарелка", "торт"],
+        "correctIndex": 0,
+        "explanation": "bougie (f) — свеча. «souffler les bougies» — задуть свечи (на торте). «allumer une bougie» — зажечь свечу. Торт — un gâteau, спичка — une allumette."
+      },
+      {
+        "id": "wc-fetes-bougie-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-fetes-bougie",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова связаны с праздничным тортом. Найди лишнее.",
+        "options": ["le gâteau", "la bougie", "le vœu", "le divorce"],
+        "correctIndex": 3,
+        "explanation": "Торт (le gâteau), свеча (la bougie) и желание (le vœu — «faire un vœu», загадать желание) — про праздничный торт. Развод (le divorce) — лишний, он к празднику не относится."
+      },
+      {
+        "id": "wc-fetes-danser-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fetes-danser",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол?",
+        "contexts": [
+          "On a dansé toute la nuit au mariage.",
+          "Tu veux danser avec moi ?",
+          "Les invités dansent sur la piste."
+        ],
+        "options": ["танцевать", "петь", "пить", "праздновать"],
+        "correctIndex": 0,
+        "explanation": "danser — танцевать. «danser avec quelqu'un» — танцевать с кем-то, «la piste (de danse)» — танцпол. Петь — chanter, праздновать — fêter."
+      },
+      {
+        "id": "wc-fetes-danser-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-fetes-danser",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "danser",
+        "options": ["danser", "penser", "passer", "lancer"],
+        "correctIndex": 0,
+        "explanation": "Похожие по звучанию, но разные глаголы: danser /dɑ̃.se/ (танцевать), penser /pɑ̃.se/ (думать), passer /pa.se/ (проходить), lancer /lɑ̃.se/ (бросать, запускать). Нужное — danser; различай носовой /ɑ̃/ и начальный согласный."
+      },
+      {
+        "id": "wc-fetes-noel-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-fetes-noel",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для Noël, чтобы запомнить трему на ë и раздельное чтение /nɔ.ɛl/.",
+        "examples": [
+          "Имя «Ноэль» по-русски тоже звучит в два слога — но-эль: трема ë заставляет читать э отдельно от о.",
+          "Представь ёлку (le sapin de Noël) и открытку «Joyeux Noël !» — две точки над ë как два огонька на ёлке."
+        ]
+      }
+    ]
+  }
+]

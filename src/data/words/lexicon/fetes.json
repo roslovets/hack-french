@@ -1,0 +1,337 @@
+[
+  {
+    "id": "wl-fetes-noel",
+    "lemma": "Noël",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/nɔ.ɛl/",
+    "translationsRu": ["Рождество"],
+    "translationsEn": ["Christmas"],
+    "semanticCore": "Рождество (25 декабря) — главный зимний семейный праздник с ёлкой, подарками и застольем.",
+    "collocations": [
+      {
+        "fr": "Joyeux Noël !",
+        "ru": "С Рождеством!"
+      },
+      {
+        "fr": "le sapin de Noël",
+        "ru": "рождественская ёлка"
+      },
+      {
+        "fr": "le père Noël",
+        "ru": "Дед Мороз / Санта-Клаус"
+      },
+      {
+        "fr": "à Noël",
+        "ru": "на Рождество"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "Nouvel An",
+        "note": "Noël = Рождество (25 декабря, семейное); le Nouvel An = Новый год (1 января). Это разные праздники, не путать."
+      },
+      {
+        "with": "Pâques",
+        "note": "Noël = зимнее Рождество (ёлка, подарки); Pâques = весенняя Пасха (шоколадные яйца)."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["fetes", "calendrier"],
+    "caseIds": ["wc-fetes"]
+  },
+  {
+    "id": "wl-fetes-anniversaire",
+    "lemma": "anniversaire",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.ni.vɛʁ.sɛʁ/",
+    "translationsRu": ["день рождения", "годовщина"],
+    "translationsEn": ["birthday", "anniversary"],
+    "semanticCore": "День рождения человека, а также годовщина события (свадьбы, основания) — ежегодная дата.",
+    "collocations": [
+      {
+        "fr": "Joyeux anniversaire !",
+        "ru": "С днём рождения!"
+      },
+      {
+        "fr": "fêter son anniversaire",
+        "ru": "отмечать свой день рождения"
+      },
+      {
+        "fr": "un anniversaire de mariage",
+        "ru": "годовщина свадьбы"
+      },
+      {
+        "fr": "un cadeau d'anniversaire",
+        "ru": "подарок на день рождения"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fête",
+        "note": "anniversaire = именно день рождения / годовщина (по дате); la fête = праздник вообще (в том числе именины — la fête)."
+      },
+      {
+        "with": "anniversary (англ.)",
+        "note": "Англ. «anniversary» = только годовщина; фр. anniversaire = и годовщина, и день рождения (для дня рождения английский берёт отдельное «birthday»)."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["fetes", "calendrier"],
+    "caseIds": ["wc-fetes"]
+  },
+  {
+    "id": "wl-fetes-mariage",
+    "lemma": "mariage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ma.ʁjaʒ/",
+    "translationsRu": ["свадьба", "брак"],
+    "translationsEn": ["wedding", "marriage"],
+    "semanticCore": "Свадьба как церемония/праздник и брак как союз; от глагола marier (женить, выдавать замуж).",
+    "collocations": [
+      {
+        "fr": "aller à un mariage",
+        "ru": "идти на свадьбу"
+      },
+      {
+        "fr": "un anniversaire de mariage",
+        "ru": "годовщина свадьбы"
+      },
+      {
+        "fr": "une demande en mariage",
+        "ru": "предложение руки и сердца"
+      },
+      {
+        "fr": "une robe de mariée",
+        "ru": "свадебное платье"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "marriage (англ.)",
+        "note": "Англ. «marriage» с двумя r; фр. mariage — с одной r. Частая ошибка написания."
+      },
+      {
+        "with": "noce",
+        "note": "mariage = свадьба/брак (нейтрально); les noces = торжество/празднование свадьбы (чаще во мн. ч.: noces d'or — золотая свадьба)."
+      }
+    ],
+    "frequencyRank": 580,
+    "level": "A2",
+    "tags": ["fetes", "famille"],
+    "caseIds": ["wc-fetes"]
+  },
+  {
+    "id": "wl-fetes-paques",
+    "lemma": "Pâques",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pak/",
+    "translationsRu": ["Пасха"],
+    "translationsEn": ["Easter"],
+    "semanticCore": "Пасха — весенний праздник; во Франции символы — шоколадные яйца и кролик, которые «находят» дети.",
+    "collocations": [
+      {
+        "fr": "Joyeuses Pâques !",
+        "ru": "С Пасхой!"
+      },
+      {
+        "fr": "à Pâques",
+        "ru": "на Пасху"
+      },
+      {
+        "fr": "un œuf de Pâques",
+        "ru": "пасхальное яйцо"
+      },
+      {
+        "fr": "les vacances de Pâques",
+        "ru": "пасхальные каникулы"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "Noël",
+        "note": "Pâques = весенняя Пасха (œufs en chocolat); Noël = зимнее Рождество (sapin). Оба берут предлог à."
+      },
+      {
+        "with": "genre (род)",
+        "note": "Как название праздника Pâques — мужского рода единственного числа (Pâques est tombé tôt cette année). Но в поздравлении «Joyeuses Pâques !» прилагательное стоит во множественном женском роде — это устойчивая форма-исключение. Не путать с la Pâque (без -s) — еврейская Пасха, Песах."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["fetes", "calendrier"],
+    "caseIds": ["wc-fetes"]
+  },
+  {
+    "id": "wl-fetes-invite",
+    "lemma": "invité",
+    "displayForm": "invité / invitée",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛ̃.vi.te/",
+    "translationsRu": ["гость", "приглашённый"],
+    "translationsEn": ["guest"],
+    "semanticCore": "Тот, кого пригласили на праздник или в гости; от глагола inviter (приглашать).",
+    "collocations": [
+      {
+        "fr": "la liste des invités",
+        "ru": "список гостей"
+      },
+      {
+        "fr": "accueillir les invités",
+        "ru": "встречать гостей"
+      },
+      {
+        "fr": "un invité de marque",
+        "ru": "почётный гость"
+      },
+      {
+        "fr": "inviter des amis",
+        "ru": "приглашать друзей"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "hôte",
+        "note": "l'invité = гость (кого пригласили); l'hôte = и хозяин (кто принимает), и иногда гость — слово двусмысленное, поэтому для «гостя» надёжнее invité."
+      },
+      {
+        "with": "client",
+        "note": "invité = приглашённый гость (бесплатно, по приглашению); le client = клиент/посетитель (платит за услугу)."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["fetes", "social"],
+    "caseIds": ["wc-fetes"]
+  },
+  {
+    "id": "wl-fetes-feter",
+    "lemma": "fêter",
+    "pos": "verb",
+    "ipa": "/fe.te/",
+    "translationsRu": ["праздновать", "отмечать"],
+    "translationsEn": ["to celebrate"],
+    "semanticCore": "Отмечать праздник или событие — Рождество, день рождения, успех; от la fête (праздник).",
+    "collocations": [
+      {
+        "fr": "fêter Noël",
+        "ru": "праздновать Рождество"
+      },
+      {
+        "fr": "fêter son anniversaire",
+        "ru": "отмечать день рождения"
+      },
+      {
+        "fr": "fêter ça",
+        "ru": "отметить это (событие)"
+      },
+      {
+        "fr": "fêter une victoire",
+        "ru": "праздновать победу"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "célébrer",
+        "note": "fêter = отмечать (обиходно, с весельем); célébrer = праздновать торжественно (célébrer un mariage — совершать брачную церемонию). fêter повседневнее."
+      },
+      {
+        "with": "féliciter",
+        "note": "fêter = праздновать (само событие); féliciter = поздравлять (человека). Не путать: on fête Noël, mais on félicite les mariés."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["fetes", "verbe"],
+    "caseIds": ["wc-fetes"]
+  },
+  {
+    "id": "wl-fetes-bougie",
+    "lemma": "bougie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bu.ʒi/",
+    "translationsRu": ["свеча"],
+    "translationsEn": ["candle"],
+    "semanticCore": "Свеча — даёт огонь и свет; на торте их задувают, загадывая желание.",
+    "collocations": [
+      {
+        "fr": "souffler les bougies",
+        "ru": "задуть свечи"
+      },
+      {
+        "fr": "allumer une bougie",
+        "ru": "зажечь свечу"
+      },
+      {
+        "fr": "des bougies sur le gâteau",
+        "ru": "свечи на торте"
+      },
+      {
+        "fr": "une bougie parfumée",
+        "ru": "ароматическая свеча"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "allumette",
+        "note": "la bougie = свеча (горит долго); l'allumette = спичка (которой зажигают). Свечу зажигают спичкой."
+      },
+      {
+        "with": "ampoule",
+        "note": "la bougie = свеча (живой огонь); l'ampoule = (электрическая) лампочка. Не путать источники света."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["fetes", "objet"],
+    "caseIds": ["wc-fetes"]
+  },
+  {
+    "id": "wl-fetes-danser",
+    "lemma": "danser",
+    "pos": "verb",
+    "ipa": "/dɑ̃.se/",
+    "translationsRu": ["танцевать"],
+    "translationsEn": ["to dance"],
+    "semanticCore": "Танцевать — двигаться под музыку, особенно на празднике, свадьбе или вечеринке.",
+    "collocations": [
+      {
+        "fr": "danser avec quelqu'un",
+        "ru": "танцевать с кем-то"
+      },
+      {
+        "fr": "danser toute la nuit",
+        "ru": "танцевать всю ночь"
+      },
+      {
+        "fr": "aller danser",
+        "ru": "пойти потанцевать"
+      },
+      {
+        "fr": "la piste de danse",
+        "ru": "танцпол"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chanter",
+        "note": "danser = танцевать (двигаться); chanter = петь (голосом). На празднике on danse et on chante."
+      },
+      {
+        "with": "penser",
+        "note": "Звучат похоже: danser /dɑ̃.se/ и penser /pɑ̃.se/ (думать). Различай начальный согласный, иначе «я думаю» и «я танцую» перепутаются."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["fetes", "verbe"],
+    "caseIds": ["wc-fetes"]
+  }
+]

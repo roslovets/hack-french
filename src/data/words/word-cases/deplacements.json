@@ -1,0 +1,393 @@
+[
+  {
+    "id": "wc-deplacements",
+    "title": "Передвижение",
+    "theme": "deplacements",
+    "level": "A2",
+    "wordIds": [
+      "wl-deplacements-marcher",
+      "wl-deplacements-conduire",
+      "wl-deplacements-voler",
+      "wl-deplacements-attendre",
+      "wl-deplacements-rentrer",
+      "wl-deplacements-rester",
+      "wl-deplacements-arriver",
+      "wl-deplacements-suivre"
+    ],
+    "steps": [
+      {
+        "id": "wc-deplacements-marcher-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-deplacements-marcher",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Один глагол повторяется во всех трёх сценах. Что он значит?",
+        "contexts": [
+          "On marche jusqu'au parc, il fait beau.",
+          "Le bébé commence à marcher.",
+          "Cet ascenseur ne marche pas."
+        ],
+        "options": [
+          "ходить пешком; а ещё «работать, функционировать» (о технике)",
+          "бежать наперегонки",
+          "водить машину",
+          "стоять на месте"
+        ],
+        "correctIndex": 0,
+        "explanation": "marcher — идти пешком (on marche jusqu'au parc) и учиться ходить (le bébé marche). Второе значение: «работать, функционировать» — ça marche, l'ascenseur ne marche pas. Это глагол 1-й группы: je marche, nous marchons."
+      },
+      {
+        "id": "wc-deplacements-marcher-sort",
+        "kind": "sort",
+        "wordId": "wl-deplacements-marcher",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с marcher звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "marcher dans la rue",
+            "basket": "ok"
+          },
+          {
+            "text": "Ça marche !",
+            "basket": "ok"
+          },
+          {
+            "text": "marcher vite",
+            "basket": "ok"
+          },
+          {
+            "text": "marcher une voiture",
+            "basket": "no"
+          },
+          {
+            "text": "marcher un avion",
+            "basket": "no"
+          }
+        ],
+        "explanation": "marcher — идти пешком (marcher dans la rue, marcher vite) или работать (Ça marche ! = «Договорились / Работает»). Но машину не «marche», её conduit (водят), а на самолёте летят — prendre l'avion / voler."
+      },
+      {
+        "id": "wc-deplacements-conduire-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-deplacements-conduire",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Elle conduit prudemment.",
+          "Je conduis les enfants à l'école.",
+          "Il a appris à conduire à dix-huit ans."
+        ],
+        "options": [
+          "вести машину; а ещё «отвезти, доставить» кого-то",
+          "идти пешком",
+          "ждать кого-то",
+          "оставаться дома"
+        ],
+        "correctIndex": 0,
+        "explanation": "conduire — управлять машиной (elle conduit prudemment, apprendre à conduire) и «отвезти/доставить» человека куда-то (conduire les enfants à l'école). Формы: je conduis, il conduit, nous conduisons; в passé composé — j'ai conduit."
+      },
+      {
+        "id": "wc-deplacements-conduire-trap",
+        "kind": "trap",
+        "wordId": "wl-deplacements-conduire",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "По-русски «водить машину». Какой французский глагол выбрать?",
+        "options": [
+          "conduire une voiture",
+          "mener une voiture",
+          "porter une voiture",
+          "marcher une voiture"
+        ],
+        "correctIndex": 0,
+        "explanation": "Машину «водят» — conduire une voiture. mener — вести (за собой) человека/группу, porter — нести предмет, а marcher — идти пешком или «работать». Для управления любым транспортом нужен conduire."
+      },
+      {
+        "id": "wc-deplacements-voler-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-deplacements-voler",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Один глагол — два разных значения. Что объединяет эти сцены?",
+        "contexts": [
+          "Les oiseaux volent vers le sud.",
+          "On vole de Paris à Rome en deux heures.",
+          "On m'a volé mon vélo !"
+        ],
+        "options": [
+          "летать (по воздуху); а ещё «красть, воровать»",
+          "только «летать»",
+          "только «падать»",
+          "плавать"
+        ],
+        "correctIndex": 0,
+        "explanation": "У voler два значения: «летать» (les oiseaux volent, voler de Paris à Rome) и «красть» (on m'a volé mon vélo = у меня украли велосипед). Одно слово — два смысла; различает только контекст."
+      },
+      {
+        "id": "wc-deplacements-voler-cmp",
+        "kind": "compare",
+        "wordId": "wl-deplacements-voler",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Один и тот же глагол voler. Чем отличаются эти две фразы?",
+        "phrases": ["Cet avion vole très haut.", "Quelqu'un a volé mon sac."],
+        "options": [
+          "В первой voler = «летит» (по воздуху); во второй = «украл»",
+          "Это разные глаголы, просто похожи",
+          "В первой = «украл», во второй = «летит»",
+          "Оба раза значит «упал»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Один глагол voler работает в обоих смыслах. С подлежащим, которое может лететь (avion, oiseau), — это «летать». С дополнением-вещью (mon sac) и человеком-вором — «красть». Существительные тоже разные: le vol = и «полёт», и «кража»."
+      },
+      {
+        "id": "wc-deplacements-attendre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-deplacements-attendre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "J'attends le bus depuis dix minutes.",
+          "Attends-moi devant la gare !",
+          "Nous attendons nos amis."
+        ],
+        "options": ["ждать (кого-то / что-то)", "слушать", "посещать", "приходить"],
+        "correctIndex": 0,
+        "explanation": "attendre — ждать. Важно: дополнение идёт без предлога — j'attends le bus (а не «attendre pour le bus»). Формы: j'attends, il attend, nous attendons. Не путать с английским to attend (посещать)!"
+      },
+      {
+        "id": "wc-deplacements-attendre-trap",
+        "kind": "trap",
+        "wordId": "wl-deplacements-attendre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг. Английское to attend a meeting (присутствовать на встрече). Что значит французское attendre?",
+        "options": [
+          "ждать",
+          "присутствовать, посещать",
+          "обслуживать",
+          "ожидать ребёнка только в значении «беременна»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: англ. to attend = «присутствовать/посещать», но фр. attendre = «ждать». «Посещать собрание» — assister à une réunion, а не «attendre». Запомни: on attend le bus = ждём автобус."
+      },
+      {
+        "id": "wc-deplacements-attendre-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-deplacements-attendre",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, какое из похожих по звучанию написано верно.",
+        "audioText": "attendre",
+        "options": ["attendre", "entendre", "attendrir", "rendre"],
+        "correctIndex": 0,
+        "explanation": "attendre /a.tɑ̃dʁ/ — ждать. Очень близко звучит entendre /ɑ̃.tɑ̃dʁ/ — слышать (другой первый звук). attendrir — растрогать, rendre — возвращать. Различай attendre (ждать) и entendre (слышать) на слух."
+      },
+      {
+        "id": "wc-deplacements-rentrer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-deplacements-rentrer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Je rentre à la maison après le travail.",
+          "À quelle heure tu rentres ce soir ?",
+          "Ils rentrent de vacances demain."
+        ],
+        "options": [
+          "возвращаться (к себе, домой)",
+          "входить впервые",
+          "оставаться на месте",
+          "уходить навсегда"
+        ],
+        "correctIndex": 0,
+        "explanation": "rentrer — возвращаться (к себе / домой): rentrer à la maison, rentrer du travail, rentrer de vacances. В passé composé спрягается с être: je suis rentré(e). Префикс re- подсказывает «обратно»."
+      },
+      {
+        "id": "wc-deplacements-rentrer-cmp",
+        "kind": "compare",
+        "wordId": "wl-deplacements-rentrer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "rentrer и rester легко перепутать. В чём разница здесь?",
+        "phrases": ["Je rentre à la maison.", "Je reste à la maison."],
+        "options": [
+          "rentrer = возвращаюсь домой (движение); rester = остаюсь дома (никуда не иду)",
+          "Это синонимы, разницы нет",
+          "rentrer = остаюсь; rester = возвращаюсь",
+          "Оба значат «ухожу из дома»"
+        ],
+        "correctIndex": 0,
+        "explanation": "rentrer = двигаться обратно домой (я был снаружи, теперь возвращаюсь). rester = никуда не двигаться, остаться где есть. «Je rentre» — иду домой; «Je reste» — остаюсь дома."
+      },
+      {
+        "id": "wc-deplacements-rester-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-deplacements-rester",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Reste ici, je reviens.",
+          "Nous restons trois jours à Lyon.",
+          "Il reste un peu de pain."
+        ],
+        "options": [
+          "оставаться (на месте); а ещё «остаётся» (что-то в наличии)",
+          "отдыхать, лежать",
+          "возвращаться",
+          "уходить"
+        ],
+        "correctIndex": 0,
+        "explanation": "rester — оставаться где-то (reste ici, rester trois jours à Lyon) и «оставаться в наличии»: il reste un peu de pain (осталось немного хлеба). В passé composé с être: je suis resté(e)."
+      },
+      {
+        "id": "wc-deplacements-rester-trap",
+        "kind": "trap",
+        "wordId": "wl-deplacements-rester",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг. Английское to rest = «отдыхать». Что значит французское rester?",
+        "options": [
+          "оставаться (на месте)",
+          "отдыхать, расслабляться",
+          "спать",
+          "восстанавливаться после болезни"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: англ. to rest = «отдыхать», но фр. rester = «оставаться». «Отдыхать» по-французски — se reposer. Сравни: je reste à la maison (остаюсь дома) ≠ je me repose (отдыхаю)."
+      },
+      {
+        "id": "wc-deplacements-arriver-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-deplacements-arriver",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Один глагол — несколько значений. Что объединяет эти сцены?",
+        "contexts": [
+          "Le train arrive à midi.",
+          "Qu'est-ce qui est arrivé ?",
+          "Je n'arrive pas à ouvrir la porte."
+        ],
+        "options": [
+          "приходить, прибывать; «случаться»; arriver à + инфинитив = «суметь, удаваться»",
+          "только «прибывать»",
+          "уезжать, отправляться",
+          "ждать"
+        ],
+        "correctIndex": 0,
+        "explanation": "У arriver три ходовых смысла: прибывать (le train arrive), случаться (qu'est-ce qui est arrivé ? = что случилось?), и arriver à faire qqch = суметь сделать (je n'arrive pas à ouvrir = у меня не получается открыть). С être: je suis arrivé(e)."
+      },
+      {
+        "id": "wc-deplacements-arriver-cmp",
+        "kind": "compare",
+        "wordId": "wl-deplacements-arriver",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Два значения arriver. Чем отличаются эти фразы?",
+        "phrases": ["Nous arrivons à la gare.", "J'arrive à comprendre le français."],
+        "options": [
+          "Первое — «прибываем» (в место); второе — «мне удаётся» (arriver à + инфинитив)",
+          "Это одно и то же значение",
+          "Первое — «удаётся»; второе — «прибываем»",
+          "Оба раза значит «уезжаем»"
+        ],
+        "correctIndex": 0,
+        "explanation": "arriver à + место = прибывать туда (arriver à la gare). arriver à + инфинитив = суметь/смочь (arriver à comprendre = получается понимать). Предлог à есть в обоих, но дальше — место или глагол."
+      },
+      {
+        "id": "wc-deplacements-suivre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-deplacements-suivre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Suivez-moi, c'est par ici.",
+          "Le chien suit son maître partout.",
+          "Elle suit des cours de français."
+        ],
+        "options": [
+          "следовать, идти за; а ещё «посещать» (suivre un cours)",
+          "вести за собой, возглавлять",
+          "ждать",
+          "обгонять"
+        ],
+        "correctIndex": 0,
+        "explanation": "suivre — идти за кем-то (suivez-moi, le chien suit son maître) и «проходить/посещать» курс (suivre des cours = ходить на занятия). Формы: je suis, il suit, nous suivons — внимание, je suis тут от suivre, а не от être!"
+      },
+      {
+        "id": "wc-deplacements-suivre-trap",
+        "kind": "trap",
+        "wordId": "wl-deplacements-suivre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Фраза «Je suis Marie». Без контекста она двусмысленна. Какие два чтения возможны?",
+        "options": [
+          "«Я — Мари» (être) ИЛИ «Я иду за Мари» (suivre): je suis — форма обоих глаголов",
+          "Только «Я — Мари»",
+          "Только «Я следую за Мари»",
+          "«Я знаю Мари»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Совпадение форм: je suis — это и «я есть» (être), и «я следую» (suivre). «Je suis Marie» = «Я Мари» или «Я иду за Мари». Различает только контекст; во множественном разница видна: nous sommes (être) ≠ nous suivons (suivre)."
+      },
+      {
+        "id": "wc-deplacements-marcher-hint",
+        "kind": "wordHint",
+        "wordId": "wl-deplacements-marcher",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: «идти пешком», а в разговоре ещё «работать, функционировать» (о технике, о плане).",
+        "answer": "marcher",
+        "hints": [
+          "Начинается на m…",
+          "1-я группа на -er, внутри спрятан «марш»",
+          "Ça ___ ! = «Договорились / Работает!»"
+        ],
+        "explanation": "marcher — идти пешком и «работать» (ça marche, la télé ne marche pas). 1-я группа: je marche, nous marchons. Связь с русским «марш» помогает вспомнить."
+      },
+      {
+        "id": "wc-deplacements-suivre-hint",
+        "kind": "wordHint",
+        "wordId": "wl-deplacements-suivre",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: «идти за кем-то», а ещё «ходить на курс, посещать занятия».",
+        "answer": "suivre",
+        "hints": [
+          "Начинается на s…",
+          "Похож на англ. to pursue / to follow по смыслу",
+          "___ des cours de français = ходить на курсы французского"
+        ],
+        "explanation": "suivre — следовать за кем-то и посещать курс (suivre des cours). Внимание на формы: je suis, tu suis, il suit, nous suivons. «Je suis» здесь — от suivre, не от être."
+      },
+      {
+        "id": "wc-deplacements-voler-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-deplacements-voler",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию, чтобы держать в голове оба значения voler — «летать» и «красть».",
+        "examples": [
+          "Вор «улетает» с добычей: птица vole по небу — и карманник vole кошелёк и «улетучивается».",
+          "Существительное le vol — сразу и «рейс/полёт» (vol Paris–Rome), и «кража» (un vol dans le métro): одно слово, два мира."
+        ]
+      }
+    ]
+  }
+]
