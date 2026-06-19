@@ -1,0 +1,335 @@
+[
+  {
+    "id": "wl-caractere-mechant",
+    "lemma": "méchant",
+    "displayForm": "méchant / méchante",
+    "pos": "adj",
+    "ipa": "/me.ʃɑ̃/",
+    "translationsRu": ["злой", "вредный", "недобрый"],
+    "translationsEn": ["mean", "nasty"],
+    "semanticCore": "О том, кто намеренно делает другим плохо или зло; о злой (кусачей) собаке.",
+    "collocations": [
+      {
+        "fr": "un chien méchant",
+        "ru": "злая собака"
+      },
+      {
+        "fr": "être méchant avec quelqu'un",
+        "ru": "быть злым с кем-то"
+      },
+      {
+        "fr": "une méchante remarque",
+        "ru": "злое (обидное) замечание"
+      },
+      {
+        "fr": "Ne sois pas méchant.",
+        "ru": "Не будь злым."
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vilain",
+        "note": "méchant = злой (делает зло); vilain = противный, некрасивый, гадкий поступок (часто о детях: «un vilain garçon»). Méchant сильнее и про умысел."
+      },
+      {
+        "with": "énervé",
+        "note": "méchant = по характеру злой/вредный; énervé = просто раздражён в данный момент. Можно быть énervé, но не méchant."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["caractere", "trait-negatif"],
+    "caseIds": ["wc-caractere"]
+  },
+  {
+    "id": "wl-caractere-timide",
+    "lemma": "timide",
+    "pos": "adj",
+    "ipa": "/ti.mid/",
+    "translationsRu": ["застенчивый", "робкий", "стеснительный"],
+    "translationsEn": ["shy", "timid"],
+    "semanticCore": "О том, кому неловко и страшно перед людьми, кто стесняется говорить и проявлять себя.",
+    "collocations": [
+      {
+        "fr": "un enfant timide",
+        "ru": "застенчивый ребёнок"
+      },
+      {
+        "fr": "être timide avec les filles",
+        "ru": "стесняться девушек"
+      },
+      {
+        "fr": "un sourire timide",
+        "ru": "робкая улыбка"
+      },
+      {
+        "fr": "trop timide pour parler",
+        "ru": "слишком робкий, чтобы заговорить"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "gêné",
+        "note": "timide = застенчивый по характеру (всегда); gêné = смущён/неловко именно сейчас, в конкретной ситуации."
+      },
+      {
+        "with": "réservé",
+        "note": "timide = робкий, боится людей; réservé = сдержанный, неразговорчивый по выбору (это не страх, а манера)."
+      }
+    ],
+    "frequencyRank": 610,
+    "level": "A2",
+    "tags": ["caractere", "trait"],
+    "caseIds": ["wc-caractere"]
+  },
+  {
+    "id": "wl-caractere-drole",
+    "lemma": "drôle",
+    "pos": "adj",
+    "ipa": "/dʁol/",
+    "translationsRu": ["смешной", "забавный", "странный"],
+    "translationsEn": ["funny"],
+    "semanticCore": "Смешной, вызывающий улыбку; а в обороте «un drôle de…» — наоборот странный, чудной.",
+    "collocations": [
+      {
+        "fr": "une histoire drôle",
+        "ru": "смешная история"
+      },
+      {
+        "fr": "C'est très drôle.",
+        "ru": "Это очень смешно."
+      },
+      {
+        "fr": "un drôle de type",
+        "ru": "странный тип / чудак"
+      },
+      {
+        "fr": "Ce n'est pas drôle.",
+        "ru": "Это не смешно / невесело."
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "marrant",
+        "note": "drôle = смешной (нейтрально, везде уместно); marrant = смешной, но разговорно, в неформальной речи."
+      },
+      {
+        "with": "bizarre",
+        "note": "Обычное drôle = смешной; но «un drôle de + сущ.» = странный (= bizarre). Смысл переворачивает конструкция «drôle de»."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["caractere", "trait"],
+    "caseIds": ["wc-caractere"]
+  },
+  {
+    "id": "wl-caractere-serieux",
+    "lemma": "sérieux",
+    "displayForm": "sérieux / sérieuse",
+    "pos": "adj",
+    "ipa": "/se.ʁjø/",
+    "translationsRu": ["серьёзный", "ответственный"],
+    "translationsEn": ["serious"],
+    "semanticCore": "О человеке надёжном и ответственном, который не шутит и относится к делу всерьёз.",
+    "collocations": [
+      {
+        "fr": "un élève sérieux",
+        "ru": "прилежный, ответственный ученик"
+      },
+      {
+        "fr": "prendre au sérieux",
+        "ru": "принимать всерьёз"
+      },
+      {
+        "fr": "Tu es sérieux ?",
+        "ru": "Ты серьёзно?"
+      },
+      {
+        "fr": "un problème sérieux",
+        "ru": "серьёзная проблема"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "grave",
+        "note": "sérieux о человеке = ответственный, надёжный; grave = тяжёлый, опасный (о ситуации, болезни). «un problème sérieux» серьёзный, «c'est grave» — это тяжело."
+      },
+      {
+        "with": "ennuyeux",
+        "note": "sérieux = серьёзный (положительно, всерьёз); ennuyeux = скучный. Серьёзный человек не обязательно скучный."
+      }
+    ],
+    "frequencyRank": 430,
+    "level": "A2",
+    "tags": ["caractere", "trait"],
+    "caseIds": ["wc-caractere"]
+  },
+  {
+    "id": "wl-caractere-calme",
+    "lemma": "calme",
+    "pos": "adj",
+    "ipa": "/kalm/",
+    "translationsRu": ["спокойный", "тихий"],
+    "translationsEn": ["calm", "quiet"],
+    "semanticCore": "О человеке без суеты и нервов, а также о тихом, спокойном месте.",
+    "collocations": [
+      {
+        "fr": "un enfant calme",
+        "ru": "спокойный ребёнок"
+      },
+      {
+        "fr": "rester calme",
+        "ru": "сохранять спокойствие"
+      },
+      {
+        "fr": "un quartier calme",
+        "ru": "тихий район"
+      },
+      {
+        "fr": "Du calme !",
+        "ru": "Спокойно! / Тихо!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tranquille",
+        "note": "calme = спокойный (без волнения, без шума); tranquille = спокойный в смысле «оставь меня в покое», беззаботный. «Laisse-moi tranquille» — оставь меня в покое."
+      },
+      {
+        "with": "énervé",
+        "note": "calme = спокойный — прямой антоним énervé (раздражённый, на нервах). Rester calme = не нервничать."
+      }
+    ],
+    "frequencyRank": 390,
+    "level": "A2",
+    "tags": ["caractere", "trait"],
+    "caseIds": ["wc-caractere"]
+  },
+  {
+    "id": "wl-caractere-courageux",
+    "lemma": "courageux",
+    "displayForm": "courageux / courageuse",
+    "pos": "adj",
+    "ipa": "/ku.ʁa.ʒø/",
+    "translationsRu": ["смелый", "храбрый", "отважный"],
+    "translationsEn": ["brave", "courageous"],
+    "semanticCore": "О том, кто не боится трудностей и опасности и действует, несмотря на страх.",
+    "collocations": [
+      {
+        "fr": "un soldat courageux",
+        "ru": "храбрый солдат"
+      },
+      {
+        "fr": "un acte courageux",
+        "ru": "смелый поступок"
+      },
+      {
+        "fr": "être courageux face au danger",
+        "ru": "быть смелым перед лицом опасности"
+      },
+      {
+        "fr": "une femme courageuse",
+        "ru": "смелая женщина"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "brave",
+        "note": "courageux = смелый (не боится); brave перед существительным часто = славный, добрый («un brave homme» — добрый, славный человек, а не храбрый)."
+      },
+      {
+        "with": "peureux",
+        "note": "courageux = смелый — прямой антоним peureux (трусливый, пугливый)."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["caractere", "trait"],
+    "caseIds": ["wc-caractere"]
+  },
+  {
+    "id": "wl-caractere-paresseux",
+    "lemma": "paresseux",
+    "displayForm": "paresseux / paresseuse",
+    "pos": "adj",
+    "ipa": "/pa.ʁɛ.sø/",
+    "translationsRu": ["ленивый", "лентяй"],
+    "translationsEn": ["lazy"],
+    "semanticCore": "О том, кто не любит трудиться и избегает усилий; как существительное — лентяй (и животное «ленивец»).",
+    "collocations": [
+      {
+        "fr": "un élève paresseux",
+        "ru": "ленивый ученик"
+      },
+      {
+        "fr": "être paresseux le matin",
+        "ru": "быть ленивым по утрам"
+      },
+      {
+        "fr": "un peu paresseux",
+        "ru": "немного ленивый"
+      },
+      {
+        "fr": "trop paresseux pour travailler",
+        "ru": "слишком ленив, чтобы работать"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fatigué",
+        "note": "paresseux = ленивый по характеру (не хочет); fatigué = уставший в данный момент (не может). Лентяй и уставший — разное."
+      },
+      {
+        "with": "travailleur",
+        "note": "paresseux = ленивый — прямой антоним travailleur (трудолюбивый, работящий)."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["caractere", "trait-negatif"],
+    "caseIds": ["wc-caractere"]
+  },
+  {
+    "id": "wl-caractere-poli",
+    "lemma": "poli",
+    "displayForm": "poli / polie",
+    "pos": "adj",
+    "ipa": "/pɔ.li/",
+    "translationsRu": ["вежливый", "учтивый"],
+    "translationsEn": ["polite"],
+    "semanticCore": "О том, кто соблюдает правила вежливости: здоровается, говорит «спасибо», уважителен к другим.",
+    "collocations": [
+      {
+        "fr": "un enfant poli",
+        "ru": "вежливый ребёнок"
+      },
+      {
+        "fr": "rester poli",
+        "ru": "оставаться вежливым"
+      },
+      {
+        "fr": "poli mais froid",
+        "ru": "вежливый, но холодный"
+      },
+      {
+        "fr": "être poli avec tout le monde",
+        "ru": "быть вежливым со всеми"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "gentil",
+        "note": "poli = вежливый (соблюдает формы вежливости); gentil = добрый, милый (по-настоящему хорошо относится). Можно быть poli, но не gentil — вежливый, но недобрый."
+      },
+      {
+        "with": "poli (отполированный)",
+        "note": "poli = вежливый, но то же слово значит «отполированный, гладкий» (от polir). Контекст различает: «un homme poli» — вежливый человек, «un métal poli» — отполированный металл."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["caractere", "trait"],
+    "caseIds": ["wc-caractere"]
+  }
+]

@@ -1,0 +1,314 @@
+[
+  {
+    "id": "wl-etudes-cours",
+    "lemma": "cours",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kuʁ/",
+    "translationsRu": ["урок", "занятие", "курс"],
+    "translationsEn": ["class", "course", "lesson"],
+    "semanticCore": "Занятие или курс, который ведёт преподаватель: и одна пара/урок, и весь учебный курс целиком.",
+    "collocations": [
+      {
+        "fr": "suivre un cours",
+        "ru": "посещать занятие / ходить на курс"
+      },
+      {
+        "fr": "un cours de français",
+        "ru": "урок (курс) французского"
+      },
+      {
+        "fr": "aller en cours",
+        "ru": "идти на занятия"
+      },
+      {
+        "fr": "pendant le cours",
+        "ru": "во время занятия"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "leçon",
+        "note": "cours = занятие/курс, который ведёт преподаватель (всё время урока); leçon = урок как порция материала (тема, глава, «la leçon 3»)."
+      },
+      {
+        "with": "classe",
+        "note": "cours = само занятие (процесс); classe = класс как группа учеников или помещение."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["etudes", "ecole"],
+    "caseIds": ["wc-etudes"]
+  },
+  {
+    "id": "wl-etudes-examen",
+    "lemma": "examen",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛɡ.za.mɛ̃/",
+    "translationsRu": ["экзамен"],
+    "translationsEn": ["exam", "examination"],
+    "semanticCore": "Экзамен — проверка знаний, к которой готовятся и которую сдают (с риском провалить).",
+    "collocations": [
+      {
+        "fr": "passer un examen",
+        "ru": "сдавать экзамен (проходить испытание, ещё не значит «сдать»)"
+      },
+      {
+        "fr": "réussir un examen",
+        "ru": "сдать экзамен (успешно)"
+      },
+      {
+        "fr": "rater un examen",
+        "ru": "провалить экзамен"
+      },
+      {
+        "fr": "préparer un examen",
+        "ru": "готовиться к экзамену"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "passer (ложный друг)",
+        "note": "«passer un examen» = сдавать (проходить) экзамен, НЕ «сдать успешно». Успешно сдать — réussir un examen."
+      },
+      {
+        "with": "contrôle",
+        "note": "examen = крупный экзамен (итоговый); contrôle = небольшая проверочная работа в течение года."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["etudes", "ecole"],
+    "caseIds": ["wc-etudes"]
+  },
+  {
+    "id": "wl-etudes-cahier",
+    "lemma": "cahier",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ka.je/",
+    "translationsRu": ["тетрадь"],
+    "translationsEn": ["notebook", "exercise book"],
+    "semanticCore": "Тетрадь — сшитые листы, куда записывают на занятиях и делают упражнения.",
+    "collocations": [
+      {
+        "fr": "un cahier d'exercices",
+        "ru": "тетрадь с упражнениями / рабочая тетрадь"
+      },
+      {
+        "fr": "ouvrir son cahier",
+        "ru": "открыть тетрадь"
+      },
+      {
+        "fr": "écrire dans le cahier",
+        "ru": "писать в тетради"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "carnet",
+        "note": "cahier = школьная тетрадь (большая, для занятий); carnet = маленький блокнот (записная книжка)."
+      },
+      {
+        "with": "livre",
+        "note": "cahier = тетрадь, куда сам пишешь; livre = книга/учебник, которую читаешь."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["etudes", "objet"],
+    "caseIds": ["wc-etudes"]
+  },
+  {
+    "id": "wl-etudes-stylo",
+    "lemma": "stylo",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sti.lo/",
+    "translationsRu": ["ручка"],
+    "translationsEn": ["pen"],
+    "semanticCore": "Ручка, которой пишут чернилами (шариковая, для постоянной записи).",
+    "collocations": [
+      {
+        "fr": "un stylo-bille",
+        "ru": "шариковая ручка"
+      },
+      {
+        "fr": "écrire au stylo",
+        "ru": "писать ручкой"
+      },
+      {
+        "fr": "prêter son stylo",
+        "ru": "одолжить ручку"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "crayon",
+        "note": "stylo = ручка (чернила, не стирается); crayon = карандаш (грифель, стирается ластиком)."
+      },
+      {
+        "with": "stylet (англ. stylus)",
+        "note": "Англ. «stylus» близко к stylo, но stylo = обычная ручка; перо/стилус для экрана — un stylet."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["etudes", "objet"],
+    "caseIds": ["wc-etudes"]
+  },
+  {
+    "id": "wl-etudes-crayon",
+    "lemma": "crayon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kʁɛ.jɔ̃/",
+    "translationsRu": ["карандаш"],
+    "translationsEn": ["pencil"],
+    "semanticCore": "Карандаш — пишет грифелем, написанное можно стереть ластиком.",
+    "collocations": [
+      {
+        "fr": "un crayon de couleur",
+        "ru": "цветной карандаш"
+      },
+      {
+        "fr": "écrire au crayon",
+        "ru": "писать карандашом"
+      },
+      {
+        "fr": "tailler un crayon",
+        "ru": "точить карандаш"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "crayon (англ.)",
+        "note": "Ложный друг: фр. crayon = карандаш (графитный); англ. «crayon» = восковой мелок (по-фр. un crayon de cire / un pastel)."
+      },
+      {
+        "with": "stylo",
+        "note": "crayon = карандаш (стирается); stylo = ручка (чернила, не стирается)."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["etudes", "objet"],
+    "caseIds": ["wc-etudes"]
+  },
+  {
+    "id": "wl-etudes-lecon",
+    "lemma": "leçon",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/lə.sɔ̃/",
+    "translationsRu": ["урок"],
+    "translationsEn": ["lesson"],
+    "semanticCore": "Урок как порция материала (тема, глава учебника), которую учат, а иногда — жизненный урок.",
+    "collocations": [
+      {
+        "fr": "apprendre sa leçon",
+        "ru": "выучить урок"
+      },
+      {
+        "fr": "réviser la leçon",
+        "ru": "повторить урок (материал)"
+      },
+      {
+        "fr": "une leçon de conduite",
+        "ru": "урок вождения"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cours",
+        "note": "leçon = урок как порция материала (la leçon 3, глава); cours = занятие/курс, который ведёт преподаватель."
+      },
+      {
+        "with": "lesson (англ.)",
+        "note": "Англ. «lesson» = leçon — близко, но во французском под седиль: le-ç-on, и звук /s/."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["etudes", "ecole"],
+    "caseIds": ["wc-etudes"]
+  },
+  {
+    "id": "wl-etudes-exercice",
+    "lemma": "exercice",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛɡ.zɛʁ.sis/",
+    "translationsRu": ["упражнение"],
+    "translationsEn": ["exercise"],
+    "semanticCore": "Упражнение — учебное задание, которое делают, чтобы потренировать и закрепить материал.",
+    "collocations": [
+      {
+        "fr": "faire un exercice",
+        "ru": "делать упражнение"
+      },
+      {
+        "fr": "un exercice de grammaire",
+        "ru": "упражнение по грамматике"
+      },
+      {
+        "fr": "corriger les exercices",
+        "ru": "проверять упражнения"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "exercise (англ.)",
+        "note": "Англ. «exercise» = exercice — почти то же, но по-фр. через c: exer-c-ice, и без s на конце основы."
+      },
+      {
+        "with": "devoir",
+        "note": "exercice = упражнение (одно задание, часто в классе); devoir(s) = домашнее задание (то, что задают на дом)."
+      }
+    ],
+    "frequencyRank": 580,
+    "level": "A2",
+    "tags": ["etudes", "ecole"],
+    "caseIds": ["wc-etudes"]
+  },
+  {
+    "id": "wl-etudes-dictionnaire",
+    "lemma": "dictionnaire",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/dik.sjɔ.nɛʁ/",
+    "translationsRu": ["словарь"],
+    "translationsEn": ["dictionary"],
+    "semanticCore": "Словарь — книга или приложение, где смотрят значение и перевод незнакомых слов.",
+    "collocations": [
+      {
+        "fr": "chercher un mot dans le dictionnaire",
+        "ru": "искать слово в словаре"
+      },
+      {
+        "fr": "un dictionnaire bilingue",
+        "ru": "двуязычный словарь"
+      },
+      {
+        "fr": "consulter le dictionnaire",
+        "ru": "заглянуть в словарь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "dictionary (англ.)",
+        "note": "Англ. «dictionary» = dictionnaire — узнаётся сразу, но по-фр. два n: dictio-nn-aire."
+      },
+      {
+        "with": "dictée",
+        "note": "Не путать: dictionnaire = словарь (книга со словами); dictée = диктант (когда учитель диктует текст)."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["etudes", "objet"],
+    "caseIds": ["wc-etudes"]
+  }
+]

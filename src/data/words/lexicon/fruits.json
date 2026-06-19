@@ -1,0 +1,318 @@
+[
+  {
+    "id": "wl-fruits-pomme",
+    "lemma": "pomme",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɔm/",
+    "translationsRu": ["яблоко"],
+    "translationsEn": ["apple"],
+    "semanticCore": "Яблоко как фрукт; но в составе «pomme de terre» (земляное яблоко) — это картошка.",
+    "collocations": [
+      {
+        "fr": "une pomme rouge",
+        "ru": "красное яблоко"
+      },
+      {
+        "fr": "une tarte aux pommes",
+        "ru": "яблочный пирог"
+      },
+      {
+        "fr": "un jus de pomme",
+        "ru": "яблочный сок"
+      },
+      {
+        "fr": "une pomme de terre",
+        "ru": "картошка (досл. «земляное яблоко»)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pomme de terre",
+        "note": "pomme = яблоко (фрукт); pomme de terre = картошка (овощ). Само слово pomme без «de terre» — всегда яблоко."
+      },
+      {
+        "with": "poire",
+        "note": "pomme = яблоко; poire = груша. Оба основных фрукта, легко перепутать при заказе."
+      }
+    ],
+    "frequencyRank": 240,
+    "level": "A1",
+    "tags": ["fruits", "nourriture"],
+    "caseIds": ["wc-fruits"]
+  },
+  {
+    "id": "wl-fruits-banane",
+    "lemma": "banane",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ba.nan/",
+    "translationsRu": ["банан"],
+    "translationsEn": ["banana"],
+    "semanticCore": "Банан как фрукт; в разговорном «avoir la banane» — широко улыбаться, быть в духе.",
+    "collocations": [
+      {
+        "fr": "une banane mûre",
+        "ru": "спелый банан"
+      },
+      {
+        "fr": "un kilo de bananes",
+        "ru": "килограмм бананов"
+      },
+      {
+        "fr": "une peau de banane",
+        "ru": "банановая кожура"
+      },
+      {
+        "fr": "avoir la banane",
+        "ru": "сиять/улыбаться во весь рот (разг.)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "banana (англ.)",
+        "note": "Англ. «banana» и франц. banane различаются только последней буквой (-a → -e); по-французски читается /ba.nan/, без английского «-нэ-» и с ровными гласными."
+      },
+      {
+        "with": "ananas",
+        "note": "banane = банан; ananas = ананас. Похоже звучат, но это разные фрукты (и ananas — мужского рода)."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A1",
+    "tags": ["fruits", "nourriture"],
+    "caseIds": ["wc-fruits"]
+  },
+  {
+    "id": "wl-fruits-fraise",
+    "lemma": "fraise",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fʁɛz/",
+    "translationsRu": ["клубника", "земляника"],
+    "translationsEn": ["strawberry"],
+    "semanticCore": "Клубника (и земляника) — красная летняя ягода; одно слово для обеих.",
+    "collocations": [
+      {
+        "fr": "une tarte aux fraises",
+        "ru": "клубничный пирог"
+      },
+      {
+        "fr": "des fraises bien mûres",
+        "ru": "спелая клубника"
+      },
+      {
+        "fr": "un sirop de fraise",
+        "ru": "клубничный сироп"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "framboise",
+        "note": "fraise = клубника; framboise = малина. Слова похожи, но это разные ягоды."
+      },
+      {
+        "with": "cerise",
+        "note": "fraise = клубника (растёт на земле); cerise = вишня/черешня (растёт на дереве)."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A1",
+    "tags": ["fruits", "nourriture"],
+    "caseIds": ["wc-fruits"]
+  },
+  {
+    "id": "wl-fruits-raisin",
+    "lemma": "raisin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁɛ.zɛ̃/",
+    "translationsRu": ["виноград"],
+    "translationsEn": ["grapes"],
+    "semanticCore": "Свежий виноград (из которого делают вино); изюм — это «raisin sec».",
+    "collocations": [
+      {
+        "fr": "une grappe de raisin",
+        "ru": "гроздь винограда"
+      },
+      {
+        "fr": "du raisin blanc",
+        "ru": "белый виноград"
+      },
+      {
+        "fr": "du jus de raisin",
+        "ru": "виноградный сок"
+      },
+      {
+        "fr": "des raisins secs",
+        "ru": "изюм"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "raisin (англ.)",
+        "note": "Ложный друг: франц. raisin = свежий виноград; англ. «raisin» = изюм. Изюм по-французски — raisin sec."
+      },
+      {
+        "with": "vin",
+        "note": "raisin = виноград (ягода); vin = вино (напиток из него). On fait le vin avec du raisin."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A1",
+    "tags": ["fruits", "nourriture"],
+    "caseIds": ["wc-fruits"]
+  },
+  {
+    "id": "wl-fruits-poire",
+    "lemma": "poire",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pwaʁ/",
+    "translationsRu": ["груша"],
+    "translationsEn": ["pear"],
+    "semanticCore": "Груша как фрукт; в идиоме «couper la poire en deux» — пойти на компромисс.",
+    "collocations": [
+      {
+        "fr": "une poire juteuse",
+        "ru": "сочная груша"
+      },
+      {
+        "fr": "une tarte aux poires",
+        "ru": "грушевый пирог"
+      },
+      {
+        "fr": "couper la poire en deux",
+        "ru": "пойти на компромисс (досл. «разрезать грушу пополам»)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pomme",
+        "note": "poire = груша; pomme = яблоко. Два классических фрукта, частая пара (les poires et les pommes)."
+      },
+      {
+        "with": "boire",
+        "note": "poire /pwaʁ/ (груша) и boire /bwaʁ/ (пить) различаются одним звуком в начале — не перепутай на слух."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A1",
+    "tags": ["fruits", "nourriture"],
+    "caseIds": ["wc-fruits"]
+  },
+  {
+    "id": "wl-fruits-cerise",
+    "lemma": "cerise",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sə.ʁiz/",
+    "translationsRu": ["вишня", "черешня"],
+    "translationsEn": ["cherry"],
+    "semanticCore": "Вишня и черешня — одно слово; в идиоме «la cerise sur le gâteau» — приятный финальный штрих.",
+    "collocations": [
+      {
+        "fr": "la cerise sur le gâteau",
+        "ru": "вишенка на торте (приятный итог)"
+      },
+      {
+        "fr": "un kilo de cerises",
+        "ru": "килограмм вишни"
+      },
+      {
+        "fr": "cueillir des cerises",
+        "ru": "собирать вишню"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fraise",
+        "note": "cerise = вишня/черешня (на дереве, с косточкой); fraise = клубника (на грядке). Обе красные ягоды."
+      },
+      {
+        "with": "cherry (англ.)",
+        "note": "Англ. «cherry» помогает узнать значение, но франц. cerise пишется и звучит иначе: /sə.ʁiz/."
+      }
+    ],
+    "frequencyRank": 800,
+    "level": "A1",
+    "tags": ["fruits", "nourriture"],
+    "caseIds": ["wc-fruits"]
+  },
+  {
+    "id": "wl-fruits-citron",
+    "lemma": "citron",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/si.tʁɔ̃/",
+    "translationsRu": ["лимон"],
+    "translationsEn": ["lemon"],
+    "semanticCore": "Лимон — кислый жёлтый цитрус; «citron vert» (зелёный лимон) — это лайм.",
+    "collocations": [
+      {
+        "fr": "un jus de citron",
+        "ru": "лимонный сок"
+      },
+      {
+        "fr": "une tarte au citron",
+        "ru": "лимонный пирог"
+      },
+      {
+        "fr": "un citron vert",
+        "ru": "лайм (досл. «зелёный лимон»)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "citron vert",
+        "note": "citron = (жёлтый) лимон; citron vert = лайм. Без «vert» — всегда обычный лимон."
+      },
+      {
+        "with": "orange",
+        "note": "citron = лимон (кислый); orange = апельсин (сладкий). Оба цитрусовые, но не путать."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A1",
+    "tags": ["fruits", "nourriture"],
+    "caseIds": ["wc-fruits"]
+  },
+  {
+    "id": "wl-fruits-abricot",
+    "lemma": "abricot",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.bʁi.ko/",
+    "translationsRu": ["абрикос"],
+    "translationsEn": ["apricot"],
+    "semanticCore": "Абрикос — маленький оранжевый летний фрукт с косточкой, родственник персика.",
+    "collocations": [
+      {
+        "fr": "la confiture d'abricot",
+        "ru": "абрикосовое варенье"
+      },
+      {
+        "fr": "un abricot mûr",
+        "ru": "спелый абрикос"
+      },
+      {
+        "fr": "un jus d'abricot",
+        "ru": "абрикосовый сок"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pêche",
+        "note": "abricot = абрикос (маленький); pêche = персик (крупнее, бархатистый). Близкие родственники, разные плоды."
+      },
+      {
+        "with": "apricot (англ.)",
+        "note": "Англ. «apricot» узнаваемо. Франц. abricot читается /a.bʁi.ko/: начальное a — это чистое «а» (а не англ. «эй»), и конечная -t немая."
+      }
+    ],
+    "frequencyRank": 850,
+    "level": "A1",
+    "tags": ["fruits", "nourriture"],
+    "caseIds": ["wc-fruits"]
+  }
+]

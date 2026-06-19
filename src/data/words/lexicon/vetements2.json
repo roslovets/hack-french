@@ -1,0 +1,314 @@
+[
+  {
+    "id": "wl-vetements2-chaussette",
+    "lemma": "chaussette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʃo.sɛt/",
+    "translationsRu": ["носок"],
+    "translationsEn": ["sock"],
+    "semanticCore": "Носок — то, что надевают на ногу под обувь; обычно во множественном (les chaussettes), как пара.",
+    "collocations": [
+      {
+        "fr": "une paire de chaussettes",
+        "ru": "пара носков"
+      },
+      {
+        "fr": "des chaussettes en laine",
+        "ru": "шерстяные носки"
+      },
+      {
+        "fr": "mettre ses chaussettes",
+        "ru": "надеть носки"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chaussure",
+        "note": "chaussette = носок (на ноге, под обувью); chaussure = обувь, туфля (снаружи). Слова похожи, но это разные вещи."
+      },
+      {
+        "with": "bas",
+        "note": "chaussette = носок (до щиколотки/икры); un bas = чулок (высокий, женский). Не путать."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["vetements2", "pieds"],
+    "caseIds": ["wc-vetements2"],
+    "audio": {
+      "isolated": "audio/wl-vetements2-chaussette.mp3"
+    }
+  },
+  {
+    "id": "wl-vetements2-veste",
+    "lemma": "veste",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vɛst/",
+    "translationsRu": ["куртка", "пиджак"],
+    "translationsEn": ["jacket"],
+    "semanticCore": "Короткая верхняя одежда: лёгкая куртка или пиджак от костюма (короче и легче пальто).",
+    "collocations": [
+      {
+        "fr": "une veste en cuir",
+        "ru": "кожаная куртка"
+      },
+      {
+        "fr": "une veste de costume",
+        "ru": "пиджак (от костюма)"
+      },
+      {
+        "fr": "mettre une veste",
+        "ru": "надеть куртку / пиджак"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "manteau",
+        "note": "veste = куртка/пиджак (короче, легче); manteau = пальто (длиннее, теплее, для зимы на улице)."
+      },
+      {
+        "with": "gilet",
+        "note": "Фр. une veste = куртка/пиджак (с рукавами). Жилет (без рукавов) — un gilet. Не путать с нем. Weste «жилет»."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["vetements2", "haut"],
+    "caseIds": ["wc-vetements2"],
+    "audio": {
+      "isolated": "audio/wl-vetements2-veste.mp3"
+    }
+  },
+  {
+    "id": "wl-vetements2-jupe",
+    "lemma": "jupe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʒyp/",
+    "translationsRu": ["юбка"],
+    "translationsEn": ["skirt"],
+    "semanticCore": "Юбка — женская одежда, надеваемая на пояс и закрывающая нижнюю часть тела (без штанин).",
+    "collocations": [
+      {
+        "fr": "une jupe courte",
+        "ru": "короткая юбка"
+      },
+      {
+        "fr": "une jupe longue",
+        "ru": "длинная юбка"
+      },
+      {
+        "fr": "porter une jupe",
+        "ru": "носить юбку, быть в юбке"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "robe",
+        "note": "jupe = юбка (только низ, от пояса); robe = платье (цельное, верх и низ вместе)."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["vetements2", "femme"],
+    "caseIds": ["wc-vetements2"],
+    "audio": {
+      "isolated": "audio/wl-vetements2-jupe.mp3"
+    }
+  },
+  {
+    "id": "wl-vetements2-echarpe",
+    "lemma": "écharpe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.ʃaʁp/",
+    "translationsRu": ["шарф"],
+    "translationsEn": ["scarf"],
+    "semanticCore": "Шарф — длинная полоса ткани, которую обматывают вокруг шеи, чтобы согреться.",
+    "collocations": [
+      {
+        "fr": "une écharpe en laine",
+        "ru": "шерстяной шарф"
+      },
+      {
+        "fr": "mettre une écharpe",
+        "ru": "надеть (намотать) шарф"
+      },
+      {
+        "fr": "une écharpe chaude",
+        "ru": "тёплый шарф"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "foulard",
+        "note": "écharpe = шарф (длинный, тёплый, шею от холода); un foulard = (шёлковый) платок (лёгкий, для красоты)."
+      },
+      {
+        "with": "scarf (англ.)",
+        "note": "Шарф по-французски — une écharpe (с é в начале, h не читается), а не «scarf». Слово женского рода."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["vetements2", "hiver"],
+    "caseIds": ["wc-vetements2"],
+    "audio": {
+      "isolated": "audio/wl-vetements2-echarpe.mp3"
+    }
+  },
+  {
+    "id": "wl-vetements2-gant",
+    "lemma": "gant",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɡɑ̃/",
+    "translationsRu": ["перчатка"],
+    "translationsEn": ["glove"],
+    "semanticCore": "Перчатка — то, что надевают на кисть руки (с отдельными пальцами); обычно парой, les gants.",
+    "collocations": [
+      {
+        "fr": "une paire de gants",
+        "ru": "пара перчаток"
+      },
+      {
+        "fr": "des gants chauds",
+        "ru": "тёплые перчатки"
+      },
+      {
+        "fr": "mettre ses gants",
+        "ru": "надеть перчатки"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "moufle",
+        "note": "un gant = перчатка (каждый палец отдельно); une moufle = варежка (все пальцы вместе, кроме большого)."
+      }
+    ],
+    "frequencyRank": 740,
+    "level": "A2",
+    "tags": ["vetements2", "hiver"],
+    "caseIds": ["wc-vetements2"],
+    "audio": {
+      "isolated": "audio/wl-vetements2-gant.mp3"
+    }
+  },
+  {
+    "id": "wl-vetements2-ceinture",
+    "lemma": "ceinture",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sɛ̃.tyʁ/",
+    "translationsRu": ["ремень", "пояс"],
+    "translationsEn": ["belt"],
+    "semanticCore": "Ремень/пояс — полоса (кожи, ткани) на талии, удерживающая брюки; также ремень безопасности.",
+    "collocations": [
+      {
+        "fr": "une ceinture en cuir",
+        "ru": "кожаный ремень"
+      },
+      {
+        "fr": "la ceinture de sécurité",
+        "ru": "ремень безопасности"
+      },
+      {
+        "fr": "attacher sa ceinture",
+        "ru": "пристегнуть ремень"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "taille",
+        "note": "ceinture = ремень/пояс (вещь, которую надевают); la taille = талия (часть тела, на которой носят ремень)."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A2",
+    "tags": ["vetements2", "accessoire"],
+    "caseIds": ["wc-vetements2"],
+    "audio": {
+      "isolated": "audio/wl-vetements2-ceinture.mp3"
+    }
+  },
+  {
+    "id": "wl-vetements2-chapeau",
+    "lemma": "chapeau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃa.po/",
+    "translationsRu": ["шляпа"],
+    "translationsEn": ["hat"],
+    "semanticCore": "Шляпа — головной убор с полями (классическая, от солнца или элегантная); во множественном des chapeaux.",
+    "collocations": [
+      {
+        "fr": "un chapeau de paille",
+        "ru": "соломенная шляпа"
+      },
+      {
+        "fr": "porter un chapeau",
+        "ru": "носить шляпу"
+      },
+      {
+        "fr": "enlever son chapeau",
+        "ru": "снять шляпу"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bonnet",
+        "note": "chapeau = шляпа (с полями, классическая); un bonnet = (вязаная) шапка без полей, на зиму."
+      },
+      {
+        "with": "casquette",
+        "note": "chapeau = шляпа; une casquette = кепка (с козырьком, спортивная)."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["vetements2", "tete"],
+    "caseIds": ["wc-vetements2"],
+    "audio": {
+      "isolated": "audio/wl-vetements2-chapeau.mp3"
+    }
+  },
+  {
+    "id": "wl-vetements2-pyjama",
+    "lemma": "pyjama",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pi.ʒa.ma/",
+    "translationsRu": ["пижама"],
+    "translationsEn": ["pyjamas", "pajamas"],
+    "semanticCore": "Пижама — комплект одежды для сна; во французском единственное число — un pyjama.",
+    "collocations": [
+      {
+        "fr": "mettre son pyjama",
+        "ru": "надеть пижаму"
+      },
+      {
+        "fr": "un pyjama en coton",
+        "ru": "хлопковая пижама"
+      },
+      {
+        "fr": "rester en pyjama",
+        "ru": "ходить в пижаме (не одеваться)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pyjamas (англ.)",
+        "note": "Англ. pyjamas — множественное; фр. un pyjama — единственное число, мужской род. Пишется с y: p-y-j-a-m-a."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["vetements2", "nuit"],
+    "caseIds": ["wc-vetements2"],
+    "audio": {
+      "isolated": "audio/wl-vetements2-pyjama.mp3"
+    }
+  }
+]

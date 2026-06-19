@@ -1,0 +1,310 @@
+[
+  {
+    "id": "wl-objets-sac",
+    "lemma": "sac",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sak/",
+    "translationsRu": ["сумка", "пакет"],
+    "translationsEn": ["bag"],
+    "semanticCore": "Любая сумка или пакет, в которых носят вещи: от дамской сумочки до пакета из магазина.",
+    "collocations": [
+      {
+        "fr": "un sac à main",
+        "ru": "дамская сумочка"
+      },
+      {
+        "fr": "un sac à dos",
+        "ru": "рюкзак"
+      },
+      {
+        "fr": "un sac plastique",
+        "ru": "полиэтиленовый пакет"
+      },
+      {
+        "fr": "porter un sac",
+        "ru": "нести сумку"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poche",
+        "note": "sac = сумка/пакет (носят в руке или на плече); poche = карман (в одежде). Не путать."
+      },
+      {
+        "with": "valise",
+        "note": "sac = сумка (мягкая, на каждый день); valise = чемодан (жёсткий, для поездки)."
+      }
+    ],
+    "frequencyRank": 360,
+    "level": "A2",
+    "tags": ["objets", "accessoire"],
+    "caseIds": ["wc-objets"]
+  },
+  {
+    "id": "wl-objets-parapluie",
+    "lemma": "parapluie",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pa.ʁa.plɥi/",
+    "translationsRu": ["зонт"],
+    "translationsEn": ["umbrella"],
+    "semanticCore": "Зонт от дождя: para- («защита от») + pluie («дождь») — буквально «против дождя».",
+    "collocations": [
+      {
+        "fr": "prendre un parapluie",
+        "ru": "взять зонт"
+      },
+      {
+        "fr": "ouvrir le parapluie",
+        "ru": "раскрыть зонт"
+      },
+      {
+        "fr": "oublier son parapluie",
+        "ru": "забыть свой зонт"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "parasol",
+        "note": "parapluie = зонт от дождя (pluie); parasol = зонт от солнца (soleil). Корень para- одинаков, а вторая часть разная."
+      },
+      {
+        "with": "pluie",
+        "note": "parapluie = сам зонт; pluie = дождь. Внутри слова спрятано pluie, но это не оно само."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["objets", "meteo"],
+    "caseIds": ["wc-objets"]
+  },
+  {
+    "id": "wl-objets-montre",
+    "lemma": "montre",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mɔ̃tʁ/",
+    "translationsRu": ["наручные часы"],
+    "translationsEn": ["watch"],
+    "semanticCore": "Часы, которые носят на руке; не путать с настенными или башенными часами.",
+    "collocations": [
+      {
+        "fr": "une montre connectée",
+        "ru": "умные часы"
+      },
+      {
+        "fr": "regarder sa montre",
+        "ru": "посмотреть на часы (на руке)"
+      },
+      {
+        "fr": "porter une montre",
+        "ru": "носить часы"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "horloge",
+        "note": "montre = наручные часы (носят на себе); horloge = большие часы на стене, вокзале, башне."
+      },
+      {
+        "with": "montrer",
+        "note": "la montre (сущ., часы) ↔ montrer (глагол, показывать). Совпадают по виду, но это разные слова."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["objets", "temps"],
+    "caseIds": ["wc-objets"]
+  },
+  {
+    "id": "wl-objets-lunettes",
+    "lemma": "lunettes",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ly.nɛt/",
+    "translationsRu": ["очки"],
+    "translationsEn": ["glasses"],
+    "semanticCore": "Очки — слово всегда во множественном числе (les lunettes), как и русское «очки».",
+    "collocations": [
+      {
+        "fr": "des lunettes de soleil",
+        "ru": "солнцезащитные очки"
+      },
+      {
+        "fr": "porter des lunettes",
+        "ru": "носить очки"
+      },
+      {
+        "fr": "une paire de lunettes",
+        "ru": "очки (одна пара)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "lunette",
+        "note": "В единственном lunette (f) — это телескоп/подзорная труба или унитазное «очко»; очки на нос — всегда множественное les lunettes."
+      },
+      {
+        "with": "verres",
+        "note": "lunettes = очки (вся оправа со стёклами); verres = линзы/стёкла очков. Можно сменить les verres, оставив la monture."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["objets", "vue"],
+    "caseIds": ["wc-objets"]
+  },
+  {
+    "id": "wl-objets-portefeuille",
+    "lemma": "portefeuille",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɔʁ.tə.fœj/",
+    "translationsRu": ["кошелёк", "бумажник"],
+    "translationsEn": ["wallet"],
+    "semanticCore": "Бумажник для купюр и карт; porte- («держать») + feuille («лист») — буквально «держатель листов».",
+    "collocations": [
+      {
+        "fr": "sortir son portefeuille",
+        "ru": "достать кошелёк"
+      },
+      {
+        "fr": "un portefeuille en cuir",
+        "ru": "кожаный бумажник"
+      },
+      {
+        "fr": "voler un portefeuille",
+        "ru": "украсть бумажник"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "porte-monnaie",
+        "note": "portefeuille = бумажник для купюр и карт (плоский); porte-monnaie = кошелёк для мелочи и монет."
+      },
+      {
+        "with": "sac",
+        "note": "portefeuille = кошелёк (лежит внутри); sac = сумка (в ней носят кошелёк). Это разные уровни."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["objets", "argent"],
+    "caseIds": ["wc-objets"]
+  },
+  {
+    "id": "wl-objets-parfum",
+    "lemma": "parfum",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/paʁ.fœ̃/",
+    "translationsRu": ["духи", "аромат"],
+    "translationsEn": ["perfume"],
+    "semanticCore": "Духи как флакон и аромат как запах; то же слово значит «вкус» мороженого.",
+    "collocations": [
+      {
+        "fr": "mettre du parfum",
+        "ru": "надушиться, нанести духи"
+      },
+      {
+        "fr": "un parfum agréable",
+        "ru": "приятный аромат"
+      },
+      {
+        "fr": "quel parfum de glace ?",
+        "ru": "какой вкус мороженого?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "odeur",
+        "note": "parfum = аромат (обычно приятный, в т. ч. духи); odeur = запах вообще (нейтрально, может быть и неприятным)."
+      },
+      {
+        "with": "goût",
+        "note": "О мороженом: parfum = «вкус» как сорт/название (vanille, chocolat); goût = вкус как ощущение во рту."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["objets", "odorat"],
+    "caseIds": ["wc-objets"]
+  },
+  {
+    "id": "wl-objets-miroir",
+    "lemma": "miroir",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mi.ʁwaʁ/",
+    "translationsRu": ["зеркало"],
+    "translationsEn": ["mirror"],
+    "semanticCore": "Зеркало, в которое смотрятся; родственно англ. mirror — общий корень помогает узнать слово.",
+    "collocations": [
+      {
+        "fr": "se regarder dans le miroir",
+        "ru": "смотреться в зеркало"
+      },
+      {
+        "fr": "un miroir cassé",
+        "ru": "разбитое зеркало"
+      },
+      {
+        "fr": "le miroir de la salle de bain",
+        "ru": "зеркало в ванной"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "glace",
+        "note": "miroir = зеркало (главное слово); glace тоже значит «зеркало», но ещё и «лёд» и «мороженое» — многозначно."
+      },
+      {
+        "with": "tiroir",
+        "note": "miroir = зеркало; tiroir = выдвижной ящик. Звучат похоже (оба на -oir), но это разные вещи."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["objets", "salle-de-bain"],
+    "caseIds": ["wc-objets"]
+  },
+  {
+    "id": "wl-objets-mouchoir",
+    "lemma": "mouchoir",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mu.ʃwaʁ/",
+    "translationsRu": ["носовой платок"],
+    "translationsEn": ["handkerchief", "tissue"],
+    "semanticCore": "Платок, чтобы высморкаться: тканевый или, чаще, одноразовый бумажный (mouchoir en papier).",
+    "collocations": [
+      {
+        "fr": "un mouchoir en papier",
+        "ru": "бумажный платок (салфетка)"
+      },
+      {
+        "fr": "un paquet de mouchoirs",
+        "ru": "пачка платков"
+      },
+      {
+        "fr": "sortir un mouchoir",
+        "ru": "достать платок"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "serviette",
+        "note": "mouchoir = носовой платок (высморкаться); serviette = салфетка за столом или полотенце. Не путать."
+      },
+      {
+        "with": "foulard",
+        "note": "mouchoir = маленький платок для носа; foulard = шейный платок-аксессуар (носят на шее)."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["objets", "hygiene"],
+    "caseIds": ["wc-objets"]
+  }
+]

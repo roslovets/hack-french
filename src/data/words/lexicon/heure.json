@@ -1,0 +1,360 @@
+[
+  {
+    "id": "wl-heure-heure",
+    "lemma": "heure",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/œʁ/",
+    "translationsRu": ["час", "время (который час)"],
+    "translationsEn": ["hour", "time (o'clock)"],
+    "semanticCore": "И единица времени (60 минут), и «время» в вопросе «который час»: une heure = и «один час», и «час дня».",
+    "collocations": [
+      {
+        "fr": "Quelle heure est-il ?",
+        "ru": "Который час?"
+      },
+      {
+        "fr": "Il est deux heures.",
+        "ru": "Сейчас два часа."
+      },
+      {
+        "fr": "à l'heure",
+        "ru": "вовремя; в час (за час)"
+      },
+      {
+        "fr": "une demi-heure",
+        "ru": "полчаса"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "temps",
+        "note": "heure = час / время на часах (который час); temps = время вообще (как ресурс) и погода. «Сколько времени?» в смысле часов — Quelle heure est-il ?, а не combien de temps."
+      },
+      {
+        "with": "fois",
+        "note": "heure = час (длительность/время на часах); fois = раз (количество повторов). «Два часа» — deux heures, «два раза» — deux fois."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A1",
+    "tags": ["heure", "temps"],
+    "caseIds": ["wc-heure"],
+    "audio": {
+      "isolated": "audio/wl-heure-heure.mp3"
+    }
+  },
+  {
+    "id": "wl-heure-minute",
+    "lemma": "minute",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mi.nyt/",
+    "translationsRu": ["минута"],
+    "translationsEn": ["minute"],
+    "semanticCore": "Минута как единица времени; в речи — ещё и «минутку!» (короткое ожидание).",
+    "collocations": [
+      {
+        "fr": "Une minute, s'il vous plaît.",
+        "ru": "Минутку, пожалуйста."
+      },
+      {
+        "fr": "dans cinq minutes",
+        "ru": "через пять минут"
+      },
+      {
+        "fr": "à la dernière minute",
+        "ru": "в последнюю минуту"
+      },
+      {
+        "fr": "Attends une minute.",
+        "ru": "Подожди минутку."
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "minute (англ.)",
+        "note": "Фр. minute = минута (время). Англ. «minute» бывает прилагательным /maɪˈnjuːt/ = «крошечный» — у французского существительного этого значения нет."
+      },
+      {
+        "with": "seconde",
+        "note": "minute = минута (60 секунд); seconde = секунда. Минута длиннее: une minute = soixante secondes."
+      }
+    ],
+    "frequencyRank": 240,
+    "level": "A1",
+    "tags": ["heure", "temps"],
+    "caseIds": ["wc-heure"],
+    "audio": {
+      "isolated": "audio/wl-heure-minute.mp3"
+    }
+  },
+  {
+    "id": "wl-heure-seconde",
+    "lemma": "seconde",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sə.ɡɔ̃d/",
+    "translationsRu": ["секунда", "мгновение"],
+    "translationsEn": ["second", "moment"],
+    "semanticCore": "Секунда как единица времени и как «секундочку / мгновение» в разговоре.",
+    "collocations": [
+      {
+        "fr": "Une seconde !",
+        "ru": "Секундочку!"
+      },
+      {
+        "fr": "en quelques secondes",
+        "ru": "за несколько секунд"
+      },
+      {
+        "fr": "attendre une seconde",
+        "ru": "подождать секунду"
+      },
+      {
+        "fr": "à la seconde",
+        "ru": "сию секунду / тотчас"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "minute",
+        "note": "seconde = секунда (самая малая бытовая единица); minute = минута (60 секунд). «Секунду» как «чуть-чуть» — une seconde или une minute, обе живут в речи."
+      },
+      {
+        "with": "second",
+        "note": "Слово seconde — это и «секунда» (f), и форма прилагательного «второй» (le second / la seconde). В теме часов нас интересует только единица времени."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A1",
+    "tags": ["heure", "temps"],
+    "caseIds": ["wc-heure"],
+    "audio": {
+      "isolated": "audio/wl-heure-seconde.mp3"
+    }
+  },
+  {
+    "id": "wl-heure-midi",
+    "lemma": "midi",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mi.di/",
+    "translationsRu": ["полдень", "12 часов дня"],
+    "translationsEn": ["noon", "midday"],
+    "semanticCore": "Полдень, 12:00 дня; во Франции — ещё и время обеда («перерыв на обед»).",
+    "collocations": [
+      {
+        "fr": "à midi",
+        "ru": "в полдень / в обед"
+      },
+      {
+        "fr": "Il est midi.",
+        "ru": "Сейчас полдень."
+      },
+      {
+        "fr": "midi et demi",
+        "ru": "половина первого (12:30)"
+      },
+      {
+        "fr": "la pause de midi",
+        "ru": "обеденный перерыв"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "minuit",
+        "note": "midi = полдень (12:00 дня); minuit = полночь (00:00). Оба мужского рода и без артикля: à midi, à minuit."
+      },
+      {
+        "with": "heure",
+        "note": "midi уже значит «12 часов», поэтому говорят просто à midi, без douze heures. «Двенадцать часов дня» — это и есть midi."
+      }
+    ],
+    "frequencyRank": 350,
+    "level": "A1",
+    "tags": ["heure", "moment"],
+    "caseIds": ["wc-heure"],
+    "audio": {
+      "isolated": "audio/wl-heure-midi.mp3"
+    }
+  },
+  {
+    "id": "wl-heure-minuit",
+    "lemma": "minuit",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mi.nɥi/",
+    "translationsRu": ["полночь", "12 часов ночи"],
+    "translationsEn": ["midnight"],
+    "semanticCore": "Полночь, 00:00 — середина ночи, граница суток.",
+    "collocations": [
+      {
+        "fr": "à minuit",
+        "ru": "в полночь"
+      },
+      {
+        "fr": "Il est minuit.",
+        "ru": "Сейчас полночь."
+      },
+      {
+        "fr": "minuit et demi",
+        "ru": "половина первого ночи (00:30)"
+      },
+      {
+        "fr": "avant minuit",
+        "ru": "до полуночи"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "midi",
+        "note": "minuit = полночь (00:00); midi = полдень (12:00). Похожи на письме (mi-…), но это противоположные точки суток. Оба мужского рода."
+      },
+      {
+        "with": "nuit",
+        "note": "minuit = полночь (точка времени, ровно 00:00); nuit = ночь (весь тёмный период). Не путать: «ночью» вообще — la nuit, «в полночь» — à minuit."
+      }
+    ],
+    "frequencyRank": 470,
+    "level": "A1",
+    "tags": ["heure", "moment"],
+    "caseIds": ["wc-heure"],
+    "audio": {
+      "isolated": "audio/wl-heure-minuit.mp3"
+    }
+  },
+  {
+    "id": "wl-heure-tot",
+    "lemma": "tôt",
+    "pos": "adv",
+    "ipa": "/to/",
+    "translationsRu": ["рано"],
+    "translationsEn": ["early"],
+    "semanticCore": "Раньше обычного или ожидаемого момента — «рано» (наречие, не про конкретный час).",
+    "collocations": [
+      {
+        "fr": "se lever tôt",
+        "ru": "рано вставать"
+      },
+      {
+        "fr": "trop tôt",
+        "ru": "слишком рано"
+      },
+      {
+        "fr": "plus tôt",
+        "ru": "раньше"
+      },
+      {
+        "fr": "le plus tôt possible",
+        "ru": "как можно раньше"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tard",
+        "note": "Прямая пара: tôt = рано; tard = поздно. Противоположные концы шкалы времени дня."
+      },
+      {
+        "with": "bientôt",
+        "note": "tôt = рано (раньше срока); bientôt = скоро (через малое время). «Рано встал» (tôt) ≠ «скоро приду» (bientôt). bientôt буквально = bien + tôt."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A1",
+    "tags": ["heure", "adverbe"],
+    "caseIds": ["wc-heure"],
+    "audio": {
+      "isolated": "audio/wl-heure-tot.mp3"
+    }
+  },
+  {
+    "id": "wl-heure-tard",
+    "lemma": "tard",
+    "pos": "adv",
+    "ipa": "/taʁ/",
+    "translationsRu": ["поздно"],
+    "translationsEn": ["late"],
+    "semanticCore": "Позже обычного или нужного момента — «поздно»; в «à plus tard» — «позже, потом».",
+    "collocations": [
+      {
+        "fr": "Il est tard.",
+        "ru": "Уже поздно."
+      },
+      {
+        "fr": "trop tard",
+        "ru": "слишком поздно"
+      },
+      {
+        "fr": "plus tard",
+        "ru": "позже / потом"
+      },
+      {
+        "fr": "À plus tard !",
+        "ru": "До скорого! / Увидимся позже!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tôt",
+        "note": "tard = поздно; tôt = рано. Антонимы. «Поздно лёг» — tard, «рано встал» — tôt."
+      },
+      {
+        "with": "en retard",
+        "note": "tard = поздно (по времени суток: уже поздний час); en retard = опоздавший (позже назначенного). «Уже поздно» — il est tard; «я опоздал» — je suis en retard, а не *je suis tard."
+      }
+    ],
+    "frequencyRank": 260,
+    "level": "A1",
+    "tags": ["heure", "adverbe"],
+    "caseIds": ["wc-heure"],
+    "audio": {
+      "isolated": "audio/wl-heure-tard.mp3"
+    }
+  },
+  {
+    "id": "wl-heure-quart",
+    "lemma": "quart",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kaʁ/",
+    "translationsRu": ["четверть", "15 минут"],
+    "translationsEn": ["quarter"],
+    "semanticCore": "Четверть (одна четвёртая); в часах — 15 минут: «et quart» и «moins le quart».",
+    "collocations": [
+      {
+        "fr": "et quart",
+        "ru": "пятнадцать минут (четверть, после часа)"
+      },
+      {
+        "fr": "moins le quart",
+        "ru": "без четверти"
+      },
+      {
+        "fr": "un quart d'heure",
+        "ru": "четверть часа (15 минут)"
+      },
+      {
+        "fr": "deux heures et quart",
+        "ru": "четверть третьего (2:15)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "demi",
+        "note": "quart = четверть (15 минут); demi(e) = половина (30 минут). «et quart» = +15 мин, «et demie» = +30 мин."
+      },
+      {
+        "with": "carte",
+        "note": "quart /kaʁ/ — четверть; carte /kaʁt/ — карта/меню. Различает только конечный звук t: в quart его нет, в carte он слышен."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A1",
+    "tags": ["heure", "fraction"],
+    "caseIds": ["wc-heure"],
+    "audio": {
+      "isolated": "audio/wl-heure-quart.mp3"
+    }
+  }
+]

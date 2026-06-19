@@ -1,0 +1,298 @@
+[
+  {
+    "id": "wc-aliments",
+    "title": "Продукты",
+    "theme": "aliments",
+    "level": "A2",
+    "wordIds": [
+      "wl-aliments-oeuf",
+      "wl-aliments-beurre",
+      "wl-aliments-sel",
+      "wl-aliments-poivre",
+      "wl-aliments-farine",
+      "wl-aliments-riz",
+      "wl-aliments-pates",
+      "wl-aliments-huile"
+    ],
+    "steps": [
+      {
+        "id": "wc-aliments-oeuf-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aliments-oeuf",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je voudrais une douzaine d'œufs.",
+          "Au petit déjeuner, je mange un œuf à la coque.",
+          "Pour ce gâteau, il faut trois œufs."
+        ],
+        "options": ["яйцо", "масло", "сыр", "молоко"],
+        "correctIndex": 0,
+        "explanation": "œuf (m) — яйцо. «un œuf» читается /œ̃.nœf/, но во множественном «des œufs» — /de.zø/ (f на конце не звучит). «un œuf à la coque» — яйцо всмятку."
+      },
+      {
+        "id": "wc-aliments-oeuf-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-aliments-oeuf",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для œuf (яйцо), чтобы запомнить, что в единственном /œf/ конечная f звучит, а во множественном des œufs /ø/ — нет.",
+        "examples": [
+          "Один œuf — слышишь твёрдое «ф» на конце, как «уф!». Много œufs — «ф» исчезает, остаётся мягкое /ø/.",
+          "Представь, что f держится только на одном яйце; как только яиц несколько, она «скатывается» и пропадает."
+        ]
+      },
+      {
+        "id": "wc-aliments-beurre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aliments-beurre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je mets du beurre sur ma tartine.",
+          "Ce gâteau est fait avec du beurre.",
+          "Tu préfères le beurre doux ou salé ?"
+        ],
+        "options": ["сливочное масло", "растительное масло", "сыр", "сметана"],
+        "correctIndex": 0,
+        "explanation": "beurre (m) — сливочное масло (из молока). «une tartine de beurre» — бутерброд с маслом. Растительное масло — l'huile (f), это другое слово."
+      },
+      {
+        "id": "wc-aliments-beurre-cmp",
+        "kind": "compare",
+        "wordId": "wl-aliments-beurre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "du beurre и de l'huile. В чём разница?",
+        "phrases": ["Je cuisine avec du beurre.", "Je cuisine avec de l'huile."],
+        "options": [
+          "beurre — сливочное масло (из молока); huile — жидкое растительное масло (оливковое, подсолнечное).",
+          "Это одно и то же, просто разные слова.",
+          "beurre — растительное масло, huile — сливочное.",
+          "beurre — масло, huile — маргарин."
+        ],
+        "correctIndex": 0,
+        "explanation": "По-русски оба «масло», но во французском их строго различают: le beurre — твёрдое сливочное (молочное), l'huile — жидкое растительное. На beurre жарят и мажут хлеб, на huile тоже жарят, но это олива/подсолнечник."
+      },
+      {
+        "id": "wc-aliments-sel-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aliments-sel",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Tu peux me passer le sel ?",
+          "Il y a trop de sel dans la soupe.",
+          "Le beurre demi-sel vient de Bretagne."
+        ],
+        "options": ["соль", "перец", "сахар", "мука"],
+        "correctIndex": 0,
+        "explanation": "sel (m) — соль. «passer le sel» — передать соль (за столом), «trop de sel» — слишком солёно. Сахар — le sucre, перец — le poivre."
+      },
+      {
+        "id": "wc-aliments-sel-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-aliments-sel",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "sel",
+        "options": ["ciel", "seul", "elle", "sel"],
+        "correctIndex": 3,
+        "explanation": "sel /sɛl/ — соль. Похоже звучат, но это другие слова: ciel /sjɛl/ — небо, seul /sœl/ — один (единственный), elle /ɛl/ — она."
+      },
+      {
+        "id": "wc-aliments-poivre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aliments-poivre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Sel, poivre et un peu d'huile, c'est tout.",
+          "J'ajoute du poivre noir sur les pâtes.",
+          "Attention, ce plat est très poivré."
+        ],
+        "options": ["(чёрный) перец", "соль", "острый перец-овощ", "горчица"],
+        "correctIndex": 0,
+        "explanation": "poivre (m) — перец-приправа (молотый, чёрный/белый). «sel et poivre» — соль и перец. Перец-овощ (болгарский, чили) — это le poivron, другое слово."
+      },
+      {
+        "id": "wc-aliments-poivre-trap",
+        "kind": "trap",
+        "wordId": "wl-aliments-poivre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В рецепте написано «du poivre». Это приправа или овощ-перец, который режут в салат?",
+        "options": [
+          "приправа — молотый перец (соль и перец); овощ-перец — это le poivron",
+          "овощ-перец — болгарский перец; приправа — это le poivron",
+          "и то и другое одинаково называется poivre",
+          "это острый перец чили, который нельзя есть сырым"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: le poivre — это приправа (специя), а овощ-перец (болгарский, для салата) — le poivron. Близкие слова, но разные: poivre сыплют, poivron режут."
+      },
+      {
+        "id": "wc-aliments-farine-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aliments-farine",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Pour faire du pain, il faut de la farine.",
+          "J'ai acheté un kilo de farine.",
+          "Mélange la farine et les œufs."
+        ],
+        "options": ["мука", "сахар", "крупа", "тесто"],
+        "correctIndex": 0,
+        "explanation": "farine (f) — мука. «de la farine» — немного муки (частичный артикль). Тесто — la pâte, сахар — le sucre."
+      },
+      {
+        "id": "wc-aliments-farine-collo",
+        "kind": "sort",
+        "wordId": "wl-aliments-farine",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом farine звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un paquet de farine",
+            "basket": "ok"
+          },
+          {
+            "text": "de la farine de blé",
+            "basket": "ok"
+          },
+          {
+            "text": "un kilo de farine",
+            "basket": "ok"
+          },
+          {
+            "text": "boire de la farine",
+            "basket": "no"
+          },
+          {
+            "text": "une farine chaude",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un paquet / un kilo de farine», «farine de blé» (пшеничная мука) — естественно. «boire de la farine» (пить муку) и «une farine chaude» (горячая мука) — так не говорят: муку не пьют и не описывают как «горячую»."
+      },
+      {
+        "id": "wc-aliments-riz-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aliments-riz",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ce soir, on mange du riz avec du poisson.",
+          "Le riz cuit en vingt minutes.",
+          "Je préfère le riz complet."
+        ],
+        "options": ["рис", "макароны", "гречка", "фасоль"],
+        "correctIndex": 0,
+        "explanation": "riz (m) — рис. Конечная z не читается: /ʁi/. «du riz» — риса (немного), «le riz complet» — бурый (нешлифованный) рис."
+      },
+      {
+        "id": "wc-aliments-riz-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-aliments-riz",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "riz",
+        "options": ["rue", "roue", "riz", "rat"],
+        "correctIndex": 2,
+        "explanation": "riz /ʁi/ — рис. Похожие односложные слова: rue /ʁy/ — улица, roue /ʁu/ — колесо, rat /ʁa/ — крыса. Все начинаются на «р», но гласный разный — слушай его."
+      },
+      {
+        "id": "wc-aliments-pates-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aliments-pates",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ce soir, je fais des pâtes à la tomate.",
+          "Les enfants adorent les pâtes au fromage.",
+          "Fais cuire les pâtes dix minutes."
+        ],
+        "options": ["макароны, паста", "блины", "тесто (одно)", "пирог"],
+        "correctIndex": 0,
+        "explanation": "les pâtes (f, мн. ч.) — макароны, паста. Слово почти всегда во множественном: des pâtes. Внимание на accent circonflexe: p-â-t-e-s, читается /pɑt/."
+      },
+      {
+        "id": "wc-aliments-pates-trap",
+        "kind": "trap",
+        "wordId": "wl-aliments-pates",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "les pâtes (мн.) и la pâte (ед.) — это одно и то же?",
+        "options": [
+          "Нет: les pâtes — макароны (готовое блюдо); la pâte — тесто (для хлеба, пиццы).",
+          "Да, разницы нет, просто число.",
+          "les pâtes — тесто, la pâte — макароны.",
+          "la pâte — это паштет (мясная закуска)."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка числа: во множественном les pâtes — это макароны/паста, а в единственном la pâte — тесто (сырое, которое месят). А паштет — это le pâté (с accent aigu на конце), ещё одно отдельное слово."
+      },
+      {
+        "id": "wc-aliments-huile-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aliments-huile",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ajoute de l'huile d'olive dans la salade.",
+          "Fais chauffer un peu d'huile dans la poêle.",
+          "Cette huile est parfaite pour la friture."
+        ],
+        "options": ["растительное масло", "сливочное масло", "уксус", "соус"],
+        "correctIndex": 0,
+        "explanation": "huile (f) — растительное масло (жидкое: оливковое, подсолнечное). «de l'huile d'olive» — оливковое масло. Сливочное масло — le beurre, уксус — le vinaigre. Слово начинается с немой h: de l'huile."
+      },
+      {
+        "id": "wc-aliments-huile-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-aliments-huile",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "huile",
+        "options": ["ville", "fille", "île", "huile"],
+        "correctIndex": 3,
+        "explanation": "huile /ɥil/ — масло. Похоже звучат: ville /vil/ — город, fille /fij/ — девочка/дочь, île /il/ — остров. Начало /ɥi/ у huile особенное — слушай его."
+      },
+      {
+        "id": "wc-aliments-huile-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-aliments-huile",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет угадать. Что значит huile?",
+        "bridge": "Англ. «oil» (масло, нефть) и фр. «huile» — родственники от лат. oleum. Спрячь «h» и «-e» — внутри прячется тот же корень «oil/uil».",
+        "options": ["растительное масло", "сливочное масло", "лук", "уксус"],
+        "correctIndex": 0,
+        "explanation": "huile = (растительное) масло, родственно англ. «oil». Оба от латинского oleum (оливковое масло). Сливочное масло — отдельное слово le beurre."
+      }
+    ]
+  }
+]

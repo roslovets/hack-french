@@ -6,33 +6,38 @@
     "bossId": "wc-boss-table"
   },
   {
+    "id": "groceries",
+    "title": "Фрукты и продукты",
+    "themes": ["fruits", "legumes", "aliments"]
+  },
+  {
     "id": "home",
     "title": "Дом и одежда",
-    "themes": ["maison", "vetements", "pieces", "meubles"],
+    "themes": ["maison", "vetements", "pieces", "meubles", "vetements2", "objets"],
     "bossId": "wc-boss-maison-vetements"
   },
   {
     "id": "people",
     "title": "Человек и семья",
-    "themes": ["corps", "famille", "emotions", "sante", "visage", "famille2"],
+    "themes": ["corps", "famille", "emotions", "sante", "visage", "famille2", "caractere"],
     "bossId": "wc-boss-corps-famille"
   },
   {
     "id": "city",
     "title": "Город и транспорт",
-    "themes": ["ville", "transport", "lieux"],
+    "themes": ["ville", "transport", "lieux", "voyage"],
     "bossId": "wc-boss-transport"
   },
   {
     "id": "school",
     "title": "Школа и общение",
-    "themes": ["ecole", "politesse", "communication", "questions"],
+    "themes": ["ecole", "politesse", "communication", "questions", "etudes"],
     "bossId": "wc-boss-ecole-politesse"
   },
   {
     "id": "verbs",
     "title": "Глаголы и время",
-    "themes": ["perception", "connaissance", "prendre", "temps", "calendrier", "verbes2"],
+    "themes": ["perception", "connaissance", "prendre", "temps", "calendrier", "verbes2", "heure"],
     "bossId": "wc-boss-verbes"
   },
   {
@@ -62,7 +67,7 @@
   {
     "id": "descriptions",
     "title": "Цвета и описания",
-    "themes": ["couleurs", "adjectifs"],
+    "themes": ["couleurs", "adjectifs", "quantite"],
     "bossId": "wc-boss-descriptions"
   }
 ]

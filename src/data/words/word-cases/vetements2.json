@@ -1,0 +1,297 @@
+[
+  {
+    "id": "wc-vetements2",
+    "title": "Одежда (детали)",
+    "theme": "vetements2",
+    "level": "A2",
+    "wordIds": [
+      "wl-vetements2-chaussette",
+      "wl-vetements2-veste",
+      "wl-vetements2-jupe",
+      "wl-vetements2-echarpe",
+      "wl-vetements2-gant",
+      "wl-vetements2-ceinture",
+      "wl-vetements2-chapeau",
+      "wl-vetements2-pyjama"
+    ],
+    "steps": [
+      {
+        "id": "wc-vetements2-chaussette-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements2-chaussette",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai froid aux pieds, je mets des chaussettes.",
+          "Cette chaussette a un trou.",
+          "Range tes chaussettes dans le tiroir."
+        ],
+        "options": ["носок", "обувь", "перчатка", "шарф"],
+        "correctIndex": 0,
+        "explanation": "chaussette (f) — носок (на ноге, под обувью). Обычно во множественном: les chaussettes. Обувь — une chaussure (похоже, но другое!), перчатка — un gant."
+      },
+      {
+        "id": "wc-vetements2-chaussette-trap",
+        "kind": "trap",
+        "wordId": "wl-vetements2-chaussette",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "chaussette и chaussure звучат почти одинаково. Что из них носок?",
+        "options": [
+          "chaussette — носок, chaussure — обувь",
+          "chaussure — носок, chaussette — обувь",
+          "оба значат «обувь»",
+          "оба значат «носок»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: la chaussette — носок (внутри, на ноге), la chaussure — обувь (снаружи). Корень один (chausser — обувать), но вещи разные."
+      },
+      {
+        "id": "wc-vetements2-veste-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements2-veste",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il met une veste en cuir pour sortir.",
+          "Ta veste va bien avec ce pantalon.",
+          "Enlève ta veste, il fait chaud ici."
+        ],
+        "options": ["куртка / пиджак", "пальто", "рубашка", "шапка"],
+        "correctIndex": 0,
+        "explanation": "veste (f) — куртка или пиджак (короткая верхняя одежда). Пальто (длиннее, теплее) — un manteau, рубашка — une chemise."
+      },
+      {
+        "id": "wc-vetements2-veste-cmp",
+        "kind": "compare",
+        "wordId": "wl-vetements2-veste",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une veste и un manteau. В чём разница?",
+        "phrases": ["Au printemps, je mets une veste.", "En hiver, je mets un manteau."],
+        "options": [
+          "veste — короткая лёгкая куртка/пиджак; manteau — длинное тёплое пальто.",
+          "Это полные синонимы.",
+          "veste — это пальто, а manteau — пиджак.",
+          "veste — только женская, manteau — только мужская одежда."
+        ],
+        "correctIndex": 0,
+        "explanation": "une veste — короткая и лёгкая (куртка, пиджак), на прохладную погоду. un manteau — длинное тёплое пальто, на зиму. Это разные вещи."
+      },
+      {
+        "id": "wc-vetements2-jupe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements2-jupe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Elle porte une jupe courte aujourd'hui.",
+          "Cette jupe est trop longue pour moi.",
+          "J'hésite entre une jupe et un pantalon."
+        ],
+        "options": ["юбка", "платье", "блузка", "брюки"],
+        "correctIndex": 0,
+        "explanation": "jupe (f) — юбка (только нижняя часть, от пояса). Платье (цельное) — une robe, брюки — un pantalon."
+      },
+      {
+        "id": "wc-vetements2-jupe-cmp",
+        "kind": "compare",
+        "wordId": "wl-vetements2-jupe",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une jupe и une robe. В чём разница?",
+        "phrases": ["Elle met une jupe et un pull.", "Elle met une robe rouge."],
+        "options": [
+          "jupe — юбка (только низ); robe — платье (цельное, верх и низ вместе).",
+          "Это полные синонимы.",
+          "jupe — это платье, а robe — юбка.",
+          "jupe — длинная, robe — всегда короткая."
+        ],
+        "correctIndex": 0,
+        "explanation": "une jupe — юбка: закрывает только низ, сверху носят отдельный верх (пуловер, блузку). une robe — платье: цельное, верх и низ вместе."
+      },
+      {
+        "id": "wc-vetements2-jupe-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-vetements2-jupe",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "jupe",
+        "options": ["jupe", "juge", "dupe", "jus"],
+        "correctIndex": 0,
+        "explanation": "jupe /ʒyp/ (юбка), juge /ʒyʒ/ (судья), dupe /dyp/ (обманутый, простак), jus /ʒy/ (сок). Звучат похоже, но это разные слова: слушай начало и концовку."
+      },
+      {
+        "id": "wc-vetements2-echarpe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements2-echarpe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il fait froid, mets ton écharpe.",
+          "Elle a une écharpe rouge autour du cou.",
+          "J'ai tricoté une écharpe en laine."
+        ],
+        "options": ["шарф", "шапка", "перчатка", "пальто"],
+        "correctIndex": 0,
+        "explanation": "écharpe (f) — шарф (его наматывают вокруг шеи — autour du cou). Внимание: é в начале, h не читается. Шапка — un bonnet, перчатка — un gant."
+      },
+      {
+        "id": "wc-vetements2-echarpe-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-vetements2-echarpe",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — то, что согревает зимой. Найди лишнее.",
+        "options": ["l'écharpe", "les gants", "le bonnet", "la jupe"],
+        "correctIndex": 3,
+        "explanation": "Шарф (l'écharpe), перчатки (les gants) и шапка (le bonnet) греют зимой. Юбка (la jupe) — лишняя: это лёгкая одежда, не про тепло."
+      },
+      {
+        "id": "wc-vetements2-gant-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements2-gant",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "En hiver, je mets des gants chauds.",
+          "Il a perdu un gant dans la rue.",
+          "Ces gants sont en cuir noir."
+        ],
+        "options": ["перчатка", "носок", "шарф", "карман"],
+        "correctIndex": 0,
+        "explanation": "gant (m) — перчатка (на руку, с отдельными пальцами). Обычно парой: les gants. Носок — une chaussette, варежка — une moufle."
+      },
+      {
+        "id": "wc-vetements2-gant-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-vetements2-gant",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "gant",
+        "options": ["gant", "gens", "grand", "quand"],
+        "correctIndex": 0,
+        "explanation": "Все с носовым звуком на конце: gant /ɡɑ̃/ (перчатка), gens /ʒɑ̃/ (люди), grand /ɡʁɑ̃/ (большой), quand /kɑ̃/ (когда). Это разные слова — слушай начало."
+      },
+      {
+        "id": "wc-vetements2-ceinture-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements2-ceinture",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Mon pantalon tombe, il me faut une ceinture.",
+          "Attachez votre ceinture, l'avion décolle.",
+          "Cette ceinture en cuir est trop large."
+        ],
+        "options": ["ремень / пояс", "карман", "шнурок", "пуговица"],
+        "correctIndex": 0,
+        "explanation": "ceinture (f) — ремень/пояс (на талии, держит брюки). Так же называют ремень безопасности: la ceinture de sécurité, attacher sa ceinture — пристегнуться."
+      },
+      {
+        "id": "wc-vetements2-ceinture-sort",
+        "kind": "sort",
+        "wordId": "wl-vetements2-ceinture",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом ceinture звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "attacher sa ceinture",
+            "basket": "ok"
+          },
+          {
+            "text": "une ceinture en cuir",
+            "basket": "ok"
+          },
+          {
+            "text": "la ceinture de sécurité",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une ceinture",
+            "basket": "no"
+          },
+          {
+            "text": "une ceinture rapide",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«attacher sa ceinture» (пристегнуться), «une ceinture en cuir» (кожаный ремень), «la ceinture de sécurité» (ремень безопасности) — естественно. «boire une ceinture» (пить ремень) и «une ceinture rapide» (быстрый ремень) — бессмыслица."
+      },
+      {
+        "id": "wc-vetements2-chapeau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements2-chapeau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Au soleil, elle porte un chapeau de paille.",
+          "Enlève ton chapeau quand tu entres.",
+          "Ce chapeau noir est très élégant."
+        ],
+        "options": ["шляпа", "шарф", "перчатка", "очки"],
+        "correctIndex": 0,
+        "explanation": "chapeau (m) — шляпа (головной убор с полями). Во множественном — des chapeaux. Вязаная шапка без полей — un bonnet, кепка — une casquette."
+      },
+      {
+        "id": "wc-vetements2-chapeau-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-vetements2-chapeau",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "chapeau",
+        "options": ["chapeau", "chameau", "château", "drapeau"],
+        "correctIndex": 0,
+        "explanation": "Все оканчиваются на /-o/: chapeau /ʃa.po/ (шляпа), chameau /ʃa.mo/ (верблюд), château /ʃɑ.to/ (замок), drapeau /dʁa.po/ (флаг). Это разные слова — слушай середину."
+      },
+      {
+        "id": "wc-vetements2-pyjama-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-vetements2-pyjama",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит un pyjama?",
+        "bridge": "Англ. «pyjamas» — пижама; пишется почти так же. Но фр. un pyjama — единственное число, мужской род; читается /pi.ʒa.ma/.",
+        "options": ["пижама", "халат", "одеяло", "подушка"],
+        "correctIndex": 0,
+        "explanation": "un pyjama — пижама (одежда для сна). В отличие от англ. «pyjamas» (множественное), по-французски это единственное число: un pyjama. Пишется с y."
+      },
+      {
+        "id": "wc-vetements2-pyjama-hint",
+        "kind": "wordHint",
+        "wordId": "wl-vetements2-pyjama",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: одежда, которую надевают, чтобы лечь спать.",
+        "answer": "pyjama",
+        "hints": [
+          "Начинается на p…",
+          "Похоже на англ. «pyjamas», но в единственном числе",
+          "Le soir, je mets mon ___."
+        ],
+        "explanation": "un pyjama — пижама. Мужской род, единственное число. Пишется с y: p-y-j-a-m-a, читается /pi.ʒa.ma/."
+      }
+    ]
+  }
+]

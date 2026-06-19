@@ -1,0 +1,308 @@
+[
+  {
+    "id": "wc-fruits",
+    "title": "Фрукты",
+    "theme": "fruits",
+    "level": "A1",
+    "wordIds": [
+      "wl-fruits-pomme",
+      "wl-fruits-banane",
+      "wl-fruits-fraise",
+      "wl-fruits-raisin",
+      "wl-fruits-poire",
+      "wl-fruits-cerise",
+      "wl-fruits-citron",
+      "wl-fruits-abricot"
+    ],
+    "steps": [
+      {
+        "id": "wc-fruits-pomme-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fruits-pomme",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je mange une pomme tous les matins.",
+          "Cette pomme est bien rouge.",
+          "Tu veux une pomme ou une banane ?"
+        ],
+        "options": ["яблоко", "груша", "картошка", "помидор"],
+        "correctIndex": 0,
+        "explanation": "pomme (f) — яблоко. Осторожно: «une pomme de terre» (досл. «земляное яблоко») — это картошка, а «une pomme» само по себе — именно яблоко."
+      },
+      {
+        "id": "wc-fruits-pomme-trap",
+        "kind": "trap",
+        "wordId": "wl-fruits-pomme",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В меню написано «pommes de terre sautées». Что вам принесут?",
+        "options": [
+          "жареную картошку — pomme de terre это картофель",
+          "печёные яблоки — pomme это яблоко",
+          "помидоры — pomme похоже на «pomidor»",
+          "фруктовый салат из яблок"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: «une pomme de terre» (буквально «яблоко земли») — это картошка, а не яблоко. Просто «une pomme» — яблоко. Помидор — une tomate."
+      },
+      {
+        "id": "wc-fruits-banane-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fruits-banane",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le singe mange une banane.",
+          "J'achète un kilo de bananes au marché.",
+          "Cette banane n'est pas encore mûre."
+        ],
+        "options": ["банан", "апельсин", "лимон", "дыня"],
+        "correctIndex": 0,
+        "explanation": "banane (f) — банан. «mûr / mûre» — спелый/спелая. Запомни женский род: une banane."
+      },
+      {
+        "id": "wc-fruits-banane-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-fruits-banane",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский узнаётся с первого взгляда. Что значит banane?",
+        "bridge": "Англ. «banana» — банан; франц. banane почти такое же, отличается только последней буквой: -e вместо -a. Читается /ba.nan/, ровно, без английского «-нэ-».",
+        "options": ["банан", "ананас", "дыня", "персик"],
+        "correctIndex": 0,
+        "explanation": "banane = банан. Англ. «banana» — прямой мост. Не путать: ананас — un ananas, дыня — un melon."
+      },
+      {
+        "id": "wc-fruits-fraise-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fruits-fraise",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Au printemps, on mange des fraises.",
+          "Une tarte aux fraises, s'il vous plaît.",
+          "Ces fraises sont sucrées."
+        ],
+        "options": ["клубника", "малина", "вишня", "виноград"],
+        "correctIndex": 0,
+        "explanation": "fraise (f) — клубника (и земляника). «une tarte aux fraises» — клубничный пирог. Малина — une framboise (похоже, но другое слово)."
+      },
+      {
+        "id": "wc-fruits-fraise-cmp",
+        "kind": "compare",
+        "wordId": "wl-fruits-fraise",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "fraise и framboise звучат похоже. В чём разница?",
+        "phrases": ["Je voudrais des fraises.", "Je voudrais des framboises."],
+        "options": [
+          "fraise — клубника, framboise — малина.",
+          "Это одно и то же, два написания.",
+          "fraise — малина, framboise — клубника.",
+          "fraise — ягода вообще, framboise — конкретный сорт клубники."
+        ],
+        "correctIndex": 0,
+        "explanation": "Похожие слова: la fraise — клубника, la framboise — малина. Обе ягоды, но разные; не перепутай в кафе."
+      },
+      {
+        "id": "wc-fruits-raisin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fruits-raisin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On fait le vin avec du raisin.",
+          "J'ai acheté une grappe de raisin.",
+          "Ce raisin blanc est très sucré."
+        ],
+        "options": ["виноград", "изюм", "слива", "смородина"],
+        "correctIndex": 0,
+        "explanation": "raisin (m) — виноград (свежий). «une grappe de raisin» — гроздь винограда. Изюм — это «raisin sec» (сухой виноград)."
+      },
+      {
+        "id": "wc-fruits-raisin-trap",
+        "kind": "trap",
+        "wordId": "wl-fruits-raisin",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «raisin» значит «изюм». А франц. raisin — это что?",
+        "options": [
+          "виноград (свежий) — изюм будет raisin sec",
+          "изюм — как в английском",
+          "смородина",
+          "виноградный сок"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: франц. le raisin — это свежий виноград, а не изюм. Изюм по-французски — «le raisin sec». Англ. «raisin» (изюм) сбивает — будь внимателен."
+      },
+      {
+        "id": "wc-fruits-poire-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fruits-poire",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Cette poire est bien juteuse.",
+          "Je préfère les poires aux pommes.",
+          "Il y a des poires dans le compotier."
+        ],
+        "options": ["груша", "яблоко", "персик", "айва"],
+        "correctIndex": 0,
+        "explanation": "poire (f) — груша. «juteux / juteuse» — сочный/сочная. Не путай с pomme (яблоко): «préférer les poires aux pommes» — предпочитать груши яблокам."
+      },
+      {
+        "id": "wc-fruits-poire-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-fruits-poire",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "poire",
+        "options": ["poire", "boire", "poil", "poids"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало poire /pwaʁ/ — груша. Похожие: boire /bwaʁ/ — пить, poil /pwal/ — волосок, poids /pwa/ — вес. Все разные слова."
+      },
+      {
+        "id": "wc-fruits-cerise-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fruits-cerise",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "En été, on cueille des cerises.",
+          "Le gâteau est décoré d'une cerise.",
+          "Ces cerises sont rouges et brillantes."
+        ],
+        "options": ["вишня (черешня)", "клубника", "слива", "смородина"],
+        "correctIndex": 0,
+        "explanation": "cerise (f) — вишня и черешня (французы зовут оба одним словом). «cueillir des cerises» — собирать вишню. Клубника — une fraise."
+      },
+      {
+        "id": "wc-fruits-cerise-collo",
+        "kind": "sort",
+        "wordId": "wl-fruits-cerise",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом cerise звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "la cerise sur le gâteau",
+            "basket": "ok"
+          },
+          {
+            "text": "un kilo de cerises",
+            "basket": "ok"
+          },
+          {
+            "text": "des cerises bien mûres",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une cerise",
+            "basket": "no"
+          },
+          {
+            "text": "une cerise carrée",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«la cerise sur le gâteau» (вишенка на торте — приятный финальный штрих), «un kilo de cerises», «des cerises bien mûres» — естественно. «boire une cerise» (пить вишню) и «une cerise carrée» (квадратная вишня) — бессмыслица."
+      },
+      {
+        "id": "wc-fruits-citron-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fruits-citron",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je mets du citron dans mon thé.",
+          "Une tarte au citron, c'est acide.",
+          "Presse un demi-citron sur le poisson."
+        ],
+        "options": ["лимон", "апельсин", "грейпфрут", "мандарин"],
+        "correctIndex": 0,
+        "explanation": "citron (m) — лимон. «un jus de citron» — лимонный сок, «acide» — кислый. Внимание: «un citron vert» (зелёный лимон) — это лайм."
+      },
+      {
+        "id": "wc-fruits-citron-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-fruits-citron",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский даёт подсказку. Что значит citron?",
+        "bridge": "Англ. «citrus» (цитрус) и «citric» (лимонная кислота) — от того же корня. citron /si.tʁɔ̃/ — это сам цитрус-лимон.",
+        "options": ["лимон", "апельсин", "лайм", "цедра"],
+        "correctIndex": 0,
+        "explanation": "citron = лимон. Англ. «citrus / citric» подсказывает корень. Лайм — un citron vert, апельсин — une orange."
+      },
+      {
+        "id": "wc-fruits-abricot-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fruits-abricot",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "En juillet, les abricots sont mûrs.",
+          "J'adore la confiture d'abricot.",
+          "Cet abricot est doux et parfumé."
+        ],
+        "options": ["абрикос", "персик", "слива", "нектарин"],
+        "correctIndex": 0,
+        "explanation": "abricot (m) — абрикос. Конечная -t не читается: /a.bʁi.ko/. «la confiture d'abricot» — абрикосовое варенье. Персик — une pêche."
+      },
+      {
+        "id": "wc-fruits-abricot-hint",
+        "kind": "wordHint",
+        "wordId": "wl-fruits-abricot",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: маленький оранжевый фрукт с косточкой, родственник персика.",
+        "answer": "abricot",
+        "hints": ["Начинается на ab…", "7 букв, конечная -t не читается", "la confiture d'___"],
+        "explanation": "abricot (m) — абрикос, /a.bʁi.ko/. Мужской род: un abricot. Конечную -t не произносим."
+      },
+      {
+        "id": "wc-fruits-fraise-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-fruits-fraise",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — это фрукты. Найди лишнее.",
+        "options": ["la fraise", "la poire", "la cerise", "la carotte"],
+        "correctIndex": 3,
+        "explanation": "Клубника (la fraise), груша (la poire) и вишня (la cerise) — фрукты/ягоды. Морковь (la carotte) — лишняя: это овощ."
+      },
+      {
+        "id": "wc-fruits-banane-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-fruits-banane",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для banane (банан), чтобы запомнить женский род — une banane.",
+        "examples": [
+          "Во французском многие фрукты женского рода: une banane, une pomme, une fraise — представь их «вместе, своей компанией».",
+          "«Avoir la banane» — улыбаться во весь рот: банан изогнут как улыбка. Une banane — она «улыбается», женского рода."
+        ]
+      }
+    ]
+  }
+]

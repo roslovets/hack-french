@@ -1,0 +1,339 @@
+[
+  {
+    "id": "wl-aliments-oeuf",
+    "lemma": "œuf",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/œf/",
+    "translationsRu": ["яйцо"],
+    "translationsEn": ["egg"],
+    "semanticCore": "Яйцо как продукт: едят на завтрак и кладут в выпечку; род мужской, но множественное des œufs звучит /de.zø/.",
+    "collocations": [
+      {
+        "fr": "un œuf à la coque",
+        "ru": "яйцо всмятку"
+      },
+      {
+        "fr": "des œufs brouillés",
+        "ru": "яичница-болтунья"
+      },
+      {
+        "fr": "une douzaine d'œufs",
+        "ru": "дюжина яиц"
+      },
+      {
+        "fr": "battre les œufs",
+        "ru": "взбить яйца"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "œuf / œufs",
+        "note": "В единственном числе un œuf /œ̃.nœf/ — конечная f звучит; во множественном des œufs /de.zø/ — f немая. Это частая ловушка произношения."
+      },
+      {
+        "with": "poule",
+        "note": "œuf = яйцо (продукт); poule = курица (несушка). Не путать: «œuf de poule» — куриное яйцо."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["aliments", "petit-déjeuner"],
+    "caseIds": ["wc-aliments"]
+  },
+  {
+    "id": "wl-aliments-beurre",
+    "lemma": "beurre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bœʁ/",
+    "translationsRu": ["сливочное масло"],
+    "translationsEn": ["butter"],
+    "semanticCore": "Сливочное (молочное) масло: им мажут хлеб и кладут в тесто — в отличие от жидкого растительного huile.",
+    "collocations": [
+      {
+        "fr": "une tartine de beurre",
+        "ru": "бутерброд с маслом"
+      },
+      {
+        "fr": "du beurre doux",
+        "ru": "несолёное сливочное масло"
+      },
+      {
+        "fr": "du beurre salé",
+        "ru": "солёное сливочное масло"
+      },
+      {
+        "fr": "cuire au beurre",
+        "ru": "жарить на сливочном масле"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "huile",
+        "note": "beurre = твёрдое сливочное масло (из молока); huile = жидкое растительное масло. По-русски оба «масло», во французском строго разные."
+      },
+      {
+        "with": "margarine",
+        "note": "beurre = настоящее сливочное масло; margarine = маргарин (растительный заменитель)."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["aliments", "produits-laitiers"],
+    "caseIds": ["wc-aliments"]
+  },
+  {
+    "id": "wl-aliments-sel",
+    "lemma": "sel",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɛl/",
+    "translationsRu": ["соль"],
+    "translationsEn": ["salt"],
+    "semanticCore": "Соль как приправа: её добавляют в еду и передают за столом; часто идёт в паре с poivre.",
+    "collocations": [
+      {
+        "fr": "passer le sel",
+        "ru": "передать соль"
+      },
+      {
+        "fr": "sel et poivre",
+        "ru": "соль и перец"
+      },
+      {
+        "fr": "un peu de sel",
+        "ru": "немного соли"
+      },
+      {
+        "fr": "trop de sel",
+        "ru": "слишком много соли"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sucre",
+        "note": "sel = соль (солёное); sucre = сахар (сладкое). Внешне похожи (белый порошок), но противоположны по вкусу."
+      },
+      {
+        "with": "poivre",
+        "note": "sel = соль; poivre = перец. Классическая пара приправ «sel et poivre», но это разные специи."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["aliments", "épices"],
+    "caseIds": ["wc-aliments"]
+  },
+  {
+    "id": "wl-aliments-poivre",
+    "lemma": "poivre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pwavʁ/",
+    "translationsRu": ["перец (приправа)"],
+    "translationsEn": ["pepper"],
+    "semanticCore": "Перец как специя (молотый, чёрный/белый), которым приправляют еду — не путать с овощем-перцем poivron.",
+    "collocations": [
+      {
+        "fr": "du poivre noir",
+        "ru": "чёрный перец"
+      },
+      {
+        "fr": "sel et poivre",
+        "ru": "соль и перец"
+      },
+      {
+        "fr": "un moulin à poivre",
+        "ru": "мельница для перца"
+      },
+      {
+        "fr": "poivrer un plat",
+        "ru": "поперчить блюдо"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poivron",
+        "note": "poivre = перец-приправа (специя, который сыплют); poivron = перец-овощ (болгарский, который режут в салат)."
+      },
+      {
+        "with": "piment",
+        "note": "poivre = чёрный перец (специя); piment = острый перец чили / стручковый перец. Разная острота и форма."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["aliments", "épices"],
+    "caseIds": ["wc-aliments"]
+  },
+  {
+    "id": "wl-aliments-farine",
+    "lemma": "farine",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fa.ʁin/",
+    "translationsRu": ["мука"],
+    "translationsEn": ["flour"],
+    "semanticCore": "Мука: измельчённое зерно для теста, хлеба и выпечки; берётся частичным артиклем de la farine.",
+    "collocations": [
+      {
+        "fr": "de la farine de blé",
+        "ru": "пшеничная мука"
+      },
+      {
+        "fr": "un paquet de farine",
+        "ru": "пачка муки"
+      },
+      {
+        "fr": "tamiser la farine",
+        "ru": "просеять муку"
+      },
+      {
+        "fr": "un kilo de farine",
+        "ru": "килограмм муки"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pâte",
+        "note": "farine = мука (сухой порошок, исходное сырьё); pâte = тесто (то, что получается, когда муку замешивают с водой/яйцами)."
+      },
+      {
+        "with": "blé",
+        "note": "farine = мука (готовый молотый порошок); blé = пшеница, само зерно, из которого её мелют. «farine de blé» — пшеничная мука."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["aliments", "épicerie"],
+    "caseIds": ["wc-aliments"]
+  },
+  {
+    "id": "wl-aliments-riz",
+    "lemma": "riz",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁi/",
+    "translationsRu": ["рис"],
+    "translationsEn": ["rice"],
+    "semanticCore": "Рис как крупа и гарнир; конечная z немая, поэтому слово читается просто /ʁi/.",
+    "collocations": [
+      {
+        "fr": "du riz blanc",
+        "ru": "белый рис"
+      },
+      {
+        "fr": "le riz complet",
+        "ru": "бурый (нешлифованный) рис"
+      },
+      {
+        "fr": "faire cuire le riz",
+        "ru": "сварить рис"
+      },
+      {
+        "fr": "un bol de riz",
+        "ru": "миска риса"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ris",
+        "note": "riz = рис (продукт); ris (de veau) = телячьи сладкие железы (деликатес). Произносятся одинаково /ʁi/ — различай по контексту и написанию."
+      },
+      {
+        "with": "pâtes",
+        "note": "riz = рис; pâtes = макароны. Оба частые гарниры, но это разные крупяные/мучные продукты."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["aliments", "épicerie"],
+    "caseIds": ["wc-aliments"]
+  },
+  {
+    "id": "wl-aliments-pates",
+    "lemma": "pâtes",
+    "displayForm": "pâtes (pl.)",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɑt/",
+    "translationsRu": ["макароны", "паста"],
+    "translationsEn": ["pasta", "noodles"],
+    "semanticCore": "Макароны/паста как блюдо: слово почти всегда во множественном (des pâtes) — в единственном la pâte значит «тесто».",
+    "collocations": [
+      {
+        "fr": "des pâtes à la tomate",
+        "ru": "макароны с томатным соусом"
+      },
+      {
+        "fr": "faire cuire les pâtes",
+        "ru": "сварить макароны"
+      },
+      {
+        "fr": "un plat de pâtes",
+        "ru": "тарелка пасты"
+      },
+      {
+        "fr": "des pâtes au fromage",
+        "ru": "макароны с сыром"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pâte",
+        "note": "les pâtes (мн.) = макароны/паста; la pâte (ед.) = тесто (сырое, для хлеба/пиццы). Различие только в числе — и оно меняет смысл."
+      },
+      {
+        "with": "pâté",
+        "note": "pâtes /pɑt/ = макароны; pâté /pɑ.te/ = паштет (с accent aigu и звуком на конце). Близкое написание, разные слова."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["aliments", "plats"],
+    "caseIds": ["wc-aliments"]
+  },
+  {
+    "id": "wl-aliments-huile",
+    "lemma": "huile",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɥil/",
+    "translationsRu": ["растительное масло"],
+    "translationsEn": ["oil"],
+    "semanticCore": "Жидкое растительное масло (оливковое, подсолнечное) для готовки и заправки — в отличие от твёрдого сливочного beurre; начинается с немой h: de l'huile.",
+    "collocations": [
+      {
+        "fr": "de l'huile d'olive",
+        "ru": "оливковое масло"
+      },
+      {
+        "fr": "de l'huile de tournesol",
+        "ru": "подсолнечное масло"
+      },
+      {
+        "fr": "faire chauffer l'huile",
+        "ru": "разогреть масло"
+      },
+      {
+        "fr": "assaisonner avec de l'huile",
+        "ru": "заправить маслом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "beurre",
+        "note": "huile = жидкое растительное масло; beurre = твёрдое сливочное (молочное) масло. По-русски оба «масло» — во французском всегда разные слова."
+      },
+      {
+        "with": "vinaigre",
+        "note": "huile = масло; vinaigre = уксус. Вместе дают заправку «huile et vinaigre», но это противоположные вкусы."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["aliments", "épicerie"],
+    "caseIds": ["wc-aliments"]
+  }
+]

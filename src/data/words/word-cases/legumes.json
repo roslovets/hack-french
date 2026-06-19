@@ -1,0 +1,292 @@
+[
+  {
+    "id": "wc-legumes",
+    "title": "Овощи",
+    "theme": "legumes",
+    "level": "A1",
+    "wordIds": [
+      "wl-legumes-carotte",
+      "wl-legumes-tomate",
+      "wl-legumes-oignon",
+      "wl-legumes-salade",
+      "wl-legumes-patate",
+      "wl-legumes-courgette",
+      "wl-legumes-champignon",
+      "wl-legumes-ail"
+    ],
+    "steps": [
+      {
+        "id": "wc-legumes-carotte-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes-carotte",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ajoute une carotte dans la soupe.",
+          "Les lapins adorent les carottes.",
+          "On commence par des carottes râpées."
+        ],
+        "options": ["морковь", "капуста", "репа", "тыква"],
+        "correctIndex": 0,
+        "explanation": "carotte (f) — морковь. «carottes râpées» — тёртая морковь (частая закуска). Репа — un navet, тыква — un potiron / une citrouille."
+      },
+      {
+        "id": "wc-legumes-carotte-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-legumes-carotte",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет слово с первого взгляда. Что значит carotte?",
+        "bridge": "Англ. «carrot» — морковь. Фр. carotte почти такое же, только пишется наоборот: одна r и двойная t.",
+        "options": ["морковь", "морковный сок", "грядка", "огород"],
+        "correctIndex": 0,
+        "explanation": "carotte = морковь, как англ. «carrot». Запомни написание: фр. ca-ro-tte (одна r, две t), а англ. carrot (две r, одна t)."
+      },
+      {
+        "id": "wc-legumes-tomate-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes-tomate",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je coupe une tomate pour la salade.",
+          "Cette sauce tomate est délicieuse.",
+          "Des tomates cerises, c'est parfait pour l'apéro."
+        ],
+        "options": ["помидор", "перец", "свёкла", "баклажан"],
+        "correctIndex": 0,
+        "explanation": "tomate (f) — помидор. «sauce tomate» — томатный соус, «tomates cerises» — помидоры черри. Перец — un poivron, баклажан — une aubergine."
+      },
+      {
+        "id": "wc-legumes-tomate-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-legumes-tomate",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери его правильное написание.",
+        "audioText": "tomate",
+        "options": ["tomate", "tomette", "pommade", "tornade"],
+        "correctIndex": 0,
+        "explanation": "Звучит /tɔ.mat/ — это tomate (помидор). Похоже звучат, но это другие слова: tomette /tɔ.mɛt/ (плитка), pommade /pɔ.mad/ (мазь), tornade /tɔʁ.nad/ (торнадо)."
+      },
+      {
+        "id": "wc-legumes-oignon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes-oignon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je coupe un oignon et je pleure.",
+          "Fais revenir les oignons dans la poêle.",
+          "Une soupe à l'oignon, s'il vous plaît."
+        ],
+        "options": ["лук", "чеснок", "морковь", "картофель"],
+        "correctIndex": 0,
+        "explanation": "oignon (m) — лук. «soupe à l'oignon» — луковый суп, «faire revenir les oignons» — обжарить лук. Чеснок — l'ail."
+      },
+      {
+        "id": "wc-legumes-oignon-trap",
+        "kind": "trap",
+        "wordId": "wl-legumes-oignon",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Буквы «oi» обычно читаются /wa/ (как в «moi»). А как читается oignon?",
+        "options": [
+          "/ɔ.ɲɔ̃/ — здесь «oi» звучит как /ɔ/, это исключение",
+          "/wa.ɲɔ̃/ — как обычное «oi» в «moi»",
+          "/u.ɲɔ̃/ — «oi» звучит как /u/",
+          "/o.i.ɲɔ̃/ — обе буквы читаются отдельно"
+        ],
+        "correctIndex": 0,
+        "explanation": "oignon — исключение: «oi» здесь не /wa/, а просто /ɔ/, читается /ɔ.ɲɔ̃/. Из-за этого слово даже разрешили писать «ognon» (реформа 1990)."
+      },
+      {
+        "id": "wc-legumes-salade-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes-salade",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je lave la salade avant de la couper.",
+          "On prend une salade verte en entrée.",
+          "J'ai planté de la salade dans le jardin."
+        ],
+        "options": ["салат (растение / листья)", "капуста", "шпинат", "укроп"],
+        "correctIndex": 0,
+        "explanation": "salade (f) — салат: и листья-растение, которое моют и сажают, и готовое блюдо. Капуста — le chou, шпинат — les épinards."
+      },
+      {
+        "id": "wc-legumes-salade-cmp",
+        "kind": "compare",
+        "wordId": "wl-legumes-salade",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une salade verte и une salade composée. В чём разница?",
+        "phrases": ["Je prends une salade verte.", "Je prends une salade composée."],
+        "options": [
+          "«salade verte» — просто зелёные листья; «salade composée» — блюдо-салат из разных ингредиентов.",
+          "Это полные синонимы, разницы нет.",
+          "«salade verte» — это блюдо, а «salade composée» — только листья.",
+          "Обе фразы значат «суп из салата»."
+        ],
+        "correctIndex": 0,
+        "explanation": "salade verte — зелёный листовой салат (только листья с заправкой). salade composée — «составной» салат-блюдо из многих продуктов (овощи, яйцо, тунец и т. д.)."
+      },
+      {
+        "id": "wc-legumes-patate-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes-patate",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно понятие во всех трёх сценах. О чём речь?",
+        "contexts": [
+          "J'épluche les pommes de terre pour la purée.",
+          "Des frites, ce sont des pommes de terre coupées et frites.",
+          "On fait cuire les pommes de terre à l'eau."
+        ],
+        "options": ["картофель", "яблоки", "земля (грунт)", "груши"],
+        "correctIndex": 0,
+        "explanation": "pomme de terre (f) — картофель (букв. «яблоко земли»). Из него делают пюре (purée) и фри (frites). В разговоре часто говорят короче — une patate."
+      },
+      {
+        "id": "wc-legumes-patate-sort",
+        "kind": "sort",
+        "wordId": "wl-legumes-patate",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания про картофель звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une purée de pommes de terre",
+            "basket": "ok"
+          },
+          {
+            "text": "éplucher les pommes de terre",
+            "basket": "ok"
+          },
+          {
+            "text": "des pommes de terre à l'eau",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une pomme de terre",
+            "basket": "no"
+          },
+          {
+            "text": "conduire une pomme de terre",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«purée / éplucher / cuire à l'eau les pommes de terre» — естественно. «boire une pomme de terre» (пить картошку) и «conduire une pomme de terre» (вести картошку) — бессмыслица: картошку едят, а не пьют и не водят."
+      },
+      {
+        "id": "wc-legumes-courgette-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes-courgette",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je fais sauter des courgettes à la poêle.",
+          "Une soupe de courgettes, c'est léger et bon.",
+          "Ce soir, des courgettes farcies au four."
+        ],
+        "options": ["кабачок (цукини)", "огурец", "тыква", "фасоль"],
+        "correctIndex": 0,
+        "explanation": "courgette (f) — кабачок, он же цукини. Огурец — un concombre, тыква — un potiron, фасоль — des haricots."
+      },
+      {
+        "id": "wc-legumes-courgette-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-legumes-courgette",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит courgette?",
+        "bridge": "Брит. англ. «courgette» — кабачок (амер. англ. zucchini). Английское слово взято прямо из французского, пишется так же.",
+        "options": ["кабачок (цукини)", "печенье", "сорт сыра", "соус"],
+        "correctIndex": 0,
+        "explanation": "courgette = кабачок / цукини. В британском английском слово такое же — «courgette»; в американском тот же овощ зовут «zucchini»."
+      },
+      {
+        "id": "wc-legumes-champignon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes-champignon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On va ramasser des champignons dans la forêt.",
+          "Une omelette aux champignons, s'il vous plaît.",
+          "Les champignons de Paris sont blancs."
+        ],
+        "options": ["гриб", "ягода", "орех", "лист"],
+        "correctIndex": 0,
+        "explanation": "champignon (m) — гриб. «ramasser des champignons» — собирать грибы, «champignons de Paris» — белые культурные шампиньоны. Ягода — une baie."
+      },
+      {
+        "id": "wc-legumes-champignon-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-legumes-champignon",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — то, что кладут в рагу из овощей. Найди лишнее.",
+        "options": ["le champignon", "la carotte", "l'oignon", "le shampooing"],
+        "correctIndex": 3,
+        "explanation": "Гриб (champignon), морковь (carotte) и лук (oignon) — продукты для готовки. shampooing (шампунь) — лишний: он похоже звучит на champignon, но это не еда."
+      },
+      {
+        "id": "wc-legumes-ail-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes-ail",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ajoute une gousse d'ail dans la sauce.",
+          "Cette soupe sent bon l'ail.",
+          "Écrase l'ail avant de le mettre dans la poêle."
+        ],
+        "options": ["чеснок", "лук", "перец", "имбирь"],
+        "correctIndex": 0,
+        "explanation": "ail (m) — чеснок. «une gousse d'ail» — зубчик чеснока. Лук — un oignon, имбирь — le gingembre. Читается коротко: /aj/."
+      },
+      {
+        "id": "wc-legumes-ail-hint",
+        "kind": "wordHint",
+        "wordId": "wl-legumes-ail",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: острая приправа, у неё «головка» и «зубчики», в готовку идёт раздавленной.",
+        "answer": "ail",
+        "hints": ["Начинается на a…", "3 буквы, читается /aj/", "Une gousse d'___ dans la sauce."],
+        "explanation": "ail (m) — чеснок. Один зубчик — une gousse d'ail, головка — une tête d'ail. Слово короткое: /aj/, как «ай»."
+      },
+      {
+        "id": "wc-legumes-ail-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-legumes-ail",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для ail (чеснок), чтобы запомнить звучание /aj/ — как русское «ай».",
+        "examples": [
+          "Откусил сырой ail — и сразу «aïe!» (ай!): чеснок острый, слово и звучит как «ай» — /aj/.",
+          "Представь головку чеснока, рассыпанную на зубчики: une gousse d'ail в твоём любимом блюде."
+        ]
+      }
+    ]
+  }
+]

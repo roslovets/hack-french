@@ -1,0 +1,337 @@
+[
+  {
+    "id": "wc-heure",
+    "title": "Время и часы",
+    "theme": "heure",
+    "level": "A1",
+    "wordIds": [
+      "wl-heure-heure",
+      "wl-heure-minute",
+      "wl-heure-seconde",
+      "wl-heure-midi",
+      "wl-heure-minuit",
+      "wl-heure-tot",
+      "wl-heure-tard",
+      "wl-heure-quart"
+    ],
+    "steps": [
+      {
+        "id": "wc-heure-heure-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-heure-heure",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Quelle heure est-il ?",
+          "Il est deux heures.",
+          "Le train part dans une heure."
+        ],
+        "options": ["час / время (на часах)", "минута", "день", "раз"],
+        "correctIndex": 0,
+        "explanation": "heure (f) — час и «время» в вопросе «который час». «Quelle heure est-il ?» — Который час? «deux heures» — два часа. Раз — une fois, минута — une minute."
+      },
+      {
+        "id": "wc-heure-heure-trap",
+        "kind": "trap",
+        "wordId": "wl-heure-heure",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Хочешь спросить «который час». Как это по-французски?",
+        "options": [
+          "Quelle heure est-il ?",
+          "Combien de temps est-il ?",
+          "Quel temps est-il ?",
+          "Combien d'heure ?"
+        ],
+        "correctIndex": 0,
+        "explanation": "Который час — Quelle heure est-il ? Через heure, не temps. «Quel temps fait-il ?» значит «какая погода?», а «combien de temps» — «сколько времени (длительность)»."
+      },
+      {
+        "id": "wc-heure-minute-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-heure-minute",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Une minute, s'il vous plaît.",
+          "Le bus arrive dans cinq minutes.",
+          "Il reste deux minutes."
+        ],
+        "options": ["минута", "секунда", "момент дня", "час"],
+        "correctIndex": 0,
+        "explanation": "minute (f) — минута. «Une minute !» — Минутку! «dans cinq minutes» — через пять минут. В минуте 60 секунд (secondes)."
+      },
+      {
+        "id": "wc-heure-minute-trap",
+        "kind": "trap",
+        "wordId": "wl-heure-minute",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «minute» бывает прилагательным «крошечный». Что значит французское существительное la minute?",
+        "options": ["минута (время)", "крошечный", "меню", "монета"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: фр. la minute — это только «минута» (время). Англ. «minute» в значении «крошечный» во французском существительном нет. Меню — un menu, монета — une pièce."
+      },
+      {
+        "id": "wc-heure-seconde-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-heure-seconde",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Une seconde, j'arrive !",
+          "Il y a soixante secondes dans une minute.",
+          "En quelques secondes, c'était fini."
+        ],
+        "options": ["секунда / мгновение", "минута", "час", "четверть"],
+        "correctIndex": 0,
+        "explanation": "seconde (f) — секунда; в речи — «секундочку». В минуте 60 секунд: soixante secondes dans une minute. «en quelques secondes» — за несколько секунд."
+      },
+      {
+        "id": "wc-heure-seconde-cmp",
+        "kind": "compare",
+        "wordId": "wl-heure-seconde",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Attends une seconde и Attends une minute. В чём разница?",
+        "phrases": ["Attends une seconde.", "Attends une minute."],
+        "options": [
+          "Обе значат «подожди чуть-чуть»; seconde ощущается как «совсем недолго», minute — «минутку».",
+          "seconde значит «подожди час», minute — «подожди день».",
+          "Это грубые приказы, в речи так не говорят.",
+          "seconde — про секунду точно, minute — ровно 60 секунд; иначе нельзя."
+        ],
+        "correctIndex": 0,
+        "explanation": "В живой речи и «une seconde», и «une minute» значат «подожди немножко». Буквальная длина (1 с / 60 с) тут не важна — это просто «секундочку / минутку»."
+      },
+      {
+        "id": "wc-heure-midi-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-heure-midi",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": ["On déjeune à midi.", "Il est midi pile.", "Rendez-vous à midi et demi."],
+        "options": ["полдень (12:00 дня)", "полночь", "утро", "вечер"],
+        "correctIndex": 0,
+        "explanation": "midi (m) — полдень, 12:00 дня; во Франции это и время обеда. «à midi» — в полдень/в обед, «midi pile» — ровно в полдень, «midi et demi» — 12:30."
+      },
+      {
+        "id": "wc-heure-midi-trap",
+        "kind": "trap",
+        "wordId": "wl-heure-midi",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как сказать «встретимся в полдень»? Выбери естественный вариант.",
+        "options": [
+          "On se voit à midi.",
+          "On se voit à douze heures du jour.",
+          "On se voit à la midi.",
+          "On se voit en midi."
+        ],
+        "correctIndex": 0,
+        "explanation": "Полдень — это просто à midi, без артикля и без douze heures. midi уже значит «12 часов дня», поэтому «à la midi» и «douze heures du jour» звучат неправильно."
+      },
+      {
+        "id": "wc-heure-minuit-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-heure-minuit",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le film finit à minuit.",
+          "Il est presque minuit.",
+          "On rentre avant minuit."
+        ],
+        "options": ["полночь (00:00)", "полдень", "вечер", "ночь (вообще)"],
+        "correctIndex": 0,
+        "explanation": "minuit (m) — полночь, 00:00. «à minuit» — в полночь, «avant minuit» — до полуночи. Ночь вообще — la nuit; minuit — это одна точка, ровно середина ночи."
+      },
+      {
+        "id": "wc-heure-minuit-cmp",
+        "kind": "compare",
+        "wordId": "wl-heure-minuit",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Il est midi и Il est minuit. В чём разница?",
+        "phrases": ["Il est midi.", "Il est minuit."],
+        "options": [
+          "midi = полдень (12:00 дня); minuit = полночь (00:00). Противоположные точки суток.",
+          "Это одно и то же время, просто два написания.",
+          "midi = полночь, minuit = полдень.",
+          "midi — днём зимой, minuit — днём летом."
+        ],
+        "correctIndex": 0,
+        "explanation": "midi — полдень (12:00 дня), minuit — полночь (00:00). Похожи на письме (оба на mi-), но это разные концы суток. Оба слова мужского рода: à midi, à minuit."
+      },
+      {
+        "id": "wc-heure-tot-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-heure-tot",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je me lève tôt le matin.",
+          "Tu es arrivé trop tôt.",
+          "On part le plus tôt possible."
+        ],
+        "options": ["рано", "поздно", "скоро", "медленно"],
+        "correctIndex": 0,
+        "explanation": "tôt — рано (раньше срока). «se lever tôt» — рано вставать, «trop tôt» — слишком рано, «le plus tôt possible» — как можно раньше. Конечная t не читается: /to/."
+      },
+      {
+        "id": "wc-heure-tot-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-heure-tot",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — про «раньше / скоро по времени». Найди лишнее.",
+        "options": ["tôt", "tard", "bientôt"],
+        "correctIndex": 1,
+        "explanation": "tôt (рано) и bientôt (скоро) — про близкий/ранний момент. tard (поздно) — лишнее: оно про противоположный конец, «поздно». Запомни: bien + tôt = bientôt."
+      },
+      {
+        "id": "wc-heure-tard-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-heure-tard",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il est tard, je vais dormir.",
+          "Tu rentres toujours trop tard.",
+          "On en parle plus tard."
+        ],
+        "options": ["поздно", "рано", "тихо", "быстро"],
+        "correctIndex": 0,
+        "explanation": "tard — поздно. «Il est tard» — уже поздно, «trop tard» — слишком поздно, «plus tard» — позже/потом. Конечная d не читается: /taʁ/."
+      },
+      {
+        "id": "wc-heure-tard-cmp",
+        "kind": "compare",
+        "wordId": "wl-heure-tard",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Il est tard и Je suis en retard. В чём разница?",
+        "phrases": ["Il est tard.", "Je suis en retard."],
+        "options": [
+          "«Il est tard» — уже поздний час (вообще); «Je suis en retard» — я опоздал (позже назначенного).",
+          "Это полные синонимы.",
+          "«Il est tard» значит «я опоздал», «en retard» — «уже поздно».",
+          "Оба значат «я рано»."
+        ],
+        "correctIndex": 0,
+        "explanation": "tard = поздно по времени суток (il est tard — уже поздний час). «Опоздать» (прийти позже назначенного) — être en retard, нельзя сказать *je suis tard."
+      },
+      {
+        "id": "wc-heure-quart-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-heure-quart",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах о времени?",
+        "contexts": [
+          "Il est trois heures et quart.",
+          "On se voit à midi moins le quart.",
+          "J'attends depuis un quart d'heure."
+        ],
+        "options": ["четверть (15 минут)", "половина (30 минут)", "час", "минута"],
+        "correctIndex": 0,
+        "explanation": "quart (m) — четверть, в часах 15 минут. «et quart» = +15 мин (3:15), «moins le quart» = без четверти (11:45), «un quart d'heure» = четверть часа."
+      },
+      {
+        "id": "wc-heure-quart-sort",
+        "kind": "sort",
+        "wordId": "wl-heure-quart",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания о времени звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "deux heures et quart",
+            "basket": "ok"
+          },
+          {
+            "text": "midi moins le quart",
+            "basket": "ok"
+          },
+          {
+            "text": "un quart d'heure",
+            "basket": "ok"
+          },
+          {
+            "text": "deux heures et quart d'heure",
+            "basket": "no"
+          },
+          {
+            "text": "un quart de minute",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«et quart», «moins le quart», «un quart d'heure» — естественно. «et quart d'heure» лишнее (хватает et quart), а «un quart de minute» не говорят: четверть считают от часа — un quart d'heure."
+      },
+      {
+        "id": "wc-heure-tard-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-heure-tard",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "tard",
+        "options": ["tard", "tarte", "part", "car"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало tard /taʁ/ (поздно). tarte /taʁt/ — пирог (слышен звук t), part /paʁ/ — доля, car /kaʁ/ — потому что / автобус. Это похожие, но разные слова."
+      },
+      {
+        "id": "wc-heure-midi-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-heure-midi",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "midi",
+        "options": ["midi", "mardi", "mercredi", "minuit"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало midi /mi.di/ (полдень). mardi /maʁ.di/ — вторник, mercredi — среда, minuit /mi.nɥi/ — полночь. Похоже по звучанию, но значения разные."
+      },
+      {
+        "id": "wc-heure-heure-hint",
+        "kind": "wordHint",
+        "wordId": "wl-heure-heure",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: единица времени из 60 минут; им же спрашивают «который час».",
+        "answer": "heure",
+        "hints": ["Начинается с немой h…", "5 букв, читается /œʁ/", "Quelle ___ est-il ?"],
+        "explanation": "heure (f) — час / время на часах. h не читается, поэтому говорят «une heure», «deux heures» со связкой. Quelle heure est-il ? — Который час?"
+      },
+      {
+        "id": "wc-heure-minuit-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-heure-minuit",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию, чтобы не путать midi (полдень) и minuit (полночь) и помнить, что оба мужского рода (à midi, à minuit).",
+        "examples": [
+          "minuit прячет nuit (ночь) — значит «середина ночи», полночь. А midi — про день, «di» как в journée.",
+          "Представь: в midi — обед и солнце над головой; в minuit — тишина и часы бьют 12 в темноте. Оба «свои», мужской род: à midi, à minuit."
+        ]
+      }
+    ]
+  }
+]

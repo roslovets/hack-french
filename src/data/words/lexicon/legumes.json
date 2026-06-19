@@ -1,0 +1,308 @@
+[
+  {
+    "id": "wl-legumes-carotte",
+    "lemma": "carotte",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ka.ʁɔt/",
+    "translationsRu": ["морковь", "морковка"],
+    "translationsEn": ["carrot"],
+    "semanticCore": "Морковь — оранжевый корнеплод; одна штука «une carotte», тёртая морковь — «carottes râpées».",
+    "collocations": [
+      {
+        "fr": "des carottes râpées",
+        "ru": "тёртая морковь (закуска)"
+      },
+      {
+        "fr": "éplucher les carottes",
+        "ru": "чистить морковь"
+      },
+      {
+        "fr": "un kilo de carottes",
+        "ru": "килограмм моркови"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "carrot (англ.)",
+        "note": "Англ. carrot и фр. carotte — одно и то же, но пишется по-разному: фр. одна r и двойная t (ca-ro-tte)."
+      },
+      {
+        "with": "navet",
+        "note": "carotte = морковь (оранжевая); navet = репа (белая). Оба корнеплоды, но разные овощи."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A1",
+    "tags": ["legumes", "nourriture"],
+    "caseIds": ["wc-legumes"]
+  },
+  {
+    "id": "wl-legumes-tomate",
+    "lemma": "tomate",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tɔ.mat/",
+    "translationsRu": ["помидор", "томат"],
+    "translationsEn": ["tomato"],
+    "semanticCore": "Помидор — красный плод, который во французском считают овощем; «une tomate» женского рода.",
+    "collocations": [
+      {
+        "fr": "une salade de tomates",
+        "ru": "салат из помидоров"
+      },
+      {
+        "fr": "une sauce tomate",
+        "ru": "томатный соус"
+      },
+      {
+        "fr": "des tomates cerises",
+        "ru": "помидоры черри"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tomato (англ.)",
+        "note": "Англ. tomato и фр. tomate — то же слово, но без -o на конце: la tomate, женский род."
+      },
+      {
+        "with": "tomette",
+        "note": "tomate /tɔ.mat/ = помидор; tomette /tɔ.mɛt/ = напольная плитка из терракоты. Разные слова — следи за гласной."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A1",
+    "tags": ["legumes", "nourriture"],
+    "caseIds": ["wc-legumes"]
+  },
+  {
+    "id": "wl-legumes-oignon",
+    "lemma": "oignon",
+    "displayForm": "oignon / ognon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɔ.ɲɔ̃/",
+    "translationsRu": ["лук", "луковица"],
+    "translationsEn": ["onion"],
+    "semanticCore": "Лук — луковица для готовки; одна штука «un oignon», много — «des oignons».",
+    "collocations": [
+      {
+        "fr": "un oignon rouge",
+        "ru": "красный лук"
+      },
+      {
+        "fr": "couper un oignon",
+        "ru": "резать лук"
+      },
+      {
+        "fr": "faire revenir les oignons",
+        "ru": "обжарить лук"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ail",
+        "note": "oignon = лук (крупная луковица); ail = чеснок (мелкие зубчики). Оба острые, но разные растения."
+      },
+      {
+        "with": "ognon",
+        "note": "oignon — традиционное написание; ognon — упрощённое (реформа 1990). Читаются одинаково /ɔ.ɲɔ̃/."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A1",
+    "tags": ["legumes", "nourriture"],
+    "caseIds": ["wc-legumes"]
+  },
+  {
+    "id": "wl-legumes-salade",
+    "lemma": "salade",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sa.lad/",
+    "translationsRu": ["салат (растение)", "салат (блюдо)"],
+    "translationsEn": ["lettuce", "salad"],
+    "semanticCore": "Salade — и зелёный салат-листья, который растёт, и готовое блюдо-салат; контекст решает, о чём речь.",
+    "collocations": [
+      {
+        "fr": "une salade verte",
+        "ru": "зелёный салат (листья)"
+      },
+      {
+        "fr": "une salade composée",
+        "ru": "салат с разными ингредиентами"
+      },
+      {
+        "fr": "préparer une salade",
+        "ru": "готовить салат"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "laitue",
+        "note": "salade — общее слово (и растение, и блюдо); laitue — конкретный сорт листового салата. В быту чаще говорят salade."
+      },
+      {
+        "with": "salade (как блюдо)",
+        "note": "Одно слово salade значит и сам лист-растение, и блюдо-салат. Англ. salad = только блюдо, а растение — lettuce."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A1",
+    "tags": ["legumes", "nourriture"],
+    "caseIds": ["wc-legumes"]
+  },
+  {
+    "id": "wl-legumes-patate",
+    "lemma": "pomme de terre",
+    "displayForm": "pomme de terre (fam. patate)",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɔm.də.tɛʁ/",
+    "translationsRu": ["картофель", "картошка"],
+    "translationsEn": ["potato"],
+    "semanticCore": "Картофель — «земляное яблоко» (pomme de terre); в разговорной речи короче — patate.",
+    "collocations": [
+      {
+        "fr": "des pommes de terre",
+        "ru": "картофель (несколько штук)"
+      },
+      {
+        "fr": "une purée de pommes de terre",
+        "ru": "картофельное пюре"
+      },
+      {
+        "fr": "éplucher les patates",
+        "ru": "чистить картошку (разг.)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "patate",
+        "note": "pomme de terre — нейтральное слово; patate — то же, но разговорное. В меню и магазине — pomme de terre."
+      },
+      {
+        "with": "pomme",
+        "note": "pomme = яблоко; pomme de terre (букв. «яблоко земли») = картофель. Без «de terre» — это фрукт, а не овощ."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A1",
+    "tags": ["legumes", "nourriture"],
+    "caseIds": ["wc-legumes"]
+  },
+  {
+    "id": "wl-legumes-courgette",
+    "lemma": "courgette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kuʁ.ʒɛt/",
+    "translationsRu": ["кабачок", "цукини"],
+    "translationsEn": ["courgette", "zucchini"],
+    "semanticCore": "Кабачок (цукини) — длинный зелёный овощ; «une courgette» женского рода.",
+    "collocations": [
+      {
+        "fr": "une courgette verte",
+        "ru": "зелёный кабачок"
+      },
+      {
+        "fr": "des courgettes farcies",
+        "ru": "фаршированные кабачки"
+      },
+      {
+        "fr": "une soupe de courgettes",
+        "ru": "суп из кабачков"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "courgette (брит. англ.)",
+        "note": "Брит. англ. courgette = фр. courgette; амер. англ. для того же овоща — zucchini. Французское слово ближе к британскому."
+      },
+      {
+        "with": "concombre",
+        "note": "courgette = кабачок (готовят, тушат); concombre = огурец (едят сырым). Похожи формой, но разные."
+      }
+    ],
+    "frequencyRank": 850,
+    "level": "A1",
+    "tags": ["legumes", "nourriture"],
+    "caseIds": ["wc-legumes"]
+  },
+  {
+    "id": "wl-legumes-champignon",
+    "lemma": "champignon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃɑ̃.pi.ɲɔ̃/",
+    "translationsRu": ["гриб"],
+    "translationsEn": ["mushroom"],
+    "semanticCore": "Гриб — то, что собирают в лесу и кладут в готовку; «un champignon» мужского рода.",
+    "collocations": [
+      {
+        "fr": "des champignons de Paris",
+        "ru": "шампиньоны (белые культурные грибы)"
+      },
+      {
+        "fr": "ramasser des champignons",
+        "ru": "собирать грибы"
+      },
+      {
+        "fr": "une omelette aux champignons",
+        "ru": "омлет с грибами"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "shampooing",
+        "note": "champignon = гриб; shampooing /ʃɑ̃.pwɛ̃/ = шампунь. Похоже звучат в начале, но это разные слова."
+      },
+      {
+        "with": "champignon de Paris",
+        "note": "champignon — любой гриб; champignon de Paris — конкретно белый культурный шампиньон, не «парижский» по месту."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A1",
+    "tags": ["legumes", "nourriture"],
+    "caseIds": ["wc-legumes"]
+  },
+  {
+    "id": "wl-legumes-ail",
+    "lemma": "ail",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/aj/",
+    "translationsRu": ["чеснок"],
+    "translationsEn": ["garlic"],
+    "semanticCore": "Чеснок — острая приправа; «une gousse d'ail» — один зубчик; слово короткое, читается /aj/.",
+    "collocations": [
+      {
+        "fr": "une gousse d'ail",
+        "ru": "зубчик чеснока"
+      },
+      {
+        "fr": "une tête d'ail",
+        "ru": "головка чеснока"
+      },
+      {
+        "fr": "écraser de l'ail",
+        "ru": "раздавить чеснок"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "oignon",
+        "note": "ail = чеснок (мелкие зубчики, очень острый); oignon = лук (крупная луковица). Оба для готовки, но разные."
+      },
+      {
+        "with": "aïe",
+        "note": "ail /aj/ = чеснок; aïe /aj/ = «ой!» (возглас боли). Звучат одинаково — различает контекст и написание."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A1",
+    "tags": ["legumes", "nourriture"],
+    "caseIds": ["wc-legumes"]
+  }
+]

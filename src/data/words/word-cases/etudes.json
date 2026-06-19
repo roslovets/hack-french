@@ -1,0 +1,321 @@
+[
+  {
+    "id": "wc-etudes",
+    "title": "Учёба",
+    "theme": "etudes",
+    "level": "A2",
+    "wordIds": [
+      "wl-etudes-cours",
+      "wl-etudes-examen",
+      "wl-etudes-cahier",
+      "wl-etudes-stylo",
+      "wl-etudes-crayon",
+      "wl-etudes-lecon",
+      "wl-etudes-exercice",
+      "wl-etudes-dictionnaire"
+    ],
+    "steps": [
+      {
+        "id": "wc-etudes-cours-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-etudes-cours",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai un cours de français à neuf heures.",
+          "Elle suit un cours de piano le mardi.",
+          "Ne parle pas pendant le cours."
+        ],
+        "options": [
+          "занятие / урок (который ведёт преподаватель)",
+          "перемена",
+          "оценка",
+          "расписание"
+        ],
+        "correctIndex": 0,
+        "explanation": "cours (m) — занятие или курс, который ведёт преподаватель. «suivre un cours» — ходить на курс, «pendant le cours» — во время занятия. Конечная s не читается: /kuʁ/."
+      },
+      {
+        "id": "wc-etudes-cours-cmp",
+        "kind": "compare",
+        "wordId": "wl-etudes-cours",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un cours и une leçon. В чём разница?",
+        "phrases": ["J'ai un cours de maths à dix heures.", "Apprends la leçon 5 pour demain."],
+        "options": [
+          "cours — само занятие/курс, который ведёт преподаватель; leçon — порция материала (тема, глава), которую учат.",
+          "Это полные синонимы, разницы нет.",
+          "cours — это домашнее задание, а leçon — занятие в классе.",
+          "cours женского рода, а leçon мужского."
+        ],
+        "correctIndex": 0,
+        "explanation": "un cours (m) — занятие/курс (процесс, который ведёт преподаватель). une leçon (f) — урок как материал: тема или глава, которую учат дома («apprendre la leçon»)."
+      },
+      {
+        "id": "wc-etudes-examen-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-etudes-examen",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai un examen de mathématiques lundi.",
+          "Il révise pour son examen toute la semaine.",
+          "Elle a réussi son examen avec une bonne note."
+        ],
+        "options": ["экзамен", "урок", "учебник", "перемена"],
+        "correctIndex": 0,
+        "explanation": "examen (m) — экзамен. «réviser pour un examen» — готовиться к экзамену, «réussir un examen» — успешно сдать. Произношение: /ɛɡ.za.mɛ̃/, конечное -en носовое."
+      },
+      {
+        "id": "wc-etudes-examen-trap",
+        "kind": "trap",
+        "wordId": "wl-etudes-examen",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг написал: «Demain je passe un examen». Что это точно значит?",
+        "options": [
+          "завтра он сдаёт (проходит) экзамен — об успехе пока ничего не сказано",
+          "завтра он уже успешно сдал экзамен",
+          "завтра он пропускает экзамен",
+          "завтра он проваливает экзамен"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: «passer un examen» = сдавать (проходить) экзамен, а не «сдать успешно». Успешно сдать — réussir un examen; провалить — rater / échouer à un examen."
+      },
+      {
+        "id": "wc-etudes-cahier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-etudes-cahier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ouvrez votre cahier à la page 10.",
+          "J'ai oublié mon cahier à la maison.",
+          "Écris la date en haut du cahier."
+        ],
+        "options": ["тетрадь", "учебник", "пенал", "доска"],
+        "correctIndex": 0,
+        "explanation": "cahier (m) — тетрадь, куда записывают на занятиях. «un cahier d'exercices» — рабочая тетрадь. Учебник/книга — un livre. Произношение: /ka.je/."
+      },
+      {
+        "id": "wc-etudes-cahier-sort",
+        "kind": "sort",
+        "wordId": "wl-etudes-cahier",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом cahier звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "ouvrir son cahier",
+            "basket": "ok"
+          },
+          {
+            "text": "un cahier d'exercices",
+            "basket": "ok"
+          },
+          {
+            "text": "écrire dans le cahier",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un cahier",
+            "basket": "no"
+          },
+          {
+            "text": "un cahier de pluie",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«ouvrir son cahier», «un cahier d'exercices», «écrire dans le cahier» — естественно. «boire un cahier» (пить тетрадь) и «un cahier de pluie» (тетрадь дождя) — бессмыслица."
+      },
+      {
+        "id": "wc-etudes-stylo-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-etudes-stylo",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит stylo?",
+        "bridge": "Англ. «stylus» (перо/палочка для письма) — тот же корень, что и stylo. Только французское stylo — это обычная ручка с чернилами.",
+        "options": ["ручка", "карандаш", "стиль", "линейка"],
+        "correctIndex": 0,
+        "explanation": "stylo (m) — ручка (которой пишут чернилами). Корень виден в англ. «stylus». А вот стилус для экрана по-французски — un stylet, не stylo."
+      },
+      {
+        "id": "wc-etudes-stylo-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-etudes-stylo",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Tu peux me prêter ton stylo ?",
+          "Signez ici avec un stylo, s'il vous plaît.",
+          "Mon stylo n'a plus d'encre."
+        ],
+        "options": ["ручка", "карандаш", "ластик", "тетрадь"],
+        "correctIndex": 0,
+        "explanation": "stylo (m) — ручка. Подсказка в контексте: «n'a plus d'encre» — закончились чернила, а чернила бывают у ручки, не у карандаша. «un stylo-bille» — шариковая ручка."
+      },
+      {
+        "id": "wc-etudes-crayon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-etudes-crayon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Dessine d'abord au crayon, tu pourras effacer.",
+          "Mon crayon est cassé, il faut le tailler.",
+          "Elle colorie avec des crayons de couleur."
+        ],
+        "options": ["карандаш", "ручка", "кисть", "мел"],
+        "correctIndex": 0,
+        "explanation": "crayon (m) — карандаш. Подсказки: «effacer» (стереть) и «tailler» (точить) — это про карандаш. «un crayon de couleur» — цветной карандаш."
+      },
+      {
+        "id": "wc-etudes-crayon-trap",
+        "kind": "trap",
+        "wordId": "wl-etudes-crayon",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «crayon» — это восковой мелок. А фр. crayon — что это?",
+        "options": [
+          "карандаш (графитный, который точат и которым пишут)",
+          "восковой мелок, как в английском",
+          "ручка с чернилами",
+          "цветной фломастер"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: фр. crayon = карандаш, а англ. «crayon» = восковой мелок (по-фр. un crayon de cire / un pastel). Обычная шариковая ручка — un stylo."
+      },
+      {
+        "id": "wc-etudes-crayon-stylo-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-etudes-crayon",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три предмета — то, чем пишут и рисуют. Найди лишнее.",
+        "options": ["un crayon", "un stylo", "un feutre", "un examen"],
+        "correctIndex": 3,
+        "explanation": "Карандаш (un crayon), ручка (un stylo) и фломастер (un feutre) — то, чем пишут. Экзамен (un examen) — лишний: это не пишущий предмет, а испытание."
+      },
+      {
+        "id": "wc-etudes-lecon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-etudes-lecon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Apprends ta leçon pour demain.",
+          "La leçon d'aujourd'hui porte sur les verbes.",
+          "Je n'ai pas compris la leçon, tu peux m'expliquer ?"
+        ],
+        "options": ["урок (тема, материал)", "экзамен", "перемена", "учитель"],
+        "correctIndex": 0,
+        "explanation": "leçon (f) — урок как материал: тема или глава, которую учат. «apprendre sa leçon» — выучить урок. Пишется через седиль (ç) и звучит /lə.sɔ̃/."
+      },
+      {
+        "id": "wc-etudes-lecon-hint",
+        "kind": "wordHint",
+        "wordId": "wl-etudes-lecon",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: порция учебного материала (тема, глава), которую задают выучить.",
+        "answer": "leçon",
+        "hints": [
+          "Начинается на l…",
+          "5 букв, в середине буква с седилью (ç)",
+          "Apprends ta ___ pour demain."
+        ],
+        "explanation": "leçon (f) — урок (материал). Важно: ç с седилью даёт звук /s/, иначе «c» перед o читался бы как /k/. Произношение: /lə.sɔ̃/."
+      },
+      {
+        "id": "wc-etudes-exercice-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-etudes-exercice",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Faites l'exercice 3 page 12.",
+          "Cet exercice de grammaire est difficile.",
+          "Le prof corrige les exercices."
+        ],
+        "options": ["упражнение", "экзамен", "тетрадь", "перемена"],
+        "correctIndex": 0,
+        "explanation": "exercice (m) — упражнение, учебное задание. «faire un exercice» — делать упражнение, «un exercice de grammaire» — упражнение по грамматике. Произношение: /ɛɡ.zɛʁ.sis/."
+      },
+      {
+        "id": "wc-etudes-exercice-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-etudes-exercice",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит exercice?",
+        "bridge": "Англ. «exercise» — почти то же слово. По-французски пишется через c: exer-c-ice (а не -se).",
+        "options": ["упражнение", "экзамен", "тренажёр", "опыт"],
+        "correctIndex": 0,
+        "explanation": "exercice (m) — упражнение. Англ. «exercise» — прямой мост. Главное отличие — написание: французское exercice через c, без s."
+      },
+      {
+        "id": "wc-etudes-dictionnaire-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-etudes-dictionnaire",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Cherche ce mot dans le dictionnaire.",
+          "J'utilise un dictionnaire bilingue français-russe.",
+          "Le dictionnaire est sur l'étagère."
+        ],
+        "options": ["словарь", "учебник", "тетрадь", "расписание"],
+        "correctIndex": 0,
+        "explanation": "dictionnaire (m) — словарь. «chercher un mot dans le dictionnaire» — искать слово в словаре. Внимание на написание: два n — dictio-nn-aire."
+      },
+      {
+        "id": "wc-etudes-dictionnaire-trap",
+        "kind": "trap",
+        "wordId": "wl-etudes-dictionnaire",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Учитель говорит: «Prenez votre dictionnaire». Что нужно взять?",
+        "options": [
+          "словарь (книгу, где смотрят значения слов)",
+          "тетрадь для диктанта",
+          "учебник грамматики",
+          "ручку и листок"
+        ],
+        "correctIndex": 0,
+        "explanation": "dictionnaire (m) = словарь. Не путать с dictée (f) — диктант (когда учитель диктует, а вы пишете). Слова похожи на корень «dict-», но это разные вещи."
+      },
+      {
+        "id": "wc-etudes-examen-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-etudes-examen",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для examen (экзамен), чтобы запомнить носовой звук на конце /ɛɡ.za.mɛ̃/ и формулу «passer un examen = сдавать, ещё не сдать».",
+        "examples": [
+          "Слышишь «экзамэ́(н)» с гудящим носовым концом — будто из-за двери, где идёт экзамен.",
+          "«Je passe un examen» — я только прохожу через дверь экзамена; чтобы выйти с победой, нужно réussir."
+        ]
+      }
+    ]
+  }
+]

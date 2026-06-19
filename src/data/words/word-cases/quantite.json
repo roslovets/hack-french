@@ -1,0 +1,313 @@
+[
+  {
+    "id": "wc-quantite",
+    "title": "Количество",
+    "theme": "quantite",
+    "level": "A2",
+    "wordIds": [
+      "wl-quantite-beaucoup",
+      "wl-quantite-peu",
+      "wl-quantite-assez",
+      "wl-quantite-trop",
+      "wl-quantite-plusieurs",
+      "wl-quantite-quelques",
+      "wl-quantite-tout",
+      "wl-quantite-rien"
+    ],
+    "steps": [
+      {
+        "id": "wc-quantite-beaucoup-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-quantite-beaucoup",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il y a beaucoup de monde au marché.",
+          "Merci beaucoup pour ton aide.",
+          "Elle travaille beaucoup en ce moment."
+        ],
+        "options": ["много / очень", "мало", "достаточно", "слишком"],
+        "correctIndex": 0,
+        "explanation": "beaucoup — много (большое количество) или «очень» в «merci beaucoup». Перед существительным всегда beaucoup DE: beaucoup de monde, beaucoup d'amis (без артикля)."
+      },
+      {
+        "id": "wc-quantite-beaucoup-sort",
+        "kind": "sort",
+        "wordId": "wl-quantite-beaucoup",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Где beaucoup стоит правильно, а где — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "beaucoup de travail",
+            "basket": "ok"
+          },
+          {
+            "text": "merci beaucoup",
+            "basket": "ok"
+          },
+          {
+            "text": "il mange beaucoup",
+            "basket": "ok"
+          },
+          {
+            "text": "beaucoup de le travail",
+            "basket": "no"
+          },
+          {
+            "text": "beaucoup travail",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Перед существительным — beaucoup DE без артикля: «beaucoup de travail». Нельзя ни «beaucoup de le travail» (de + le запрещено), ни «beaucoup travail» (нужно de). После глагола de не нужно: «il mange beaucoup»."
+      },
+      {
+        "id": "wc-quantite-peu-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-quantite-peu",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il reste peu de temps.",
+          "Je dors peu cette semaine.",
+          "Un peu de sel, s'il te plaît."
+        ],
+        "options": ["мало / немного", "много", "слишком", "всё"],
+        "correctIndex": 0,
+        "explanation": "peu — мало, немного (малое количество). «un peu de» = «немного» (un peu de sel — немного соли), а «peu de» без un — «мало» (peu de temps — мало времени)."
+      },
+      {
+        "id": "wc-quantite-peu-cmp",
+        "kind": "compare",
+        "wordId": "wl-quantite-peu",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«peu de temps» и «un peu de temps». В чём разница?",
+        "phrases": ["Il a peu de temps.", "Il a un peu de temps."],
+        "options": [
+          "«peu de temps» — мало времени (его не хватает); «un peu de temps» — немного времени (чуть-чуть есть).",
+          "Это полные синонимы.",
+          "«peu de temps» значит «много времени», а «un peu» — «мало».",
+          "Разница только в вежливости, смысл одинаковый."
+        ],
+        "correctIndex": 0,
+        "explanation": "Артикль un меняет оттенок: «peu de» — нехватка («мало, недостаточно»), «un peu de» — наличие небольшого количества («немного, чуть-чуть»). «Il a peu de temps» = времени мало; «un peu de temps» = немного времени есть."
+      },
+      {
+        "id": "wc-quantite-peu-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-quantite-peu",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "peu",
+        "options": ["peu", "peur", "père", "peau"],
+        "correctIndex": 0,
+        "explanation": "peu /pø/ — «мало». Похожие, но другие слова: peur /pœʁ/ — страх, père /pɛʁ/ — отец, peau /po/ — кожа. Главное — чистое /ø/ без звука r на конце."
+      },
+      {
+        "id": "wc-quantite-assez-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-quantite-assez",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On a assez de pain pour ce soir.",
+          "Ce film est assez long.",
+          "Tu as assez mangé ?"
+        ],
+        "options": ["достаточно; довольно", "слишком много", "очень мало", "несколько"],
+        "correctIndex": 0,
+        "explanation": "assez — «достаточно» (assez de pain — хватает хлеба) или «довольно» перед прилагательным (assez long — довольно длинный). Перед существительным — assez DE: assez de temps."
+      },
+      {
+        "id": "wc-quantite-assez-cmp",
+        "kind": "compare",
+        "wordId": "wl-quantite-assez",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«assez de café» и «trop de café». В чём разница?",
+        "phrases": ["J'ai bu assez de café.", "J'ai bu trop de café."],
+        "options": [
+          "«assez de café» — достаточно кофе (норма, хватает); «trop de café» — слишком много кофе (перебор).",
+          "Это синонимы.",
+          "«assez» значит «слишком», а «trop» — «достаточно».",
+          "«assez de café» значит «совсем нет кофе»."
+        ],
+        "correctIndex": 0,
+        "explanation": "assez = достаточно (ровно то, что нужно), trop = слишком (больше, чем нужно). «assez de café» — выпил столько, сколько нужно; «trop de café» — перебрал."
+      },
+      {
+        "id": "wc-quantite-trop-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-quantite-trop",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il y a trop de bruit ici.",
+          "Cette veste est trop chère.",
+          "Tu parles trop vite."
+        ],
+        "options": ["слишком (много)", "достаточно", "мало", "несколько"],
+        "correctIndex": 0,
+        "explanation": "trop — «слишком» (сверх меры, негативный перебор). Перед существительным — trop DE: trop de bruit (слишком много шума). Перед прилагательным/наречием — просто trop: trop cher, trop vite."
+      },
+      {
+        "id": "wc-quantite-trop-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-quantite-trop",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "trop",
+        "options": ["trop", "trou", "tour", "drôle"],
+        "correctIndex": 0,
+        "explanation": "trop /tʁo/ — «слишком», конечное p немое. Похожие слова: trou /tʁu/ — дыра, tour /tuʁ/ — башня/прогулка, drôle /dʁol/ — смешной. Различай гласную: /o/ в trop, /u/ в trou."
+      },
+      {
+        "id": "wc-quantite-plusieurs-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-quantite-plusieurs",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai vu ce film plusieurs fois.",
+          "Plusieurs personnes attendent dehors.",
+          "Il a plusieurs raisons de partir."
+        ],
+        "options": ["несколько (немало)", "один", "всё", "ничего"],
+        "correctIndex": 0,
+        "explanation": "plusieurs — «несколько» (больше двух, заметное число). Стоит прямо перед существительным во множественном числе, без de и без артикля: plusieurs fois, plusieurs personnes. Форма не меняется по роду."
+      },
+      {
+        "id": "wc-quantite-plusieurs-trap",
+        "kind": "trap",
+        "wordId": "wl-quantite-plusieurs",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как правильно сказать «несколько друзей»?",
+        "options": [
+          "plusieurs amis",
+          "plusieurs des amis",
+          "plusieurs d'amis",
+          "plusieurs les amis"
+        ],
+        "correctIndex": 0,
+        "explanation": "plusieurs ставится прямо перед существительным без de и без артикля: «plusieurs amis». В отличие от beaucoup/peu (которым нужен de), plusieurs — это сам определитель, поэтому никаких de, des, les после него."
+      },
+      {
+        "id": "wc-quantite-quelques-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-quantite-quelques",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai acheté quelques pommes.",
+          "Attends quelques minutes.",
+          "Il reste quelques places."
+        ],
+        "options": ["несколько, немного (малое число)", "много", "все", "слишком много"],
+        "correctIndex": 0,
+        "explanation": "quelques — «несколько», но небольшое, скромное число (две-три-четыре). Стоит перед существительным во множественном: quelques pommes, quelques minutes. Без de и без артикля."
+      },
+      {
+        "id": "wc-quantite-quelques-cmp",
+        "kind": "compare",
+        "wordId": "wl-quantite-quelques",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«quelques amis» и «plusieurs amis». В чём разница?",
+        "phrases": ["J'ai invité quelques amis.", "J'ai invité plusieurs amis."],
+        "options": [
+          "«quelques amis» — несколько (немного, два-три); «plusieurs amis» — несколько (но побольше, заметное число).",
+          "Это полные синонимы без разницы.",
+          "«quelques» значит «все друзья», «plusieurs» — «один друг».",
+          "«quelques amis» значит «много друзей»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Оба значат «несколько», но quelques подчёркивает малое, скромное число («чуть-чуть»), а plusieurs — что их немало, больше двух и ощутимо. quelques amis — пара-тройка; plusieurs amis — несколько, и довольно много."
+      },
+      {
+        "id": "wc-quantite-tout-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-quantite-tout",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах (в разных формах). Что оно значит?",
+        "contexts": [
+          "J'ai mangé tout le gâteau.",
+          "Toute la classe est là.",
+          "Tous les jours, il court."
+        ],
+        "options": ["весь / вся / все", "ничего", "несколько", "слишком"],
+        "correctIndex": 0,
+        "explanation": "tout — «весь / вся / все», берёт всё целиком. Согласуется: tout le gâteau (м.р.), toute la classe (ж.р.), tous les jours (мн.ч. м.р.), toutes les nuits (мн.ч. ж.р.)."
+      },
+      {
+        "id": "wc-quantite-tout-trap",
+        "kind": "trap",
+        "wordId": "wl-quantite-tout",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«Вся семья» — как правильно?",
+        "options": ["toute la famille", "tout la famille", "tous la famille", "toutes la famille"],
+        "correctIndex": 0,
+        "explanation": "famille — слово женского рода, единственное число, поэтому tout согласуется в форму toute: «toute la famille». tout — для м.р. ед.ч., tous — м.р. мн.ч., toutes — ж.р. мн.ч."
+      },
+      {
+        "id": "wc-quantite-rien-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-quantite-rien",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": ["Je ne vois rien.", "Il n'y a rien dans le frigo.", "— Merci ! — De rien."],
+        "options": ["ничего", "всё", "что-то", "немного"],
+        "correctIndex": 0,
+        "explanation": "rien — «ничего». Обычно с ne: «je ne vois rien» (ne … rien — рамка отрицания). «De rien» — устойчивый ответ на «merci»: «не за что»."
+      },
+      {
+        "id": "wc-quantite-rien-hint",
+        "kind": "wordHint",
+        "wordId": "wl-quantite-rien",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: то, что отвечают на «merci», и что значит «ничего».",
+        "answer": "rien",
+        "hints": [
+          "Начинается на r…",
+          "4 буквы, читается /ʁjɛ̃/ с носовым на конце",
+          "Je ne vois ___. / De ___."
+        ],
+        "explanation": "rien — «ничего». В предложении идёт с ne: «je ne vois rien». Вежливый ответ на merci — «de rien» (не за что)."
+      },
+      {
+        "id": "wc-quantite-rien-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-quantite-rien",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова говорят о большом количестве. Найди лишнее.",
+        "options": ["beaucoup", "plusieurs", "trop", "rien"],
+        "correctIndex": 3,
+        "explanation": "beaucoup (много), plusieurs (несколько, немало) и trop (слишком много) — про большое количество. rien (ничего) — лишнее: это нулевое количество, полное отсутствие."
+      }
+    ]
+  }
+]

@@ -1,0 +1,330 @@
+[
+  {
+    "id": "wl-quantite-beaucoup",
+    "lemma": "beaucoup",
+    "pos": "adv",
+    "ipa": "/bo.ku/",
+    "translationsRu": ["много", "очень"],
+    "translationsEn": ["a lot", "much"],
+    "semanticCore": "Большое количество или высокая степень; перед существительным требует beaucoup de без артикля.",
+    "collocations": [
+      {
+        "fr": "beaucoup de monde",
+        "ru": "много народу"
+      },
+      {
+        "fr": "merci beaucoup",
+        "ru": "большое спасибо"
+      },
+      {
+        "fr": "travailler beaucoup",
+        "ru": "много работать"
+      },
+      {
+        "fr": "beaucoup d'amis",
+        "ru": "много друзей"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "très",
+        "note": "beaucoup = много (с глаголами: il mange beaucoup); très = очень (с прилагательными/наречиями: très grand). Нельзя «très beaucoup» или «beaucoup grand»."
+      },
+      {
+        "with": "peu",
+        "note": "beaucoup = много (большое количество); peu = мало (малое). Прямые антонимы."
+      }
+    ],
+    "frequencyRank": 120,
+    "level": "A2",
+    "tags": ["quantite", "degre"],
+    "caseIds": ["wc-quantite"]
+  },
+  {
+    "id": "wl-quantite-peu",
+    "lemma": "peu",
+    "pos": "adv",
+    "ipa": "/pø/",
+    "translationsRu": ["мало", "немного"],
+    "translationsEn": ["little", "few"],
+    "semanticCore": "Малое количество или низкая степень; «un peu» — немного (есть чуть-чуть), «peu» — мало (нехватка).",
+    "collocations": [
+      {
+        "fr": "un peu de sel",
+        "ru": "немного соли"
+      },
+      {
+        "fr": "peu de temps",
+        "ru": "мало времени"
+      },
+      {
+        "fr": "un peu fatigué",
+        "ru": "немного уставший"
+      },
+      {
+        "fr": "peu à peu",
+        "ru": "мало-помалу, постепенно"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "un peu",
+        "note": "peu de = мало (недостаточно); un peu de = немного (небольшое, но достаточное количество). Артикль un меняет оттенок с нехватки на наличие."
+      },
+      {
+        "with": "beaucoup",
+        "note": "peu = мало; beaucoup = много. Антонимы. Оба перед существительным требуют de: peu de / beaucoup de."
+      }
+    ],
+    "frequencyRank": 180,
+    "level": "A2",
+    "tags": ["quantite", "degre"],
+    "caseIds": ["wc-quantite"]
+  },
+  {
+    "id": "wl-quantite-assez",
+    "lemma": "assez",
+    "pos": "adv",
+    "ipa": "/a.se/",
+    "translationsRu": ["достаточно", "довольно"],
+    "translationsEn": ["enough", "quite"],
+    "semanticCore": "Нужное количество («хватает») или умеренная степень («довольно, в меру»).",
+    "collocations": [
+      {
+        "fr": "assez de temps",
+        "ru": "достаточно времени"
+      },
+      {
+        "fr": "assez bien",
+        "ru": "довольно хорошо"
+      },
+      {
+        "fr": "j'en ai assez",
+        "ru": "с меня хватит / надоело"
+      },
+      {
+        "fr": "assez grand",
+        "ru": "довольно большой"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "trop",
+        "note": "assez = достаточно (ровно сколько нужно); trop = слишком (больше, чем нужно). assez de café — норма, trop de café — перебор."
+      },
+      {
+        "with": "plutôt",
+        "note": "В значении «довольно» assez и plutôt близки (assez bien / plutôt bien), но assez ещё значит «достаточно (по количеству)», а plutôt — «скорее»."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A2",
+    "tags": ["quantite", "degre"],
+    "caseIds": ["wc-quantite"]
+  },
+  {
+    "id": "wl-quantite-trop",
+    "lemma": "trop",
+    "pos": "adv",
+    "ipa": "/tʁo/",
+    "translationsRu": ["слишком", "слишком много"],
+    "translationsEn": ["too", "too much"],
+    "semanticCore": "Превышение нормы: больше, чем нужно или допустимо (обычно с оттенком перебора).",
+    "collocations": [
+      {
+        "fr": "trop de bruit",
+        "ru": "слишком много шума"
+      },
+      {
+        "fr": "trop cher",
+        "ru": "слишком дорого"
+      },
+      {
+        "fr": "trop vite",
+        "ru": "слишком быстро"
+      },
+      {
+        "fr": "c'est trop",
+        "ru": "это слишком / это чересчур"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "assez",
+        "note": "trop = слишком (сверх меры); assez = достаточно (в меру). trop cher — слишком дорого; assez cher — довольно дорого (но терпимо)."
+      },
+      {
+        "with": "très",
+        "note": "très = очень (сильно, нейтрально); trop = слишком (перебор). «très bon» — очень вкусный; «trop bon» — слишком (приторно) или разг. «обалденный»."
+      }
+    ],
+    "frequencyRank": 250,
+    "level": "A2",
+    "tags": ["quantite", "degre"],
+    "caseIds": ["wc-quantite"]
+  },
+  {
+    "id": "wl-quantite-plusieurs",
+    "lemma": "plusieurs",
+    "pos": "adj",
+    "ipa": "/ply.zjœʁ/",
+    "translationsRu": ["несколько"],
+    "translationsEn": ["several", "many"],
+    "semanticCore": "Неопределённое число больше двух — «несколько» в смысле «немало»; форма не меняется по роду.",
+    "collocations": [
+      {
+        "fr": "plusieurs fois",
+        "ru": "несколько раз"
+      },
+      {
+        "fr": "plusieurs personnes",
+        "ru": "несколько человек"
+      },
+      {
+        "fr": "plusieurs jours",
+        "ru": "несколько дней"
+      },
+      {
+        "fr": "à plusieurs reprises",
+        "ru": "неоднократно"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "quelques",
+        "note": "plusieurs = несколько (немало, больше двух, ощутимо); quelques = несколько (совсем немного, два-три). Оба — прямо перед существительным во мн.ч., без de."
+      },
+      {
+        "with": "beaucoup",
+        "note": "plusieurs = несколько (конкретное небольшое множество); beaucoup de = много (большое количество). plusieurs — без de, beaucoup — с de."
+      }
+    ],
+    "frequencyRank": 340,
+    "level": "A2",
+    "tags": ["quantite", "nombre"],
+    "caseIds": ["wc-quantite"]
+  },
+  {
+    "id": "wl-quantite-quelques",
+    "lemma": "quelques",
+    "pos": "adj",
+    "ipa": "/kɛlk/",
+    "translationsRu": ["несколько", "немного"],
+    "translationsEn": ["a few", "some"],
+    "semanticCore": "Малое неопределённое число — «несколько» в смысле «чуть-чуть, пара-тройка»; ставится перед существительным во мн.ч.",
+    "collocations": [
+      {
+        "fr": "quelques minutes",
+        "ru": "несколько минут"
+      },
+      {
+        "fr": "quelques jours",
+        "ru": "несколько дней"
+      },
+      {
+        "fr": "quelques mots",
+        "ru": "несколько слов"
+      },
+      {
+        "fr": "quelques-uns",
+        "ru": "некоторые, кое-кто"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "plusieurs",
+        "note": "quelques = несколько (немного, скромно); plusieurs = несколько (заметно, побольше). quelques amis — пара-тройка; plusieurs amis — немало."
+      },
+      {
+        "with": "quelque",
+        "note": "quelques (с -s) = несколько (перед мн.ч.); quelque (без -s) — «какой-то» в книжных оборотах. В обиходе перед существительным во множественном нужна форма quelques."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["quantite", "nombre"],
+    "caseIds": ["wc-quantite"]
+  },
+  {
+    "id": "wl-quantite-tout",
+    "lemma": "tout",
+    "pos": "adj",
+    "ipa": "/tu/",
+    "translationsRu": ["весь", "вся", "всё"],
+    "translationsEn": ["all", "whole"],
+    "semanticCore": "Берёт количество целиком — «весь / вся / все»; согласуется в роде и числе: tout / toute / tous / toutes.",
+    "collocations": [
+      {
+        "fr": "tout le temps",
+        "ru": "всё время, постоянно"
+      },
+      {
+        "fr": "toute la journée",
+        "ru": "весь день"
+      },
+      {
+        "fr": "tous les jours",
+        "ru": "каждый день"
+      },
+      {
+        "fr": "tout le monde",
+        "ru": "все (люди)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chaque",
+        "note": "tous les jours = каждый день (всё множество дней); chaque jour = каждый день (по одному, в фокусе единица). Близки, но tout берёт всё разом, chaque — поштучно."
+      },
+      {
+        "with": "rien",
+        "note": "tout = всё (полное наличие); rien = ничего (полное отсутствие). Антонимы количества: «tout ou rien» — всё или ничего."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A2",
+    "tags": ["quantite", "totalite"],
+    "caseIds": ["wc-quantite"]
+  },
+  {
+    "id": "wl-quantite-rien",
+    "lemma": "rien",
+    "pos": "pron",
+    "ipa": "/ʁjɛ̃/",
+    "translationsRu": ["ничего"],
+    "translationsEn": ["nothing", "anything"],
+    "semanticCore": "Нулевое количество — «ничего»; обычно в паре с ne (ne … rien), а «de rien» — вежливый ответ на спасибо.",
+    "collocations": [
+      {
+        "fr": "ne … rien",
+        "ru": "ничего (рамка отрицания)"
+      },
+      {
+        "fr": "de rien",
+        "ru": "не за что (ответ на merci)"
+      },
+      {
+        "fr": "rien du tout",
+        "ru": "совсем ничего"
+      },
+      {
+        "fr": "ça ne fait rien",
+        "ru": "ничего страшного"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tout",
+        "note": "rien = ничего (ноль); tout = всё (целиком). Противоположные полюса количества."
+      },
+      {
+        "with": "personne",
+        "note": "rien = ничего (о вещах/действиях: je ne vois rien); personne = никто (о людях: je ne vois personne). Оба идут с ne."
+      }
+    ],
+    "frequencyRank": 140,
+    "level": "A2",
+    "tags": ["quantite", "negation"],
+    "caseIds": ["wc-quantite"]
+  }
+]

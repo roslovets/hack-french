@@ -1,0 +1,296 @@
+[
+  {
+    "id": "wc-objets",
+    "title": "Личные вещи",
+    "theme": "objets",
+    "level": "A2",
+    "wordIds": [
+      "wl-objets-sac",
+      "wl-objets-parapluie",
+      "wl-objets-montre",
+      "wl-objets-lunettes",
+      "wl-objets-portefeuille",
+      "wl-objets-parfum",
+      "wl-objets-miroir",
+      "wl-objets-mouchoir"
+    ],
+    "steps": [
+      {
+        "id": "wc-objets-sac-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-objets-sac",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mes clés sont dans mon sac.",
+          "Elle porte un sac à main rouge.",
+          "Je prends un sac plastique au supermarché."
+        ],
+        "options": ["сумка / пакет", "карман", "чемодан", "коробка"],
+        "correctIndex": 0,
+        "explanation": "sac (m) — сумка или пакет: то, в чём носят вещи. «un sac à main» — дамская сумочка, «un sac plastique» — пакет. Карман — une poche, чемодан — une valise."
+      },
+      {
+        "id": "wc-objets-sac-sort",
+        "kind": "sort",
+        "wordId": "wl-objets-sac",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом sac звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un sac à main",
+            "basket": "ok"
+          },
+          {
+            "text": "un sac à dos",
+            "basket": "ok"
+          },
+          {
+            "text": "porter un sac",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un sac",
+            "basket": "no"
+          },
+          {
+            "text": "un sac à clés",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un sac à main» (сумочка), «un sac à dos» (рюкзак), «porter un sac» — естественно. «boire un sac» (пить сумку) бессмысленно; «sac à clés» так не говорят — ключи кладут dans le sac, отдельного «ключного мешка» нет."
+      },
+      {
+        "id": "wc-objets-parapluie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-objets-parapluie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il pleut, prends ton parapluie !",
+          "J'ai oublié mon parapluie dans le métro.",
+          "Ouvre le parapluie, on va se mouiller."
+        ],
+        "options": ["зонт", "плащ", "сапоги", "капюшон"],
+        "correctIndex": 0,
+        "explanation": "parapluie (m) — зонт от дождя. Слово собрано из para- («защита от») и pluie («дождь»): буквально «против дождя». Плащ — un imperméable."
+      },
+      {
+        "id": "wc-objets-parapluie-trap",
+        "kind": "trap",
+        "wordId": "wl-objets-parapluie",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "На пляже под палящим солнцем тебе нужен «зонт». Какое слово выбрать?",
+        "options": ["un parasol", "un parapluie", "une pluie", "un imperméable"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: parapluie защищает от дождя (pluie), а пляжный зонт от солнца — un parasol (sol/soleil — солнце). pluie — это сам дождь, imperméable — плащ."
+      },
+      {
+        "id": "wc-objets-montre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-objets-montre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Quelle heure est-il ? Je regarde ma montre.",
+          "Il porte une montre connectée.",
+          "Ma montre retarde de cinq minutes."
+        ],
+        "options": ["наручные часы", "будильник", "телефон", "браслет"],
+        "correctIndex": 0,
+        "explanation": "montre (f) — наручные часы. «regarder sa montre» — посмотреть на часы, «une montre connectée» — умные часы. Большие настенные часы — une horloge."
+      },
+      {
+        "id": "wc-objets-montre-cmp",
+        "kind": "compare",
+        "wordId": "wl-objets-montre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une montre и une horloge. В чём разница?",
+        "phrases": ["Je regarde ma montre.", "L'horloge de la gare indique midi."],
+        "options": [
+          "montre — часы на руке (носишь с собой); horloge — большие часы на стене, вокзале, башне.",
+          "Это полные синонимы.",
+          "montre — настенные часы, horloge — наручные.",
+          "montre — это глагол «показывать», а не часы."
+        ],
+        "correctIndex": 0,
+        "explanation": "montre (f) носят на руке, она при тебе; horloge (f) — большие неподвижные часы (на вокзале, башне, стене). Глагол montrer («показывать») лишь совпадает по виду — здесь это существительное."
+      },
+      {
+        "id": "wc-objets-montre-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-objets-montre",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "montre",
+        "options": ["montre", "montrer", "monstre", "contre"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало montre /mɔ̃tʁ/ — часы. Похожие: montrer /mɔ̃.tʁe/ (показывать), monstre /mɔ̃stʁ/ (чудовище), contre /kɔ̃tʁ/ (против). Это разные слова, не омофоны."
+      },
+      {
+        "id": "wc-objets-lunettes-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-objets-lunettes",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Sans mes lunettes, je ne vois rien.",
+          "Elle met ses lunettes de soleil.",
+          "J'ai cassé mes lunettes hier."
+        ],
+        "options": ["очки", "глаза", "линзы (контактные)", "брови"],
+        "correctIndex": 0,
+        "explanation": "lunettes (f, всегда множественное) — очки. «des lunettes de soleil» — солнцезащитные очки. Контактные линзы — des lentilles, глаза — les yeux."
+      },
+      {
+        "id": "wc-objets-lunettes-trap",
+        "kind": "trap",
+        "wordId": "wl-objets-lunettes",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как правильно сказать «Я ношу очки»?",
+        "options": [
+          "Je porte des lunettes.",
+          "Je porte une lunette.",
+          "Je porte un lunette.",
+          "Je porte le lunettes."
+        ],
+        "correctIndex": 0,
+        "explanation": "Очки во французском, как и в русском, всегда множественное: des lunettes. Единственное une lunette значит «подзорная труба», а не очки на нос."
+      },
+      {
+        "id": "wc-objets-portefeuille-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-objets-portefeuille",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mon portefeuille est dans la poche de ma veste.",
+          "Il sort sa carte du portefeuille.",
+          "On m'a volé mon portefeuille dans le bus."
+        ],
+        "options": ["кошелёк / бумажник", "паспорт", "карман", "сумка"],
+        "correctIndex": 0,
+        "explanation": "portefeuille (m) — бумажник для купюр и карт. Собран из porte- («держать») и feuille («лист»). Кошелёк для монет — un porte-monnaie."
+      },
+      {
+        "id": "wc-objets-portefeuille-hint",
+        "kind": "wordHint",
+        "wordId": "wl-objets-portefeuille",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: плоский предмет, в котором носят купюры и банковские карты.",
+        "answer": "portefeuille",
+        "hints": [
+          "Начинается с porte… (от глагола porter — «носить, держать»).",
+          "Вторая часть — feuille («лист»): держатель «листков»-купюр.",
+          "Il sort sa carte du ___."
+        ],
+        "explanation": "portefeuille (m) — бумажник. porte- («держать») + feuille («лист»). Для монет используют un porte-monnaie."
+      },
+      {
+        "id": "wc-objets-parfum-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-objets-parfum",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Elle met du parfum avant de sortir.",
+          "Ce parfum sent très bon.",
+          "Tu veux quel parfum de glace ?"
+        ],
+        "options": ["духи / аромат (и вкус мороженого)", "мыло", "цветок", "крем"],
+        "correctIndex": 0,
+        "explanation": "parfum (m) — духи и аромат (запах). У мороженого «parfum» значит сорт/вкус: vanille, chocolat. Мыло — le savon."
+      },
+      {
+        "id": "wc-objets-parfum-cmp",
+        "kind": "compare",
+        "wordId": "wl-objets-parfum",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un parfum agréable и une odeur bizarre. В чём разница между parfum и odeur?",
+        "phrases": ["Ton parfum sent très bon.", "Il y a une odeur bizarre dans la cuisine."],
+        "options": [
+          "parfum — аромат, чаще приятный (в т. ч. духи); odeur — запах вообще, нейтрально, может быть и неприятным.",
+          "Это полные синонимы.",
+          "parfum — всегда неприятный запах, odeur — приятный.",
+          "parfum — это вкус во рту, odeur — звук."
+        ],
+        "correctIndex": 0,
+        "explanation": "parfum — приятный аромат и духи; odeur — запах в нейтральном смысле, бывает и хорошим, и плохим (une mauvaise odeur). Поэтому про вонь говорят une odeur, а не un parfum."
+      },
+      {
+        "id": "wc-objets-miroir-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-objets-miroir",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит miroir?",
+        "bridge": "Англ. «mirror» — зеркало. Французское miroir — тот же корень, только пишется -oir и читается /mi.ʁwaʁ/.",
+        "options": ["зеркало", "окно", "стекло", "картина"],
+        "correctIndex": 0,
+        "explanation": "miroir (m) = зеркало. Англ. «mirror» — прямой мост: общий латинский корень. «se regarder dans le miroir» — смотреться в зеркало."
+      },
+      {
+        "id": "wc-objets-miroir-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-objets-miroir",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "miroir",
+        "options": ["miroir", "mouchoir", "tiroir", "couloir"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало miroir /mi.ʁwaʁ/ — зеркало. Похожие на -oir: mouchoir (платок), tiroir (ящик), couloir (коридор). Разные слова, не омофоны — слушай начало."
+      },
+      {
+        "id": "wc-objets-mouchoir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-objets-mouchoir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Tu as un mouchoir ? J'ai le nez qui coule.",
+          "Elle sort un mouchoir en papier de son sac.",
+          "Achète un paquet de mouchoirs à la pharmacie."
+        ],
+        "options": ["носовой платок", "полотенце", "салфетка за столом", "шарф"],
+        "correctIndex": 0,
+        "explanation": "mouchoir (m) — носовой платок, чтобы высморкаться; обычно бумажный (en papier). Салфетка за столом и полотенце — une serviette, шарф-аксессуар — un foulard."
+      },
+      {
+        "id": "wc-objets-mouchoir-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-objets-mouchoir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — мелкие вещи, которые носят в сумке. Найди лишнее.",
+        "options": ["un mouchoir", "un portefeuille", "des lunettes", "une horloge"],
+        "correctIndex": 3,
+        "explanation": "Платок (mouchoir), бумажник (portefeuille) и очки (lunettes) кладут в сумку. Лишнее — une horloge: это большие настенные часы, их в сумке не носят (на руке носят une montre)."
+      }
+    ]
+  }
+]

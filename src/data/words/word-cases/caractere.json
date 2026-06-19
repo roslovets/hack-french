@@ -1,0 +1,364 @@
+[
+  {
+    "id": "wc-caractere",
+    "title": "Характер",
+    "theme": "caractere",
+    "level": "A2",
+    "wordIds": [
+      "wl-caractere-mechant",
+      "wl-caractere-timide",
+      "wl-caractere-drole",
+      "wl-caractere-serieux",
+      "wl-caractere-calme",
+      "wl-caractere-courageux",
+      "wl-caractere-paresseux",
+      "wl-caractere-poli"
+    ],
+    "steps": [
+      {
+        "id": "wc-caractere-mechant-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-caractere-mechant",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Attention, chien méchant !",
+          "Ne sois pas méchant avec ta sœur.",
+          "Il a fait une remarque méchante."
+        ],
+        "options": ["злой, вредный", "грустный", "усталый", "вежливый"],
+        "correctIndex": 0,
+        "explanation": "méchant — злой, вредный: о том, кто намеренно делает плохо. В женском роде méchante: une remarque méchante. «Attention, chien méchant» — стандартная табличка «Осторожно, злая собака»."
+      },
+      {
+        "id": "wc-caractere-mechant-trap",
+        "kind": "trap",
+        "wordId": "wl-caractere-mechant",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг сегодня «énervé», а коллега «méchant». В чём разница?",
+        "phrases": ["Il est énervé aujourd'hui.", "Il est méchant."],
+        "options": [
+          "énervé — раздражён сейчас, по ситуации; méchant — злой, вредный по характеру.",
+          "Это синонимы, разницы нет.",
+          "énervé — злой по характеру; méchant — устал.",
+          "Оба значат «грустный»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Не путать: énervé — на нервах, раздражён в данный момент (пройдёт). méchant — злой, вредный по сути характера. Можно быть énervé, но при этом не méchant."
+      },
+      {
+        "id": "wc-caractere-timide-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-caractere-timide",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "C'est un enfant très timide.",
+          "Elle est trop timide pour parler en classe.",
+          "Il m'a fait un sourire timide."
+        ],
+        "options": ["застенчивый, робкий", "злой", "ленивый", "смешной"],
+        "correctIndex": 0,
+        "explanation": "timide — застенчивый, робкий: кому неловко и страшно перед людьми. Форма не меняется в женском роде: il est timide / elle est timide."
+      },
+      {
+        "id": "wc-caractere-timide-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-caractere-timide",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет слово с первого взгляда. Что значит timide?",
+        "bridge": "Англ. «timid» — робкий, боязливый. Фр. timide — почти то же написание, читается /ti.mid/.",
+        "options": ["застенчивый, робкий", "усталый", "вежливый", "храбрый"],
+        "correctIndex": 0,
+        "explanation": "timide = застенчивый, робкий. Прямой мост к англ. «timid». Антоним по теме — courageux (смелый)."
+      },
+      {
+        "id": "wc-caractere-drole-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-caractere-drole",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il raconte des histoires très drôles.",
+          "Ce film est vraiment drôle.",
+          "Tu es drôle, tu me fais rire."
+        ],
+        "options": ["смешной, забавный", "серьёзный", "злой", "тихий"],
+        "correctIndex": 0,
+        "explanation": "drôle — смешной, забавный: то, что вызывает смех. «faire rire» — смешить. Форма drôle одинакова в мужском и женском роде."
+      },
+      {
+        "id": "wc-caractere-drole-trap",
+        "kind": "trap",
+        "wordId": "wl-caractere-drole",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«un film drôle» и «un drôle de film» — это одно и то же?",
+        "phrases": ["C'est un film drôle.", "C'est un drôle de film."],
+        "options": [
+          "Нет: «un film drôle» — смешной фильм; «un drôle de film» — странный, чудной фильм.",
+          "Да, оба значат «смешной фильм».",
+          "Да, оба значат «странный фильм».",
+          "Нет: «un film drôle» — страшный, «un drôle de film» — скучный."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка конструкции: drôle после слова = смешной (un film drôle). Но «un drôle de + сущ.» переворачивает смысл на «странный, чудной»: un drôle de type — странный тип."
+      },
+      {
+        "id": "wc-caractere-serieux-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-caractere-serieux",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "C'est un élève sérieux et appliqué.",
+          "Il faut prendre ce travail au sérieux.",
+          "Tu es sérieux ? Tu plaisantes ?"
+        ],
+        "options": ["серьёзный, ответственный", "ленивый", "застенчивый", "вежливый"],
+        "correctIndex": 0,
+        "explanation": "sérieux — серьёзный, ответственный: надёжный, не шутит, относится к делу всерьёз. «prendre au sérieux» — принимать всерьёз. В женском роде sérieuse."
+      },
+      {
+        "id": "wc-caractere-serieux-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-caractere-serieux",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово. Какое из написанных совпадает с тем, что звучит?",
+        "audioText": "sérieux",
+        "options": ["sérieux", "curieux", "furieux", "mystérieux"],
+        "correctIndex": 0,
+        "explanation": "Все четыре оканчиваются на -ieux /jø/ и звучат похоже, но звучит именно sérieux (серьёзный). curieux — любопытный, furieux — в ярости, mystérieux — загадочный."
+      },
+      {
+        "id": "wc-caractere-calme-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-caractere-calme",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "C'est un enfant calme et sage.",
+          "Reste calme, tout va bien.",
+          "Nous habitons un quartier calme."
+        ],
+        "options": ["спокойный, тихий", "злой", "смешной", "храбрый"],
+        "correctIndex": 0,
+        "explanation": "calme — спокойный (без нервов) и тихий (о месте). «rester calme» — сохранять спокойствие, «un quartier calme» — тихий район. Форма одинакова в обоих родах."
+      },
+      {
+        "id": "wc-caractere-calme-cmp",
+        "kind": "compare",
+        "wordId": "wl-caractere-calme",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«Reste calme» и «Laisse-moi tranquille». В чём разница между calme и tranquille?",
+        "phrases": ["Reste calme.", "Laisse-moi tranquille."],
+        "options": [
+          "calme — спокойный, без волнения; tranquille — спокойный в смысле «не трогай, оставь в покое».",
+          "Это полные синонимы.",
+          "calme значит «громкий», tranquille — «тихий».",
+          "calme — про место, tranquille — только про людей."
+        ],
+        "correctIndex": 0,
+        "explanation": "calme — спокойный, без нервов и шума (reste calme — не нервничай). tranquille — спокойный в смысле беззаботный или «оставь в покое»: laisse-moi tranquille — оставь меня в покое."
+      },
+      {
+        "id": "wc-caractere-courageux-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-caractere-courageux",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "C'est un pompier très courageux.",
+          "Elle a été courageuse face au danger.",
+          "Il faut être courageux pour dire la vérité."
+        ],
+        "options": ["смелый, храбрый", "ленивый", "вежливый", "грустный"],
+        "correctIndex": 0,
+        "explanation": "courageux — смелый, храбрый: не боится трудностей и опасности. В женском роде courageuse: elle a été courageuse. Существительное — le courage (смелость)."
+      },
+      {
+        "id": "wc-caractere-courageux-trap",
+        "kind": "trap",
+        "wordId": "wl-caractere-courageux",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Что значит «un brave homme»? Осторожно, это не то, что кажется.",
+        "options": [
+          "добрый, славный человек — перед словом brave значит «славный», а не «храбрый».",
+          "храбрый мужчина — brave всегда значит «смелый».",
+          "злой человек.",
+          "ленивый человек."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: «смелый» — это courageux. Слово brave перед существительным значит «славный, добрый»: un brave homme — добрый, славный человек. «Храбрый» надёжнее всего передавать через courageux."
+      },
+      {
+        "id": "wc-caractere-paresseux-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-caractere-paresseux",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mon frère est un peu paresseux.",
+          "Cet élève est trop paresseux pour faire ses devoirs.",
+          "Le dimanche, je suis paresseux."
+        ],
+        "options": ["ленивый", "серьёзный", "смелый", "вежливый"],
+        "correctIndex": 0,
+        "explanation": "paresseux — ленивый: не любит трудиться, избегает усилий. В женском роде paresseuse. Существительное — la paresse (лень). Антоним — travailleur (трудолюбивый)."
+      },
+      {
+        "id": "wc-caractere-paresseux-cmp",
+        "kind": "compare",
+        "wordId": "wl-caractere-paresseux",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«Il est paresseux» и «Il est fatigué». В чём разница?",
+        "phrases": ["Il est paresseux.", "Il est fatigué."],
+        "options": [
+          "paresseux — ленивый по характеру (не хочет); fatigué — уставший сейчас (не может).",
+          "Это синонимы.",
+          "paresseux — уставший, fatigué — ленивый.",
+          "Оба значат «больной»."
+        ],
+        "correctIndex": 0,
+        "explanation": "paresseux — ленивый по характеру: не хочет работать. fatigué — уставший в данный момент: не может, потому что нет сил. Лентяй и уставший — разные вещи."
+      },
+      {
+        "id": "wc-caractere-poli-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-caractere-poli",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "C'est un enfant très poli, il dit toujours merci.",
+          "Reste poli, même si tu n'es pas d'accord.",
+          "Il a été poli mais un peu froid."
+        ],
+        "options": ["вежливый, учтивый", "ленивый", "злой", "смешной"],
+        "correctIndex": 0,
+        "explanation": "poli — вежливый, учтивый: здоровается, говорит «спасибо», уважителен. В женском роде polie. «rester poli» — оставаться вежливым."
+      },
+      {
+        "id": "wc-caractere-poli-trap",
+        "kind": "trap",
+        "wordId": "wl-caractere-poli",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«un homme poli» и «un homme gentil» — это одно и то же?",
+        "phrases": ["C'est un homme poli.", "C'est un homme gentil."],
+        "options": [
+          "Нет: poli — вежливый (соблюдает формы); gentil — добрый, по-настоящему хорошо относится. Можно быть вежливым, но недобрым.",
+          "Да, это полные синонимы.",
+          "Да, оба значат «отполированный».",
+          "Нет: poli — добрый, gentil — вежливый."
+        ],
+        "correctIndex": 0,
+        "explanation": "poli — вежливый: соблюдает правила вежливости (здоровается, говорит merci). gentil — добрый, милый: искренне хорошо относится. «poli mais froid» — вежливый, но холодный: значит poli ≠ gentil."
+      },
+      {
+        "id": "wc-caractere-mechant-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-caractere-mechant",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три прилагательных описывают плохой/трудный характер. Найди лишнее — оно явно положительное.",
+        "options": ["méchant", "paresseux", "timide", "courageux"],
+        "correctIndex": 3,
+        "explanation": "méchant (злой), paresseux (ленивый) и timide (робкий) — скорее минусы характера. courageux (смелый) — однозначно положительная черта, поэтому он лишний."
+      },
+      {
+        "id": "wc-caractere-serieux-sort",
+        "kind": "sort",
+        "wordId": "wl-caractere-serieux",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un élève sérieux",
+            "basket": "ok"
+          },
+          {
+            "text": "prendre au sérieux",
+            "basket": "ok"
+          },
+          {
+            "text": "Tu es sérieux ?",
+            "basket": "ok"
+          },
+          {
+            "text": "manger sérieux",
+            "basket": "no"
+          },
+          {
+            "text": "un café sérieux",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un élève sérieux», «prendre au sérieux», «Tu es sérieux ?» — естественные сочетания. «manger sérieux» и «un café sérieux» по-французски не говорят: sérieux описывает человека, отношение или проблему, а не еду или кофе."
+      },
+      {
+        "id": "wc-caractere-courageux-hint",
+        "kind": "wordHint",
+        "wordId": "wl-caractere-courageux",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: тот, кто не боится опасности и действует, несмотря на страх.",
+        "answer": "courageux",
+        "hints": [
+          "Начинается на cou…",
+          "Внутри спрятано слово courage (смелость)",
+          "Un pompier ___ sauve les gens."
+        ],
+        "explanation": "courageux — смелый, храбрый. Корень — le courage (смелость). В женском роде courageuse."
+      },
+      {
+        "id": "wc-caractere-poli-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-caractere-poli",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово. Какое из написанных совпадает с тем, что звучит?",
+        "audioText": "poli",
+        "options": ["poli", "joli", "Paris", "police"],
+        "correctIndex": 0,
+        "explanation": "Звучит poli /pɔ.li/ (вежливый). Похожие: joli /ʒɔ.li/ — красивый, Paris /pa.ʁi/ — Париж, police /pɔ.lis/ — полиция. Совпадает только poli."
+      },
+      {
+        "id": "wc-caractere-timide-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-caractere-timide",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для timide (застенчивый), чтобы запомнить, что форма одинакова для «он» и «она»: il est timide / elle est timide.",
+        "examples": [
+          "Англ. «timid» — почти то же слово: робкий, прячется, не выходит вперёд.",
+          "Представь, как робкий человек хочет «timidement» (робко) сказать слово, но не решается — и он, и она одинаково timide."
+        ]
+      }
+    ]
+  }
+]

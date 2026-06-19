@@ -1,0 +1,314 @@
+[
+  {
+    "id": "wl-voyage-voyage",
+    "lemma": "voyage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vwa.jaʒ/",
+    "translationsRu": ["путешествие", "поездка"],
+    "translationsEn": ["trip", "journey"],
+    "semanticCore": "Перемещение из одного места в другое и весь связанный с ним опыт: сам путь, а не пункт назначения.",
+    "collocations": [
+      {
+        "fr": "partir en voyage",
+        "ru": "отправиться в путешествие"
+      },
+      {
+        "fr": "faire un voyage",
+        "ru": "совершить поездку"
+      },
+      {
+        "fr": "un voyage d'affaires",
+        "ru": "командировка"
+      },
+      {
+        "fr": "Bon voyage !",
+        "ru": "Счастливого пути!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vacances",
+        "note": "voyage = путешествие/поездка (сам путь, перемещение); les vacances = отпуск/каникулы (период отдыха). Можно partir en vacances без всякого voyage."
+      },
+      {
+        "with": "trajet",
+        "note": "voyage = всё путешествие целиком; trajet = конкретный отрезок/маршрут пути (например, le trajet maison–bureau). voyage шире и «событийнее»."
+      }
+    ],
+    "frequencyRank": 360,
+    "level": "A2",
+    "tags": ["voyage", "deplacement"],
+    "caseIds": ["wc-voyage"]
+  },
+  {
+    "id": "wl-voyage-hotel",
+    "lemma": "hôtel",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/o.tɛl/",
+    "translationsRu": ["гостиница", "отель"],
+    "translationsEn": ["hotel"],
+    "semanticCore": "Гостиница, где бронируют номер и останавливаются в поездке; немое h и accent circonflexe.",
+    "collocations": [
+      {
+        "fr": "réserver un hôtel",
+        "ru": "забронировать отель"
+      },
+      {
+        "fr": "descendre à l'hôtel",
+        "ru": "остановиться в отеле"
+      },
+      {
+        "fr": "une chambre d'hôtel",
+        "ru": "номер в гостинице"
+      },
+      {
+        "fr": "l'hôtel de ville",
+        "ru": "мэрия (ратуша)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "hôtel de ville",
+        "note": "un hôtel = гостиница; но l'hôtel de ville = мэрия/ратуша, а не гостиница. Историческое значение hôtel — «большое городское здание»."
+      },
+      {
+        "with": "auberge",
+        "note": "hôtel = обычная гостиница; une auberge (de jeunesse) = (молодёжный) хостел / постоялый двор, попроще и подешевле."
+      }
+    ],
+    "frequencyRank": 400,
+    "level": "A2",
+    "tags": ["voyage", "logement"],
+    "caseIds": ["wc-voyage"]
+  },
+  {
+    "id": "wl-voyage-valise",
+    "lemma": "valise",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/va.liz/",
+    "translationsRu": ["чемодан"],
+    "translationsEn": ["suitcase"],
+    "semanticCore": "Жёсткий или мягкий чемодан, который укладывают перед поездкой; «faire sa valise» = собираться.",
+    "collocations": [
+      {
+        "fr": "faire sa valise",
+        "ru": "собирать чемодан"
+      },
+      {
+        "fr": "une valise lourde",
+        "ru": "тяжёлый чемодан"
+      },
+      {
+        "fr": "défaire sa valise",
+        "ru": "разобрать чемодан (по приезде)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bagage",
+        "note": "une valise = конкретный чемодан (предмет); les bagages = багаж в целом (все вещи в дороге). Чемодан — один из bagages."
+      },
+      {
+        "with": "sac",
+        "note": "valise = чемодан (на колёсиках, для одежды); un sac = сумка, un sac à dos = рюкзак. Разные вещи, не путать."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["voyage", "objet"],
+    "caseIds": ["wc-voyage"]
+  },
+  {
+    "id": "wl-voyage-passeport",
+    "lemma": "passeport",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pas.pɔʁ/",
+    "translationsRu": ["паспорт"],
+    "translationsEn": ["passport"],
+    "semanticCore": "Заграничный паспорт — документ, который показывают на границе и на таможне для подтверждения личности.",
+    "collocations": [
+      {
+        "fr": "présenter son passeport",
+        "ru": "предъявить паспорт"
+      },
+      {
+        "fr": "un passeport valide",
+        "ru": "действительный паспорт"
+      },
+      {
+        "fr": "le contrôle des passeports",
+        "ru": "паспортный контроль"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "carte d'identité",
+        "note": "le passeport = загранпаспорт (для поездок за границу); la carte d'identité = внутреннее удостоверение личности. Внутри ЕС часто хватает carte d'identité."
+      },
+      {
+        "with": "passport (англ.)",
+        "note": "Англ. «passport» = фр. passeport: то же значение, но во французском есть e в середине (pas-se-port), конечная t немая."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["voyage", "document"],
+    "caseIds": ["wc-voyage"]
+  },
+  {
+    "id": "wl-voyage-aeroport",
+    "lemma": "aéroport",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.e.ʁɔ.pɔʁ/",
+    "translationsRu": ["аэропорт"],
+    "translationsEn": ["airport"],
+    "semanticCore": "Аэропорт как место: туда приезжают заранее, регистрируются и садятся на самолёт.",
+    "collocations": [
+      {
+        "fr": "à l'aéroport",
+        "ru": "в аэропорту / в аэропорт"
+      },
+      {
+        "fr": "aller à l'aéroport",
+        "ru": "ехать в аэропорт"
+      },
+      {
+        "fr": "l'aéroport de Roissy",
+        "ru": "аэропорт Руасси (Шарль-де-Голль)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "avion",
+        "note": "l'aéroport = аэропорт (место); l'avion = самолёт (транспорт). Летят в avion, а вылетают из aéroport."
+      },
+      {
+        "with": "gare",
+        "note": "l'aéroport = аэропорт (для самолётов); la gare = вокзал (для поездов). Оба — пункты отправления, но разный транспорт."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["voyage", "lieu"],
+    "caseIds": ["wc-voyage"]
+  },
+  {
+    "id": "wl-voyage-bagage",
+    "lemma": "bagage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ba.ɡaʒ/",
+    "translationsRu": ["багаж"],
+    "translationsEn": ["luggage", "baggage"],
+    "semanticCore": "Багаж — все вещи, которые берут в дорогу; чаще во множественном (les bagages).",
+    "collocations": [
+      {
+        "fr": "faire ses bagages",
+        "ru": "собирать вещи (в дорогу)"
+      },
+      {
+        "fr": "un bagage à main",
+        "ru": "ручная кладь"
+      },
+      {
+        "fr": "récupérer ses bagages",
+        "ru": "получить багаж"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "valise",
+        "note": "les bagages = багаж в целом (собирательно: чемоданы, сумки); une valise = один конкретный чемодан. Чемодан — это один из bagages."
+      },
+      {
+        "with": "bagage (англ. luggage)",
+        "note": "По-русски «багаж» — единственное число, но по-французски в значении вещей в дороге обычно говорят во множественном: les bagages."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["voyage", "objet"],
+    "caseIds": ["wc-voyage"]
+  },
+  {
+    "id": "wl-voyage-touriste",
+    "lemma": "touriste",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tu.ʁist/",
+    "translationsRu": ["турист"],
+    "translationsEn": ["tourist"],
+    "semanticCore": "Турист — тот, кто приезжает осматривать места ради отдыха; форма слова одна для обоих родов.",
+    "collocations": [
+      {
+        "fr": "un groupe de touristes",
+        "ru": "группа туристов"
+      },
+      {
+        "fr": "l'office de tourisme",
+        "ru": "туристическое бюро"
+      },
+      {
+        "fr": "un menu touristique",
+        "ru": "туристическое меню (для приезжих)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "touriste (m/f)",
+        "note": "Слово не меняется по роду: un touriste (мужчина) и une touriste (женщина) пишутся одинаково; различает только артикль un/une."
+      },
+      {
+        "with": "voyageur",
+        "note": "un touriste = турист (ради осмотра и отдыха); un voyageur = путешественник/пассажир (в пути; так объявляют пассажиров на вокзале)."
+      }
+    ],
+    "frequencyRank": 580,
+    "level": "A2",
+    "tags": ["voyage", "personne"],
+    "caseIds": ["wc-voyage"]
+  },
+  {
+    "id": "wl-voyage-douane",
+    "lemma": "douane",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/dwan/",
+    "translationsRu": ["таможня"],
+    "translationsEn": ["customs"],
+    "semanticCore": "Таможня — контроль на границе, где проверяют вещи и спрашивают, есть ли что декларировать.",
+    "collocations": [
+      {
+        "fr": "passer la douane",
+        "ru": "проходить таможню"
+      },
+      {
+        "fr": "rien à déclarer à la douane",
+        "ru": "нечего декларировать на таможне"
+      },
+      {
+        "fr": "le contrôle de la douane",
+        "ru": "таможенный контроль"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "frontière",
+        "note": "la douane = таможня (контроль вещей и пошлин); la frontière = граница (сама линия между странами). Таможня стоит на границе, но это не одно и то же."
+      },
+      {
+        "with": "douanier",
+        "note": "la douane = таможня (служба/место); le douanier = таможенник (человек, который проверяет). Не путать слово с названием профессии."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["voyage", "frontiere"],
+    "caseIds": ["wc-voyage"]
+  }
+]
