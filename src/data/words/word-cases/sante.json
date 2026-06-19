@@ -98,7 +98,8 @@
         "audioText": "rhume",
         "options": ["rhume", "rhum", "ruine"],
         "correctIndex": 0,
-        "explanation": "rhume /ʁym/ — насморк. Похожие: rhum /ʁɔm/ — ром (напиток), ruine /ʁɥin/ — развалина, разорение. Разница в гласной: «ю» против «о»."
+        "explanation": "rhume /ʁym/ — насморк. Похожие: rhum /ʁɔm/ — ром (напиток), ruine /ʁɥin/ — развалина, разорение. Разница в гласной: «ю» против «о».",
+        "audioSrc": "audio/wl-sante-rhume.mp3"
       },
       {
         "id": "wc-sante-fievre-ctx",
@@ -142,7 +143,8 @@
         "audioText": "fièvre",
         "options": ["fièvre", "lièvre", "lèvre"],
         "correctIndex": 0,
-        "explanation": "fièvre /fjɛvʁ/ — жар, температура. Похожие: lièvre /ljɛvʁ/ — заяц, lèvre /lɛvʁ/ — губа. Различаются началом: «фь-» против «ль-»."
+        "explanation": "fièvre /fjɛvʁ/ — жар, температура. Похожие: lièvre /ljɛvʁ/ — заяц, lèvre /lɛvʁ/ — губа. Различаются началом: «фь-» против «ль-».",
+        "audioSrc": "audio/wl-sante-fievre.mp3"
       },
       {
         "id": "wc-sante-medicament-ctx",
@@ -226,7 +228,8 @@
         "audioText": "douleur",
         "options": ["douleur", "couleur", "chaleur"],
         "correctIndex": 0,
-        "explanation": "douleur /du.lœʁ/ — боль. Похожие: couleur /ku.lœʁ/ — цвет, chaleur /ʃa.lœʁ/ — жара, тепло. Все на -eur и женского рода, различаются началом слова."
+        "explanation": "douleur /du.lœʁ/ — боль. Похожие: couleur /ku.lœʁ/ — цвет, chaleur /ʃa.lœʁ/ — жара, тепло. Все на -eur и женского рода, различаются началом слова.",
+        "audioSrc": "audio/wl-sante-douleur.mp3"
       },
       {
         "id": "wc-sante-guerir-ctx",

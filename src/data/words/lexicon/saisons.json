@@ -39,7 +39,10 @@
     "frequencyRank": 720,
     "level": "A1",
     "tags": ["saisons", "temps"],
-    "caseIds": ["wc-saisons"]
+    "caseIds": ["wc-saisons"],
+    "audio": {
+      "isolated": "audio/wl-saisons-printemps.mp3"
+    }
   },
   {
     "id": "wl-saisons-ete",
@@ -81,7 +84,10 @@
     "frequencyRank": 350,
     "level": "A1",
     "tags": ["saisons", "temps"],
-    "caseIds": ["wc-saisons"]
+    "caseIds": ["wc-saisons"],
+    "audio": {
+      "isolated": "audio/wl-saisons-ete.mp3"
+    }
   },
   {
     "id": "wl-saisons-automne",
@@ -123,7 +129,10 @@
     "frequencyRank": 760,
     "level": "A1",
     "tags": ["saisons", "temps"],
-    "caseIds": ["wc-saisons"]
+    "caseIds": ["wc-saisons"],
+    "audio": {
+      "isolated": "audio/wl-saisons-automne.mp3"
+    }
   },
   {
     "id": "wl-saisons-hiver",
@@ -165,7 +174,10 @@
     "frequencyRank": 400,
     "level": "A1",
     "tags": ["saisons", "temps"],
-    "caseIds": ["wc-saisons"]
+    "caseIds": ["wc-saisons"],
+    "audio": {
+      "isolated": "audio/wl-saisons-hiver.mp3"
+    }
   },
   {
     "id": "wl-saisons-saison",
@@ -207,7 +219,10 @@
     "frequencyRank": 600,
     "level": "A1",
     "tags": ["saisons", "temps"],
-    "caseIds": ["wc-saisons"]
+    "caseIds": ["wc-saisons"],
+    "audio": {
+      "isolated": "audio/wl-saisons-saison.mp3"
+    }
   },
   {
     "id": "wl-saisons-fleur",
@@ -249,7 +264,10 @@
     "frequencyRank": 540,
     "level": "A1",
     "tags": ["saisons", "nature"],
-    "caseIds": ["wc-saisons"]
+    "caseIds": ["wc-saisons"],
+    "audio": {
+      "isolated": "audio/wl-saisons-fleur.mp3"
+    }
   },
   {
     "id": "wl-saisons-feuille",
@@ -291,7 +309,10 @@
     "frequencyRank": 640,
     "level": "A1",
     "tags": ["saisons", "nature"],
-    "caseIds": ["wc-saisons"]
+    "caseIds": ["wc-saisons"],
+    "audio": {
+      "isolated": "audio/wl-saisons-feuille.mp3"
+    }
   },
   {
     "id": "wl-saisons-climat",
@@ -333,6 +354,9 @@
     "frequencyRank": 820,
     "level": "A1",
     "tags": ["saisons", "nature"],
-    "caseIds": ["wc-saisons"]
+    "caseIds": ["wc-saisons"],
+    "audio": {
+      "isolated": "audio/wl-saisons-climat.mp3"
+    }
   }
 ]

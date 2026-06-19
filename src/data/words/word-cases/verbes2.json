@@ -125,7 +125,8 @@
         "audioText": "dire",
         "options": ["lire", "rire", "dire", "cire"],
         "correctIndex": 2,
-        "explanation": "Прозвучало dire /diʁ/ — «сказать». Похожие, но другие: lire /liʁ/ — читать, rire /ʁiʁ/ — смеяться, cire /siʁ/ — воск (существительное). Все различаются только первым согласным (d / l / r / s)."
+        "explanation": "Прозвучало dire /diʁ/ — «сказать». Похожие, но другие: lire /liʁ/ — читать, rire /ʁiʁ/ — смеяться, cire /siʁ/ — воск (существительное). Все различаются только первым согласным (d / l / r / s).",
+        "audioSrc": "audio/wl-verbes2-dire.mp3"
       },
       {
         "id": "wc-verbes2-donner-ctx",

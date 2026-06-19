@@ -39,7 +39,10 @@
     "frequencyRank": 110,
     "level": "A1",
     "tags": ["maison", "logement"],
-    "caseIds": ["wc-maison"]
+    "caseIds": ["wc-maison"],
+    "audio": {
+      "isolated": "audio/wl-maison-maison.mp3"
+    }
   },
   {
     "id": "wl-maison-cle",
@@ -82,7 +85,10 @@
     "frequencyRank": 420,
     "level": "A1",
     "tags": ["maison", "objet"],
-    "caseIds": ["wc-maison"]
+    "caseIds": ["wc-maison"],
+    "audio": {
+      "isolated": "audio/wl-maison-cle.mp3"
+    }
   },
   {
     "id": "wl-maison-porte",
@@ -124,7 +130,10 @@
     "frequencyRank": 230,
     "level": "A1",
     "tags": ["maison", "objet"],
-    "caseIds": ["wc-maison"]
+    "caseIds": ["wc-maison"],
+    "audio": {
+      "isolated": "audio/wl-maison-porte.mp3"
+    }
   },
   {
     "id": "wl-maison-fenetre",
@@ -162,7 +171,10 @@
     "frequencyRank": 480,
     "level": "A1",
     "tags": ["maison", "objet"],
-    "caseIds": ["wc-maison"]
+    "caseIds": ["wc-maison"],
+    "audio": {
+      "isolated": "audio/wl-maison-fenetre.mp3"
+    }
   },
   {
     "id": "wl-maison-table",
@@ -204,7 +216,10 @@
     "frequencyRank": 200,
     "level": "A1",
     "tags": ["maison", "meuble"],
-    "caseIds": ["wc-maison"]
+    "caseIds": ["wc-maison"],
+    "audio": {
+      "isolated": "audio/wl-maison-table.mp3"
+    }
   },
   {
     "id": "wl-maison-lit",
@@ -246,7 +261,10 @@
     "frequencyRank": 340,
     "level": "A1",
     "tags": ["maison", "meuble"],
-    "caseIds": ["wc-maison"]
+    "caseIds": ["wc-maison"],
+    "audio": {
+      "isolated": "audio/wl-maison-lit.mp3"
+    }
   },
   {
     "id": "wl-maison-mur",
@@ -284,7 +302,10 @@
     "frequencyRank": 520,
     "level": "A1",
     "tags": ["maison", "structure"],
-    "caseIds": ["wc-maison"]
+    "caseIds": ["wc-maison"],
+    "audio": {
+      "isolated": "audio/wl-maison-mur.mp3"
+    }
   },
   {
     "id": "wl-maison-etage",
@@ -322,6 +343,9 @@
     "frequencyRank": 560,
     "level": "A1",
     "tags": ["maison", "logement"],
-    "caseIds": ["wc-maison"]
+    "caseIds": ["wc-maison"],
+    "audio": {
+      "isolated": "audio/wl-maison-etage.mp3"
+    }
   }
 ]

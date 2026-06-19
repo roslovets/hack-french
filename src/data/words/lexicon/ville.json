@@ -34,7 +34,10 @@
     "frequencyRank": 25,
     "level": "A2",
     "tags": ["ville", "mouvement", "direction"],
-    "caseIds": ["wc-ville"]
+    "caseIds": ["wc-ville"],
+    "audio": {
+      "isolated": "audio/wl-ville-aller.mp3"
+    }
   },
   {
     "id": "wl-ville-venir",
@@ -71,7 +74,10 @@
     "frequencyRank": 45,
     "level": "A2",
     "tags": ["ville", "mouvement", "direction"],
-    "caseIds": ["wc-ville"]
+    "caseIds": ["wc-ville"],
+    "audio": {
+      "isolated": "audio/wl-ville-venir.mp3"
+    }
   },
   {
     "id": "wl-ville-tourner",
@@ -104,7 +110,10 @@
     "frequencyRank": 420,
     "level": "A2",
     "tags": ["ville", "mouvement", "direction"],
-    "caseIds": ["wc-ville"]
+    "caseIds": ["wc-ville"],
+    "audio": {
+      "isolated": "audio/wl-ville-tourner.mp3"
+    }
   },
   {
     "id": "wl-ville-continuer",
@@ -137,7 +146,10 @@
     "frequencyRank": 330,
     "level": "A2",
     "tags": ["ville", "mouvement", "direction"],
-    "caseIds": ["wc-ville"]
+    "caseIds": ["wc-ville"],
+    "audio": {
+      "isolated": "audio/wl-ville-continuer.mp3"
+    }
   },
   {
     "id": "wl-ville-traverser",
@@ -170,7 +182,10 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["ville", "mouvement", "direction"],
-    "caseIds": ["wc-ville"]
+    "caseIds": ["wc-ville"],
+    "audio": {
+      "isolated": "audio/wl-ville-traverser.mp3"
+    }
   },
   {
     "id": "wl-ville-monter",
@@ -203,7 +218,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["ville", "mouvement", "transport"],
-    "caseIds": ["wc-ville"]
+    "caseIds": ["wc-ville"],
+    "audio": {
+      "isolated": "audio/wl-ville-monter.mp3"
+    }
   },
   {
     "id": "wl-ville-descendre",
@@ -236,7 +254,10 @@
     "frequencyRank": 470,
     "level": "A2",
     "tags": ["ville", "mouvement", "transport"],
-    "caseIds": ["wc-ville"]
+    "caseIds": ["wc-ville"],
+    "audio": {
+      "isolated": "audio/wl-ville-descendre.mp3"
+    }
   },
   {
     "id": "wl-ville-rue",
@@ -270,6 +291,9 @@
     "frequencyRank": 210,
     "level": "A2",
     "tags": ["ville", "lieu"],
-    "caseIds": ["wc-ville"]
+    "caseIds": ["wc-ville"],
+    "audio": {
+      "isolated": "audio/wl-ville-rue.mp3"
+    }
   }
 ]

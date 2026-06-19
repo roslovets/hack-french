@@ -31,7 +31,10 @@
     "frequencyRank": 120,
     "level": "A1",
     "tags": ["boulangerie", "nourriture"],
-    "caseIds": ["wc-boulangerie"]
+    "caseIds": ["wc-boulangerie"],
+    "audio": {
+      "isolated": "audio/pain.mp3"
+    }
   },
   {
     "id": "baguette",
@@ -61,7 +64,10 @@
     "frequencyRank": 300,
     "level": "A1",
     "tags": ["boulangerie", "nourriture"],
-    "caseIds": ["wc-boulangerie"]
+    "caseIds": ["wc-boulangerie"],
+    "audio": {
+      "isolated": "audio/baguette.mp3"
+    }
   },
   {
     "id": "encore",
@@ -90,7 +96,10 @@
     "frequencyRank": 80,
     "level": "A1",
     "tags": ["temps", "quantité"],
-    "caseIds": ["wc-boulangerie"]
+    "caseIds": ["wc-boulangerie"],
+    "audio": {
+      "isolated": "audio/encore.mp3"
+    }
   },
   {
     "id": "frais",
@@ -119,7 +128,10 @@
     "frequencyRank": 250,
     "level": "A1",
     "tags": ["boulangerie", "adjectif"],
-    "caseIds": []
+    "caseIds": [],
+    "audio": {
+      "isolated": "audio/frais.mp3"
+    }
   },
   {
     "id": "tranche",
@@ -149,7 +161,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["boulangerie", "nourriture"],
-    "caseIds": []
+    "caseIds": [],
+    "audio": {
+      "isolated": "audio/tranche.mp3"
+    }
   },
   {
     "id": "wl-boulangerie-croissant",
@@ -187,7 +202,10 @@
     "frequencyRank": 900,
     "level": "A1",
     "tags": ["boulangerie", "nourriture"],
-    "caseIds": ["wc-boulangerie"]
+    "caseIds": ["wc-boulangerie"],
+    "audio": {
+      "isolated": "audio/wl-boulangerie-croissant.mp3"
+    }
   },
   {
     "id": "wl-boulangerie-gateau",
@@ -221,7 +239,10 @@
     "frequencyRank": 750,
     "level": "A1",
     "tags": ["boulangerie", "nourriture"],
-    "caseIds": ["wc-boulangerie"]
+    "caseIds": ["wc-boulangerie"],
+    "audio": {
+      "isolated": "audio/wl-boulangerie-gateau.mp3"
+    }
   },
   {
     "id": "wl-boulangerie-tarte",
@@ -259,6 +280,9 @@
     "frequencyRank": 1100,
     "level": "A1",
     "tags": ["boulangerie", "nourriture"],
-    "caseIds": ["wc-boulangerie"]
+    "caseIds": ["wc-boulangerie"],
+    "audio": {
+      "isolated": "audio/wl-boulangerie-tarte.mp3"
+    }
   }
 ]

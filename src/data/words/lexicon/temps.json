@@ -38,7 +38,10 @@
     "frequencyRank": 110,
     "level": "A2",
     "tags": ["temps", "adverbe"],
-    "caseIds": ["wc-temps"]
+    "caseIds": ["wc-temps"],
+    "audio": {
+      "isolated": "audio/wl-temps-deja.mp3"
+    }
   },
   {
     "id": "wl-temps-toujours",
@@ -79,7 +82,10 @@
     "frequencyRank": 70,
     "level": "A2",
     "tags": ["temps", "fréquence", "adverbe"],
-    "caseIds": ["wc-temps"]
+    "caseIds": ["wc-temps"],
+    "audio": {
+      "isolated": "audio/wl-temps-toujours.mp3"
+    }
   },
   {
     "id": "wl-temps-parfois",
@@ -116,7 +122,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["temps", "fréquence", "adverbe"],
-    "caseIds": ["wc-temps"]
+    "caseIds": ["wc-temps"],
+    "audio": {
+      "isolated": "audio/wl-temps-parfois.mp3"
+    }
   },
   {
     "id": "wl-temps-souvent",
@@ -157,7 +166,10 @@
     "frequencyRank": 150,
     "level": "A2",
     "tags": ["temps", "fréquence", "adverbe"],
-    "caseIds": ["wc-temps"]
+    "caseIds": ["wc-temps"],
+    "audio": {
+      "isolated": "audio/wl-temps-souvent.mp3"
+    }
   },
   {
     "id": "wl-temps-jamais",
@@ -198,7 +210,10 @@
     "frequencyRank": 130,
     "level": "A2",
     "tags": ["temps", "fréquence", "négation", "adverbe"],
-    "caseIds": ["wc-temps"]
+    "caseIds": ["wc-temps"],
+    "audio": {
+      "isolated": "audio/wl-temps-jamais.mp3"
+    }
   },
   {
     "id": "wl-temps-maintenant",
@@ -239,7 +254,10 @@
     "frequencyRank": 90,
     "level": "A2",
     "tags": ["temps", "moment", "adverbe"],
-    "caseIds": ["wc-temps"]
+    "caseIds": ["wc-temps"],
+    "audio": {
+      "isolated": "audio/wl-temps-maintenant.mp3"
+    }
   },
   {
     "id": "wl-temps-bientot",
@@ -280,6 +298,9 @@
     "frequencyRank": 320,
     "level": "A2",
     "tags": ["temps", "futur", "adverbe"],
-    "caseIds": ["wc-temps"]
+    "caseIds": ["wc-temps"],
+    "audio": {
+      "isolated": "audio/wl-temps-bientot.mp3"
+    }
   }
 ]

@@ -89,7 +89,8 @@
         "audioText": "où",
         "options": ["eau", "haut", "eu", "où"],
         "correctIndex": 3,
-        "explanation": "Прозвучало où /u/ — «где/куда», звук «у». Другие варианты звучат иначе: eau /o/ — «вода», haut /o/ — «высокий», eu /y/ — «имел» (от avoir). Только où даёт чистый звук /u/."
+        "explanation": "Прозвучало où /u/ — «где/куда», звук «у». Другие варианты звучат иначе: eau /o/ — «вода», haut /o/ — «высокий», eu /y/ — «имел» (от avoir). Только où даёт чистый звук /u/.",
+        "audioSrc": "audio/wl-questions-ou.mp3"
       },
       {
         "id": "wc-questions-quand-ctx",
@@ -113,7 +114,8 @@
         "audioText": "quand",
         "options": ["gant", "temps", "vent", "quand"],
         "correctIndex": 3,
-        "explanation": "Прозвучало quand /kɑ̃/ — «когда», начинается со звука k. Остальные рифмуются на /ɑ̃/, но начинаются иначе: gant /ɡɑ̃/ — «перчатка» (звонкий g), temps /tɑ̃/ — «время» (t), vent /vɑ̃/ — «ветер» (v). Различай по первому звуку."
+        "explanation": "Прозвучало quand /kɑ̃/ — «когда», начинается со звука k. Остальные рифмуются на /ɑ̃/, но начинаются иначе: gant /ɡɑ̃/ — «перчатка» (звонкий g), temps /tɑ̃/ — «время» (t), vent /vɑ̃/ — «ветер» (v). Различай по первому звуку.",
+        "audioSrc": "audio/wl-questions-quand.mp3"
       },
       {
         "id": "wc-questions-comment-ctx",

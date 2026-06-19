@@ -234,7 +234,8 @@
         "audioText": "prix",
         "options": ["prix", "pré", "bris", "pli"],
         "correctIndex": 0,
-        "explanation": "Слушай внимательно: prix /pʁi/ (цена), pré /pʁe/ (луг — другой гласный é), bris /bʁi/ (b вместо p, «осколки»), pli /pli/ (l вместо r, «складка»). Это разные слова, а не омофоны; нужное здесь — prix."
+        "explanation": "Слушай внимательно: prix /pʁi/ (цена), pré /pʁe/ (луг — другой гласный é), bris /bʁi/ (b вместо p, «осколки»), pli /pli/ (l вместо r, «складка»). Это разные слова, а не омофоны; нужное здесь — prix.",
+        "audioSrc": "audio/wl-argent-prix.mp3"
       },
       {
         "id": "wc-boss-money-cher-odd",

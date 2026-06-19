@@ -151,7 +151,8 @@
         "audioText": "sœur",
         "options": ["sœur", "cœur", "peur", "sueur"],
         "correctIndex": 0,
-        "explanation": "sœur /sœʁ/ (сестра), cœur /kœʁ/ (сердце), peur /pœʁ/ (страх), sueur /sɥœʁ/ (пот). Все близки по звучанию, но это разные слова: слушай первый звук. sœur и cœur ещё и пишутся с лигатурой œ."
+        "explanation": "sœur /sœʁ/ (сестра), cœur /kœʁ/ (сердце), peur /pœʁ/ (страх), sueur /sɥœʁ/ (пот). Все близки по звучанию, но это разные слова: слушай первый звук. sœur и cœur ещё и пишутся с лигатурой œ.",
+        "audioSrc": "audio/wl-famille-soeur.mp3"
       },
       {
         "id": "wc-boss-corps-famille-corps-ctx",
@@ -235,7 +236,8 @@
         "audioText": "dos",
         "options": ["dos", "beau", "mot", "sot"],
         "correctIndex": 0,
-        "explanation": "Все оканчиваются на /o/ и различаются началом: dos /do/ (спина), beau /bo/ (красивый), mot /mo/ (слово), sot /so/ (глупый). У dos конечная s немая. Это разные слова, а не омофоны."
+        "explanation": "Все оканчиваются на /o/ и различаются началом: dos /do/ (спина), beau /bo/ (красивый), mot /mo/ (слово), sot /so/ (глупый). У dos конечная s немая. Это разные слова, а не омофоны.",
+        "audioSrc": "audio/wl-corps-dos.mp3"
       },
       {
         "id": "wc-boss-corps-famille-ventre-ctx",

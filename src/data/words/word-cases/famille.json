@@ -174,7 +174,8 @@
         "audioText": "fils",
         "options": ["fil", "fils", "ville", "file"],
         "correctIndex": 1,
-        "explanation": "fils «сын» звучит /fis/ — со звуком s. Похожие, но другие слова: fil «нить» (/fil/), ville «город» (/vil/), file «очередь/ряд» (/fil/) — все со звуком l, без s."
+        "explanation": "fils «сын» звучит /fis/ — со звуком s. Похожие, но другие слова: fil «нить» (/fil/), ville «город» (/vil/), file «очередь/ряд» (/fil/) — все со звуком l, без s.",
+        "audioSrc": "audio/wl-famille-fils.mp3"
       },
       {
         "id": "wc-famille-fille-ctx",
@@ -219,7 +220,8 @@
         "audioText": "fille",
         "options": ["ville", "file", "fil", "fille"],
         "correctIndex": 3,
-        "explanation": "fille звучит /fij/ — с мягким «й» на конце (ll здесь даёт звук /j/). Похожие слова другие: ville «город» (/vil/), file «ряд» (/fil/), fil «нить» (/fil/) — все с обычным l."
+        "explanation": "fille звучит /fij/ — с мягким «й» на конце (ll здесь даёт звук /j/). Похожие слова другие: ville «город» (/vil/), file «ряд» (/fil/), fil «нить» (/fil/) — все с обычным l.",
+        "audioSrc": "audio/wl-famille-fille.mp3"
       },
       {
         "id": "wc-famille-frere-ctx",
@@ -259,7 +261,8 @@
         "audioText": "frère",
         "options": ["faire", "frais", "frère", "fier"],
         "correctIndex": 2,
-        "explanation": "frère звучит /fʁɛʁ/ — с двумя «р». Похожие реальные слова другие: faire «делать» (/fɛʁ/), frais «свежий» (/fʁɛ/), fier «гордый» (/fjɛʁ/)."
+        "explanation": "frère звучит /fʁɛʁ/ — с двумя «р». Похожие реальные слова другие: faire «делать» (/fɛʁ/), frais «свежий» (/fʁɛ/), fier «гордый» (/fjɛʁ/).",
+        "audioSrc": "audio/wl-famille-frere.mp3"
       },
       {
         "id": "wc-famille-soeur-ctx",

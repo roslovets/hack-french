@@ -101,7 +101,8 @@
         "audioText": "nez",
         "options": ["nez", "nu", "nœud", "neuf"],
         "correctIndex": 0,
-        "explanation": "Прозвучало nez /ne/ (нос). Похожие на слух, но разные слова: nu /ny/ (голый), nœud /nø/ (узел), neuf /nœf/ (девять). У всех другой гласный — только nez звучит как /ne/."
+        "explanation": "Прозвучало nez /ne/ (нос). Похожие на слух, но разные слова: nu /ny/ (голый), nœud /nø/ (узел), neuf /nœf/ (девять). У всех другой гласный — только nez звучит как /ne/.",
+        "audioSrc": "audio/wl-visage-nez.mp3"
       },
       {
         "id": "wc-visage-bouche-ctx",

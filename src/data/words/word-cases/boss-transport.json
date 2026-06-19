@@ -409,7 +409,8 @@
         "audioText": "vélo",
         "options": ["vélo", "vol", "veau", "voile"],
         "correctIndex": 0,
-        "explanation": "vélo /velo/ (велосипед), vol /vɔl/ (полёт; кража), veau /vo/ (телёнок; телятина), voile /vwal/ (парус; вуаль). Это разные слова, не омофоны: слушай гласные и концовку."
+        "explanation": "vélo /velo/ (велосипед), vol /vɔl/ (полёт; кража), veau /vo/ (телёнок; телятина), voile /vwal/ (парус; вуаль). Это разные слова, не омофоны: слушай гласные и концовку.",
+        "audioSrc": "audio/wl-transport-velo.mp3"
       },
       {
         "id": "wc-boss-transport-avion-hint",

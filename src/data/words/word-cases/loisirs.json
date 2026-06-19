@@ -261,7 +261,8 @@
         "audioText": "lire",
         "options": ["lire", "rire", "dire", "lier"],
         "correctIndex": 0,
-        "explanation": "Прозвучало lire /liʁ/ — читать. Похожие, но другие слова: rire /ʁiʁ/ — смеяться, dire /diʁ/ — говорить, lier /lje/ — связывать."
+        "explanation": "Прозвучало lire /liʁ/ — читать. Похожие, но другие слова: rire /ʁiʁ/ — смеяться, dire /diʁ/ — говорить, lier /lje/ — связывать.",
+        "audioSrc": "audio/wl-loisirs-lire.mp3"
       },
       {
         "id": "wc-loisirs-lire-hint",

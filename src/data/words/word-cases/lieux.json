@@ -53,7 +53,8 @@
         "audioText": "banque",
         "options": ["banque", "banc", "bande", "blanc"],
         "correctIndex": 0,
-        "explanation": "banque /bɑ̃k/ (банк), banc /bɑ̃/ (скамейка), bande /bɑ̃d/ (лента, банда), blanc /blɑ̃/ (белый). Это разные слова, не омофоны: слушай концовку и наличие l."
+        "explanation": "banque /bɑ̃k/ (банк), banc /bɑ̃/ (скамейка), bande /bɑ̃d/ (лента, банда), blanc /blɑ̃/ (белый). Это разные слова, не омофоны: слушай концовку и наличие l.",
+        "audioSrc": "audio/wl-lieux-banque.mp3"
       },
       {
         "id": "wc-lieux-poste-ctx",
@@ -202,7 +203,8 @@
         "audioText": "pont",
         "options": ["pont", "pomme", "pompe", "pente"],
         "correctIndex": 0,
-        "explanation": "pont /pɔ̃/ (мост), pomme /pɔm/ (яблоко), pompe /pɔ̃p/ (насос), pente /pɑ̃t/ (склон). Это разные слова: pont — чистый носовой /pɔ̃/ без согласной на конце."
+        "explanation": "pont /pɔ̃/ (мост), pomme /pɔm/ (яблоко), pompe /pɔ̃p/ (насос), pente /pɑ̃t/ (склон). Это разные слова: pont — чистый носовой /pɔ̃/ без согласной на конце.",
+        "audioSrc": "audio/wl-lieux-pont.mp3"
       },
       {
         "id": "wc-lieux-place-ctx",

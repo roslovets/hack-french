@@ -142,7 +142,8 @@
         "audioText": "mois",
         "options": ["mois", "moins", "mais", "mot"],
         "correctIndex": 0,
-        "explanation": "Прозвучало mois /mwa/ — месяц. Похожие, но другие: moins /mwɛ̃/ — меньше, mais /mɛ/ — но, mot /mo/ — слово. Все читаются по-разному."
+        "explanation": "Прозвучало mois /mwa/ — месяц. Похожие, но другие: moins /mwɛ̃/ — меньше, mais /mɛ/ — но, mot /mo/ — слово. Все читаются по-разному.",
+        "audioSrc": "audio/wl-calendrier-mois.mp3"
       },
       {
         "id": "wc-calendrier-annee-ctx",
@@ -227,7 +228,8 @@
         "audioText": "soir",
         "options": ["soir", "soif", "sœur", "noir"],
         "correctIndex": 0,
-        "explanation": "Прозвучало soir /swaʁ/ — вечер. Похожие: soif /swaf/ — жажда, sœur /sœʁ/ — сестра, noir /nwaʁ/ — чёрный. Слушай конец слова — он у всех разный."
+        "explanation": "Прозвучало soir /swaʁ/ — вечер. Похожие: soif /swaf/ — жажда, sœur /sœʁ/ — сестра, noir /nwaʁ/ — чёрный. Слушай конец слова — он у всех разный.",
+        "audioSrc": "audio/wl-calendrier-soir.mp3"
       },
       {
         "id": "wc-calendrier-soir-cmp",

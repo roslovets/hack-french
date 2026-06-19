@@ -171,7 +171,8 @@
         "audioText": "mur",
         "options": ["mur", "pur", "peur", "mer"],
         "correctIndex": 0,
-        "explanation": "mur /myʁ/ (стена), pur /pyʁ/ (чистый), peur /pœʁ/ (страх), mer /mɛʁ/ (море). Это разные слова, не омофоны: слушай гласный."
+        "explanation": "mur /myʁ/ (стена), pur /pyʁ/ (чистый), peur /pœʁ/ (страх), mer /mɛʁ/ (море). Это разные слова, не омофоны: слушай гласный.",
+        "audioSrc": "audio/wl-maison-mur.mp3"
       },
       {
         "id": "wc-boss-maison-vetements-table-odd",

@@ -8,28 +8,21 @@ interface Props {
   text: string;
   /** Optional pre-recorded clip path, relative to the app base. */
   src?: string;
-  rate?: number;
   size?: 'small' | 'medium';
   label?: string;
 }
 
 /** Play a French word/phrase: a bundled clip if available, otherwise browser TTS. */
-export default function SpeakButton({
-  text,
-  src,
-  rate,
-  size = 'small',
-  label = 'Прослушать',
-}: Props) {
+export default function SpeakButton({ text, src, size = 'small', label = 'Прослушать' }: Props) {
   // Nothing to play: no clip and no speech synthesis available.
   if (!src && !speechAvailable()) return null;
 
   function play() {
     if (src) {
       const audio = new Audio(import.meta.env.BASE_URL + src);
-      audio.play().catch(() => speak(text, { rate }));
+      audio.play().catch(() => speak(text));
     } else {
-      speak(text, { rate });
+      speak(text);
     }
   }
 

@@ -74,7 +74,8 @@
         "audioText": "triste",
         "options": ["triste", "piste", "liste", "juste"],
         "correctIndex": 0,
-        "explanation": "triste /tʁist/ = грустный. Похоже звучат, но это другие слова: piste (дорожка, трасса), liste (список), juste (точный, справедливый). Различай по началу слова."
+        "explanation": "triste /tʁist/ = грустный. Похоже звучат, но это другие слова: piste (дорожка, трасса), liste (список), juste (точный, справедливый). Различай по началу слова.",
+        "audioSrc": "audio/wl-emotions-triste.mp3"
       },
       {
         "id": "wc-emotions-content-ctx",
@@ -173,7 +174,8 @@
         "audioText": "peur",
         "options": ["peur", "beurre", "sœur", "cœur"],
         "correctIndex": 0,
-        "explanation": "peur /pœʁ/ = страх. Рифмуются, но это другие слова: beurre (масло), sœur (сестра), cœur (сердце). Различай по первому звуку."
+        "explanation": "peur /pœʁ/ = страх. Рифмуются, но это другие слова: beurre (масло), sœur (сестра), cœur (сердце). Различай по первому звуку.",
+        "audioSrc": "audio/wl-emotions-peur.mp3"
       },
       {
         "id": "wc-emotions-aimer-ctx",
@@ -268,7 +270,8 @@
         "audioText": "surpris",
         "options": ["surpris", "appris", "compris", "repris"],
         "correctIndex": 0,
-        "explanation": "surpris /syʁ.pʁi/ = удивлённый. Семья причастий на -pris: appris (выучил), compris (понял), repris (возобновил). Различай по приставке (sur-, ap-, com-, re-)."
+        "explanation": "surpris /syʁ.pʁi/ = удивлённый. Семья причастий на -pris: appris (выучил), compris (понял), repris (возобновил). Различай по приставке (sur-, ap-, com-, re-).",
+        "audioSrc": "audio/wl-emotions-surpris.mp3"
       }
     ]
   }

@@ -213,7 +213,8 @@
         "audioText": "plage",
         "options": ["plage", "page", "place", "plat"],
         "correctIndex": 0,
-        "explanation": "Прозвучало plage /plaʒ/ — пляж. Похоже звучат: page /paʒ/ (страница), place /plas/ (место/площадь), plat /pla/ (блюдо/плоский). Это разные слова, не омонимы."
+        "explanation": "Прозвучало plage /plaʒ/ — пляж. Похоже звучат: page /paʒ/ (страница), place /plas/ (место/площадь), plat /pla/ (блюдо/плоский). Это разные слова, не омонимы.",
+        "audioSrc": "audio/wl-nature2-plage.mp3"
       },
       {
         "id": "wc-nature2-ciel-ctx",
@@ -241,7 +242,8 @@
         "audioText": "ciel",
         "options": ["ciel", "sel", "selle", "seul"],
         "correctIndex": 0,
-        "explanation": "Прозвучало ciel /sjɛl/ — небо. Похоже звучат: sel /sɛl/ (соль), selle /sɛl/ (седло), seul /sœl/ (один). Ciel отличается звуком /j/ (как «й»)."
+        "explanation": "Прозвучало ciel /sjɛl/ — небо. Похоже звучат: sel /sɛl/ (соль), selle /sɛl/ (седло), seul /sœl/ (один). Ciel отличается звуком /j/ (как «й»).",
+        "audioSrc": "audio/wl-nature2-ciel.mp3"
       },
       {
         "id": "wc-nature2-etoile-ctx",

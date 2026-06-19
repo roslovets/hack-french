@@ -35,7 +35,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["famille2", "personnes"],
-    "caseIds": ["wc-famille2"]
+    "caseIds": ["wc-famille2"],
+    "audio": {
+      "isolated": "audio/wl-famille2-grandpere.mp3"
+    }
   },
   {
     "id": "wl-famille2-grandmere",
@@ -73,7 +76,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["famille2", "personnes"],
-    "caseIds": ["wc-famille2"]
+    "caseIds": ["wc-famille2"],
+    "audio": {
+      "isolated": "audio/wl-famille2-grandmere.mp3"
+    }
   },
   {
     "id": "wl-famille2-oncle",
@@ -111,7 +117,10 @@
     "frequencyRank": 750,
     "level": "A2",
     "tags": ["famille2", "personnes"],
-    "caseIds": ["wc-famille2"]
+    "caseIds": ["wc-famille2"],
+    "audio": {
+      "isolated": "audio/wl-famille2-oncle.mp3"
+    }
   },
   {
     "id": "wl-famille2-tante",
@@ -149,7 +158,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["famille2", "personnes"],
-    "caseIds": ["wc-famille2"]
+    "caseIds": ["wc-famille2"],
+    "audio": {
+      "isolated": "audio/wl-famille2-tante.mp3"
+    }
   },
   {
     "id": "wl-famille2-cousin",
@@ -188,7 +200,10 @@
     "frequencyRank": 740,
     "level": "A2",
     "tags": ["famille2", "personnes"],
-    "caseIds": ["wc-famille2"]
+    "caseIds": ["wc-famille2"],
+    "audio": {
+      "isolated": "audio/wl-famille2-cousin.mp3"
+    }
   },
   {
     "id": "wl-famille2-mari",
@@ -226,7 +241,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["famille2", "couple"],
-    "caseIds": ["wc-famille2"]
+    "caseIds": ["wc-famille2"],
+    "audio": {
+      "isolated": "audio/wl-famille2-mari.mp3"
+    }
   },
   {
     "id": "wl-famille2-femme",
@@ -264,7 +282,10 @@
     "frequencyRank": 90,
     "level": "A2",
     "tags": ["famille2", "couple"],
-    "caseIds": ["wc-famille2"]
+    "caseIds": ["wc-famille2"],
+    "audio": {
+      "isolated": "audio/wl-famille2-femme.mp3"
+    }
   },
   {
     "id": "wl-famille2-voisin",
@@ -303,6 +324,9 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["famille2", "personnes"],
-    "caseIds": ["wc-famille2"]
+    "caseIds": ["wc-famille2"],
+    "audio": {
+      "isolated": "audio/wl-famille2-voisin.mp3"
+    }
   }
 ]

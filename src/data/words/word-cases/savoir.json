@@ -303,7 +303,8 @@
         "audioText": "penser",
         "options": ["penser", "passer", "danser", "poser"],
         "correctIndex": 0,
-        "explanation": "penser /pɑ̃.se/ = думать. Похоже звучат, но это другие глаголы: passer (проходить), danser (танцевать), poser (класть). Различай по началу слова."
+        "explanation": "penser /pɑ̃.se/ = думать. Похоже звучат, но это другие глаголы: passer (проходить), danser (танцевать), poser (класть). Различай по началу слова.",
+        "audioSrc": "audio/wl-savoir-penser.mp3"
       },
       {
         "id": "wc-savoir-croire-bridge",
@@ -360,7 +361,8 @@
         "audioText": "oublier",
         "options": ["oublier", "publier", "plier", "trier"],
         "correctIndex": 0,
-        "explanation": "oublier /u.bli.je/ = забывать. Похоже звучат: publier (публиковать), plier (складывать), trier (сортировать) — но это другие слова. oublier начинается с гласного «у-»."
+        "explanation": "oublier /u.bli.je/ = забывать. Похоже звучат: publier (публиковать), plier (складывать), trier (сортировать) — но это другие слова. oublier начинается с гласного «у-».",
+        "audioSrc": "audio/wl-savoir-oublier.mp3"
       },
       {
         "id": "wc-savoir-oublier-hint",
@@ -414,7 +416,8 @@
         "audioText": "connaître",
         "options": ["connaître", "connecter", "commencer", "conduire"],
         "correctIndex": 0,
-        "explanation": "connaître /kɔ.nɛtʁ/ = быть знакомым. Похоже начинаются: connecter (соединять), commencer (начинать), conduire (вести машину) — но это другие глаголы."
+        "explanation": "connaître /kɔ.nɛtʁ/ = быть знакомым. Похоже начинаются: connecter (соединять), commencer (начинать), conduire (вести машину) — но это другие глаголы.",
+        "audioSrc": "audio/wl-connaitre.mp3"
       },
       {
         "id": "wc-savoir-connaitre-hint",
@@ -482,7 +485,8 @@
         "audioText": "comprendre",
         "options": ["comprendre", "apprendre", "surprendre", "reprendre"],
         "correctIndex": 0,
-        "explanation": "comprendre /kɔ̃.pʁɑ̃dʁ/ = понимать. Семья на -prendre: apprendre (учить), surprendre (удивлять), reprendre (возобновлять). Различай по приставке."
+        "explanation": "comprendre /kɔ̃.pʁɑ̃dʁ/ = понимать. Семья на -prendre: apprendre (учить), surprendre (удивлять), reprendre (возобновлять). Различай по приставке.",
+        "audioSrc": "audio/wl-comprendre.mp3"
       },
       {
         "id": "wc-savoir-pouvoir-trap",
@@ -510,7 +514,8 @@
         "audioText": "pouvoir",
         "options": ["pouvoir", "vouloir", "savoir", "devoir"],
         "correctIndex": 0,
-        "explanation": "pouvoir /pu.vwaʁ/ = мочь. Семья модальных на -oir: vouloir (хотеть), savoir (знать/уметь), devoir (быть должным). Различай по началу слова."
+        "explanation": "pouvoir /pu.vwaʁ/ = мочь. Семья модальных на -oir: vouloir (хотеть), savoir (знать/уметь), devoir (быть должным). Различай по началу слова.",
+        "audioSrc": "audio/wl-pouvoir.mp3"
       },
       {
         "id": "wc-savoir-apprendre-cmp",

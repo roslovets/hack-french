@@ -41,7 +41,8 @@
         "audioText": "vin",
         "options": ["vin", "vent", "pain", "bain"],
         "correctIndex": 0,
-        "explanation": "vin /vɛ̃/ (вино), vent /vɑ̃/ (ветер), pain /pɛ̃/ (хлеб), bain /bɛ̃/ (ванна). Все носовые, но гласные разные — это не омофоны, слушай звук."
+        "explanation": "vin /vɛ̃/ (вино), vent /vɑ̃/ (ветер), pain /pɛ̃/ (хлеб), bain /bɛ̃/ (ванна). Все носовые, но гласные разные — это не омофоны, слушай звук.",
+        "audioSrc": "audio/wl-boissons-vin.mp3"
       },
       {
         "id": "wc-boissons-biere-bridge",
@@ -149,7 +150,8 @@
         "audioText": "lait",
         "options": ["lait", "les", "lac", "loup"],
         "correctIndex": 0,
-        "explanation": "lait /lɛ/ (молоко), les /le/ (артикль мн.ч.), lac /lak/ (озеро), loup /lu/ (волк). Слушай гласный: у lait открытый /ɛ/, у les закрытый /e/."
+        "explanation": "lait /lɛ/ (молоко), les /le/ (артикль мн.ч.), lac /lak/ (озеро), loup /lu/ (волк). Слушай гласный: у lait открытый /ɛ/, у les закрытый /e/.",
+        "audioSrc": "audio/wl-boissons-lait.mp3"
       },
       {
         "id": "wc-boissons-soda-bridge",

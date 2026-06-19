@@ -39,7 +39,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["sport", "jeu"],
-    "caseIds": ["wc-sport"]
+    "caseIds": ["wc-sport"],
+    "audio": {
+      "isolated": "audio/wl-sport-football.mp3"
+    }
   },
   {
     "id": "wl-sport-natation",
@@ -77,7 +80,10 @@
     "frequencyRank": 1500,
     "level": "A2",
     "tags": ["sport", "eau"],
-    "caseIds": ["wc-sport"]
+    "caseIds": ["wc-sport"],
+    "audio": {
+      "isolated": "audio/wl-sport-natation.mp3"
+    }
   },
   {
     "id": "wl-sport-courir",
@@ -118,7 +124,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["sport", "mouvement"],
-    "caseIds": ["wc-sport"]
+    "caseIds": ["wc-sport"],
+    "audio": {
+      "isolated": "audio/wl-sport-courir.mp3"
+    }
   },
   {
     "id": "wl-sport-equipe",
@@ -160,7 +169,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["sport", "groupe"],
-    "caseIds": ["wc-sport"]
+    "caseIds": ["wc-sport"],
+    "audio": {
+      "isolated": "audio/wl-sport-equipe.mp3"
+    }
   },
   {
     "id": "wl-sport-match",
@@ -202,7 +214,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["sport", "competition"],
-    "caseIds": ["wc-sport"]
+    "caseIds": ["wc-sport"],
+    "audio": {
+      "isolated": "audio/wl-sport-match.mp3"
+    }
   },
   {
     "id": "wl-sport-gagner",
@@ -243,7 +258,10 @@
     "frequencyRank": 420,
     "level": "A2",
     "tags": ["sport", "resultat"],
-    "caseIds": ["wc-sport"]
+    "caseIds": ["wc-sport"],
+    "audio": {
+      "isolated": "audio/wl-sport-gagner.mp3"
+    }
   },
   {
     "id": "wl-sport-perdre",
@@ -284,7 +302,10 @@
     "frequencyRank": 410,
     "level": "A2",
     "tags": ["sport", "resultat"],
-    "caseIds": ["wc-sport"]
+    "caseIds": ["wc-sport"],
+    "audio": {
+      "isolated": "audio/wl-sport-perdre.mp3"
+    }
   },
   {
     "id": "wl-sport-ballon",
@@ -326,6 +347,9 @@
     "frequencyRank": 900,
     "level": "A2",
     "tags": ["sport", "objet"],
-    "caseIds": ["wc-sport"]
+    "caseIds": ["wc-sport"],
+    "audio": {
+      "isolated": "audio/wl-sport-ballon.mp3"
+    }
   }
 ]

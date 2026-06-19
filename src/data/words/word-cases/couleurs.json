@@ -129,7 +129,8 @@
         "audioText": "jaune",
         "options": ["jaune", "jeune", "jeûne"],
         "correctIndex": 0,
-        "explanation": "jaune /ʒon/ — жёлтый. Похожие: jeune /ʒœn/ — молодой, jeûne /ʒøn/ — пост (воздержание от еды). Звук в середине разный: /o/ против /œ/ и /ø/."
+        "explanation": "jaune /ʒon/ — жёлтый. Похожие: jeune /ʒœn/ — молодой, jeûne /ʒøn/ — пост (воздержание от еды). Звук в середине разный: /o/ против /œ/ и /ø/.",
+        "audioSrc": "audio/wl-couleurs-jaune.mp3"
       },
       {
         "id": "wc-couleurs-noir-ctx",
@@ -285,7 +286,8 @@
         "audioText": "blanc",
         "options": ["blanc", "blond", "plan"],
         "correctIndex": 0,
-        "explanation": "blanc /blɑ̃/ — белый. Похожие: blond /blɔ̃/ — светловолосый, plan /plɑ̃/ — план/карта. Разница в носовом гласном (/ɑ̃/ против /ɔ̃/) и в первом согласном."
+        "explanation": "blanc /blɑ̃/ — белый. Похожие: blond /blɔ̃/ — светловолосый, plan /plɑ̃/ — план/карта. Разница в носовом гласном (/ɑ̃/ против /ɔ̃/) и в первом согласном.",
+        "audioSrc": "audio/wl-couleurs-blanc.mp3"
       },
       {
         "id": "wc-couleurs-rouge-hint",

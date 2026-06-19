@@ -39,7 +39,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["lieux", "argent", "batiment"],
-    "caseIds": ["wc-lieux"]
+    "caseIds": ["wc-lieux"],
+    "audio": {
+      "isolated": "audio/wl-lieux-banque.mp3"
+    }
   },
   {
     "id": "wl-lieux-poste",
@@ -81,7 +84,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["lieux", "service", "batiment"],
-    "caseIds": ["wc-lieux"]
+    "caseIds": ["wc-lieux"],
+    "audio": {
+      "isolated": "audio/wl-lieux-poste.mp3"
+    }
   },
   {
     "id": "wl-lieux-hopital",
@@ -123,7 +129,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["lieux", "sante", "batiment"],
-    "caseIds": ["wc-lieux"]
+    "caseIds": ["wc-lieux"],
+    "audio": {
+      "isolated": "audio/wl-lieux-hopital.mp3"
+    }
   },
   {
     "id": "wl-lieux-eglise",
@@ -165,7 +174,10 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["lieux", "batiment"],
-    "caseIds": ["wc-lieux"]
+    "caseIds": ["wc-lieux"],
+    "audio": {
+      "isolated": "audio/wl-lieux-eglise.mp3"
+    }
   },
   {
     "id": "wl-lieux-parc",
@@ -207,7 +219,10 @@
     "frequencyRank": 500,
     "level": "A2",
     "tags": ["lieux", "nature"],
-    "caseIds": ["wc-lieux"]
+    "caseIds": ["wc-lieux"],
+    "audio": {
+      "isolated": "audio/wl-lieux-parc.mp3"
+    }
   },
   {
     "id": "wl-lieux-pont",
@@ -249,7 +264,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["lieux", "structure"],
-    "caseIds": ["wc-lieux"]
+    "caseIds": ["wc-lieux"],
+    "audio": {
+      "isolated": "audio/wl-lieux-pont.mp3"
+    }
   },
   {
     "id": "wl-lieux-place",
@@ -291,7 +309,10 @@
     "frequencyRank": 180,
     "level": "A2",
     "tags": ["lieux", "espace"],
-    "caseIds": ["wc-lieux"]
+    "caseIds": ["wc-lieux"],
+    "audio": {
+      "isolated": "audio/wl-lieux-place.mp3"
+    }
   },
   {
     "id": "wl-lieux-mairie",
@@ -333,6 +354,9 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["lieux", "service", "batiment"],
-    "caseIds": ["wc-lieux"]
+    "caseIds": ["wc-lieux"],
+    "audio": {
+      "isolated": "audio/wl-lieux-mairie.mp3"
+    }
   }
 ]

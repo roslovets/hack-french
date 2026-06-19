@@ -35,7 +35,10 @@
     "frequencyRank": 420,
     "level": "A2",
     "tags": ["transport", "voyage"],
-    "caseIds": ["wc-transport"]
+    "caseIds": ["wc-transport"],
+    "audio": {
+      "isolated": "audio/wl-transport-train.mp3"
+    }
   },
   {
     "id": "wl-transport-voiture",
@@ -73,7 +76,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["transport", "route"],
-    "caseIds": ["wc-transport"]
+    "caseIds": ["wc-transport"],
+    "audio": {
+      "isolated": "audio/wl-transport-voiture.mp3"
+    }
   },
   {
     "id": "wl-transport-bus",
@@ -107,7 +113,10 @@
     "frequencyRank": 450,
     "level": "A2",
     "tags": ["transport", "ville"],
-    "caseIds": ["wc-transport"]
+    "caseIds": ["wc-transport"],
+    "audio": {
+      "isolated": "audio/wl-transport-bus.mp3"
+    }
   },
   {
     "id": "wl-transport-velo",
@@ -141,7 +150,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["transport", "loisir"],
-    "caseIds": ["wc-transport"]
+    "caseIds": ["wc-transport"],
+    "audio": {
+      "isolated": "audio/wl-transport-velo.mp3"
+    }
   },
   {
     "id": "wl-transport-avion",
@@ -175,7 +187,10 @@
     "frequencyRank": 550,
     "level": "A2",
     "tags": ["transport", "voyage"],
-    "caseIds": ["wc-transport"]
+    "caseIds": ["wc-transport"],
+    "audio": {
+      "isolated": "audio/wl-transport-avion.mp3"
+    }
   },
   {
     "id": "wl-transport-gare",
@@ -209,7 +224,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["transport", "voyage"],
-    "caseIds": ["wc-transport"]
+    "caseIds": ["wc-transport"],
+    "audio": {
+      "isolated": "audio/wl-transport-gare.mp3"
+    }
   },
   {
     "id": "wl-transport-billet",
@@ -243,7 +261,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["transport", "voyage"],
-    "caseIds": ["wc-transport"]
+    "caseIds": ["wc-transport"],
+    "audio": {
+      "isolated": "audio/wl-transport-billet.mp3"
+    }
   },
   {
     "id": "wl-transport-partir",
@@ -276,6 +297,9 @@
     "frequencyRank": 320,
     "level": "A2",
     "tags": ["transport", "voyage"],
-    "caseIds": ["wc-transport"]
+    "caseIds": ["wc-transport"],
+    "audio": {
+      "isolated": "audio/wl-transport-partir.mp3"
+    }
   }
 ]

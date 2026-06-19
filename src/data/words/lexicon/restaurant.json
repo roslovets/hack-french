@@ -39,7 +39,10 @@
     "frequencyRank": 360,
     "level": "A2",
     "tags": ["restaurant", "lieu"],
-    "caseIds": ["wc-restaurant"]
+    "caseIds": ["wc-restaurant"],
+    "audio": {
+      "isolated": "audio/wl-restaurant-restaurant.mp3"
+    }
   },
   {
     "id": "wl-restaurant-menu",
@@ -81,7 +84,10 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["restaurant", "repas"],
-    "caseIds": ["wc-restaurant"]
+    "caseIds": ["wc-restaurant"],
+    "audio": {
+      "isolated": "audio/wl-restaurant-menu.mp3"
+    }
   },
   {
     "id": "wl-restaurant-entree",
@@ -123,7 +129,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["restaurant", "repas"],
-    "caseIds": ["wc-restaurant"]
+    "caseIds": ["wc-restaurant"],
+    "audio": {
+      "isolated": "audio/wl-restaurant-entree.mp3"
+    }
   },
   {
     "id": "wl-restaurant-dessert",
@@ -165,7 +174,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["restaurant", "repas"],
-    "caseIds": ["wc-restaurant"]
+    "caseIds": ["wc-restaurant"],
+    "audio": {
+      "isolated": "audio/wl-restaurant-dessert.mp3"
+    }
   },
   {
     "id": "wl-restaurant-reserver",
@@ -206,7 +218,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["restaurant", "action"],
-    "caseIds": ["wc-restaurant"]
+    "caseIds": ["wc-restaurant"],
+    "audio": {
+      "isolated": "audio/wl-restaurant-reserver.mp3"
+    }
   },
   {
     "id": "wl-restaurant-pourboire",
@@ -244,7 +259,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["restaurant", "argent"],
-    "caseIds": ["wc-restaurant"]
+    "caseIds": ["wc-restaurant"],
+    "audio": {
+      "isolated": "audio/wl-restaurant-pourboire.mp3"
+    }
   },
   {
     "id": "wl-restaurant-fourchette",
@@ -282,7 +300,10 @@
     "frequencyRank": 660,
     "level": "A2",
     "tags": ["restaurant", "couvert"],
-    "caseIds": ["wc-restaurant"]
+    "caseIds": ["wc-restaurant"],
+    "audio": {
+      "isolated": "audio/wl-restaurant-fourchette.mp3"
+    }
   },
   {
     "id": "wl-restaurant-assiette",
@@ -320,6 +341,9 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["restaurant", "couvert"],
-    "caseIds": ["wc-restaurant"]
+    "caseIds": ["wc-restaurant"],
+    "audio": {
+      "isolated": "audio/wl-restaurant-assiette.mp3"
+    }
   }
 ]

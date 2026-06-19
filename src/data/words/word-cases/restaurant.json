@@ -175,7 +175,8 @@
         "audioText": "dessert",
         "options": ["dessert", "désert", "déserte", "désir"],
         "correctIndex": 0,
-        "explanation": "dessert /de.sɛʁ/ (десерт, две ss = глухой /s/), désert /de.zɛʁ/ (пустыня, одна s = звонкий /z/), déserte /de.zɛʁt/ (пустынный — ж. род прил.), désir /de.ziʁ/ (желание). Десерт и пустыня различаются только звуком s/z."
+        "explanation": "dessert /de.sɛʁ/ (десерт, две ss = глухой /s/), désert /de.zɛʁ/ (пустыня, одна s = звонкий /z/), déserte /de.zɛʁt/ (пустынный — ж. род прил.), désir /de.ziʁ/ (желание). Десерт и пустыня различаются только звуком s/z.",
+        "audioSrc": "audio/wl-restaurant-dessert.mp3"
       },
       {
         "id": "wc-restaurant-reserver-ctx",

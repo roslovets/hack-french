@@ -39,7 +39,10 @@
     "frequencyRank": 180,
     "level": "A2",
     "tags": ["travail", "activité"],
-    "caseIds": ["wc-travail"]
+    "caseIds": ["wc-travail"],
+    "audio": {
+      "isolated": "audio/wl-travail-travail.mp3"
+    }
   },
   {
     "id": "wl-travail-bureau",
@@ -81,7 +84,10 @@
     "frequencyRank": 320,
     "level": "A2",
     "tags": ["travail", "lieu"],
-    "caseIds": ["wc-travail"]
+    "caseIds": ["wc-travail"],
+    "audio": {
+      "isolated": "audio/wl-travail-bureau.mp3"
+    }
   },
   {
     "id": "wl-travail-collegue",
@@ -118,7 +124,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["travail", "personne"],
-    "caseIds": ["wc-travail"]
+    "caseIds": ["wc-travail"],
+    "audio": {
+      "isolated": "audio/wl-travail-collegue.mp3"
+    }
   },
   {
     "id": "wl-travail-patron",
@@ -157,7 +166,10 @@
     "frequencyRank": 420,
     "level": "A2",
     "tags": ["travail", "personne"],
-    "caseIds": ["wc-travail"]
+    "caseIds": ["wc-travail"],
+    "audio": {
+      "isolated": "audio/wl-travail-patron.mp3"
+    }
   },
   {
     "id": "wl-travail-metier",
@@ -199,7 +211,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["travail", "activité"],
-    "caseIds": ["wc-travail"]
+    "caseIds": ["wc-travail"],
+    "audio": {
+      "isolated": "audio/wl-travail-metier.mp3"
+    }
   },
   {
     "id": "wl-travail-reunion",
@@ -241,7 +256,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["travail", "événement"],
-    "caseIds": ["wc-travail"]
+    "caseIds": ["wc-travail"],
+    "audio": {
+      "isolated": "audio/wl-travail-reunion.mp3"
+    }
   },
   {
     "id": "wl-travail-salaire",
@@ -279,7 +297,10 @@
     "frequencyRank": 500,
     "level": "A2",
     "tags": ["travail", "argent"],
-    "caseIds": ["wc-travail"]
+    "caseIds": ["wc-travail"],
+    "audio": {
+      "isolated": "audio/wl-travail-salaire.mp3"
+    }
   },
   {
     "id": "wl-travail-employe",
@@ -318,6 +339,9 @@
     "frequencyRank": 580,
     "level": "A2",
     "tags": ["travail", "personne"],
-    "caseIds": ["wc-travail"]
+    "caseIds": ["wc-travail"],
+    "audio": {
+      "isolated": "audio/wl-travail-employe.mp3"
+    }
   }
 ]

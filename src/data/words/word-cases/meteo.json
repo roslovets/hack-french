@@ -130,7 +130,8 @@
         "audioText": "soleil",
         "options": ["soleil", "sommeil", "soupir"],
         "correctIndex": 0,
-        "explanation": "soleil /sɔ.lɛj/ — солнце. Похожие: sommeil /sɔ.mɛj/ — сон (avoir sommeil — хотеть спать), soupir /su.piʁ/ — вздох. Разница в середине слова: -l- против -mm-."
+        "explanation": "soleil /sɔ.lɛj/ — солнце. Похожие: sommeil /sɔ.mɛj/ — сон (avoir sommeil — хотеть спать), soupir /su.piʁ/ — вздох. Разница в середине слова: -l- против -mm-.",
+        "audioSrc": "audio/wl-meteo-soleil.mp3"
       },
       {
         "id": "wc-meteo-vent-ctx",
@@ -158,7 +159,8 @@
         "audioText": "vent",
         "options": ["vent", "vin", "vont"],
         "correctIndex": 0,
-        "explanation": "vent /vɑ̃/ — ветер. Похожие, но другие носовые: vin /vɛ̃/ — вино, vont /vɔ̃/ — (они) идут. Это разные звуки «ан / эн / он», не омонимы."
+        "explanation": "vent /vɑ̃/ — ветер. Похожие, но другие носовые: vin /vɛ̃/ — вино, vont /vɔ̃/ — (они) идут. Это разные звуки «ан / эн / он», не омонимы.",
+        "audioSrc": "audio/wl-meteo-vent.mp3"
       },
       {
         "id": "wc-meteo-neige-ctx",

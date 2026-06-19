@@ -311,7 +311,8 @@
         "audioText": "ballon",
         "options": ["ballon", "balcon", "bâton", "bidon"],
         "correctIndex": 0,
-        "explanation": "ballon /ba.lɔ̃/ (мяч), balcon /bal.kɔ̃/ (балкон), bâton /bɑ.tɔ̃/ (палка), bidon /bi.dɔ̃/ (канистра). Это разные слова, не омофоны: слушай согласные внутри."
+        "explanation": "ballon /ba.lɔ̃/ (мяч), balcon /bal.kɔ̃/ (балкон), bâton /bɑ.tɔ̃/ (палка), bidon /bi.dɔ̃/ (канистра). Это разные слова, не омофоны: слушай согласные внутри.",
+        "audioSrc": "audio/wl-sport-ballon.mp3"
       },
       {
         "id": "wc-sport-courir-hint",

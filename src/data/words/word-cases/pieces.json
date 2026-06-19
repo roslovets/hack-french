@@ -131,7 +131,8 @@
         "audioText": "salon",
         "options": ["salon", "ballon", "talon", "jalon"],
         "correctIndex": 0,
-        "explanation": "salon /sa.lɔ̃/ — гостиная. Похоже звучат, но это другие слова: ballon /ba.lɔ̃/ — мяч, talon /ta.lɔ̃/ — каблук/пятка, jalon /ʒa.lɔ̃/ — веха. Все отличаются первым звуком."
+        "explanation": "salon /sa.lɔ̃/ — гостиная. Похоже звучат, но это другие слова: ballon /ba.lɔ̃/ — мяч, talon /ta.lɔ̃/ — каблук/пятка, jalon /ʒa.lɔ̃/ — веха. Все отличаются первым звуком.",
+        "audioSrc": "audio/wl-pieces-salon.mp3"
       },
       {
         "id": "wc-pieces-sdb-ctx",
@@ -289,7 +290,8 @@
         "audioText": "toit",
         "options": ["toit", "doigt", "droit", "trois"],
         "correctIndex": 0,
-        "explanation": "toit /twa/ — крыша. Похоже, но иначе: doigt /dwa/ — палец, droit /dʁwa/ — прямой/право, trois /tʁwa/ — три. Слышно по первому согласному."
+        "explanation": "toit /twa/ — крыша. Похоже, но иначе: doigt /dwa/ — палец, droit /dʁwa/ — прямой/право, trois /tʁwa/ — три. Слышно по первому согласному.",
+        "audioSrc": "audio/wl-pieces-toit.mp3"
       },
       {
         "id": "wc-pieces-chambre-mnemo",

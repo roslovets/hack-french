@@ -101,7 +101,8 @@
         "audioText": "bus",
         "options": ["bus", "puce", "russe", "bouc"],
         "correctIndex": 0,
-        "explanation": "Прозвучало bus /bys/ — автобус. Похожие, но разные слова: puce /pys/ (блоха) и russe /ʁys/ (русский) различаются только согласным; bouc /buk/ (козёл) — другая гласная /u/. Слушай начало и гласную."
+        "explanation": "Прозвучало bus /bys/ — автобус. Похожие, но разные слова: puce /pys/ (блоха) и russe /ʁys/ (русский) различаются только согласным; bouc /buk/ (козёл) — другая гласная /u/. Слушай начало и гласную.",
+        "audioSrc": "audio/wl-transport-bus.mp3"
       },
       {
         "id": "wc-transport-bus-cmp",

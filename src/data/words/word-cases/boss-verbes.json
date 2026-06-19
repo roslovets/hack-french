@@ -138,7 +138,8 @@
         "audioText": "savoir",
         "options": ["savoir", "savon", "saveur", "avoir"],
         "correctIndex": 0,
-        "explanation": "savoir /savwaʁ/ (знать), savon /savɔ̃/ (мыло), saveur /savœʁ/ (вкус, привкус), avoir /avwaʁ/ (иметь). Это разные слова, не омофоны: слушай начало и гласные."
+        "explanation": "savoir /savwaʁ/ (знать), savon /savɔ̃/ (мыло), saveur /savœʁ/ (вкус, привкус), avoir /avwaʁ/ (иметь). Это разные слова, не омофоны: слушай начало и гласные.",
+        "audioSrc": "audio/wl-savoir.mp3"
       },
       {
         "id": "wc-boss-verbes-comprendre-ctx",
@@ -240,7 +241,8 @@
         "audioText": "prendre",
         "options": ["prendre", "rendre", "vendre", "pendre"],
         "correctIndex": 0,
-        "explanation": "prendre /pʁɑ̃dʁ/ (брать), rendre /ʁɑ̃dʁ/ (возвращать), vendre /vɑ̃dʁ/ (продавать), pendre /pɑ̃dʁ/ (вешать). Все рифмуются на -endre, но различаются началом. Это разные слова, не омофоны."
+        "explanation": "prendre /pʁɑ̃dʁ/ (брать), rendre /ʁɑ̃dʁ/ (возвращать), vendre /vɑ̃dʁ/ (продавать), pendre /pɑ̃dʁ/ (вешать). Все рифмуются на -endre, но различаются началом. Это разные слова, не омофоны.",
+        "audioSrc": "audio/wl-prendre.mp3"
       },
       {
         "id": "wc-boss-verbes-apporter-apprendre-cmp",

@@ -38,7 +38,10 @@
     "frequencyRank": 150,
     "level": "A2",
     "tags": ["nourriture", "verbe", "repas"],
-    "caseIds": ["wc-nourriture"]
+    "caseIds": ["wc-nourriture"],
+    "audio": {
+      "isolated": "audio/wl-nourriture-manger.mp3"
+    }
   },
   {
     "id": "wl-nourriture-repas",
@@ -80,7 +83,10 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["nourriture", "repas"],
-    "caseIds": ["wc-nourriture"]
+    "caseIds": ["wc-nourriture"],
+    "audio": {
+      "isolated": "audio/wl-nourriture-repas.mp3"
+    }
   },
   {
     "id": "wl-nourriture-fruit",
@@ -122,7 +128,10 @@
     "frequencyRank": 400,
     "level": "A2",
     "tags": ["nourriture", "aliment"],
-    "caseIds": ["wc-nourriture"]
+    "caseIds": ["wc-nourriture"],
+    "audio": {
+      "isolated": "audio/wl-nourriture-fruit.mp3"
+    }
   },
   {
     "id": "wl-nourriture-legume",
@@ -164,7 +173,10 @@
     "frequencyRank": 550,
     "level": "A2",
     "tags": ["nourriture", "aliment"],
-    "caseIds": ["wc-nourriture"]
+    "caseIds": ["wc-nourriture"],
+    "audio": {
+      "isolated": "audio/wl-nourriture-legume.mp3"
+    }
   },
   {
     "id": "wl-nourriture-viande",
@@ -206,7 +218,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["nourriture", "aliment"],
-    "caseIds": ["wc-nourriture"]
+    "caseIds": ["wc-nourriture"],
+    "audio": {
+      "isolated": "audio/wl-nourriture-viande.mp3"
+    }
   },
   {
     "id": "wl-nourriture-poisson",
@@ -248,7 +263,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["nourriture", "aliment"],
-    "caseIds": ["wc-nourriture"]
+    "caseIds": ["wc-nourriture"],
+    "audio": {
+      "isolated": "audio/wl-nourriture-poisson.mp3"
+    }
   },
   {
     "id": "wl-nourriture-fromage",
@@ -290,7 +308,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["nourriture", "aliment"],
-    "caseIds": ["wc-nourriture"]
+    "caseIds": ["wc-nourriture"],
+    "audio": {
+      "isolated": "audio/wl-nourriture-fromage.mp3"
+    }
   },
   {
     "id": "wl-nourriture-plat",
@@ -332,6 +353,9 @@
     "frequencyRank": 450,
     "level": "A2",
     "tags": ["nourriture", "repas"],
-    "caseIds": ["wc-nourriture"]
+    "caseIds": ["wc-nourriture"],
+    "audio": {
+      "isolated": "audio/wl-nourriture-plat.mp3"
+    }
   }
 ]

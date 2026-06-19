@@ -31,7 +31,10 @@
     "frequencyRank": 450,
     "level": "A2",
     "tags": ["vetements", "general"],
-    "caseIds": ["wc-vetements"]
+    "caseIds": ["wc-vetements"],
+    "audio": {
+      "isolated": "audio/wl-vetements-vetement.mp3"
+    }
   },
   {
     "id": "wl-vetements-robe",
@@ -65,7 +68,10 @@
     "frequencyRank": 500,
     "level": "A2",
     "tags": ["vetements", "femme"],
-    "caseIds": ["wc-vetements"]
+    "caseIds": ["wc-vetements"],
+    "audio": {
+      "isolated": "audio/wl-vetements-robe.mp3"
+    }
   },
   {
     "id": "wl-vetements-pantalon",
@@ -99,7 +105,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["vetements", "bas"],
-    "caseIds": ["wc-vetements"]
+    "caseIds": ["wc-vetements"],
+    "audio": {
+      "isolated": "audio/wl-vetements-pantalon.mp3"
+    }
   },
   {
     "id": "wl-vetements-chemise",
@@ -133,7 +142,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["vetements", "haut"],
-    "caseIds": ["wc-vetements"]
+    "caseIds": ["wc-vetements"],
+    "audio": {
+      "isolated": "audio/wl-vetements-chemise.mp3"
+    }
   },
   {
     "id": "wl-vetements-chaussure",
@@ -167,7 +179,10 @@
     "frequencyRank": 550,
     "level": "A2",
     "tags": ["vetements", "pieds"],
-    "caseIds": ["wc-vetements"]
+    "caseIds": ["wc-vetements"],
+    "audio": {
+      "isolated": "audio/wl-vetements-chaussure.mp3"
+    }
   },
   {
     "id": "wl-vetements-manteau",
@@ -201,7 +216,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["vetements", "hiver"],
-    "caseIds": ["wc-vetements"]
+    "caseIds": ["wc-vetements"],
+    "audio": {
+      "isolated": "audio/wl-vetements-manteau.mp3"
+    }
   },
   {
     "id": "wl-vetements-pull",
@@ -235,7 +253,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["vetements", "haut"],
-    "caseIds": ["wc-vetements"]
+    "caseIds": ["wc-vetements"],
+    "audio": {
+      "isolated": "audio/wl-vetements-pull.mp3"
+    }
   },
   {
     "id": "wl-vetements-porter",
@@ -268,6 +289,9 @@
     "frequencyRank": 200,
     "level": "A2",
     "tags": ["vetements", "verbe"],
-    "caseIds": ["wc-vetements"]
+    "caseIds": ["wc-vetements"],
+    "audio": {
+      "isolated": "audio/wl-vetements-porter.mp3"
+    }
   }
 ]

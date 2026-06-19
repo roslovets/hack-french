@@ -35,7 +35,10 @@
     "frequencyRank": 320,
     "level": "A2",
     "tags": ["corps", "anatomie"],
-    "caseIds": ["wc-corps"]
+    "caseIds": ["wc-corps"],
+    "audio": {
+      "isolated": "audio/wl-corps-corps.mp3"
+    }
   },
   {
     "id": "wl-corps-tete",
@@ -69,7 +72,10 @@
     "frequencyRank": 280,
     "level": "A2",
     "tags": ["corps", "anatomie"],
-    "caseIds": ["wc-corps"]
+    "caseIds": ["wc-corps"],
+    "audio": {
+      "isolated": "audio/wl-corps-tete.mp3"
+    }
   },
   {
     "id": "wl-corps-main",
@@ -107,7 +113,10 @@
     "frequencyRank": 200,
     "level": "A2",
     "tags": ["corps", "anatomie"],
-    "caseIds": ["wc-corps"]
+    "caseIds": ["wc-corps"],
+    "audio": {
+      "isolated": "audio/wl-corps-main.mp3"
+    }
   },
   {
     "id": "wl-corps-pied",
@@ -141,7 +150,10 @@
     "frequencyRank": 260,
     "level": "A2",
     "tags": ["corps", "anatomie"],
-    "caseIds": ["wc-corps"]
+    "caseIds": ["wc-corps"],
+    "audio": {
+      "isolated": "audio/wl-corps-pied.mp3"
+    }
   },
   {
     "id": "wl-corps-dos",
@@ -175,7 +187,10 @@
     "frequencyRank": 500,
     "level": "A2",
     "tags": ["corps", "anatomie"],
-    "caseIds": ["wc-corps"]
+    "caseIds": ["wc-corps"],
+    "audio": {
+      "isolated": "audio/wl-corps-dos.mp3"
+    }
   },
   {
     "id": "wl-corps-ventre",
@@ -209,7 +224,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["corps", "santé"],
-    "caseIds": ["wc-corps"]
+    "caseIds": ["wc-corps"],
+    "audio": {
+      "isolated": "audio/wl-corps-ventre.mp3"
+    }
   },
   {
     "id": "wl-corps-malade",
@@ -246,7 +264,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["corps", "santé"],
-    "caseIds": ["wc-corps"]
+    "caseIds": ["wc-corps"],
+    "audio": {
+      "isolated": "audio/wl-corps-malade.mp3"
+    }
   },
   {
     "id": "wl-corps-medecin",
@@ -284,6 +305,9 @@
     "frequencyRank": 450,
     "level": "A2",
     "tags": ["corps", "santé"],
-    "caseIds": ["wc-corps"]
+    "caseIds": ["wc-corps"],
+    "audio": {
+      "isolated": "audio/wl-corps-medecin.mp3"
+    }
   }
 ]

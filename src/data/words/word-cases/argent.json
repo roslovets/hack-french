@@ -106,7 +106,8 @@
         "audioText": "prix",
         "options": ["prix", "prie", "pris", "prit"],
         "correctIndex": 0,
-        "explanation": "Все четыре звучат как /pʁi/, но это разные слова: prix (цена), prie (от prier — молить/просить), pris/prit (формы от prendre — брать). На слух они одинаковы — различает только смысл и написание; нужное здесь — prix."
+        "explanation": "Все четыре звучат как /pʁi/, но это разные слова: prix (цена), prie (от prier — молить/просить), pris/prit (формы от prendre — брать). На слух они одинаковы — различает только смысл и написание; нужное здесь — prix.",
+        "audioSrc": "audio/wl-argent-prix.mp3"
       },
       {
         "id": "wc-argent-acheter-ctx",

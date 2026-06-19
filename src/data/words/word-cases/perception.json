@@ -332,7 +332,8 @@
         "audioText": "voir",
         "options": ["voir", "boire", "soir", "noir"],
         "correctIndex": 0,
-        "explanation": "Одинаковая концовка /-waʁ/, различается начало: voir /vwaʁ/ (видеть), boire /bwaʁ/ (пить), soir /swaʁ/ (вечер), noir /nwaʁ/ (чёрный)."
+        "explanation": "Одинаковая концовка /-waʁ/, различается начало: voir /vwaʁ/ (видеть), boire /bwaʁ/ (пить), soir /swaʁ/ (вечер), noir /nwaʁ/ (чёрный).",
+        "audioSrc": "audio/voir.mp3"
       },
       {
         "id": "wc-perception-sentir-ctx",
@@ -423,7 +424,8 @@
         "audioText": "sentir",
         "options": ["sentir", "mentir", "sortir", "partir"],
         "correctIndex": 0,
-        "explanation": "Все оканчиваются на /-tiʁ/, но начало разное: sentir /sɑ̃.tiʁ/ (чувствовать), mentir /mɑ̃.tiʁ/ (врать), sortir /sɔʁ.tiʁ/ (выходить), partir /paʁ.tiʁ/ (уезжать)."
+        "explanation": "Все оканчиваются на /-tiʁ/, но начало разное: sentir /sɑ̃.tiʁ/ (чувствовать), mentir /mɑ̃.tiʁ/ (врать), sortir /sɔʁ.tiʁ/ (выходить), partir /paʁ.tiʁ/ (уезжать).",
+        "audioSrc": "audio/wl-perception-sentir.mp3"
       },
       {
         "id": "wc-perception-remarquer-bridge",
@@ -513,7 +515,8 @@
         "audioText": "toucher",
         "options": ["toucher", "tousser", "doucher", "bouger"],
         "correctIndex": 0,
-        "explanation": "Похожие по звучанию, но разные слова: toucher /tu.ʃe/ (трогать), tousser /tu.se/ (кашлять), doucher /du.ʃe/ (обливать; se doucher — принимать душ), bouger /bu.ʒe/ (двигаться)."
+        "explanation": "Похожие по звучанию, но разные слова: toucher /tu.ʃe/ (трогать), tousser /tu.se/ (кашлять), doucher /du.ʃe/ (обливать; se doucher — принимать душ), bouger /bu.ʒe/ (двигаться).",
+        "audioSrc": "audio/wl-perception-toucher.mp3"
       },
       {
         "id": "wc-perception-toucher-hint",

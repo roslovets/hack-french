@@ -35,7 +35,10 @@
     "frequencyRank": 110,
     "level": "A1",
     "tags": ["cafe", "boisson", "lieu"],
-    "caseIds": ["wc-cafe"]
+    "caseIds": ["wc-cafe"],
+    "audio": {
+      "isolated": "audio/wl-cafe-cafe.mp3"
+    }
   },
   {
     "id": "wl-cafe-the",
@@ -69,7 +72,10 @@
     "frequencyRank": 450,
     "level": "A1",
     "tags": ["cafe", "boisson"],
-    "caseIds": ["wc-cafe"]
+    "caseIds": ["wc-cafe"],
+    "audio": {
+      "isolated": "audio/wl-cafe-the.mp3"
+    }
   },
   {
     "id": "wl-cafe-eau",
@@ -107,7 +113,10 @@
     "frequencyRank": 90,
     "level": "A1",
     "tags": ["cafe", "boisson"],
-    "caseIds": ["wc-cafe"]
+    "caseIds": ["wc-cafe"],
+    "audio": {
+      "isolated": "audio/wl-cafe-eau.mp3"
+    }
   },
   {
     "id": "wl-cafe-addition",
@@ -145,7 +154,10 @@
     "frequencyRank": 700,
     "level": "A1",
     "tags": ["cafe", "argent", "faux-ami"],
-    "caseIds": ["wc-cafe"]
+    "caseIds": ["wc-cafe"],
+    "audio": {
+      "isolated": "audio/wl-cafe-addition.mp3"
+    }
   },
   {
     "id": "wl-cafe-commander",
@@ -178,7 +190,10 @@
     "frequencyRank": 500,
     "level": "A1",
     "tags": ["cafe", "verbe", "faux-ami"],
-    "caseIds": ["wc-cafe"]
+    "caseIds": ["wc-cafe"],
+    "audio": {
+      "isolated": "audio/wl-cafe-commander.mp3"
+    }
   },
   {
     "id": "wl-cafe-serveur",
@@ -213,7 +228,10 @@
     "frequencyRank": 800,
     "level": "A1",
     "tags": ["cafe", "personne", "metier"],
-    "caseIds": ["wc-cafe"]
+    "caseIds": ["wc-cafe"],
+    "audio": {
+      "isolated": "audio/wl-cafe-serveur.mp3"
+    }
   },
   {
     "id": "wl-cafe-terrasse",
@@ -247,7 +265,10 @@
     "frequencyRank": 900,
     "level": "A1",
     "tags": ["cafe", "lieu"],
-    "caseIds": ["wc-cafe"]
+    "caseIds": ["wc-cafe"],
+    "audio": {
+      "isolated": "audio/wl-cafe-terrasse.mp3"
+    }
   },
   {
     "id": "wl-cafe-sucre",
@@ -281,6 +302,9 @@
     "frequencyRank": 650,
     "level": "A1",
     "tags": ["cafe", "nourriture"],
-    "caseIds": ["wc-cafe"]
+    "caseIds": ["wc-cafe"],
+    "audio": {
+      "isolated": "audio/wl-cafe-sucre.mp3"
+    }
   }
 ]

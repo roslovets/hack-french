@@ -235,7 +235,8 @@
         "audioText": "pompier",
         "options": ["pompier", "papier", "pompiste", "panier"],
         "correctIndex": 0,
-        "explanation": "pompier /pɔ̃.pje/ (пожарный), papier /pa.pje/ (бумага), pompiste /pɔ̃.pist/ (заправщик на АЗС), panier /pa.nje/ (корзина). Это разные слова — слушай начало и носовой звук."
+        "explanation": "pompier /pɔ̃.pje/ (пожарный), papier /pa.pje/ (бумага), pompiste /pɔ̃.pist/ (заправщик на АЗС), panier /pa.nje/ (корзина). Это разные слова — слушай начало и носовой звук.",
+        "audioSrc": "audio/wl-metiers-pompier.mp3"
       },
       {
         "id": "wc-metiers-facteur-ctx",
@@ -263,7 +264,8 @@
         "audioText": "facteur",
         "options": ["facteur", "facture", "lecteur", "vecteur"],
         "correctIndex": 0,
-        "explanation": "facteur /fak.tœʁ/ (почтальон, фактор), facture /fak.tyʁ/ (счёт), lecteur /lɛk.tœʁ/ (читатель), vecteur /vɛk.tœʁ/ (вектор). Это разные слова — слушай гласные."
+        "explanation": "facteur /fak.tœʁ/ (почтальон, фактор), facture /fak.tyʁ/ (счёт), lecteur /lɛk.tœʁ/ (читатель), vecteur /vɛk.tœʁ/ (вектор). Это разные слова — слушай гласные.",
+        "audioSrc": "audio/wl-metiers-facteur.mp3"
       },
       {
         "id": "wc-metiers-facteur-trap",

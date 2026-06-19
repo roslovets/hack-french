@@ -39,7 +39,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["boissons", "alcool"],
-    "caseIds": ["wc-boissons"]
+    "caseIds": ["wc-boissons"],
+    "audio": {
+      "isolated": "audio/wl-boissons-vin.mp3"
+    }
   },
   {
     "id": "wl-boissons-biere",
@@ -81,7 +84,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["boissons", "alcool"],
-    "caseIds": ["wc-boissons"]
+    "caseIds": ["wc-boissons"],
+    "audio": {
+      "isolated": "audio/wl-boissons-biere.mp3"
+    }
   },
   {
     "id": "wl-boissons-jus",
@@ -123,7 +129,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["boissons", "fruit"],
-    "caseIds": ["wc-boissons"]
+    "caseIds": ["wc-boissons"],
+    "audio": {
+      "isolated": "audio/wl-boissons-jus.mp3"
+    }
   },
   {
     "id": "wl-boissons-lait",
@@ -165,7 +174,10 @@
     "frequencyRank": 500,
     "level": "A2",
     "tags": ["boissons", "petit-dejeuner"],
-    "caseIds": ["wc-boissons"]
+    "caseIds": ["wc-boissons"],
+    "audio": {
+      "isolated": "audio/wl-boissons-lait.mp3"
+    }
   },
   {
     "id": "wl-boissons-soda",
@@ -203,7 +215,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["boissons", "sans-alcool"],
-    "caseIds": ["wc-boissons"]
+    "caseIds": ["wc-boissons"],
+    "audio": {
+      "isolated": "audio/wl-boissons-soda.mp3"
+    }
   },
   {
     "id": "wl-boissons-alcool",
@@ -241,7 +256,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["boissons", "alcool"],
-    "caseIds": ["wc-boissons"]
+    "caseIds": ["wc-boissons"],
+    "audio": {
+      "isolated": "audio/wl-boissons-alcool.mp3"
+    }
   },
   {
     "id": "wl-boissons-bouteille",
@@ -283,7 +301,10 @@
     "frequencyRank": 660,
     "level": "A2",
     "tags": ["boissons", "contenant"],
-    "caseIds": ["wc-boissons"]
+    "caseIds": ["wc-boissons"],
+    "audio": {
+      "isolated": "audio/wl-boissons-bouteille.mp3"
+    }
   },
   {
     "id": "wl-boissons-verre",
@@ -325,6 +346,9 @@
     "frequencyRank": 450,
     "level": "A2",
     "tags": ["boissons", "contenant"],
-    "caseIds": ["wc-boissons"]
+    "caseIds": ["wc-boissons"],
+    "audio": {
+      "isolated": "audio/wl-boissons-verre.mp3"
+    }
   }
 ]

@@ -146,7 +146,8 @@
         "audioText": "pain",
         "options": ["pain", "bain", "vin", "main"],
         "correctIndex": 0,
-        "explanation": "У всех один носовой /ɛ̃/, различается первый согласный: pain /pɛ̃/ (хлеб), bain /bɛ̃/ (ванна), vin /vɛ̃/ (вино), main /mɛ̃/ (рука)."
+        "explanation": "У всех один носовой /ɛ̃/, различается первый согласный: pain /pɛ̃/ (хлеб), bain /bɛ̃/ (ванна), vin /vɛ̃/ (вино), main /mɛ̃/ (рука).",
+        "audioSrc": "audio/pain.mp3"
       },
       {
         "id": "wc-boulangerie-croissant-ctx",
@@ -186,7 +187,8 @@
         "audioText": "croissant",
         "options": ["croissant", "croissance", "croisé", "croix"],
         "correctIndex": 0,
-        "explanation": "Все начинаются с «croi-», но звучат по-разному: croissant /kʁwa.sɑ̃/ (круассан), croissance /kʁwa.sɑ̃s/ (рост), croisé /kʁwa.ze/ (скрещённый), croix /kʁwa/ (крест)."
+        "explanation": "Все начинаются с «croi-», но звучат по-разному: croissant /kʁwa.sɑ̃/ (круассан), croissance /kʁwa.sɑ̃s/ (рост), croisé /kʁwa.ze/ (скрещённый), croix /kʁwa/ (крест).",
+        "audioSrc": "audio/wl-boulangerie-croissant.mp3"
       },
       {
         "id": "wc-boulangerie-gateau-ctx",

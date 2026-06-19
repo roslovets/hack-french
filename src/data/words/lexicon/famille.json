@@ -31,7 +31,10 @@
     "frequencyRank": 110,
     "level": "A1",
     "tags": ["famille", "personnes"],
-    "caseIds": ["wc-famille"]
+    "caseIds": ["wc-famille"],
+    "audio": {
+      "isolated": "audio/wl-famille-famille.mp3"
+    }
   },
   {
     "id": "wl-famille-mere",
@@ -65,7 +68,10 @@
     "frequencyRank": 130,
     "level": "A1",
     "tags": ["famille", "personnes"],
-    "caseIds": ["wc-famille"]
+    "caseIds": ["wc-famille"],
+    "audio": {
+      "isolated": "audio/wl-famille-mere.mp3"
+    }
   },
   {
     "id": "wl-famille-pere",
@@ -99,7 +105,10 @@
     "frequencyRank": 135,
     "level": "A1",
     "tags": ["famille", "personnes"],
-    "caseIds": ["wc-famille"]
+    "caseIds": ["wc-famille"],
+    "audio": {
+      "isolated": "audio/wl-famille-pere.mp3"
+    }
   },
   {
     "id": "wl-famille-fils",
@@ -133,7 +142,10 @@
     "frequencyRank": 160,
     "level": "A1",
     "tags": ["famille", "personnes"],
-    "caseIds": ["wc-famille"]
+    "caseIds": ["wc-famille"],
+    "audio": {
+      "isolated": "audio/wl-famille-fils.mp3"
+    }
   },
   {
     "id": "wl-famille-fille",
@@ -167,7 +179,10 @@
     "frequencyRank": 150,
     "level": "A1",
     "tags": ["famille", "personnes"],
-    "caseIds": ["wc-famille"]
+    "caseIds": ["wc-famille"],
+    "audio": {
+      "isolated": "audio/wl-famille-fille.mp3"
+    }
   },
   {
     "id": "wl-famille-frere",
@@ -201,7 +216,10 @@
     "frequencyRank": 175,
     "level": "A1",
     "tags": ["famille", "personnes"],
-    "caseIds": ["wc-famille"]
+    "caseIds": ["wc-famille"],
+    "audio": {
+      "isolated": "audio/wl-famille-frere.mp3"
+    }
   },
   {
     "id": "wl-famille-soeur",
@@ -235,7 +253,10 @@
     "frequencyRank": 180,
     "level": "A1",
     "tags": ["famille", "personnes"],
-    "caseIds": ["wc-famille"]
+    "caseIds": ["wc-famille"],
+    "audio": {
+      "isolated": "audio/wl-famille-soeur.mp3"
+    }
   },
   {
     "id": "wl-famille-enfant",
@@ -269,6 +290,9 @@
     "frequencyRank": 120,
     "level": "A1",
     "tags": ["famille", "personnes"],
-    "caseIds": ["wc-famille"]
+    "caseIds": ["wc-famille"],
+    "audio": {
+      "isolated": "audio/wl-famille-enfant.mp3"
+    }
   }
 ]

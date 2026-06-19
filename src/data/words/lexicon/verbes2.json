@@ -38,7 +38,10 @@
     "frequencyRank": 40,
     "level": "A2",
     "tags": ["verbes2", "verbe", "action"],
-    "caseIds": ["wc-verbes2"]
+    "caseIds": ["wc-verbes2"],
+    "audio": {
+      "isolated": "audio/wl-verbes2-faire.mp3"
+    }
   },
   {
     "id": "wl-verbes2-dire",
@@ -79,7 +82,10 @@
     "frequencyRank": 60,
     "level": "A2",
     "tags": ["verbes2", "verbe", "parole"],
-    "caseIds": ["wc-verbes2"]
+    "caseIds": ["wc-verbes2"],
+    "audio": {
+      "isolated": "audio/wl-verbes2-dire.mp3"
+    }
   },
   {
     "id": "wl-verbes2-donner",
@@ -120,7 +126,10 @@
     "frequencyRank": 120,
     "level": "A2",
     "tags": ["verbes2", "verbe", "transfert"],
-    "caseIds": ["wc-verbes2"]
+    "caseIds": ["wc-verbes2"],
+    "audio": {
+      "isolated": "audio/wl-verbes2-donner.mp3"
+    }
   },
   {
     "id": "wl-verbes2-mettre",
@@ -161,7 +170,10 @@
     "frequencyRank": 130,
     "level": "A2",
     "tags": ["verbes2", "verbe", "action"],
-    "caseIds": ["wc-verbes2"]
+    "caseIds": ["wc-verbes2"],
+    "audio": {
+      "isolated": "audio/wl-verbes2-mettre.mp3"
+    }
   },
   {
     "id": "wl-verbes2-parler",
@@ -202,7 +214,10 @@
     "frequencyRank": 110,
     "level": "A2",
     "tags": ["verbes2", "verbe", "parole"],
-    "caseIds": ["wc-verbes2"]
+    "caseIds": ["wc-verbes2"],
+    "audio": {
+      "isolated": "audio/wl-verbes2-parler.mp3"
+    }
   },
   {
     "id": "wl-verbes2-trouver",
@@ -243,7 +258,10 @@
     "frequencyRank": 150,
     "level": "A2",
     "tags": ["verbes2", "verbe", "cognition"],
-    "caseIds": ["wc-verbes2"]
+    "caseIds": ["wc-verbes2"],
+    "audio": {
+      "isolated": "audio/wl-verbes2-trouver.mp3"
+    }
   },
   {
     "id": "wl-verbes2-demander",
@@ -284,7 +302,10 @@
     "frequencyRank": 140,
     "level": "A2",
     "tags": ["verbes2", "verbe", "parole"],
-    "caseIds": ["wc-verbes2"]
+    "caseIds": ["wc-verbes2"],
+    "audio": {
+      "isolated": "audio/wl-verbes2-demander.mp3"
+    }
   },
   {
     "id": "wl-verbes2-devenir",
@@ -325,6 +346,9 @@
     "frequencyRank": 250,
     "level": "A2",
     "tags": ["verbes2", "verbe", "etat"],
-    "caseIds": ["wc-verbes2"]
+    "caseIds": ["wc-verbes2"],
+    "audio": {
+      "isolated": "audio/wl-verbes2-devenir.mp3"
+    }
   }
 ]

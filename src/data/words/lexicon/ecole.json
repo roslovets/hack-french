@@ -35,7 +35,10 @@
     "frequencyRank": 130,
     "level": "A1",
     "tags": ["ecole", "lieu", "enfant"],
-    "caseIds": ["wc-ecole"]
+    "caseIds": ["wc-ecole"],
+    "audio": {
+      "isolated": "audio/wl-ecole-ecole.mp3"
+    }
   },
   {
     "id": "wl-ecole-maitresse",
@@ -74,7 +77,10 @@
     "frequencyRank": 700,
     "level": "A1",
     "tags": ["ecole", "personne", "metier", "faux-ami"],
-    "caseIds": ["wc-ecole"]
+    "caseIds": ["wc-ecole"],
+    "audio": {
+      "isolated": "audio/wl-ecole-maitresse.mp3"
+    }
   },
   {
     "id": "wl-ecole-eleve",
@@ -108,7 +114,10 @@
     "frequencyRank": 420,
     "level": "A1",
     "tags": ["ecole", "personne", "enfant"],
-    "caseIds": ["wc-ecole"]
+    "caseIds": ["wc-ecole"],
+    "audio": {
+      "isolated": "audio/wl-ecole-eleve.mp3"
+    }
   },
   {
     "id": "wl-ecole-cartable",
@@ -142,7 +151,10 @@
     "frequencyRank": 1100,
     "level": "A1",
     "tags": ["ecole", "objet", "enfant"],
-    "caseIds": ["wc-ecole"]
+    "caseIds": ["wc-ecole"],
+    "audio": {
+      "isolated": "audio/wl-ecole-cartable.mp3"
+    }
   },
   {
     "id": "wl-ecole-devoirs",
@@ -181,7 +193,10 @@
     "frequencyRank": 600,
     "level": "A1",
     "tags": ["ecole", "etude", "enfant"],
-    "caseIds": ["wc-ecole"]
+    "caseIds": ["wc-ecole"],
+    "audio": {
+      "isolated": "audio/wl-ecole-devoirs.mp3"
+    }
   },
   {
     "id": "wl-ecole-cantine",
@@ -219,7 +234,10 @@
     "frequencyRank": 900,
     "level": "A1",
     "tags": ["ecole", "lieu", "nourriture"],
-    "caseIds": ["wc-ecole"]
+    "caseIds": ["wc-ecole"],
+    "audio": {
+      "isolated": "audio/wl-ecole-cantine.mp3"
+    }
   },
   {
     "id": "wl-ecole-recreation",
@@ -258,7 +276,10 @@
     "frequencyRank": 1000,
     "level": "A1",
     "tags": ["ecole", "temps", "enfant"],
-    "caseIds": ["wc-ecole"]
+    "caseIds": ["wc-ecole"],
+    "audio": {
+      "isolated": "audio/wl-ecole-recreation.mp3"
+    }
   },
   {
     "id": "wl-ecole-note",
@@ -292,6 +313,9 @@
     "frequencyRank": 350,
     "level": "A1",
     "tags": ["ecole", "etude", "faux-ami"],
-    "caseIds": ["wc-ecole"]
+    "caseIds": ["wc-ecole"],
+    "audio": {
+      "isolated": "audio/wl-ecole-note.mp3"
+    }
   }
 ]

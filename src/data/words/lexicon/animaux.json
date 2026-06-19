@@ -39,7 +39,10 @@
     "frequencyRank": 220,
     "level": "A1",
     "tags": ["animaux", "domestique"],
-    "caseIds": ["wc-animaux"]
+    "caseIds": ["wc-animaux"],
+    "audio": {
+      "isolated": "audio/wl-animaux-chat.mp3"
+    }
   },
   {
     "id": "wl-animaux-chien",
@@ -81,7 +84,10 @@
     "frequencyRank": 210,
     "level": "A1",
     "tags": ["animaux", "domestique"],
-    "caseIds": ["wc-animaux"]
+    "caseIds": ["wc-animaux"],
+    "audio": {
+      "isolated": "audio/wl-animaux-chien.mp3"
+    }
   },
   {
     "id": "wl-animaux-oiseau",
@@ -123,7 +129,10 @@
     "frequencyRank": 380,
     "level": "A1",
     "tags": ["animaux", "nature"],
-    "caseIds": ["wc-animaux"]
+    "caseIds": ["wc-animaux"],
+    "audio": {
+      "isolated": "audio/wl-animaux-oiseau.mp3"
+    }
   },
   {
     "id": "wl-animaux-cheval",
@@ -165,7 +174,10 @@
     "frequencyRank": 410,
     "level": "A1",
     "tags": ["animaux", "ferme"],
-    "caseIds": ["wc-animaux"]
+    "caseIds": ["wc-animaux"],
+    "audio": {
+      "isolated": "audio/wl-animaux-cheval.mp3"
+    }
   },
   {
     "id": "wl-animaux-vache",
@@ -203,7 +215,10 @@
     "frequencyRank": 470,
     "level": "A1",
     "tags": ["animaux", "ferme"],
-    "caseIds": ["wc-animaux"]
+    "caseIds": ["wc-animaux"],
+    "audio": {
+      "isolated": "audio/wl-animaux-vache.mp3"
+    }
   },
   {
     "id": "wl-animaux-lapin",
@@ -241,7 +256,10 @@
     "frequencyRank": 540,
     "level": "A1",
     "tags": ["animaux", "domestique"],
-    "caseIds": ["wc-animaux"]
+    "caseIds": ["wc-animaux"],
+    "audio": {
+      "isolated": "audio/wl-animaux-lapin.mp3"
+    }
   },
   {
     "id": "wl-animaux-animal",
@@ -283,7 +301,10 @@
     "frequencyRank": 250,
     "level": "A1",
     "tags": ["animaux", "general"],
-    "caseIds": ["wc-animaux"]
+    "caseIds": ["wc-animaux"],
+    "audio": {
+      "isolated": "audio/wl-animaux-animal.mp3"
+    }
   },
   {
     "id": "wl-animaux-poule",
@@ -321,6 +342,9 @@
     "frequencyRank": 620,
     "level": "A1",
     "tags": ["animaux", "ferme"],
-    "caseIds": ["wc-animaux"]
+    "caseIds": ["wc-animaux"],
+    "audio": {
+      "isolated": "audio/wl-animaux-poule.mp3"
+    }
   }
 ]

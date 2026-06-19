@@ -39,7 +39,10 @@
     "frequencyRank": 260,
     "level": "A2",
     "tags": ["argent", "finance"],
-    "caseIds": ["wc-argent"]
+    "caseIds": ["wc-argent"],
+    "audio": {
+      "isolated": "audio/wl-argent-argent.mp3"
+    }
   },
   {
     "id": "wl-argent-prix",
@@ -81,7 +84,10 @@
     "frequencyRank": 300,
     "level": "A2",
     "tags": ["argent", "commerce"],
-    "caseIds": ["wc-argent"]
+    "caseIds": ["wc-argent"],
+    "audio": {
+      "isolated": "audio/wl-argent-prix.mp3"
+    }
   },
   {
     "id": "wl-argent-acheter",
@@ -122,7 +128,10 @@
     "frequencyRank": 320,
     "level": "A2",
     "tags": ["argent", "commerce"],
-    "caseIds": ["wc-argent"]
+    "caseIds": ["wc-argent"],
+    "audio": {
+      "isolated": "audio/wl-argent-acheter.mp3"
+    }
   },
   {
     "id": "wl-argent-payer",
@@ -163,7 +172,10 @@
     "frequencyRank": 340,
     "level": "A2",
     "tags": ["argent", "commerce"],
-    "caseIds": ["wc-argent"]
+    "caseIds": ["wc-argent"],
+    "audio": {
+      "isolated": "audio/wl-argent-payer.mp3"
+    }
   },
   {
     "id": "wl-argent-cher",
@@ -205,7 +217,10 @@
     "frequencyRank": 360,
     "level": "A2",
     "tags": ["argent", "qualite"],
-    "caseIds": ["wc-argent"]
+    "caseIds": ["wc-argent"],
+    "audio": {
+      "isolated": "audio/wl-argent-cher.mp3"
+    }
   },
   {
     "id": "wl-argent-magasin",
@@ -247,7 +262,10 @@
     "frequencyRank": 400,
     "level": "A2",
     "tags": ["argent", "commerce"],
-    "caseIds": ["wc-argent"]
+    "caseIds": ["wc-argent"],
+    "audio": {
+      "isolated": "audio/wl-argent-magasin.mp3"
+    }
   },
   {
     "id": "wl-argent-carte",
@@ -289,7 +307,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["argent", "objet"],
-    "caseIds": ["wc-argent"]
+    "caseIds": ["wc-argent"],
+    "audio": {
+      "isolated": "audio/wl-argent-carte.mp3"
+    }
   },
   {
     "id": "wl-argent-monnaie",
@@ -331,6 +352,9 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["argent", "finance"],
-    "caseIds": ["wc-argent"]
+    "caseIds": ["wc-argent"],
+    "audio": {
+      "isolated": "audio/wl-argent-monnaie.mp3"
+    }
   }
 ]

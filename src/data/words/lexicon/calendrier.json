@@ -39,7 +39,10 @@
     "frequencyRank": 90,
     "level": "A1",
     "tags": ["calendrier", "temps"],
-    "caseIds": ["wc-calendrier"]
+    "caseIds": ["wc-calendrier"],
+    "audio": {
+      "isolated": "audio/wl-calendrier-jour.mp3"
+    }
   },
   {
     "id": "wl-calendrier-semaine",
@@ -81,7 +84,10 @@
     "frequencyRank": 260,
     "level": "A1",
     "tags": ["calendrier", "temps"],
-    "caseIds": ["wc-calendrier"]
+    "caseIds": ["wc-calendrier"],
+    "audio": {
+      "isolated": "audio/wl-calendrier-semaine.mp3"
+    }
   },
   {
     "id": "wl-calendrier-mois",
@@ -123,7 +129,10 @@
     "frequencyRank": 230,
     "level": "A1",
     "tags": ["calendrier", "temps"],
-    "caseIds": ["wc-calendrier"]
+    "caseIds": ["wc-calendrier"],
+    "audio": {
+      "isolated": "audio/wl-calendrier-mois.mp3"
+    }
   },
   {
     "id": "wl-calendrier-annee",
@@ -165,7 +174,10 @@
     "frequencyRank": 150,
     "level": "A1",
     "tags": ["calendrier", "temps"],
-    "caseIds": ["wc-calendrier"]
+    "caseIds": ["wc-calendrier"],
+    "audio": {
+      "isolated": "audio/wl-calendrier-annee.mp3"
+    }
   },
   {
     "id": "wl-calendrier-matin",
@@ -207,7 +219,10 @@
     "frequencyRank": 300,
     "level": "A1",
     "tags": ["calendrier", "moment-du-jour"],
-    "caseIds": ["wc-calendrier"]
+    "caseIds": ["wc-calendrier"],
+    "audio": {
+      "isolated": "audio/wl-calendrier-matin.mp3"
+    }
   },
   {
     "id": "wl-calendrier-soir",
@@ -249,7 +264,10 @@
     "frequencyRank": 320,
     "level": "A1",
     "tags": ["calendrier", "moment-du-jour"],
-    "caseIds": ["wc-calendrier"]
+    "caseIds": ["wc-calendrier"],
+    "audio": {
+      "isolated": "audio/wl-calendrier-soir.mp3"
+    }
   },
   {
     "id": "wl-calendrier-hier",
@@ -290,7 +308,10 @@
     "frequencyRank": 280,
     "level": "A1",
     "tags": ["calendrier", "temps"],
-    "caseIds": ["wc-calendrier"]
+    "caseIds": ["wc-calendrier"],
+    "audio": {
+      "isolated": "audio/wl-calendrier-hier.mp3"
+    }
   },
   {
     "id": "wl-calendrier-demain",
@@ -331,6 +352,9 @@
     "frequencyRank": 270,
     "level": "A1",
     "tags": ["calendrier", "temps"],
-    "caseIds": ["wc-calendrier"]
+    "caseIds": ["wc-calendrier"],
+    "audio": {
+      "isolated": "audio/wl-calendrier-demain.mp3"
+    }
   }
 ]

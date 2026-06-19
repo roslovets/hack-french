@@ -40,7 +40,10 @@
     "frequencyRank": 40,
     "level": "A2",
     "tags": ["connaissance", "verbe"],
-    "caseIds": ["wc-savoir"]
+    "caseIds": ["wc-savoir"],
+    "audio": {
+      "isolated": "audio/wl-savoir.mp3"
+    }
   },
   {
     "id": "wl-connaitre",
@@ -74,7 +77,10 @@
     "frequencyRank": 95,
     "level": "A2",
     "tags": ["connaissance", "verbe"],
-    "caseIds": ["wc-savoir"]
+    "caseIds": ["wc-savoir"],
+    "audio": {
+      "isolated": "audio/wl-connaitre.mp3"
+    }
   },
   {
     "id": "wl-comprendre",
@@ -112,7 +118,10 @@
     "frequencyRank": 110,
     "level": "A2",
     "tags": ["connaissance", "verbe"],
-    "caseIds": ["wc-savoir"]
+    "caseIds": ["wc-savoir"],
+    "audio": {
+      "isolated": "audio/wl-comprendre.mp3"
+    }
   },
   {
     "id": "wl-pouvoir",
@@ -150,7 +159,10 @@
     "frequencyRank": 25,
     "level": "A2",
     "tags": ["connaissance", "verbe", "modal"],
-    "caseIds": ["wc-savoir"]
+    "caseIds": ["wc-savoir"],
+    "audio": {
+      "isolated": "audio/wl-pouvoir.mp3"
+    }
   },
   {
     "id": "wl-apprendre",
@@ -188,7 +200,10 @@
     "frequencyRank": 160,
     "level": "A2",
     "tags": ["connaissance", "verbe"],
-    "caseIds": ["wc-savoir"]
+    "caseIds": ["wc-savoir"],
+    "audio": {
+      "isolated": "audio/wl-apprendre.mp3"
+    }
   },
   {
     "id": "wl-savoir-penser",
@@ -231,7 +246,10 @@
     "frequencyRank": 70,
     "level": "A2",
     "tags": ["connaissance", "verbe"],
-    "caseIds": ["wc-savoir"]
+    "caseIds": ["wc-savoir"],
+    "audio": {
+      "isolated": "audio/wl-savoir-penser.mp3"
+    }
   },
   {
     "id": "wl-savoir-croire",
@@ -273,7 +291,10 @@
     "frequencyRank": 90,
     "level": "A2",
     "tags": ["connaissance", "verbe"],
-    "caseIds": ["wc-savoir"]
+    "caseIds": ["wc-savoir"],
+    "audio": {
+      "isolated": "audio/wl-savoir-croire.mp3"
+    }
   },
   {
     "id": "wl-savoir-oublier",
@@ -315,6 +336,9 @@
     "frequencyRank": 220,
     "level": "A2",
     "tags": ["connaissance", "verbe"],
-    "caseIds": ["wc-savoir"]
+    "caseIds": ["wc-savoir"],
+    "audio": {
+      "isolated": "audio/wl-savoir-oublier.mp3"
+    }
   }
 ]

@@ -38,7 +38,10 @@
     "frequencyRank": 60,
     "level": "A2",
     "tags": ["questions", "interrogatif"],
-    "caseIds": ["wc-questions"]
+    "caseIds": ["wc-questions"],
+    "audio": {
+      "isolated": "audio/wl-questions-qui.mp3"
+    }
   },
   {
     "id": "wl-questions-quoi",
@@ -79,7 +82,10 @@
     "frequencyRank": 130,
     "level": "A2",
     "tags": ["questions", "interrogatif"],
-    "caseIds": ["wc-questions"]
+    "caseIds": ["wc-questions"],
+    "audio": {
+      "isolated": "audio/wl-questions-quoi.mp3"
+    }
   },
   {
     "id": "wl-questions-ou",
@@ -120,7 +126,10 @@
     "frequencyRank": 90,
     "level": "A2",
     "tags": ["questions", "lieu"],
-    "caseIds": ["wc-questions"]
+    "caseIds": ["wc-questions"],
+    "audio": {
+      "isolated": "audio/wl-questions-ou.mp3"
+    }
   },
   {
     "id": "wl-questions-quand",
@@ -161,7 +170,10 @@
     "frequencyRank": 150,
     "level": "A2",
     "tags": ["questions", "temps"],
-    "caseIds": ["wc-questions"]
+    "caseIds": ["wc-questions"],
+    "audio": {
+      "isolated": "audio/wl-questions-quand.mp3"
+    }
   },
   {
     "id": "wl-questions-comment",
@@ -202,7 +214,10 @@
     "frequencyRank": 140,
     "level": "A2",
     "tags": ["questions", "maniere"],
-    "caseIds": ["wc-questions"]
+    "caseIds": ["wc-questions"],
+    "audio": {
+      "isolated": "audio/wl-questions-comment.mp3"
+    }
   },
   {
     "id": "wl-questions-pourquoi",
@@ -243,7 +258,10 @@
     "frequencyRank": 200,
     "level": "A2",
     "tags": ["questions", "cause"],
-    "caseIds": ["wc-questions"]
+    "caseIds": ["wc-questions"],
+    "audio": {
+      "isolated": "audio/wl-questions-pourquoi.mp3"
+    }
   },
   {
     "id": "wl-questions-combien",
@@ -284,7 +302,10 @@
     "frequencyRank": 320,
     "level": "A2",
     "tags": ["questions", "quantite"],
-    "caseIds": ["wc-questions"]
+    "caseIds": ["wc-questions"],
+    "audio": {
+      "isolated": "audio/wl-questions-combien.mp3"
+    }
   },
   {
     "id": "wl-questions-quel",
@@ -326,6 +347,9 @@
     "frequencyRank": 110,
     "level": "A2",
     "tags": ["questions", "interrogatif"],
-    "caseIds": ["wc-questions"]
+    "caseIds": ["wc-questions"],
+    "audio": {
+      "isolated": "audio/wl-questions-quel.mp3"
+    }
   }
 ]

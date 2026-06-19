@@ -105,7 +105,8 @@
         "audioText": "lire",
         "options": ["lire", "rire", "dire", "lier"],
         "correctIndex": 0,
-        "explanation": "lire /liʁ/ (читать), rire /ʁiʁ/ (смеяться), dire /diʁ/ (говорить, сказать), lier /lje/ (связывать). Это разные слова, не омофоны: слушай первый согласный (l/r/d) и гласную."
+        "explanation": "lire /liʁ/ (читать), rire /ʁiʁ/ (смеяться), dire /diʁ/ (говорить, сказать), lier /lje/ (связывать). Это разные слова, не омофоны: слушай первый согласный (l/r/d) и гласную.",
+        "audioSrc": "audio/wl-loisirs-lire.mp3"
       },
       {
         "id": "wc-boss-leisure-film-ctx",
@@ -312,7 +313,8 @@
         "audioText": "ballon",
         "options": ["ballon", "bâton", "balcon", "bidon"],
         "correctIndex": 0,
-        "explanation": "ballon /balɔ̃/ (мяч), bâton /bɑtɔ̃/ (палка), balcon /balkɔ̃/ (балкон), bidon /bidɔ̃/ (канистра). Все оканчиваются на -on, но различаются серединой слова. Это разные слова, не омофоны."
+        "explanation": "ballon /balɔ̃/ (мяч), bâton /bɑtɔ̃/ (палка), balcon /balkɔ̃/ (балкон), bidon /bidɔ̃/ (канистра). Все оканчиваются на -on, но различаются серединой слова. Это разные слова, не омофоны.",
+        "audioSrc": "audio/wl-sport-ballon.mp3"
       },
       {
         "id": "wc-boss-leisure-equipe-ctx",

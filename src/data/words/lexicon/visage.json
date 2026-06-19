@@ -36,7 +36,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["visage", "anatomie"],
-    "caseIds": ["wc-visage"]
+    "caseIds": ["wc-visage"],
+    "audio": {
+      "isolated": "audio/wl-visage-visage.mp3"
+    }
   },
   {
     "id": "wl-visage-yeux",
@@ -75,7 +78,10 @@
     "frequencyRank": 260,
     "level": "A2",
     "tags": ["visage", "anatomie"],
-    "caseIds": ["wc-visage"]
+    "caseIds": ["wc-visage"],
+    "audio": {
+      "isolated": "audio/wl-visage-yeux.mp3"
+    }
   },
   {
     "id": "wl-visage-nez",
@@ -113,7 +119,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["visage", "anatomie"],
-    "caseIds": ["wc-visage"]
+    "caseIds": ["wc-visage"],
+    "audio": {
+      "isolated": "audio/wl-visage-nez.mp3"
+    }
   },
   {
     "id": "wl-visage-bouche",
@@ -151,7 +160,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["visage", "anatomie"],
-    "caseIds": ["wc-visage"]
+    "caseIds": ["wc-visage"],
+    "audio": {
+      "isolated": "audio/wl-visage-bouche.mp3"
+    }
   },
   {
     "id": "wl-visage-oreille",
@@ -189,7 +201,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["visage", "anatomie"],
-    "caseIds": ["wc-visage"]
+    "caseIds": ["wc-visage"],
+    "audio": {
+      "isolated": "audio/wl-visage-oreille.mp3"
+    }
   },
   {
     "id": "wl-visage-cheveux",
@@ -228,7 +243,10 @@
     "frequencyRank": 470,
     "level": "A2",
     "tags": ["visage", "anatomie"],
-    "caseIds": ["wc-visage"]
+    "caseIds": ["wc-visage"],
+    "audio": {
+      "isolated": "audio/wl-visage-cheveux.mp3"
+    }
   },
   {
     "id": "wl-visage-dent",
@@ -266,7 +284,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["visage", "anatomie"],
-    "caseIds": ["wc-visage"]
+    "caseIds": ["wc-visage"],
+    "audio": {
+      "isolated": "audio/wl-visage-dent.mp3"
+    }
   },
   {
     "id": "wl-visage-joue",
@@ -304,6 +325,9 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["visage", "anatomie"],
-    "caseIds": ["wc-visage"]
+    "caseIds": ["wc-visage"],
+    "audio": {
+      "isolated": "audio/wl-visage-joue.mp3"
+    }
   }
 ]

@@ -39,7 +39,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["meubles", "logement"],
-    "caseIds": ["wc-meubles"]
+    "caseIds": ["wc-meubles"],
+    "audio": {
+      "isolated": "audio/wl-meubles-meuble.mp3"
+    }
   },
   {
     "id": "wl-meubles-canape",
@@ -77,7 +80,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["meubles", "salon"],
-    "caseIds": ["wc-meubles"]
+    "caseIds": ["wc-meubles"],
+    "audio": {
+      "isolated": "audio/wl-meubles-canape.mp3"
+    }
   },
   {
     "id": "wl-meubles-armoire",
@@ -115,7 +121,10 @@
     "frequencyRank": 680,
     "level": "A2",
     "tags": ["meubles", "rangement"],
-    "caseIds": ["wc-meubles"]
+    "caseIds": ["wc-meubles"],
+    "audio": {
+      "isolated": "audio/wl-meubles-armoire.mp3"
+    }
   },
   {
     "id": "wl-meubles-frigo",
@@ -153,7 +162,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["meubles", "cuisine"],
-    "caseIds": ["wc-meubles"]
+    "caseIds": ["wc-meubles"],
+    "audio": {
+      "isolated": "audio/wl-meubles-frigo.mp3"
+    }
   },
   {
     "id": "wl-meubles-four",
@@ -191,7 +203,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["meubles", "cuisine"],
-    "caseIds": ["wc-meubles"]
+    "caseIds": ["wc-meubles"],
+    "audio": {
+      "isolated": "audio/wl-meubles-four.mp3"
+    }
   },
   {
     "id": "wl-meubles-lampe",
@@ -229,7 +244,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["meubles", "salon"],
-    "caseIds": ["wc-meubles"]
+    "caseIds": ["wc-meubles"],
+    "audio": {
+      "isolated": "audio/wl-meubles-lampe.mp3"
+    }
   },
   {
     "id": "wl-meubles-tapis",
@@ -267,7 +285,10 @@
     "frequencyRank": 660,
     "level": "A2",
     "tags": ["meubles", "salon"],
-    "caseIds": ["wc-meubles"]
+    "caseIds": ["wc-meubles"],
+    "audio": {
+      "isolated": "audio/wl-meubles-tapis.mp3"
+    }
   },
   {
     "id": "wl-meubles-rideau",
@@ -305,6 +326,9 @@
     "frequencyRank": 690,
     "level": "A2",
     "tags": ["meubles", "fenetre"],
-    "caseIds": ["wc-meubles"]
+    "caseIds": ["wc-meubles"],
+    "audio": {
+      "isolated": "audio/wl-meubles-rideau.mp3"
+    }
   }
 ]

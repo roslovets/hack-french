@@ -129,7 +129,8 @@
         "audioText": "patron",
         "options": ["patron", "citron", "carton", "poltron"],
         "correctIndex": 0,
-        "explanation": "patron /pa.tʁɔ̃/ (начальник), citron /si.tʁɔ̃/ (лимон), carton /kaʁ.tɔ̃/ (картон, коробка), poltron /pɔl.tʁɔ̃/ (трус). Это разные слова, не омофоны: все на -on, но различаются началом."
+        "explanation": "patron /pa.tʁɔ̃/ (начальник), citron /si.tʁɔ̃/ (лимон), carton /kaʁ.tɔ̃/ (картон, коробка), poltron /pɔl.tʁɔ̃/ (трус). Это разные слова, не омофоны: все на -on, но различаются началом.",
+        "audioSrc": "audio/wl-travail-patron.mp3"
       },
       {
         "id": "wc-travail-metier-ctx",
@@ -218,7 +219,8 @@
         "audioText": "salaire",
         "options": ["salaire", "solaire", "salière", "colère"],
         "correctIndex": 0,
-        "explanation": "salaire /sa.lɛʁ/ (зарплата), solaire /sɔ.lɛʁ/ (солнечный), salière /sa.ljɛʁ/ (солонка), colère /kɔ.lɛʁ/ (гнев). Это разные слова, не омофоны: слушай первые звуки и середину."
+        "explanation": "salaire /sa.lɛʁ/ (зарплата), solaire /sɔ.lɛʁ/ (солнечный), salière /sa.ljɛʁ/ (солонка), colère /kɔ.lɛʁ/ (гнев). Это разные слова, не омофоны: слушай первые звуки и середину.",
+        "audioSrc": "audio/wl-travail-salaire.mp3"
       },
       {
         "id": "wc-travail-employe-ctx",

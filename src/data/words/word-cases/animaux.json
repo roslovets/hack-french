@@ -41,7 +41,8 @@
         "audioText": "chat",
         "options": ["chaud", "chat", "char", "chou"],
         "correctIndex": 1,
-        "explanation": "chat /ʃa/ — кот. Похожие: chaud /ʃo/ — горячий, char /ʃaʁ/ — танк/повозка, chou /ʃu/ — капуста. Все начинаются на ch /ʃ/, но гласные разные."
+        "explanation": "chat /ʃa/ — кот. Похожие: chaud /ʃo/ — горячий, char /ʃaʁ/ — танк/повозка, chou /ʃu/ — капуста. Все начинаются на ch /ʃ/, но гласные разные.",
+        "audioSrc": "audio/wl-animaux-chat.mp3"
       },
       {
         "id": "wc-animaux-chien-ctx",

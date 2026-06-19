@@ -177,7 +177,8 @@
         "audioText": "salaire",
         "options": ["salaire", "salière", "salade", "célèbre"],
         "correctIndex": 0,
-        "explanation": "salaire /sa.lɛʁ/ (зарплата), salière /sa.ljɛʁ/ (солонка), salade /sa.lad/ (салат), célèbre /se.lɛbʁ/ (знаменитый). Слова близки по звучанию, но разные: слушай конец слова. Не путать зарплату salaire с солонкой salière."
+        "explanation": "salaire /sa.lɛʁ/ (зарплата), salière /sa.ljɛʁ/ (солонка), salade /sa.lad/ (салат), célèbre /se.lɛbʁ/ (знаменитый). Слова близки по звучанию, но разные: слушай конец слова. Не путать зарплату salaire с солонкой salière.",
+        "audioSrc": "audio/wl-travail-salaire.mp3"
       },
       {
         "id": "wc-boss-work-salaire-sort",
@@ -353,7 +354,8 @@
         "audioText": "pompier",
         "options": ["pompier", "plombier", "panier", "pompon"],
         "correctIndex": 0,
-        "explanation": "pompier /pɔ̃.pje/ (пожарный), plombier /plɔ̃.bje/ (сантехник), panier /pa.nje/ (корзина), pompon /pɔ̃.pɔ̃/ (помпон). Особенно легко спутать pompier и plombier: огонь тушит pompier, трубы чинит plombier."
+        "explanation": "pompier /pɔ̃.pje/ (пожарный), plombier /plɔ̃.bje/ (сантехник), panier /pa.nje/ (корзина), pompon /pɔ̃.pɔ̃/ (помпон). Особенно легко спутать pompier и plombier: огонь тушит pompier, трубы чинит plombier.",
+        "audioSrc": "audio/wl-metiers-pompier.mp3"
       },
       {
         "id": "wc-boss-work-facteur-trap",

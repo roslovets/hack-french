@@ -87,7 +87,8 @@
         "audioText": "soleil",
         "options": ["soleil", "sommeil", "pareil", "bouteille"],
         "correctIndex": 0,
-        "explanation": "soleil /sɔ.lɛj/ (солнце), sommeil /sɔ.mɛj/ (сон), pareil /pa.ʁɛj/ (такой же), bouteille /bu.tɛj/ (бутылка). Все оканчиваются на -eil/-eille /ɛj/ и звучат похоже. soleil различает середина с -l- (не -mm-, как в sommeil)."
+        "explanation": "soleil /sɔ.lɛj/ (солнце), sommeil /sɔ.mɛj/ (сон), pareil /pa.ʁɛj/ (такой же), bouteille /bu.tɛj/ (бутылка). Все оканчиваются на -eil/-eille /ɛj/ и звучат похоже. soleil различает середина с -l- (не -mm-, как в sommeil).",
+        "audioSrc": "audio/wl-meteo-soleil.mp3"
       },
       {
         "id": "wc-boss-weather-vent-cmp",
@@ -234,7 +235,8 @@
         "audioText": "hiver",
         "options": ["hiver", "hier", "vert", "ouvert"],
         "correctIndex": 0,
-        "explanation": "hiver /i.vɛʁ/ (зима) — два слога. Похожи: hier /jɛʁ/ (вчера) — один слог, vert /vɛʁ/ (зелёный), ouvert /u.vɛʁ/ (открытый). h в hiver немое, поэтому говорят «en hiver», «l'hiver»."
+        "explanation": "hiver /i.vɛʁ/ (зима) — два слога. Похожи: hier /jɛʁ/ (вчера) — один слог, vert /vɛʁ/ (зелёный), ouvert /u.vɛʁ/ (открытый). h в hiver немое, поэтому говорят «en hiver», «l'hiver».",
+        "audioSrc": "audio/wl-saisons-hiver.mp3"
       },
       {
         "id": "wc-boss-weather-feuille-ctx",

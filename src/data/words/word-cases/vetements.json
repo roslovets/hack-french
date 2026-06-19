@@ -217,7 +217,8 @@
         "audioText": "manteau",
         "options": ["manteau", "marteau", "gâteau", "château"],
         "correctIndex": 0,
-        "explanation": "Все оканчиваются на /-to/ и звучат похоже: manteau /mɑ̃to/ (пальто), marteau /maʁto/ (молоток), gâteau /ɡɑto/ (торт), château /ʃɑto/ (замок). Это разные слова, не омофоны: слушай начало."
+        "explanation": "Все оканчиваются на /-to/ и звучат похоже: manteau /mɑ̃to/ (пальто), marteau /maʁto/ (молоток), gâteau /ɡɑto/ (торт), château /ʃɑto/ (замок). Это разные слова, не омофоны: слушай начало.",
+        "audioSrc": "audio/wl-vetements-manteau.mp3"
       },
       {
         "id": "wc-vetements-pull-bridge",
@@ -241,7 +242,8 @@
         "audioText": "pull",
         "options": ["pull", "bulle", "nul", "pile"],
         "correctIndex": 0,
-        "explanation": "pull /pyl/ (свитер), bulle /byl/ (пузырь), nul /nyl/ (нулевой; разг. «никакой»), pile /pil/ (батарейка; стопка). Это разные слова: слушай гласный и концовку."
+        "explanation": "pull /pyl/ (свитер), bulle /byl/ (пузырь), nul /nyl/ (нулевой; разг. «никакой»), pile /pil/ (батарейка; стопка). Это разные слова: слушай гласный и концовку.",
+        "audioSrc": "audio/wl-vetements-pull.mp3"
       },
       {
         "id": "wc-vetements-porter-ctx",

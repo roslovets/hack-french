@@ -91,7 +91,8 @@
         "audioText": "déranger",
         "options": ["déranger", "ranger", "arranger", "mélanger"],
         "correctIndex": 0,
-        "explanation": "déranger /deʁɑ̃ʒe/ (беспокоить, мешать), ranger /ʁɑ̃ʒe/ (убирать, раскладывать по местам), arranger /aʁɑ̃ʒe/ (устраивать, улаживать), mélanger /melɑ̃ʒe/ (смешивать). Это разные слова, не омофоны: они рифмуются на -anger, но различаются началом."
+        "explanation": "déranger /deʁɑ̃ʒe/ (беспокоить, мешать), ranger /ʁɑ̃ʒe/ (убирать, раскладывать по местам), arranger /aʁɑ̃ʒe/ (устраивать, улаживать), mélanger /melɑ̃ʒe/ (смешивать). Это разные слова, не омофоны: они рифмуются на -anger, но различаются началом.",
+        "audioSrc": "audio/wl-politesse-deranger.mp3"
       },
       {
         "id": "wc-boss-ecole-politesse-eleve-cmp",
@@ -394,7 +395,8 @@
         "audioText": "école",
         "options": ["école", "étole", "étoile", "écolo"],
         "correctIndex": 0,
-        "explanation": "école /ekɔl/ (школа), étole /etɔl/ (палантин, накидка), étoile /etwal/ (звезда), écolo /ekɔlo/ (разг. «эколог, зелёный»). Это разные слова, не омофоны: слушай гласные и концовку."
+        "explanation": "école /ekɔl/ (школа), étole /etɔl/ (палантин, накидка), étoile /etwal/ (звезда), écolo /ekɔlo/ (разг. «эколог, зелёный»). Это разные слова, не омофоны: слушай гласные и концовку.",
+        "audioSrc": "audio/wl-ecole-ecole.mp3"
       },
       {
         "id": "wc-boss-ecole-politesse-vouloir-hint",

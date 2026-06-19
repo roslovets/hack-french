@@ -39,7 +39,10 @@
     "frequencyRank": 360,
     "level": "A2",
     "tags": ["loisirs", "activite"],
-    "caseIds": ["wc-loisirs"]
+    "caseIds": ["wc-loisirs"],
+    "audio": {
+      "isolated": "audio/wl-loisirs-sport.mp3"
+    }
   },
   {
     "id": "wl-loisirs-musique",
@@ -81,7 +84,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["loisirs", "art"],
-    "caseIds": ["wc-loisirs"]
+    "caseIds": ["wc-loisirs"],
+    "audio": {
+      "isolated": "audio/wl-loisirs-musique.mp3"
+    }
   },
   {
     "id": "wl-loisirs-film",
@@ -123,7 +129,10 @@
     "frequencyRank": 420,
     "level": "A2",
     "tags": ["loisirs", "art"],
-    "caseIds": ["wc-loisirs"]
+    "caseIds": ["wc-loisirs"],
+    "audio": {
+      "isolated": "audio/wl-loisirs-film.mp3"
+    }
   },
   {
     "id": "wl-loisirs-livre",
@@ -165,7 +174,10 @@
     "frequencyRank": 300,
     "level": "A2",
     "tags": ["loisirs", "objet"],
-    "caseIds": ["wc-loisirs"]
+    "caseIds": ["wc-loisirs"],
+    "audio": {
+      "isolated": "audio/wl-loisirs-livre.mp3"
+    }
   },
   {
     "id": "wl-loisirs-jouer",
@@ -206,7 +218,10 @@
     "frequencyRank": 250,
     "level": "A2",
     "tags": ["loisirs", "verbe-action"],
-    "caseIds": ["wc-loisirs"]
+    "caseIds": ["wc-loisirs"],
+    "audio": {
+      "isolated": "audio/wl-loisirs-jouer.mp3"
+    }
   },
   {
     "id": "wl-loisirs-lire",
@@ -247,7 +262,10 @@
     "frequencyRank": 230,
     "level": "A2",
     "tags": ["loisirs", "verbe-action"],
-    "caseIds": ["wc-loisirs"]
+    "caseIds": ["wc-loisirs"],
+    "audio": {
+      "isolated": "audio/wl-loisirs-lire.mp3"
+    }
   },
   {
     "id": "wl-loisirs-vacances",
@@ -290,7 +308,10 @@
     "frequencyRank": 500,
     "level": "A2",
     "tags": ["loisirs", "temps"],
-    "caseIds": ["wc-loisirs"]
+    "caseIds": ["wc-loisirs"],
+    "audio": {
+      "isolated": "audio/wl-loisirs-vacances.mp3"
+    }
   },
   {
     "id": "wl-loisirs-fete",
@@ -332,6 +353,9 @@
     "frequencyRank": 460,
     "level": "A2",
     "tags": ["loisirs", "social"],
-    "caseIds": ["wc-loisirs"]
+    "caseIds": ["wc-loisirs"],
+    "audio": {
+      "isolated": "audio/wl-loisirs-fete.mp3"
+    }
   }
 ]

@@ -39,7 +39,10 @@
     "frequencyRank": 90,
     "level": "A1",
     "tags": ["adjectifs", "taille"],
-    "caseIds": ["wc-adjectifs"]
+    "caseIds": ["wc-adjectifs"],
+    "audio": {
+      "isolated": "audio/wl-adjectifs-grand.mp3"
+    }
   },
   {
     "id": "wl-adjectifs-petit",
@@ -81,7 +84,10 @@
     "frequencyRank": 100,
     "level": "A1",
     "tags": ["adjectifs", "taille"],
-    "caseIds": ["wc-adjectifs"]
+    "caseIds": ["wc-adjectifs"],
+    "audio": {
+      "isolated": "audio/wl-adjectifs-petit.mp3"
+    }
   },
   {
     "id": "wl-adjectifs-bon",
@@ -123,7 +129,10 @@
     "frequencyRank": 80,
     "level": "A1",
     "tags": ["adjectifs", "qualite"],
-    "caseIds": ["wc-adjectifs"]
+    "caseIds": ["wc-adjectifs"],
+    "audio": {
+      "isolated": "audio/wl-adjectifs-bon.mp3"
+    }
   },
   {
     "id": "wl-adjectifs-mauvais",
@@ -165,7 +174,10 @@
     "frequencyRank": 290,
     "level": "A1",
     "tags": ["adjectifs", "qualite"],
-    "caseIds": ["wc-adjectifs"]
+    "caseIds": ["wc-adjectifs"],
+    "audio": {
+      "isolated": "audio/wl-adjectifs-mauvais.mp3"
+    }
   },
   {
     "id": "wl-adjectifs-beau",
@@ -207,7 +219,10 @@
     "frequencyRank": 160,
     "level": "A1",
     "tags": ["adjectifs", "apparence"],
-    "caseIds": ["wc-adjectifs"]
+    "caseIds": ["wc-adjectifs"],
+    "audio": {
+      "isolated": "audio/wl-adjectifs-beau.mp3"
+    }
   },
   {
     "id": "wl-adjectifs-nouveau",
@@ -249,7 +264,10 @@
     "frequencyRank": 130,
     "level": "A1",
     "tags": ["adjectifs", "etat"],
-    "caseIds": ["wc-adjectifs"]
+    "caseIds": ["wc-adjectifs"],
+    "audio": {
+      "isolated": "audio/wl-adjectifs-nouveau.mp3"
+    }
   },
   {
     "id": "wl-adjectifs-vieux",
@@ -291,7 +309,10 @@
     "frequencyRank": 200,
     "level": "A1",
     "tags": ["adjectifs", "age"],
-    "caseIds": ["wc-adjectifs"]
+    "caseIds": ["wc-adjectifs"],
+    "audio": {
+      "isolated": "audio/wl-adjectifs-vieux.mp3"
+    }
   },
   {
     "id": "wl-adjectifs-jeune",
@@ -332,6 +353,9 @@
     "frequencyRank": 210,
     "level": "A1",
     "tags": ["adjectifs", "age"],
-    "caseIds": ["wc-adjectifs"]
+    "caseIds": ["wc-adjectifs"],
+    "audio": {
+      "isolated": "audio/wl-adjectifs-jeune.mp3"
+    }
   }
 ]

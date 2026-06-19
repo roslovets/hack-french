@@ -39,7 +39,10 @@
     "frequencyRank": 90,
     "level": "A2",
     "tags": ["meteo", "nature"],
-    "caseIds": ["wc-meteo"]
+    "caseIds": ["wc-meteo"],
+    "audio": {
+      "isolated": "audio/wl-meteo-temps.mp3"
+    }
   },
   {
     "id": "wl-meteo-pluie",
@@ -81,7 +84,10 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["meteo", "nature"],
-    "caseIds": ["wc-meteo"]
+    "caseIds": ["wc-meteo"],
+    "audio": {
+      "isolated": "audio/wl-meteo-pluie.mp3"
+    }
   },
   {
     "id": "wl-meteo-soleil",
@@ -123,7 +129,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["meteo", "nature"],
-    "caseIds": ["wc-meteo"]
+    "caseIds": ["wc-meteo"],
+    "audio": {
+      "isolated": "audio/wl-meteo-soleil.mp3"
+    }
   },
   {
     "id": "wl-meteo-vent",
@@ -165,7 +174,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["meteo", "nature"],
-    "caseIds": ["wc-meteo"]
+    "caseIds": ["wc-meteo"],
+    "audio": {
+      "isolated": "audio/wl-meteo-vent.mp3"
+    }
   },
   {
     "id": "wl-meteo-neige",
@@ -207,7 +219,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["meteo", "nature"],
-    "caseIds": ["wc-meteo"]
+    "caseIds": ["wc-meteo"],
+    "audio": {
+      "isolated": "audio/wl-meteo-neige.mp3"
+    }
   },
   {
     "id": "wl-meteo-froid",
@@ -249,7 +264,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["meteo", "temperature"],
-    "caseIds": ["wc-meteo"]
+    "caseIds": ["wc-meteo"],
+    "audio": {
+      "isolated": "audio/wl-meteo-froid.mp3"
+    }
   },
   {
     "id": "wl-meteo-chaud",
@@ -291,7 +309,10 @@
     "frequencyRank": 470,
     "level": "A2",
     "tags": ["meteo", "temperature"],
-    "caseIds": ["wc-meteo"]
+    "caseIds": ["wc-meteo"],
+    "audio": {
+      "isolated": "audio/wl-meteo-chaud.mp3"
+    }
   },
   {
     "id": "wl-meteo-nuage",
@@ -333,6 +354,9 @@
     "frequencyRank": 680,
     "level": "A2",
     "tags": ["meteo", "nature"],
-    "caseIds": ["wc-meteo"]
+    "caseIds": ["wc-meteo"],
+    "audio": {
+      "isolated": "audio/wl-meteo-nuage.mp3"
+    }
   }
 ]

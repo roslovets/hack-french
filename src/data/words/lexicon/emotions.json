@@ -40,7 +40,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["emotions", "positif"],
-    "caseIds": ["wc-emotions"]
+    "caseIds": ["wc-emotions"],
+    "audio": {
+      "isolated": "audio/wl-emotions-heureux.mp3"
+    }
   },
   {
     "id": "wl-emotions-triste",
@@ -81,7 +84,10 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["emotions", "negatif"],
-    "caseIds": ["wc-emotions"]
+    "caseIds": ["wc-emotions"],
+    "audio": {
+      "isolated": "audio/wl-emotions-triste.mp3"
+    }
   },
   {
     "id": "wl-emotions-content",
@@ -124,7 +130,10 @@
     "frequencyRank": 410,
     "level": "A2",
     "tags": ["emotions", "positif"],
-    "caseIds": ["wc-emotions"]
+    "caseIds": ["wc-emotions"],
+    "audio": {
+      "isolated": "audio/wl-emotions-content.mp3"
+    }
   },
   {
     "id": "wl-emotions-fatigue",
@@ -166,7 +175,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["emotions", "etat"],
-    "caseIds": ["wc-emotions"]
+    "caseIds": ["wc-emotions"],
+    "audio": {
+      "isolated": "audio/wl-emotions-fatigue.mp3"
+    }
   },
   {
     "id": "wl-emotions-peur",
@@ -208,7 +220,10 @@
     "frequencyRank": 430,
     "level": "A2",
     "tags": ["emotions", "negatif"],
-    "caseIds": ["wc-emotions"]
+    "caseIds": ["wc-emotions"],
+    "audio": {
+      "isolated": "audio/wl-emotions-peur.mp3"
+    }
   },
   {
     "id": "wl-emotions-aimer",
@@ -249,7 +264,10 @@
     "frequencyRank": 150,
     "level": "A2",
     "tags": ["emotions", "verbe"],
-    "caseIds": ["wc-emotions"]
+    "caseIds": ["wc-emotions"],
+    "audio": {
+      "isolated": "audio/wl-emotions-aimer.mp3"
+    }
   },
   {
     "id": "wl-emotions-enerve",
@@ -291,7 +309,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["emotions", "negatif"],
-    "caseIds": ["wc-emotions"]
+    "caseIds": ["wc-emotions"],
+    "audio": {
+      "isolated": "audio/wl-emotions-enerve.mp3"
+    }
   },
   {
     "id": "wl-emotions-surpris",
@@ -333,6 +354,9 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["emotions", "etat"],
-    "caseIds": ["wc-emotions"]
+    "caseIds": ["wc-emotions"],
+    "audio": {
+      "isolated": "audio/wl-emotions-surpris.mp3"
+    }
   }
 ]

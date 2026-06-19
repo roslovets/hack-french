@@ -42,12 +42,12 @@ export default function SoundTwinTask({ step, boss, completed, onComplete, shuff
   const correctShuffledIndex = options.findIndex((o) => o.originalIndex === step.correctIndex);
   const canPlay = Boolean(step.audioSrc) || speechAvailable();
 
-  function play(rate?: number) {
+  function play() {
     if (step.audioSrc) {
       const audio = new Audio(import.meta.env.BASE_URL + step.audioSrc);
-      audio.play().catch(() => speak(step.audioText, { rate }));
+      audio.play().catch(() => speak(step.audioText));
     } else {
-      speak(step.audioText, { rate });
+      speak(step.audioText);
     }
   }
 
@@ -69,11 +69,8 @@ export default function SoundTwinTask({ step, boss, completed, onComplete, shuff
 
       {canPlay ? (
         <Stack direction="row" spacing={1} sx={{ mb: 2.5 }}>
-          <Button variant="contained" startIcon={<VolumeUpOutlined />} onClick={() => play()}>
+          <Button variant="contained" startIcon={<VolumeUpOutlined />} onClick={play}>
             Прослушать
-          </Button>
-          <Button color="inherit" onClick={() => play(0.6)} sx={{ color: 'text.secondary' }}>
-            Медленно
           </Button>
         </Stack>
       ) : (

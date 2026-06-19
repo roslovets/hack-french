@@ -171,7 +171,8 @@
         "audioText": "four",
         "options": ["four", "fort", "fou", "fourchette"],
         "correctIndex": 0,
-        "explanation": "four /fuʁ/ — духовка. Похоже звучат: fort /fɔʁ/ (сильный), fou /fu/ (сумасшедший), fourchette /fuʁ.ʃɛt/ (вилка). Это не омофоны — слушай конец слова."
+        "explanation": "four /fuʁ/ — духовка. Похоже звучат: fort /fɔʁ/ (сильный), fou /fu/ (сумасшедший), fourchette /fuʁ.ʃɛt/ (вилка). Это не омофоны — слушай конец слова.",
+        "audioSrc": "audio/wl-meubles-four.mp3"
       },
       {
         "id": "wc-meubles-lampe-bridge",
@@ -231,7 +232,8 @@
         "audioText": "tapis",
         "options": ["tapis", "tableau", "tapir", "tarte"],
         "correctIndex": 0,
-        "explanation": "tapis /ta.pi/ — ковёр. Похоже звучат: tapir /ta.piʁ/ (тапир, с -r на конце), tableau /ta.blo/ (картина), tarte /taʁt/ (пирог). Конечная -s в tapis немая."
+        "explanation": "tapis /ta.pi/ — ковёр. Похоже звучат: tapir /ta.piʁ/ (тапир, с -r на конце), tableau /ta.blo/ (картина), tarte /taʁt/ (пирог). Конечная -s в tapis немая.",
+        "audioSrc": "audio/wl-meubles-tapis.mp3"
       },
       {
         "id": "wc-meubles-rideau-ctx",

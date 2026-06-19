@@ -42,7 +42,10 @@
     "frequencyRank": 65,
     "level": "A2",
     "tags": ["verbe-action", "quotidien", "prendre"],
-    "caseIds": ["wc-prendre"]
+    "caseIds": ["wc-prendre"],
+    "audio": {
+      "isolated": "audio/wl-prendre.mp3"
+    }
   },
   {
     "id": "wl-recevoir",
@@ -79,7 +82,10 @@
     "frequencyRank": 320,
     "level": "A2",
     "tags": ["verbe-action", "quotidien", "prendre"],
-    "caseIds": ["wc-prendre"]
+    "caseIds": ["wc-prendre"],
+    "audio": {
+      "isolated": "audio/wl-recevoir.mp3"
+    }
   },
   {
     "id": "wl-apporter",
@@ -116,7 +122,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["verbe-action", "quotidien", "prendre"],
-    "caseIds": ["wc-prendre"]
+    "caseIds": ["wc-prendre"],
+    "audio": {
+      "isolated": "audio/wl-apporter.mp3"
+    }
   },
   {
     "id": "wl-amener",
@@ -149,7 +158,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["verbe-action", "quotidien", "prendre"],
-    "caseIds": ["wc-prendre"]
+    "caseIds": ["wc-prendre"],
+    "audio": {
+      "isolated": "audio/wl-amener.mp3"
+    }
   },
   {
     "id": "wl-rendre",
@@ -190,7 +202,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["verbe-action", "quotidien", "prendre"],
-    "caseIds": ["wc-prendre"]
+    "caseIds": ["wc-prendre"],
+    "audio": {
+      "isolated": "audio/wl-rendre.mp3"
+    }
   },
   {
     "id": "wl-garder",
@@ -227,7 +242,10 @@
     "frequencyRank": 420,
     "level": "A2",
     "tags": ["verbe-action", "quotidien", "prendre"],
-    "caseIds": ["wc-prendre"]
+    "caseIds": ["wc-prendre"],
+    "audio": {
+      "isolated": "audio/wl-garder.mp3"
+    }
   },
   {
     "id": "wl-choisir",
@@ -264,6 +282,9 @@
     "frequencyRank": 360,
     "level": "A2",
     "tags": ["verbe-action", "quotidien", "prendre"],
-    "caseIds": ["wc-prendre"]
+    "caseIds": ["wc-prendre"],
+    "audio": {
+      "isolated": "audio/wl-choisir.mp3"
+    }
   }
 ]

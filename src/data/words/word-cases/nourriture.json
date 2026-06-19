@@ -41,7 +41,8 @@
         "audioText": "manger",
         "options": ["manger", "ranger", "changer", "mélanger"],
         "correctIndex": 0,
-        "explanation": "Все рифмуются на -anger /ɑ̃ʒe/, но различаются началом: manger /mɑ̃ʒe/ (есть), ranger /ʁɑ̃ʒe/ (убирать, раскладывать), changer /ʃɑ̃ʒe/ (менять), mélanger /melɑ̃ʒe/ (смешивать). Это разные слова, не омофоны: лови первый звук."
+        "explanation": "Все рифмуются на -anger /ɑ̃ʒe/, но различаются началом: manger /mɑ̃ʒe/ (есть), ranger /ʁɑ̃ʒe/ (убирать, раскладывать), changer /ʃɑ̃ʒe/ (менять), mélanger /melɑ̃ʒe/ (смешивать). Это разные слова, не омофоны: лови первый звук.",
+        "audioSrc": "audio/wl-nourriture-manger.mp3"
       },
       {
         "id": "wc-nourriture-repas-ctx",
@@ -218,7 +219,8 @@
         "audioText": "poisson",
         "options": ["poisson", "poison", "boisson", "buisson"],
         "correctIndex": 0,
-        "explanation": "poisson /pwasɔ̃/ (рыба, ss = глухой /s/), poison /pwazɔ̃/ (яд, одна s = звонкий /z/), boisson /bwasɔ̃/ (напиток), buisson /bɥisɔ̃/ (куст). Это разные слова: рыба и яд различаются только звуком s/z."
+        "explanation": "poisson /pwasɔ̃/ (рыба, ss = глухой /s/), poison /pwazɔ̃/ (яд, одна s = звонкий /z/), boisson /bwasɔ̃/ (напиток), buisson /bɥisɔ̃/ (куст). Это разные слова: рыба и яд различаются только звуком s/z.",
+        "audioSrc": "audio/wl-nourriture-poisson.mp3"
       },
       {
         "id": "wc-nourriture-poisson-mnemo",

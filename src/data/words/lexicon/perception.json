@@ -34,7 +34,10 @@
     "frequencyRank": 35,
     "level": "A2",
     "tags": ["perception", "verbe", "vue"],
-    "caseIds": ["wc-perception"]
+    "caseIds": ["wc-perception"],
+    "audio": {
+      "isolated": "audio/voir.mp3"
+    }
   },
   {
     "id": "regarder",
@@ -75,7 +78,10 @@
     "frequencyRank": 90,
     "level": "A2",
     "tags": ["perception", "verbe", "vue"],
-    "caseIds": ["wc-perception"]
+    "caseIds": ["wc-perception"],
+    "audio": {
+      "isolated": "audio/regarder.mp3"
+    }
   },
   {
     "id": "entendre",
@@ -116,7 +122,10 @@
     "frequencyRank": 110,
     "level": "A2",
     "tags": ["perception", "verbe", "ouïe"],
-    "caseIds": ["wc-perception"]
+    "caseIds": ["wc-perception"],
+    "audio": {
+      "isolated": "audio/entendre.mp3"
+    }
   },
   {
     "id": "ecouter",
@@ -153,7 +162,10 @@
     "frequencyRank": 230,
     "level": "A2",
     "tags": ["perception", "verbe", "ouïe"],
-    "caseIds": ["wc-perception"]
+    "caseIds": ["wc-perception"],
+    "audio": {
+      "isolated": "audio/ecouter.mp3"
+    }
   },
   {
     "id": "sembler",
@@ -190,7 +202,10 @@
     "frequencyRank": 320,
     "level": "A2",
     "tags": ["perception", "verbe", "impression"],
-    "caseIds": ["wc-perception"]
+    "caseIds": ["wc-perception"],
+    "audio": {
+      "isolated": "audio/sembler.mp3"
+    }
   },
   {
     "id": "wl-perception-sentir",
@@ -231,7 +246,10 @@
     "frequencyRank": 240,
     "level": "A2",
     "tags": ["perception", "verbe", "odorat"],
-    "caseIds": ["wc-perception"]
+    "caseIds": ["wc-perception"],
+    "audio": {
+      "isolated": "audio/wl-perception-sentir.mp3"
+    }
   },
   {
     "id": "wl-perception-remarquer",
@@ -272,7 +290,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["perception", "verbe", "attention"],
-    "caseIds": ["wc-perception"]
+    "caseIds": ["wc-perception"],
+    "audio": {
+      "isolated": "audio/wl-perception-remarquer.mp3"
+    }
   },
   {
     "id": "wl-perception-toucher",
@@ -313,6 +334,9 @@
     "frequencyRank": 300,
     "level": "A2",
     "tags": ["perception", "verbe", "toucher"],
-    "caseIds": ["wc-perception"]
+    "caseIds": ["wc-perception"],
+    "audio": {
+      "isolated": "audio/wl-perception-toucher.mp3"
+    }
   }
 ]

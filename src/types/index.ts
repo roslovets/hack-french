@@ -345,7 +345,6 @@ export interface ContrastPair {
  *  to the app base (e.g. "audio/wl-cafe-cafe.mp3"). */
 export interface AudioSet {
   isolated?: string;
-  slow?: string;
   shortPhrase?: string;
   naturalPhrase?: string;
 }

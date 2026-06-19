@@ -39,7 +39,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["metiers", "education"],
-    "caseIds": ["wc-metiers"]
+    "caseIds": ["wc-metiers"],
+    "audio": {
+      "isolated": "audio/wl-metiers-professeur.mp3"
+    }
   },
   {
     "id": "wl-metiers-ingenieur",
@@ -77,7 +80,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["metiers", "technique"],
-    "caseIds": ["wc-metiers"]
+    "caseIds": ["wc-metiers"],
+    "audio": {
+      "isolated": "audio/wl-metiers-ingenieur.mp3"
+    }
   },
   {
     "id": "wl-metiers-cuisinier",
@@ -116,7 +122,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["metiers", "cuisine"],
-    "caseIds": ["wc-metiers"]
+    "caseIds": ["wc-metiers"],
+    "audio": {
+      "isolated": "audio/wl-metiers-cuisinier.mp3"
+    }
   },
   {
     "id": "wl-metiers-infirmier",
@@ -155,7 +164,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["metiers", "sante"],
-    "caseIds": ["wc-metiers"]
+    "caseIds": ["wc-metiers"],
+    "audio": {
+      "isolated": "audio/wl-metiers-infirmier.mp3"
+    }
   },
   {
     "id": "wl-metiers-avocat",
@@ -193,7 +205,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["metiers", "droit"],
-    "caseIds": ["wc-metiers"]
+    "caseIds": ["wc-metiers"],
+    "audio": {
+      "isolated": "audio/wl-metiers-avocat.mp3"
+    }
   },
   {
     "id": "wl-metiers-pompier",
@@ -231,7 +246,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["metiers", "secours"],
-    "caseIds": ["wc-metiers"]
+    "caseIds": ["wc-metiers"],
+    "audio": {
+      "isolated": "audio/wl-metiers-pompier.mp3"
+    }
   },
   {
     "id": "wl-metiers-facteur",
@@ -270,7 +288,10 @@
     "frequencyRank": 680,
     "level": "A2",
     "tags": ["metiers", "poste"],
-    "caseIds": ["wc-metiers"]
+    "caseIds": ["wc-metiers"],
+    "audio": {
+      "isolated": "audio/wl-metiers-facteur.mp3"
+    }
   },
   {
     "id": "wl-metiers-artiste",
@@ -309,6 +330,9 @@
     "frequencyRank": 410,
     "level": "A2",
     "tags": ["metiers", "art"],
-    "caseIds": ["wc-metiers"]
+    "caseIds": ["wc-metiers"],
+    "audio": {
+      "isolated": "audio/wl-metiers-artiste.mp3"
+    }
   }
 ]

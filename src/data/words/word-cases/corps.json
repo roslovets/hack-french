@@ -155,7 +155,8 @@
         "audioText": "main",
         "options": ["main", "pain", "bain", "sain"],
         "correctIndex": 0,
-        "explanation": "Одинаковая концовка /-ɛ̃/, различается первый звук: main /mɛ̃/ (рука), pain /pɛ̃/ (хлеб), bain /bɛ̃/ (ванна), sain /sɛ̃/ (здоровый). Это не омофоны — слушай начало слова."
+        "explanation": "Одинаковая концовка /-ɛ̃/, различается первый звук: main /mɛ̃/ (рука), pain /pɛ̃/ (хлеб), bain /bɛ̃/ (ванна), sain /sɛ̃/ (здоровый). Это не омофоны — слушай начало слова.",
+        "audioSrc": "audio/wl-corps-main.mp3"
       },
       {
         "id": "wc-corps-pied-ctx",

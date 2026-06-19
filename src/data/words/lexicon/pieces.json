@@ -39,7 +39,10 @@
     "frequencyRank": 240,
     "level": "A1",
     "tags": ["pieces", "logement"],
-    "caseIds": ["wc-pieces"]
+    "caseIds": ["wc-pieces"],
+    "audio": {
+      "isolated": "audio/wl-pieces-cuisine.mp3"
+    }
   },
   {
     "id": "wl-pieces-chambre",
@@ -81,7 +84,10 @@
     "frequencyRank": 260,
     "level": "A1",
     "tags": ["pieces", "logement"],
-    "caseIds": ["wc-pieces"]
+    "caseIds": ["wc-pieces"],
+    "audio": {
+      "isolated": "audio/wl-pieces-chambre.mp3"
+    }
   },
   {
     "id": "wl-pieces-salon",
@@ -119,7 +125,10 @@
     "frequencyRank": 400,
     "level": "A1",
     "tags": ["pieces", "logement"],
-    "caseIds": ["wc-pieces"]
+    "caseIds": ["wc-pieces"],
+    "audio": {
+      "isolated": "audio/wl-pieces-salon.mp3"
+    }
   },
   {
     "id": "wl-pieces-sdb",
@@ -158,7 +167,10 @@
     "frequencyRank": 600,
     "level": "A1",
     "tags": ["pieces", "logement"],
-    "caseIds": ["wc-pieces"]
+    "caseIds": ["wc-pieces"],
+    "audio": {
+      "isolated": "audio/wl-pieces-sdb.mp3"
+    }
   },
   {
     "id": "wl-pieces-jardin",
@@ -196,7 +208,10 @@
     "frequencyRank": 350,
     "level": "A1",
     "tags": ["pieces", "exterieur"],
-    "caseIds": ["wc-pieces"]
+    "caseIds": ["wc-pieces"],
+    "audio": {
+      "isolated": "audio/wl-pieces-jardin.mp3"
+    }
   },
   {
     "id": "wl-pieces-garage",
@@ -234,7 +249,10 @@
     "frequencyRank": 500,
     "level": "A1",
     "tags": ["pieces", "exterieur"],
-    "caseIds": ["wc-pieces"]
+    "caseIds": ["wc-pieces"],
+    "audio": {
+      "isolated": "audio/wl-pieces-garage.mp3"
+    }
   },
   {
     "id": "wl-pieces-couloir",
@@ -272,7 +290,10 @@
     "frequencyRank": 700,
     "level": "A1",
     "tags": ["pieces", "logement"],
-    "caseIds": ["wc-pieces"]
+    "caseIds": ["wc-pieces"],
+    "audio": {
+      "isolated": "audio/wl-pieces-couloir.mp3"
+    }
   },
   {
     "id": "wl-pieces-toit",
@@ -310,6 +331,9 @@
     "frequencyRank": 650,
     "level": "A1",
     "tags": ["pieces", "exterieur"],
-    "caseIds": ["wc-pieces"]
+    "caseIds": ["wc-pieces"],
+    "audio": {
+      "isolated": "audio/wl-pieces-toit.mp3"
+    }
   }
 ]

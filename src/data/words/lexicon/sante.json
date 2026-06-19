@@ -39,7 +39,10 @@
     "frequencyRank": 360,
     "level": "A2",
     "tags": ["sante", "etat"],
-    "caseIds": ["wc-sante"]
+    "caseIds": ["wc-sante"],
+    "audio": {
+      "isolated": "audio/wl-sante-sante.mp3"
+    }
   },
   {
     "id": "wl-sante-rhume",
@@ -77,7 +80,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["sante", "maladie"],
-    "caseIds": ["wc-sante"]
+    "caseIds": ["wc-sante"],
+    "audio": {
+      "isolated": "audio/wl-sante-rhume.mp3"
+    }
   },
   {
     "id": "wl-sante-fievre",
@@ -115,7 +121,10 @@
     "frequencyRank": 690,
     "level": "A2",
     "tags": ["sante", "symptome"],
-    "caseIds": ["wc-sante"]
+    "caseIds": ["wc-sante"],
+    "audio": {
+      "isolated": "audio/wl-sante-fievre.mp3"
+    }
   },
   {
     "id": "wl-sante-medicament",
@@ -153,7 +162,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["sante", "traitement"],
-    "caseIds": ["wc-sante"]
+    "caseIds": ["wc-sante"],
+    "audio": {
+      "isolated": "audio/wl-sante-medicament.mp3"
+    }
   },
   {
     "id": "wl-sante-pharmacie",
@@ -191,7 +203,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["sante", "lieu"],
-    "caseIds": ["wc-sante"]
+    "caseIds": ["wc-sante"],
+    "audio": {
+      "isolated": "audio/wl-sante-pharmacie.mp3"
+    }
   },
   {
     "id": "wl-sante-douleur",
@@ -229,7 +244,10 @@
     "frequencyRank": 580,
     "level": "A2",
     "tags": ["sante", "symptome"],
-    "caseIds": ["wc-sante"]
+    "caseIds": ["wc-sante"],
+    "audio": {
+      "isolated": "audio/wl-sante-douleur.mp3"
+    }
   },
   {
     "id": "wl-sante-guerir",
@@ -266,7 +284,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["sante", "action"],
-    "caseIds": ["wc-sante"]
+    "caseIds": ["wc-sante"],
+    "audio": {
+      "isolated": "audio/wl-sante-guerir.mp3"
+    }
   },
   {
     "id": "wl-sante-ordonnance",
@@ -304,6 +325,9 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["sante", "document"],
-    "caseIds": ["wc-sante"]
+    "caseIds": ["wc-sante"],
+    "audio": {
+      "isolated": "audio/wl-sante-ordonnance.mp3"
+    }
   }
 ]

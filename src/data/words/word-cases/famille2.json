@@ -158,7 +158,8 @@
         "audioText": "tante",
         "options": ["tante", "tonte", "teinte", "pente"],
         "correctIndex": 0,
-        "explanation": "Прозвучало tante (тётя) /tɑ̃t/. Похожие по звучанию, но другие: tonte (стрижка) /tɔ̃t/ и teinte (оттенок) /tɛ̃t/ отличаются носовым гласным, pente (склон) /pɑ̃t/ — начальным звуком p. А вот tente (палатка) — полный омофон tante: на слух их не различить, только по написанию."
+        "explanation": "Прозвучало tante (тётя) /tɑ̃t/. Похожие по звучанию, но другие: tonte (стрижка) /tɔ̃t/ и teinte (оттенок) /tɛ̃t/ отличаются носовым гласным, pente (склон) /pɑ̃t/ — начальным звуком p. А вот tente (палатка) — полный омофон tante: на слух их не различить, только по написанию.",
+        "audioSrc": "audio/wl-famille2-tante.mp3"
       },
       {
         "id": "wc-famille2-cousin-ctx",
@@ -186,7 +187,8 @@
         "audioText": "cousin",
         "options": ["cousin", "coussin", "raisin", "bassin"],
         "correctIndex": 0,
-        "explanation": "Прозвучало cousin (кузен) /ku.zɛ̃/ со звуком z. Coussin (подушка) /ku.sɛ̃/ — со звуком s. Raisin (виноград) /ʁɛ.zɛ̃/, bassin (бассейн, таз) /ba.sɛ̃/ — другие начала."
+        "explanation": "Прозвучало cousin (кузен) /ku.zɛ̃/ со звуком z. Coussin (подушка) /ku.sɛ̃/ — со звуком s. Raisin (виноград) /ʁɛ.zɛ̃/, bassin (бассейн, таз) /ba.sɛ̃/ — другие начала.",
+        "audioSrc": "audio/wl-famille2-cousin.mp3"
       },
       {
         "id": "wc-famille2-mari-ctx",
