@@ -2,12 +2,22 @@ import { useState } from 'react';
 
 import AutoStoriesOutlined from '@mui/icons-material/AutoStoriesOutlined';
 import EventRepeatOutlined from '@mui/icons-material/EventRepeatOutlined';
+import ExpandMoreOutlined from '@mui/icons-material/ExpandMoreOutlined';
 import InsightsOutlined from '@mui/icons-material/InsightsOutlined';
 import LockOutlined from '@mui/icons-material/LockOutlined';
 import MilitaryTechOutlined from '@mui/icons-material/MilitaryTechOutlined';
 import PlayArrowOutlined from '@mui/icons-material/PlayArrowOutlined';
 import TranslateOutlined from '@mui/icons-material/TranslateOutlined';
-import { Box, Button, Card, Chip, LinearProgress, Stack, Typography } from '@mui/material';
+import {
+  Box,
+  Button,
+  Card,
+  Chip,
+  Collapse,
+  LinearProgress,
+  Stack,
+  Typography,
+} from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 
@@ -38,6 +48,24 @@ const TIER_COLOR: Record<ReviewTier, string> = {
   solid: '#5bbf8f',
 };
 const BOSS_RED = '#e5484d';
+
+// Which category sections are expanded, remembered across visits.
+const OPEN_KEY = 'hack-french:words-open';
+function readOpen(): Set<string> {
+  try {
+    const raw = localStorage.getItem(OPEN_KEY);
+    return new Set(raw ? (JSON.parse(raw) as string[]) : []);
+  } catch {
+    return new Set();
+  }
+}
+function writeOpen(s: Set<string>) {
+  try {
+    localStorage.setItem(OPEN_KEY, JSON.stringify([...s]));
+  } catch {
+    // ignore (private mode / no storage)
+  }
+}
 
 function StatTile({
   icon,
@@ -234,6 +262,17 @@ export default function WordLabPage() {
   const { state } = useProgress();
   const now = useNow();
   const [dossier, setDossier] = useState<Word | null>(null);
+  const [open, setOpen] = useState<Set<string>>(readOpen);
+
+  const toggle = (id: string) => {
+    const next = new Set(open);
+    if (next.has(id)) next.delete(id);
+    else next.add(id);
+    writeOpen(next);
+    setOpen(next);
+  };
+
+  const dueIds = new Set(dueWordDimensions(state, now).map((d) => d.wordId));
 
   const introduced = Object.keys(state.wordMastery).length;
   const avg = totalWords
@@ -334,41 +373,123 @@ export default function WordLabPage() {
         ) : null}
       </Stack>
 
-      {sections.map((section) => {
-        const allIds = section.cases.flatMap((c) => c.wordIds);
-        const solid = allIds.filter((id) => wordTier(state, id) === 'solid').length;
-        const avg = allIds.length
-          ? Math.round(
-              (allIds.reduce((s, id) => s + wordMasteryScore(state, id), 0) / allIds.length) * 100,
-            )
-          : 0;
-        return (
-          <Box key={section.key} sx={{ mb: 5 }}>
-            <Stack
-              direction="row"
-              spacing={1.5}
-              sx={{ alignItems: 'baseline', flexWrap: 'wrap', mb: 2 }}
+      <Stack
+        direction="row"
+        sx={{ alignItems: 'center', justifyContent: 'space-between', mb: 1.5 }}
+      >
+        <Typography variant="overline" color="text.secondary">
+          Темы по разделам
+        </Typography>
+        <Button
+          size="small"
+          color="inherit"
+          onClick={() => {
+            const next = sections.every((s) => open.has(s.key))
+              ? new Set<string>()
+              : new Set(sections.map((s) => s.key));
+            writeOpen(next);
+            setOpen(next);
+          }}
+          sx={{ color: 'text.secondary' }}
+        >
+          {sections.every((s) => open.has(s.key)) ? 'Свернуть всё' : 'Развернуть всё'}
+        </Button>
+      </Stack>
+
+      <Stack spacing={1.25}>
+        {sections.map((section) => {
+          const allIds = section.cases.flatMap((c) => c.wordIds);
+          const avg = allIds.length
+            ? Math.round(
+                (allIds.reduce((s, id) => s + wordMasteryScore(state, id), 0) / allIds.length) *
+                  100,
+              )
+            : 0;
+          const due = allIds.filter((id) => dueIds.has(id)).length;
+          const isOpen = open.has(section.key);
+          return (
+            <Box
+              key={section.key}
+              sx={{
+                border: '1px solid',
+                borderColor: 'divider',
+                borderRadius: 2,
+                overflow: 'hidden',
+              }}
             >
-              <Typography variant="h6" sx={{ fontWeight: 800 }}>
-                {section.title}
-              </Typography>
-              <Typography variant="caption" color="text.secondary" sx={{ fontFamily: mono }}>
-                {avg}% · {solid}/{allIds.length} закреплено
-              </Typography>
-            </Stack>
-            <Box sx={GRID_SX}>
-              {section.cases.map((c) => (
-                <ThemeCard key={c.id} c={c} state={state} onOpenWord={openWord} onTrain={train} />
-              ))}
-            </Box>
-            {section.boss ? (
-              <Box sx={{ mt: 2, maxWidth: { sm: 440 } }}>
-                <BossCard c={section.boss} state={state} onChallenge={challenge} />
+              <Box
+                role="button"
+                tabIndex={0}
+                aria-expanded={isOpen}
+                onClick={() => toggle(section.key)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggle(section.key);
+                  }
+                }}
+                sx={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 1.25,
+                  p: 2,
+                  cursor: 'pointer',
+                  backgroundColor: (t) => alpha(t.palette.text.primary, isOpen ? 0.04 : 0.015),
+                  '&:hover': { backgroundColor: (t) => alpha(t.palette.text.primary, 0.06) },
+                }}
+              >
+                <ExpandMoreOutlined
+                  sx={{
+                    color: 'text.secondary',
+                    transition: 'transform 160ms ease',
+                    transform: isOpen ? 'rotate(0deg)' : 'rotate(-90deg)',
+                  }}
+                />
+                <Typography sx={{ fontWeight: 800, fontSize: 17 }}>{section.title}</Typography>
+                <Box sx={{ flex: 1 }} />
+                {due > 0 ? (
+                  <Chip
+                    size="small"
+                    label={`${due} к повторению`}
+                    sx={{
+                      backgroundColor: alpha('#cf8a4a', 0.16),
+                      color: '#e0a45f',
+                      fontWeight: 700,
+                    }}
+                  />
+                ) : null}
+                <Typography
+                  variant="caption"
+                  color="text.secondary"
+                  sx={{ fontFamily: mono, whiteSpace: 'nowrap' }}
+                >
+                  {section.cases.length} тем · {avg}%
+                </Typography>
               </Box>
-            ) : null}
-          </Box>
-        );
-      })}
+              <Collapse in={isOpen} timeout="auto" unmountOnExit>
+                <Box sx={{ p: 2, pt: 1.5 }}>
+                  <Box sx={GRID_SX}>
+                    {section.cases.map((c) => (
+                      <ThemeCard
+                        key={c.id}
+                        c={c}
+                        state={state}
+                        onOpenWord={openWord}
+                        onTrain={train}
+                      />
+                    ))}
+                  </Box>
+                  {section.boss ? (
+                    <Box sx={{ mt: 2, maxWidth: { sm: 440 } }}>
+                      <BossCard c={section.boss} state={state} onChallenge={challenge} />
+                    </Box>
+                  ) : null}
+                </Box>
+              </Collapse>
+            </Box>
+          );
+        })}
+      </Stack>
 
       <WordDossier word={dossier} onClose={() => setDossier(null)} />
     </Box>
