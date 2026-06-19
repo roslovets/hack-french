@@ -1,0 +1,331 @@
+[
+  {
+    "id": "wl-nombres-un",
+    "lemma": "un",
+    "displayForm": "un / une",
+    "pos": "adj",
+    "ipa": "/œ̃/",
+    "translationsRu": ["один"],
+    "translationsEn": ["one", "a"],
+    "semanticCore": "Число «один» — и одновременно неопределённый артикль «(один) какой-то»; перед существительным женского рода становится une.",
+    "collocations": [
+      {
+        "fr": "un café",
+        "ru": "(один) кофе"
+      },
+      {
+        "fr": "une heure",
+        "ru": "час (один час / час дня)"
+      },
+      {
+        "fr": "un par un",
+        "ru": "по одному"
+      },
+      {
+        "fr": "vingt et un",
+        "ru": "двадцать один"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "une",
+        "note": "un — для мужского рода (un livre), une — для женского (une table). Это одно число «один», просто согласуется в роде."
+      },
+      {
+        "with": "premier",
+        "note": "un = «один» (количество); premier = «первый» (порядок). «один дом» — une maison; «первый этаж» — le premier étage."
+      }
+    ],
+    "frequencyRank": 30,
+    "level": "A1",
+    "tags": ["nombres", "cardinal"],
+    "caseIds": ["wc-nombres"]
+  },
+  {
+    "id": "wl-nombres-deux",
+    "lemma": "deux",
+    "pos": "adj",
+    "ipa": "/dø/",
+    "translationsRu": ["два"],
+    "translationsEn": ["two"],
+    "semanticCore": "Число «два»; форма не меняется по роду, конечный x немой, но перед гласной даёт liaison /z/.",
+    "collocations": [
+      {
+        "fr": "une table pour deux",
+        "ru": "столик на двоих"
+      },
+      {
+        "fr": "deux fois",
+        "ru": "дважды, два раза"
+      },
+      {
+        "fr": "tous les deux",
+        "ru": "оба, вдвоём"
+      },
+      {
+        "fr": "deux euros",
+        "ru": "два евро"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "douze",
+        "note": "deux /dø/ = два; douze /duz/ = двенадцать. Разные гласные (/ø/ vs /u/) — легко спутать на слух."
+      },
+      {
+        "with": "deuxième",
+        "note": "deux = «два» (количество); deuxième = «второй» (порядок)."
+      }
+    ],
+    "frequencyRank": 70,
+    "level": "A1",
+    "tags": ["nombres", "cardinal"],
+    "caseIds": ["wc-nombres"]
+  },
+  {
+    "id": "wl-nombres-trois",
+    "lemma": "trois",
+    "pos": "adj",
+    "ipa": "/tʁwa/",
+    "translationsRu": ["три"],
+    "translationsEn": ["three"],
+    "semanticCore": "Число «три»; неизменяемо, конечный s немой, но перед гласной звучит liaison /z/.",
+    "collocations": [
+      {
+        "fr": "trois fois",
+        "ru": "трижды, три раза"
+      },
+      {
+        "fr": "trois heures",
+        "ru": "три часа"
+      },
+      {
+        "fr": "tous les trois",
+        "ru": "все трое, втроём"
+      },
+      {
+        "fr": "trois euros",
+        "ru": "три евро"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "treize",
+        "note": "trois /tʁwa/ = три; treize /tʁɛz/ = тринадцать. Не путать число и его «-надцатую» версию."
+      },
+      {
+        "with": "troisième",
+        "note": "trois = «три» (количество); troisième = «третий» (порядок): le troisième étage."
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A1",
+    "tags": ["nombres", "cardinal"],
+    "caseIds": ["wc-nombres"]
+  },
+  {
+    "id": "wl-nombres-cinq",
+    "lemma": "cinq",
+    "pos": "adj",
+    "ipa": "/sɛ̃k/",
+    "translationsRu": ["пять"],
+    "translationsEn": ["five"],
+    "semanticCore": "Число «пять»; неизменяемо, конечный q обычно звучит /k/ (в счёте и перед гласной).",
+    "collocations": [
+      {
+        "fr": "cinq heures",
+        "ru": "пять часов"
+      },
+      {
+        "fr": "cinq euros",
+        "ru": "пять евро"
+      },
+      {
+        "fr": "cinq minutes",
+        "ru": "пять минут"
+      },
+      {
+        "fr": "vingt-cinq",
+        "ru": "двадцать пять"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "quinze",
+        "note": "cinq /sɛ̃k/ = пять; quinze /kɛ̃z/ = пятнадцать. Связаны по смыслу, но звучат по-разному."
+      },
+      {
+        "with": "cinquante",
+        "note": "cinq = пять; cinquante = пятьдесят. Не путать «пять» и «пятьдесят» в ценах и времени."
+      }
+    ],
+    "frequencyRank": 130,
+    "level": "A1",
+    "tags": ["nombres", "cardinal"],
+    "caseIds": ["wc-nombres"]
+  },
+  {
+    "id": "wl-nombres-dix",
+    "lemma": "dix",
+    "pos": "adj",
+    "ipa": "/dis/",
+    "translationsRu": ["десять"],
+    "translationsEn": ["ten"],
+    "semanticCore": "Число «десять»; чтение x меняется: /dis/ в счёте, /diz/ перед гласной, /di/ перед согласной.",
+    "collocations": [
+      {
+        "fr": "dix ans",
+        "ru": "десять лет"
+      },
+      {
+        "fr": "dix euros",
+        "ru": "десять евро"
+      },
+      {
+        "fr": "dix minutes",
+        "ru": "десять минут"
+      },
+      {
+        "fr": "dix-huit",
+        "ru": "восемнадцать"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "douze",
+        "note": "dix /dis/ = десять; douze /duz/ = двенадцать. Разные слова, хотя оба про «-дцать»."
+      },
+      {
+        "with": "dixième",
+        "note": "dix = «десять» (количество); dixième = «десятый» (порядок)."
+      }
+    ],
+    "frequencyRank": 120,
+    "level": "A1",
+    "tags": ["nombres", "cardinal"],
+    "caseIds": ["wc-nombres"]
+  },
+  {
+    "id": "wl-nombres-vingt",
+    "lemma": "vingt",
+    "pos": "adj",
+    "ipa": "/vɛ̃/",
+    "translationsRu": ["двадцать"],
+    "translationsEn": ["twenty"],
+    "semanticCore": "Число «двадцать»; конечный t немой (/vɛ̃/), но оживает в 21–29 и при liaison (vingt ans /vɛ̃.t‿ɑ̃/).",
+    "collocations": [
+      {
+        "fr": "vingt ans",
+        "ru": "двадцать лет"
+      },
+      {
+        "fr": "vingt euros",
+        "ru": "двадцать евро"
+      },
+      {
+        "fr": "vingt et un",
+        "ru": "двадцать один"
+      },
+      {
+        "fr": "vingt-cinq",
+        "ru": "двадцать пять"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vingt et un",
+        "note": "21 — особый случай: традиционно «vingt et un» (с et, без дефисов). А 22–29 пишутся через дефис: vingt-deux, vingt-trois."
+      },
+      {
+        "with": "quatre-vingts",
+        "note": "vingt = двадцать; quatre-vingts = восемьдесят (буквально «четыре по двадцать»). Во французском счёте после 60 идёт «vingt»-арифметика."
+      }
+    ],
+    "frequencyRank": 160,
+    "level": "A1",
+    "tags": ["nombres", "cardinal"],
+    "caseIds": ["wc-nombres"]
+  },
+  {
+    "id": "wl-nombres-cent",
+    "lemma": "cent",
+    "pos": "adj",
+    "ipa": "/sɑ̃/",
+    "translationsRu": ["сто"],
+    "translationsEn": ["hundred"],
+    "semanticCore": "Число «сто»; берёт -s при умножении в конце (deux cents), но теряет его перед следующим числом (deux cent un).",
+    "collocations": [
+      {
+        "fr": "cent euros",
+        "ru": "сто евро"
+      },
+      {
+        "fr": "cent fois",
+        "ru": "сто раз (часто = «много раз»)"
+      },
+      {
+        "fr": "deux cents",
+        "ru": "двести"
+      },
+      {
+        "fr": "pour cent",
+        "ru": "процент"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cent (монета)",
+        "note": "Число «сто» — cent без артикля; «цент» (1/100 евро) — un cent с артиклем. Пишутся одинаково, но одно — число, другое — существительное."
+      },
+      {
+        "with": "centième",
+        "note": "cent = «сто» (количество); centième = «сотый» (порядок) или «сотая часть»."
+      }
+    ],
+    "frequencyRank": 230,
+    "level": "A1",
+    "tags": ["nombres", "cardinal"],
+    "caseIds": ["wc-nombres"]
+  },
+  {
+    "id": "wl-nombres-mille",
+    "lemma": "mille",
+    "pos": "adj",
+    "ipa": "/mil/",
+    "translationsRu": ["тысяча"],
+    "translationsEn": ["thousand"],
+    "semanticCore": "Число «тысяча»; полностью неизменяемо — никогда не получает -s: deux mille, trois mille.",
+    "collocations": [
+      {
+        "fr": "mille euros",
+        "ru": "тысяча евро"
+      },
+      {
+        "fr": "mille fois",
+        "ru": "тысячу раз"
+      },
+      {
+        "fr": "deux mille",
+        "ru": "две тысячи"
+      },
+      {
+        "fr": "merci mille fois",
+        "ru": "тысячу раз спасибо"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "million",
+        "note": "mille = тысяча (число, неизменяемо); million = миллион (это существительное: un million, des millions, с -s)."
+      },
+      {
+        "with": "cent",
+        "note": "cent берёт -s во множителе (deux cents), а mille — никогда (deux mille). Это главное отличие в их написании."
+      }
+    ],
+    "frequencyRank": 250,
+    "level": "A1",
+    "tags": ["nombres", "cardinal"],
+    "caseIds": ["wc-nombres"]
+  }
+]

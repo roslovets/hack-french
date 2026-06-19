@@ -1,0 +1,313 @@
+[
+  {
+    "id": "wc-cuisson",
+    "title": "На кухне",
+    "theme": "cuisson",
+    "level": "A2",
+    "wordIds": [
+      "wl-cuisson-cuisiner",
+      "wl-cuisson-couper",
+      "wl-cuisson-gouter",
+      "wl-cuisson-preparer",
+      "wl-cuisson-servir",
+      "wl-cuisson-verser",
+      "wl-cuisson-melanger",
+      "wl-cuisson-chauffer"
+    ],
+    "steps": [
+      {
+        "id": "wc-cuisson-cuisiner-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cuisson-cuisiner",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le week-end, j'aime cuisiner pour ma famille.",
+          "Elle sait très bien cuisiner les plats italiens.",
+          "On va cuisiner ensemble ce soir."
+        ],
+        "options": ["готовить (еду)", "есть", "мыть посуду", "накрывать на стол"],
+        "correctIndex": 0,
+        "explanation": "cuisiner — готовить именно еду, стряпать. Внутри сидит la cuisine (кухня). «aimer cuisiner» — любить готовить. Есть — manger, мыть посуду — faire la vaisselle."
+      },
+      {
+        "id": "wc-cuisson-cuisiner-cmp",
+        "kind": "compare",
+        "wordId": "wl-cuisson-cuisiner",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "cuisiner и préparer. В чём разница?",
+        "phrases": ["J'aime cuisiner des plats chauds.", "Je dois préparer ma valise."],
+        "options": [
+          "cuisiner — только про еду (стряпать); préparer — подготавливать что угодно, в том числе не-еду.",
+          "Это полные синонимы, разницы нет.",
+          "cuisiner — про не-еду, préparer — про еду.",
+          "préparer значит «есть», cuisiner — «мыть»."
+        ],
+        "correctIndex": 0,
+        "explanation": "cuisiner — готовить именно еду (с рецептом, огнём). préparer — шире: и préparer le dîner, и préparer une valise (собрать чемодан). Чемодан можно préparer, но не cuisiner."
+      },
+      {
+        "id": "wc-cuisson-couper-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cuisson-couper",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Coupe le pain en tranches, s'il te plaît.",
+          "Il faut couper les légumes en petits morceaux.",
+          "Attention, ce couteau coupe très bien."
+        ],
+        "options": ["резать, нарезать", "варить", "мыть", "чистить"],
+        "correctIndex": 0,
+        "explanation": "couper — резать, нарезать (ножом). «couper en morceaux» — нарезать кусочками, «couper en deux» — разрезать пополам. Нож, который хорошо режет — un couteau qui coupe bien."
+      },
+      {
+        "id": "wc-cuisson-couper-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-cuisson-couper",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "couper",
+        "options": ["couper", "couler", "coucher", "compter"],
+        "correctIndex": 0,
+        "explanation": "couper /ku.pe/ — резать. Похожие, но другие: couler /ku.le/ — течь, coucher /ku.ʃe/ — укладывать спать, compter /kɔ̃.te/ — считать. Решает второй звук: p, а не l/ʃ."
+      },
+      {
+        "id": "wc-cuisson-gouter-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cuisson-gouter",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Goûte la sauce, dis-moi si c'est bon.",
+          "Tu veux goûter mon gâteau ?",
+          "Au marché, on peut goûter les fromages."
+        ],
+        "options": ["пробовать (на вкус)", "нюхать", "готовить", "покупать"],
+        "correctIndex": 0,
+        "explanation": "goûter — пробовать на вкус, брать чуть-чуть в рот для оценки. «goûter la sauce» — попробовать соус. Нюхать — sentir. Кстати, le goûter (сущ.) — это ещё и полдник."
+      },
+      {
+        "id": "wc-cuisson-gouter-trap",
+        "kind": "trap",
+        "wordId": "wl-cuisson-gouter",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«Попробовать суп на вкус» — какой глагол? Англ. «try» сбивает с толку.",
+        "options": [
+          "goûter la soupe",
+          "essayer la soupe (это «пытаться/примерять», не про вкус)",
+          "sentir la soupe (это «нюхать»)",
+          "tester la soupe (так про еду обычно не говорят)"
+        ],
+        "correctIndex": 0,
+        "explanation": "Пробовать еду НА ВКУС — только goûter: goûter la soupe. essayer — пробовать/пытаться вообще (essayer une robe), sentir — нюхать. Англ. «try» во французском раздваивается: goûter (на вкус) и essayer (попытка/примерка)."
+      },
+      {
+        "id": "wc-cuisson-preparer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cuisson-preparer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je prépare le dîner pendant que tu mets la table.",
+          "Elle prépare un gâteau pour l'anniversaire.",
+          "On prépare le café avant de partir."
+        ],
+        "options": ["готовить, подготавливать", "есть", "убирать", "покупать"],
+        "correctIndex": 0,
+        "explanation": "préparer — готовить, подготавливать. «préparer le dîner» — готовить ужин, «préparer le café» — сделать кофе. Шире, чем cuisiner: можно préparer и не-еду (préparer un examen)."
+      },
+      {
+        "id": "wc-cuisson-preparer-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-cuisson-preparer",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит préparer?",
+        "bridge": "Англ. «to prepare» — почти то же слово. Только читается по-французски /pʁe.pa.ʁe/, с грассирующим r и без английского произношения.",
+        "options": ["готовить, подготавливать", "повторять", "ремонтировать", "представлять"],
+        "correctIndex": 0,
+        "explanation": "préparer = готовить, подготавливать — прямой родственник англ. «prepare». Не спутай с «repair» (ремонтировать — это réparer, без первого p-): préparer ≠ réparer."
+      },
+      {
+        "id": "wc-cuisson-servir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cuisson-servir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le dîner est prêt, je vais servir.",
+          "On sert ce plat bien chaud.",
+          "Le serveur sert les clients rapidement."
+        ],
+        "options": ["подавать (еду)", "есть", "заказывать", "платить"],
+        "correctIndex": 0,
+        "explanation": "servir — подавать (готовое блюдо). «servir chaud» — подавать горячим. Отсюда le serveur — официант (тот, кто подаёт). У глагола есть и второй смысл — «служить, быть полезным»."
+      },
+      {
+        "id": "wc-cuisson-servir-cmp",
+        "kind": "compare",
+        "wordId": "wl-cuisson-servir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "У servir два смысла. Чем различаются эти две фразы?",
+        "phrases": ["On sert le café au salon.", "À quoi ça sert ?"],
+        "options": [
+          "servir (без à) — подавать еду/напитки; servir à — служить для чего-то, быть полезным.",
+          "Это одно и то же значение.",
+          "Первое значит «быть полезным», второе — «подавать».",
+          "servir всегда значит только «подавать еду»."
+        ],
+        "correctIndex": 0,
+        "explanation": "servir le café — подавать кофе. servir à qch — служить для чего-то: «À quoi ça sert ?» — «Для чего это (нужно)?». Один глагол, два смысла — их разводит предлог à."
+      },
+      {
+        "id": "wc-cuisson-verser-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cuisson-verser",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Verse le lait dans le bol.",
+          "Il verse de l'eau dans la casserole.",
+          "Verse doucement, ça déborde !"
+        ],
+        "options": ["наливать, лить", "выливать (выбрасывать)", "мыть", "греть"],
+        "correctIndex": 0,
+        "explanation": "verser — наливать, лить (из одной ёмкости в другую). «verser le lait dans le bol» — налить молоко в миску. «ça déborde» — переливается через край, поэтому льют doucement (медленно)."
+      },
+      {
+        "id": "wc-cuisson-verser-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-cuisson-verser",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "verser",
+        "options": ["verser", "laver", "fermer", "passer"],
+        "correctIndex": 0,
+        "explanation": "verser /vɛʁ.se/ — наливать. Похожие глаголы: laver /la.ve/ — мыть, fermer /fɛʁ.me/ — закрывать, passer /pɑ.se/ — передавать. Начало vers- отличает verser от остальных."
+      },
+      {
+        "id": "wc-cuisson-melanger-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cuisson-melanger",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mélange bien la farine et les œufs.",
+          "Il faut mélanger tous les ingrédients.",
+          "Mélange jusqu'à obtenir une pâte lisse."
+        ],
+        "options": ["смешивать, перемешивать", "резать", "наливать", "греть"],
+        "correctIndex": 0,
+        "explanation": "mélanger — смешивать, перемешивать (соединять ингредиенты). «bien mélanger» — хорошо перемешать. «une pâte lisse» — гладкое (однородное) тесто, которое получается после mélanger."
+      },
+      {
+        "id": "wc-cuisson-melanger-sort",
+        "kind": "sort",
+        "wordId": "wl-cuisson-melanger",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с mélanger звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "mélanger les ingrédients",
+            "basket": "ok"
+          },
+          {
+            "text": "bien mélanger la pâte",
+            "basket": "ok"
+          },
+          {
+            "text": "mélanger avec une cuillère",
+            "basket": "ok"
+          },
+          {
+            "text": "mélanger la porte",
+            "basket": "no"
+          },
+          {
+            "text": "mélanger une chaise",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«mélanger les ingrédients», «mélanger la pâte», «mélanger avec une cuillère» — естественно. Смешивать можно то, что соединяется в массу; «mélanger la porte» (смешать дверь) и «mélanger une chaise» (смешать стул) — бессмыслица."
+      },
+      {
+        "id": "wc-cuisson-chauffer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cuisson-chauffer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Fais chauffer l'eau pour les pâtes.",
+          "Je chauffe le lait pour le café.",
+          "Chauffe le plat deux minutes au micro-ondes."
+        ],
+        "options": ["греть, нагревать", "остужать", "резать", "мыть"],
+        "correctIndex": 0,
+        "explanation": "chauffer — греть, нагревать. Частый оборот «faire chauffer» — поставить греться: «faire chauffer l'eau». Разогреть блюдо — chauffer le plat. Остужать (наоборот) — refroidir."
+      },
+      {
+        "id": "wc-cuisson-chauffer-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-cuisson-chauffer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три глагола — про действия с огнём/температурой на кухне. Найди лишний.",
+        "options": ["chauffer", "faire bouillir", "cuire", "couper"],
+        "correctIndex": 3,
+        "explanation": "chauffer (греть), faire bouillir (кипятить) и cuire (варить/печь) связаны с нагревом и готовкой на огне. couper (резать) — лишний: это про нож, а не про температуру."
+      },
+      {
+        "id": "wc-cuisson-chauffer-hint",
+        "kind": "wordHint",
+        "wordId": "wl-cuisson-chauffer",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: сделать воду или молоко тёплыми/горячими, поставить на огонь.",
+        "answer": "chauffer",
+        "hints": [
+          "Начинается на ch…",
+          "Внутри есть chaud (горячий)",
+          "Fais ___ l'eau pour les pâtes."
+        ],
+        "explanation": "chauffer — греть, нагревать. Родственно chaud (горячий) и la chaleur (тепло). Частый оборот: «faire chauffer» что-то. Не спутай с chausser (обувать)."
+      },
+      {
+        "id": "wc-cuisson-cuisiner-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-cuisson-cuisiner",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для cuisiner (готовить еду), чтобы не путать его с préparer.",
+        "examples": [
+          "«cuisiner» прячет la cuisine (кухню): cuisiner — это «делать что-то на кухне с едой», только про стряпню.",
+          "Préparer можно и чемодан, и экзамен — а cuisiner только то, что потом съешь. Представь: préparer = собирать, cuisiner = у плиты."
+        ]
+      }
+    ]
+  }
+]

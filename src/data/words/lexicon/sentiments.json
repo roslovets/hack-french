@@ -1,0 +1,330 @@
+[
+  {
+    "id": "wl-sentiments-detester",
+    "lemma": "détester",
+    "pos": "verb",
+    "ipa": "/de.tɛs.te/",
+    "translationsRu": ["ненавидеть", "терпеть не мочь"],
+    "translationsEn": ["to hate", "to detest"],
+    "semanticCore": "Сильная неприязнь к человеку, вещи или действию — противоположность aimer; часто гипербола в речи («терпеть не могу»).",
+    "collocations": [
+      {
+        "fr": "détester quelqu'un",
+        "ru": "ненавидеть кого-то"
+      },
+      {
+        "fr": "détester faire quelque chose",
+        "ru": "ненавидеть что-то делать"
+      },
+      {
+        "fr": "Je déteste ça.",
+        "ru": "Терпеть это не могу."
+      },
+      {
+        "fr": "détester attendre",
+        "ru": "ненавидеть ждать"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "haïr",
+        "note": "détester = ненавидеть, терпеть не мочь (часто бытовое, преувеличенное); haïr = ненавидеть глубоко и всерьёз (сильнее, реже в речи)."
+      },
+      {
+        "with": "ne pas aimer",
+        "note": "détester сильнее, чем ne pas aimer (не любить): «не люблю» мягче, «ненавижу/терпеть не могу» — категорично."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["sentiments", "negatif"],
+    "caseIds": ["wc-sentiments"]
+  },
+  {
+    "id": "wl-sentiments-preferer",
+    "lemma": "préférer",
+    "pos": "verb",
+    "ipa": "/pʁe.fe.ʁe/",
+    "translationsRu": ["предпочитать"],
+    "translationsEn": ["to prefer"],
+    "semanticCore": "Выбирать одно как более желанное, чем другое; «лучше …, чем …» строится через préférer A à B или préférer + инфинитив.",
+    "collocations": [
+      {
+        "fr": "préférer le thé au café",
+        "ru": "предпочитать чай кофе"
+      },
+      {
+        "fr": "préférer rester",
+        "ru": "предпочитать остаться"
+      },
+      {
+        "fr": "Je préfère.",
+        "ru": "Я предпочитаю / мне так больше нравится."
+      },
+      {
+        "fr": "comme tu préfères",
+        "ru": "как тебе больше нравится"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "aimer mieux",
+        "note": "préférer и aimer mieux оба = «предпочитать»; aimer mieux разговорнее (j'aime mieux rester), préférer чуть нейтральнее и универсальнее."
+      },
+      {
+        "with": "à / que",
+        "note": "Сравнивают вещи через à (préférer le thé au café), а действия — через plutôt que (préférer marcher plutôt que courir), а не через que после существительного."
+      }
+    ],
+    "frequencyRank": 470,
+    "level": "A2",
+    "tags": ["sentiments", "choix"],
+    "caseIds": ["wc-sentiments"]
+  },
+  {
+    "id": "wl-sentiments-esperer",
+    "lemma": "espérer",
+    "pos": "verb",
+    "ipa": "/ɛs.pe.ʁe/",
+    "translationsRu": ["надеяться"],
+    "translationsEn": ["to hope"],
+    "semanticCore": "Надеяться на хороший исход в будущем; espérer que + будущее/настоящее, espérer + инфинитив. Не путать с «ждать».",
+    "collocations": [
+      {
+        "fr": "espérer que tout ira bien",
+        "ru": "надеяться, что всё будет хорошо"
+      },
+      {
+        "fr": "j'espère bien",
+        "ru": "очень на это надеюсь"
+      },
+      {
+        "fr": "espérer revenir",
+        "ru": "надеяться вернуться"
+      },
+      {
+        "fr": "il faut espérer",
+        "ru": "будем надеяться"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "attendre",
+        "note": "espérer = надеяться (желать хорошего исхода); attendre = ждать (того, кто/что придёт). Англ. «expect» сбивает: «I expect» ≠ j'espère."
+      },
+      {
+        "with": "souhaiter",
+        "note": "espérer = надеяться (на свой исход); souhaiter = желать (часто кому-то: je te souhaite bonne chance). Близки, но souhaiter сильнее про пожелание другому."
+      }
+    ],
+    "frequencyRank": 390,
+    "level": "A2",
+    "tags": ["sentiments", "futur"],
+    "caseIds": ["wc-sentiments"]
+  },
+  {
+    "id": "wl-sentiments-rever",
+    "lemma": "rêver",
+    "pos": "verb",
+    "ipa": "/ʁe.ve/",
+    "translationsRu": ["мечтать", "видеть сон"],
+    "translationsEn": ["to dream"],
+    "semanticCore": "И «видеть сон» во сне, и «мечтать» наяву; о чём мечтаешь — через rêver de, как и о приснившемся.",
+    "collocations": [
+      {
+        "fr": "rêver de voyager",
+        "ru": "мечтать путешествовать"
+      },
+      {
+        "fr": "rêver de quelqu'un",
+        "ru": "видеть кого-то во сне / мечтать о ком-то"
+      },
+      {
+        "fr": "Tu rêves !",
+        "ru": "Размечтался! / Тебе показалось!"
+      },
+      {
+        "fr": "une maison de rêve",
+        "ru": "дом мечты"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rêve / réveil",
+        "note": "rêver = мечтать/видеть сон; не путать с (se) réveiller = просыпаться. rêve (сон-мечта) против réveil (будильник, пробуждение) — разные слова, похожие на вид."
+      },
+      {
+        "with": "dormir",
+        "note": "rêver = видеть сон (что происходит во сне); dormir = спать (само состояние сна). Можно dormir без rêver."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["sentiments", "imagination"],
+    "caseIds": ["wc-sentiments"]
+  },
+  {
+    "id": "wl-sentiments-regretter",
+    "lemma": "regretter",
+    "pos": "verb",
+    "ipa": "/ʁə.ɡʁɛ.te/",
+    "translationsRu": ["сожалеть", "жалеть"],
+    "translationsEn": ["to regret", "to be sorry"],
+    "semanticCore": "Сожалеть о сделанном/несделанном и скучать по утраченному; вежливое «je regrette» = «к сожалению / мне жаль».",
+    "collocations": [
+      {
+        "fr": "Je regrette.",
+        "ru": "Сожалею / к сожалению (вежливый отказ)."
+      },
+      {
+        "fr": "regretter d'avoir fait",
+        "ru": "жалеть, что сделал"
+      },
+      {
+        "fr": "regretter son pays",
+        "ru": "скучать по своей стране"
+      },
+      {
+        "fr": "sans regret",
+        "ru": "без сожаления"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "être désolé",
+        "note": "regretter = сожалеть (о поступке, выборе); être désolé = извиняться, «мне жаль» (сочувствие/извинение). «Je regrette» вежливее и холоднее при отказе."
+      },
+      {
+        "with": "manquer",
+        "note": "«скучать по» можно сказать и regretter (regretter son pays), и manquer наоборот: mon pays me manque (мне не хватает страны). Конструкция у manquer перевёрнутая."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["sentiments", "negatif"],
+    "caseIds": ["wc-sentiments"]
+  },
+  {
+    "id": "wl-sentiments-sourire",
+    "lemma": "sourire",
+    "pos": "verb",
+    "ipa": "/su.ʁiʁ/",
+    "translationsRu": ["улыбаться", "улыбка"],
+    "translationsEn": ["to smile", "a smile"],
+    "semanticCore": "Улыбаться (глагол) и улыбка (un sourire) — одно слово; внутри спрятан rire (смеяться): sou-rire = «под-смех», лёгкая улыбка без смеха.",
+    "collocations": [
+      {
+        "fr": "sourire à quelqu'un",
+        "ru": "улыбнуться кому-то"
+      },
+      {
+        "fr": "un grand sourire",
+        "ru": "широкая улыбка"
+      },
+      {
+        "fr": "garder le sourire",
+        "ru": "сохранять улыбку, не унывать"
+      },
+      {
+        "fr": "avec le sourire",
+        "ru": "с улыбкой"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rire",
+        "note": "sourire = улыбаться (молча, губами); rire = смеяться (вслух). sourire тише и спокойнее, чем rire."
+      },
+      {
+        "with": "le sourire / sourire",
+        "note": "Одна форма — два значения: глагол sourire (улыбаться) и существительное un sourire (улыбка). Различай по артиклю/контексту."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["sentiments", "positif"],
+    "caseIds": ["wc-sentiments"]
+  },
+  {
+    "id": "wl-sentiments-pleurer",
+    "lemma": "pleurer",
+    "pos": "verb",
+    "ipa": "/plœ.ʁe/",
+    "translationsRu": ["плакать"],
+    "translationsEn": ["to cry", "to weep"],
+    "semanticCore": "Плакать — лить слёзы от горя, боли или (реже) радости; pleurer de joie тоже возможно.",
+    "collocations": [
+      {
+        "fr": "pleurer de joie",
+        "ru": "плакать от радости"
+      },
+      {
+        "fr": "se mettre à pleurer",
+        "ru": "расплакаться"
+      },
+      {
+        "fr": "pleurer toutes les larmes de son corps",
+        "ru": "выплакать все слёзы, рыдать"
+      },
+      {
+        "fr": "avoir envie de pleurer",
+        "ru": "хотеть плакать"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pleuvoir",
+        "note": "pleurer = плакать (о человеке); pleuvoir = идти (о дожде): il pleut = идёт дождь. Похожи на вид и звук, но разные глаголы."
+      },
+      {
+        "with": "rire",
+        "note": "pleurer = плакать; rire = смеяться. Полные противоположности: rire de joie vs pleurer de chagrin."
+      }
+    ],
+    "frequencyRank": 580,
+    "level": "A2",
+    "tags": ["sentiments", "negatif"],
+    "caseIds": ["wc-sentiments"]
+  },
+  {
+    "id": "wl-sentiments-rire",
+    "lemma": "rire",
+    "pos": "verb",
+    "ipa": "/ʁiʁ/",
+    "translationsRu": ["смеяться", "смех"],
+    "translationsEn": ["to laugh", "laughter"],
+    "semanticCore": "Смеяться вслух (глагол) и смех (le rire) — одно слово; смеяться над кем-то — rire de, шутить — pour rire.",
+    "collocations": [
+      {
+        "fr": "éclater de rire",
+        "ru": "расхохотаться"
+      },
+      {
+        "fr": "rire de quelqu'un",
+        "ru": "смеяться над кем-то"
+      },
+      {
+        "fr": "mourir de rire",
+        "ru": "умирать со смеху"
+      },
+      {
+        "fr": "pour rire",
+        "ru": "в шутку, понарошку"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sourire",
+        "note": "rire = смеяться (вслух, со звуком); sourire = улыбаться (молча). sourire — это «под-смех», тише чем rire."
+      },
+      {
+        "with": "lire",
+        "note": "rire (смеяться) и lire (читать) различаются только первым звуком на слух: /ʁiʁ/ против /liʁ/. Слушай начало слова — r против l."
+      }
+    ],
+    "frequencyRank": 450,
+    "level": "A2",
+    "tags": ["sentiments", "positif"],
+    "caseIds": ["wc-sentiments"]
+  }
+]

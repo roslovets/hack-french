@@ -1,0 +1,323 @@
+[
+  {
+    "id": "wc-directions",
+    "title": "Направления",
+    "theme": "directions",
+    "level": "A2",
+    "wordIds": [
+      "wl-directions-gauche",
+      "wl-directions-droite",
+      "wl-directions-toutdroit",
+      "wl-directions-devant",
+      "wl-directions-derriere",
+      "wl-directions-ici",
+      "wl-directions-la",
+      "wl-directions-loin"
+    ],
+    "steps": [
+      {
+        "id": "wc-directions-gauche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-directions-gauche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Tournez à gauche après le pont.",
+          "La pharmacie est sur votre gauche.",
+          "Prenez la première rue à gauche."
+        ],
+        "options": ["лево / налево", "право / направо", "прямо", "далеко"],
+        "correctIndex": 0,
+        "explanation": "gauche (f) — левая сторона. В указаниях пути почти всегда «à gauche» — налево / слева. Право — la droite."
+      },
+      {
+        "id": "wc-directions-gauche-cmp",
+        "kind": "compare",
+        "wordId": "wl-directions-gauche",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«à gauche» и «la gauche». В чём разница в употреблении?",
+        "phrases": ["Tournez à gauche.", "La gauche, c'est par là."],
+        "options": [
+          "«à gauche» — наречное «налево/слева» (как ехать); «la gauche» — само существительное «левая сторона».",
+          "Это одно и то же, разницы нет.",
+          "«à gauche» значит «направо», а «la gauche» — «налево».",
+          "«la gauche» употребляется только во множественном числе."
+        ],
+        "correctIndex": 0,
+        "explanation": "В пути используют предлог: «à gauche» = налево/слева. «la gauche» — это существительное «левая сторона» (f), оно стоит за артиклем."
+      },
+      {
+        "id": "wc-directions-droite-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-directions-droite",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Tournez à droite au prochain feu.",
+          "La boulangerie est sur votre droite.",
+          "C'est la deuxième porte à droite."
+        ],
+        "options": ["право / направо", "лево / налево", "прямо", "сзади"],
+        "correctIndex": 0,
+        "explanation": "droite (f) — правая сторона; «à droite» — направо / справа. Лево — la gauche. Это пара противоположностей."
+      },
+      {
+        "id": "wc-directions-droite-trap",
+        "kind": "trap",
+        "wordId": "wl-directions-droite",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Прохожий говорит «allez tout droit», а потом «à droite». Это одно и то же направление?",
+        "options": [
+          "Нет: «tout droit» — прямо, «à droite» — направо. Разные направления.",
+          "Да, и то и другое значит «направо».",
+          "Да, оба значат «прямо».",
+          "«tout droit» значит «налево», «à droite» — «направо»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка похожих слов: «tout droit» = прямо (не поворачивая), «à droite» = направо. Слышатся близко, но ведут в разные стороны."
+      },
+      {
+        "id": "wc-directions-toutdroit-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-directions-toutdroit",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно выражение во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Allez tout droit jusqu'au carrefour.",
+          "Continuez tout droit, c'est au bout de la rue.",
+          "Tout droit, puis tournez à gauche."
+        ],
+        "options": ["прямо (не поворачивая)", "направо", "налево", "назад"],
+        "correctIndex": 0,
+        "explanation": "tout droit — «прямо», двигаться по прямой без поворотов. Не путать с «à droite» (направо) и «tout de suite» (сразу)."
+      },
+      {
+        "id": "wc-directions-toutdroit-sort",
+        "kind": "sort",
+        "wordId": "wl-directions-toutdroit",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие указания пути звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "allez tout droit",
+            "basket": "ok"
+          },
+          {
+            "text": "continuez tout droit",
+            "basket": "ok"
+          },
+          {
+            "text": "tournez à gauche",
+            "basket": "ok"
+          },
+          {
+            "text": "tournez tout droit",
+            "basket": "no"
+          },
+          {
+            "text": "allez à gauche tout droit",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«aller / continuer tout droit» и «tourner à gauche» — естественно. «tourner tout droit» — бессмыслица (прямо не поворачивают), а «à gauche tout droit» сразу задаёт два разных направления."
+      },
+      {
+        "id": "wc-directions-devant-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-directions-devant",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On se retrouve devant la gare.",
+          "Le bus s'arrête juste devant l'hôtel.",
+          "Il y a un arbre devant la maison."
+        ],
+        "options": ["перед / впереди", "за / сзади", "внутри", "далеко"],
+        "correctIndex": 0,
+        "explanation": "devant — «перед», спереди от чего-то: devant la gare — перед вокзалом. Противоположность — derrière (сзади)."
+      },
+      {
+        "id": "wc-directions-devant-trap",
+        "kind": "trap",
+        "wordId": "wl-directions-devant",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«devant» и «avant» похожи. Как сказать «перед домом» (место)?",
+        "options": [
+          "devant la maison",
+          "avant la maison",
+          "devant de la maison",
+          "avant de la maison"
+        ],
+        "correctIndex": 0,
+        "explanation": "devant — «перед» в пространстве (devant la maison). avant — «перед/до» во времени (avant midi). Для места нужен devant, без de."
+      },
+      {
+        "id": "wc-directions-derriere-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-directions-derriere",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le parking est derrière le supermarché.",
+          "Le jardin se trouve derrière la maison.",
+          "Quelqu'un marche juste derrière nous."
+        ],
+        "options": ["сзади / за", "перед / спереди", "рядом", "наверху"],
+        "correctIndex": 0,
+        "explanation": "derrière — «сзади / за»: derrière la maison — за домом. Обрати внимание на accents: d-e-r-r-i-è-r-e. Противоположность — devant."
+      },
+      {
+        "id": "wc-directions-derriere-cmp",
+        "kind": "compare",
+        "wordId": "wl-directions-derriere",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«derrière la gare» и «après la gare». В чём разница?",
+        "phrases": ["Le parking est derrière la gare.", "Tournez après la gare."],
+        "options": [
+          "«derrière» — «за/позади» в пространстве (с обратной стороны); «après» — «после» по ходу движения или во времени.",
+          "Это синонимы, разницы нет.",
+          "«derrière» значит «перед», «après» — «за».",
+          "Оба значат «внутри»."
+        ],
+        "correctIndex": 0,
+        "explanation": "derrière la gare — позади вокзала (с задней стороны). après la gare — после вокзала (дальше по пути / по времени). Разные идеи."
+      },
+      {
+        "id": "wc-directions-ici-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-directions-ici",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Viens ici, le bus arrive.",
+          "Par ici, la sortie est à droite.",
+          "Ici, c'est l'arrêt de tram."
+        ],
+        "options": ["здесь / сюда", "там (далеко)", "потом", "налево"],
+        "correctIndex": 0,
+        "explanation": "ici — «здесь», рядом с говорящим; «par ici» — сюда / в эту сторону. Противопоставлено là (там, дальше)."
+      },
+      {
+        "id": "wc-directions-ici-la-cmp",
+        "kind": "compare",
+        "wordId": "wl-directions-ici",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«ici» и «là». В чём разница между ними?",
+        "phrases": ["Reste ici, près de moi.", "Le magasin est là, plus loin."],
+        "options": [
+          "«ici» — здесь, у самого говорящего; «là» — там, чуть дальше (а в разговоре часто просто «тут»).",
+          "«ici» значит «там», «là» значит «здесь».",
+          "Это полные синонимы, выбор случаен.",
+          "«ici» — про время, «là» — про место."
+        ],
+        "correctIndex": 0,
+        "explanation": "ici = здесь (у меня); là = там (дальше). В живой речи là часто заменяет ici: «Il est là» обычно значит «он на месте»."
+      },
+      {
+        "id": "wc-directions-la-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-directions-la",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le restaurant est là-bas, au bout de la rue.",
+          "Mets ta valise là, près de la porte.",
+          "Regarde là, à droite, c'est la banque."
+        ],
+        "options": ["там / вот тут", "перед", "далеко", "прямо"],
+        "correctIndex": 0,
+        "explanation": "là — «там» или «вот тут» (указание на место чуть дальше). «là-bas» — вон там (далеко). Пишется с accent grave: là."
+      },
+      {
+        "id": "wc-directions-la-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-directions-la",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "là",
+        "options": ["là", "lit", "loup", "lac"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало «là» /la/ — «там». Похожие по началу, но другие слова: «lit» /li/ (кровать), «loup» /lu/ (волк), «lac» /lak/ (озеро). Все на l-, но гласный (и конец) другие."
+      },
+      {
+        "id": "wc-directions-loin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-directions-loin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La gare est encore loin ?",
+          "Ce n'est pas loin d'ici, deux minutes à pied.",
+          "Le village est trop loin pour y aller à pied."
+        ],
+        "options": ["далеко", "близко", "прямо", "справа"],
+        "correctIndex": 0,
+        "explanation": "loin — «далеко»; часто в связке «loin de» (далеко от): loin d'ici. Противоположность — près (близко)."
+      },
+      {
+        "id": "wc-directions-loin-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-directions-loin",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "loin",
+        "options": ["loin", "long", "lien", "loup"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало «loin» /lwɛ̃/ — «далеко». Похожие, но другие: «long» /lɔ̃/ (длинный), «lien» /ljɛ̃/ (связь), «loup» /lu/ (волк). Разный носовой звук."
+      },
+      {
+        "id": "wc-directions-loin-hint",
+        "kind": "wordHint",
+        "wordId": "wl-directions-loin",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: наречие, противоположное «близко» (près).",
+        "answer": "loin",
+        "hints": [
+          "Начинается на l…",
+          "4 буквы, носовой звук на конце /lwɛ̃/",
+          "C'est encore ___ ? — Это ещё далеко?"
+        ],
+        "explanation": "loin — «далеко». Антоним près (близко). Часто: «loin de la gare» — далеко от вокзала."
+      },
+      {
+        "id": "wc-directions-la-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-directions-la",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию, чтобы не путать là (там, с акцентом) и la (артикль «the» для ж.р.).",
+        "examples": [
+          "Accent grave над «à» в là — как палец, указывающий вдаль: «вон там». А пустая la (без акцента) — просто артикль перед словом (la maison).",
+          "Представь: «La maison est là» — артикль la держит существительное, а là (с акцентом) показывает, где дом стоит."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,279 @@
+[
+  {
+    "id": "wc-nombres",
+    "title": "Числа",
+    "theme": "nombres",
+    "level": "A1",
+    "wordIds": [
+      "wl-nombres-un",
+      "wl-nombres-deux",
+      "wl-nombres-trois",
+      "wl-nombres-cinq",
+      "wl-nombres-dix",
+      "wl-nombres-vingt",
+      "wl-nombres-cent",
+      "wl-nombres-mille"
+    ],
+    "steps": [
+      {
+        "id": "wc-nombres-un-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nombres-un",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai un frère et une sœur.",
+          "Donne-moi un café, s'il te plaît.",
+          "Il est une heure."
+        ],
+        "options": ["один (и неопределённый артикль «один из»)", "первый", "одинокий", "однажды"],
+        "correctIndex": 0,
+        "explanation": "un — «один», и оно же служит неопределённым артиклем (un café — «(один) кофе»). Перед существительным женского рода становится une: un frère, une sœur. «Первый» — premier, «одинокий» — seul."
+      },
+      {
+        "id": "wc-nombres-un-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-nombres-un",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для un, чтобы запомнить носовой звук /œ̃/ (не «ун», а гнусавое «эн») и форму женского рода une.",
+        "examples": [
+          "«Un» звучит как лёгкое мычание в нос: представь, что показываешь один палец и тянешь «œ̃-н-н», не закрывая рот.",
+          "Пара un / une: для «мужчины» (un homme) — короткое un, для «женщины» (une femme) — мягкое une."
+        ]
+      },
+      {
+        "id": "wc-nombres-deux-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nombres-deux",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Une table pour deux, s'il vous plaît.",
+          "J'ai deux enfants.",
+          "Il est deux heures."
+        ],
+        "options": ["два", "второй", "оба раза", "дважды"],
+        "correctIndex": 0,
+        "explanation": "deux — «два». Конечный x не читается: /dø/. Но перед гласной включается liaison и звучит /z/: deux enfants → /dø.z‿ɑ̃.fɑ̃/. «Второй» — deuxième, «дважды» — deux fois."
+      },
+      {
+        "id": "wc-nombres-deux-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-nombres-deux",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "deux",
+        "options": ["deux", "doux", "dur", "douze"],
+        "correctIndex": 0,
+        "explanation": "deux /dø/ — «два», чистое /ø/ с округлёнными губами. Похожие слова: doux /du/ — мягкий, dur /dyʁ/ — твёрдый, douze /duz/ — двенадцать. Различай гласную: /ø/ в deux, /u/ в doux и douze."
+      },
+      {
+        "id": "wc-nombres-trois-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nombres-trois",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'habite au troisième étage, j'ai trois fenêtres.",
+          "Le film dure trois heures.",
+          "Trois cafés, s'il vous plaît."
+        ],
+        "options": ["три", "третий", "трижды", "тринадцать"],
+        "correctIndex": 0,
+        "explanation": "trois — «три». Конечный s немой: /tʁwa/. Перед гласной — liaison /z/: trois heures → /tʁwa.z‿œʁ/. «Третий» — troisième, «тринадцать» — treize."
+      },
+      {
+        "id": "wc-nombres-trois-hint",
+        "kind": "wordHint",
+        "wordId": "wl-nombres-trois",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни число: оно идёт после deux и перед quatre.",
+        "answer": "trois",
+        "hints": [
+          "Начинается на tr…",
+          "5 букв, читается /tʁwa/, конечный s немой",
+          "un, deux, ___, quatre…"
+        ],
+        "explanation": "trois — «три». Пишется t-r-o-i-s, читается /tʁwa/ (s на конце не звучит). Перед гласной появляется liaison: trois amis /tʁwa.z‿a.mi/."
+      },
+      {
+        "id": "wc-nombres-cinq-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nombres-cinq",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il est cinq heures.",
+          "Ça coûte cinq euros.",
+          "J'ai cinq doigts à chaque main."
+        ],
+        "options": ["пять", "пятый", "пятнадцать", "пятьдесят"],
+        "correctIndex": 0,
+        "explanation": "cinq — «пять». В отдельном счёте и перед гласной q звучит: /sɛ̃k/ (cinq euros). «Пятый» — cinquième, «пятнадцать» — quinze, «пятьдесят» — cinquante."
+      },
+      {
+        "id": "wc-nombres-cinq-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-nombres-cinq",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "cinq",
+        "options": ["cinq", "sain", "sang", "singe"],
+        "correctIndex": 0,
+        "explanation": "cinq /sɛ̃k/ — «пять», с чётким /k/ на конце. Похожие слова без /k/: sain /sɛ̃/ — здоровый, sang /sɑ̃/ — кровь, singe /sɛ̃ʒ/ — обезьяна. Ключ — звук /k/ в конце cinq."
+      },
+      {
+        "id": "wc-nombres-dix-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nombres-dix",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": ["Il a dix ans.", "J'arrive dans dix minutes.", "Le livre coûte dix euros."],
+        "options": ["десять", "десятый", "двенадцать", "два"],
+        "correctIndex": 0,
+        "explanation": "dix — «десять». Звук x хитрый: в счёте /dis/, перед гласной /diz/ (dix ans → /di.z‿ɑ̃/), перед согласной /di/ (dix minutes → /di mi.nyt/). «Десятый» — dixième."
+      },
+      {
+        "id": "wc-nombres-dix-trap",
+        "kind": "trap",
+        "wordId": "wl-nombres-dix",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как звучит x в «dix» во фразе «dix ans» (десять лет)?",
+        "options": [
+          "как /z/: dix ans → /di.z‿ɑ̃/ (liaison перед гласной)",
+          "как /ks/: /diks‿ɑ̃/",
+          "как /s/: /dis‿ɑ̃/",
+          "вообще не звучит: /di.ɑ̃/"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка чтения dix: перед гласной x озвончается в /z/ (liaison): dix ans /di.z‿ɑ̃/, dix euros /di.z‿ø.ʁo/. В одиночном счёте dix звучит /dis/, а перед согласной — /di/ (dix francs)."
+      },
+      {
+        "id": "wc-nombres-vingt-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nombres-vingt",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Elle a vingt ans.",
+          "Ça fait vingt euros.",
+          "Le bus part dans vingt minutes."
+        ],
+        "options": ["двадцать", "двадцатый", "два", "двенадцать"],
+        "correctIndex": 0,
+        "explanation": "vingt — «двадцать». Конечный t немой: /vɛ̃/. Но в составных 21–29 и при liaison перед гласной t оживает: vingt-deux /vɛ̃t.dø/, vingt ans /vɛ̃.t‿ɑ̃/. «Двенадцать» — douze."
+      },
+      {
+        "id": "wc-nombres-vingt-sort",
+        "kind": "sort",
+        "wordId": "wl-nombres-vingt",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие записи с vingt верны, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Верно"
+          },
+          {
+            "id": "no",
+            "label": "Ошибка"
+          }
+        ],
+        "items": [
+          {
+            "text": "vingt euros",
+            "basket": "ok"
+          },
+          {
+            "text": "vingt et un",
+            "basket": "ok"
+          },
+          {
+            "text": "vingt-deux",
+            "basket": "ok"
+          },
+          {
+            "text": "vingt-cinq ans",
+            "basket": "ok"
+          },
+          {
+            "text": "vingt un",
+            "basket": "no"
+          },
+          {
+            "text": "vingts euros",
+            "basket": "no"
+          }
+        ],
+        "explanation": "21 — особый случай: «vingt et un» пишется с et (без дефисов в традиционной норме). Числа 22–29 — через дефис: vingt-deux, vingt-cinq. «vingt un» неверно: между vingt и un нужен et. «vingts euros» тоже ошибка: vingt получает -s только в «quatre-vingts» (умножение), а как простое «двадцать» оно неизменяемо — всегда vingt euros."
+      },
+      {
+        "id": "wc-nombres-cent-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nombres-cent",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ça coûte cent euros.",
+          "Il y a cent personnes dans la salle.",
+          "Je te l'ai dit cent fois !"
+        ],
+        "options": ["сто", "сотый", "пятьдесят", "цент (монета)"],
+        "correctIndex": 0,
+        "explanation": "cent — «сто». Читается /sɑ̃/, конечный t немой. «Cent fois» — «сто раз» (часто в смысле «много раз»). Не путать с le cent — «цент» (монета): число «сто» — это cent без артикля."
+      },
+      {
+        "id": "wc-nombres-cent-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-nombres-cent",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать число. Что значит cent?",
+        "bridge": "Англ. «century» (век = 100 лет) и «per cent» (на сотню) идут от того же латинского корня cent-. Так что cent — это «сто».",
+        "options": ["сто", "век", "цент (1/100 евро)", "центр"],
+        "correctIndex": 0,
+        "explanation": "cent = «сто». Мост — «century» / «percent» (про сотню). Осторожно: само слово «век» по-французски — siècle, «центр» — centre, а монета «цент» — un cent; число «сто» — просто cent."
+      },
+      {
+        "id": "wc-nombres-mille-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-nombres-mille",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ce vélo coûte mille euros.",
+          "La ville a deux mille habitants.",
+          "Merci mille fois !"
+        ],
+        "options": ["тысяча", "тысячный", "миля", "миллион"],
+        "correctIndex": 0,
+        "explanation": "mille — «тысяча». Читается /mil/ (двойная l не удваивает звук). Важно: mille никогда не получает -s во множителях: deux mille, trois mille (всегда без s). «Миллион» — un million, «миля» — un mille (омоним, но это другое слово-существительное)."
+      },
+      {
+        "id": "wc-nombres-mille-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-nombres-mille",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Во множителе три из этих чисел получают -s (deux cents, quatre-vingts…), а одно — НИКОГДА. Найди неизменяемое.",
+        "options": ["cent", "vingt", "quatre-vingt", "mille"],
+        "correctIndex": 3,
+        "explanation": "mille — единственное неизменяемое: всегда «deux mille», «trois mille», без -s. А cent и vingt берут -s, когда умножены и стоят в конце: «deux cents», «quatre-vingts». Но и они теряют -s, если за ними идёт ещё число: «deux cent un», «quatre-vingt-trois»."
+      }
+    ]
+  }
+]

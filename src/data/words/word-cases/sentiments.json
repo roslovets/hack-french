@@ -1,0 +1,314 @@
+[
+  {
+    "id": "wc-sentiments",
+    "title": "Чувства (глаголы)",
+    "theme": "sentiments",
+    "level": "A2",
+    "wordIds": [
+      "wl-sentiments-detester",
+      "wl-sentiments-preferer",
+      "wl-sentiments-esperer",
+      "wl-sentiments-rever",
+      "wl-sentiments-regretter",
+      "wl-sentiments-sourire",
+      "wl-sentiments-pleurer",
+      "wl-sentiments-rire"
+    ],
+    "steps": [
+      {
+        "id": "wc-sentiments-detester-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sentiments-detester",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Один глагол повторяется во всех трёх сценах. Что он значит?",
+        "contexts": [
+          "Je déteste attendre dans le froid.",
+          "Elle déteste ce film, elle est partie avant la fin.",
+          "On déteste se lever tôt le lundi."
+        ],
+        "options": [
+          "ненавидеть, терпеть не мочь",
+          "предпочитать одно другому",
+          "надеяться на что-то",
+          "сожалеть о чём-то"
+        ],
+        "correctIndex": 0,
+        "explanation": "détester — ненавидеть, терпеть не мочь: человека, вещь или действие (détester attendre / se lever tôt). Это противоположность aimer."
+      },
+      {
+        "id": "wc-sentiments-detester-sort",
+        "kind": "sort",
+        "wordId": "wl-sentiments-detester",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с détester звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "détester attendre",
+            "basket": "ok"
+          },
+          {
+            "text": "détester quelqu'un",
+            "basket": "ok"
+          },
+          {
+            "text": "Je déteste ça.",
+            "basket": "ok"
+          },
+          {
+            "text": "détester à le café",
+            "basket": "no"
+          },
+          {
+            "text": "détester de partir",
+            "basket": "no"
+          }
+        ],
+        "explanation": "После détester идёт прямое дополнение или инфинитив БЕЗ предлога: détester attendre, détester le café, détester quelqu'un. «détester à» и «détester de partir» — лишний предлог, так не говорят."
+      },
+      {
+        "id": "wc-sentiments-preferer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sentiments-preferer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Je préfère le thé au café.",
+          "Elle préfère rester à la maison ce soir.",
+          "Comme tu préfères, ça m'est égal."
+        ],
+        "options": [
+          "предпочитать (выбирать как более желанное)",
+          "ненавидеть",
+          "плакать",
+          "надеяться"
+        ],
+        "correctIndex": 0,
+        "explanation": "préférer — предпочитать. Вещи сравнивают через à: préférer le thé au café (предпочитать чай кофе). С действием идёт инфинитив: préférer rester."
+      },
+      {
+        "id": "wc-sentiments-preferer-cmp",
+        "kind": "compare",
+        "wordId": "wl-sentiments-preferer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "préférer и aimer mieux. В чём разница здесь?",
+        "phrases": ["Je préfère rester.", "J'aime mieux rester."],
+        "options": [
+          "Смысл один — «предпочитаю остаться»; aimer mieux чуть разговорнее, préférer нейтральнее.",
+          "préférer = предпочитаю; aimer mieux = ненавижу.",
+          "préférer про вещи, aimer mieux только про людей.",
+          "Это противоположные по смыслу фразы."
+        ],
+        "correctIndex": 0,
+        "explanation": "préférer и aimer mieux значат одно: «предпочитать, мне так больше нравится». Разница только в регистре: «j'aime mieux» звучит разговорнее, «je préfère» — нейтрально и универсально."
+      },
+      {
+        "id": "wc-sentiments-esperer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sentiments-esperer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "J'espère que tout ira bien.",
+          "Nous espérons te revoir bientôt.",
+          "J'espère bien !"
+        ],
+        "options": [
+          "надеяться (желать хорошего исхода)",
+          "ждать кого-то у двери",
+          "предпочитать",
+          "сожалеть"
+        ],
+        "correctIndex": 0,
+        "explanation": "espérer — надеяться на хороший исход. espérer que + глагол (que tout ira bien), espérer + инфинитив (espérer revoir). «J'espère bien !» — «очень на это надеюсь»."
+      },
+      {
+        "id": "wc-sentiments-esperer-trap",
+        "kind": "trap",
+        "wordId": "wl-sentiments-esperer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «I expect the bus» сбивает с толку. Как сказать «Я жду автобус» по-французски?",
+        "options": [
+          "J'attends le bus.",
+          "J'espère le bus.",
+          "Je préfère le bus.",
+          "Je regrette le bus."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: espérer — это «надеяться», а не «ждать». Ждать (того, кто/что придёт) — attendre: J'attends le bus. Англ. «expect» похоже на espérer, но переводится здесь именно через attendre."
+      },
+      {
+        "id": "wc-sentiments-rever-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sentiments-rever",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Один глагол во всех трёх сценах. Что он значит?",
+        "contexts": [
+          "Je rêve de voyager autour du monde.",
+          "Cette nuit, j'ai rêvé de toi.",
+          "Arrête de rêver, écoute-moi !"
+        ],
+        "options": [
+          "мечтать; видеть сон",
+          "просыпаться по будильнику",
+          "сожалеть о прошлом",
+          "смеяться над кем-то"
+        ],
+        "correctIndex": 0,
+        "explanation": "rêver — и «мечтать» наяву (rêver de voyager), и «видеть сон» (j'ai rêvé de toi). О чём именно — через предлог de. «Arrête de rêver» — «хватит витать в облаках»."
+      },
+      {
+        "id": "wc-sentiments-rever-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-sentiments-rever",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит rêver?",
+        "bridge": "Англ. «dream» (мечтать, видеть сон) — точный смысловой мост: rêver покрывает оба значения «dream». Существительное — un rêve (a dream): «a dream house» = une maison de rêve.",
+        "options": ["мечтать; видеть сон", "просыпаться", "плакать", "ненавидеть"],
+        "correctIndex": 0,
+        "explanation": "rêver = англ. «to dream»: и мечтать, и видеть сон. Не путай с (se) réveiller (просыпаться) — внешне похоже, но это пробуждение, не сон."
+      },
+      {
+        "id": "wc-sentiments-regretter-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sentiments-regretter",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Je regrette, c'est complet ce soir.",
+          "Il regrette d'avoir dit ça.",
+          "Elle regrette son ancien quartier."
+        ],
+        "options": [
+          "сожалеть; жалеть (о поступке); скучать по",
+          "надеяться на лучшее",
+          "предпочитать",
+          "улыбаться"
+        ],
+        "correctIndex": 0,
+        "explanation": "regretter — сожалеть (regretter d'avoir dit ça — жалеть, что сказал), скучать по утраченному (regretter son quartier). Вежливое «Je regrette» = «к сожалению» при отказе."
+      },
+      {
+        "id": "wc-sentiments-regretter-cmp",
+        "kind": "compare",
+        "wordId": "wl-sentiments-regretter",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "В кафе вам отказывают. «Je regrette» и «Je suis désolé» — в чём разница?",
+        "phrases": ["Je regrette, c'est complet.", "Je suis désolé, c'est complet."],
+        "options": [
+          "Оба = «к сожалению»; «je regrette» холоднее и официальнее, «je suis désolé» теплее, ближе к извинению.",
+          "«je regrette» = я рад; «je suis désolé» = я зол.",
+          "«je regrette» значит «я жду», а «désolé» — «я надеюсь».",
+          "Это полные синонимы без оттенков."
+        ],
+        "correctIndex": 0,
+        "explanation": "Оба вежливо отказывают: «к сожалению». «Je regrette» звучит холоднее, формальнее (констатация), «je suis désolé» — теплее, с оттенком извинения и сочувствия."
+      },
+      {
+        "id": "wc-sentiments-sourire-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sentiments-sourire",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le bébé sourit à sa mère.",
+          "Elle m'a fait un grand sourire.",
+          "Garde le sourire, ça va aller !"
+        ],
+        "options": ["улыбаться; улыбка", "смеяться вслух; смех", "плакать", "мечтать"],
+        "correctIndex": 0,
+        "explanation": "sourire — улыбаться (глагол: le bébé sourit) и улыбка (существительное: un grand sourire). Это «тихий» вариант: губами, без звука, в отличие от rire (смеяться вслух)."
+      },
+      {
+        "id": "wc-sentiments-sourire-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-sentiments-sourire",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три выражения описывают улыбку/смех — что-то весёлое. Найди лишнее.",
+        "options": ["faire un sourire", "garder le sourire", "éclater de rire", "fondre en larmes"],
+        "correctIndex": 3,
+        "explanation": "«faire un sourire» (улыбнуться), «garder le sourire» (не унывать) и «éclater de rire» (расхохотаться) — про улыбку и смех. «fondre en larmes» (разрыдаться) — лишнее: это про слёзы, противоположность."
+      },
+      {
+        "id": "wc-sentiments-pleurer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sentiments-pleurer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Le bébé pleure parce qu'il a faim.",
+          "Elle a pleuré de joie à la nouvelle.",
+          "Ne pleure pas, tout va s'arranger."
+        ],
+        "options": ["плакать (лить слёзы)", "смеяться", "улыбаться", "надеяться"],
+        "correctIndex": 0,
+        "explanation": "pleurer — плакать, лить слёзы: от голода, от радости (pleurer de joie), от горя. «Ne pleure pas» — «не плачь». Не путать с pleuvoir (идти — о дожде): il pleut."
+      },
+      {
+        "id": "wc-sentiments-rire-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sentiments-rire",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On a beaucoup ri à ses blagues.",
+          "Ne ris pas, ce n'est pas drôle !",
+          "C'était pour rire, ne te fâche pas."
+        ],
+        "options": ["смеяться; смех", "улыбаться молча", "плакать", "сожалеть"],
+        "correctIndex": 0,
+        "explanation": "rire — смеяться вслух (on a ri = мы смеялись) и смех (le rire). «pour rire» — «в шутку, понарошку». Громче и звучнее, чем sourire (улыбаться молча)."
+      },
+      {
+        "id": "wc-sentiments-pleurer-hint",
+        "kind": "wordHint",
+        "wordId": "wl-sentiments-pleurer",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: лить слёзы — от горя, боли или радости.",
+        "answer": "pleurer",
+        "hints": [
+          "Начинается на pl…",
+          "7 букв, заканчивается на -er; внутри есть звук /œ/",
+          "Ne ___ pas, tout va s'arranger."
+        ],
+        "explanation": "pleurer /plœ.ʁe/ — плакать. Осторожно: pleurer (плакать) ≠ pleuvoir (il pleut — идёт дождь). Похожи на вид, но разные глаголы."
+      },
+      {
+        "id": "wc-sentiments-rire-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-sentiments-rire",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, что прозвучало. Слова похожи, но не одинаковы.",
+        "audioText": "rire",
+        "options": ["rire", "lire", "dire"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало rire /ʁiʁ/ (смеяться). Сравни: lire /liʁ/ (читать) и dire /diʁ/ (сказать). Все рифмуются — различай первый звук: r против l против d."
+      }
+    ]
+  }
+]

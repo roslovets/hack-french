@@ -1,0 +1,321 @@
+[
+  {
+    "id": "wc-salutations",
+    "title": "Приветствия",
+    "theme": "salutations",
+    "level": "A1",
+    "wordIds": [
+      "wl-salutations-bonjour",
+      "wl-salutations-aurevoir",
+      "wl-salutations-merci",
+      "wl-salutations-salut",
+      "wl-salutations-enchante",
+      "wl-salutations-bienvenue",
+      "wl-salutations-bonsoir",
+      "wl-salutations-bonnenuit"
+    ],
+    "steps": [
+      {
+        "id": "wc-salutations-bonjour-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-salutations-bonjour",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово открывает все три сцены. Что оно значит?",
+        "contexts": [
+          "Bonjour, madame ! Comment allez-vous ?",
+          "Bonjour, je voudrais un café, s'il vous plaît.",
+          "Il dit bonjour à tout le monde au bureau."
+        ],
+        "options": ["здравствуйте / добрый день", "до свидания", "спокойной ночи", "спасибо"],
+        "correctIndex": 0,
+        "explanation": "bonjour — приветствие днём: «здравствуйте» / «добрый день». Дословно «хороший день» (bon + jour). Прощание — au revoir, вечером здороваются bonsoir."
+      },
+      {
+        "id": "wc-salutations-bonjour-cmp",
+        "kind": "compare",
+        "wordId": "wl-salutations-bonjour",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Вы зашли утром и вечером. Чем bonjour отличается от bonsoir?",
+        "phrases": ["Bonjour ! (à 9 h du matin)", "Bonsoir ! (à 20 h)"],
+        "options": [
+          "bonjour говорят днём, bonsoir — вечером (примерно с 18 часов).",
+          "Это полные синонимы, время суток не важно.",
+          "bonjour — только при прощании, bonsoir — только при встрече.",
+          "bonjour говорят вечером, bonsoir — утром."
+        ],
+        "correctIndex": 0,
+        "explanation": "bonjour — днём, bonsoir — вечером (примерно с 18 часов). Оба годятся и при встрече. Не путать с bonne nuit — это «спокойной ночи», говорят только перед сном."
+      },
+      {
+        "id": "wc-salutations-bonsoir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-salutations-bonsoir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Bonsoir, une table pour deux, s'il vous plaît.",
+          "Bonsoir à tous, la réunion va commencer.",
+          "Il est arrivé à 19 h et a dit : « Bonsoir ! »"
+        ],
+        "options": ["добрый вечер", "доброе утро", "спокойной ночи", "до встречи"],
+        "correctIndex": 0,
+        "explanation": "bonsoir — «добрый вечер» (bon + soir). Им здороваются и прощаются вечером. «Спокойной ночи» — это bonne nuit, его говорят только ложась спать."
+      },
+      {
+        "id": "wc-salutations-bonsoir-trap",
+        "kind": "trap",
+        "wordId": "wl-salutations-bonsoir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Вечером уходишь с вечеринки и хочешь попрощаться нейтрально. Что естественнее всего сказать?",
+        "options": [
+          "Bonsoir ! (или Bonne soirée !) — годится и при прощании вечером",
+          "Bonne nuit ! — ведь уже вечер",
+          "Bonjour ! — это нейтрально в любое время",
+          "Bienvenue ! — так прощаются"
+        ],
+        "correctIndex": 0,
+        "explanation": "Вечером bonsoir работает и при встрече, и при прощании; ещё говорят bonne soirée («хорошего вечера»). bonne nuit — только перед сном, bienvenue — «добро пожаловать» (приветствие гостя), а bonjour вечером звучит странно."
+      },
+      {
+        "id": "wc-salutations-aurevoir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-salutations-aurevoir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно выражение во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Au revoir, madame, bonne journée !",
+          "Il fait au revoir de la main.",
+          "Au revoir et à bientôt !"
+        ],
+        "options": ["до свидания", "здравствуйте", "пожалуйста", "извините"],
+        "correctIndex": 0,
+        "explanation": "au revoir — «до свидания». Дословно «до (нового) свидания» (au + revoir). Пишется в два слова. Встреча — bonjour / bonsoir."
+      },
+      {
+        "id": "wc-salutations-aurevoir-sort",
+        "kind": "sort",
+        "wordId": "wl-salutations-aurevoir",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие прощания и пожелания звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "Au revoir et à bientôt !",
+            "basket": "ok"
+          },
+          {
+            "text": "Au revoir, bonne journée !",
+            "basket": "ok"
+          },
+          {
+            "text": "dire au revoir à un ami",
+            "basket": "ok"
+          },
+          {
+            "text": "Au revoir, merci pour tout.",
+            "basket": "ok"
+          },
+          {
+            "text": "Boire un au revoir",
+            "basket": "no"
+          },
+          {
+            "text": "Au revoir le matin bonjour",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«Au revoir et à bientôt», «Au revoir, bonne journée», «dire au revoir» — естественные прощания. «Boire un au revoir» и «Au revoir le matin bonjour» — бессмыслица."
+      },
+      {
+        "id": "wc-salutations-merci-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-salutations-merci",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Merci beaucoup pour votre aide !",
+          "— Voilà votre café. — Merci !",
+          "Non merci, c'est gentil."
+        ],
+        "options": ["спасибо", "пожалуйста (просьба)", "извините", "до свидания"],
+        "correctIndex": 0,
+        "explanation": "merci — «спасибо». «merci beaucoup» — большое спасибо; «non merci» — «нет, спасибо» (вежливый отказ). Не путать с «пожалуйста»-просьбой (s'il vous plaît)."
+      },
+      {
+        "id": "wc-salutations-merci-trap",
+        "kind": "trap",
+        "wordId": "wl-salutations-merci",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «mercy» = милосердие, пощада. А что значит французское merci?",
+        "options": ["спасибо", "милосердие, пощада", "рынок", "среда"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: фр. merci — это «спасибо», а не англ. «mercy» (милосердие). Рынок — un marché, среда — mercredi. Слышится похоже, значения разные."
+      },
+      {
+        "id": "wc-salutations-salut-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-salutations-salut",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": ["Salut Léa, ça va ?", "Salut, à demain !", "Salut les amis, je suis là !"],
+        "options": [
+          "привет / пока (неформально)",
+          "здравствуйте (вежливо)",
+          "спасибо",
+          "добро пожаловать"
+        ],
+        "correctIndex": 0,
+        "explanation": "salut — неформальное «привет» и «пока» сразу: говорят друзьям и на «ты». Конечная t не читается: /sa.ly/. С незнакомыми и вежливо — bonjour."
+      },
+      {
+        "id": "wc-salutations-salut-cmp",
+        "kind": "compare",
+        "wordId": "wl-salutations-salut",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Вы здороваетесь с другом и с незнакомой женщиной в магазине. В чём разница salut и bonjour?",
+        "phrases": ["Salut, ça va ?", "Bonjour, madame."],
+        "options": [
+          "salut — неформально, для друзей и на «ты»; bonjour — нейтрально-вежливо, для всех.",
+          "salut — очень вежливо, bonjour — грубо.",
+          "salut говорят только вечером, bonjour — утром.",
+          "Это полные синонимы, регистр одинаковый."
+        ],
+        "correctIndex": 0,
+        "explanation": "salut — дружеское «привет/пока», только со своими. bonjour — нейтральное «здравствуйте», уместно с кем угодно. Незнакомой женщине говорят bonjour, madame, а не salut."
+      },
+      {
+        "id": "wc-salutations-salut-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-salutations-salut",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Услышь слово и выбери ровно его среди похожих по звучанию.",
+        "audioText": "salut",
+        "options": ["salut", "salade", "salon", "samedi"],
+        "correctIndex": 0,
+        "explanation": "salut /sa.ly/ — «привет». Похожие на слух, но другие слова: salade (салат), salon (гостиная), samedi (суббота). Конечная t в salut не звучит."
+      },
+      {
+        "id": "wc-salutations-enchante-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-salutations-enchante",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Это говорят при знакомстве. Что значит выделенное слово?",
+        "contexts": [
+          "— Je m'appelle Paul. — Enchanté !",
+          "Enchantée de faire votre connaissance.",
+          "— Voici ma collègue Marie. — Enchanté, Marie."
+        ],
+        "options": ["очень приятно (при знакомстве)", "до свидания", "извините", "поздравляю"],
+        "correctIndex": 0,
+        "explanation": "enchanté — «очень приятно» при знакомстве (дословно «очарован»). Женщина или о женщине: enchantée (лишняя e не слышна). Полная форма: enchanté(e) de faire votre connaissance."
+      },
+      {
+        "id": "wc-salutations-enchante-trap",
+        "kind": "trap",
+        "wordId": "wl-salutations-enchante",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «enchanted» — заколдованный, волшебный (как в сказке). А что значит enchanté при знакомстве?",
+        "options": [
+          "очень приятно (рад познакомиться)",
+          "заколдованный, под чарами",
+          "разочарованный",
+          "уставший"
+        ],
+        "correctIndex": 0,
+        "explanation": "При знакомстве enchanté — это «очень приятно», вежливая формула, а не «заколдованный» из сказки. Буквальный образ «очарован» сохранился, но в речи это просто «рад знакомству»."
+      },
+      {
+        "id": "wc-salutations-bienvenue-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-salutations-bienvenue",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Bienvenue à Paris !",
+          "Bienvenue chez nous, entrez !",
+          "Bienvenue dans notre équipe."
+        ],
+        "options": ["добро пожаловать", "до свидания", "спокойной ночи", "поздравляю"],
+        "correctIndex": 0,
+        "explanation": "bienvenue — «добро пожаловать» (bien + venue, «хорошо пришедший»). «bienvenue à + город», «bienvenue chez nous» — добро пожаловать к нам."
+      },
+      {
+        "id": "wc-salutations-bienvenue-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-salutations-bienvenue",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит bienvenue?",
+        "bridge": "Англ. «welcome» — это и есть bienvenue. А по частям: bien («хорошо») + venue (от venir, «приходить») — «хорошо, что пришли».",
+        "options": ["добро пожаловать", "до свидания", "хорошего вечера", "будьте здоровы"],
+        "correctIndex": 0,
+        "explanation": "bienvenue = welcome = «добро пожаловать». Разбор bien + venue («хорошо пришедший») помогает не путать его с прощаниями."
+      },
+      {
+        "id": "wc-salutations-bonnenuit-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-salutations-bonnenuit",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Когда так говорят? Что значит это выражение?",
+        "contexts": [
+          "Il est minuit, bonne nuit les enfants !",
+          "Je vais me coucher. Bonne nuit !",
+          "Bonne nuit, dors bien."
+        ],
+        "options": ["спокойной ночи", "добрый вечер", "доброе утро", "до завтра днём"],
+        "correctIndex": 0,
+        "explanation": "bonne nuit — «спокойной ночи», говорят только перед сном (bonne + nuit, «хорошая ночь»). Просто здороваться вечером — это bonsoir, а не bonne nuit."
+      },
+      {
+        "id": "wc-salutations-bonnenuit-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-salutations-bonnenuit",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три выражения уместны при встрече. Найди лишнее — то, что говорят, расставаясь на ночь.",
+        "options": ["Bonjour", "Bonsoir", "Bienvenue", "Bonne nuit"],
+        "correctIndex": 3,
+        "explanation": "Bonjour, bonsoir и bienvenue годятся при встрече. Bonne nuit — лишнее: это прощание перед сном, «спокойной ночи»."
+      },
+      {
+        "id": "wc-salutations-bonjour-hint",
+        "kind": "wordHint",
+        "wordId": "wl-salutations-bonjour",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: нейтральное дневное приветствие, которое говорят кому угодно — другу, продавцу, начальнику.",
+        "answer": "bonjour",
+        "hints": [
+          "Состоит из bon + …",
+          "Дословно «хороший день»",
+          "___, madame ! Comment allez-vous ?"
+        ],
+        "explanation": "bonjour — «здравствуйте / добрый день». Универсальное дневное приветствие. Вечером — bonsoir, неформально с друзьями — salut."
+      }
+    ]
+  }
+]

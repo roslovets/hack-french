@@ -1,0 +1,330 @@
+[
+  {
+    "id": "wl-cuisson-cuisiner",
+    "lemma": "cuisiner",
+    "pos": "verb",
+    "ipa": "/kɥi.zi.ne/",
+    "translationsRu": ["готовить (еду)", "стряпать"],
+    "translationsEn": ["to cook"],
+    "semanticCore": "Готовить именно еду, заниматься стряпнёй: процесс приготовления блюда от начала до конца. Внутри сидит la cuisine (кухня/кулинария).",
+    "collocations": [
+      {
+        "fr": "cuisiner un plat",
+        "ru": "приготовить блюдо"
+      },
+      {
+        "fr": "cuisiner pour des amis",
+        "ru": "готовить для друзей"
+      },
+      {
+        "fr": "aimer cuisiner",
+        "ru": "любить готовить"
+      },
+      {
+        "fr": "cuisiner avec des légumes frais",
+        "ru": "готовить из свежих овощей"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "préparer",
+        "note": "cuisiner = готовить именно еду, стряпать (с огнём, рецептом); préparer = подготавливать что угодно (préparer le dîner, но и préparer sa valise)."
+      },
+      {
+        "with": "faire la cuisine",
+        "note": "cuisiner и faire la cuisine — почти синонимы «готовить»; faire la cuisine чуть разговорнее и про процесс в целом."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["cuisson", "verbe-action"],
+    "caseIds": ["wc-cuisson"]
+  },
+  {
+    "id": "wl-cuisson-couper",
+    "lemma": "couper",
+    "pos": "verb",
+    "ipa": "/ku.pe/",
+    "translationsRu": ["резать", "нарезать", "отрезать"],
+    "translationsEn": ["to cut"],
+    "semanticCore": "Разделять ножом или ножницами на части: хлеб, овощи, мясо. На кухне — нарезать продукт перед готовкой.",
+    "collocations": [
+      {
+        "fr": "couper le pain",
+        "ru": "резать хлеб"
+      },
+      {
+        "fr": "couper en morceaux",
+        "ru": "нарезать кусочками"
+      },
+      {
+        "fr": "couper en deux",
+        "ru": "разрезать пополам"
+      },
+      {
+        "fr": "couper les légumes",
+        "ru": "нарезать овощи"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "couler",
+        "note": "couper = резать (/ku.pe/); couler = течь, литься (/ku.le/). Различает один звук p/l — легко спутать на слух."
+      },
+      {
+        "with": "trancher",
+        "note": "couper = резать вообще; trancher = нарезать ровными ломтиками (trancher le jambon). trancher — частный, более «ломтевой» случай couper."
+      }
+    ],
+    "frequencyRank": 430,
+    "level": "A2",
+    "tags": ["cuisson", "verbe-action"],
+    "caseIds": ["wc-cuisson"]
+  },
+  {
+    "id": "wl-cuisson-gouter",
+    "lemma": "goûter",
+    "pos": "verb",
+    "ipa": "/ɡu.te/",
+    "translationsRu": ["пробовать (на вкус)", "попробовать"],
+    "translationsEn": ["to taste", "to try (food)"],
+    "semanticCore": "Брать чуть-чуть в рот, чтобы оценить вкус: проверить блюдо или впервые попробовать что-то новое. Как существительное le goûter — полдник.",
+    "collocations": [
+      {
+        "fr": "goûter la sauce",
+        "ru": "попробовать соус (на вкус)"
+      },
+      {
+        "fr": "goûter un plat",
+        "ru": "попробовать блюдо"
+      },
+      {
+        "fr": "tu veux goûter ?",
+        "ru": "хочешь попробовать?"
+      },
+      {
+        "fr": "goûter à tout",
+        "ru": "пробовать всё подряд"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "essayer",
+        "note": "goûter = пробовать НА ВКУС (еду, напиток); essayer = пробовать/пытаться вообще (essayer une robe, essayer de faire). Еду на вкус — только goûter."
+      },
+      {
+        "with": "sentir",
+        "note": "goûter = пробовать ртом, на вкус; sentir = нюхать / чувствовать запах. Sentir носом, goûter языком."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["cuisson", "perception"],
+    "caseIds": ["wc-cuisson"]
+  },
+  {
+    "id": "wl-cuisson-preparer",
+    "lemma": "préparer",
+    "pos": "verb",
+    "ipa": "/pʁe.pa.ʁe/",
+    "translationsRu": ["готовить", "подготавливать", "приготовить"],
+    "translationsEn": ["to prepare", "to get ready"],
+    "semanticCore": "Заранее всё подготавливать: и еду (préparer le dîner), и не-еду (préparer un examen, sa valise). Шире, чем cuisiner.",
+    "collocations": [
+      {
+        "fr": "préparer le dîner",
+        "ru": "готовить ужин"
+      },
+      {
+        "fr": "préparer une recette",
+        "ru": "готовить по рецепту"
+      },
+      {
+        "fr": "préparer le café",
+        "ru": "сделать кофе"
+      },
+      {
+        "fr": "préparer à manger",
+        "ru": "приготовить поесть / еду"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cuisiner",
+        "note": "préparer = подготавливать что угодно (еду и не-еду); cuisiner = именно стряпать еду. préparer une valise можно, cuisiner une valise — нет."
+      },
+      {
+        "with": "préparer (англ. prepare)",
+        "note": "Прямой родственник англ. prepare — узнаётся легко; просто читается по-французски /pʁe.pa.ʁe/, без английского звука."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A2",
+    "tags": ["cuisson", "verbe-action"],
+    "caseIds": ["wc-cuisson"]
+  },
+  {
+    "id": "wl-cuisson-servir",
+    "lemma": "servir",
+    "pos": "verb",
+    "ipa": "/sɛʁ.viʁ/",
+    "translationsRu": ["подавать (еду)", "служить", "быть полезным"],
+    "translationsEn": ["to serve"],
+    "semanticCore": "Подавать готовое блюдо на стол; шире — служить, быть полезным (servir à qch). На кухне: подать гостям то, что приготовил.",
+    "collocations": [
+      {
+        "fr": "servir le dîner",
+        "ru": "подавать ужин"
+      },
+      {
+        "fr": "servir chaud",
+        "ru": "подавать горячим"
+      },
+      {
+        "fr": "servir à table",
+        "ru": "подавать за столом"
+      },
+      {
+        "fr": "servir les invités",
+        "ru": "обслуживать / угощать гостей"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "servir à",
+        "note": "servir le café = подавать кофе; servir à = служить для чего-то (À quoi ça sert ? — для чего это?). Один глагол, два смысла — по предлогу à."
+      },
+      {
+        "with": "apporter",
+        "note": "servir = подавать блюдо (как официант, раскладывая по тарелкам); apporter = просто принести (apporter le plat à table). servir — про подачу и угощение."
+      }
+    ],
+    "frequencyRank": 340,
+    "level": "A2",
+    "tags": ["cuisson", "verbe-action"],
+    "caseIds": ["wc-cuisson"]
+  },
+  {
+    "id": "wl-cuisson-verser",
+    "lemma": "verser",
+    "pos": "verb",
+    "ipa": "/vɛʁ.se/",
+    "translationsRu": ["наливать", "лить", "насыпать (жидкое/сыпучее)"],
+    "translationsEn": ["to pour"],
+    "semanticCore": "Лить жидкость (или сыпать сыпучее) из одной ёмкости в другую: налить воду, влить молоко в миску.",
+    "collocations": [
+      {
+        "fr": "verser l'eau",
+        "ru": "налить воду"
+      },
+      {
+        "fr": "verser le lait dans le bol",
+        "ru": "налить молоко в миску"
+      },
+      {
+        "fr": "verser un verre de vin",
+        "ru": "налить бокал вина"
+      },
+      {
+        "fr": "verser doucement",
+        "ru": "лить медленно / аккуратно"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "verre",
+        "note": "verser = наливать (глагол, /vɛʁ.se/); un verre = стакан/бокал (существительное, /vɛʁ/). Звучат похоже — наливаешь (verser) в стакан (un verre)."
+      },
+      {
+        "with": "remplir",
+        "note": "verser = лить (само действие струёй); remplir = наполнять (до краёв, результат). Tu verses de l'eau pour remplir le verre — льёшь, чтобы наполнить."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A2",
+    "tags": ["cuisson", "verbe-action"],
+    "caseIds": ["wc-cuisson"]
+  },
+  {
+    "id": "wl-cuisson-melanger",
+    "lemma": "mélanger",
+    "pos": "verb",
+    "ipa": "/me.lɑ̃.ʒe/",
+    "translationsRu": ["смешивать", "перемешивать", "мешать"],
+    "translationsEn": ["to mix"],
+    "semanticCore": "Соединять и перемешивать ингредиенты вместе: муку с яйцами, ложкой в миске. Также «перепутать» в переносном смысле.",
+    "collocations": [
+      {
+        "fr": "mélanger les ingrédients",
+        "ru": "смешать ингредиенты"
+      },
+      {
+        "fr": "bien mélanger",
+        "ru": "хорошо перемешать"
+      },
+      {
+        "fr": "mélanger la pâte",
+        "ru": "размешать тесто"
+      },
+      {
+        "fr": "mélanger avec une cuillère",
+        "ru": "мешать ложкой"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mêler",
+        "note": "mélanger = физически смешивать (продукты, цвета) — основной кухонный глагол; mêler чаще абстрактно (se mêler de — вмешиваться). На кухне — mélanger."
+      },
+      {
+        "with": "remuer",
+        "note": "mélanger = смешать разные вещи в одно; remuer = помешивать (чтобы не пригорело), не обязательно соединяя новое. Суп на огне — remuer, тесто из продуктов — mélanger."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["cuisson", "verbe-action"],
+    "caseIds": ["wc-cuisson"]
+  },
+  {
+    "id": "wl-cuisson-chauffer",
+    "lemma": "chauffer",
+    "pos": "verb",
+    "ipa": "/ʃo.fe/",
+    "translationsRu": ["греть", "нагревать", "разогревать"],
+    "translationsEn": ["to heat", "to warm up"],
+    "semanticCore": "Делать тёплым или горячим: воду, молоко, готовое блюдо. Часто в обороте faire chauffer — поставить греться.",
+    "collocations": [
+      {
+        "fr": "faire chauffer l'eau",
+        "ru": "нагреть воду / поставить воду греться"
+      },
+      {
+        "fr": "chauffer le lait",
+        "ru": "подогреть молоко"
+      },
+      {
+        "fr": "chauffer le plat",
+        "ru": "разогреть блюдо"
+      },
+      {
+        "fr": "chauffer à feu doux",
+        "ru": "греть на медленном огне"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chausser",
+        "note": "chauffer = греть (/ʃo.fe/); chausser = обувать, надевать обувь (/ʃo.se/). Различает звук f/s — близкие на слух, но смысл совсем разный."
+      },
+      {
+        "with": "cuire",
+        "note": "chauffer = нагревать/разогревать (сделать тёплым); cuire = варить/печь, доводить до готовности. Воду chauffer, а яйцо cuire (приготовить)."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["cuisson", "verbe-action"],
+    "caseIds": ["wc-cuisson"]
+  }
+]

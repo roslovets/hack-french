@@ -1,0 +1,320 @@
+[
+  {
+    "id": "wl-directions-gauche",
+    "lemma": "gauche",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɡoʃ/",
+    "translationsRu": ["лево", "левая сторона"],
+    "translationsEn": ["left"],
+    "semanticCore": "Левая сторона; в указаниях пути почти всегда в связке «à gauche» — налево / слева.",
+    "collocations": [
+      {
+        "fr": "à gauche",
+        "ru": "налево / слева"
+      },
+      {
+        "fr": "tournez à gauche",
+        "ru": "поверните налево"
+      },
+      {
+        "fr": "sur votre gauche",
+        "ru": "по левую руку от вас"
+      },
+      {
+        "fr": "la première à gauche",
+        "ru": "первая (улица) налево"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "droite",
+        "note": "gauche = лево; droite = право. Это пара противоположностей — путать их в указаниях пути критично."
+      },
+      {
+        "with": "gauche (прил.)",
+        "note": "То же слово как прилагательное значит «неуклюжий» (un geste gauche). В навигации это всегда «левый/налево»."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["directions", "orientation"],
+    "caseIds": ["wc-directions"]
+  },
+  {
+    "id": "wl-directions-droite",
+    "lemma": "droite",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/dʁwat/",
+    "translationsRu": ["право", "правая сторона"],
+    "translationsEn": ["right"],
+    "semanticCore": "Правая сторона; в указаниях пути в связке «à droite» — направо / справа.",
+    "collocations": [
+      {
+        "fr": "à droite",
+        "ru": "направо / справа"
+      },
+      {
+        "fr": "tournez à droite",
+        "ru": "поверните направо"
+      },
+      {
+        "fr": "sur votre droite",
+        "ru": "по правую руку от вас"
+      },
+      {
+        "fr": "la deuxième à droite",
+        "ru": "вторая (улица) направо"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "gauche",
+        "note": "droite = право; gauche = лево. Противоположности — главное не перепутать при указании дороги."
+      },
+      {
+        "with": "droit",
+        "note": "droite (f) — «право/направо»; droit (m) — «прямо» в «tout droit» и «прямой/право (юр.)». Различает только конечная -e и контекст."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["directions", "orientation"],
+    "caseIds": ["wc-directions"]
+  },
+  {
+    "id": "wl-directions-toutdroit",
+    "lemma": "tout droit",
+    "pos": "expr",
+    "ipa": "/tu dʁwa/",
+    "translationsRu": ["прямо", "прямо вперёд"],
+    "translationsEn": ["straight ahead"],
+    "semanticCore": "Движение по прямой, без поворотов: «идите прямо».",
+    "collocations": [
+      {
+        "fr": "allez tout droit",
+        "ru": "идите прямо"
+      },
+      {
+        "fr": "continuez tout droit",
+        "ru": "продолжайте прямо"
+      },
+      {
+        "fr": "tout droit jusqu'au feu",
+        "ru": "прямо до светофора"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "à droite",
+        "note": "tout droit = «прямо» (не поворачивая); à droite = «направо». Слышатся похоже, но это разные направления — частая ошибка."
+      },
+      {
+        "with": "tout de suite",
+        "note": "tout droit = «прямо» (направление); tout de suite = «сразу, немедленно» (время). Не путать схожее начало."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["directions", "orientation"],
+    "caseIds": ["wc-directions"]
+  },
+  {
+    "id": "wl-directions-devant",
+    "lemma": "devant",
+    "pos": "prep",
+    "ipa": "/də.vɑ̃/",
+    "translationsRu": ["перед", "впереди"],
+    "translationsEn": ["in front of"],
+    "semanticCore": "Положение спереди от чего-то: «перед» зданием, человеком; впереди по ходу.",
+    "collocations": [
+      {
+        "fr": "devant la maison",
+        "ru": "перед домом"
+      },
+      {
+        "fr": "juste devant toi",
+        "ru": "прямо перед тобой"
+      },
+      {
+        "fr": "passer devant la gare",
+        "ru": "пройти/проехать мимо вокзала (перед вокзалом)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "derrière",
+        "note": "devant = перед / спереди; derrière = сзади / позади. Это пара противоположностей."
+      },
+      {
+        "with": "avant",
+        "note": "devant = «перед» в пространстве (devant la porte); avant = «перед/до» во времени (avant midi). Не путать."
+      }
+    ],
+    "frequencyRank": 410,
+    "level": "A2",
+    "tags": ["directions", "position"],
+    "caseIds": ["wc-directions"]
+  },
+  {
+    "id": "wl-directions-derriere",
+    "lemma": "derrière",
+    "pos": "prep",
+    "ipa": "/dɛ.ʁjɛʁ/",
+    "translationsRu": ["сзади", "позади", "за"],
+    "translationsEn": ["behind"],
+    "semanticCore": "Положение сзади/за чем-то: «за» домом, позади тебя.",
+    "collocations": [
+      {
+        "fr": "derrière la maison",
+        "ru": "за домом"
+      },
+      {
+        "fr": "juste derrière toi",
+        "ru": "прямо за тобой / сзади"
+      },
+      {
+        "fr": "le jardin est derrière",
+        "ru": "сад находится сзади"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "devant",
+        "note": "derrière = сзади / за; devant = перед / спереди. Пара противоположностей."
+      },
+      {
+        "with": "après",
+        "note": "derrière = «за/позади» в пространстве (derrière la gare); après = «после» во времени или порядке (après le repas). Не путать."
+      }
+    ],
+    "frequencyRank": 470,
+    "level": "A2",
+    "tags": ["directions", "position"],
+    "caseIds": ["wc-directions"]
+  },
+  {
+    "id": "wl-directions-ici",
+    "lemma": "ici",
+    "pos": "adv",
+    "ipa": "/i.si/",
+    "translationsRu": ["здесь", "тут", "сюда"],
+    "translationsEn": ["here"],
+    "semanticCore": "Место рядом с говорящим: «здесь», там, где я; «сюда» при движении ко мне.",
+    "collocations": [
+      {
+        "fr": "viens ici",
+        "ru": "иди сюда"
+      },
+      {
+        "fr": "par ici",
+        "ru": "сюда / в эту сторону"
+      },
+      {
+        "fr": "ici, c'est la cuisine",
+        "ru": "вот тут кухня"
+      },
+      {
+        "fr": "d'ici à la gare",
+        "ru": "отсюда до вокзала"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "là",
+        "note": "ici = здесь (рядом со мной); là = там (дальше) или просто «вот тут». В разговоре là часто вытесняет ici."
+      },
+      {
+        "with": "voici",
+        "note": "ici = «здесь» (место); voici = «вот» (представляя предмет/человека: voici mon ami). Общий корень, но разные роли."
+      }
+    ],
+    "frequencyRank": 220,
+    "level": "A2",
+    "tags": ["directions", "position"],
+    "caseIds": ["wc-directions"]
+  },
+  {
+    "id": "wl-directions-la",
+    "lemma": "là",
+    "pos": "adv",
+    "ipa": "/la/",
+    "translationsRu": ["там", "вот тут"],
+    "translationsEn": ["there"],
+    "semanticCore": "Указание на место не у самого говорящего — «там»; в разговоре часто просто «тут/здесь» вместо ici.",
+    "collocations": [
+      {
+        "fr": "là-bas",
+        "ru": "вон там (далеко)"
+      },
+      {
+        "fr": "il est là",
+        "ru": "он здесь / на месте"
+      },
+      {
+        "fr": "mets-le là",
+        "ru": "положи это туда / вот сюда"
+      },
+      {
+        "fr": "là, à droite",
+        "ru": "вон там, справа"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ici",
+        "note": "là = там (дальше) или нейтральное «тут»; ici = строго «здесь, у меня». «Il est là» обычно значит «он на месте», а не «вон там»."
+      },
+      {
+        "with": "la (артикль)",
+        "note": "là (с accent grave) — наречие «там»; la (без акцента) — артикль ж.р. «la maison». Произношение одинаковое /la/, различает только акцент и роль."
+      }
+    ],
+    "frequencyRank": 120,
+    "level": "A2",
+    "tags": ["directions", "position"],
+    "caseIds": ["wc-directions"]
+  },
+  {
+    "id": "wl-directions-loin",
+    "lemma": "loin",
+    "pos": "adv",
+    "ipa": "/lwɛ̃/",
+    "translationsRu": ["далеко"],
+    "translationsEn": ["far"],
+    "semanticCore": "Большое расстояние: «далеко»; часто в связке «loin de» — далеко от.",
+    "collocations": [
+      {
+        "fr": "c'est loin",
+        "ru": "это далеко"
+      },
+      {
+        "fr": "loin d'ici",
+        "ru": "далеко отсюда"
+      },
+      {
+        "fr": "trop loin",
+        "ru": "слишком далеко"
+      },
+      {
+        "fr": "loin de la gare",
+        "ru": "далеко от вокзала"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "près",
+        "note": "loin = далеко; près (de) = близко (к). Противоположности расстояния: loin de la gare vs près de la gare."
+      },
+      {
+        "with": "long",
+        "note": "loin /lwɛ̃/ — наречие «далеко»; long /lɔ̃/ — прилагательное «длинный». Похожи на слух, но разный носовой звук и смысл."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["directions", "distance"],
+    "caseIds": ["wc-directions"]
+  }
+]

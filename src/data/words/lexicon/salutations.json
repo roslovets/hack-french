@@ -1,0 +1,299 @@
+[
+  {
+    "id": "wl-salutations-bonjour",
+    "lemma": "bonjour",
+    "pos": "expr",
+    "ipa": "/bɔ̃.ʒuʁ/",
+    "translationsRu": ["здравствуйте", "добрый день"],
+    "translationsEn": ["hello", "good morning"],
+    "semanticCore": "Универсальное дневное приветствие при встрече — уместно с кем угодно, от друга до начальника.",
+    "collocations": [
+      {
+        "fr": "Bonjour, madame !",
+        "ru": "Здравствуйте, мадам!"
+      },
+      {
+        "fr": "dire bonjour",
+        "ru": "поздороваться"
+      },
+      {
+        "fr": "Bonjour à tous",
+        "ru": "Здравствуйте все / всем привет"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bonsoir",
+        "note": "bonjour — днём; bonsoir — вечером (примерно с 18 часов). Оба годятся при встрече."
+      },
+      {
+        "with": "salut",
+        "note": "bonjour — нейтрально-вежливо, для всех; salut — неформально, только для друзей и на «ты»."
+      }
+    ],
+    "frequencyRank": 70,
+    "level": "A1",
+    "tags": ["salutations", "rencontre", "formule"],
+    "caseIds": ["wc-salutations"]
+  },
+  {
+    "id": "wl-salutations-aurevoir",
+    "lemma": "au revoir",
+    "pos": "expr",
+    "ipa": "/o ʁə.vwaʁ/",
+    "translationsRu": ["до свидания"],
+    "translationsEn": ["goodbye"],
+    "semanticCore": "Нейтральное прощание «до свидания» — дословно «до нового свидания», уместно с кем угодно.",
+    "collocations": [
+      {
+        "fr": "Au revoir et à bientôt !",
+        "ru": "До свидания, до скорого!"
+      },
+      {
+        "fr": "dire au revoir",
+        "ru": "попрощаться"
+      },
+      {
+        "fr": "Au revoir, bonne journée !",
+        "ru": "До свидания, хорошего дня!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bonjour",
+        "note": "au revoir — прощание («до свидания»); bonjour — приветствие при встрече. Их нельзя путать местами."
+      },
+      {
+        "with": "salut",
+        "note": "au revoir — нейтрально, для всех; salut при прощании — неформальное «пока», только друзьям."
+      }
+    ],
+    "frequencyRank": 120,
+    "level": "A1",
+    "tags": ["salutations", "depart", "formule"],
+    "caseIds": ["wc-salutations"]
+  },
+  {
+    "id": "wl-salutations-merci",
+    "lemma": "merci",
+    "pos": "expr",
+    "ipa": "/mɛʁ.si/",
+    "translationsRu": ["спасибо", "благодарю"],
+    "translationsEn": ["thank you", "thanks"],
+    "semanticCore": "Благодарность «спасибо»; с non — вежливый отказ «нет, спасибо».",
+    "collocations": [
+      {
+        "fr": "merci beaucoup",
+        "ru": "большое спасибо"
+      },
+      {
+        "fr": "non merci",
+        "ru": "нет, спасибо"
+      },
+      {
+        "fr": "merci pour votre aide",
+        "ru": "спасибо за вашу помощь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mercy (англ.)",
+        "note": "Англ. «mercy» = милосердие, пощада. Фр. merci = «спасибо». Похоже звучит, разные значения."
+      },
+      {
+        "with": "s'il vous plaît",
+        "note": "merci — благодарность («спасибо»); s'il vous plaît — просьба («пожалуйста, дайте»). Не путать местами."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A1",
+    "tags": ["salutations", "politesse", "formule"],
+    "caseIds": ["wc-salutations"]
+  },
+  {
+    "id": "wl-salutations-salut",
+    "lemma": "salut",
+    "pos": "expr",
+    "ipa": "/sa.ly/",
+    "translationsRu": ["привет", "пока"],
+    "translationsEn": ["hi", "bye"],
+    "semanticCore": "Неформальное «привет» и «пока» сразу — только для друзей и на «ты».",
+    "collocations": [
+      {
+        "fr": "Salut, ça va ?",
+        "ru": "Привет, как дела?"
+      },
+      {
+        "fr": "Salut, à demain !",
+        "ru": "Пока, до завтра!"
+      },
+      {
+        "fr": "dire salut à quelqu'un",
+        "ru": "сказать кому-то «привет»"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bonjour",
+        "note": "salut — неформально, для друзей и на «ты»; bonjour — нейтрально-вежливо, для всех. Незнакомым говорят bonjour."
+      },
+      {
+        "with": "salade",
+        "note": "salut /sa.ly/ — «привет», salade — «салат». Похоже звучат, но это разные слова. Конечная t в salut не читается."
+      }
+    ],
+    "frequencyRank": 200,
+    "level": "A1",
+    "tags": ["salutations", "informel", "formule"],
+    "caseIds": ["wc-salutations"]
+  },
+  {
+    "id": "wl-salutations-enchante",
+    "lemma": "enchanté",
+    "displayForm": "enchanté / enchantée",
+    "pos": "adj",
+    "ipa": "/ɑ̃.ʃɑ̃.te/",
+    "translationsRu": ["очень приятно (при знакомстве)", "рад познакомиться"],
+    "translationsEn": ["nice to meet you", "pleased to meet you"],
+    "semanticCore": "Вежливая реплика при знакомстве «очень приятно» — дословно «очарован».",
+    "collocations": [
+      {
+        "fr": "Enchanté de faire votre connaissance",
+        "ru": "Очень приятно познакомиться"
+      },
+      {
+        "fr": "— Voici Marie. — Enchanté !",
+        "ru": "— Это Мари. — Очень приятно!"
+      },
+      {
+        "fr": "Enchantée, madame",
+        "ru": "Очень приятно, мадам (от женщины)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "enchanted (англ.)",
+        "note": "Англ. «enchanted» = заколдованный, под чарами. При знакомстве фр. enchanté = «очень приятно». Ложный друг."
+      },
+      {
+        "with": "enchantée",
+        "note": "enchanté — говорит мужчина / о мужчине; enchantée — женщина / о женщине. Лишняя e на слух не различается."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A1",
+    "tags": ["salutations", "rencontre", "faux-ami"],
+    "caseIds": ["wc-salutations"]
+  },
+  {
+    "id": "wl-salutations-bienvenue",
+    "lemma": "bienvenue",
+    "pos": "expr",
+    "ipa": "/bjɛ̃.v(ə)ny/",
+    "translationsRu": ["добро пожаловать"],
+    "translationsEn": ["welcome"],
+    "semanticCore": "Приветствие гостя или новичка «добро пожаловать» — дословно «хорошо пришедший».",
+    "collocations": [
+      {
+        "fr": "Bienvenue à Paris !",
+        "ru": "Добро пожаловать в Париж!"
+      },
+      {
+        "fr": "Bienvenue chez nous",
+        "ru": "Добро пожаловать к нам (домой)"
+      },
+      {
+        "fr": "Bienvenue dans l'équipe",
+        "ru": "Добро пожаловать в команду"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "welcome (англ.)",
+        "note": "Англ. «welcome» — это и есть bienvenue («добро пожаловать»). Прямой мост, не ложный друг."
+      },
+      {
+        "with": "bonjour",
+        "note": "bienvenue — встречают гостя в новом месте («добро пожаловать»); bonjour — обычное приветствие при встрече."
+      }
+    ],
+    "frequencyRank": 500,
+    "level": "A1",
+    "tags": ["salutations", "accueil", "formule"],
+    "caseIds": ["wc-salutations"]
+  },
+  {
+    "id": "wl-salutations-bonsoir",
+    "lemma": "bonsoir",
+    "pos": "expr",
+    "ipa": "/bɔ̃.swaʁ/",
+    "translationsRu": ["добрый вечер"],
+    "translationsEn": ["good evening"],
+    "semanticCore": "Вечернее приветствие «добрый вечер» (примерно с 18 часов); годится и при прощании вечером.",
+    "collocations": [
+      {
+        "fr": "Bonsoir, madame !",
+        "ru": "Добрый вечер, мадам!"
+      },
+      {
+        "fr": "Bonsoir à tous",
+        "ru": "Добрый вечер всем"
+      },
+      {
+        "fr": "Bonsoir et bonne soirée",
+        "ru": "Добрый вечер и хорошего вечера"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bonjour",
+        "note": "bonsoir — вечером (примерно с 18 часов); bonjour — днём. Оба используют при встрече."
+      },
+      {
+        "with": "bonne nuit",
+        "note": "bonsoir — здороваются вечером; bonne nuit — «спокойной ночи», говорят только перед сном."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A1",
+    "tags": ["salutations", "soir", "formule"],
+    "caseIds": ["wc-salutations"]
+  },
+  {
+    "id": "wl-salutations-bonnenuit",
+    "lemma": "bonne nuit",
+    "pos": "expr",
+    "ipa": "/bɔn nɥi/",
+    "translationsRu": ["спокойной ночи"],
+    "translationsEn": ["good night"],
+    "semanticCore": "Пожелание перед сном «спокойной ночи» — дословно «хорошая ночь»; не используется как вечернее приветствие.",
+    "collocations": [
+      {
+        "fr": "Bonne nuit, dors bien !",
+        "ru": "Спокойной ночи, спи хорошо!"
+      },
+      {
+        "fr": "Bonne nuit les enfants",
+        "ru": "Спокойной ночи, дети"
+      },
+      {
+        "fr": "souhaiter bonne nuit",
+        "ru": "пожелать спокойной ночи"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bonsoir",
+        "note": "bonne nuit — только перед сном («спокойной ночи»); bonsoir — приветствие вечером («добрый вечер»). Частая ошибка — поздороваться bonne nuit."
+      },
+      {
+        "with": "bonne soirée",
+        "note": "bonne nuit — желают перед сном; bonne soirée — «хорошего вечера», когда вечер ещё впереди."
+      }
+    ],
+    "frequencyRank": 400,
+    "level": "A1",
+    "tags": ["salutations", "nuit", "formule"],
+    "caseIds": ["wc-salutations"]
+  }
+]

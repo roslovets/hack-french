@@ -1,0 +1,375 @@
+[
+  {
+    "id": "wc-boss-groceries",
+    "title": "Босс: фрукты и продукты",
+    "theme": "fruits",
+    "level": "A2",
+    "isBoss": true,
+    "wordIds": [
+      "wl-fruits-pomme",
+      "wl-fruits-poire",
+      "wl-fruits-citron",
+      "wl-fruits-cerise",
+      "wl-fruits-raisin",
+      "wl-legumes-carotte",
+      "wl-legumes-tomate",
+      "wl-legumes-oignon",
+      "wl-legumes-ail",
+      "wl-legumes-patate",
+      "wl-legumes-champignon",
+      "wl-aliments-oeuf",
+      "wl-aliments-beurre",
+      "wl-aliments-sel",
+      "wl-aliments-farine",
+      "wl-aliments-riz"
+    ],
+    "steps": [
+      {
+        "id": "wc-boss-groceries-pomme-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fruits-pomme",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Финальный босс трёх тем: фрукты, овощи и продукты. Начинаем на рынке с корзинки фруктов. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Je croque une pomme bien rouge.",
+          "Une tarte aux pommes pour le dessert, ça te dit ?",
+          "Au marché, je prends un kilo de pommes."
+        ],
+        "options": ["яблоко", "груша", "картошка", "помидор"],
+        "correctIndex": 0,
+        "explanation": "pomme (f) — яблоко: «une pomme rouge», «une tarte aux pommes», «un kilo de pommes». Внимание: само слово pomme без «de terre» — всегда яблоко (фрукт). С «de terre» (pomme de terre) это уже картошка-овощ."
+      },
+      {
+        "id": "wc-boss-groceries-pomme-patate-trap",
+        "kind": "trap",
+        "wordId": "wl-legumes-patate",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Кросс-тема (фрукт против овоща). Коварная пара: pomme и pomme de terre. Как сказать «килограмм картошки»?",
+        "phrases": [
+          "Un kilo de pommes de terre, s'il vous plaît.",
+          "Un kilo de pommes pour la tarte."
+        ],
+        "options": [
+          "un kilo de pommes de terre",
+          "un kilo de pommes",
+          "un kilo de terre",
+          "un kilo de pommes vertes"
+        ],
+        "correctIndex": 0,
+        "explanation": "Картошка — pomme de terre (досл. «земляное яблоко»), овощ: «un kilo de pommes de terre». Просто pomme — это яблоко, фрукт. Уберёшь «de terre» — и вместо картошки получишь яблоки. Разговорный синоним картошки — patate."
+      },
+      {
+        "id": "wc-boss-groceries-poire-cmp",
+        "kind": "compare",
+        "wordId": "wl-fruits-poire",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Рядом на прилавке два похожих фрукта. В чём разница между этими двумя фразами?",
+        "phrases": ["Je prends une poire bien juteuse.", "Je prends une pomme bien croquante."],
+        "options": [
+          "poire — груша; pomme — яблоко.",
+          "poire — яблоко; pomme — груша.",
+          "Это синонимы, оба значат «груша».",
+          "poire — картошка; pomme — груша."
+        ],
+        "correctIndex": 0,
+        "explanation": "la poire — груша (мягкая, сочная), la pomme — яблоко (твёрдое, хрусткое). Классическая фруктовая пара, которую легко перепутать при заказе. Не путай также poire /pwaʁ/ (груша) с boire /bwaʁ/ (пить) — разница в одном звуке."
+      },
+      {
+        "id": "wc-boss-groceries-citron-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-fruits-citron",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "citron",
+        "options": ["citron", "chiffon", "cochon", "citrouille"],
+        "correctIndex": 0,
+        "explanation": "citron /si.tʁɔ̃/ (лимон), chiffon /ʃi.fɔ̃/ (тряпка), cochon /kɔ.ʃɔ̃/ (свинья), citrouille /si.tʁuj/ (тыква). Все близки по звучанию, но это разные слова: у citron в начале чистый звук /s/, а в конце носовой /ɔ̃/. Это не омофоны — слушай первый и последний слог."
+      },
+      {
+        "id": "wc-boss-groceries-citron-sort",
+        "kind": "sort",
+        "wordId": "wl-fruits-citron",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Кросс-тема: лимон (фрукт) приправляет блюда из других тем. Какие сочетания со словом citron звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un jus de citron",
+            "basket": "ok"
+          },
+          {
+            "text": "une tarte au citron",
+            "basket": "ok"
+          },
+          {
+            "text": "du poisson au citron",
+            "basket": "ok"
+          },
+          {
+            "text": "un citron de terre",
+            "basket": "no"
+          },
+          {
+            "text": "un citron au beurre",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Лимон даёт сок и кислинку: «un jus de citron», «une tarte au citron», им сбрызгивают рыбу — «du poisson au citron». «un citron de terre» — бессмыслица (это калька с pomme de terre), а «un citron au beurre» (лимон в сливочном масле) — несочетаемая мешанина: кислый цитрус не подают «в масле»."
+      },
+      {
+        "id": "wc-boss-groceries-cerise-fraise-cmp",
+        "kind": "compare",
+        "wordId": "wl-fruits-cerise",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Две красные ягоды в одной корзинке. В чём разница между этими двумя фразами?",
+        "phrases": [
+          "On a cueilli des cerises sur l'arbre.",
+          "On a cueilli des fraises dans le jardin."
+        ],
+        "options": [
+          "cerise — вишня/черешня (с косточкой, на дереве); fraise — клубника (на грядке).",
+          "cerise — клубника; fraise — вишня.",
+          "Это синонимы, разницы нет.",
+          "cerise — малина; fraise — вишня."
+        ],
+        "correctIndex": 0,
+        "explanation": "la cerise — вишня или черешня: растёт на дереве, с косточкой («la cerise sur le gâteau» — вишенка на торте). la fraise — клубника/земляника: растёт на грядке, красная ягода без косточки. Обе красные, но это разные фрукты."
+      },
+      {
+        "id": "wc-boss-groceries-raisin-trap",
+        "kind": "trap",
+        "wordId": "wl-fruits-raisin",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ложный друг: англ. «raisin» = изюм. Как по-французски сказать «свежий виноград»?",
+        "phrases": ["Une grappe de raisin frais.", "Des raisins secs dans le gâteau."],
+        "options": [
+          "du raisin (frais)",
+          "un raisin sec",
+          "des raisins secs",
+          "une grappe de raisins secs"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: франц. raisin — это свежий виноград («une grappe de raisin»), а вовсе не изюм. Изюм — raisin sec (сухой виноград), во множественном — des raisins secs. Англ. «raisin» (изюм) сбивает, но во французском это слово значит именно ягоду на грозди."
+      },
+      {
+        "id": "wc-boss-groceries-cross-fruit-legume-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-legumes-carotte",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Кросс-тема: переходим от фруктов к овощному прилавку. Три слова — овощи (légumes), одно — фрукт. Найди лишнее.",
+        "options": ["une carotte", "un oignon", "une tomate", "une cerise"],
+        "correctIndex": 3,
+        "explanation": "Морковь (une carotte), лук (un oignon) и помидор (une tomate) — это légumes (овощи). Лишнее — une cerise (вишня): это fruit (фрукт). Помидор, кстати, во французском относят именно к овощам, хотя ботанически это плод."
+      },
+      {
+        "id": "wc-boss-groceries-carotte-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes-carotte",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Берём овощи для супа. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "J'épluche les carottes pour la soupe.",
+          "Une entrée de carottes râpées, s'il vous plaît.",
+          "Un kilo de carottes au marché."
+        ],
+        "options": ["морковь", "свёкла", "репа", "тыква"],
+        "correctIndex": 0,
+        "explanation": "carotte (f) — морковь, оранжевый корнеплод: «éplucher les carottes» (чистить морковь), «des carottes râpées» (тёртая морковь — популярная закуска). Пишется с одной r и двойной t: ca-ro-tte."
+      },
+      {
+        "id": "wc-boss-groceries-oignon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes-oignon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Главный овощ для зажарки. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Je coupe un oignon et je pleure.",
+          "Fais revenir les oignons dans la poêle.",
+          "Une soupe à l'oignon, c'est réconfortant."
+        ],
+        "options": ["лук", "чеснок", "картошка", "капуста"],
+        "correctIndex": 0,
+        "explanation": "oignon (m) — лук, крупная луковица: «couper un oignon» (резать лук), «faire revenir les oignons» (обжарить лук), «une soupe à l'oignon» (луковый суп). Читается /ɔ.ɲɔ̃/ — буквы oi здесь дают звук /ɔ/, а не обычное /wa/."
+      },
+      {
+        "id": "wc-boss-groceries-ail-oignon-cmp",
+        "kind": "compare",
+        "wordId": "wl-legumes-ail",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Две острые приправы из овощей. В чём разница между этими двумя фразами?",
+        "phrases": ["J'ajoute une gousse d'ail.", "J'ajoute un oignon entier."],
+        "options": [
+          "ail — чеснок (мелкие зубчики); oignon — лук (крупная луковица).",
+          "ail — лук; oignon — чеснок.",
+          "Это синонимы, оба значат «чеснок».",
+          "ail — перец; oignon — лук."
+        ],
+        "correctIndex": 0,
+        "explanation": "l'ail — чеснок: считается зубчиками — «une gousse d'ail» (зубчик), «une tête d'ail» (головка); читается коротко /aj/. l'oignon — лук, крупная луковица. Оба острые и для готовки, но это разные растения."
+      },
+      {
+        "id": "wc-boss-groceries-champignon-hint",
+        "kind": "wordHint",
+        "wordId": "wl-legumes-champignon",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: его собирают в лесу или покупают белым («de Paris») и кладут в омлет.",
+        "answer": "champignon",
+        "hints": [
+          "Начинается на ch… (звук /ʃ/, как «ш»)",
+          "Мужской род, 10 букв: un ___",
+          "Une omelette aux ___s — омлет с этим."
+        ],
+        "explanation": "champignon (m) — гриб: «ramasser des champignons» (собирать грибы), «champignons de Paris» (белые культурные шампиньоны), «une omelette aux champignons». Не путай начало со словом shampooing (шампунь) — звучит похоже, но это другое."
+      },
+      {
+        "id": "wc-boss-groceries-tomate-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-legumes-tomate",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "tomate",
+        "options": ["tomate", "tomette", "patate", "natte"],
+        "correctIndex": 0,
+        "explanation": "tomate /tɔ.mat/ (помидор), tomette /tɔ.mɛt/ (терракотовая плитка), patate /pa.tat/ (картошка, разг.), natte /nat/ (косичка/циновка). Все похожи по ритму, но это разные слова: у tomate в середине звук /a/, а на конце /t/. Это не омофоны."
+      },
+      {
+        "id": "wc-boss-groceries-cross-peel-sort",
+        "kind": "sort",
+        "wordId": "wl-legumes-patate",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Кросс-тема: на кухне фрукты, овощи и продукты смешиваются. Какие сочетания звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "éplucher les pommes de terre",
+            "basket": "ok"
+          },
+          {
+            "text": "une purée de pommes de terre",
+            "basket": "ok"
+          },
+          {
+            "text": "un jus de raisin",
+            "basket": "ok"
+          },
+          {
+            "text": "éplucher le riz",
+            "basket": "no"
+          },
+          {
+            "text": "une purée de sel",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Чистят то, что с кожурой/кожицей: «éplucher les pommes de terre» (картошку). Пюре делают из крахмалистых овощей: «une purée de pommes de terre». Из сочного фрукта давят сок: «un jus de raisin». А «éplucher le riz» (чистить рис) и «une purée de sel» (пюре из соли) — бессмыслица: рис не чистят, а из соли пюре не делают."
+      },
+      {
+        "id": "wc-boss-groceries-oeuf-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aliments-oeuf",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Переходим к базовым продуктам из épicerie. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Je prends une douzaine d'œufs.",
+          "Bats les œufs avec un peu de sel.",
+          "Un œuf à la coque pour le petit-déjeuner."
+        ],
+        "options": ["яйцо", "масло", "мука", "сыр"],
+        "correctIndex": 0,
+        "explanation": "œuf (m) — яйцо: «une douzaine d'œufs» (дюжина яиц), «battre les œufs» (взбить яйца), «un œuf à la coque» (яйцо всмятку). Ловушка произношения: un œuf /œ̃.nœf/ — конечная f звучит; des œufs /de.zø/ — во множественном f немая."
+      },
+      {
+        "id": "wc-boss-groceries-beurre-huile-cmp",
+        "kind": "compare",
+        "wordId": "wl-aliments-beurre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "По-русски оба «масло», но во французском это разные слова. В чём разница между этими двумя фразами?",
+        "phrases": ["Je fais cuire au beurre.", "Je fais cuire à l'huile d'olive."],
+        "options": [
+          "beurre — твёрдое сливочное масло (из молока); huile — жидкое растительное масло.",
+          "beurre — растительное масло; huile — сливочное.",
+          "Это синонимы, оба значат «масло».",
+          "beurre — маргарин; huile — сливочное масло."
+        ],
+        "correctIndex": 0,
+        "explanation": "le beurre — твёрдое сливочное (молочное) масло: им мажут хлеб («une tartine de beurre») и жарят («cuire au beurre»). l'huile — жидкое растительное масло: «de l'huile d'olive», «à l'huile». По-русски оба «масло», но во французском их строго различают: твёрдое vs жидкое."
+      },
+      {
+        "id": "wc-boss-groceries-cross-season-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-aliments-sel",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Кросс-тема: чем приправляют и заправляют блюдо? Три слова сюда подходят, одно — нет (это сладкий фрукт). Найди лишнее.",
+        "options": ["du sel", "du poivre", "de l'huile", "une fraise"],
+        "correctIndex": 3,
+        "explanation": "Блюдо приправляют солью и перцем и заправляют маслом: «assaisonner avec du sel, du poivre et de l'huile». Лишнее — une fraise (клубника): это сладкий фрукт на десерт, а не приправа. Здесь сталкиваются продукты-приправы (aliments) и фрукт (fruits)."
+      },
+      {
+        "id": "wc-boss-groceries-farine-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aliments-farine",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Собираем продукты для выпечки. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Il me faut de la farine pour le gâteau.",
+          "Tamise la farine avant de la mélanger.",
+          "Un paquet de farine de blé."
+        ],
+        "options": ["мука", "сахар", "крахмал", "дрожжи"],
+        "correctIndex": 0,
+        "explanation": "farine (f) — мука: измельчённое зерно для теста и выпечки. Берётся частичным артиклем: «de la farine». «tamiser la farine» (просеять муку), «farine de blé» (пшеничная мука). Из муки замешивают тесто (la pâte) — это разные вещи: farine сухая, pâte уже замешанная."
+      },
+      {
+        "id": "wc-boss-groceries-riz-hint",
+        "kind": "wordHint",
+        "wordId": "wl-aliments-riz",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Финал босса. Вспомни слово: белая крупа-гарнир, которую варят в кастрюле; миска такого на ужин.",
+        "answer": "riz",
+        "hints": [
+          "Начинается на r…",
+          "Мужской род, 3 буквы, конечная z немая — читается просто /ʁi/",
+          "Un bol de ___ blanc — миска этого."
+        ],
+        "explanation": "riz (m) — рис: «du riz blanc» (белый рис), «faire cuire le riz» (сварить рис), «un bol de riz» (миска риса). Конечная z не читается — слово звучит /ʁi/, как ris. Частый гарнир наряду с pâtes (макаронами). Босс пройден: фрукты, овощи и продукты собраны вместе."
+      }
+    ]
+  }
+]

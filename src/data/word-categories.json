@@ -2,13 +2,14 @@
   {
     "id": "table",
     "title": "Еда и кафе",
-    "themes": ["boulangerie", "cafe", "nourriture", "restaurant", "boissons"],
+    "themes": ["boulangerie", "cafe", "nourriture", "restaurant", "boissons", "cuisson"],
     "bossId": "wc-boss-table"
   },
   {
     "id": "groceries",
     "title": "Фрукты и продукты",
-    "themes": ["fruits", "legumes", "aliments"]
+    "themes": ["fruits", "legumes", "aliments"],
+    "bossId": "wc-boss-groceries"
   },
   {
     "id": "home",
@@ -19,19 +20,28 @@
   {
     "id": "people",
     "title": "Человек и семья",
-    "themes": ["corps", "famille", "emotions", "sante", "visage", "famille2", "caractere"],
+    "themes": [
+      "corps",
+      "famille",
+      "emotions",
+      "sante",
+      "visage",
+      "famille2",
+      "caractere",
+      "sentiments"
+    ],
     "bossId": "wc-boss-corps-famille"
   },
   {
     "id": "city",
     "title": "Город и транспорт",
-    "themes": ["ville", "transport", "lieux", "voyage"],
+    "themes": ["ville", "transport", "lieux", "voyage", "directions"],
     "bossId": "wc-boss-transport"
   },
   {
     "id": "school",
     "title": "Школа и общение",
-    "themes": ["ecole", "politesse", "communication", "questions", "etudes"],
+    "themes": ["ecole", "politesse", "communication", "questions", "etudes", "salutations"],
     "bossId": "wc-boss-ecole-politesse"
   },
   {
@@ -67,7 +77,7 @@
   {
     "id": "descriptions",
     "title": "Цвета и описания",
-    "themes": ["couleurs", "adjectifs", "quantite"],
+    "themes": ["couleurs", "adjectifs", "quantite", "nombres"],
     "bossId": "wc-boss-descriptions"
   }
 ]
