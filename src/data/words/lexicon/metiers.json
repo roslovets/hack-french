@@ -1,0 +1,314 @@
+[
+  {
+    "id": "wl-metiers-professeur",
+    "lemma": "professeur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pʁɔ.fɛ.sœʁ/",
+    "translationsRu": ["учитель", "преподаватель"],
+    "translationsEn": ["teacher", "professor"],
+    "semanticCore": "Тот, кто преподаёт — в школе, лицее или университете; во французском это одно слово и для школьного учителя, и для вузовского преподавателя.",
+    "collocations": [
+      {
+        "fr": "un professeur de français",
+        "ru": "учитель/преподаватель французского"
+      },
+      {
+        "fr": "le professeur de maths",
+        "ru": "учитель математики"
+      },
+      {
+        "fr": "un professeur des écoles",
+        "ru": "учитель начальной школы"
+      },
+      {
+        "fr": "un bon professeur",
+        "ru": "хороший преподаватель"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "professeur (англ. professor)",
+        "note": "Англ. «professor» — только вузовский профессор; фр. professeur — любой учитель/преподаватель, в том числе школьный. В разговоре часто сокращают до un/une prof."
+      },
+      {
+        "with": "instituteur",
+        "note": "professeur — преподаватель (в школе и вузе); instituteur — прежнее официальное название учителя начальной школы (сегодня — professeur des écoles), в разговоре всё ещё встречается."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["metiers", "education"],
+    "caseIds": ["wc-metiers"]
+  },
+  {
+    "id": "wl-metiers-ingenieur",
+    "lemma": "ingénieur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛ̃.ʒe.njœʁ/",
+    "translationsRu": ["инженер"],
+    "translationsEn": ["engineer"],
+    "semanticCore": "Специалист с инженерным образованием, который проектирует и решает технические задачи (часто после école d'ingénieurs).",
+    "collocations": [
+      {
+        "fr": "un ingénieur informatique",
+        "ru": "инженер-программист, ИТ-инженер"
+      },
+      {
+        "fr": "une école d'ingénieurs",
+        "ru": "инженерная школа (вуз)"
+      },
+      {
+        "fr": "ingénieur du son",
+        "ru": "звукоинженер"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ingénieur (англ. engineer)",
+        "note": "Англ. «engineer» может значить и «машинист», и «техник»; фр. ingénieur — именно дипломированный инженер. Машинист поезда — un conducteur de train."
+      },
+      {
+        "with": "technicien",
+        "note": "ingénieur — инженер (проектирует, руководит); technicien — техник (обслуживает, ремонтирует). Уровень образования и роль разные."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["metiers", "technique"],
+    "caseIds": ["wc-metiers"]
+  },
+  {
+    "id": "wl-metiers-cuisinier",
+    "lemma": "cuisinier",
+    "displayForm": "cuisinier / cuisinière",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɥi.zi.nje/",
+    "translationsRu": ["повар"],
+    "translationsEn": ["cook"],
+    "semanticCore": "Тот, кто готовит еду как профессию — в ресторане, столовой или дома по найму.",
+    "collocations": [
+      {
+        "fr": "un bon cuisinier",
+        "ru": "хороший повар"
+      },
+      {
+        "fr": "un chef cuisinier",
+        "ru": "шеф-повар"
+      },
+      {
+        "fr": "cuisinier dans un restaurant",
+        "ru": "повар в ресторане"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cuisinière",
+        "note": "cuisinière — это и «повар» (женщина), и «(кухонная) плита». Род и контекст подсказывают: la cuisinière est en panne — сломалась плита."
+      },
+      {
+        "with": "chef",
+        "note": "cuisinier — повар вообще; chef (de cuisine) — шеф-повар, главный на кухне. Каждый chef — cuisinier, но не наоборот."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["metiers", "cuisine"],
+    "caseIds": ["wc-metiers"]
+  },
+  {
+    "id": "wl-metiers-infirmier",
+    "lemma": "infirmier",
+    "displayForm": "infirmier / infirmière",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛ̃.fiʁ.mje/",
+    "translationsRu": ["медбрат", "медсестра"],
+    "translationsEn": ["nurse"],
+    "semanticCore": "Медицинский работник, который ухаживает за больными и помогает врачу (в больнице или на дому).",
+    "collocations": [
+      {
+        "fr": "une infirmière à domicile",
+        "ru": "медсестра на дому"
+      },
+      {
+        "fr": "un infirmier de nuit",
+        "ru": "ночной медбрат"
+      },
+      {
+        "fr": "appeler l'infirmière",
+        "ru": "позвать медсестру"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "infirme",
+        "note": "Не путать: infirmier(ère) — медсестра/медбрат; un(e) infirme — инвалид, немощный человек. Похожий корень, противоположные роли."
+      },
+      {
+        "with": "médecin",
+        "note": "infirmier — медсестра/медбрат (ухаживает, делает уколы); médecin — врач (ставит диагноз, назначает лечение)."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["metiers", "sante"],
+    "caseIds": ["wc-metiers"]
+  },
+  {
+    "id": "wl-metiers-avocat",
+    "lemma": "avocat",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.vɔ.ka/",
+    "translationsRu": ["адвокат", "юрист", "авокадо"],
+    "translationsEn": ["lawyer", "avocado"],
+    "semanticCore": "Юрист, который защищает клиента в суде; то же слово означает и плод авокадо — различает только контекст.",
+    "collocations": [
+      {
+        "fr": "consulter un avocat",
+        "ru": "обратиться к адвокату"
+      },
+      {
+        "fr": "l'avocat de la défense",
+        "ru": "адвокат защиты"
+      },
+      {
+        "fr": "un avocat bien mûr",
+        "ru": "спелое авокадо"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "avocat (плод)",
+        "note": "Одно слово — два значения: un avocat = адвокат и авокадо. «consulter un avocat» — про юриста; «manger un avocat» — про плод."
+      },
+      {
+        "with": "notaire",
+        "note": "avocat — адвокат, защищает в суде; notaire — нотариус, оформляет сделки и документы. Оба юристы, но роли разные."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["metiers", "droit"],
+    "caseIds": ["wc-metiers"]
+  },
+  {
+    "id": "wl-metiers-pompier",
+    "lemma": "pompier",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɔ̃.pje/",
+    "translationsRu": ["пожарный"],
+    "translationsEn": ["firefighter"],
+    "semanticCore": "Тот, кто тушит пожары и приезжает на вызов при ЧП; во Франции пожарных вызывают по номеру 18.",
+    "collocations": [
+      {
+        "fr": "appeler les pompiers",
+        "ru": "вызвать пожарных"
+      },
+      {
+        "fr": "un pompier volontaire",
+        "ru": "пожарный-доброволец"
+      },
+      {
+        "fr": "un camion de pompiers",
+        "ru": "пожарная машина"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "plombier",
+        "note": "Похожи на слух: pompier — пожарный; plombier — сантехник. Не путать: огонь тушит pompier, трубы чинит plombier."
+      },
+      {
+        "with": "pompe",
+        "note": "pompier связан с pompe (насос — раньше пожарные качали воду насосом). Но un pompier — это человек, а une pompe — насос/помпа."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["metiers", "secours"],
+    "caseIds": ["wc-metiers"]
+  },
+  {
+    "id": "wl-metiers-facteur",
+    "lemma": "facteur",
+    "displayForm": "facteur / factrice",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fak.tœʁ/",
+    "translationsRu": ["почтальон", "фактор"],
+    "translationsEn": ["postman", "factor"],
+    "semanticCore": "Тот, кто разносит почту; то же слово в другом смысле — «фактор», причина или составляющая.",
+    "collocations": [
+      {
+        "fr": "le facteur passe le matin",
+        "ru": "почтальон приходит утром"
+      },
+      {
+        "fr": "attendre le facteur",
+        "ru": "ждать почтальона"
+      },
+      {
+        "fr": "un facteur important",
+        "ru": "важный фактор"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "facteur (фактор)",
+        "note": "Одно слово — два значения: le facteur = почтальон (приносит письма) и фактор/причина (un facteur de risque). Контекст различает."
+      },
+      {
+        "with": "facture",
+        "note": "Похоже, но разное: le facteur — почтальон; la facture — счёт (к оплате). Почтальон может принести facture."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A2",
+    "tags": ["metiers", "poste"],
+    "caseIds": ["wc-metiers"]
+  },
+  {
+    "id": "wl-metiers-artiste",
+    "lemma": "artiste",
+    "displayForm": "un / une artiste",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/aʁ.tist/",
+    "translationsRu": ["артист", "художник"],
+    "translationsEn": ["artist"],
+    "semanticCore": "Человек творческой профессии — художник, музыкант, актёр; слово широкое и не привязано к одному виду искусства. Род зависит от человека: un/une artiste, форма слова не меняется.",
+    "collocations": [
+      {
+        "fr": "un artiste peintre",
+        "ru": "художник (живописец)"
+      },
+      {
+        "fr": "une artiste de talent",
+        "ru": "талантливая артистка"
+      },
+      {
+        "fr": "un artiste célèbre",
+        "ru": "знаменитый артист"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "artiste (рус. артист)",
+        "note": "Рус. «артист» — обычно актёр/эстрадный исполнитель; фр. artiste шире: и художник, и музыкант, и актёр. «Художник» по-французски чаще un artiste peintre или un peintre."
+      },
+      {
+        "with": "peintre",
+        "note": "artiste — творец вообще; peintre — именно художник-живописец (или маляр). un artiste peintre уточняет, что речь о живописце."
+      }
+    ],
+    "frequencyRank": 410,
+    "level": "A2",
+    "tags": ["metiers", "art"],
+    "caseIds": ["wc-metiers"]
+  }
+]

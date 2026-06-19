@@ -1,0 +1,331 @@
+[
+  {
+    "id": "wl-sport-football",
+    "lemma": "football",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fut.bol/",
+    "translationsRu": ["футбол"],
+    "translationsEn": ["football", "soccer"],
+    "semanticCore": "Игра в футбол как вид спорта; в разговорной речи часто сокращают до «foot».",
+    "collocations": [
+      {
+        "fr": "jouer au football",
+        "ru": "играть в футбол"
+      },
+      {
+        "fr": "un match de football",
+        "ru": "футбольный матч"
+      },
+      {
+        "fr": "un joueur de football",
+        "ru": "футболист"
+      },
+      {
+        "fr": "regarder le foot",
+        "ru": "смотреть футбол"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "foot",
+        "note": "football и foot — одно и то же; в речи почти всегда говорят le foot, полную форму football оставляют для письма и официального стиля."
+      },
+      {
+        "with": "football (англ. амер.)",
+        "note": "Фр. football = европейский футбол (англ. soccer). Американский футбол — le football américain; без уточнения le football американцы не поймут так, как француз."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["sport", "jeu"],
+    "caseIds": ["wc-sport"]
+  },
+  {
+    "id": "wl-sport-natation",
+    "lemma": "natation",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/na.ta.sjɔ̃/",
+    "translationsRu": ["плавание"],
+    "translationsEn": ["swimming"],
+    "semanticCore": "Плавание как вид спорта или занятие; само действие «плыть» — это глагол nager.",
+    "collocations": [
+      {
+        "fr": "faire de la natation",
+        "ru": "заниматься плаванием"
+      },
+      {
+        "fr": "un cours de natation",
+        "ru": "занятие по плаванию"
+      },
+      {
+        "fr": "la natation synchronisée",
+        "ru": "синхронное плавание"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "nager",
+        "note": "natation (f) — существительное «плавание» (вид спорта); nager — глагол «плавать». «Я плаваю» = je nage, «я занимаюсь плаванием» = je fais de la natation."
+      },
+      {
+        "with": "piscine",
+        "note": "natation = само занятие плаванием; piscine = бассейн (место, где плавают). «aller à la piscine» — пойти в бассейн."
+      }
+    ],
+    "frequencyRank": 1500,
+    "level": "A2",
+    "tags": ["sport", "eau"],
+    "caseIds": ["wc-sport"]
+  },
+  {
+    "id": "wl-sport-courir",
+    "lemma": "courir",
+    "pos": "verb",
+    "ipa": "/ku.ʁiʁ/",
+    "translationsRu": ["бегать", "бежать"],
+    "translationsEn": ["to run"],
+    "semanticCore": "Двигаться бегом — как спорт, и как «спешить, торопиться».",
+    "collocations": [
+      {
+        "fr": "courir vite",
+        "ru": "быстро бегать"
+      },
+      {
+        "fr": "courir un marathon",
+        "ru": "бежать марафон"
+      },
+      {
+        "fr": "aller courir",
+        "ru": "идти на пробежку"
+      },
+      {
+        "fr": "courir partout",
+        "ru": "носиться повсюду / всюду бегать"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "marcher",
+        "note": "courir — бежать (быстро, отрываясь от земли); marcher — идти пешком (шагом). Не путать темп движения."
+      },
+      {
+        "with": "faire du jogging",
+        "note": "courir — общий глагол «бегать»; faire du jogging / faire de la course à pied — заниматься бегом как спортом. «Я хожу бегать» — je vais courir."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["sport", "mouvement"],
+    "caseIds": ["wc-sport"]
+  },
+  {
+    "id": "wl-sport-equipe",
+    "lemma": "équipe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.kip/",
+    "translationsRu": ["команда"],
+    "translationsEn": ["team"],
+    "semanticCore": "Группа людей, играющих или работающих вместе — в спорте и на работе.",
+    "collocations": [
+      {
+        "fr": "une équipe de football",
+        "ru": "футбольная команда"
+      },
+      {
+        "fr": "jouer en équipe",
+        "ru": "играть в команде / командой"
+      },
+      {
+        "fr": "l'équipe de France",
+        "ru": "сборная Франции"
+      },
+      {
+        "fr": "un esprit d'équipe",
+        "ru": "командный дух"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "équipe (vs. commande)",
+        "note": "équipe = команда людей (спортивная, рабочая). Русское «команда» в смысле «приказ» — это un ordre, а в технике «команда» — une commande. Не путать со словом commande."
+      },
+      {
+        "with": "joueur",
+        "note": "équipe = вся команда; joueur = один игрок. Команда состоит из игроков: une équipe de onze joueurs."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["sport", "groupe"],
+    "caseIds": ["wc-sport"]
+  },
+  {
+    "id": "wl-sport-match",
+    "lemma": "match",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/matʃ/",
+    "translationsRu": ["матч", "игра"],
+    "translationsEn": ["match", "game"],
+    "semanticCore": "Спортивная встреча двух соперников; заимствовано из английского и читается /matʃ/.",
+    "collocations": [
+      {
+        "fr": "un match de foot",
+        "ru": "футбольный матч"
+      },
+      {
+        "fr": "gagner le match",
+        "ru": "выиграть матч"
+      },
+      {
+        "fr": "regarder un match",
+        "ru": "смотреть матч"
+      },
+      {
+        "fr": "un match nul",
+        "ru": "ничья"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "match (англ.)",
+        "note": "Фр. match = спортивный матч. Английское «match» в значении «спичка» — это по-французски une allumette, а «пара / подходящая половинка» — здесь не подходит. Берём только спортивное значение."
+      },
+      {
+        "with": "jeu",
+        "note": "match = матч (конкретная встреча, состязание); jeu = игра вообще (процесс, забава). Un match de tennis — конкретный матч, le jeu — сама игра."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["sport", "competition"],
+    "caseIds": ["wc-sport"]
+  },
+  {
+    "id": "wl-sport-gagner",
+    "lemma": "gagner",
+    "pos": "verb",
+    "ipa": "/ɡa.ɲe/",
+    "translationsRu": ["выигрывать", "побеждать", "зарабатывать"],
+    "translationsEn": ["to win", "to earn"],
+    "semanticCore": "Получать в результате усилия: выигрывать (матч, приз) и зарабатывать (деньги).",
+    "collocations": [
+      {
+        "fr": "gagner le match",
+        "ru": "выиграть матч"
+      },
+      {
+        "fr": "gagner de l'argent",
+        "ru": "зарабатывать деньги"
+      },
+      {
+        "fr": "gagner la course",
+        "ru": "выиграть забег / гонку"
+      },
+      {
+        "fr": "gagner contre une équipe",
+        "ru": "победить команду"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "perdre",
+        "note": "gagner — выигрывать, побеждать; perdre — проигрывать. Прямая пара противоположностей: gagner le match ↔ perdre le match."
+      },
+      {
+        "with": "gagner (= зарабатывать)",
+        "note": "У gagner два значения: «выигрывать» (gagner un match) и «зарабатывать» (gagner sa vie — зарабатывать на жизнь). Подсказывает контекст."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["sport", "resultat"],
+    "caseIds": ["wc-sport"]
+  },
+  {
+    "id": "wl-sport-perdre",
+    "lemma": "perdre",
+    "pos": "verb",
+    "ipa": "/pɛʁdʁ/",
+    "translationsRu": ["проигрывать", "терять"],
+    "translationsEn": ["to lose"],
+    "semanticCore": "Лишаться чего-то: проигрывать (матч) и терять (предмет, время).",
+    "collocations": [
+      {
+        "fr": "perdre le match",
+        "ru": "проиграть матч"
+      },
+      {
+        "fr": "perdre ses clés",
+        "ru": "потерять ключи"
+      },
+      {
+        "fr": "perdre du temps",
+        "ru": "терять время"
+      },
+      {
+        "fr": "perdre contre une équipe",
+        "ru": "проиграть команде"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "gagner",
+        "note": "perdre — проигрывать / терять; gagner — выигрывать / зарабатывать. Пара противоположностей: perdre ↔ gagner."
+      },
+      {
+        "with": "perdre (= терять)",
+        "note": "У perdre два значения: «проигрывать» (perdre un match) и «терять» (perdre ses clés, perdre du temps). Одно слово — два смысла, как в русском «проиграть» рядом с «потерять»."
+      }
+    ],
+    "frequencyRank": 410,
+    "level": "A2",
+    "tags": ["sport", "resultat"],
+    "caseIds": ["wc-sport"]
+  },
+  {
+    "id": "wl-sport-ballon",
+    "lemma": "ballon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ba.lɔ̃/",
+    "translationsRu": ["мяч", "воздушный шар"],
+    "translationsEn": ["ball", "balloon"],
+    "semanticCore": "Большой мяч для игры (футбол, баскетбол), а также воздушный шар.",
+    "collocations": [
+      {
+        "fr": "un ballon de football",
+        "ru": "футбольный мяч"
+      },
+      {
+        "fr": "jouer au ballon",
+        "ru": "играть в мяч"
+      },
+      {
+        "fr": "lancer le ballon",
+        "ru": "бросить мяч"
+      },
+      {
+        "fr": "un ballon de baudruche",
+        "ru": "(надувной) воздушный шарик"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "balle",
+        "note": "ballon (m) — большой мяч (футбол, баскетбол, регби); balle (f) — маленький мяч (теннис, гольф). Размер решает: ballon de foot, но balle de tennis."
+      },
+      {
+        "with": "balloon (англ.)",
+        "note": "Англ. «balloon» — это воздушный шар; фр. ballon — прежде всего спортивный мяч, хотя значит и «воздушный шар». Ложный друг по объёму значений."
+      }
+    ],
+    "frequencyRank": 900,
+    "level": "A2",
+    "tags": ["sport", "objet"],
+    "caseIds": ["wc-sport"]
+  }
+]

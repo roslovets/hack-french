@@ -1,0 +1,307 @@
+[
+  {
+    "id": "wc-couleurs",
+    "title": "Цвета",
+    "theme": "couleurs",
+    "level": "A1",
+    "wordIds": [
+      "wl-couleurs-rouge",
+      "wl-couleurs-bleu",
+      "wl-couleurs-vert",
+      "wl-couleurs-jaune",
+      "wl-couleurs-noir",
+      "wl-couleurs-blanc",
+      "wl-couleurs-gris",
+      "wl-couleurs-orange"
+    ],
+    "steps": [
+      {
+        "id": "wc-couleurs-rouge-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-couleurs-rouge",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Au restaurant, il commande un verre de vin rouge.",
+          "Le feu est rouge, on s'arrête.",
+          "Elle porte une robe rouge."
+        ],
+        "options": ["красный", "розовый", "оранжевый", "тёплый"],
+        "correctIndex": 0,
+        "explanation": "rouge — красный. Форма не меняется по роду: un vin rouge, une robe rouge. Розовый — rose."
+      },
+      {
+        "id": "wc-couleurs-rouge-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-couleurs-rouge",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит rouge?",
+        "bridge": "Англ. «rouge» (румяна) — это и есть французское слово «красный»; англичане взяли его целиком. Читается /ʁuʒ/.",
+        "options": ["красный", "румянец", "пудра", "кисть"],
+        "correctIndex": 0,
+        "explanation": "rouge = красный. Англ. «rouge» (косметика) пришло из французского и буквально значит «красный». Прямой мост: те же буквы."
+      },
+      {
+        "id": "wc-couleurs-bleu-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-couleurs-bleu",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le ciel est tout bleu aujourd'hui.",
+          "Elle a les yeux bleus.",
+          "Il met un jean bleu."
+        ],
+        "options": ["синий / голубой", "серый", "зелёный", "светлый"],
+        "correctIndex": 0,
+        "explanation": "bleu — синий и голубой сразу: по-французски это один цвет. Форма согласуется: un jean bleu, une robe bleue, les yeux bleus."
+      },
+      {
+        "id": "wc-couleurs-bleu-cmp",
+        "kind": "compare",
+        "wordId": "wl-couleurs-bleu",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "В чём разница между этими двумя фразами?",
+        "phrases": ["La mer est bleue.", "L'herbe est verte."],
+        "options": [
+          "bleu — синий/голубой (море, небо); vert — зелёный (трава, листья).",
+          "Это синонимы, оба значат «синий».",
+          "bleu — зелёный, а vert — синий.",
+          "Разница только в роде, цвет один и тот же."
+        ],
+        "correctIndex": 0,
+        "explanation": "bleu = синий/голубой (la mer est bleue), vert = зелёный (l'herbe est verte). Это два разных цвета, которые легко спутать в природе."
+      },
+      {
+        "id": "wc-couleurs-vert-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-couleurs-vert",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je prends un thé vert, s'il vous plaît.",
+          "Le feu est vert, on peut passer.",
+          "Il mange une pomme verte."
+        ],
+        "options": ["зелёный", "синий", "жёлтый", "свежий"],
+        "correctIndex": 0,
+        "explanation": "vert — зелёный. «le feu vert» — зелёный сигнал светофора (и переносно «зелёный свет», разрешение). Женский род — verte: une pomme verte."
+      },
+      {
+        "id": "wc-couleurs-vert-trap",
+        "kind": "trap",
+        "wordId": "wl-couleurs-vert",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Официант говорит /vɛʁ/. Какое слово означает «зелёный»?",
+        "options": ["vert", "verre", "ver", "vers"],
+        "correctIndex": 0,
+        "explanation": "Все четыре звучат одинаково /vɛʁ/. «Зелёный» — vert (verte в ж. роде). verre — стакан/стекло, ver — червяк, vers — стихи / «к, в направлении». Различают по смыслу и написанию."
+      },
+      {
+        "id": "wc-couleurs-jaune-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-couleurs-jaune",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le bus jaune arrive à l'arrêt.",
+          "Elle cueille une fleur jaune.",
+          "Le soleil est jaune sur le dessin."
+        ],
+        "options": ["жёлтый", "оранжевый", "золотой", "яркий"],
+        "correctIndex": 0,
+        "explanation": "jaune — жёлтый. Форма не меняется по роду: un bus jaune, une fleur jaune. Оранжевый — orange."
+      },
+      {
+        "id": "wc-couleurs-jaune-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-couleurs-jaune",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало. Они похожи, но это разные слова.",
+        "audioText": "jaune",
+        "options": ["jaune", "jeune", "jeûne"],
+        "correctIndex": 0,
+        "explanation": "jaune /ʒon/ — жёлтый. Похожие: jeune /ʒœn/ — молодой, jeûne /ʒøn/ — пост (воздержание от еды). Звук в середине разный: /o/ против /œ/ и /ø/."
+      },
+      {
+        "id": "wc-couleurs-noir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-couleurs-noir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le matin, il boit un café noir.",
+          "Elle écrit au tableau noir.",
+          "Le chat noir traverse la rue."
+        ],
+        "options": ["чёрный", "серый", "тёмный (о вкусе)", "крепкий"],
+        "correctIndex": 0,
+        "explanation": "noir — чёрный. «un café noir» — кофе без молока, «le tableau noir» — классная доска. Женский род — noire: une robe noire."
+      },
+      {
+        "id": "wc-couleurs-noir-sort",
+        "kind": "sort",
+        "wordId": "wl-couleurs-noir",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом noir звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un café noir",
+            "basket": "ok"
+          },
+          {
+            "text": "il fait noir",
+            "basket": "ok"
+          },
+          {
+            "text": "le tableau noir",
+            "basket": "ok"
+          },
+          {
+            "text": "un café noire",
+            "basket": "no"
+          },
+          {
+            "text": "il a noir",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un café noir», «il fait noir» (темно), «le tableau noir» — естественно. «un café noire» неверно: café мужского рода, нужно noir. «il a noir» бессмыслица — темно будет «il fait noir»."
+      },
+      {
+        "id": "wc-couleurs-blanc-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-couleurs-blanc",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Avec le poisson, on boit du vin blanc.",
+          "Il porte une chemise blanche.",
+          "La neige est blanche."
+        ],
+        "options": ["белый", "светлый (о волосах)", "прозрачный", "чистый"],
+        "correctIndex": 0,
+        "explanation": "blanc — белый. Внимание к женскому роду: он нерегулярный — blanc → blanche (une chemise blanche), не «blance»."
+      },
+      {
+        "id": "wc-couleurs-blanc-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-couleurs-blanc",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для blanc (белый), чтобы запомнить нерегулярный женский род blanche.",
+        "examples": [
+          "«Blanche-Neige» (Белоснежка) — её имя уже содержит женскую форму blanche. Une robe blanche, как у неё.",
+          "Мужской род blanc /blɑ̃/ звучит «в нос», а в blanche /blɑ̃ʃ/ появляется шипящий -ch-: un mur blanc, une porte blanche."
+        ]
+      },
+      {
+        "id": "wc-couleurs-gris-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-couleurs-gris",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Aujourd'hui, le ciel est gris.",
+          "Mon grand-père a les cheveux gris.",
+          "Il porte un manteau gris."
+        ],
+        "options": ["серый", "чёрный", "синий", "тусклый"],
+        "correctIndex": 0,
+        "explanation": "gris — серый, цвет между чёрным и белым. «le ciel est gris» — пасмурно, «les cheveux gris» — седые волосы. Женский род — grise."
+      },
+      {
+        "id": "wc-couleurs-gris-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-couleurs-gris",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — оттенки от тёмного к светлому. Найди лишнее: оно не цвет.",
+        "options": ["noir", "gris", "blanc", "froid"],
+        "correctIndex": 3,
+        "explanation": "noir (чёрный), gris (серый) и blanc (белый) — цвета на шкале от тёмного к светлому. froid (холодный) — лишнее: это не цвет, а температура/ощущение."
+      },
+      {
+        "id": "wc-couleurs-orange-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-couleurs-orange",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "Le matin, je bois un jus d'orange.",
+          "Le feu passe à l'orange.",
+          "Elle a un sac orange."
+        ],
+        "options": ["оранжевый / апельсин", "красный", "жёлтый", "коричневый"],
+        "correctIndex": 0,
+        "explanation": "orange — и «апельсин» (фрукт, ж. род: une orange), и цвет «оранжевый». «un jus d'orange» — апельсиновый сок, «un sac orange» — оранжевая сумка."
+      },
+      {
+        "id": "wc-couleurs-orange-trap",
+        "kind": "trap",
+        "wordId": "wl-couleurs-orange",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«Оранжевые туфли» — des chaussures …? Туфли женского рода и во множественном числе.",
+        "options": [
+          "des chaussures orange",
+          "des chaussures oranges",
+          "des chaussures orangees",
+          "des chaussures orangée"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка согласования: orange как цвет НЕ меняется (это название фрукта), поэтому des chaussures orange — без -s и без -e. Сравни: une robe verte (vert согласуется), но une robe orange (orange неизменяемо)."
+      },
+      {
+        "id": "wc-couleurs-blanc-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-couleurs-blanc",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало. Они похожи, но это разные слова.",
+        "audioText": "blanc",
+        "options": ["blanc", "blond", "plan"],
+        "correctIndex": 0,
+        "explanation": "blanc /blɑ̃/ — белый. Похожие: blond /blɔ̃/ — светловолосый, plan /plɑ̃/ — план/карта. Разница в носовом гласном (/ɑ̃/ против /ɔ̃/) и в первом согласном."
+      },
+      {
+        "id": "wc-couleurs-rouge-hint",
+        "kind": "wordHint",
+        "wordId": "wl-couleurs-rouge",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни цвет: цвет крови, клубники и сигнала «стоп» на светофоре.",
+        "answer": "rouge",
+        "hints": [
+          "Начинается на r…",
+          "5 букв, заканчивается на -ge",
+          "Le vin ___ et le vin blanc."
+        ],
+        "explanation": "rouge — красный. Форма не меняется по роду: un feu rouge, une robe rouge; во множественном — rouges."
+      }
+    ]
+  }
+]

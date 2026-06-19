@@ -1,0 +1,323 @@
+[
+  {
+    "id": "wl-couleurs-rouge",
+    "lemma": "rouge",
+    "pos": "adj",
+    "ipa": "/ʁuʒ/",
+    "translationsRu": ["красный"],
+    "translationsEn": ["red"],
+    "semanticCore": "Красный цвет; форма не меняется по роду (un mur rouge, une porte rouge), во множественном добавляется -s.",
+    "collocations": [
+      {
+        "fr": "le vin rouge",
+        "ru": "красное вино"
+      },
+      {
+        "fr": "le rouge à lèvres",
+        "ru": "губная помада"
+      },
+      {
+        "fr": "un feu rouge",
+        "ru": "красный сигнал светофора"
+      },
+      {
+        "fr": "le tapis rouge",
+        "ru": "красная дорожка"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rose",
+        "note": "rouge = красный; rose = розовый. Это разные цвета, не путать: rose светлее и мягче."
+      },
+      {
+        "with": "rouge (англ. rouge)",
+        "note": "Англ. «rouge» (румяна) пришло из французского и значит «красный». Полезный мост: те же буквы, читается /ʁuʒ/."
+      }
+    ],
+    "frequencyRank": 240,
+    "level": "A1",
+    "tags": ["couleurs", "adjectif"],
+    "caseIds": ["wc-couleurs"]
+  },
+  {
+    "id": "wl-couleurs-bleu",
+    "lemma": "bleu",
+    "displayForm": "bleu / bleue",
+    "pos": "adj",
+    "ipa": "/blø/",
+    "translationsRu": ["синий", "голубой"],
+    "translationsEn": ["blue"],
+    "semanticCore": "Синий и голубой — для французов это один цвет bleu; форма согласуется: bleu (м), bleue (ж).",
+    "collocations": [
+      {
+        "fr": "le ciel bleu",
+        "ru": "голубое небо"
+      },
+      {
+        "fr": "les yeux bleus",
+        "ru": "голубые глаза"
+      },
+      {
+        "fr": "une robe bleue",
+        "ru": "синее платье"
+      },
+      {
+        "fr": "bleu marine",
+        "ru": "тёмно-синий, морской"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vert",
+        "note": "bleu = синий/голубой; vert = зелёный. В море и в глазах их легко спутать — bleu холоднее, vert ближе к траве."
+      },
+      {
+        "with": "un bleu (сущ.)",
+        "note": "Кроме цвета, «un bleu» — это синяк. Тот же корень: место удара синеет."
+      }
+    ],
+    "frequencyRank": 250,
+    "level": "A1",
+    "tags": ["couleurs", "adjectif"],
+    "caseIds": ["wc-couleurs"]
+  },
+  {
+    "id": "wl-couleurs-vert",
+    "lemma": "vert",
+    "displayForm": "vert / verte",
+    "pos": "adj",
+    "ipa": "/vɛʁ/",
+    "translationsRu": ["зелёный"],
+    "translationsEn": ["green"],
+    "semanticCore": "Зелёный цвет; форма согласуется: vert (м, конечная t не читается), verte (ж, t звучит).",
+    "collocations": [
+      {
+        "fr": "le thé vert",
+        "ru": "зелёный чай"
+      },
+      {
+        "fr": "les yeux verts",
+        "ru": "зелёные глаза"
+      },
+      {
+        "fr": "le feu vert",
+        "ru": "зелёный сигнал / «зелёный свет», разрешение"
+      },
+      {
+        "fr": "une pomme verte",
+        "ru": "зелёное яблоко"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "verre",
+        "note": "vert (зелёный) звучит как verre (стакан/стекло) и ver (червяк) — все /vɛʁ/. Различают только по смыслу и написанию."
+      },
+      {
+        "with": "bleu",
+        "note": "vert = зелёный; bleu = синий/голубой. На светофоре «зелёный» — le feu vert, не bleu."
+      }
+    ],
+    "frequencyRank": 270,
+    "level": "A1",
+    "tags": ["couleurs", "adjectif"],
+    "caseIds": ["wc-couleurs"]
+  },
+  {
+    "id": "wl-couleurs-jaune",
+    "lemma": "jaune",
+    "pos": "adj",
+    "ipa": "/ʒon/",
+    "translationsRu": ["жёлтый"],
+    "translationsEn": ["yellow"],
+    "semanticCore": "Жёлтый цвет; форма не меняется по роду (un bus jaune, une fleur jaune), во множественном -s.",
+    "collocations": [
+      {
+        "fr": "le maillot jaune",
+        "ru": "жёлтая майка лидера (Тур де Франс)"
+      },
+      {
+        "fr": "une fleur jaune",
+        "ru": "жёлтый цветок"
+      },
+      {
+        "fr": "les pages jaunes",
+        "ru": "жёлтые страницы (телефонный справочник)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "orange",
+        "note": "jaune = жёлтый; orange = оранжевый. Между ними целый переход оттенков, но это разные цвета."
+      },
+      {
+        "with": "jeune",
+        "note": "jaune /ʒon/ (жёлтый) легко спутать на письме с jeune /ʒœn/ (молодой). Разные слова и разные звуки."
+      }
+    ],
+    "frequencyRank": 290,
+    "level": "A1",
+    "tags": ["couleurs", "adjectif"],
+    "caseIds": ["wc-couleurs"]
+  },
+  {
+    "id": "wl-couleurs-noir",
+    "lemma": "noir",
+    "displayForm": "noir / noire",
+    "pos": "adj",
+    "ipa": "/nwaʁ/",
+    "translationsRu": ["чёрный"],
+    "translationsEn": ["black"],
+    "semanticCore": "Чёрный цвет; форма согласуется: noir (м), noire (ж). Также «il fait noir» — темно.",
+    "collocations": [
+      {
+        "fr": "un café noir",
+        "ru": "чёрный кофе (без молока)"
+      },
+      {
+        "fr": "le tableau noir",
+        "ru": "классная доска"
+      },
+      {
+        "fr": "une robe noire",
+        "ru": "чёрное платье"
+      },
+      {
+        "fr": "il fait noir",
+        "ru": "темно (на улице/в комнате)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "blanc",
+        "note": "noir = чёрный; blanc = белый. Противоположные цвета; на доске (le tableau noir) пишут белым мелом."
+      },
+      {
+        "with": "gris",
+        "note": "noir = чёрный (без света); gris = серый (между чёрным и белым). Пасмурное небо — gris, а не noir."
+      }
+    ],
+    "frequencyRank": 200,
+    "level": "A1",
+    "tags": ["couleurs", "adjectif"],
+    "caseIds": ["wc-couleurs"]
+  },
+  {
+    "id": "wl-couleurs-blanc",
+    "lemma": "blanc",
+    "displayForm": "blanc / blanche",
+    "pos": "adj",
+    "ipa": "/blɑ̃/",
+    "translationsRu": ["белый"],
+    "translationsEn": ["white"],
+    "semanticCore": "Белый цвет; женский род нерегулярный: blanc (м) → blanche (ж), не «blance».",
+    "collocations": [
+      {
+        "fr": "le vin blanc",
+        "ru": "белое вино"
+      },
+      {
+        "fr": "une chemise blanche",
+        "ru": "белая рубашка"
+      },
+      {
+        "fr": "une nuit blanche",
+        "ru": "бессонная ночь"
+      },
+      {
+        "fr": "du pain blanc",
+        "ru": "белый хлеб"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "blanche (ж. форма)",
+        "note": "Женский род нерегулярный: un mur blanc, но une porte blanche. Не «blance» — пишется blanche, с -ch-."
+      },
+      {
+        "with": "noir",
+        "note": "blanc = белый; noir = чёрный. Противоположности: le vin blanc / le café noir."
+      }
+    ],
+    "frequencyRank": 210,
+    "level": "A1",
+    "tags": ["couleurs", "adjectif"],
+    "caseIds": ["wc-couleurs"]
+  },
+  {
+    "id": "wl-couleurs-gris",
+    "lemma": "gris",
+    "displayForm": "gris / grise",
+    "pos": "adj",
+    "ipa": "/ɡʁi/",
+    "translationsRu": ["серый"],
+    "translationsEn": ["grey", "gray"],
+    "semanticCore": "Серый цвет между чёрным и белым; форма: gris (м), grise (ж). «il fait gris» — пасмурно.",
+    "collocations": [
+      {
+        "fr": "le ciel gris",
+        "ru": "серое (пасмурное) небо"
+      },
+      {
+        "fr": "les cheveux gris",
+        "ru": "седые волосы"
+      },
+      {
+        "fr": "il fait gris",
+        "ru": "пасмурно"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "noir",
+        "note": "gris = серый (полусвет, пасмурно); noir = чёрный (полная темнота). Седые волосы — gris, не noir."
+      },
+      {
+        "with": "gris (конечная -s)",
+        "note": "В мужском роде -s не читается: /ɡʁi/. В женском grise звучит /ɡʁiz/. На письме мужской род уже с -s."
+      }
+    ],
+    "frequencyRank": 460,
+    "level": "A1",
+    "tags": ["couleurs", "adjectif"],
+    "caseIds": ["wc-couleurs"]
+  },
+  {
+    "id": "wl-couleurs-orange",
+    "lemma": "orange",
+    "pos": "adj",
+    "ipa": "/ɔ.ʁɑ̃ʒ/",
+    "translationsRu": ["оранжевый", "апельсин"],
+    "translationsEn": ["orange"],
+    "semanticCore": "Цвет апельсина; как прилагательное цвета orange НЕ меняется (des gants orange), потому что это название плода.",
+    "collocations": [
+      {
+        "fr": "le jus d'orange",
+        "ru": "апельсиновый сок"
+      },
+      {
+        "fr": "un feu orange",
+        "ru": "жёлтый сигнал светофора (по-фр. «оранжевый»)"
+      },
+      {
+        "fr": "des chaussures orange",
+        "ru": "оранжевые туфли (форма не меняется)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "orange (неизменяемое)",
+        "note": "Цвета от плодов и предметов не согласуются: des gants orange, des robes marron. Это исключение из правила согласования."
+      },
+      {
+        "with": "une orange (фрукт)",
+        "note": "«une orange» — апельсин (сущ., ж. род); «orange» как цвет — прилагательное. Одно слово, две роли."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A1",
+    "tags": ["couleurs", "fruit"],
+    "caseIds": ["wc-couleurs"]
+  }
+]

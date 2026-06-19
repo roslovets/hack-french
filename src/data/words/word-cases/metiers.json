@@ -1,0 +1,334 @@
+[
+  {
+    "id": "wc-metiers",
+    "title": "Профессии",
+    "theme": "metiers",
+    "level": "A2",
+    "wordIds": [
+      "wl-metiers-professeur",
+      "wl-metiers-ingenieur",
+      "wl-metiers-cuisinier",
+      "wl-metiers-infirmier",
+      "wl-metiers-avocat",
+      "wl-metiers-pompier",
+      "wl-metiers-facteur",
+      "wl-metiers-artiste"
+    ],
+    "steps": [
+      {
+        "id": "wc-metiers-professeur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-metiers-professeur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Кто это?",
+        "contexts": [
+          "Mon professeur de français est très gentil.",
+          "Le professeur explique la leçon au tableau.",
+          "Elle est professeure de mathématiques au lycée."
+        ],
+        "options": ["учитель, преподаватель", "ученик", "директор школы", "переводчик"],
+        "correctIndex": 0,
+        "explanation": "professeur (m) — учитель/преподаватель, и в школе, и в вузе. В разговоре часто сокращают до un/une prof. Ученик — un élève, директор — un directeur."
+      },
+      {
+        "id": "wc-metiers-professeur-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-metiers-professeur",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский почти подсказывает слово. Что значит professeur?",
+        "bridge": "Англ. «professor» — почти то же написание. Но осторожно: фр. professeur — любой учитель, не только вузовский профессор.",
+        "options": [
+          "учитель, преподаватель",
+          "только вузовский профессор",
+          "профессия вообще",
+          "профессионал"
+        ],
+        "correctIndex": 0,
+        "explanation": "professeur = учитель/преподаватель (и школьный, и вузовский). Англ. «professor» — мост по форме, но уже по смыслу: оно только про университет. «профессия» — une profession, «профессионал» — un professionnel."
+      },
+      {
+        "id": "wc-metiers-ingenieur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-metiers-ingenieur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Кто скрывается во всех трёх сценах?",
+        "contexts": [
+          "Mon frère est ingénieur informatique.",
+          "Elle a fait une école d'ingénieurs.",
+          "L'ingénieur a conçu le nouveau pont."
+        ],
+        "options": ["инженер", "техник", "рабочий", "архитектор"],
+        "correctIndex": 0,
+        "explanation": "ingénieur (m) — инженер (с дипломом, часто после école d'ingénieurs). «concevoir» — проектировать. Техник — un technicien, архитектор — un architecte."
+      },
+      {
+        "id": "wc-metiers-ingenieur-collo",
+        "kind": "sort",
+        "wordId": "wl-metiers-ingenieur",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом ingénieur звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un ingénieur informatique",
+            "basket": "ok"
+          },
+          {
+            "text": "une école d'ingénieurs",
+            "basket": "ok"
+          },
+          {
+            "text": "un ingénieur du son",
+            "basket": "ok"
+          },
+          {
+            "text": "faire cuire un ingénieur",
+            "basket": "no"
+          },
+          {
+            "text": "un ingénieur en laine",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественно: un ingénieur informatique / du son, une école d'ingénieurs. «faire cuire un ingénieur» (сварить инженера) и «un ingénieur en laine» (шерстяной инженер) — бессмыслица: en laine говорят про свитер, а не про человека."
+      },
+      {
+        "id": "wc-metiers-cuisinier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-metiers-cuisinier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Кто это во всех трёх сценах?",
+        "contexts": [
+          "Le cuisinier prépare le plat du jour.",
+          "C'est un excellent cuisinier.",
+          "Il travaille comme cuisinier dans un restaurant."
+        ],
+        "options": ["повар", "официант", "пекарь", "кухня"],
+        "correctIndex": 0,
+        "explanation": "cuisinier (m) — повар. «le plat du jour» — блюдо дня. Официант — un serveur, пекарь — un boulanger, кухня (помещение) — une cuisine."
+      },
+      {
+        "id": "wc-metiers-cuisinier-trap",
+        "kind": "trap",
+        "wordId": "wl-metiers-cuisinier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В тексте: «La cuisinière est en panne.» Кто или что сломалось?",
+        "phrases": [
+          "La cuisinière prépare le dîner.",
+          "La cuisinière est en panne, on ne peut pas cuisiner."
+        ],
+        "options": [
+          "плита — cuisinière значит и «повар (женщина)», и «(кухонная) плита»; «en panne» подсказывает технику",
+          "повариха — речь всегда о человеке",
+          "кухня — cuisinière значит «кухня»",
+          "холодильник — cuisinière значит «холодильник»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: cuisinière — это и повар-женщина, и кухонная плита. «en panne» (сломан) бывает у техники, значит здесь — плита. Холодильник — un frigo/réfrigérateur."
+      },
+      {
+        "id": "wc-metiers-infirmier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-metiers-infirmier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Кто это во всех трёх сценах?",
+        "contexts": [
+          "L'infirmière fait une piqûre au patient.",
+          "Un infirmier travaille de nuit à l'hôpital.",
+          "Appelle l'infirmière, j'ai mal."
+        ],
+        "options": ["медсестра, медбрат", "врач", "пациент", "аптекарь"],
+        "correctIndex": 0,
+        "explanation": "infirmier (m) / infirmière (f) — медбрат / медсестра. «faire une piqûre» — делать укол. Врач — un médecin, пациент — un patient, аптекарь — un pharmacien."
+      },
+      {
+        "id": "wc-metiers-infirmier-trap",
+        "kind": "trap",
+        "wordId": "wl-metiers-infirmier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слова infirmier и infirme похожи. Кто такой un infirmier?",
+        "options": [
+          "медбрат (ухаживает за больными)",
+          "инвалид, немощный человек",
+          "больной",
+          "больница"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка по сходству: un infirmier — медбрат, тот, кто ухаживает за больными. А un infirme — инвалид, немощный человек (тот, за кем ухаживают). Больница — un hôpital."
+      },
+      {
+        "id": "wc-metiers-avocat-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-metiers-avocat",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Кто это в трёх сценах из зала суда?",
+        "contexts": [
+          "L'avocat défend son client au tribunal.",
+          "Je vais consulter un avocat pour mon contrat.",
+          "L'avocate a gagné le procès."
+        ],
+        "options": ["адвокат, юрист", "судья", "свидетель", "полицейский"],
+        "correctIndex": 0,
+        "explanation": "avocat (m) / avocate (f) — адвокат, юрист. «défendre un client», «gagner un procès». Судья — un juge, свидетель — un témoin, полицейский — un policier."
+      },
+      {
+        "id": "wc-metiers-avocat-trap",
+        "kind": "trap",
+        "wordId": "wl-metiers-avocat",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "У слова avocat два совершенно разных значения. В магазине: «Je voudrais un avocat bien mûr.» О чём речь?",
+        "phrases": [
+          "Mon avocat me défend au tribunal.",
+          "Je voudrais un avocat bien mûr pour la salade."
+        ],
+        "options": [
+          "об авокадо — avocat значит и «адвокат», и «авокадо»; «mûr» (спелый) указывает на плод",
+          "об адвокате — avocat всегда означает юриста",
+          "о фрукте манго — avocat значит «манго»",
+          "о супе — avocat значит «суп»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Одно слово — два значения: un avocat = адвокат и авокадо. «bien mûr» (спелый) и «pour la salade» подсказывают, что речь о плоде, а не о юристе."
+      },
+      {
+        "id": "wc-metiers-pompier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-metiers-pompier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Кто приезжает во всех трёх сценах?",
+        "contexts": [
+          "Au feu ! Appelle les pompiers !",
+          "Les pompiers sont arrivés en cinq minutes.",
+          "Mon voisin est pompier volontaire."
+        ],
+        "options": ["пожарный", "сантехник", "полицейский", "врач скорой"],
+        "correctIndex": 0,
+        "explanation": "pompier (m) — пожарный. «au feu !» — пожар!, «appeler les pompiers» — вызвать пожарных (во Франции номер 18). Сантехник — un plombier."
+      },
+      {
+        "id": "wc-metiers-pompier-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-metiers-pompier",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "pompier",
+        "options": ["pompier", "papier", "pompiste", "panier"],
+        "correctIndex": 0,
+        "explanation": "pompier /pɔ̃.pje/ (пожарный), papier /pa.pje/ (бумага), pompiste /pɔ̃.pist/ (заправщик на АЗС), panier /pa.nje/ (корзина). Это разные слова — слушай начало и носовой звук."
+      },
+      {
+        "id": "wc-metiers-facteur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-metiers-facteur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Кто это во всех трёх сценах?",
+        "contexts": [
+          "Le facteur a apporté une lettre ce matin.",
+          "J'attends le facteur pour un colis.",
+          "Le facteur passe vers dix heures."
+        ],
+        "options": ["почтальон", "курьер еды", "сосед", "продавец"],
+        "correctIndex": 0,
+        "explanation": "facteur (m) / factrice (f) — почтальон. «apporter une lettre», «un colis» — посылка. Курьер еды — un livreur, продавец — un vendeur."
+      },
+      {
+        "id": "wc-metiers-facteur-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-metiers-facteur",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "facteur",
+        "options": ["facteur", "facture", "lecteur", "vecteur"],
+        "correctIndex": 0,
+        "explanation": "facteur /fak.tœʁ/ (почтальон, фактор), facture /fak.tyʁ/ (счёт), lecteur /lɛk.tœʁ/ (читатель), vecteur /vɛk.tœʁ/ (вектор). Это разные слова — слушай гласные."
+      },
+      {
+        "id": "wc-metiers-facteur-trap",
+        "kind": "trap",
+        "wordId": "wl-metiers-facteur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "У facteur есть и второе значение. В фразе «L'âge est un facteur important.» что это?",
+        "phrases": [
+          "Le facteur distribue le courrier.",
+          "L'âge est un facteur de risque important."
+        ],
+        "options": [
+          "фактор, причина — facteur значит и «почтальон», и «фактор»; здесь речь о факторе",
+          "почтальон — facteur всегда значит «почтальон»",
+          "возраст — facteur значит «возраст»",
+          "счёт — facteur значит «счёт к оплате»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Одно слово — два значения: le facteur = почтальон и фактор/причина (un facteur de risque). Здесь речь о факторе. Счёт к оплате — une facture, похоже, но другое слово."
+      },
+      {
+        "id": "wc-metiers-artiste-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-metiers-artiste",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Кто это во всех трёх сценах?",
+        "contexts": [
+          "Cet artiste expose ses tableaux à Paris.",
+          "C'est une artiste très connue.",
+          "Mon cousin est artiste peintre."
+        ],
+        "options": ["артист, художник (человек искусства)", "зритель", "критик", "коллекционер"],
+        "correctIndex": 0,
+        "explanation": "artiste (m/f) — человек искусства: художник, музыкант, актёр. «exposer ses tableaux» — выставлять картины, «un artiste peintre» — художник-живописец. Зритель — un spectateur."
+      },
+      {
+        "id": "wc-metiers-artiste-trap",
+        "kind": "trap",
+        "wordId": "wl-metiers-artiste",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Рус. «артист» — обычно актёр. А кого по-французски называют un artiste?",
+        "options": [
+          "любого человека искусства — художника, музыканта, актёра",
+          "только актёра театра и кино",
+          "только эстрадного певца",
+          "только циркового артиста"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка по сходству с русским: фр. artiste шире, чем рус. «артист». Это любой человек искусства — художник (un artiste peintre), музыкант, актёр. Актёр конкретно — un acteur/comédien."
+      },
+      {
+        "id": "wc-metiers-artiste-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-metiers-artiste",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для artiste, чтобы запомнить, что род зависит от человека: un artiste (он) и une artiste (она) — форма слова не меняется.",
+        "examples": [
+          "Представь художника и художницу за одним мольбертом: оба — artiste, меняется только артикль (un / une).",
+          "Свяжи с рус. «артист»: те же буквы в начале, но французское слово шире — и про живопись, и про музыку."
+        ]
+      }
+    ]
+  }
+]

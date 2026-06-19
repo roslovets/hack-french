@@ -1,0 +1,311 @@
+[
+  {
+    "id": "wc-adjectifs",
+    "title": "Описания",
+    "theme": "adjectifs",
+    "level": "A1",
+    "wordIds": [
+      "wl-adjectifs-grand",
+      "wl-adjectifs-petit",
+      "wl-adjectifs-bon",
+      "wl-adjectifs-mauvais",
+      "wl-adjectifs-beau",
+      "wl-adjectifs-nouveau",
+      "wl-adjectifs-vieux",
+      "wl-adjectifs-jeune"
+    ],
+    "steps": [
+      {
+        "id": "wc-adjectifs-grand-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adjectifs-grand",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ils habitent une grande maison.",
+          "Mon frère est très grand.",
+          "Paris est une grande ville."
+        ],
+        "options": ["большой, высокий", "маленький", "новый", "красивый"],
+        "correctIndex": 0,
+        "explanation": "grand — большой (о размере) и высокий (о росте). В женском роде grande: une grande maison, une grande ville."
+      },
+      {
+        "id": "wc-adjectifs-grand-trap",
+        "kind": "trap",
+        "wordId": "wl-adjectifs-grand",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«un grand homme» и «un homme grand» — это одно и то же?",
+        "phrases": ["C'est un grand homme.", "C'est un homme grand."],
+        "options": [
+          "Нет: «un grand homme» — великий человек; «un homme grand» — высокий мужчина.",
+          "Да, разницы нет, оба значат «высокий».",
+          "Да, оба значат «великий».",
+          "Нет: «un grand homme» — толстый, «un homme grand» — худой."
+        ],
+        "correctIndex": 0,
+        "explanation": "С grand место решает смысл: перед словом (un grand homme) — «великий», после слова (un homme grand) — «высокий». Для роста ставь grand после: il est grand."
+      },
+      {
+        "id": "wc-adjectifs-petit-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adjectifs-petit",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ils ont une petite maison.",
+          "Un petit café, s'il vous plaît.",
+          "Attends un petit peu !"
+        ],
+        "options": ["маленький, небольшой", "большой", "старый", "плохой"],
+        "correctIndex": 0,
+        "explanation": "petit — маленький, небольшой. Женский род petite: une petite maison. «un petit peu» — чуть-чуть. Конечная t в petit не читается: /pə.ti/."
+      },
+      {
+        "id": "wc-adjectifs-petit-cmp",
+        "kind": "compare",
+        "wordId": "wl-adjectifs-petit",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«un petit garçon» и «un jeune homme». В чём разница?",
+        "phrases": ["C'est un petit garçon.", "C'est un jeune homme."],
+        "options": [
+          "petit garçon — маленький мальчик (ребёнок); jeune homme — молодой человек (взрослый).",
+          "Это одно и то же.",
+          "petit garçon — взрослый, jeune homme — ребёнок.",
+          "Оба значат «высокий мальчик»."
+        ],
+        "correctIndex": 0,
+        "explanation": "petit — про маленький размер или возраст ребёнка; jeune — про молодой возраст взрослого. «un petit garçon» — малыш, «un jeune homme» — юноша."
+      },
+      {
+        "id": "wc-adjectifs-bon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adjectifs-bon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "C'est un bon restaurant.",
+          "Le gâteau est très bon.",
+          "C'est une bonne idée."
+        ],
+        "options": ["хороший, вкусный", "плохой", "новый", "большой"],
+        "correctIndex": 0,
+        "explanation": "bon — хороший по качеству и вкусный о еде. Женский род bonne: une bonne idée. «c'est bon» — это вкусно / годится."
+      },
+      {
+        "id": "wc-adjectifs-bon-trap",
+        "kind": "trap",
+        "wordId": "wl-adjectifs-bon",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«хороший» и «хорошо» по-французски — это одно слово?",
+        "options": [
+          "Нет: bon — хороший (прилагательное), bien — хорошо (наречие).",
+          "Да, и то и другое — bon.",
+          "Да, и то и другое — bien.",
+          "Нет: bon — хорошо, bien — хороший."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка bon / bien: un bon café — хороший кофе (прилагательное); il travaille bien — он хорошо работает (наречие). Сравнительная степень bon — meilleur, а не «plus bon»."
+      },
+      {
+        "id": "wc-adjectifs-mauvais-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adjectifs-mauvais",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "C'est un mauvais film.",
+          "Aujourd'hui il fait mauvais.",
+          "J'ai eu une mauvaise note."
+        ],
+        "options": ["плохой", "хороший", "красивый", "молодой"],
+        "correctIndex": 0,
+        "explanation": "mauvais — плохой, неудачный. Женский род mauvaise: une mauvaise note. «il fait mauvais» — погода плохая. Конечная s не читается: /mo.vɛ/."
+      },
+      {
+        "id": "wc-adjectifs-mauvais-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-adjectifs-mauvais",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три прилагательных — это плохая оценка. Найди лишнее.",
+        "options": ["mauvais", "bon", "horrible", "nul"],
+        "correctIndex": 1,
+        "explanation": "mauvais (плохой), horrible (ужасный) и nul (никудышный) — отрицательная оценка. bon (хороший) — лишний: это похвала, антоним mauvais."
+      },
+      {
+        "id": "wc-adjectifs-beau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adjectifs-beau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Quel beau paysage !",
+          "Elle porte une belle robe.",
+          "Aujourd'hui il fait beau."
+        ],
+        "options": ["красивый, прекрасный", "плохой", "большой", "старый"],
+        "correctIndex": 0,
+        "explanation": "beau — красивый. Женский род belle: une belle robe. «il fait beau» — погода ясная, хорошая. Перед мужским словом на гласную — bel (un bel homme)."
+      },
+      {
+        "id": "wc-adjectifs-beau-cmp",
+        "kind": "compare",
+        "wordId": "wl-adjectifs-beau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«un beau château» и «une jolie fleur». Чем отличаются beau и joli?",
+        "phrases": ["C'est un beau château.", "C'est une jolie fleur."],
+        "options": [
+          "beau — красивый, впечатляющий; joli — хорошенький, миловидный (мягче, о небольшом).",
+          "Это полные синонимы.",
+          "beau — некрасивый, joli — красивый.",
+          "beau — только о людях, joli — только о вещах."
+        ],
+        "correctIndex": 0,
+        "explanation": "beau и joli оба «красивый», но beau сильнее и шире (un beau château), а joli мягче, о чём-то милом и небольшом (une jolie fleur)."
+      },
+      {
+        "id": "wc-adjectifs-beau-sort",
+        "kind": "sort",
+        "wordId": "wl-adjectifs-beau",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Где beau стоит в правильной форме, а где — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un bel homme",
+            "basket": "ok"
+          },
+          {
+            "text": "une belle journée",
+            "basket": "ok"
+          },
+          {
+            "text": "il fait beau",
+            "basket": "ok"
+          },
+          {
+            "text": "un beau homme",
+            "basket": "no"
+          },
+          {
+            "text": "une beau robe",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Перед мужским словом на гласную beau → bel: «un bel homme» (не «un beau homme»). В женском роде всегда belle: «une belle journée» (не «une beau robe»)."
+      },
+      {
+        "id": "wc-adjectifs-nouveau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adjectifs-nouveau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai un nouveau travail.",
+          "Elle a acheté une nouvelle voiture.",
+          "C'est mon nouvel ami."
+        ],
+        "options": ["новый", "старый", "большой", "хороший"],
+        "correctIndex": 0,
+        "explanation": "nouveau — новый. Женский род nouvelle: une nouvelle voiture. Перед мужским словом на гласную — nouvel: un nouvel ami."
+      },
+      {
+        "id": "wc-adjectifs-nouveau-trap",
+        "kind": "trap",
+        "wordId": "wl-adjectifs-nouveau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг купил «une nouvelle voiture». Обязательно ли она прямо из салона?",
+        "options": [
+          "Нет: nouveau — новый для него (может быть подержанным). Новьё из магазина — neuf (une voiture neuve).",
+          "Да: nouveau всегда значит «совсем новый, из магазина».",
+          "Да: nouveau и neuf — одно и то же.",
+          "Нет: nouveau значит «старый»."
+        ],
+        "correctIndex": 0,
+        "explanation": "nouveau — новый в смысле «другой, недавно появившийся» (может быть б/у). neuf — новёхонький, только что сделанный: «une voiture neuve». «une nouvelle voiture» может быть подержанной."
+      },
+      {
+        "id": "wc-adjectifs-vieux-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adjectifs-vieux",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Un vieux monsieur attend le bus.",
+          "Ils habitent une vieille maison.",
+          "C'est mon vieil ami."
+        ],
+        "options": ["старый, пожилой", "молодой", "новый", "маленький"],
+        "correctIndex": 0,
+        "explanation": "vieux — старый, пожилой. Женский род vieille: une vieille maison. Перед мужским словом на гласную — vieil: un vieil ami."
+      },
+      {
+        "id": "wc-adjectifs-vieux-cmp",
+        "kind": "compare",
+        "wordId": "wl-adjectifs-vieux",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«une vieille voiture» и «une nouvelle voiture». В чём разница по смыслу?",
+        "phrases": ["C'est une vieille voiture.", "C'est une nouvelle voiture."],
+        "options": [
+          "vieille — старая, давняя; nouvelle — новая для хозяина, недавно появившаяся.",
+          "Это одно и то же.",
+          "vieille — новая, nouvelle — старая.",
+          "Обе значат «красивая»."
+        ],
+        "correctIndex": 0,
+        "explanation": "vieux/vieille — старый по возрасту или изношенный; nouveau/nouvelle — новый, недавно появившийся. Это антонимы по «возрасту» вещи."
+      },
+      {
+        "id": "wc-adjectifs-jeune-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adjectifs-jeune",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "C'est un jeune homme.",
+          "Une jeune fille entre dans le café.",
+          "Tu es encore trop jeune."
+        ],
+        "options": ["молодой, юный", "старый", "большой", "плохой"],
+        "correctIndex": 0,
+        "explanation": "jeune — молодой. Форма одинакова в мужском и женском роде: un jeune homme, une jeune fille. «trop jeune» — слишком молодой."
+      },
+      {
+        "id": "wc-adjectifs-jeune-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-adjectifs-jeune",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — про возраст. Найди лишнее (оно про размер).",
+        "options": ["jeune", "vieux", "petit", "âgé"],
+        "correctIndex": 2,
+        "explanation": "jeune (молодой), vieux (старый) и âgé (пожилой) — про возраст. petit (маленький) — лишний: это размер, а не возраст."
+      }
+    ]
+  }
+]

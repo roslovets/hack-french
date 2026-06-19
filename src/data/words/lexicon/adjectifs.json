@@ -1,0 +1,337 @@
+[
+  {
+    "id": "wl-adjectifs-grand",
+    "lemma": "grand",
+    "displayForm": "grand / grande",
+    "pos": "adj",
+    "ipa": "/ɡʁɑ̃/",
+    "translationsRu": ["большой", "высокий", "великий"],
+    "translationsEn": ["big", "tall"],
+    "semanticCore": "Большой по размеру или высокий по росту; перед существительным о человеке часто значит «великий».",
+    "collocations": [
+      {
+        "fr": "une grande maison",
+        "ru": "большой дом"
+      },
+      {
+        "fr": "un homme grand",
+        "ru": "высокий мужчина"
+      },
+      {
+        "fr": "un grand homme",
+        "ru": "великий человек"
+      },
+      {
+        "fr": "il est grand",
+        "ru": "он высокий / он взрослый"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "petit",
+        "note": "grand = большой/высокий; petit = маленький/невысокий. Прямые антонимы."
+      },
+      {
+        "with": "gros",
+        "note": "grand = большой в высоту/протяжённости; gros = толстый, объёмный (un gros chat — толстый кот, а не высокий)."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A1",
+    "tags": ["adjectifs", "taille"],
+    "caseIds": ["wc-adjectifs"]
+  },
+  {
+    "id": "wl-adjectifs-petit",
+    "lemma": "petit",
+    "displayForm": "petit / petite",
+    "pos": "adj",
+    "ipa": "/pə.ti/",
+    "translationsRu": ["маленький", "небольшой"],
+    "translationsEn": ["small", "little"],
+    "semanticCore": "Маленький по размеру или росту; перед существительным часто звучит ласково («малыш», «дружок»).",
+    "collocations": [
+      {
+        "fr": "une petite maison",
+        "ru": "маленький дом"
+      },
+      {
+        "fr": "un petit garçon",
+        "ru": "маленький мальчик"
+      },
+      {
+        "fr": "un petit café",
+        "ru": "маленькая чашечка кофе"
+      },
+      {
+        "fr": "un petit peu",
+        "ru": "чуть-чуть, немножко"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "grand",
+        "note": "petit = маленький; grand = большой/высокий. Антонимы."
+      },
+      {
+        "with": "jeune",
+        "note": "petit = маленький (о размере или о маленьком ребёнке); jeune = молодой (о возрасте). «un enfant petit» — невысокий, «un jeune» — молодой человек."
+      }
+    ],
+    "frequencyRank": 100,
+    "level": "A1",
+    "tags": ["adjectifs", "taille"],
+    "caseIds": ["wc-adjectifs"]
+  },
+  {
+    "id": "wl-adjectifs-bon",
+    "lemma": "bon",
+    "displayForm": "bon / bonne",
+    "pos": "adj",
+    "ipa": "/bɔ̃/",
+    "translationsRu": ["хороший", "вкусный", "добрый"],
+    "translationsEn": ["good", "tasty"],
+    "semanticCore": "Хороший по качеству и вкусный о еде; оценка «это хорошо, мне нравится».",
+    "collocations": [
+      {
+        "fr": "un bon restaurant",
+        "ru": "хороший ресторан"
+      },
+      {
+        "fr": "c'est bon",
+        "ru": "это вкусно / годится"
+      },
+      {
+        "fr": "une bonne idée",
+        "ru": "хорошая идея"
+      },
+      {
+        "fr": "bonne journée",
+        "ru": "хорошего дня"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mauvais",
+        "note": "bon = хороший/вкусный; mauvais = плохой. Антонимы."
+      },
+      {
+        "with": "bien",
+        "note": "bon — прилагательное (un bon café — хороший кофе); bien — наречие (il travaille bien — он хорошо работает). Не путать «хороший» и «хорошо»."
+      }
+    ],
+    "frequencyRank": 80,
+    "level": "A1",
+    "tags": ["adjectifs", "qualite"],
+    "caseIds": ["wc-adjectifs"]
+  },
+  {
+    "id": "wl-adjectifs-mauvais",
+    "lemma": "mauvais",
+    "displayForm": "mauvais / mauvaise",
+    "pos": "adj",
+    "ipa": "/mo.vɛ/",
+    "translationsRu": ["плохой", "дурной"],
+    "translationsEn": ["bad", "poor"],
+    "semanticCore": "Плохой по качеству, неудачный или неприятный — оценка «это плохо».",
+    "collocations": [
+      {
+        "fr": "un mauvais film",
+        "ru": "плохой фильм"
+      },
+      {
+        "fr": "il fait mauvais",
+        "ru": "погода плохая"
+      },
+      {
+        "fr": "une mauvaise note",
+        "ru": "плохая оценка"
+      },
+      {
+        "fr": "de mauvaise humeur",
+        "ru": "в плохом настроении"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bon",
+        "note": "mauvais = плохой; bon = хороший. Антонимы. Сравнительная степень bon — meilleur, а mauvais — pire (не «plus bon»)."
+      },
+      {
+        "with": "méchant",
+        "note": "mauvais = плохой по качеству; méchant = злой, недобрый (о характере). «un mauvais chien» — никудышный, «un chien méchant» — кусачий."
+      }
+    ],
+    "frequencyRank": 290,
+    "level": "A1",
+    "tags": ["adjectifs", "qualite"],
+    "caseIds": ["wc-adjectifs"]
+  },
+  {
+    "id": "wl-adjectifs-beau",
+    "lemma": "beau",
+    "displayForm": "beau / bel / belle",
+    "pos": "adj",
+    "ipa": "/bo/",
+    "translationsRu": ["красивый", "прекрасный"],
+    "translationsEn": ["beautiful", "handsome"],
+    "semanticCore": "Красивый, приятный на вид; о погоде — ясный («il fait beau»).",
+    "collocations": [
+      {
+        "fr": "un beau paysage",
+        "ru": "красивый пейзаж"
+      },
+      {
+        "fr": "une belle robe",
+        "ru": "красивое платье"
+      },
+      {
+        "fr": "un bel homme",
+        "ru": "красивый мужчина"
+      },
+      {
+        "fr": "il fait beau",
+        "ru": "погода хорошая (ясно)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "joli",
+        "note": "beau = красивый, впечатляющий; joli = миловидный, хорошенький (мягче, о небольшом и приятном). «un beau château» сильнее, чем «une jolie fleur»."
+      },
+      {
+        "with": "bel",
+        "note": "Перед мужским словом на гласную/немое h beau → bel: «un bel homme», «un bel arbre». Женский род всегда belle."
+      }
+    ],
+    "frequencyRank": 160,
+    "level": "A1",
+    "tags": ["adjectifs", "apparence"],
+    "caseIds": ["wc-adjectifs"]
+  },
+  {
+    "id": "wl-adjectifs-nouveau",
+    "lemma": "nouveau",
+    "displayForm": "nouveau / nouvel / nouvelle",
+    "pos": "adj",
+    "ipa": "/nu.vo/",
+    "translationsRu": ["новый"],
+    "translationsEn": ["new"],
+    "semanticCore": "Новый в смысле «недавно появившийся, другой, очередной» — не обязательно только что произведённый.",
+    "collocations": [
+      {
+        "fr": "un nouveau travail",
+        "ru": "новая работа"
+      },
+      {
+        "fr": "une nouvelle voiture",
+        "ru": "новая машина"
+      },
+      {
+        "fr": "un nouvel ami",
+        "ru": "новый друг"
+      },
+      {
+        "fr": "la nouvelle année",
+        "ru": "новый год"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "neuf",
+        "note": "nouveau = новый для меня, недавно появившийся (может быть подержанным); neuf = новёхонький, только из магазина. «une nouvelle voiture» может быть б/у, «une voiture neuve» — нет."
+      },
+      {
+        "with": "nouvel",
+        "note": "Перед мужским словом на гласную/немое h nouveau → nouvel: «un nouvel ami», «un nouvel hôtel». Женский род всегда nouvelle."
+      }
+    ],
+    "frequencyRank": 130,
+    "level": "A1",
+    "tags": ["adjectifs", "etat"],
+    "caseIds": ["wc-adjectifs"]
+  },
+  {
+    "id": "wl-adjectifs-vieux",
+    "lemma": "vieux",
+    "displayForm": "vieux / vieil / vieille",
+    "pos": "adj",
+    "ipa": "/vjø/",
+    "translationsRu": ["старый", "пожилой"],
+    "translationsEn": ["old"],
+    "semanticCore": "Старый по возрасту (о человеке) или давний/изношенный (о вещи).",
+    "collocations": [
+      {
+        "fr": "un vieux monsieur",
+        "ru": "пожилой мужчина"
+      },
+      {
+        "fr": "une vieille maison",
+        "ru": "старый дом"
+      },
+      {
+        "fr": "un vieil ami",
+        "ru": "старый (давний) друг"
+      },
+      {
+        "fr": "de vieux livres",
+        "ru": "старые книги"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "jeune",
+        "note": "vieux = старый/пожилой; jeune = молодой. Антонимы по возрасту."
+      },
+      {
+        "with": "vieil",
+        "note": "Перед мужским словом на гласную/немое h vieux → vieil: «un vieil homme», «un vieil arbre». Женский род всегда vieille."
+      }
+    ],
+    "frequencyRank": 200,
+    "level": "A1",
+    "tags": ["adjectifs", "age"],
+    "caseIds": ["wc-adjectifs"]
+  },
+  {
+    "id": "wl-adjectifs-jeune",
+    "lemma": "jeune",
+    "pos": "adj",
+    "ipa": "/ʒœn/",
+    "translationsRu": ["молодой", "юный"],
+    "translationsEn": ["young"],
+    "semanticCore": "Молодой по возрасту; форма одинакова в мужском и женском роде.",
+    "collocations": [
+      {
+        "fr": "un jeune homme",
+        "ru": "молодой человек"
+      },
+      {
+        "fr": "une jeune fille",
+        "ru": "девушка"
+      },
+      {
+        "fr": "les jeunes gens",
+        "ru": "молодые люди"
+      },
+      {
+        "fr": "trop jeune",
+        "ru": "слишком молодой"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vieux",
+        "note": "jeune = молодой; vieux = старый. Антонимы по возрасту."
+      },
+      {
+        "with": "petit",
+        "note": "jeune = молодой (о возрасте); petit = маленький (о размере или о маленьком ребёнке). «un jeune homme» — взрослый, но молодой; «un petit garçon» — ребёнок."
+      }
+    ],
+    "frequencyRank": 210,
+    "level": "A1",
+    "tags": ["adjectifs", "age"],
+    "caseIds": ["wc-adjectifs"]
+  }
+]

@@ -1,0 +1,325 @@
+[
+  {
+    "id": "wl-courses-marche",
+    "lemma": "marché",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/maʁ.ʃe/",
+    "translationsRu": ["рынок", "базар"],
+    "translationsEn": ["market"],
+    "semanticCore": "Рынок под открытым небом, где торговцы продают свежие продукты; также «рынок» в экономическом смысле.",
+    "collocations": [
+      {
+        "fr": "aller au marché",
+        "ru": "идти на рынок"
+      },
+      {
+        "fr": "le marché du dimanche",
+        "ru": "воскресный рынок"
+      },
+      {
+        "fr": "acheter au marché",
+        "ru": "покупать на рынке"
+      },
+      {
+        "fr": "un marché couvert",
+        "ru": "крытый рынок"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "supermarché",
+        "note": "marché = рынок (открытые прилавки, торговцы); supermarché = супермаркет (магазин самообслуживания). Одно слово «вложено» в другое."
+      },
+      {
+        "with": "marche",
+        "note": "marché (с accent, /maʁ.ʃe/) = рынок; marche (без accent, /maʁʃ/) = ходьба или ступенька. Разные слова — следи за é."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["courses", "lieu"],
+    "caseIds": ["wc-courses"]
+  },
+  {
+    "id": "wl-courses-supermarche",
+    "lemma": "supermarché",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sy.pɛʁ.maʁ.ʃe/",
+    "translationsRu": ["супермаркет"],
+    "translationsEn": ["supermarket"],
+    "semanticCore": "Большой магазин самообслуживания, где берут тележку и сами набирают продукты.",
+    "collocations": [
+      {
+        "fr": "faire les courses au supermarché",
+        "ru": "делать покупки в супермаркете"
+      },
+      {
+        "fr": "un grand supermarché",
+        "ru": "большой супермаркет"
+      },
+      {
+        "fr": "le parking du supermarché",
+        "ru": "парковка супермаркета"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "marché",
+        "note": "supermarché = крытый магазин самообслуживания; marché = открытый рынок с торговцами. supermarché = super + marché."
+      },
+      {
+        "with": "hypermarché",
+        "note": "supermarché = супермаркет (средний); hypermarché = гипермаркет (огромный, ещё больше). Разница в размере."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["courses", "lieu"],
+    "caseIds": ["wc-courses"]
+  },
+  {
+    "id": "wl-courses-boutique",
+    "lemma": "boutique",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bu.tik/",
+    "translationsRu": ["магазинчик", "лавка", "бутик"],
+    "translationsEn": ["shop", "boutique"],
+    "semanticCore": "Небольшой магазин, обычно с одной темой (одежда, подарки, сувениры); камернее, чем supermarché.",
+    "collocations": [
+      {
+        "fr": "une petite boutique",
+        "ru": "маленький магазинчик"
+      },
+      {
+        "fr": "une boutique de souvenirs",
+        "ru": "сувенирная лавка"
+      },
+      {
+        "fr": "ouvrir une boutique",
+        "ru": "открыть магазинчик"
+      },
+      {
+        "fr": "la boutique est fermée",
+        "ru": "магазинчик закрыт"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "magasin",
+        "note": "boutique = маленький, специализированный магазинчик; magasin = магазин вообще (любой, и большой). boutique всегда небольшой."
+      },
+      {
+        "with": "boutique (англ.)",
+        "note": "По-русски «бутик» — это про дорогую моду. По-французски boutique — любой небольшой магазин, даже сувенирный. Шире, чем русское «бутик»."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["courses", "lieu"],
+    "caseIds": ["wc-courses"]
+  },
+  {
+    "id": "wl-courses-client",
+    "lemma": "client",
+    "displayForm": "client / cliente",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kli.jɑ̃/",
+    "translationsRu": ["клиент", "покупатель"],
+    "translationsEn": ["customer", "client"],
+    "semanticCore": "Тот, кто покупает или пользуется услугой; в магазине — покупатель, которого обслуживают.",
+    "collocations": [
+      {
+        "fr": "servir un client",
+        "ru": "обслуживать клиента"
+      },
+      {
+        "fr": "un client fidèle",
+        "ru": "постоянный клиент"
+      },
+      {
+        "fr": "le client a toujours raison",
+        "ru": "клиент всегда прав"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vendeur",
+        "note": "client = покупатель (тот, кто платит); vendeur = продавец (тот, кто продаёт). Две стороны прилавка."
+      },
+      {
+        "with": "client (англ. client)",
+        "note": "Англ. «client» — это скорее заказчик услуг. Фр. client шире: и покупатель в магазине, и клиент банка. Конечная t не читается: /kli.jɑ̃/."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["courses", "personne"],
+    "caseIds": ["wc-courses"]
+  },
+  {
+    "id": "wl-courses-vendeur",
+    "lemma": "vendeur",
+    "displayForm": "vendeur / vendeuse",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɑ̃.dœʁ/",
+    "translationsRu": ["продавец", "продавщица"],
+    "translationsEn": ["salesperson", "shop assistant"],
+    "semanticCore": "Человек, который продаёт и помогает покупателю в магазине; от глагола vendre (продавать).",
+    "collocations": [
+      {
+        "fr": "demander au vendeur",
+        "ru": "спросить у продавца"
+      },
+      {
+        "fr": "un vendeur aimable",
+        "ru": "любезный продавец"
+      },
+      {
+        "fr": "la vendeuse du magasin",
+        "ru": "продавщица магазина"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "client",
+        "note": "vendeur = продавец (продаёт); client = покупатель (покупает). Не перепутай, кто кому платит."
+      },
+      {
+        "with": "caissier",
+        "note": "vendeur = продавец (помогает выбрать, продаёт); caissier = кассир (пробивает на кассе). В большом магазине это разные люди."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["courses", "personne"],
+    "caseIds": ["wc-courses"]
+  },
+  {
+    "id": "wl-courses-soldes",
+    "lemma": "solde",
+    "displayForm": "les soldes",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɔld/",
+    "translationsRu": ["распродажа", "скидки"],
+    "translationsEn": ["sales", "seasonal sale"],
+    "semanticCore": "Сезонная распродажа (зимняя/летняя), когда магазины официально снижают цены; обычно во множественном: les soldes.",
+    "collocations": [
+      {
+        "fr": "pendant les soldes",
+        "ru": "во время распродажи"
+      },
+      {
+        "fr": "les soldes d'hiver",
+        "ru": "зимняя распродажа"
+      },
+      {
+        "fr": "acheter en solde",
+        "ru": "купить по распродаже"
+      },
+      {
+        "fr": "les soldes commencent demain",
+        "ru": "распродажа начинается завтра"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "réduction",
+        "note": "les soldes = официальная сезонная распродажа (по закону, в определённые недели); une réduction = просто скидка в любой момент."
+      },
+      {
+        "with": "promotion",
+        "note": "les soldes = большая сезонная распродажа; une promotion (промо) = временная акция на отдельный товар. Soldes идут всего пару раз в год."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["courses", "prix"],
+    "caseIds": ["wc-courses"]
+  },
+  {
+    "id": "wl-courses-cadeau",
+    "lemma": "cadeau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ka.do/",
+    "translationsRu": ["подарок"],
+    "translationsEn": ["gift", "present"],
+    "semanticCore": "Подарок — вещь, которую дарят кому-то, часто завёрнутую; множественное — cadeaux (с x).",
+    "collocations": [
+      {
+        "fr": "offrir un cadeau",
+        "ru": "дарить подарок"
+      },
+      {
+        "fr": "un cadeau d'anniversaire",
+        "ru": "подарок на день рождения"
+      },
+      {
+        "fr": "faire un cadeau à quelqu'un",
+        "ru": "сделать кому-то подарок"
+      },
+      {
+        "fr": "un paquet cadeau",
+        "ru": "подарочная упаковка"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "donner",
+        "note": "un cadeau дарят глаголом offrir, а не donner. «offrir un cadeau» = дарить; «donner» просто «дать», без оттенка подарка."
+      },
+      {
+        "with": "cadeaux",
+        "note": "Множественное — cadeaux (на -x, не -s): un cadeau → des cadeaux. Типичное правило для слов на -eau."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["courses", "objet"],
+    "caseIds": ["wc-courses"]
+  },
+  {
+    "id": "wl-courses-gratuit",
+    "lemma": "gratuit",
+    "displayForm": "gratuit / gratuite",
+    "pos": "adj",
+    "ipa": "/ɡʁa.tɥi/",
+    "translationsRu": ["бесплатный", "даром"],
+    "translationsEn": ["free", "free of charge"],
+    "semanticCore": "Бесплатный — то, за что не платят; «free» в смысле «без оплаты», а не «свободный».",
+    "collocations": [
+      {
+        "fr": "c'est gratuit",
+        "ru": "это бесплатно"
+      },
+      {
+        "fr": "l'entrée est gratuite",
+        "ru": "вход бесплатный"
+      },
+      {
+        "fr": "la livraison gratuite",
+        "ru": "бесплатная доставка"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "libre",
+        "note": "gratuit = бесплатный (не стоит денег); libre = свободный (не занятый). Англ. «free» = и то, и другое — по-французски это разные слова."
+      },
+      {
+        "with": "payant",
+        "note": "gratuit = бесплатный; payant = платный (антоним). Часто на табличках: «entrée gratuite» / «entrée payante»."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["courses", "prix"],
+    "caseIds": ["wc-courses"]
+  }
+]

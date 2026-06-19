@@ -1,0 +1,330 @@
+[
+  {
+    "id": "wl-verbes2-faire",
+    "lemma": "faire",
+    "pos": "verb",
+    "ipa": "/fɛʁ/",
+    "translationsRu": ["делать", "заниматься (чем-то)"],
+    "translationsEn": ["to do", "to make"],
+    "semanticCore": "Самый общий глагол действия и созидания: «делать / изготовлять», а также «заниматься» спортом, погода (il fait beau) и масса устойчивых выражений.",
+    "collocations": [
+      {
+        "fr": "faire la cuisine",
+        "ru": "готовить (заниматься готовкой)"
+      },
+      {
+        "fr": "faire du sport",
+        "ru": "заниматься спортом"
+      },
+      {
+        "fr": "faire les courses",
+        "ru": "делать покупки"
+      },
+      {
+        "fr": "il fait beau",
+        "ru": "погода хорошая"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fabriquer",
+        "note": "faire = делать в самом общем смысле; fabriquer = изготавливать (на заводе, руками). faire un gâteau, но fabriquer des voitures."
+      },
+      {
+        "with": "mettre",
+        "note": "faire — «делать/совершать действие»; mettre — «класть/ставить» предмет куда-то. Не путать: on fait la cuisine, on met la table."
+      }
+    ],
+    "frequencyRank": 40,
+    "level": "A2",
+    "tags": ["verbes2", "verbe", "action"],
+    "caseIds": ["wc-verbes2"]
+  },
+  {
+    "id": "wl-verbes2-dire",
+    "lemma": "dire",
+    "pos": "verb",
+    "ipa": "/diʁ/",
+    "translationsRu": ["говорить (что-то)", "сказать"],
+    "translationsEn": ["to say", "to tell"],
+    "semanticCore": "Сообщать словами конкретное содержание: сказать что-то, сказать кому-то. Всегда подразумевает СОДЕРЖАНИЕ сказанного (что именно сказано).",
+    "collocations": [
+      {
+        "fr": "dire la vérité",
+        "ru": "говорить правду"
+      },
+      {
+        "fr": "dire bonjour",
+        "ru": "здороваться (сказать «здравствуйте»)"
+      },
+      {
+        "fr": "vouloir dire",
+        "ru": "означать (хотеть сказать)"
+      },
+      {
+        "fr": "dire à quelqu'un de faire",
+        "ru": "велеть кому-то сделать"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "parler",
+        "note": "dire = сказать ЧТО-ТО (есть содержание: dire la vérité); parler = говорить/разговаривать (процесс, язык: parler français). Нельзя «dire français»."
+      },
+      {
+        "with": "demander",
+        "note": "dire = сообщать; demander = спрашивать/просить. dire — утверждение, demander — вопрос или просьба."
+      }
+    ],
+    "frequencyRank": 60,
+    "level": "A2",
+    "tags": ["verbes2", "verbe", "parole"],
+    "caseIds": ["wc-verbes2"]
+  },
+  {
+    "id": "wl-verbes2-donner",
+    "lemma": "donner",
+    "pos": "verb",
+    "ipa": "/dɔ.ne/",
+    "translationsRu": ["давать", "дать"],
+    "translationsEn": ["to give"],
+    "semanticCore": "Передавать что-то кому-то — из рук в руки или абстрактно (дать совет, дать время). Базовый глагол передачи.",
+    "collocations": [
+      {
+        "fr": "donner un cadeau",
+        "ru": "дарить подарок"
+      },
+      {
+        "fr": "donner un conseil",
+        "ru": "давать совет"
+      },
+      {
+        "fr": "donner rendez-vous",
+        "ru": "назначить встречу"
+      },
+      {
+        "fr": "donner sur la rue",
+        "ru": "выходить на улицу (об окне)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "offrir",
+        "note": "donner = дать/передать (нейтрально); offrir = подарить, предложить (с щедростью). Подарок чаще offrir un cadeau, а donner un cadeau — просто «передать»."
+      },
+      {
+        "with": "rendre",
+        "note": "donner = дать (отдать насовсем); rendre = вернуть (то, что брал). Не путать «дать» и «вернуть»."
+      }
+    ],
+    "frequencyRank": 120,
+    "level": "A2",
+    "tags": ["verbes2", "verbe", "transfert"],
+    "caseIds": ["wc-verbes2"]
+  },
+  {
+    "id": "wl-verbes2-mettre",
+    "lemma": "mettre",
+    "pos": "verb",
+    "ipa": "/mɛtʁ/",
+    "translationsRu": ["класть", "ставить", "надевать"],
+    "translationsEn": ["to put", "to put on"],
+    "semanticCore": "Помещать предмет в место или положение (класть, ставить), а также «надевать» одежду и «тратить» время на что-то (mettre du temps).",
+    "collocations": [
+      {
+        "fr": "mettre la table",
+        "ru": "накрывать на стол"
+      },
+      {
+        "fr": "mettre un manteau",
+        "ru": "надеть пальто"
+      },
+      {
+        "fr": "mettre de la musique",
+        "ru": "включить музыку"
+      },
+      {
+        "fr": "mettre du temps",
+        "ru": "потратить (какое-то) время"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poser",
+        "note": "mettre = поместить куда-то (общее, в т.ч. внутрь); poser = положить/поставить на поверхность (аккуратно сверху). mettre la clé dans la poche, poser le verre sur la table."
+      },
+      {
+        "with": "porter",
+        "note": "mettre un manteau = надеть (действие); porter un manteau = носить, быть в (состояние). Утром on met, днём on porte."
+      }
+    ],
+    "frequencyRank": 130,
+    "level": "A2",
+    "tags": ["verbes2", "verbe", "action"],
+    "caseIds": ["wc-verbes2"]
+  },
+  {
+    "id": "wl-verbes2-parler",
+    "lemma": "parler",
+    "pos": "verb",
+    "ipa": "/paʁ.le/",
+    "translationsRu": ["говорить", "разговаривать"],
+    "translationsEn": ["to speak", "to talk"],
+    "semanticCore": "Сам процесс речи: говорить на языке, разговаривать с кем-то, говорить о чём-то. Без конкретного содержания (в отличие от dire).",
+    "collocations": [
+      {
+        "fr": "parler français",
+        "ru": "говорить по-французски"
+      },
+      {
+        "fr": "parler à quelqu'un",
+        "ru": "разговаривать с кем-то"
+      },
+      {
+        "fr": "parler de quelque chose",
+        "ru": "говорить о чём-то"
+      },
+      {
+        "fr": "parler fort",
+        "ru": "говорить громко"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "dire",
+        "note": "parler = говорить/разговаривать (процесс, язык); dire = сказать что-то конкретное. parler français — да, «dire français» — нет."
+      },
+      {
+        "with": "raconter",
+        "note": "parler de = упомянуть, поговорить о; raconter = рассказать (историю целиком, с деталями). parler du film vs raconter le film."
+      }
+    ],
+    "frequencyRank": 110,
+    "level": "A2",
+    "tags": ["verbes2", "verbe", "parole"],
+    "caseIds": ["wc-verbes2"]
+  },
+  {
+    "id": "wl-verbes2-trouver",
+    "lemma": "trouver",
+    "pos": "verb",
+    "ipa": "/tʁu.ve/",
+    "translationsRu": ["находить", "считать (полагать)"],
+    "translationsEn": ["to find", "to think (find that)"],
+    "semanticCore": "Найти то, что искал (trouver les clés), а также «считать, находить каким-то»: высказать мнение (je trouve que…, je le trouve sympa).",
+    "collocations": [
+      {
+        "fr": "trouver une solution",
+        "ru": "найти решение"
+      },
+      {
+        "fr": "trouver du travail",
+        "ru": "найти работу"
+      },
+      {
+        "fr": "je trouve que c'est cher",
+        "ru": "по-моему, это дорого"
+      },
+      {
+        "fr": "se trouver",
+        "ru": "находиться (располагаться)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chercher",
+        "note": "chercher = искать (процесс); trouver = найти (результат). Сначала on cherche, потом on trouve."
+      },
+      {
+        "with": "penser",
+        "note": "trouver que = находить/считать (по личному впечатлению: вкус, ощущение); penser que = думать/полагать (мнение, рассуждение). О еде скорее je trouve que c'est bon."
+      }
+    ],
+    "frequencyRank": 150,
+    "level": "A2",
+    "tags": ["verbes2", "verbe", "cognition"],
+    "caseIds": ["wc-verbes2"]
+  },
+  {
+    "id": "wl-verbes2-demander",
+    "lemma": "demander",
+    "pos": "verb",
+    "ipa": "/də.mɑ̃.de/",
+    "translationsRu": ["просить", "спрашивать"],
+    "translationsEn": ["to ask", "to ask for"],
+    "semanticCore": "Обращаться с вопросом или просьбой: спросить что-то или попросить что-то/кого-то. Внимание: НЕ «требовать».",
+    "collocations": [
+      {
+        "fr": "demander l'heure",
+        "ru": "спросить, который час"
+      },
+      {
+        "fr": "demander de l'aide",
+        "ru": "просить помощи"
+      },
+      {
+        "fr": "demander à quelqu'un de faire",
+        "ru": "попросить кого-то сделать"
+      },
+      {
+        "fr": "demander pardon",
+        "ru": "просить прощения"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "exiger",
+        "note": "Ложный друг англ. «to demand»: фр. demander = спросить/попросить (нейтрально), а НЕ «требовать». «Требовать» — это exiger."
+      },
+      {
+        "with": "poser une question",
+        "note": "demander = спросить/попросить (универсально); poser une question = задать вопрос (именно вопрос). Можно demander l'heure, но не «poser l'heure»."
+      }
+    ],
+    "frequencyRank": 140,
+    "level": "A2",
+    "tags": ["verbes2", "verbe", "parole"],
+    "caseIds": ["wc-verbes2"]
+  },
+  {
+    "id": "wl-verbes2-devenir",
+    "lemma": "devenir",
+    "pos": "verb",
+    "ipa": "/də.və.niʁ/",
+    "translationsRu": ["становиться", "стать"],
+    "translationsEn": ["to become"],
+    "semanticCore": "Переход в новое состояние или качество: стать кем-то/каким-то. Внутри сидит venir (приходить): de-venir = «прийти к новому состоянию». Спрягается как venir и в passé composé идёт с être.",
+    "collocations": [
+      {
+        "fr": "devenir médecin",
+        "ru": "стать врачом"
+      },
+      {
+        "fr": "devenir riche",
+        "ru": "разбогатеть (стать богатым)"
+      },
+      {
+        "fr": "devenir grand",
+        "ru": "вырасти (стать большим)"
+      },
+      {
+        "fr": "qu'est-ce que tu deviens ?",
+        "ru": "как поживаешь? (что с тобой нового)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "venir",
+        "note": "venir = приходить; devenir = становиться. Внутри devenir сидит venir, и спрягается оно так же: je deviens, il devient, ils deviennent."
+      },
+      {
+        "with": "rester",
+        "note": "devenir = стать (смена состояния); rester = остаться (тем же). devenir vieux — постареть, rester jeune — остаться молодым."
+      }
+    ],
+    "frequencyRank": 250,
+    "level": "A2",
+    "tags": ["verbes2", "verbe", "etat"],
+    "caseIds": ["wc-verbes2"]
+  }
+]

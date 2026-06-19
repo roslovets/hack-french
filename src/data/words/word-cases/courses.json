@@ -1,0 +1,315 @@
+[
+  {
+    "id": "wc-courses",
+    "title": "В магазине",
+    "theme": "courses",
+    "level": "A2",
+    "wordIds": [
+      "wl-courses-marche",
+      "wl-courses-supermarche",
+      "wl-courses-boutique",
+      "wl-courses-client",
+      "wl-courses-vendeur",
+      "wl-courses-soldes",
+      "wl-courses-cadeau",
+      "wl-courses-gratuit"
+    ],
+    "steps": [
+      {
+        "id": "wc-courses-marche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-courses-marche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le dimanche, on va au marché acheter des légumes.",
+          "Les fruits sont moins chers au marché.",
+          "Il y a un petit marché sur la place du village."
+        ],
+        "options": ["рынок (с открытыми прилавками)", "супермаркет", "магазинчик", "касса"],
+        "correctIndex": 0,
+        "explanation": "marché (m) — рынок под открытым небом, где торговцы продают свежие продукты. Супермаркет — un supermarché, магазинчик — une boutique."
+      },
+      {
+        "id": "wc-courses-marche-trap",
+        "kind": "trap",
+        "wordId": "wl-courses-marche",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "marché и marche пишутся почти одинаково. Где «рынок»?",
+        "options": [
+          "le marché — с accent aigu на конце",
+          "la marche — без accent",
+          "оба значат «рынок»",
+          "marche — это «рынок», marché — «ходьба»"
+        ],
+        "correctIndex": 0,
+        "explanation": "le marché (/maʁ.ʃe/) — рынок. la marche (/maʁʃ/) — ходьба или ступенька. Всё решает accent aigu на é: без него это другое слово."
+      },
+      {
+        "id": "wc-courses-supermarche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-courses-supermarche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je fais les courses au supermarché le samedi.",
+          "Le supermarché est ouvert jusqu'à 22 heures.",
+          "Prends un chariot à l'entrée du supermarché."
+        ],
+        "options": ["супермаркет", "рынок", "склад", "ресторан"],
+        "correctIndex": 0,
+        "explanation": "supermarché (m) — большой магазин самообслуживания (берёшь chariot — тележку — и сам набираешь продукты). Рынок — un marché."
+      },
+      {
+        "id": "wc-courses-supermarche-cmp",
+        "kind": "compare",
+        "wordId": "wl-courses-supermarche",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "aller au marché и aller au supermarché. В чём разница?",
+        "phrases": ["Je vais au marché.", "Je vais au supermarché."],
+        "options": [
+          "marché — открытый рынок с торговцами; supermarché — крытый магазин самообслуживания.",
+          "Это полные синонимы, разницы нет.",
+          "marché больше супермаркета.",
+          "supermarché — это рынок, а marché — магазин."
+        ],
+        "correctIndex": 0,
+        "explanation": "marché — рынок под открытым небом, продавцы за прилавками. supermarché — большой магазин, где сам берёшь товар с полок. Слово super + marché."
+      },
+      {
+        "id": "wc-courses-boutique-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-courses-boutique",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il y a une jolie boutique de souvenirs au coin de la rue.",
+          "Cette boutique vend des vêtements pour enfants.",
+          "La boutique ferme à 19 heures."
+        ],
+        "options": ["небольшой магазинчик / лавка", "супермаркет", "рынок", "склад"],
+        "correctIndex": 0,
+        "explanation": "boutique (f) — небольшой магазинчик, обычно на одну тему (сувениры, одежда). Камернее, чем supermarché."
+      },
+      {
+        "id": "wc-courses-boutique-trap",
+        "kind": "trap",
+        "wordId": "wl-courses-boutique",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "По-русски «бутик» — это про дорогую моду. А что значит фр. boutique?",
+        "options": [
+          "любой небольшой магазинчик, даже сувенирный",
+          "только дорогой магазин модной одежды",
+          "большой торговый центр",
+          "рынок под открытым небом"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка значения: фр. boutique — любой небольшой магазин (сувениры, цветы, одежда), не обязательно дорогой. Русское «бутик» — лишь узкая часть этого смысла."
+      },
+      {
+        "id": "wc-courses-boutique-sort",
+        "kind": "sort",
+        "wordId": "wl-courses-boutique",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом boutique звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une petite boutique",
+            "basket": "ok"
+          },
+          {
+            "text": "une boutique de souvenirs",
+            "basket": "ok"
+          },
+          {
+            "text": "ouvrir une boutique",
+            "basket": "ok"
+          },
+          {
+            "text": "une boutique de cent étages",
+            "basket": "no"
+          },
+          {
+            "text": "manger une boutique",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«une petite boutique», «une boutique de souvenirs», «ouvrir une boutique» — естественно. boutique по определению маленькая, поэтому «boutique de cent étages» абсурд, а «manger une boutique» (съесть магазин) — бессмыслица."
+      },
+      {
+        "id": "wc-courses-client-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-courses-client",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le vendeur aide un client à choisir.",
+          "Il y a beaucoup de clients dans le magasin.",
+          "Cette cliente vient ici tous les jours."
+        ],
+        "options": ["клиент / покупатель", "продавец", "кассир", "охранник"],
+        "correctIndex": 0,
+        "explanation": "client / cliente — покупатель, тот, кого обслуживают. Продавец — un vendeur. «le client a toujours raison» — клиент всегда прав. Конечная t не читается: /kli.jɑ̃/."
+      },
+      {
+        "id": "wc-courses-client-hint",
+        "kind": "wordHint",
+        "wordId": "wl-courses-client",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: человек, который приходит в магазин и платит за товар.",
+        "answer": "client",
+        "hints": ["Начинается на cl…", "Похоже на англ. «client»", "Le vendeur sert le ___."],
+        "explanation": "client (m) / cliente (f) — клиент, покупатель. Конечная t немая: /kli.jɑ̃/. Противоположность — le vendeur (продавец)."
+      },
+      {
+        "id": "wc-courses-vendeur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-courses-vendeur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Demande au vendeur où sont les caisses.",
+          "Le vendeur est très aimable.",
+          "La vendeuse m'a proposé une autre taille."
+        ],
+        "options": ["продавец / продавщица", "покупатель", "директор", "поставщик"],
+        "correctIndex": 0,
+        "explanation": "vendeur (m) / vendeuse (f) — продавец, который помогает и продаёт. От глагола vendre — продавать. Покупатель — le client."
+      },
+      {
+        "id": "wc-courses-vendeur-cmp",
+        "kind": "compare",
+        "wordId": "wl-courses-vendeur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Le vendeur sert le client. Кто кому помогает?",
+        "phrases": ["Le vendeur sert le client.", "Le client paie le vendeur."],
+        "options": [
+          "vendeur продаёт и обслуживает, client покупает и платит.",
+          "Это одно и то же лицо.",
+          "client продаёт, vendeur покупает.",
+          "оба — продавцы."
+        ],
+        "correctIndex": 0,
+        "explanation": "Две стороны прилавка: le vendeur (продавец) обслуживает — sert; le client (покупатель) платит — paie. Не перепутай, кто кому платит."
+      },
+      {
+        "id": "wc-courses-soldes-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-courses-soldes",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Pendant les soldes, tout est moins cher.",
+          "Les soldes d'hiver commencent en janvier.",
+          "J'ai acheté ce manteau en solde."
+        ],
+        "options": ["распродажа / скидки", "зарплата", "очередь", "цена"],
+        "correctIndex": 0,
+        "explanation": "les soldes (m, обычно во мн. ч.) — сезонная распродажа, когда магазины снижают цены. «en solde» — по распродаже. Цена — le prix."
+      },
+      {
+        "id": "wc-courses-soldes-cmp",
+        "kind": "compare",
+        "wordId": "wl-courses-soldes",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "les soldes и une réduction. В чём разница?",
+        "phrases": ["C'est la période des soldes.", "Le vendeur m'a fait une réduction."],
+        "options": [
+          "les soldes — официальная сезонная распродажа; une réduction — обычная скидка в любой момент.",
+          "Это полные синонимы.",
+          "les soldes — скидка на один товар, réduction — на весь магазин.",
+          "réduction бывает только зимой."
+        ],
+        "correctIndex": 0,
+        "explanation": "les soldes — большая сезонная распродажа (по закону, в определённые недели, пару раз в год). une réduction — просто скидка, которую могут дать в любой день."
+      },
+      {
+        "id": "wc-courses-cadeau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-courses-cadeau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai acheté un cadeau pour ma mère.",
+          "Pour Noël, on offre des cadeaux.",
+          "C'est un beau paquet cadeau."
+        ],
+        "options": ["подарок", "покупка", "сувенир", "коробка"],
+        "correctIndex": 0,
+        "explanation": "cadeau (m) — подарок. Множественное — cadeaux (на -x): un cadeau → des cadeaux. Дарят его глаголом offrir: offrir un cadeau."
+      },
+      {
+        "id": "wc-courses-cadeau-trap",
+        "kind": "trap",
+        "wordId": "wl-courses-cadeau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как сказать «дарить подарок» по-французски?",
+        "options": [
+          "offrir un cadeau",
+          "donner un cadeau (так обычно не говорят про подарок)",
+          "faire un cadeau de donner",
+          "payer un cadeau"
+        ],
+        "correctIndex": 0,
+        "explanation": "Подарок дарят глаголом offrir: «offrir un cadeau». «donner» — просто «дать», без оттенка дарения; «payer un cadeau» — заплатить за подарок (другое действие). Альтернатива — «faire un cadeau à quelqu'un»."
+      },
+      {
+        "id": "wc-courses-gratuit-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-courses-gratuit",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "L'entrée du musée est gratuite le dimanche.",
+          "La livraison est gratuite à partir de 50 euros.",
+          "Ce sac, c'est un cadeau gratuit avec le parfum."
+        ],
+        "options": ["бесплатный", "свободный (не занятый)", "дешёвый", "новый"],
+        "correctIndex": 0,
+        "explanation": "gratuit / gratuite — бесплатный (не стоит денег). Не путать со «свободный» — это libre. Англ. «free» покрывает оба смысла, по-французски это разные слова."
+      },
+      {
+        "id": "wc-courses-gratuit-trap",
+        "kind": "trap",
+        "wordId": "wl-courses-gratuit",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «free» значит и «бесплатный», и «свободный». Как сказать «бесплатный вход»?",
+        "options": [
+          "entrée gratuite",
+          "entrée libre (это «вход свободный», без билета, но не про деньги)",
+          "entrée payante",
+          "entrée free"
+        ],
+        "correctIndex": 0,
+        "explanation": "«Бесплатный» (не стоит денег) — gratuit: entrée gratuite. «entrée libre» значит «вход свободный/без записи». «payant» — платный (антоним). Англ. «free» приходится разделять на gratuit и libre."
+      }
+    ]
+  }
+]

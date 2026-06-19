@@ -1,0 +1,274 @@
+[
+  {
+    "id": "wc-visage",
+    "title": "Лицо",
+    "theme": "visage",
+    "level": "A2",
+    "wordIds": [
+      "wl-visage-visage",
+      "wl-visage-yeux",
+      "wl-visage-nez",
+      "wl-visage-bouche",
+      "wl-visage-oreille",
+      "wl-visage-cheveux",
+      "wl-visage-dent",
+      "wl-visage-joue"
+    ],
+    "steps": [
+      {
+        "id": "wc-visage-visage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-visage-visage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Elle a un beau visage.",
+          "Il se lave le visage le matin.",
+          "Son visage est tout rouge."
+        ],
+        "options": ["лицо", "голова", "щека", "взгляд"],
+        "correctIndex": 0,
+        "explanation": "visage (m) — лицо, передняя часть головы. Вся голова — la tête. Умываешь le visage, а «болит голова» = mal à la tête."
+      },
+      {
+        "id": "wc-visage-visage-cmp",
+        "kind": "compare",
+        "wordId": "wl-visage-visage",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le visage и la tête. В чём разница?",
+        "phrases": ["Il a un visage sympathique.", "J'ai mal à la tête."],
+        "options": [
+          "visage — лицо (передняя часть); tête — вся голова. «Болит голова» = à la tête, а не au visage.",
+          "Это полные синонимы, разницы нет.",
+          "visage — вся голова, а tête — только лицо.",
+          "visage — голова животного, tête — голова человека."
+        ],
+        "correctIndex": 0,
+        "explanation": "le visage — лицо (черты, выражение); la tête — голова целиком. Болит голова — à la tête; умываешь, целуешь — le visage."
+      },
+      {
+        "id": "wc-visage-yeux-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-visage-yeux",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Elle a les yeux bleus.",
+          "Ferme les yeux et compte jusqu'à dix.",
+          "J'ai les yeux fatigués."
+        ],
+        "options": ["глаза", "уши", "брови", "ресницы"],
+        "correctIndex": 0,
+        "explanation": "yeux — глаза (множественное). Один глаз — un œil /œj/, два и больше — des yeux /jø/: формы выглядят совсем по-разному."
+      },
+      {
+        "id": "wc-visage-yeux-trap",
+        "kind": "trap",
+        "wordId": "wl-visage-yeux",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как сказать «один глаз» в единственном числе?",
+        "options": ["un œil", "un yeux", "un yeu", "une œil"],
+        "correctIndex": 0,
+        "explanation": "Единственное число — un œil /œj/ (мужской род). Множественное — des yeux /jø/. «un yeux» не существует: yeux — это уже множественное."
+      },
+      {
+        "id": "wc-visage-nez-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-visage-nez",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai le nez bouché, je suis enrhumé.",
+          "Elle a un petit nez.",
+          "Mouche-toi le nez !"
+        ],
+        "options": ["нос", "рот", "лоб", "горло"],
+        "correctIndex": 0,
+        "explanation": "nez (m) — нос. Конечная z не читается: /ne/. «avoir le nez bouché» — нос заложен, «se moucher le nez» — сморкаться."
+      },
+      {
+        "id": "wc-visage-nez-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-visage-nez",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "nez",
+        "options": ["nez", "nu", "nœud", "neuf"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало nez /ne/ (нос). Похожие на слух, но разные слова: nu /ny/ (голый), nœud /nø/ (узел), neuf /nœf/ (девять). У всех другой гласный — только nez звучит как /ne/."
+      },
+      {
+        "id": "wc-visage-bouche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-visage-bouche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ouvre la bouche, dit le dentiste.",
+          "Ne parle pas la bouche pleine.",
+          "Elle a une jolie bouche."
+        ],
+        "options": ["рот", "нос", "губа", "язык"],
+        "correctIndex": 0,
+        "explanation": "bouche (f) — рот. Внимание на род: по-русски «рот» мужской, а la bouche — женского рода. Губы — les lèvres."
+      },
+      {
+        "id": "wc-visage-bouche-trap",
+        "kind": "trap",
+        "wordId": "wl-visage-bouche",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как правильно сказать «открой рот»?",
+        "options": ["ouvre la bouche", "ouvre le bouche", "ouvre la bouché", "ouvre ta nez"],
+        "correctIndex": 0,
+        "explanation": "Рот — женского рода: la bouche, значит «ouvre la bouche». «le bouche» — неверный род; «bouché» (с accent) — это «закупоренный», другое слово."
+      },
+      {
+        "id": "wc-visage-oreille-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-visage-oreille",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il me parle à l'oreille.",
+          "J'ai mal aux oreilles dans l'avion.",
+          "Le lapin a de grandes oreilles."
+        ],
+        "options": ["ухо", "глаз", "щека", "плечо"],
+        "correctIndex": 0,
+        "explanation": "oreille (f) — ухо. «à l'oreille» — на ухо (шёпотом), «avoir mal aux oreilles» — болят уши. Множественное — les oreilles."
+      },
+      {
+        "id": "wc-visage-oreille-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-visage-oreille",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — части лица. Найди лишнее.",
+        "options": ["l'oreille", "le nez", "la bouche", "le genou"],
+        "correctIndex": 3,
+        "explanation": "Ухо (l'oreille), нос (le nez) и рот (la bouche) — на голове. Лишнее — le genou (колено): это часть ноги."
+      },
+      {
+        "id": "wc-visage-cheveux-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-visage-cheveux",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Elle a les cheveux longs et bruns.",
+          "Je me lave les cheveux tous les jours.",
+          "Il a les cheveux blancs."
+        ],
+        "options": ["волосы", "брови", "усы", "ресницы"],
+        "correctIndex": 0,
+        "explanation": "cheveux — волосы на голове, почти всегда во множественном: les cheveux. Один волос — un cheveu. «se laver les cheveux» — мыть голову."
+      },
+      {
+        "id": "wc-visage-cheveux-sort",
+        "kind": "sort",
+        "wordId": "wl-visage-cheveux",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом cheveux звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "se laver les cheveux",
+            "basket": "ok"
+          },
+          {
+            "text": "les cheveux longs",
+            "basket": "ok"
+          },
+          {
+            "text": "des cheveux blonds",
+            "basket": "ok"
+          },
+          {
+            "text": "manger les cheveux",
+            "basket": "no"
+          },
+          {
+            "text": "un cheveu bouché",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«se laver les cheveux», «les cheveux longs», «des cheveux blonds» — естественно. «manger les cheveux» (есть волосы) и «un cheveu bouché» (заложенный волос) — бессмыслица."
+      },
+      {
+        "id": "wc-visage-dent-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-visage-dent",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je me brosse les dents après le repas.",
+          "J'ai mal aux dents.",
+          "Le bébé a une nouvelle dent."
+        ],
+        "options": ["зуб", "язык", "губа", "десна"],
+        "correctIndex": 0,
+        "explanation": "dent (f) — зуб. Род женский (la dent), хотя по-русски «зуб» мужской. «se brosser les dents» — чистить зубы, «avoir mal aux dents» — болят зубы."
+      },
+      {
+        "id": "wc-visage-dent-trap",
+        "kind": "trap",
+        "wordId": "wl-visage-dent",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «dent» значит «вмятина». А фр. la dent — это что?",
+        "options": ["зуб", "вмятина", "палатка", "плотный"],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: фр. la dent — «зуб», а англ. dent — «вмятина». Палатка — une tente, плотный — dense. Не дай английскому сбить."
+      },
+      {
+        "id": "wc-visage-joue-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-visage-joue",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il fait un bisou sur la joue de sa grand-mère.",
+          "Les enfants ont les joues rouges après le sport.",
+          "Elle tend la joue pour la bise."
+        ],
+        "options": ["щека", "подбородок", "лоб", "губа"],
+        "correctIndex": 0,
+        "explanation": "joue (f) — щека. В неё целуют при приветствии (la bise). Подбородок — le menton, лоб — le front."
+      },
+      {
+        "id": "wc-visage-joue-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-visage-joue",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для joue (щека), чтобы не путать с глаголом «il joue» (он играет) и запомнить произношение /ʒu/.",
+        "examples": [
+          "На вид joue — как «il joue» (он играет): представь, что ребёнок играет (joue) и от смеха надувает щёки (les joues).",
+          "Звучит как «жу» /ʒu/: «жу-жу» — звук поцелуя un bisou sur la joue, в щёчку."
+        ]
+      }
+    ]
+  }
+]

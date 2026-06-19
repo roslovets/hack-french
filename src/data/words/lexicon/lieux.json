@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-lieux-banque",
+    "lemma": "banque",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bɑ̃k/",
+    "translationsRu": ["банк"],
+    "translationsEn": ["bank"],
+    "semanticCore": "Банк как учреждение, где хранят деньги и проводят операции; сходить «в банк» — à la banque.",
+    "collocations": [
+      {
+        "fr": "aller à la banque",
+        "ru": "идти в банк"
+      },
+      {
+        "fr": "un compte en banque",
+        "ru": "банковский счёт"
+      },
+      {
+        "fr": "la banque est fermée",
+        "ru": "банк закрыт"
+      },
+      {
+        "fr": "retirer de l'argent à la banque",
+        "ru": "снять деньги в банке"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "banc",
+        "note": "la banque (/bɑ̃k/) — банк; le banc (/bɑ̃/) — скамейка в парке. Похожи на слух, но banc — мужского рода и без k на конце."
+      },
+      {
+        "with": "bank (англ.)",
+        "note": "Англ. «bank» = и банк, и берег реки. Фр. la banque — только банк; берег реки — la rive / la berge."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["lieux", "argent", "batiment"],
+    "caseIds": ["wc-lieux"]
+  },
+  {
+    "id": "wl-lieux-poste",
+    "lemma": "poste",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɔst/",
+    "translationsRu": ["почта"],
+    "translationsEn": ["post office", "mail"],
+    "semanticCore": "La poste (ж.р.) — почта: и здание-отделение, и почтовая служба. По роду отличается от le poste (должность, аппарат).",
+    "collocations": [
+      {
+        "fr": "aller à la poste",
+        "ru": "идти на почту"
+      },
+      {
+        "fr": "le bureau de poste",
+        "ru": "почтовое отделение"
+      },
+      {
+        "fr": "envoyer une lettre par la poste",
+        "ru": "отправить письмо по почте"
+      },
+      {
+        "fr": "La Poste française",
+        "ru": "французская почта (служба)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "le poste",
+        "note": "la poste (ж.р.) — почта; le poste (м.р.) — должность/место работы (un poste) или аппарат (un poste de radio). Род меняет смысл."
+      },
+      {
+        "with": "courrier",
+        "note": "la poste — почта как служба/место; le courrier — почта как сами письма (received mail). «Tu as reçu du courrier» = тебе пришли письма."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["lieux", "service", "batiment"],
+    "caseIds": ["wc-lieux"]
+  },
+  {
+    "id": "wl-lieux-hopital",
+    "lemma": "hôpital",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɔ.pi.tal/",
+    "translationsRu": ["больница"],
+    "translationsEn": ["hospital"],
+    "semanticCore": "Больница, куда попадают при серьёзной болезни или травме; во множественном — hôpitaux.",
+    "collocations": [
+      {
+        "fr": "aller à l'hôpital",
+        "ru": "ехать в больницу"
+      },
+      {
+        "fr": "être à l'hôpital",
+        "ru": "лежать в больнице"
+      },
+      {
+        "fr": "emmener à l'hôpital",
+        "ru": "отвезти в больницу"
+      },
+      {
+        "fr": "l'hôpital le plus proche",
+        "ru": "ближайшая больница"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "clinique",
+        "note": "l'hôpital — (обычно государственная) больница; la clinique — частная клиника, поменьше. По-русски оба «больница/клиника», но это разные учреждения."
+      },
+      {
+        "with": "médecin",
+        "note": "l'hôpital — место (больница); le médecin — человек (врач). Не путать «куда» и «к кому»."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["lieux", "sante", "batiment"],
+    "caseIds": ["wc-lieux"]
+  },
+  {
+    "id": "wl-lieux-eglise",
+    "lemma": "église",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.gliz/",
+    "translationsRu": ["церковь"],
+    "translationsEn": ["church"],
+    "semanticCore": "Церковь как здание (часто в центре города, у площади) и как христианская община.",
+    "collocations": [
+      {
+        "fr": "aller à l'église",
+        "ru": "ходить в церковь"
+      },
+      {
+        "fr": "une vieille église",
+        "ru": "старая церковь"
+      },
+      {
+        "fr": "devant l'église",
+        "ru": "перед церковью"
+      },
+      {
+        "fr": "l'église du village",
+        "ru": "деревенская церковь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cathédrale",
+        "note": "l'église — обычная (приходская) церковь; la cathédrale — кафедральный собор, главный и большой (Notre-Dame — une cathédrale)."
+      },
+      {
+        "with": "chapelle",
+        "note": "l'église — церковь; la chapelle — маленькая часовня (например, при замке или больнице). Часовня меньше церкви."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["lieux", "batiment"],
+    "caseIds": ["wc-lieux"]
+  },
+  {
+    "id": "wl-lieux-parc",
+    "lemma": "parc",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/paʁk/",
+    "translationsRu": ["парк"],
+    "translationsEn": ["park"],
+    "semanticCore": "Городской парк — большое огороженное зелёное пространство для прогулок и отдыха.",
+    "collocations": [
+      {
+        "fr": "se promener dans le parc",
+        "ru": "гулять в парке"
+      },
+      {
+        "fr": "un parc public",
+        "ru": "городской (общественный) парк"
+      },
+      {
+        "fr": "jouer au parc",
+        "ru": "играть в парке"
+      },
+      {
+        "fr": "un banc dans le parc",
+        "ru": "скамейка в парке"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "jardin",
+        "note": "le parc — большой парк (городской, для всех); le jardin — сад, поменьше (часто при доме). Le jardin public — городской сквер."
+      },
+      {
+        "with": "parking",
+        "note": "le parc — парк (зелёный); le parking — автостоянка. Англ. «park» сбивает: «припарковаться» — se garer / stationner, а не *parquer."
+      }
+    ],
+    "frequencyRank": 500,
+    "level": "A2",
+    "tags": ["lieux", "nature"],
+    "caseIds": ["wc-lieux"]
+  },
+  {
+    "id": "wl-lieux-pont",
+    "lemma": "pont",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɔ̃/",
+    "translationsRu": ["мост"],
+    "translationsEn": ["bridge"],
+    "semanticCore": "Мост через реку — переходят его (traverser le pont); конечные nt не читаются, звук носовой /pɔ̃/.",
+    "collocations": [
+      {
+        "fr": "traverser le pont",
+        "ru": "перейти мост"
+      },
+      {
+        "fr": "sous le pont",
+        "ru": "под мостом"
+      },
+      {
+        "fr": "le pont sur la Seine",
+        "ru": "мост через Сену"
+      },
+      {
+        "fr": "un vieux pont en pierre",
+        "ru": "старый каменный мост"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pont (выходные)",
+        "note": "le pont — обычно мост; но «faire le pont» — устроить себе длинные выходные, «соединив» праздник с уикендом (взять день между ними)."
+      },
+      {
+        "with": "quai",
+        "note": "le pont — мост (через реку); le quai — набережная (вдоль реки) или платформа на вокзале. Идут рядом, но это разное."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["lieux", "structure"],
+    "caseIds": ["wc-lieux"]
+  },
+  {
+    "id": "wl-lieux-place",
+    "lemma": "place",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/plas/",
+    "translationsRu": ["площадь", "место"],
+    "translationsEn": ["square", "seat"],
+    "semanticCore": "La place — городская площадь; а также «место»: сидячее место, свободное пространство («есть место?»).",
+    "collocations": [
+      {
+        "fr": "sur la place",
+        "ru": "на площади"
+      },
+      {
+        "fr": "la place du marché",
+        "ru": "рыночная площадь"
+      },
+      {
+        "fr": "il n'y a plus de place",
+        "ru": "больше нет мест / места"
+      },
+      {
+        "fr": "une place assise",
+        "ru": "сидячее место"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "place (англ.)",
+        "note": "Англ. «place» = место/местечко вообще. Фр. la place — это площадь ИЛИ конкретное место (сиденье, свободное пространство), но «место» как город/локация — un endroit / un lieu."
+      },
+      {
+        "with": "endroit",
+        "note": "la place — площадь или сидячее/свободное место; un endroit — место в смысле «точка, локация» («un bel endroit» — красивое место). Не взаимозаменяемы."
+      }
+    ],
+    "frequencyRank": 180,
+    "level": "A2",
+    "tags": ["lieux", "espace"],
+    "caseIds": ["wc-lieux"]
+  },
+  {
+    "id": "wl-lieux-mairie",
+    "lemma": "mairie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mɛ.ʁi/",
+    "translationsRu": ["мэрия", "ратуша"],
+    "translationsEn": ["town hall", "city hall"],
+    "semanticCore": "La mairie — здание городской администрации (мэрия/ратуша), где регистрируют брак и оформляют документы.",
+    "collocations": [
+      {
+        "fr": "aller à la mairie",
+        "ru": "идти в мэрию"
+      },
+      {
+        "fr": "se marier à la mairie",
+        "ru": "расписаться в мэрии"
+      },
+      {
+        "fr": "la place de la mairie",
+        "ru": "площадь перед мэрией"
+      },
+      {
+        "fr": "la mairie du quartier",
+        "ru": "районная администрация"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "maire",
+        "note": "la mairie — здание (мэрия); le maire — человек (мэр). Звучат почти одинаково, но maire — мужского рода и означает должность."
+      },
+      {
+        "with": "hôtel de ville",
+        "note": "la mairie — мэрия (любого города); l'hôtel de ville — так называют мэрию крупного города (то же здание, более «парадное» слово). «Hôtel» здесь не гостиница."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["lieux", "service", "batiment"],
+    "caseIds": ["wc-lieux"]
+  }
+]

@@ -1,0 +1,309 @@
+[
+  {
+    "id": "wl-visage-visage",
+    "lemma": "visage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vi.zaʒ/",
+    "translationsRu": ["лицо"],
+    "translationsEn": ["face"],
+    "semanticCore": "Лицо как передняя часть головы — то, на чём читаются черты и выражение; не вся голова (tête).",
+    "collocations": [
+      {
+        "fr": "un visage souriant",
+        "ru": "улыбающееся лицо"
+      },
+      {
+        "fr": "se laver le visage",
+        "ru": "умывать лицо"
+      },
+      {
+        "fr": "un beau visage",
+        "ru": "красивое лицо"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tête",
+        "note": "visage — лицо (передняя часть); tête — вся голова. «Болит голова» = à la tête, а умываешь le visage.",
+        "wordId": "wl-corps-tete"
+      },
+      {
+        "with": "figure",
+        "note": "visage и figure оба значат «лицо»; figure разговорнее (se laver la figure), visage чуть нейтральнее и «литературнее»."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["visage", "anatomie"],
+    "caseIds": ["wc-visage"]
+  },
+  {
+    "id": "wl-visage-yeux",
+    "lemma": "œil",
+    "displayForm": "œil / yeux",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/jø/",
+    "translationsRu": ["глаза", "глаз"],
+    "translationsEn": ["eyes", "eye"],
+    "semanticCore": "Глаза — то, чем смотрят; необычное слово: один un œil /œj/, два и больше — des yeux /jø/.",
+    "collocations": [
+      {
+        "fr": "les yeux bleus",
+        "ru": "голубые глаза"
+      },
+      {
+        "fr": "fermer les yeux",
+        "ru": "закрыть глаза"
+      },
+      {
+        "fr": "ouvrir les yeux",
+        "ru": "открыть глаза"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "œil",
+        "note": "Единственное число — un œil /œj/, множественное — des yeux /jø/. Это разные на вид формы одного слова; «у меня болит глаз» = j'ai mal à l'œil."
+      },
+      {
+        "with": "oreille",
+        "note": "yeux — глаза (смотрят); oreille — ухо (слышат). Оба на голове, но путать нельзя."
+      }
+    ],
+    "frequencyRank": 260,
+    "level": "A2",
+    "tags": ["visage", "anatomie"],
+    "caseIds": ["wc-visage"]
+  },
+  {
+    "id": "wl-visage-nez",
+    "lemma": "nez",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ne/",
+    "translationsRu": ["нос"],
+    "translationsEn": ["nose"],
+    "semanticCore": "Нос — то, чем дышат и чувствуют запахи; конечная z не читается (/ne/).",
+    "collocations": [
+      {
+        "fr": "se moucher le nez",
+        "ru": "сморкаться"
+      },
+      {
+        "fr": "avoir le nez bouché",
+        "ru": "нос заложен"
+      },
+      {
+        "fr": "un nez pointu",
+        "ru": "острый нос"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "nez (англ. «nose»)",
+        "note": "Фр. nez и англ. nose — родственники (оба «нос»), но фр. слово короче и конечная z немая: /ne/, не «нэз»."
+      },
+      {
+        "with": "les",
+        "note": "nez /ne/ звучит как артикль les /le/, но с другим начальным звуком: n- против l-. На слух не путать."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["visage", "anatomie"],
+    "caseIds": ["wc-visage"]
+  },
+  {
+    "id": "wl-visage-bouche",
+    "lemma": "bouche",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/buʃ/",
+    "translationsRu": ["рот"],
+    "translationsEn": ["mouth"],
+    "semanticCore": "Рот — то, чем едят и говорят; женского рода (la bouche), в отличие от русского «рот».",
+    "collocations": [
+      {
+        "fr": "ouvrir la bouche",
+        "ru": "открыть рот"
+      },
+      {
+        "fr": "fermer la bouche",
+        "ru": "закрыть рот"
+      },
+      {
+        "fr": "la bouche pleine",
+        "ru": "с полным ртом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "lèvres",
+        "note": "bouche — рот целиком (отверстие); les lèvres — губы (края рта). Целуют sur la bouche, красят les lèvres."
+      },
+      {
+        "with": "bouche (род)",
+        "note": "По-русски «рот» мужского рода, но по-французски la bouche — женского. Поэтому «открой рот» = ouvre la bouche."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["visage", "anatomie"],
+    "caseIds": ["wc-visage"]
+  },
+  {
+    "id": "wl-visage-oreille",
+    "lemma": "oreille",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɔ.ʁɛj/",
+    "translationsRu": ["ухо"],
+    "translationsEn": ["ear"],
+    "semanticCore": "Ухо — то, чем слышат; женского рода (l'oreille), множественное — les oreilles.",
+    "collocations": [
+      {
+        "fr": "avoir mal aux oreilles",
+        "ru": "болят уши"
+      },
+      {
+        "fr": "à l'oreille",
+        "ru": "на ухо (шёпотом)"
+      },
+      {
+        "fr": "les oreilles rouges",
+        "ru": "красные уши"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "yeux",
+        "note": "oreille — ухо (слышат); les yeux — глаза (смотрят). Сказать «на ухо» = à l'oreille."
+      },
+      {
+        "with": "oreiller",
+        "note": "l'oreille (f) — ухо; un oreiller — подушка (то, на чём ухо лежит). Похожи, но это разные слова."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["visage", "anatomie"],
+    "caseIds": ["wc-visage"]
+  },
+  {
+    "id": "wl-visage-cheveux",
+    "lemma": "cheveu",
+    "displayForm": "cheveu / cheveux",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃə.vø/",
+    "translationsRu": ["волосы"],
+    "translationsEn": ["hair"],
+    "semanticCore": "Волосы на голове — почти всегда во множественном (les cheveux); один волос — un cheveu.",
+    "collocations": [
+      {
+        "fr": "les cheveux longs",
+        "ru": "длинные волосы"
+      },
+      {
+        "fr": "se laver les cheveux",
+        "ru": "мыть голову (волосы)"
+      },
+      {
+        "fr": "les cheveux blonds",
+        "ru": "светлые волосы"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poil",
+        "note": "les cheveux — волосы на голове; un poil — волос на теле / шерсть. На голове только cheveux, нигде больше."
+      },
+      {
+        "with": "cheval",
+        "note": "cheveu (волос) и cheval (лошадь) звучат близко в начале, но это разные слова. Множественное волос — cheveux, лошадей — chevaux."
+      }
+    ],
+    "frequencyRank": 470,
+    "level": "A2",
+    "tags": ["visage", "anatomie"],
+    "caseIds": ["wc-visage"]
+  },
+  {
+    "id": "wl-visage-dent",
+    "lemma": "dent",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/dɑ̃/",
+    "translationsRu": ["зуб"],
+    "translationsEn": ["tooth"],
+    "semanticCore": "Зуб — то, чем жуют; женского рода (la dent), хотя по-русски «зуб» мужского.",
+    "collocations": [
+      {
+        "fr": "se brosser les dents",
+        "ru": "чистить зубы"
+      },
+      {
+        "fr": "avoir mal aux dents",
+        "ru": "болят зубы"
+      },
+      {
+        "fr": "une dent blanche",
+        "ru": "белый зуб"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "dent (англ. «dent» — вмятина)",
+        "note": "Англ. dent — это «вмятина», а фр. la dent — «зуб». Ложный друг: пишутся одинаково, значат разное."
+      },
+      {
+        "with": "dans",
+        "note": "la dent /dɑ̃/ (зуб) и предлог dans /dɑ̃/ (в) звучат одинаково — омофоны. Различаешь только по смыслу фразы."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["visage", "anatomie"],
+    "caseIds": ["wc-visage"]
+  },
+  {
+    "id": "wl-visage-joue",
+    "lemma": "joue",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʒu/",
+    "translationsRu": ["щека"],
+    "translationsEn": ["cheek"],
+    "semanticCore": "Щека — мягкая боковая часть лица; в неё целуют при приветствии (la bise).",
+    "collocations": [
+      {
+        "fr": "un bisou sur la joue",
+        "ru": "поцелуй в щёку"
+      },
+      {
+        "fr": "les joues rouges",
+        "ru": "румяные щёки"
+      },
+      {
+        "fr": "tendre la joue",
+        "ru": "подставить щёку"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "joue / il joue",
+        "note": "la joue (щека) пишется как форма глагола jouer: il joue (он играет). Слово одно на вид — различай существительное и глагол по контексту."
+      },
+      {
+        "with": "menton",
+        "note": "la joue — щека (сбоку); le menton — подбородок (снизу). Целуют в la joue."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["visage", "anatomie"],
+    "caseIds": ["wc-visage"]
+  }
+]

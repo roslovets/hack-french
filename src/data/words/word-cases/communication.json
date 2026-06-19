@@ -1,0 +1,312 @@
+[
+  {
+    "id": "wc-communication",
+    "title": "Телефон и связь",
+    "theme": "communication",
+    "level": "A2",
+    "wordIds": [
+      "wl-comm-telephone",
+      "wl-comm-portable",
+      "wl-comm-appeler",
+      "wl-comm-message",
+      "wl-comm-internet",
+      "wl-comm-ordinateur",
+      "wl-comm-email",
+      "wl-comm-ecran"
+    ],
+    "steps": [
+      {
+        "id": "wc-communication-telephone-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-comm-telephone",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je te parle au téléphone ce soir.",
+          "Quel est ton numéro de téléphone ?",
+          "Il répond au téléphone tout de suite."
+        ],
+        "options": ["телефон", "сообщение", "экран", "звонок (один раз)"],
+        "correctIndex": 0,
+        "explanation": "téléphone (m) — телефон. «au téléphone» — по телефону, «un numéro de téléphone» — номер телефона. Один отдельный звонок — un coup de téléphone."
+      },
+      {
+        "id": "wc-communication-telephone-cmp",
+        "kind": "compare",
+        "wordId": "wl-comm-telephone",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le téléphone и le portable. В чём разница?",
+        "phrases": ["Le téléphone sonne dans le salon.", "J'ai oublié mon portable à la maison."],
+        "options": [
+          "téléphone — телефон вообще (в т.ч. домашний); portable — именно мобильный, который носят с собой.",
+          "Это полные синонимы, разницы нет.",
+          "téléphone — мобильный, а portable — только стационарный.",
+          "portable значит «звонок», а téléphone — «аппарат»."
+        ],
+        "correctIndex": 0,
+        "explanation": "le téléphone — любой телефон (домашний sonne dans le salon). le portable — именно сотовый, который носят (oublié à la maison). В речи о мобильном чаще говорят «mon portable»."
+      },
+      {
+        "id": "wc-communication-portable-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-comm-portable",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Appelle-moi sur mon portable.",
+          "Éteins ton portable au cinéma.",
+          "Mon portable n'a plus de batterie."
+        ],
+        "options": ["мобильный телефон", "ноутбук", "наушники", "зарядка"],
+        "correctIndex": 0,
+        "explanation": "portable (m) здесь — мобильный телефон (носимый). «sur mon portable» — на мой мобильный. В контексте техники «un ordinateur portable» — ноутбук, но само «portable» в разговоре чаще = сотовый."
+      },
+      {
+        "id": "wc-communication-portable-trap",
+        "kind": "trap",
+        "wordId": "wl-comm-portable",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Французское «un portable» похоже на англ. «portable» (портативный). Что значит un portable во французской речи о телефоне?",
+        "options": [
+          "мобильный телефон",
+          "что-то портативное вообще",
+          "зарядное устройство",
+          "портфель"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: фр. un portable в разговоре = мобильник (а как «ноутбук» — только в полной форме un ordinateur portable). Англ. «portable» = просто «портативный»; фр. прилагательное «портативный» — portatif."
+      },
+      {
+        "id": "wc-communication-appeler-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-comm-appeler",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Глагол appeler в этих сценах. Что он значит?",
+        "contexts": [
+          "Je vais appeler mes parents ce soir.",
+          "Appelle un taxi, s'il te plaît.",
+          "Tu peux m'appeler après le travail ?"
+        ],
+        "options": ["звонить / вызывать", "писать", "ждать", "отвечать"],
+        "correctIndex": 0,
+        "explanation": "appeler — звонить / вызывать. «appeler mes parents» — позвонить родителям, «appeler un taxi» — вызвать такси. Прямое дополнение без предлога: appeler qqn."
+      },
+      {
+        "id": "wc-communication-appeler-cmp",
+        "kind": "compare",
+        "wordId": "wl-comm-appeler",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "appeler un ami и téléphoner à un ami. В чём разница в построении?",
+        "phrases": ["J'appelle un ami.", "Je téléphone à un ami."],
+        "options": [
+          "appeler qqn — звонить кому-то без предлога; téléphoner à qqn — с предлогом à. Смысл один.",
+          "appeler значит «писать», а téléphoner — «звонить».",
+          "Оба требуют предлога à.",
+          "téléphoner — звонить только по работе, appeler — только друзьям."
+        ],
+        "correctIndex": 0,
+        "explanation": "Оба значат «позвонить кому-то». Разница в конструкции: appeler qqn (без предлога) — J'appelle un ami; téléphoner à qqn (с à) — Je téléphone à un ami."
+      },
+      {
+        "id": "wc-communication-appeler-trap",
+        "kind": "trap",
+        "wordId": "wl-comm-appeler",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг говорит: «Je m'appelle Paul». Что это значит?",
+        "options": ["Меня зовут Поль", "Я звоню Полю", "Я зову Поля", "Я перезвоню Полю"],
+        "correctIndex": 0,
+        "explanation": "s'appeler (возвратная форма) = называться, «меня зовут». «Je m'appelle Paul» — меня зовут Поль. Без se: «J'appelle Paul» — я звоню Полю / зову Поля."
+      },
+      {
+        "id": "wc-communication-message-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-comm-message",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je t'envoie un message tout de suite.",
+          "Il a laissé un message sur mon répondeur.",
+          "Tu as reçu mon message ?"
+        ],
+        "options": ["сообщение", "звонок", "письмо (бумажное)", "посылка"],
+        "correctIndex": 0,
+        "explanation": "message (m) — сообщение. «envoyer un message» — отправить, «laisser un message» — оставить, «recevoir un message» — получить. Это и SMS, и голосовое, и текст в чате."
+      },
+      {
+        "id": "wc-communication-message-sort",
+        "kind": "sort",
+        "wordId": "wl-comm-message",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом message звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "envoyer un message",
+            "basket": "ok"
+          },
+          {
+            "text": "laisser un message",
+            "basket": "ok"
+          },
+          {
+            "text": "un message vocal",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un message",
+            "basket": "no"
+          },
+          {
+            "text": "conduire un message",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«envoyer / laisser un message», «un message vocal» — естественно. «boire un message» (пить сообщение) и «conduire un message» (вести сообщение) — бессмыслица: сообщение отправляют, оставляют, получают."
+      },
+      {
+        "id": "wc-communication-internet-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-comm-internet",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит internet?",
+        "bridge": "Англ. «internet» — пишется почти так же; по-французски часто читается /ɛ̃.tɛʁ.nɛt/ с носовым in- в начале.",
+        "options": ["интернет", "телефон", "экран", "розетка"],
+        "correctIndex": 0,
+        "explanation": "internet (m) = интернет. Обычно без артикля: «sur internet» — в интернете, «chercher sur internet» — искать в интернете. Английский — прямой мост, отличается только произношение."
+      },
+      {
+        "id": "wc-communication-internet-trap",
+        "kind": "trap",
+        "wordId": "wl-comm-internet",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как правильно сказать «Я ищу это в интернете»?",
+        "options": [
+          "Je cherche ça sur internet.",
+          "Je cherche ça dans l'internet.",
+          "Je cherche ça à internet.",
+          "Je cherche ça en internet."
+        ],
+        "correctIndex": 0,
+        "explanation": "С internet используют предлог sur: «sur internet» — в интернете. «dans l'internet», «à internet», «en internet» — неверно. Артикль обычно опускают."
+      },
+      {
+        "id": "wc-communication-ordinateur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-comm-ordinateur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'allume mon ordinateur le matin.",
+          "Mon ordinateur est trop lent.",
+          "Je travaille sur l'ordinateur toute la journée."
+        ],
+        "options": ["компьютер", "телефон", "телевизор", "принтер"],
+        "correctIndex": 0,
+        "explanation": "ordinateur (m) — компьютер. «allumer l'ordinateur» — включить, «un ordinateur portable» — ноутбук. В разговоре сокращают до «un ordi»."
+      },
+      {
+        "id": "wc-communication-ordinateur-trap",
+        "kind": "trap",
+        "wordId": "wl-comm-ordinateur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Английское «computer» сбивает с толку. Как «компьютер» по-французски?",
+        "options": ["un ordinateur", "un computeur", "une computer", "un computère"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: компьютер — un ordinateur. Слов «computeur / computer / computère» во французском нет. Корень ordi- (от ordonner — упорядочивать); разг. сокращение — un ordi."
+      },
+      {
+        "id": "wc-communication-ordinateur-hint",
+        "kind": "wordHint",
+        "wordId": "wl-comm-ordinateur",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: машина, которую включают утром, чтобы работать с программами и файлами.",
+        "answer": "ordinateur",
+        "hints": [
+          "Начинается на or…",
+          "10 букв, мужской род: un ___",
+          "Разг. сокращают до «un ordi»."
+        ],
+        "explanation": "ordinateur (m) — компьютер. Не похоже на англ. «computer»: запомни корень ordi-. Ноутбук — un ordinateur portable."
+      },
+      {
+        "id": "wc-communication-email-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-comm-email",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит email?",
+        "bridge": "Англ. «email» — заимствовано во французский как есть; читается /i.mɛl/. Разг. также «un mail», официально «un courriel».",
+        "options": [
+          "электронная почта (письмо)",
+          "телефонный звонок",
+          "голосовое сообщение",
+          "экран"
+        ],
+        "correctIndex": 0,
+        "explanation": "email (m) = электронное письмо / почта. «envoyer un email» — отправить письмо, «une adresse email» — адрес почты. Синонимы: un mail (разг.), un courriel (офиц.)."
+      },
+      {
+        "id": "wc-communication-email-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-comm-email",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова называют одно и то же — письмо по электронной почте. Найди лишнее.",
+        "options": ["un email", "un mail", "un courriel", "un colis"],
+        "correctIndex": 3,
+        "explanation": "un email, un mail и un courriel — синонимы «электронного письма». Лишнее — un colis (посылка): это бандероль, которую доставляют физически, а не сообщение."
+      },
+      {
+        "id": "wc-communication-ecran-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-comm-ecran",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "L'écran de mon portable est cassé.",
+          "Ne reste pas trop devant l'écran.",
+          "C'est un écran tactile."
+        ],
+        "options": ["экран", "клавиатура", "корпус", "кнопка"],
+        "correctIndex": 0,
+        "explanation": "écran (m) — экран (телефона, компьютера, ТВ). «un écran tactile» — сенсорный экран, «devant l'écran» — перед экраном. Клавиатура — un clavier."
+      },
+      {
+        "id": "wc-communication-ecran-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-comm-ecran",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово. Какое из написанных совпадает с тем, что прозвучало?",
+        "audioText": "écran",
+        "options": ["écran", "écrin", "écrit", "encre"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало écran /e.kʁɑ̃/ — экран. Похожие, но другие слова: écrin /e.kʁɛ̃/ (футляр для украшений), écrit /e.kʁi/ (написанный, письменный), encre /ɑ̃kʁ/ (чернила). Различай носовые -an / -in и хвост."
+      }
+    ]
+  }
+]

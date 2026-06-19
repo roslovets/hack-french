@@ -1,0 +1,285 @@
+[
+  {
+    "id": "wc-saisons",
+    "title": "Времена года",
+    "theme": "saisons",
+    "level": "A1",
+    "wordIds": [
+      "wl-saisons-printemps",
+      "wl-saisons-ete",
+      "wl-saisons-automne",
+      "wl-saisons-hiver",
+      "wl-saisons-saison",
+      "wl-saisons-fleur",
+      "wl-saisons-feuille",
+      "wl-saisons-climat"
+    ],
+    "steps": [
+      {
+        "id": "wc-saisons-printemps-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-saisons-printemps",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Au printemps, les arbres fleurissent.",
+          "Le printemps arrive, il fait plus doux.",
+          "J'adore me promener au printemps."
+        ],
+        "options": ["весна", "лето", "осень", "праздник"],
+        "correctIndex": 0,
+        "explanation": "printemps (m) — весна. Запомни особенность: «au printemps» (весной), хотя у остальных сезонов «en»: en été, en automne, en hiver."
+      },
+      {
+        "id": "wc-saisons-printemps-trap",
+        "kind": "trap",
+        "wordId": "wl-saisons-printemps",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как правильно сказать «весной»?",
+        "options": ["au printemps", "en printemps", "à printemps", "dans printemps"],
+        "correctIndex": 0,
+        "explanation": "Весна — исключение: говорят «au printemps». У трёх других сезонов предлог «en»: en été, en automne, en hiver. «en printemps» — частая ошибка."
+      },
+      {
+        "id": "wc-saisons-ete-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-saisons-ete",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "En été, il fait très chaud.",
+          "Nous partons à la mer cet été.",
+          "Les vacances d'été commencent en juillet."
+        ],
+        "options": ["лето", "весна", "зима", "море"],
+        "correctIndex": 0,
+        "explanation": "été (m) — лето. «en été» — летом, «les vacances d'été» — летние каникулы. То же слово été бывает и причастием от être («j'ai été» — я был), но здесь это сезон."
+      },
+      {
+        "id": "wc-saisons-ete-collo",
+        "kind": "sort",
+        "wordId": "wl-saisons-ete",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "en été",
+            "basket": "ok"
+          },
+          {
+            "text": "les vacances d'été",
+            "basket": "ok"
+          },
+          {
+            "text": "un été chaud",
+            "basket": "ok"
+          },
+          {
+            "text": "à été",
+            "basket": "no"
+          },
+          {
+            "text": "un été froid de neige",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«en été», «les vacances d'été», «un été chaud» — естественно. «à été» — неверный предлог (нужно en été). «un été froid de neige» — бессмыслица: лето не бывает снежным."
+      },
+      {
+        "id": "wc-saisons-automne-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-saisons-automne",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет это слово с первого взгляда. Что значит automne?",
+        "bridge": "Англ. «autumn» — осень; фр. automne пишется почти так же. Но фр. m немое: читается /o.tɔn/, без m.",
+        "options": ["осень", "весна", "лето", "утро"],
+        "correctIndex": 0,
+        "explanation": "automne (m) = осень, родственно англ. «autumn». Главная ловушка — произношение: m в середине не читается, /o.tɔn/."
+      },
+      {
+        "id": "wc-saisons-automne-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-saisons-automne",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "En automne, les feuilles tombent.",
+          "L'automne est ma saison préférée.",
+          "Il fait gris en automne."
+        ],
+        "options": ["осень", "зима", "весна", "дождь"],
+        "correctIndex": 0,
+        "explanation": "automne (m) — осень. «en automne» — осенью, «les feuilles d'automne» — осенние листья. Не путать с hiver (зима), который идёт следом."
+      },
+      {
+        "id": "wc-saisons-hiver-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-saisons-hiver",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "En hiver, il neige souvent.",
+          "L'hiver est froid dans le nord.",
+          "On fait du ski en hiver."
+        ],
+        "options": ["зима", "осень", "снег", "холод"],
+        "correctIndex": 0,
+        "explanation": "hiver (m) — зима. h немое, поэтому «en hiver» и «l'hiver» (с апострофом). «les sports d'hiver» — зимние виды спорта."
+      },
+      {
+        "id": "wc-saisons-hiver-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-saisons-hiver",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, какое из написанных совпадает с ним.",
+        "audioText": "hiver",
+        "options": ["hier", "hiver", "fier", "cher"],
+        "correctIndex": 1,
+        "explanation": "hiver (зима) /i.vɛʁ/. Похожи по звучанию, но это другие слова: hier (вчера) /jɛʁ/, fier (гордый) /fjɛʁ/, cher (дорогой) /ʃɛʁ/."
+      },
+      {
+        "id": "wc-saisons-saison-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-saisons-saison",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит saison?",
+        "bridge": "Англ. «season» — время года / сезон; фр. saison — тот же корень. Читается /sɛ.zɔ̃/, с носовым звуком на конце.",
+        "options": ["время года / сезон", "причина", "соль", "вкус"],
+        "correctIndex": 0,
+        "explanation": "saison (f) = время года или «сезон» чего-либо, родственно англ. «season». «les quatre saisons» — четыре времени года, «des fruits de saison» — сезонные фрукты."
+      },
+      {
+        "id": "wc-saisons-saison-cmp",
+        "kind": "compare",
+        "wordId": "wl-saisons-saison",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "la saison и le printemps. В чём разница?",
+        "phrases": ["Il y a quatre saisons.", "Le printemps est ma saison préférée."],
+        "options": [
+          "saison = «время года» вообще (их четыре); printemps = одно конкретное — весна.",
+          "Это полные синонимы.",
+          "saison значит весна, а printemps — любое время года.",
+          "saison — это лето, printemps — зима."
+        ],
+        "correctIndex": 0,
+        "explanation": "la saison — общее слово «время года» (или «сезон» чего-то); le printemps — одна из этих saisons, а именно весна. Поэтому можно сказать: le printemps est une saison."
+      },
+      {
+        "id": "wc-saisons-fleur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-saisons-fleur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Au printemps, il y a des fleurs partout.",
+          "Il m'a offert un bouquet de fleurs.",
+          "Cette fleur rouge sent très bon."
+        ],
+        "options": ["цветок", "лист", "трава", "дерево"],
+        "correctIndex": 0,
+        "explanation": "fleur (f) — цветок. «un bouquet de fleurs» — букет цветов, «en fleurs» — в цвету. Слово женского рода: une fleur."
+      },
+      {
+        "id": "wc-saisons-fleur-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-saisons-fleur",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери совпадающее написание.",
+        "audioText": "fleur",
+        "options": ["fleuve", "pleur", "fleur", "cœur"],
+        "correctIndex": 2,
+        "explanation": "fleur (цветок) /flœʁ/. Не спутай с fleuve (большая река) /flœv/, pleur (плач) /plœʁ/, cœur (сердце) /kœʁ/ — похожи на слух, но это разные слова."
+      },
+      {
+        "id": "wc-saisons-feuille-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-saisons-feuille",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово в двух разных смыслах. Что оно значит?",
+        "contexts": [
+          "En automne, les feuilles tombent des arbres.",
+          "Passe-moi une feuille de papier.",
+          "Une feuille verte est tombée sur le banc."
+        ],
+        "options": ["лист (дерева и бумаги)", "ветка", "корень", "стол"],
+        "correctIndex": 0,
+        "explanation": "feuille (f) — это и лист дерева, и лист бумаги. «une feuille d'arbre», «une feuille de papier». Осенью — «les feuilles mortes» (опавшие листья)."
+      },
+      {
+        "id": "wc-saisons-feuille-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-saisons-feuille",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова связаны с деревом и его частями. Найди лишнее.",
+        "options": ["la feuille", "la fleur", "l'arbre", "le climat"],
+        "correctIndex": 3,
+        "explanation": "Лист (la feuille), цветок (la fleur) и дерево (l'arbre) — про растения. Климат (le climat) — лишний: это общая погода местности, а не часть растения."
+      },
+      {
+        "id": "wc-saisons-climat-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-saisons-climat",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет слово. Что значит climat?",
+        "bridge": "Англ. «climate» — климат; фр. climat — тот же корень. Конечная t немая: читается /kli.ma/.",
+        "options": ["климат", "лестница", "крик", "класс"],
+        "correctIndex": 0,
+        "explanation": "climat (m) = климат, родственно англ. «climate». «un climat tempéré» — умеренный климат. Конечная t не читается: /kli.ma/."
+      },
+      {
+        "id": "wc-saisons-climat-cmp",
+        "kind": "compare",
+        "wordId": "wl-saisons-climat",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le climat и le temps. В чём разница?",
+        "phrases": ["Le climat de la région est doux.", "Aujourd'hui, le temps est pluvieux."],
+        "options": [
+          "climat = климат местности в целом (на годы); temps = погода в данный момент.",
+          "Это синонимы, разницы нет.",
+          "climat — погода на сегодня, temps — климат на годы.",
+          "climat значит «время», а temps — «климат»."
+        ],
+        "correctIndex": 0,
+        "explanation": "le climat — устойчивые погодные условия местности (на годы): «un climat doux». le temps — погода прямо сейчас: «il fait beau», «le temps est pluvieux»."
+      },
+      {
+        "id": "wc-saisons-printemps-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-saisons-printemps",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для printemps (весна), чтобы запомнить особый предлог «au printemps» и носовой звук /pʁɛ̃.tɑ̃/.",
+        "examples": [
+          "Весна — «прайм-тайм» года (prin-temps ≈ «prime time»): всё расцветает, поэтому именно ей дарят особый предлог — au printemps.",
+          "Представь, как ты выходишь на улицу «au printemps» и видишь первые fleurs — связка «au printemps + цветы» закрепит исключение."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-saisons-printemps",
+    "lemma": "printemps",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pʁɛ̃.tɑ̃/",
+    "translationsRu": ["весна"],
+    "translationsEn": ["spring", "springtime"],
+    "semanticCore": "Весна как время года; единственный сезон, перед которым говорят «au printemps», а не «en».",
+    "collocations": [
+      {
+        "fr": "au printemps",
+        "ru": "весной"
+      },
+      {
+        "fr": "le printemps arrive",
+        "ru": "приходит весна"
+      },
+      {
+        "fr": "un printemps doux",
+        "ru": "мягкая весна"
+      },
+      {
+        "fr": "les fleurs du printemps",
+        "ru": "весенние цветы"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "été",
+        "note": "printemps = весна; été = лето. Но конструкция разная: au printemps, зато en été."
+      },
+      {
+        "with": "saison",
+        "note": "le printemps = конкретный сезон (весна); la saison = «время года» вообще или сезон чего-либо."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A1",
+    "tags": ["saisons", "temps"],
+    "caseIds": ["wc-saisons"]
+  },
+  {
+    "id": "wl-saisons-ete",
+    "lemma": "été",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.te/",
+    "translationsRu": ["лето"],
+    "translationsEn": ["summer", "summertime"],
+    "semanticCore": "Лето как тёплый сезон; говорят «en été». Форма совпадает с причастием été (от être), но это разные слова.",
+    "collocations": [
+      {
+        "fr": "en été",
+        "ru": "летом"
+      },
+      {
+        "fr": "les vacances d'été",
+        "ru": "летние каникулы / отпуск"
+      },
+      {
+        "fr": "un été chaud",
+        "ru": "жаркое лето"
+      },
+      {
+        "fr": "cet été",
+        "ru": "этим летом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "hiver",
+        "note": "été = лето (тепло); hiver = зима (холод). Оба с «en»: en été, en hiver."
+      },
+      {
+        "with": "été (от être)",
+        "note": "Существительное l'été = лето; été также причастие глагола être («j'ai été» — я был). Различает контекст."
+      }
+    ],
+    "frequencyRank": 350,
+    "level": "A1",
+    "tags": ["saisons", "temps"],
+    "caseIds": ["wc-saisons"]
+  },
+  {
+    "id": "wl-saisons-automne",
+    "lemma": "automne",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/o.tɔn/",
+    "translationsRu": ["осень"],
+    "translationsEn": ["autumn", "fall"],
+    "semanticCore": "Осень как сезон опадающих листьев; буква m в середине не читается: /o.tɔn/.",
+    "collocations": [
+      {
+        "fr": "en automne",
+        "ru": "осенью"
+      },
+      {
+        "fr": "les feuilles d'automne",
+        "ru": "осенние листья"
+      },
+      {
+        "fr": "un automne pluvieux",
+        "ru": "дождливая осень"
+      },
+      {
+        "fr": "le début de l'automne",
+        "ru": "начало осени"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "autumn (англ.)",
+        "note": "Фр. automne и англ. «autumn» — родственники, пишутся почти одинаково, но фр. m немое: /o.tɔn/."
+      },
+      {
+        "with": "hiver",
+        "note": "automne = осень (листопад); hiver = зима (снег, холод). Осень идёт перед зимой."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A1",
+    "tags": ["saisons", "temps"],
+    "caseIds": ["wc-saisons"]
+  },
+  {
+    "id": "wl-saisons-hiver",
+    "lemma": "hiver",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/i.vɛʁ/",
+    "translationsRu": ["зима"],
+    "translationsEn": ["winter"],
+    "semanticCore": "Зима как холодный сезон; h немое, поэтому говорят «en hiver» и «l'hiver».",
+    "collocations": [
+      {
+        "fr": "en hiver",
+        "ru": "зимой"
+      },
+      {
+        "fr": "un hiver froid",
+        "ru": "холодная зима"
+      },
+      {
+        "fr": "les sports d'hiver",
+        "ru": "зимние виды спорта"
+      },
+      {
+        "fr": "cet hiver",
+        "ru": "этой зимой"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "hier",
+        "note": "hiver = зима /i.vɛʁ/ (два слога); hier = вчера /jɛʁ/ (один слог). Похожи на письме (hiv- / hie-), но это разные слова."
+      },
+      {
+        "with": "été",
+        "note": "hiver = зима (холод); été = лето (тепло). Противоположные сезоны."
+      }
+    ],
+    "frequencyRank": 400,
+    "level": "A1",
+    "tags": ["saisons", "temps"],
+    "caseIds": ["wc-saisons"]
+  },
+  {
+    "id": "wl-saisons-saison",
+    "lemma": "saison",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sɛ.zɔ̃/",
+    "translationsRu": ["время года", "сезон"],
+    "translationsEn": ["season"],
+    "semanticCore": "Время года (одно из четырёх) и «сезон» чего-либо: туристический, спортивный, сезон фруктов.",
+    "collocations": [
+      {
+        "fr": "les quatre saisons",
+        "ru": "четыре времени года"
+      },
+      {
+        "fr": "la belle saison",
+        "ru": "тёплое время года (весна-лето)"
+      },
+      {
+        "fr": "hors saison",
+        "ru": "в несезон / вне сезона"
+      },
+      {
+        "fr": "des fruits de saison",
+        "ru": "сезонные фрукты"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "season (англ.)",
+        "note": "Фр. saison и англ. «season» — родственники с тем же значением; читается /sɛ.zɔ̃/, с носовым на конце."
+      },
+      {
+        "with": "printemps",
+        "note": "la saison = «время года» вообще (или сезон чего-то); le printemps = одно конкретное время года — весна."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A1",
+    "tags": ["saisons", "temps"],
+    "caseIds": ["wc-saisons"]
+  },
+  {
+    "id": "wl-saisons-fleur",
+    "lemma": "fleur",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/flœʁ/",
+    "translationsRu": ["цветок"],
+    "translationsEn": ["flower", "blossom"],
+    "semanticCore": "Цветок растения; «en fleur(s)» — в цвету. Слово женского рода: une fleur.",
+    "collocations": [
+      {
+        "fr": "un bouquet de fleurs",
+        "ru": "букет цветов"
+      },
+      {
+        "fr": "une fleur rouge",
+        "ru": "красный цветок"
+      },
+      {
+        "fr": "en fleurs",
+        "ru": "в цвету / цветущий"
+      },
+      {
+        "fr": "offrir des fleurs",
+        "ru": "дарить цветы"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "flower (англ.)",
+        "note": "Фр. fleur и англ. «flower»/«floral» — родственники; читается /flœʁ/, без английского -ower."
+      },
+      {
+        "with": "fleuve",
+        "note": "fleur (f) = цветок /flœʁ/; fleuve (m) = большая река /flœv/. Похожи на слух, разный смысл и род."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A1",
+    "tags": ["saisons", "nature"],
+    "caseIds": ["wc-saisons"]
+  },
+  {
+    "id": "wl-saisons-feuille",
+    "lemma": "feuille",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fœj/",
+    "translationsRu": ["лист (дерева)", "лист бумаги"],
+    "translationsEn": ["leaf", "sheet"],
+    "semanticCore": "Лист дерева и лист бумаги — одно слово feuille; «les feuilles mortes» — опавшие осенние листья.",
+    "collocations": [
+      {
+        "fr": "une feuille d'arbre",
+        "ru": "лист дерева"
+      },
+      {
+        "fr": "une feuille de papier",
+        "ru": "лист бумаги"
+      },
+      {
+        "fr": "les feuilles mortes",
+        "ru": "опавшие листья"
+      },
+      {
+        "fr": "les feuilles tombent",
+        "ru": "листья падают"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "feuillage",
+        "note": "une feuille = один лист; le feuillage = листва (вся крона) как собирательное."
+      },
+      {
+        "with": "fleur",
+        "note": "feuille = лист (зелёный, на ветке); fleur = цветок. У растения и то, и другое, но это разные части."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A1",
+    "tags": ["saisons", "nature"],
+    "caseIds": ["wc-saisons"]
+  },
+  {
+    "id": "wl-saisons-climat",
+    "lemma": "climat",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kli.ma/",
+    "translationsRu": ["климат"],
+    "translationsEn": ["climate"],
+    "semanticCore": "Климат как погодные условия местности в целом (не погода на сегодня); конечная t немая: /kli.ma/.",
+    "collocations": [
+      {
+        "fr": "un climat tempéré",
+        "ru": "умеренный климат"
+      },
+      {
+        "fr": "un climat doux",
+        "ru": "мягкий климат"
+      },
+      {
+        "fr": "le changement climatique",
+        "ru": "изменение климата"
+      },
+      {
+        "fr": "le climat méditerranéen",
+        "ru": "средиземноморский климат"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "climate (англ.)",
+        "note": "Фр. climat и англ. «climate» — родственники с тем же значением; конечная t не читается: /kli.ma/."
+      },
+      {
+        "with": "temps",
+        "note": "le climat = климат (на годы, в целом); le temps = погода (на сегодня: «il fait beau»)."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A1",
+    "tags": ["saisons", "nature"],
+    "caseIds": ["wc-saisons"]
+  }
+]

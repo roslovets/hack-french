@@ -1,0 +1,345 @@
+[
+  {
+    "id": "wc-sport",
+    "title": "Спорт",
+    "theme": "sport",
+    "level": "A2",
+    "wordIds": [
+      "wl-sport-football",
+      "wl-sport-natation",
+      "wl-sport-courir",
+      "wl-sport-equipe",
+      "wl-sport-match",
+      "wl-sport-gagner",
+      "wl-sport-perdre",
+      "wl-sport-ballon"
+    ],
+    "steps": [
+      {
+        "id": "wc-sport-football-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sport-football",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le dimanche, on joue au football au parc.",
+          "Mon frère adore le football.",
+          "C'est un grand joueur de football."
+        ],
+        "options": ["футбол", "баскетбол", "стадион", "болельщик"],
+        "correctIndex": 0,
+        "explanation": "football (m) — футбол. «jouer au football» — играть в футбол. В речи чаще говорят le foot. Болельщик — un supporter, стадион — un stade."
+      },
+      {
+        "id": "wc-sport-football-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-sport-football",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит football?",
+        "bridge": "Англ. «football» — то же слово, тот же спорт. Но фр. football = именно европейский футбол (англ. soccer), а не американский. Читается /fut.bol/.",
+        "options": ["футбол", "американский футбол", "регби", "гандбол"],
+        "correctIndex": 0,
+        "explanation": "football = (европейский) футбол. Это прямой мост из английского. Американский футбол уточняют отдельно: le football américain."
+      },
+      {
+        "id": "wc-sport-natation-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sport-natation",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je fais de la natation deux fois par semaine.",
+          "La natation est bonne pour le dos.",
+          "Elle a un cours de natation le mardi."
+        ],
+        "options": ["плавание", "бассейн", "пляж", "ныряние"],
+        "correctIndex": 0,
+        "explanation": "natation (f) — плавание (как вид спорта, занятие). «faire de la natation» — заниматься плаванием. Бассейн — une piscine."
+      },
+      {
+        "id": "wc-sport-natation-cmp",
+        "kind": "compare",
+        "wordId": "wl-sport-natation",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Оба предложения про плавание. В чём разница между natation и nager?",
+        "phrases": ["Je fais de la natation.", "Je nage dans le lac."],
+        "options": [
+          "natation — существительное «плавание» (занятие); nager — глагол «плыть, плавать».",
+          "Это одно и то же слово в разных написаниях.",
+          "natation значит «нырять», а nager — «плавать на спине».",
+          "natation — глагол, а nager — существительное."
+        ],
+        "correctIndex": 0,
+        "explanation": "natation (f) — существительное «плавание»: faire de la natation. nager — глагол «плавать»: je nage. «Я плаваю» = je nage; «я занимаюсь плаванием» = je fais de la natation."
+      },
+      {
+        "id": "wc-sport-courir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sport-courir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le matin, j'aime courir dans le parc.",
+          "Il court très vite.",
+          "On va courir ensemble demain ?"
+        ],
+        "options": ["бегать, бежать", "прыгать", "ходить пешком", "плавать"],
+        "correctIndex": 0,
+        "explanation": "courir — бегать, бежать. «aller courir» — пойти на пробежку, «courir vite» — быстро бегать. Ходить пешком — marcher."
+      },
+      {
+        "id": "wc-sport-courir-cmp",
+        "kind": "compare",
+        "wordId": "wl-sport-courir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "В чём разница между этими двумя фразами?",
+        "phrases": ["Je cours au parc.", "Je marche au parc."],
+        "options": [
+          "courir — бежать (бегом, быстро); marcher — идти пешком (шагом).",
+          "Это синонимы, разницы нет.",
+          "courir — идти медленно; marcher — бежать.",
+          "courir — про спорт, marcher — про работу прибора, в остальном одно и то же."
+        ],
+        "correctIndex": 0,
+        "explanation": "courir — бежать, передвигаться бегом. marcher — идти пешком, шагом. (У marcher есть и значение «работать, функционировать», но здесь важно противопоставление темпа движения.)"
+      },
+      {
+        "id": "wc-sport-equipe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sport-equipe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Notre équipe a gagné le match.",
+          "Il joue dans l'équipe de l'école.",
+          "L'équipe de France est très forte."
+        ],
+        "options": ["команда", "тренер", "болельщики", "судья"],
+        "correctIndex": 0,
+        "explanation": "équipe (f) — команда. «l'équipe de France» — сборная Франции, «jouer en équipe» — играть командой. Тренер — un entraîneur, судья — un arbitre."
+      },
+      {
+        "id": "wc-sport-equipe-trap",
+        "kind": "trap",
+        "wordId": "wl-sport-equipe",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Русское «команда» бывает разной. Как сказать «команда» в смысле «группа игроков»?",
+        "phrases": ["Notre équipe a onze joueurs.", "Donne une commande à l'ordinateur."],
+        "options": [
+          "une équipe — группа людей (спортивная, рабочая)",
+          "une commande — это «команда» игроков",
+          "un ordre — это спортивная команда",
+          "un commando — обычная спортивная команда"
+        ],
+        "correctIndex": 0,
+        "explanation": "Команда людей (спортивная) — une équipe. Не путать: une commande — это «команда» компьютеру или заказ, un ordre — приказ. Только équipe значит «команда игроков»."
+      },
+      {
+        "id": "wc-sport-match-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sport-match",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le match commence à vingt heures.",
+          "On regarde le match à la télé.",
+          "C'était un match de foot incroyable."
+        ],
+        "options": ["матч, игра", "счёт", "перерыв", "билет"],
+        "correctIndex": 0,
+        "explanation": "match (m) — матч, спортивная встреча. «un match de foot», «regarder le match». Заимствовано из английского, читается /matʃ/. Счёт — le score."
+      },
+      {
+        "id": "wc-sport-match-collo",
+        "kind": "sort",
+        "wordId": "wl-sport-match",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом match звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "gagner le match",
+            "basket": "ok"
+          },
+          {
+            "text": "un match de tennis",
+            "basket": "ok"
+          },
+          {
+            "text": "regarder le match",
+            "basket": "ok"
+          },
+          {
+            "text": "un match nul",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un match",
+            "basket": "no"
+          },
+          {
+            "text": "un match en laine",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Матч выигрывают (gagner le match), смотрят (regarder le match), он бывает теннисным или вничью (un match de tennis, un match nul). «boire un match» (пить матч) и «un match en laine» (шерстяной матч) — бессмыслица."
+      },
+      {
+        "id": "wc-sport-gagner-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sport-gagner",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих спортивных сценах?",
+        "contexts": [
+          "Notre équipe va gagner le match.",
+          "Il a gagné la course.",
+          "Qui va gagner la coupe ?"
+        ],
+        "options": ["выигрывать, побеждать", "проигрывать", "играть", "тренироваться"],
+        "correctIndex": 0,
+        "explanation": "gagner — выигрывать, побеждать. «gagner le match», «gagner la course». У глагола есть и второе значение — «зарабатывать» (gagner de l'argent)."
+      },
+      {
+        "id": "wc-sport-gagner-trap",
+        "kind": "trap",
+        "wordId": "wl-sport-gagner",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "У глагола gagner два значения. В какой фразе он значит «зарабатывать», а не «выигрывать»?",
+        "phrases": ["Il gagne le match.", "Il gagne bien sa vie."],
+        "options": [
+          "«gagner sa vie» — зарабатывать на жизнь; «gagner le match» — выигрывать матч",
+          "оба раза gagner значит «выигрывать»",
+          "оба раза gagner значит «зарабатывать»",
+          "«gagner le match» значит «зарабатывать матч»"
+        ],
+        "correctIndex": 0,
+        "explanation": "gagner — и «выигрывать» (gagner le match), и «зарабатывать» (gagner de l'argent, gagner sa vie — зарабатывать на жизнь). Подсказывает контекст: с деньгами и жизнью — «зарабатывать»."
+      },
+      {
+        "id": "wc-sport-perdre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sport-perdre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Notre équipe a perdu le match hier.",
+          "Personne n'aime perdre.",
+          "On a perdu deux à zéro."
+        ],
+        "options": ["проигрывать", "выигрывать", "забивать гол", "начинать"],
+        "correctIndex": 0,
+        "explanation": "perdre — проигрывать (а также «терять»). «perdre le match», «perdre deux à zéro» — проиграть 2:0. Противоположность — gagner."
+      },
+      {
+        "id": "wc-sport-perdre-cmp",
+        "kind": "compare",
+        "wordId": "wl-sport-perdre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "У perdre два значения. В чём разница между этими фразами?",
+        "phrases": ["Notre équipe a perdu le match.", "J'ai perdu mes clés."],
+        "options": [
+          "Первая — «проиграть» (матч); вторая — «потерять» (предмет).",
+          "В обеих perdre значит «проиграть».",
+          "В обеих perdre значит «потерять вещь».",
+          "Первая — «потерять матч в кармане», вторая — «проиграть ключи»."
+        ],
+        "correctIndex": 0,
+        "explanation": "perdre — «проигрывать» (perdre le match) и «терять» (perdre ses clés, perdre du temps). Одно слово, два смысла; контекст показывает, какой именно."
+      },
+      {
+        "id": "wc-sport-ballon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sport-ballon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Passe-moi le ballon !",
+          "Les enfants jouent au ballon dans la cour.",
+          "Le gardien attrape le ballon."
+        ],
+        "options": ["(большой) мяч", "ворота", "поле", "клюшка"],
+        "correctIndex": 0,
+        "explanation": "ballon (m) — большой мяч (футбольный, баскетбольный). «un ballon de football», «jouer au ballon». Также значит «воздушный шар». Ворота — le but / la cage."
+      },
+      {
+        "id": "wc-sport-ballon-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-sport-ballon",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — большой мяч; одно — маленький. Найди лишнее (мяч другого размера).",
+        "options": [
+          "un ballon de football",
+          "un ballon de basket",
+          "un ballon de rugby",
+          "une balle de tennis"
+        ],
+        "correctIndex": 3,
+        "explanation": "Большой мяч — un ballon (foot, basket, rugby). Маленький мяч — une balle: «une balle de tennis». Лишнее — теннисный мячик, потому что это balle, а не ballon."
+      },
+      {
+        "id": "wc-sport-ballon-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-sport-ballon",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "ballon",
+        "options": ["ballon", "balcon", "bâton", "bidon"],
+        "correctIndex": 0,
+        "explanation": "ballon /ba.lɔ̃/ (мяч), balcon /bal.kɔ̃/ (балкон), bâton /bɑ.tɔ̃/ (палка), bidon /bi.dɔ̃/ (канистра). Это разные слова, не омофоны: слушай согласные внутри."
+      },
+      {
+        "id": "wc-sport-courir-hint",
+        "kind": "wordHint",
+        "wordId": "wl-sport-courir",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: быстро передвигаться ногами, отрываясь от земли, например на пробежке.",
+        "answer": "courir",
+        "hints": [
+          "Начинается на c…",
+          "Глагол на -ir, 6 букв, две r",
+          "Le matin, j'aime ___ dans le parc."
+        ],
+        "explanation": "courir — бегать, бежать. «aller courir» — пойти бегать. Спряжение особое: je cours, il court, nous courons."
+      },
+      {
+        "id": "wc-sport-natation-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-sport-natation",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для natation (плавание), чтобы запомнить женский род (la natation) и носовой звук на конце /na.ta.sjɔ̃/.",
+        "examples": [
+          "Слова на -tion во французском — женского рода и часто похожи на русские: natation ~ «нация» по звуку, но это «плавание» — la natation.",
+          "Свяжи nat- с английским «natatorium» (бассейн) или представь, как ты «фыркаешь» носом /sjɔ̃/, выныривая из воды."
+        ]
+      }
+    ]
+  }
+]

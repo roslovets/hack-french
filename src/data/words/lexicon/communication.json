@@ -1,0 +1,318 @@
+[
+  {
+    "id": "wl-comm-telephone",
+    "lemma": "téléphone",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/te.le.fɔn/",
+    "translationsRu": ["телефон"],
+    "translationsEn": ["telephone", "phone"],
+    "semanticCore": "Телефон как аппарат и как способ связи: то, по чему звонят (par téléphone), а не пишут.",
+    "collocations": [
+      {
+        "fr": "au téléphone",
+        "ru": "по телефону (говорить)"
+      },
+      {
+        "fr": "un numéro de téléphone",
+        "ru": "номер телефона"
+      },
+      {
+        "fr": "répondre au téléphone",
+        "ru": "ответить на звонок"
+      },
+      {
+        "fr": "un coup de téléphone",
+        "ru": "телефонный звонок"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "portable",
+        "note": "téléphone = телефон вообще (в т.ч. стационарный); portable = именно мобильный, который носят с собой."
+      },
+      {
+        "with": "appeler",
+        "note": "téléphone = аппарат/связь (существительное); appeler = звонить (глагол). «звоню по телефону» — j'appelle / je téléphone."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["communication", "appareil"],
+    "caseIds": ["wc-communication"]
+  },
+  {
+    "id": "wl-comm-portable",
+    "lemma": "portable",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɔʁ.tabl/",
+    "translationsRu": ["мобильный телефон", "сотовый"],
+    "translationsEn": ["mobile phone", "cell phone"],
+    "semanticCore": "Мобильный телефон в разговорной речи: «un portable» = сотовый, который носят в кармане.",
+    "collocations": [
+      {
+        "fr": "sur mon portable",
+        "ru": "на моём мобильном"
+      },
+      {
+        "fr": "éteindre son portable",
+        "ru": "выключить мобильный"
+      },
+      {
+        "fr": "le numéro de portable",
+        "ru": "номер мобильного"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "téléphone",
+        "note": "portable = именно мобильный (носимый); téléphone — любой телефон. Часто говорят просто «mon portable»."
+      },
+      {
+        "with": "portatif (англ. portable)",
+        "note": "Ложный друг: фр. un portable = мобильник (а в контексте техники — и ноутбук, un ordinateur portable). Англ. «portable» = просто «портативный». «Портативный» как прилагательное — скорее portatif."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["communication", "appareil"],
+    "caseIds": ["wc-communication"]
+  },
+  {
+    "id": "wl-comm-appeler",
+    "lemma": "appeler",
+    "pos": "verb",
+    "ipa": "/a.ple/",
+    "translationsRu": ["звонить", "называть"],
+    "translationsEn": ["to call"],
+    "semanticCore": "Глагол «call»: звонить кому-то по телефону — и звать/называть. В форме s'appeler значит «зваться, называться».",
+    "collocations": [
+      {
+        "fr": "appeler un ami",
+        "ru": "позвонить другу"
+      },
+      {
+        "fr": "appeler le médecin",
+        "ru": "вызвать врача (позвонить врачу)"
+      },
+      {
+        "fr": "je m'appelle…",
+        "ru": "меня зовут…"
+      },
+      {
+        "fr": "rappeler plus tard",
+        "ru": "перезвонить позже"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "téléphoner",
+        "note": "appeler qqn = позвонить кому-то (прямое дополнение); téléphoner à qqn = тоже звонить, но с предлогом à. appeler un ami / téléphoner à un ami."
+      },
+      {
+        "with": "s'appeler",
+        "note": "appeler = звать/звонить (кого-то); s'appeler = называться, «меня зовут». Не путать возвратную форму с обычной."
+      }
+    ],
+    "frequencyRank": 240,
+    "level": "A2",
+    "tags": ["communication", "verbe-action"],
+    "caseIds": ["wc-communication"]
+  },
+  {
+    "id": "wl-comm-message",
+    "lemma": "message",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/me.saʒ/",
+    "translationsRu": ["сообщение"],
+    "translationsEn": ["message"],
+    "semanticCore": "Сообщение, которое отправляют или оставляют: SMS, голосовое, текст в мессенджере.",
+    "collocations": [
+      {
+        "fr": "envoyer un message",
+        "ru": "отправить сообщение"
+      },
+      {
+        "fr": "laisser un message",
+        "ru": "оставить сообщение"
+      },
+      {
+        "fr": "recevoir un message",
+        "ru": "получить сообщение"
+      },
+      {
+        "fr": "un message vocal",
+        "ru": "голосовое сообщение"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "SMS / texto",
+        "note": "message = сообщение вообще; un SMS / un texto = именно текстовое сообщение на телефон. Texto — разговорный синоним SMS."
+      },
+      {
+        "with": "email",
+        "note": "message = любое сообщение; un email / un mail = именно письмо по электронной почте."
+      }
+    ],
+    "frequencyRank": 360,
+    "level": "A2",
+    "tags": ["communication", "ecrit"],
+    "caseIds": ["wc-communication"]
+  },
+  {
+    "id": "wl-comm-internet",
+    "lemma": "internet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛ̃.tɛʁ.nɛt/",
+    "translationsRu": ["интернет"],
+    "translationsEn": ["internet"],
+    "semanticCore": "Интернет как сеть: обычно без артикля — «sur internet», «sur Internet».",
+    "collocations": [
+      {
+        "fr": "sur internet",
+        "ru": "в интернете"
+      },
+      {
+        "fr": "chercher sur internet",
+        "ru": "искать в интернете"
+      },
+      {
+        "fr": "une connexion internet",
+        "ru": "подключение к интернету"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "le web / le net",
+        "note": "internet = сеть в целом (обычно без артикля: sur internet); le web — Всемирная паутина, сайты. В речи часто синонимы."
+      },
+      {
+        "with": "le wifi",
+        "note": "internet = сама сеть; le wifi = беспроводное подключение к ней. «нет интернета» ≠ «нет wifi»."
+      }
+    ],
+    "frequencyRank": 470,
+    "level": "A2",
+    "tags": ["communication", "numerique"],
+    "caseIds": ["wc-communication"]
+  },
+  {
+    "id": "wl-comm-ordinateur",
+    "lemma": "ordinateur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɔʁ.di.na.tœʁ/",
+    "translationsRu": ["компьютер"],
+    "translationsEn": ["computer"],
+    "semanticCore": "Компьютер — но французское слово не похоже на «computer»: un ordinateur, разг. un ordi.",
+    "collocations": [
+      {
+        "fr": "allumer l'ordinateur",
+        "ru": "включить компьютер"
+      },
+      {
+        "fr": "un ordinateur portable",
+        "ru": "ноутбук"
+      },
+      {
+        "fr": "travailler sur l'ordinateur",
+        "ru": "работать за компьютером"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "computer (англ.)",
+        "note": "Ловушка: компьютер по-французски — un ordinateur, а не «computeur». Слова «computeur» во французском нет."
+      },
+      {
+        "with": "ordinateur portable",
+        "note": "un ordinateur = компьютер (в т.ч. настольный); un ordinateur portable = ноутбук. Разг. сокращают до un ordi / un portable."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["communication", "numerique"],
+    "caseIds": ["wc-communication"]
+  },
+  {
+    "id": "wl-comm-email",
+    "lemma": "email",
+    "displayForm": "email / e-mail / mail",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/i.mɛl/",
+    "translationsRu": ["электронная почта", "имейл"],
+    "translationsEn": ["email"],
+    "semanticCore": "Письмо по электронной почте и сам адрес: un email, разг. un mail (официально — un courriel).",
+    "collocations": [
+      {
+        "fr": "envoyer un email",
+        "ru": "отправить письмо (по почте)"
+      },
+      {
+        "fr": "une adresse email",
+        "ru": "адрес электронной почты"
+      },
+      {
+        "fr": "répondre à un email",
+        "ru": "ответить на письмо"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "courriel",
+        "note": "email / mail = разговорно-нейтральное «электронное письмо»; un courriel — официальный (рекомендованный) синоним, особенно частый в Канаде. Значат одно и то же."
+      },
+      {
+        "with": "message",
+        "note": "email = именно письмо по эл. почте; message = сообщение вообще (SMS, чат, голосовое)."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["communication", "ecrit"],
+    "caseIds": ["wc-communication"]
+  },
+  {
+    "id": "wl-comm-ecran",
+    "lemma": "écran",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.kʁɑ̃/",
+    "translationsRu": ["экран"],
+    "translationsEn": ["screen"],
+    "semanticCore": "Экран телефона, компьютера, телевизора и кино: поверхность, на которой видно изображение.",
+    "collocations": [
+      {
+        "fr": "sur l'écran",
+        "ru": "на экране"
+      },
+      {
+        "fr": "un écran tactile",
+        "ru": "сенсорный экран"
+      },
+      {
+        "fr": "l'écran de l'ordinateur",
+        "ru": "экран компьютера"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "moniteur",
+        "note": "écran = экран (любой, включая встроенный); un moniteur = монитор как отдельное устройство (для настольного ПК)."
+      },
+      {
+        "with": "ecran (носовой -an)",
+        "note": "Произносится /e.kʁɑ̃/ — конечное -an даёт носовой звук, n не читается отдельно. Род мужской: un écran."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["communication", "appareil"],
+    "caseIds": ["wc-communication"]
+  }
+]

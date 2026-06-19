@@ -14,45 +14,50 @@
   {
     "id": "people",
     "title": "Человек и семья",
-    "themes": ["corps", "famille", "emotions", "sante"],
+    "themes": ["corps", "famille", "emotions", "sante", "visage"],
     "bossId": "wc-boss-corps-famille"
   },
   {
     "id": "city",
     "title": "Город и транспорт",
-    "themes": ["ville", "transport"],
+    "themes": ["ville", "transport", "lieux"],
     "bossId": "wc-boss-transport"
   },
   {
     "id": "school",
     "title": "Школа и общение",
-    "themes": ["ecole", "politesse"],
+    "themes": ["ecole", "politesse", "communication"],
     "bossId": "wc-boss-ecole-politesse"
   },
   {
     "id": "verbs",
     "title": "Глаголы и время",
-    "themes": ["perception", "connaissance", "prendre", "temps", "calendrier"],
+    "themes": ["perception", "connaissance", "prendre", "temps", "calendrier", "verbes2"],
     "bossId": "wc-boss-verbes"
   },
   {
     "id": "money",
     "title": "Покупки и деньги",
-    "themes": ["argent"]
+    "themes": ["argent", "courses"]
   },
   {
     "id": "work",
     "title": "Работа",
-    "themes": ["travail"]
+    "themes": ["travail", "metiers"]
   },
   {
     "id": "weather",
     "title": "Погода и природа",
-    "themes": ["meteo", "animaux"]
+    "themes": ["meteo", "animaux", "saisons"]
   },
   {
     "id": "leisure",
     "title": "Досуг и интересы",
-    "themes": ["loisirs"]
+    "themes": ["loisirs", "sport"]
+  },
+  {
+    "id": "descriptions",
+    "title": "Цвета и описания",
+    "themes": ["couleurs", "adjectifs"]
   }
 ]

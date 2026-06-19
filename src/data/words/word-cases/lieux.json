@@ -1,0 +1,269 @@
+[
+  {
+    "id": "wc-lieux",
+    "title": "Места в городе",
+    "theme": "lieux",
+    "level": "A2",
+    "wordIds": [
+      "wl-lieux-banque",
+      "wl-lieux-poste",
+      "wl-lieux-hopital",
+      "wl-lieux-eglise",
+      "wl-lieux-parc",
+      "wl-lieux-pont",
+      "wl-lieux-place",
+      "wl-lieux-mairie"
+    ],
+    "steps": [
+      {
+        "id": "wc-lieux-banque-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-lieux-banque",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je vais à la banque retirer de l'argent.",
+          "La banque ferme à dix-sept heures.",
+          "J'ai ouvert un compte en banque."
+        ],
+        "options": ["банк", "скамейка", "касса", "магазин"],
+        "correctIndex": 0,
+        "explanation": "la banque (ж.р.) — банк. «à la banque» — в банк / в банке, «un compte en banque» — банковский счёт. Скамейка — un banc (без k, м.р.)."
+      },
+      {
+        "id": "wc-lieux-banque-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-lieux-banque",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит banque?",
+        "bridge": "Англ. «bank» — банк; франц. banque почти то же слово, только с -que на конце и носовым /bɑ̃k/.",
+        "options": ["банк", "берег реки", "банка", "лавочка"],
+        "correctIndex": 0,
+        "explanation": "banque = банк. Внимание к ловушке: англ. «bank» значит ещё и «берег реки», но фр. la banque — только банк; берег реки — la rive."
+      },
+      {
+        "id": "wc-lieux-banque-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-lieux-banque",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "banque",
+        "options": ["banque", "banc", "bande", "blanc"],
+        "correctIndex": 0,
+        "explanation": "banque /bɑ̃k/ (банк), banc /bɑ̃/ (скамейка), bande /bɑ̃d/ (лента, банда), blanc /blɑ̃/ (белый). Это разные слова, не омофоны: слушай концовку и наличие l."
+      },
+      {
+        "id": "wc-lieux-poste-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-lieux-poste",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je dois aller à la poste envoyer un colis.",
+          "La poste est juste à côté de la mairie.",
+          "On achète des timbres à la poste."
+        ],
+        "options": ["почта", "должность", "пост (охраны)", "почтальон"],
+        "correctIndex": 0,
+        "explanation": "la poste (ж.р.) — почта: и отделение, и служба. «à la poste» — на почту. Почтальон — le facteur."
+      },
+      {
+        "id": "wc-lieux-poste-trap",
+        "kind": "trap",
+        "wordId": "wl-lieux-poste",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово poste пишется одинаково, но род меняет смысл. Что значит «la poste»?",
+        "phrases": ["Il cherche un nouveau poste.", "Elle travaille à la poste."],
+        "options": [
+          "почта — а вот «un poste» (м.р.) значит должность/место работы",
+          "должность — род здесь не важен",
+          "радиоприёмник — оба раза одно и то же",
+          "почтальон — «la poste» значит человека"
+        ],
+        "correctIndex": 0,
+        "explanation": "la poste (ж.р.) — почта; le poste (м.р.) — должность («un nouveau poste») или аппарат («un poste de radio»). Артикль решает: «Elle travaille à la poste» — она работает на почте."
+      },
+      {
+        "id": "wc-lieux-hopital-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-lieux-hopital",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On l'a transporté à l'hôpital.",
+          "Ma sœur travaille à l'hôpital.",
+          "Où est l'hôpital le plus proche ?"
+        ],
+        "options": ["больница", "аптека", "поликлиника", "врач"],
+        "correctIndex": 0,
+        "explanation": "l'hôpital (м.р.) — больница. Начальное h немое, поэтому l'hôpital, à l'hôpital. Множественное — hôpitaux. Аптека — une pharmacie."
+      },
+      {
+        "id": "wc-lieux-hopital-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-lieux-hopital",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский даёт подсказку. Что значит hôpital?",
+        "bridge": "Англ. «hospital» — больница. Франц. hôpital — то же слово: accent circonflexe на ô вместо выпавшего s (hospital → hôpital).",
+        "options": ["больница", "гостиница", "приют", "общежитие"],
+        "correctIndex": 0,
+        "explanation": "hôpital = больница. Циркумфлекс над ô — след пропавшего s (как в hôtel ← hostel). H немое: /ɔ.pi.tal/."
+      },
+      {
+        "id": "wc-lieux-eglise-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-lieux-eglise",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "L'église est sur la place du village.",
+          "On se retrouve devant l'église.",
+          "C'est une très vieille église."
+        ],
+        "options": ["церковь", "школа", "замок", "магазин"],
+        "correctIndex": 0,
+        "explanation": "l'église (ж.р.) — церковь. «devant l'église» — перед церковью. Большой кафедральный собор — une cathédrale."
+      },
+      {
+        "id": "wc-lieux-eglise-hint",
+        "kind": "wordHint",
+        "wordId": "wl-lieux-eglise",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: здание, где идёт служба, часто со шпилем и колоколом, стоит у площади.",
+        "answer": "église",
+        "hints": ["Начинается на é…", "Женского рода: une ___", "On va à l'___ le dimanche."],
+        "explanation": "l'église (ж.р.) — церковь. Пишется с accent aigu: é-g-l-i-s-e, читается /e.gliz/."
+      },
+      {
+        "id": "wc-lieux-parc-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-lieux-parc",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les enfants jouent dans le parc.",
+          "On se promène dans le parc le dimanche.",
+          "Il y a un grand parc au centre-ville."
+        ],
+        "options": ["парк", "двор", "сад при доме", "стоянка"],
+        "correctIndex": 0,
+        "explanation": "le parc (м.р.) — (городской) парк. «dans le parc» — в парке. Стоянка для машин — un parking; сад при доме — un jardin."
+      },
+      {
+        "id": "wc-lieux-parc-cmp",
+        "kind": "compare",
+        "wordId": "wl-lieux-parc",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le parc и le jardin. В чём разница?",
+        "phrases": ["On se promène dans le parc.", "Je bois un café dans le jardin."],
+        "options": [
+          "le parc — большое общественное зелёное пространство; le jardin — сад поменьше, часто при доме",
+          "это полные синонимы",
+          "le parc — сад при доме; le jardin — городской парк",
+          "le jardin значит «стоянка», а parc — «лес»"
+        ],
+        "correctIndex": 0,
+        "explanation": "le parc — большой парк (городской, для всех); le jardin — сад/садик, обычно при доме. Городской сквер — un jardin public."
+      },
+      {
+        "id": "wc-lieux-pont-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-lieux-pont",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On traverse le pont pour aller au centre.",
+          "Le bateau passe sous le pont.",
+          "C'est un vieux pont en pierre sur la Seine."
+        ],
+        "options": ["мост", "набережная", "берег", "тоннель"],
+        "correctIndex": 0,
+        "explanation": "le pont (м.р.) — мост. «traverser le pont» — перейти мост, «sous le pont» — под мостом. Конечные nt не читаются: /pɔ̃/. Набережная — le quai."
+      },
+      {
+        "id": "wc-lieux-pont-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-lieux-pont",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "pont",
+        "options": ["pont", "pomme", "pompe", "pente"],
+        "correctIndex": 0,
+        "explanation": "pont /pɔ̃/ (мост), pomme /pɔm/ (яблоко), pompe /pɔ̃p/ (насос), pente /pɑ̃t/ (склон). Это разные слова: pont — чистый носовой /pɔ̃/ без согласной на конце."
+      },
+      {
+        "id": "wc-lieux-place-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-lieux-place",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово в трёх сценах, но смысл шире, чем кажется. Что оно значит?",
+        "contexts": [
+          "Rendez-vous sur la place, devant la fontaine.",
+          "Le marché a lieu sur la place du village.",
+          "La place de la mairie est très animée."
+        ],
+        "options": ["площадь", "место (сиденье)", "пространство", "сквер"],
+        "correctIndex": 0,
+        "explanation": "Здесь la place — городская площадь (открытое место в центре). У слова есть и второе значение — «место» (сиденье, свободное пространство), о нём дальше."
+      },
+      {
+        "id": "wc-lieux-place-trap",
+        "kind": "trap",
+        "wordId": "wl-lieux-place",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «place» = «место» вообще. А что НЕ значит фр. «place»?",
+        "options": [
+          "«место-локация» («красивое место») — это un endroit / un lieu, а не «une place»",
+          "площадь в городе",
+          "сидячее место («une place assise»)",
+          "свободное место/пространство («il n'y a plus de place»)"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка ложного друга: la place — это площадь, сиденье или свободное место. Но «место» в смысле «локация, точка» — un endroit / un lieu: «un bel endroit» — красивое место, не *une belle place."
+      },
+      {
+        "id": "wc-lieux-mairie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-lieux-mairie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ils se sont mariés à la mairie.",
+          "La mairie est sur la grande place.",
+          "Je vais à la mairie pour mes papiers."
+        ],
+        "options": ["мэрия (ратуша)", "мэр", "почта", "суд"],
+        "correctIndex": 0,
+        "explanation": "la mairie (ж.р.) — мэрия / городская администрация (там расписываются и оформляют документы). Сам мэр — le maire (м.р.)."
+      },
+      {
+        "id": "wc-lieux-mairie-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-lieux-mairie",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай ассоциацию, чтобы не путать la mairie (здание, ж.р.) и le maire (мэр, человек, м.р.).",
+        "examples": [
+          "Окончание -ie как в boulangerie, pharmacie — это здание/место: la mairie, туда «идёшь».",
+          "Le maire (мэр) — он один и «главный», как le maire без -ie; а la mairie — целый дом, где он сидит."
+        ]
+      }
+    ]
+  }
+]
