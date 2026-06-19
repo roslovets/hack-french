@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-meteo-temps",
+    "lemma": "temps",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tɑ̃/",
+    "translationsRu": ["погода", "время"],
+    "translationsEn": ["weather", "time"],
+    "semanticCore": "Одно слово на два смысла: погода за окном и время вообще; что именно — решает контекст.",
+    "collocations": [
+      {
+        "fr": "Quel temps fait-il ?",
+        "ru": "Какая погода?"
+      },
+      {
+        "fr": "un temps magnifique",
+        "ru": "великолепная погода"
+      },
+      {
+        "fr": "avoir le temps",
+        "ru": "иметь время / успевать"
+      },
+      {
+        "fr": "de temps en temps",
+        "ru": "время от времени"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "météo",
+        "note": "le temps = погода как состояние неба сейчас; la météo = прогноз/сводка погоды (regarder la météo)."
+      },
+      {
+        "with": "fois",
+        "note": "В значении «время» temps — это время вообще (le temps passe); une fois — «раз» (deux fois — два раза). Не путать."
+      }
+    ],
+    "frequencyRank": 90,
+    "level": "A2",
+    "tags": ["meteo", "nature"],
+    "caseIds": ["wc-meteo"]
+  },
+  {
+    "id": "wl-meteo-pluie",
+    "lemma": "pluie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/plɥi/",
+    "translationsRu": ["дождь"],
+    "translationsEn": ["rain"],
+    "semanticCore": "Дождь как осадки и как погода, под которой оказываешься.",
+    "collocations": [
+      {
+        "fr": "sous la pluie",
+        "ru": "под дождём"
+      },
+      {
+        "fr": "une pluie fine",
+        "ru": "мелкий дождь"
+      },
+      {
+        "fr": "un jour de pluie",
+        "ru": "дождливый день"
+      },
+      {
+        "fr": "la pluie tombe",
+        "ru": "идёт дождь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "parapluie",
+        "note": "la pluie = дождь; le parapluie = зонт (буквально «против дождя»). Похожи по виду, но разное."
+      },
+      {
+        "with": "il pleut",
+        "note": "la pluie — существительное «дождь»; il pleut — глагол «идёт дождь». «Il y a de la pluie» = «il pleut»."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["meteo", "nature"],
+    "caseIds": ["wc-meteo"]
+  },
+  {
+    "id": "wl-meteo-soleil",
+    "lemma": "soleil",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɔ.lɛj/",
+    "translationsRu": ["солнце"],
+    "translationsEn": ["sun"],
+    "semanticCore": "Солнце как светило и как солнечная, ясная погода.",
+    "collocations": [
+      {
+        "fr": "il y a du soleil",
+        "ru": "солнечно"
+      },
+      {
+        "fr": "des lunettes de soleil",
+        "ru": "солнечные очки"
+      },
+      {
+        "fr": "un coup de soleil",
+        "ru": "солнечный ожог"
+      },
+      {
+        "fr": "le soleil se couche",
+        "ru": "солнце садится"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "lune",
+        "note": "le soleil = солнце (день); la lune = луна (ночь). Soleil мужского рода, lune — женского."
+      },
+      {
+        "with": "sommeil",
+        "note": "soleil /sɔ.lɛj/ — солнце; sommeil /sɔ.mɛj/ — сон. Звучат очень похоже, различаются серединой слова (-l- / -mm-)."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["meteo", "nature"],
+    "caseIds": ["wc-meteo"]
+  },
+  {
+    "id": "wl-meteo-vent",
+    "lemma": "vent",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɑ̃/",
+    "translationsRu": ["ветер"],
+    "translationsEn": ["wind"],
+    "semanticCore": "Ветер как движение воздуха и как фактор погоды (дует, сильный, холодный).",
+    "collocations": [
+      {
+        "fr": "il y a du vent",
+        "ru": "ветрено"
+      },
+      {
+        "fr": "le vent souffle",
+        "ru": "ветер дует"
+      },
+      {
+        "fr": "un vent froid",
+        "ru": "холодный ветер"
+      },
+      {
+        "fr": "un coup de vent",
+        "ru": "порыв ветра"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vin",
+        "note": "vent /vɑ̃/ — ветер; vin /vɛ̃/ — вино. Разные носовые гласные («ан» против «эн»), хотя на слух похожи."
+      },
+      {
+        "with": "tempête",
+        "note": "le vent = ветер (обычное явление); la tempête = буря, шторм (сильный ветер с непогодой)."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["meteo", "nature"],
+    "caseIds": ["wc-meteo"]
+  },
+  {
+    "id": "wl-meteo-neige",
+    "lemma": "neige",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/nɛʒ/",
+    "translationsRu": ["снег"],
+    "translationsEn": ["snow"],
+    "semanticCore": "Снег как осадки и как снежный покров, в котором играют и который лежит на горах.",
+    "collocations": [
+      {
+        "fr": "la neige tombe",
+        "ru": "идёт снег"
+      },
+      {
+        "fr": "un bonhomme de neige",
+        "ru": "снеговик"
+      },
+      {
+        "fr": "jouer dans la neige",
+        "ru": "играть в снегу"
+      },
+      {
+        "fr": "de la neige fraîche",
+        "ru": "свежий снег"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "glace",
+        "note": "la neige = снег (мягкий, падает хлопьями); la glace = лёд (твёрдый) и мороженое. Не путать."
+      },
+      {
+        "with": "il neige",
+        "note": "la neige — существительное «снег»; il neige — глагол «идёт снег» (как il pleut). «Снег идёт» — il neige, а не «la neige marche»."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["meteo", "nature"],
+    "caseIds": ["wc-meteo"]
+  },
+  {
+    "id": "wl-meteo-froid",
+    "lemma": "froid",
+    "displayForm": "froid / froide",
+    "pos": "adj",
+    "ipa": "/fʁwa/",
+    "translationsRu": ["холодный", "холодно", "холод"],
+    "translationsEn": ["cold"],
+    "semanticCore": "Холодный/холодно: о погоде — il fait froid; о человеке — avoir froid; о предмете — froid/froide.",
+    "collocations": [
+      {
+        "fr": "il fait froid",
+        "ru": "холодно (о погоде)"
+      },
+      {
+        "fr": "avoir froid",
+        "ru": "мёрзнуть, чувствовать холод"
+      },
+      {
+        "fr": "de l'eau froide",
+        "ru": "холодная вода"
+      },
+      {
+        "fr": "un vent froid",
+        "ru": "холодный ветер"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chaud",
+        "note": "froid = холодный; chaud = горячий/тёплый. Прямые противоположности: il fait froid / il fait chaud."
+      },
+      {
+        "with": "froide",
+        "note": "froid — мужской род; froide — женский (de l'eau froide, une boisson froide). Конечная -d не читается: /fʁwa/."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["meteo", "temperature"],
+    "caseIds": ["wc-meteo"]
+  },
+  {
+    "id": "wl-meteo-chaud",
+    "lemma": "chaud",
+    "displayForm": "chaud / chaude",
+    "pos": "adj",
+    "ipa": "/ʃo/",
+    "translationsRu": ["горячий", "тёплый", "жаркий"],
+    "translationsEn": ["hot", "warm"],
+    "semanticCore": "Горячий/тёплый/жаркий: о погоде — il fait chaud; о человеке — avoir chaud; о предмете — chaud/chaude.",
+    "collocations": [
+      {
+        "fr": "il fait chaud",
+        "ru": "жарко (о погоде)"
+      },
+      {
+        "fr": "avoir chaud",
+        "ru": "чувствовать жару, мне жарко"
+      },
+      {
+        "fr": "un chocolat chaud",
+        "ru": "горячий шоколад"
+      },
+      {
+        "fr": "de l'eau chaude",
+        "ru": "горячая вода"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "froid",
+        "note": "chaud = горячий/тёплый; froid = холодный. Противоположности: il fait chaud / il fait froid."
+      },
+      {
+        "with": "chaude",
+        "note": "chaud — мужской род; chaude — женский (l'eau chaude, une journée chaude). Конечная -d не читается: /ʃo/."
+      }
+    ],
+    "frequencyRank": 470,
+    "level": "A2",
+    "tags": ["meteo", "temperature"],
+    "caseIds": ["wc-meteo"]
+  },
+  {
+    "id": "wl-meteo-nuage",
+    "lemma": "nuage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/nɥaʒ/",
+    "translationsRu": ["облако", "туча"],
+    "translationsEn": ["cloud"],
+    "semanticCore": "Облако или туча на небе; во множественном — признак пасмурной погоды.",
+    "collocations": [
+      {
+        "fr": "un ciel sans nuages",
+        "ru": "безоблачное небо"
+      },
+      {
+        "fr": "des nuages gris",
+        "ru": "серые тучи"
+      },
+      {
+        "fr": "un gros nuage",
+        "ru": "большое облако"
+      },
+      {
+        "fr": "un nuage de lait",
+        "ru": "капелька молока (в кофе)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ciel",
+        "note": "le nuage = облако/туча (на небе); le ciel = само небо. Nuages плавают по ciel."
+      },
+      {
+        "with": "brouillard",
+        "note": "le nuage = облако (высоко в небе); le brouillard = туман (у земли, мешает видеть)."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A2",
+    "tags": ["meteo", "nature"],
+    "caseIds": ["wc-meteo"]
+  }
+]

@@ -1,0 +1,337 @@
+[
+  {
+    "id": "wl-loisirs-sport",
+    "lemma": "sport",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/spɔʁ/",
+    "translationsRu": ["спорт"],
+    "translationsEn": ["sport", "sports"],
+    "semanticCore": "Спорт как занятие и как сфера: то, чем «занимаются» (faire du sport), а не «играют».",
+    "collocations": [
+      {
+        "fr": "faire du sport",
+        "ru": "заниматься спортом"
+      },
+      {
+        "fr": "un sport collectif",
+        "ru": "командный вид спорта"
+      },
+      {
+        "fr": "une salle de sport",
+        "ru": "спортзал, фитнес-клуб"
+      },
+      {
+        "fr": "une voiture de sport",
+        "ru": "спортивная машина"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "jeu",
+        "note": "sport = спорт (физическая активность); jeu = игра (любая, в т.ч. настольная или видеоигра). Футбол — un sport, шахматы скорее un jeu."
+      },
+      {
+        "with": "match",
+        "note": "sport = вид спорта вообще; match = конкретный матч, встреча. «Заниматься спортом» — faire du sport, а не «faire un match»."
+      }
+    ],
+    "frequencyRank": 360,
+    "level": "A2",
+    "tags": ["loisirs", "activite"],
+    "caseIds": ["wc-loisirs"]
+  },
+  {
+    "id": "wl-loisirs-musique",
+    "lemma": "musique",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/my.zik/",
+    "translationsRu": ["музыка"],
+    "translationsEn": ["music"],
+    "semanticCore": "Музыка как искусство и как то, что слушают или исполняют: écouter de la musique, faire de la musique.",
+    "collocations": [
+      {
+        "fr": "écouter de la musique",
+        "ru": "слушать музыку"
+      },
+      {
+        "fr": "faire de la musique",
+        "ru": "заниматься музыкой, играть"
+      },
+      {
+        "fr": "un cours de musique",
+        "ru": "урок музыки"
+      },
+      {
+        "fr": "la musique classique",
+        "ru": "классическая музыка"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chanson",
+        "note": "musique = музыка (вообще, мелодия); chanson = песня (со словами). «Включи музыку» — mets de la musique; одна песня — une chanson."
+      },
+      {
+        "with": "bruit",
+        "note": "musique = музыка (приятный, организованный звук); bruit = шум. Громкая музыка — la musique forte, а просто шум — du bruit."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["loisirs", "art"],
+    "caseIds": ["wc-loisirs"]
+  },
+  {
+    "id": "wl-loisirs-film",
+    "lemma": "film",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/film/",
+    "translationsRu": ["фильм", "кино"],
+    "translationsEn": ["film", "movie"],
+    "semanticCore": "Фильм как отдельное кинопроизведение, которое смотрят: regarder / voir un film.",
+    "collocations": [
+      {
+        "fr": "regarder un film",
+        "ru": "смотреть фильм"
+      },
+      {
+        "fr": "voir un film",
+        "ru": "посмотреть (сходить на) фильм"
+      },
+      {
+        "fr": "un film d'horreur",
+        "ru": "фильм ужасов"
+      },
+      {
+        "fr": "un film d'action",
+        "ru": "боевик"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "série",
+        "note": "film = (полнометражный) фильм; série = сериал (много серий). Один вечер — un film, на много вечеров — une série."
+      },
+      {
+        "with": "cinéma",
+        "note": "film = сам фильм (произведение); cinéma = кино как искусство или кинотеатр (здание). «Идём в кино» — on va au cinéma; «смотрим фильм» — on regarde un film."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["loisirs", "art"],
+    "caseIds": ["wc-loisirs"]
+  },
+  {
+    "id": "wl-loisirs-livre",
+    "lemma": "livre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/livʁ/",
+    "translationsRu": ["книга"],
+    "translationsEn": ["book"],
+    "semanticCore": "Книга как предмет и как текст, который читают: un livre (m). Род важен — la livre (f) значит совсем другое.",
+    "collocations": [
+      {
+        "fr": "lire un livre",
+        "ru": "читать книгу"
+      },
+      {
+        "fr": "un livre de cuisine",
+        "ru": "кулинарная книга"
+      },
+      {
+        "fr": "écrire un livre",
+        "ru": "написать книгу"
+      },
+      {
+        "fr": "un livre passionnant",
+        "ru": "увлекательная книга"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "livre (la)",
+        "note": "un livre (m) = книга; une livre (f) = фунт (вес ~500 г или валюта). Род меняет значение — самая частая ловушка."
+      },
+      {
+        "with": "libre",
+        "note": "livre /livʁ/ = книга; libre /libʁ/ = свободный. Различаются одной буквой и звуком v/b — не путать."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A2",
+    "tags": ["loisirs", "objet"],
+    "caseIds": ["wc-loisirs"]
+  },
+  {
+    "id": "wl-loisirs-jouer",
+    "lemma": "jouer",
+    "pos": "verb",
+    "ipa": "/ʒwe/",
+    "translationsRu": ["играть"],
+    "translationsEn": ["to play"],
+    "semanticCore": "Играть — и в игры/спорт (jouer à), и на музыкальном инструменте (jouer de), и роль на сцене. Предлог решает смысл.",
+    "collocations": [
+      {
+        "fr": "jouer au football",
+        "ru": "играть в футбол"
+      },
+      {
+        "fr": "jouer du piano",
+        "ru": "играть на пианино"
+      },
+      {
+        "fr": "jouer aux cartes",
+        "ru": "играть в карты"
+      },
+      {
+        "fr": "jouer avec un ami",
+        "ru": "играть с другом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "jouer à / jouer de",
+        "note": "jouer à (au, aux) — игра или спорт: jouer au tennis; jouer de (du, de la) — инструмент: jouer de la guitare. Предлог нельзя путать."
+      },
+      {
+        "with": "gagner",
+        "note": "jouer = играть (сам процесс); gagner = выигрывать (результат). Можно jouer и не gagner."
+      }
+    ],
+    "frequencyRank": 250,
+    "level": "A2",
+    "tags": ["loisirs", "verbe-action"],
+    "caseIds": ["wc-loisirs"]
+  },
+  {
+    "id": "wl-loisirs-lire",
+    "lemma": "lire",
+    "pos": "verb",
+    "ipa": "/liʁ/",
+    "translationsRu": ["читать", "прочитать"],
+    "translationsEn": ["to read"],
+    "semanticCore": "Читать — водить глазами по тексту и понимать его: книгу, газету, сообщение. Неправильный глагол (je lis, j'ai lu).",
+    "collocations": [
+      {
+        "fr": "lire un livre",
+        "ru": "читать книгу"
+      },
+      {
+        "fr": "lire le journal",
+        "ru": "читать газету"
+      },
+      {
+        "fr": "lire à voix haute",
+        "ru": "читать вслух"
+      },
+      {
+        "fr": "lire une histoire",
+        "ru": "читать историю (сказку)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "écrire",
+        "note": "lire = читать (воспринимать текст); écrire = писать (создавать текст). Пара противоположностей: on lit ce qu'on écrit."
+      },
+      {
+        "with": "rire",
+        "note": "lire /liʁ/ = читать; rire /ʁiʁ/ = смеяться. Звучат похоже, но l/r в начале меняют слово."
+      }
+    ],
+    "frequencyRank": 230,
+    "level": "A2",
+    "tags": ["loisirs", "verbe-action"],
+    "caseIds": ["wc-loisirs"]
+  },
+  {
+    "id": "wl-loisirs-vacances",
+    "lemma": "vacances",
+    "displayForm": "les vacances",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/va.kɑ̃s/",
+    "translationsRu": ["каникулы", "отпуск"],
+    "translationsEn": ["holidays", "vacation"],
+    "semanticCore": "Отдых от работы или учёбы — каникулы и отпуск. Существует ТОЛЬКО во множественном числе: les vacances.",
+    "collocations": [
+      {
+        "fr": "partir en vacances",
+        "ru": "уехать в отпуск / на каникулы"
+      },
+      {
+        "fr": "être en vacances",
+        "ru": "быть в отпуске / на каникулах"
+      },
+      {
+        "fr": "les grandes vacances",
+        "ru": "летние каникулы"
+      },
+      {
+        "fr": "Bonnes vacances !",
+        "ru": "Хорошего отдыха!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "congé",
+        "note": "vacances = отпуск/каникулы (период отдыха, мн. ч.); un congé = отгул, отдельный нерабочий день или официальный отпуск (un jour de congé)."
+      },
+      {
+        "with": "vacance (la)",
+        "note": "vacances (мн.) = отдых; une vacance (ед.) = вакансия, незанятое место (редкое слово). В смысле «отпуск» всегда множественное."
+      }
+    ],
+    "frequencyRank": 500,
+    "level": "A2",
+    "tags": ["loisirs", "temps"],
+    "caseIds": ["wc-loisirs"]
+  },
+  {
+    "id": "wl-loisirs-fete",
+    "lemma": "fête",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fɛt/",
+    "translationsRu": ["праздник", "вечеринка"],
+    "translationsEn": ["party", "celebration"],
+    "semanticCore": "Праздник или вечеринка — повод собраться и веселиться: faire la fête. Также календарный праздник (la fête nationale).",
+    "collocations": [
+      {
+        "fr": "faire la fête",
+        "ru": "праздновать, веселиться, гулять"
+      },
+      {
+        "fr": "une fête d'anniversaire",
+        "ru": "вечеринка по случаю дня рождения"
+      },
+      {
+        "fr": "la fête nationale",
+        "ru": "национальный праздник"
+      },
+      {
+        "fr": "Bonne fête !",
+        "ru": "С праздником! (с именинами)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fêter",
+        "note": "la fête = праздник/вечеринка (существительное); fêter = отмечать (глагол): fêter son anniversaire. «faire la fête» — просто гулять, без объекта."
+      },
+      {
+        "with": "soirée",
+        "note": "fête = праздник, вечеринка (часто шумная, с поводом); soirée = вечер/вечеринка как времяпровождение. Большой праздник — une fête, тихий вечер у друзей — une soirée."
+      }
+    ],
+    "frequencyRank": 460,
+    "level": "A2",
+    "tags": ["loisirs", "social"],
+    "caseIds": ["wc-loisirs"]
+  }
+]

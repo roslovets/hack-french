@@ -1,0 +1,323 @@
+[
+  {
+    "id": "wl-travail-travail",
+    "lemma": "travail",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tʁa.vaj/",
+    "translationsRu": ["работа", "труд"],
+    "translationsEn": ["work", "job"],
+    "semanticCore": "Работа и как занятие/нагрузка, и как место, куда ходят; труд вообще. Множественное число особое: des travaux (работы, ремонт).",
+    "collocations": [
+      {
+        "fr": "aller au travail",
+        "ru": "идти на работу"
+      },
+      {
+        "fr": "chercher du travail",
+        "ru": "искать работу"
+      },
+      {
+        "fr": "avoir beaucoup de travail",
+        "ru": "иметь много работы"
+      },
+      {
+        "fr": "un travail bien fait",
+        "ru": "хорошо сделанная работа"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "travel (англ.)",
+        "note": "Ложный друг: фр. travail = работа, а англ. «travel» = путешествие. Путешествовать — voyager, поездка — un voyage."
+      },
+      {
+        "with": "métier",
+        "note": "travail = работа как занятие/нагрузка; métier = профессия, ремесло, которым владеешь. «J'ai du travail» (дел много), но «changer de métier» (сменить профессию)."
+      }
+    ],
+    "frequencyRank": 180,
+    "level": "A2",
+    "tags": ["travail", "activité"],
+    "caseIds": ["wc-travail"]
+  },
+  {
+    "id": "wl-travail-bureau",
+    "lemma": "bureau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/by.ʁo/",
+    "translationsRu": ["офис", "кабинет", "письменный стол"],
+    "translationsEn": ["office", "desk"],
+    "semanticCore": "Рабочее место в двух смыслах: помещение (офис/кабинет) и предмет мебели (письменный стол). Множественное — des bureaux.",
+    "collocations": [
+      {
+        "fr": "aller au bureau",
+        "ru": "идти в офис"
+      },
+      {
+        "fr": "sur le bureau",
+        "ru": "на (письменном) столе"
+      },
+      {
+        "fr": "le chef de bureau",
+        "ru": "начальник отдела/бюро"
+      },
+      {
+        "fr": "ranger son bureau",
+        "ru": "прибрать на своём столе / в кабинете"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "table",
+        "note": "bureau = письменный/рабочий стол (за ним работают); table = обычный (обеденный) стол. Едят за la table, работают за le bureau."
+      },
+      {
+        "with": "bureau (англ.)",
+        "note": "Англ. «bureau» — комод или ведомство; фр. bureau прежде всего «офис/кабинет» и «письменный стол». Множественное — des bureaux."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["travail", "lieu"],
+    "caseIds": ["wc-travail"]
+  },
+  {
+    "id": "wl-travail-collegue",
+    "lemma": "collègue",
+    "pos": "noun",
+    "ipa": "/kɔ.lɛɡ/",
+    "translationsRu": ["коллега", "сослуживец"],
+    "translationsEn": ["colleague", "coworker"],
+    "semanticCore": "Человек, с которым вместе работаешь; рабочая связь, не дружба сама по себе. Одна форма на оба пола, меняется артикль: un collègue / une collègue.",
+    "collocations": [
+      {
+        "fr": "un collègue de travail",
+        "ru": "коллега по работе"
+      },
+      {
+        "fr": "mes collègues de bureau",
+        "ru": "мои коллеги по офису"
+      },
+      {
+        "fr": "un ancien collègue",
+        "ru": "бывший коллега"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ami",
+        "note": "collègue = по работе (рабочая связь); ami = друг (личная близость). Коллега может стать другом, но слово само говорит лишь о совместной работе."
+      },
+      {
+        "with": "confrère",
+        "note": "collègue = коллега (любой по работе); confrère (ж. р. consœur) — человек той же профессии (врачи, адвокаты), более формально."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["travail", "personne"],
+    "caseIds": ["wc-travail"]
+  },
+  {
+    "id": "wl-travail-patron",
+    "lemma": "patron",
+    "displayForm": "patron / patronne",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pa.tʁɔ̃/",
+    "translationsRu": ["начальник", "босс", "хозяин"],
+    "translationsEn": ["boss", "owner"],
+    "semanticCore": "Начальник или хозяин заведения; разговорнее и «человечнее», чем directeur. Женская форма — la patronne.",
+    "collocations": [
+      {
+        "fr": "mon patron",
+        "ru": "мой начальник"
+      },
+      {
+        "fr": "le patron du café",
+        "ru": "хозяин кафе"
+      },
+      {
+        "fr": "demander au patron",
+        "ru": "спросить у начальника"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "patron (англ.)",
+        "note": "Ложный друг: англ. «patron» — постоянный клиент/посетитель; фр. le patron — наоборот, начальник или ХОЗЯИН заведения."
+      },
+      {
+        "with": "directeur",
+        "note": "patron = начальник/хозяин (разговорно, часто владелец); directeur = директор (официальная должность в организации)."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["travail", "personne"],
+    "caseIds": ["wc-travail"]
+  },
+  {
+    "id": "wl-travail-metier",
+    "lemma": "métier",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/me.tje/",
+    "translationsRu": ["профессия", "ремесло"],
+    "translationsEn": ["profession", "trade"],
+    "semanticCore": "Профессия или ремесло, которому учатся и которым владеют; «кем человек работает».",
+    "collocations": [
+      {
+        "fr": "apprendre un métier",
+        "ru": "освоить профессию"
+      },
+      {
+        "fr": "changer de métier",
+        "ru": "сменить профессию"
+      },
+      {
+        "fr": "exercer un métier",
+        "ru": "заниматься профессией"
+      },
+      {
+        "fr": "le métier de cuisinier",
+        "ru": "профессия повара"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "travail",
+        "note": "métier = профессия, ремесло (чем владеешь); travail = работа как занятие/нагрузка или место. «changer de métier» ≠ «changer de travail» (сменить место)."
+      },
+      {
+        "with": "emploi",
+        "note": "métier = профессия (повар, врач); emploi = конкретное место работы / занятость («un emploi stable» — стабильная работа)."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["travail", "activité"],
+    "caseIds": ["wc-travail"]
+  },
+  {
+    "id": "wl-travail-reunion",
+    "lemma": "réunion",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁe.y.njɔ̃/",
+    "translationsRu": ["собрание", "совещание"],
+    "translationsEn": ["meeting", "gathering"],
+    "semanticCore": "Когда несколько человек собираются вместе, чтобы обсудить рабочие дела.",
+    "collocations": [
+      {
+        "fr": "être en réunion",
+        "ru": "быть на совещании"
+      },
+      {
+        "fr": "une réunion importante",
+        "ru": "важное собрание"
+      },
+      {
+        "fr": "organiser une réunion",
+        "ru": "организовать совещание"
+      },
+      {
+        "fr": "une salle de réunion",
+        "ru": "переговорная (комната для совещаний)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rendez-vous",
+        "note": "réunion = собрание/совещание (несколько человек, рабочее обсуждение); rendez-vous = встреча/приём, часто один на один (у врача, деловая встреча)."
+      },
+      {
+        "with": "reunion (англ.)",
+        "note": "Англ. «reunion» обычно «встреча выпускников/родных»; фр. réunion в первую очередь «рабочее совещание»."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["travail", "événement"],
+    "caseIds": ["wc-travail"]
+  },
+  {
+    "id": "wl-travail-salaire",
+    "lemma": "salaire",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sa.lɛʁ/",
+    "translationsRu": ["зарплата"],
+    "translationsEn": ["salary", "wage"],
+    "semanticCore": "Деньги, которые получают за работу; регулярная оплата труда.",
+    "collocations": [
+      {
+        "fr": "toucher son salaire",
+        "ru": "получать зарплату"
+      },
+      {
+        "fr": "un bon salaire",
+        "ru": "хорошая зарплата"
+      },
+      {
+        "fr": "une augmentation de salaire",
+        "ru": "повышение зарплаты"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "salière",
+        "note": "Похоже на слух: salaire /sa.lɛʁ/ = зарплата; salière /sa.ljɛʁ/ = солонка. Не перепутать на слух — разные слова."
+      },
+      {
+        "with": "paie",
+        "note": "salaire = зарплата (сумма за период, часто месячная); la paie/paye = выплата, «получка» (сам факт и день выдачи денег)."
+      }
+    ],
+    "frequencyRank": 500,
+    "level": "A2",
+    "tags": ["travail", "argent"],
+    "caseIds": ["wc-travail"]
+  },
+  {
+    "id": "wl-travail-employe",
+    "lemma": "employé",
+    "displayForm": "employé / employée",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɑ̃.plwa.je/",
+    "translationsRu": ["служащий", "работник", "сотрудник"],
+    "translationsEn": ["employee", "clerk"],
+    "semanticCore": "Наёмный работник, служащий: тот, кого нанял работодатель (часто конторская, не физическая работа).",
+    "collocations": [
+      {
+        "fr": "un employé de bureau",
+        "ru": "конторский служащий"
+      },
+      {
+        "fr": "un employé sérieux",
+        "ru": "добросовестный работник"
+      },
+      {
+        "fr": "les employés de l'entreprise",
+        "ru": "сотрудники предприятия"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "employeur",
+        "note": "employé = наёмный работник; employeur = работодатель, тот, кто нанимает. Суффикс -eur указывает на того, кто «даёт работу»."
+      },
+      {
+        "with": "ouvrier",
+        "note": "employé = служащий (чаще конторский, «беловоротничковый»); ouvrier = рабочий (физический труд на заводе, стройке)."
+      }
+    ],
+    "frequencyRank": 580,
+    "level": "A2",
+    "tags": ["travail", "personne"],
+    "caseIds": ["wc-travail"]
+  }
+]

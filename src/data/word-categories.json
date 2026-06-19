@@ -14,7 +14,7 @@
   {
     "id": "people",
     "title": "Человек и семья",
-    "themes": ["corps", "famille"],
+    "themes": ["corps", "famille", "emotions"],
     "bossId": "wc-boss-corps-famille"
   },
   {
@@ -34,5 +34,25 @@
     "title": "Глаголы и время",
     "themes": ["perception", "connaissance", "prendre", "temps"],
     "bossId": "wc-boss-verbes"
+  },
+  {
+    "id": "money",
+    "title": "Покупки и деньги",
+    "themes": ["argent"]
+  },
+  {
+    "id": "work",
+    "title": "Работа",
+    "themes": ["travail"]
+  },
+  {
+    "id": "weather",
+    "title": "Погода и природа",
+    "themes": ["meteo"]
+  },
+  {
+    "id": "leisure",
+    "title": "Досуг и интересы",
+    "themes": ["loisirs"]
   }
 ]

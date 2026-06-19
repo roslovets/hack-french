@@ -1,0 +1,275 @@
+[
+  {
+    "id": "wc-emotions",
+    "title": "Чувства и эмоции",
+    "theme": "emotions",
+    "level": "A2",
+    "wordIds": [
+      "wl-emotions-heureux",
+      "wl-emotions-triste",
+      "wl-emotions-content",
+      "wl-emotions-fatigue",
+      "wl-emotions-peur",
+      "wl-emotions-aimer",
+      "wl-emotions-enerve",
+      "wl-emotions-surpris"
+    ],
+    "steps": [
+      {
+        "id": "wc-emotions-heureux-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-emotions-heureux",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je suis très heureux aujourd'hui.",
+          "Ils ont l'air heureux ensemble.",
+          "Un mariage, c'est un jour heureux."
+        ],
+        "options": ["счастливый, радостный", "богатый", "свободный", "здоровый"],
+        "correctIndex": 0,
+        "explanation": "heureux — счастливый, радостный (глубокое, полное чувство). Женский род — heureuse. Конечная x не читается: /ø.ʁø/. От него же bonheur — счастье."
+      },
+      {
+        "id": "wc-emotions-heureux-cmp",
+        "kind": "compare",
+        "wordId": "wl-emotions-heureux",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "heureux и content — близкая пара. В чём разница здесь?",
+        "phrases": ["Je suis heureux dans la vie.", "Je suis content de mon café."],
+        "options": [
+          "heureux = счастлив (глубоко, о жизни); content = доволен (легко, о чём-то конкретном)",
+          "Это полные синонимы, разницы нет",
+          "heureux = доволен мелочью; content = счастлив по-настоящему",
+          "Оба значат «уставший»"
+        ],
+        "correctIndex": 0,
+        "explanation": "heureux — глубокое счастье (heureux dans la vie). content — лёгкое удовлетворение конкретным (content de mon café, content de te voir). Можно быть content, не будучи heureux."
+      },
+      {
+        "id": "wc-emotions-triste-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-emotions-triste",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Elle est triste depuis hier.",
+          "C'est un film très triste.",
+          "Pourquoi tu as l'air triste ?"
+        ],
+        "options": ["грустный, печальный", "сердитый", "усталый", "скучный (о деле)"],
+        "correctIndex": 0,
+        "explanation": "triste — грустный, печальный. Одна форма для мужского и женского рода (il est triste / elle est triste). О человеке (elle est triste) и о вещи (un film triste)."
+      },
+      {
+        "id": "wc-emotions-triste-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-emotions-triste",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери услышанное слово.",
+        "audioText": "triste",
+        "options": ["triste", "piste", "liste", "juste"],
+        "correctIndex": 0,
+        "explanation": "triste /tʁist/ = грустный. Похоже звучат, но это другие слова: piste (дорожка, трасса), liste (список), juste (точный, справедливый). Различай по началу слова."
+      },
+      {
+        "id": "wc-emotions-content-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-emotions-content",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Je suis content de te voir.",
+          "Elle est contente de son travail.",
+          "Tu es content du résultat ?"
+        ],
+        "options": ["довольный, рад", "голодный", "занятый", "уверенный"],
+        "correctIndex": 0,
+        "explanation": "content — довольный, рад (чем-то конкретным). Часто с de: content de te voir, content de son travail. Женский род — contente. Это лёгкое чувство, не такое глубокое, как heureux."
+      },
+      {
+        "id": "wc-emotions-content-trap",
+        "kind": "trap",
+        "wordId": "wl-emotions-content",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ловушка ложного друга. Что значит фраза «Je suis content» ?",
+        "options": [
+          "Я доволен / рад",
+          "Я — содержание",
+          "Я согласен (подписываю)",
+          "Я спокоен и сдержан"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: фр. content (прил.) = «довольный», как англ. content (= pleased), а не русское «контент/содержание». «Содержание» по-французски — le contenu. Звук на конце носовой: /kɔ̃.tɑ̃/, t не читается."
+      },
+      {
+        "id": "wc-emotions-fatigue-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-emotions-fatigue",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Je suis fatigué, je vais dormir.",
+          "Après le sport, elle est fatiguée.",
+          "Tu as l'air fatigué aujourd'hui."
+        ],
+        "options": ["усталый", "больной", "голодный", "грустный"],
+        "correctIndex": 0,
+        "explanation": "fatigué — усталый. Женский род — fatiguée (звучит так же, /fa.ti.ɡe/). От глагола fatiguer (утомлять); связано с англ. fatigue. «Я устал» — Je suis fatigué."
+      },
+      {
+        "id": "wc-emotions-fatigue-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-emotions-fatigue",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать fatigué. Что оно значит?",
+        "bridge": "Англ. fatigue = усталость, утомление (то же слово, тот же корень). Французское fatigué — это «уставший».",
+        "options": ["усталый", "толстый", "модный", "пустой"],
+        "correctIndex": 0,
+        "explanation": "fatigué = усталый. Англ. fatigue (усталость) — прямой мост: те же буквы и смысл. Читается /fa.ti.ɡe/, gu даёт твёрдый звук «г»."
+      },
+      {
+        "id": "wc-emotions-peur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-emotions-peur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai peur du noir.",
+          "Elle a peur des chiens.",
+          "N'aie pas peur, tout va bien."
+        ],
+        "options": ["страх (боязнь)", "боль", "холод", "спешка"],
+        "correctIndex": 0,
+        "explanation": "peur (f) — страх. Главное: «бояться» — это avoir peur (буквально «иметь страх»): J'ai peur, а не «Je suis peur». «Бояться чего-то» — avoir peur de: peur du noir, peur des chiens."
+      },
+      {
+        "id": "wc-emotions-peur-trap",
+        "kind": "trap",
+        "wordId": "wl-emotions-peur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Выбери правильный перевод: «Я боюсь».",
+        "options": ["J'ai peur.", "Je suis peur.", "Je fais peur.", "J'ai peureux."],
+        "correctIndex": 0,
+        "explanation": "«Бояться» = avoir peur: J'ai peur. «Je suis peur» — калька, так не говорят. «Je fais peur» значит «я пугаю (других)». peureux — это прилагательное «пугливый», а не «страх»."
+      },
+      {
+        "id": "wc-emotions-peur-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-emotions-peur",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери услышанное слово.",
+        "audioText": "peur",
+        "options": ["peur", "beurre", "sœur", "cœur"],
+        "correctIndex": 0,
+        "explanation": "peur /pœʁ/ = страх. Рифмуются, но это другие слова: beurre (масло), sœur (сестра), cœur (сердце). Различай по первому звуку."
+      },
+      {
+        "id": "wc-emotions-aimer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-emotions-aimer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": ["Je t'aime.", "J'aime le chocolat.", "Elle aime voyager."],
+        "options": [
+          "любить; а также любить делать / нравиться",
+          "хотеть купить",
+          "уметь делать",
+          "искать"
+        ],
+        "correctIndex": 0,
+        "explanation": "aimer — любить. О человеке (Je t'aime — я тебя люблю), о вещах (J'aime le chocolat — люблю шоколад), о действии (aimer + инфинитив: aimer voyager). Читается /e.me/."
+      },
+      {
+        "id": "wc-emotions-aimer-cmp",
+        "kind": "compare",
+        "wordId": "wl-emotions-aimer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "aimer и aimer bien о человеке — важная разница. В чём она здесь?",
+        "phrases": ["Je t'aime.", "Je t'aime bien."],
+        "options": [
+          "Je t'aime = я тебя люблю (романтически); Je t'aime bien = ты мне нравишься (по-дружески)",
+          "Это одно и то же",
+          "Je t'aime = по-дружески; Je t'aime bien = романтически",
+          "bien здесь усиливает любовь, делает её сильнее"
+        ],
+        "correctIndex": 0,
+        "explanation": "Парадокс французского: о человеке aimer = «любить», а aimer bien — слабее, «хорошо относиться, нравиться» (по-дружески). bien здесь не усиливает, а смягчает чувство."
+      },
+      {
+        "id": "wc-emotions-enerve-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-emotions-enerve",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Il est énervé à cause du bruit.",
+          "Ça m'énerve d'attendre.",
+          "Pourquoi tu es énervée ?"
+        ],
+        "options": [
+          "раздражённый, на нервах",
+          "обессиленный, без сил",
+          "взволнованный от радости",
+          "испуганный"
+        ],
+        "correctIndex": 0,
+        "explanation": "énervé — раздражённый, на нервах, заведённый. От énerver (раздражать): ça m'énerve — это меня бесит. Женский род — énervée. Не путать с «спокойным» — это противоположность."
+      },
+      {
+        "id": "wc-emotions-enerve-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-emotions-enerve",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для énervé. Внимание: это ложный друг английского — и accent aigu стоит дважды.",
+        "examples": [
+          "В énervé спрятан «nerv-» (нерв): «он на нервах» = il est énervé. Так держится смысл «раздражён», а не англ. enervated «обессиленный».",
+          "Запомни два ударения вверх: é-ner-vé — будто брови взлетели от раздражения."
+        ]
+      },
+      {
+        "id": "wc-emotions-surpris-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-emotions-surpris",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Je suis surpris de te voir ici.",
+          "Elle est surprise par la nouvelle.",
+          "Il a l'air surpris."
+        ],
+        "options": ["удивлённый", "довольный", "усталый", "испуганный"],
+        "correctIndex": 0,
+        "explanation": "surpris — удивлённый. Женский род — surprise (как существительное une surprise — сюрприз). «Удивиться чему-то» — être surpris de / par: surpris de te voir, surpris par la nouvelle."
+      },
+      {
+        "id": "wc-emotions-surpris-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-emotions-surpris",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери услышанное слово.",
+        "audioText": "surpris",
+        "options": ["surpris", "appris", "compris", "repris"],
+        "correctIndex": 0,
+        "explanation": "surpris /syʁ.pʁi/ = удивлённый. Семья причастий на -pris: appris (выучил), compris (понял), repris (возобновил). Различай по приставке (sur-, ap-, com-, re-)."
+      }
+    ]
+  }
+]

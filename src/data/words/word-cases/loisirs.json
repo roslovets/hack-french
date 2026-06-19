@@ -1,0 +1,355 @@
+[
+  {
+    "id": "wc-loisirs",
+    "title": "Досуг и интересы",
+    "theme": "loisirs",
+    "level": "A2",
+    "wordIds": [
+      "wl-loisirs-sport",
+      "wl-loisirs-musique",
+      "wl-loisirs-film",
+      "wl-loisirs-livre",
+      "wl-loisirs-jouer",
+      "wl-loisirs-lire",
+      "wl-loisirs-vacances",
+      "wl-loisirs-fete"
+    ],
+    "steps": [
+      {
+        "id": "wc-loisirs-sport-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-loisirs-sport",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je fais du sport tous les matins.",
+          "Le foot est un sport collectif.",
+          "Elle adore le sport à la télé."
+        ],
+        "options": ["спорт", "игра", "тренер", "матч"],
+        "correctIndex": 0,
+        "explanation": "sport (m) — спорт. «faire du sport» — заниматься спортом. Матч — un match, игра — un jeu, тренер — un entraîneur."
+      },
+      {
+        "id": "wc-loisirs-sport-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-loisirs-sport",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит sport?",
+        "bridge": "Англ. «sport» — спорт; пишется точно так же. Но читается по-французски /spɔʁ/, конечная t не звучит.",
+        "options": ["спорт", "место", "паспорт", "порт"],
+        "correctIndex": 0,
+        "explanation": "sport = спорт. Те же буквы, что в английском. Внимание: конечная t молчит — /spɔʁ/, а не «спорт» с «т»."
+      },
+      {
+        "id": "wc-loisirs-musique-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-loisirs-musique",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'écoute de la musique dans le bus.",
+          "Elle fait de la musique depuis l'enfance.",
+          "Quelle belle musique !"
+        ],
+        "options": ["музыка", "песня", "концерт", "звук"],
+        "correctIndex": 0,
+        "explanation": "musique (f) — музыка. «écouter de la musique» — слушать музыку, «faire de la musique» — заниматься музыкой. Песня — une chanson, концерт — un concert."
+      },
+      {
+        "id": "wc-loisirs-musique-sort",
+        "kind": "sort",
+        "wordId": "wl-loisirs-musique",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом musique звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "écouter de la musique",
+            "basket": "ok"
+          },
+          {
+            "text": "faire de la musique",
+            "basket": "ok"
+          },
+          {
+            "text": "un cours de musique",
+            "basket": "ok"
+          },
+          {
+            "text": "manger de la musique",
+            "basket": "no"
+          },
+          {
+            "text": "boire de la musique",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«écouter / faire de la musique», «un cours de musique» — естественно. «manger de la musique» (есть музыку) и «boire de la musique» (пить музыку) — бессмыслица: музыку слушают (écouter)."
+      },
+      {
+        "id": "wc-loisirs-film-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-loisirs-film",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On regarde un film ce soir ?",
+          "C'est un film d'horreur.",
+          "J'ai vu ce film deux fois."
+        ],
+        "options": ["фильм", "сериал", "экран", "билет"],
+        "correctIndex": 0,
+        "explanation": "film (m) — фильм. «regarder un film» — смотреть фильм, «un film d'horreur» — фильм ужасов. Сериал — une série, экран — un écran."
+      },
+      {
+        "id": "wc-loisirs-film-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-loisirs-film",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит film?",
+        "bridge": "Англ. «film» — фильм; те же буквы. По-французски читается /film/, без английского звука.",
+        "options": ["фильм", "плёнка для фото", "афиша", "роль"],
+        "correctIndex": 0,
+        "explanation": "film = фильм (кино). Прямой мост из английского. Афиша — une affiche, роль — un rôle."
+      },
+      {
+        "id": "wc-loisirs-livre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-loisirs-livre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je lis un livre passionnant.",
+          "Ce livre a trois cents pages.",
+          "Elle a écrit un livre de cuisine."
+        ],
+        "options": ["книга", "журнал", "страница", "тетрадь"],
+        "correctIndex": 0,
+        "explanation": "livre (m) — книга. «lire un livre» — читать книгу, «un livre de cuisine» — кулинарная книга. Журнал — un magazine, тетрадь — un cahier."
+      },
+      {
+        "id": "wc-loisirs-livre-trap",
+        "kind": "trap",
+        "wordId": "wl-loisirs-livre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово livre встречается с разным родом. «J'ai lu un bon livre» — про что речь?",
+        "phrases": ["J'ai lu un bon livre.", "Ça coûte une livre."],
+        "options": [
+          "книга — un livre (m) значит «книга»",
+          "полкило — livre всегда про вес",
+          "фунт стерлингов — livre это только деньги",
+          "свобода — это слово libre"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка рода: un livre (m) — книга; une livre (f) — фунт (вес ~500 г или валюта). Род меняет значение! В «un bon livre» это книга. Не путать с libre (свободный)."
+      },
+      {
+        "id": "wc-loisirs-jouer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-loisirs-jouer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les enfants jouent dans le jardin.",
+          "Je joue au tennis le dimanche.",
+          "Elle joue du piano très bien."
+        ],
+        "options": ["играть", "бегать", "петь", "смотреть"],
+        "correctIndex": 0,
+        "explanation": "jouer — играть (и в игры, и на инструменте). «jouer au tennis» — играть в теннис, «jouer du piano» — играть на пианино. Петь — chanter."
+      },
+      {
+        "id": "wc-loisirs-jouer-cmp",
+        "kind": "compare",
+        "wordId": "wl-loisirs-jouer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "jouer au и jouer du — в чём разница?",
+        "phrases": ["Je joue au football.", "Je joue du piano."],
+        "options": [
+          "jouer à (au/aux) — играть в игру/спорт; jouer de (du/de la) — играть на музыкальном инструменте.",
+          "Это одно и то же, предлог любой.",
+          "jouer au — про инструменты, jouer du — про спорт.",
+          "jouer du значит «не играть»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Правило предлога: спорт и игры — jouer à (jouer au foot, jouer aux cartes); музыкальные инструменты — jouer de (jouer du piano, jouer de la guitare)."
+      },
+      {
+        "id": "wc-loisirs-jouer-sort",
+        "kind": "sort",
+        "wordId": "wl-loisirs-jouer",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Где предлог после jouer выбран правильно, а где — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "jouer au foot",
+            "basket": "ok"
+          },
+          {
+            "text": "jouer de la guitare",
+            "basket": "ok"
+          },
+          {
+            "text": "jouer aux cartes",
+            "basket": "ok"
+          },
+          {
+            "text": "jouer du foot",
+            "basket": "no"
+          },
+          {
+            "text": "jouer à la guitare",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Спорт/игры — à: «jouer au foot», «jouer aux cartes». Инструменты — de: «jouer de la guitare». Поэтому «jouer du foot» и «jouer à la guitare» — ошибки."
+      },
+      {
+        "id": "wc-loisirs-lire-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-loisirs-lire",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'aime lire avant de dormir.",
+          "Tu lis le journal tous les matins ?",
+          "Elle lit une histoire aux enfants."
+        ],
+        "options": ["читать", "писать", "считать", "учить"],
+        "correctIndex": 0,
+        "explanation": "lire — читать. «lire le journal» — читать газету, «lire une histoire» — читать историю. Писать — écrire, считать — compter."
+      },
+      {
+        "id": "wc-loisirs-lire-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-loisirs-lire",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "lire",
+        "options": ["lire", "rire", "dire", "lier"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало lire /liʁ/ — читать. Похожие, но другие слова: rire /ʁiʁ/ — смеяться, dire /diʁ/ — говорить, lier /lje/ — связывать."
+      },
+      {
+        "id": "wc-loisirs-lire-hint",
+        "kind": "wordHint",
+        "wordId": "wl-loisirs-lire",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: водить глазами по строчкам книги, чтобы понять написанное.",
+        "answer": "lire",
+        "hints": ["Начинается на l…", "4 буквы, рифмуется с dire", "J'aime ___ avant de dormir."],
+        "explanation": "lire — читать /liʁ/. Неправильный глагол: je lis, tu lis, il lit, nous lisons. Прошедшее причастие — lu (j'ai lu)."
+      },
+      {
+        "id": "wc-loisirs-vacances-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-loisirs-vacances",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On part en vacances en juillet.",
+          "Les grandes vacances commencent bientôt.",
+          "Bonnes vacances !"
+        ],
+        "options": ["каникулы, отпуск", "выходной", "праздник", "поездка"],
+        "correctIndex": 0,
+        "explanation": "vacances (f, всегда мн. ч.) — каникулы, отпуск. «partir en vacances» — уехать в отпуск, «les grandes vacances» — летние каникулы. Выходной — un jour de congé."
+      },
+      {
+        "id": "wc-loisirs-vacances-trap",
+        "kind": "trap",
+        "wordId": "wl-loisirs-vacances",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как правильно сказать «Я в отпуске»?",
+        "options": [
+          "Je suis en vacances. — слово всегда во множественном числе",
+          "Je suis en vacance. — в единственном",
+          "Je suis une vacance.",
+          "Je suis en vacant."
+        ],
+        "correctIndex": 0,
+        "explanation": "vacances — это pluralia tantum: существует только во множественном числе, всегда с -s. Поэтому «en vacances», «les vacances», «bonnes vacances», никогда «une vacance»."
+      },
+      {
+        "id": "wc-loisirs-fete-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-loisirs-fete",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On fait la fête ce soir !",
+          "C'est la fête de la musique aujourd'hui.",
+          "Une grande fête d'anniversaire."
+        ],
+        "options": ["праздник, вечеринка", "встреча", "ужин", "выходной"],
+        "correctIndex": 0,
+        "explanation": "fête (f) — праздник, вечеринка. «faire la fête» — праздновать, веселиться, «une fête d'anniversaire» — день рождения (вечеринка). Обрати внимание на accent circonflexe: f-ê-t-e."
+      },
+      {
+        "id": "wc-loisirs-fete-cmp",
+        "kind": "compare",
+        "wordId": "wl-loisirs-fete",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "faire la fête и fêter — в чём разница?",
+        "phrases": ["On fait la fête.", "On fête son anniversaire."],
+        "options": [
+          "«faire la fête» — веселиться, гулять (без объекта); «fêter qqch» — отмечать что-то конкретное.",
+          "Это полные синонимы.",
+          "«faire la fête» значит «готовить праздник для других».",
+          "«fêter» значит «закончить праздник»."
+        ],
+        "correctIndex": 0,
+        "explanation": "«faire la fête» — гулять, веселиться (Hier soir, on a fait la fête). «fêter» — отмечать конкретное событие: fêter son anniversaire, fêter Noël."
+      },
+      {
+        "id": "wc-loisirs-fete-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-loisirs-fete",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — про развлечения и досуг. Найди лишнее.",
+        "options": ["une fête", "un film", "un livre", "une facture"],
+        "correctIndex": 3,
+        "explanation": "Праздник (une fête), фильм (un film) и книга (un livre) — про досуг и отдых. Счёт (une facture) — лишний: это бумага на оплату, никак не развлечение."
+      }
+    ]
+  }
+]

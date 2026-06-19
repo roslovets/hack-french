@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-emotions-heureux",
+    "lemma": "heureux",
+    "displayForm": "heureux / heureuse",
+    "pos": "adj",
+    "ipa": "/ø.ʁø/",
+    "translationsRu": ["счастливый", "радостный"],
+    "translationsEn": ["happy", "glad"],
+    "semanticCore": "Глубокое, полное чувство счастья — о жизни, человеке или событии, а не о мелком удовольствии.",
+    "collocations": [
+      {
+        "fr": "être heureux",
+        "ru": "быть счастливым"
+      },
+      {
+        "fr": "rendre quelqu'un heureux",
+        "ru": "сделать кого-то счастливым"
+      },
+      {
+        "fr": "un jour heureux",
+        "ru": "счастливый день"
+      },
+      {
+        "fr": "heureux de vous rencontrer",
+        "ru": "рад знакомству"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "content",
+        "note": "heureux = счастлив глубоко (о жизни); content = доволен чем-то конкретным, легче и поверхностнее.",
+        "wordId": "wl-emotions-content"
+      },
+      {
+        "with": "joyeux",
+        "note": "heureux = счастливый (внутреннее состояние); joyeux = весёлый, радостный внешне (joyeux anniversaire — с днём рождения)."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["emotions", "positif"],
+    "caseIds": ["wc-emotions"]
+  },
+  {
+    "id": "wl-emotions-triste",
+    "lemma": "triste",
+    "pos": "adj",
+    "ipa": "/tʁist/",
+    "translationsRu": ["грустный", "печальный"],
+    "translationsEn": ["sad", "unhappy"],
+    "semanticCore": "Печаль и грусть — о человеке в этом состоянии и о том, что грусть вызывает (фильм, новость).",
+    "collocations": [
+      {
+        "fr": "être triste",
+        "ru": "грустить, быть грустным"
+      },
+      {
+        "fr": "un film triste",
+        "ru": "грустный фильм"
+      },
+      {
+        "fr": "avoir l'air triste",
+        "ru": "выглядеть грустным"
+      },
+      {
+        "fr": "une triste nouvelle",
+        "ru": "печальная новость"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "déprimé",
+        "note": "triste = грустный (обычное, временное чувство); déprimé = подавленный, в депрессии (сильнее и дольше)."
+      },
+      {
+        "with": "ennuyeux",
+        "note": "triste = печальный (вызывает грусть); ennuyeux = скучный (вызывает скуку). Un film triste ≠ un film ennuyeux."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["emotions", "negatif"],
+    "caseIds": ["wc-emotions"]
+  },
+  {
+    "id": "wl-emotions-content",
+    "lemma": "content",
+    "displayForm": "content / contente",
+    "pos": "adj",
+    "ipa": "/kɔ̃.tɑ̃/",
+    "translationsRu": ["довольный", "рад"],
+    "translationsEn": ["pleased", "glad"],
+    "semanticCore": "Лёгкое удовлетворение чем-то конкретным — рад встрече, доволен покупкой; слабее, чем heureux.",
+    "collocations": [
+      {
+        "fr": "content de te voir",
+        "ru": "рад тебя видеть"
+      },
+      {
+        "fr": "être content de soi",
+        "ru": "быть довольным собой"
+      },
+      {
+        "fr": "content du résultat",
+        "ru": "доволен результатом"
+      },
+      {
+        "fr": "très content",
+        "ru": "очень доволен"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "content (англ.)",
+        "note": "Фр. content (прил.) = «довольный», как англ. content (= pleased), но НЕ русское «контент». «Содержание» — le contenu."
+      },
+      {
+        "with": "heureux",
+        "note": "content = доволен конкретным (de te voir); heureux = счастлив глубоко. content слабее и привязан к причине через de.",
+        "wordId": "wl-emotions-heureux"
+      }
+    ],
+    "frequencyRank": 410,
+    "level": "A2",
+    "tags": ["emotions", "positif"],
+    "caseIds": ["wc-emotions"]
+  },
+  {
+    "id": "wl-emotions-fatigue",
+    "lemma": "fatigué",
+    "displayForm": "fatigué / fatiguée",
+    "pos": "adj",
+    "ipa": "/fa.ti.ɡe/",
+    "translationsRu": ["усталый", "уставший"],
+    "translationsEn": ["tired"],
+    "semanticCore": "Физическая или эмоциональная усталость — состояние «без сил», обычно после нагрузки.",
+    "collocations": [
+      {
+        "fr": "être fatigué",
+        "ru": "быть усталым, устать"
+      },
+      {
+        "fr": "se sentir fatigué",
+        "ru": "чувствовать себя усталым"
+      },
+      {
+        "fr": "avoir l'air fatigué",
+        "ru": "выглядеть усталым"
+      },
+      {
+        "fr": "un peu fatigué",
+        "ru": "немного уставший"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fatigue (англ.)",
+        "note": "Англ. fatigue = усталость (существительное); фр. прилагательное fatigué = «уставший». Не спутай часть речи."
+      },
+      {
+        "with": "épuisé",
+        "note": "fatigué = усталый (обычно); épuisé = вымотанный, без сил совсем (намного сильнее)."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["emotions", "etat"],
+    "caseIds": ["wc-emotions"]
+  },
+  {
+    "id": "wl-emotions-peur",
+    "lemma": "peur",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pœʁ/",
+    "translationsRu": ["страх", "боязнь"],
+    "translationsEn": ["fear", "fright"],
+    "semanticCore": "Страх как существительное; «бояться» строят через avoir peur (de) — иметь страх, а не «быть страхом».",
+    "collocations": [
+      {
+        "fr": "avoir peur",
+        "ru": "бояться"
+      },
+      {
+        "fr": "avoir peur de",
+        "ru": "бояться чего-то / кого-то"
+      },
+      {
+        "fr": "faire peur à quelqu'un",
+        "ru": "пугать кого-то"
+      },
+      {
+        "fr": "la peur du noir",
+        "ru": "боязнь темноты"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "avoir peur / être peur",
+        "note": "«Бояться» = avoir peur (J'ai peur). «Je suis peur» — калька с русского/английского, так не говорят."
+      },
+      {
+        "with": "peureux",
+        "note": "peur (сущ.) = страх; peureux (прил.) = пугливый, боязливый. Разные части речи."
+      }
+    ],
+    "frequencyRank": 430,
+    "level": "A2",
+    "tags": ["emotions", "negatif"],
+    "caseIds": ["wc-emotions"]
+  },
+  {
+    "id": "wl-emotions-aimer",
+    "lemma": "aimer",
+    "pos": "verb",
+    "ipa": "/e.me/",
+    "translationsRu": ["любить", "нравиться"],
+    "translationsEn": ["to love", "to like"],
+    "semanticCore": "Любить — о людях (Je t'aime), о вещах и действиях (aimer le café, aimer + инфинитив); aimer bien о человеке смягчает до «нравиться».",
+    "collocations": [
+      {
+        "fr": "Je t'aime",
+        "ru": "я тебя люблю"
+      },
+      {
+        "fr": "aimer bien",
+        "ru": "хорошо относиться, нравиться (слабее любви)"
+      },
+      {
+        "fr": "aimer le café",
+        "ru": "любить кофе"
+      },
+      {
+        "fr": "aimer faire quelque chose",
+        "ru": "любить что-то делать"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "aimer bien",
+        "note": "О человеке aimer = «любить» (романтически), а aimer bien — слабее, «нравиться, по-дружески». bien здесь смягчает, а не усиливает."
+      },
+      {
+        "with": "adorer",
+        "note": "aimer = любить; adorer = обожать (сильнее). О еде/вещах часто говорят j'adore вместо простого j'aime для усиления."
+      }
+    ],
+    "frequencyRank": 150,
+    "level": "A2",
+    "tags": ["emotions", "verbe"],
+    "caseIds": ["wc-emotions"]
+  },
+  {
+    "id": "wl-emotions-enerve",
+    "lemma": "énervé",
+    "displayForm": "énervé / énervée",
+    "pos": "adj",
+    "ipa": "/e.nɛʁ.ve/",
+    "translationsRu": ["раздражённый", "на нервах"],
+    "translationsEn": ["annoyed", "irritated"],
+    "semanticCore": "Раздражён, заведён, на взводе из-за чего-то надоедливого; от глагола énerver (раздражать): ça m'énerve.",
+    "collocations": [
+      {
+        "fr": "être énervé",
+        "ru": "быть раздражённым, на нервах"
+      },
+      {
+        "fr": "ça m'énerve",
+        "ru": "это меня бесит / раздражает"
+      },
+      {
+        "fr": "énervé contre quelqu'un",
+        "ru": "раздражён на кого-то"
+      },
+      {
+        "fr": "un peu énervé",
+        "ru": "слегка раздражён"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "enervated (англ.)",
+        "note": "Ложный друг: англ. enervated = обессиленный, вялый; фр. énervé = раздражённый, на нервах. Смыслы почти противоположны."
+      },
+      {
+        "with": "en colère",
+        "note": "énervé = раздражён, заведён (нервы); en colère = в гневе, злой (сильнее). énervé может перерасти в en colère."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["emotions", "negatif"],
+    "caseIds": ["wc-emotions"]
+  },
+  {
+    "id": "wl-emotions-surpris",
+    "lemma": "surpris",
+    "displayForm": "surpris / surprise",
+    "pos": "adj",
+    "ipa": "/syʁ.pʁi/",
+    "translationsRu": ["удивлённый"],
+    "translationsEn": ["surprised", "astonished"],
+    "semanticCore": "Удивлён неожиданным; строится через être surpris de / par; женская форма surprise совпадает с существительным «сюрприз».",
+    "collocations": [
+      {
+        "fr": "être surpris de",
+        "ru": "удивиться чему-то (+ инфинитив/сущ.)"
+      },
+      {
+        "fr": "surpris par la nouvelle",
+        "ru": "удивлён новостью"
+      },
+      {
+        "fr": "agréablement surpris",
+        "ru": "приятно удивлён"
+      },
+      {
+        "fr": "avoir l'air surpris",
+        "ru": "выглядеть удивлённым"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "étonné",
+        "note": "surpris и étonné оба = «удивлённый» и близки; étonné чуть сильнее подчёркивает изумление, surpris — нейтральнее и частотнее."
+      },
+      {
+        "with": "surprise (сущ.)",
+        "note": "surprise — это и женская форма прилагательного (elle est surprise), и существительное une surprise (сюрприз). Различай по контексту."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["emotions", "etat"],
+    "caseIds": ["wc-emotions"]
+  }
+]

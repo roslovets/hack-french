@@ -1,0 +1,336 @@
+[
+  {
+    "id": "wl-argent-argent",
+    "lemma": "argent",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/aʁ.ʒɑ̃/",
+    "translationsRu": ["деньги", "серебро"],
+    "translationsEn": ["money", "silver"],
+    "semanticCore": "Деньги вообще, как средство и ресурс; то же слово — «серебро» как металл.",
+    "collocations": [
+      {
+        "fr": "gagner de l'argent",
+        "ru": "зарабатывать деньги"
+      },
+      {
+        "fr": "dépenser de l'argent",
+        "ru": "тратить деньги"
+      },
+      {
+        "fr": "retirer de l'argent",
+        "ru": "снять деньги (в банкомате)"
+      },
+      {
+        "fr": "une bague en argent",
+        "ru": "серебряное кольцо"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "monnaie",
+        "note": "argent = деньги вообще (ресурс); monnaie = мелочь, сдача, разменные монеты. «Нет денег» — pas d'argent; «нет сдачи / мелочи» — pas de monnaie."
+      },
+      {
+        "with": "money (англ.)",
+        "note": "Англ. «money» похоже на monnaie, но «деньги» по-французски — argent, а не monnaie. Ложная пара."
+      }
+    ],
+    "frequencyRank": 260,
+    "level": "A2",
+    "tags": ["argent", "finance"],
+    "caseIds": ["wc-argent"]
+  },
+  {
+    "id": "wl-argent-prix",
+    "lemma": "prix",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pʁi/",
+    "translationsRu": ["цена", "стоимость", "приз"],
+    "translationsEn": ["price", "prize"],
+    "semanticCore": "Сколько стоит товар; то же слово — «приз», награда (un prix littéraire).",
+    "collocations": [
+      {
+        "fr": "le prix d'un café",
+        "ru": "цена кофе"
+      },
+      {
+        "fr": "à quel prix ?",
+        "ru": "по какой цене?"
+      },
+      {
+        "fr": "un bon prix",
+        "ru": "хорошая (выгодная) цена"
+      },
+      {
+        "fr": "les prix montent",
+        "ru": "цены растут"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "prize (англ.)",
+        "note": "Англ. «price» = цена, «prize» = приз — два слова. По-французски оба это prix; нужное значение даёт контекст."
+      },
+      {
+        "with": "coût",
+        "note": "prix = цена (что платит покупатель); coût = издержки, во что обходится производство/услуга. В магазине почти всегда prix."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A2",
+    "tags": ["argent", "commerce"],
+    "caseIds": ["wc-argent"]
+  },
+  {
+    "id": "wl-argent-acheter",
+    "lemma": "acheter",
+    "pos": "verb",
+    "ipa": "/aʃ.te/",
+    "translationsRu": ["покупать", "купить"],
+    "translationsEn": ["to buy", "to purchase"],
+    "semanticCore": "Брать товар, отдавая за него деньги; направлен на сам предмет покупки.",
+    "collocations": [
+      {
+        "fr": "acheter du pain",
+        "ru": "покупать хлеб"
+      },
+      {
+        "fr": "acheter un cadeau",
+        "ru": "купить подарок"
+      },
+      {
+        "fr": "acheter en ligne",
+        "ru": "покупать онлайн"
+      },
+      {
+        "fr": "j'achète",
+        "ru": "я покупаю"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "payer",
+        "note": "acheter = приобретать вещь (acheter du pain); payer = отдавать деньги (payer le pain, payer par carte). Покупают товар, платят деньгами."
+      },
+      {
+        "with": "vendre",
+        "note": "acheter = покупать; vendre = продавать. Антонимы: покупатель achète, продавец vend."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["argent", "commerce"],
+    "caseIds": ["wc-argent"]
+  },
+  {
+    "id": "wl-argent-payer",
+    "lemma": "payer",
+    "pos": "verb",
+    "ipa": "/pe.je/",
+    "translationsRu": ["платить", "заплатить", "оплачивать"],
+    "translationsEn": ["to pay"],
+    "semanticCore": "Отдавать деньги за товар или услугу; в фокусе сам акт оплаты, а не вещь.",
+    "collocations": [
+      {
+        "fr": "payer en espèces",
+        "ru": "платить наличными"
+      },
+      {
+        "fr": "payer par carte",
+        "ru": "платить картой"
+      },
+      {
+        "fr": "payer l'addition",
+        "ru": "оплатить счёт (в кафе)"
+      },
+      {
+        "fr": "payer en ligne",
+        "ru": "платить онлайн"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "acheter",
+        "note": "payer = отдавать деньги (payer par carte, payer l'addition); acheter = приобретать вещь. «Я плачу картой» — Je paie par carte, а не «j'achète par carte»."
+      },
+      {
+        "with": "coûter",
+        "note": "payer = платить (действие платящего); coûter = стоить (о цене вещи): «Ça coûte 5 €» = «Это стоит 5 €», «Je paie 5 €» = «Я плачу 5 €»."
+      }
+    ],
+    "frequencyRank": 340,
+    "level": "A2",
+    "tags": ["argent", "commerce"],
+    "caseIds": ["wc-argent"]
+  },
+  {
+    "id": "wl-argent-cher",
+    "lemma": "cher",
+    "displayForm": "cher / chère",
+    "pos": "adj",
+    "ipa": "/ʃɛʁ/",
+    "translationsRu": ["дорогой (по цене)", "дорогой (милый)"],
+    "translationsEn": ["expensive", "dear"],
+    "semanticCore": "Стоящий много денег; то же слово — «дорогой/милый» в обращении (Cher ami).",
+    "collocations": [
+      {
+        "fr": "c'est trop cher",
+        "ru": "это слишком дорого"
+      },
+      {
+        "fr": "un restaurant cher",
+        "ru": "дорогой ресторан"
+      },
+      {
+        "fr": "Chère Madame",
+        "ru": "Уважаемая мадам (в письме)"
+      },
+      {
+        "fr": "coûter cher",
+        "ru": "дорого стоить"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bon marché",
+        "note": "cher = дорогой; bon marché = дешёвый, недорогой (антоним к cher). «bon marché» неизменяемо — не согласуется в роде/числе: une robe bon marché, des fruits bon marché."
+      },
+      {
+        "with": "coûteux",
+        "note": "cher — обычное слово для «дорогой» в речи; coûteux — книжнее, «затратный». В магазине говорят c'est cher."
+      }
+    ],
+    "frequencyRank": 360,
+    "level": "A2",
+    "tags": ["argent", "qualite"],
+    "caseIds": ["wc-argent"]
+  },
+  {
+    "id": "wl-argent-magasin",
+    "lemma": "magasin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ma.ɡa.zɛ̃/",
+    "translationsRu": ["магазин"],
+    "translationsEn": ["shop", "store"],
+    "semanticCore": "Помещение, где продают товары; место, куда идут за покупками.",
+    "collocations": [
+      {
+        "fr": "aller au magasin",
+        "ru": "идти в магазин"
+      },
+      {
+        "fr": "un grand magasin",
+        "ru": "универмаг"
+      },
+      {
+        "fr": "faire les magasins",
+        "ru": "ходить по магазинам (шопинг)"
+      },
+      {
+        "fr": "un magasin de vêtements",
+        "ru": "магазин одежды"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "magazine (англ.)",
+        "note": "Ложный друг: фр. magasin = магазин, а англ. «magazine» (журнал) — это un magazine / une revue. Похоже, но разное."
+      },
+      {
+        "with": "boutique",
+        "note": "magasin = магазин (любого размера); boutique = небольшой магазинчик, лавка, часто модный/специализированный."
+      }
+    ],
+    "frequencyRank": 400,
+    "level": "A2",
+    "tags": ["argent", "commerce"],
+    "caseIds": ["wc-argent"]
+  },
+  {
+    "id": "wl-argent-carte",
+    "lemma": "carte",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kaʁt/",
+    "translationsRu": ["карта (банковская)", "меню", "карта (географическая)"],
+    "translationsEn": ["card", "menu"],
+    "semanticCore": "Карта в широком смысле: банковская карта, меню в кафе, карта местности.",
+    "collocations": [
+      {
+        "fr": "payer par carte",
+        "ru": "платить картой"
+      },
+      {
+        "fr": "une carte bancaire",
+        "ru": "банковская карта"
+      },
+      {
+        "fr": "la carte du restaurant",
+        "ru": "меню ресторана"
+      },
+      {
+        "fr": "une carte de la ville",
+        "ru": "карта города"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "menu",
+        "note": "la carte = полный список блюд на выбор (заказываешь à la carte); le menu = комплекс по фиксированной цене (entrée + plat + dessert). Увидеть всё меню — попросить la carte."
+      },
+      {
+        "with": "cart (англ.)",
+        "note": "Англ. «cart» — тележка (un chariot / un caddie), а фр. carte — карта/карточка. Ложный друг по звучанию."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["argent", "objet"],
+    "caseIds": ["wc-argent"]
+  },
+  {
+    "id": "wl-argent-monnaie",
+    "lemma": "monnaie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mɔ.nɛ/",
+    "translationsRu": ["мелочь", "сдача", "валюта"],
+    "translationsEn": ["change", "coins", "currency"],
+    "semanticCore": "Мелкие деньги: монеты на руках и сдача с покупки; в широком смысле — валюта.",
+    "collocations": [
+      {
+        "fr": "rendre la monnaie",
+        "ru": "дать сдачу"
+      },
+      {
+        "fr": "avoir de la monnaie",
+        "ru": "иметь мелочь / разменные деньги"
+      },
+      {
+        "fr": "garder la monnaie",
+        "ru": "оставить сдачу (себе)"
+      },
+      {
+        "fr": "la monnaie unique",
+        "ru": "единая валюта (евро)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "argent",
+        "note": "monnaie = мелочь, сдача, монеты; argent = деньги вообще. «У меня нет мелочи» — Je n'ai pas de monnaie; «У меня нет денег» — Je n'ai pas d'argent."
+      },
+      {
+        "with": "money (англ.)",
+        "note": "Ложный друг: англ. «money» = деньги (фр. argent), а monnaie — это именно сдача/мелочь/валюта, а не «деньги вообще»."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["argent", "finance"],
+    "caseIds": ["wc-argent"]
+  }
+]

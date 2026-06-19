@@ -1,0 +1,314 @@
+[
+  {
+    "id": "wc-travail",
+    "title": "Работа",
+    "theme": "travail",
+    "level": "A2",
+    "wordIds": [
+      "wl-travail-travail",
+      "wl-travail-bureau",
+      "wl-travail-collegue",
+      "wl-travail-patron",
+      "wl-travail-metier",
+      "wl-travail-reunion",
+      "wl-travail-salaire",
+      "wl-travail-employe"
+    ],
+    "steps": [
+      {
+        "id": "wc-travail-travail-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-travail-travail",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je vais au travail tous les matins.",
+          "Il a beaucoup de travail aujourd'hui.",
+          "Elle cherche du travail depuis un mois."
+        ],
+        "options": ["работа, труд", "путешествие", "выходной", "усталость"],
+        "correctIndex": 0,
+        "explanation": "travail (m) — работа (и как занятие, и как место, куда идёшь). «aller au travail» — идти на работу, «chercher du travail» — искать работу. Множественное число особое: des travaux (работы, ремонт)."
+      },
+      {
+        "id": "wc-travail-travail-trap",
+        "kind": "trap",
+        "wordId": "wl-travail-travail",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Французское travail похоже на английское «travel» (путешествие). Что оно значит на самом деле?",
+        "options": ["работа", "путешествие", "поездка", "перевод"],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: travail (m) — это «работа», а не «путешествие». Путешествовать — voyager, поездка — un voyage. Слова случайно похожи, но смысл разный."
+      },
+      {
+        "id": "wc-travail-bureau-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-travail-bureau",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский даёт подсказку. Что значит bureau?",
+        "bridge": "Англ. «bureau» (бюро, комод, ведомство) пришло из французского. Во французском это прежде всего рабочее место: кабинет/офис, а также письменный стол.",
+        "options": ["офис / письменный стол", "кухня", "кровать", "лестница"],
+        "correctIndex": 0,
+        "explanation": "bureau (m) — и «кабинет / офис» (помещение, где работают), и «письменный стол». «aller au bureau» — идти в офис, «sur le bureau» — на (письменном) столе. Множественное — des bureaux."
+      },
+      {
+        "id": "wc-travail-bureau-cmp",
+        "kind": "compare",
+        "wordId": "wl-travail-bureau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "В обоих предложениях есть bureau. Об одном ли и том же речь?",
+        "phrases": ["Les clés sont sur le bureau.", "Je vais au bureau à huit heures."],
+        "options": [
+          "Нет: в первом bureau — письменный стол, во втором — офис (рабочее место).",
+          "Да, оба раза это офис.",
+          "Да, оба раза это письменный стол.",
+          "Нет: в первом это банк, во втором — стол."
+        ],
+        "correctIndex": 0,
+        "explanation": "У bureau два значения. «sur le bureau» — на письменном столе (предмет мебели). «aller au bureau» — идти в офис (помещение). Контекст подсказывает, какое из двух."
+      },
+      {
+        "id": "wc-travail-collegue-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-travail-collegue",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Mon collègue m'aide souvent.",
+          "Elle déjeune avec ses collègues.",
+          "C'est une collègue très sympa."
+        ],
+        "options": ["коллега, сослуживец", "начальник", "клиент", "сосед"],
+        "correctIndex": 0,
+        "explanation": "collègue (m/f) — коллега, человек, с которым вместе работаешь. Род по человеку: un collègue / une collègue. Начальник — le patron, клиент — un client."
+      },
+      {
+        "id": "wc-travail-collegue-trap",
+        "kind": "trap",
+        "wordId": "wl-travail-collegue",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Тебя зовут на обед сослуживцы. Кого имеют в виду под mes collègues?",
+        "options": [
+          "людей, с которыми вместе работаешь",
+          "школьных однокурсников",
+          "близких друзей вне работы",
+          "родственников"
+        ],
+        "correctIndex": 0,
+        "explanation": "collègue — это рабочая связь: люди из одного коллектива. Это не «друг» (un ami / un copain) и не «однокашник». Коллега может стать другом, но само слово говорит лишь о совместной работе."
+      },
+      {
+        "id": "wc-travail-patron-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-travail-patron",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mon patron est exigeant mais juste.",
+          "Le patron du café connaît tous ses clients.",
+          "Demande au patron si tu peux partir plus tôt."
+        ],
+        "options": ["начальник, хозяин", "сосед", "покупатель", "официант"],
+        "correctIndex": 0,
+        "explanation": "patron (m), patronne (f) — начальник, шеф; хозяин (заведения). «mon patron» — мой начальник, «le patron du café» — хозяин кафе. Это разговорнее, чем directeur (директор)."
+      },
+      {
+        "id": "wc-travail-patron-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-travail-patron",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "patron",
+        "options": ["patron", "citron", "carton", "poltron"],
+        "correctIndex": 0,
+        "explanation": "patron /pa.tʁɔ̃/ (начальник), citron /si.tʁɔ̃/ (лимон), carton /kaʁ.tɔ̃/ (картон, коробка), poltron /pɔl.tʁɔ̃/ (трус). Это разные слова, не омофоны: все на -on, но различаются началом."
+      },
+      {
+        "id": "wc-travail-metier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-travail-metier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Mon métier, c'est cuisinier.",
+          "Elle aime son métier.",
+          "Apprendre un métier prend du temps."
+        ],
+        "options": ["профессия, ремесло", "зарплата", "собрание", "офис"],
+        "correctIndex": 0,
+        "explanation": "métier (m) — профессия, ремесло: чем человек занимается, кем работает. «Quel est ton métier ?» — кто ты по профессии? Зарплата — le salaire, собрание — une réunion."
+      },
+      {
+        "id": "wc-travail-metier-cmp",
+        "kind": "compare",
+        "wordId": "wl-travail-metier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "travail и métier оба про работу. В чём разница?",
+        "phrases": ["J'ai beaucoup de travail.", "Mon métier est passionnant."],
+        "options": [
+          "travail — работа как занятие/нагрузка; métier — профессия, которой владеешь.",
+          "Это полные синонимы.",
+          "travail — профессия, а métier — отдельное задание.",
+          "métier — это место работы, а travail — должность."
+        ],
+        "correctIndex": 0,
+        "explanation": "travail — это работа вообще (то, что делаешь; объём дел). métier — конкретная профессия, ремесло, которому учатся. Можно «changer de métier» (сменить профессию), но «avoir du travail» (иметь много дел)."
+      },
+      {
+        "id": "wc-travail-reunion-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-travail-reunion",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La réunion commence à dix heures.",
+          "On a une réunion importante demain.",
+          "Le patron dirige la réunion."
+        ],
+        "options": ["собрание, совещание", "перерыв", "отпуск", "столовая"],
+        "correctIndex": 0,
+        "explanation": "réunion (f) — собрание, совещание: когда коллеги собираются вместе обсудить дела. «être en réunion» — быть на совещании. Не путать с rendez-vous (встреча, приём)."
+      },
+      {
+        "id": "wc-travail-reunion-trap",
+        "kind": "trap",
+        "wordId": "wl-travail-reunion",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Коллега пишет: «Je suis en réunion.» Где он и чем занят?",
+        "options": [
+          "на совещании, обсуждает дела с коллегами",
+          "на личном приёме у врача",
+          "в отпуске",
+          "на обеденном перерыве"
+        ],
+        "correctIndex": 0,
+        "explanation": "«être en réunion» — быть на собрании/совещании (несколько человек вместе). Приём один на один — un rendez-vous. Перерыв — une pause. Английское «reunion» (встреча выпускников) тут ни при чём."
+      },
+      {
+        "id": "wc-travail-salaire-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-travail-salaire",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит salaire?",
+        "bridge": "Англ. «salary» (зарплата) и фр. salaire — родственники, оба от лат. salarium. Узнаётся по корню salair-.",
+        "options": ["зарплата", "продавец", "столовая", "праздник"],
+        "correctIndex": 0,
+        "explanation": "salaire (m) — зарплата, деньги за работу. «toucher son salaire» — получать зарплату. Не путать на слух с solaire (солнечный) и salière (солонка) — похоже, но разное."
+      },
+      {
+        "id": "wc-travail-salaire-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-travail-salaire",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "salaire",
+        "options": ["salaire", "solaire", "salière", "colère"],
+        "correctIndex": 0,
+        "explanation": "salaire /sa.lɛʁ/ (зарплата), solaire /sɔ.lɛʁ/ (солнечный), salière /sa.ljɛʁ/ (солонка), colère /kɔ.lɛʁ/ (гнев). Это разные слова, не омофоны: слушай первые звуки и середину."
+      },
+      {
+        "id": "wc-travail-employe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-travail-employe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "L'employé range les dossiers.",
+          "Cette entreprise a cinquante employés.",
+          "Une employée nous accueille à l'entrée."
+        ],
+        "options": ["служащий, работник", "начальник", "клиент", "хозяин"],
+        "correctIndex": 0,
+        "explanation": "employé (m), employée (f) — служащий, наёмный работник. Тот, кого нанял работодатель (l'employeur). Начальник — le patron, клиент — le client."
+      },
+      {
+        "id": "wc-travail-employe-trap",
+        "kind": "trap",
+        "wordId": "wl-travail-employe",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Похожие слова: employé и employeur. Кто из них наёмный работник?",
+        "options": [
+          "employé — работник; employeur — работодатель (тот, кто нанимает)",
+          "employeur — работник; employé — работодатель",
+          "это два написания одного слова",
+          "оба значат «начальник»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Различай: l'employé(e) — наёмный работник, служащий; l'employeur — работодатель, тот, кто его нанимает. Суффикс -eur указывает на действующего: employeur «даёт работу»."
+      },
+      {
+        "id": "wc-travail-employe-sort",
+        "kind": "sort",
+        "wordId": "wl-travail-employe",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие фразы про работу звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "aller au travail",
+            "basket": "ok"
+          },
+          {
+            "text": "toucher son salaire",
+            "basket": "ok"
+          },
+          {
+            "text": "être en réunion",
+            "basket": "ok"
+          },
+          {
+            "text": "un employé sérieux",
+            "basket": "ok"
+          },
+          {
+            "text": "manger un bureau",
+            "basket": "no"
+          },
+          {
+            "text": "boire un métier",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«aller au travail», «toucher son salaire», «être en réunion», «un employé sérieux» — естественно. «manger un bureau» (съесть офис) и «boire un métier» (пить профессию) — бессмыслица."
+      },
+      {
+        "id": "wc-travail-patron-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-travail-patron",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для patron (начальник), чтобы не путать его с английским «patron» (постоянный клиент) и запомнить женскую форму patronne.",
+        "examples": [
+          "Англ. «patron» — это посетитель, а фр. le patron — наоборот, ХОЗЯИН заведения, который этих посетителей встречает.",
+          "Представь начальницу кафе: la patronne (с двумя n) стоит у кассы и говорит «Bonjour !» каждому клиенту."
+        ]
+      }
+    ]
+  }
+]

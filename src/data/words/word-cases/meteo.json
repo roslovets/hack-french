@@ -1,0 +1,279 @@
+[
+  {
+    "id": "wc-meteo",
+    "title": "Погода и природа",
+    "theme": "meteo",
+    "level": "A2",
+    "wordIds": [
+      "wl-meteo-temps",
+      "wl-meteo-pluie",
+      "wl-meteo-soleil",
+      "wl-meteo-vent",
+      "wl-meteo-neige",
+      "wl-meteo-froid",
+      "wl-meteo-chaud",
+      "wl-meteo-nuage"
+    ],
+    "steps": [
+      {
+        "id": "wc-meteo-temps-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo-temps",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит ЗДЕСЬ — когда говорят о небе?",
+        "contexts": [
+          "Quel temps fait-il aujourd'hui ?",
+          "Il fait un temps magnifique !",
+          "Le temps va changer ce week-end."
+        ],
+        "options": ["погода", "время", "час", "сезон"],
+        "correctIndex": 0,
+        "explanation": "le temps (m) — здесь «погода». «Quel temps fait-il ?» — Какая погода? У слова есть и второе значение «время» (Je n'ai pas le temps), но в разговоре о небе le temps = погода."
+      },
+      {
+        "id": "wc-meteo-temps-trap",
+        "kind": "trap",
+        "wordId": "wl-meteo-temps",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Le temps — слово-хамелеон: и «погода», и «время». В какой фразе оно значит «время»?",
+        "options": [
+          "Je n'ai pas le temps de venir.",
+          "Le temps est gris et froid.",
+          "Quel temps fait-il dehors ?",
+          "Il fait un temps splendide."
+        ],
+        "correctIndex": 0,
+        "explanation": "«Je n'ai pas le temps» — «у меня нет времени». В остальных фразах le temps — погода (gris, fait-il, splendide про небо). Контекст решает, какое значение."
+      },
+      {
+        "id": "wc-meteo-pluie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo-pluie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Prends ton parapluie, il y a de la pluie.",
+          "Une pluie fine tombe depuis le matin.",
+          "On a couru sous la pluie."
+        ],
+        "options": ["дождь", "снег", "туман", "гроза"],
+        "correctIndex": 0,
+        "explanation": "la pluie (f) — дождь. «sous la pluie» — под дождём, «une pluie fine» — мелкий дождь. Снег — la neige, туман — le brouillard."
+      },
+      {
+        "id": "wc-meteo-pluie-collo",
+        "kind": "sort",
+        "wordId": "wl-meteo-pluie",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом pluie звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "marcher sous la pluie",
+            "basket": "ok"
+          },
+          {
+            "text": "une pluie fine",
+            "basket": "ok"
+          },
+          {
+            "text": "un jour de pluie",
+            "basket": "ok"
+          },
+          {
+            "text": "boire la pluie",
+            "basket": "no"
+          },
+          {
+            "text": "une pluie chaude au four",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«sous la pluie», «une pluie fine», «un jour de pluie» — естественно. «boire la pluie» (пить дождь) и «une pluie chaude au four» (дождь в духовке) — бессмыслица."
+      },
+      {
+        "id": "wc-meteo-soleil-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo-soleil",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il y a du soleil aujourd'hui.",
+          "Mets tes lunettes de soleil.",
+          "Le soleil se couche à neuf heures en été."
+        ],
+        "options": ["солнце", "луна", "небо", "свет лампы"],
+        "correctIndex": 0,
+        "explanation": "le soleil (m) — солнце. «il y a du soleil» — солнечно, «des lunettes de soleil» — солнечные очки. Луна — la lune, небо — le ciel."
+      },
+      {
+        "id": "wc-meteo-soleil-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-meteo-soleil",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало. Они похожи, но это разные слова.",
+        "audioText": "soleil",
+        "options": ["soleil", "sommeil", "soupir"],
+        "correctIndex": 0,
+        "explanation": "soleil /sɔ.lɛj/ — солнце. Похожие: sommeil /sɔ.mɛj/ — сон (avoir sommeil — хотеть спать), soupir /su.piʁ/ — вздох. Разница в середине слова: -l- против -mm-."
+      },
+      {
+        "id": "wc-meteo-vent-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo-vent",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il y a beaucoup de vent aujourd'hui.",
+          "Le vent souffle fort sur la plage.",
+          "Un vent froid vient du nord."
+        ],
+        "options": ["ветер", "буря", "воздух в шине", "дыхание"],
+        "correctIndex": 0,
+        "explanation": "le vent (m) — ветер. «il y a du vent» — ветрено, «le vent souffle» — ветер дует. Буря — la tempête."
+      },
+      {
+        "id": "wc-meteo-vent-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-meteo-vent",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало. Носовые гласные различаются!",
+        "audioText": "vent",
+        "options": ["vent", "vin", "vont"],
+        "correctIndex": 0,
+        "explanation": "vent /vɑ̃/ — ветер. Похожие, но другие носовые: vin /vɛ̃/ — вино, vont /vɔ̃/ — (они) идут. Это разные звуки «ан / эн / он», не омонимы."
+      },
+      {
+        "id": "wc-meteo-neige-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo-neige",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La neige tombe doucement.",
+          "Les enfants jouent dans la neige.",
+          "Il y a de la neige sur les montagnes."
+        ],
+        "options": ["снег", "дождь", "лёд", "иней"],
+        "correctIndex": 0,
+        "explanation": "la neige (f) — снег. «la neige tombe» — снег идёт, «un bonhomme de neige» — снеговик. Лёд — la glace, дождь — la pluie."
+      },
+      {
+        "id": "wc-meteo-neige-trap",
+        "kind": "trap",
+        "wordId": "wl-meteo-neige",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«Снег идёт» — как сказать по-французски? У глагола «идти» (marcher) тут нет места.",
+        "options": ["Il neige.", "La neige marche.", "La neige va.", "Il fait la neige."],
+        "correctIndex": 0,
+        "explanation": "«Снег идёт» — Il neige (безличный глагол neiger), как «il pleut» — дождь идёт. «La neige tombe» тоже верно. А «marche/va» (идёт ногами) сюда не подходит — это калька с русского."
+      },
+      {
+        "id": "wc-meteo-froid-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo-froid",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "Il fait froid dehors, mets ton manteau.",
+          "J'ai froid, ferme la fenêtre.",
+          "Je bois de l'eau froide."
+        ],
+        "options": ["холодный / холодно", "тёплый", "мокрый", "тёмный"],
+        "correctIndex": 0,
+        "explanation": "froid — холодный (прил.) и «холод». «Il fait froid» — холодно (о погоде), «j'ai froid» — мне холодно (о человеке), «de l'eau froide» — холодная вода (froide — женский род)."
+      },
+      {
+        "id": "wc-meteo-froid-cmp",
+        "kind": "compare",
+        "wordId": "wl-meteo-froid",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Il fait froid и J'ai froid. В чём разница?",
+        "phrases": ["Il fait froid.", "J'ai froid."],
+        "options": [
+          "«Il fait froid» — холодно (погода вокруг); «J'ai froid» — мне холодно (мне самому).",
+          "Это одно и то же, разницы нет.",
+          "«Il fait froid» — мне холодно; «J'ai froid» — холодная еда.",
+          "Оба значат «я замёрзла» одинаково."
+        ],
+        "correctIndex": 0,
+        "explanation": "О погоде — безличное «il fait froid» (на улице холодно). О человеке — «avoir froid»: j'ai froid, tu as froid (мне/тебе холодно). Нельзя сказать «je suis froid» в значении «мне холодно»."
+      },
+      {
+        "id": "wc-meteo-chaud-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo-chaud",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il fait chaud en été.",
+          "Je voudrais un chocolat chaud.",
+          "Attention, l'eau est très chaude."
+        ],
+        "options": ["горячий / жаркий", "холодный", "сладкий", "свежий"],
+        "correctIndex": 0,
+        "explanation": "chaud — горячий, тёплый, жаркий. «Il fait chaud» — жарко, «un chocolat chaud» — горячий шоколад, «l'eau chaude» — горячая вода (chaude — женский род). Противоположность — froid."
+      },
+      {
+        "id": "wc-meteo-chaud-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-meteo-chaud",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три фразы описывают жару/тепло. Найди лишнюю.",
+        "options": ["Il fait chaud.", "un chocolat chaud", "de l'eau chaude", "Il fait froid."],
+        "correctIndex": 3,
+        "explanation": "«Il fait chaud», «un chocolat chaud», «de l'eau chaude» — про тепло/жар. «Il fait froid» (холодно) — лишнее, это противоположное по смыслу."
+      },
+      {
+        "id": "wc-meteo-nuage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo-nuage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il y a des nuages gris dans le ciel.",
+          "Le ciel est bleu, sans un seul nuage.",
+          "Un gros nuage cache le soleil."
+        ],
+        "options": ["облако / туча", "звезда", "радуга", "молния"],
+        "correctIndex": 0,
+        "explanation": "le nuage (m) — облако, туча. «un ciel sans nuages» — безоблачное небо, «des nuages gris» — серые тучи. Радуга — un arc-en-ciel, молния — un éclair."
+      },
+      {
+        "id": "wc-meteo-nuage-hint",
+        "kind": "wordHint",
+        "wordId": "wl-meteo-nuage",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: белое или серое скопление на небе, которое может закрыть солнце.",
+        "answer": "nuage",
+        "hints": ["Начинается на n…", "Мужской род: un ___", "Le ciel est bleu, sans un seul ___."],
+        "explanation": "le nuage (m) — облако, туча. «un ciel sans nuages» — безоблачное небо. Читается /nɥaʒ/."
+      }
+    ]
+  }
+]

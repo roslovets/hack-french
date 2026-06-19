@@ -1,0 +1,322 @@
+[
+  {
+    "id": "wc-argent",
+    "title": "Деньги и покупки",
+    "theme": "argent",
+    "level": "A2",
+    "wordIds": [
+      "wl-argent-argent",
+      "wl-argent-prix",
+      "wl-argent-acheter",
+      "wl-argent-payer",
+      "wl-argent-cher",
+      "wl-argent-magasin",
+      "wl-argent-carte",
+      "wl-argent-monnaie"
+    ],
+    "steps": [
+      {
+        "id": "wc-argent-argent-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-argent-argent",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je n'ai pas assez d'argent pour ce sac.",
+          "Il gagne bien sa vie : il a de l'argent.",
+          "Je dois retirer de l'argent au distributeur."
+        ],
+        "options": ["деньги", "мелочь / сдача", "счёт в банке", "зарплата"],
+        "correctIndex": 0,
+        "explanation": "argent (m) — деньги вообще: gagner de l'argent (зарабатывать), retirer de l'argent (снять в банкомате). То же слово значит «серебро» (une bague en argent). Мелочь/сдача — la monnaie."
+      },
+      {
+        "id": "wc-argent-argent-monnaie-cmp",
+        "kind": "compare",
+        "wordId": "wl-argent-monnaie",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "argent и monnaie. В чём разница?",
+        "phrases": ["Je n'ai pas d'argent sur moi.", "Je n'ai pas de monnaie pour le bus."],
+        "options": [
+          "argent — деньги вообще (есть ли вообще средства); monnaie — мелочь, разменные монеты и сдача.",
+          "Это полные синонимы, разницы нет.",
+          "argent — про монеты, monnaie — про купюры.",
+          "monnaie — деньги вообще, argent — только серебро."
+        ],
+        "correctIndex": 0,
+        "explanation": "argent — деньги как ресурс («У меня нет денег»). monnaie — мелочь/сдача («У меня нет мелочи на автобус»). Англ. «money» обманчиво похоже на monnaie, но «деньги» — это argent."
+      },
+      {
+        "id": "wc-argent-monnaie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-argent-monnaie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах у кассы?",
+        "contexts": [
+          "Voici votre monnaie, merci.",
+          "Vous avez de la monnaie sur 50 euros ?",
+          "Gardez la monnaie !"
+        ],
+        "options": ["сдача / мелочь", "цена", "карта", "чек"],
+        "correctIndex": 0,
+        "explanation": "la monnaie (f) — сдача и мелкие деньги: rendre la monnaie (дать сдачу), «Gardez la monnaie !» (Оставьте сдачу себе!). Также — «валюта» (la monnaie unique — евро)."
+      },
+      {
+        "id": "wc-argent-prix-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-argent-prix",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Quel est le prix de ce manteau ?",
+          "Le prix est sur l'étiquette.",
+          "Les prix ont beaucoup augmenté cette année."
+        ],
+        "options": ["цена", "скидка", "сдача", "счёт"],
+        "correctIndex": 0,
+        "explanation": "le prix (m) — цена: «Quel est le prix ?» (Какая цена?), «les prix augmentent» (цены растут). Множественное — les prix (пишется так же). То же слово значит «приз» (un prix littéraire)."
+      },
+      {
+        "id": "wc-argent-prix-trap",
+        "kind": "trap",
+        "wordId": "wl-argent-prix",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англичанин путает «price» и «prize». Как по-французски сказать «цена этой книги»?",
+        "options": [
+          "le prix de ce livre",
+          "le prize de ce livre",
+          "la prize de ce livre",
+          "le price de ce livre"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: в английском «price» (цена) и «prize» (приз) — разные слова, а во французском оба — le prix. Слов «price» и «prize» во французском нет. «Цена книги» — le prix de ce livre."
+      },
+      {
+        "id": "wc-argent-prix-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-argent-prix",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "prix",
+        "options": ["prix", "prie", "pris", "prit"],
+        "correctIndex": 0,
+        "explanation": "Все четыре звучат как /pʁi/, но это разные слова: prix (цена), prie (от prier — молить/просить), pris/prit (формы от prendre — брать). На слух они одинаковы — различает только смысл и написание; нужное здесь — prix."
+      },
+      {
+        "id": "wc-argent-acheter-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-argent-acheter",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je vais acheter du pain à la boulangerie.",
+          "Elle a acheté un cadeau pour sa mère.",
+          "On achète de plus en plus en ligne."
+        ],
+        "options": ["покупать", "продавать", "платить", "заказывать"],
+        "correctIndex": 0,
+        "explanation": "acheter — покупать, приобретать вещь: acheter du pain, acheter un cadeau. Внимание к спряжению: j'achète, tu achètes (с è). Продавать — vendre."
+      },
+      {
+        "id": "wc-argent-acheter-payer-cmp",
+        "kind": "compare",
+        "wordId": "wl-argent-payer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "acheter и payer. По-русски оба про покупку — в чём разница?",
+        "phrases": ["J'achète une baguette.", "Je paie la baguette par carte."],
+        "options": [
+          "acheter — приобретать сам товар (что я беру); payer — отдавать за него деньги (как я расплачиваюсь).",
+          "Это полные синонимы.",
+          "acheter — платить наличными, payer — картой.",
+          "payer — покупать, acheter — продавать."
+        ],
+        "correctIndex": 0,
+        "explanation": "acheter направлен на вещь: acheter une baguette. payer — на деньги/оплату: payer par carte, payer l'addition. «Я плачу картой» — Je paie par carte, нельзя «j'achète par carte»."
+      },
+      {
+        "id": "wc-argent-payer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-argent-payer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je peux payer par carte ?",
+          "On paie l'addition et on s'en va.",
+          "Il a payé en espèces."
+        ],
+        "options": ["платить / оплачивать", "покупать", "считать", "стоить"],
+        "correctIndex": 0,
+        "explanation": "payer — платить, отдавать деньги: payer par carte (картой), payer en espèces (наличными), payer l'addition (оплатить счёт). Формы: je paie/paye, il paie."
+      },
+      {
+        "id": "wc-argent-payer-sort",
+        "kind": "sort",
+        "wordId": "wl-argent-payer",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом payer звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "payer par carte",
+            "basket": "ok"
+          },
+          {
+            "text": "payer en espèces",
+            "basket": "ok"
+          },
+          {
+            "text": "payer l'addition",
+            "basket": "ok"
+          },
+          {
+            "text": "payer l'argent",
+            "basket": "no"
+          },
+          {
+            "text": "payer la monnaie",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественно: payer par carte / en espèces, payer l'addition. «payer l'argent» — ошибка: деньги не «платят», ими расплачиваются — payer en espèces / avec de l'argent. «payer la monnaie» тоже бессмыслица: сдачу (la monnaie) не платят, а дают — rendre la monnaie."
+      },
+      {
+        "id": "wc-argent-cher-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-argent-cher",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит, когда речь о покупках?",
+        "contexts": [
+          "C'est trop cher pour moi.",
+          "Ce restaurant est très cher.",
+          "Les fruits sont chers en hiver."
+        ],
+        "options": ["дорогой (по цене)", "дешёвый", "красивый", "вкусный"],
+        "correctIndex": 0,
+        "explanation": "cher — дорогой по цене: «C'est trop cher» (Это слишком дорого), «coûter cher» (дорого стоить). Согласуется: une robe chère, des fruits chers. То же слово в письме — «Cher ami» (дорогой друг)."
+      },
+      {
+        "id": "wc-argent-cher-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-argent-cher",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три выражения говорят, что вещь стоит дорого. Найди то, что значит ПРОТИВОПОЛОЖНОЕ — «недорого».",
+        "options": ["c'est cher", "ça coûte cher", "c'est hors de prix", "c'est bon marché"],
+        "correctIndex": 3,
+        "explanation": "«c'est bon marché» = дёшево, недорого — лишнее. Остальные про дороговизну: c'est cher (дорого), ça coûte cher (дорого стоит), c'est hors de prix (заоблачно дорого). Заметь: bon marché неизменяемо — не «bonne marché»."
+      },
+      {
+        "id": "wc-argent-magasin-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-argent-magasin",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английское слово помогает — но осторожно, это ловушка. Что значит magasin?",
+        "bridge": "Англ. «magazine» (журнал) похоже на magasin, и оба восходят к одному корню (склад, хранилище). Но во французском magasin — это МАГАЗИН, а журнал — un magazine.",
+        "options": ["магазин", "журнал", "склад документов", "витрина"],
+        "correctIndex": 0,
+        "explanation": "magasin (m) — магазин: aller au magasin, un grand magasin (универмаг). Ложный друг: англ. «magazine» (журнал) по-французски — un magazine / une revue, не magasin."
+      },
+      {
+        "id": "wc-argent-magasin-trap",
+        "kind": "trap",
+        "wordId": "wl-argent-magasin",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ты хочешь сказать «Я иду в магазин за хлебом». Какой вариант верный?",
+        "options": [
+          "Je vais au magasin acheter du pain.",
+          "Je vais au magazine acheter du pain.",
+          "Je vais à la magasin acheter du pain.",
+          "Je vais au boutique acheter du pain."
+        ],
+        "correctIndex": 0,
+        "explanation": "Магазин — un magasin (мужской род): «au magasin» (= à le magasin). «magazine» — это журнал (ложный друг). «à la magasin» неверно по роду; «au boutique» тоже неверно — boutique женского рода (à la boutique)."
+      },
+      {
+        "id": "wc-argent-carte-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-argent-carte",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Слово carte значит разное в зависимости от сцены. Что их объединяет?",
+        "contexts": [
+          "Je paie par carte.",
+          "La carte, s'il vous plaît !",
+          "Tu as une carte de la ville ?"
+        ],
+        "options": [
+          "карта / карточка (банковская, меню, карта местности)",
+          "только банковская карта",
+          "счёт в ресторане",
+          "коробка"
+        ],
+        "correctIndex": 0,
+        "explanation": "la carte (f) покрывает несколько «карт»: банковская (payer par carte), меню в кафе («La carte, s'il vous plaît !»), карта города (une carte de la ville). Конкретное значение даёт ситуация."
+      },
+      {
+        "id": "wc-argent-carte-trap",
+        "kind": "trap",
+        "wordId": "wl-argent-carte",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В кафе ты просишь меню. В ресторане «la carte» и «le menu» — это не одно и то же. Что значит «le menu»?",
+        "options": [
+          "комплексный обед по фиксированной цене (набор блюд)",
+          "полный список всех блюд на выбор",
+          "счёт к оплате",
+          "винную карту"
+        ],
+        "correctIndex": 0,
+        "explanation": "la carte — полный список блюд, из которого выбираешь (à la carte). le menu — готовый набор (entrée + plat + dessert) по фиксированной цене. Чтобы увидеть всё, просят «la carte», а не «le menu»."
+      },
+      {
+        "id": "wc-argent-acheter-hint",
+        "kind": "wordHint",
+        "wordId": "wl-argent-acheter",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: отдать деньги и взять за них товар.",
+        "answer": "acheter",
+        "hints": [
+          "Начинается на a…",
+          "Антоним к vendre (продавать)",
+          "Je vais ___ du pain. (в форме «j'achète» появляется è)"
+        ],
+        "explanation": "acheter — покупать. Антоним vendre. В спряжении появляется è: j'achète, tu achètes, ils achètent, но nous achetons."
+      },
+      {
+        "id": "wc-argent-argent-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-argent-argent",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для argent, чтобы запомнить мужской род (de l'argent) и второе значение «серебро».",
+        "examples": [
+          "«Аргентина» (Argentine) названа в честь серебра (argent) — так свяжешь слово и со страной, и с металлом.",
+          "Серебряные монеты = деньги: argent — это и «серебро», и «деньги». Представь горсть серебряных монет: «de l'argent»."
+        ]
+      }
+    ]
+  }
+]
