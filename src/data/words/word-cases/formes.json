@@ -1,0 +1,285 @@
+[
+  {
+    "id": "wc-formes",
+    "title": "Формы",
+    "theme": "formes",
+    "level": "A1",
+    "wordIds": [
+      "wl-formes-rond",
+      "wl-formes-carre",
+      "wl-formes-triangle",
+      "wl-formes-cercle",
+      "wl-formes-courbe",
+      "wl-formes-angle",
+      "wl-formes-losange",
+      "wl-formes-ovale"
+    ],
+    "steps": [
+      {
+        "id": "wc-formes-rond-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-formes-rond",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "L'enfant dessine un rond sur la feuille.",
+          "La pizza a la forme d'un rond.",
+          "Fais un rond autour de la bonne réponse."
+        ],
+        "options": ["круг, кружок", "квадрат", "линия", "точка"],
+        "correctIndex": 0,
+        "explanation": "un rond (m) — круг, кружок: круглая фигура, которую рисуют от руки. «dessiner un rond» — нарисовать кружок, «faire un rond autour de…» — обвести кружком."
+      },
+      {
+        "id": "wc-formes-rond-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-formes-rond",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало. Они похожи, но это разные слова.",
+        "audioText": "rond",
+        "options": ["rond", "rang", "ronde"],
+        "correctIndex": 0,
+        "explanation": "rond /ʁɔ̃/ — круг (носовой /ɔ̃/, конечная -d не читается). Похожие: rang /ʁɑ̃/ — ряд (другой носовой /ɑ̃/), ronde /ʁɔ̃d/ — обход / круглая (ж. род, здесь слышно d). Различай носовые: /ɔ̃/ против /ɑ̃/."
+      },
+      {
+        "id": "wc-formes-carre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-formes-carre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Un échiquier est fait de petits carrés.",
+          "Cette place a la forme d'un carré.",
+          "Dessine un carré de quatre centimètres."
+        ],
+        "options": ["квадрат", "круг", "треугольник", "линия"],
+        "correctIndex": 0,
+        "explanation": "un carré (m) — квадрат: четыре равные стороны и прямые углы. Пишется с accent aigu на e: c-a-r-r-é, читается /ka.ʁe/."
+      },
+      {
+        "id": "wc-formes-carre-collo",
+        "kind": "sort",
+        "wordId": "wl-formes-carre",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом carré звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un carré parfait",
+            "basket": "ok"
+          },
+          {
+            "text": "dessiner un carré",
+            "basket": "ok"
+          },
+          {
+            "text": "un mètre carré",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un carré",
+            "basket": "no"
+          },
+          {
+            "text": "un carré rond",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un carré parfait» (ровный квадрат), «dessiner un carré», «un mètre carré» (квадратный метр) — естественно. «boire un carré» (пить квадрат) бессмысленно, а «un carré rond» (круглый квадрат) — противоречие."
+      },
+      {
+        "id": "wc-formes-triangle-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-formes-triangle",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит triangle?",
+        "bridge": "Англ. «triangle» — треугольник; пишется точно так же. Различается только произношение: по-французски /tʁi.ɑ̃ɡl/, с носовым -an-.",
+        "options": ["треугольник", "квадрат", "круг", "угол"],
+        "correctIndex": 0,
+        "explanation": "triangle (m) = треугольник. Англ. «triangle» — прямой мост: те же буквы. Внутри спрятано «trois» (три) и «angle» (угол) — три угла."
+      },
+      {
+        "id": "wc-formes-triangle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-formes-triangle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Un triangle a trois côtés.",
+          "Le toit forme un triangle.",
+          "Coupe le sandwich en triangle."
+        ],
+        "options": ["треугольник", "круг", "квадрат", "овал"],
+        "correctIndex": 0,
+        "explanation": "un triangle (m) — треугольник: три стороны и три угла. «couper en triangle» — разрезать по диагонали (на треугольники)."
+      },
+      {
+        "id": "wc-formes-cercle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-formes-cercle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le professeur trace un cercle au compas.",
+          "Les enfants forment un cercle pour jouer.",
+          "La Terre tourne autour du Soleil presque en cercle."
+        ],
+        "options": ["круг, окружность", "квадрат", "линия", "точка"],
+        "correctIndex": 0,
+        "explanation": "un cercle (m) — круг, окружность: точная геометрическая фигура. «tracer un cercle au compas» — начертить циркулем. Образно: «un cercle d'amis» — круг друзей."
+      },
+      {
+        "id": "wc-formes-cercle-cmp",
+        "kind": "compare",
+        "wordId": "wl-formes-cercle",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un cercle и un rond. В чём разница?",
+        "phrases": [
+          "Le professeur trace un cercle au compas.",
+          "L'enfant fait un rond sur la feuille."
+        ],
+        "options": [
+          "cercle — точная окружность (циркуль, геометрия); rond — кружок, нарисованный от руки, бытовое слово.",
+          "Это полные синонимы, разницы нет.",
+          "cercle — кружок от руки, а rond — точная окружность.",
+          "cercle — это квадрат, а rond — круг."
+        ],
+        "correctIndex": 0,
+        "explanation": "cercle — строгая окружность (геометрия, циркуль, «cercle vicieux» — порочный круг). rond — круглая форма от руки, разговорное: «faire un rond», «des ronds dans l'eau». Часто взаимозаменяемы, но cercle точнее."
+      },
+      {
+        "id": "wc-formes-courbe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-formes-courbe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La route fait une courbe dangereuse.",
+          "Le médecin regarde la courbe de température.",
+          "Cette ligne n'est pas droite, c'est une courbe."
+        ],
+        "options": ["кривая (линия)", "прямая линия", "угол", "круг"],
+        "correctIndex": 0,
+        "explanation": "une courbe (f) — кривая линия, изгиб; противоположность «une ligne droite» (прямая). «une courbe de température» — кривая температуры, «la route fait une courbe» — дорога делает изгиб."
+      },
+      {
+        "id": "wc-formes-courbe-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-formes-courbe",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для courbe (кривая), чтобы запомнить женский род: это единственное слово темы женского рода — une courbe.",
+        "examples": [
+          "Англ. «curve» того же корня — но во французском это «она», la courbe: представь плавную женскую линию изгиба.",
+          "Дорога делает изгиб — «la route fait une courbe»: и route, и courbe здесь «свои», женского рода (la… une…)."
+        ]
+      },
+      {
+        "id": "wc-formes-angle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-formes-angle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Un carré a quatre angles droits.",
+          "Le café est à l'angle de la rue.",
+          "Mesure l'angle entre les deux lignes."
+        ],
+        "options": ["угол", "круг", "сторона", "линия"],
+        "correctIndex": 0,
+        "explanation": "un angle (m) — угол: и геометрический («un angle droit» — прямой угол), и угол улицы снаружи («à l'angle de la rue» — на углу улицы)."
+      },
+      {
+        "id": "wc-formes-angle-trap",
+        "kind": "trap",
+        "wordId": "wl-formes-angle",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "По-русски «угол» — одно слово. Но во французском их два: angle и coin. Что выбрать для «прямого угла» в геометрии?",
+        "options": [
+          "un angle droit — angle для геометрического угла и угла улицы снаружи",
+          "un coin droit — coin для любого угла",
+          "une courbe droite — это и есть прямой угол",
+          "un cercle droit — прямой угол так и называется"
+        ],
+        "correctIndex": 0,
+        "explanation": "angle — геометрический угол и внешний угол улицы (à l'angle de la rue). coin — уютный угол внутри (le coin de la pièce — угол комнаты, un coin tranquille). «Прямой угол» — только un angle droit."
+      },
+      {
+        "id": "wc-formes-losange-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-formes-losange",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский даёт подсказку. Англ. «lozenge» — это ромбик (и таблетка-ромбик). Что значит losange?",
+        "bridge": "Англ. «lozenge» (ромб, леденец-ромбик) пришло из французского losange. Та же форма — ромб; читается /lɔ.zɑ̃ʒ/.",
+        "options": ["ромб", "круг", "квадрат", "треугольник"],
+        "correctIndex": 0,
+        "explanation": "un losange (m) — ромб: четыре равные стороны, но углы не прямые (наклонённый квадрат). Англ. «lozenge» — тот же корень. Это форма «бубен» на игральных картах."
+      },
+      {
+        "id": "wc-formes-losange-trap",
+        "kind": "trap",
+        "wordId": "wl-formes-losange",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «diamond» — это и драгоценный камень, и форма-ромб. Как назвать по-французски форму ромба (например, на картах)?",
+        "options": [
+          "un losange — форма-ромб; камень-бриллиант — это un diamant",
+          "un diamant — форма ромба всегда называется diamant",
+          "un carré — ромб это просто квадрат",
+          "un ovale — ромб и овал это одно слово"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка англ. «diamond»: форма-ромб — un losange, а драгоценный камень-бриллиант — un diamant. Это разные слова; для геометрической формы нужен losange."
+      },
+      {
+        "id": "wc-formes-ovale-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-formes-ovale",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Un œuf a la forme d'un ovale.",
+          "Le miroir est un grand ovale.",
+          "Le ballon de rugby est un ovale allongé."
+        ],
+        "options": ["овал", "круг", "квадрат", "ромб"],
+        "correctIndex": 0,
+        "explanation": "un ovale (m) — овал: вытянутый круг, форма яйца. «en forme d'ovale» / «de forme ovale» — овальной формы. Слово ovale бывает и прилагательным: «une table ovale» — овальный стол."
+      },
+      {
+        "id": "wc-formes-ovale-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-formes-ovale",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало. Они похожи, но это разные слова.",
+        "audioText": "ovale",
+        "options": ["ovale", "avale", "rivale"],
+        "correctIndex": 0,
+        "explanation": "ovale /ɔ.val/ — овал (начинается на /ɔ/). Похожие: avale /a.val/ — «глотает» (форма глагола avaler, начинается на /a/), rivale /ʁi.val/ — соперница. Концовка одинаковая, но начало разное."
+      }
+    ]
+  }
+]

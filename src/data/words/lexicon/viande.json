@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-viande-boeuf",
+    "lemma": "bœuf",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bœf/",
+    "translationsRu": ["говядина", "бык", "вол"],
+    "translationsEn": ["beef", "ox"],
+    "semanticCore": "Прежде всего говядина как мясо (на тарелке, в магазине); то же слово — бык/вол как животное.",
+    "collocations": [
+      {
+        "fr": "un steak de bœuf",
+        "ru": "говяжий стейк"
+      },
+      {
+        "fr": "du bœuf bourguignon",
+        "ru": "говядина по-бургундски"
+      },
+      {
+        "fr": "un bouillon de bœuf",
+        "ru": "говяжий бульон"
+      },
+      {
+        "fr": "de la viande de bœuf",
+        "ru": "говяжье мясо"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vache",
+        "note": "bœuf — говядина (мясо) и бык/вол; vache — корова (живое животное, даёт молоко). Как в англ. beef/cow: на ферме vache, на тарелке bœuf."
+      },
+      {
+        "with": "veau",
+        "note": "bœuf — говядина (взрослое животное); veau — телёнок и телятина (мясо молодого, светлее и нежнее)."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["viande", "aliment"],
+    "caseIds": ["wc-viande"]
+  },
+  {
+    "id": "wl-viande-porc",
+    "lemma": "porc",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɔʁ/",
+    "translationsRu": ["свинина", "свинья"],
+    "translationsEn": ["pork", "pig"],
+    "semanticCore": "Прежде всего свинина как мясо; в кулинарии — «de porc». То же слово может значить и саму свинью.",
+    "collocations": [
+      {
+        "fr": "une côte de porc",
+        "ru": "свиная отбивная (на кости)"
+      },
+      {
+        "fr": "du rôti de porc",
+        "ru": "свиное жаркое"
+      },
+      {
+        "fr": "du filet de porc",
+        "ru": "свиная вырезка"
+      },
+      {
+        "fr": "de la viande de porc",
+        "ru": "свинина (мясо свиньи)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cochon",
+        "note": "cochon — живая свинья (на ферме); porc — прежде всего свинина как мясо («côte de porc»), хотя porc может означать и само животное."
+      },
+      {
+        "with": "port",
+        "note": "Омофоны: le porc (свинья/свинина) и le port (порт) звучат одинаково /pɔʁ/. Конечные c и t не читаются; различает написание и смысл."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["viande", "aliment"],
+    "caseIds": ["wc-viande"]
+  },
+  {
+    "id": "wl-viande-agneau",
+    "lemma": "agneau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.ɲo/",
+    "translationsRu": ["ягнёнок", "баранина (молодая)"],
+    "translationsEn": ["lamb"],
+    "semanticCore": "Ягнёнок как молодое животное и его нежное мясо (ягнятина) — то, что подают на Пасху; пишется через gn = /ɲ/.",
+    "collocations": [
+      {
+        "fr": "un gigot d'agneau",
+        "ru": "баранья нога (из ягнёнка)"
+      },
+      {
+        "fr": "des côtelettes d'agneau",
+        "ru": "бараньи отбивные (из ягнёнка)"
+      },
+      {
+        "fr": "de l'agneau de lait",
+        "ru": "молочный ягнёнок (мясо)"
+      },
+      {
+        "fr": "un ragoût d'agneau",
+        "ru": "рагу из ягнёнка"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mouton",
+        "note": "agneau — ягнёнок и его нежное мясо (ягнятина); mouton — взрослый баран/овца и баранина (вкус крепче). Разные слова для возраста и мяса."
+      },
+      {
+        "with": "agneau (животное/мясо)",
+        "note": "Одно слово на два смысла: живой ягнёнок (un agneau dans le pré) и мясо ягнёнка (manger de l'agneau)."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["viande", "aliment"],
+    "caseIds": ["wc-viande"]
+  },
+  {
+    "id": "wl-viande-saucisse",
+    "lemma": "saucisse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/so.sis/",
+    "translationsRu": ["сосиска", "колбаска"],
+    "translationsEn": ["sausage"],
+    "semanticCore": "Сырая или варёная колбаска, которую жарят или варят (saucisse de Toulouse), — а не сухая нарезка к аперитиву.",
+    "collocations": [
+      {
+        "fr": "des saucisses grillées",
+        "ru": "жареные колбаски"
+      },
+      {
+        "fr": "une saucisse de Toulouse",
+        "ru": "тулузская колбаска"
+      },
+      {
+        "fr": "des saucisses-frites",
+        "ru": "колбаски с картошкой фри"
+      },
+      {
+        "fr": "de la saucisse de Strasbourg",
+        "ru": "страсбургская сосиска"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "saucisson",
+        "note": "saucisse (f) — сырая/варёная колбаска, её готовят (жарят, варят); saucisson (m) — сухая твёрдая колбаса, её режут ломтиками к аперитиву."
+      },
+      {
+        "with": "sauce",
+        "note": "saucisse — колбаска (еда); sauce (f) — соус (подливка). Похоже начинаются, но это разные слова."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["viande", "charcuterie"],
+    "caseIds": ["wc-viande"]
+  },
+  {
+    "id": "wl-viande-steak",
+    "lemma": "steak",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/stɛk/",
+    "translationsRu": ["стейк", "бифштекс"],
+    "translationsEn": ["steak"],
+    "semanticCore": "Кусок мяса (обычно говядины), который жарят на гриле или сковороде; степень прожарки заказывают отдельно.",
+    "collocations": [
+      {
+        "fr": "un steak frites",
+        "ru": "стейк с картошкой фри"
+      },
+      {
+        "fr": "un steak saignant",
+        "ru": "стейк с кровью (слабой прожарки)"
+      },
+      {
+        "fr": "un steak bien cuit",
+        "ru": "хорошо прожаренный стейк"
+      },
+      {
+        "fr": "un steak haché",
+        "ru": "рубленый бифштекс (котлета из фарша)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bifteck",
+        "note": "steak и bifteck — одно и то же (говяжий стейк); bifteck — старая офранцуженная форма от англ. «beef steak», сегодня чаще говорят steak."
+      },
+      {
+        "with": "steak haché",
+        "note": "un steak — цельный кусок мяса; un steak haché — котлета из фарша (как для бургера). Слово steak покрывает оба, уточняет «haché»."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["viande", "aliment"],
+    "caseIds": ["wc-viande"]
+  },
+  {
+    "id": "wl-viande-cotelette",
+    "lemma": "côtelette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kot.lɛt/",
+    "translationsRu": ["отбивная (на кости)", "котлета на косточке"],
+    "translationsEn": ["chop", "cutlet"],
+    "semanticCore": "Отбивная на рёберной косточке (из ягнёнка, свинины, телятины) — кусок мяса с костью, а НЕ рубленая котлета из фарша.",
+    "collocations": [
+      {
+        "fr": "une côtelette d'agneau",
+        "ru": "баранья отбивная"
+      },
+      {
+        "fr": "une côtelette de porc",
+        "ru": "свиная отбивная"
+      },
+      {
+        "fr": "des côtelettes grillées",
+        "ru": "отбивные на гриле"
+      },
+      {
+        "fr": "une côtelette de veau",
+        "ru": "телячья отбивная"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "boulette",
+        "note": "Ложный друг! Рус. «котлета» (из фарша) — это НЕ côtelette. Рубленая котлета — une boulette (de viande) или un steak haché. Côtelette = отбивная на кости."
+      },
+      {
+        "with": "côte",
+        "note": "une côte (de bœuf/porc) — крупный кусок на ребре (рёбрышко); une côtelette — маленькая порционная отбивная (уменьшительное от côte, обычно из ягнёнка/телёнка)."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["viande", "aliment"],
+    "caseIds": ["wc-viande"]
+  },
+  {
+    "id": "wl-viande-volaille",
+    "lemma": "volaille",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vɔ.laj/",
+    "translationsRu": ["домашняя птица", "птица (как мясо)"],
+    "translationsEn": ["poultry", "fowl"],
+    "semanticCore": "Собирательное «домашняя птица»: курица, утка, индейка — и как живность на ферме, и как мясо в меню (рядом с viande и poisson).",
+    "collocations": [
+      {
+        "fr": "de la volaille fermière",
+        "ru": "фермерская птица"
+      },
+      {
+        "fr": "un élevage de volailles",
+        "ru": "птицеферма"
+      },
+      {
+        "fr": "du foie de volaille",
+        "ru": "куриная (птичья) печёнка"
+      },
+      {
+        "fr": "une cuisse de volaille",
+        "ru": "птичья ножка (окорочок)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poulet",
+        "note": "volaille — собирательное «домашняя птица» (курица, утка, индейка вместе); poulet — конкретно курица/цыплёнок. В меню раздел «volailles» включает не только poulet."
+      },
+      {
+        "with": "oiseau",
+        "note": "volaille — домашняя птица для еды (на ферме, на тарелке); oiseau — птица вообще (в т.ч. дикая, в небе). Едят la volaille, а не l'oiseau."
+      }
+    ],
+    "frequencyRank": 800,
+    "level": "A2",
+    "tags": ["viande", "aliment"],
+    "caseIds": ["wc-viande"]
+  },
+  {
+    "id": "wl-viande-gigot",
+    "lemma": "gigot",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒi.ɡo/",
+    "translationsRu": ["баранья нога", "окорок (задняя нога)"],
+    "translationsEn": ["leg of lamb"],
+    "semanticCore": "Задняя нога барана или ягнёнка как кусок мяса для запекания — классическое воскресное/праздничное блюдо; конечное t не читается.",
+    "collocations": [
+      {
+        "fr": "un gigot d'agneau",
+        "ru": "нога ягнёнка (баранья нога)"
+      },
+      {
+        "fr": "un gigot de mouton",
+        "ru": "баранья нога (из взрослого барана)"
+      },
+      {
+        "fr": "un gigot au four",
+        "ru": "баранья нога в духовке"
+      },
+      {
+        "fr": "un gigot rôti",
+        "ru": "запечённая баранья нога"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cuisse",
+        "note": "gigot — задняя нога именно барана/ягнёнка как блюдо для запекания; cuisse — ножка/бедро (курицы, утки, человека). У птицы говорят cuisse, а не gigot."
+      },
+      {
+        "with": "jambon",
+        "note": "gigot — баранья нога (свежее мясо, запекают); jambon — окорок/ветчина из свинины (солёный, варёный или вяленый). Разные животные и способы."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["viande", "aliment"],
+    "caseIds": ["wc-viande"]
+  }
+]

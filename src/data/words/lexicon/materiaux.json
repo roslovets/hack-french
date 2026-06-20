@@ -1,0 +1,235 @@
+[
+  {
+    "id": "wl-materiaux-bois",
+    "lemma": "bois",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bwa/",
+    "translationsRu": ["дерево (материал)", "древесина"],
+    "translationsEn": ["wood"],
+    "semanticCore": "Дерево как материал, из которого делают мебель и предметы; во множественном — небольшой лес, роща.",
+    "collocations": [
+      { "fr": "une table en bois", "ru": "деревянный стол" },
+      { "fr": "du bois de chauffage", "ru": "дрова (для отопления)" },
+      { "fr": "une cuillère en bois", "ru": "деревянная ложка" },
+      { "fr": "se promener dans les bois", "ru": "гулять в лесу" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "arbre",
+        "note": "le bois = дерево-материал (древесина); un arbre = дерево, которое растёт. «Сделано из дерева» — en bois, а не *en arbre."
+      },
+      {
+        "with": "boit",
+        "note": "bois (дерево) и boit (он/она пьёт, от boire) звучат одинаково /bwa/. Различай только по смыслу и написанию."
+      }
+    ],
+    "frequencyRank": 360,
+    "level": "A2",
+    "tags": ["materiaux", "matiere"],
+    "caseIds": ["wc-materiaux"]
+  },
+  {
+    "id": "wl-materiaux-metal",
+    "lemma": "métal",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/me.tal/",
+    "translationsRu": ["металл"],
+    "translationsEn": ["metal"],
+    "semanticCore": "Металл как материал вообще (железо, сталь, алюминий и т. п.); во множественном — métaux.",
+    "collocations": [
+      { "fr": "une boîte en métal", "ru": "металлическая коробка" },
+      { "fr": "un métal lourd", "ru": "тяжёлый металл" },
+      { "fr": "le métal rouille", "ru": "металл ржавеет" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fer",
+        "note": "métal = любой металл (общее слово); le fer = конкретно железо. «Железная дорога» — chemin de fer, но «металлическая дверь» — porte en métal."
+      },
+      {
+        "with": "métaux",
+        "note": "Множественное число неправильное: un métal → des métaux (как journal → journaux). На слух -al /al/ превращается в -aux /o/."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["materiaux", "matiere"],
+    "caseIds": ["wc-materiaux"]
+  },
+  {
+    "id": "wl-materiaux-plastique",
+    "lemma": "plastique",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/plas.tik/",
+    "translationsRu": ["пластик", "пластмасса"],
+    "translationsEn": ["plastic"],
+    "semanticCore": "Пластик как материал; то же слово работает прилагательным в обороте «en plastique».",
+    "collocations": [
+      { "fr": "un sac en plastique", "ru": "пластиковый пакет" },
+      { "fr": "une bouteille en plastique", "ru": "пластиковая бутылка" },
+      { "fr": "le plastique recyclé", "ru": "переработанный пластик" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "plastic (англ.)",
+        "note": "Прямой родственник англ. «plastic», но читается по-французски /plas.tik/. Материал — le plastique; «из пластика» — en plastique."
+      },
+      {
+        "with": "verre",
+        "note": "le plastique = пластик (лёгкий, не бьётся); le verre = стекло (прозрачное, бьётся). Бутылка бывает en plastique или en verre."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["materiaux", "matiere"],
+    "caseIds": ["wc-materiaux"]
+  },
+  {
+    "id": "wl-materiaux-tissu",
+    "lemma": "tissu",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ti.sy/",
+    "translationsRu": ["ткань", "материя"],
+    "translationsEn": ["fabric", "cloth"],
+    "semanticCore": "Ткань как материал, из которого шьют одежду и шторы; не «бумажная салфетка».",
+    "collocations": [
+      { "fr": "un tissu doux", "ru": "мягкая ткань" },
+      { "fr": "un morceau de tissu", "ru": "кусок ткани" },
+      { "fr": "un tissu en coton", "ru": "хлопковая ткань" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tissue (англ.)",
+        "note": "Ложный друг: фр. tissu = ткань, а англ. «tissue» — это бумажный платок (по-фр. un mouchoir en papier). Не путать."
+      },
+      {
+        "with": "toile",
+        "note": "tissu = ткань вообще; la toile = плотное полотно (холст, парусина), а также «холст» картины."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["materiaux", "matiere"],
+    "caseIds": ["wc-materiaux"]
+  },
+  {
+    "id": "wl-materiaux-cuir",
+    "lemma": "cuir",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɥiʁ/",
+    "translationsRu": ["кожа (материал)"],
+    "translationsEn": ["leather"],
+    "semanticCore": "Кожа как выделанный материал (сумки, обувь, куртки) — не кожа живого человека.",
+    "collocations": [
+      { "fr": "une veste en cuir", "ru": "кожаная куртка" },
+      { "fr": "un sac en cuir", "ru": "кожаная сумка" },
+      { "fr": "du cuir véritable", "ru": "натуральная кожа" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "peau",
+        "note": "le cuir = выделанная кожа-материал; la peau = кожа живого человека или животного. Куртка — en cuir, но «у меня сухая кожа» — j'ai la peau sèche."
+      },
+      {
+        "with": "cuivre",
+        "note": "le cuir (кожа, /kɥiʁ/) и le cuivre (медь, /kɥivʁ/) звучат похоже — различай по звуку /v/ в середине cuivre."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["materiaux", "matiere"],
+    "caseIds": ["wc-materiaux"]
+  },
+  {
+    "id": "wl-materiaux-pierre",
+    "lemma": "pierre",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pjɛʁ/",
+    "translationsRu": ["камень"],
+    "translationsEn": ["stone"],
+    "semanticCore": "Камень как материал (стены, дома) и как отдельный камень; с большой буквы Pierre — имя Пётр.",
+    "collocations": [
+      { "fr": "une maison en pierre", "ru": "каменный дом" },
+      { "fr": "un mur de pierre", "ru": "каменная стена" },
+      { "fr": "une pierre précieuse", "ru": "драгоценный камень" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "caillou",
+        "note": "la pierre = камень вообще / каменный материал; le caillou = маленький камешек под ногами. Множественное у caillou особое: des cailloux."
+      },
+      {
+        "with": "Pierre",
+        "note": "С маленькой буквы pierre = камень; с большой Pierre = мужское имя Пётр. На слух одно и то же, решает контекст."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A2",
+    "tags": ["materiaux", "matiere"],
+    "caseIds": ["wc-materiaux"]
+  },
+  {
+    "id": "wl-materiaux-carton",
+    "lemma": "carton",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kaʁ.tɔ̃/",
+    "translationsRu": ["картон", "картонная коробка"],
+    "translationsEn": ["cardboard"],
+    "semanticCore": "Картон как плотный материал; то же слово часто значит «картонная коробка» (при переезде).",
+    "collocations": [
+      { "fr": "une boîte en carton", "ru": "картонная коробка" },
+      { "fr": "un carton de déménagement", "ru": "коробка для переезда" },
+      { "fr": "mettre dans un carton", "ru": "сложить в коробку" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "papier",
+        "note": "le carton = плотный картон; le papier = тонкая бумага. Коробка — en carton, а письмо — sur du papier."
+      },
+      {
+        "with": "caisse",
+        "note": "un carton = картонная коробка (мягкая); une caisse = жёсткий ящик (деревянный или пластиковый) или касса в магазине."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["materiaux", "matiere"],
+    "caseIds": ["wc-materiaux"]
+  },
+  {
+    "id": "wl-materiaux-caoutchouc",
+    "lemma": "caoutchouc",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ka.u.tʃu/",
+    "translationsRu": ["резина", "каучук"],
+    "translationsEn": ["rubber"],
+    "semanticCore": "Резина / каучук — гибкий материал для шин, сапог, прокладок; слово с непривычным написанием.",
+    "collocations": [
+      { "fr": "des bottes en caoutchouc", "ru": "резиновые сапоги" },
+      { "fr": "un joint en caoutchouc", "ru": "резиновая прокладка" },
+      { "fr": "le caoutchouc naturel", "ru": "натуральный каучук" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "gomme",
+        "note": "le caoutchouc = резина-материал; la gomme = ластик (стирательная резинка). По-русски оба «резинка», по-французски — разные слова."
+      },
+      {
+        "with": "pneu",
+        "note": "le caoutchouc = материал (резина); le pneu = готовая шина из этой резины. Шина сделана en caoutchouc."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["materiaux", "matiere"],
+    "caseIds": ["wc-materiaux"]
+  }
+]

@@ -1,0 +1,285 @@
+[
+  {
+    "id": "wc-materiaux",
+    "title": "Материалы",
+    "theme": "materiaux",
+    "level": "A2",
+    "wordIds": [
+      "wl-materiaux-bois",
+      "wl-materiaux-metal",
+      "wl-materiaux-plastique",
+      "wl-materiaux-tissu",
+      "wl-materiaux-cuir",
+      "wl-materiaux-pierre",
+      "wl-materiaux-carton",
+      "wl-materiaux-caoutchouc"
+    ],
+    "steps": [
+      {
+        "id": "wc-materiaux-bois-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-materiaux-bois",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Cette table est en bois.",
+          "On met du bois dans la cheminée.",
+          "Les enfants jouent avec des cubes en bois."
+        ],
+        "options": ["дерево (материал)", "металл", "камень", "стекло"],
+        "correctIndex": 0,
+        "explanation": "bois (m) — дерево как материал, древесина. «en bois» — деревянный, «du bois» — дрова. Дерево, которое растёт, — un arbre."
+      },
+      {
+        "id": "wc-materiaux-bois-sort",
+        "kind": "sort",
+        "wordId": "wl-materiaux-bois",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом bois звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une chaise en bois",
+            "basket": "ok"
+          },
+          {
+            "text": "du bois de chauffage",
+            "basket": "ok"
+          },
+          {
+            "text": "se promener dans les bois",
+            "basket": "ok"
+          },
+          {
+            "text": "boire du bois",
+            "basket": "no"
+          },
+          {
+            "text": "un bois liquide",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«une chaise en bois», «du bois de chauffage», «dans les bois» — естественно. «boire du bois» (пить дерево) и «un bois liquide» (жидкое дерево) — бессмыслица."
+      },
+      {
+        "id": "wc-materiaux-metal-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-materiaux-metal",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Cette boîte est en métal.",
+          "Le métal devient froid en hiver.",
+          "L'or et l'argent sont des métaux précieux."
+        ],
+        "options": ["металл", "пластик", "картон", "ткань"],
+        "correctIndex": 0,
+        "explanation": "métal (m) — металл вообще. Множественное неправильное: des métaux /me.to/. Конкретно железо — le fer."
+      },
+      {
+        "id": "wc-materiaux-metal-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-materiaux-metal",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — это металлы. Найди лишнее.",
+        "options": ["le fer", "l'or", "le bois", "l'argent"],
+        "correctIndex": 2,
+        "explanation": "Железо (le fer), золото (l'or) и серебро (l'argent) — это металлы (des métaux). Дерево (le bois) — лишнее: это не металл."
+      },
+      {
+        "id": "wc-materiaux-plastique-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-materiaux-plastique",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет слово с первого взгляда. Что значит plastique?",
+        "bridge": "Англ. «plastic» — пластик; почти то же написание. Читается по-французски /plas.tik/, материал — le plastique.",
+        "options": ["пластик", "металл", "резина", "стекло"],
+        "correctIndex": 0,
+        "explanation": "plastique (m) = пластик. Англ. «plastic» — прямой мост. «Из пластика» — en plastique: un sac en plastique."
+      },
+      {
+        "id": "wc-materiaux-plastique-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-materiaux-plastique",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je préfère une gourde au lieu d'une bouteille en plastique.",
+          "Ce jouet est en plastique solide.",
+          "On trie le plastique pour le recycler."
+        ],
+        "options": ["пластик", "дерево", "кожа", "камень"],
+        "correctIndex": 0,
+        "explanation": "plastique (m) — пластик. «en plastique» — пластиковый, «trier le plastique» — сортировать пластик (для переработки)."
+      },
+      {
+        "id": "wc-materiaux-tissu-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-materiaux-tissu",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Cette robe est faite d'un tissu léger.",
+          "J'ai acheté du tissu pour les rideaux.",
+          "Ce tissu est doux au toucher."
+        ],
+        "options": ["ткань", "кожа", "бумага", "нитка"],
+        "correctIndex": 0,
+        "explanation": "tissu (m) — ткань, материя. «du tissu» — отрез ткани, «un tissu doux» — мягкая ткань. Нитка — un fil."
+      },
+      {
+        "id": "wc-materiaux-tissu-trap",
+        "kind": "trap",
+        "wordId": "wl-materiaux-tissu",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово tissu похоже на англ. «tissue». Но что оно значит по-французски?",
+        "options": [
+          "ткань (для одежды, штор)",
+          "бумажный платок",
+          "туалетная бумага",
+          "салфетка на стол"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: фр. tissu — это ткань, а англ. «tissue» — бумажный платок. Платок по-французски — un mouchoir (en papier), а не *un tissu."
+      },
+      {
+        "id": "wc-materiaux-cuir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-materiaux-cuir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il porte une veste en cuir.",
+          "Ce sac est en cuir véritable.",
+          "Les chaussures en cuir durent longtemps."
+        ],
+        "options": ["кожа (материал)", "ткань", "резина", "замша"],
+        "correctIndex": 0,
+        "explanation": "cuir (m) — выделанная кожа (сумки, куртки, обувь). Кожа живого человека — la peau. «en cuir» — кожаный."
+      },
+      {
+        "id": "wc-materiaux-cuir-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-materiaux-cuir",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "cuir",
+        "options": ["cuir", "cuivre", "cuisse", "cuit"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало cuir /kɥiʁ/ — кожа. Похожие, но другие слова: cuivre /kɥivʁ/ (медь), cuisse /kɥis/ (бедро), cuit /kɥi/ (приготовленный). Различай по концу: -r, -vre, -sse, -t."
+      },
+      {
+        "id": "wc-materiaux-pierre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-materiaux-pierre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Cette vieille maison est en pierre.",
+          "Le mur est fait de pierres grises.",
+          "Elle porte une bague avec une pierre précieuse."
+        ],
+        "options": ["камень", "кирпич", "цемент", "песок"],
+        "correctIndex": 0,
+        "explanation": "pierre (f) — камень и каменный материал. «en pierre» — каменный, «une pierre précieuse» — драгоценный камень. Кирпич — une brique."
+      },
+      {
+        "id": "wc-materiaux-pierre-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-materiaux-pierre",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "pierre",
+        "options": ["pierre", "bière", "paire", "pire"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало pierre /pjɛʁ/ — камень. Похожие на слух: bière /bjɛʁ/ (пиво), paire /pɛʁ/ (пара), pire /piʁ/ (хуже). Решает гласная и начало pi-e-."
+      },
+      {
+        "id": "wc-materiaux-carton-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-materiaux-carton",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Range les livres dans un carton.",
+          "La pizza est servie dans une boîte en carton.",
+          "Pour le déménagement, il faut beaucoup de cartons."
+        ],
+        "options": [
+          "картон / картонная коробка",
+          "пластиковый пакет",
+          "деревянный ящик",
+          "корзина"
+        ],
+        "correctIndex": 0,
+        "explanation": "carton (m) — картон, а часто и картонная коробка. «en carton» — картонный, «un carton de déménagement» — коробка для переезда."
+      },
+      {
+        "id": "wc-materiaux-carton-cmp",
+        "kind": "compare",
+        "wordId": "wl-materiaux-carton",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une feuille de papier и une boîte en carton. В чём разница между papier и carton?",
+        "phrases": ["une feuille de papier", "une boîte en carton"],
+        "options": [
+          "papier — тонкая бумага (для письма); carton — плотный картон (для коробок).",
+          "Это полные синонимы, разницы нет.",
+          "papier — это картон, а carton — тонкая бумага.",
+          "Оба слова значат «коробка»."
+        ],
+        "correctIndex": 0,
+        "explanation": "le papier — тонкая бумага, на ней пишут (une feuille de papier). le carton — плотный картон, из него делают коробки (une boîte en carton)."
+      },
+      {
+        "id": "wc-materiaux-caoutchouc-hint",
+        "kind": "wordHint",
+        "wordId": "wl-materiaux-caoutchouc",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: гибкий материал, из которого делают шины и резиновые сапоги.",
+        "answer": "caoutchouc",
+        "hints": [
+          "Начинается на ca…",
+          "Конечная c не читается: /ka.u.tʃu/",
+          "Des bottes en ___ pour la pluie."
+        ],
+        "explanation": "caoutchouc (m) — резина, каучук. Хитрое написание: c-a-o-u-t-c-h-o-u-c, последняя c немая, читается /ka.u.tʃu/."
+      },
+      {
+        "id": "wc-materiaux-caoutchouc-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-materiaux-caoutchouc",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для caoutchouc (резина), чтобы запомнить непривычное написание и звук /ka.u.tʃu/.",
+        "examples": [
+          "Разбей слово на «ка-у-чу»: caou-tchou — звучит почти как русское «каучук» без последнего к.",
+          "Представь, как резиновый сапог шлёпает по луже: «тчу-тчу» — это -tchouc в середине слова."
+        ]
+      }
+    ]
+  }
+]

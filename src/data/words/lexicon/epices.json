@@ -1,0 +1,242 @@
+[
+  {
+    "id": "wl-epices-vinaigre",
+    "lemma": "vinaigre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vi.nɛɡʁ/",
+    "translationsRu": ["уксус"],
+    "translationsEn": ["vinegar"],
+    "semanticCore": "Кислая жидкость, которой заправляют салаты и маринады; буквально «кислое вино» (vin aigre).",
+    "collocations": [
+      { "fr": "du vinaigre balsamique", "ru": "бальзамический уксус" },
+      { "fr": "de l'huile et du vinaigre", "ru": "масло и уксус (для заправки)" },
+      { "fr": "une cuillère de vinaigre", "ru": "ложка уксуса" },
+      { "fr": "le vinaigre de vin", "ru": "винный уксус" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vin",
+        "note": "vinaigre (m) = уксус; vin (m) = вино. Слово буквально из vin + aigre («кислое вино») — но это уже не вино, а уксус."
+      },
+      {
+        "with": "huile",
+        "note": "vinaigre = уксус (кислый); huile = масло (жирное). Вместе дают заправку — la vinaigrette."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["epices", "cuisine"],
+    "caseIds": ["wc-epices"]
+  },
+  {
+    "id": "wl-epices-moutarde",
+    "lemma": "moutarde",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mu.taʁd/",
+    "translationsRu": ["горчица"],
+    "translationsEn": ["mustard"],
+    "semanticCore": "Острая жёлтая паста-приправа к мясу и сэндвичам; самая известная — дижонская.",
+    "collocations": [
+      { "fr": "la moutarde de Dijon", "ru": "дижонская горчица" },
+      { "fr": "de la moutarde forte", "ru": "острая горчица" },
+      { "fr": "un pot de moutarde", "ru": "банка горчицы" },
+      { "fr": "mettre de la moutarde", "ru": "добавить горчицы" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mayonnaise",
+        "note": "moutarde (f) = горчица (острая, жёлтая); mayonnaise (f) = майонез (жирный, мягкий). Обе — соусы к мясу, но вкус противоположный."
+      },
+      {
+        "with": "raifort",
+        "note": "moutarde = горчица (из семян горчицы); raifort (m) = хрен. По-русски оба «жгучие к мясу», но это разные растения."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["epices", "cuisine"],
+    "caseIds": ["wc-epices"]
+  },
+  {
+    "id": "wl-epices-sauce",
+    "lemma": "sauce",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sos/",
+    "translationsRu": ["соус", "подлива"],
+    "translationsEn": ["sauce", "gravy"],
+    "semanticCore": "Жидкая или густая основа, которой поливают блюдо, чтобы добавить вкуса.",
+    "collocations": [
+      { "fr": "une sauce tomate", "ru": "томатный соус" },
+      { "fr": "la sauce au poivre", "ru": "перечный соус" },
+      { "fr": "la sauce piquante", "ru": "острый соус" },
+      { "fr": "napper de sauce", "ru": "полить соусом" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "jus",
+        "note": "sauce (f) = соус (приготовленный, часто загущённый); jus (m) = сок (фруктовый) или мясной сок/подлива от жарки. «du jus de viande» — натуральный сок мяса, «une sauce» — отдельно сделанный соус."
+      },
+      {
+        "with": "saucisse",
+        "note": "sauce (f) = соус; saucisse (f) = сосиска. Похожи на вид, но разные слова — следи за -isse."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["epices", "cuisine"],
+    "caseIds": ["wc-epices"]
+  },
+  {
+    "id": "wl-epices-basilic",
+    "lemma": "basilic",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ba.zi.lik/",
+    "translationsRu": ["базилик"],
+    "translationsEn": ["basil"],
+    "semanticCore": "Ароматная зелёная трава, основа песто и итальянской кухни; добавляют свежей в конце.",
+    "collocations": [
+      { "fr": "du basilic frais", "ru": "свежий базилик" },
+      { "fr": "des feuilles de basilic", "ru": "листья базилика" },
+      { "fr": "la sauce au basilic", "ru": "соус с базиликом" },
+      { "fr": "tomate-mozzarella au basilic", "ru": "томат-моцарелла с базиликом" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "basilique",
+        "note": "basilic (m) = базилик (трава); basilique (f) = базилика (большая церковь). Читаются одинаково /ba.zi.lik/, но это совершенно разные слова и разный род."
+      },
+      {
+        "with": "persil",
+        "note": "basilic = базилик (сладковатый, для итальянских блюд); persil = петрушка (свежая, для всего). Оба — зелёные травы, но вкус и применение разные."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["epices", "herbe"],
+    "caseIds": ["wc-epices"]
+  },
+  {
+    "id": "wl-epices-persil",
+    "lemma": "persil",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɛʁ.si/",
+    "translationsRu": ["петрушка"],
+    "translationsEn": ["parsley"],
+    "semanticCore": "Свежая зелёная трава, которой посыпают почти любое блюдо в конце готовки.",
+    "collocations": [
+      { "fr": "du persil plat", "ru": "петрушка плосколистная" },
+      { "fr": "un bouquet de persil", "ru": "пучок петрушки" },
+      { "fr": "saupoudrer de persil", "ru": "посыпать петрушкой" },
+      { "fr": "le persil haché", "ru": "рубленая петрушка" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "coriandre",
+        "note": "persil (m) = петрушка (нейтральный свежий вкус); coriandre (f) = кинза/кориандр (резкий, «мыльный» для многих). На вид похожи, на вкус — нет."
+      },
+      {
+        "with": "basilic",
+        "note": "persil = петрушка (универсальная зелень); basilic = базилик (для итальянских блюд). Не путать две зелёные травы."
+      }
+    ],
+    "frequencyRank": 860,
+    "level": "A2",
+    "tags": ["epices", "herbe"],
+    "caseIds": ["wc-epices"]
+  },
+  {
+    "id": "wl-epices-cannelle",
+    "lemma": "cannelle",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ka.nɛl/",
+    "translationsRu": ["корица"],
+    "translationsEn": ["cinnamon"],
+    "semanticCore": "Сладкая тёплая специя из коры дерева; для десертов, выпечки и глинтвейна.",
+    "collocations": [
+      { "fr": "un bâton de cannelle", "ru": "палочка корицы" },
+      { "fr": "la cannelle en poudre", "ru": "молотая корица" },
+      { "fr": "une pomme à la cannelle", "ru": "яблоко с корицей" },
+      { "fr": "du pain perdu à la cannelle", "ru": "гренки с корицей" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vanille",
+        "note": "cannelle (f) = корица (тёплая, из коры); vanille (f) = ваниль (сладкая, из стручка). Обе для десертов, но аромат разный."
+      },
+      {
+        "with": "canne",
+        "note": "cannelle (f) = корица; canne (f) = трость или тростник (la canne à sucre — сахарный тростник). Похожи по началу, но разные слова."
+      }
+    ],
+    "frequencyRank": 900,
+    "level": "A2",
+    "tags": ["epices", "dessert"],
+    "caseIds": ["wc-epices"]
+  },
+  {
+    "id": "wl-epices-piment",
+    "lemma": "piment",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pi.mɑ̃/",
+    "translationsRu": ["перец чили", "острый перец"],
+    "translationsEn": ["chilli", "hot pepper"],
+    "semanticCore": "Острый стручковый перец, от которого «горит» во рту; даёт блюду остроту (ça pique).",
+    "collocations": [
+      { "fr": "le piment d'Espelette", "ru": "перец из Эспелета (мягкий острый)" },
+      { "fr": "un piment fort", "ru": "очень острый перец" },
+      { "fr": "une pincée de piment", "ru": "щепотка чили" },
+      { "fr": "de la sauce au piment", "ru": "соус с чили" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poivre",
+        "note": "piment (m) = перец чили (острый стручок, жжёт); poivre (m) = чёрный перец (молотый, из горошин). По-русски оба «перец» — но это разные специи, не путать."
+      },
+      {
+        "with": "poivron",
+        "note": "piment = острый перец чили; poivron (m) = сладкий болгарский перец (не острый). Похожи внешне, противоположны по остроте."
+      }
+    ],
+    "frequencyRank": 840,
+    "level": "A2",
+    "tags": ["epices", "piquant"],
+    "caseIds": ["wc-epices"]
+  },
+  {
+    "id": "wl-epices-thym",
+    "lemma": "thym",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tɛ̃/",
+    "translationsRu": ["тимьян", "чабрец"],
+    "translationsEn": ["thyme"],
+    "semanticCore": "Душистая прованская трава для мяса, рагу и «букета гарни»; кладут веточками.",
+    "collocations": [
+      { "fr": "une branche de thym", "ru": "веточка тимьяна" },
+      { "fr": "le thym et le romarin", "ru": "тимьян и розмарин" },
+      { "fr": "du thym séché", "ru": "сушёный тимьян" },
+      { "fr": "un bouquet garni au thym", "ru": "букет гарни с тимьяном" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "romarin",
+        "note": "thym (m) = тимьян (мелкие листики, мягкий аромат); romarin (m) = розмарин (иголки, смолистый, сильный). Оба — прованские травы к мясу."
+      },
+      {
+        "with": "teint",
+        "note": "thym /tɛ̃/ = тимьян; teint /tɛ̃/ = цвет лица. Звучат одинаково (омофоны), но пишутся и значат совершенно разное."
+      }
+    ],
+    "frequencyRank": 920,
+    "level": "A2",
+    "tags": ["epices", "herbe"],
+    "caseIds": ["wc-epices"]
+  }
+]

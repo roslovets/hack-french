@@ -1,0 +1,345 @@
+[
+  {
+    "id": "wc-epices",
+    "title": "Специи",
+    "theme": "epices",
+    "level": "A2",
+    "wordIds": [
+      "wl-epices-vinaigre",
+      "wl-epices-moutarde",
+      "wl-epices-sauce",
+      "wl-epices-basilic",
+      "wl-epices-persil",
+      "wl-epices-cannelle",
+      "wl-epices-piment",
+      "wl-epices-thym"
+    ],
+    "steps": [
+      {
+        "id": "wc-epices-vinaigre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-epices-vinaigre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mets un peu de vinaigre dans la salade.",
+          "Le vinaigre balsamique est plus doux.",
+          "Du sel, du poivre, de l'huile et du vinaigre."
+        ],
+        "options": ["уксус", "масло", "соль", "сок"],
+        "correctIndex": 0,
+        "explanation": "vinaigre (m) — уксус, кислая заправка для салата. Слово буквально из vin (вино) + aigre (кислый) — «кислое вино». Масло — l'huile (f)."
+      },
+      {
+        "id": "wc-epices-vinaigre-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-epices-vinaigre",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит vinaigre?",
+        "bridge": "Англ. «vinegar» и фр. «vinaigre» — один корень (vin + aigre = «кислое вино»). Слышишь vin- в начале — думай про напиток, ставший кислым.",
+        "options": ["уксус", "вино", "виноград", "масло"],
+        "correctIndex": 0,
+        "explanation": "vinaigre = уксус. Англ. «vinegar» — прямой мост. Само вино — le vin, виноград — le raisin; vinaigre это уже не вино, а уксус."
+      },
+      {
+        "id": "wc-epices-moutarde-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-epices-moutarde",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Tu veux de la moutarde avec ta saucisse ?",
+          "La moutarde de Dijon est très forte.",
+          "Une cuillère de moutarde dans la sauce."
+        ],
+        "options": ["горчица", "майонез", "кетчуп", "масло"],
+        "correctIndex": 0,
+        "explanation": "moutarde (f) — горчица, острая жёлтая приправа. Самая известная — la moutarde de Dijon. Майонез — la mayonnaise."
+      },
+      {
+        "id": "wc-epices-moutarde-trap",
+        "kind": "trap",
+        "wordId": "wl-epices-moutarde",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Официант предлагает «de la moutarde» к мясу. Что он несёт?",
+        "options": [
+          "горчицу — острую жёлтую приправу",
+          "майонез — белый жирный соус",
+          "горчичник для спины",
+          "горчичное поле"
+        ],
+        "correctIndex": 0,
+        "explanation": "la moutarde — это именно горчица как приправа к мясу. Не путать с майонезом (la mayonnaise). Горчичное поле — un champ de moutarde, но в ресторане речь о приправе."
+      },
+      {
+        "id": "wc-epices-sauce-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-epices-sauce",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les pâtes avec une sauce tomate.",
+          "Le steak est servi avec une sauce au poivre.",
+          "Cette sauce est trop piquante pour moi."
+        ],
+        "options": ["соус", "сок", "тарелка", "специя"],
+        "correctIndex": 0,
+        "explanation": "sauce (f) — соус, которым поливают блюдо. «une sauce tomate» — томатный соус, «une sauce au poivre» — перечный. Сок — un jus."
+      },
+      {
+        "id": "wc-epices-sauce-sort",
+        "kind": "sort",
+        "wordId": "wl-epices-sauce",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом sauce звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une sauce tomate",
+            "basket": "ok"
+          },
+          {
+            "text": "la sauce au poivre",
+            "basket": "ok"
+          },
+          {
+            "text": "napper de sauce",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une sauce",
+            "basket": "no"
+          },
+          {
+            "text": "une sauce sèche",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«une sauce tomate», «la sauce au poivre», «napper de sauce» — естественно. Соус не «пьют» (boire une sauce) и он не бывает «сухим» (une sauce sèche) — соус по определению жидкий."
+      },
+      {
+        "id": "wc-epices-saucisse-trap",
+        "kind": "trap",
+        "wordId": "wl-epices-sauce",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "sauce и saucisse похожи. Где «соус»?",
+        "phrases": ["Passe-moi la sauce.", "Passe-moi la saucisse."],
+        "options": [
+          "la sauce — соус, которым поливают",
+          "la saucisse — это соус",
+          "оба слова значат «соус»",
+          "saucisse — соус, sauce — сосиска"
+        ],
+        "correctIndex": 0,
+        "explanation": "la sauce — соус; la saucisse — сосиска. Различает окончание -isse. Первая фраза — «передай соус», вторая — «передай сосиску»."
+      },
+      {
+        "id": "wc-epices-basilic-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-epices-basilic",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La pizza avec du basilic frais.",
+          "Quelques feuilles de basilic sur la tomate.",
+          "Le pesto se fait avec du basilic."
+        ],
+        "options": ["базилик", "петрушка", "укроп", "шпинат"],
+        "correctIndex": 0,
+        "explanation": "basilic (m) — базилик, ароматная трава для итальянских блюд и песто. Петрушка — le persil. Кладут свежие листья (des feuilles de basilic)."
+      },
+      {
+        "id": "wc-epices-basilic-trap",
+        "kind": "trap",
+        "wordId": "wl-epices-basilic",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "basilic и basilique звучат одинаково /ba.zi.lik/. Что кладут в песто?",
+        "options": [
+          "le basilic — базилик (трава)",
+          "la basilique — базилика (церковь)",
+          "оба слова значат «трава»",
+          "la basilique — это трава, le basilic — церковь"
+        ],
+        "correctIndex": 0,
+        "explanation": "le basilic (m) — базилик, трава. la basilique (f) — базилика, большой храм. Звучат одинаково, но это разные слова и разный род. В песто, конечно, le basilic."
+      },
+      {
+        "id": "wc-epices-persil-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-epices-persil",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je saupoudre la soupe de persil.",
+          "Achète un bouquet de persil au marché.",
+          "Du persil haché sur les pommes de terre."
+        ],
+        "options": ["петрушка", "базилик", "лук", "перец"],
+        "correctIndex": 0,
+        "explanation": "persil (m) — петрушка, свежая зелень, которой посыпают блюда в конце. «du persil haché» — рубленая петрушка. Базилик — le basilic."
+      },
+      {
+        "id": "wc-epices-persil-trap",
+        "kind": "trap",
+        "wordId": "wl-epices-persil",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как читается persil? Осторожно с последней буквой.",
+        "options": [
+          "/pɛʁ.si/ — конечная l не читается",
+          "/pɛʁ.sil/ — l читается, как пишется",
+          "/pʁe.zil/ — с z в середине",
+          "/pɛʁ.sij/ — с мягким l на конце"
+        ],
+        "correctIndex": 0,
+        "explanation": "persil читается /pɛʁ.si/ — конечная l немая, как в gentil или outil. Произносить /pɛʁ.sil/ с чётким «л» — ошибка."
+      },
+      {
+        "id": "wc-epices-cannelle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-epices-cannelle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Un dessert aux pommes et à la cannelle.",
+          "Ajoute un bâton de cannelle dans le vin chaud.",
+          "Du riz au lait avec de la cannelle."
+        ],
+        "options": ["корица", "ваниль", "сахар", "имбирь"],
+        "correctIndex": 0,
+        "explanation": "cannelle (f) — корица, тёплая сладкая специя для десертов и глинтвейна. «un bâton de cannelle» — палочка корицы. Ваниль — la vanille."
+      },
+      {
+        "id": "wc-epices-cannelle-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-epices-cannelle",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "cannelle",
+        "options": ["cannelle", "caramel", "flanelle", "dentelle"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало cannelle /ka.nɛl/ — корица. Похоже звучат caramel (карамель), flanelle (фланель) и dentelle (кружево), но это другие слова — слушай начало ca-nelle."
+      },
+      {
+        "id": "wc-epices-piment-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-epices-piment",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Attention, ce plat a beaucoup de piment.",
+          "Une pincée de piment, ça pique !",
+          "Le piment d'Espelette vient du Pays basque."
+        ],
+        "options": ["перец чили (острый)", "сладкий перец", "соль", "сахар"],
+        "correctIndex": 0,
+        "explanation": "piment (m) — острый перец чили, от которого «горит» во рту (ça pique). «le piment d'Espelette» — знаменитый баскский перец. Сладкий болгарский перец — un poivron."
+      },
+      {
+        "id": "wc-epices-piment-trap",
+        "kind": "trap",
+        "wordId": "wl-epices-piment",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "По-русски «перец» одно слово, а во французском два. Что значит le piment?",
+        "phrases": ["Ajoute du piment, ça va piquer.", "Ajoute du poivre, c'est plus parfumé."],
+        "options": [
+          "piment — острый перец чили (жжёт)",
+          "piment — чёрный молотый перец",
+          "piment и poivre — одно и то же",
+          "piment — это сладкий перец без остроты"
+        ],
+        "correctIndex": 0,
+        "explanation": "le piment — острый перец чили (жжёт, ça pique). le poivre — чёрный молотый перец из горошин (ароматный, но не жгучий). Это разные специи, хотя по-русски оба «перец»."
+      },
+      {
+        "id": "wc-epices-piment-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-epices-piment",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "piment",
+        "options": ["piment", "ciment", "aliment", "moment"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало piment /pi.mɑ̃/ — перец чили. Похожи по звучанию ciment (цемент), aliment (продукт), moment (момент), но начало pi- выдаёт нужное слово."
+      },
+      {
+        "id": "wc-epices-thym-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-epices-thym",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Mets une branche de thym dans le ragoût.",
+          "Le thym et le romarin parfument la viande.",
+          "Du poulet rôti au thym."
+        ],
+        "options": ["тимьян (чабрец)", "укроп", "мята", "лавровый лист"],
+        "correctIndex": 0,
+        "explanation": "thym (m) — тимьян (чабрец), прованская трава к мясу и рагу. Кладут веточками (une branche de thym). Пишется th-y-m, читается /tɛ̃/ — носовой звук, без «т» на конце."
+      },
+      {
+        "id": "wc-epices-thym-hint",
+        "kind": "wordHint",
+        "wordId": "wl-epices-thym",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: прованская трава с мелкими листиками, её кладут веточкой в рагу и к мясу, часто рядом с розмарином.",
+        "answer": "thym",
+        "hints": [
+          "Начинается на th-…",
+          "Всего 4 буквы, читается /tɛ̃/ — носовой, без т на конце",
+          "Une branche de ___ dans le ragoût."
+        ],
+        "explanation": "thym (m) — тимьян. Коварное написание th-y-m при простом звуке /tɛ̃/ (омофон слова teint — «цвет лица»)."
+      },
+      {
+        "id": "wc-epices-herbes-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-epices-persil",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три из этих слов — кулинарные травы (растения). Найди лишнее.",
+        "options": ["le persil", "le basilic", "le thym", "le vinaigre"],
+        "correctIndex": 3,
+        "explanation": "Петрушка (le persil), базилик (le basilic) и тимьян (le thym) — травы-приправы. Уксус (le vinaigre) — лишний: это кислая жидкость, а не трава."
+      },
+      {
+        "id": "wc-epices-piment-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-epices-piment",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для piment (перец чили), чтобы не путать его с poivre и запомнить носовой звук /pi.mɑ̃/.",
+        "examples": [
+          "«Пи-МАН» жжёт — представь, как от piment «горит» во рту и ты машешь рукой: ça pique !",
+          "Свяжи -ment на конце с moment: «острый момент» на языке — un moment de piment."
+        ]
+      }
+    ]
+  }
+]

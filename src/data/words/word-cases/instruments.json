@@ -1,0 +1,313 @@
+[
+  {
+    "id": "wc-instruments",
+    "title": "Музыкальные инструменты",
+    "theme": "instruments",
+    "level": "A2",
+    "wordIds": [
+      "wl-instruments-guitare",
+      "wl-instruments-piano",
+      "wl-instruments-violon",
+      "wl-instruments-trompette",
+      "wl-instruments-flute",
+      "wl-instruments-tambour",
+      "wl-instruments-archet",
+      "wl-instruments-corde"
+    ],
+    "steps": [
+      {
+        "id": "wc-instruments-guitare-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-instruments-guitare",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il joue de la guitare dans un groupe.",
+          "J'apprends la guitare depuis deux ans.",
+          "Elle a une guitare classique en bois."
+        ],
+        "options": ["гитара", "скрипка", "балалайка", "арфа"],
+        "correctIndex": 0,
+        "explanation": "guitare (f) — гитара. Играть на ней — «jouer de la guitare» (с предлогом de, потому что инструмент). Скрипка — un violon, арфа — une harpe."
+      },
+      {
+        "id": "wc-instruments-guitare-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-instruments-guitare",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит guitare?",
+        "bridge": "Англ. «guitar» — гитара; почти те же буквы. По-французски добавляется -e на конце и слово женского рода: une guitare, читается /ɡi.taʁ/.",
+        "options": ["гитара", "струна", "ритм", "усилитель"],
+        "correctIndex": 0,
+        "explanation": "guitare = гитара. Мост из английского «guitar», но во французском пишется с конечной -e и это слово женского рода: une guitare. Струна — une corde."
+      },
+      {
+        "id": "wc-instruments-piano-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-instruments-piano",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ma fille joue du piano tous les jours.",
+          "Il y a un grand piano dans le salon.",
+          "Elle prend des cours de piano."
+        ],
+        "options": ["пианино, рояль", "гитара", "скрипка", "барабан"],
+        "correctIndex": 0,
+        "explanation": "piano (m) — пианино и рояль (фр. не различает их одним словом; рояль уточняют как un piano à queue). «jouer du piano» — играть на пианино. Барабан — un tambour."
+      },
+      {
+        "id": "wc-instruments-piano-sort",
+        "kind": "sort",
+        "wordId": "wl-instruments-piano",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом piano звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "jouer du piano",
+            "basket": "ok"
+          },
+          {
+            "text": "un cours de piano",
+            "basket": "ok"
+          },
+          {
+            "text": "se mettre au piano",
+            "basket": "ok"
+          },
+          {
+            "text": "jouer au piano",
+            "basket": "no"
+          },
+          {
+            "text": "manger du piano",
+            "basket": "no"
+          }
+        ],
+        "explanation": "С инструментом — предлог de: «jouer du piano», «un cours de piano». «Se mettre au piano» (сесть за пианино) — устойчивое исключение про место. А «jouer au piano» (как «играть в пианино») и «manger du piano» — ошибки: «jouer à» — это про игры и спорт."
+      },
+      {
+        "id": "wc-instruments-violon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-instruments-violon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le violon est un instrument à cordes.",
+          "Il joue du violon depuis l'enfance.",
+          "On accorde le violon avant le concert."
+        ],
+        "options": ["скрипка", "виолончель", "гитара", "флейта"],
+        "correctIndex": 0,
+        "explanation": "violon (m) — скрипка. «jouer du violon» — играть на скрипке. Не путать с виолончелью — un violoncelle (она крупнее и ниже звучит). Флейта — une flûte."
+      },
+      {
+        "id": "wc-instruments-violon-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-instruments-violon",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "violon",
+        "options": ["violon", "violent", "violet", "violoncelle"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало violon /vjɔ.lɔ̃/ — скрипка. Похожие, но другие слова: violent /vjɔ.lɑ̃/ — жестокий, violet /vjɔ.lɛ/ — фиолетовый, violoncelle /vjɔ.lɔ̃.sɛl/ — виолончель."
+      },
+      {
+        "id": "wc-instruments-trompette-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-instruments-trompette",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Elle joue de la trompette dans l'orchestre.",
+          "La trompette est un instrument à vent.",
+          "On entend une trompette au loin."
+        ],
+        "options": ["труба", "барабан", "скрипка", "флейта"],
+        "correctIndex": 0,
+        "explanation": "trompette (f) — труба (духовой инструмент). «jouer de la trompette» — играть на трубе, «un instrument à vent» — духовой инструмент. Барабан — un tambour."
+      },
+      {
+        "id": "wc-instruments-trompette-trap",
+        "kind": "trap",
+        "wordId": "wl-instruments-trompette",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Похожие слова: trompette и trompe. Какое из них «труба» (инструмент)?",
+        "phrases": ["Il joue de la trompette.", "L'éléphant a une longue trompe."],
+        "options": [
+          "труба-инструмент — la trompette; la trompe — это хобот слона.",
+          "оба значат «труба-инструмент», разницы нет.",
+          "la trompe — инструмент, а la trompette — хобот.",
+          "trompette значит «ошибка», от se tromper."
+        ],
+        "correctIndex": 0,
+        "explanation": "la trompette — музыкальная труба. la trompe — хобот слона (а ещё охотничий рог). Слова однокоренные, но не путать. И ни то, ни другое не связано с se tromper (ошибаться)."
+      },
+      {
+        "id": "wc-instruments-flute-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-instruments-flute",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Elle apprend la flûte à l'école de musique.",
+          "Le son de la flûte est très doux.",
+          "Il joue de la flûte dans l'orchestre."
+        ],
+        "options": ["флейта", "труба", "скрипка", "гитара"],
+        "correctIndex": 0,
+        "explanation": "flûte (f) — флейта. Внимание на accent circonflexe: f-l-û-t-e, читается /flyt/. «la flûte à bec» — блокфлейта. «jouer de la flûte» — играть на флейте."
+      },
+      {
+        "id": "wc-instruments-flute-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-instruments-flute",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "flûte",
+        "options": ["flûte", "flotte", "lutte", "butte"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало flûte /flyt/ — флейта (звук [y], губы трубочкой). Похожие, но другие слова: flotte /flɔt/ — флот (звук [ɔ]), lutte /lyt/ — борьба, butte /byt/ — холмик."
+      },
+      {
+        "id": "wc-instruments-tambour-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-instruments-tambour",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le tambour donne le rythme de la fanfare.",
+          "L'enfant tape sur un petit tambour.",
+          "On entend le tambour dans le défilé."
+        ],
+        "options": ["барабан", "труба", "флейта", "скрипка"],
+        "correctIndex": 0,
+        "explanation": "tambour (m) — барабан (один, ударный инструмент). «jouer du tambour» — играть на барабане, «battre le tambour» — бить в барабан. Труба — une trompette."
+      },
+      {
+        "id": "wc-instruments-tambour-cmp",
+        "kind": "compare",
+        "wordId": "wl-instruments-tambour",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "tambour и batterie — в чём разница?",
+        "phrases": [
+          "Il joue du tambour dans la fanfare.",
+          "Il joue de la batterie dans un groupe de rock."
+        ],
+        "options": [
+          "le tambour — отдельный барабан; la batterie — целая ударная установка (барабаны + тарелки).",
+          "это одно и то же слово.",
+          "le tambour — установка, la batterie — один барабан.",
+          "la batterie значит только «батарейка», а не инструмент."
+        ],
+        "correctIndex": 0,
+        "explanation": "le tambour — один барабан (в оркестре, фанфаре). la batterie — ударная установка целиком (несколько барабанов и тарелок, как в рок-группе). У batterie есть и второе значение — батарейка/аккумулятор."
+      },
+      {
+        "id": "wc-instruments-archet-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-instruments-archet",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le violoniste passe l'archet sur les cordes.",
+          "Il faut tenir l'archet sans serrer.",
+          "Un bon archet coûte parfois très cher."
+        ],
+        "options": ["смычок", "струна", "гриф", "нота"],
+        "correctIndex": 0,
+        "explanation": "archet (m) — смычок: палочка с конским волосом, которой водят по струнам скрипки или виолончели. Струна — une corde. На скрипке играют именно archet'ом."
+      },
+      {
+        "id": "wc-instruments-archet-trap",
+        "kind": "trap",
+        "wordId": "wl-instruments-archet",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Похожие слова: archet и arc. Чем водят по струнам скрипки?",
+        "phrases": ["Le violoniste tient son archet.", "Le sportif tend son arc."],
+        "options": [
+          "смычок — l'archet; un arc — это лук (для стрельбы) или арка.",
+          "оба значат «смычок».",
+          "un arc — смычок, а l'archet — лук для стрельбы.",
+          "archet значит «арка», а не смычок."
+        ],
+        "correctIndex": 0,
+        "explanation": "l'archet (m) — смычок; буквально «маленький arc», ведь раньше он был изогнут. un arc — лук для стрельбы из стрел, а также арка (un arc de triomphe). По струнам водят archet, а не arc."
+      },
+      {
+        "id": "wc-instruments-corde-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-instruments-corde",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Une corde de la guitare a cassé.",
+          "Le violon a quatre cordes.",
+          "Il faut changer les cordes du piano."
+        ],
+        "options": ["струна", "смычок", "клавиша", "нота"],
+        "correctIndex": 0,
+        "explanation": "corde (f) — струна. «un instrument à cordes» — струнный инструмент, «une corde cassée» — лопнувшая струна. У слова есть и второе значение — верёвка, канат. Клавиша — une touche."
+      },
+      {
+        "id": "wc-instruments-corde-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-instruments-corde",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — части или принадлежности струнного инструмента. Найди лишнее.",
+        "options": ["la corde", "l'archet", "la touche", "le défilé"],
+        "correctIndex": 3,
+        "explanation": "Струна (la corde), смычок (l'archet) и накладка грифа (la touche — поверхность грифа, по которой прижимают струны) связаны со струнными инструментами. Шествие, парад (le défilé) — лишнее: это не часть инструмента."
+      },
+      {
+        "id": "wc-instruments-corde-hint",
+        "kind": "wordHint",
+        "wordId": "wl-instruments-corde",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: натянутая нить на гитаре или скрипке, которая звучит, если её тронуть.",
+        "answer": "corde",
+        "hints": ["Начинается на c…", "5 букв, женский род: une ___", "Le violon a quatre ___s."],
+        "explanation": "corde (f) — струна; то же слово значит «верёвка, канат». «un instrument à cordes» — струнный инструмент. Читается /kɔʁd/, конечная e не звучит."
+      },
+      {
+        "id": "wc-instruments-archet-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-instruments-archet",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для archet (смычок), чтобы не путать его с arc (лук) и помнить мужской род (un archet).",
+        "examples": [
+          "Archet — это «маленький arc»: изогнутая палочка, как мини-лук, которым «стреляешь» музыкой по струнам.",
+          "Скрипач держит un archet, как лучник — лук: оба «он», мужского рода, но archet поёт, а arc стреляет."
+        ]
+      }
+    ]
+  }
+]

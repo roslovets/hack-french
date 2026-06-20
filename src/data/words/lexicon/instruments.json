@@ -1,0 +1,238 @@
+[
+  {
+    "id": "wl-instruments-guitare",
+    "lemma": "guitare",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɡi.taʁ/",
+    "translationsRu": ["гитара"],
+    "translationsEn": ["guitar"],
+    "semanticCore": "Гитара — самый народный струнный инструмент; играют на ней «de la guitare».",
+    "collocations": [
+      { "fr": "jouer de la guitare", "ru": "играть на гитаре" },
+      { "fr": "une guitare classique", "ru": "классическая гитара" },
+      { "fr": "une guitare électrique", "ru": "электрогитара" },
+      { "fr": "apprendre la guitare", "ru": "учиться игре на гитаре" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "violon",
+        "note": "guitare = гитара (на ней играют пальцами или медиатором); violon = скрипка (на ней играют смычком)."
+      },
+      {
+        "with": "corde",
+        "note": "guitare = сам инструмент; corde = струна, одна из натянутых нитей этого инструмента."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["instruments", "cordes"],
+    "caseIds": ["wc-instruments"]
+  },
+  {
+    "id": "wl-instruments-piano",
+    "lemma": "piano",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pja.no/",
+    "translationsRu": ["пианино", "рояль"],
+    "translationsEn": ["piano"],
+    "semanticCore": "Клавишный инструмент; одно слово и для пианино, и для рояля (рояль уточняют как piano à queue).",
+    "collocations": [
+      { "fr": "jouer du piano", "ru": "играть на пианино" },
+      { "fr": "un cours de piano", "ru": "урок (игры на) фортепиано" },
+      { "fr": "se mettre au piano", "ru": "сесть за пианино" },
+      { "fr": "un piano à queue", "ru": "рояль" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "clavier",
+        "note": "piano = акустическое фортепиано (инструмент); clavier = клавиатура (ряд клавиш) или синтезатор. Клавиша по отдельности — une touche."
+      },
+      {
+        "with": "piano (муз. термин)",
+        "note": "le piano = инструмент; в нотах piano (сокр. p) — указание «тихо». Из этого «тихого» и выросло название инструмента (pianoforte)."
+      }
+    ],
+    "frequencyRank": 590,
+    "level": "A2",
+    "tags": ["instruments", "clavier"],
+    "caseIds": ["wc-instruments"]
+  },
+  {
+    "id": "wl-instruments-violon",
+    "lemma": "violon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vjɔ.lɔ̃/",
+    "translationsRu": ["скрипка"],
+    "translationsEn": ["violin"],
+    "semanticCore": "Скрипка — небольшой струнный инструмент, на котором играют смычком (archet).",
+    "collocations": [
+      { "fr": "jouer du violon", "ru": "играть на скрипке" },
+      { "fr": "un instrument à cordes", "ru": "струнный инструмент" },
+      { "fr": "accorder son violon", "ru": "настраивать скрипку" },
+      { "fr": "un cours de violon", "ru": "урок игры на скрипке" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "violoncelle",
+        "note": "violon = скрипка (маленькая, высокий звук, держат у плеча); violoncelle = виолончель (большая, низкий звук, ставят на пол)."
+      },
+      {
+        "with": "violent",
+        "note": "Звучат похоже: violon /vjɔ.lɔ̃/ (скрипка, носовой [ɔ̃]) и violent /vjɔ.lɑ̃/ (жестокий, носовой [ɑ̃]). Разные слова."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["instruments", "cordes"],
+    "caseIds": ["wc-instruments"]
+  },
+  {
+    "id": "wl-instruments-trompette",
+    "lemma": "trompette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tʁɔ̃.pɛt/",
+    "translationsRu": ["труба"],
+    "translationsEn": ["trumpet"],
+    "semanticCore": "Труба — медный духовой инструмент с ярким, звонким звуком.",
+    "collocations": [
+      { "fr": "jouer de la trompette", "ru": "играть на трубе" },
+      { "fr": "un instrument à vent", "ru": "духовой инструмент" },
+      { "fr": "un joueur de trompette", "ru": "трубач" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "trompe",
+        "note": "trompette = музыкальная труба; trompe = хобот слона (а также охотничий рог). Однокоренные, но не путать."
+      },
+      {
+        "with": "tambour",
+        "note": "trompette = труба (духовой, инструмент à vent); tambour = барабан (ударный)."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["instruments", "vents"],
+    "caseIds": ["wc-instruments"]
+  },
+  {
+    "id": "wl-instruments-flute",
+    "lemma": "flûte",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/flyt/",
+    "translationsRu": ["флейта"],
+    "translationsEn": ["flute"],
+    "semanticCore": "Флейта — духовой инструмент с мягким, светлым звуком; пишется с accent circonflexe.",
+    "collocations": [
+      { "fr": "jouer de la flûte", "ru": "играть на флейте" },
+      { "fr": "la flûte à bec", "ru": "блокфлейта" },
+      { "fr": "la flûte traversière", "ru": "поперечная флейта" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "flotte",
+        "note": "Звучат похоже: flûte /flyt/ (флейта, звук [y]) и flotte /flɔt/ (флот; также разг. «льёт дождь», звук [ɔ]). Разные слова."
+      },
+      {
+        "with": "trompette",
+        "note": "flûte = флейта (светлый, тихий звук); trompette = труба (громкий, медный). Оба — instruments à vent."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["instruments", "vents"],
+    "caseIds": ["wc-instruments"]
+  },
+  {
+    "id": "wl-instruments-tambour",
+    "lemma": "tambour",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tɑ̃.buʁ/",
+    "translationsRu": ["барабан"],
+    "translationsEn": ["drum"],
+    "semanticCore": "Барабан — один ударный инструмент, который задаёт ритм (особенно в оркестре, фанфаре).",
+    "collocations": [
+      { "fr": "jouer du tambour", "ru": "играть на барабане" },
+      { "fr": "battre le tambour", "ru": "бить в барабан" },
+      { "fr": "un roulement de tambour", "ru": "барабанная дробь" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "batterie",
+        "note": "tambour = один барабан; batterie = ударная установка целиком (барабаны + тарелки). У batterie есть и значение «батарейка»."
+      },
+      {
+        "with": "trompette",
+        "note": "tambour = барабан (ударный, à percussion); trompette = труба (духовой, à vent)."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["instruments", "percussions"],
+    "caseIds": ["wc-instruments"]
+  },
+  {
+    "id": "wl-instruments-archet",
+    "lemma": "archet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/aʁ.ʃɛ/",
+    "translationsRu": ["смычок"],
+    "translationsEn": ["bow"],
+    "semanticCore": "Смычок — палочка с конским волосом, которой водят по струнам скрипки или виолончели.",
+    "collocations": [
+      { "fr": "passer l'archet sur les cordes", "ru": "вести смычком по струнам" },
+      { "fr": "tenir l'archet", "ru": "держать смычок" },
+      { "fr": "un coup d'archet", "ru": "движение смычком, штрих" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "arc",
+        "note": "archet = смычок (буквально «маленький arc»); arc = лук для стрельбы стрелами, а также арка. Похожи, но не путать."
+      },
+      {
+        "with": "corde",
+        "note": "archet = то, чем водят (смычок); corde = то, по чему водят (струна). Звук рождается от трения archet о corde."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["instruments", "cordes"],
+    "caseIds": ["wc-instruments"]
+  },
+  {
+    "id": "wl-instruments-corde",
+    "lemma": "corde",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kɔʁd/",
+    "translationsRu": ["струна", "верёвка"],
+    "translationsEn": ["string", "rope"],
+    "semanticCore": "Натянутая нить, которая звучит (струна) — то же слово значит «верёвка, канат».",
+    "collocations": [
+      { "fr": "un instrument à cordes", "ru": "струнный инструмент" },
+      { "fr": "une corde cassée", "ru": "лопнувшая струна" },
+      { "fr": "les cordes du violon", "ru": "струны скрипки" },
+      { "fr": "une corde à sauter", "ru": "скакалка" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ficelle",
+        "note": "В смысле «верёвка»: corde = толстая верёвка, канат; ficelle = тонкая бечёвка, шпагат."
+      },
+      {
+        "with": "touche",
+        "note": "corde = струна (натянутая нить); touche = клавиша (у пианино) или гриф/накладка грифа (у скрипки, гитары). На скрипке — cordes, у пианино — touches."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["instruments", "cordes"],
+    "caseIds": ["wc-instruments"]
+  }
+]

@@ -1,0 +1,229 @@
+[
+  {
+    "id": "wl-formes-rond",
+    "lemma": "rond",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁɔ̃/",
+    "translationsRu": ["круг", "кружок"],
+    "translationsEn": ["circle", "round"],
+    "semanticCore": "Круг, кружок как круглая форма, нарисованная от руки или бытовая; разговорнее, чем cercle.",
+    "collocations": [
+      { "fr": "dessiner un rond", "ru": "нарисовать кружок" },
+      { "fr": "faire un rond autour", "ru": "обвести кружком" },
+      { "fr": "des ronds dans l'eau", "ru": "круги на воде" },
+      { "fr": "en rond", "ru": "по кругу / кружком" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cercle",
+        "note": "rond = круглая форма от руки, бытовое слово; cercle = точная окружность (геометрия, циркуль). Часто взаимозаменяемы, но cercle строже."
+      },
+      {
+        "with": "rang",
+        "note": "rond /ʁɔ̃/ = круг; rang /ʁɑ̃/ = ряд. Похоже звучат, но носовой гласный разный: /ɔ̃/ против /ɑ̃/."
+      }
+    ],
+    "frequencyRank": 240,
+    "level": "A1",
+    "tags": ["formes", "geometrie"],
+    "caseIds": ["wc-formes"]
+  },
+  {
+    "id": "wl-formes-carre",
+    "lemma": "carré",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ka.ʁe/",
+    "translationsRu": ["квадрат"],
+    "translationsEn": ["square"],
+    "semanticCore": "Квадрат: фигура с четырьмя равными сторонами и прямыми углами; также «в квадрате» в математике.",
+    "collocations": [
+      { "fr": "dessiner un carré", "ru": "нарисовать квадрат" },
+      { "fr": "un mètre carré", "ru": "квадратный метр" },
+      { "fr": "un carré parfait", "ru": "ровный квадрат" },
+      { "fr": "le carré de trois", "ru": "три в квадрате (девять)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "case",
+        "note": "carré = квадрат как форма; case = клетка (на доске, в таблице) или клеточка для галочки. «cocher une case» — поставить галочку в клетке."
+      },
+      {
+        "with": "losange",
+        "note": "carré = квадрат с прямыми углами; losange = ромб (стороны равны, но углы наклонены). Ромб — это как бы «накренённый» квадрат."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A1",
+    "tags": ["formes", "geometrie"],
+    "caseIds": ["wc-formes"]
+  },
+  {
+    "id": "wl-formes-triangle",
+    "lemma": "triangle",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tʁi.ɑ̃ɡl/",
+    "translationsRu": ["треугольник"],
+    "translationsEn": ["triangle"],
+    "semanticCore": "Треугольник: фигура с тремя сторонами и тремя углами; внутри слова спрятаны trois и angle.",
+    "collocations": [
+      { "fr": "un triangle équilatéral", "ru": "равносторонний треугольник" },
+      { "fr": "un triangle rectangle", "ru": "прямоугольный треугольник" },
+      { "fr": "couper en triangle", "ru": "разрезать на треугольники (по диагонали)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "angle",
+        "note": "triangle = вся фигура (три угла); angle = один угол. Triangle буквально «trois + angle» — три угла."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A1",
+    "tags": ["formes", "geometrie"],
+    "caseIds": ["wc-formes"]
+  },
+  {
+    "id": "wl-formes-cercle",
+    "lemma": "cercle",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɛʁkl/",
+    "translationsRu": ["круг", "окружность"],
+    "translationsEn": ["circle"],
+    "semanticCore": "Круг, окружность как точная геометрическая фигура; образно — круг людей («un cercle d'amis»).",
+    "collocations": [
+      { "fr": "tracer un cercle", "ru": "начертить окружность" },
+      { "fr": "un cercle d'amis", "ru": "круг друзей" },
+      { "fr": "un cercle vicieux", "ru": "порочный круг" },
+      { "fr": "en cercle", "ru": "в круг / по кругу" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rond",
+        "note": "cercle = точная окружность (циркуль, геометрия, «cercle vicieux»); rond = кружок от руки, разговорное. Cercle строже и абстрактнее."
+      },
+      {
+        "with": "sphère",
+        "note": "cercle = круг (плоская фигура, 2D); sphère = шар, сфера (объёмная, 3D). Не путать плоское и объёмное."
+      }
+    ],
+    "frequencyRank": 330,
+    "level": "A1",
+    "tags": ["formes", "geometrie"],
+    "caseIds": ["wc-formes"]
+  },
+  {
+    "id": "wl-formes-courbe",
+    "lemma": "courbe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kuʁb/",
+    "translationsRu": ["кривая", "изгиб"],
+    "translationsEn": ["curve"],
+    "semanticCore": "Кривая линия, изгиб: всё, что не прямое — поворот дороги, график, плавная линия.",
+    "collocations": [
+      { "fr": "une courbe de température", "ru": "кривая температуры" },
+      { "fr": "la route fait une courbe", "ru": "дорога делает изгиб" },
+      { "fr": "une ligne courbe", "ru": "кривая линия" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ligne droite",
+        "note": "courbe = кривая (изгиб); ligne droite = прямая линия. Это противоположности: courbe ≠ droite."
+      },
+      {
+        "with": "virage",
+        "note": "courbe = плавный изгиб (дороги, линии, графика); virage = поворот (резче, как действие руля). Дорожный поворот — чаще un virage."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A1",
+    "tags": ["formes", "ligne"],
+    "caseIds": ["wc-formes"]
+  },
+  {
+    "id": "wl-formes-angle",
+    "lemma": "angle",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɑ̃ɡl/",
+    "translationsRu": ["угол"],
+    "translationsEn": ["angle", "corner"],
+    "semanticCore": "Угол: геометрический угол между линиями и внешний угол улицы («à l'angle de la rue»).",
+    "collocations": [
+      { "fr": "un angle droit", "ru": "прямой угол" },
+      { "fr": "à l'angle de la rue", "ru": "на углу улицы" },
+      { "fr": "mesurer un angle", "ru": "измерить угол" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "coin",
+        "note": "angle = геометрический угол и внешний угол улицы (à l'angle de la rue); coin = уютный угол внутри (le coin de la pièce, un coin tranquille). Прямой угол — только un angle droit."
+      }
+    ],
+    "frequencyRank": 290,
+    "level": "A1",
+    "tags": ["formes", "geometrie"],
+    "caseIds": ["wc-formes"]
+  },
+  {
+    "id": "wl-formes-losange",
+    "lemma": "losange",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/lɔ.zɑ̃ʒ/",
+    "translationsRu": ["ромб"],
+    "translationsEn": ["rhombus", "diamond"],
+    "semanticCore": "Ромб: четыре равные стороны при наклонённых углах — форма «бубен» на картах, как накренённый квадрат.",
+    "collocations": [
+      { "fr": "un losange parfait", "ru": "ровный ромб" },
+      { "fr": "en forme de losange", "ru": "в форме ромба" },
+      { "fr": "le losange rouge", "ru": "красный ромб (бубны на картах)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "diamant",
+        "note": "losange = форма-ромб (геометрия, бубны на картах); diamant = бриллиант, драгоценный камень. Англ. «diamond» = и то и другое, но во французском это разные слова."
+      },
+      {
+        "with": "carré",
+        "note": "losange = ромб (углы наклонены); carré = квадрат (углы прямые). У обоих стороны равны, разница в углах."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A1",
+    "tags": ["formes", "geometrie"],
+    "caseIds": ["wc-formes"]
+  },
+  {
+    "id": "wl-formes-ovale",
+    "lemma": "ovale",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɔ.val/",
+    "translationsRu": ["овал"],
+    "translationsEn": ["oval"],
+    "semanticCore": "Овал: вытянутый круг, форма яйца; слово бывает и прилагательным («une table ovale»).",
+    "collocations": [
+      { "fr": "en forme d'ovale", "ru": "в форме овала" },
+      { "fr": "une table ovale", "ru": "овальный стол" },
+      { "fr": "un visage ovale", "ru": "овальное лицо" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cercle",
+        "note": "ovale = вытянутый круг (как яйцо); cercle = ровный круг. Овал — это «растянутый» круг."
+      },
+      {
+        "with": "avale",
+        "note": "ovale /ɔ.val/ = овал; avale /a.val/ = «глотает» (глагол avaler). Похоже звучат, но первый звук разный: /ɔ/ против /a/."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A1",
+    "tags": ["formes", "geometrie"],
+    "caseIds": ["wc-formes"]
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "id": "wc-viande",
+    "title": "Мясо",
+    "theme": "viande",
+    "level": "A2",
+    "wordIds": [
+      "wl-viande-boeuf",
+      "wl-viande-porc",
+      "wl-viande-agneau",
+      "wl-viande-saucisse",
+      "wl-viande-steak",
+      "wl-viande-cotelette",
+      "wl-viande-volaille",
+      "wl-viande-gigot"
+    ],
+    "steps": [
+      {
+        "id": "wc-viande-boeuf-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-viande-boeuf",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Au menu, il y a du bœuf bourguignon.",
+          "Je voudrais un steak de bœuf, s'il vous plaît.",
+          "Cette sauce mijote dans un bouillon de bœuf."
+        ],
+        "options": ["говядина (мясо)", "свинина", "баранина", "курятина"],
+        "correctIndex": 0,
+        "explanation": "le bœuf — говядина (мясо быка/коровы), а также сам бык/вол. На ферме корова — la vache, а на тарелке её мясо — le bœuf (как в англ. cow → beef). Конечное f здесь читается: /bœf/."
+      },
+      {
+        "id": "wc-viande-boeuf-cmp",
+        "kind": "compare",
+        "wordId": "wl-viande-boeuf",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "la vache и le bœuf. В чём разница?",
+        "phrases": ["La vache mange de l'herbe dans le pré.", "On a mangé du bœuf au dîner."],
+        "options": [
+          "vache — корова (живое животное); bœuf — говядина (мясо) и бык/вол.",
+          "Это одно и то же слово, разницы нет.",
+          "vache — мясо, а bœuf — живое животное.",
+          "Оба значат «телёнок»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Как в английском cow/beef: la vache — корова в поле (живая, даёт молоко); le bœuf — говядина на тарелке (и бык/вол). Французский разводит животное и его мясо разными словами."
+      },
+      {
+        "id": "wc-viande-porc-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-viande-porc",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "Ce soir, je prépare un rôti de porc.",
+          "Une côte de porc avec des frites, c'est bon.",
+          "Le filet de porc est tendre et maigre."
+        ],
+        "options": ["свинина (мясо)", "говядина", "птица", "рыба"],
+        "correctIndex": 0,
+        "explanation": "le porc — свинина (мясо свиньи); в кулинарии всё идёт «de porc»: rôti de porc, côte de porc. Живую свинью чаще зовут le cochon. Конечное c не читается: /pɔʁ/."
+      },
+      {
+        "id": "wc-viande-porc-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-viande-porc",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "porc",
+        "options": ["porc", "part", "pour", "pomme"],
+        "correctIndex": 0,
+        "explanation": "porc /pɔʁ/ — свинина/свинья (конечное c немое). Не путай с part /paʁ/ — часть/доля, pour /puʁ/ — для, pomme /pɔm/ — яблоко. Кстати, le port (порт) звучит точно так же — /pɔʁ/ — это омофон, его различает только смысл и написание."
+      },
+      {
+        "id": "wc-viande-agneau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-viande-agneau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "À Pâques, on mange souvent de l'agneau.",
+          "Des côtelettes d'agneau grillées, c'est délicieux.",
+          "Un petit agneau est né à la ferme ce matin."
+        ],
+        "options": ["ягнёнок и баранина (молодая)", "телёнок", "поросёнок", "цыплёнок"],
+        "correctIndex": 0,
+        "explanation": "l'agneau (m) — ягнёнок (молодое животное) и его нежное мясо. Одно слово на оба смысла. Пишется через gn, читается /a.ɲo/. Взрослый баран и его мясо — le mouton."
+      },
+      {
+        "id": "wc-viande-agneau-cmp",
+        "kind": "compare",
+        "wordId": "wl-viande-agneau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "l'agneau и le mouton. В чём разница?",
+        "phrases": [
+          "Les côtelettes d'agneau sont tendres.",
+          "Le gigot de mouton a un goût plus fort."
+        ],
+        "options": [
+          "agneau — ягнёнок и его нежное мясо; mouton — взрослый баран/овца и баранина (вкус крепче).",
+          "Это синонимы, оба про курицу.",
+          "agneau — взрослый баран; mouton — детёныш.",
+          "agneau — мясо, mouton — только живое животное."
+        ],
+        "correctIndex": 0,
+        "explanation": "Возраст решает: l'agneau — молодой ягнёнок, мясо нежнее; le mouton — взрослое животное, баранина с более сильным вкусом. Оба слова значат и животное, и его мясо."
+      },
+      {
+        "id": "wc-viande-saucisse-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-viande-saucisse",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит saucisse?",
+        "bridge": "Англ. «sausage» — та же семья, что и фр. saucisse: оба от лат. salsus («солёный»). По-французски это колбаска, которую жарят или варят.",
+        "options": ["колбаска / сосиска (которую готовят)", "соус", "солонка", "салат"],
+        "correctIndex": 0,
+        "explanation": "la saucisse — сырая или варёная колбаска (saucisse de Toulouse), её жарят или варят. Англ. «sausage» — прямой мост. Не путай с sauce (соус) — слово похоже, но другое."
+      },
+      {
+        "id": "wc-viande-saucisse-cmp",
+        "kind": "compare",
+        "wordId": "wl-viande-saucisse",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "la saucisse и le saucisson. В чём разница?",
+        "phrases": [
+          "Je fais griller des saucisses au barbecue.",
+          "On coupe du saucisson pour l'apéro."
+        ],
+        "options": [
+          "saucisse — сырая/варёная колбаска, её готовят; saucisson — сухая колбаса, её режут ломтиками.",
+          "Это одно и то же слово в двух родах.",
+          "saucisse — сухая колбаса; saucisson — сырая колбаска.",
+          "Оба значат «соус»."
+        ],
+        "correctIndex": 0,
+        "explanation": "la saucisse (f) — мягкая колбаска, её жарят/варят (барбекю, saucisses-frites). le saucisson (m) — твёрдая вяленая колбаса, её нарезают холодной к аперитиву. Готовят первую, режут вторую."
+      },
+      {
+        "id": "wc-viande-steak-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-viande-steak",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит steak?",
+        "bridge": "Англ. «steak» французы взяли как есть: то же написание, тот же смысл — кусок жареного мяса. Читается /stɛk/.",
+        "options": ["стейк (кусок жареного мяса)", "тарелка", "вилка", "печенье"],
+        "correctIndex": 0,
+        "explanation": "le steak — стейк, кусок мяса (обычно говядины) для жарки. Прямое заимствование из английского. Старая офранцуженная форма — le bifteck (от «beef steak»)."
+      },
+      {
+        "id": "wc-viande-steak-sort",
+        "kind": "sort",
+        "wordId": "wl-viande-steak",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Как заказать стейк? Какие сочетания со словом steak звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un steak saignant",
+            "basket": "ok"
+          },
+          {
+            "text": "un steak bien cuit",
+            "basket": "ok"
+          },
+          {
+            "text": "un steak frites",
+            "basket": "ok"
+          },
+          {
+            "text": "un steak haché",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un steak",
+            "basket": "no"
+          },
+          {
+            "text": "un steak mouillé",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Прожарку заказывают так: «saignant» (с кровью), «à point» (средняя), «bien cuit» (хорошо прожаренный). «un steak frites» — стейк с фри, «un steak haché» — рубленый бифштекс. А «boire un steak» (пить стейк) и «un steak mouillé» (мокрый стейк) — бессмыслица."
+      },
+      {
+        "id": "wc-viande-cotelette-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-viande-cotelette",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "Le boucher m'a préparé des côtelettes d'agneau.",
+          "Je fais cuire une côtelette de porc à la poêle.",
+          "Sur l'os de la côtelette, il reste un peu de viande."
+        ],
+        "options": [
+          "отбивная на кости (кусок мяса с косточкой)",
+          "котлета из фарша",
+          "колбаса",
+          "куриная грудка"
+        ],
+        "correctIndex": 0,
+        "explanation": "la côtelette — отбивная на рёберной косточке (d'agneau, de porc). Это цельный кусок мяса с костью, а не фарш. Слово от côte (ребро). Жарят на сковороде или гриле."
+      },
+      {
+        "id": "wc-viande-cotelette-trap",
+        "kind": "trap",
+        "wordId": "wl-viande-cotelette",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Русская «котлета» (из фарша) — это côtelette? Осторожно, ложный друг.",
+        "options": [
+          "Нет: côtelette — отбивная на кости; русская котлета из фарша — une boulette или un steak haché.",
+          "Да, côtelette и есть котлета из фарша.",
+          "côtelette — это соус к мясу.",
+          "côtelette — это целая курица."
+        ],
+        "correctIndex": 0,
+        "explanation": "Классическая ловушка для русскоговорящих: фр. côtelette ≠ рус. «котлета». Côtelette — отбивная на косточке (из ягнёнка, свинины, телятины). Рубленая котлета из фарша — это une boulette (de viande) или un steak haché."
+      },
+      {
+        "id": "wc-viande-volaille-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-viande-volaille",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Au marché, on vend de la volaille fermière.",
+          "Vous préférez de la viande, du poisson ou de la volaille ?",
+          "Cette ferme a un grand élevage de volailles."
+        ],
+        "options": ["домашняя птица (курица, утка, индейка)", "дикая птица в небе", "рыба", "яйца"],
+        "correctIndex": 0,
+        "explanation": "la volaille — собирательное «домашняя птица»: курица, утка, индейка вместе — и как живность, и как мясо в меню. Конкретно курица — le poulet."
+      },
+      {
+        "id": "wc-viande-volaille-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-viande-volaille",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова можно отнести к «la volaille» (домашняя птица). Найди лишнее.",
+        "options": ["le poulet", "le canard", "la dinde", "le saumon"],
+        "correctIndex": 3,
+        "explanation": "Курица (le poulet), утка (le canard) и индейка (la dinde) — это volaille (домашняя птица). Лосось (le saumon) лишний: это рыба (poisson), а не птица."
+      },
+      {
+        "id": "wc-viande-gigot-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-viande-gigot",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "Dimanche, ma grand-mère prépare un gigot d'agneau.",
+          "Le gigot rôtit au four depuis deux heures.",
+          "On sert le gigot avec des haricots verts."
+        ],
+        "options": [
+          "баранья нога (задняя нога для запекания)",
+          "куриное крылышко",
+          "колбаса",
+          "стейк из говядины"
+        ],
+        "correctIndex": 0,
+        "explanation": "le gigot — задняя нога барана или ягнёнка, которую запекают целиком (классическое воскресное блюдо). Конечное t не читается: /ʒi.ɡo/. Из птицы или человека «нога» — la cuisse, не gigot."
+      },
+      {
+        "id": "wc-viande-gigot-hint",
+        "kind": "wordHint",
+        "wordId": "wl-viande-gigot",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: задняя нога барана/ягнёнка, которую запекают в духовке целиком — праздничное блюдо.",
+        "answer": "gigot",
+        "hints": [
+          "Начинается на g…",
+          "5 букв, конечная t немая: g-i-g-o-t",
+          "Un ___ d'agneau au four, c'est le plat du dimanche."
+        ],
+        "explanation": "le gigot — баранья нога (из ягнёнка — un gigot d'agneau, из взрослого барана — un gigot de mouton). Запекают целиком в духовке. Конечное t не читается: /ʒi.ɡo/."
+      }
+    ]
+  }
+]

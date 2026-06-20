@@ -10,14 +10,15 @@
       "boissons",
       "cuisson",
       "atable",
-      "gouts"
+      "gouts",
+      "epices"
     ],
     "bossId": "wc-boss-table"
   },
   {
     "id": "groceries",
     "title": "Фрукты и продукты",
-    "themes": ["fruits", "legumes", "aliments", "vaisselle", "mer"],
+    "themes": ["fruits", "legumes", "aliments", "vaisselle", "mer", "viande"],
     "bossId": "wc-boss-groceries"
   },
   {
@@ -35,7 +36,8 @@
       "vetements3",
       "outils",
       "toilette",
-      "bijoux"
+      "bijoux",
+      "materiaux"
     ],
     "bossId": "wc-boss-maison-vetements"
   },
@@ -156,14 +158,15 @@
       "camping",
       "jardinage",
       "photo",
-      "musees"
+      "musees",
+      "instruments"
     ],
     "bossId": "wc-boss-leisure"
   },
   {
     "id": "descriptions",
     "title": "Цвета и описания",
-    "themes": ["couleurs", "adjectifs", "quantite", "nombres", "adverbes"],
+    "themes": ["couleurs", "adjectifs", "quantite", "nombres", "adverbes", "formes"],
     "bossId": "wc-boss-descriptions"
   }
 ]
