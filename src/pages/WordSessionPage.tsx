@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import ArrowForwardOutlined from '@mui/icons-material/ArrowForwardOutlined';
 import CheckCircleOutlined from '@mui/icons-material/CheckCircleOutlined';
@@ -7,11 +7,11 @@ import { Box, Button, Card, Chip, LinearProgress, Stack, Typography } from '@mui
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
 import TaskRenderer from '@/components/tasks/TaskRenderer';
-import { getWord, getWordCase } from '@/data/words';
+import { getWord, getWordCase, loadSteps, type WordLite } from '@/data/words';
 import { buildWordSession } from '@/lib/word-lab';
 import { useNow } from '@/lib/useNow';
 import { mono } from '@/theme';
-import type { Word } from '@/types';
+import type { TaskStep } from '@/types';
 
 import { useProgress } from '@/state/useProgress';
 
@@ -60,7 +60,23 @@ export default function WordSessionPage() {
   const [answered, setAnswered] = useState(false);
   const [correct, setCorrect] = useState(0);
   const [done, setDone] = useState(false);
-  const [dossier, setDossier] = useState<Word | null>(null);
+  const [dossier, setDossier] = useState<WordLite | null>(null);
+
+  // The session plan holds step descriptors; the full step content (options,
+  // contexts, …) is lazy-loaded per case file and resolved by step id.
+  const [resolve, setResolve] = useState<{
+    session: typeof session;
+    fn: (id: string) => TaskStep | undefined;
+  } | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    void loadSteps(session.map((s) => s.caseFile)).then((fn) => {
+      if (!cancelled) setResolve({ session, fn });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [session]);
 
   if (session.length === 0) {
     return (
@@ -124,6 +140,7 @@ export default function WordSessionPage() {
   const item = session[index];
   if (!item) return null;
   const word = getWord(item.wordId);
+  const fullStep = resolve?.session === session ? resolve.fn(item.step.id) : undefined;
 
   function handleComplete() {
     if (answered) return;
@@ -199,35 +216,46 @@ export default function WordSessionPage() {
       </Stack>
 
       <Card sx={{ p: { xs: 2.5, md: 3.5 } }}>
-        <TaskRenderer
-          key={item.step.id}
-          step={item.step}
-          completed={false}
-          onComplete={handleComplete}
-          shuffleKey={`${item.step.id}:${salt}`}
-        />
+        {fullStep ? (
+          <>
+            <TaskRenderer
+              key={fullStep.id}
+              step={fullStep}
+              completed={false}
+              onComplete={handleComplete}
+              shuffleKey={`${fullStep.id}:${salt}`}
+            />
 
-        <Stack
-          direction="row"
-          sx={{
-            mt: 3,
-            pt: 2.5,
-            borderTop: '1px solid',
-            borderColor: 'divider',
-            justifyContent: 'flex-end',
-          }}
-        >
-          <Button
-            variant="contained"
-            endIcon={
-              index >= session.length - 1 ? <CheckCircleOutlined /> : <ArrowForwardOutlined />
-            }
-            disabled={!answered}
-            onClick={next}
-          >
-            {index >= session.length - 1 ? 'Завершить' : 'Далее'}
-          </Button>
-        </Stack>
+            <Stack
+              direction="row"
+              sx={{
+                mt: 3,
+                pt: 2.5,
+                borderTop: '1px solid',
+                borderColor: 'divider',
+                justifyContent: 'flex-end',
+              }}
+            >
+              <Button
+                variant="contained"
+                endIcon={
+                  index >= session.length - 1 ? <CheckCircleOutlined /> : <ArrowForwardOutlined />
+                }
+                disabled={!answered}
+                onClick={next}
+              >
+                {index >= session.length - 1 ? 'Завершить' : 'Далее'}
+              </Button>
+            </Stack>
+          </>
+        ) : (
+          <Box sx={{ py: 6, textAlign: 'center' }}>
+            <LinearProgress sx={{ maxWidth: 220, mx: 'auto', mb: 2 }} />
+            <Typography variant="body2" color="text.secondary">
+              Загрузка заданий…
+            </Typography>
+          </Box>
+        )}
       </Card>
 
       <WordDossier word={dossier} onClose={() => setDossier(null)} />

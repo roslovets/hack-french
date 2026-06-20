@@ -9,6 +9,8 @@ import { readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+import { INDEX_PATH, buildIndex, serializeIndex } from './gen-wordlab-index.mjs';
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dataDir = path.join(root, 'src', 'data');
 const wordsDir = path.join(dataDir, 'words');
@@ -137,6 +139,16 @@ for (const cat of categories) {
 for (const t of curriculumThemes) {
   if (!categorizedThemes.has(t))
     errors.push(`word-categories: тема «${t}» не входит ни в одну категорию`);
+}
+
+// The committed light index (loaded eagerly by the app) must match a fresh build.
+try {
+  const fresh = serializeIndex(buildIndex());
+  const committed = readFileSync(INDEX_PATH, 'utf8');
+  if (fresh !== committed)
+    errors.push('wordlab-index.json устарел — запусти `bun run words:index`');
+} catch (e) {
+  errors.push(`wordlab-index.json: ${e.message}`);
 }
 
 console.log(

@@ -21,7 +21,14 @@ import {
 import { alpha } from '@mui/material/styles';
 import { useNavigate } from 'react-router-dom';
 
-import { getWord, totalWords, wordCategories, words } from '@/data/words';
+import {
+  getWord,
+  totalWords,
+  wordCategories,
+  words,
+  type WordCaseMeta,
+  type WordLite,
+} from '@/data/words';
 import {
   bossCases,
   bossReadyCount,
@@ -35,7 +42,6 @@ import { useNow } from '@/lib/useNow';
 import { mono } from '@/theme';
 import type { ReviewTier } from '@/lib/review';
 import type { ProgressState } from '@/state/progress-context';
-import type { Word, WordCase } from '@/types';
 
 import { useProgress } from '@/state/useProgress';
 
@@ -112,9 +118,9 @@ function ThemeCard({
   onOpenWord,
   onTrain,
 }: {
-  c: WordCase;
+  c: WordCaseMeta;
   state: ProgressState;
-  onOpenWord: (w: Word) => void;
+  onOpenWord: (w: WordLite) => void;
   onTrain: (caseId: string) => void;
 }) {
   const solid = c.wordIds.filter((id) => wordTier(state, id) === 'solid').length;
@@ -189,7 +195,7 @@ function BossCard({
   state,
   onChallenge,
 }: {
-  c: WordCase;
+  c: WordCaseMeta;
   state: ProgressState;
   onChallenge: (bossId: string) => void;
 }) {
@@ -261,7 +267,7 @@ export default function WordLabPage() {
   const navigate = useNavigate();
   const { state } = useProgress();
   const now = useNow();
-  const [dossier, setDossier] = useState<Word | null>(null);
+  const [dossier, setDossier] = useState<WordLite | null>(null);
   const [open, setOpen] = useState<Set<string>>(readOpen);
 
   const toggle = (id: string) => {
@@ -303,7 +309,7 @@ export default function WordLabPage() {
       : []),
   ].filter((s) => s.cases.length > 0);
 
-  const openWord = (w: Word) => setDossier(w);
+  const openWord = (w: WordLite) => setDossier(w);
   const train = (caseId: string) => void navigate(`/words/session?case=${caseId}`);
   const challenge = (bossId: string) => void navigate(`/words/boss/${bossId}`);
 

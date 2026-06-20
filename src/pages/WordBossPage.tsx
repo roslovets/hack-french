@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import ArrowForwardOutlined from '@mui/icons-material/ArrowForwardOutlined';
 import CheckCircleOutlined from '@mui/icons-material/CheckCircleOutlined';
@@ -13,11 +13,11 @@ import { useNavigate, useParams } from 'react-router-dom';
 import TaskRenderer from '@/components/tasks/TaskRenderer';
 import SpeakButton from '@/components/words/SpeakButton';
 import WordDossier from '@/components/words/WordDossier';
-import { getWord, getWordCase } from '@/data/words';
+import { getWord, getWordCase, loadSteps, type WordLite } from '@/data/words';
 import { bossReadyCount, bossUnlocked, wordMasteryScore, wordTier } from '@/lib/word-lab';
 import { display, mono } from '@/theme';
 import type { ReviewTier } from '@/lib/review';
-import type { Word } from '@/types';
+import type { TaskStep } from '@/types';
 
 import { useProgress } from '@/state/useProgress';
 
@@ -29,9 +29,9 @@ function WordChip({
   tier,
   onOpen,
 }: {
-  word: Word;
+  word: WordLite;
   tier: ReviewTier;
-  onOpen: (w: Word) => void;
+  onOpen: (w: WordLite) => void;
 }) {
   const solid = tier === 'solid';
   const learning = tier === 'learning';
@@ -62,12 +62,25 @@ export default function WordBossPage() {
   const [index, setIndex] = useState(0);
   const [answered, setAnswered] = useState(false);
   const [correct, setCorrect] = useState(0);
-  const [dossier, setDossier] = useState<Word | null>(null);
+  const [dossier, setDossier] = useState<WordLite | null>(null);
   // Snapshot mastery the moment the battle starts, so the result map can show
   // what the boss actually moved (state mutates as we grade each step).
   const [before] = useState(() =>
     boss ? Object.fromEntries(boss.wordIds.map((w) => [w, wordMasteryScore(state, w)])) : {},
   );
+
+  // The boss case holds step descriptors; the full step content is lazy-loaded.
+  const [resolve, setResolve] = useState<{ fn: (id: string) => TaskStep | undefined } | null>(null);
+  useEffect(() => {
+    if (!boss) return;
+    let cancelled = false;
+    void loadSteps([boss.file]).then((fn) => {
+      if (!cancelled) setResolve({ fn });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [boss]);
 
   if (!boss || !boss.isBoss) {
     return (
@@ -186,7 +199,7 @@ export default function WordBossPage() {
         after: wordMasteryScore(state, wid),
         delta: wordMasteryScore(state, wid) - (before[wid] ?? 0),
       }))
-      .filter((r): r is typeof r & { word: Word } => Boolean(r.word));
+      .filter((r): r is typeof r & { word: WordLite } => Boolean(r.word));
     const mastered = rows.filter((r) => r.tier === 'solid');
     const review = rows.filter((r) => r.tier !== 'solid');
 
@@ -262,6 +275,7 @@ export default function WordBossPage() {
   const item = steps[index];
   if (!item) return null;
   const word = item.wordId ? getWord(item.wordId) : undefined;
+  const fullStep = resolve?.fn(item.id);
 
   const handleComplete = () => {
     if (answered) return;
@@ -332,33 +346,46 @@ export default function WordBossPage() {
       </Stack>
 
       <Card sx={{ p: { xs: 2.5, md: 3.5 }, borderTop: '2px solid', borderTopColor: BOSS_RED }}>
-        <TaskRenderer
-          key={item.id}
-          step={item}
-          boss
-          completed={false}
-          onComplete={handleComplete}
-        />
+        {fullStep ? (
+          <>
+            <TaskRenderer
+              key={fullStep.id}
+              step={fullStep}
+              boss
+              completed={false}
+              onComplete={handleComplete}
+            />
 
-        <Stack
-          direction="row"
-          sx={{
-            mt: 3,
-            pt: 2.5,
-            borderTop: '1px solid',
-            borderColor: 'divider',
-            justifyContent: 'flex-end',
-          }}
-        >
-          <Button
-            variant="contained"
-            endIcon={index >= steps.length - 1 ? <CheckCircleOutlined /> : <ArrowForwardOutlined />}
-            disabled={!answered}
-            onClick={next}
-          >
-            {index >= steps.length - 1 ? 'Завершить' : 'Далее'}
-          </Button>
-        </Stack>
+            <Stack
+              direction="row"
+              sx={{
+                mt: 3,
+                pt: 2.5,
+                borderTop: '1px solid',
+                borderColor: 'divider',
+                justifyContent: 'flex-end',
+              }}
+            >
+              <Button
+                variant="contained"
+                endIcon={
+                  index >= steps.length - 1 ? <CheckCircleOutlined /> : <ArrowForwardOutlined />
+                }
+                disabled={!answered}
+                onClick={next}
+              >
+                {index >= steps.length - 1 ? 'Завершить' : 'Далее'}
+              </Button>
+            </Stack>
+          </>
+        ) : (
+          <Box sx={{ py: 6, textAlign: 'center' }}>
+            <LinearProgress sx={{ maxWidth: 220, mx: 'auto', mb: 2 }} />
+            <Typography variant="body2" color="text.secondary">
+              Загрузка заданий…
+            </Typography>
+          </Box>
+        )}
       </Card>
 
       <WordDossier word={dossier} onClose={() => setDossier(null)} />
@@ -371,8 +398,8 @@ function ResultRow({
   row,
   onOpen,
 }: {
-  row: { word: Word; tier: ReviewTier; after: number; delta: number };
-  onOpen: (w: Word) => void;
+  row: { word: WordLite; tier: ReviewTier; after: number; delta: number };
+  onOpen: (w: WordLite) => void;
 }) {
   const pct = Math.round(row.after * 100);
   const delta = Math.round(row.delta * 100);

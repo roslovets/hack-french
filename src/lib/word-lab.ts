@@ -4,8 +4,8 @@
  * word-case steps (new words first); dimension-driven due scheduling arrives in
  * a later phase. Per-word mastery aggregates the 7 dimensions.
  */
-import { wordCases, words } from '@/data/words';
-import type { TaskStep, WordDimension } from '@/types';
+import { wordCases, words, type StepMeta } from '@/data/words';
+import type { WordDimension } from '@/types';
 
 import type { ProgressState } from '@/state/progress-context';
 
@@ -24,10 +24,11 @@ export const SCHEDULED_DIMENSIONS: WordDimension[] = [
 ];
 
 export interface WordSessionItem {
-  step: TaskStep;
+  step: StepMeta;
   wordId: string;
   dimension: WordDimension;
   caseTitle: string;
+  caseFile: string;
 }
 
 /** Regular (non-boss) word-cases — the daily curriculum. */
@@ -41,7 +42,13 @@ function allWordSteps(): WordSessionItem[] {
   for (const c of curriculumCases) {
     for (const s of c.steps) {
       if (s.wordId && s.dimension) {
-        items.push({ step: s, wordId: s.wordId, dimension: s.dimension, caseTitle: c.title });
+        items.push({
+          step: s,
+          wordId: s.wordId,
+          dimension: s.dimension,
+          caseTitle: c.title,
+          caseFile: c.file,
+        });
       }
     }
   }

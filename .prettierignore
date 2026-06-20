@@ -2,3 +2,5 @@ dist
 node_modules
 bun.lock
 bun.lockb
+# generated Word Lab index (compact; regenerate via `bun run words:index`)
+src/data/words/wordlab-index.json

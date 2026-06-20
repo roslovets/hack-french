@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import CloseOutlined from '@mui/icons-material/CloseOutlined';
 import {
@@ -17,6 +17,7 @@ import {
 } from '@mui/material';
 import { alpha, type Theme } from '@mui/material/styles';
 
+import { loadWordFull, type WordLite } from '@/data/words';
 import { wordMasteryScore } from '@/lib/word-lab';
 import { display, mono } from '@/theme';
 import type { Word, WordDimension } from '@/types';
@@ -37,12 +38,75 @@ const DIMENSION_LABEL: Record<WordDimension, string> = {
 const DIMENSION_ORDER = Object.keys(DIMENSION_LABEL) as WordDimension[];
 const STRENGTH_CAP = 4;
 
+/** Header shown straight away from the light word, while the full dossier loads. */
+function DossierHeader({
+  lemma,
+  level,
+  audio,
+  onClose,
+}: {
+  lemma: string;
+  level: string;
+  audio?: string;
+  onClose: () => void;
+}) {
+  return (
+    <Stack
+      direction="row"
+      sx={{ justifyContent: 'space-between', alignItems: 'flex-start', mb: 1 }}
+    >
+      <Box>
+        <Stack direction="row" spacing={0.5} sx={{ alignItems: 'center' }}>
+          <Typography sx={{ fontFamily: display, fontWeight: 800, fontSize: 30, lineHeight: 1.1 }}>
+            {lemma}
+          </Typography>
+          <SpeakButton text={lemma} src={audio} />
+        </Stack>
+        <Stack direction="row" spacing={1} sx={{ mt: 0.75, flexWrap: 'wrap', gap: 0.75 }}>
+          <Chip label={level} size="small" variant="outlined" />
+        </Stack>
+      </Box>
+      <IconButton onClick={onClose} size="small" aria-label="Закрыть">
+        <CloseOutlined />
+      </IconButton>
+    </Stack>
+  );
+}
+
 /** Inner body — mounted only with a real word, so per-word state resets cleanly. */
-function DossierBody({ word, onClose }: { word: Word; onClose: () => void }) {
+function DossierBody({ lite, onClose }: { lite: WordLite; onClose: () => void }) {
   const { state, saveWordMnemonic } = useProgress();
-  const wm = state.wordMastery[word.id];
-  const score = Math.round(wordMasteryScore(state, word.id) * 100);
+  const wm = state.wordMastery[lite.id];
+  const score = Math.round(wordMasteryScore(state, lite.id) * 100);
   const [mnemo, setMnemo] = useState(wm?.mnemonic ?? '');
+
+  // The heavy dossier (collocations, contrast pairs, …) is lazy-loaded.
+  const [word, setWord] = useState<Word | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    void loadWordFull(lite.id).then((w) => {
+      if (!cancelled && w) setWord(w);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [lite.id]);
+
+  if (!word) {
+    return (
+      <DialogContent sx={{ p: { xs: 2.5, md: 3.5 } }}>
+        <DossierHeader
+          lemma={lite.displayForm ?? lite.lemma}
+          level={lite.level}
+          audio={lite.audio?.isolated}
+          onClose={onClose}
+        />
+        <Box sx={{ py: 4 }}>
+          <LinearProgress sx={{ maxWidth: 220 }} />
+        </Box>
+      </DialogContent>
+    );
+  }
 
   return (
     <DialogContent sx={{ p: { xs: 2.5, md: 3.5 } }}>
@@ -177,7 +241,7 @@ function DossierBody({ word, onClose }: { word: Word; onClose: () => void }) {
           variant="outlined"
           color="inherit"
           disabled={mnemo.trim() === (wm?.mnemonic ?? '')}
-          onClick={() => saveWordMnemonic(word.id, mnemo)}
+          onClick={() => saveWordMnemonic(lite.id, mnemo)}
           sx={{ borderColor: 'divider' }}
         >
           Сохранить ассоциацию
@@ -215,12 +279,18 @@ function DossierBody({ word, onClose }: { word: Word; onClose: () => void }) {
 }
 
 /** Multi-layer word card (Word Lab spec §8) with an editable personal mnemonic. */
-export default function WordDossier({ word, onClose }: { word: Word | null; onClose: () => void }) {
+export default function WordDossier({
+  word,
+  onClose,
+}: {
+  word: WordLite | null;
+  onClose: () => void;
+}) {
   // On phones the dossier is content-heavy — go full-screen instead of a cramped card.
   const fullScreen = useMediaQuery<Theme>((theme) => theme.breakpoints.down('sm'));
   return (
     <Dialog open={Boolean(word)} onClose={onClose} maxWidth="sm" fullWidth fullScreen={fullScreen}>
-      {word ? <DossierBody word={word} onClose={onClose} /> : null}
+      {word ? <DossierBody lite={word} onClose={onClose} /> : null}
     </Dialog>
   );
 }
