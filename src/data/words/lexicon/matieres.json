@@ -1,0 +1,323 @@
+[
+  {
+    "id": "wl-matieres-maths",
+    "lemma": "maths",
+    "displayForm": "les maths (mathématiques)",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mat/",
+    "translationsRu": ["математика"],
+    "translationsEn": ["maths", "math"],
+    "semanticCore": "Школьный предмет математика; в разговоре всегда сокращают и употребляют во множественном: les maths (полная форма — les mathématiques).",
+    "collocations": [
+      {
+        "fr": "un cours de maths",
+        "ru": "урок математики"
+      },
+      {
+        "fr": "être fort en maths",
+        "ru": "быть сильным в математике"
+      },
+      {
+        "fr": "un prof de maths",
+        "ru": "учитель математики"
+      },
+      {
+        "fr": "faire des maths",
+        "ru": "заниматься математикой"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mathématiques",
+        "note": "les maths — разговорное сокращение; les mathématiques — полная (более официальная) форма. Оба женского рода и во множественном числе."
+      },
+      {
+        "with": "calcul",
+        "note": "les maths — школьный предмет в целом; le calcul — счёт, вычисление (часть математики, а не весь предмет)."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["matieres", "ecole", "etude"],
+    "caseIds": ["wc-matieres"]
+  },
+  {
+    "id": "wl-matieres-histoire",
+    "lemma": "histoire",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/is.twaʁ/",
+    "translationsRu": ["история (наука)", "рассказ", "история (случай)"],
+    "translationsEn": ["history", "story"],
+    "semanticCore": "Одно слово на два русских: и школьный предмет «история» (прошлое), и «история/рассказ» (что-то рассказанное). Различает контекст.",
+    "collocations": [
+      {
+        "fr": "un cours d'histoire",
+        "ru": "урок истории"
+      },
+      {
+        "fr": "l'histoire de France",
+        "ru": "история Франции"
+      },
+      {
+        "fr": "raconter une histoire",
+        "ru": "рассказать историю"
+      },
+      {
+        "fr": "une histoire drôle",
+        "ru": "смешная история (анекдот)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "histoire (предмет) / histoire (рассказ)",
+        "note": "l'histoire = наука о прошлом (школьный предмет, единственное число); une histoire = рассказ, история, случай. Различает контекст: предмет — обычно l'histoire (с определённым артиклем), рассказ — une histoire."
+      },
+      {
+        "with": "conte",
+        "note": "une histoire — любой рассказ, в том числе реальный; un conte — именно сказка (народная, волшебная)."
+      }
+    ],
+    "frequencyRank": 280,
+    "level": "A2",
+    "tags": ["matieres", "ecole", "recit"],
+    "caseIds": ["wc-matieres"]
+  },
+  {
+    "id": "wl-matieres-geographie",
+    "lemma": "géographie",
+    "displayForm": "géographie (la géo)",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʒe.ɔ.ɡʁa.fi/",
+    "translationsRu": ["география"],
+    "translationsEn": ["geography"],
+    "semanticCore": "Школьный предмет география (страны, карты, климат); в разговоре сокращают до la géo. Женский род: la géographie.",
+    "collocations": [
+      {
+        "fr": "un cours de géographie",
+        "ru": "урок географии"
+      },
+      {
+        "fr": "une carte de géographie",
+        "ru": "географическая карта"
+      },
+      {
+        "fr": "l'histoire-géo",
+        "ru": "история-география (как сдвоенный школьный предмет)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "géologie",
+        "note": "la géographie — про страны, карты, климат; la géologie — про строение Земли и горные породы. Похожи началом «géo-», но это разные науки."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["matieres", "ecole", "etude"],
+    "caseIds": ["wc-matieres"]
+  },
+  {
+    "id": "wl-matieres-sciences",
+    "lemma": "sciences",
+    "displayForm": "les sciences",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sjɑ̃s/",
+    "translationsRu": ["естественные науки", "наука"],
+    "translationsEn": ["science", "sciences"],
+    "semanticCore": "В школе «sciences» (во множественном) — это естественные науки: физика, химия, биология. В единственном la science — наука вообще.",
+    "collocations": [
+      {
+        "fr": "les sciences naturelles",
+        "ru": "естественные науки"
+      },
+      {
+        "fr": "un cours de sciences",
+        "ru": "урок естествознания"
+      },
+      {
+        "fr": "les sciences et la technologie",
+        "ru": "наука и технология"
+      },
+      {
+        "fr": "aimer les sciences",
+        "ru": "любить науки"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "la science (ед. ч.)",
+        "note": "les sciences (мн.) — школьные естественные науки как предмет; la science (ед.) — наука как явление, познание в целом."
+      },
+      {
+        "with": "conscience",
+        "note": "Звучат похоже: sciences /sjɑ̃s/ и conscience /kɔ̃.sjɑ̃s/ (совесть, сознание). Не путать на слух — у conscience есть носовой /kɔ̃/ в начале."
+      }
+    ],
+    "frequencyRank": 400,
+    "level": "A2",
+    "tags": ["matieres", "ecole", "etude"],
+    "caseIds": ["wc-matieres"]
+  },
+  {
+    "id": "wl-matieres-langue",
+    "lemma": "langue",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/lɑ̃ɡ/",
+    "translationsRu": ["язык (речь)", "язык (орган)"],
+    "translationsEn": ["language", "tongue"],
+    "semanticCore": "Одно слово на два значения: язык как речь/предмет (le français est une langue) и язык как орган во рту (tirer la langue). В школе — иностранный язык, langue vivante.",
+    "collocations": [
+      {
+        "fr": "une langue étrangère",
+        "ru": "иностранный язык"
+      },
+      {
+        "fr": "une langue vivante",
+        "ru": "живой (современный) язык"
+      },
+      {
+        "fr": "la langue maternelle",
+        "ru": "родной язык"
+      },
+      {
+        "fr": "tirer la langue",
+        "ru": "показать язык / высунуть язык"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "langage",
+        "note": "la langue — конкретный язык (французский, русский) и орган; le langage — язык как способность говорить или особый «язык» (язык жестов, язык программирования)."
+      },
+      {
+        "with": "tongue (англ.)",
+        "note": "Английское tongue — это «язык-орган», но также устаревше «язык-речь». Фр. langue покрывает оба значения; для «иностранного языка» в школе — langue, не langage."
+      }
+    ],
+    "frequencyRank": 240,
+    "level": "A2",
+    "tags": ["matieres", "ecole", "corps"],
+    "caseIds": ["wc-matieres"]
+  },
+  {
+    "id": "wl-matieres-dessin",
+    "lemma": "dessin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/de.sɛ̃/",
+    "translationsRu": ["рисование", "рисунок"],
+    "translationsEn": ["drawing", "art (school subject)"],
+    "semanticCore": "И школьный предмет «рисование» (le cours de dessin), и конкретный рисунок (un beau dessin). Мужской род: un dessin.",
+    "collocations": [
+      {
+        "fr": "un cours de dessin",
+        "ru": "урок рисования"
+      },
+      {
+        "fr": "faire un dessin",
+        "ru": "сделать рисунок, нарисовать"
+      },
+      {
+        "fr": "un dessin animé",
+        "ru": "мультфильм"
+      },
+      {
+        "fr": "un beau dessin",
+        "ru": "красивый рисунок"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "dessein",
+        "note": "Звучат одинаково /de.sɛ̃/, но dessin — рисунок/рисование, а dessein — замысел, намерение. На письме различай по концовке: dessin (рисунок) — «-in», dessein (замысел) — «-ein»."
+      },
+      {
+        "with": "design (англ.)",
+        "note": "Ложный друг по виду: англ. design — это дизайн, замысел. Фр. dessin — рисунок/рисование, а не «дизайн» (дизайн по-французски — le design)."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["matieres", "ecole", "art"],
+    "caseIds": ["wc-matieres"]
+  },
+  {
+    "id": "wl-matieres-biologie",
+    "lemma": "biologie",
+    "displayForm": "biologie (la bio)",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bjɔ.lɔ.ʒi/",
+    "translationsRu": ["биология"],
+    "translationsEn": ["biology"],
+    "semanticCore": "Школьный предмет биология (живые организмы); в разговоре сокращают до la bio. Женский род: la biologie.",
+    "collocations": [
+      {
+        "fr": "un cours de biologie",
+        "ru": "урок биологии"
+      },
+      {
+        "fr": "un prof de bio",
+        "ru": "учитель биологии"
+      },
+      {
+        "fr": "étudier la biologie",
+        "ru": "изучать биологию"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "écologie",
+        "note": "la biologie — наука о живых организмах вообще; l'écologie — наука о связях организмов со средой (и охрана природы). Не путать предметы."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["matieres", "ecole", "etude"],
+    "caseIds": ["wc-matieres"]
+  },
+  {
+    "id": "wl-matieres-chimie",
+    "lemma": "chimie",
+    "displayForm": "chimie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʃi.mi/",
+    "translationsRu": ["химия"],
+    "translationsEn": ["chemistry"],
+    "semanticCore": "Школьный предмет химия (вещества, реакции). Женский род: la chimie. Начинается со звука /ʃ/ («ш»), как chat, а не с «к».",
+    "collocations": [
+      {
+        "fr": "un cours de chimie",
+        "ru": "урок химии"
+      },
+      {
+        "fr": "une expérience de chimie",
+        "ru": "химический опыт"
+      },
+      {
+        "fr": "la physique-chimie",
+        "ru": "физика-химия (сдвоенный школьный предмет)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chemistry (англ.)",
+        "note": "Английский мост работает по смыслу, но не по виду: chemistry — это chimie. Французское слово начинается на «ch» /ʃ/ («ш»), без «k» и без «-stry»."
+      },
+      {
+        "with": "chimère",
+        "note": "Похожее начало на слух: chimie /ʃi.mi/ и chimère /ʃi.mɛʁ/ (химера, несбыточная мечта). Это разные слова — не путать."
+      }
+    ],
+    "frequencyRank": 730,
+    "level": "A2",
+    "tags": ["matieres", "ecole", "etude"],
+    "caseIds": ["wc-matieres"]
+  }
+]

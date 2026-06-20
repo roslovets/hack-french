@@ -1,0 +1,297 @@
+[
+  {
+    "id": "wc-matieres",
+    "title": "Школьные предметы",
+    "theme": "matieres",
+    "level": "A2",
+    "wordIds": [
+      "wl-matieres-maths",
+      "wl-matieres-histoire",
+      "wl-matieres-geographie",
+      "wl-matieres-sciences",
+      "wl-matieres-langue",
+      "wl-matieres-dessin",
+      "wl-matieres-biologie",
+      "wl-matieres-chimie"
+    ],
+    "steps": [
+      {
+        "id": "wc-matieres-maths-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-matieres-maths",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On a un cours de maths à dix heures.",
+          "Mon frère est très fort en maths.",
+          "Je n'aime pas les maths, c'est difficile."
+        ],
+        "options": ["математика", "физкультура", "музыка", "чтение"],
+        "correctIndex": 0,
+        "explanation": "les maths — математика (школьный предмет). Это разговорное сокращение от les mathématiques. Слово женского рода и всегда во множественном числе."
+      },
+      {
+        "id": "wc-matieres-maths-sort",
+        "kind": "sort",
+        "wordId": "wl-matieres-maths",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом maths звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un cours de maths",
+            "basket": "ok"
+          },
+          {
+            "text": "être fort en maths",
+            "basket": "ok"
+          },
+          {
+            "text": "un prof de maths",
+            "basket": "ok"
+          },
+          {
+            "text": "boire des maths",
+            "basket": "no"
+          },
+          {
+            "text": "une maths rouge",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un cours de maths», «être fort en maths», «un prof de maths» — естественно. «boire des maths» (пить математику) и «une maths rouge» (красная математика) — бессмыслица."
+      },
+      {
+        "id": "wc-matieres-histoire-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-matieres-histoire",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих школьных сценах?",
+        "contexts": [
+          "En histoire, on étudie la Révolution française.",
+          "Le prof d'histoire est très intéressant.",
+          "J'ai un contrôle d'histoire demain."
+        ],
+        "options": ["история (наука о прошлом)", "литература", "география", "философия"],
+        "correctIndex": 0,
+        "explanation": "l'histoire здесь — школьный предмет история (наука о прошлом). У того же слова есть и второе значение — «рассказ, история», но в этих сценах речь о предмете."
+      },
+      {
+        "id": "wc-matieres-histoire-trap",
+        "kind": "trap",
+        "wordId": "wl-matieres-histoire",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг говорит: «Tu veux que je te raconte une histoire ?» О чём речь?",
+        "options": [
+          "он хочет рассказать тебе историю (рассказ)",
+          "он зовёт тебя на урок истории",
+          "он спрашивает про контрольную по истории",
+          "он жалуется на учителя истории"
+        ],
+        "correctIndex": 0,
+        "explanation": "У histoire два значения. «raconter une histoire» — рассказать историю (рассказ, случай). Школьный предмет — l'histoire (un cours d'histoire). Раз речь про «raconter», это рассказ, а не предмет."
+      },
+      {
+        "id": "wc-matieres-geographie-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-matieres-geographie",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит géographie?",
+        "bridge": "Англ. «geography» — почти то же слово: geo-graphy ≈ géo-graphie. Читается по-французски /ʒe.ɔ.ɡʁa.fi/.",
+        "options": ["география", "геометрия", "геология", "биология"],
+        "correctIndex": 0,
+        "explanation": "géographie = география. Англ. «geography» — прямой мост. В разговоре французы сокращают: la géo."
+      },
+      {
+        "id": "wc-matieres-geographie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-matieres-geographie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "En géographie, on apprend les capitales du monde.",
+          "Sors ta carte de géographie.",
+          "La géo, c'est ma matière préférée."
+        ],
+        "options": ["география", "история", "математика", "химия"],
+        "correctIndex": 0,
+        "explanation": "la géographie (разг. la géo) — география: страны, карты, столицы, климат. «une matière» здесь — школьный предмет."
+      },
+      {
+        "id": "wc-matieres-sciences-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-matieres-sciences",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в школьном контексте?",
+        "contexts": [
+          "En sciences, on a fait une expérience aujourd'hui.",
+          "Les sciences naturelles, c'est la biologie et la géologie.",
+          "Elle est forte en sciences et en maths."
+        ],
+        "options": [
+          "естественные науки (предмет)",
+          "обществознание",
+          "иностранные языки",
+          "искусство"
+        ],
+        "correctIndex": 0,
+        "explanation": "les sciences (во множественном) в школе — естественные науки: физика, химия, биология. В единственном la science — наука вообще."
+      },
+      {
+        "id": "wc-matieres-sciences-cmp",
+        "kind": "compare",
+        "wordId": "wl-matieres-sciences",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "la science и les sciences. В чём разница?",
+        "phrases": ["La science a beaucoup progressé.", "En sciences, on étudie les plantes."],
+        "options": [
+          "«la science» (ед.) — наука вообще; «les sciences» (мн.) — школьный предмет, естественные науки.",
+          "Это одно и то же, число не важно.",
+          "«la science» — школьный предмет, а «les sciences» — наука вообще.",
+          "«les sciences» значит «учёные», а «la science» — «опыты»."
+        ],
+        "correctIndex": 0,
+        "explanation": "la science (ед.) — наука как познание в целом. les sciences (мн.) — школьный предмет «естествознание»: «en sciences» = на уроке естественных наук."
+      },
+      {
+        "id": "wc-matieres-langue-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-matieres-langue",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит langue в этих сценах?",
+        "contexts": [
+          "Le français est une langue romane.",
+          "J'apprends une langue étrangère au collège.",
+          "Combien de langues parles-tu ?"
+        ],
+        "options": ["язык (речь, которую учат)", "буква", "урок", "слово"],
+        "correctIndex": 0,
+        "explanation": "la langue здесь — язык как речь: французский, русский, иностранный язык в школе. У слова есть и второе значение — «язык» как орган во рту, но тут речь о языке-речи."
+      },
+      {
+        "id": "wc-matieres-langue-trap",
+        "kind": "trap",
+        "wordId": "wl-matieres-langue",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Врач говорит ребёнку: «Tire la langue !» Что он просит сделать?",
+        "options": [
+          "высунуть язык (орган во рту)",
+          "назвать иностранный язык",
+          "произнести слово",
+          "замолчать"
+        ],
+        "correctIndex": 0,
+        "explanation": "У langue два значения. «tirer la langue» — высунуть язык (орган). То же слово значит и «язык-речь» (une langue étrangère). Различает контекст: у врача — орган."
+      },
+      {
+        "id": "wc-matieres-dessin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-matieres-dessin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On a dessin le mardi après-midi.",
+          "Regarde, j'ai fait un dessin pour toi.",
+          "Ce dessin est vraiment magnifique."
+        ],
+        "options": ["рисование / рисунок", "пение", "письмо (буквы)", "танцы"],
+        "correctIndex": 0,
+        "explanation": "le dessin — и школьный предмет «рисование», и конкретный рисунок. «faire un dessin» — нарисовать. Мужской род: un dessin."
+      },
+      {
+        "id": "wc-matieres-dessin-trap",
+        "kind": "trap",
+        "wordId": "wl-matieres-dessin",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово dessin похоже на англ. «design». Что значит французское dessin?",
+        "options": ["рисунок / рисование", "дизайн", "замысел, намерение", "узор на ткани"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: фр. dessin — это рисунок/рисование, а не «дизайн». Англ. «design» (дизайн, замысел) ближе к другому фр. слову — dessein (намерение) или le design. На слух dessin и dessein одинаковы /de.sɛ̃/, различай на письме."
+      },
+      {
+        "id": "wc-matieres-biologie-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-matieres-biologie",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит biologie?",
+        "bridge": "Англ. «biology» — почти то же: bio-logy ≈ bio-logie. Читается по-французски /bjɔ.lɔ.ʒi/.",
+        "options": ["биология", "геология", "экология", "технология"],
+        "correctIndex": 0,
+        "explanation": "biologie = биология (наука о живом). Англ. «biology» — прямой мост. В разговоре сокращают: la bio."
+      },
+      {
+        "id": "wc-matieres-biologie-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-matieres-biologie",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — школьные предметы. Найди лишнее.",
+        "options": ["la biologie", "la chimie", "la géographie", "la cantine"],
+        "correctIndex": 3,
+        "explanation": "Биология, химия и география — школьные предметы (matières). la cantine (столовая) — лишнее: это место в школе, а не предмет."
+      },
+      {
+        "id": "wc-matieres-chimie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-matieres-chimie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "En chimie, on mélange des produits dans des tubes.",
+          "Le prof de chimie a fait une expérience.",
+          "J'ai un cours de physique-chimie ce matin."
+        ],
+        "options": ["химия", "физика", "биология", "математика"],
+        "correctIndex": 0,
+        "explanation": "la chimie — химия (вещества, реакции, опыты). Женский род. Внимание на произношение: начинается со звука /ʃ/ («ш»), как chat: /ʃi.mi/."
+      },
+      {
+        "id": "wc-matieres-chimie-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-matieres-chimie",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, какое из написанных ты услышал.",
+        "audioText": "chimie",
+        "options": ["chimie", "chimère", "chemise", "Chine"],
+        "correctIndex": 0,
+        "explanation": "chimie /ʃi.mi/ — химия. Похожие по звучанию, но другие слова: chimère /ʃi.mɛʁ/ (химера), chemise /ʃə.miz/ (рубашка), Chine /ʃin/ (Китай). Все начинаются на «ш», но это разные слова."
+      },
+      {
+        "id": "wc-matieres-chimie-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-matieres-chimie",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для chimie, чтобы запомнить звук /ʃ/ («ш») в начале — не «к», как в русском «химия».",
+        "examples": [
+          "«Ши-ми»: представь, как на уроке всё «шипит» в пробирках — ши-мия, /ʃi.mi/.",
+          "Свяжи с chat (кот, /ʃa/): и chat, и chimie начинаются с французского «ш», а не с «к»."
+        ]
+      }
+    ]
+  }
+]

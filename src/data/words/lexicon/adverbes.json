@@ -1,0 +1,354 @@
+[
+  {
+    "id": "wl-adverbes-vite",
+    "lemma": "vite",
+    "pos": "adv",
+    "ipa": "/vit/",
+    "translationsRu": ["быстро", "скоро"],
+    "translationsEn": ["fast", "quickly"],
+    "semanticCore": "Быстро — о скорости действия в речи; разговорное, ставится после глагола (mange vite).",
+    "collocations": [
+      {
+        "fr": "aller vite",
+        "ru": "идти/ехать быстро"
+      },
+      {
+        "fr": "fais vite !",
+        "ru": "давай быстрее!"
+      },
+      {
+        "fr": "le plus vite possible",
+        "ru": "как можно быстрее"
+      },
+      {
+        "fr": "trop vite",
+        "ru": "слишком быстро"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rapidement",
+        "note": "vite = быстро (разговорно, чаще про скорость движения); rapidement = быстро (нейтральнее, книжнее, про темп выполнения). «Fais vite» естественно, «fais rapidement» звучит формально."
+      },
+      {
+        "with": "rapide",
+        "note": "vite — наречие (быстро): il court vite. rapide — прилагательное (быстрый): une voiture rapide. Не путать: «une voiture vite» неверно."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["adverbes", "vitesse"],
+    "caseIds": ["wc-adverbes"],
+    "audio": {
+      "isolated": "audio/wl-adverbes-vite.mp3"
+    }
+  },
+  {
+    "id": "wl-adverbes-lentement",
+    "lemma": "lentement",
+    "pos": "adv",
+    "ipa": "/lɑ̃t.mɑ̃/",
+    "translationsRu": ["медленно"],
+    "translationsEn": ["slowly"],
+    "semanticCore": "Медленно — о низкой скорости действия; правильный наречный антоним к vite, образован от lent + -ment.",
+    "collocations": [
+      {
+        "fr": "parler lentement",
+        "ru": "говорить медленно"
+      },
+      {
+        "fr": "rouler lentement",
+        "ru": "ехать медленно"
+      },
+      {
+        "fr": "tout doucement, lentement",
+        "ru": "совсем потихоньку, медленно"
+      },
+      {
+        "fr": "avancer lentement",
+        "ru": "продвигаться медленно"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "lent",
+        "note": "lentement — наречие (медленно): il parle lentement. lent — прилагательное (медленный): un train lent. От прилагательного lent наречие образуется через -ment."
+      },
+      {
+        "with": "doucement",
+        "note": "lentement = медленно (про скорость); doucement = тихо/осторожно/мягко (про силу, нежность). «Parle doucement» = говори тише, «parle lentement» = говори медленнее."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A2",
+    "tags": ["adverbes", "vitesse"],
+    "caseIds": ["wc-adverbes"],
+    "audio": {
+      "isolated": "audio/wl-adverbes-lentement.mp3"
+    }
+  },
+  {
+    "id": "wl-adverbes-bien",
+    "lemma": "bien",
+    "pos": "adv",
+    "ipa": "/bjɛ̃/",
+    "translationsRu": ["хорошо", "как следует"],
+    "translationsEn": ["well"],
+    "semanticCore": "Хорошо — оценка качества действия и состояния (ça va bien); также усилитель «вполне, действительно» (bien content).",
+    "collocations": [
+      {
+        "fr": "ça va bien",
+        "ru": "всё хорошо"
+      },
+      {
+        "fr": "très bien",
+        "ru": "очень хорошо"
+      },
+      {
+        "fr": "bien manger",
+        "ru": "хорошо/правильно питаться"
+      },
+      {
+        "fr": "bien sûr",
+        "ru": "конечно"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bon",
+        "note": "bien — наречие (хорошо): elle chante bien. bon — прилагательное (хороший/вкусный): un bon gâteau. Русское «хорошо» в «как дела — хорошо» это bien, а не bon."
+      },
+      {
+        "with": "mal",
+        "note": "bien = хорошо ↔ mal = плохо. Прямая пара оценки: ça va bien / ça va mal."
+      }
+    ],
+    "frequencyRank": 80,
+    "level": "A2",
+    "tags": ["adverbes", "qualite"],
+    "caseIds": ["wc-adverbes"],
+    "audio": {
+      "isolated": "audio/wl-adverbes-bien.mp3"
+    }
+  },
+  {
+    "id": "wl-adverbes-mal",
+    "lemma": "mal",
+    "pos": "adv",
+    "ipa": "/mal/",
+    "translationsRu": ["плохо", "больно"],
+    "translationsEn": ["badly", "wrong"],
+    "semanticCore": "Плохо — оценка действия (mal dormir) и боль в обороте avoir mal (j'ai mal); антоним к bien.",
+    "collocations": [
+      {
+        "fr": "ça va mal",
+        "ru": "дела плохи"
+      },
+      {
+        "fr": "avoir mal à la tête",
+        "ru": "болит голова"
+      },
+      {
+        "fr": "mal dormir",
+        "ru": "плохо спать"
+      },
+      {
+        "fr": "pas mal",
+        "ru": "неплохо / немало"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mauvais",
+        "note": "mal — наречие (плохо) и боль: je dors mal. mauvais — прилагательное (плохой/невкусный): un mauvais film. «Хорошо/плохо» как наречия — bien/mal, не bon/mauvais."
+      },
+      {
+        "with": "bien",
+        "note": "mal = плохо ↔ bien = хорошо. Также «pas mal» — устойчиво значит «неплохо», то есть скорее хорошо."
+      }
+    ],
+    "frequencyRank": 150,
+    "level": "A2",
+    "tags": ["adverbes", "qualite"],
+    "caseIds": ["wc-adverbes"],
+    "audio": {
+      "isolated": "audio/wl-adverbes-mal.mp3"
+    }
+  },
+  {
+    "id": "wl-adverbes-ensemble",
+    "lemma": "ensemble",
+    "pos": "adv",
+    "ipa": "/ɑ̃.sɑ̃bl/",
+    "translationsRu": ["вместе", "сообща"],
+    "translationsEn": ["together"],
+    "semanticCore": "Вместе — действие, совершаемое несколькими людьми сообща; ставится после глагола (on travaille ensemble).",
+    "collocations": [
+      {
+        "fr": "travailler ensemble",
+        "ru": "работать вместе"
+      },
+      {
+        "fr": "vivre ensemble",
+        "ru": "жить вместе"
+      },
+      {
+        "fr": "être bien ensemble",
+        "ru": "хорошо ладить (вместе)"
+      },
+      {
+        "fr": "tous ensemble",
+        "ru": "все вместе"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ensemble (сущ.)",
+        "note": "Как наречие ensemble = вместе (on mange ensemble). Как существительное un ensemble = комплект/ансамбль (un ensemble de meubles). В этой теме нужно наречие."
+      },
+      {
+        "with": "avec",
+        "note": "ensemble = вместе (без дополнения): on part ensemble. avec = с (нужно дополнение): je pars avec toi. «Ensemble avec» избыточно, говорят просто ensemble."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A2",
+    "tags": ["adverbes", "relation"],
+    "caseIds": ["wc-adverbes"],
+    "audio": {
+      "isolated": "audio/wl-adverbes-ensemble.mp3"
+    }
+  },
+  {
+    "id": "wl-adverbes-presque",
+    "lemma": "presque",
+    "pos": "adv",
+    "ipa": "/pʁɛsk/",
+    "translationsRu": ["почти"],
+    "translationsEn": ["almost", "nearly"],
+    "semanticCore": "Почти — чуть-чуть не доходя до полной меры (presque fini); ставится перед словом, к которому относится.",
+    "collocations": [
+      {
+        "fr": "presque fini",
+        "ru": "почти закончено"
+      },
+      {
+        "fr": "presque toujours",
+        "ru": "почти всегда"
+      },
+      {
+        "fr": "presque rien",
+        "ru": "почти ничего"
+      },
+      {
+        "fr": "il est presque midi",
+        "ru": "почти полдень"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "environ",
+        "note": "presque = почти (чуть меньше нужного, тяготеет к точке): presque dix. environ = примерно/около (может быть и больше, и меньше): environ dix. «Почти десять» ≠ «около десяти»."
+      },
+      {
+        "with": "à peu près",
+        "note": "presque = почти (близко к пределу): c'est presque ça. à peu près = приблизительно (грубая оценка): à peu près trois heures. Близки, но presque ближе к самому пределу."
+      }
+    ],
+    "frequencyRank": 350,
+    "level": "A2",
+    "tags": ["adverbes", "quantite"],
+    "caseIds": ["wc-adverbes"],
+    "audio": {
+      "isolated": "audio/wl-adverbes-presque.mp3"
+    }
+  },
+  {
+    "id": "wl-adverbes-surtout",
+    "lemma": "surtout",
+    "pos": "adv",
+    "ipa": "/syʁ.tu/",
+    "translationsRu": ["особенно", "главным образом"],
+    "translationsEn": ["especially", "above all"],
+    "semanticCore": "Особенно, прежде всего — выделяет самое важное (surtout, n'oublie pas); часто открывает совет или предупреждение.",
+    "collocations": [
+      {
+        "fr": "surtout pas",
+        "ru": "только не это / ни в коем случае"
+      },
+      {
+        "fr": "surtout, n'oublie pas",
+        "ru": "главное, не забудь"
+      },
+      {
+        "fr": "j'aime surtout l'été",
+        "ru": "я особенно люблю лето"
+      },
+      {
+        "fr": "surtout que…",
+        "ru": "тем более что…"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "partout",
+        "note": "surtout = особенно/прежде всего: j'aime surtout ça. partout = повсюду: il y en a partout. Слова похожи на слух (sur-tout / par-tout), но смысл разный."
+      },
+      {
+        "with": "sur tout",
+        "note": "surtout (одно слово) = особенно. «sur tout» (раздельно) = «на всём / обо всём»: il a un avis sur tout. Слитно — наречие, раздельно — предлог + tout."
+      }
+    ],
+    "frequencyRank": 400,
+    "level": "A2",
+    "tags": ["adverbes", "emphase"],
+    "caseIds": ["wc-adverbes"],
+    "audio": {
+      "isolated": "audio/wl-adverbes-surtout.mp3"
+    }
+  },
+  {
+    "id": "wl-adverbes-vraiment",
+    "lemma": "vraiment",
+    "pos": "adv",
+    "ipa": "/vʁɛ.mɑ̃/",
+    "translationsRu": ["действительно", "по-настоящему", "очень"],
+    "translationsEn": ["really", "truly"],
+    "semanticCore": "Действительно, по-настоящему — подтверждает истинность или усиливает (c'est vraiment bon); от vrai (истинный) + -ment.",
+    "collocations": [
+      {
+        "fr": "vraiment bon",
+        "ru": "очень/по-настоящему вкусный"
+      },
+      {
+        "fr": "c'est vraiment dommage",
+        "ru": "это правда жаль"
+      },
+      {
+        "fr": "pas vraiment",
+        "ru": "не совсем / не очень"
+      },
+      {
+        "fr": "vraiment ?",
+        "ru": "правда? серьёзно?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vrai",
+        "note": "vraiment — наречие (действительно, очень): c'est vraiment bien. vrai — прилагательное (настоящий/правдивый): une vraie histoire. Наречие от vrai образуется через -ment (как truly от true в англ.)."
+      },
+      {
+        "with": "très",
+        "note": "vraiment = по-настоящему/правда (усиление + подтверждение): vraiment beau. très = очень (чистое усиление степени): très beau. «Pas vraiment» = не совсем; «pas très» = не очень — оттенки разные."
+      }
+    ],
+    "frequencyRank": 260,
+    "level": "A2",
+    "tags": ["adverbes", "emphase"],
+    "caseIds": ["wc-adverbes"],
+    "audio": {
+      "isolated": "audio/wl-adverbes-vraiment.mp3"
+    }
+  }
+]

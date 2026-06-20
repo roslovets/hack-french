@@ -1,0 +1,337 @@
+[
+  {
+    "id": "wl-meteo2-orage",
+    "lemma": "orage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɔ.ʁaʒ/",
+    "translationsRu": ["гроза"],
+    "translationsEn": ["thunderstorm", "storm"],
+    "semanticCore": "Гроза: непогода с громом и молнией (и обычно ливнем), которая «разражается» и проходит.",
+    "collocations": [
+      {
+        "fr": "un orage éclate",
+        "ru": "разражается гроза"
+      },
+      {
+        "fr": "il y a de l'orage dans l'air",
+        "ru": "собирается гроза"
+      },
+      {
+        "fr": "un violent orage",
+        "ru": "сильная гроза"
+      },
+      {
+        "fr": "un orage de grêle",
+        "ru": "гроза с градом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tempête",
+        "note": "un orage = гроза (гром, молния, ливень); une tempête = буря/шторм (главное — сильный ветер). Гроза короткая, буря — про ветер."
+      },
+      {
+        "with": "otage",
+        "note": "un orage /ɔ.ʁaʒ/ — гроза; un otage /ɔ.taʒ/ — заложник. Звучат похоже, различаются согласной в середине (-r- / -t-)."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["meteo2", "nature"],
+    "caseIds": ["wc-meteo2"]
+  },
+  {
+    "id": "wl-meteo2-brouillard",
+    "lemma": "brouillard",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bʁu.jaʁ/",
+    "translationsRu": ["туман"],
+    "translationsEn": ["fog", "mist"],
+    "semanticCore": "Туман у земли, в котором плохо видно; типичная утренняя или осенняя погода.",
+    "collocations": [
+      {
+        "fr": "il y a du brouillard",
+        "ru": "туман / туманно"
+      },
+      {
+        "fr": "un brouillard épais",
+        "ru": "густой туман"
+      },
+      {
+        "fr": "rouler dans le brouillard",
+        "ru": "ехать в тумане"
+      },
+      {
+        "fr": "le brouillard se dissipe",
+        "ru": "туман рассеивается"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "brume",
+        "note": "le brouillard = плотный туман (видно меньше километра); la brume = лёгкая дымка, видно дальше. Brouillard гуще."
+      },
+      {
+        "with": "nuage",
+        "note": "le brouillard = туман у земли (мешает идти/ехать); le nuage = облако высоко в небе."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["meteo2", "nature"],
+    "caseIds": ["wc-meteo2"]
+  },
+  {
+    "id": "wl-meteo2-tempete",
+    "lemma": "tempête",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tɑ̃.pɛt/",
+    "translationsRu": ["буря", "шторм"],
+    "translationsEn": ["storm", "tempest"],
+    "semanticCore": "Буря/шторм: сильное ненастье с мощным ветром, на море или на суше.",
+    "collocations": [
+      {
+        "fr": "une tempête de neige",
+        "ru": "снежная буря, метель"
+      },
+      {
+        "fr": "la tempête fait rage",
+        "ru": "буря бушует"
+      },
+      {
+        "fr": "une violente tempête",
+        "ru": "сильный шторм"
+      },
+      {
+        "fr": "une tempête se lève",
+        "ru": "поднимается буря"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "orage",
+        "note": "une tempête = буря (главное — сильный ветер, может длиться долго); un orage = гроза (гром и молния, обычно недолго)."
+      },
+      {
+        "with": "vent",
+        "note": "le vent = ветер (обычное явление); la tempête = буря (ветер становится опасным, с разрушениями)."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["meteo2", "nature"],
+    "caseIds": ["wc-meteo2"]
+  },
+  {
+    "id": "wl-meteo2-eclair",
+    "lemma": "éclair",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.klɛʁ/",
+    "translationsRu": ["молния", "вспышка", "эклер"],
+    "translationsEn": ["lightning", "flash"],
+    "semanticCore": "Вспышка молнии в грозу — и одновременно пирожное «эклер»; что именно, решает контекст.",
+    "collocations": [
+      {
+        "fr": "un éclair déchire le ciel",
+        "ru": "молния разрезает небо"
+      },
+      {
+        "fr": "un éclair illumine la nuit",
+        "ru": "молния освещает ночь"
+      },
+      {
+        "fr": "un éclair au chocolat",
+        "ru": "эклер с шоколадом"
+      },
+      {
+        "fr": "rapide comme l'éclair",
+        "ru": "быстрый как молния"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tonnerre",
+        "note": "l'éclair = молния (то, что видишь — вспышка); le tonnerre = гром (то, что слышишь — звук). Сначала éclair, потом tonnerre."
+      },
+      {
+        "with": "foudre",
+        "note": "un éclair = молния-вспышка в небе; la foudre = удар молнии в землю/предмет (когда «бьёт»). Дерево поражает la foudre, а не l'éclair."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["meteo2", "nature"],
+    "caseIds": ["wc-meteo2"]
+  },
+  {
+    "id": "wl-meteo2-tonnerre",
+    "lemma": "tonnerre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tɔ.nɛʁ/",
+    "translationsRu": ["гром"],
+    "translationsEn": ["thunder"],
+    "semanticCore": "Гром — раскатистый звук, который слышно после молнии во время грозы.",
+    "collocations": [
+      {
+        "fr": "un coup de tonnerre",
+        "ru": "удар грома, раскат грома"
+      },
+      {
+        "fr": "le tonnerre gronde",
+        "ru": "гром гремит"
+      },
+      {
+        "fr": "un bruit de tonnerre",
+        "ru": "грохот, как гром"
+      },
+      {
+        "fr": "tonnerre et éclairs",
+        "ru": "гром и молнии"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "éclair",
+        "note": "le tonnerre = гром (звук, слышишь); l'éclair = молния (вспышка, видишь). Молнию видишь раньше, чем слышишь гром."
+      },
+      {
+        "with": "tonneau",
+        "note": "le tonnerre /tɔ.nɛʁ/ — гром; le tonneau /tɔ.no/ — бочка. Похожее начало, но разный конец слова."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["meteo2", "nature"],
+    "caseIds": ["wc-meteo2"]
+  },
+  {
+    "id": "wl-meteo2-gel",
+    "lemma": "gel",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒɛl/",
+    "translationsRu": ["мороз", "заморозки", "гель"],
+    "translationsEn": ["frost", "gel"],
+    "semanticCore": "Gel — мороз/заморозки (когда всё подмерзает) и одновременно гель (для душа, для волос); смысл задаёт контекст.",
+    "collocations": [
+      {
+        "fr": "il y a du gel ce matin",
+        "ru": "сегодня утром заморозки"
+      },
+      {
+        "fr": "le gel a abîmé les plantes",
+        "ru": "мороз погубил растения"
+      },
+      {
+        "fr": "du gel douche",
+        "ru": "гель для душа"
+      },
+      {
+        "fr": "du gel hydroalcoolique",
+        "ru": "антисептический гель для рук"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "glace",
+        "note": "le gel = мороз/заморозки (процесс, погода) или гель; la glace = лёд (результат — твёрдая вода) и мороженое. Из-за gel появляется la glace."
+      },
+      {
+        "with": "geler",
+        "note": "le gel — существительное «мороз»; geler — глагол «замерзать» (il gèle — «подмораживает», как il pleut)."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["meteo2", "temperature"],
+    "caseIds": ["wc-meteo2"]
+  },
+  {
+    "id": "wl-meteo2-glace",
+    "lemma": "glace",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɡlas/",
+    "translationsRu": ["лёд", "мороженое", "зеркало"],
+    "translationsEn": ["ice", "ice cream"],
+    "semanticCore": "Glace — три вещи в одном слове: лёд, мороженое и зеркало; что именно — подсказывает контекст.",
+    "collocations": [
+      {
+        "fr": "une glace au chocolat",
+        "ru": "мороженое с шоколадом"
+      },
+      {
+        "fr": "patiner sur la glace",
+        "ru": "кататься на коньках по льду"
+      },
+      {
+        "fr": "se regarder dans la glace",
+        "ru": "смотреться в зеркало"
+      },
+      {
+        "fr": "des glaçons dans le verre",
+        "ru": "кубики льда в стакане"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "gel",
+        "note": "la glace = лёд (твёрдый результат) / мороженое / зеркало; le gel = мороз (погода) или гель. Лёд образуется из-за le gel."
+      },
+      {
+        "with": "miroir",
+        "note": "В значении «зеркало» la glace и le miroir почти синонимы; la glace чаще про настенное/большое зеркало, miroir — общее слово."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["meteo2", "temperature"],
+    "caseIds": ["wc-meteo2"]
+  },
+  {
+    "id": "wl-meteo2-humide",
+    "lemma": "humide",
+    "pos": "adj",
+    "ipa": "/y.mid/",
+    "translationsRu": ["влажный", "сырой"],
+    "translationsEn": ["damp", "humid"],
+    "semanticCore": "Влажный, сырой: о воздухе, климате, погоде или вещах, которые ещё не высохли.",
+    "collocations": [
+      {
+        "fr": "un climat humide",
+        "ru": "влажный климат"
+      },
+      {
+        "fr": "un temps chaud et humide",
+        "ru": "жаркая и влажная погода"
+      },
+      {
+        "fr": "des vêtements humides",
+        "ru": "сырая (недосохшая) одежда"
+      },
+      {
+        "fr": "une cave humide",
+        "ru": "сырой подвал"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mouillé",
+        "note": "humide = влажный, сыроватый (немного воды, на ощупь); mouillé = мокрый (промок насквозь, с воды течёт). Полотенце после душа — humide; под дождём — mouillé."
+      },
+      {
+        "with": "sec",
+        "note": "humide = влажный; sec / sèche = сухой/сухая. Прямые противоположности: un air humide / un air sec."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["meteo2", "temperature"],
+    "caseIds": ["wc-meteo2"]
+  }
+]

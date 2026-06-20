@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-mois-janvier",
+    "lemma": "janvier",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒɑ̃.vje/",
+    "translationsRu": ["январь"],
+    "translationsEn": ["January"],
+    "semanticCore": "Январь — первый месяц года; пишется со строчной буквы, употребляется с en (en janvier — в январе).",
+    "collocations": [
+      {
+        "fr": "en janvier",
+        "ru": "в январе"
+      },
+      {
+        "fr": "le 1er janvier",
+        "ru": "1 января"
+      },
+      {
+        "fr": "début janvier",
+        "ru": "в начале января"
+      },
+      {
+        "fr": "au mois de janvier",
+        "ru": "в январе (месяце)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "janvier (заглавная)",
+        "note": "Во французском названия месяцев пишутся со строчной буквы: janvier, а не Janvier (в отличие от англ. January)."
+      },
+      {
+        "with": "juin",
+        "note": "janvier — январь (начало года, зима); juin — июнь (лето). Оба месяцы мужского рода, но это противоположные сезоны."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A1",
+    "tags": ["mois", "calendrier"],
+    "caseIds": ["wc-mois"]
+  },
+  {
+    "id": "wl-mois-fevrier",
+    "lemma": "février",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fe.vʁi.je/",
+    "translationsRu": ["февраль"],
+    "translationsEn": ["February"],
+    "semanticCore": "Февраль — второй и самый короткий месяц года; пишется с одним accent aigu на первой é: février.",
+    "collocations": [
+      {
+        "fr": "en février",
+        "ru": "в феврале"
+      },
+      {
+        "fr": "le 14 février",
+        "ru": "14 февраля"
+      },
+      {
+        "fr": "fin février",
+        "ru": "в конце февраля"
+      },
+      {
+        "fr": "au mois de février",
+        "ru": "в феврале (месяце)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fevrier (без accent)",
+        "note": "Пишется с accent aigu на первой é — février, не fevrier. Звук é в обоих слогах: /fe.vʁi.je/."
+      },
+      {
+        "with": "janvier",
+        "note": "février /fe.vʁi.je/ и janvier /ʒɑ̃.vje/ оба кончаются на -vier, но начало разное: f- против j-. Февраль идёт после января."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A1",
+    "tags": ["mois", "calendrier"],
+    "caseIds": ["wc-mois"]
+  },
+  {
+    "id": "wl-mois-mars",
+    "lemma": "mars",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/maʁs/",
+    "translationsRu": ["март"],
+    "translationsEn": ["March"],
+    "semanticCore": "Март — третий месяц, начало весны; в отличие от многих французских слов, конечное s здесь читается: /maʁs/.",
+    "collocations": [
+      {
+        "fr": "en mars",
+        "ru": "в марте"
+      },
+      {
+        "fr": "le 8 mars",
+        "ru": "8 марта"
+      },
+      {
+        "fr": "au mois de mars",
+        "ru": "в марте (месяце)"
+      },
+      {
+        "fr": "début mars",
+        "ru": "в начале марта"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mare",
+        "note": "mars /maʁs/ — март (со звуком s на конце); mare /maʁ/ — лужа/пруд (без s). Похожи, но s в mars произносится."
+      },
+      {
+        "with": "Mars (планета/бог)",
+        "note": "Одно и то же слово mars — это и месяц март, и планета Марс, и бог войны. Месяц пишется со строчной буквы."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A1",
+    "tags": ["mois", "calendrier"],
+    "caseIds": ["wc-mois"]
+  },
+  {
+    "id": "wl-mois-avril",
+    "lemma": "avril",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.vʁil/",
+    "translationsRu": ["апрель"],
+    "translationsEn": ["April"],
+    "semanticCore": "Апрель — четвёртый месяц, разгар весны; конечное l читается: /a.vʁil/. 1 апреля — день розыгрышей (poisson d'avril).",
+    "collocations": [
+      {
+        "fr": "en avril",
+        "ru": "в апреле"
+      },
+      {
+        "fr": "le 1er avril",
+        "ru": "1 апреля"
+      },
+      {
+        "fr": "un poisson d'avril",
+        "ru": "первоапрельский розыгрыш"
+      },
+      {
+        "fr": "au mois d'avril",
+        "ru": "в апреле (месяце)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "avril (англ. April)",
+        "note": "Англ. April помогает узнать avril, но во французском нет заглавной и нет звука «эй»: читается /a.vʁil/ с конечным l."
+      },
+      {
+        "with": "au mois d'avril",
+        "note": "Перед гласной de сокращается: au mois d'avril, d'avril à juin — с элизией, а не «de avril»."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A1",
+    "tags": ["mois", "calendrier"],
+    "caseIds": ["wc-mois"]
+  },
+  {
+    "id": "wl-mois-juin",
+    "lemma": "juin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒɥɛ̃/",
+    "translationsRu": ["июнь"],
+    "translationsEn": ["June"],
+    "semanticCore": "Июнь — шестой месяц, начало лета; один слог с носовым звуком: /ʒɥɛ̃/. Часто путают с juillet (июль).",
+    "collocations": [
+      {
+        "fr": "en juin",
+        "ru": "в июне"
+      },
+      {
+        "fr": "fin juin",
+        "ru": "в конце июня"
+      },
+      {
+        "fr": "le mois de juin",
+        "ru": "месяц июнь"
+      },
+      {
+        "fr": "de juin à août",
+        "ru": "с июня по август"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "juillet",
+        "note": "juin /ʒɥɛ̃/ — июнь (один слог, носовой звук); juillet /ʒɥi.jɛ/ — июль (два слога). Главная путаница среди месяцев."
+      },
+      {
+        "with": "juillet",
+        "note": "Соседние летние месяцы: сначала juin (июнь), потом juillet (июль). Оба начинаются на ju-, но дальше расходятся."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A1",
+    "tags": ["mois", "calendrier"],
+    "caseIds": ["wc-mois"]
+  },
+  {
+    "id": "wl-mois-juillet",
+    "lemma": "juillet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒɥi.jɛ/",
+    "translationsRu": ["июль"],
+    "translationsEn": ["July"],
+    "semanticCore": "Июль — седьмой месяц, середина лета и отпусков; конечное t не читается: /ʒɥi.jɛ/. 14 июля — национальный праздник Франции.",
+    "collocations": [
+      {
+        "fr": "en juillet",
+        "ru": "в июле"
+      },
+      {
+        "fr": "le 14 juillet",
+        "ru": "14 июля (День взятия Бастилии)"
+      },
+      {
+        "fr": "mi-juillet",
+        "ru": "в середине июля"
+      },
+      {
+        "fr": "au mois de juillet",
+        "ru": "в июле (месяце)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "juin",
+        "note": "juillet /ʒɥi.jɛ/ — июль (два слога, конечное t немое); juin /ʒɥɛ̃/ — июнь (один слог). Не путать соседние месяцы."
+      },
+      {
+        "with": "juillet (конечное t)",
+        "note": "Конечное t в juillet не произносится: /ʒɥi.jɛ/, а не «жюйет». Двойное ll даёт звук /j/."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A1",
+    "tags": ["mois", "calendrier"],
+    "caseIds": ["wc-mois"]
+  },
+  {
+    "id": "wl-mois-aout",
+    "lemma": "août",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ut/",
+    "translationsRu": ["август"],
+    "translationsEn": ["August"],
+    "semanticCore": "Август — восьмой месяц, пик летних каникул во Франции; пишется с accent circonflexe (août) и обычно читается /ut/.",
+    "collocations": [
+      {
+        "fr": "en août",
+        "ru": "в августе"
+      },
+      {
+        "fr": "le 15 août",
+        "ru": "15 августа"
+      },
+      {
+        "fr": "au mois d'août",
+        "ru": "в августе (месяце)"
+      },
+      {
+        "fr": "fin août",
+        "ru": "в конце августа"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "aout (без circonflexe)",
+        "note": "Традиционно пишется août с accent circonflexe; реформа 1990 допускает aout, но классическое написание — août. Начальное a обычно не читается: /ut/."
+      },
+      {
+        "with": "au mois d'août",
+        "note": "Слово начинается с гласного звука, поэтому de сокращается: au mois d'août, d'août à septembre — с элизией."
+      }
+    ],
+    "frequencyRank": 670,
+    "level": "A1",
+    "tags": ["mois", "calendrier"],
+    "caseIds": ["wc-mois"]
+  },
+  {
+    "id": "wl-mois-decembre",
+    "lemma": "décembre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/de.sɑ̃bʁ/",
+    "translationsRu": ["декабрь"],
+    "translationsEn": ["December"],
+    "semanticCore": "Декабрь — последний, двенадцатый месяц года; время Рождества и праздников; пишется с accent aigu: décembre.",
+    "collocations": [
+      {
+        "fr": "en décembre",
+        "ru": "в декабре"
+      },
+      {
+        "fr": "le 25 décembre",
+        "ru": "25 декабря (Рождество)"
+      },
+      {
+        "fr": "le 31 décembre",
+        "ru": "31 декабря"
+      },
+      {
+        "fr": "au mois de décembre",
+        "ru": "в декабре (месяце)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "décembre / septembre / novembre",
+        "note": "Три месяца кончаются на -embre: septembre, novembre, décembre. У décembre в начале accent aigu (dé-) и звук /s/: /de.sɑ̃bʁ/."
+      },
+      {
+        "with": "janvier",
+        "note": "décembre — последний месяц года (декабрь); janvier — первый (январь). Они соседи на стыке года: décembre → janvier."
+      }
+    ],
+    "frequencyRank": 630,
+    "level": "A1",
+    "tags": ["mois", "calendrier"],
+    "caseIds": ["wc-mois"]
+  }
+]

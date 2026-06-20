@@ -1,0 +1,326 @@
+[
+  {
+    "id": "wc-adverbes",
+    "title": "Наречия",
+    "theme": "adverbes",
+    "level": "A2",
+    "wordIds": [
+      "wl-adverbes-vite",
+      "wl-adverbes-lentement",
+      "wl-adverbes-bien",
+      "wl-adverbes-mal",
+      "wl-adverbes-ensemble",
+      "wl-adverbes-presque",
+      "wl-adverbes-surtout",
+      "wl-adverbes-vraiment"
+    ],
+    "steps": [
+      {
+        "id": "wc-adverbes-vite-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adverbes-vite",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно наречие повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il marche très vite.",
+          "Fais vite, on est en retard !",
+          "Le temps passe vite."
+        ],
+        "options": ["быстро / скоро", "медленно", "громко", "вместе"],
+        "correctIndex": 0,
+        "explanation": "vite — быстро (про скорость), разговорное наречие. Ставится после глагола: marcher vite, passer vite. «Fais vite !» — «давай быстрее!». Прилагательное «быстрый» — rapide, а не vite."
+      },
+      {
+        "id": "wc-adverbes-vite-cmp",
+        "kind": "compare",
+        "wordId": "wl-adverbes-vite",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "vite и rapide легко перепутать. В чём разница здесь?",
+        "phrases": ["Il court vite.", "C'est une voiture rapide."],
+        "options": [
+          "vite — наречие (быстро, к глаголу); rapide — прилагательное (быстрый, к существительному)",
+          "Это одно и то же слово, разницы нет",
+          "vite — прилагательное; rapide — наречие",
+          "Оба значат «медленно»"
+        ],
+        "correctIndex": 0,
+        "explanation": "vite описывает действие (il court vite — бежит быстро) — это наречие. rapide описывает предмет (une voiture rapide — быстрая машина) — это прилагательное. «Une voiture vite» — ошибка."
+      },
+      {
+        "id": "wc-adverbes-lentement-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adverbes-lentement",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное наречие во всех трёх сценах?",
+        "contexts": [
+          "Parlez plus lentement, s'il vous plaît.",
+          "La voiture roule lentement dans la rue.",
+          "Il mange lentement pour savourer."
+        ],
+        "options": ["медленно", "быстро", "тихо", "вместе"],
+        "correctIndex": 0,
+        "explanation": "lentement — медленно, антоним к vite. Образовано от прилагательного lent (медленный) + -ment. «Parlez plus lentement» — «говорите помедленнее»."
+      },
+      {
+        "id": "wc-adverbes-lentement-cmp",
+        "kind": "compare",
+        "wordId": "wl-adverbes-lentement",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Учитель просит говорить иначе: lentement или doucement? В чём разница здесь?",
+        "phrases": ["Parle plus lentement.", "Parle plus doucement."],
+        "options": [
+          "lentement = медленнее (про скорость речи); doucement = тише/мягче (про громкость)",
+          "Это синонимы, разницы нет",
+          "lentement = тише; doucement = медленнее",
+          "Оба значат «быстрее»"
+        ],
+        "correctIndex": 0,
+        "explanation": "lentement про скорость: говорить не торопясь. doucement про силу/громкость: говорить тихо, мягко. Если не успеваешь расслышать слова — просишь lentement; если слишком громко — doucement."
+      },
+      {
+        "id": "wc-adverbes-bien-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adverbes-bien",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно наречие во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ça va bien, merci.",
+          "Elle chante très bien.",
+          "Tu as bien travaillé aujourd'hui."
+        ],
+        "options": ["хорошо / как следует", "плохо", "быстро", "почти"],
+        "correctIndex": 0,
+        "explanation": "bien — хорошо: оценка действия и состояния. «Ça va bien» — всё хорошо, «chanter bien» — хорошо петь. Это наречие; прилагательное «хороший» — bon (un bon gâteau)."
+      },
+      {
+        "id": "wc-adverbes-bien-sort",
+        "kind": "sort",
+        "wordId": "wl-adverbes-bien",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с bien звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "très bien",
+            "basket": "ok"
+          },
+          {
+            "text": "bien sûr",
+            "basket": "ok"
+          },
+          {
+            "text": "ça va bien",
+            "basket": "ok"
+          },
+          {
+            "text": "un bien repas",
+            "basket": "no"
+          },
+          {
+            "text": "bien manger",
+            "basket": "ok"
+          },
+          {
+            "text": "un bien film",
+            "basket": "no"
+          }
+        ],
+        "explanation": "bien — наречие: très bien, bien sûr (конечно), ça va bien, bien manger (хорошо/правильно питаться). А вот перед существительным нужно прилагательное bon: «un bon repas», «un bon film», а не «un bien repas» / «un bien film». Запомни: действие — bien, предмет — bon."
+      },
+      {
+        "id": "wc-adverbes-mal-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adverbes-mal",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "J'ai mal dormi cette nuit.",
+          "Ça se passe mal au travail.",
+          "Il a mal à la tête."
+        ],
+        "options": ["плохо / больно", "хорошо", "быстро", "вместе"],
+        "correctIndex": 0,
+        "explanation": "mal — плохо (mal dormir, ça se passe mal) и боль в обороте avoir mal à… (j'ai mal à la tête — у меня болит голова). Антоним к bien. Прилагательное «плохой» — mauvais."
+      },
+      {
+        "id": "wc-adverbes-mal-trap",
+        "kind": "trap",
+        "wordId": "wl-adverbes-mal",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг пишет: «J'ai mal à la gorge». На что он жалуется?",
+        "options": [
+          "у него болит горло",
+          "у него хорошее настроение",
+          "он быстро говорит",
+          "ему нравится горло"
+        ],
+        "correctIndex": 0,
+        "explanation": "Оборот avoir mal à + часть тела = «болит…». «J'ai mal à la gorge» — болит горло. Здесь mal значит не «плохо» вообще, а именно физическую боль. Не путать с «mal» как оценкой действия (dormir mal)."
+      },
+      {
+        "id": "wc-adverbes-ensemble-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adverbes-ensemble",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно наречие во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On travaille ensemble depuis dix ans.",
+          "Ils habitent ensemble.",
+          "Allons-y ensemble !"
+        ],
+        "options": ["вместе / сообща", "отдельно", "быстро", "особенно"],
+        "correctIndex": 0,
+        "explanation": "ensemble — вместе (как наречие): travailler ensemble, vivre ensemble, allons-y ensemble. Ставится после глагола. Как существительное un ensemble — это «комплект/ансамбль», но здесь нужно наречие."
+      },
+      {
+        "id": "wc-adverbes-ensemble-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-adverbes-ensemble",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит ensemble?",
+        "bridge": "Англ. «ensemble» (музыкальный/танцевальный ансамбль) — прямой галлицизм: группа, которая выступает ВМЕСТЕ. Отсюда фр. наречие ensemble = вместе.",
+        "options": ["вместе", "по отдельности", "громко", "медленно"],
+        "correctIndex": 0,
+        "explanation": "ensemble = вместе. Английское «ensemble» (ансамбль — те, кто играет вместе) пришло из французского и хранит ту же идею «вместе». Читается /ɑ̃.sɑ̃bl/, оба «en» — носовые."
+      },
+      {
+        "id": "wc-adverbes-presque-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adverbes-presque",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное наречие во всех трёх сценах?",
+        "contexts": [
+          "J'ai presque fini.",
+          "Il est presque midi.",
+          "Elle vient presque tous les jours."
+        ],
+        "options": ["почти", "совсем", "редко", "особенно"],
+        "correctIndex": 0,
+        "explanation": "presque — почти, чуть-чуть не доходя до полной меры: presque fini (почти закончено), presque midi (почти полдень), presque tous les jours (почти каждый день). Ставится перед словом, к которому относится."
+      },
+      {
+        "id": "wc-adverbes-presque-cmp",
+        "kind": "compare",
+        "wordId": "wl-adverbes-presque",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "presque и environ оба про «не точно». В чём разница здесь?",
+        "phrases": ["Il est presque dix heures.", "Il est environ dix heures."],
+        "options": [
+          "presque = почти (чуть РАНЬШЕ десяти, ещё не наступило); environ = примерно (около десяти, может быть и чуть позже)",
+          "Это синонимы, разницы нет",
+          "presque = ровно десять; environ = почти десять",
+          "Оба значат «больше десяти»"
+        ],
+        "correctIndex": 0,
+        "explanation": "presque dix heures — почти десять, то есть ещё не десять, но вот-вот. environ dix heures — примерно десять (и 9:55, и 10:05). presque тяготеет к пределу снизу, environ — оценка в обе стороны."
+      },
+      {
+        "id": "wc-adverbes-surtout-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adverbes-surtout",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное наречие во всех трёх сценах?",
+        "contexts": [
+          "J'aime les fruits, surtout les fraises.",
+          "Surtout, n'oublie pas ton passeport !",
+          "Il fait froid, surtout le matin."
+        ],
+        "options": ["особенно / главное", "редко", "быстро", "плохо"],
+        "correctIndex": 0,
+        "explanation": "surtout — особенно, прежде всего: выделяет самое важное (surtout les fraises — особенно клубнику) или открывает важный совет (surtout, n'oublie pas — главное, не забудь). «surtout pas» — «только не это»."
+      },
+      {
+        "id": "wc-adverbes-surtout-trap",
+        "kind": "trap",
+        "wordId": "wl-adverbes-surtout",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "surtout и partout звучат похоже. Что значит surtout в «J'aime surtout le chocolat» ?",
+        "options": [
+          "я особенно люблю шоколад",
+          "я люблю шоколад повсюду",
+          "шоколад есть везде",
+          "я быстро ем шоколад"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка похожих слов: surtout = особенно/прежде всего, а partout = повсюду. «J'aime surtout le chocolat» — «особенно люблю шоколад». «Il y a du chocolat partout» — «шоколад повсюду». Sur-tout ≠ par-tout."
+      },
+      {
+        "id": "wc-adverbes-vraiment-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-adverbes-vraiment",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно наречие во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "C'est vraiment délicieux !",
+          "Tu es vraiment sûr ?",
+          "Je suis vraiment désolé."
+        ],
+        "options": ["действительно / по-настоящему", "почти", "медленно", "вместе"],
+        "correctIndex": 0,
+        "explanation": "vraiment — действительно, по-настоящему: подтверждает истинность и усиливает (vraiment délicieux — правда вкусно, vraiment désolé — искренне сожалею). От vrai (истинный) + -ment. «Vraiment ?» — «правда?»."
+      },
+      {
+        "id": "wc-adverbes-vraiment-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-adverbes-vraiment",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "vraiment",
+        "options": ["vraiment", "brièvement", "seulement", "autrement"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало vraiment /vʁɛ.mɑ̃/ — действительно. Остальные — тоже наречия на -ment, но другие: brièvement (кратко), seulement (только), autrement (иначе). У всех общий «хвост» -ment, поэтому важно расслышать начало: vrai-.",
+        "audioSrc": "audio/wl-adverbes-vraiment.mp3"
+      },
+      {
+        "id": "wc-adverbes-vite-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-adverbes-vite",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "vite",
+        "options": ["vite", "vide", "ville", "vie"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало vite /vit/ — быстро. Похожие на слух, но другие слова: vide /vid/ (пустой), ville /vil/ (город), vie /vi/ (жизнь). Различай по концу: -te (vite), -de (vide), -lle (ville).",
+        "audioSrc": "audio/wl-adverbes-vite.mp3"
+      },
+      {
+        "id": "wc-adverbes-bien-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-adverbes-bien",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию, чтобы не путать наречие bien (хорошо) и прилагательное bon (хороший/вкусный).",
+        "examples": [
+          "«Как дела? — bien!» — отвечаешь о действии/состоянии, тут всегда bien. А «вкусно» о еде — c'est bon.",
+          "Глагол + bien (il chante bien), но существительное + bon (un bon café). Действие — bien, предмет — bon."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-atable-petitdej",
+    "lemma": "petit-déjeuner",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pə.ti.de.ʒœ.ne/",
+    "translationsRu": ["завтрак"],
+    "translationsEn": ["breakfast"],
+    "semanticCore": "Утренний приём пищи; дословно «маленький обед» — еда, с которой начинают день.",
+    "collocations": [
+      {
+        "fr": "prendre le petit-déjeuner",
+        "ru": "завтракать"
+      },
+      {
+        "fr": "au petit-déjeuner",
+        "ru": "на завтрак"
+      },
+      {
+        "fr": "un petit-déjeuner complet",
+        "ru": "полный (сытный) завтрак"
+      },
+      {
+        "fr": "le petit-déjeuner est compris",
+        "ru": "завтрак включён (в цену)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "déjeuner",
+        "note": "petit-déjeuner = завтрак (утро); déjeuner = обед (полдень). Слова однокоренные, «petit» сдвигает на утро."
+      },
+      {
+        "with": "déjeuner (Belgique/Québec)",
+        "note": "Во Франции завтрак — le petit-déjeuner; в Бельгии и Квебеке завтрак часто называют просто le déjeuner. Региональная ловушка."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["atable", "repas"],
+    "caseIds": ["wc-atable"]
+  },
+  {
+    "id": "wl-atable-dejeuner",
+    "lemma": "déjeuner",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/de.ʒœ.ne/",
+    "translationsRu": ["обед"],
+    "translationsEn": ["lunch"],
+    "semanticCore": "Дневной приём пищи около полудня; то же слово работает и как глагол «обедать».",
+    "collocations": [
+      {
+        "fr": "l'heure du déjeuner",
+        "ru": "обеденное время"
+      },
+      {
+        "fr": "la pause déjeuner",
+        "ru": "обеденный перерыв"
+      },
+      {
+        "fr": "un déjeuner d'affaires",
+        "ru": "деловой обед"
+      },
+      {
+        "fr": "inviter à déjeuner",
+        "ru": "пригласить на обед"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "petit-déjeuner",
+        "note": "déjeuner = обед (полдень); petit-déjeuner = завтрак (утро). Не путать из-за общего корня."
+      },
+      {
+        "with": "dîner",
+        "note": "déjeuner = обед (днём); dîner = ужин (вечером). Оба и существительные, и глаголы."
+      }
+    ],
+    "frequencyRank": 580,
+    "level": "A2",
+    "tags": ["atable", "repas"],
+    "caseIds": ["wc-atable"]
+  },
+  {
+    "id": "wl-atable-diner",
+    "lemma": "dîner",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/di.ne/",
+    "translationsRu": ["ужин"],
+    "translationsEn": ["dinner", "supper"],
+    "semanticCore": "Вечерний приём пищи; пишется с circonflexe (dîner), служит и глаголом «ужинать».",
+    "collocations": [
+      {
+        "fr": "préparer le dîner",
+        "ru": "готовить ужин"
+      },
+      {
+        "fr": "inviter à dîner",
+        "ru": "пригласить на ужин"
+      },
+      {
+        "fr": "un dîner aux chandelles",
+        "ru": "ужин при свечах"
+      },
+      {
+        "fr": "après le dîner",
+        "ru": "после ужина"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "déjeuner",
+        "note": "dîner = ужин (вечер); déjeuner = обед (полдень). Оба бывают и глаголами."
+      },
+      {
+        "with": "souper",
+        "note": "dîner = ужин (станд. фр.); souper = поздний/ночной ужин, а в Бельгии и Швейцарии — обычный ужин. Не основное для A2."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["atable", "repas"],
+    "caseIds": ["wc-atable"]
+  },
+  {
+    "id": "wl-atable-aperitif",
+    "lemma": "apéritif",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.pe.ʁi.tif/",
+    "translationsRu": ["аперитив"],
+    "translationsEn": ["aperitif", "pre-dinner drink"],
+    "semanticCore": "Напиток (часто с закусками) перед едой, «открывающий» аппетит; и сам момент такого застолья.",
+    "collocations": [
+      {
+        "fr": "prendre l'apéritif",
+        "ru": "выпить аперитив"
+      },
+      {
+        "fr": "à l'apéritif",
+        "ru": "за аперитивом"
+      },
+      {
+        "fr": "un apéritif entre amis",
+        "ru": "аперитив с друзьями"
+      },
+      {
+        "fr": "offrir l'apéritif",
+        "ru": "угостить аперитивом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "apéro",
+        "note": "apéritif = полная форма; apéro = его разговорное сокращение (то же значение, неформально)."
+      },
+      {
+        "with": "digestif",
+        "note": "apéritif = напиток ДО еды (для аппетита); digestif = напиток ПОСЛЕ еды (для пищеварения)."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["atable", "boisson"],
+    "caseIds": ["wc-atable"]
+  },
+  {
+    "id": "wl-atable-recette",
+    "lemma": "recette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁə.sɛt/",
+    "translationsRu": ["рецепт"],
+    "translationsEn": ["recipe"],
+    "semanticCore": "Кулинарный рецепт: набор шагов и продуктов, как приготовить блюдо; в финансах — выручка.",
+    "collocations": [
+      {
+        "fr": "une recette de cuisine",
+        "ru": "кулинарный рецепт"
+      },
+      {
+        "fr": "suivre une recette",
+        "ru": "следовать рецепту"
+      },
+      {
+        "fr": "une recette facile",
+        "ru": "простой рецепт"
+      },
+      {
+        "fr": "donner sa recette",
+        "ru": "поделиться рецептом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "reçu",
+        "note": "Ложный друг англ. «receipt». recette = рецепт блюда; чек/квитанция — un reçu или un ticket (de caisse)."
+      },
+      {
+        "with": "ordonnance",
+        "note": "recette = кулинарный рецепт; ordonnance = рецепт врача (на лекарства). По-русски оба «рецепт», по-французски — разные слова."
+      }
+    ],
+    "frequencyRank": 690,
+    "level": "A2",
+    "tags": ["atable", "cuisine"],
+    "caseIds": ["wc-atable"]
+  },
+  {
+    "id": "wl-atable-faim",
+    "lemma": "faim",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fɛ̃/",
+    "translationsRu": ["голод"],
+    "translationsEn": ["hunger"],
+    "semanticCore": "Голод как ощущение; почти всегда через «avoir faim» — быть голодным.",
+    "collocations": [
+      {
+        "fr": "avoir faim",
+        "ru": "быть голодным"
+      },
+      {
+        "fr": "avoir très faim",
+        "ru": "быть очень голодным"
+      },
+      {
+        "fr": "mourir de faim",
+        "ru": "умирать с голоду / страшно проголодаться"
+      },
+      {
+        "fr": "ne pas avoir faim",
+        "ru": "не быть голодным"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "soif",
+        "note": "faim = голод (хочется есть); soif = жажда (хочется пить). Обе с avoir: avoir faim / avoir soif."
+      },
+      {
+        "with": "fin",
+        "note": "Омофон: faim /fɛ̃/ (голод) и fin /fɛ̃/ (конец) звучат одинаково. Различают по контексту и написанию."
+      }
+    ],
+    "frequencyRank": 430,
+    "level": "A2",
+    "tags": ["atable", "sensation"],
+    "caseIds": ["wc-atable"]
+  },
+  {
+    "id": "wl-atable-soif",
+    "lemma": "soif",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/swaf/",
+    "translationsRu": ["жажда"],
+    "translationsEn": ["thirst"],
+    "semanticCore": "Жажда как ощущение; почти всегда через «avoir soif» — хотеть пить.",
+    "collocations": [
+      {
+        "fr": "avoir soif",
+        "ru": "хотеть пить"
+      },
+      {
+        "fr": "avoir très soif",
+        "ru": "очень хотеть пить"
+      },
+      {
+        "fr": "mourir de soif",
+        "ru": "умирать от жажды"
+      },
+      {
+        "fr": "étancher sa soif",
+        "ru": "утолить жажду"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "faim",
+        "note": "soif = жажда (пить); faim = голод (есть). Обе через avoir, без артикля: avoir soif / avoir faim."
+      },
+      {
+        "with": "soie",
+        "note": "Похоже пишется: soif /swaf/ (жажда) и soie /swa/ (шёлк). Не путать — разные слова и разный звук на конце."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["atable", "sensation"],
+    "caseIds": ["wc-atable"]
+  },
+  {
+    "id": "wl-atable-regime",
+    "lemma": "régime",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁe.ʒim/",
+    "translationsRu": ["диета", "режим"],
+    "translationsEn": ["diet", "regime"],
+    "semanticCore": "За столом — диета (особое питание); вне еды — (политический) режим. Смысл задаёт контекст.",
+    "collocations": [
+      {
+        "fr": "être au régime",
+        "ru": "быть на диете"
+      },
+      {
+        "fr": "se mettre au régime",
+        "ru": "сесть на диету"
+      },
+      {
+        "fr": "un régime sans sucre",
+        "ru": "диета без сахара"
+      },
+      {
+        "fr": "suivre un régime",
+        "ru": "соблюдать диету"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "recette",
+        "note": "régime = диета (что и сколько есть); recette = рецепт (как приготовить блюдо). Оба «про еду», но разное."
+      },
+      {
+        "with": "régime (politique)",
+        "note": "Многозначность: за столом régime = диета, в политике le régime = (политический) режим. Контекст решает."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["atable", "cuisine"],
+    "caseIds": ["wc-atable"]
+  }
+]

@@ -1,0 +1,344 @@
+[
+  {
+    "id": "wc-meteo2",
+    "title": "Погода: явления",
+    "theme": "meteo2",
+    "level": "A2",
+    "wordIds": [
+      "wl-meteo2-orage",
+      "wl-meteo2-brouillard",
+      "wl-meteo2-tempete",
+      "wl-meteo2-eclair",
+      "wl-meteo2-tonnerre",
+      "wl-meteo2-gel",
+      "wl-meteo2-glace",
+      "wl-meteo2-humide"
+    ],
+    "steps": [
+      {
+        "id": "wc-meteo2-orage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo2-orage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Un gros orage a éclaté pendant la nuit.",
+          "Il y a de l'orage dans l'air, rentrons.",
+          "On a entendu le tonnerre : c'est l'orage."
+        ],
+        "options": ["гроза", "буря (ветер)", "туман", "ливень без грома"],
+        "correctIndex": 0,
+        "explanation": "orage (m) — гроза: гром, молния и обычно ливень. «un orage éclate» — разражается гроза. Буря (про ветер) — une tempête."
+      },
+      {
+        "id": "wc-meteo2-orage-cmp",
+        "kind": "compare",
+        "wordId": "wl-meteo2-orage",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un orage и une tempête. В чём разница?",
+        "phrases": ["Un orage avec des éclairs a éclaté.", "Une tempête a arraché les toits."],
+        "options": [
+          "orage — гроза (гром и молния, обычно недолго); tempête — буря/шторм (главное — сильный, опасный ветер).",
+          "Это полные синонимы.",
+          "orage — это буря на море, tempête — гроза на суше.",
+          "orage — слабый ветер, tempête — гром без ветра."
+        ],
+        "correctIndex": 0,
+        "explanation": "un orage = гроза (éclairs + tonnerre, чаще короткая); une tempête = буря/шторм, где главное — сильный ветер, который ломает и срывает."
+      },
+      {
+        "id": "wc-meteo2-brouillard-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo2-brouillard",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ce matin, il y a du brouillard sur la route.",
+          "On roule lentement à cause du brouillard.",
+          "Un brouillard épais cache la montagne."
+        ],
+        "options": ["туман", "облако в небе", "дождь", "иней"],
+        "correctIndex": 0,
+        "explanation": "brouillard (m) — туман у земли, в котором плохо видно. «il y a du brouillard» — туманно. Облако в небе — un nuage."
+      },
+      {
+        "id": "wc-meteo2-brouillard-cmp",
+        "kind": "compare",
+        "wordId": "wl-meteo2-brouillard",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le brouillard и le nuage. В чём разница?",
+        "phrases": ["Il y a du brouillard sur la route.", "Il y a des nuages dans le ciel."],
+        "options": [
+          "brouillard — туман у самой земли (мешает идти и ехать); nuage — облако высоко в небе.",
+          "Это одно и то же слово.",
+          "brouillard — облако, nuage — туман.",
+          "brouillard бывает только ночью, nuage — только днём."
+        ],
+        "correctIndex": 0,
+        "explanation": "le brouillard = туман у земли (как облако, опустившееся вниз); le nuage = облако высоко в небе. По сути туман — это облако у поверхности."
+      },
+      {
+        "id": "wc-meteo2-tempete-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo2-tempete",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La tempête a duré toute la nuit.",
+          "Une tempête de neige a bloqué les routes.",
+          "Les bateaux restent au port à cause de la tempête."
+        ],
+        "options": ["буря, шторм", "лёгкий ветерок", "гроза без ветра", "жара"],
+        "correctIndex": 0,
+        "explanation": "tempête (f) — буря, шторм: сильный опасный ветер с непогодой. «une tempête de neige» — снежная буря, метель. «la tempête fait rage» — буря бушует."
+      },
+      {
+        "id": "wc-meteo2-tempete-sort",
+        "kind": "sort",
+        "wordId": "wl-meteo2-tempete",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом tempête звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une tempête de neige",
+            "basket": "ok"
+          },
+          {
+            "text": "la tempête fait rage",
+            "basket": "ok"
+          },
+          {
+            "text": "une violente tempête",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une tempête",
+            "basket": "no"
+          },
+          {
+            "text": "une tempête au chocolat",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«une tempête de neige», «la tempête fait rage», «une violente tempête» — естественно. «boire une tempête» и «une tempête au chocolat» — бессмыслица (это про éclair, не tempête)."
+      },
+      {
+        "id": "wc-meteo2-eclair-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo2-eclair",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Слово éclair значит разное. Что именно в этих сценах?",
+        "contexts": [
+          "Un éclair a déchiré le ciel.",
+          "Pendant l'orage, on voyait des éclairs partout.",
+          "L'éclair a illuminé toute la pièce."
+        ],
+        "options": ["молния (вспышка в небе)", "гром", "пирожное эклер", "радуга"],
+        "correctIndex": 0,
+        "explanation": "Здесь éclair (m) — молния, вспышка света в грозу. То же слово значит и пирожное «эклер» — но это другой контекст (un éclair au chocolat)."
+      },
+      {
+        "id": "wc-meteo2-eclair-trap",
+        "kind": "trap",
+        "wordId": "wl-meteo2-eclair",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В кафе вы слышите: «Je voudrais un éclair au chocolat.» Что человек заказывает?",
+        "options": [
+          "пирожное эклер с шоколадом",
+          "молнию с шоколадом",
+          "шоколадную грозу",
+          "вспышку фотоаппарата"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка двух смыслов: un éclair — это и молния, и пирожное «эклер». В кафе «un éclair au chocolat» — это шоколадный эклер, а не молния."
+      },
+      {
+        "id": "wc-meteo2-tonnerre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo2-tonnerre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On a entendu un coup de tonnerre.",
+          "Le tonnerre gronde au loin.",
+          "Après l'éclair vient le tonnerre."
+        ],
+        "options": ["гром (звук)", "молния (вспышка)", "ветер", "град"],
+        "correctIndex": 0,
+        "explanation": "tonnerre (m) — гром, раскатистый звук во время грозы. «un coup de tonnerre» — раскат грома, «le tonnerre gronde» — гром гремит."
+      },
+      {
+        "id": "wc-meteo2-tonnerre-cmp",
+        "kind": "compare",
+        "wordId": "wl-meteo2-tonnerre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "l'éclair и le tonnerre во время грозы. В чём разница?",
+        "phrases": ["On voit l'éclair.", "On entend le tonnerre."],
+        "options": [
+          "éclair — молния, её видишь (вспышка); tonnerre — гром, его слышишь (звук). Молнию видно раньше.",
+          "Это два названия одного и того же.",
+          "éclair — звук, tonnerre — вспышка.",
+          "éclair бывает днём, tonnerre — ночью."
+        ],
+        "correctIndex": 0,
+        "explanation": "l'éclair = молния (видишь вспышку), le tonnerre = гром (слышишь звук). Свет быстрее звука, поэтому сначала éclair, потом tonnerre."
+      },
+      {
+        "id": "wc-meteo2-tonnerre-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-meteo2-tonnerre",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, какое из написанных ты услышал.",
+        "audioText": "tonnerre",
+        "options": ["tonneau", "tonnerre", "tondre", "tanière"],
+        "correctIndex": 1,
+        "explanation": "tonnerre /tɔ.nɛʁ/ — гром. Похоже звучат tonneau /tɔ.no/ (бочка), tondre /tɔ̃dʁ/ (стричь), tanière /ta.njɛʁ/ (логово) — но это другие слова."
+      },
+      {
+        "id": "wc-meteo2-gel-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo2-gel",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит gel в этих «погодных» сценах?",
+        "contexts": [
+          "Il y a du gel ce matin sur les voitures.",
+          "Le gel a abîmé les fleurs du jardin.",
+          "Attention au gel sur la route cette nuit."
+        ],
+        "options": ["мороз, заморозки", "гель для душа", "лёд на реке", "снегопад"],
+        "correctIndex": 0,
+        "explanation": "Здесь gel (m) — мороз, заморозки (когда температура ниже нуля и всё подмерзает). То же слово значит и «гель» (du gel douche) — но это другой контекст."
+      },
+      {
+        "id": "wc-meteo2-gel-trap",
+        "kind": "trap",
+        "wordId": "wl-meteo2-gel",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В ванной на полке написано «gel douche». Что это?",
+        "options": ["гель для душа", "мороз в душе", "лёд для душа", "заморозки на улице"],
+        "correctIndex": 0,
+        "explanation": "Ловушка двух смыслов: le gel — это и мороз (погода), и гель (косметика). «gel douche» — гель для душа, никакого мороза."
+      },
+      {
+        "id": "wc-meteo2-glace-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo2-glace",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Слово glace значит несколько вещей. Что именно в каждой сцене?",
+        "contexts": [
+          "En hiver, le lac est couvert de glace.",
+          "En été, j'adore une glace à la vanille.",
+          "Elle se regarde dans la glace avant de sortir."
+        ],
+        "options": [
+          "лёд / мороженое / зеркало (по контексту)",
+          "только лёд",
+          "только мороженое",
+          "снег"
+        ],
+        "correctIndex": 0,
+        "explanation": "glace (f) — сразу три значения: лёд (sur le lac), мороженое (une glace à la vanille) и зеркало (se regarder dans la glace). Контекст подсказывает, что имеется в виду."
+      },
+      {
+        "id": "wc-meteo2-glace-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-meteo2-glace",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три сочетания — настоящие зимние/погодные явления. Найди лишнее.",
+        "options": [
+          "du gel sur la route",
+          "de la glace sur le lac",
+          "un coup de tonnerre",
+          "une glace au chocolat"
+        ],
+        "correctIndex": 3,
+        "explanation": "«du gel» (мороз), «de la glace sur le lac» (лёд) и «un coup de tonnerre» (раскат грома) — про погоду. «une glace au chocolat» (шоколадное мороженое) — лишнее: это десерт, не погода."
+      },
+      {
+        "id": "wc-meteo2-humide-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-meteo2-humide",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le climat ici est chaud et humide.",
+          "Après la pluie, l'herbe est encore humide.",
+          "Cette cave est sombre et humide."
+        ],
+        "options": ["влажный, сырой", "сухой", "горячий", "ледяной"],
+        "correctIndex": 0,
+        "explanation": "humide — влажный, сырой (о воздухе, климате, вещах). «un climat humide» — влажный климат. Противоположность — sec / sèche (сухой)."
+      },
+      {
+        "id": "wc-meteo2-humide-cmp",
+        "kind": "compare",
+        "wordId": "wl-meteo2-humide",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "humide и mouillé. В чём разница?",
+        "phrases": ["La serviette est encore humide.", "Je suis tout mouillé sous la pluie."],
+        "options": [
+          "humide — влажный, чуть сырой (немного воды); mouillé — мокрый, промокший насквозь.",
+          "Это полные синонимы.",
+          "humide — мокрый, mouillé — сухой.",
+          "humide — только про погоду, mouillé — только про еду."
+        ],
+        "correctIndex": 0,
+        "explanation": "humide = влажный, сыроватый (полотенце после душа); mouillé = мокрый, промок насквозь (одежда под дождём). Степень разная: humide < mouillé."
+      },
+      {
+        "id": "wc-meteo2-orage-hint",
+        "kind": "wordHint",
+        "wordId": "wl-meteo2-orage",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: непогода с громом, молнией и обычно ливнем, которая «разражается» и быстро проходит.",
+        "answer": "orage",
+        "hints": [
+          "Мужской род, начинается на o…",
+          "5 букв: o-r-a-g-e, /ɔ.ʁaʒ/",
+          "Un ___ a éclaté pendant la nuit."
+        ],
+        "explanation": "orage (m) — гроза. «un orage éclate» — разражается гроза. Не путать с tempête (буря, про ветер)."
+      },
+      {
+        "id": "wc-meteo2-gel-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-meteo2-gel",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для gel, чтобы держать в голове оба смысла — «мороз» и «гель» — и звук /ʒɛl/ (как «жель»).",
+        "examples": [
+          "Утром мороз (le gel) превратил лужи в «гель»: вода стала густой и застыла — одно слово gel на оба образа.",
+          "Представь, как мороз (le gel) покрывает машину «гелем» из инея — и сразу вспомни gel douche на полке в ванной."
+        ]
+      }
+    ]
+  }
+]

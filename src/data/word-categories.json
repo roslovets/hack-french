@@ -2,7 +2,7 @@
   {
     "id": "table",
     "title": "Еда и кафе",
-    "themes": ["boulangerie", "cafe", "nourriture", "restaurant", "boissons", "cuisson"],
+    "themes": ["boulangerie", "cafe", "nourriture", "restaurant", "boissons", "cuisson", "atable"],
     "bossId": "wc-boss-table"
   },
   {
@@ -48,7 +48,8 @@
       "questions",
       "etudes",
       "salutations",
-      "opinions"
+      "opinions",
+      "matieres"
     ],
     "bossId": "wc-boss-ecole-politesse"
   },
@@ -63,7 +64,8 @@
       "calendrier",
       "verbes2",
       "heure",
-      "jours"
+      "jours",
+      "mois"
     ],
     "bossId": "wc-boss-verbes"
   },
@@ -82,7 +84,7 @@
   {
     "id": "weather",
     "title": "Погода и природа",
-    "themes": ["meteo", "animaux", "saisons", "nature2"],
+    "themes": ["meteo", "animaux", "saisons", "nature2", "meteo2"],
     "bossId": "wc-boss-weather"
   },
   {
@@ -94,7 +96,7 @@
   {
     "id": "descriptions",
     "title": "Цвета и описания",
-    "themes": ["couleurs", "adjectifs", "quantite", "nombres"],
+    "themes": ["couleurs", "adjectifs", "quantite", "nombres", "adverbes"],
     "bossId": "wc-boss-descriptions"
   }
 ]

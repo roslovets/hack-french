@@ -1,0 +1,321 @@
+[
+  {
+    "id": "wc-atable",
+    "title": "Приёмы пищи",
+    "theme": "atable",
+    "level": "A2",
+    "wordIds": [
+      "wl-atable-petitdej",
+      "wl-atable-dejeuner",
+      "wl-atable-diner",
+      "wl-atable-aperitif",
+      "wl-atable-recette",
+      "wl-atable-faim",
+      "wl-atable-soif",
+      "wl-atable-regime"
+    ],
+    "steps": [
+      {
+        "id": "wc-atable-petitdej-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-atable-petitdej",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je prends mon petit-déjeuner à huit heures.",
+          "Au petit-déjeuner, je mange des tartines.",
+          "L'hôtel propose un petit-déjeuner complet."
+        ],
+        "options": ["завтрак", "обед", "ужин", "перекус"],
+        "correctIndex": 0,
+        "explanation": "le petit-déjeuner — завтрак (утренний приём пищи). Дословно «маленький обед». «prendre le petit-déjeuner» — завтракать. Обед — le déjeuner, ужин — le dîner."
+      },
+      {
+        "id": "wc-atable-petitdej-cmp",
+        "kind": "compare",
+        "wordId": "wl-atable-petitdej",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le petit-déjeuner и le déjeuner. В чём разница?",
+        "phrases": ["Je prends le petit-déjeuner à 8h.", "Je prends le déjeuner à midi."],
+        "options": [
+          "petit-déjeuner — завтрак (утром); déjeuner — обед (в полдень).",
+          "Это одно и то же, «petit» ничего не меняет.",
+          "petit-déjeuner — обед, а déjeuner — завтрак.",
+          "petit-déjeuner — ужин; déjeuner — завтрак."
+        ],
+        "correctIndex": 0,
+        "explanation": "В стандартном (французском) французском: le petit-déjeuner = завтрак, le déjeuner = обед. Слова однокоренные, но «petit» сдвигает время на утро."
+      },
+      {
+        "id": "wc-atable-dejeuner-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-atable-dejeuner",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On se retrouve pour le déjeuner à midi.",
+          "Le déjeuner est servi de 12h à 14h.",
+          "Après le déjeuner, je bois un café."
+        ],
+        "options": ["обед", "завтрак", "ужин", "десерт"],
+        "correctIndex": 0,
+        "explanation": "le déjeuner — обед, дневной приём пищи около полудня. Может быть и глаголом: déjeuner — обедать. Завтрак — le petit-déjeuner."
+      },
+      {
+        "id": "wc-atable-dejeuner-trap",
+        "kind": "trap",
+        "wordId": "wl-atable-dejeuner",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Француз пишет: «On déjeune à midi». Когда он ест?",
+        "options": [
+          "в полдень — обедает (déjeuner = обед)",
+          "утром — завтракает",
+          "вечером — ужинает",
+          "ночью — поздний перекус"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: déjeuner похоже на «завтрак» и в Бельгии/Квебеке так и значит. Но во Франции le déjeuner = обед (полдень), а завтрак — le petit-déjeuner."
+      },
+      {
+        "id": "wc-atable-diner-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-atable-diner",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le dîner est prêt, à table !",
+          "On t'invite à dîner ce soir.",
+          "Après le dîner, on regarde un film."
+        ],
+        "options": ["ужин", "обед", "завтрак", "закуска"],
+        "correctIndex": 0,
+        "explanation": "le dîner — ужин (вечерний приём пищи). Пиши через accent circonflexe: d-î-n-e-r. Может быть и глаголом: dîner — ужинать."
+      },
+      {
+        "id": "wc-atable-diner-sort",
+        "kind": "sort",
+        "wordId": "wl-atable-diner",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом dîner звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "préparer le dîner",
+            "basket": "ok"
+          },
+          {
+            "text": "inviter à dîner",
+            "basket": "ok"
+          },
+          {
+            "text": "un dîner aux chandelles",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un dîner",
+            "basket": "no"
+          },
+          {
+            "text": "un dîner rapide",
+            "basket": "ok"
+          },
+          {
+            "text": "lire le dîner",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«préparer / inviter à dîner», «un dîner aux chandelles» (ужин при свечах), «un dîner rapide» — естественно. Ужин не «пьют» (boire) и не «читают» (lire) — эти сочетания бессмысленны."
+      },
+      {
+        "id": "wc-atable-aperitif-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-atable-aperitif",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит apéritif?",
+        "bridge": "Англ. «aperitif» — это и есть французское apéritif: напиток перед едой, разжигающий аппетит. Корень тот же, что у «appetite».",
+        "options": ["аперитив (напиток перед едой)", "десерт", "первое блюдо", "счёт в ресторане"],
+        "correctIndex": 0,
+        "explanation": "l'apéritif (m) — аперитив: напиток (часто с закусками) перед едой, чтобы «открыть» аппетит. В разговорной речи сокращают до «l'apéro». Десерт — le dessert."
+      },
+      {
+        "id": "wc-atable-aperitif-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-atable-aperitif",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "On prend l'apéritif avant le repas.",
+          "Tu viens à la maison pour l'apéritif ?",
+          "Un apéritif et quelques olives, c'est parfait."
+        ],
+        "options": ["аперитив (перед едой)", "главное блюдо", "чаевые", "меню"],
+        "correctIndex": 0,
+        "explanation": "l'apéritif — это и сам напиток, и небольшое застолье перед едой. «prendre l'apéritif» — выпить аперитив. Меню — la carte / le menu."
+      },
+      {
+        "id": "wc-atable-recette-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-atable-recette",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai trouvé une recette de tarte aux pommes.",
+          "Tu peux me donner ta recette ?",
+          "Cette recette est facile et rapide."
+        ],
+        "options": ["рецепт (блюда)", "чек из магазина", "счёт в ресторане", "меню"],
+        "correctIndex": 0,
+        "explanation": "la recette — рецепт (как приготовить блюдо). «une recette de cuisine» — кулинарный рецепт. Внимание: это НЕ «чек» — чек/квитанция по-французски un reçu или un ticket."
+      },
+      {
+        "id": "wc-atable-recette-trap",
+        "kind": "trap",
+        "wordId": "wl-atable-recette",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «receipt» (чек, квитанция). Что значит французское recette?",
+        "options": ["рецепт блюда", "чек из магазина", "квитанция об оплате", "кассовый аппарат"],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: фр. recette = рецепт (как готовить), а не англ. «receipt». Чек/квитанция — un reçu или un ticket (de caisse). Похоже пишется — легко перепутать."
+      },
+      {
+        "id": "wc-atable-faim-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-atable-faim",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "J'ai faim, on mange bientôt ?",
+          "Les enfants ont toujours faim après l'école.",
+          "Je n'ai pas faim, merci."
+        ],
+        "options": ["голод (быть голодным)", "жажда", "усталость", "аппетит к сладкому"],
+        "correctIndex": 0,
+        "explanation": "la faim — голод. Главная конструкция: «avoir faim» — быть голодным (дословно «иметь голод»). По-французски не говорят «je suis faim», только «j'ai faim»."
+      },
+      {
+        "id": "wc-atable-faim-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-atable-faim",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "faim",
+        "options": ["faim", "femme", "feu", "ferme"],
+        "correctIndex": 0,
+        "explanation": "faim /fɛ̃/ — голод. Слушай носовой /ɛ̃/. Другие слова звучат иначе: femme /fam/ — женщина, feu /fø/ — огонь, ferme /fɛʁm/ — ферма."
+      },
+      {
+        "id": "wc-atable-soif-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-atable-soif",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai soif, je voudrais de l'eau.",
+          "Avec cette chaleur, on a vite soif.",
+          "Bois un peu si tu as soif."
+        ],
+        "options": ["жажда (хотеть пить)", "голод", "жара", "усталость"],
+        "correctIndex": 0,
+        "explanation": "la soif — жажда. Конструкция «avoir soif» — хотеть пить. Как и с голодом: «j'ai soif», а не «je suis soif». Голод — la faim."
+      },
+      {
+        "id": "wc-atable-soif-cmp",
+        "kind": "compare",
+        "wordId": "wl-atable-soif",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "avoir faim и avoir soif. В чём разница?",
+        "phrases": ["J'ai faim, je veux manger.", "J'ai soif, je veux boire."],
+        "options": [
+          "avoir faim — хотеть есть (голод); avoir soif — хотеть пить (жажда).",
+          "Это синонимы, оба про еду.",
+          "avoir faim — хотеть пить; avoir soif — хотеть есть.",
+          "Оба значат «устать»."
+        ],
+        "correctIndex": 0,
+        "explanation": "avoir faim = голод → хочется есть (manger). avoir soif = жажда → хочется пить (boire). Обе конструкции с avoir, без артикля: avoir faim / avoir soif."
+      },
+      {
+        "id": "wc-atable-regime-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-atable-regime",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит здесь?",
+        "contexts": [
+          "Je suis au régime, pas de dessert.",
+          "Elle a commencé un régime sans sucre.",
+          "Mon médecin m'a conseillé un régime."
+        ],
+        "options": ["диета (питание)", "рецепт", "режим дня", "аппетит"],
+        "correctIndex": 0,
+        "explanation": "le régime — здесь диета (специальное питание). «être au régime» — быть на диете, «se mettre au régime» — сесть на диету. У слова есть и второе значение — политический режим."
+      },
+      {
+        "id": "wc-atable-regime-trap",
+        "kind": "trap",
+        "wordId": "wl-atable-regime",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово régime многозначно. В кулинарном контексте «être au régime» — это:",
+        "options": [
+          "быть на диете (ограничивать питание)",
+          "соблюдать режим дня",
+          "жить при политическом режиме",
+          "работать по графику"
+        ],
+        "correctIndex": 0,
+        "explanation": "За столом régime = диета: «être au régime» — сидеть на диете. Слово значит и «политический режим» (le régime), но контекст еды задаёт смысл «диета». «Режим дня» — plutôt un rythme / un emploi du temps."
+      },
+      {
+        "id": "wc-atable-regime-hint",
+        "kind": "wordHint",
+        "wordId": "wl-atable-regime",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: ограниченное питание, которое назначают, чтобы похудеть или по здоровью.",
+        "answer": "régime",
+        "hints": [
+          "Начинается на r…",
+          "6 букв, один accent aigu: r-é-g-i-m-e",
+          "Être au ___ : sans sucre, sans sel."
+        ],
+        "explanation": "le régime — диета. «être au régime» — быть на диете. То же слово значит и «(политический) режим» — смысл задаёт контекст."
+      },
+      {
+        "id": "wc-atable-petitdej-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-atable-petitdej",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для трёх приёмов пищи, чтобы не путать их порядок: petit-déjeuner → déjeuner → dîner.",
+        "examples": [
+          "«petit» = маленький и ранний → утро (завтрак); потом déjeuner (обед) в полдень; dîner (с «î», как длинная свеча) — вечер.",
+          "Свяжи со своим днём: утром — mon petit-déjeuner, в полдень — mon déjeuner, вечером — mon dîner. Проговори свой вчерашний день по-французски."
+        ]
+      }
+    ]
+  }
+]

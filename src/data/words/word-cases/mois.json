@@ -1,0 +1,252 @@
+[
+  {
+    "id": "wc-mois",
+    "title": "Месяцы",
+    "theme": "mois",
+    "level": "A1",
+    "wordIds": [
+      "wl-mois-janvier",
+      "wl-mois-fevrier",
+      "wl-mois-mars",
+      "wl-mois-avril",
+      "wl-mois-juin",
+      "wl-mois-juillet",
+      "wl-mois-aout",
+      "wl-mois-decembre"
+    ],
+    "steps": [
+      {
+        "id": "wc-mois-janvier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mois-janvier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le 1er janvier, on se souhaite la bonne année.",
+          "En janvier, il fait souvent très froid.",
+          "Mon anniversaire est début janvier."
+        ],
+        "options": ["январь", "июнь", "год", "зима"],
+        "correctIndex": 0,
+        "explanation": "janvier (m) — январь, первый месяц года. «en janvier» — в январе. Названия месяцев во французском пишутся со строчной буквы. Год — une année, зима — l'hiver."
+      },
+      {
+        "id": "wc-mois-janvier-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-mois-janvier",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит janvier?",
+        "bridge": "Англ. «January» — январь. Французское janvier — тот же корень, но без заглавной буквы и читается /ʒɑ̃.vje/.",
+        "options": ["январь", "июль", "понедельник", "праздник"],
+        "correctIndex": 0,
+        "explanation": "janvier = январь. Англ. «January» — прямой мост. Но во французском месяц пишется со строчной (janvier) и звучит /ʒɑ̃.vje/."
+      },
+      {
+        "id": "wc-mois-fevrier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mois-fevrier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le 14 février, c'est la Saint-Valentin.",
+          "Février est le mois le plus court.",
+          "Fin février, on attend déjà le printemps."
+        ],
+        "options": ["февраль", "апрель", "праздник", "весна"],
+        "correctIndex": 0,
+        "explanation": "février (m) — февраль, самый короткий месяц. Accent aigu стоит на первой é: f-é-v-r-i-e-r. Весна — le printemps."
+      },
+      {
+        "id": "wc-mois-fevrier-trap",
+        "kind": "trap",
+        "wordId": "wl-mois-fevrier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ты пишешь «февраль» по-французски. Какой вариант верный?",
+        "options": ["février", "fevrier", "févriér", "februar"],
+        "correctIndex": 0,
+        "explanation": "Верно février: accent aigu стоит только на первой é (fé-), второй слог -vrier без акцента. «fevrier» — без акцента (ошибка), «févriér» — лишний акцент, «februar» — немецкое слово."
+      },
+      {
+        "id": "wc-mois-mars-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mois-mars",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le 8 mars, c'est la journée des femmes.",
+          "Au mois de mars, les jours rallongent.",
+          "Le printemps commence en mars."
+        ],
+        "options": ["март", "май", "вторник", "планета"],
+        "correctIndex": 0,
+        "explanation": "mars (m) — март, начало весны. Важно: конечное s здесь читается — /maʁs/. Тем же словом называют планету Марс, но месяц пишется со строчной буквы."
+      },
+      {
+        "id": "wc-mois-mars-trap",
+        "kind": "trap",
+        "wordId": "wl-mois-mars",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Во многих французских словах конечное s немое (Paris, trois). А как читается mars?",
+        "phrases": ["On est en mars.", "Il y a une mare dans le jardin."],
+        "options": [
+          "/maʁs/ — здесь конечное s произносится",
+          "/maʁ/ — s немое, как обычно",
+          "/maʁz/ — s звучит как з",
+          "/ma/ — читается только первая буква"
+        ],
+        "correctIndex": 0,
+        "explanation": "mars — исключение: конечное s произносится, /maʁs/. Без s было бы mare /maʁ/ — «лужа, пруд». Поэтому s в mars нельзя «глотать»."
+      },
+      {
+        "id": "wc-mois-avril-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mois-avril",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le 1er avril, on fait des blagues.",
+          "En avril, les arbres fleurissent.",
+          "Il a pris ses vacances au mois d'avril."
+        ],
+        "options": ["апрель", "август", "шутка", "дерево"],
+        "correctIndex": 0,
+        "explanation": "avril (m) — апрель. Конечное l читается: /a.vʁil/. «un poisson d'avril» — первоапрельский розыгрыш. Обрати внимание: «au mois d'avril» — de сокращается перед гласной."
+      },
+      {
+        "id": "wc-mois-avril-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-mois-avril",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет смысл. Что значит avril?",
+        "bridge": "Англ. «April» — апрель. Французское avril — тот же месяц, но без заглавной и без звука «эй»: /a.vʁil/, с конечным l.",
+        "options": ["апрель", "март", "птица", "дождь"],
+        "correctIndex": 0,
+        "explanation": "avril = апрель. Англ. «April» — узнаваемый мост, но во французском читается /a.vʁil/ (конечное l звучит) и пишется со строчной."
+      },
+      {
+        "id": "wc-mois-juin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mois-juin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "L'été commence le 21 juin.",
+          "En juin, il y a les examens.",
+          "Fin juin, les écoles ferment."
+        ],
+        "options": ["июнь", "январь", "лето", "экзамен"],
+        "correctIndex": 0,
+        "explanation": "juin (m) — июнь, начало лета. Один слог с носовым звуком: /ʒɥɛ̃/. Лето — l'été, экзамен — un examen. Не путать с juillet (июль)."
+      },
+      {
+        "id": "wc-mois-juin-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-mois-juin",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай. Какой месяц прозвучал?",
+        "audioText": "juin",
+        "options": ["juin", "juillet", "join", "soin"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало juin /ʒɥɛ̃/ — июнь, один слог. juillet /ʒɥi.jɛ/ — июль (два слога). «join» — английское, «soin» /swɛ̃/ — «забота, уход»: похоже на слух, но это не месяц."
+      },
+      {
+        "id": "wc-mois-juillet-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mois-juillet",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le 14 juillet, c'est la fête nationale.",
+          "En juillet, beaucoup de gens partent en vacances.",
+          "Il fait très chaud à la mi-juillet."
+        ],
+        "options": ["июль", "июнь", "праздник", "жара"],
+        "correctIndex": 0,
+        "explanation": "juillet (m) — июль, середина лета и отпусков. Конечное t не читается: /ʒɥi.jɛ/. 14 juillet — национальный праздник Франции. Праздник — une fête."
+      },
+      {
+        "id": "wc-mois-juillet-cmp",
+        "kind": "compare",
+        "wordId": "wl-mois-juillet",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "En juin и en juillet. В чём разница?",
+        "phrases": ["Les examens sont en juin.", "Les vacances commencent en juillet."],
+        "options": [
+          "juin — июнь (6-й месяц, один слог /ʒɥɛ̃/); juillet — июль (7-й месяц, два слога /ʒɥi.jɛ/).",
+          "Это два написания одного месяца, разницы нет.",
+          "juin — июль, а juillet — июнь, они перепутаны.",
+          "juin — это месяц, а juillet — день недели."
+        ],
+        "correctIndex": 0,
+        "explanation": "juin (июнь) идёт раньше, juillet (июль) — следующий. На слух различай по длине: juin — один слог /ʒɥɛ̃/, juillet — два слога /ʒɥi.jɛ/."
+      },
+      {
+        "id": "wc-mois-aout-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mois-aout",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "En août, Paris est presque vide.",
+          "Le 15 août est un jour férié.",
+          "Nous partons à la mer au mois d'août."
+        ],
+        "options": ["август", "декабрь", "море", "город"],
+        "correctIndex": 0,
+        "explanation": "août (m) — август, пик летних каникул во Франции. Пишется с accent circonflexe и читается /ut/ — начальное a почти не слышно. Море — la mer."
+      },
+      {
+        "id": "wc-mois-aout-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-mois-aout",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для août (август), чтобы запомнить странное написание (a-o-û-t) и произношение /ut/.",
+        "examples": [
+          "Буквы a-o-û почти не слышно: остаётся короткое «ут». Представь, что в августе так жарко, что от слова осталось одно «ут».",
+          "Свяжи 15 août (большой летний праздник) с пустым Парижем — все уехали к морю, осталось короткое /ut/."
+        ]
+      },
+      {
+        "id": "wc-mois-decembre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mois-decembre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le 25 décembre, c'est Noël.",
+          "En décembre, il neige souvent.",
+          "Le 31 décembre, on fête le réveillon."
+        ],
+        "options": ["декабрь", "февраль", "Рождество", "снег"],
+        "correctIndex": 0,
+        "explanation": "décembre (m) — декабрь, последний месяц года. Пишется с accent aigu (dé-) и читается /de.sɑ̃bʁ/. Рождество — Noël, снег — la neige."
+      },
+      {
+        "id": "wc-mois-decembre-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-mois-decembre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — месяцы. Найди лишнее.",
+        "options": ["décembre", "février", "janvier", "Noël"],
+        "correctIndex": 3,
+        "explanation": "décembre (декабрь), février (февраль) и janvier (январь) — месяцы. Noël (Рождество) — праздник, который бывает в декабре, но это не месяц. Лишнее — Noël."
+      }
+    ]
+  }
+]
