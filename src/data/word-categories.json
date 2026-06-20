@@ -14,7 +14,16 @@
   {
     "id": "home",
     "title": "Дом и одежда",
-    "themes": ["maison", "vetements", "pieces", "meubles", "vetements2", "objets", "menage"],
+    "themes": [
+      "maison",
+      "vetements",
+      "pieces",
+      "meubles",
+      "vetements2",
+      "objets",
+      "menage",
+      "electromenager"
+    ],
     "bossId": "wc-boss-maison-vetements"
   },
   {
@@ -29,7 +38,8 @@
       "visage",
       "famille2",
       "caractere",
-      "sentiments"
+      "sentiments",
+      "relations"
     ],
     "bossId": "wc-boss-corps-famille"
   },
@@ -74,19 +84,19 @@
   {
     "id": "money",
     "title": "Покупки и деньги",
-    "themes": ["argent", "courses"],
+    "themes": ["argent", "courses", "magasins"],
     "bossId": "wc-boss-money"
   },
   {
     "id": "work",
     "title": "Работа",
-    "themes": ["travail", "metiers"],
+    "themes": ["travail", "metiers", "documents"],
     "bossId": "wc-boss-work"
   },
   {
     "id": "weather",
     "title": "Погода и природа",
-    "themes": ["meteo", "animaux", "saisons", "nature2", "meteo2", "animaux2"],
+    "themes": ["meteo", "animaux", "saisons", "nature2", "meteo2", "animaux2", "paysage"],
     "bossId": "wc-boss-weather"
   },
   {

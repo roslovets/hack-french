@@ -1,0 +1,307 @@
+[
+  {
+    "id": "wl-electromenager-machinealaver",
+    "lemma": "machine à laver",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ma.ʃin a la.ve/",
+    "translationsRu": ["стиральная машина"],
+    "translationsEn": ["washing machine"],
+    "semanticCore": "Машина, которая стирает бельё; именно стиральная, не любая «машина».",
+    "collocations": [
+      {
+        "fr": "mettre une machine",
+        "ru": "запустить стирку"
+      },
+      {
+        "fr": "le linge dans la machine à laver",
+        "ru": "бельё в стиральной машине"
+      },
+      {
+        "fr": "la machine à laver est en panne",
+        "ru": "стиральная машина сломалась"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "lave-vaisselle",
+        "note": "machine à laver = стиральная (для белья); lave-vaisselle = посудомоечная (для посуды). Обе «моют», но разное."
+      },
+      {
+        "with": "voiture",
+        "note": "machine = механизм/аппарат (здесь — стиральная машина); «машина» как автомобиль — une voiture, не machine."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["electromenager", "menage"],
+    "caseIds": ["wc-electromenager"]
+  },
+  {
+    "id": "wl-electromenager-microondes",
+    "lemma": "micro-ondes",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mi.kʁo.ɔ̃d/",
+    "translationsRu": ["микроволновка", "микроволновая печь"],
+    "translationsEn": ["microwave"],
+    "semanticCore": "Печь, которая быстро разогревает еду микроволнами; «le micro-ondes» — сам прибор.",
+    "collocations": [
+      {
+        "fr": "réchauffer au micro-ondes",
+        "ru": "разогреть в микроволновке"
+      },
+      {
+        "fr": "un four à micro-ondes",
+        "ru": "микроволновая печь"
+      },
+      {
+        "fr": "mettre le plat au micro-ondes",
+        "ru": "поставить блюдо в микроволновку"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "four",
+        "note": "le micro-ondes = микроволновка (греет волнами, быстро); le four = обычная духовка (печёт жаром). Не путать."
+      },
+      {
+        "with": "ondes",
+        "note": "micro-ondes = прибор (микроволновка); les ondes = волны (звуковые, радио). Прибор назван по волнам, но это не одно и то же."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["electromenager", "cuisine"],
+    "caseIds": ["wc-electromenager"]
+  },
+  {
+    "id": "wl-electromenager-aspirateur",
+    "lemma": "aspirateur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/as.pi.ʁa.tœʁ/",
+    "translationsRu": ["пылесос"],
+    "translationsEn": ["vacuum cleaner"],
+    "semanticCore": "Прибор, который втягивает пыль; от глагола aspirer — всасывать.",
+    "collocations": [
+      {
+        "fr": "passer l'aspirateur",
+        "ru": "пылесосить"
+      },
+      {
+        "fr": "un aspirateur robot",
+        "ru": "робот-пылесос"
+      },
+      {
+        "fr": "le sac de l'aspirateur",
+        "ru": "мешок пылесоса"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "balai",
+        "note": "aspirateur = пылесос (втягивает пыль мотором); balai = веник/швабра (метут вручную). Разные орудия уборки."
+      },
+      {
+        "with": "aspirer",
+        "note": "aspirateur = прибор-пылесос; aspirer = глагол «всасывать, вдыхать». Прибор образован от глагола, но это существительное."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["electromenager", "menage"],
+    "caseIds": ["wc-electromenager"]
+  },
+  {
+    "id": "wl-electromenager-tele",
+    "lemma": "télé",
+    "displayForm": "télé / télévision",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/te.le/",
+    "translationsRu": ["телевизор", "телек"],
+    "translationsEn": ["TV", "telly"],
+    "semanticCore": "Разговорное «телек»: и сам прибор, и телевидение как занятие.",
+    "collocations": [
+      {
+        "fr": "regarder la télé",
+        "ru": "смотреть телевизор"
+      },
+      {
+        "fr": "allumer la télé",
+        "ru": "включить телевизор"
+      },
+      {
+        "fr": "à la télé",
+        "ru": "по телевизору"
+      },
+      {
+        "fr": "une émission de télé",
+        "ru": "телепередача"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "télévision",
+        "note": "télé — разговорное сокращение от télévision; смысл тот же, но télé звучит обыденнее, в речи чаще."
+      },
+      {
+        "with": "écran",
+        "note": "télé = телевизор (прибор/телевидение); écran = экран (любой: телевизора, телефона, компьютера). Не путать прибор и его экран."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["electromenager", "loisirs"],
+    "caseIds": ["wc-electromenager"]
+  },
+  {
+    "id": "wl-electromenager-radio",
+    "lemma": "radio",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁa.djo/",
+    "translationsRu": ["радио", "радиоприёмник"],
+    "translationsEn": ["radio"],
+    "semanticCore": "Радио как приёмник и как вещание, которое слушают; во французском — женского рода.",
+    "collocations": [
+      {
+        "fr": "écouter la radio",
+        "ru": "слушать радио"
+      },
+      {
+        "fr": "allumer la radio",
+        "ru": "включить радио"
+      },
+      {
+        "fr": "à la radio",
+        "ru": "по радио"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "télé",
+        "note": "radio слушают (écouter), télé смотрят (regarder). Оба женского рода: la radio, la télé."
+      },
+      {
+        "with": "radio (снимок)",
+        "note": "la radio = радио; но та же la radio значит «рентгеновский снимок» (passer une radio — сделать рентген). Контекст решает."
+      }
+    ],
+    "frequencyRank": 400,
+    "level": "A2",
+    "tags": ["electromenager", "loisirs"],
+    "caseIds": ["wc-electromenager"]
+  },
+  {
+    "id": "wl-electromenager-grillepain",
+    "lemma": "grille-pain",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɡʁij.pɛ̃/",
+    "translationsRu": ["тостер"],
+    "translationsEn": ["toaster"],
+    "semanticCore": "Прибор, который поджаривает хлеб; буквально «жарь-хлеб», форма не меняется во мн. числе.",
+    "collocations": [
+      {
+        "fr": "mettre le pain dans le grille-pain",
+        "ru": "положить хлеб в тостер"
+      },
+      {
+        "fr": "des toasts au grille-pain",
+        "ru": "тосты в тостере"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "four",
+        "note": "grille-pain = тостер (только подрумянивает хлеб); four = духовка (печёт всё). Тостер — узкоспециальный прибор."
+      },
+      {
+        "with": "toast",
+        "note": "le grille-pain = прибор (тостер); le toast = сам поджаренный кусочек хлеба (тост). Прибор делает toasts."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["electromenager", "cuisine"],
+    "caseIds": ["wc-electromenager"]
+  },
+  {
+    "id": "wl-electromenager-lavevaisselle",
+    "lemma": "lave-vaisselle",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/lav.vɛ.sɛl/",
+    "translationsRu": ["посудомоечная машина", "посудомойка"],
+    "translationsEn": ["dishwasher"],
+    "semanticCore": "Машина, которая моет посуду; буквально «мой-посуду», форма не меняется во мн. числе.",
+    "collocations": [
+      {
+        "fr": "mettre la vaisselle dans le lave-vaisselle",
+        "ru": "загрузить посуду в посудомойку"
+      },
+      {
+        "fr": "vider le lave-vaisselle",
+        "ru": "разгрузить посудомойку"
+      },
+      {
+        "fr": "faire tourner le lave-vaisselle",
+        "ru": "запустить посудомойку"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "machine à laver",
+        "note": "lave-vaisselle = посудомоечная (моет посуду); machine à laver = стиральная (стирает бельё). Легко перепутать — обе «моют»."
+      },
+      {
+        "with": "vaisselle",
+        "note": "le lave-vaisselle = прибор (посудомойка); la vaisselle = сама посуда. «faire la vaisselle» — мыть посуду (руками или нет)."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["electromenager", "cuisine"],
+    "caseIds": ["wc-electromenager"]
+  },
+  {
+    "id": "wl-electromenager-ventilateur",
+    "lemma": "ventilateur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɑ̃.ti.la.tœʁ/",
+    "translationsRu": ["вентилятор"],
+    "translationsEn": ["fan"],
+    "semanticCore": "Прибор с лопастями, который гонит воздух и освежает в жару; не охлаждает воздух — это не кондиционер.",
+    "collocations": [
+      {
+        "fr": "allumer le ventilateur",
+        "ru": "включить вентилятор"
+      },
+      {
+        "fr": "un ventilateur de plafond",
+        "ru": "потолочный вентилятор"
+      },
+      {
+        "fr": "mettre le ventilateur",
+        "ru": "поставить (включить) вентилятор"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "climatiseur",
+        "note": "ventilateur = вентилятор (гоняет воздух, не охлаждает его); climatiseur (la clim) = кондиционер (реально охлаждает). Разные приборы."
+      },
+      {
+        "with": "ventilation",
+        "note": "le ventilateur = сам прибор (вентилятор); la ventilation = вентиляция (система проветривания). Однокоренные, но не одно и то же."
+      }
+    ],
+    "frequencyRank": 800,
+    "level": "A2",
+    "tags": ["electromenager", "objet"],
+    "caseIds": ["wc-electromenager"]
+  }
+]

@@ -1,0 +1,300 @@
+[
+  {
+    "id": "wc-paysage",
+    "title": "Природа: пейзаж",
+    "theme": "paysage",
+    "level": "A2",
+    "wordIds": [
+      "wl-paysage-pays",
+      "wl-paysage-campagne",
+      "wl-paysage-village",
+      "wl-paysage-colline",
+      "wl-paysage-champ",
+      "wl-paysage-lac",
+      "wl-paysage-vallee",
+      "wl-paysage-desert"
+    ],
+    "steps": [
+      {
+        "id": "wc-paysage-pays-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-paysage-pays",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La France est un beau pays.",
+          "Dans quel pays habites-tu ?",
+          "Il a visité plusieurs pays d'Europe."
+        ],
+        "options": ["страна", "город", "деревня", "край света"],
+        "correctIndex": 0,
+        "explanation": "pays (m) — страна (государство). Конечная s не читается даже в единственном числе: /pe.i/. Город — une ville, деревня — un village."
+      },
+      {
+        "id": "wc-paysage-pays-trap",
+        "kind": "trap",
+        "wordId": "wl-paysage-pays",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг говорит: «J'aime mon pays.» О чём он?",
+        "options": [
+          "о своей стране (родине)",
+          "о своей деревне",
+          "о своих родителях",
+          "о пейзаже за окном"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка похожих слов: pays (m) — страна; paysage (m) — пейзаж; paysan — крестьянин. «mon pays» — «моя страна / родина», а не пейзаж и не родители (parents)."
+      },
+      {
+        "id": "wc-paysage-campagne-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-paysage-campagne",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "Nous passons le week-end à la campagne.",
+          "Mes grands-parents vivent à la campagne.",
+          "L'air est plus pur à la campagne qu'en ville."
+        ],
+        "options": ["сельская местность, деревня", "военная база", "поле боя", "лагерь"],
+        "correctIndex": 0,
+        "explanation": "campagne (f) здесь — сельская местность (противоположность городу). «à la campagne» — за городом, на природе. Не путать с лагерем (un camp)."
+      },
+      {
+        "id": "wc-paysage-campagne-trap",
+        "kind": "trap",
+        "wordId": "wl-paysage-campagne",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В газете: «une campagne électorale». Здесь campagne — это…",
+        "options": [
+          "кампания (избирательная)",
+          "сельская местность",
+          "деревня под городом",
+          "лагерь активистов"
+        ],
+        "correctIndex": 0,
+        "explanation": "У слова campagne (f) два смысла: «сельская местность» (à la campagne) и «кампания» (une campagne électorale / publicitaire). По-русски это разные слова, по-французски — одно. Контекст подсказывает значение."
+      },
+      {
+        "id": "wc-paysage-village-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-paysage-village",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il habite dans un petit village.",
+          "Le village est entouré de collines.",
+          "Au centre du village, il y a une vieille église."
+        ],
+        "options": ["деревня, село", "страна", "столица", "район города"],
+        "correctIndex": 0,
+        "explanation": "village (m) — деревня, село (маленький населённый пункт). Страна — un pays, город — une ville. Village меньше, чем ville."
+      },
+      {
+        "id": "wc-paysage-village-cmp",
+        "kind": "compare",
+        "wordId": "wl-paysage-village",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un village и la campagne — в чём разница?",
+        "phrases": ["J'habite dans un village.", "J'habite à la campagne."],
+        "options": [
+          "village = конкретный населённый пункт (село); la campagne = сельская местность вообще, природа за городом.",
+          "Это полные синонимы.",
+          "village — это сельская местность, а campagne — отдельное село.",
+          "village — это город, а campagne — деревня."
+        ],
+        "correctIndex": 0,
+        "explanation": "un village — конкретная деревня (можно сосчитать: deux villages). la campagne — обобщённое «за городом», сельская местность. Деревня (village) стоит à la campagne."
+      },
+      {
+        "id": "wc-paysage-colline-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-paysage-colline",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La maison est en haut d'une colline.",
+          "Nous avons grimpé sur la colline pour voir le coucher du soleil.",
+          "Des vignes couvrent les collines."
+        ],
+        "options": ["холм", "гора", "долина", "скала"],
+        "correctIndex": 0,
+        "explanation": "colline (f) — холм (невысокая возвышенность). Гора — une montagne (выше), долина — une vallée (низина между холмами/горами)."
+      },
+      {
+        "id": "wc-paysage-colline-cmp",
+        "kind": "compare",
+        "wordId": "wl-paysage-colline",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une colline и une montagne — в чём разница?",
+        "phrases": ["On monte facilement sur la colline.", "Il faut un guide pour cette montagne."],
+        "options": [
+          "colline = холм (невысокий, легко подняться); montagne = гора (высокая, серьёзный подъём).",
+          "Это одно и то же.",
+          "colline выше montagne.",
+          "colline — это вершина горы."
+        ],
+        "correctIndex": 0,
+        "explanation": "une colline — холм, невысокая возвышенность. une montagne — гора, высокий рельеф. Разница в высоте: гора выше холма."
+      },
+      {
+        "id": "wc-paysage-champ-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-paysage-champ",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le fermier travaille dans son champ.",
+          "Un champ de blé s'étend jusqu'à l'horizon.",
+          "Les vaches sont dans le champ."
+        ],
+        "options": ["поле", "сад", "лес", "луг для отдыха"],
+        "correctIndex": 0,
+        "explanation": "champ (m) — поле (сельскохозяйственное). «un champ de blé» — пшеничное поле. Сад — un jardin / un verger, лес — une forêt. Конечная p не читается: /ʃɑ̃/."
+      },
+      {
+        "id": "wc-paysage-champ-sort",
+        "kind": "sort",
+        "wordId": "wl-paysage-champ",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом champ звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un champ de blé",
+            "basket": "ok"
+          },
+          {
+            "text": "travailler dans les champs",
+            "basket": "ok"
+          },
+          {
+            "text": "un champ de fleurs",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un champ",
+            "basket": "no"
+          },
+          {
+            "text": "un champ électrique",
+            "basket": "ok"
+          },
+          {
+            "text": "lire un champ",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un champ de blé / de fleurs», «travailler dans les champs» и даже «un champ électrique» (электрическое поле) — естественно. «boire un champ» (пить поле) и «lire un champ» (читать поле) — бессмыслица."
+      },
+      {
+        "id": "wc-paysage-lac-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-paysage-lac",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Nous nous baignons dans le lac.",
+          "Le lac est gelé en hiver.",
+          "Il y a un petit bateau sur le lac."
+        ],
+        "options": ["озеро", "море", "река", "пруд во дворе"],
+        "correctIndex": 0,
+        "explanation": "lac (m) — озеро (стоячий пресный водоём). Море — la mer, река — une rivière / un fleuve. В lac конечная c читается: /lak/."
+      },
+      {
+        "id": "wc-paysage-lac-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-paysage-lac",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Слушай внимательно. Какое из слов прозвучало?",
+        "audioText": "lac",
+        "options": ["lac", "sac", "bac", "lard"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало lac /lak/ — озеро. Рядом похожие: sac /sak/ (сумка), bac /bak/ (бак, паром), lard /laʁ/ (сало). Они отличаются первым или последним звуком.",
+        "audioSrc": "audio/wl-paysage-lac.mp3"
+      },
+      {
+        "id": "wc-paysage-vallee-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-paysage-vallee",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит vallée?",
+        "bridge": "Англ. «valley» — долина. Фр. vallée — тот же корень, читается /va.le/ с двумя é на конце.",
+        "options": ["долина", "холм", "стена", "вуаль"],
+        "correctIndex": 0,
+        "explanation": "vallée (f) = долина — мост от англ. «valley». Это низина между холмами или горами, по которой часто течёт река."
+      },
+      {
+        "id": "wc-paysage-vallee-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-paysage-vallee",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La rivière coule au fond de la vallée.",
+          "La vallée est verte au printemps.",
+          "Le village se trouve dans une vallée."
+        ],
+        "options": ["долина", "холм", "поле", "пустыня"],
+        "correctIndex": 0,
+        "explanation": "vallée (f) — долина: низина между возвышенностями, часто с рекой на дне («au fond de la vallée»). Холм — une colline, поле — un champ."
+      },
+      {
+        "id": "wc-paysage-desert-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-paysage-desert",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le Sahara est un immense désert.",
+          "Dans le désert, il fait très chaud le jour.",
+          "Ils ont traversé le désert à dos de chameau."
+        ],
+        "options": ["пустыня", "десерт, сладкое", "оазис", "пляж"],
+        "correctIndex": 0,
+        "explanation": "désert (m) — пустыня. Ударение на e: /de.zɛʁ/, s читается как /z/. Не путать со сладким — это dessert (с двумя s)."
+      },
+      {
+        "id": "wc-paysage-desert-trap",
+        "kind": "trap",
+        "wordId": "wl-paysage-desert",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "désert и dessert. Где пустыня, а где сладкое?",
+        "options": [
+          "désert (одна s, /de.zɛʁ/) — пустыня; dessert (две s, /de.sɛʁ/) — десерт.",
+          "désert — десерт; dessert — пустыня.",
+          "Это одно слово с двумя значениями.",
+          "Оба значат «пустыня», просто разное написание."
+        ],
+        "correctIndex": 0,
+        "explanation": "Классическая ловушка: désert (одна s, звучит /de.zɛʁ/ — с /z/) — пустыня; dessert (две s, /de.sɛʁ/ — с /s/) — десерт. Одна буква s меняет и звук, и смысл."
+      }
+    ]
+  }
+]

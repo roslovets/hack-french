@@ -1,0 +1,326 @@
+[
+  {
+    "id": "wl-magasins-epicerie",
+    "lemma": "épicerie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.pi.sʁi/",
+    "translationsRu": ["продуктовый магазин", "бакалея"],
+    "translationsEn": ["grocery store", "grocer's"],
+    "semanticCore": "Небольшой продуктовый магазин у дома, где берут самое нужное: хлеб, молоко, консервы.",
+    "collocations": [
+      {
+        "fr": "l'épicerie du coin",
+        "ru": "магазинчик на углу"
+      },
+      {
+        "fr": "une épicerie de quartier",
+        "ru": "районный продуктовый магазин"
+      },
+      {
+        "fr": "aller à l'épicerie",
+        "ru": "сходить в продуктовый"
+      },
+      {
+        "fr": "une épicerie fine",
+        "ru": "магазин деликатесов"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "supermarché",
+        "note": "épicerie = маленький продуктовый магазинчик; supermarché = супермаркет (большой, с тележками)."
+      },
+      {
+        "with": "épice",
+        "note": "épicerie (магазин) образовано от épice (специя), но значит уже любой продуктовый магазин, а не «магазин специй»."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["magasins", "commerce", "alimentation"],
+    "caseIds": ["wc-magasins"]
+  },
+  {
+    "id": "wl-magasins-librairie",
+    "lemma": "librairie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/li.bʁɛ.ʁi/",
+    "translationsRu": ["книжный магазин"],
+    "translationsEn": ["bookshop", "bookstore"],
+    "semanticCore": "Магазин, где книги продают (а не дают почитать) — частый ложный друг английского «library».",
+    "collocations": [
+      {
+        "fr": "aller à la librairie",
+        "ru": "пойти в книжный магазин"
+      },
+      {
+        "fr": "une librairie indépendante",
+        "ru": "независимый книжный магазин"
+      },
+      {
+        "fr": "acheter un livre en librairie",
+        "ru": "купить книгу в книжном"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bibliothèque",
+        "note": "librairie = книжный магазин (книги покупают); bibliothèque = библиотека (книги берут почитать)."
+      },
+      {
+        "with": "library (англ.)",
+        "note": "Ложный друг: англ. «library» = библиотека (bibliothèque), а фр. librairie = книжный магазин."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["magasins", "commerce", "culture"],
+    "caseIds": ["wc-magasins"]
+  },
+  {
+    "id": "wl-magasins-kiosque",
+    "lemma": "kiosque",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kjɔsk/",
+    "translationsRu": ["киоск"],
+    "translationsEn": ["kiosk", "newsstand"],
+    "semanticCore": "Уличный киоск, чаще всего газетный: маленькая будка, где продают прессу и мелочи.",
+    "collocations": [
+      {
+        "fr": "un kiosque à journaux",
+        "ru": "газетный киоск"
+      },
+      {
+        "fr": "acheter le journal au kiosque",
+        "ru": "купить газету в киоске"
+      },
+      {
+        "fr": "un kiosque à musique",
+        "ru": "беседка для оркестра (в парке)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "stand",
+        "note": "kiosque = постоянный уличный киоск (особенно газетный); un stand = временный прилавок на ярмарке/выставке."
+      },
+      {
+        "with": "guichet",
+        "note": "kiosque = киоск (целая будка); un guichet = окошко кассы/обслуживания (например, на вокзале)."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["magasins", "commerce", "ville"],
+    "caseIds": ["wc-magasins"]
+  },
+  {
+    "id": "wl-magasins-caisse",
+    "lemma": "caisse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kɛs/",
+    "translationsRu": ["касса", "ящик"],
+    "translationsEn": ["checkout", "cash register"],
+    "semanticCore": "В магазине — касса, где платят; в быту — деревянный ящик/коробка.",
+    "collocations": [
+      {
+        "fr": "passer à la caisse",
+        "ru": "пройти на кассу / расплатиться"
+      },
+      {
+        "fr": "le ticket de caisse",
+        "ru": "кассовый чек"
+      },
+      {
+        "fr": "une caisse de vin",
+        "ru": "ящик вина"
+      },
+      {
+        "fr": "faire la queue à la caisse",
+        "ru": "стоять в очереди на кассе"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "boîte",
+        "note": "caisse = большой (часто деревянный) ящик; boîte = коробка/банка поменьше. В магазине caisse — это касса."
+      },
+      {
+        "with": "caissier / caissière",
+        "note": "caisse = касса (место); le caissier / la caissière = кассир(ша) (человек за кассой)."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["magasins", "commerce", "paiement"],
+    "caseIds": ["wc-magasins"]
+  },
+  {
+    "id": "wl-magasins-rayon",
+    "lemma": "rayon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁɛ.jɔ̃/",
+    "translationsRu": ["отдел (в магазине)", "полка", "луч"],
+    "translationsEn": ["aisle", "department"],
+    "semanticCore": "В магазине — отдел/секция с товаром; также полка стеллажа и, в другом значении, луч (солнца).",
+    "collocations": [
+      {
+        "fr": "le rayon frais",
+        "ru": "отдел свежих продуктов"
+      },
+      {
+        "fr": "le rayon des fruits et légumes",
+        "ru": "отдел фруктов и овощей"
+      },
+      {
+        "fr": "être en rayon",
+        "ru": "быть в продаже / на полке"
+      },
+      {
+        "fr": "un rayon de soleil",
+        "ru": "луч солнца"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "étagère",
+        "note": "rayon = отдел магазина (или полка стеллажа в магазине); étagère = полка/этажерка как мебель дома."
+      },
+      {
+        "with": "crayon",
+        "note": "rayon (отдел/луч) и crayon (карандаш) звучат почти одинаково, но различаются первым звуком: /ʁɛ.jɔ̃/ против /kʁɛ.jɔ̃/."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["magasins", "commerce", "organisation"],
+    "caseIds": ["wc-magasins"]
+  },
+  {
+    "id": "wl-magasins-panier",
+    "lemma": "panier",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pa.nje/",
+    "translationsRu": ["корзина"],
+    "translationsEn": ["basket"],
+    "semanticCore": "Ручная корзина для покупок (и корзина в интернет-магазине), в отличие от тележки на колёсах.",
+    "collocations": [
+      {
+        "fr": "un panier de courses",
+        "ru": "корзина для покупок"
+      },
+      {
+        "fr": "mettre dans le panier",
+        "ru": "положить в корзину"
+      },
+      {
+        "fr": "le panier (en ligne)",
+        "ru": "корзина (на сайте)"
+      },
+      {
+        "fr": "un panier garni",
+        "ru": "подарочная корзина (с продуктами)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chariot",
+        "note": "panier = ручная корзина (на пару покупок); chariot (разг. caddie) = большая тележка на колёсах."
+      },
+      {
+        "with": "sac",
+        "note": "panier = корзина (жёсткая, с ручкой); un sac = сумка/пакет (мягкий), в который складывают на выходе."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["magasins", "commerce", "objet"],
+    "caseIds": ["wc-magasins"]
+  },
+  {
+    "id": "wl-magasins-vitrine",
+    "lemma": "vitrine",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vi.tʁin/",
+    "translationsRu": ["витрина"],
+    "translationsEn": ["shop window", "display window"],
+    "semanticCore": "Застеклённая витрина магазина, где выставлен товар и которую видно с улицы.",
+    "collocations": [
+      {
+        "fr": "en vitrine",
+        "ru": "на витрине / в витрине"
+      },
+      {
+        "fr": "la vitrine du magasin",
+        "ru": "витрина магазина"
+      },
+      {
+        "fr": "faire les vitrines",
+        "ru": "разглядывать витрины (гулять по магазинам)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vitre",
+        "note": "vitrine = витрина (вся застеклённая выкладка магазина); vitre = просто оконное стекло."
+      },
+      {
+        "with": "étalage",
+        "note": "vitrine = витрина за стеклом (видна с улицы); étalage = выкладка товара на прилавке/лотке."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["magasins", "commerce", "objet"],
+    "caseIds": ["wc-magasins"]
+  },
+  {
+    "id": "wl-magasins-etiquette",
+    "lemma": "étiquette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.ti.kɛt/",
+    "translationsRu": ["ценник", "этикетка"],
+    "translationsEn": ["label", "price tag"],
+    "semanticCore": "Бумажка/наклейка на товаре с ценой или информацией; то же слово значит и «этикет».",
+    "collocations": [
+      {
+        "fr": "le prix sur l'étiquette",
+        "ru": "цена на ценнике"
+      },
+      {
+        "fr": "lire l'étiquette",
+        "ru": "прочитать этикетку"
+      },
+      {
+        "fr": "enlever l'étiquette",
+        "ru": "снять этикетку"
+      },
+      {
+        "fr": "une étiquette de prix",
+        "ru": "ценник"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ticket",
+        "note": "étiquette = ценник/этикетка на товаре; un ticket = чек/билет (кассовый чек — le ticket de caisse)."
+      },
+      {
+        "with": "étiquette (этикет)",
+        "note": "Одно слово, два значения: étiquette = ценник/этикетка и одновременно «этикет» (правила поведения)."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A2",
+    "tags": ["magasins", "commerce", "objet"],
+    "caseIds": ["wc-magasins"]
+  }
+]

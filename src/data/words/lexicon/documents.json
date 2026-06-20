@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-documents-papier",
+    "lemma": "papier",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pa.pje/",
+    "translationsRu": ["бумага", "документ (во мн. ч.)"],
+    "translationsEn": ["paper"],
+    "semanticCore": "Бумага как материал и лист; во множественном «les papiers» — документы, удостоверение личности.",
+    "collocations": [
+      {
+        "fr": "une feuille de papier",
+        "ru": "лист бумаги"
+      },
+      {
+        "fr": "du papier toilette",
+        "ru": "туалетная бумага"
+      },
+      {
+        "fr": "les papiers d'identité",
+        "ru": "удостоверение личности / документы"
+      },
+      {
+        "fr": "sur le papier",
+        "ru": "на бумаге (в теории)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "document",
+        "note": "papier = бумага (материал) или, во мн. ч., документы вообще; document = конкретный (часто официальный) документ."
+      },
+      {
+        "with": "journal",
+        "note": "papier = бумага; journal = газета. «бумажная» газета — un journal papier, но сама газета — le journal."
+      }
+    ],
+    "frequencyRank": 360,
+    "level": "A2",
+    "tags": ["documents", "bureau"],
+    "caseIds": ["wc-documents"]
+  },
+  {
+    "id": "wl-documents-document",
+    "lemma": "document",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/dɔ.ky.mɑ̃/",
+    "translationsRu": ["документ"],
+    "translationsEn": ["document", "file"],
+    "semanticCore": "Документ — бумажный или электронный текст, который оформляют, подписывают, отправляют.",
+    "collocations": [
+      {
+        "fr": "signer un document",
+        "ru": "подписать документ"
+      },
+      {
+        "fr": "joindre un document",
+        "ru": "приложить документ (к письму)"
+      },
+      {
+        "fr": "un document officiel",
+        "ru": "официальный документ"
+      },
+      {
+        "fr": "un document important",
+        "ru": "важный документ"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "papier",
+        "note": "document = конкретный документ; papier = бумага как материал (или, во мн. ч., документы в общем смысле)."
+      },
+      {
+        "with": "fichier",
+        "note": "document = документ (часто содержание/текст); fichier = файл (компьютерная единица на диске). Текстовый файл — un fichier, но Word-документ называют и un document."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["documents", "bureau"],
+    "caseIds": ["wc-documents"]
+  },
+  {
+    "id": "wl-documents-dossier",
+    "lemma": "dossier",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/dɔ.sje/",
+    "translationsRu": ["папка", "досье (дело)"],
+    "translationsEn": ["folder", "file"],
+    "semanticCore": "Подборка документов как «дело»: физическая папка, папка-каталог на компьютере или досье о ком-то.",
+    "collocations": [
+      {
+        "fr": "le dossier du client",
+        "ru": "дело / папка клиента"
+      },
+      {
+        "fr": "monter un dossier",
+        "ru": "собрать пакет документов"
+      },
+      {
+        "fr": "un dossier médical",
+        "ru": "медицинская карта"
+      },
+      {
+        "fr": "créer un dossier",
+        "ru": "создать папку (на компьютере)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fichier",
+        "note": "dossier = папка-каталог (в неё кладут файлы); fichier = отдельный файл внутри. На компьютере их нельзя путать."
+      },
+      {
+        "with": "досье (рус.)",
+        "note": "Русское «досье» — лишь одно из значений; чаще un dossier — это обычная папка или «дело», без оттенка слежки."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["documents", "bureau"],
+    "caseIds": ["wc-documents"]
+  },
+  {
+    "id": "wl-documents-agenda",
+    "lemma": "agenda",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.ʒɛ̃.da/",
+    "translationsRu": ["ежедневник", "расписание (личное)"],
+    "translationsEn": ["diary", "planner"],
+    "semanticCore": "Личный ежедневник с датами, куда записывают встречи и дела; «занятость» в расписании.",
+    "collocations": [
+      {
+        "fr": "noter dans son agenda",
+        "ru": "записать в ежедневник"
+      },
+      {
+        "fr": "un agenda chargé",
+        "ru": "плотное расписание"
+      },
+      {
+        "fr": "consulter son agenda",
+        "ru": "посмотреть свой ежедневник"
+      },
+      {
+        "fr": "un agenda électronique",
+        "ru": "электронный органайзер"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "agenda (англ.)",
+        "note": "Ложный друг: фр. un agenda = ежедневник, а англ. «agenda» = повестка собрания. «Повестка» по-французски — l'ordre du jour."
+      },
+      {
+        "with": "calendrier",
+        "note": "agenda = ежедневник, куда пишут планы; calendrier = календарь (показывает дни/месяцы), писать в него не принято."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["documents", "bureau", "temps"],
+    "caseIds": ["wc-documents"]
+  },
+  {
+    "id": "wl-documents-imprimante",
+    "lemma": "imprimante",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɛ̃.pʁi.mɑ̃t/",
+    "translationsRu": ["принтер"],
+    "translationsEn": ["printer"],
+    "semanticCore": "Устройство, которое печатает документы на бумаге; связано с глаголом imprimer.",
+    "collocations": [
+      {
+        "fr": "une imprimante en panne",
+        "ru": "сломанный принтер"
+      },
+      {
+        "fr": "la cartouche de l'imprimante",
+        "ru": "картридж принтера"
+      },
+      {
+        "fr": "brancher l'imprimante",
+        "ru": "подключить принтер"
+      },
+      {
+        "fr": "une imprimante couleur",
+        "ru": "цветной принтер"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "imprimerie",
+        "note": "imprimante = принтер (устройство); imprimerie = типография (предприятие). Оба от imprimer (печатать)."
+      },
+      {
+        "with": "scanner",
+        "note": "imprimante = принтер (печатает на бумагу); scanner = сканер (переводит бумагу в файл). Противоположные направления."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["documents", "bureau", "objet"],
+    "caseIds": ["wc-documents"]
+  },
+  {
+    "id": "wl-documents-tache",
+    "lemma": "tâche",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tɑʃ/",
+    "translationsRu": ["задача", "дело (поручение)"],
+    "translationsEn": ["task"],
+    "semanticCore": "Задача, конкретное дело, которое нужно выполнить; пишется с accent circonflexe.",
+    "collocations": [
+      {
+        "fr": "une tâche difficile",
+        "ru": "трудная задача"
+      },
+      {
+        "fr": "répartir les tâches",
+        "ru": "распределить задачи"
+      },
+      {
+        "fr": "accomplir une tâche",
+        "ru": "выполнить задачу"
+      },
+      {
+        "fr": "une liste de tâches",
+        "ru": "список дел"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tache",
+        "note": "tâche (â) = задача; tache (без шляпки) = пятно. На письме их различает только accent circonflexe; в речи у большинства носителей они звучат одинаково /taʃ/, так что смысл понимают из контекста."
+      },
+      {
+        "with": "devoir",
+        "note": "tâche = задача, поручение (рабочее); devoir = обязанность или домашнее задание (les devoirs у школьников)."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["documents", "bureau", "travail"],
+    "caseIds": ["wc-documents"]
+  },
+  {
+    "id": "wl-documents-rendezvous",
+    "lemma": "rendez-vous",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁɑ̃.de.vu/",
+    "translationsRu": ["встреча (по записи)", "приём (запись)"],
+    "translationsEn": ["appointment", "meeting"],
+    "semanticCore": "Заранее назначенная встреча или приём по записи: у врача, в банке, деловая встреча.",
+    "collocations": [
+      {
+        "fr": "prendre rendez-vous",
+        "ru": "записаться (на приём)"
+      },
+      {
+        "fr": "un rendez-vous chez le médecin",
+        "ru": "приём у врача"
+      },
+      {
+        "fr": "annuler un rendez-vous",
+        "ru": "отменить встречу"
+      },
+      {
+        "fr": "fixer un rendez-vous",
+        "ru": "назначить встречу"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "réunion",
+        "note": "rendez-vous = встреча двоих по записи (часто личная); réunion = совещание, собрание группы людей."
+      },
+      {
+        "with": "rendez-vous (англ.)",
+        "note": "Английский взял слово, но сузил до «тайного свидания»; во французском это любая назначенная встреча, в т. ч. деловая или у врача."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["documents", "bureau", "temps"],
+    "caseIds": ["wc-documents"]
+  },
+  {
+    "id": "wl-documents-signature",
+    "lemma": "signature",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/si.ɲa.tyʁ/",
+    "translationsRu": ["подпись"],
+    "translationsEn": ["signature"],
+    "semanticCore": "Подпись от руки, которой заверяют документ; связана с глаголом signer.",
+    "collocations": [
+      {
+        "fr": "mettre sa signature",
+        "ru": "поставить подпись"
+      },
+      {
+        "fr": "la signature du contrat",
+        "ru": "подписание договора"
+      },
+      {
+        "fr": "une signature électronique",
+        "ru": "электронная подпись"
+      },
+      {
+        "fr": "demander une signature",
+        "ru": "попросить подпись"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tampon",
+        "note": "signature = подпись (от руки); tampon = печать, штамп (оттиск организации). На документе часто нужны оба."
+      },
+      {
+        "with": "signer",
+        "note": "signature (f) — существительное «подпись»; signer — глагол «подписывать»: «Signez ici» — поставьте подпись здесь."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["documents", "bureau"],
+    "caseIds": ["wc-documents"]
+  }
+]

@@ -1,0 +1,323 @@
+[
+  {
+    "id": "wc-magasins",
+    "title": "Магазины",
+    "theme": "magasins",
+    "level": "A2",
+    "wordIds": [
+      "wl-magasins-epicerie",
+      "wl-magasins-librairie",
+      "wl-magasins-kiosque",
+      "wl-magasins-caisse",
+      "wl-magasins-rayon",
+      "wl-magasins-panier",
+      "wl-magasins-vitrine",
+      "wl-magasins-etiquette"
+    ],
+    "steps": [
+      {
+        "id": "wc-magasins-epicerie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-magasins-epicerie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je descends à l'épicerie acheter du lait.",
+          "L'épicerie du coin est ouverte le dimanche.",
+          "Il n'y a plus de sucre, va à l'épicerie."
+        ],
+        "options": ["продуктовый магазинчик", "аптека", "пекарня", "рынок"],
+        "correctIndex": 0,
+        "explanation": "épicerie (f) — небольшой продуктовый магазин, бакалея. «l'épicerie du coin» — магазинчик на углу. Аптека — une pharmacie, пекарня — une boulangerie."
+      },
+      {
+        "id": "wc-magasins-epicerie-sort",
+        "kind": "sort",
+        "wordId": "wl-magasins-epicerie",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом épicerie звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "l'épicerie du coin",
+            "basket": "ok"
+          },
+          {
+            "text": "une petite épicerie de quartier",
+            "basket": "ok"
+          },
+          {
+            "text": "aller à l'épicerie",
+            "basket": "ok"
+          },
+          {
+            "text": "lire une épicerie",
+            "basket": "no"
+          },
+          {
+            "text": "une épicerie rapide",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«l'épicerie du coin», «une épicerie de quartier», «aller à l'épicerie» — естественно. «lire une épicerie» (читать магазин) и «une épicerie rapide» (быстрый магазин) — бессмыслица."
+      },
+      {
+        "id": "wc-magasins-librairie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-magasins-librairie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai acheté ce roman dans une librairie.",
+          "La librairie vend aussi des cartes postales.",
+          "Il travaille comme libraire dans une grande librairie."
+        ],
+        "options": ["книжный магазин", "библиотека", "канцелярия", "издательство"],
+        "correctIndex": 0,
+        "explanation": "librairie (f) — книжный магазин (книги продают). Библиотека (книги дают почитать) — une bibliothèque. Тот, кто там работает, — un libraire."
+      },
+      {
+        "id": "wc-magasins-librairie-trap",
+        "kind": "trap",
+        "wordId": "wl-magasins-librairie",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «library» — это библиотека. А что значит французское une librairie?",
+        "options": [
+          "книжный магазин (книги продают)",
+          "библиотека (книги дают почитать)",
+          "читальный зал",
+          "архив"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: фр. librairie = книжный магазин, а не «library». Библиотека по-французски — une bibliothèque. Легко перепутать из-за английского."
+      },
+      {
+        "id": "wc-magasins-librairie-cmp",
+        "kind": "compare",
+        "wordId": "wl-magasins-librairie",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Je vais à la librairie и Je vais à la bibliothèque. В чём разница?",
+        "phrases": [
+          "Je vais à la librairie acheter un livre.",
+          "Je vais à la bibliothèque emprunter un livre."
+        ],
+        "options": [
+          "librairie — книги покупают; bibliothèque — книги берут почитать.",
+          "Это полные синонимы, разницы нет.",
+          "librairie — это библиотека, а bibliothèque — магазин.",
+          "Оба слова значат «читальный зал»."
+        ],
+        "correctIndex": 0,
+        "explanation": "À la librairie книгу покупают (acheter), à la bibliothèque — берут на время (emprunter). Это два разных места."
+      },
+      {
+        "id": "wc-magasins-kiosque-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-magasins-kiosque",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'achète le journal au kiosque tous les matins.",
+          "Le kiosque à journaux est juste à la sortie du métro.",
+          "On vend des magazines et des tickets au kiosque."
+        ],
+        "options": ["киоск (газетный)", "касса вокзала", "почта", "витрина"],
+        "correctIndex": 0,
+        "explanation": "kiosque (m) — киоск, чаще всего газетный: «un kiosque à journaux». Там продают газеты, журналы, иногда билеты."
+      },
+      {
+        "id": "wc-magasins-kiosque-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-magasins-kiosque",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит kiosque?",
+        "bridge": "Англ. «kiosk» — киоск; почти то же написание. По-французски добавляется -que на конце: kiosque, читается /kjɔsk/.",
+        "options": ["киоск", "касса", "корзина", "полка"],
+        "correctIndex": 0,
+        "explanation": "kiosque = киоск. Англ. «kiosk» — прямой мост; различие только в написании конца слова и произношении."
+      },
+      {
+        "id": "wc-magasins-caisse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-magasins-caisse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах магазина?",
+        "contexts": [
+          "On paie à la caisse, là-bas, près de la sortie.",
+          "Il y a trois personnes qui attendent à la caisse.",
+          "La caissière scanne mes courses à la caisse."
+        ],
+        "options": ["касса (где платят)", "корзина", "ценник", "тележка"],
+        "correctIndex": 0,
+        "explanation": "caisse (f) — касса, где платят за покупки. «passer à la caisse» — пройти на кассу. Кассир(ша) — un caissier / une caissière."
+      },
+      {
+        "id": "wc-magasins-caisse-trap",
+        "kind": "trap",
+        "wordId": "wl-magasins-caisse",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "У слова caisse есть и другое, «бытовое» значение помимо кассы. Какое?",
+        "options": [
+          "ящик / деревянная коробка (une caisse de vin)",
+          "монета",
+          "чек из кассы",
+          "кошелёк"
+        ],
+        "correctIndex": 0,
+        "explanation": "caisse — это и касса (в магазине), и ящик/коробка: «une caisse de vin» — ящик вина. Чек — un ticket de caisse, кошелёк — un porte-monnaie."
+      },
+      {
+        "id": "wc-magasins-caisse-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-magasins-caisse",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "caisse",
+        "options": ["caisse", "casse", "cesse", "caisson"],
+        "correctIndex": 0,
+        "explanation": "caisse /kɛs/ — касса/ящик. Похожи по звучанию, но это разные слова: casse /kas/ (поломка), cesse /sɛs/ (от cesser — переставать), caisson /kɛ.sɔ̃/ (короб, кессон)."
+      },
+      {
+        "id": "wc-magasins-rayon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-magasins-rayon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах супермаркета. Что оно значит?",
+        "contexts": [
+          "Le lait est au rayon frais, au fond du magasin.",
+          "Excusez-moi, où est le rayon des fruits ?",
+          "Ce produit n'est plus en rayon."
+        ],
+        "options": ["отдел / секция (в магазине)", "касса", "тележка", "склад"],
+        "correctIndex": 0,
+        "explanation": "rayon (m) — отдел магазина: «le rayon frais», «le rayon des fruits». «en rayon» — на полке, в продаже. Касса — la caisse."
+      },
+      {
+        "id": "wc-magasins-rayon-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-magasins-rayon",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "rayon",
+        "options": ["rayon", "crayon", "rayonne", "raison"],
+        "correctIndex": 0,
+        "explanation": "rayon /ʁɛ.jɔ̃/ — отдел / полка / луч. Похожи, но другие: crayon /kʁɛ.jɔ̃/ (карандаш), rayonne /ʁɛ.jɔn/ (вискоза), raison /ʁɛ.zɔ̃/ (причина, правота)."
+      },
+      {
+        "id": "wc-magasins-panier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-magasins-panier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je prends un panier à l'entrée du magasin.",
+          "Mets les pommes dans le panier.",
+          "Votre panier contient trois articles."
+        ],
+        "options": ["корзина", "пакет", "тележка", "сумка"],
+        "correctIndex": 0,
+        "explanation": "panier (m) — корзина (которую несут в руке). В интернет-магазине «le panier» — корзина покупок. Большая тележка на колёсах — un caddie / un chariot."
+      },
+      {
+        "id": "wc-magasins-panier-cmp",
+        "kind": "compare",
+        "wordId": "wl-magasins-panier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un panier и un chariot. Чем они различаются в магазине?",
+        "phrases": [
+          "Je prends un panier pour deux ou trois articles.",
+          "Je prends un chariot pour faire toutes mes courses."
+        ],
+        "options": [
+          "panier — ручная корзина; chariot — большая тележка на колёсах.",
+          "Это одно и то же слово.",
+          "panier — тележка, chariot — корзина.",
+          "Оба значат «пакет»."
+        ],
+        "correctIndex": 0,
+        "explanation": "panier — ручная корзина (на пару покупок). Для большой закупки берут un chariot (разг. — un caddie) — тележку на колёсах."
+      },
+      {
+        "id": "wc-magasins-vitrine-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-magasins-vitrine",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La robe rouge est en vitrine.",
+          "On regarde les vitrines des magasins en se promenant.",
+          "Le prix n'est pas affiché dans la vitrine."
+        ],
+        "options": ["витрина (магазина)", "примерочная", "прилавок", "вход"],
+        "correctIndex": 0,
+        "explanation": "vitrine (f) — витрина магазина (за стеклом, видна с улицы). «en vitrine» — на витрине. «faire les vitrines» — разглядывать витрины."
+      },
+      {
+        "id": "wc-magasins-vitrine-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-magasins-vitrine",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова связаны со стеклом и показом товара. Найди лишнее.",
+        "options": ["la vitrine", "la vitre", "le vitrail", "le panier"],
+        "correctIndex": 3,
+        "explanation": "vitrine (витрина), vitre (оконное стекло), vitrail (витраж) — все от стекла (verre/vitre). le panier (корзина) — лишнее: к стеклу не относится."
+      },
+      {
+        "id": "wc-magasins-etiquette-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-magasins-etiquette",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Regarde l'étiquette pour voir le prix.",
+          "L'étiquette indique 12 euros.",
+          "Il a enlevé l'étiquette du pull."
+        ],
+        "options": ["ценник / этикетка", "чек", "скидка", "штрихкод"],
+        "correctIndex": 0,
+        "explanation": "étiquette (f) — этикетка, ценник (на товаре). Часто означает именно ценник: цена написана «sur l'étiquette». Чек — un ticket, скидка — une réduction."
+      },
+      {
+        "id": "wc-magasins-etiquette-hint",
+        "kind": "wordHint",
+        "wordId": "wl-magasins-etiquette",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: маленькая бумажка на товаре, где написана цена.",
+        "answer": "étiquette",
+        "hints": [
+          "Начинается на é…",
+          "9 букв, есть accent aigu в начале",
+          "Le prix est sur l'___."
+        ],
+        "explanation": "étiquette (f) — этикетка / ценник. «sur l'étiquette» — на ценнике. Это же слово значит и «этикет» (правила поведения)."
+      }
+    ]
+  }
+]

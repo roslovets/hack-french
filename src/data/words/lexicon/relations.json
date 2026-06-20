@@ -1,0 +1,340 @@
+[
+  {
+    "id": "wl-relations-ami",
+    "lemma": "ami",
+    "displayForm": "ami / amie",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.mi/",
+    "translationsRu": ["друг", "приятель"],
+    "translationsEn": ["friend"],
+    "semanticCore": "Друг — человек, с которым связывают тёплые личные отношения; но «petit ami» уже означает «парень» (партнёр).",
+    "collocations": [
+      {
+        "fr": "mon meilleur ami",
+        "ru": "мой лучший друг"
+      },
+      {
+        "fr": "un ami d'enfance",
+        "ru": "друг детства"
+      },
+      {
+        "fr": "un petit ami",
+        "ru": "парень (партнёр)"
+      },
+      {
+        "fr": "se faire des amis",
+        "ru": "заводить друзей"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "copain",
+        "note": "ami — друг (теплее, ближе); copain — приятель (легче, разговорнее). Но «mon copain» и «mon petit ami» одинаково значат «мой парень»."
+      },
+      {
+        "with": "petit ami",
+        "note": "un ami — просто друг; un petit ami — парень-партнёр. Прилагательное «petit» меняет смысл с дружбы на романтику."
+      }
+    ],
+    "frequencyRank": 150,
+    "level": "A2",
+    "tags": ["relations", "amitie"],
+    "caseIds": ["wc-relations"]
+  },
+  {
+    "id": "wl-relations-copain",
+    "lemma": "copain",
+    "displayForm": "copain / copine",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔ.pɛ̃/",
+    "translationsRu": ["приятель", "парень (партнёр)"],
+    "translationsEn": ["buddy", "boyfriend"],
+    "semanticCore": "Разговорное «приятель, друган»; но с притяжательным «mon copain» / «ma copine» означает «мой парень» / «моя девушка».",
+    "collocations": [
+      {
+        "fr": "un copain de classe",
+        "ru": "одноклассник-приятель"
+      },
+      {
+        "fr": "sortir avec ses copains",
+        "ru": "тусоваться с друзьями"
+      },
+      {
+        "fr": "mon copain",
+        "ru": "мой парень"
+      },
+      {
+        "fr": "une bande de copains",
+        "ru": "компания друзей"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ami",
+        "note": "copain — приятель (разговорнее, легче); ami — друг (теплее). В обоих «mon petit ami» / «mon copain» = мой парень."
+      },
+      {
+        "with": "copine",
+        "note": "copain — приятель/парень (м.р.); copine — подруга/девушка (ж.р.). «ma copine» обычно = моя девушка."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["relations", "amitie"],
+    "caseIds": ["wc-relations"]
+  },
+  {
+    "id": "wl-relations-amour",
+    "lemma": "amour",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.muʁ/",
+    "translationsRu": ["любовь"],
+    "translationsEn": ["love"],
+    "semanticCore": "Любовь как чувство и как отношения; также ласковое обращение к близкому («mon amour»).",
+    "collocations": [
+      {
+        "fr": "une histoire d'amour",
+        "ru": "история любви"
+      },
+      {
+        "fr": "tomber amoureux",
+        "ru": "влюбиться"
+      },
+      {
+        "fr": "mon amour",
+        "ru": "любовь моя (обращение)"
+      },
+      {
+        "fr": "un grand amour",
+        "ru": "большая любовь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "amitié",
+        "note": "amour — любовь (романтическая); amitié — дружба. Не путать: «histoire d'amour» — роман, «amitié» — дружеские отношения."
+      },
+      {
+        "with": "armour (англ.)",
+        "note": "фр. amour = любовь; англ. «armour» = доспехи. Похожи на письме — ложный друг по звуку."
+      }
+    ],
+    "frequencyRank": 200,
+    "level": "A2",
+    "tags": ["relations", "sentiments"],
+    "caseIds": ["wc-relations"]
+  },
+  {
+    "id": "wl-relations-couple",
+    "lemma": "couple",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kupl/",
+    "translationsRu": ["пара"],
+    "translationsEn": ["couple"],
+    "semanticCore": "Пара — двое людей в отношениях, рассматриваемые как одно целое.",
+    "collocations": [
+      {
+        "fr": "un couple marié",
+        "ru": "супружеская пара"
+      },
+      {
+        "fr": "vivre en couple",
+        "ru": "жить вместе (в паре)"
+      },
+      {
+        "fr": "un jeune couple",
+        "ru": "молодая пара"
+      },
+      {
+        "fr": "former un couple",
+        "ru": "быть парой / сойтись"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "paire",
+        "note": "couple — пара людей (двое в отношениях); paire — пара предметов (туфли, перчатки): une paire de chaussures."
+      },
+      {
+        "with": "a couple of (англ.)",
+        "note": "фр. «un couple» = именно двое (часто пара в отношениях); англ. «a couple of» = «несколько штук» — это не то же самое."
+      }
+    ],
+    "frequencyRank": 350,
+    "level": "A2",
+    "tags": ["relations", "couple"],
+    "caseIds": ["wc-relations"]
+  },
+  {
+    "id": "wl-relations-dispute",
+    "lemma": "dispute",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/dis.pyt/",
+    "translationsRu": ["ссора", "перепалка"],
+    "translationsEn": ["argument", "quarrel"],
+    "semanticCore": "Бытовая ссора, перепалка между людьми — не судебный спор.",
+    "collocations": [
+      {
+        "fr": "avoir une dispute",
+        "ru": "поссориться"
+      },
+      {
+        "fr": "une grosse dispute",
+        "ru": "крупная ссора"
+      },
+      {
+        "fr": "une dispute de couple",
+        "ru": "ссора в паре"
+      },
+      {
+        "fr": "se disputer avec quelqu'un",
+        "ru": "ссориться с кем-то"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "dispute (англ.)",
+        "note": "фр. «une dispute» = бытовая ссора; англ. «dispute» = формальный спор/тяжба. Ложный друг: юр. спор — un litige, un différend."
+      },
+      {
+        "with": "débat",
+        "note": "dispute — эмоциональная ссора; débat — спокойное обсуждение, дебаты. Разный накал и контекст."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["relations", "conflit"],
+    "caseIds": ["wc-relations"]
+  },
+  {
+    "id": "wl-relations-bisou",
+    "lemma": "bisou",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bi.zu/",
+    "translationsRu": ["поцелуйчик", "чмок"],
+    "translationsEn": ["kiss", "peck"],
+    "semanticCore": "Ласковый, лёгкий поцелуй (чмок); также «целую» в конце сообщения.",
+    "collocations": [
+      {
+        "fr": "faire un bisou",
+        "ru": "чмокнуть, поцеловать"
+      },
+      {
+        "fr": "gros bisous",
+        "ru": "крепко целую"
+      },
+      {
+        "fr": "un bisou sur la joue",
+        "ru": "поцелуй в щёку"
+      },
+      {
+        "fr": "un petit bisou",
+        "ru": "поцелуйчик"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "baiser",
+        "note": "bisou — ласковый чмок (безопасное разговорное слово); существительное «un baiser» — поцелуй (нейтрально), но глагол «baiser» вульгарен — лучше говорить «faire un bisou» / «embrasser»."
+      },
+      {
+        "with": "câlin",
+        "note": "bisou — поцелуй (губами); câlin — объятие (руками). Разные ласковые действия."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["relations", "tendresse"],
+    "caseIds": ["wc-relations"]
+  },
+  {
+    "id": "wl-relations-calin",
+    "lemma": "câlin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɑ.lɛ̃/",
+    "translationsRu": ["обнимашки", "ласка"],
+    "translationsEn": ["cuddle", "hug"],
+    "semanticCore": "Нежное объятие, обнимашки — тёплый телесный контакт без поцелуя.",
+    "collocations": [
+      {
+        "fr": "faire un câlin",
+        "ru": "обнять, приласкать"
+      },
+      {
+        "fr": "un gros câlin",
+        "ru": "крепкие обнимашки"
+      },
+      {
+        "fr": "réclamer un câlin",
+        "ru": "проситься к обнимашкам / на ручки"
+      },
+      {
+        "fr": "un câlin du soir",
+        "ru": "вечерние обнимашки"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bisou",
+        "note": "câlin — обнять (объятие руками); bisou — поцеловать (чмок губами). Часто идут вместе, но это разные действия."
+      },
+      {
+        "with": "embrasser",
+        "note": "câlin (сущ.) — объятие; глагол «embrasser» во французском значит «целовать», а не «обнимать» — частая ловушка для русскоязычных."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["relations", "tendresse"],
+    "caseIds": ["wc-relations"]
+  },
+  {
+    "id": "wl-relations-seul",
+    "lemma": "seul",
+    "displayForm": "seul / seule",
+    "pos": "adj",
+    "ipa": "/sœl/",
+    "translationsRu": ["один", "одинокий"],
+    "translationsEn": ["alone", "only"],
+    "semanticCore": "Один — без других рядом; в зависимости от контекста «в одиночку», «одинокий» или «единственный».",
+    "collocations": [
+      {
+        "fr": "tout seul",
+        "ru": "совсем один / сам"
+      },
+      {
+        "fr": "se sentir seul",
+        "ru": "чувствовать себя одиноким"
+      },
+      {
+        "fr": "vivre seul",
+        "ru": "жить одному"
+      },
+      {
+        "fr": "le seul ami",
+        "ru": "единственный друг"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "seulement",
+        "note": "seul — прилагательное «один/одинокий» (меняется по роду: seul/seule); seulement — наречие «только, лишь». Не путать."
+      },
+      {
+        "with": "célibataire",
+        "note": "seul — один (в данный момент, без компании); célibataire — холостой/незамужняя (статус, не в паре). «Je suis seul ce soir» ≠ «je suis célibataire»."
+      }
+    ],
+    "frequencyRank": 250,
+    "level": "A2",
+    "tags": ["relations", "solitude"],
+    "caseIds": ["wc-relations"]
+  }
+]

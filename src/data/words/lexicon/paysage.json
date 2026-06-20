@@ -1,0 +1,362 @@
+[
+  {
+    "id": "wl-paysage-pays",
+    "lemma": "pays",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pe.i/",
+    "translationsRu": ["страна", "край", "родина"],
+    "translationsEn": ["country", "land"],
+    "semanticCore": "Страна как государство, а также «родной край»: место, откуда человек родом.",
+    "collocations": [
+      {
+        "fr": "un pays étranger",
+        "ru": "иностранная страна"
+      },
+      {
+        "fr": "dans quel pays",
+        "ru": "в какой стране"
+      },
+      {
+        "fr": "mon pays natal",
+        "ru": "моя родина / родной край"
+      },
+      {
+        "fr": "les pays d'Europe",
+        "ru": "страны Европы"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "paysage",
+        "note": "pays (m) — страна; paysage (m) — пейзаж, вид. Слова похожи и родственны (paysage буквально «вид страны»), но значат разное."
+      },
+      {
+        "with": "campagne",
+        "note": "pays = страна (всё государство); campagne = сельская местность внутри страны. Не путать масштаб."
+      }
+    ],
+    "frequencyRank": 130,
+    "level": "A2",
+    "tags": ["paysage", "geographie"],
+    "caseIds": ["wc-paysage"],
+    "audio": {
+      "isolated": "audio/wl-paysage-pays.mp3"
+    }
+  },
+  {
+    "id": "wl-paysage-campagne",
+    "lemma": "campagne",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kɑ̃.paɲ/",
+    "translationsRu": ["сельская местность", "деревня (за городом)", "кампания"],
+    "translationsEn": ["countryside", "campaign"],
+    "semanticCore": "Сельская местность как противоположность городу («à la campagne»); в другом смысле — организованная кампания (избирательная, рекламная).",
+    "collocations": [
+      {
+        "fr": "à la campagne",
+        "ru": "за городом, на природе"
+      },
+      {
+        "fr": "une maison de campagne",
+        "ru": "загородный дом, дача"
+      },
+      {
+        "fr": "une campagne électorale",
+        "ru": "избирательная кампания"
+      },
+      {
+        "fr": "une campagne de pub",
+        "ru": "рекламная кампания"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "village",
+        "note": "la campagne = сельская местность вообще (природа за городом); un village = конкретная деревня. Деревня стоит à la campagne."
+      },
+      {
+        "with": "camp",
+        "note": "campagne (f) — сельская местность / кампания; un camp — лагерь. Похожи по корню, но не одно и то же."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["paysage", "geographie"],
+    "caseIds": ["wc-paysage"],
+    "audio": {
+      "isolated": "audio/wl-paysage-campagne.mp3"
+    }
+  },
+  {
+    "id": "wl-paysage-village",
+    "lemma": "village",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vi.laʒ/",
+    "translationsRu": ["деревня", "село"],
+    "translationsEn": ["village"],
+    "semanticCore": "Деревня, село — маленький населённый пункт в сельской местности, меньше города.",
+    "collocations": [
+      {
+        "fr": "un petit village",
+        "ru": "маленькая деревня"
+      },
+      {
+        "fr": "le centre du village",
+        "ru": "центр деревни"
+      },
+      {
+        "fr": "un village de montagne",
+        "ru": "горная деревня"
+      },
+      {
+        "fr": "habiter dans un village",
+        "ru": "жить в деревне"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ville",
+        "note": "un village = деревня (маленькая); une ville = город (большой). Похожи по написанию, различай по размеру."
+      },
+      {
+        "with": "campagne",
+        "note": "un village = конкретное село (можно сосчитать); la campagne = сельская местность вообще."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["paysage", "geographie"],
+    "caseIds": ["wc-paysage"],
+    "audio": {
+      "isolated": "audio/wl-paysage-village.mp3"
+    }
+  },
+  {
+    "id": "wl-paysage-colline",
+    "lemma": "colline",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kɔ.lin/",
+    "translationsRu": ["холм"],
+    "translationsEn": ["hill"],
+    "semanticCore": "Холм — невысокая округлая возвышенность, ниже горы; типичная черта мягкого пейзажа.",
+    "collocations": [
+      {
+        "fr": "en haut d'une colline",
+        "ru": "на вершине холма"
+      },
+      {
+        "fr": "monter sur la colline",
+        "ru": "подняться на холм"
+      },
+      {
+        "fr": "des collines verdoyantes",
+        "ru": "зелёные холмы"
+      },
+      {
+        "fr": "au pied de la colline",
+        "ru": "у подножия холма"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "montagne",
+        "note": "une colline = холм (невысокий); une montagne = гора (высокая). Разница в высоте."
+      },
+      {
+        "with": "vallée",
+        "note": "colline = холм (возвышение); vallée = долина (низина между возвышениями). Противоположный рельеф."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["paysage", "relief"],
+    "caseIds": ["wc-paysage"],
+    "audio": {
+      "isolated": "audio/wl-paysage-colline.mp3"
+    }
+  },
+  {
+    "id": "wl-paysage-champ",
+    "lemma": "champ",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃɑ̃/",
+    "translationsRu": ["поле"],
+    "translationsEn": ["field"],
+    "semanticCore": "Поле — обрабатываемый участок земли (с посевами, для скота); также «поле» в физике (champ électrique).",
+    "collocations": [
+      {
+        "fr": "un champ de blé",
+        "ru": "пшеничное поле"
+      },
+      {
+        "fr": "travailler dans les champs",
+        "ru": "работать в полях"
+      },
+      {
+        "fr": "un champ de fleurs",
+        "ru": "поле цветов"
+      },
+      {
+        "fr": "à travers champs",
+        "ru": "напрямик, через поля"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pré",
+        "note": "un champ = (распаханное) поле, посевы; un pré = луг (травянистый, для выпаса). Champ обычно засеян, pré — нет."
+      },
+      {
+        "with": "jardin",
+        "note": "un champ = большое сельскохозяйственное поле; un jardin = сад / огород у дома (меньше)."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["paysage", "agriculture"],
+    "caseIds": ["wc-paysage"],
+    "audio": {
+      "isolated": "audio/wl-paysage-champ.mp3"
+    }
+  },
+  {
+    "id": "wl-paysage-lac",
+    "lemma": "lac",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/lak/",
+    "translationsRu": ["озеро"],
+    "translationsEn": ["lake"],
+    "semanticCore": "Озеро — большой стоячий пресный водоём, окружённый сушей; место купания и прогулок.",
+    "collocations": [
+      {
+        "fr": "au bord du lac",
+        "ru": "на берегу озера"
+      },
+      {
+        "fr": "se baigner dans le lac",
+        "ru": "купаться в озере"
+      },
+      {
+        "fr": "un lac de montagne",
+        "ru": "горное озеро"
+      },
+      {
+        "fr": "le lac Léman",
+        "ru": "Женевское озеро"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mer",
+        "note": "un lac = озеро (пресное, со всех сторон суша); la mer = море (солёное, открытое). Lac меньше и без солёной воды."
+      },
+      {
+        "with": "étang",
+        "note": "un lac = озеро (большое, глубокое); un étang = пруд / небольшое мелкое озерцо."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["paysage", "eau"],
+    "caseIds": ["wc-paysage"],
+    "audio": {
+      "isolated": "audio/wl-paysage-lac.mp3"
+    }
+  },
+  {
+    "id": "wl-paysage-vallee",
+    "lemma": "vallée",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/va.le/",
+    "translationsRu": ["долина"],
+    "translationsEn": ["valley"],
+    "semanticCore": "Долина — низина между холмами или горами, часто с рекой на дне; родственна англ. «valley».",
+    "collocations": [
+      {
+        "fr": "au fond de la vallée",
+        "ru": "на дне долины"
+      },
+      {
+        "fr": "une vallée verte",
+        "ru": "зелёная долина"
+      },
+      {
+        "fr": "la vallée de la Loire",
+        "ru": "долина Луары"
+      },
+      {
+        "fr": "descendre dans la vallée",
+        "ru": "спуститься в долину"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "colline",
+        "note": "une vallée = долина (низина); une colline = холм (возвышение). Долина — внизу, холм — наверху."
+      },
+      {
+        "with": "valise",
+        "note": "vallée /va.le/ — долина; valise /va.liz/ — чемодан. Похожи в начале, но разные слова и концовки."
+      }
+    ],
+    "frequencyRank": 740,
+    "level": "A2",
+    "tags": ["paysage", "relief"],
+    "caseIds": ["wc-paysage"],
+    "audio": {
+      "isolated": "audio/wl-paysage-vallee.mp3"
+    }
+  },
+  {
+    "id": "wl-paysage-desert",
+    "lemma": "désert",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/de.zɛʁ/",
+    "translationsRu": ["пустыня"],
+    "translationsEn": ["desert"],
+    "semanticCore": "Пустыня — обширное засушливое безлюдное пространство (песок, камни); как прилагательное — «безлюдный».",
+    "collocations": [
+      {
+        "fr": "un désert de sable",
+        "ru": "песчаная пустыня"
+      },
+      {
+        "fr": "traverser le désert",
+        "ru": "пересечь пустыню"
+      },
+      {
+        "fr": "le désert du Sahara",
+        "ru": "пустыня Сахара"
+      },
+      {
+        "fr": "une île déserte",
+        "ru": "необитаемый остров"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "dessert",
+        "note": "désert (одна s, /de.zɛʁ/) — пустыня; dessert (две s, /de.sɛʁ/) — десерт. Одна буква s меняет звук (/z/→/s/) и смысл."
+      },
+      {
+        "with": "oasis",
+        "note": "le désert = пустыня (сухо, безводно); une oasis = оазис (зелёный участок с водой посреди пустыни)."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["paysage", "geographie"],
+    "caseIds": ["wc-paysage"],
+    "audio": {
+      "isolated": "audio/wl-paysage-desert.mp3"
+    }
+  }
+]

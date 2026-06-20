@@ -1,0 +1,326 @@
+[
+  {
+    "id": "wc-documents",
+    "title": "Документы и офис",
+    "theme": "documents",
+    "level": "A2",
+    "wordIds": [
+      "wl-documents-papier",
+      "wl-documents-document",
+      "wl-documents-dossier",
+      "wl-documents-agenda",
+      "wl-documents-imprimante",
+      "wl-documents-tache",
+      "wl-documents-rendezvous",
+      "wl-documents-signature"
+    ],
+    "steps": [
+      {
+        "id": "wc-documents-papier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-documents-papier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Donne-moi une feuille de papier, s'il te plaît.",
+          "L'imprimante n'a plus de papier.",
+          "Note ton numéro sur ce papier."
+        ],
+        "options": ["бумага (лист бумаги)", "ручка", "конверт", "тетрадь"],
+        "correctIndex": 0,
+        "explanation": "papier (m) — бумага. «une feuille de papier» — лист бумаги. Ручка — un stylo, конверт — une enveloppe, тетрадь — un cahier."
+      },
+      {
+        "id": "wc-documents-papier-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-documents-papier",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит papier?",
+        "bridge": "Англ. «paper» — бумага; французское papier — тот же корень. Читается /pa.pje/: конец -ier звучит как «-пье».",
+        "options": ["бумага", "газета", "картон", "обои"],
+        "correctIndex": 0,
+        "explanation": "papier = бумага. Англ. «paper» — прямой мост. Газета — un journal, картон — le carton. А во множественном «les papiers» часто значит документы (удостоверение)."
+      },
+      {
+        "id": "wc-documents-papier-trap",
+        "kind": "trap",
+        "wordId": "wl-documents-papier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Полицейский говорит: «Vos papiers, s'il vous plaît.» Что он просит?",
+        "options": [
+          "документы (удостоверение личности)",
+          "чистые листы бумаги",
+          "газеты",
+          "деньги"
+        ],
+        "correctIndex": 0,
+        "explanation": "Во множественном «les papiers» — это документы, удостоверение личности (les papiers d'identité). «Vos papiers !» — «Ваши документы!». Просто «бумага» как материал — du papier, в единственном."
+      },
+      {
+        "id": "wc-documents-document-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-documents-document",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Veuillez signer ce document.",
+          "J'ai envoyé le document par mail.",
+          "Tous les documents sont dans le dossier."
+        ],
+        "options": ["документ", "подпись", "печать", "конверт"],
+        "correctIndex": 0,
+        "explanation": "document (m) — документ. «signer un document» — подписать документ. Подпись — une signature, печать (штамп) — un tampon."
+      },
+      {
+        "id": "wc-documents-document-collo",
+        "kind": "sort",
+        "wordId": "wl-documents-document",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом document звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "signer un document",
+            "basket": "ok"
+          },
+          {
+            "text": "joindre un document",
+            "basket": "ok"
+          },
+          {
+            "text": "un document officiel",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un document",
+            "basket": "no"
+          },
+          {
+            "text": "un document chaud",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«signer / joindre un document», «un document officiel» — естественно («joindre» — приложить файл к письму). «boire un document» (пить документ) и «un document chaud» (тёплый документ) — бессмыслица."
+      },
+      {
+        "id": "wc-documents-dossier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-documents-dossier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Range ces factures dans le dossier rouge.",
+          "Le dossier du client est complet.",
+          "Tous les fichiers sont dans le même dossier."
+        ],
+        "options": ["папка (с документами / на компьютере)", "ящик стола", "полка", "сейф"],
+        "correctIndex": 0,
+        "explanation": "dossier (m) — папка: и физическая папка с бумагами, и папка-каталог на компьютере, и «дело» (подборка документов о ком-то). Ящик стола — un tiroir, полка — une étagère."
+      },
+      {
+        "id": "wc-documents-dossier-trap",
+        "kind": "trap",
+        "wordId": "wl-documents-dossier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "На компьютере нужно сохранить файл «в папку». Какое слово выбрать?",
+        "options": [
+          "un dossier — папка-каталог",
+          "un fichier — это и есть «папка»",
+          "un document — папка на диске",
+          "un classeur — папка только на компьютере"
+        ],
+        "correctIndex": 0,
+        "explanation": "Папка-каталог на компьютере — un dossier; отдельный файл внутри неё — un fichier. Их легко перепутать: dossier ≠ fichier. «un classeur» — это скоросшиватель (физическая папка-регистратор)."
+      },
+      {
+        "id": "wc-documents-agenda-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-documents-agenda",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je note le rendez-vous dans mon agenda.",
+          "Mon agenda est plein cette semaine.",
+          "Regarde dans ton agenda si tu es libre jeudi."
+        ],
+        "options": [
+          "ежедневник / расписание",
+          "повестка собрания",
+          "календарь на стене",
+          "записная книжка с адресами"
+        ],
+        "correctIndex": 0,
+        "explanation": "agenda (m) — ежедневник, личное расписание встреч. «noter dans son agenda» — записать в ежедневник. Записная книжка с адресами — un carnet d'adresses."
+      },
+      {
+        "id": "wc-documents-agenda-falsefriend",
+        "kind": "trap",
+        "wordId": "wl-documents-agenda",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «agenda» — это повестка собрания (список вопросов). А французское un agenda — это что?",
+        "options": [
+          "ежедневник (книжка с датами для записей)",
+          "повестка собрания, как в английском",
+          "тайный план, скрытые намерения",
+          "программа конференции"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: фр. un agenda — это ежедневник, а не «повестка». «Повестка собрания» по-французски — l'ordre du jour. Англ. «agenda» во французском так не значит."
+      },
+      {
+        "id": "wc-documents-imprimante-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-documents-imprimante",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "L'imprimante est en panne.",
+          "Branche l'imprimante avant d'imprimer.",
+          "Il faut changer la cartouche de l'imprimante."
+        ],
+        "options": ["принтер", "сканер", "ксерокс (копир)", "клавиатура"],
+        "correctIndex": 0,
+        "explanation": "imprimante (f) — принтер. «imprimer» — печатать, «une cartouche» — картридж. Сканер — un scanner, копир — un photocopieur."
+      },
+      {
+        "id": "wc-documents-imprimante-compare",
+        "kind": "compare",
+        "wordId": "wl-documents-imprimante",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une imprimante и une imprimerie — в чём разница?",
+        "phrases": ["J'achète une imprimante.", "Je travaille dans une imprimerie."],
+        "options": [
+          "imprimante — принтер (устройство); imprimerie — типография (предприятие).",
+          "Это синонимы, оба значат «принтер».",
+          "imprimante — типография; imprimerie — принтер.",
+          "imprimante — чернила; imprimerie — бумага."
+        ],
+        "correctIndex": 0,
+        "explanation": "une imprimante — принтер, устройство дома или в офисе. une imprimerie — типография, предприятие, где печатают тиражи. Оба от глагола imprimer (печатать)."
+      },
+      {
+        "id": "wc-documents-tache-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-documents-tache",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai plusieurs tâches à finir aujourd'hui.",
+          "C'est une tâche difficile.",
+          "Répartissons les tâches entre nous."
+        ],
+        "options": ["задача / дело (которое нужно сделать)", "пятно", "встреча", "ошибка"],
+        "correctIndex": 0,
+        "explanation": "tâche (f), с accent circonflexe (â), — задача, дело, которое нужно выполнить. «répartir les tâches» — распределить задачи. Не путать с tache (без шляпки) — пятно."
+      },
+      {
+        "id": "wc-documents-tache-trap",
+        "kind": "trap",
+        "wordId": "wl-documents-tache",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Две почти одинаковые записи. Какая значит «У меня важная задача»?",
+        "options": [
+          "J'ai une tâche importante. (â — задача)",
+          "J'ai une tache importante. (без шляпки — пятно)",
+          "Оба варианта значат «задача».",
+          "Оба варианта значат «пятно»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Всё решает шляпка: tâche (â) — задача, дело; tache (без accent circonflexe) — пятно. «une tache importante» означало бы «большое пятно». На письме различай по â, а в речи у большинства носителей оба слова звучат одинаково /taʃ/ — смысл понятен из контекста."
+      },
+      {
+        "id": "wc-documents-rendezvous-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-documents-rendezvous",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно выражение во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai un rendez-vous chez le médecin à 15 h.",
+          "Il faut prendre rendez-vous à l'avance.",
+          "Désolé, je dois annuler notre rendez-vous."
+        ],
+        "options": ["встреча / приём (по записи)", "опоздание", "очередь", "выходной"],
+        "correctIndex": 0,
+        "explanation": "un rendez-vous (m) — назначенная встреча или приём по записи: у врача, у парикмахера, деловая встреча. «prendre rendez-vous» — записаться (на приём). Пишется через дефисы и не меняется во множественном: des rendez-vous."
+      },
+      {
+        "id": "wc-documents-rendezvous-hint",
+        "kind": "wordHint",
+        "wordId": "wl-documents-rendezvous",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: назначенная встреча по записи (у врача, в банке, деловая).",
+        "answer": "rendez-vous",
+        "hints": [
+          "Пишется через два дефиса…",
+          "Начинается с rende…",
+          "Prendre ___ chez le médecin."
+        ],
+        "explanation": "rendez-vous (m) — встреча, приём по записи. «prendre rendez-vous» — записаться. Слово неизменяемо: un rendez-vous, des rendez-vous — меняется только артикль, само слово остаётся тем же."
+      },
+      {
+        "id": "wc-documents-signature-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-documents-signature",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il manque votre signature en bas de la page.",
+          "La signature du contrat est prévue lundi.",
+          "Mettez votre signature ici, s'il vous plaît."
+        ],
+        "options": ["подпись", "печать", "дата", "фамилия печатными буквами"],
+        "correctIndex": 0,
+        "explanation": "signature (f) — подпись. «signer» — подписывать. Не путать с un tampon (печать, штамп) и с le nom en majuscules (фамилия печатными буквами)."
+      },
+      {
+        "id": "wc-documents-signature-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-documents-signature",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит signature?",
+        "bridge": "Англ. «signature» — подпись; пишется почти так же. По-французски читается /si.ɲa.tyʁ/, с мягким «нь» (gn).",
+        "options": ["подпись", "сигнал", "знак зодиака", "печать"],
+        "correctIndex": 0,
+        "explanation": "signature = подпись. Англ. «signature» — прямой мост, те же буквы. Глагол — signer (подписывать): «signer un document»."
+      },
+      {
+        "id": "wc-documents-tache-soundtwin",
+        "kind": "soundTwin",
+        "wordId": "wl-documents-tache",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, что прозвучало.",
+        "audioText": "tâche",
+        "options": ["tâche", "tasse", "touche", "tas"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало tâche /taʃ/ — задача. «tasse» /tas/ — чашка, «touche» /tuʃ/ — клавиша, «tas» /ta/ — куча. Это разные слова: слушай согласные. (Пятно — tache — звучит так же, как tâche, поэтому его здесь нет.)"
+      }
+    ]
+  }
+]

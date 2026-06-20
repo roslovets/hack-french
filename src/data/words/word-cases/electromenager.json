@@ -1,0 +1,299 @@
+[
+  {
+    "id": "wc-electromenager",
+    "title": "Бытовая техника",
+    "theme": "electromenager",
+    "level": "A2",
+    "wordIds": [
+      "wl-electromenager-machinealaver",
+      "wl-electromenager-microondes",
+      "wl-electromenager-aspirateur",
+      "wl-electromenager-tele",
+      "wl-electromenager-radio",
+      "wl-electromenager-grillepain",
+      "wl-electromenager-lavevaisselle",
+      "wl-electromenager-ventilateur"
+    ],
+    "steps": [
+      {
+        "id": "wc-electromenager-machinealaver-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-electromenager-machinealaver",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно понятие во всех трёх сценах. Что это?",
+        "contexts": [
+          "Je mets mon linge dans la machine à laver.",
+          "La machine à laver est en panne, je vais à la laverie.",
+          "Tu peux lancer une machine ce soir ?"
+        ],
+        "options": ["стиральная машина", "посудомоечная машина", "сушилка", "автомобиль"],
+        "correctIndex": 0,
+        "explanation": "la machine à laver (f) — стиральная машина (стирает le linge — бельё). В разговоре часто просто «une machine»: lancer / mettre une machine — запустить стирку. Посудомойка — le lave-vaisselle."
+      },
+      {
+        "id": "wc-electromenager-machinealaver-trap",
+        "kind": "trap",
+        "wordId": "wl-electromenager-machinealaver",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "По-русски «машина» — это и автомобиль, и аппарат. Как назвать ту, что стирает бельё?",
+        "options": [
+          "une machine à laver",
+          "une voiture à laver",
+          "une auto à laver",
+          "un lave-linge à voiture"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка слова «машина»: автомобиль — une voiture / une auto, а аппарат для стирки — une machine à laver (или un lave-linge). «voiture à laver» означало бы «машину для мытья», не существует."
+      },
+      {
+        "id": "wc-electromenager-microondes-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-electromenager-microondes",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je réchauffe la soupe au micro-ondes.",
+          "Mets le plat deux minutes au micro-ondes.",
+          "On a un four à micro-ondes dans la cuisine."
+        ],
+        "options": ["микроволновка", "духовка", "плита", "холодильник"],
+        "correctIndex": 0,
+        "explanation": "le micro-ondes (m) — микроволновка, она же un four à micro-ondes. Греет еду быстро (réchauffer). Обычная духовка — le four, плита — la cuisinière."
+      },
+      {
+        "id": "wc-electromenager-microondes-cmp",
+        "kind": "compare",
+        "wordId": "wl-electromenager-microondes",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le micro-ondes и le four. В чём разница?",
+        "phrases": ["Je réchauffe au micro-ondes.", "Je fais cuire un gâteau au four."],
+        "options": [
+          "micro-ondes быстро разогревает волнами; four печёт жаром (готовит, запекает).",
+          "Это полные синонимы, разницы нет.",
+          "micro-ondes печёт пироги, а four только греет.",
+          "four — это микроволновка, micro-ondes — духовка."
+        ],
+        "correctIndex": 0,
+        "explanation": "le micro-ondes греет еду микроволнами — быстро (réchauffer). le four (духовка) готовит жаром: faire cuire un gâteau au four. Микроволновку часто и зовут полностью un four à micro-ondes."
+      },
+      {
+        "id": "wc-electromenager-aspirateur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-electromenager-aspirateur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le samedi, je passe l'aspirateur dans tout l'appartement.",
+          "L'aspirateur fait trop de bruit.",
+          "On a acheté un aspirateur robot."
+        ],
+        "options": ["пылесос", "веник", "швабра", "тряпка"],
+        "correctIndex": 0,
+        "explanation": "l'aspirateur (m) — пылесос, втягивает пыль. «passer l'aspirateur» — пылесосить. Веник/швабра — un balai, тряпка — un chiffon."
+      },
+      {
+        "id": "wc-electromenager-aspirateur-sort",
+        "kind": "sort",
+        "wordId": "wl-electromenager-aspirateur",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом aspirateur естественны, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "passer l'aspirateur",
+            "basket": "ok"
+          },
+          {
+            "text": "un aspirateur robot",
+            "basket": "ok"
+          },
+          {
+            "text": "le sac de l'aspirateur",
+            "basket": "ok"
+          },
+          {
+            "text": "manger l'aspirateur",
+            "basket": "no"
+          },
+          {
+            "text": "boire un aspirateur",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«passer l'aspirateur» (пылесосить), «un aspirateur robot», «le sac de l'aspirateur» (мешок пылесоса) — естественно. «manger / boire l'aspirateur» (есть/пить пылесос) — бессмыслица."
+      },
+      {
+        "id": "wc-electromenager-tele-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-electromenager-tele",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le soir, on regarde la télé sur le canapé.",
+          "Allume la télé, le match commence.",
+          "Il y a un bon film à la télé ce soir."
+        ],
+        "options": ["телевизор / телек", "радио", "телефон", "компьютер"],
+        "correctIndex": 0,
+        "explanation": "la télé (f) — разговорное от la télévision: и сам телевизор, и телевидение. «regarder la télé» — смотреть телевизор, «à la télé» — по телевизору."
+      },
+      {
+        "id": "wc-electromenager-tele-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-electromenager-tele",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет с первого взгляда. Что значит télé?",
+        "bridge": "Англ. «TV / television» — тот же корень «tele-». Фр. la télé — это сокращение от la télévision, как англ. «telly».",
+        "options": ["телевизор / телевидение", "телефон", "телескоп", "телеграмма"],
+        "correctIndex": 0,
+        "explanation": "la télé = телевизор / телевидение, от la télévision (англ. television). Тот же корень tele-, но это именно «телек», а не телефон (le téléphone) или телескоп (le télescope)."
+      },
+      {
+        "id": "wc-electromenager-radio-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-electromenager-radio",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le matin, j'écoute la radio dans la cuisine.",
+          "Baisse la radio, c'est trop fort.",
+          "On a entendu cette chanson à la radio."
+        ],
+        "options": ["радио", "телевизор", "колонка", "наушники"],
+        "correctIndex": 0,
+        "explanation": "la radio (f) — радио (приёмник и вещание). Его слушают: «écouter la radio», «à la radio» — по радио. Во французском радио женского рода: la radio."
+      },
+      {
+        "id": "wc-electromenager-radio-cmp",
+        "kind": "compare",
+        "wordId": "wl-electromenager-radio",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "écouter la radio и regarder la télé. В чём разница в глаголе?",
+        "phrases": ["J'écoute la radio.", "Je regarde la télé."],
+        "options": [
+          "радио слушают — écouter; телевизор смотрят — regarder.",
+          "Глаголы взаимозаменяемы, разницы нет.",
+          "радио смотрят, телевизор слушают.",
+          "оба прибора «regarder»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Радио — звук, поэтому «écouter la radio» (слушать). Телевизор — картинка, поэтому «regarder la télé» (смотреть). Оба женского рода: la radio, la télé."
+      },
+      {
+        "id": "wc-electromenager-grillepain-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-electromenager-grillepain",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le matin, je mets deux tranches de pain dans le grille-pain.",
+          "Le grille-pain est cassé, le pain ne dore plus.",
+          "Attention, le grille-pain est encore chaud."
+        ],
+        "options": ["тостер", "духовка", "сковорода", "чайник"],
+        "correctIndex": 0,
+        "explanation": "le grille-pain (m) — тостер, буквально «жарь-хлеб» (grille + pain). Подрумянивает хлеб (dorer). Форма не меняется во мн. числе: des grille-pain."
+      },
+      {
+        "id": "wc-electromenager-grillepain-hint",
+        "kind": "wordHint",
+        "wordId": "wl-electromenager-grillepain",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни прибор: по утрам кладёшь в него ломтики хлеба, и он их поджаривает.",
+        "answer": "grille-pain",
+        "hints": [
+          "Состоит из двух слов через дефис",
+          "Глагол griller (жарить) + le pain (хлеб)",
+          "Je mets le pain dans le ___."
+        ],
+        "explanation": "le grille-pain (m) — тостер. Сложное слово: griller (поджаривать) + pain (хлеб). Во мн. числе не меняется: des grille-pain."
+      },
+      {
+        "id": "wc-electromenager-lavevaisselle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-electromenager-lavevaisselle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Après le dîner, je mets les assiettes dans le lave-vaisselle.",
+          "Tu peux vider le lave-vaisselle, il est propre.",
+          "On fait tourner le lave-vaisselle le soir."
+        ],
+        "options": ["посудомоечная машина", "стиральная машина", "раковина", "сушилка"],
+        "correctIndex": 0,
+        "explanation": "le lave-vaisselle (m) — посудомоечная машина, буквально «мой-посуду» (lave + vaisselle). Моет la vaisselle (посуду). Не меняется во мн. числе: des lave-vaisselle."
+      },
+      {
+        "id": "wc-electromenager-lavevaisselle-trap",
+        "kind": "trap",
+        "wordId": "wl-electromenager-lavevaisselle",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Две машины «моют». В какую кладут грязные тарелки?",
+        "options": [
+          "le lave-vaisselle — она моет посуду",
+          "la machine à laver — она моет посуду",
+          "le grille-pain — он моет посуду",
+          "le micro-ondes — он моет посуду"
+        ],
+        "correctIndex": 0,
+        "explanation": "le lave-vaisselle моет la vaisselle (посуду). la machine à laver (стиральная) стирает le linge (бельё) — тарелки туда не кладут. Обе «моют», но это разные приборы."
+      },
+      {
+        "id": "wc-electromenager-ventilateur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-electromenager-ventilateur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il fait trop chaud, j'allume le ventilateur.",
+          "Le ventilateur tourne au plafond.",
+          "Mets le ventilateur, on étouffe."
+        ],
+        "options": ["вентилятор", "кондиционер", "обогреватель", "увлажнитель"],
+        "correctIndex": 0,
+        "explanation": "le ventilateur (m) — вентилятор: гоняет воздух лопастями, освежает в жару. Кондиционер (реально охлаждает) — le climatiseur / la clim, обогреватель — le radiateur."
+      },
+      {
+        "id": "wc-electromenager-ventilateur-cmp",
+        "kind": "compare",
+        "wordId": "wl-electromenager-ventilateur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le ventilateur и le climatiseur. В чём разница?",
+        "phrases": ["Le ventilateur brasse l'air chaud.", "Le climatiseur refroidit la pièce."],
+        "options": [
+          "ventilateur только гоняет воздух (не охлаждает его); climatiseur реально охлаждает помещение.",
+          "Это полные синонимы.",
+          "ventilateur охлаждает, climatiseur греет.",
+          "climatiseur — это вентилятор на потолке."
+        ],
+        "correctIndex": 0,
+        "explanation": "le ventilateur перемешивает воздух (brasser l'air) — становится свежее, но температура та же. le climatiseur (la clim) понижает температуру (refroidir). Частая путаница: вентилятор не кондиционер."
+      }
+    ]
+  }
+]

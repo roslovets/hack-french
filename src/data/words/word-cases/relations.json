@@ -1,0 +1,314 @@
+[
+  {
+    "id": "wc-relations",
+    "title": "Отношения",
+    "theme": "relations",
+    "level": "A2",
+    "wordIds": [
+      "wl-relations-ami",
+      "wl-relations-copain",
+      "wl-relations-amour",
+      "wl-relations-couple",
+      "wl-relations-dispute",
+      "wl-relations-bisou",
+      "wl-relations-calin",
+      "wl-relations-seul"
+    ],
+    "steps": [
+      {
+        "id": "wc-relations-ami-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-relations-ami",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "C'est mon meilleur ami.",
+          "J'ai invité tous mes amis.",
+          "On est amis depuis l'école."
+        ],
+        "options": ["друг", "враг", "сосед", "коллега"],
+        "correctIndex": 0,
+        "explanation": "ami (m) — друг; amie (f) — подруга. «mon meilleur ami» — мой лучший друг. Внимание: «mon petit ami» — это уже не просто друг, а «мой парень» (партнёр)."
+      },
+      {
+        "id": "wc-relations-ami-trap",
+        "kind": "trap",
+        "wordId": "wl-relations-ami",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Француженка говорит: «Je te présente mon petit ami.» Кого она представляет?",
+        "options": [
+          "своего парня (партнёра)",
+          "своего младшего друга",
+          "своего маленького сына",
+          "просто приятеля"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: «mon petit ami» / «ma petite amie» — это «мой парень» / «моя девушка» (романтический партнёр), а не «маленький друг». Просто друг — «un ami», «un copain»."
+      },
+      {
+        "id": "wc-relations-copain-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-relations-copain",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих фразах?",
+        "contexts": [
+          "Je sors avec mes copains ce soir.",
+          "C'est un copain de classe.",
+          "Salut, ça va, copain ?"
+        ],
+        "options": ["приятель, друган", "начальник", "родственник", "учитель"],
+        "correctIndex": 0,
+        "explanation": "copain (m) / copine (f) — приятель, друган; чуть менее тесно и более разговорно, чем ami. «un copain de classe» — одноклассник-приятель. Но в паре (см. дальше) «mon copain» = мой парень."
+      },
+      {
+        "id": "wc-relations-copain-cmp",
+        "kind": "compare",
+        "wordId": "wl-relations-copain",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«J'ai vu un copain.» и «J'ai vu mon copain.» В чём разница?",
+        "phrases": ["J'ai vu un copain.", "J'ai vu mon copain."],
+        "options": [
+          "«un copain» — (один из) приятелей; «mon copain» — обычно мой парень (партнёр).",
+          "Разницы нет, это синонимы.",
+          "«un copain» — мой парень; «mon copain» — просто приятель.",
+          "Оба значат «мой коллега»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Артикль меняет смысл: «un copain» — какой-то приятель; «mon copain» (как и «ma copine») в обычной речи понимается как «мой парень» / «моя девушка». Чтобы сказать «мой друг» нейтрально, лучше «un ami à moi»."
+      },
+      {
+        "id": "wc-relations-copain-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-relations-copain",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "copain",
+        "options": ["lapin", "sapin", "copain", "copine"],
+        "correctIndex": 2,
+        "explanation": "copain звучит /kɔ.pɛ̃/ — с носовым «эн» на конце. Похожие реальные слова другие: lapin «кролик» (/la.pɛ̃/), sapin «ёлка» (/sa.pɛ̃/), copine «подруга» (/kɔ.pin/ — с обычным «ин», без носового)."
+      },
+      {
+        "id": "wc-relations-amour-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-relations-amour",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "C'est une belle histoire d'amour.",
+          "Il lui a déclaré son amour.",
+          "Ils vivent un grand amour."
+        ],
+        "options": ["любовь", "дружба", "свадьба", "ревность"],
+        "correctIndex": 0,
+        "explanation": "amour (m) — любовь. «une histoire d'amour» — история любви, «tomber amoureux» — влюбиться. Слово мужского рода: «un grand amour»."
+      },
+      {
+        "id": "wc-relations-amour-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-relations-amour",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит amour?",
+        "bridge": "Англ. «amorous» (влюблённый) и имя «Amora» — от того же корня. Французское amour — это и есть «любовь».",
+        "options": ["любовь", "юмор", "доспехи", "память"],
+        "correctIndex": 0,
+        "explanation": "amour = любовь. Не путать по звучанию: англ. «armour» — доспехи, «humour» — юмор. Французское amour /a.muʁ/ — только любовь."
+      },
+      {
+        "id": "wc-relations-couple-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-relations-couple",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ils forment un beau couple.",
+          "C'est un couple marié.",
+          "Le couple a deux enfants."
+        ],
+        "options": ["пара (двое вместе)", "семья из многих людей", "свидание", "дружба"],
+        "correctIndex": 0,
+        "explanation": "couple (m) — пара (двое, кто вместе). «un couple marié» — супружеская пара, «vivre en couple» — жить вместе/в паре. Слово мужского рода: «un beau couple»."
+      },
+      {
+        "id": "wc-relations-couple-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-relations-couple",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит couple?",
+        "bridge": "Англ. «a couple» — пара, двое. Французское couple пишется почти так же и значит то же.",
+        "options": ["пара (двое)", "кубок", "пара перчаток", "несколько штук"],
+        "correctIndex": 0,
+        "explanation": "couple = пара, двое вместе. В отличие от англ. «a couple of» (= несколько), французское «un couple» — это именно двое, чаще про отношения."
+      },
+      {
+        "id": "wc-relations-dispute-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-relations-dispute",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ils ont eu une grosse dispute.",
+          "Après la dispute, ils ne se parlaient plus.",
+          "C'était juste une petite dispute."
+        ],
+        "options": ["ссора", "праздник", "встреча", "примирение"],
+        "correctIndex": 0,
+        "explanation": "dispute (f) — ссора, перепалка. «avoir une dispute» — поссориться, «se disputer» — ссориться. Это бытовая ссора, не судебный спор."
+      },
+      {
+        "id": "wc-relations-dispute-trap",
+        "kind": "trap",
+        "wordId": "wl-relations-dispute",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «dispute» — это формальный спор/тяжба. А французское «une dispute» — это что?",
+        "options": [
+          "бытовая ссора между людьми",
+          "судебный спор, тяжба",
+          "научная дискуссия",
+          "деловые переговоры"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: фр. «une dispute» — это обычная ссора (между друзьями, в паре), а не формальный «dispute» как в английском. Юридический спор — un litige, un différend; спор-обсуждение — un débat."
+      },
+      {
+        "id": "wc-relations-bisou-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-relations-bisou",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Fais un bisou à ta grand-mère.",
+          "Gros bisous, à bientôt !",
+          "Elle lui a fait un petit bisou sur la joue."
+        ],
+        "options": ["поцелуйчик, чмок", "объятие", "подарок", "улыбка"],
+        "correctIndex": 0,
+        "explanation": "bisou (m) — поцелуйчик, чмок (ласково). «faire un bisou» — поцеловать (чмокнуть), «gros bisous» — крепко целую (в конце сообщения). Разговорное и тёплое слово."
+      },
+      {
+        "id": "wc-relations-bisou-sort",
+        "kind": "sort",
+        "wordId": "wl-relations-bisou",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом bisou звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "faire un bisou",
+            "basket": "ok"
+          },
+          {
+            "text": "gros bisous",
+            "basket": "ok"
+          },
+          {
+            "text": "un bisou sur la joue",
+            "basket": "ok"
+          },
+          {
+            "text": "manger un bisou",
+            "basket": "no"
+          },
+          {
+            "text": "conduire un bisou",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«faire un bisou», «gros bisous», «un bisou sur la joue» — естественно. «manger un bisou» (съесть поцелуй) и «conduire un bisou» (вести поцелуй) — бессмыслица."
+      },
+      {
+        "id": "wc-relations-calin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-relations-calin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Viens, on se fait un câlin.",
+          "Le bébé réclame un câlin.",
+          "Il aime les câlins le matin."
+        ],
+        "options": ["обнимашки, ласка", "поцелуй", "ссора", "подарок"],
+        "correctIndex": 0,
+        "explanation": "câlin (m) — обнимашки, нежные объятия, ласка. «faire un câlin» — обнять, приласкать. Обрати внимание на accent circonflexe: c-â-l-i-n, читается /kɑ.lɛ̃/."
+      },
+      {
+        "id": "wc-relations-calin-cmp",
+        "kind": "compare",
+        "wordId": "wl-relations-calin",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«faire un câlin» и «faire un bisou». В чём разница?",
+        "phrases": ["Fais-moi un câlin.", "Fais-moi un bisou."],
+        "options": [
+          "câlin — обнять (объятие); bisou — поцеловать (чмок).",
+          "Это одно и то же действие.",
+          "câlin — поцелуй; bisou — объятие.",
+          "Оба значат «помашу рукой»."
+        ],
+        "correctIndex": 0,
+        "explanation": "«faire un câlin» — обнять, прижать к себе (объятие); «faire un bisou» — чмокнуть, поцеловать. Разные действия, оба ласковые."
+      },
+      {
+        "id": "wc-relations-seul-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-relations-seul",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих фразах?",
+        "contexts": [
+          "Je vis seul depuis un an.",
+          "Elle se sent seule le soir.",
+          "Il est venu tout seul."
+        ],
+        "options": ["один, одинокий", "вместе", "счастливый", "занятой"],
+        "correctIndex": 0,
+        "explanation": "seul (adj) — один, одинокий; в женском роде — seule (звучит так же, /sœl/). «tout seul» — совсем один, сам по себе; «se sentir seul» — чувствовать себя одиноким."
+      },
+      {
+        "id": "wc-relations-seul-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-relations-seul",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "seul",
+        "options": ["sel", "sol", "ciel", "seul"],
+        "correctIndex": 3,
+        "explanation": "seul звучит /sœl/ — с округлым «ё». Похожие реальные слова другие: sel «соль» (/sɛl/), sol «пол/почва» (/sɔl/), ciel «небо» (/sjɛl/). У всех гласный другой."
+      },
+      {
+        "id": "wc-relations-seul-hint",
+        "kind": "wordHint",
+        "wordId": "wl-relations-seul",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: когда рядом никого нет и ты сам по себе — ты какой?",
+        "answer": "seul",
+        "hints": ["Начинается на s…", "4 буквы, читается /sœl/", "Je vis ___ (один)."],
+        "explanation": "seul (adj) — один, одинокий. В женском роде — seule. «tout seul» — совсем один."
+      }
+    ]
+  }
+]
