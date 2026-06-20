@@ -1,0 +1,236 @@
+[
+  {
+    "id": "wl-camping-tente",
+    "lemma": "tente",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tɑ̃t/",
+    "translationsRu": ["палатка"],
+    "translationsEn": ["tent"],
+    "semanticCore": "Палатка, в которой ночуют на природе: её ставят, под ней прячутся от дождя и спят.",
+    "collocations": [
+      { "fr": "monter la tente", "ru": "поставить палатку" },
+      { "fr": "planter la tente", "ru": "разбить палатку" },
+      { "fr": "une tente de camping", "ru": "туристическая палатка" },
+      { "fr": "dormir sous la tente", "ru": "спать в палатке" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "auvent",
+        "note": "tente = палатка (закрытое жильё для сна); auvent = навес/козырёк от солнца и дождя. Русское «тент» ближе к auvent, а не к tente."
+      },
+      {
+        "with": "tante",
+        "note": "tente (палатка) и tante (тётя) звучат одинаково /tɑ̃t/ — омофоны. Различают только по смыслу и написанию."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["camping", "abri"],
+    "caseIds": ["wc-camping"]
+  },
+  {
+    "id": "wl-camping-randonnee",
+    "lemma": "randonnée",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁɑ̃.dɔ.ne/",
+    "translationsRu": ["поход", "пеший маршрут"],
+    "translationsEn": ["hike", "hiking"],
+    "semanticCore": "Долгий пеший (или велосипедный) маршрут на природе ради удовольствия, обычно в горах или в лесу.",
+    "collocations": [
+      { "fr": "faire une randonnée", "ru": "ходить в поход" },
+      { "fr": "partir en randonnée", "ru": "отправиться в поход" },
+      { "fr": "une randonnée en montagne", "ru": "поход в горах" },
+      { "fr": "un chemin de randonnée", "ru": "туристическая тропа" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "promenade",
+        "note": "randonnée = долгий поход с усилием (часы пути); promenade = короткая лёгкая прогулка (по парку, по городу)."
+      },
+      {
+        "with": "excursion",
+        "note": "randonnée = именно пеший маршрут; excursion = экскурсия/вылазка, часто с транспортом и осмотром мест."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["camping", "activite"],
+    "caseIds": ["wc-camping"]
+  },
+  {
+    "id": "wl-camping-boussole",
+    "lemma": "boussole",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bu.sɔl/",
+    "translationsRu": ["компас"],
+    "translationsEn": ["compass"],
+    "semanticCore": "Прибор со стрелкой, показывающей на север, чтобы не заблудиться без карты и GPS.",
+    "collocations": [
+      { "fr": "suivre la boussole", "ru": "идти по компасу" },
+      { "fr": "la boussole indique le nord", "ru": "компас показывает на север" },
+      { "fr": "perdre la boussole", "ru": "потерять голову, растеряться (идиома)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "compas",
+        "note": "boussole = компас для сторон света (туристический); compas = циркуль для черчения кругов. По-русски оба «компас» — отсюда путаница."
+      },
+      {
+        "with": "carte",
+        "note": "boussole = компас (показывает направление); carte = карта (показывает местность). В походе нужны оба."
+      }
+    ],
+    "frequencyRank": 850,
+    "level": "A2",
+    "tags": ["camping", "orientation"],
+    "caseIds": ["wc-camping"]
+  },
+  {
+    "id": "wl-camping-gourde",
+    "lemma": "gourde",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɡuʁd/",
+    "translationsRu": ["фляга", "фляжка"],
+    "translationsEn": ["water bottle", "flask"],
+    "semanticCore": "Походная многоразовая ёмкость для воды, которую носят с собой и наполняют перед дорогой.",
+    "collocations": [
+      { "fr": "remplir sa gourde", "ru": "наполнить флягу" },
+      { "fr": "une gourde d'eau", "ru": "фляга с водой" },
+      { "fr": "boire à la gourde", "ru": "пить из фляги" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "gourd (англ.)",
+        "note": "фр. gourde = фляга для воды; англ. «gourd» = тыква-горлянка. Ложные друзья: исторически фляги делали из тыквы, но сегодня значения разошлись."
+      },
+      {
+        "with": "bouteille",
+        "note": "gourde = походная фляга (многоразовая, прочная); bouteille = бутылка (обычная, часто одноразовая, пластиковая или стеклянная)."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["camping", "objet"],
+    "caseIds": ["wc-camping"]
+  },
+  {
+    "id": "wl-camping-sac-couchage",
+    "lemma": "sac de couchage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sak.də.ku.ʃaʒ/",
+    "translationsRu": ["спальный мешок", "спальник"],
+    "translationsEn": ["sleeping bag"],
+    "semanticCore": "Утеплённый мешок, в котором спят в палатке: раскатывают на ночь, он держит тепло.",
+    "collocations": [
+      { "fr": "dérouler son sac de couchage", "ru": "разложить спальный мешок" },
+      { "fr": "dormir dans un sac de couchage", "ru": "спать в спальном мешке" },
+      { "fr": "un sac de couchage chaud", "ru": "тёплый спальный мешок" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sac à dos",
+        "note": "sac de couchage = спальный мешок (couchage — «спанье», в нём спят); sac à dos = рюкзак (à dos — «на спину», его несут). Меняется предлог — меняется предмет."
+      },
+      {
+        "with": "couverture",
+        "note": "sac de couchage = спальник (закрытый со всех сторон, для похода); couverture = одеяло (открытое, домашнее)."
+      }
+    ],
+    "frequencyRank": 900,
+    "level": "A2",
+    "tags": ["camping", "objet"],
+    "caseIds": ["wc-camping"]
+  },
+  {
+    "id": "wl-camping-feu-camp",
+    "lemma": "feu de camp",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fø.də.kɑ̃/",
+    "translationsRu": ["костёр"],
+    "translationsEn": ["campfire"],
+    "semanticCore": "Костёр в лагере: его разжигают вечером, вокруг него греются, поют и общаются.",
+    "collocations": [
+      { "fr": "allumer un feu de camp", "ru": "разжечь костёр" },
+      { "fr": "autour du feu de camp", "ru": "вокруг костра" },
+      { "fr": "éteindre le feu de camp", "ru": "потушить костёр" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "feu d'artifice",
+        "note": "feu de camp = костёр (огонь для тепла и уюта); feu d'artifice = фейерверк (огни в небе на праздник). Оба начинаются с feu."
+      },
+      {
+        "with": "feu",
+        "note": "un feu — просто огонь/пожар (или светофор); un feu de camp — именно лагерный костёр. Уточнение «de camp» задаёт смысл."
+      }
+    ],
+    "frequencyRank": 870,
+    "level": "A2",
+    "tags": ["camping", "feu"],
+    "caseIds": ["wc-camping"]
+  },
+  {
+    "id": "wl-camping-hamac",
+    "lemma": "hamac",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.mak/",
+    "translationsRu": ["гамак"],
+    "translationsEn": ["hammock"],
+    "semanticCore": "Подвесная сетка или полотно между двумя опорами, в котором лежат и качаются, отдыхая на природе.",
+    "collocations": [
+      { "fr": "accrocher un hamac", "ru": "повесить гамак" },
+      { "fr": "se balancer dans un hamac", "ru": "качаться в гамаке" },
+      { "fr": "une sieste dans le hamac", "ru": "дневной сон в гамаке" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "hammock (англ.)",
+        "note": "фр. hamac и англ. «hammock» — почти одно слово (общий источник — язык таино), но фр. без второго m: hamac, /a.mak/."
+      },
+      {
+        "with": "h aspiré",
+        "note": "h в hamac «придыхательное»: говорят le hamac, ce hamac — без слияния и связки (не «l'hamac», не «un_hamac» со звуком z)."
+      }
+    ],
+    "frequencyRank": 1100,
+    "level": "A2",
+    "tags": ["camping", "objet"],
+    "caseIds": ["wc-camping"]
+  },
+  {
+    "id": "wl-camping-rechaud",
+    "lemma": "réchaud",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁe.ʃo/",
+    "translationsRu": ["горелка", "походная плитка"],
+    "translationsEn": ["camping stove", "burner"],
+    "semanticCore": "Небольшая переносная газовая горелка/плитка, на которой готовят и греют еду в походе.",
+    "collocations": [
+      { "fr": "un réchaud à gaz", "ru": "газовая горелка" },
+      { "fr": "allumer le réchaud", "ru": "зажечь горелку" },
+      { "fr": "faire chauffer sur le réchaud", "ru": "греть на горелке" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "réchauffé",
+        "note": "réchaud (m) = горелка/плитка (предмет); réchauffé = «разогретый» (о еде). Похожий корень (chaud — горячий), но это разные слова."
+      },
+      {
+        "with": "cuisinière",
+        "note": "réchaud = маленькая переносная горелка (для похода); cuisinière = большая кухонная плита (дома, стационарная)."
+      }
+    ],
+    "frequencyRank": 950,
+    "level": "A2",
+    "tags": ["camping", "cuisine"],
+    "caseIds": ["wc-camping"]
+  }
+]

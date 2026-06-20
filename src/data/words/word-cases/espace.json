@@ -1,0 +1,313 @@
+[
+  {
+    "id": "wc-espace",
+    "title": "Космос",
+    "theme": "espace",
+    "level": "B1",
+    "wordIds": [
+      "wl-espace-lune",
+      "wl-espace-fusee",
+      "wl-espace-espace",
+      "wl-espace-galaxie",
+      "wl-espace-astronaute",
+      "wl-espace-univers",
+      "wl-espace-atterrir",
+      "wl-espace-comete"
+    ],
+    "steps": [
+      {
+        "id": "wc-espace-lune-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-espace-lune",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ce soir, la lune est pleine.",
+          "Les astronautes ont marché sur la Lune en 1969.",
+          "On voit bien la lune dans un ciel sans nuages."
+        ],
+        "options": ["луна", "звезда", "солнце", "небо"],
+        "correctIndex": 0,
+        "explanation": "lune (f) — луна. «la pleine lune» — полнолуние, «marcher sur la Lune» — ходить по Луне. Звезда — une étoile, солнце — le soleil."
+      },
+      {
+        "id": "wc-espace-lune-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-espace-lune",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Слушай внимательно. Какое из слов прозвучало?",
+        "audioText": "lune",
+        "options": ["lune", "dune", "lutte", "plume"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало lune /lyn/ — луна. Рядом похожие: dune /dyn/ (дюна), lutte /lyt/ (борьба), plume /plym/ (перо). Все с французским звуком /y/, но отличаются согласными."
+      },
+      {
+        "id": "wc-espace-lune-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-espace-lune",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для lune (луна), чтобы запомнить женский род (la lune) и звук /lyn/ — губы трубочкой, как у «ю».",
+        "examples": [
+          "«Лунная» Селена — женщина: la lune тоже «она», женского рода.",
+          "Представь, что кто-то «dans la lune» — витает в облаках, засмотревшись на луну: образ + смысл идиомы сразу."
+        ]
+      },
+      {
+        "id": "wc-espace-fusee-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-espace-fusee",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "La fusée a décollé de la base de Kourou.",
+          "Une fusée peut avoir plusieurs étages.",
+          "Les ingénieurs préparent le lancement de la fusée."
+        ],
+        "options": ["ракета", "спутник", "самолёт", "ступень"],
+        "correctIndex": 0,
+        "explanation": "fusée (f) — ракета (носитель). «lancer une fusée» — запустить ракету, «un étage de fusée» — ступень ракеты. Спутник — un satellite, самолёт — un avion."
+      },
+      {
+        "id": "wc-espace-fusee-sort",
+        "kind": "sort",
+        "wordId": "wl-espace-fusee",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом fusée звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "lancer une fusée",
+            "basket": "ok"
+          },
+          {
+            "text": "une fusée spatiale",
+            "basket": "ok"
+          },
+          {
+            "text": "une fusée de détresse",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une fusée",
+            "basket": "no"
+          },
+          {
+            "text": "une fusée à trois étages",
+            "basket": "ok"
+          },
+          {
+            "text": "arroser la fusée",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«lancer une fusée», «une fusée spatiale / de détresse», «une fusée à trois étages» — естественно. «boire une fusée» (пить ракету) и «arroser la fusée» (поливать ракету) — бессмыслица."
+      },
+      {
+        "id": "wc-espace-espace-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-espace-espace",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. У него два смысла — какой здесь объединяет все три?",
+        "contexts": [
+          "La conquête de l'espace a commencé au XXe siècle.",
+          "Une fusée part explorer l'espace.",
+          "Dans l'espace, il n'y a pas d'air."
+        ],
+        "options": [
+          "космос (космическое пространство)",
+          "место в зале",
+          "площадь в городе",
+          "расстояние"
+        ],
+        "correctIndex": 0,
+        "explanation": "espace (m) здесь — космос, космическое пространство. У слова есть и второй смысл — «место, простор» (manquer d'espace, un espace vert), но во всех трёх сценах речь о космосе."
+      },
+      {
+        "id": "wc-espace-espace-cmp",
+        "kind": "compare",
+        "wordId": "wl-espace-espace",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "l'espace и la place — оба про «место»? В чём разница?",
+        "phrases": [
+          "Il y a beaucoup d'espace dans cette salle.",
+          "Il n'y a plus de place dans cette salle."
+        ],
+        "options": [
+          "espace = простор, свободное пространство (сколько «воздуха»); place = конкретное место/сиденье (есть ли куда сесть).",
+          "Это полные синонимы.",
+          "espace — это сиденье, а place — простор.",
+          "espace значит «площадь города», а place — «космос»."
+        ],
+        "correctIndex": 0,
+        "explanation": "«beaucoup d'espace» — много простора, свободного пространства. «plus de place» — не осталось мест (сесть/встать). Espace — про объём простора, place — про конкретное место или сиденье."
+      },
+      {
+        "id": "wc-espace-galaxie-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-espace-galaxie",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит galaxie?",
+        "bridge": "Англ. «galaxy» — галактика. Фр. galaxie — тот же корень, читается /ɡa.lak.si/, на конце -ie.",
+        "options": ["галактика", "планета", "комета", "орбита"],
+        "correctIndex": 0,
+        "explanation": "galaxie (f) = галактика — мост от англ. «galaxy». Это огромное скопление звёзд; наша — la Voie lactée (Млечный Путь)."
+      },
+      {
+        "id": "wc-espace-galaxie-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-espace-galaxie",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — про звёзды и космические объекты в небе. Найди лишнее.",
+        "options": ["une galaxie", "une étoile", "une comète", "une fusée"],
+        "correctIndex": 3,
+        "explanation": "Галактика (une galaxie), звезда (une étoile) и комета (une comète) — естественные объекты в космосе. Ракета (une fusée) — лишняя: это техника, сделанная людьми."
+      },
+      {
+        "id": "wc-espace-astronaute-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-espace-astronaute",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "L'astronaute flotte dans la station spatiale.",
+          "Pour devenir astronaute, il faut des années d'entraînement.",
+          "L'astronaute a mis sa combinaison avant la sortie."
+        ],
+        "options": [
+          "космонавт, астронавт",
+          "инженер на земле",
+          "пилот самолёта",
+          "учёный-астроном"
+        ],
+        "correctIndex": 0,
+        "explanation": "astronaute (m/f) — космонавт/астронавт, тот, кто летает в космос. Слово одной формы для обоих родов: un astronaute, une astronaute. Астроном (учёный) — un astronome."
+      },
+      {
+        "id": "wc-espace-astronaute-trap",
+        "kind": "trap",
+        "wordId": "wl-espace-astronaute",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "По-русски «космонавт». Как сказать по-французски нейтрально, не привязываясь к стране?",
+        "options": [
+          "un astronaute — общее слово для любого",
+          "un cosmonaute — иначе нельзя",
+          "un spationaute — только так правильно",
+          "un astronome — это и есть космонавт"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка трёх слов: astronaute — нейтральное и широкое; cosmonaute — про российских/советских; spationaute — официально про французских. Astronome — это астроном (учёный), а не космонавт."
+      },
+      {
+        "id": "wc-espace-univers-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-espace-univers",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "L'univers est en expansion depuis le Big Bang.",
+          "Notre galaxie n'est qu'une partie de l'univers.",
+          "Personne ne connaît la taille exacte de l'univers."
+        ],
+        "options": ["Вселенная", "галактика", "Солнечная система", "орбита"],
+        "correctIndex": 0,
+        "explanation": "univers (m) — Вселенная, всё сущее. Конечная s не читается: /y.ni.vɛʁ/. Галактика (une galaxie) — лишь часть Вселенной; univers — целое."
+      },
+      {
+        "id": "wc-espace-univers-hint",
+        "kind": "wordHint",
+        "wordId": "wl-espace-univers",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: всё, что существует — все галактики, звёзды и пространство вместе.",
+        "answer": "univers",
+        "hints": [
+          "Начинается на u…",
+          "7 букв, мужского рода, конечная s немая",
+          "L'___ est en expansion."
+        ],
+        "explanation": "univers (m) — Вселенная. Читается /y.ni.vɛʁ/, конечная s не звучит. Артикль: l'univers."
+      },
+      {
+        "id": "wc-espace-atterrir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-espace-atterrir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово (глагол) во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "L'avion va atterrir dans dix minutes.",
+          "La sonde a réussi à atterrir sur Mars.",
+          "Le pilote a fait atterrir l'appareil en douceur."
+        ],
+        "options": ["приземляться, садиться", "взлетать", "падать камнем", "разворачиваться"],
+        "correctIndex": 0,
+        "explanation": "atterrir — приземляться, садиться (на землю, terre). Спрягается с avoir: l'avion a atterri. «atterrir en douceur» — мягко сесть. Взлетать — décoller."
+      },
+      {
+        "id": "wc-espace-atterrir-cmp",
+        "kind": "compare",
+        "wordId": "wl-espace-atterrir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "atterrir и décoller — в чём разница?",
+        "phrases": [
+          "L'avion va décoller dans cinq minutes.",
+          "L'avion va atterrir dans cinq minutes."
+        ],
+        "options": [
+          "décoller = взлетать (отрываться от земли); atterrir = приземляться (опускаться на землю). Это антонимы.",
+          "Это синонимы, оба про посадку.",
+          "décoller — садиться, atterrir — взлетать.",
+          "Оба значат «лететь», без разницы в направлении."
+        ],
+        "correctIndex": 0,
+        "explanation": "décoller — взлетать, отрываться от земли (начало полёта). atterrir — приземляться, садиться (конец полёта). Полёт начинается с décoller и заканчивается на atterrir."
+      },
+      {
+        "id": "wc-espace-comete-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-espace-comete",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит comète?",
+        "bridge": "Англ. «comet» — комета. Фр. comète — тот же корень, читается /kɔ.mɛt/ с accent grave на è.",
+        "options": ["комета", "планета", "спутник", "метеорит"],
+        "correctIndex": 0,
+        "explanation": "comète (f) = комета — мост от англ. «comet». Это ледяное тело с длинным светящимся хвостом («la queue d'une comète»), пролетающее у Солнца."
+      },
+      {
+        "id": "wc-espace-comete-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-espace-comete",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Слушай внимательно. Какое из слов прозвучало?",
+        "audioText": "comète",
+        "options": ["comète", "comédie", "comté", "cassette"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало comète /kɔ.mɛt/ — комета. Рядом похожие: comédie /kɔ.me.di/ (комедия), comté /kɔ̃.te/ (графство; сорт сыра), cassette /ka.sɛt/ (кассета). Слушай ударный гласный и конец слова."
+      }
+    ]
+  }
+]

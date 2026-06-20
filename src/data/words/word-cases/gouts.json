@@ -1,0 +1,294 @@
+[
+  {
+    "id": "wc-gouts",
+    "title": "Вкусы",
+    "theme": "gouts",
+    "level": "A2",
+    "wordIds": [
+      "wl-gouts-sucre",
+      "wl-gouts-sale",
+      "wl-gouts-amer",
+      "wl-gouts-acide",
+      "wl-gouts-epice",
+      "wl-gouts-gout",
+      "wl-gouts-saveur",
+      "wl-gouts-fade"
+    ],
+    "steps": [
+      {
+        "id": "wc-gouts-sucre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gouts-sucre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ce café est trop sucré pour moi.",
+          "Les enfants adorent les boissons sucrées.",
+          "Je préfère un dessert moins sucré."
+        ],
+        "options": ["сладкий", "солёный", "горький", "острый"],
+        "correctIndex": 0,
+        "explanation": "sucré — сладкий, с сахаром. От слова le sucre (сахар). «Trop sucré» — слишком сладкий. Солёный — salé, горький — amer."
+      },
+      {
+        "id": "wc-gouts-sucre-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-gouts-sucre",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит sucré?",
+        "bridge": "Англ. «sugar» (сахар) и фр. sucré — родственники: общий корень sucr-. Если в нём «сахар», значит он сладкий.",
+        "options": ["сладкий", "кислый", "солёный", "пряный"],
+        "correctIndex": 0,
+        "explanation": "sucré = сладкий. Мост: «sugar» → le sucre (сахар) → sucré (сладкий). Читается /sy.kʁe/, с французским «u»."
+      },
+      {
+        "id": "wc-gouts-sale-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gouts-sale",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Cette soupe est trop salée.",
+          "J'aime les plats salés plus que les desserts.",
+          "L'eau de mer est salée."
+        ],
+        "options": ["солёный", "сладкий", "кислый", "горячий"],
+        "correctIndex": 0,
+        "explanation": "salé — солёный. Также в кулинарии «salé» — несладкая, закусочная еда (в противовес sucré). Не путать с sale /sal/ — «грязный»."
+      },
+      {
+        "id": "wc-gouts-sale-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-gouts-sale",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "salé",
+        "options": ["salé", "sale", "salle", "sel"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало salé /sa.le/ — «солёный»: два слога, с é на конце. Остальные звучат иначе: sale /sal/ — грязный и salle /sal/ — зал звучат одинаково (один слог), а sel /sɛl/ — соль. Ни одно из них не совпадает с salé."
+      },
+      {
+        "id": "wc-gouts-amer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gouts-amer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le café sans sucre est trop amer.",
+          "Ce chocolat noir est très amer.",
+          "La bière a un goût amer."
+        ],
+        "options": ["горький", "сладкий", "солёный", "свежий"],
+        "correctIndex": 0,
+        "explanation": "amer — горький (чёрный кофе, тёмный шоколад). Женская форма — amère: «une bière amère». Конечное -r читается: /a.mɛʁ/."
+      },
+      {
+        "id": "wc-gouts-amer-cmp",
+        "kind": "compare",
+        "wordId": "wl-gouts-amer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "amer и acide. В чём разница вкусов?",
+        "phrases": ["Ce café est amer.", "Ce citron est acide."],
+        "options": [
+          "amer — горький (кофе, хинин); acide — кислый (лимон, уксус).",
+          "Это синонимы, разницы нет.",
+          "amer — кислый, а acide — горький.",
+          "amer — про запах, acide — про вкус."
+        ],
+        "correctIndex": 0,
+        "explanation": "amer = горький (как чёрный кофе), acide = кислый (как лимон). Это два разных вкуса; русским их легко перепутать, но во французском они не смешиваются."
+      },
+      {
+        "id": "wc-gouts-acide-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gouts-acide",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ce citron est très acide.",
+          "J'aime le yaourt un peu acide.",
+          "Les fraises pas mûres sont acides."
+        ],
+        "options": ["кислый", "сладкий", "горький", "острый"],
+        "correctIndex": 0,
+        "explanation": "acide — кислый (лимон, незрелые фрукты, йогурт). От того же корня, что «кислота». Горький — amer, сладкий — sucré."
+      },
+      {
+        "id": "wc-gouts-acide-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-gouts-acide",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет смысл. Что значит acide?",
+        "bridge": "Англ. «acid» (кислота) и фр. acide — почти одно слово. Кислота кислая на вкус — значит acide = кислый.",
+        "options": ["кислый", "солёный", "сладкий", "пряный"],
+        "correctIndex": 0,
+        "explanation": "acide = кислый. Мост: «acid» → acide. Но осторожно: по-английски «acid» чаще существительное «кислота», а французское acide здесь — прилагательное «кислый»."
+      },
+      {
+        "id": "wc-gouts-epice-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gouts-epice",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La cuisine indienne est souvent épicée.",
+          "Ce curry est trop épicé pour moi.",
+          "Il aime les plats bien épicés."
+        ],
+        "options": ["острый, пряный", "сладкий", "солёный", "холодный"],
+        "correctIndex": 0,
+        "explanation": "épicé — острый, пряный (приготовленный с пряностями, des épices). «Trop épicé» — слишком остро. Не путать с просто «жгучим» — это piquant."
+      },
+      {
+        "id": "wc-gouts-epice-sort",
+        "kind": "sort",
+        "wordId": "wl-gouts-epice",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом épicé звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un plat épicé",
+            "basket": "ok"
+          },
+          {
+            "text": "une sauce épicée",
+            "basket": "ok"
+          },
+          {
+            "text": "une cuisine épicée",
+            "basket": "ok"
+          },
+          {
+            "text": "une chaise épicée",
+            "basket": "no"
+          },
+          {
+            "text": "un silence épicé",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un plat / une sauce / une cuisine épicée» — естественно. «une chaise épicée» (острый стул) и «un silence épicé» (острая тишина) — бессмыслица: épicé только про еду."
+      },
+      {
+        "id": "wc-gouts-gout-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gouts-gout",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ce plat a un bon goût.",
+          "Je n'aime pas le goût du café.",
+          "Chacun ses goûts !"
+        ],
+        "options": ["вкус", "запах", "цвет", "звук"],
+        "correctIndex": 0,
+        "explanation": "goût (m) — вкус: и вкус еды, и личное предпочтение («chacun ses goûts» — у каждого свой вкус). Пишется с circonflexe: g-o-û-t. Конечное -t не читается: /ɡu/."
+      },
+      {
+        "id": "wc-gouts-gout-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-gouts-gout",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "goût",
+        "options": ["goût", "goutte", "coût", "goûter"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало goût /ɡu/ — «вкус» (конечное -t немое). une goutte /ɡut/ — капля (тут -tt- читается), le coût /ku/ — стоимость, goûter /ɡu.te/ — пробовать на вкус. Все разные."
+      },
+      {
+        "id": "wc-gouts-saveur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gouts-saveur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ce fromage a une saveur intense.",
+          "Le plat est plein de saveur.",
+          "Sans sel, la soupe perd sa saveur."
+        ],
+        "options": ["вкус, привкус", "температура", "размер", "цена"],
+        "correctIndex": 0,
+        "explanation": "saveur (f) — вкус, привкус еды (как она «играет» во рту). Слово более изысканное, чем goût. «Plein de saveur» — насыщенный по вкусу."
+      },
+      {
+        "id": "wc-gouts-saveur-cmp",
+        "kind": "compare",
+        "wordId": "wl-gouts-saveur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "goût и saveur оба переводят как «вкус». В чём разница?",
+        "phrases": ["Cette sauce a une saveur délicate.", "Il a très bon goût en musique."],
+        "options": [
+          "saveur — вкусовой оттенок еды; goût — вкус вообще, в т. ч. предпочтение и чувство меры.",
+          "Это полные синонимы.",
+          "saveur — про предпочтения, goût — только про еду.",
+          "saveur — запах, goût — вкус."
+        ],
+        "correctIndex": 0,
+        "explanation": "saveur — именно вкусовой оттенок еды (часто les saveurs). goût шире: и вкус еды, и личный вкус («avoir bon goût»). Про музыкальный вкус — только goût, не saveur."
+      },
+      {
+        "id": "wc-gouts-fade-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gouts-fade",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Sans sel, ce plat est fade.",
+          "La soupe est un peu fade.",
+          "Ces tomates d'hiver sont fades."
+        ],
+        "options": ["пресный, безвкусный", "острый", "сладкий", "солёный"],
+        "correctIndex": 0,
+        "explanation": "fade — пресный, безвкусный: еде не хватает соли или вкуса. Противоположность — épicé или «plein de saveur». Читается /fad/."
+      },
+      {
+        "id": "wc-gouts-fade-trap",
+        "kind": "trap",
+        "wordId": "wl-gouts-fade",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «fade» значит «выцветать, угасать». А что значит французское fade?",
+        "options": ["пресный, безвкусный (о еде)", "выцветший (о цвете)", "модный", "усталый"],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: фр. fade — это «пресный, безвкусный» (о еде), а не англ. «fade» (выцветать). «Un plat fade» — невкусное блюдо, а не «выцветшее»."
+      },
+      {
+        "id": "wc-gouts-amer-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-gouts-amer",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для amer (горький), чтобы запомнить женскую форму amère и что конечное -r читается /a.mɛʁ/.",
+        "examples": [
+          "amer звучит как «la mer» (море) — а морская вода невкусная, «горькая»; так свяжешь звук /a.mɛʁ/ с горьким вкусом.",
+          "Представь горький эспрессо: «un café amer» для него и «une bière amère» для пива — меняется окончание, но -r слышно всегда."
+        ]
+      }
+    ]
+  }
+]

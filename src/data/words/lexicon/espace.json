@@ -1,0 +1,238 @@
+[
+  {
+    "id": "wl-espace-lune",
+    "lemma": "lune",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/lyn/",
+    "translationsRu": ["луна"],
+    "translationsEn": ["moon"],
+    "semanticCore": "Луна как небесное тело и в устойчивых образах: «pleine lune» (полнолуние), «être dans la lune» (витать в облаках).",
+    "collocations": [
+      { "fr": "la pleine lune", "ru": "полнолуние" },
+      { "fr": "un clair de lune", "ru": "лунный свет" },
+      { "fr": "être dans la lune", "ru": "витать в облаках, замечтаться" },
+      { "fr": "aller sur la Lune", "ru": "полететь на Луну" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "soleil",
+        "note": "la lune = луна (светит ночью); le soleil = солнце (днём). Луна — женского рода, солнце — мужского."
+      },
+      {
+        "with": "mois",
+        "note": "la lune = луна; le mois = месяц (календарный). По-русски «месяц» бывает и про луну, по-французски — только la lune для небесного тела."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "B1",
+    "tags": ["espace", "nature", "astre"],
+    "caseIds": ["wc-espace"]
+  },
+  {
+    "id": "wl-espace-fusee",
+    "lemma": "fusée",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fy.ze/",
+    "translationsRu": ["ракета"],
+    "translationsEn": ["rocket"],
+    "semanticCore": "Ракета как космический аппарат на реактивной тяге; также сигнальная или праздничная ракета (fusée éclairante).",
+    "collocations": [
+      { "fr": "lancer une fusée", "ru": "запустить ракету" },
+      { "fr": "une fusée spatiale", "ru": "космическая ракета" },
+      { "fr": "un étage de fusée", "ru": "ступень ракеты" },
+      { "fr": "une fusée de détresse", "ru": "сигнальная ракета (бедствия)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "navette",
+        "note": "une fusée = ракета (одноразовый носитель); une navette (spatiale) = (космический) шаттл, многоразовый челнок."
+      },
+      {
+        "with": "missile",
+        "note": "une fusée = ракета-носитель (мирная, выводит на орбиту); un missile = боевая ракета с зарядом. Не путать назначение."
+      }
+    ],
+    "frequencyRank": 840,
+    "level": "B1",
+    "tags": ["espace", "technique", "engin"],
+    "caseIds": ["wc-espace"]
+  },
+  {
+    "id": "wl-espace-espace",
+    "lemma": "espace",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛs.pas/",
+    "translationsRu": ["космос", "пространство"],
+    "translationsEn": ["space"],
+    "semanticCore": "И космическое пространство (l'espace), и физическое место/простор вокруг нас (il y a de l'espace, un espace vert).",
+    "collocations": [
+      { "fr": "l'espace intersidéral", "ru": "космическое (межзвёздное) пространство" },
+      { "fr": "la conquête de l'espace", "ru": "освоение космоса" },
+      { "fr": "manquer d'espace", "ru": "испытывать нехватку места" },
+      { "fr": "un espace vert", "ru": "зелёная зона, сквер" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "place",
+        "note": "l'espace = пространство, простор (вообще); la place = конкретное место/сиденье или площадь. «Нет места» сидеть — pas de place; «мало простора» — peu d'espace."
+      },
+      {
+        "with": "endroit",
+        "note": "l'espace = пространство/простор; un endroit = (определённое) место, точка. Endroit — «где именно», espace — «сколько простора»."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "B1",
+    "tags": ["espace", "abstrait", "lieu"],
+    "caseIds": ["wc-espace"]
+  },
+  {
+    "id": "wl-espace-galaxie",
+    "lemma": "galaxie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɡa.lak.si/",
+    "translationsRu": ["галактика"],
+    "translationsEn": ["galaxy"],
+    "semanticCore": "Галактика — огромное скопление звёзд; наша называется la Voie lactée (Млечный Путь).",
+    "collocations": [
+      { "fr": "une galaxie lointaine", "ru": "далёкая галактика" },
+      { "fr": "notre galaxie", "ru": "наша галактика" },
+      { "fr": "des milliards de galaxies", "ru": "миллиарды галактик" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "univers",
+        "note": "une galaxie = галактика (одно скопление звёзд); l'univers = вся Вселенная, которая содержит все галактики. Galaxie — часть, univers — целое."
+      },
+      {
+        "with": "Voie lactée",
+        "note": "galaxie = любая галактика (их множество); la Voie lactée = имя нашей конкретной галактики (Млечный Путь)."
+      }
+    ],
+    "frequencyRank": 1500,
+    "level": "B1",
+    "tags": ["espace", "astronomie"],
+    "caseIds": ["wc-espace"]
+  },
+  {
+    "id": "wl-espace-astronaute",
+    "lemma": "astronaute",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/as.tʁɔ.not/",
+    "translationsRu": ["космонавт", "астронавт"],
+    "translationsEn": ["astronaut"],
+    "semanticCore": "Человек, летающий в космос; слово одной формы для мужчины и женщины (un / une astronaute).",
+    "collocations": [
+      { "fr": "devenir astronaute", "ru": "стать космонавтом" },
+      { "fr": "un astronaute de la NASA", "ru": "астронавт НАСА" },
+      { "fr": "l'entraînement des astronautes", "ru": "подготовка космонавтов" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cosmonaute",
+        "note": "astronaute — общее/американское слово; cosmonaute — про российских/советских космонавтов; spationaute — официально про французских. Все трое = «космонавт» по-русски."
+      },
+      {
+        "with": "spationaute",
+        "note": "un(e) astronaute — нейтрально и широко; un(e) spationaute — именно французский космонавт. На B1 безопаснее astronaute."
+      }
+    ],
+    "frequencyRank": 1300,
+    "level": "B1",
+    "tags": ["espace", "metier", "personne"],
+    "caseIds": ["wc-espace"]
+  },
+  {
+    "id": "wl-espace-univers",
+    "lemma": "univers",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/y.ni.vɛʁ/",
+    "translationsRu": ["вселенная"],
+    "translationsEn": ["universe"],
+    "semanticCore": "Вселенная как всё сущее; в переносном смысле — чей-то «мир», вселенная увлечения или бренда.",
+    "collocations": [
+      { "fr": "l'origine de l'univers", "ru": "происхождение Вселенной" },
+      { "fr": "un univers infini", "ru": "бесконечная Вселенная" },
+      { "fr": "tout l'univers", "ru": "вся Вселенная" },
+      { "fr": "son propre univers", "ru": "свой собственный мир" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "galaxie",
+        "note": "l'univers = вся Вселенная (всё, что существует); une galaxie = одна галактика внутри неё. Univers — целое, galaxie — часть."
+      },
+      {
+        "with": "monde",
+        "note": "l'univers = Вселенная (космос целиком); le monde = мир, чаще «Земля, люди» (tout le monde — все). Не путать масштаб."
+      }
+    ],
+    "frequencyRank": 900,
+    "level": "B1",
+    "tags": ["espace", "abstrait"],
+    "caseIds": ["wc-espace"]
+  },
+  {
+    "id": "wl-espace-atterrir",
+    "lemma": "atterrir",
+    "pos": "verb",
+    "ipa": "/a.te.ʁiʁ/",
+    "translationsRu": ["приземляться", "садиться (о самолёте)"],
+    "translationsEn": ["to land"],
+    "semanticCore": "Опускаться на землю (terre) после полёта; в разговорном смысле — «оказаться где-то» неожиданно. Спрягается с avoir: l'avion a atterri.",
+    "collocations": [
+      { "fr": "l'avion atterrit", "ru": "самолёт приземляется" },
+      { "fr": "atterrir en douceur", "ru": "мягко приземлиться" },
+      { "fr": "atterrir sur la Lune", "ru": "прилуниться, сесть на Луну" },
+      { "fr": "être sur le point d'atterrir", "ru": "вот-вот приземлиться" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "décoller",
+        "note": "atterrir = приземляться (опускаться на землю); décoller = взлетать (отрываться от земли). Это антонимы взлёта и посадки."
+      },
+      {
+        "with": "se poser",
+        "note": "atterrir чаще про самолёт на аэродром; se poser — садиться (птица, вертолёт, аппарат) на любую поверхность. На Луну говорят и se poser, и atterrir."
+      }
+    ],
+    "frequencyRank": 1100,
+    "level": "B1",
+    "tags": ["espace", "verbe-action", "mouvement"],
+    "caseIds": ["wc-espace"]
+  },
+  {
+    "id": "wl-espace-comete",
+    "lemma": "comète",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kɔ.mɛt/",
+    "translationsRu": ["комета"],
+    "translationsEn": ["comet"],
+    "semanticCore": "Комета — ледяное тело с длинным светящимся хвостом, пролетающее у Солнца.",
+    "collocations": [
+      { "fr": "la queue d'une comète", "ru": "хвост кометы" },
+      { "fr": "observer une comète", "ru": "наблюдать комету" },
+      { "fr": "la comète de Halley", "ru": "комета Галлея" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "étoile filante",
+        "note": "une comète = комета (большое тело с хвостом, видна долго); une étoile filante = «падающая звезда», метеор, вспышка на миг. Не одно и то же."
+      },
+      {
+        "with": "astéroïde",
+        "note": "une comète = комета (лёд + хвост у Солнца); un astéroïde = астероид (каменная глыба без хвоста)."
+      }
+    ],
+    "frequencyRank": 1700,
+    "level": "B1",
+    "tags": ["espace", "astronomie", "astre"],
+    "caseIds": ["wc-espace"]
+  }
+]

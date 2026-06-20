@@ -1,0 +1,289 @@
+[
+  {
+    "id": "wc-papeterie",
+    "title": "Канцелярия",
+    "theme": "papeterie",
+    "level": "A2",
+    "wordIds": [
+      "wl-papeterie-gomme",
+      "wl-papeterie-regle",
+      "wl-papeterie-ciseaux",
+      "wl-papeterie-colle",
+      "wl-papeterie-trombone",
+      "wl-papeterie-classeur",
+      "wl-papeterie-feutre",
+      "wl-papeterie-agrafeuse"
+    ],
+    "steps": [
+      {
+        "id": "wc-papeterie-gomme-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-papeterie-gomme",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Passe-moi ta gomme, j'ai fait une erreur.",
+          "J'efface le mot au crayon avec une gomme.",
+          "Ma gomme ne marche plus, elle est trop dure."
+        ],
+        "options": ["ластик", "карандаш", "точилка", "пенал"],
+        "correctIndex": 0,
+        "explanation": "gomme (f) — ластик, которым стирают карандаш. «effacer avec une gomme» — стирать ластиком. Карандаш — un crayon, точилка — un taille-crayon."
+      },
+      {
+        "id": "wc-papeterie-gomme-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-papeterie-gomme",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "gomme",
+        "options": ["pomme", "homme", "somme", "gomme"],
+        "correctIndex": 3,
+        "explanation": "gomme /ɡɔm/ — ластик. Похоже звучат, но это другие слова: pomme /pɔm/ — яблоко, homme /ɔm/ — мужчина/человек, somme /sɔm/ — сумма. Все рифмуются на -omme, слушай первый звук."
+      },
+      {
+        "id": "wc-papeterie-regle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-papeterie-regle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что это за предмет — слово из трёх сцен?",
+        "contexts": [
+          "Trace une ligne droite avec ta règle.",
+          "Ma règle fait trente centimètres.",
+          "Prête-moi ta règle pour mesurer la page."
+        ],
+        "options": ["линейка", "карандаш", "тетрадь", "ластик"],
+        "correctIndex": 0,
+        "explanation": "Здесь règle (f) — линейка: ею проводят прямые линии и измеряют. «une règle graduée» — линейка с делениями. У слова есть и второе значение — «правило» (см. ловушку дальше)."
+      },
+      {
+        "id": "wc-papeterie-regle-trap",
+        "kind": "trap",
+        "wordId": "wl-papeterie-regle",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "У слова règle два разных значения. Что значит «la règle» в предложении «Respecte la règle du jeu» ?",
+        "phrases": ["Trace un trait à la règle.", "Respecte la règle du jeu."],
+        "options": [
+          "правило (игры) — то же слово, но другое значение",
+          "линейка — предмет для черчения",
+          "линия на бумаге",
+          "ошибка в тетради"
+        ],
+        "correctIndex": 0,
+        "explanation": "règle (f) — одно слово, два значения: «линейка» (предмет) и «правило» (норма). «à la règle» — по линейке (черчение), но «la règle du jeu» — правило игры. Понять помогает контекст."
+      },
+      {
+        "id": "wc-papeterie-ciseaux-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-papeterie-ciseaux",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что это за предмет — слово из трёх сцен?",
+        "contexts": [
+          "Découpe l'image avec des ciseaux.",
+          "Où sont les ciseaux ? J'en ai besoin.",
+          "Attention, ces ciseaux sont très pointus."
+        ],
+        "options": ["ножницы", "нож", "клей", "скрепка"],
+        "correctIndex": 0,
+        "explanation": "ciseaux (m, мн. ч.) — ножницы. «découper aux ciseaux» — резать ножницами, «une paire de ciseaux» — одни ножницы. Слово почти всегда во множественном числе."
+      },
+      {
+        "id": "wc-papeterie-ciseaux-trap",
+        "kind": "trap",
+        "wordId": "wl-papeterie-ciseaux",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Внимание к числу. Как по-французски сказать «ножницы» (которыми режут бумагу)?",
+        "options": [
+          "des ciseaux — почти всегда во множественном числе",
+          "un ciseau — всегда в единственном",
+          "une ciseau",
+          "des scissors"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ножницы — des ciseaux (мн. ч.), как и в русском. Форма «un ciseau» (ед. ч.) существует, но значит «стамеска, резец» (один резец у скульптора). Англ. «scissors» во французском нет."
+      },
+      {
+        "id": "wc-papeterie-colle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-papeterie-colle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mets un peu de colle pour fixer la photo.",
+          "Cette colle sèche très vite.",
+          "Je n'ai plus de colle dans mon tube."
+        ],
+        "options": ["клей", "скотч", "ножницы", "краска"],
+        "correctIndex": 0,
+        "explanation": "colle (f) — клей. «un tube de colle» — тюбик клея, «un bâton de colle» — клей-карандаш. Глагол coller — клеить. Скотч (липкая лента) — du scotch / du ruban adhésif."
+      },
+      {
+        "id": "wc-papeterie-colle-sort",
+        "kind": "sort",
+        "wordId": "wl-papeterie-colle",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом colle звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un tube de colle",
+            "basket": "ok"
+          },
+          {
+            "text": "un bâton de colle",
+            "basket": "ok"
+          },
+          {
+            "text": "mettre de la colle",
+            "basket": "ok"
+          },
+          {
+            "text": "boire de la colle",
+            "basket": "no"
+          },
+          {
+            "text": "une colle plate",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественно: «un tube de colle» (тюбик клея), «un bâton de colle» (клей-карандаш), «mettre de la colle» (нанести клей). «boire de la colle» (пить клей) и «une colle plate» (плоский клей) — бессмыслица."
+      },
+      {
+        "id": "wc-papeterie-trombone-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-papeterie-trombone",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. В канцелярии «un trombone» — это что?",
+        "bridge": "Англ. «trombone» — тромбон (музыкальный инструмент с изогнутой трубкой). Канцелярский «trombone» назван так из-за похожей изогнутой формы — это скрепка для бумаги.",
+        "options": ["скрепка для бумаги", "степлер", "дырокол", "точилка"],
+        "correctIndex": 0,
+        "explanation": "trombone (m) — скрепка: изогнутый кусочек проволоки. Слово взяли у музыкального инструмента (тромбона) из-за формы. «un trombone» соединяет листы временно, в отличие от степлера."
+      },
+      {
+        "id": "wc-papeterie-trombone-cmp",
+        "kind": "compare",
+        "wordId": "wl-papeterie-trombone",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un trombone и une agrafe. В чём разница?",
+        "phrases": [
+          "J'attache les feuilles avec un trombone.",
+          "Je fixe les feuilles avec une agrafe."
+        ],
+        "options": [
+          "trombone — скрепка (снимается, держит временно); agrafe — скоба степлера (прокалывает бумагу, держит прочно).",
+          "Это полные синонимы, разницы нет.",
+          "trombone — скоба степлера; agrafe — скрепка.",
+          "trombone — клей; agrafe — скотч."
+        ],
+        "correctIndex": 0,
+        "explanation": "trombone (m) — скрепка: гнутая проволока, легко снимается. agrafe (f) — скоба, которую забивает степлер (agrafeuse): она прокалывает листы и держит прочно. Скрепку ставят пальцами, скобу — степлером."
+      },
+      {
+        "id": "wc-papeterie-classeur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-papeterie-classeur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что это за предмет — слово из трёх сцен?",
+        "contexts": [
+          "Range tes feuilles dans le classeur.",
+          "J'ai un classeur pour chaque matière.",
+          "Le classeur est plein, il faut le trier."
+        ],
+        "options": ["папка-скоросшиватель", "тетрадь", "учебник", "пенал"],
+        "correctIndex": 0,
+        "explanation": "classeur (m) — папка с кольцами/скоросшиватель, куда подшивают листы. От глагола classer — раскладывать, сортировать. «ranger dans un classeur» — подшить в папку. Тетрадь — un cahier."
+      },
+      {
+        "id": "wc-papeterie-classeur-hint",
+        "kind": "wordHint",
+        "wordId": "wl-papeterie-classeur",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: папка с кольцами или зажимом, в которую подшивают отдельные листы по темам.",
+        "answer": "classeur",
+        "hints": [
+          "Начинается на c…",
+          "От глагола classer (сортировать), мужской род: un ___",
+          "Range tes feuilles dans le ___."
+        ],
+        "explanation": "classeur (m) — папка-скоросшиватель. Корень тот же, что в classer (сортировать) и classe (класс). Не путать с un cahier (тетрадь, листы сшиты сразу)."
+      },
+      {
+        "id": "wc-papeterie-feutre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-papeterie-feutre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что это за предмет — слово из трёх сцен?",
+        "contexts": [
+          "Colorie le dessin avec un feutre rouge.",
+          "Mon feutre est sec, il n'écrit plus.",
+          "Écris le titre au feutre noir, c'est plus visible."
+        ],
+        "options": ["фломастер", "карандаш", "мел", "ручка"],
+        "correctIndex": 0,
+        "explanation": "feutre (m) — фломастер (с мягким пишущим стержнем). «un feutre noir» — чёрный фломастер, «écrire au feutre» — писать фломастером. Шариковая ручка — un stylo."
+      },
+      {
+        "id": "wc-papeterie-feutre-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-papeterie-feutre",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Англ. «felt-tip pen» — фломастер. А «feutre»?",
+        "bridge": "Англ. «felt» — войлок, фетр; «felt-tip pen» — фломастер (с фетровым кончиком). Фр. «feutre» — это и сам войлок/фетр, и фломастер (полное название — feutre / stylo-feutre).",
+        "options": ["фломастер", "точилка", "клей", "линейка"],
+        "correctIndex": 0,
+        "explanation": "feutre (m) = и «фетр/войлок» (материал), и «фломастер». Англ. «felt» — хороший мост: у фломастера фетровый (войлочный) кончик, отсюда и название."
+      },
+      {
+        "id": "wc-papeterie-agrafeuse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-papeterie-agrafeuse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что это за предмет — слово из трёх сцен?",
+        "contexts": [
+          "Passe-moi l'agrafeuse pour fixer ces feuilles.",
+          "L'agrafeuse est vide, il faut la recharger.",
+          "Avec l'agrafeuse, j'attache les pages ensemble."
+        ],
+        "options": ["степлер", "дырокол", "точилка", "ножницы"],
+        "correctIndex": 0,
+        "explanation": "agrafeuse (f) — степлер: он забивает скобу (une agrafe), чтобы скрепить листы. От глагола agrafer — скреплять. «recharger l'agrafeuse» — зарядить степлер скобами."
+      },
+      {
+        "id": "wc-papeterie-agrafeuse-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-papeterie-agrafeuse",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для agrafeuse (степлер), чтобы запомнить длинное слово и связь с agrafe (скоба) и agrafer (скреплять).",
+        "examples": [
+          "Семья из трёх слов: agrafe (скоба) → agrafer (скреплять) → agrafeuse (то, ЧЕМ скрепляют). Суффикс -euse = «штука, которая делает действие».",
+          "Степлер «грабастает» листы — созвучно: a-grafe… как будто «грабли» хватают бумагу скобой."
+        ]
+      }
+    ]
+  }
+]

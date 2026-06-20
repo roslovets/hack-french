@@ -1,0 +1,233 @@
+[
+  {
+    "id": "wl-plage-sable",
+    "lemma": "sable",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sabl/",
+    "translationsRu": ["песок"],
+    "translationsEn": ["sand"],
+    "semanticCore": "Песок на пляже или в пустыне — мелкие крупинки, по которым ходят босиком и из которых строят замки.",
+    "collocations": [
+      { "fr": "du sable fin", "ru": "мелкий песок" },
+      { "fr": "un château de sable", "ru": "песочный замок" },
+      { "fr": "marcher sur le sable", "ru": "идти по песку" },
+      { "fr": "des sables mouvants", "ru": "зыбучие пески" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sol",
+        "note": "sable = песок (сыпучий материал); sol = земля, грунт, пол (поверхность вообще). На пляже под ногами le sable, но это часть le sol."
+      },
+      {
+        "with": "plage",
+        "note": "sable = песок (из чего сделан пляж); plage = пляж (само место у воды). Песок — материал, пляж — место."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["plage", "nature"],
+    "caseIds": ["wc-plage"]
+  },
+  {
+    "id": "wl-plage-vague",
+    "lemma": "vague",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vag/",
+    "translationsRu": ["волна"],
+    "translationsEn": ["wave"],
+    "semanticCore": "Волна на море — водяной вал, который накатывает на берег; в этом значении слово женского рода.",
+    "collocations": [
+      { "fr": "une grosse vague", "ru": "большая волна" },
+      { "fr": "surfer sur les vagues", "ru": "кататься на волнах (серфинг)" },
+      { "fr": "les vagues se brisent", "ru": "волны разбиваются" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vague (adj.)",
+        "note": "la vague (f) = волна (существительное); vague (прилаг.) = смутный, расплывчатый (un souvenir vague — смутное воспоминание). Одно написание, два слова — подсказывают артикль и смысл."
+      },
+      {
+        "with": "marée",
+        "note": "une vague = отдельная волна, накат воды; la marée = прилив/отлив, медленный подъём и спад уровня моря за часы. Волна быстрая, прилив — медленный."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["plage", "mer"],
+    "caseIds": ["wc-plage"]
+  },
+  {
+    "id": "wl-plage-parasol",
+    "lemma": "parasol",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pa.ʁa.sɔl/",
+    "translationsRu": ["зонт от солнца", "пляжный зонт"],
+    "translationsEn": ["parasol", "beach umbrella"],
+    "semanticCore": "Большой зонт от солнца — тот, что втыкают в песок на пляже или ставят на террасе, чтобы спрятаться в тени.",
+    "collocations": [
+      { "fr": "planter le parasol", "ru": "воткнуть (поставить) пляжный зонт" },
+      { "fr": "à l'ombre du parasol", "ru": "в тени зонта" },
+      { "fr": "ouvrir le parasol", "ru": "раскрыть зонт от солнца" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "parapluie",
+        "note": "parasol = зонт от солнца (para + sol, «против солнца»); parapluie = зонт от дождя (para + pluie, «против дождя»). На вид похожи, но слова разные: на пляже нужен le parasol."
+      },
+      {
+        "with": "ombrelle",
+        "note": "parasol = большой пляжный/уличный зонт от солнца; ombrelle = маленький изящный дамский зонтик от солнца. Оба от солнца, но parasol крупнее и практичнее."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["plage", "objet"],
+    "caseIds": ["wc-plage"]
+  },
+  {
+    "id": "wl-plage-bronzer",
+    "lemma": "bronzer",
+    "pos": "verb",
+    "ipa": "/bʁɔ̃.ze/",
+    "translationsRu": ["загорать", "покрываться загаром"],
+    "translationsEn": ["to tan", "to sunbathe"],
+    "semanticCore": "Лежать на солнце, чтобы кожа стала смуглой — и сам процесс потемнения кожи под солнцем.",
+    "collocations": [
+      { "fr": "bronzer au soleil", "ru": "загорать на солнце" },
+      { "fr": "se faire bronzer", "ru": "загорать (специально лежать на солнце)" },
+      { "fr": "être bien bronzé", "ru": "быть хорошо загоревшим" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "attraper un coup de soleil",
+        "note": "bronzer = красиво загореть (кожа темнеет); attraper un coup de soleil = обгореть на солнце (кожа краснеет и болит). Цель — bronzer, а не un coup de soleil."
+      },
+      {
+        "with": "brûler",
+        "note": "bronzer = загорать (приятно темнеть); brûler = сгореть, обжечься. На пляже хотят bronzer, но рискуют brûler."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["plage", "soleil"],
+    "caseIds": ["wc-plage"]
+  },
+  {
+    "id": "wl-plage-coquillage",
+    "lemma": "coquillage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔ.ki.jaʒ/",
+    "translationsRu": ["ракушка", "моллюск (в раковине)"],
+    "translationsEn": ["seashell", "shellfish"],
+    "semanticCore": "Морская ракушка, которую находишь на пляже; то же слово — для морепродуктов-моллюсков в раковине (мидии, устрицы).",
+    "collocations": [
+      { "fr": "ramasser des coquillages", "ru": "собирать ракушки" },
+      { "fr": "un coquillage vide", "ru": "пустая ракушка" },
+      { "fr": "un plateau de coquillages", "ru": "тарелка (ассорти) морских моллюсков" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "coquille",
+        "note": "coquillage = ракушка целиком (раковина + моллюск), которую находят на пляже; coquille = сама оболочка-раковина (а ещё скорлупа яйца, опечатка). У coquillage есть своя coquille."
+      },
+      {
+        "with": "crustacé",
+        "note": "coquillage = моллюск в раковине (мидия, устрица); crustacé = ракообразное в панцире (краб, креветка). В меню «fruits de mer» бывают и те, и другие."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["plage", "mer"],
+    "caseIds": ["wc-plage"]
+  },
+  {
+    "id": "wl-plage-maree",
+    "lemma": "marée",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ma.ʁe/",
+    "translationsRu": ["прилив", "отлив"],
+    "translationsEn": ["tide"],
+    "semanticCore": "Прилив и отлив — медленный подъём и спад уровня моря дважды в день; одно слово marée на оба движения, направление уточняют haute/basse.",
+    "collocations": [
+      { "fr": "la marée haute", "ru": "прилив (высокая вода)" },
+      { "fr": "la marée basse", "ru": "отлив (низкая вода)" },
+      { "fr": "la marée monte", "ru": "вода прибывает (начинается прилив)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vague",
+        "note": "la marée = прилив/отлив (медленное изменение уровня моря за часы); une vague = волна (быстрый накат воды). Marée меняет, где проходит вода, vague просто набегает."
+      },
+      {
+        "with": "courant",
+        "note": "la marée = вертикальный подъём/спад воды; le courant = течение (горизонтальное движение воды). Прилив приходит, течение уносит."
+      }
+    ],
+    "frequencyRank": 900,
+    "level": "A2",
+    "tags": ["plage", "mer"],
+    "caseIds": ["wc-plage"]
+  },
+  {
+    "id": "wl-plage-crabe",
+    "lemma": "crabe",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kʁab/",
+    "translationsRu": ["краб"],
+    "translationsEn": ["crab"],
+    "semanticCore": "Краб — морское ракообразное с клешнями и панцирем, которое бегает боком по песку и камням.",
+    "collocations": [
+      { "fr": "un crabe sur le sable", "ru": "краб на песке" },
+      { "fr": "la pince du crabe", "ru": "клешня краба" },
+      { "fr": "marcher en crabe", "ru": "идти боком (как краб)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "crevette",
+        "note": "crabe = краб (с панцирем и клешнями); crevette = креветка (маленькая, продолговатая). Оба — морепродукты, но разные животные."
+      },
+      {
+        "with": "crâne",
+        "note": "crabe /kʁab/ = краб; crâne /kʁɑn/ = череп. Похоже звучат, но это разные слова — конец -be и -ne отличает их."
+      }
+    ],
+    "frequencyRank": 840,
+    "level": "A2",
+    "tags": ["plage", "animal"],
+    "caseIds": ["wc-plage"]
+  },
+  {
+    "id": "wl-plage-nager",
+    "lemma": "nager",
+    "pos": "verb",
+    "ipa": "/na.ʒe/",
+    "translationsRu": ["плавать", "плыть"],
+    "translationsEn": ["to swim"],
+    "semanticCore": "Передвигаться в воде, работая руками и ногами — как умение (уметь плавать) и как действие (плыть сейчас).",
+    "collocations": [
+      { "fr": "nager dans la mer", "ru": "плавать в море" },
+      { "fr": "savoir nager", "ru": "уметь плавать" },
+      { "fr": "nager le crawl", "ru": "плыть кролем" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "se baigner",
+        "note": "nager = плавать (активно работать в воде); se baigner = купаться (просто быть в воде, плескаться). Можно se baigner, не умея nager."
+      },
+      {
+        "with": "se noyer",
+        "note": "nager = плавать; se noyer = тонуть. Звучат по-разному, но смысл — противоположность: умеешь nager — меньше риск te noyer."
+      }
+    ],
+    "frequencyRank": 580,
+    "level": "A2",
+    "tags": ["plage", "action"],
+    "caseIds": ["wc-plage"]
+  }
+]

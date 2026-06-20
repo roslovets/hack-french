@@ -1,0 +1,284 @@
+[
+  {
+    "id": "wc-camping",
+    "title": "Поход",
+    "theme": "camping",
+    "level": "A2",
+    "wordIds": [
+      "wl-camping-tente",
+      "wl-camping-randonnee",
+      "wl-camping-boussole",
+      "wl-camping-gourde",
+      "wl-camping-sac-couchage",
+      "wl-camping-feu-camp",
+      "wl-camping-hamac",
+      "wl-camping-rechaud"
+    ],
+    "steps": [
+      {
+        "id": "wc-camping-tente-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-camping-tente",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On monte la tente avant la nuit.",
+          "Il pleut, on reste sous la tente.",
+          "Notre tente est trop petite pour quatre personnes."
+        ],
+        "options": ["палатка", "тент от солнца", "спальный мешок", "навес у дома"],
+        "correctIndex": 0,
+        "explanation": "tente (f) — палатка, в которой ночуют. «monter / planter la tente» — поставить палатку. Не путать с русским «тент» (навес): по-французски навес — un auvent / une bâche."
+      },
+      {
+        "id": "wc-camping-tente-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-camping-tente",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Слушай. Какое из слов прозвучало?",
+        "audioText": "tente",
+        "options": ["tente", "trente", "vente", "pente"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало tente /tɑ̃t/ — палатка. Похожи, но другие: trente /tʁɑ̃t/ — тридцать (после t слышно r), vente /vɑ̃t/ — продажа (начинается на v), pente /pɑ̃t/ — склон (начинается на p). У всех носовой /ɑ̃t/, различает только начало слова."
+      },
+      {
+        "id": "wc-camping-randonnee-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-camping-randonnee",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On part en randonnée demain matin.",
+          "Cette randonnée dure six heures.",
+          "J'adore la randonnée en montagne."
+        ],
+        "options": [
+          "поход, пеший маршрут",
+          "пробежка по стадиону",
+          "прогулка по магазинам",
+          "поездка на машине"
+        ],
+        "correctIndex": 0,
+        "explanation": "randonnée (f) — поход пешком (или на велосипеде), долгий маршрут на природе. «faire une randonnée», «partir en randonnée». Разговорно сокращают до la rando."
+      },
+      {
+        "id": "wc-camping-randonnee-hint",
+        "kind": "wordHint",
+        "wordId": "wl-camping-randonnee",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: долгий пеший маршрут на природе, обычно в горах или в лесу.",
+        "answer": "randonnée",
+        "hints": [
+          "Начинается на rand…",
+          "Женский род, есть accent aigu на конце: -ée",
+          "On part en ___ en montagne."
+        ],
+        "explanation": "randonnée (f) — поход. Пишется с двумя n и окончанием -ée: r-a-n-d-o-n-n-é-e. Глагол «гулять, бродить» — randonner."
+      },
+      {
+        "id": "wc-camping-boussole-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-camping-boussole",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Sans boussole, on s'est perdus dans la forêt.",
+          "La boussole indique le nord.",
+          "Prends la boussole, le GPS ne capte plus."
+        ],
+        "options": ["компас", "карта", "бинокль", "часы"],
+        "correctIndex": 0,
+        "explanation": "boussole (f) — компас, стрелка показывает на север (le nord). Карта — une carte, бинокль — des jumelles."
+      },
+      {
+        "id": "wc-camping-boussole-trap",
+        "kind": "trap",
+        "wordId": "wl-camping-boussole",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Турист в лесу говорит: «J'ai une boussole.» Что у него есть?",
+        "options": [
+          "компас (для сторон света)",
+          "циркуль (чтобы чертить круги)",
+          "карта местности",
+          "навигатор-GPS"
+        ],
+        "correctIndex": 0,
+        "explanation": "boussole (f) — туристический компас. А вот «компас» для черчения кругов — это un compas. Не путать: похожи по-русски, но разные предметы. Идиома «perdre la boussole» значит «потерять голову, растеряться»."
+      },
+      {
+        "id": "wc-camping-gourde-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-camping-gourde",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Remplis ta gourde avant de partir.",
+          "Ma gourde est vide, j'ai soif.",
+          "Il boit de l'eau à la gourde pendant la randonnée."
+        ],
+        "options": ["фляга", "термос для кофе", "кружка", "бутылка вина"],
+        "correctIndex": 0,
+        "explanation": "gourde (f) — фляга, многоразовая бутылка для воды в походе. «remplir sa gourde» — наполнить флягу. Термос — un thermos."
+      },
+      {
+        "id": "wc-camping-gourde-trap",
+        "kind": "trap",
+        "wordId": "wl-camping-gourde",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «gourd» — это тыква-горлянка. А что значит французское la gourde в походе?",
+        "options": ["фляга для воды", "тыква", "рюкзак", "котелок"],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: фр. gourde (f) — это фляга для воды, а не «gourd» (тыква). Когда-то фляги и правда делали из сушёной тыквы — отсюда родство, но сегодня значение другое. В разговоре gourde может ещё значить «простофиля»."
+      },
+      {
+        "id": "wc-camping-sac-couchage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-camping-sac-couchage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно выражение во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je déroule mon sac de couchage dans la tente.",
+          "Ce sac de couchage tient chaud jusqu'à moins dix.",
+          "N'oublie pas ton sac de couchage, les nuits sont froides."
+        ],
+        "options": ["спальный мешок", "рюкзак", "надувной матрас", "одеяло"],
+        "correctIndex": 0,
+        "explanation": "un sac de couchage — спальный мешок (дословно «мешок для сна», от coucher — ложиться спать). «dérouler son sac de couchage» — разложить/раскатать спальник. Рюкзак — un sac à dos."
+      },
+      {
+        "id": "wc-camping-sac-couchage-cmp",
+        "kind": "compare",
+        "wordId": "wl-camping-sac-couchage",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un sac de couchage и un sac à dos. В чём разница?",
+        "phrases": ["Je dors dans mon sac de couchage.", "Je porte mon sac à dos."],
+        "options": [
+          "«sac de couchage» — спальный мешок (в нём спят); «sac à dos» — рюкзак (его несут на спине).",
+          "Это одно и то же, два названия рюкзака.",
+          "«sac de couchage» — рюкзак, а «sac à dos» — спальник.",
+          "Оба означают палатку."
+        ],
+        "correctIndex": 0,
+        "explanation": "Оба начинаются с sac (мешок/сумка), но: sac de couchage — спальный мешок (couchage — «спанье»), а sac à dos — рюкзак (à dos — «на спину»). Предлог меняет смысл."
+      },
+      {
+        "id": "wc-camping-feu-camp-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-camping-feu-camp",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно выражение во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le soir, on allume un feu de camp.",
+          "On chante des chansons autour du feu de camp.",
+          "Le feu de camp s'éteint doucement."
+        ],
+        "options": ["костёр", "фейерверк", "свеча", "печка в доме"],
+        "correctIndex": 0,
+        "explanation": "un feu de camp — костёр (дословно «огонь лагеря»). «allumer un feu de camp» — разжечь костёр, «autour du feu de camp» — вокруг костра. Фейерверк — un feu d'artifice."
+      },
+      {
+        "id": "wc-camping-feu-camp-sort",
+        "kind": "sort",
+        "wordId": "wl-camping-feu-camp",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с feu de camp звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "allumer un feu de camp",
+            "basket": "ok"
+          },
+          {
+            "text": "autour du feu de camp",
+            "basket": "ok"
+          },
+          {
+            "text": "éteindre le feu de camp",
+            "basket": "ok"
+          },
+          {
+            "text": "ouvrir un feu de camp",
+            "basket": "no"
+          },
+          {
+            "text": "conduire un feu de camp",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Костёр «allume» (зажигают), «éteint» (тушат), и сидят «autour» (вокруг). А «ouvrir / conduire un feu de camp» (открыть / водить костёр) — бессмыслица."
+      },
+      {
+        "id": "wc-camping-hamac-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-camping-hamac",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит hamac?",
+        "bridge": "Англ. «hammock» — гамак; фр. hamac — почти то же слово, без второго m. Оба пришли из языка таино через испанский. Читается /a.mak/: h не звучит, но конечная c звучит.",
+        "options": ["гамак", "гладильная доска", "качели на цепях", "шезлонг"],
+        "correctIndex": 0,
+        "explanation": "hamac (m) = гамак. Англ. «hammock» — надёжный мост. Важно: h «придыхательное» (h aspiré), поэтому говорят le hamac, ce hamac — без слияния (не «l'hamac»)."
+      },
+      {
+        "id": "wc-camping-hamac-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-camping-hamac",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для hamac (гамак), чтобы запомнить мужской род (un hamac) и что h «придыхательное» — говорят le hamac, без слияния.",
+        "examples": [
+          "«Гамак» и hamac звучат почти одинаково — представь, как ОН, твой hamac, качается между двух сосен.",
+          "Скажи вслух «le hamac» с чёткой паузой после le — h не сливается, как будто перед словом стоит невидимая стенка."
+        ]
+      },
+      {
+        "id": "wc-camping-rechaud-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-camping-rechaud",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On fait chauffer l'eau sur le réchaud à gaz.",
+          "J'allume le réchaud pour préparer le café.",
+          "Ce petit réchaud tient dans le sac à dos."
+        ],
+        "options": ["горелка, походная плитка", "костёр", "холодильник", "чайник"],
+        "correctIndex": 0,
+        "explanation": "un réchaud — газовая горелка / походная плитка, на которой готовят в походе. «un réchaud à gaz», «allumer le réchaud». Это не «разогретое блюдо» (réchauffé) — просто похоже по корню."
+      },
+      {
+        "id": "wc-camping-rechaud-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-camping-rechaud",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — то, на чём в походе готовят или греют еду. Найди лишнее.",
+        "options": ["le réchaud", "le feu de camp", "les braises", "la boussole"],
+        "correctIndex": 3,
+        "explanation": "На réchaud (горелка), feu de camp (костёр) и braises (угли) можно готовить и греть еду. Лишнее — la boussole (компас): она показывает стороны света, а не греет."
+      }
+    ]
+  }
+]

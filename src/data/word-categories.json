@@ -2,7 +2,16 @@
   {
     "id": "table",
     "title": "Еда и кафе",
-    "themes": ["boulangerie", "cafe", "nourriture", "restaurant", "boissons", "cuisson", "atable"],
+    "themes": [
+      "boulangerie",
+      "cafe",
+      "nourriture",
+      "restaurant",
+      "boissons",
+      "cuisson",
+      "atable",
+      "gouts"
+    ],
     "bossId": "wc-boss-table"
   },
   {
@@ -75,7 +84,8 @@
       "opinions",
       "matieres",
       "idees",
-      "media"
+      "media",
+      "papeterie"
     ],
     "bossId": "wc-boss-ecole-politesse"
   },
@@ -119,14 +129,15 @@
       "meteo2",
       "animaux2",
       "paysage",
-      "ecologie"
+      "ecologie",
+      "espace"
     ],
     "bossId": "wc-boss-weather"
   },
   {
     "id": "leisure",
     "title": "Досуг и интересы",
-    "themes": ["loisirs", "sport", "fetes", "arts"],
+    "themes": ["loisirs", "sport", "fetes", "arts", "plage", "camping"],
     "bossId": "wc-boss-leisure"
   },
   {

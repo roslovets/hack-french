@@ -1,0 +1,282 @@
+[
+  {
+    "id": "wc-plage",
+    "title": "Пляж",
+    "theme": "plage",
+    "level": "A2",
+    "wordIds": [
+      "wl-plage-sable",
+      "wl-plage-vague",
+      "wl-plage-parasol",
+      "wl-plage-bronzer",
+      "wl-plage-coquillage",
+      "wl-plage-maree",
+      "wl-plage-crabe",
+      "wl-plage-nager"
+    ],
+    "steps": [
+      {
+        "id": "wc-plage-sable-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-plage-sable",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les enfants jouent dans le sable.",
+          "Le sable est chaud sous mes pieds.",
+          "On construit un château de sable."
+        ],
+        "options": ["песок", "море", "ракушка", "пляжный зонт"],
+        "correctIndex": 0,
+        "explanation": "sable (m) — песок. «un château de sable» — песочный замок, «du sable fin» — мелкий песок. Это материал, из которого состоит пляж; сам пляж — la plage."
+      },
+      {
+        "id": "wc-plage-sable-sort",
+        "kind": "sort",
+        "wordId": "wl-plage-sable",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом sable звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un château de sable",
+            "basket": "ok"
+          },
+          {
+            "text": "du sable fin",
+            "basket": "ok"
+          },
+          {
+            "text": "marcher sur le sable",
+            "basket": "ok"
+          },
+          {
+            "text": "boire du sable",
+            "basket": "no"
+          },
+          {
+            "text": "un sable rapide",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un château de sable», «du sable fin», «marcher sur le sable» — естественно. «boire du sable» (пить песок) — бессмыслица; «зыбучие пески» — это des sables mouvants, а не «un sable rapide»."
+      },
+      {
+        "id": "wc-plage-vague-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-plage-vague",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "Une grosse vague arrive sur la plage.",
+          "Les enfants sautent dans les vagues.",
+          "Le surfeur attend la prochaine vague."
+        ],
+        "options": ["волна", "прилив", "течение", "брызги"],
+        "correctIndex": 0,
+        "explanation": "une vague (f) — волна: водяной вал, набегающий на берег. «surfer sur les vagues» — кататься на волнах. Прилив — la marée, течение — le courant."
+      },
+      {
+        "id": "wc-plage-vague-trap",
+        "kind": "trap",
+        "wordId": "wl-plage-vague",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово vague встречается дважды: «une grosse vague» и «un souvenir vague». Одно ли это слово?",
+        "options": [
+          "Нет: la vague (сущ., ж. р.) — волна; vague (прилаг.) — смутный, расплывчатый. Одинаково пишутся, но это разные слова.",
+          "Да, оба значат «волна».",
+          "Да, оба значат «смутный».",
+          "Нет: первое значит «прилив», второе — «волна»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка омонимов: une vague — волна (существительное, женского рода), а vague как прилагательное — «смутный, расплывчатый» (un souvenir vague). Подсказывают артикль и роль в фразе."
+      },
+      {
+        "id": "wc-plage-parasol-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-plage-parasol",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит parasol?",
+        "bridge": "Англ. «parasol» — зонт от солнца; то же слово. Внутри спрятано para- («против») + sol («солнце»): «против солнца».",
+        "options": ["зонт от солнца", "зонт от дождя", "шезлонг", "полотенце"],
+        "correctIndex": 0,
+        "explanation": "parasol (m) = зонт от солнца — мост от англ. «parasol». Para- значит «против», sol — «солнце»: то, что защищает от солнца на пляже. Зонт от дождя — un parapluie."
+      },
+      {
+        "id": "wc-plage-parasol-cmp",
+        "kind": "compare",
+        "wordId": "wl-plage-parasol",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un parasol и un parapluie — в чём разница?",
+        "phrases": ["Sur la plage, on plante un parasol.", "Sous la pluie, on ouvre un parapluie."],
+        "options": [
+          "parasol = зонт от солнца (para + sol); parapluie = зонт от дождя (para + pluie). На пляже нужен parasol.",
+          "Это полные синонимы.",
+          "parasol — от дождя, parapluie — от солнца.",
+          "parasol — это маленький зонтик, parapluie — большой."
+        ],
+        "correctIndex": 0,
+        "explanation": "Оба «зонты», но para- + sol = «против солнца» (пляжный), а para- + pluie = «против дождя». На пляже спасает le parasol, под дождём — le parapluie."
+      },
+      {
+        "id": "wc-plage-bronzer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-plage-bronzer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Elle aime bronzer au soleil.",
+          "Je vais à la plage pour bronzer.",
+          "Après les vacances, il est bien bronzé."
+        ],
+        "options": ["загорать", "плавать", "отдыхать в тени", "купаться"],
+        "correctIndex": 0,
+        "explanation": "bronzer — загорать (кожа темнеет на солнце). От слова bronze: цвет загара как бронза. «se faire bronzer» — специально лежать на солнце, «bien bronzé» — хорошо загоревший."
+      },
+      {
+        "id": "wc-plage-bronzer-trap",
+        "kind": "trap",
+        "wordId": "wl-plage-bronzer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг пишет: «J'ai attrapé un coup de soleil.» Это про загар или про что-то другое?",
+        "options": [
+          "Он обгорел: un coup de soleil — солнечный ожог (кожа покраснела), а не загар.",
+          "Он красиво загорел.",
+          "Его ударило солнцем по голове (солнечный удар).",
+          "Он поймал солнечный зайчик."
+        ],
+        "correctIndex": 0,
+        "explanation": "Не путать: bronzer — красиво загореть, а «attraper un coup de soleil» — обгореть (un coup de soleil = солнечный ожог кожи). Солнечный удар по голове — это une insolation."
+      },
+      {
+        "id": "wc-plage-coquillage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-plage-coquillage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Sur la plage, je ramasse des coquillages.",
+          "Ce coquillage est rose et brillant.",
+          "Elle colle des coquillages sur une boîte."
+        ],
+        "options": ["ракушка", "краб", "камешек", "водоросль"],
+        "correctIndex": 0,
+        "explanation": "coquillage (m) — ракушка (морская раковина с моллюском внутри). «ramasser des coquillages» — собирать ракушки. Тем же словом называют моллюсков-морепродукты (мидии, устрицы)."
+      },
+      {
+        "id": "wc-plage-coquillage-cmp",
+        "kind": "compare",
+        "wordId": "wl-plage-coquillage",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un coquillage и une coquille — в чём разница?",
+        "phrases": ["Je ramasse un coquillage sur la plage.", "La coquille de l'œuf est cassée."],
+        "options": [
+          "coquillage = ракушка целиком (с моллюском), которую находят на пляже; coquille = сама оболочка-раковина, а также скорлупа яйца.",
+          "Это одно и то же слово.",
+          "coquillage — это скорлупа яйца, coquille — морская ракушка.",
+          "coquillage — это краб, coquille — ракушка."
+        ],
+        "correctIndex": 0,
+        "explanation": "un coquillage — морская ракушка целиком (раковина + моллюск). une coquille — сама твёрдая оболочка: и раковина моллюска, и скорлупа яйца («la coquille d'un œuf»). У coquillage есть своя coquille."
+      },
+      {
+        "id": "wc-plage-maree-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-plage-maree",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "À marée basse, on voit les rochers.",
+          "La marée monte, il faut reculer.",
+          "Les bateaux attendent la marée haute pour partir."
+        ],
+        "options": ["прилив и отлив", "волна", "буря", "глубина"],
+        "correctIndex": 0,
+        "explanation": "marée (f) — прилив/отлив: медленный подъём и спад моря дважды в день. «marée haute» — прилив, «marée basse» — отлив, «la marée monte» — вода прибывает. Это не отдельная волна (une vague)."
+      },
+      {
+        "id": "wc-plage-maree-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-plage-maree",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова описывают движение и состояние моря. Найди лишнее.",
+        "options": ["la marée", "la vague", "le courant", "le parasol"],
+        "correctIndex": 3,
+        "explanation": "la marée (прилив/отлив), la vague (волна) и le courant (течение) — всё про воду и её движение. le parasol (пляжный зонт) — лишний: это предмет на берегу, а не часть моря."
+      },
+      {
+        "id": "wc-plage-crabe-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-plage-crabe",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит crabe?",
+        "bridge": "Англ. «crab» — краб. Фр. crabe — тот же корень, только с -e на конце; читается /kʁab/.",
+        "options": ["краб", "креветка", "рыба", "медуза"],
+        "correctIndex": 0,
+        "explanation": "crabe (m) = краб — мост от англ. «crab». Морское ракообразное с клешнями (les pinces). Креветка — une crevette, медуза — une méduse."
+      },
+      {
+        "id": "wc-plage-crabe-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-plage-crabe",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "crabe",
+        "options": ["crabe", "crâne", "grave", "cravate"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало crabe /kʁab/ — краб. Похоже звучат: crâne /kʁɑn/ (череп), grave /ɡʁav/ (серьёзный), cravate /kʁa.vat/ (галстук). Они отличаются началом или концом слова."
+      },
+      {
+        "id": "wc-plage-nager-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-plage-nager",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'adore nager dans la mer.",
+          "Mon fils apprend à nager.",
+          "Il sait nager depuis l'âge de cinq ans."
+        ],
+        "options": ["плавать", "нырять", "загорать", "грести (на лодке)"],
+        "correctIndex": 0,
+        "explanation": "nager — плавать, плыть (работать руками и ногами в воде). «savoir nager» — уметь плавать, «apprendre à nager» — учиться плавать. Нырять — plonger."
+      },
+      {
+        "id": "wc-plage-nager-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-plage-nager",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "nager",
+        "options": ["nager", "neiger", "manger", "ranger"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало nager /na.ʒe/ — плавать. Похоже звучат: neiger /ne.ʒe/ (идти — о снеге), manger /mɑ̃.ʒe/ (есть), ranger /ʁɑ̃.ʒe/ (убирать). Все на -ger, но с разным началом."
+      }
+    ]
+  }
+]

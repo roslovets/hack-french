@@ -1,0 +1,229 @@
+[
+  {
+    "id": "wl-gouts-sucre",
+    "lemma": "sucré",
+    "pos": "adj",
+    "ipa": "/sy.kʁe/",
+    "translationsRu": ["сладкий", "подслащённый"],
+    "translationsEn": ["sweet", "sugary"],
+    "semanticCore": "Сладкий на вкус — содержащий сахар или похожий по вкусу на сахар; о еде и напитках.",
+    "collocations": [
+      { "fr": "un café trop sucré", "ru": "слишком сладкий кофе" },
+      { "fr": "une boisson sucrée", "ru": "сладкий напиток" },
+      { "fr": "le sucré-salé", "ru": "сладко-солёное (сочетание вкусов)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "doux",
+        "note": "sucré = сладкий на вкус (с сахаром); doux = мягкий, неострый, нежный. «Un vin doux» — мягкое/некрепкое вино, а «un gâteau sucré» — сладкий по сахару."
+      },
+      {
+        "with": "sucre",
+        "note": "sucré — прилагательное «сладкий»; le sucre — существительное «сахар». Не путать: «du café sucré» (сладкий кофе) против «du sucre dans le café» (сахар в кофе)."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["gouts", "cuisine"],
+    "caseIds": ["wc-gouts"]
+  },
+  {
+    "id": "wl-gouts-sale",
+    "lemma": "salé",
+    "pos": "adj",
+    "ipa": "/sa.le/",
+    "translationsRu": ["солёный"],
+    "translationsEn": ["salty", "savoury"],
+    "semanticCore": "Солёный на вкус; в кулинарии — «несладкая» (закусочная) часть еды, в противовес сладкому.",
+    "collocations": [
+      { "fr": "un plat salé", "ru": "солёное / несладкое блюдо" },
+      { "fr": "de l'eau salée", "ru": "солёная вода" },
+      { "fr": "trop salé", "ru": "слишком солёный (пересоленный)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sucré",
+        "note": "salé = солёный / несладкий; sucré = сладкий. Во французском меню «salé» и «sucré» делят еду на закуски и десерты, а не только по вкусу соли."
+      },
+      {
+        "with": "sale",
+        "note": "salé /sa.le/ = солёный; sale /sal/ = грязный. Разные слова и разное звучание: у salé есть é на конце и второй слог."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["gouts", "cuisine"],
+    "caseIds": ["wc-gouts"]
+  },
+  {
+    "id": "wl-gouts-amer",
+    "lemma": "amer",
+    "displayForm": "amer / amère",
+    "pos": "adj",
+    "ipa": "/a.mɛʁ/",
+    "translationsRu": ["горький"],
+    "translationsEn": ["bitter"],
+    "semanticCore": "Горький на вкус — как чёрный кофе, тёмный шоколад или хинин; также горький в переносном смысле.",
+    "collocations": [
+      { "fr": "un café amer", "ru": "горький кофе" },
+      { "fr": "un goût amer", "ru": "горький привкус" },
+      { "fr": "un chocolat amer", "ru": "горький шоколад" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "acide",
+        "note": "amer = горький (кофе, хинин); acide = кислый (лимон, уксус). Русские часто путают эти два «невкусных» ощущения, но во французском они чётко разные."
+      },
+      {
+        "with": "amère",
+        "note": "amer — мужская форма, amère — женская: «un café amer», но «une bière amère». В обеих формах конечное -r произносится: /a.mɛʁ/."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["gouts", "sensation"],
+    "caseIds": ["wc-gouts"]
+  },
+  {
+    "id": "wl-gouts-acide",
+    "lemma": "acide",
+    "pos": "adj",
+    "ipa": "/a.sid/",
+    "translationsRu": ["кислый"],
+    "translationsEn": ["sour", "acidic"],
+    "semanticCore": "Кислый на вкус — как лимон, уксус или незрелые фрукты; от того же корня, что «кислота».",
+    "collocations": [
+      { "fr": "un citron acide", "ru": "кислый лимон" },
+      { "fr": "un goût acide", "ru": "кислый вкус" },
+      { "fr": "des fruits acides", "ru": "кислые фрукты" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "amer",
+        "note": "acide = кислый (лимон, уксус); amer = горький (кофе, хинин). Лимон — acide, а не amer; кофе — amer, а не acide."
+      },
+      {
+        "with": "aigre",
+        "note": "acide = кислый (естественно, как лимон); aigre = прокисший, скисший (молоко, вино, ставшее кислым от порчи). «Lait aigre» — испорченное молоко."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["gouts", "sensation"],
+    "caseIds": ["wc-gouts"]
+  },
+  {
+    "id": "wl-gouts-epice",
+    "lemma": "épicé",
+    "pos": "adj",
+    "ipa": "/e.pi.se/",
+    "translationsRu": ["острый", "пряный"],
+    "translationsEn": ["spicy", "spiced"],
+    "semanticCore": "Острый или пряный — приготовленный с пряностями и специями (épices); о блюдах и кухне.",
+    "collocations": [
+      { "fr": "un plat épicé", "ru": "острое / пряное блюдо" },
+      { "fr": "une cuisine épicée", "ru": "острая (пряная) кухня" },
+      { "fr": "trop épicé pour moi", "ru": "слишком остро для меня" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "piquant",
+        "note": "épicé = приготовленный с пряностями (пряный); piquant = жгучий, который «щиплет» язык (как перец чили). Блюдо может быть épicé, но не piquant, и наоборот."
+      },
+      {
+        "with": "épice",
+        "note": "épicé — прилагательное «острый, пряный»; une épice — существительное «специя, пряность». «Un plat épicé» — это блюдо с «des épices»."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["gouts", "cuisine"],
+    "caseIds": ["wc-gouts"]
+  },
+  {
+    "id": "wl-gouts-gout",
+    "lemma": "goût",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɡu/",
+    "translationsRu": ["вкус"],
+    "translationsEn": ["taste", "flavour"],
+    "semanticCore": "Вкус: и ощущение во рту, и «вкус» как чувство меры и предпочтения (хороший вкус, мои вкусы).",
+    "collocations": [
+      { "fr": "avoir bon goût", "ru": "быть вкусным / иметь хороший вкус" },
+      { "fr": "le goût du café", "ru": "вкус кофе" },
+      { "fr": "chacun ses goûts", "ru": "у каждого свой вкус (о вкусах не спорят)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "saveur",
+        "note": "goût = вкус в широком смысле (и предпочтение, и ощущение); saveur = именно вкусовой оттенок еды, более «гурманское» и книжное слово. «Avoir bon goût» нельзя заменить на saveur."
+      },
+      {
+        "with": "goutte",
+        "note": "goût /ɡu/ = вкус; une goutte /ɡut/ = капля. Конечное -t у goût не читается, у goutte — читается. Не путать на слух."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["gouts", "sensation"],
+    "caseIds": ["wc-gouts"]
+  },
+  {
+    "id": "wl-gouts-saveur",
+    "lemma": "saveur",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sa.vœʁ/",
+    "translationsRu": ["вкус", "привкус"],
+    "translationsEn": ["flavour", "savour"],
+    "semanticCore": "Вкусовой оттенок еды — то, как она «играет» во рту; более изысканное слово, чем goût.",
+    "collocations": [
+      { "fr": "une saveur sucrée", "ru": "сладкий привкус" },
+      { "fr": "plein de saveur", "ru": "полный вкуса / насыщенный по вкусу" },
+      { "fr": "sans saveur", "ru": "без вкуса / безвкусный" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "goût",
+        "note": "saveur = вкусовой оттенок самой еды (часто во множественном: les saveurs); goût = вкус вообще, в том числе личное предпочтение. О кулинарии чаще saveur, о мнении — goût."
+      },
+      {
+        "with": "odeur",
+        "note": "saveur = вкус (то, что чувствует язык); une odeur = запах (то, что чувствует нос). Их легко смешать, говоря об «аромате» еды."
+      }
+    ],
+    "frequencyRank": 840,
+    "level": "A2",
+    "tags": ["gouts", "sensation"],
+    "caseIds": ["wc-gouts"]
+  },
+  {
+    "id": "wl-gouts-fade",
+    "lemma": "fade",
+    "pos": "adj",
+    "ipa": "/fad/",
+    "translationsRu": ["пресный", "безвкусный"],
+    "translationsEn": ["bland", "tasteless"],
+    "semanticCore": "Пресный, безвкусный — еда без выраженного вкуса, которой не хватает соли или специй.",
+    "collocations": [
+      { "fr": "un plat fade", "ru": "пресное (безвкусное) блюдо" },
+      { "fr": "une soupe fade", "ru": "пресный суп" },
+      { "fr": "c'est un peu fade", "ru": "это пресновато" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fade (англ. to fade)",
+        "note": "Ложный друг: фр. fade = пресный, безвкусный (о еде), а англ. «to fade» = выцветать, угасать. Французское fade — только про вкус, не про цвет."
+      },
+      {
+        "with": "insipide",
+        "note": "fade = пресный, безвкусный (обиходно, о еде); insipide = безвкусный, «никакой» (книжнее, и о еде, и переносно — о скучном человеке, фильме)."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["gouts", "sensation"],
+    "caseIds": ["wc-gouts"]
+  }
+]
