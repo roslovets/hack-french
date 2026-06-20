@@ -358,5 +358,95 @@
     "audio": {
       "isolated": "audio/wl-voiture-coffre.mp3"
     }
+  },
+  {
+    "id": "wl-voiture-panne",
+    "lemma": "panne",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pan/",
+    "translationsRu": ["поломка", "неисправность"],
+    "translationsEn": ["breakdown", "malfunction"],
+    "semanticCore": "Поломка или техническая неисправность: машина или прибор перестаёт работать; говорят «être en panne».",
+    "collocations": [
+      {
+        "fr": "être en panne",
+        "ru": "сломаться, не работать"
+      },
+      {
+        "fr": "tomber en panne",
+        "ru": "сломаться, выйти из строя"
+      },
+      {
+        "fr": "une panne de moteur",
+        "ru": "неисправность двигателя"
+      },
+      {
+        "fr": "une panne d'essence",
+        "ru": "закончился бензин"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "problème",
+        "note": "un problème — любая проблема; une panne — именно техническая неисправность, из-за которой машина или прибор перестаёт работать."
+      },
+      {
+        "with": "accident",
+        "note": "un accident — авария или происшествие; une panne — поломка без столкновения. Машина может быть en panne, даже если аварии не было."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["voiture", "dépannage"],
+    "caseIds": ["wc-voiture"],
+    "audio": {
+      "isolated": "audio/wl-voiture-panne.mp3"
+    }
+  },
+  {
+    "id": "wl-voiture-garagiste",
+    "lemma": "garagiste",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɡa.ʁa.ʒist/",
+    "translationsRu": ["автомеханик", "работник автосервиса"],
+    "translationsEn": ["garage mechanic", "garage owner"],
+    "semanticCore": "Автомеханик или работник автосервиса: он осматривает, обслуживает и ремонтирует машины.",
+    "collocations": [
+      {
+        "fr": "aller chez le garagiste",
+        "ru": "ехать в автосервис"
+      },
+      {
+        "fr": "appeler le garagiste",
+        "ru": "вызвать автомеханика"
+      },
+      {
+        "fr": "le garagiste répare la voiture",
+        "ru": "автомеханик ремонтирует машину"
+      },
+      {
+        "fr": "un bon garagiste",
+        "ru": "хороший автомеханик"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "garage",
+        "note": "le garage — место, где ремонтируют или ставят машину; le garagiste — человек, который там работает или руководит им."
+      },
+      {
+        "with": "mécanicien",
+        "note": "un mécanicien — механик в широком смысле; un garagiste работает с автомобилями в гараже или автосервисе."
+      }
+    ],
+    "frequencyRank": 1250,
+    "level": "A2",
+    "tags": ["voiture", "métier", "dépannage"],
+    "caseIds": ["wc-voiture"],
+    "audio": {
+      "isolated": "audio/wl-voiture-garagiste.mp3"
+    }
   }
 ]

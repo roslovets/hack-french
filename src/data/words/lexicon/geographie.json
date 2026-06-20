@@ -33,7 +33,7 @@
       }
     ],
     "frequencyRank": 720,
-    "level": "B1",
+    "level": "A2",
     "tags": ["geographie", "lieux"],
     "caseIds": ["wc-geographie"],
     "audio": {
@@ -78,7 +78,7 @@
       }
     ],
     "frequencyRank": 760,
-    "level": "B1",
+    "level": "A2",
     "tags": ["geographie", "territoire"],
     "caseIds": ["wc-geographie"],
     "audio": {
@@ -119,7 +119,7 @@
       }
     ],
     "frequencyRank": 820,
-    "level": "B1",
+    "level": "A2",
     "tags": ["geographie", "terre"],
     "caseIds": ["wc-geographie"],
     "audio": {
@@ -156,7 +156,7 @@
       }
     ],
     "frequencyRank": 690,
-    "level": "B1",
+    "level": "A2",
     "tags": ["geographie", "eau"],
     "caseIds": ["wc-geographie"],
     "audio": {
@@ -197,7 +197,7 @@
       }
     ],
     "frequencyRank": 740,
-    "level": "B1",
+    "level": "A2",
     "tags": ["geographie", "eau"],
     "caseIds": ["wc-geographie"],
     "audio": {
@@ -238,7 +238,7 @@
       }
     ],
     "frequencyRank": 480,
-    "level": "B1",
+    "level": "A2",
     "tags": ["geographie", "territoire"],
     "caseIds": ["wc-geographie"],
     "audio": {
@@ -279,7 +279,7 @@
       }
     ],
     "frequencyRank": 700,
-    "level": "B1",
+    "level": "A2",
     "tags": ["geographie", "territoire"],
     "caseIds": ["wc-geographie"],
     "audio": {
@@ -320,7 +320,7 @@
       }
     ],
     "frequencyRank": 880,
-    "level": "B1",
+    "level": "A2",
     "tags": ["geographie", "terre"],
     "caseIds": ["wc-geographie"],
     "audio": {

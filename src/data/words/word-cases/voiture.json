@@ -12,7 +12,9 @@
       "wl-voiture-frein",
       "wl-voiture-permis",
       "wl-voiture-phare",
-      "wl-voiture-coffre"
+      "wl-voiture-coffre",
+      "wl-voiture-panne",
+      "wl-voiture-garagiste"
     ],
     "steps": [
       {
@@ -278,6 +280,43 @@
           "Англ. «coffer» — сундук/ларь: le coffre в машине — как сундук сзади, куда прячешь вещи.",
           "Сейф — le coffre-fort («сильный сундук»); багажник — тот же coffre, только на колёсах, и он мужского рода: un grand coffre."
         ]
+      },
+      {
+        "id": "wc-voiture-panne-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-voiture-panne",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Notre voiture est en panne devant la station-service.",
+          "Le moteur s'arrête : c'est peut-être une panne.",
+          "Après une panne d'essence, ils ont appelé l'assistance."
+        ],
+        "options": ["поломка, неисправность", "пробка на дороге", "ремонт", "страховка"],
+        "correctIndex": 0,
+        "explanation": "panne (f) — поломка, техническая неисправность. «être / tomber en panne» — сломаться, перестать работать. Ремонт — une réparation; помощь на дороге — l'assistance."
+      },
+      {
+        "id": "wc-voiture-garagiste-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-voiture-garagiste",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Кто это по контексту?",
+        "contexts": [
+          "Le garagiste écoute le bruit du moteur.",
+          "Nous avons laissé la voiture chez le garagiste.",
+          "Le garagiste a réparé les freins."
+        ],
+        "options": [
+          "автомеханик",
+          "инструктор по вождению",
+          "продавец автомобилей",
+          "дорожный полицейский"
+        ],
+        "correctIndex": 0,
+        "explanation": "garagiste (m) — автомеханик, работник автосервиса. Его вызывают при panne; он работает в un garage."
       }
     ]
   }

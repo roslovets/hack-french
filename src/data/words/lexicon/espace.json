@@ -37,7 +37,7 @@
       }
     ],
     "frequencyRank": 620,
-    "level": "B1",
+    "level": "A2",
     "tags": ["espace", "nature", "astre"],
     "caseIds": ["wc-espace"],
     "audio": {
@@ -82,7 +82,7 @@
       }
     ],
     "frequencyRank": 840,
-    "level": "B1",
+    "level": "A2",
     "tags": ["espace", "technique", "engin"],
     "caseIds": ["wc-espace"],
     "audio": {
@@ -127,7 +127,7 @@
       }
     ],
     "frequencyRank": 380,
-    "level": "B1",
+    "level": "A2",
     "tags": ["espace", "abstrait", "lieu"],
     "caseIds": ["wc-espace"],
     "audio": {
@@ -168,7 +168,7 @@
       }
     ],
     "frequencyRank": 1500,
-    "level": "B1",
+    "level": "A2",
     "tags": ["espace", "astronomie"],
     "caseIds": ["wc-espace"],
     "audio": {
@@ -209,7 +209,7 @@
       }
     ],
     "frequencyRank": 1300,
-    "level": "B1",
+    "level": "A2",
     "tags": ["espace", "metier", "personne"],
     "caseIds": ["wc-espace"],
     "audio": {
@@ -254,7 +254,7 @@
       }
     ],
     "frequencyRank": 900,
-    "level": "B1",
+    "level": "A2",
     "tags": ["espace", "abstrait"],
     "caseIds": ["wc-espace"],
     "audio": {
@@ -298,7 +298,7 @@
       }
     ],
     "frequencyRank": 1100,
-    "level": "B1",
+    "level": "A2",
     "tags": ["espace", "verbe-action", "mouvement"],
     "caseIds": ["wc-espace"],
     "audio": {
@@ -339,7 +339,7 @@
       }
     ],
     "frequencyRank": 1700,
-    "level": "B1",
+    "level": "A2",
     "tags": ["espace", "astronomie", "astre"],
     "caseIds": ["wc-espace"],
     "audio": {
