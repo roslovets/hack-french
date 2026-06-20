@@ -1,0 +1,314 @@
+[
+  {
+    "id": "wc-toilette",
+    "title": "Гигиена",
+    "theme": "toilette",
+    "level": "A1",
+    "wordIds": [
+      "wl-toilette-savon",
+      "wl-toilette-douche",
+      "wl-toilette-serviette",
+      "wl-toilette-brosse",
+      "wl-toilette-dentifrice",
+      "wl-toilette-shampooing",
+      "wl-toilette-peigne",
+      "wl-toilette-laver"
+    ],
+    "steps": [
+      {
+        "id": "wc-toilette-savon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-toilette-savon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Lave-toi les mains avec du savon.",
+          "Il n'y a plus de savon dans la salle de bains.",
+          "J'aime le savon de Marseille."
+        ],
+        "options": ["мыло", "шампунь", "полотенце", "вода"],
+        "correctIndex": 0,
+        "explanation": "savon (m) — мыло. «se laver au savon» — мыться с мылом. Шампунь — un shampooing, полотенце — une serviette."
+      },
+      {
+        "id": "wc-toilette-savon-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-toilette-savon",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "savon",
+        "options": ["salon", "savant", "jambon", "savon"],
+        "correctIndex": 3,
+        "explanation": "savon /sa.vɔ̃/ — мыло. Похоже звучат другие слова: salon /sa.lɔ̃/ — гостиная, savant /sa.vɑ̃/ — учёный, jambon /ʒɑ̃.bɔ̃/ — ветчина. Слушай согласные и носовой звук."
+      },
+      {
+        "id": "wc-toilette-savon-hint",
+        "kind": "wordHint",
+        "wordId": "wl-toilette-savon",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: им намыливают руки и тело, бывает кусковым и жидким.",
+        "answer": "savon",
+        "hints": [
+          "Начинается на s…",
+          "5 букв, на конце носовой звук /ɔ̃/",
+          "Lave-toi les mains avec du ___."
+        ],
+        "explanation": "savon (m) — мыло. Род мужской: un savon, du savon. Читается /sa.vɔ̃/, конечная n даёт носовой звук, а не отдельный согласный."
+      },
+      {
+        "id": "wc-toilette-douche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-toilette-douche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je prends une douche tous les matins.",
+          "Il chante sous la douche.",
+          "Après le sport, une douche froide fait du bien."
+        ],
+        "options": ["душ", "ванна", "раковина", "кран"],
+        "correctIndex": 0,
+        "explanation": "douche (f) — душ. «prendre une douche» — принять душ, «sous la douche» — под душем. Ванна — un bain / une baignoire."
+      },
+      {
+        "id": "wc-toilette-douche-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-toilette-douche",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "douche",
+        "options": ["bouche", "mouche", "touche", "douche"],
+        "correctIndex": 3,
+        "explanation": "douche /duʃ/ — душ. Отличается только первым согласным от: bouche /buʃ/ — рот, mouche /muʃ/ — муха, touche /tuʃ/ — клавиша. Гласная одна и та же — слушай начало слова."
+      },
+      {
+        "id": "wc-toilette-serviette-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-toilette-serviette",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Sèche-toi avec la serviette.",
+          "Prends une serviette propre pour la douche.",
+          "La serviette de bain est encore mouillée."
+        ],
+        "options": ["полотенце", "халат", "коврик", "мочалка"],
+        "correctIndex": 0,
+        "explanation": "serviette (f) — здесь полотенце. «une serviette de bain» — банное полотенце, «se sécher avec une serviette» — вытираться полотенцем. Халат — un peignoir."
+      },
+      {
+        "id": "wc-toilette-serviette-trap",
+        "kind": "trap",
+        "wordId": "wl-toilette-serviette",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В ванной serviette — полотенце. А в ресторане «Une serviette, s'il vous plaît» — что просят?",
+        "options": [
+          "салфетку — то же слово serviette значит и салфетку за столом",
+          "ещё одно полотенце для еды",
+          "счёт — serviette значит «чек»",
+          "официанта — serviette так называют официанта"
+        ],
+        "correctIndex": 0,
+        "explanation": "Одно слово serviette значит и полотенце, и салфетку (за столом), и даже портфель. В ресторане serviette = салфетка (= англ. napkin); бумажная — une serviette en papier."
+      },
+      {
+        "id": "wc-toilette-brosse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-toilette-brosse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Où est ma brosse à dents ?",
+          "Passe-moi la brosse à cheveux.",
+          "Cette brosse est trop dure."
+        ],
+        "options": ["щётка", "расчёска", "губка", "бритва"],
+        "correctIndex": 0,
+        "explanation": "brosse (f) — щётка. Конкретную называют через «à»: une brosse à dents (зубная щётка), une brosse à cheveux (для волос). Бритва — un rasoir."
+      },
+      {
+        "id": "wc-toilette-brosse-sort",
+        "kind": "sort",
+        "wordId": "wl-toilette-brosse",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом brosse звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une brosse à dents",
+            "basket": "ok"
+          },
+          {
+            "text": "une brosse à cheveux",
+            "basket": "ok"
+          },
+          {
+            "text": "se brosser les dents",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une brosse",
+            "basket": "no"
+          },
+          {
+            "text": "une brosse à eau",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«une brosse à dents / à cheveux», «se brosser les dents» — естественно. «boire une brosse» (пить щётку) и «une brosse à eau» бессмысленны: «à» называет назначение (для зубов, для волос), а не «для воды»."
+      },
+      {
+        "id": "wc-toilette-dentifrice-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-toilette-dentifrice",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le tube de dentifrice est vide.",
+          "Mets un peu de dentifrice sur la brosse.",
+          "J'achète un dentifrice à la menthe."
+        ],
+        "options": ["зубная паста", "зубная щётка", "ополаскиватель", "нить"],
+        "correctIndex": 0,
+        "explanation": "dentifrice (m) — зубная паста. «un tube de dentifrice» — тюбик пасты. Щётку (la brosse) мажут пастой (le dentifrice) — это разные вещи."
+      },
+      {
+        "id": "wc-toilette-dentifrice-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-toilette-dentifrice",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Внутри слова спрятана подсказка. Что значит dentifrice?",
+        "bridge": "В начале — dent (зуб), как в англ. «dental», «dentist». Значит, речь о чём-то для зубов.",
+        "options": ["зубная паста", "зуб", "дёсны", "зубной врач"],
+        "correctIndex": 0,
+        "explanation": "dentifrice (m) = зубная паста. Корень dent- (зуб) подсказывает тему, но само слово — именно паста, а не «зуб» (la dent) или «дантист» (le dentiste)."
+      },
+      {
+        "id": "wc-toilette-shampooing-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-toilette-shampooing",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je me lave les cheveux avec du shampooing.",
+          "Ce shampooing sent très bon.",
+          "Achète une bouteille de shampooing."
+        ],
+        "options": ["шампунь", "мыло", "гель для душа", "кондиционер"],
+        "correctIndex": 0,
+        "explanation": "shampooing (m) — шампунь, для мытья волос. Мыло — un savon, гель для душа — un gel douche. Обрати внимание на написание: sh-a-m-p-o-o-i-n-g."
+      },
+      {
+        "id": "wc-toilette-shampooing-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-toilette-shampooing",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать смысл. Что значит shampooing?",
+        "bridge": "Англ. «shampoo» — шампунь; французское слово shampooing — то же, но с другим хвостом «-ooing». Читается /ʃɑ̃.pwɛ̃/.",
+        "options": ["шампунь", "мытьё пола", "пена для ванны", "массаж головы"],
+        "correctIndex": 0,
+        "explanation": "shampooing (m) = шампунь, как англ. «shampoo». Написание французское (-ooing, есть и вариант shampoing), а звук — носовой /ɛ̃/ на конце, без английского «-ing»."
+      },
+      {
+        "id": "wc-toilette-peigne-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-toilette-peigne",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Donne-moi un coup de peigne.",
+          "Mon peigne est cassé.",
+          "Passe le peigne dans tes cheveux."
+        ],
+        "options": ["расчёска", "щётка", "заколка", "фен"],
+        "correctIndex": 0,
+        "explanation": "peigne (m) — расчёска (с зубьями). От него глагол se peigner — причёсываться. Щётка (много щетинок) — une brosse, фен — un sèche-cheveux."
+      },
+      {
+        "id": "wc-toilette-peigne-cmp",
+        "kind": "compare",
+        "wordId": "wl-toilette-peigne",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un peigne и une brosse à cheveux. В чём разница?",
+        "phrases": ["Je me coiffe avec un peigne.", "Je me coiffe avec une brosse à cheveux."],
+        "options": [
+          "peigne — расчёска с зубьями; brosse — щётка со щетинками. Оба причёсывают, но это разные предметы.",
+          "Это одно и то же слово, разницы нет.",
+          "peigne — для зубов, brosse — для волос.",
+          "peigne — это фен, brosse — расчёска."
+        ],
+        "correctIndex": 0,
+        "explanation": "peigne (m) — расчёска (ряд зубьев); brosse (f) à cheveux — щётка (щетинки). Оба «причёсывают» (se coiffer), но peigne разделяет волосы, а brosse приглаживает."
+      },
+      {
+        "id": "wc-toilette-peigne-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-toilette-peigne",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для peigne (расчёска), чтобы запомнить мужской род (un peigne) и звук /pɛɲ/ с мягким «нь» на конце.",
+        "examples": [
+          "Зубья расчёски похожи на гребень петуха — un peigne, «он», мужского рода.",
+          "Конец -gne читается как «нь» (как в champagne): peigne звучит /pɛɲ/, почти «пэнь»."
+        ]
+      },
+      {
+        "id": "wc-toilette-laver-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-toilette-laver",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно выражение во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Lave-toi les mains avant de manger.",
+          "Le soir, je me lave les dents.",
+          "Elle se lave les cheveux avec du shampooing."
+        ],
+        "options": ["мыть себе (часть тела)", "вытирать", "одевать", "причёсывать"],
+        "correctIndex": 0,
+        "explanation": "se laver — мыть себя. С частью тела ставят se + артикль: se laver les mains (мыть руки), se laver les dents (чистить зубы), se laver les cheveux (мыть голову)."
+      },
+      {
+        "id": "wc-toilette-laver-trap",
+        "kind": "trap",
+        "wordId": "wl-toilette-laver",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«Je me lave» и «Je me lève» звучат похоже. Что значит «Je me lave» утром?",
+        "phrases": ["Je me lave.", "Je me lève."],
+        "options": [
+          "я моюсь — se laver /la.ve/",
+          "я встаю — потому что lave значит «вставать»",
+          "я одеваюсь",
+          "я ложусь спать"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ложные друзья по звуку: se laver /la.ve/ — мыться, se lever /lə.ve/ — вставать. «Je me lave» = я моюсь, «Je me lève» = я встаю. Разница в первой гласной — /a/ против /ə/."
+      }
+    ]
+  }
+]

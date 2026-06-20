@@ -1,0 +1,268 @@
+[
+  {
+    "id": "wc-bebe",
+    "title": "Малыш",
+    "theme": "bebe",
+    "level": "A2",
+    "wordIds": [
+      "wl-bebe-bebe",
+      "wl-bebe-couche",
+      "wl-bebe-biberon",
+      "wl-bebe-jouet",
+      "wl-bebe-poussette",
+      "wl-bebe-berceau",
+      "wl-bebe-naitre",
+      "wl-bebe-grandir"
+    ],
+    "steps": [
+      {
+        "id": "wc-bebe-bebe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bebe-bebe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le bébé dort dans sa chambre.",
+          "Elle attend un bébé pour le mois de mai.",
+          "Le bébé pleure parce qu'il a faim."
+        ],
+        "options": ["малыш, младенец", "ребёнок-подросток", "мама", "няня"],
+        "correctIndex": 0,
+        "explanation": "bébé (m) — совсем маленький ребёнок, младенец. Слово всегда мужского рода, даже про девочку: «le bébé». «attendre un bébé» — ждать ребёнка (быть беременной)."
+      },
+      {
+        "id": "wc-bebe-bebe-trap",
+        "kind": "trap",
+        "wordId": "wl-bebe-bebe",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Соседка показывает на свою новорождённую дочь. Как правильно?",
+        "options": [
+          "C'est un beau bébé. — bébé всегда мужского рода",
+          "C'est une belle bébé. — раз девочка, то женский род",
+          "C'est un bébée. — добавляем -e для девочки",
+          "C'est une bébé. — артикль по полу ребёнка"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка рода: bébé — всегда мужского рода, независимо от пола ребёнка. О девочке тоже говорят «un beau bébé». Род слова не меняется по полу малыша."
+      },
+      {
+        "id": "wc-bebe-couche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bebe-couche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il faut changer la couche du bébé.",
+          "Le bébé a besoin d'une couche propre.",
+          "On achète un paquet de couches au supermarché."
+        ],
+        "options": ["подгузник", "пелёнка-одеяло", "соска", "кроватка"],
+        "correctIndex": 0,
+        "explanation": "couche (f) — подгузник. «changer la couche» — менять подгузник. У слова есть и второй смысл — «слой» (une couche de neige — слой снега), но с малышом это подгузник."
+      },
+      {
+        "id": "wc-bebe-couche-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-bebe-couche",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "couche",
+        "options": ["couche", "bouche", "douche", "touche"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало couche /kuʃ/ (подгузник). Похожие по звучанию, но другие слова: bouche /buʃ/ (рот), douche /duʃ/ (душ), touche /tuʃ/ (клавиша). Различается только первый звук."
+      },
+      {
+        "id": "wc-bebe-biberon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bebe-biberon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Maman prépare un biberon de lait.",
+          "Le bébé boit son biberon avant de dormir.",
+          "Il est l'heure de donner le biberon."
+        ],
+        "options": ["детская бутылочка", "тарелка", "ложка", "чашка"],
+        "correctIndex": 0,
+        "explanation": "biberon (m) — детская бутылочка с соской, из неё кормят младенца. «donner le biberon» — кормить из бутылочки, «préparer un biberon» — приготовить бутылочку."
+      },
+      {
+        "id": "wc-bebe-biberon-trap",
+        "kind": "trap",
+        "wordId": "wl-bebe-biberon",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Малышу хотят дать молоко. Что ему дают — biberon или bouteille?",
+        "options": [
+          "un biberon — детская бутылочка с соской",
+          "une bouteille — любая бутылка одинаково подходит",
+          "оба слова значат «детская бутылочка»",
+          "une bouteille — это и есть «бутылочка для малыша»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Малышу дают un biberon — специальную бутылочку с соской. une bouteille — обычная бутылка (воды, вина), не для младенца. По-русски обе «бутылка», по-французски — разные слова."
+      },
+      {
+        "id": "wc-bebe-jouet-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bebe-jouet",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le bébé joue avec un jouet en bois.",
+          "Range tes jouets, s'il te plaît !",
+          "Pour son anniversaire, il a reçu beaucoup de jouets."
+        ],
+        "options": ["игрушка", "игра (процесс)", "игрок", "площадка"],
+        "correctIndex": 0,
+        "explanation": "jouet (m) — игрушка, предмет для игры. От глагола jouer (играть). Множественное — des jouets. «ranger ses jouets» — убирать игрушки."
+      },
+      {
+        "id": "wc-bebe-jouet-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-bebe-jouet",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "jouet",
+        "options": ["jouet", "jouer", "joue", "jour"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало jouet /ʒwɛ/ (игрушка). Похоже звучат: jouer /ʒwe/ (играть — конец -er), joue /ʒu/ (щека), jour /ʒuʁ/ (день). У jouet на конце открытое /ɛ/."
+      },
+      {
+        "id": "wc-bebe-poussette-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bebe-poussette",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On promène le bébé dans la poussette.",
+          "Je plie la poussette pour monter dans le bus.",
+          "Le bébé s'est endormi dans la poussette."
+        ],
+        "options": ["прогулочная коляска", "кроватка", "стульчик для еды", "санки"],
+        "correctIndex": 0,
+        "explanation": "poussette (f) — прогулочная коляска, в которой малыш сидит. От глагола pousser (толкать): коляску толкают перед собой. «plier la poussette» — сложить коляску."
+      },
+      {
+        "id": "wc-bebe-poussette-cmp",
+        "kind": "compare",
+        "wordId": "wl-bebe-poussette",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "la poussette и le landau. В чём разница?",
+        "phrases": [
+          "Le bébé est assis dans la poussette.",
+          "Le nouveau-né est allongé dans le landau."
+        ],
+        "options": [
+          "poussette — малыш сидит (прогулочная); landau — люлька, новорождённый лежит.",
+          "Это полные синонимы, разницы нет.",
+          "poussette — для новорождённого лёжа; landau — для сидящего малыша.",
+          "landau — это коляска для двойни, poussette — для одного."
+        ],
+        "correctIndex": 0,
+        "explanation": "la poussette — коляска, где малыш сидит (примерно с 6 месяцев). le landau — люлька, где новорождённый лежит горизонтально. Разница в позе ребёнка и возрасте."
+      },
+      {
+        "id": "wc-bebe-berceau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bebe-berceau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le bébé dort dans son berceau.",
+          "Elle pose doucement le nouveau-né dans le berceau.",
+          "Le berceau est à côté du lit des parents."
+        ],
+        "options": ["колыбель, люлька", "коляска", "ванночка", "манеж"],
+        "correctIndex": 0,
+        "explanation": "berceau (m) — колыбель, маленькая качающаяся кроватка для новорождённого. От глагола bercer (качать). Множественное на -x: des berceaux."
+      },
+      {
+        "id": "wc-bebe-berceau-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-bebe-berceau",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "berceau",
+        "options": ["berceau", "morceau", "cerceau", "bureau"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало berceau /bɛʁ.so/ (колыбель). Похожи по звучанию: morceau /mɔʁ.so/ (кусок), cerceau /sɛʁ.so/ (обруч), bureau /by.ʁo/ (стол/офис). Все оканчиваются на /-o/."
+      },
+      {
+        "id": "wc-bebe-naitre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bebe-naitre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово (в разных формах) во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le bébé vient de naître.",
+          "Je suis né au mois de juin.",
+          "Elle est née à Lyon en 2001."
+        ],
+        "options": ["рождаться, родиться", "умирать", "расти", "спать"],
+        "correctIndex": 0,
+        "explanation": "naître — рождаться, появляться на свет. В прошедшем времени с être: je suis né(e), elle est née. Обрати внимание на î перед t: naître, il naît."
+      },
+      {
+        "id": "wc-bebe-naitre-hint",
+        "kind": "wordHint",
+        "wordId": "wl-bebe-naitre",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: появляться на свет, приходить в этот мир.",
+        "answer": "naître",
+        "hints": [
+          "Начинается на n…",
+          "Есть î с accent circonflexe перед t",
+          "Le bébé vient de ___."
+        ],
+        "explanation": "naître — рождаться. В passé composé с être: je suis né(e). Антоним — mourir (умирать). Пишется с î: naître."
+      },
+      {
+        "id": "wc-bebe-grandir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bebe-grandir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Les enfants grandissent très vite.",
+          "Mon fils a beaucoup grandi cette année.",
+          "Le bébé grandit et apprend à marcher."
+        ],
+        "options": ["расти, взрослеть", "толстеть", "уставать", "болеть"],
+        "correctIndex": 0,
+        "explanation": "grandir — расти, становиться больше, взрослеть. Глагол 2-й группы: je grandis, il grandit, ils grandissent. От прилагательного grand (большой)."
+      },
+      {
+        "id": "wc-bebe-grandir-cmp",
+        "kind": "compare",
+        "wordId": "wl-bebe-grandir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "grandir и pousser. Оба про «расти». В чём разница?",
+        "phrases": ["L'enfant grandit vite.", "Les fleurs poussent au printemps."],
+        "options": [
+          "grandir — расти о человеке/животном; pousser — расти о растениях.",
+          "Это полные синонимы, разницы нет.",
+          "grandir — про растения; pousser — про людей.",
+          "grandir значит «толстеть», pousser — «худеть»."
+        ],
+        "correctIndex": 0,
+        "explanation": "grandir — расти, взрослеть о человеке или животном (l'enfant grandit). pousser — расти о растениях (les fleurs poussent). Для ребёнка — grandir, не pousser."
+      }
+    ]
+  }
+]

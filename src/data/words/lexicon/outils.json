@@ -1,0 +1,232 @@
+[
+  {
+    "id": "wl-outils-marteau",
+    "lemma": "marteau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/maʁ.to/",
+    "translationsRu": ["молоток"],
+    "translationsEn": ["hammer"],
+    "semanticCore": "Молоток — инструмент, которым забивают гвозди и бьют по чему-то; во множественном числе marteaux.",
+    "collocations": [
+      { "fr": "un coup de marteau", "ru": "удар молотком" },
+      { "fr": "planter un clou avec un marteau", "ru": "забить гвоздь молотком" },
+      { "fr": "un marteau et un burin", "ru": "молоток и зубило" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "maillet",
+        "note": "marteau = (металлический) молоток; maillet = деревянная киянка (бьёт мягче, не повреждая поверхность)."
+      },
+      {
+        "with": "marteau (fam.)",
+        "note": "В разговорной речи «être marteau» значит «быть чокнутым». Но сам предмет — это всегда un marteau (молоток)."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["outils", "objet"],
+    "caseIds": ["wc-outils"]
+  },
+  {
+    "id": "wl-outils-clou",
+    "lemma": "clou",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/klu/",
+    "translationsRu": ["гвоздь"],
+    "translationsEn": ["nail"],
+    "semanticCore": "Гвоздь, который забивают молотком; во множественном числе clous. Переносно «le clou» — гвоздь программы, главный момент.",
+    "collocations": [
+      { "fr": "planter un clou", "ru": "забить гвоздь" },
+      { "fr": "enfoncer un clou", "ru": "вбить гвоздь (поглубже)" },
+      { "fr": "le clou du spectacle", "ru": "гвоздь программы" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vis",
+        "note": "clou = гвоздь (забивают молотком); vis = винт/шуруп (закручивают отвёрткой). Разный способ крепления."
+      },
+      {
+        "with": "punaise",
+        "note": "clou = гвоздь; punaise = канцелярская кнопка (короткая, для бумаги на стене)."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A2",
+    "tags": ["outils", "objet"],
+    "caseIds": ["wc-outils"]
+  },
+  {
+    "id": "wl-outils-vis",
+    "lemma": "vis",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vis/",
+    "translationsRu": ["винт", "шуруп"],
+    "translationsEn": ["screw"],
+    "semanticCore": "Винт или шуруп, который вкручивают отвёрткой. Слово не меняется во множественном (une vis, des vis), а конечное -s читается: /vis/.",
+    "collocations": [
+      { "fr": "serrer une vis", "ru": "затянуть винт" },
+      { "fr": "une vis et un écrou", "ru": "винт и гайка" },
+      { "fr": "un tour de vis", "ru": "оборот винта (тж. ужесточение)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "clou",
+        "note": "vis = винт/шуруп (закручивают); clou = гвоздь (забивают). Vis держит крепче и вынимается без разрушения."
+      },
+      {
+        "with": "boulon",
+        "note": "vis = винт/шуруп; boulon = болт (толще, под гайку). В быту чаще именно une vis."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["outils", "objet"],
+    "caseIds": ["wc-outils"]
+  },
+  {
+    "id": "wl-outils-tournevis",
+    "lemma": "tournevis",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tuʁ.nə.vis/",
+    "translationsRu": ["отвёртка"],
+    "translationsEn": ["screwdriver"],
+    "semanticCore": "Отвёртка: инструмент, чтобы крутить винты. Слово прозрачно: tourne (крути) + vis (винт). В множественном не меняется: des tournevis.",
+    "collocations": [
+      { "fr": "un tournevis cruciforme", "ru": "крестовая отвёртка" },
+      { "fr": "un tournevis plat", "ru": "плоская (шлицевая) отвёртка" },
+      { "fr": "serrer avec un tournevis", "ru": "затянуть отвёрткой" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vis",
+        "note": "tournevis = отвёртка (инструмент); vis = винт (то, что она крутит). Tournevis мужского рода, vis — женского."
+      },
+      {
+        "with": "clé",
+        "note": "tournevis = отвёртка (для винтов под шлиц); clé = ключ-гаечный (для болтов и гаек). Разные крепления."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["outils", "objet"],
+    "caseIds": ["wc-outils"]
+  },
+  {
+    "id": "wl-outils-scie",
+    "lemma": "scie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/si/",
+    "translationsRu": ["пила"],
+    "translationsEn": ["saw"],
+    "semanticCore": "Пила: инструмент с зубьями, чтобы пилить дерево или металл. Читается /si/, конечное -e немое. Глагол «пилить» — scier.",
+    "collocations": [
+      { "fr": "une scie électrique", "ru": "электропила" },
+      { "fr": "une scie à métaux", "ru": "ножовка по металлу" },
+      { "fr": "scier une planche", "ru": "распилить доску" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "scier",
+        "note": "scie (f) — это сам инструмент (пила); scier — глагол «пилить». On scie une planche avec une scie."
+      },
+      {
+        "with": "hache",
+        "note": "scie = пила (пилит зубьями); hache = топор (рубит лезвием). Разное действие над деревом."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["outils", "objet"],
+    "caseIds": ["wc-outils"]
+  },
+  {
+    "id": "wl-outils-echelle",
+    "lemma": "échelle",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.ʃɛl/",
+    "translationsRu": ["лестница", "стремянка"],
+    "translationsEn": ["ladder", "scale"],
+    "semanticCore": "Échelle — приставная лестница или стремянка (переносная, со ступенями-перекладинами). Второе значение — «масштаб»: à grande échelle, échelle d'une carte.",
+    "collocations": [
+      { "fr": "monter à l'échelle", "ru": "подниматься по (приставной) лестнице" },
+      { "fr": "une échelle en bois", "ru": "деревянная лестница" },
+      { "fr": "à grande échelle", "ru": "в большом масштабе" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "escalier",
+        "note": "échelle = приставная лестница/стремянка (переносная, перекладины); escalier = лестница в здании (со ступенями, встроенная). Ключевая путаница."
+      },
+      {
+        "with": "échelle (= масштаб)",
+        "note": "Та же échelle значит «масштаб»: l'échelle d'une carte, à grande échelle. По контексту понятно — лестница это или масштаб."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["outils", "objet"],
+    "caseIds": ["wc-outils"]
+  },
+  {
+    "id": "wl-outils-reparer",
+    "lemma": "réparer",
+    "pos": "verb",
+    "ipa": "/ʁe.pa.ʁe/",
+    "translationsRu": ["чинить", "ремонтировать"],
+    "translationsEn": ["to repair", "to fix"],
+    "semanticCore": "Вернуть в рабочее состояние то, что сломалось: починить машину, кран, прибор. Правильный глагол на -er.",
+    "collocations": [
+      { "fr": "réparer une voiture", "ru": "чинить машину" },
+      { "fr": "réparer une fuite", "ru": "устранить течь" },
+      { "fr": "faire réparer", "ru": "отдать в ремонт (чтобы починили)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "dépanner",
+        "note": "réparer = починить (устранить поломку насовсем); dépanner = выручить, временно наладить / помочь застрявшему. Часто dépanner быстрее и проще."
+      },
+      {
+        "with": "réviser",
+        "note": "réparer = чинить уже сломанное; réviser = проводить ТО, профилактику (réviser sa voiture), пока ещё работает."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["outils", "verbe", "action"],
+    "caseIds": ["wc-outils"]
+  },
+  {
+    "id": "wl-outils-visser",
+    "lemma": "visser",
+    "pos": "verb",
+    "ipa": "/vi.se/",
+    "translationsRu": ["завинчивать", "прикручивать"],
+    "translationsEn": ["to screw in", "to screw on"],
+    "semanticCore": "Закручивать винт или резьбу: ввинтить шуруп, ввернуть лампочку, прикрутить полку. От слова vis. Противоположное — dévisser.",
+    "collocations": [
+      { "fr": "visser une ampoule", "ru": "ввернуть лампочку" },
+      { "fr": "visser une étagère", "ru": "прикрутить полку" },
+      { "fr": "bien visser", "ru": "хорошо (плотно) закрутить" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "dévisser",
+        "note": "visser = закручивать (по резьбе); dévisser = откручивать, отвинчивать. Приставка dé- переворачивает действие."
+      },
+      {
+        "with": "clouer",
+        "note": "visser = прикрутить винтом/шурупом (отвёрткой); clouer = прибить гвоздём (молотком). Разный крепёж — vis против clou."
+      }
+    ],
+    "frequencyRank": 740,
+    "level": "A2",
+    "tags": ["outils", "verbe", "action"],
+    "caseIds": ["wc-outils"]
+  }
+]

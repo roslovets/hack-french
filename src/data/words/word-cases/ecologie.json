@@ -1,0 +1,307 @@
+[
+  {
+    "id": "wc-ecologie",
+    "title": "Экология",
+    "theme": "ecologie",
+    "level": "B1",
+    "wordIds": [
+      "wl-ecologie-pollution",
+      "wl-ecologie-recyclage",
+      "wl-ecologie-dechet",
+      "wl-ecologie-energie",
+      "wl-ecologie-planete",
+      "wl-ecologie-environnement",
+      "wl-ecologie-proteger",
+      "wl-ecologie-gaspillage"
+    ],
+    "steps": [
+      {
+        "id": "wc-ecologie-pollution-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecologie-pollution",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La pollution de l'air est un problème dans les grandes villes.",
+          "Les voitures électriques réduisent la pollution.",
+          "On parle aussi de pollution sonore près des aéroports."
+        ],
+        "options": ["загрязнение", "пробка (на дороге)", "население", "погода"],
+        "correctIndex": 0,
+        "explanation": "pollution (f) — загрязнение (среды). «la pollution de l'air» — загрязнение воздуха, «la pollution sonore» — шумовое загрязнение. Пробка — un embouteillage."
+      },
+      {
+        "id": "wc-ecologie-pollution-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-ecologie-pollution",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит pollution?",
+        "bridge": "Англ. «pollution» — загрязнение; пишется так же. По-французски читается /pɔ.ly.sjɔ̃/ — с носовым «-tion» на конце (как «-сьон»).",
+        "options": ["загрязнение", "опыление", "население", "решение"],
+        "correctIndex": 0,
+        "explanation": "pollution = загрязнение. Англ. «pollution» — прямой мост: те же буквы, другое произношение. Не путать с pollinisation (опыление)."
+      },
+      {
+        "id": "wc-ecologie-environnement-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecologie-environnement",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il faut protéger l'environnement.",
+          "Ce produit est respectueux de l'environnement.",
+          "La protection de l'environnement concerne tout le monde."
+        ],
+        "options": ["окружающая среда", "правительство", "оборудование", "развлечение"],
+        "correctIndex": 0,
+        "explanation": "environnement (m) — окружающая среда. «protéger l'environnement» — защищать среду, «respectueux de l'environnement» — экологичный. Внимание на двойное n: enviro-nn-ement."
+      },
+      {
+        "id": "wc-ecologie-environnement-trap",
+        "kind": "trap",
+        "wordId": "wl-ecologie-environnement",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как по-французски правильно написать «окружающая среда»?",
+        "options": ["environnement", "environement", "enviromment", "environmente"],
+        "correctIndex": 0,
+        "explanation": "Орфографическая ловушка: правильно environnement — с двойным n (-onne-), в отличие от англ. «environment». Один n (environement) — частая ошибка."
+      },
+      {
+        "id": "wc-ecologie-dechet-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecologie-dechet",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il faut trier les déchets avant de les jeter.",
+          "Les déchets ménagers vont dans la poubelle grise.",
+          "Cette usine produit des déchets dangereux."
+        ],
+        "options": ["отходы, мусор", "посуда", "продукты", "налоги"],
+        "correctIndex": 0,
+        "explanation": "déchet (m), чаще во множественном — les déchets — отходы, мусор. «trier les déchets» — сортировать мусор, «les déchets ménagers» — бытовые отходы."
+      },
+      {
+        "id": "wc-ecologie-dechet-trap",
+        "kind": "trap",
+        "wordId": "wl-ecologie-dechet",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Мусор лежит в баке. Где здесь «мусор» (содержимое), а не «бак»?",
+        "options": [
+          "les déchets — это сам мусор; la poubelle — это бак",
+          "la poubelle — это мусор; les déchets — это бак",
+          "оба слова значат «бак»",
+          "оба слова значат «мусор», разницы нет"
+        ],
+        "correctIndex": 0,
+        "explanation": "les déchets — сам мусор, отходы (содержимое). la poubelle — мусорный бак / ведро (ёмкость). «Выбросить мусор в бак» — jeter les déchets à la poubelle."
+      },
+      {
+        "id": "wc-ecologie-recyclage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecologie-recyclage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le recyclage du verre fonctionne très bien en France.",
+          "Mettez le papier dans le bac de recyclage.",
+          "Le recyclage permet de réduire les déchets."
+        ],
+        "options": ["переработка", "доставка", "ремонт", "уборка"],
+        "correctIndex": 0,
+        "explanation": "recyclage (m) — (вторичная) переработка. «le bac de recyclage» — бак для вторсырья, «le recyclage du verre» — переработка стекла. Англ. «recycling» — узнаваемый мост."
+      },
+      {
+        "id": "wc-ecologie-recyclage-cmp",
+        "kind": "compare",
+        "wordId": "wl-ecologie-recyclage",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le tri и le recyclage. В чём разница?",
+        "phrases": [
+          "Je fais le tri des déchets à la maison.",
+          "L'usine s'occupe du recyclage du plastique."
+        ],
+        "options": [
+          "le tri — сортировка (разложить мусор по бакам); le recyclage — переработка (превратить во вторсырьё).",
+          "Это полные синонимы, разницы нет.",
+          "le tri — переработка, а le recyclage — сортировка.",
+          "Оба слова значат «выбросить мусор»."
+        ],
+        "correctIndex": 0,
+        "explanation": "le tri — сортировка отходов (первый шаг, дома по бакам). le recyclage — переработка отсортированного во вторсырьё (на заводе). Сначала on trie, потом on recycle."
+      },
+      {
+        "id": "wc-ecologie-energie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecologie-energie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le solaire est une énergie renouvelable.",
+          "Éteins la lumière pour économiser l'énergie.",
+          "Ce matin, je suis plein d'énergie !"
+        ],
+        "options": ["энергия", "деньги", "техника", "погода"],
+        "correctIndex": 0,
+        "explanation": "énergie (f) — энергия: и как ресурс («énergie renouvelable», «économiser l'énergie»), и как личная бодрость («plein d'énergie»)."
+      },
+      {
+        "id": "wc-ecologie-energie-sort",
+        "kind": "sort",
+        "wordId": "wl-ecologie-energie",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом énergie звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "économiser l'énergie",
+            "basket": "ok"
+          },
+          {
+            "text": "une énergie renouvelable",
+            "basket": "ok"
+          },
+          {
+            "text": "les énergies fossiles",
+            "basket": "ok"
+          },
+          {
+            "text": "manger de l'énergie",
+            "basket": "no"
+          },
+          {
+            "text": "une énergie en papier",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«économiser l'énergie», «énergie renouvelable / fossile» — естественно. «manger de l'énergie» и «énergie en papier» — бессмыслица: энергию не едят и она не бывает «бумажной»."
+      },
+      {
+        "id": "wc-ecologie-proteger-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecologie-proteger",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол?",
+        "contexts": [
+          "Nous devons protéger la nature.",
+          "Ces gestes simples protègent l'environnement.",
+          "Mets de la crème pour te protéger du soleil."
+        ],
+        "options": ["защищать, оберегать", "загрязнять", "выбрасывать", "тратить"],
+        "correctIndex": 0,
+        "explanation": "protéger — защищать, оберегать (от вреда). «protéger l'environnement», «protéger la nature», «se protéger du soleil». В настоящем: je protège, nous protégeons."
+      },
+      {
+        "id": "wc-ecologie-proteger-cmp",
+        "kind": "compare",
+        "wordId": "wl-ecologie-proteger",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "protéger la planète и sauver la planète. В чём оттенок разницы?",
+        "phrases": [
+          "Ces gestes aident à protéger la planète.",
+          "Il est urgent de sauver la planète."
+        ],
+        "options": [
+          "protéger — беречь, не давать пострадать (длительно); sauver — спасти из уже случившейся беды (разово, срочно).",
+          "Это полные синонимы, разницы нет.",
+          "protéger значит «спасти», а sauver — «беречь».",
+          "Оба значат «загрязнять»."
+        ],
+        "correctIndex": 0,
+        "explanation": "protéger = оберегать, не давать навредить (постоянная забота). sauver = спасти, когда беда уже грозит (разовое действие). Отсюда «protéger l'environnement», но «sauver la planète»."
+      },
+      {
+        "id": "wc-ecologie-planete-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecologie-planete",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ensemble, on peut sauver la planète.",
+          "La planète Terre se réchauffe.",
+          "Chaque geste compte pour la planète."
+        ],
+        "options": ["планета", "поляна", "плита", "растение"],
+        "correctIndex": 0,
+        "explanation": "planète (f) — планета; с артиклем la planète часто значит «наша Земля». «sauver la planète» — спасти планету. Не путать с une plante (растение)."
+      },
+      {
+        "id": "wc-ecologie-planete-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-ecologie-planete",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери услышанное слово.",
+        "audioText": "planète",
+        "options": ["planète", "plante", "planche", "plaine"],
+        "correctIndex": 0,
+        "explanation": "planète /pla.nɛt/ — планета. Похожие, но другие слова: une plante /plɑ̃t/ (растение), une planche /plɑ̃ʃ/ (доска), une plaine /plɛn/ (равнина). У planète слышно открытое /a/ и концовку /nɛt/, без носового звука."
+      },
+      {
+        "id": "wc-ecologie-gaspillage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ecologie-gaspillage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le gaspillage alimentaire est énorme dans le monde.",
+          "Fermer le robinet évite le gaspillage de l'eau.",
+          "Cette association lutte contre le gaspillage."
+        ],
+        "options": ["растрата, трата впустую", "переработка", "урожай", "скидка"],
+        "correctIndex": 0,
+        "explanation": "gaspillage (m) — расточительство, трата ресурсов впустую. «le gaspillage alimentaire» — выбрасывание съедобной еды, «le gaspillage de l'eau» — бессмысленный расход воды."
+      },
+      {
+        "id": "wc-ecologie-gaspillage-hint",
+        "kind": "wordHint",
+        "wordId": "wl-ecologie-gaspillage",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: когда ресурсы (еду, воду, энергию) тратят зря и выбрасывают — это…",
+        "answer": "gaspillage",
+        "hints": [
+          "Начинается на g…",
+          "От глагола gaspiller (транжирить); это существительное на -age, мужского рода",
+          "Lutter contre le ___ alimentaire."
+        ],
+        "explanation": "gaspillage (m) — растрата, расточительство. От глагола gaspiller. Антоним идеи — économiser (экономить). «le gaspillage alimentaire» — растрата съедобной еды."
+      },
+      {
+        "id": "wc-ecologie-gaspillage-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-ecologie-gaspillage",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для gaspillage (растрата), чтобы запомнить звук /ɡas.pi.jaʒ/ (-ill- читается как «й») и мужской род (le gaspillage).",
+        "examples": [
+          "«Газ» утекает зря: ga-spi-llage — как газ, потраченный впустую.",
+          "Представь, как выбрасываешь полную тарелку еды в мусор — это le gaspillage alimentaire."
+        ]
+      }
+    ]
+  }
+]

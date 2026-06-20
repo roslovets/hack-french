@@ -1,0 +1,284 @@
+[
+  {
+    "id": "wc-outils",
+    "title": "Инструменты",
+    "theme": "outils",
+    "level": "A2",
+    "wordIds": [
+      "wl-outils-marteau",
+      "wl-outils-clou",
+      "wl-outils-vis",
+      "wl-outils-tournevis",
+      "wl-outils-scie",
+      "wl-outils-echelle",
+      "wl-outils-reparer",
+      "wl-outils-visser"
+    ],
+    "steps": [
+      {
+        "id": "wc-outils-marteau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-outils-marteau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Passe-moi le marteau, je dois planter un clou.",
+          "Il a tapé sur le mur avec un marteau.",
+          "Le marteau est dans la boîte à outils."
+        ],
+        "options": ["молоток", "гвоздь", "отвёртка", "пила"],
+        "correctIndex": 0,
+        "explanation": "marteau (m) — молоток. Им забивают гвозди и бьют по чему-то. Гвоздь — un clou, отвёртка — un tournevis. Во множественном числе — des marteaux."
+      },
+      {
+        "id": "wc-outils-marteau-snd",
+        "kind": "soundTwin",
+        "wordId": "wl-outils-marteau",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Слушай. Какое слово прозвучало?",
+        "audioText": "marteau",
+        "options": ["marteau", "manteau", "château", "gâteau"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало marteau /maʁ.to/ — молоток. Похожие по концовке -eau: manteau (пальто), château (замок), gâteau (торт). Все рифмуются, но по началу различаются."
+      },
+      {
+        "id": "wc-outils-clou-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-outils-clou",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le tableau tient à un clou planté dans le mur.",
+          "Attention, il y a un clou qui dépasse.",
+          "Il faut un marteau pour enfoncer ce clou."
+        ],
+        "options": ["гвоздь", "молоток", "винт", "крючок"],
+        "correctIndex": 0,
+        "explanation": "clou (m) — гвоздь. Его забивают молотком (un marteau). Винт — une vis (его крутят), крючок — un crochet. Множественное — des clous."
+      },
+      {
+        "id": "wc-outils-clou-snd",
+        "kind": "soundTwin",
+        "wordId": "wl-outils-clou",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Слушай. Какое слово прозвучало?",
+        "audioText": "clou",
+        "options": ["clou", "cou", "chou", "loup"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало clou /klu/ — гвоздь. Похожи: cou (шея), chou (капуста), loup (волк). Все на /u/, но clou начинается с cl-."
+      },
+      {
+        "id": "wc-outils-vis-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-outils-vis",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il manque une vis pour fixer l'étagère.",
+          "Serre bien la vis avec le tournevis.",
+          "Cette vis est trop courte."
+        ],
+        "options": ["винт, шуруп", "гвоздь", "гайка", "болт"],
+        "correctIndex": 0,
+        "explanation": "vis (f) — винт/шуруп, его закручивают отвёрткой (un tournevis). Гвоздь забивают (un clou), гайка — un écrou. Слово женского рода и не меняется во множественном: des vis."
+      },
+      {
+        "id": "wc-outils-vis-trap",
+        "kind": "trap",
+        "wordId": "wl-outils-vis",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как правильно прочитать слово vis (винт) и что оно значит?",
+        "options": [
+          "/vis/ — конечное -s читается; это винт/шуруп",
+          "/vi/ — будто -s немое; но так читается la vie (жизнь), а не vis",
+          "/viz/ — как «виза»; но виза — это un visa, не vis",
+          "/vɛ/ — как в je vais; но это форма глагола aller, а не vis"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка чтения: в существительном vis (винт) конечное -s произносится — /vis/. Не путать с la vie /vi/ (жизнь, -e немое), un visa /vi.za/ (виза) и je vais /vɛ/ (форма aller). Само слово vis не меняется в множественном: des vis."
+      },
+      {
+        "id": "wc-outils-tournevis-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-outils-tournevis",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Prends un tournevis pour serrer cette vis.",
+          "Il me faut un tournevis cruciforme.",
+          "Le tournevis est rangé avec le marteau."
+        ],
+        "options": ["отвёртка", "винт", "гаечный ключ", "плоскогубцы"],
+        "correctIndex": 0,
+        "explanation": "tournevis (m) — отвёртка, ею крутят винты. Сам винт — une vis. Гаечный ключ — une clé, плоскогубцы — une pince. Во множественном не меняется: des tournevis."
+      },
+      {
+        "id": "wc-outils-tournevis-hint",
+        "kind": "wordHint",
+        "wordId": "wl-outils-tournevis",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: инструмент, которым крутят (закручивают и откручивают) винты.",
+        "answer": "tournevis",
+        "hints": [
+          "Это сложное слово из двух частей.",
+          "Глагол «крутить» (tourne) + слово «винт» (vis).",
+          "Pour serrer une vis, prends un ___."
+        ],
+        "explanation": "tournevis (m) — отвёртка. Слово прозрачно складывается: tourne (крути) + vis (винт). Читается /tuʁ.nə.vis/, конечное -s звучит, как и в vis."
+      },
+      {
+        "id": "wc-outils-scie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-outils-scie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Avec la scie, il coupe une planche en deux.",
+          "La scie électrique fait beaucoup de bruit.",
+          "Range la scie, ses dents sont dangereuses."
+        ],
+        "options": ["пила", "топор", "нож", "ножницы"],
+        "correctIndex": 0,
+        "explanation": "scie (f) — пила (с зубьями, чтобы пилить). Топор — une hache, ножницы — des ciseaux. Читается /si/, конечное -e немое. Глагол «пилить» — scier."
+      },
+      {
+        "id": "wc-outils-scie-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-outils-scie",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — инструменты для работы по дереву и металлу. Найди лишнее.",
+        "options": ["une scie", "un marteau", "un tournevis", "une échelle"],
+        "correctIndex": 3,
+        "explanation": "Пила (une scie), молоток (un marteau) и отвёртка (un tournevis) — ручные инструменты для работы с материалом. Лестница (une échelle) лишняя: по ней забираются вверх, она не обрабатывает материал."
+      },
+      {
+        "id": "wc-outils-echelle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-outils-echelle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il monte à l'échelle pour changer l'ampoule.",
+          "Tiens bien l'échelle, je grimpe.",
+          "L'échelle est appuyée contre le mur."
+        ],
+        "options": ["приставная лестница, стремянка", "лестница в доме", "лифт", "балкон"],
+        "correctIndex": 0,
+        "explanation": "échelle (f) — приставная лестница или стремянка (переносная, с перекладинами). Лестница в здании (со ступенями) — un escalier, лифт — un ascenseur. «monter à l'échelle» — лезть по лестнице."
+      },
+      {
+        "id": "wc-outils-echelle-trap",
+        "kind": "trap",
+        "wordId": "wl-outils-echelle",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Мастер просит принести «une échelle». Что он имеет в виду?",
+        "options": [
+          "переносную лестницу-стремянку, чтобы достать до верха",
+          "лестницу с этажа на этаж в подъезде",
+          "эскалатор",
+          "ступеньку у входа"
+        ],
+        "correctIndex": 0,
+        "explanation": "échelle = приставная лестница/стремянка, которую приносят и приставляют. Встроенная лестница в доме — un escalier (её не «принесёшь»). У échelle есть и второе значение — «масштаб» (à grande échelle), но здесь по контексту это инструмент."
+      },
+      {
+        "id": "wc-outils-reparer-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-outils-reparer",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет это слово с первого взгляда. Что значит réparer?",
+        "bridge": "Англ. «to repair» — починить; то же латинское слово. Французское réparer /ʁe.pa.ʁe/ — ровно «ремонтировать».",
+        "options": ["чинить, ремонтировать", "готовить", "покупать", "ломать"],
+        "correctIndex": 0,
+        "explanation": "réparer = чинить, ремонтировать. Прямой мост от англ. «repair». «Ломать» — наоборот, casser. Глагол правильный: je répare, il a réparé."
+      },
+      {
+        "id": "wc-outils-reparer-collo",
+        "kind": "sort",
+        "wordId": "wl-outils-reparer",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с réparer звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "réparer une voiture",
+            "basket": "ok"
+          },
+          {
+            "text": "réparer une fuite",
+            "basket": "ok"
+          },
+          {
+            "text": "faire réparer son vélo",
+            "basket": "ok"
+          },
+          {
+            "text": "réparer un repas",
+            "basket": "no"
+          },
+          {
+            "text": "réparer une chanson",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Чинят то, что сломалось: «réparer une voiture / une fuite», «faire réparer son vélo» (отдать в ремонт). «réparer un repas» или «une chanson» — бессмыслица: еду готовят (préparer un repas), песню поют."
+      },
+      {
+        "id": "wc-outils-visser-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-outils-visser",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Visse bien l'ampoule, sinon elle ne s'allume pas.",
+          "Il faut visser l'étagère au mur.",
+          "Prends le tournevis et visse cette vis."
+        ],
+        "options": ["завинчивать, прикручивать", "забивать", "отвинчивать", "красить"],
+        "correctIndex": 0,
+        "explanation": "visser — закручивать, прикручивать (по резьбе): ввернуть лампочку, прикрутить полку. От слова vis. Противоположное (откручивать) — dévisser. Забивать гвоздём — clouer."
+      },
+      {
+        "id": "wc-outils-visser-cmp",
+        "kind": "compare",
+        "wordId": "wl-outils-visser",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "visser и dévisser. В чём разница?",
+        "phrases": ["Il visse l'ampoule.", "Il dévisse l'ampoule."],
+        "options": [
+          "visser — закручивать (ввинчивать); dévisser — откручивать (вывинчивать).",
+          "Это синонимы, разницы нет.",
+          "visser — откручивать, а dévisser — закручивать.",
+          "Оба значат «разбить лампочку»."
+        ],
+        "correctIndex": 0,
+        "explanation": "visser = закручивать по резьбе; приставка dé- переворачивает действие: dévisser = откручивать, вывинчивать. Il visse l'ampoule (вкручивает) ↔ il dévisse l'ampoule (выкручивает)."
+      }
+    ]
+  }
+]

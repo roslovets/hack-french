@@ -1,0 +1,232 @@
+[
+  {
+    "id": "wl-bebe-bebe",
+    "lemma": "bébé",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/be.be/",
+    "translationsRu": ["малыш", "младенец"],
+    "translationsEn": ["baby"],
+    "semanticCore": "Маленький ребёнок до года-двух; слово всегда мужского рода, даже про девочку.",
+    "collocations": [
+      { "fr": "un bébé qui pleure", "ru": "плачущий малыш" },
+      { "fr": "attendre un bébé", "ru": "ждать ребёнка (быть беременной)" },
+      { "fr": "s'occuper du bébé", "ru": "заниматься малышом / ухаживать за ним" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "enfant",
+        "note": "bébé — совсем маленький (до ~2 лет); enfant — ребёнок вообще, любого возраста до подростка."
+      },
+      {
+        "with": "nourrisson",
+        "note": "bébé — обиходное слово; nourrisson — более «медицинское»: грудничок первых недель/месяцев."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["bebe", "famille"],
+    "caseIds": ["wc-bebe"]
+  },
+  {
+    "id": "wl-bebe-couche",
+    "lemma": "couche",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kuʃ/",
+    "translationsRu": ["подгузник"],
+    "translationsEn": ["nappy", "diaper"],
+    "semanticCore": "Подгузник, который надевают младенцу; то же слово значит «слой» (краски, снега).",
+    "collocations": [
+      { "fr": "changer la couche", "ru": "менять подгузник" },
+      { "fr": "une couche propre", "ru": "чистый подгузник" },
+      { "fr": "un paquet de couches", "ru": "пачка подгузников" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "couche (слой)",
+        "note": "Одно слово, два смысла: la couche — и подгузник, и слой (une couche de peinture — слой краски). Контекст подсказывает."
+      },
+      {
+        "with": "se coucher",
+        "note": "Не путай существительное la couche (подгузник) и глагол se coucher (ложиться спать) — общий корень, но разные слова."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["bebe", "objet"],
+    "caseIds": ["wc-bebe"]
+  },
+  {
+    "id": "wl-bebe-biberon",
+    "lemma": "biberon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bi.bʁɔ̃/",
+    "translationsRu": ["бутылочка"],
+    "translationsEn": ["baby bottle"],
+    "semanticCore": "Детская бутылочка с соской, из которой кормят младенца молоком.",
+    "collocations": [
+      { "fr": "donner le biberon", "ru": "кормить из бутылочки" },
+      { "fr": "préparer un biberon", "ru": "приготовить бутылочку" },
+      { "fr": "un biberon de lait", "ru": "бутылочка молока" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bouteille",
+        "note": "biberon — детская бутылочка с соской; une bouteille — обычная бутылка (воды, вина). Малышу — biberon, а не bouteille."
+      },
+      {
+        "with": "allaiter",
+        "note": "donner le biberon — кормить из бутылочки; allaiter — кормить грудью. Противоположные способы кормления."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["bebe", "objet"],
+    "caseIds": ["wc-bebe"]
+  },
+  {
+    "id": "wl-bebe-jouet",
+    "lemma": "jouet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒwɛ/",
+    "translationsRu": ["игрушка"],
+    "translationsEn": ["toy"],
+    "semanticCore": "Игрушка — предмет, которым играют дети; от глагола jouer (играть).",
+    "collocations": [
+      { "fr": "un jouet en bois", "ru": "деревянная игрушка" },
+      { "fr": "ranger ses jouets", "ru": "убирать свои игрушки" },
+      { "fr": "le rayon des jouets", "ru": "отдел игрушек" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "jouer",
+        "note": "le jouet (/ʒwɛ/) — игрушка (предмет); jouer (/ʒwe/) — играть (действие). Конец слышен по-разному: -et /ɛ/ против -er /e/."
+      },
+      {
+        "with": "jeu",
+        "note": "un jouet — конкретная вещь (кукла, мячик); un jeu — игра как процесс или настольная игра (un jeu de société)."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["bebe", "objet"],
+    "caseIds": ["wc-bebe"]
+  },
+  {
+    "id": "wl-bebe-poussette",
+    "lemma": "poussette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pu.sɛt/",
+    "translationsRu": ["коляска"],
+    "translationsEn": ["stroller", "pushchair"],
+    "semanticCore": "Прогулочная коляска, в которой малыш сидит; от глагола pousser (толкать).",
+    "collocations": [
+      { "fr": "pousser la poussette", "ru": "катить коляску" },
+      { "fr": "plier la poussette", "ru": "сложить коляску" },
+      { "fr": "le bébé dort dans la poussette", "ru": "малыш спит в коляске" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "landau",
+        "note": "la poussette — прогулочная коляска, малыш сидит; le landau — люлька для новорождённого, он лежит горизонтально."
+      },
+      {
+        "with": "pousser",
+        "note": "la poussette происходит от pousser (толкать): коляску именно толкают перед собой."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["bebe", "objet"],
+    "caseIds": ["wc-bebe"]
+  },
+  {
+    "id": "wl-bebe-berceau",
+    "lemma": "berceau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bɛʁ.so/",
+    "translationsRu": ["колыбель", "люлька"],
+    "translationsEn": ["cradle"],
+    "semanticCore": "Колыбель — маленькая качающаяся кроватка для новорождённого; во мн. ч. berceaux.",
+    "collocations": [
+      { "fr": "le bébé dort dans son berceau", "ru": "малыш спит в колыбели" },
+      { "fr": "bercer le bébé", "ru": "качать малыша" },
+      { "fr": "un berceau en bois", "ru": "деревянная колыбель" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "lit",
+        "note": "le berceau — колыбель для новорождённого (качается); le lit — обычная кровать. Подрастёт — переедет из berceau в un lit."
+      },
+      {
+        "with": "berceau / berceaux",
+        "note": "Множественное на -x: un berceau → des berceaux (как château → châteaux). Конечная -eau читается /o/."
+      }
+    ],
+    "frequencyRank": 850,
+    "level": "A2",
+    "tags": ["bebe", "objet"],
+    "caseIds": ["wc-bebe"]
+  },
+  {
+    "id": "wl-bebe-naitre",
+    "lemma": "naître",
+    "pos": "verb",
+    "ipa": "/nɛtʁ/",
+    "translationsRu": ["рождаться", "родиться"],
+    "translationsEn": ["to be born"],
+    "semanticCore": "Появляться на свет; в прошедшем — être né(e): je suis né(e).",
+    "collocations": [
+      { "fr": "Le bébé vient de naître.", "ru": "Малыш только что родился." },
+      { "fr": "Je suis né en 1990.", "ru": "Я родился в 1990 году." },
+      { "fr": "Elle est née à Paris.", "ru": "Она родилась в Париже." }
+    ],
+    "contrastPairs": [
+      {
+        "with": "naître / connaître",
+        "note": "naître (рождаться) и connaître (знать) похоже пишутся и оба с î перед t, но смысл совсем разный."
+      },
+      {
+        "with": "mourir",
+        "note": "naître (рождаться) — антоним mourir (умирать). Оба спрягаются в passé composé с être: né / mort."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["bebe", "vie"],
+    "caseIds": ["wc-bebe"]
+  },
+  {
+    "id": "wl-bebe-grandir",
+    "lemma": "grandir",
+    "pos": "verb",
+    "ipa": "/ɡʁɑ̃.diʁ/",
+    "translationsRu": ["расти", "вырастать"],
+    "translationsEn": ["to grow", "to grow up"],
+    "semanticCore": "Становиться больше, взрослеть; глагол 2-й группы (je grandis, il grandit), от grand.",
+    "collocations": [
+      { "fr": "Les enfants grandissent vite.", "ru": "Дети растут быстро." },
+      { "fr": "Il a beaucoup grandi.", "ru": "Он сильно вырос." },
+      { "fr": "grandir en bonne santé", "ru": "расти здоровым" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pousser",
+        "note": "grandir — расти о человеке/животном (становиться выше, взрослеть); pousser — расти о растениях (les fleurs poussent)."
+      },
+      {
+        "with": "grossir",
+        "note": "grandir — расти в высоту, взрослеть; grossir — полнеть, толстеть. Не перепутай: ребёнок grandit, а не grossit."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["bebe", "vie"],
+    "caseIds": ["wc-bebe"]
+  }
+]

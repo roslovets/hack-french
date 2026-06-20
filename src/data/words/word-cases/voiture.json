@@ -1,0 +1,282 @@
+[
+  {
+    "id": "wc-voiture",
+    "title": "Автомобиль",
+    "theme": "voiture",
+    "level": "A2",
+    "wordIds": [
+      "wl-voiture-volant",
+      "wl-voiture-roue",
+      "wl-voiture-moteur",
+      "wl-voiture-essence",
+      "wl-voiture-frein",
+      "wl-voiture-permis",
+      "wl-voiture-phare",
+      "wl-voiture-coffre"
+    ],
+    "steps": [
+      {
+        "id": "wc-voiture-volant-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-voiture-volant",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le conducteur tient le volant à deux mains.",
+          "Elle est au volant depuis ce matin.",
+          "Un coup de volant à gauche pour éviter le trou."
+        ],
+        "options": ["руль", "колесо", "сиденье", "педаль"],
+        "correctIndex": 0,
+        "explanation": "volant (m) — руль. «être au volant» — быть за рулём, «tenir le volant» — держать руль. Колесо — une roue, педаль — une pédale."
+      },
+      {
+        "id": "wc-voiture-volant-trap",
+        "kind": "trap",
+        "wordId": "wl-voiture-volant",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово volant похоже на «летающий» (от voler). Что значит le volant в машине?",
+        "options": ["руль", "летающий", "крыло", "ремень безопасности"],
+        "correctIndex": 0,
+        "explanation": "В машине le volant (сущ., m) — это руль. Как причастие volant значит «летающий» (un poisson volant — летучая рыба), но за рулём держат именно le volant. Крыло (кузова) — une aile, ремень — la ceinture."
+      },
+      {
+        "id": "wc-voiture-roue-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-voiture-roue",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai une roue crevée, il faut s'arrêter.",
+          "La roue de secours est dans le coffre.",
+          "Une voiture a quatre roues."
+        ],
+        "options": ["колесо", "руль", "дверь", "фара"],
+        "correctIndex": 0,
+        "explanation": "roue (f) — колесо. «la roue de secours» — запасное колесо, «une roue crevée» — пробитое колесо. Руль — le volant."
+      },
+      {
+        "id": "wc-voiture-roue-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-voiture-roue",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "roue",
+        "options": ["roue", "rue", "route", "loup"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало roue /ʁu/ — колесо. Похожие, но разные: rue /ʁy/ — улица (острое «ю»), route /ʁut/ — дорога (с конечным t), loup /lu/ — волк (другой первый согласный)."
+      },
+      {
+        "id": "wc-voiture-moteur-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-voiture-moteur",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит moteur?",
+        "bridge": "Англ. «motor» — двигатель, мотор; фр. moteur — почти то же написание. Читается /mɔ.tœʁ/, с французским r на конце.",
+        "options": ["двигатель", "водитель", "колесо", "движение"],
+        "correctIndex": 0,
+        "explanation": "moteur (m) — двигатель, мотор. Англ. «motor» — прямой мост. Водитель — un conducteur, движение — le mouvement."
+      },
+      {
+        "id": "wc-voiture-moteur-sort",
+        "kind": "sort",
+        "wordId": "wl-voiture-moteur",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом moteur звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "démarrer le moteur",
+            "basket": "ok"
+          },
+          {
+            "text": "couper le moteur",
+            "basket": "ok"
+          },
+          {
+            "text": "le moteur tourne",
+            "basket": "ok"
+          },
+          {
+            "text": "boire le moteur",
+            "basket": "no"
+          },
+          {
+            "text": "un moteur fatigué de dormir",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«démarrer / couper le moteur», «le moteur tourne» (двигатель работает) — естественно. «boire le moteur» (пить двигатель) и «un moteur fatigué de dormir» — бессмыслица."
+      },
+      {
+        "id": "wc-voiture-essence-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-voiture-essence",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il faut faire le plein d'essence avant de partir.",
+          "Le prix de l'essence a encore augmenté.",
+          "On est tombés en panne d'essence sur l'autoroute."
+        ],
+        "options": ["бензин", "суть", "масло", "вода"],
+        "correctIndex": 0,
+        "explanation": "essence (f) — бензин. «faire le plein d'essence» — заправиться, «tomber en panne d'essence» — встать без бензина. Машинное масло — l'huile."
+      },
+      {
+        "id": "wc-voiture-essence-trap",
+        "kind": "trap",
+        "wordId": "wl-voiture-essence",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «essence» — это «суть, эссенция». А что значит фр. l'essence?",
+        "options": ["бензин", "суть, эссенция", "запах", "эфирное масло"],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: фр. l'essence — это бензин (топливо), а не англ. «essence» (суть). «Суть» по-французски — l'essentiel; эфирное масло — une huile essentielle."
+      },
+      {
+        "id": "wc-voiture-frein-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-voiture-frein",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Appuie sur le frein, le feu est rouge !",
+          "N'oublie pas le frein à main en te garant.",
+          "Les freins font un bruit bizarre."
+        ],
+        "options": ["тормоз", "газ", "руль", "сцепление"],
+        "correctIndex": 0,
+        "explanation": "frein (m) — тормоз. «le frein à main» — ручной тормоз, «appuyer sur le frein» — нажать на тормоз. Тормозить (глагол) — freiner."
+      },
+      {
+        "id": "wc-voiture-frein-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-voiture-frein",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "frein",
+        "options": ["frein", "train", "pain", "frais"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало frein /fʁɛ̃/ — тормоз. Похожие: train /tʁɛ̃/ — поезд, pain /pɛ̃/ — хлеб (носовые), frais /fʁɛ/ — свежий (без носового на конце)."
+      },
+      {
+        "id": "wc-voiture-permis-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-voiture-permis",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je passe mon permis le mois prochain.",
+          "Tu as ton permis de conduire sur toi ?",
+          "Il a perdu son permis pour excès de vitesse."
+        ],
+        "options": ["водительские права", "паспорт", "билет", "штраф"],
+        "correctIndex": 0,
+        "explanation": "permis (m) — (водительские) права; полностью le permis de conduire. «passer le permis» — сдавать на права. Конечная s не читается: /pɛʁ.mi/. Штраф — une amende."
+      },
+      {
+        "id": "wc-voiture-permis-hint",
+        "kind": "wordHint",
+        "wordId": "wl-voiture-permis",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: документ, который даёт право водить машину.",
+        "answer": "permis",
+        "hints": [
+          "Начинается на p…",
+          "Однокоренное с permettre (разрешать)",
+          "Полностью — le ___ de conduire"
+        ],
+        "explanation": "permis (m) — права. Полная форма — le permis de conduire. Конечная s немая: /pɛʁ.mi/."
+      },
+      {
+        "id": "wc-voiture-phare-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-voiture-phare",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Подсказка-мост поможет узнать слово. Что значит phare?",
+        "bridge": "Англ. «pharos» — древний маяк (остров Фарос). Фр. le phare — это и маяк, и фара машины: оба — мощный свет в темноте.",
+        "options": ["фара", "руль", "сигнал (звук)", "зеркало"],
+        "correctIndex": 0,
+        "explanation": "phare (m) — фара (а также маяк). «allumer les phares» — включить фары. Звуковой сигнал — le klaxon, зеркало — le rétroviseur."
+      },
+      {
+        "id": "wc-voiture-phare-cmp",
+        "kind": "compare",
+        "wordId": "wl-voiture-phare",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "les phares и les feux arrière. В чём разница?",
+        "phrases": ["Allume tes phares, il fait nuit.", "Tes feux arrière sont cassés."],
+        "options": [
+          "les phares — передние (мощный свет вперёд); les feux arrière — задние габаритные огни.",
+          "Это полные синонимы, разницы нет.",
+          "les phares — задние огни, а les feux — передние.",
+          "les phares — это светофор, а les feux — фары."
+        ],
+        "correctIndex": 0,
+        "explanation": "les phares — передние фары (светят вперёд в темноте); les feux arrière — задние огни. Светофор — тоже le feu (le feu rouge), но это другой контекст."
+      },
+      {
+        "id": "wc-voiture-coffre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-voiture-coffre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Mets les valises dans le coffre.",
+          "Le coffre de cette voiture est très grand.",
+          "Ouvre le coffre, j'ai les courses."
+        ],
+        "options": ["багажник", "капот", "бардачок", "салон"],
+        "correctIndex": 0,
+        "explanation": "coffre (m) — багажник (сзади). «mettre dans le coffre» — положить в багажник. Капот (спереди) — le capot, бардачок — la boîte à gants."
+      },
+      {
+        "id": "wc-voiture-coffre-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-voiture-coffre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — части машины. Найди лишнее.",
+        "options": ["le coffre", "le moteur", "la roue", "l'essence"],
+        "correctIndex": 3,
+        "explanation": "Багажник (le coffre), двигатель (le moteur) и колесо (la roue) — части машины. Бензин (l'essence) — лишнее: это топливо, которое заливают, а не часть машины."
+      },
+      {
+        "id": "wc-voiture-coffre-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-voiture-coffre",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для coffre (багажник), чтобы запомнить мужской род (un coffre) и значение.",
+        "examples": [
+          "Англ. «coffer» — сундук/ларь: le coffre в машине — как сундук сзади, куда прячешь вещи.",
+          "Сейф — le coffre-fort («сильный сундук»); багажник — тот же coffre, только на колёсах, и он мужского рода: un grand coffre."
+        ]
+      }
+    ]
+  }
+]

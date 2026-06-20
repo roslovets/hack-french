@@ -25,3 +25,6 @@ dist-ssr
 
 # TS build info
 *.tsbuildinfo
+
+# Content-authoring workflow scratch (staged drafts before merge into src/)
+tmp/

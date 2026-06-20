@@ -1,0 +1,238 @@
+[
+  {
+    "id": "wl-toilette-savon",
+    "lemma": "savon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sa.vɔ̃/",
+    "translationsRu": ["мыло"],
+    "translationsEn": ["soap"],
+    "semanticCore": "Мыло, которым моют руки и тело — кусок или жидкое; неисчисляемое, обычно с частичным артиклем: du savon.",
+    "collocations": [
+      { "fr": "se laver les mains au savon", "ru": "мыть руки с мылом" },
+      { "fr": "un savon liquide", "ru": "жидкое мыло" },
+      { "fr": "un pain de savon", "ru": "кусок (брусок) мыла" },
+      { "fr": "du savon de Marseille", "ru": "марсельское мыло" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "lessive",
+        "note": "savon = мыло (для тела/рук); lessive (f) = стиральный порошок/гель для стирки белья. Это не одно и то же."
+      },
+      {
+        "with": "savonnette",
+        "note": "savon = мыло вообще; savonnette (f) = маленький кусочек туалетного мыла (например, в гостинице)."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A1",
+    "tags": ["toilette", "hygiene"],
+    "caseIds": ["wc-toilette"]
+  },
+  {
+    "id": "wl-toilette-douche",
+    "lemma": "douche",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/duʃ/",
+    "translationsRu": ["душ"],
+    "translationsEn": ["shower"],
+    "semanticCore": "Душ как действие («принять душ») и как место/устройство, где моются стоя.",
+    "collocations": [
+      { "fr": "prendre une douche", "ru": "принять душ" },
+      { "fr": "sous la douche", "ru": "под душем / в душе" },
+      { "fr": "un gel douche", "ru": "гель для душа" },
+      { "fr": "une douche froide", "ru": "холодный душ" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bain",
+        "note": "douche = душ (моются стоя, быстро); bain (m) = ванна (лежат, prendre un bain). Не путать prendre une douche и prendre un bain."
+      },
+      {
+        "with": "douche (англ.)",
+        "note": "Фр. douche = обычный душ. Англ. «douche» — узкое медицинское/жаргонное значение; это ложный друг, не переносите английский смысл во французский."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A1",
+    "tags": ["toilette", "hygiene"],
+    "caseIds": ["wc-toilette"]
+  },
+  {
+    "id": "wl-toilette-serviette",
+    "lemma": "serviette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sɛʁ.vjɛt/",
+    "translationsRu": ["полотенце", "салфетка", "портфель"],
+    "translationsEn": ["towel", "napkin", "briefcase"],
+    "semanticCore": "Одно слово для разного: банное полотенце, тканевая салфетка за столом и портфель — смысл подсказывает контекст.",
+    "collocations": [
+      { "fr": "une serviette de bain", "ru": "банное полотенце" },
+      { "fr": "une serviette de toilette", "ru": "полотенце (для умывания)" },
+      { "fr": "se sécher avec une serviette", "ru": "вытираться полотенцем" },
+      { "fr": "une serviette en papier", "ru": "бумажная салфетка" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "torchon",
+        "note": "serviette = полотенце для тела/рук; torchon (m) = кухонное полотенце (для посуды). На кухне сушат посуду un torchon, а не une serviette."
+      },
+      {
+        "with": "napkin (англ.)",
+        "note": "За столом serviette = салфетка (= англ. napkin). Не «serviette = только полотенце»: то же слово значит и салфетку, и даже портфель."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A1",
+    "tags": ["toilette", "hygiene"],
+    "caseIds": ["wc-toilette"]
+  },
+  {
+    "id": "wl-toilette-brosse",
+    "lemma": "brosse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bʁɔs/",
+    "translationsRu": ["щётка"],
+    "translationsEn": ["brush"],
+    "semanticCore": "Щётка вообще; конкретную называют через «à»: à dents, à cheveux — то есть «для зубов», «для волос».",
+    "collocations": [
+      { "fr": "une brosse à dents", "ru": "зубная щётка" },
+      { "fr": "une brosse à cheveux", "ru": "щётка для волос" },
+      { "fr": "se brosser les dents", "ru": "чистить зубы" },
+      { "fr": "se brosser les cheveux", "ru": "расчёсывать волосы (щёткой)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "peigne",
+        "note": "brosse = щётка (много щетинок, расчёсывает и приглаживает); peigne (m) = расчёска (с зубьями). Разные предметы."
+      },
+      {
+        "with": "balai",
+        "note": "brosse = небольшая щётка (для зубов, волос, одежды); balai (m) = метла/швабра для пола. Не путать по размеру и назначению."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A1",
+    "tags": ["toilette", "hygiene"],
+    "caseIds": ["wc-toilette"]
+  },
+  {
+    "id": "wl-toilette-dentifrice",
+    "lemma": "dentifrice",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/dɑ̃.ti.fʁis/",
+    "translationsRu": ["зубная паста"],
+    "translationsEn": ["toothpaste"],
+    "semanticCore": "Зубная паста; внутри спрятано dent (зуб) — средство, которым чистят зубы.",
+    "collocations": [
+      { "fr": "un tube de dentifrice", "ru": "тюбик зубной пасты" },
+      { "fr": "mettre du dentifrice sur la brosse", "ru": "выдавить пасту на щётку" },
+      { "fr": "un dentifrice à la menthe", "ru": "зубная паста с мятой" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "brosse à dents",
+        "note": "dentifrice = паста (её выдавливают); brosse à dents = щётка (ею чистят). Зубы чистят brosse + dentifrice вместе."
+      },
+      {
+        "with": "dent",
+        "note": "В слове dentifrice спрятано dent (зуб): легко запомнить смысл, но само слово — не «зуб», а именно паста."
+      }
+    ],
+    "frequencyRank": 900,
+    "level": "A1",
+    "tags": ["toilette", "hygiene"],
+    "caseIds": ["wc-toilette"]
+  },
+  {
+    "id": "wl-toilette-shampooing",
+    "lemma": "shampooing",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃɑ̃.pwɛ̃/",
+    "translationsRu": ["шампунь"],
+    "translationsEn": ["shampoo"],
+    "semanticCore": "Шампунь для мытья волос; слово пришло из английского, но пишется и читается по-французски.",
+    "collocations": [
+      { "fr": "se faire un shampooing", "ru": "помыть голову (шампунем)" },
+      { "fr": "un shampooing doux", "ru": "мягкий шампунь" },
+      { "fr": "une bouteille de shampooing", "ru": "бутылка шампуня" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "savon",
+        "note": "shampooing = для волос; savon = мыло для рук/тела. Волосы моют shampooing, а не savon."
+      },
+      {
+        "with": "shampoo (англ.)",
+        "note": "Англ. «shampoo» = тот же шампунь, но французское написание другое: shampooing (есть и вариант shampoing). Читается /ʃɑ̃.pwɛ̃/, без английского звука."
+      }
+    ],
+    "frequencyRank": 950,
+    "level": "A1",
+    "tags": ["toilette", "hygiene"],
+    "caseIds": ["wc-toilette"]
+  },
+  {
+    "id": "wl-toilette-peigne",
+    "lemma": "peigne",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɛɲ/",
+    "translationsRu": ["расчёска", "гребень"],
+    "translationsEn": ["comb"],
+    "semanticCore": "Расчёска с зубьями (мужской род — un peigne); от неё глагол se peigner — причёсываться.",
+    "collocations": [
+      { "fr": "se peigner les cheveux", "ru": "причёсываться (расчёской)" },
+      { "fr": "un coup de peigne", "ru": "пара движений расчёской / быстро причесаться" },
+      { "fr": "passer le peigne dans les cheveux", "ru": "провести расчёской по волосам" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "brosse",
+        "note": "peigne = расчёска (ряд зубьев); brosse = щётка (много щетинок). Оба для волос, но это разные предметы."
+      },
+      {
+        "with": "peigner",
+        "note": "peigne (m) = расчёска (предмет); se peigner = причёсываться (действие). Не путать существительное и глагол."
+      }
+    ],
+    "frequencyRank": 1100,
+    "level": "A1",
+    "tags": ["toilette", "hygiene"],
+    "caseIds": ["wc-toilette"]
+  },
+  {
+    "id": "wl-toilette-laver",
+    "lemma": "se laver",
+    "pos": "verb",
+    "ipa": "/sə la.ve/",
+    "translationsRu": ["мыться", "умываться"],
+    "translationsEn": ["to wash oneself", "to wash up"],
+    "semanticCore": "Мыть себя: возвратное se laver (мыться), либо se laver + часть тела (les mains, les dents, les cheveux).",
+    "collocations": [
+      { "fr": "se laver les mains", "ru": "мыть руки" },
+      { "fr": "se laver les dents", "ru": "чистить зубы" },
+      { "fr": "se laver les cheveux", "ru": "мыть голову (волосы)" },
+      { "fr": "se laver à l'eau froide", "ru": "мыться холодной водой" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "laver",
+        "note": "laver = мыть что-то (laver la voiture, laver le linge); se laver = мыть себя. С частью тела ставят se: «se laver les mains», а не «laver les mains»."
+      },
+      {
+        "with": "se lever",
+        "note": "Ложные друзья по звучанию: se laver /la.ve/ = мыться; se lever /lə.ve/ = вставать. Разная гласная — слушай первый слог."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A1",
+    "tags": ["toilette", "hygiene"],
+    "caseIds": ["wc-toilette"]
+  }
+]

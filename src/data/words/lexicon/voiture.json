@@ -1,0 +1,242 @@
+[
+  {
+    "id": "wl-voiture-volant",
+    "lemma": "volant",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɔ.lɑ̃/",
+    "translationsRu": ["руль"],
+    "translationsEn": ["steering wheel"],
+    "semanticCore": "Руль автомобиля — то, что водитель держит руками и крутит, чтобы повернуть.",
+    "collocations": [
+      { "fr": "tenir le volant", "ru": "держать руль" },
+      { "fr": "être au volant", "ru": "быть за рулём" },
+      { "fr": "un coup de volant", "ru": "резкий поворот руля" },
+      { "fr": "le volant à droite", "ru": "руль справа" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "volant (прил.)",
+        "note": "le volant (сущ.) — руль; volant как причастие/прилагательное значит «летающий» (от voler — летать): un poisson volant — летучая рыба. Одно и то же написание, но разные значения."
+      },
+      {
+        "with": "roue",
+        "note": "le volant — руль (его крутят руками); la roue — колесо (катится по дороге). По-русски «руль» и «колесо» не путают, но оба связаны с управлением машиной."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["voiture", "conduite"],
+    "caseIds": ["wc-voiture"]
+  },
+  {
+    "id": "wl-voiture-roue",
+    "lemma": "roue",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁu/",
+    "translationsRu": ["колесо"],
+    "translationsEn": ["wheel"],
+    "semanticCore": "Колесо машины (или велосипеда) — круглое, катится по дороге; бывает запасное.",
+    "collocations": [
+      { "fr": "la roue de secours", "ru": "запасное колесо" },
+      { "fr": "changer une roue", "ru": "поменять колесо" },
+      { "fr": "les quatre roues", "ru": "все четыре колеса" },
+      { "fr": "une roue crevée", "ru": "пробитое колесо" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pneu",
+        "note": "la roue — всё колесо (диск + шина); le pneu — только шина (резина). Прокол — c'est le pneu qui est crevé, но меняют la roue целиком."
+      },
+      {
+        "with": "rue",
+        "note": "la roue /ʁu/ — колесо; la rue /ʁy/ — улица. Отличаются только гласной: u в roue звучит как «у», в rue — как острое «ю»."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["voiture", "pièce"],
+    "caseIds": ["wc-voiture"]
+  },
+  {
+    "id": "wl-voiture-moteur",
+    "lemma": "moteur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mɔ.tœʁ/",
+    "translationsRu": ["двигатель", "мотор"],
+    "translationsEn": ["engine", "motor"],
+    "semanticCore": "Двигатель машины — то, что заводят и что приводит её в движение.",
+    "collocations": [
+      { "fr": "démarrer le moteur", "ru": "завести двигатель" },
+      { "fr": "couper le moteur", "ru": "заглушить двигатель" },
+      { "fr": "un moteur diesel", "ru": "дизельный двигатель" },
+      { "fr": "le moteur tourne", "ru": "двигатель работает" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "moteur (англ. motor)",
+        "note": "Англ. «motor» = фр. le moteur — прямой мост. Но «to motor» по-французски не калькируется: «ехать на машине» — rouler / aller en voiture, а не «motorer»."
+      },
+      {
+        "with": "machine",
+        "note": "le moteur — именно двигатель (мотор); la machine — машина-механизм в целом (стиральная, швейная). Автомобиль — la voiture, а не la machine."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["voiture", "pièce"],
+    "caseIds": ["wc-voiture"]
+  },
+  {
+    "id": "wl-voiture-essence",
+    "lemma": "essence",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.sɑ̃s/",
+    "translationsRu": ["бензин"],
+    "translationsEn": ["petrol", "gasoline"],
+    "semanticCore": "Бензин — топливо, которым заправляют машину на заправке.",
+    "collocations": [
+      { "fr": "faire le plein d'essence", "ru": "заправиться под завязку" },
+      { "fr": "une station-service", "ru": "заправка / АЗС" },
+      { "fr": "tomber en panne d'essence", "ru": "встать без бензина" },
+      { "fr": "le prix de l'essence", "ru": "цена на бензин" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "essence (англ.)",
+        "note": "Ложный друг: фр. l'essence — это бензин, а НЕ «суть / эссенция» (англ. essence). «Суть» по-французски — l'essentiel или la nature de qqch."
+      },
+      {
+        "with": "gazole",
+        "note": "l'essence — бензин (для бензиновых моторов); le gazole (разг. le diesel) — солярка/дизель. На заправке это разные колонки — не перепутать."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["voiture", "carburant"],
+    "caseIds": ["wc-voiture"]
+  },
+  {
+    "id": "wl-voiture-frein",
+    "lemma": "frein",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fʁɛ̃/",
+    "translationsRu": ["тормоз"],
+    "translationsEn": ["brake"],
+    "semanticCore": "Тормоз машины — то, чем останавливают или замедляют ход; есть ручной тормоз.",
+    "collocations": [
+      { "fr": "le frein à main", "ru": "ручной тормоз" },
+      { "fr": "appuyer sur le frein", "ru": "нажать на тормоз" },
+      { "fr": "donner un coup de frein", "ru": "резко затормозить" },
+      { "fr": "les freins lâchent", "ru": "тормоза отказывают" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "freiner",
+        "note": "le frein — тормоз (предмет, сущ.); freiner — тормозить (действие, глагол). «Нажать на тормоз» — appuyer sur le frein; «затормозить» — freiner."
+      },
+      {
+        "with": "frais",
+        "note": "le frein /fʁɛ̃/ — тормоз (носовой звук на конце); frais /fʁɛ/ — свежий / прохладный (без носового). Похожи, но звучат по-разному."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["voiture", "pièce"],
+    "caseIds": ["wc-voiture"]
+  },
+  {
+    "id": "wl-voiture-permis",
+    "lemma": "permis",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɛʁ.mi/",
+    "translationsRu": ["водительские права"],
+    "translationsEn": ["driving licence", "driver's license"],
+    "semanticCore": "Права — документ, дающий разрешение водить; полностью le permis de conduire.",
+    "collocations": [
+      { "fr": "passer le permis", "ru": "сдавать на права" },
+      { "fr": "avoir le permis", "ru": "иметь права" },
+      { "fr": "le permis de conduire", "ru": "водительское удостоверение" },
+      { "fr": "perdre son permis", "ru": "лишиться прав" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "permettre",
+        "note": "le permis — разрешение/права (сущ., от permettre — разрешать). Конечная s не читается: /pɛʁ.mi/. Не путать с глаголом permettre (разрешать)."
+      },
+      {
+        "with": "licence",
+        "note": "le permis (de conduire) — водительские права; la licence — это диплом (бакалавриат) или лицензия/право пользования, НЕ права на машину."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["voiture", "conduite"],
+    "caseIds": ["wc-voiture"]
+  },
+  {
+    "id": "wl-voiture-phare",
+    "lemma": "phare",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/faʁ/",
+    "translationsRu": ["фара"],
+    "translationsEn": ["headlight"],
+    "semanticCore": "Фара машины — передний свет, который включают в темноте; то же слово — маяк.",
+    "collocations": [
+      { "fr": "allumer les phares", "ru": "включить фары" },
+      { "fr": "éteindre les phares", "ru": "выключить фары" },
+      { "fr": "les pleins phares", "ru": "дальний свет" },
+      { "fr": "un appel de phares", "ru": "моргнуть фарами" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "phare (маяк)",
+        "note": "le phare — это и фара машины, и маяк на берегу (изначально — от острова Фарос с маяком). По контексту понятно, о чём речь."
+      },
+      {
+        "with": "feu",
+        "note": "le phare — фара (передний мощный свет); le feu — любой огонёк/сигнал машины (les feux arrière — задние огни, les feux de stop — стоп-сигналы) и светофор (le feu rouge)."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A2",
+    "tags": ["voiture", "pièce"],
+    "caseIds": ["wc-voiture"]
+  },
+  {
+    "id": "wl-voiture-coffre",
+    "lemma": "coffre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔfʁ/",
+    "translationsRu": ["багажник"],
+    "translationsEn": ["trunk", "boot"],
+    "semanticCore": "Багажник машины — отделение сзади, куда кладут вещи; то же слово — сундук, сейф.",
+    "collocations": [
+      { "fr": "ouvrir le coffre", "ru": "открыть багажник" },
+      { "fr": "mettre les valises dans le coffre", "ru": "положить чемоданы в багажник" },
+      { "fr": "le coffre est plein", "ru": "багажник полон" },
+      { "fr": "un grand coffre", "ru": "большой багажник" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "coffre-fort",
+        "note": "le coffre — багажник или сундук; le coffre-fort — сейф (для денег и ценностей). В машине — le coffre (багажник), в банке — le coffre-fort."
+      },
+      {
+        "with": "valise",
+        "note": "le coffre — багажник (часть машины, куда кладут); la valise — чемодан (то, что кладут внутрь). Не путать: чемоданы едут dans le coffre."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["voiture", "pièce"],
+    "caseIds": ["wc-voiture"]
+  }
+]
