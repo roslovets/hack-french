@@ -1,0 +1,235 @@
+[
+  {
+    "id": "wl-musees-musee",
+    "lemma": "musée",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/my.ze/",
+    "translationsRu": ["музей"],
+    "translationsEn": ["museum"],
+    "semanticCore": "Музей как здание и учреждение, куда ходят смотреть произведения искусства.",
+    "collocations": [
+      { "fr": "aller au musée", "ru": "идти в музей" },
+      { "fr": "visiter un musée", "ru": "посетить музей" },
+      { "fr": "le musée du Louvre", "ru": "Лувр (музей Лувр)" },
+      { "fr": "un musée d'art moderne", "ru": "музей современного искусства" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "exposition",
+        "note": "musée = само здание/учреждение (оно постоянное); exposition = временная выставка внутри музея, с началом и концом."
+      },
+      {
+        "with": "galerie",
+        "note": "musée = музей (большое собрание, часто государственное); galerie = галерея (меньше, часто частная, где картины продают)."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["musees", "lieu"],
+    "caseIds": ["wc-musees"]
+  },
+  {
+    "id": "wl-musees-tableau",
+    "lemma": "tableau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ta.blo/",
+    "translationsRu": ["картина", "полотно"],
+    "translationsEn": ["painting", "picture"],
+    "semanticCore": "Картина — изображение на холсте или доске, которое вешают на стену; во мн.ч. tableaux.",
+    "collocations": [
+      { "fr": "un tableau de Monet", "ru": "картина Моне" },
+      { "fr": "accrocher un tableau au mur", "ru": "повесить картину на стену" },
+      { "fr": "un tableau célèbre", "ru": "знаменитая картина" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "table",
+        "note": "tableau (m) = картина; table (f) = стол. Похожи на вид, но это разные слова и разный род — не путать."
+      },
+      {
+        "with": "peinture",
+        "note": "tableau = конкретная картина (один предмет); peinture = живопись как искусство ИЛИ краска/слой краски."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["musees", "art"],
+    "caseIds": ["wc-musees"]
+  },
+  {
+    "id": "wl-musees-statue",
+    "lemma": "statue",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sta.ty/",
+    "translationsRu": ["статуя"],
+    "translationsEn": ["statue"],
+    "semanticCore": "Статуя — объёмное изображение человека или фигуры из камня, бронзы и т. п.",
+    "collocations": [
+      { "fr": "une statue en bronze", "ru": "бронзовая статуя" },
+      { "fr": "une statue de marbre", "ru": "мраморная статуя" },
+      { "fr": "la statue de la Liberté", "ru": "статуя Свободы" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "statut",
+        "note": "statue (f) = статуя; statut (m) = статус, положение (statut social). Звучат почти одинаково — классическая ловушка."
+      },
+      {
+        "with": "sculpture",
+        "note": "statue = статуя (обычно фигура человека/животного, стоит отдельно); sculpture = скульптура как вид искусства или любое объёмное произведение."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["musees", "art"],
+    "caseIds": ["wc-musees"]
+  },
+  {
+    "id": "wl-musees-exposition",
+    "lemma": "exposition",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɛks.po.zi.sjɔ̃/",
+    "translationsRu": ["выставка"],
+    "translationsEn": ["exhibition", "exposition"],
+    "semanticCore": "Выставка — временный показ работ или предметов; в разговоре часто сокращают до «expo».",
+    "collocations": [
+      { "fr": "une exposition de peinture", "ru": "выставка живописи" },
+      { "fr": "visiter une exposition", "ru": "сходить на выставку" },
+      { "fr": "une exposition temporaire", "ru": "временная выставка" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "exhibition (англ.)",
+        "note": "Англ. «exhibition» (выставка) = фр. exposition. А англ. «exposition» (изложение) — другое значение; во фр. exposition — это именно выставка/показ."
+      },
+      {
+        "with": "musée",
+        "note": "exposition = временное событие (его открывают и закрывают); musée = постоянное здание, где такие выставки проходят."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["musees", "art"],
+    "caseIds": ["wc-musees"]
+  },
+  {
+    "id": "wl-musees-oeuvre",
+    "lemma": "œuvre",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/œvʁ/",
+    "translationsRu": ["произведение", "работа (художника)"],
+    "translationsEn": ["work", "artwork"],
+    "semanticCore": "Произведение искусства — то, что создал художник: картина, статуя, книга, музыка.",
+    "collocations": [
+      { "fr": "une œuvre d'art", "ru": "произведение искусства" },
+      { "fr": "les œuvres de Picasso", "ru": "произведения Пикассо" },
+      { "fr": "une œuvre célèbre", "ru": "знаменитое произведение" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chef-d'œuvre",
+        "note": "une œuvre (f) = (любое) произведение; un chef-d'œuvre (m!) = шедевр. Внимание: chef-d'œuvre — мужского рода."
+      },
+      {
+        "with": "travail",
+        "note": "œuvre = готовое произведение, результат творчества; travail = работа как труд/процесс (а не созданный шедевр)."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["musees", "art"],
+    "caseIds": ["wc-musees"]
+  },
+  {
+    "id": "wl-musees-visite",
+    "lemma": "visite",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vi.zit/",
+    "translationsRu": ["посещение", "экскурсия"],
+    "translationsEn": ["visit", "tour"],
+    "semanticCore": "Посещение места или человека; в музее — осмотр, часто с гидом (visite guidée).",
+    "collocations": [
+      { "fr": "une visite guidée", "ru": "экскурсия с гидом" },
+      { "fr": "la visite du musée", "ru": "осмотр музея" },
+      { "fr": "rendre visite à un ami", "ru": "навестить друга" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "visiter",
+        "note": "visite (f) = существительное «посещение»; visiter = глагол «посещать» (место): on visite un musée, mais on fait une visite."
+      },
+      {
+        "with": "rendre visite à",
+        "note": "visiter + место (visiter Paris); rendre visite à + человек (rendre visite à sa grand-mère). К человеку «visiter» обычно не говорят."
+      }
+    ],
+    "frequencyRank": 450,
+    "level": "A2",
+    "tags": ["musees", "experience"],
+    "caseIds": ["wc-musees"]
+  },
+  {
+    "id": "wl-musees-guide",
+    "lemma": "guide",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɡid/",
+    "translationsRu": ["гид", "путеводитель"],
+    "translationsEn": ["guide", "guidebook"],
+    "semanticCore": "Гид — человек, который ведёт экскурсию, ИЛИ книга-путеводитель; обычно мужского рода.",
+    "collocations": [
+      { "fr": "un guide touristique", "ru": "туристический гид / путеводитель" },
+      { "fr": "suivre le guide", "ru": "идти за гидом" },
+      { "fr": "une visite guidée", "ru": "экскурсия с гидом" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "guider",
+        "note": "un guide (m) = гид или путеводитель (существительное); guider = глагол «вести, направлять». Visite guidée — экскурсия, которую «ведут»."
+      },
+      {
+        "with": "plan",
+        "note": "guide = путеводитель (книга с описаниями и советами); plan = план/карта города (только схема улиц, без рассказов)."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["musees", "experience"],
+    "caseIds": ["wc-musees"]
+  },
+  {
+    "id": "wl-musees-collection",
+    "lemma": "collection",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kɔ.lɛk.sjɔ̃/",
+    "translationsRu": ["коллекция", "собрание"],
+    "translationsEn": ["collection"],
+    "semanticCore": "Коллекция — собрание предметов одной темы; в музее — его постоянное собрание работ.",
+    "collocations": [
+      { "fr": "la collection du musée", "ru": "коллекция музея" },
+      { "fr": "la collection permanente", "ru": "постоянная экспозиция" },
+      { "fr": "une collection de tableaux", "ru": "коллекция картин" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "collection (англ.)",
+        "note": "Англ. «collection» = фр. collection — почти одно слово, надёжный мост. Только пишется -tion и читается /sjɔ̃/."
+      },
+      {
+        "with": "exposition",
+        "note": "collection = постоянное собрание музея (есть всегда); exposition = временная выставка, которую показывают какое-то время."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["musees", "art"],
+    "caseIds": ["wc-musees"]
+  }
+]

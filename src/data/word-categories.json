@@ -54,7 +54,9 @@
       "sentiments",
       "relations",
       "bebe",
-      "organes"
+      "organes",
+      "maquillage",
+      "coiffure"
     ],
     "bossId": "wc-boss-corps-famille"
   },
@@ -113,7 +115,7 @@
   {
     "id": "money",
     "title": "Покупки и деньги",
-    "themes": ["argent", "courses", "magasins", "finance"],
+    "themes": ["argent", "courses", "magasins", "finance", "banque"],
     "bossId": "wc-boss-money"
   },
   {
@@ -137,14 +139,25 @@
       "ecologie",
       "espace",
       "insectes",
-      "ferme"
+      "ferme",
+      "montagne"
     ],
     "bossId": "wc-boss-weather"
   },
   {
     "id": "leisure",
     "title": "Досуг и интересы",
-    "themes": ["loisirs", "sport", "fetes", "arts", "plage", "camping", "jardinage", "photo"],
+    "themes": [
+      "loisirs",
+      "sport",
+      "fetes",
+      "arts",
+      "plage",
+      "camping",
+      "jardinage",
+      "photo",
+      "musees"
+    ],
     "bossId": "wc-boss-leisure"
   },
   {

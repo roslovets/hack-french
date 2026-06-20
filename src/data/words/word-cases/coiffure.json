@@ -1,0 +1,285 @@
+[
+  {
+    "id": "wc-coiffure",
+    "title": "Причёска",
+    "theme": "coiffure",
+    "level": "A2",
+    "wordIds": [
+      "wl-coiffure-coiffeur",
+      "wl-coiffure-meche",
+      "wl-coiffure-frange",
+      "wl-coiffure-chignon",
+      "wl-coiffure-brushing",
+      "wl-coiffure-raie",
+      "wl-coiffure-secher",
+      "wl-coiffure-tresse"
+    ],
+    "steps": [
+      {
+        "id": "wc-coiffure-coiffeur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-coiffure-coiffeur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je vais chez le coiffeur samedi matin.",
+          "Mon coiffeur me coupe les cheveux trop court.",
+          "Il faut prendre rendez-vous chez le coiffeur."
+        ],
+        "options": ["парикмахер", "причёска", "ножницы", "клиент"],
+        "correctIndex": 0,
+        "explanation": "coiffeur (m) — парикмахер. «chez le coiffeur» — к парикмахеру / в парикмахерскую. Причёска — la coiffure, ножницы — les ciseaux."
+      },
+      {
+        "id": "wc-coiffure-coiffeur-sort",
+        "kind": "sort",
+        "wordId": "wl-coiffure-coiffeur",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом coiffeur звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "aller chez le coiffeur",
+            "basket": "ok"
+          },
+          {
+            "text": "prendre rendez-vous chez le coiffeur",
+            "basket": "ok"
+          },
+          {
+            "text": "un bon coiffeur",
+            "basket": "ok"
+          },
+          {
+            "text": "manger un coiffeur",
+            "basket": "no"
+          },
+          {
+            "text": "aller au coiffeur dans la tête",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«aller chez le coiffeur», «prendre rendez-vous chez le coiffeur», «un bon coiffeur» — естественно. «manger un coiffeur» (съесть парикмахера) и «au coiffeur dans la tête» — бессмыслица. К человеку идут chez le coiffeur."
+      },
+      {
+        "id": "wc-coiffure-meche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-coiffure-meche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Une mèche tombe sur ses yeux.",
+          "Elle remet une mèche derrière son oreille.",
+          "Je voudrais me faire des mèches blondes."
+        ],
+        "options": ["прядь (волос)", "чёлка", "пучок", "расчёска"],
+        "correctIndex": 0,
+        "explanation": "mèche (f) — прядь волос. Во множественном «se faire des mèches» — сделать мелирование (окрашенные пряди). Чёлка — la frange, пучок — le chignon."
+      },
+      {
+        "id": "wc-coiffure-meche-cmp",
+        "kind": "compare",
+        "wordId": "wl-coiffure-meche",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une mèche и une frange. В чём разница?",
+        "phrases": ["Une mèche tombe sur son front.", "Elle a une frange droite."],
+        "options": [
+          "mèche — одна отдельная прядь; frange — чёлка, целый ряд волос надо лбом.",
+          "Это полные синонимы, разницы нет.",
+          "mèche — это чёлка, а frange — одна прядь.",
+          "mèche — коса, frange — пучок."
+        ],
+        "correctIndex": 0,
+        "explanation": "une mèche — отдельная прядь (может выбиваться где угодно). une frange — чёлка: ровный ряд волос, спадающий на лоб. Чёлка состоит из многих прядей, но это не одна mèche."
+      },
+      {
+        "id": "wc-coiffure-frange-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-coiffure-frange",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Elle s'est fait couper une frange.",
+          "Ta frange est trop longue, elle cache tes yeux.",
+          "Avec une frange, tu as l'air plus jeune."
+        ],
+        "options": ["чёлка", "коса", "пробор", "хвост"],
+        "correctIndex": 0,
+        "explanation": "frange (f) — чёлка (волосы на лбу). «se couper une frange» — подстричь чёлку. Коса — une tresse, пробор — une raie."
+      },
+      {
+        "id": "wc-coiffure-frange-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-coiffure-frange",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит frange?",
+        "bridge": "Англ. «fringe» — это и чёлка (брит.), и бахрома; фр. frange — ровно те же значения. Только читается по-французски /fʁɑ̃ʒ/, с носовым.",
+        "options": ["чёлка", "край города", "холод", "франк (деньги)"],
+        "correctIndex": 0,
+        "explanation": "frange = чёлка (и бахрома). Англ. «fringe» — прямой мост. Не путать с franc (франк) или froid (холод) — просто похоже по началу."
+      },
+      {
+        "id": "wc-coiffure-chignon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-coiffure-chignon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La danseuse porte un chignon serré.",
+          "Elle attache ses cheveux en chignon pour travailler.",
+          "Pour le mariage, je me ferai un chignon."
+        ],
+        "options": ["пучок", "чёлка", "локон", "пробор"],
+        "correctIndex": 0,
+        "explanation": "chignon (m) — пучок: волосы собраны и закручены узлом на затылке. «se faire un chignon» — собрать в пучок. Чёлка — la frange."
+      },
+      {
+        "id": "wc-coiffure-chignon-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-coiffure-chignon",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для chignon (пучок), чтобы запомнить мужской род (un chignon) и звук gn = /ɲ/ как в «нь».",
+        "examples": [
+          "По-русски «причёска» женского рода, но chignon — мужского: представь, что пучок носит мужчина-балерун — UN chignon.",
+          "gn читается «нь» /ɲ/: «ши-нь-он» — как в слове «шампиньон» (champignon), оно тоже на -gnon."
+        ]
+      },
+      {
+        "id": "wc-coiffure-brushing-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-coiffure-brushing",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je voudrais une coupe et un brushing.",
+          "Après le brushing, mes cheveux sont tout lisses.",
+          "Un brushing tient deux ou trois jours."
+        ],
+        "options": ["укладка феном", "чистка зубов", "мытьё головы", "стрижка"],
+        "correctIndex": 0,
+        "explanation": "un brushing — укладка волос феном и круглой щёткой. Стрижка — une coupe, мытьё головы — un shampooing. Слово выглядит английским, но значение чисто французское."
+      },
+      {
+        "id": "wc-coiffure-brushing-trap",
+        "kind": "trap",
+        "wordId": "wl-coiffure-brushing",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово brushing выглядит как английское. Что оно значит во французском?",
+        "options": [
+          "укладка феном",
+          "чистка щёткой (как в английском)",
+          "румянец на щеках",
+          "чистка зубов"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ложный англицизм: фр. un brushing = «укладка феном», хотя англ. brushing — «чистка щёткой». По-английски скажут blow-dry. Румянец — англ. blushing, не путать на слух."
+      },
+      {
+        "id": "wc-coiffure-raie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-coiffure-raie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il se coiffe avec une raie sur le côté.",
+          "Je fais ma raie au milieu.",
+          "Sa raie n'est pas droite."
+        ],
+        "options": ["пробор", "прядь", "чёлка", "коса"],
+        "correctIndex": 0,
+        "explanation": "raie (f) — пробор: линия, разделяющая волосы. «une raie au milieu» — пробор посередине, «sur le côté» — сбоку. Прядь — une mèche."
+      },
+      {
+        "id": "wc-coiffure-raie-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-coiffure-raie",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "raie",
+        "options": ["raie", "rue", "roue", "rat"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало raie /ʁɛ/ (пробор). Похожие, но другие слова: rue /ʁy/ (улица), roue /ʁu/ (колесо), rat /ʁa/ (крыса). Различает только гласный — у raie это /ɛ/."
+      },
+      {
+        "id": "wc-coiffure-secher-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-coiffure-secher",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je me sèche les cheveux avant de sortir.",
+          "Laisse sécher tes cheveux à l'air libre.",
+          "Le linge sèche sur le balcon."
+        ],
+        "options": ["сушить / сохнуть", "мыть", "красить", "стричь"],
+        "correctIndex": 0,
+        "explanation": "sécher — сушить или сохнуть. «se sécher les cheveux» — сушить волосы, «laisser sécher» — дать высохнуть. В présent: je sèche (è открывается). Мыть — laver."
+      },
+      {
+        "id": "wc-coiffure-secher-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-coiffure-secher",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "sécher",
+        "options": ["sécher", "cacher", "lécher", "pêcher"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало sécher /se.ʃe/ (сушить). Похожие глаголы: cacher /ka.ʃe/ (прятать), lécher /le.ʃe/ (лизать), pêcher /pe.ʃe/ (ловить рыбу). Все на -cher, но первый слог разный."
+      },
+      {
+        "id": "wc-coiffure-tresse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-coiffure-tresse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La petite fille a deux tresses.",
+          "Sa maman lui fait une tresse tous les matins.",
+          "Elle porte une longue tresse dans le dos."
+        ],
+        "options": ["коса", "чёлка", "пучок", "пробор"],
+        "correctIndex": 0,
+        "explanation": "tresse (f) — коса (волосы заплетены из прядей). «faire une tresse» — заплести косу. Пучок — un chignon, чёлка — une frange."
+      },
+      {
+        "id": "wc-coiffure-tresse-hint",
+        "kind": "wordHint",
+        "wordId": "wl-coiffure-tresse",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: причёска, где волосы переплетены из трёх прядей.",
+        "answer": "tresse",
+        "hints": [
+          "Начинается на tr…",
+          "6 букв, женский род, рифмуется с «presse»",
+          "La petite fille a deux ___s."
+        ],
+        "explanation": "tresse (f) — коса. «faire une tresse» — заплести косу. Синоним — une natte. Не путать с un chignon (пучок)."
+      }
+    ]
+  }
+]

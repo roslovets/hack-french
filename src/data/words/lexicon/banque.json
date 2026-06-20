@@ -1,0 +1,242 @@
+[
+  {
+    "id": "wl-banque-retrait",
+    "lemma": "retrait",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁə.tʁɛ/",
+    "translationsRu": ["снятие денег", "снятие со счёта"],
+    "translationsEn": ["withdrawal", "cash withdrawal"],
+    "semanticCore": "Снятие денег со счёта — деньги уходят со счёта тебе на руки; противоположность вклада (dépôt).",
+    "collocations": [
+      { "fr": "faire un retrait", "ru": "снять деньги (сделать снятие)" },
+      { "fr": "un retrait d'espèces", "ru": "снятие наличных" },
+      { "fr": "un retrait au distributeur", "ru": "снятие в банкомате" },
+      { "fr": "le montant du retrait", "ru": "сумма снятия" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "dépôt",
+        "note": "retrait = снятие (деньги уходят со счёта к тебе); dépôt = вклад (деньги кладут на счёт). Это противоположные операции."
+      },
+      {
+        "with": "retraite",
+        "note": "retrait (m) = снятие денег; retraite (f, с -e) = пенсия / выход на пенсию. Похожи, но разные слова и род разный."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["banque", "argent", "operation"],
+    "caseIds": ["wc-banque"]
+  },
+  {
+    "id": "wl-banque-depot",
+    "lemma": "dépôt",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/de.po/",
+    "translationsRu": ["вклад", "депозит", "внесение денег"],
+    "translationsEn": ["deposit"],
+    "semanticCore": "Внесение денег на счёт или сумма, положенная на хранение; противоположность снятия (retrait).",
+    "collocations": [
+      { "fr": "faire un dépôt", "ru": "внести деньги (сделать вклад)" },
+      { "fr": "un dépôt d'espèces", "ru": "внесение наличных" },
+      { "fr": "un dépôt de garantie", "ru": "залог (при аренде)" },
+      { "fr": "le montant du dépôt", "ru": "сумма вклада / внесения" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "retrait",
+        "note": "dépôt = вклад (деньги кладут на счёт); retrait = снятие (деньги забирают). Это две противоположные операции по счёту."
+      },
+      {
+        "with": "épargne",
+        "note": "dépôt = разовое внесение суммы на счёт; épargne = сами накопленные сбережения (то, что в итоге лежит и копится)."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["banque", "argent", "operation"],
+    "caseIds": ["wc-banque"]
+  },
+  {
+    "id": "wl-banque-pret",
+    "lemma": "prêt",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pʁɛ/",
+    "translationsRu": ["кредит", "заём", "ссуда"],
+    "translationsEn": ["loan"],
+    "semanticCore": "Деньги, которые банк даёт в долг под возврат; ссуда, которую потом погашают.",
+    "collocations": [
+      { "fr": "faire un prêt", "ru": "взять кредит / оформить ссуду" },
+      { "fr": "un prêt immobilier", "ru": "ипотечный кредит" },
+      { "fr": "rembourser un prêt", "ru": "погасить кредит" },
+      { "fr": "demander un prêt à la banque", "ru": "просить кредит в банке" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "crédit",
+        "note": "prêt = ссуда: банк prête (даёт) деньги в долг; crédit чаще о потребительском/карточном кредите. В ипотеке говорят и un prêt immobilier, и un crédit immobilier."
+      },
+      {
+        "with": "prêt (прил.)",
+        "note": "Омограф-ловушка: существительное un prêt (m) = кредит; прилагательное prêt(e) = готовый (je suis prêt — я готов). Оба читаются /pʁɛ/; смысл решает контекст."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["banque", "argent", "credit"],
+    "caseIds": ["wc-banque"]
+  },
+  {
+    "id": "wl-banque-virement",
+    "lemma": "virement",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/viʁ.mɑ̃/",
+    "translationsRu": ["банковский перевод", "перевод денег"],
+    "translationsEn": ["transfer", "bank transfer"],
+    "semanticCore": "Безналичный перевод денег с одного счёта на другой; от глагола virer — перечислять.",
+    "collocations": [
+      { "fr": "faire un virement", "ru": "сделать перевод" },
+      { "fr": "un virement bancaire", "ru": "банковский перевод" },
+      { "fr": "payer par virement", "ru": "оплатить переводом" },
+      { "fr": "un virement automatique", "ru": "автоматический перевод" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "versement",
+        "note": "virement = перевод со счёта на счёт (безналичный); versement = внесение/выплата суммы (например, взнос, зарплата). Часто путают как «перечисление»."
+      },
+      {
+        "with": "retrait",
+        "note": "virement = перевод денег между счетами (наличные не трогают); retrait = снятие наличных со счёта на руки."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["banque", "argent", "operation"],
+    "caseIds": ["wc-banque"]
+  },
+  {
+    "id": "wl-banque-distributeur",
+    "lemma": "distributeur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/dis.tʁi.by.tœʁ/",
+    "translationsRu": ["банкомат", "автомат (раздаточный)"],
+    "translationsEn": ["ATM", "cash machine"],
+    "semanticCore": "Уличный автомат, выдающий наличные с карты (DAB); то же слово — и торговый автомат с едой/напитками.",
+    "collocations": [
+      { "fr": "retirer de l'argent au distributeur", "ru": "снять деньги в банкомате" },
+      { "fr": "un distributeur automatique de billets", "ru": "банкомат (полное название, DAB)" },
+      { "fr": "le distributeur est en panne", "ru": "банкомат не работает" },
+      { "fr": "un distributeur de boissons", "ru": "автомат с напитками" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "guichet",
+        "note": "distributeur = автомат-банкомат (машина выдаёт наличные сама); guichet = окно кассы, где обслуживает человек."
+      },
+      {
+        "with": "billet",
+        "note": "distributeur = банкомат; un billet здесь = банкнота (купюра), которую он выдаёт. Полное имя банкомата — distributeur de billets."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["banque", "argent", "objet"],
+    "caseIds": ["wc-banque"]
+  },
+  {
+    "id": "wl-banque-cheque",
+    "lemma": "chèque",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃɛk/",
+    "translationsRu": ["чек (банковский)"],
+    "translationsEn": ["cheque", "check"],
+    "semanticCore": "Банковский чек: бумажное распоряжение банку выплатить сумму; им расплачиваются или его выписывают.",
+    "collocations": [
+      { "fr": "faire un chèque", "ru": "выписать чек" },
+      { "fr": "payer par chèque", "ru": "платить чеком" },
+      { "fr": "un chèque sans provision", "ru": "чек без покрытия (необеспеченный)" },
+      { "fr": "encaisser un chèque", "ru": "обналичить чек" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ticket",
+        "note": "Ложный друг: фр. chèque = банковский чек (которым платят); кассовый чек в магазине — un ticket (de caisse) или un reçu, не chèque."
+      },
+      {
+        "with": "addition",
+        "note": "chèque = средство оплаты (бумага из чековой книжки); l'addition = счёт к оплате в кафе. Оплатить addition можно par chèque."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["banque", "argent", "paiement"],
+    "caseIds": ["wc-banque"]
+  },
+  {
+    "id": "wl-banque-guichet",
+    "lemma": "guichet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɡi.ʃɛ/",
+    "translationsRu": ["окно кассы", "касса (окошко)"],
+    "translationsEn": ["counter", "window"],
+    "semanticCore": "Окошко обслуживания, где сотрудник принимает клиентов — в банке, на вокзале, на почте.",
+    "collocations": [
+      { "fr": "au guichet", "ru": "у окошка / в кассе" },
+      { "fr": "faire la queue au guichet", "ru": "стоять в очереди к окошку" },
+      { "fr": "le guichet est fermé", "ru": "окно (касса) закрыто" },
+      { "fr": "un guichet automatique", "ru": "автоматическая касса / банкомат-окно" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "distributeur",
+        "note": "guichet = окно, где обслуживает человек; distributeur = автомат-банкомат без сотрудника. В банке есть и то, и другое."
+      },
+      {
+        "with": "caisse",
+        "note": "guichet = окошко обслуживания (банк, вокзал, почта); la caisse = касса в магазине, где оплачивают покупки."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["banque", "lieux", "service"],
+    "caseIds": ["wc-banque"]
+  },
+  {
+    "id": "wl-banque-epargne",
+    "lemma": "épargne",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.paʁɲ/",
+    "translationsRu": ["сбережения", "накопления"],
+    "translationsEn": ["savings"],
+    "semanticCore": "Отложенные деньги, которые копят на будущее; то, что лежит и не тратится.",
+    "collocations": [
+      { "fr": "un compte d'épargne", "ru": "сберегательный счёт" },
+      { "fr": "un livret d'épargne", "ru": "сберкнижка (накопительный счёт)" },
+      { "fr": "puiser dans son épargne", "ru": "брать из сбережений" },
+      { "fr": "l'épargne des ménages", "ru": "сбережения домохозяйств" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "économies",
+        "note": "épargne = сбережения как понятие/капитал (часто на счёте, более формально); des économies = накопленные деньги в обиходе. «Копить» — обычно faire des économies."
+      },
+      {
+        "with": "dépôt",
+        "note": "épargne = сами накопления (то, что копится со временем); dépôt = разовое внесение суммы на счёт (одна операция)."
+      }
+    ],
+    "frequencyRank": 740,
+    "level": "A2",
+    "tags": ["banque", "argent", "epargne"],
+    "caseIds": ["wc-banque"]
+  }
+]

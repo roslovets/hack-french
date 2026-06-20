@@ -1,0 +1,237 @@
+[
+  {
+    "id": "wl-maquillage-maquillage",
+    "lemma": "maquillage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ma.ki.jaʒ/",
+    "translationsRu": ["макияж", "косметика"],
+    "translationsEn": ["make-up", "makeup"],
+    "semanticCore": "Макияж в целом: и сама декоративная косметика, и нанесённый на лицо результат.",
+    "collocations": [
+      { "fr": "se mettre du maquillage", "ru": "накраситься, нанести макияж" },
+      { "fr": "un maquillage léger", "ru": "лёгкий макияж" },
+      { "fr": "enlever son maquillage", "ru": "снять макияж" },
+      { "fr": "une trousse de maquillage", "ru": "косметичка" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "maquiller",
+        "note": "maquillage — это существительное (макияж); se maquiller — глагол «краситься». «Je me maquille» = я крашусь, «mon maquillage» = мой макияж."
+      },
+      {
+        "with": "fard",
+        "note": "maquillage — макияж вообще (общее слово); le fard — конкретное средство (румяна/тени). Fard входит в maquillage, но не наоборот."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["maquillage", "beaute"],
+    "caseIds": ["wc-maquillage"]
+  },
+  {
+    "id": "wl-maquillage-mascara",
+    "lemma": "mascara",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mas.ka.ʁa/",
+    "translationsRu": ["тушь для ресниц"],
+    "translationsEn": ["mascara"],
+    "semanticCore": "Тушь — средство, которым красят ресницы; несмотря на окончание -a, слово мужского рода.",
+    "collocations": [
+      { "fr": "mettre du mascara", "ru": "накрасить ресницы тушью" },
+      { "fr": "un mascara noir", "ru": "чёрная тушь" },
+      { "fr": "du mascara waterproof", "ru": "водостойкая тушь" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mascara (род)",
+        "note": "Большинство слов на -a женского рода, но le mascara — мужского (из англ.). Поэтому «un mascara», а не «une mascara»."
+      },
+      {
+        "with": "fard à paupières",
+        "note": "le mascara — тушь (для ресниц); le fard à paupières — тени (для век). Оба для глаз, но разные средства."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["maquillage", "beaute"],
+    "caseIds": ["wc-maquillage"]
+  },
+  {
+    "id": "wl-maquillage-fard",
+    "lemma": "fard",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/faʁ/",
+    "translationsRu": ["румяна", "тени", "грим"],
+    "translationsEn": ["blush", "eyeshadow"],
+    "semanticCore": "Цветная косметика для лица: fard à joues — румяна, fard à paupières — тени; конечная d немая (/faʁ/).",
+    "collocations": [
+      { "fr": "le fard à joues", "ru": "румяна" },
+      { "fr": "le fard à paupières", "ru": "тени для век" },
+      { "fr": "mettre du fard", "ru": "нанести румяна/тени" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "phare",
+        "note": "fard (румяна) и phare (маяк / фара) — омофоны, оба /faʁ/. На письме различай: fard про макияж, phare про свет."
+      },
+      {
+        "with": "poudre",
+        "note": "le fard — цветное средство (даёт цвет щекам/векам); la poudre — пудра (матирует, выравнивает). Разные задачи."
+      }
+    ],
+    "frequencyRank": 900,
+    "level": "A2",
+    "tags": ["maquillage", "beaute"],
+    "caseIds": ["wc-maquillage"]
+  },
+  {
+    "id": "wl-maquillage-vernis",
+    "lemma": "vernis",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɛʁ.ni/",
+    "translationsRu": ["лак для ногтей", "лак"],
+    "translationsEn": ["nail polish", "varnish"],
+    "semanticCore": "Лак: чаще всего vernis à ongles — лак для ногтей; также любой лак (для дерева, мебели). Конечная s немая (/vɛʁ.ni/).",
+    "collocations": [
+      { "fr": "le vernis à ongles", "ru": "лак для ногтей" },
+      { "fr": "mettre du vernis", "ru": "накрасить ногти, нанести лак" },
+      { "fr": "un vernis rouge", "ru": "красный лак" },
+      { "fr": "enlever le vernis", "ru": "снять лак" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "varnish",
+        "note": "Англ. varnish и фр. vernis — родственники, но фр. слово чаще про лак для ногтей; конечная s не читается: /vɛʁ.ni/."
+      },
+      {
+        "with": "laque",
+        "note": "le vernis (à ongles) — лак для ногтей; la laque — лак для волос. По-русски оба «лак», по-французски — разные слова."
+      }
+    ],
+    "frequencyRank": 850,
+    "level": "A2",
+    "tags": ["maquillage", "beaute"],
+    "caseIds": ["wc-maquillage"]
+  },
+  {
+    "id": "wl-maquillage-poudre",
+    "lemma": "poudre",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pudʁ/",
+    "translationsRu": ["пудра", "порошок"],
+    "translationsEn": ["powder"],
+    "semanticCore": "Пудра — рассыпчатое или прессованное средство, матирующее кожу; шире — любой порошок. Женского рода (la poudre).",
+    "collocations": [
+      { "fr": "de la poudre", "ru": "пудра (немного)" },
+      { "fr": "se poudrer le nez", "ru": "припудрить нос" },
+      { "fr": "un fond de teint poudre", "ru": "пудровая тональная основа" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poudre (род)",
+        "note": "la poudre — женского рода, хотя по-русски «порошок» мужского. Поэтому «une poudre légère», «de la poudre»."
+      },
+      {
+        "with": "crème",
+        "note": "la poudre — сухое средство (пудра); la crème — крем (мягкая текстура). Разные консистенции одного шага ухода/макияжа."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["maquillage", "beaute"],
+    "caseIds": ["wc-maquillage"]
+  },
+  {
+    "id": "wl-maquillage-teint",
+    "lemma": "teint",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tɛ̃/",
+    "translationsRu": ["цвет лица"],
+    "translationsEn": ["complexion", "skin tone"],
+    "semanticCore": "Цвет лица, тон кожи: какой у человека оттенок и вид кожи. Носовое окончание /tɛ̃/, без т на конце.",
+    "collocations": [
+      { "fr": "un teint clair", "ru": "светлый цвет лица" },
+      { "fr": "un teint mat", "ru": "смуглый/матовый цвет лица" },
+      { "fr": "le fond de teint", "ru": "тональный крем" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fond de teint",
+        "note": "le teint — это сам цвет лица (твоей кожи); le fond de teint — средство (тональный крем), которым его выравнивают. Не путать «свойство» и «продукт»."
+      },
+      {
+        "with": "thym",
+        "note": "teint (цвет лица) и thym (тимьян) — омофоны, оба /tɛ̃/. Различай только по смыслу: косметика или приправа."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["maquillage", "beaute"],
+    "caseIds": ["wc-maquillage"]
+  },
+  {
+    "id": "wl-maquillage-pinceau",
+    "lemma": "pinceau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɛ̃.so/",
+    "translationsRu": ["кисть", "кисточка"],
+    "translationsEn": ["brush"],
+    "semanticCore": "Кисть с мягким пучком волоса: для макияжа, рисования, краски. Не щётка с жёсткой щетиной (brosse).",
+    "collocations": [
+      { "fr": "un pinceau de maquillage", "ru": "кисть для макияжа" },
+      { "fr": "un pinceau fin", "ru": "тонкая кисть" },
+      { "fr": "un coup de pinceau", "ru": "мазок кистью" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "brosse",
+        "note": "le pinceau — мягкая кисть (макияж, краска); la brosse — щётка с жёсткой щетиной (brosse à dents, brosse à cheveux). По-русски обе «кисть/щётка», по-французски разные."
+      },
+      {
+        "with": "panneau",
+        "note": "pinceau (кисть) и panneau (щит, табличка) звучат похоже, оба на -eau /o/, но это разные слова с разным началом."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["maquillage", "outil"],
+    "caseIds": ["wc-maquillage"]
+  },
+  {
+    "id": "wl-maquillage-creme",
+    "lemma": "crème",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kʁɛm/",
+    "translationsRu": ["крем"],
+    "translationsEn": ["cream"],
+    "semanticCore": "Крем — мягкое средство для кожи (увлажняющий, дневной, солнцезащитный); то же слово — про сливки и кремовые десерты. Женского рода.",
+    "collocations": [
+      { "fr": "une crème hydratante", "ru": "увлажняющий крем" },
+      { "fr": "une crème de jour", "ru": "дневной крем" },
+      { "fr": "une crème solaire", "ru": "солнцезащитный крем" },
+      { "fr": "mettre de la crème", "ru": "нанести крем" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cream",
+        "note": "Англ. cream и фр. la crème — родственники; фр. слово с accent grave (è) и женского рода: une crème, la crème."
+      },
+      {
+        "with": "pommade",
+        "note": "la crème — косметический/уходовый крем; la pommade — мазь (лечебная, более плотная). Лицо мажут la crème, ранку — la pommade."
+      }
+    ],
+    "frequencyRank": 510,
+    "level": "A2",
+    "tags": ["maquillage", "beaute"],
+    "caseIds": ["wc-maquillage"]
+  }
+]

@@ -1,0 +1,303 @@
+[
+  {
+    "id": "wc-montagne",
+    "title": "Горы",
+    "theme": "montagne",
+    "level": "A2",
+    "wordIds": [
+      "wl-montagne-sommet",
+      "wl-montagne-rocher",
+      "wl-montagne-falaise",
+      "wl-montagne-pic",
+      "wl-montagne-col",
+      "wl-montagne-sentier",
+      "wl-montagne-grimper",
+      "wl-montagne-glacier"
+    ],
+    "steps": [
+      {
+        "id": "wc-montagne-sommet-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-montagne-sommet",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Après six heures de marche, ils ont atteint le sommet.",
+          "Du sommet, on voit toute la vallée.",
+          "Le sommet de la montagne est couvert de neige."
+        ],
+        "options": ["вершина", "подножие", "склон", "перевал"],
+        "correctIndex": 0,
+        "explanation": "sommet (m) — вершина, самая верхняя точка горы. «atteindre le sommet» — достичь вершины. Подножие — le pied (de la montagne), склон — la pente."
+      },
+      {
+        "id": "wc-montagne-sommet-cmp",
+        "kind": "compare",
+        "wordId": "wl-montagne-sommet",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le sommet и le pic — в чём разница?",
+        "phrases": [
+          "Nous avons pique-niqué au sommet.",
+          "Le pic se dresse, pointu, au-dessus des nuages."
+        ],
+        "options": [
+          "sommet = вершина вообще (любой верх горы); pic = острая, заострённая вершина (узкая, пикообразная).",
+          "Это полные синонимы.",
+          "sommet — это острый пик, а pic — пологий верх.",
+          "sommet — это подножие, pic — вершина."
+        ],
+        "correctIndex": 0,
+        "explanation": "un sommet — вершина как верхняя точка (может быть и широкой, плоской). un pic — заострённая вершина, узкий пик. Любой pic имеет sommet, но не всякий sommet острый."
+      },
+      {
+        "id": "wc-montagne-rocher-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-montagne-rocher",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Les enfants grimpent sur un gros rocher.",
+          "Le bateau a heurté un rocher.",
+          "Elle s'est assise sur un rocher pour se reposer."
+        ],
+        "options": ["скала, большой камень", "песок", "тропинка", "ручей"],
+        "correctIndex": 0,
+        "explanation": "rocher (m) — скала, большой камень / валун. «grimper sur un rocher» — взобраться на скалу. Маленький камешек, который можно взять в руку, — une pierre."
+      },
+      {
+        "id": "wc-montagne-rocher-cmp",
+        "kind": "compare",
+        "wordId": "wl-montagne-rocher",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un rocher и une pierre — в чём разница?",
+        "phrases": [
+          "Il a ramassé une pierre et l'a mise dans sa poche.",
+          "Un énorme rocher bloque le sentier."
+        ],
+        "options": [
+          "une pierre = камень, камешек (можно взять в руку); un rocher = большая скала, валун (не поднять).",
+          "Это одно и то же.",
+          "une pierre больше, чем un rocher.",
+          "un rocher — это горная порода, а pierre — скала."
+        ],
+        "correctIndex": 0,
+        "explanation": "une pierre — камень / камешек, помещается в руку. un rocher — большой камень, скала, валун. Различаются размером: pierre маленький, rocher большой."
+      },
+      {
+        "id": "wc-montagne-falaise-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-montagne-falaise",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les falaises blanches dominent la mer.",
+          "Ne t'approche pas du bord de la falaise, c'est dangereux.",
+          "Des oiseaux nichent dans la falaise."
+        ],
+        "options": ["утёс, отвесный обрыв", "пляж", "холм", "пещера"],
+        "correctIndex": 0,
+        "explanation": "falaise (f) — утёс, отвесная скальная стена, резко обрывающаяся вниз (часто у моря). Опасен край: «le bord de la falaise». Холм (пологий) — une colline."
+      },
+      {
+        "id": "wc-montagne-falaise-sort",
+        "kind": "sort",
+        "wordId": "wl-montagne-falaise",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом falaise звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une falaise abrupte",
+            "basket": "ok"
+          },
+          {
+            "text": "au bord de la falaise",
+            "basket": "ok"
+          },
+          {
+            "text": "tomber d'une falaise",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une falaise",
+            "basket": "no"
+          },
+          {
+            "text": "une haute falaise",
+            "basket": "ok"
+          },
+          {
+            "text": "lire une falaise",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«une falaise abrupte / haute», «au bord de la falaise», «tomber d'une falaise» (упасть с обрыва) — естественные сочетания. «boire une falaise» (пить утёс) и «lire une falaise» (читать утёс) — бессмыслица."
+      },
+      {
+        "id": "wc-montagne-pic-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-montagne-pic",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит pic?",
+        "bridge": "Англ. «peak» — пик, вершина. Фр. pic — тот же корень, читается /pik/, конечная c звучит.",
+        "options": ["остроконечная вершина, пик", "пляж", "долина", "выбор"],
+        "correctIndex": 0,
+        "explanation": "pic (m) = пик, острая вершина — мост от англ. «peak». Осторожно: англ. «pick» (выбирать, кирка) — это не pic, хоть и звучит похоже."
+      },
+      {
+        "id": "wc-montagne-pic-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-montagne-pic",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Слушай внимательно. Какое из слов прозвучало?",
+        "audioText": "pic",
+        "options": ["pic", "bic", "tic", "pile"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало pic /pik/ — пик. Рядом похожие: bic /bik/ (ручка «Бик»), tic /tik/ (тик, привычка), pile /pil/ (батарейка; стопка). Они отличаются первым или последним звуком."
+      },
+      {
+        "id": "wc-montagne-col-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-montagne-col",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих горных сценах?",
+        "contexts": [
+          "Le Tour de France passe par le col du Tourmalet.",
+          "En hiver, ce col est fermé à cause de la neige.",
+          "Pour aller dans l'autre vallée, il faut franchir le col."
+        ],
+        "options": ["перевал", "вершина", "ледник", "тропа"],
+        "correctIndex": 0,
+        "explanation": "col (m) — перевал: понижение в хребте, через которое переходят из одной долины в другую. «franchir un col» — преодолеть перевал. У слова есть и второе значение — воротник."
+      },
+      {
+        "id": "wc-montagne-col-trap",
+        "kind": "trap",
+        "wordId": "wl-montagne-col",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В магазине одежды: «Ce pull a un col roulé.» Здесь col — это…",
+        "options": ["воротник (горло водолазки)", "перевал в горах", "вершина горы", "цвет"],
+        "correctIndex": 0,
+        "explanation": "Ловушка двух значений: col (m) — это и «перевал» (в горах: franchir un col), и «воротник» (у одежды: un col roulé — водолазка, «горло»). Контекст про свитер подсказывает: здесь воротник."
+      },
+      {
+        "id": "wc-montagne-sentier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-montagne-sentier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Nous avons suivi un sentier jusqu'au lac.",
+          "Le sentier monte à travers la forêt.",
+          "Attention, le sentier est étroit et glissant."
+        ],
+        "options": ["тропа, тропинка", "шоссе", "мост", "площадь"],
+        "correctIndex": 0,
+        "explanation": "sentier (m) — узкая тропа для пешеходов (в лесу, в горах). «un sentier de randonnée» — туристическая тропа. Широкая автодорога — une route."
+      },
+      {
+        "id": "wc-montagne-sentier-cmp",
+        "kind": "compare",
+        "wordId": "wl-montagne-sentier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un sentier и une route — в чём разница?",
+        "phrases": [
+          "On grimpe par un petit sentier de montagne.",
+          "La voiture roule sur une route de montagne."
+        ],
+        "options": [
+          "un sentier = узкая пешеходная тропа (только пешком); une route = автодорога (для машин).",
+          "Это синонимы.",
+          "un sentier шире route.",
+          "un sentier — для машин, route — для пешеходов."
+        ],
+        "correctIndex": 0,
+        "explanation": "un sentier — узкая тропа, по ней ходят пешком. une route — дорога с покрытием для машин. По sentier поднимаются на ногах, по route едут."
+      },
+      {
+        "id": "wc-montagne-grimper-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-montagne-grimper",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол?",
+        "contexts": [
+          "Le chat grimpe à l'arbre.",
+          "Nous avons grimpé jusqu'au sommet en quatre heures.",
+          "Il grimpe sur les rochers comme une chèvre."
+        ],
+        "options": ["карабкаться, лезть вверх", "спускаться", "бежать по равнине", "плыть"],
+        "correctIndex": 0,
+        "explanation": "grimper — карабкаться, лезть вверх с усилием (на дерево, по скалам, к вершине). «grimper à un arbre», «grimper sur les rochers». Спускаться — descendre."
+      },
+      {
+        "id": "wc-montagne-grimper-cmp",
+        "kind": "compare",
+        "wordId": "wl-montagne-grimper",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "grimper и monter — в чём разница?",
+        "phrases": [
+          "Je monte au troisième étage en ascenseur.",
+          "Je grimpe sur le rocher avec les mains et les pieds."
+        ],
+        "options": [
+          "monter = подниматься нейтрально (в т.ч. на лифте, по лестнице); grimper = карабкаться вверх с усилием, цепляясь.",
+          "Это одно и то же.",
+          "grimper — спокойно подниматься, monter — карабкаться.",
+          "grimper значит спускаться."
+        ],
+        "correctIndex": 0,
+        "explanation": "monter — подниматься в общем смысле (на лифте, по лестнице — без усилий руками). grimper — лезть, карабкаться: круто, цепляясь руками и ногами. В горах на скалу именно grimpent."
+      },
+      {
+        "id": "wc-montagne-glacier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-montagne-glacier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le glacier descend lentement de la montagne.",
+          "À cause du réchauffement, le glacier fond.",
+          "Les alpinistes traversent le glacier avec des cordes."
+        ],
+        "options": ["ледник", "водопад", "снежок", "родник"],
+        "correctIndex": 0,
+        "explanation": "glacier (m) — ледник: огромная масса векового льда, медленно сползающая по горам. «la fonte des glaciers» — таяние ледников. У слова есть и второе значение — мороженщик."
+      },
+      {
+        "id": "wc-montagne-glacier-trap",
+        "kind": "trap",
+        "wordId": "wl-montagne-glacier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Летом на набережной: «On va prendre une glace chez le glacier ?» Что такое glacier здесь?",
+        "options": ["мороженщик / кафе-мороженое", "ледник в горах", "холодильник", "каток"],
+        "correctIndex": 0,
+        "explanation": "Ловушка двух значений: glacier (m) — это и «ледник» (в горах), и «мороженщик / кафе-мороженое». Оба слова — от glace (лёд / мороженое). «chez le glacier» — у продавца мороженого, а не на леднике."
+      }
+    ]
+  }
+]

@@ -1,0 +1,241 @@
+[
+  {
+    "id": "wl-montagne-sommet",
+    "lemma": "sommet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɔ.mɛ/",
+    "translationsRu": ["вершина", "верхушка"],
+    "translationsEn": ["summit", "top", "peak"],
+    "semanticCore": "Самая верхняя точка горы — то, до чего доходят альпинисты; в переносном смысле — пик и саммит (встреча на высшем уровне).",
+    "collocations": [
+      { "fr": "atteindre le sommet", "ru": "достичь вершины" },
+      { "fr": "le sommet de la montagne", "ru": "вершина горы" },
+      { "fr": "au sommet", "ru": "на вершине / наверху" },
+      { "fr": "un sommet international", "ru": "международный саммит" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pic",
+        "note": "sommet = вершина (любая верхняя точка горы); pic = пик, остроконечная вершина (узкая, заострённая). Каждый pic имеет sommet, но не всякий sommet острый."
+      },
+      {
+        "with": "pied",
+        "note": "le sommet = вершина (верх горы); le pied de la montagne = подножие (низ). Это две противоположные точки горы."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["montagne", "relief"],
+    "caseIds": ["wc-montagne"]
+  },
+  {
+    "id": "wl-montagne-rocher",
+    "lemma": "rocher",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁɔ.ʃe/",
+    "translationsRu": ["скала", "большой камень"],
+    "translationsEn": ["rock", "boulder"],
+    "semanticCore": "Крупный выступ твёрдого камня или большой валун — то, на что взбираются или что обходят в горах и у моря.",
+    "collocations": [
+      { "fr": "grimper sur un rocher", "ru": "взобраться на скалу" },
+      { "fr": "un gros rocher", "ru": "большой камень / валун" },
+      { "fr": "sauter de rocher en rocher", "ru": "прыгать с камня на камень" },
+      { "fr": "un rocher au bord de la mer", "ru": "скала у моря" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pierre",
+        "note": "un rocher = большая скала / валун (не поднять руками); une pierre = камень, камешек (можно взять в руку). Различаются размером."
+      },
+      {
+        "with": "roche",
+        "note": "un rocher = конкретная скала, выступ; la roche = горная порода как материал (камень вообще, геологически). На rocher залезают, из roche состоит гора."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["montagne", "relief"],
+    "caseIds": ["wc-montagne"]
+  },
+  {
+    "id": "wl-montagne-falaise",
+    "lemma": "falaise",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fa.lɛz/",
+    "translationsRu": ["утёс", "обрыв", "скала (отвесная)"],
+    "translationsEn": ["cliff"],
+    "semanticCore": "Высокая отвесная стена из камня, резко обрывающаяся вниз — часто у моря или над долиной.",
+    "collocations": [
+      { "fr": "une falaise abrupte", "ru": "отвесный утёс" },
+      { "fr": "au bord de la falaise", "ru": "на краю обрыва" },
+      { "fr": "les falaises d'Étretat", "ru": "утёсы Этрета" },
+      { "fr": "tomber d'une falaise", "ru": "упасть с обрыва" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "colline",
+        "note": "une falaise = отвесная скальная стена, обрыв (вертикально); une colline = пологий холм (на него легко подняться). Falaise опасна краем, colline — нет."
+      },
+      {
+        "with": "rocher",
+        "note": "une falaise = высокая отвесная стена обрыва; un rocher = отдельная скала или валун. Falaise — это протяжённая стена, rocher — кусок камня."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["montagne", "relief"],
+    "caseIds": ["wc-montagne"]
+  },
+  {
+    "id": "wl-montagne-pic",
+    "lemma": "pic",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pik/",
+    "translationsRu": ["пик", "остроконечная вершина"],
+    "translationsEn": ["peak"],
+    "semanticCore": "Острая, заострённая вершина горы; в выражении «à pic» — отвесно, прямо вниз.",
+    "collocations": [
+      { "fr": "le pic du Midi", "ru": "пик Миди (название горы)" },
+      { "fr": "un pic enneigé", "ru": "заснеженный пик" },
+      { "fr": "une falaise à pic", "ru": "отвесный утёс" },
+      { "fr": "couler à pic", "ru": "пойти ко дну (камнем)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sommet",
+        "note": "un pic = острый, заострённый пик (узкая вершина); un sommet = вершина вообще (любой верх горы, не обязательно острый)."
+      },
+      {
+        "with": "peak (англ.)",
+        "note": "англ. «peak» и фр. pic — родственны и оба значат «пик». Но англ. «pick» (выбирать; кирка) — это не pic: не путать."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["montagne", "relief"],
+    "caseIds": ["wc-montagne"]
+  },
+  {
+    "id": "wl-montagne-col",
+    "lemma": "col",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔl/",
+    "translationsRu": ["перевал"],
+    "translationsEn": ["mountain pass", "col"],
+    "semanticCore": "Понижение в горном хребте, через которое проходит путь с одной стороны гор на другую; то же слово — воротник рубашки.",
+    "collocations": [
+      { "fr": "franchir un col", "ru": "перейти / преодолеть перевал" },
+      { "fr": "le col du Tourmalet", "ru": "перевал Турмале" },
+      { "fr": "un col de montagne", "ru": "горный перевал" },
+      { "fr": "le col d'une chemise", "ru": "воротник рубашки" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "col (воротник)",
+        "note": "одно слово col (m) значит и «перевал» (в горах), и «воротник» (у рубашки). Смысл подсказывает контекст: franchir un col — перевал, le col de la chemise — воротник."
+      },
+      {
+        "with": "sommet",
+        "note": "un col = перевал (низшая точка прохода между вершинами, через неё идут); un sommet = вершина (высшая точка). Через col переходят, на sommet поднимаются."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["montagne", "relief"],
+    "caseIds": ["wc-montagne"]
+  },
+  {
+    "id": "wl-montagne-sentier",
+    "lemma": "sentier",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɑ̃.tje/",
+    "translationsRu": ["тропа", "тропинка"],
+    "translationsEn": ["path", "trail"],
+    "semanticCore": "Узкая протоптанная дорожка для пешеходов — в лесу, в горах, по которой ходят пешком, а не ездят.",
+    "collocations": [
+      { "fr": "un sentier de randonnée", "ru": "туристическая тропа" },
+      { "fr": "suivre le sentier", "ru": "идти по тропе" },
+      { "fr": "un sentier étroit", "ru": "узкая тропинка" },
+      { "fr": "un sentier de montagne", "ru": "горная тропа" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chemin",
+        "note": "un sentier = узкая тропа (только для пешеходов, в природе); un chemin = дорожка / путь пошире (по ней может проехать телега, машина). Sentier уже chemin."
+      },
+      {
+        "with": "route",
+        "note": "un sentier = пешеходная тропа в горах/лесу; une route = (асфальтированная) автодорога. По sentier ходят пешком, по route едут."
+      }
+    ],
+    "frequencyRank": 800,
+    "level": "A2",
+    "tags": ["montagne", "randonnee"],
+    "caseIds": ["wc-montagne"]
+  },
+  {
+    "id": "wl-montagne-grimper",
+    "lemma": "grimper",
+    "pos": "verb",
+    "ipa": "/ɡʁɛ̃.pe/",
+    "translationsRu": ["взбираться", "карабкаться", "лезть"],
+    "translationsEn": ["to climb", "to clamber"],
+    "semanticCore": "Подниматься вверх с усилием, цепляясь руками и ногами — на дерево, скалу, по крутому склону.",
+    "collocations": [
+      { "fr": "grimper sur un rocher", "ru": "взобраться на скалу" },
+      { "fr": "grimper à un arbre", "ru": "залезть на дерево" },
+      { "fr": "grimper jusqu'au sommet", "ru": "взобраться до вершины" },
+      { "fr": "grimper une côte", "ru": "взбираться по склону" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "monter",
+        "note": "grimper = карабкаться, лезть вверх с усилием (круто, цепляясь); monter = подниматься (нейтрально, в т.ч. по лестнице, на лифте). Grimper — труднее и круче, чем monter."
+      },
+      {
+        "with": "escalader",
+        "note": "grimper = лезть, карабкаться (обыденно: на дерево, на стул); escalader = штурмовать, преодолевать высокое препятствие (стену, отвесную скалу). Escalader звучит серьёзнее."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["montagne", "mouvement"],
+    "caseIds": ["wc-montagne"]
+  },
+  {
+    "id": "wl-montagne-glacier",
+    "lemma": "glacier",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɡla.sje/",
+    "translationsRu": ["ледник"],
+    "translationsEn": ["glacier"],
+    "semanticCore": "Огромная масса векового льда, медленно сползающая по горам; то же слово — кафе-мороженое / мороженщик.",
+    "collocations": [
+      { "fr": "la fonte des glaciers", "ru": "таяние ледников" },
+      { "fr": "un glacier de montagne", "ru": "горный ледник" },
+      { "fr": "marcher sur le glacier", "ru": "идти по леднику" },
+      { "fr": "une glace chez le glacier", "ru": "мороженое у мороженщика" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "glacier (мороженщик)",
+        "note": "одно слово glacier (m) значит и «ледник» (в горах), и «мороженщик / кафе-мороженое». Оба от glace (лёд / мороженое); смысл — по контексту."
+      },
+      {
+        "with": "glace",
+        "note": "la glace = лёд или мороженое (то, что едят / на чём катаются); le glacier = ледник (целая ледяная река в горах). Glacier образован от glace."
+      }
+    ],
+    "frequencyRank": 840,
+    "level": "A2",
+    "tags": ["montagne", "relief"],
+    "caseIds": ["wc-montagne"]
+  }
+]

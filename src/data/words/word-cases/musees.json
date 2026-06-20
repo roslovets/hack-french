@@ -1,0 +1,312 @@
+[
+  {
+    "id": "wc-musees",
+    "title": "Музеи",
+    "theme": "musees",
+    "level": "A2",
+    "wordIds": [
+      "wl-musees-musee",
+      "wl-musees-tableau",
+      "wl-musees-statue",
+      "wl-musees-exposition",
+      "wl-musees-oeuvre",
+      "wl-musees-visite",
+      "wl-musees-guide",
+      "wl-musees-collection"
+    ],
+    "steps": [
+      {
+        "id": "wc-musees-musee-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-musees-musee",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On va au musée samedi après-midi ?",
+          "Le musée du Louvre est immense.",
+          "Ce musée est gratuit le premier dimanche du mois."
+        ],
+        "options": ["музей", "театр", "библиотека", "галерея магазинов"],
+        "correctIndex": 0,
+        "explanation": "musée (m) — музей: «aller au musée» (идти в музей), «le musée du Louvre». Слово мужского рода, несмотря на -ée: un musée, au musée."
+      },
+      {
+        "id": "wc-musees-musee-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-musees-musee",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, что прозвучало.",
+        "audioText": "musée",
+        "options": ["musée", "fusée", "musique", "mousse"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало musée /my.ze/ (музей). Похожие на слух, но другие слова: fusée /fy.ze/ (ракета), musique /my.zik/ (музыка), mousse /mus/ (пена/мусс)."
+      },
+      {
+        "id": "wc-musees-tableau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-musees-tableau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ce tableau de Monet est magnifique.",
+          "On a accroché un tableau au mur du salon.",
+          "Devant ce tableau, il y a toujours du monde."
+        ],
+        "options": ["картина", "стол", "рама", "стена"],
+        "correctIndex": 0,
+        "explanation": "tableau (m) — картина: «un tableau de Monet», «accrocher un tableau». Множественное — des tableaux. Рама — un cadre, стена — un mur."
+      },
+      {
+        "id": "wc-musees-tableau-trap",
+        "kind": "trap",
+        "wordId": "wl-musees-tableau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слова tableau и table похожи. Как сказать «На стене висит красивая картина»?",
+        "options": [
+          "Il y a un beau tableau sur le mur.",
+          "Il y a une belle table sur le mur.",
+          "Il y a un beau table sur le mur.",
+          "Il y a une belle tableau sur le mur."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка похожих слов: tableau (m) — картина, table (f) — стол. Картину вешают на стену: «un beau tableau sur le mur». Род тоже разный: un tableau, une table."
+      },
+      {
+        "id": "wc-musees-statue-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-musees-statue",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Au centre du jardin, il y a une statue en bronze.",
+          "Cette statue représente un roi.",
+          "On a pris une photo devant la statue de la Liberté."
+        ],
+        "options": ["статуя", "фонтан", "колонна", "скамейка"],
+        "correctIndex": 0,
+        "explanation": "statue (f) — статуя: «une statue en bronze», «la statue de la Liberté». Часто это фигура человека из камня или металла."
+      },
+      {
+        "id": "wc-musees-statue-trap",
+        "kind": "trap",
+        "wordId": "wl-musees-statue",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Два почти одинаковых на слух слова: statue и statut. Как сказать «В этом зале стоит древняя статуя»?",
+        "options": [
+          "Dans cette salle, il y a une statue ancienne.",
+          "Dans cette salle, il y a un statut ancien.",
+          "Dans cette salle, il y a une statut ancienne.",
+          "Dans cette salle, il y a un statue ancien."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: statue (f) — статуя, а statut (m) — статус/положение (statut social). Здесь нужна именно статуя: «une statue ancienne». Род разный: une statue, un statut."
+      },
+      {
+        "id": "wc-musees-exposition-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-musees-exposition",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il y a une exposition de peinture au musée en ce moment.",
+          "Cette exposition se termine le 30 juin.",
+          "Tu veux aller voir l'exposition Picasso avec moi ?"
+        ],
+        "options": ["выставка", "касса", "вход", "расписание"],
+        "correctIndex": 0,
+        "explanation": "exposition (f) — выставка, временный показ: «une exposition de peinture», «l'exposition Picasso». В разговоре часто сокращают до «une expo»."
+      },
+      {
+        "id": "wc-musees-exposition-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-musees-exposition",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит exposition?",
+        "bridge": "Англ. «exhibition» (выставка) — родственник фр. «exposition»: общий корень expos-/expo-. На афише музея «exposition» = «exhibition».",
+        "options": ["выставка", "объяснение текста", "вход", "экзамен"],
+        "correctIndex": 0,
+        "explanation": "exposition = выставка. Англ. «exhibition» — надёжный мост по смыслу. Осторожно: англ. «exposition» (изложение) — это другое; во французском exposition — именно показ работ."
+      },
+      {
+        "id": "wc-musees-oeuvre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-musees-oeuvre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La Joconde est l'œuvre la plus célèbre du musée.",
+          "Ce peintre a créé des centaines d'œuvres.",
+          "Chaque œuvre d'art a sa petite étiquette."
+        ],
+        "options": ["произведение (искусства)", "зал", "билет", "рамка"],
+        "correctIndex": 0,
+        "explanation": "œuvre (f) — произведение, то, что создал художник: «une œuvre d'art», «les œuvres d'un peintre». Картина и статуя — это тоже des œuvres."
+      },
+      {
+        "id": "wc-musees-oeuvre-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-musees-oeuvre",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для œuvre: запомни женский род (une œuvre), слитную букву œ и что «шедевр» (chef-d'œuvre) — наоборот мужского рода.",
+        "examples": [
+          "œ — это «o» и «e», слитые в одну букву; пиши œuvre одним росчерком, как одно цельное произведение.",
+          "«Une œuvre — она, женского рода. Но un chef-d'œuvre (шедевр) — он»: главное (chef) делает слово мужским."
+        ]
+      },
+      {
+        "id": "wc-musees-visite-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-musees-visite",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La visite du musée dure environ deux heures.",
+          "On a réservé une visite guidée en français.",
+          "Bonne visite ! N'oubliez pas le dernier étage."
+        ],
+        "options": ["посещение / осмотр", "билет", "очередь", "выход"],
+        "correctIndex": 0,
+        "explanation": "visite (f) — посещение, осмотр: «la visite du musée», «une visite guidée» (экскурсия с гидом). «Bonne visite !» — «Приятного осмотра!»"
+      },
+      {
+        "id": "wc-musees-visite-cmp",
+        "kind": "compare",
+        "wordId": "wl-musees-visite",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "visiter и rendre visite à. В чём разница?",
+        "phrases": ["Nous visitons le musée d'Orsay.", "Nous rendons visite à notre tante."],
+        "options": [
+          "visiter + место (музей, город); rendre visite à + человек (тётя, друг).",
+          "Это полные синонимы, разницы нет.",
+          "visiter — только для людей, rendre visite — только для мест.",
+          "rendre visite à — значит «осматривать здание»."
+        ],
+        "correctIndex": 0,
+        "explanation": "visiter применяют к местам: visiter un musée, visiter Paris. К человеку говорят rendre visite à: rendre visite à un ami. Сказать «visiter un ami» — почти всегда ошибка."
+      },
+      {
+        "id": "wc-musees-guide-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-musees-guide",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово в трёх сценах — но в разных ролях. Что оно значит?",
+        "contexts": [
+          "Le guide nous explique l'histoire de chaque tableau.",
+          "Suivez le guide, le groupe avance vers la salle 5.",
+          "J'ai acheté un guide du musée à la boutique."
+        ],
+        "options": ["гид или путеводитель", "билет", "зал", "художник"],
+        "correctIndex": 0,
+        "explanation": "guide (m) — это и человек-гид (он ведёт группу), и книга-путеводитель: «un guide du musée». «Suivez le guide» — «Идите за гидом». Обычно мужского рода: un guide."
+      },
+      {
+        "id": "wc-musees-guide-collo",
+        "kind": "sort",
+        "wordId": "wl-musees-guide",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом guide звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un guide touristique",
+            "basket": "ok"
+          },
+          {
+            "text": "suivre le guide",
+            "basket": "ok"
+          },
+          {
+            "text": "une visite guidée",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un guide",
+            "basket": "no"
+          },
+          {
+            "text": "un guide en marbre",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un guide touristique», «suivre le guide», «une visite guidée» — естественно. «boire un guide» (пить гида) и «un guide en marbre» (мраморный гид — это уже про статую) — бессмыслица."
+      },
+      {
+        "id": "wc-musees-collection-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-musees-collection",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La collection du musée compte plus de mille tableaux.",
+          "La collection permanente est gratuite.",
+          "Ce collectionneur a donné toute sa collection au musée."
+        ],
+        "options": ["коллекция / собрание", "касса", "экскурсия", "каталог"],
+        "correctIndex": 0,
+        "explanation": "collection (f) — собрание предметов: «la collection du musée», «la collection permanente» (постоянная экспозиция, в отличие от временной выставки)."
+      },
+      {
+        "id": "wc-musees-collection-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-musees-collection",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит collection?",
+        "bridge": "Англ. «collection» — почти то же слово: тот же корень collect-. Различие только во французском произношении окончания -tion /sjɔ̃/.",
+        "options": ["коллекция, собрание", "выход", "выставка-распродажа", "реставрация"],
+        "correctIndex": 0,
+        "explanation": "collection = коллекция, собрание. Англ. «collection» — прямой мост: те же буквы. Запомни французское -tion, которое звучит /sjɔ̃/."
+      },
+      {
+        "id": "wc-musees-oeuvre-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-musees-oeuvre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три из этих слов — это произведения искусства (des œuvres). Найди лишнее.",
+        "options": ["un tableau", "une statue", "une sculpture", "un billet"],
+        "correctIndex": 3,
+        "explanation": "Картина (un tableau), статуя (une statue) и скульптура (une sculpture) — это произведения искусства, des œuvres. Билет (un billet) — лишний: это просто пропуск на вход, не произведение."
+      },
+      {
+        "id": "wc-musees-exposition-hint",
+        "kind": "wordHint",
+        "wordId": "wl-musees-exposition",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: временный показ картин или предметов в музее, у него есть дата начала и конца.",
+        "answer": "exposition",
+        "hints": [
+          "Начинается на e…",
+          "Похоже на англ. «exhibition»; в разговоре сокращают до «expo»",
+          "Il y a une ___ de peinture au musée."
+        ],
+        "explanation": "exposition (f) — выставка, временный показ. Постоянное собрание — la collection; а exposition открывают и закрывают в назначенные даты."
+      }
+    ]
+  }
+]

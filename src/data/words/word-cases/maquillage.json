@@ -1,0 +1,315 @@
+[
+  {
+    "id": "wc-maquillage",
+    "title": "Макияж",
+    "theme": "maquillage",
+    "level": "A2",
+    "wordIds": [
+      "wl-maquillage-maquillage",
+      "wl-maquillage-mascara",
+      "wl-maquillage-fard",
+      "wl-maquillage-vernis",
+      "wl-maquillage-poudre",
+      "wl-maquillage-teint",
+      "wl-maquillage-pinceau",
+      "wl-maquillage-creme"
+    ],
+    "steps": [
+      {
+        "id": "wc-maquillage-maquillage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maquillage-maquillage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Elle se met du maquillage avant de sortir.",
+          "Aujourd'hui je préfère un maquillage léger.",
+          "N'oublie pas d'enlever ton maquillage le soir."
+        ],
+        "options": ["макияж, косметика", "причёска", "духи", "зеркало"],
+        "correctIndex": 0,
+        "explanation": "maquillage (m) — макияж: и сама косметика, и результат на лице. «se mettre du maquillage» — краситься, «enlever son maquillage» — снимать макияж. Духи — un parfum."
+      },
+      {
+        "id": "wc-maquillage-maquillage-collo",
+        "kind": "sort",
+        "wordId": "wl-maquillage-maquillage",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом maquillage звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un maquillage léger",
+            "basket": "ok"
+          },
+          {
+            "text": "enlever son maquillage",
+            "basket": "ok"
+          },
+          {
+            "text": "une trousse de maquillage",
+            "basket": "ok"
+          },
+          {
+            "text": "boire du maquillage",
+            "basket": "no"
+          },
+          {
+            "text": "un maquillage rapide",
+            "basket": "ok"
+          },
+          {
+            "text": "un maquillage salé",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un maquillage léger / rapide», «enlever son maquillage», «une trousse de maquillage» — естественно. «boire du maquillage» (пить макияж) и «un maquillage salé» (солёный макияж) — бессмыслица."
+      },
+      {
+        "id": "wc-maquillage-mascara-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-maquillage-mascara",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит mascara?",
+        "bridge": "Англ. «mascara» — тушь для ресниц; пишется так же. Французское слово читается /mas.ka.ʁa/, с ударением в конце.",
+        "options": ["тушь для ресниц", "тени для век", "помада", "румяна"],
+        "correctIndex": 0,
+        "explanation": "mascara (m) = тушь для ресниц. Англ. «mascara» — прямой мост: те же буквы. Тени — le fard à paupières, помада — le rouge à lèvres."
+      },
+      {
+        "id": "wc-maquillage-mascara-trap",
+        "kind": "trap",
+        "wordId": "wl-maquillage-mascara",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово mascara кончается на -a. Какой артикль выбрать?",
+        "options": [
+          "un mascara — слово мужского рода",
+          "une mascara — слова на -a женского рода",
+          "la mascara — как в итальянском",
+          "оба варианта одинаково верны"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка рода: почти все слова на -a женского рода, но le mascara — исключение, оно мужского (пришло из английского). Поэтому «un mascara noir», «du mascara»."
+      },
+      {
+        "id": "wc-maquillage-fard-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maquillage-fard",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "Elle met un peu de fard à joues.",
+          "Ce fard à paupières est doré.",
+          "Un soupçon de fard suffit pour le soir."
+        ],
+        "options": [
+          "румяна / тени (цветная косметика)",
+          "крем для лица",
+          "лак для ногтей",
+          "кисть"
+        ],
+        "correctIndex": 0,
+        "explanation": "fard (m) — цветная косметика для лица: «fard à joues» — румяна, «fard à paupières» — тени. Конечная d немая: /faʁ/. Крем — la crème."
+      },
+      {
+        "id": "wc-maquillage-fard-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-maquillage-fard",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало (про макияж).",
+        "audioText": "fard",
+        "options": ["fard", "fort", "part", "car"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало fard /faʁ/ (румяна). Похожие, но другие: fort /fɔʁ/ (сильный), part /paʁ/ (часть), car /kaʁ/ (потому что). Различай по первому и второму звуку."
+      },
+      {
+        "id": "wc-maquillage-vernis-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maquillage-vernis",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Elle met du vernis rouge sur ses ongles.",
+          "Ce vernis sèche très vite.",
+          "J'enlève le vernis avec un coton."
+        ],
+        "options": ["лак для ногтей", "крем", "пудра", "тушь"],
+        "correctIndex": 0,
+        "explanation": "vernis (m) — лак, чаще всего «vernis à ongles» (лак для ногтей). Конечная s немая: /vɛʁ.ni/. «enlever le vernis» — снять лак."
+      },
+      {
+        "id": "wc-maquillage-vernis-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-maquillage-vernis",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английское слово-родственник подскажет смысл. Что значит vernis?",
+        "bridge": "Англ. «varnish» (лак, покрытие) — родственник французского vernis. В макияже это чаще всего лак для ногтей.",
+        "options": ["лак (для ногтей)", "зеркало", "ватный диск", "ножницы"],
+        "correctIndex": 0,
+        "explanation": "vernis = лак (для ногтей). Мост — англ. «varnish»: тот же корень, значение «лак/покрытие». Конечная s не читается: /vɛʁ.ni/."
+      },
+      {
+        "id": "wc-maquillage-poudre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maquillage-poudre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Elle se poudre le nez avant la photo.",
+          "Cette poudre matifie la peau.",
+          "J'applique un peu de poudre sur le front."
+        ],
+        "options": ["пудра", "румяна", "лак", "кисть"],
+        "correctIndex": 0,
+        "explanation": "poudre (f) — пудра: матирует и выравнивает кожу. «se poudrer le nez» — припудрить нос. Слово женского рода: de la poudre."
+      },
+      {
+        "id": "wc-maquillage-poudre-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-maquillage-poudre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова наносят прямо на кожу лица. Найди лишнее.",
+        "options": ["la poudre", "le fard", "la crème", "le pinceau"],
+        "correctIndex": 3,
+        "explanation": "Пудра (la poudre), румяна (le fard) и крем (la crème) — средства, которые наносят на кожу. Кисть (le pinceau) — лишняя: это инструмент, которым наносят, а не само средство."
+      },
+      {
+        "id": "wc-maquillage-teint-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maquillage-teint",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Elle a un teint très clair.",
+          "Le soleil donne bonne mine et un joli teint.",
+          "Avec ce produit, le teint paraît plus uniforme."
+        ],
+        "options": ["цвет лица, тон кожи", "улыбка", "причёска", "настроение"],
+        "correctIndex": 0,
+        "explanation": "teint (m) — цвет лица, тон кожи. «un teint clair» — светлый цвет лица, «un teint mat» — смуглый. Носовое окончание /tɛ̃/, т на конце не читается."
+      },
+      {
+        "id": "wc-maquillage-teint-trap",
+        "kind": "trap",
+        "wordId": "wl-maquillage-teint",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В магазине просят «un fond de teint». teint и fond de teint — это одно и то же?",
+        "phrases": ["J'ai un teint clair.", "Je cherche un fond de teint clair."],
+        "options": [
+          "Нет: le teint — сам цвет лица; le fond de teint — тональный крем (средство).",
+          "Да, это полные синонимы.",
+          "Наоборот: teint — это средство, fond de teint — цвет кожи.",
+          "Оба слова значат «пудра»."
+        ],
+        "correctIndex": 0,
+        "explanation": "le teint — это свойство, твой природный цвет лица. le fond de teint — продукт (тональный крем), которым его выравнивают. «J'ai un beau teint» — у меня хороший цвет лица; «j'achète un fond de teint» — покупаю тональный крем."
+      },
+      {
+        "id": "wc-maquillage-pinceau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maquillage-pinceau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Elle applique le fard avec un pinceau.",
+          "Ce pinceau est très doux.",
+          "Il me faut un pinceau fin pour les yeux."
+        ],
+        "options": ["кисть, кисточка", "зеркало", "губка", "ножницы"],
+        "correctIndex": 0,
+        "explanation": "pinceau (m) — мягкая кисть (для макияжа, рисования). «un pinceau de maquillage», «un pinceau fin». Окончание -eau читается /o/: /pɛ̃.so/."
+      },
+      {
+        "id": "wc-maquillage-pinceau-cmp",
+        "kind": "compare",
+        "wordId": "wl-maquillage-pinceau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un pinceau и une brosse — обе «кисть/щётка». В чём разница?",
+        "phrases": ["J'applique le fard avec un pinceau.", "Je me coiffe avec une brosse."],
+        "options": [
+          "pinceau — мягкая кисть (макияж, краска); brosse — щётка с жёсткой щетиной (для волос, зубов).",
+          "Это полные синонимы.",
+          "pinceau — для волос, brosse — для макияжа.",
+          "pinceau — это расчёска, brosse — карандаш."
+        ],
+        "correctIndex": 0,
+        "explanation": "le pinceau — мягкая кисть с пучком волоса (макияж, живопись). la brosse — щётка с жёсткой щетиной: brosse à cheveux (для волос), brosse à dents (зубная). Макияж наносят le pinceau."
+      },
+      {
+        "id": "wc-maquillage-pinceau-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-maquillage-pinceau",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало (инструмент для макияжа).",
+        "audioText": "pinceau",
+        "options": ["pinceau", "panneau", "anneau", "manteau"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало pinceau /pɛ̃.so/ (кисть). Похожие на -eau /o/, но другие: panneau /pa.no/ (щит), anneau /a.no/ (кольцо), manteau /mɑ̃.to/ (пальто). Различай по началу слова."
+      },
+      {
+        "id": "wc-maquillage-creme-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-maquillage-creme",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le matin, elle met une crème hydratante.",
+          "Cette crème de jour sent bon.",
+          "N'oublie pas la crème solaire à la plage."
+        ],
+        "options": ["крем", "пудра", "лак", "тушь"],
+        "correctIndex": 0,
+        "explanation": "crème (f) — крем для кожи: «crème hydratante» — увлажняющий, «crème de jour» — дневной, «crème solaire» — солнцезащитный. Слово женского рода: une crème, la crème."
+      },
+      {
+        "id": "wc-maquillage-creme-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-maquillage-creme",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет слово с первого взгляда. Что значит crème?",
+        "bridge": "Англ. «cream» — крем/сливки; французское crème — тот же корень, но с accent grave (è) и женского рода: la crème.",
+        "options": ["крем", "мыло", "полотенце", "расчёска"],
+        "correctIndex": 0,
+        "explanation": "crème = крем. Мост — англ. «cream». Запомни è (accent grave) и женский род: une crème hydratante. То же слово значит «сливки» в кулинарии."
+      },
+      {
+        "id": "wc-maquillage-teint-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-maquillage-teint",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для teint (цвет лица), чтобы запомнить носовой звук /tɛ̃/ и что т на конце не читается.",
+        "examples": [
+          "teint звучит как начало слова «тэн»: представь ровный «тон» кожи — un beau teint.",
+          "Свяжи teint с fond de teint: тональный крем выравнивает твой teint — цвет лица."
+        ]
+      }
+    ]
+  }
+]

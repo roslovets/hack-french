@@ -1,0 +1,312 @@
+[
+  {
+    "id": "wc-banque",
+    "title": "Банк",
+    "theme": "banque",
+    "level": "A2",
+    "wordIds": [
+      "wl-banque-retrait",
+      "wl-banque-depot",
+      "wl-banque-pret",
+      "wl-banque-virement",
+      "wl-banque-distributeur",
+      "wl-banque-cheque",
+      "wl-banque-guichet",
+      "wl-banque-epargne"
+    ],
+    "steps": [
+      {
+        "id": "wc-banque-retrait-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-banque-retrait",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai fait un retrait de 100 euros.",
+          "Le retrait au distributeur est limité à 300 euros par jour.",
+          "Après ce retrait, il reste peu d'argent sur le compte."
+        ],
+        "options": ["снятие денег со счёта", "вклад на счёт", "банковский перевод", "пенсия"],
+        "correctIndex": 0,
+        "explanation": "retrait (m) — снятие денег: деньги уходят со счёта тебе на руки. «faire un retrait» — снять деньги. Противоположность — un dépôt (вклад). Не путать с retraite (f) — пенсия."
+      },
+      {
+        "id": "wc-banque-retrait-cmp",
+        "kind": "compare",
+        "wordId": "wl-banque-retrait",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "faire un retrait и faire un dépôt. В чём разница?",
+        "phrases": ["Je fais un retrait de 50 euros.", "Je fais un dépôt de 50 euros."],
+        "options": [
+          "retrait — снять деньги со счёта (на руки); dépôt — внести деньги на счёт. Противоположные операции.",
+          "Это полные синонимы, разницы нет.",
+          "retrait значит «внести на счёт», а dépôt — «снять со счёта».",
+          "Оба значат «перевести деньги другу»."
+        ],
+        "correctIndex": 0,
+        "explanation": "un retrait — деньги уходят со счёта к тебе; un dépôt — деньги кладут на счёт. Это две противоположные операции: снятие и внесение."
+      },
+      {
+        "id": "wc-banque-depot-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-banque-depot",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai fait un dépôt de 500 euros sur mon compte.",
+          "Le dépôt d'espèces se fait au distributeur ou au guichet.",
+          "Pour louer l'appartement, il faut un dépôt de garantie."
+        ],
+        "options": ["вклад, внесение денег", "снятие денег", "кредит", "налог"],
+        "correctIndex": 0,
+        "explanation": "dépôt (m) — вклад, внесение денег на счёт. «faire un dépôt» — внести деньги, «un dépôt de garantie» — залог при аренде. Конечная t немая: /de.po/. Противоположность — un retrait."
+      },
+      {
+        "id": "wc-banque-depot-sort",
+        "kind": "sort",
+        "wordId": "wl-banque-depot",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом dépôt звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "faire un dépôt",
+            "basket": "ok"
+          },
+          {
+            "text": "un dépôt de garantie",
+            "basket": "ok"
+          },
+          {
+            "text": "un dépôt d'espèces",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un dépôt",
+            "basket": "no"
+          },
+          {
+            "text": "rembourser un dépôt au distributeur",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«faire un dépôt», «un dépôt de garantie / d'espèces» — естественно. «boire un dépôt» (пить вклад) — бессмыслица; «rembourser» (погашать) относится к кредиту (un prêt), а не к вкладу."
+      },
+      {
+        "id": "wc-banque-pret-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-banque-pret",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Nous avons fait un prêt pour acheter la maison.",
+          "Il rembourse son prêt immobilier chaque mois.",
+          "La banque m'a accordé un prêt de 10 000 euros."
+        ],
+        "options": ["кредит, заём", "вклад", "сбережения", "перевод"],
+        "correctIndex": 0,
+        "explanation": "prêt (m) — кредит, ссуда: деньги, которые банк даёт в долг под возврат. «faire un prêt» — взять кредит, «un prêt immobilier» — ипотека, «rembourser un prêt» — погасить его. Конечная t немая: /pʁɛ/."
+      },
+      {
+        "id": "wc-banque-pret-trap",
+        "kind": "trap",
+        "wordId": "wl-banque-pret",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово prêt пишется как прилагательное «prêt» (готовый). В фразе «La banque m'a accordé un prêt» что оно значит?",
+        "options": [
+          "кредит (заём) — здесь это существительное un prêt",
+          "готовый — банк «готов»",
+          "близко — как près",
+          "священник — как prêtre"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка-омограф: после un это существительное un prêt (m) — кредит. Прилагательное prêt(e) значит «готовый» (je suis prêt). Оба читаются /pʁɛ/; различает контекст и артикль un."
+      },
+      {
+        "id": "wc-banque-virement-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-banque-virement",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je vais faire un virement sur ton compte.",
+          "Le loyer se paie par virement bancaire.",
+          "Mon salaire arrive par virement automatique."
+        ],
+        "options": ["банковский перевод денег", "снятие наличных", "счёт к оплате", "сбережения"],
+        "correctIndex": 0,
+        "explanation": "virement (m) — безналичный перевод денег со счёта на счёт. «faire un virement» — сделать перевод, «payer par virement» — оплатить переводом. От глагола virer (перечислять)."
+      },
+      {
+        "id": "wc-banque-virement-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-banque-virement",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — операции по банковскому счёту. Найди лишнее.",
+        "options": ["un virement", "un retrait", "un dépôt", "un guichet"],
+        "correctIndex": 3,
+        "explanation": "Перевод (un virement), снятие (un retrait) и внесение (un dépôt) — это операции по счёту. un guichet (окно кассы) — это место, а не операция, поэтому оно лишнее."
+      },
+      {
+        "id": "wc-banque-distributeur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-banque-distributeur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит (в банковском смысле)?",
+        "contexts": [
+          "Je retire de l'argent au distributeur.",
+          "Le distributeur de la banque est en panne.",
+          "Il n'y a pas de distributeur dans ce village."
+        ],
+        "options": ["банкомат", "касса с кассиром", "чек", "сберегательный счёт"],
+        "correctIndex": 0,
+        "explanation": "distributeur (m) — банкомат (полное имя — un distributeur automatique de billets, DAB). «retirer au distributeur» — снять в банкомате. То же слово — и торговый автомат: un distributeur de boissons."
+      },
+      {
+        "id": "wc-banque-distributeur-hint",
+        "kind": "wordHint",
+        "wordId": "wl-banque-distributeur",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: уличный автомат банка, который выдаёт наличные с карты.",
+        "answer": "distributeur",
+        "hints": [
+          "Начинается на dis…",
+          "Однокоренное с distribuer (раздавать); 12 букв",
+          "Je retire de l'argent au ___."
+        ],
+        "explanation": "distributeur (m) — банкомат. Полное название — un distributeur automatique de billets (DAB). «Снять деньги в банкомате» — retirer de l'argent au distributeur."
+      },
+      {
+        "id": "wc-banque-cheque-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-banque-cheque",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je vais faire un chèque pour le loyer.",
+          "On peut payer par chèque ici ?",
+          "Attention, c'est un chèque sans provision."
+        ],
+        "options": ["банковский чек", "кассовый чек (из магазина)", "счёт в банке", "монета"],
+        "correctIndex": 0,
+        "explanation": "chèque (m) — банковский чек: бумага из чековой книжки, распоряжение банку выплатить сумму. «faire un chèque» — выписать чек, «payer par chèque» — платить чеком. Кассовый чек в магазине — un ticket / un reçu."
+      },
+      {
+        "id": "wc-banque-cheque-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-banque-cheque",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "chèque",
+        "options": ["chèque", "choc", "chic", "chaque"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало chèque /ʃɛk/ — чек. Похожи, но другие: choc /ʃɔk/ (удар, шок), chic /ʃik/ (шикарный), chaque /ʃak/ (каждый). Это не омофоны — слушай гласный."
+      },
+      {
+        "id": "wc-banque-cheque-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-banque-cheque",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет слово с первого взгляда. Что значит chèque?",
+        "bridge": "Англ. «cheque» (брит.) / «check» (амер.) — банковский чек. Фр. chèque — то же слово, с accent grave, читается /ʃɛk/.",
+        "options": ["банковский чек", "проверка", "галочка", "счёт"],
+        "correctIndex": 0,
+        "explanation": "chèque = банковский чек, прямой когнат с англ. «cheque». Внимание: в отличие от англ. «check», фр. chèque не значит «проверка» — только платёжный документ."
+      },
+      {
+        "id": "wc-banque-guichet-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-banque-guichet",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Adressez-vous au guichet numéro 3.",
+          "Il y a la queue au guichet de la banque.",
+          "Le guichet ferme à dix-sept heures."
+        ],
+        "options": ["окно кассы (обслуживания)", "банкомат", "сейф", "очередь"],
+        "correctIndex": 0,
+        "explanation": "guichet (m) — окошко обслуживания, где принимает сотрудник (в банке, на вокзале, на почте). «au guichet» — у окошка, «faire la queue au guichet» — стоять в очереди к окну. Автомат-банкомат — un distributeur."
+      },
+      {
+        "id": "wc-banque-guichet-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-banque-guichet",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "guichet",
+        "options": ["guichet", "gilet", "cachet", "ticket"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало guichet /ɡi.ʃɛ/ — окно кассы. Похожи концовкой -et /ɛ/, но другие: gilet /ʒi.lɛ/ (жилет), cachet /ka.ʃɛ/ (печать; таблетка), ticket /ti.kɛ/ (билет, чек). Это не омофоны — слушай начало слова."
+      },
+      {
+        "id": "wc-banque-epargne-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-banque-epargne",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai mis mon épargne sur un livret.",
+          "Il a ouvert un compte d'épargne.",
+          "En cas de problème, je puise dans mon épargne."
+        ],
+        "options": ["сбережения, накопления", "долг", "счёт к оплате", "снятие денег"],
+        "correctIndex": 0,
+        "explanation": "épargne (f) — сбережения, отложенные деньги. «un compte d'épargne» — сберегательный счёт, «un livret d'épargne» — сберкнижка, «puiser dans son épargne» — брать из сбережений. «Копить» — faire des économies."
+      },
+      {
+        "id": "wc-banque-epargne-trap",
+        "kind": "trap",
+        "wordId": "wl-banque-epargne",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг хочет «откладывать деньги на сберегательный счёт». Как назвать такой счёт по-французски?",
+        "options": [
+          "un compte d'épargne",
+          "un compte de retrait",
+          "un compte de dépense",
+          "un compte de chèque"
+        ],
+        "correctIndex": 0,
+        "explanation": "Сберегательный счёт — un compte d'épargne (или un livret d'épargne). «retrait» — это снятие (операция), «dépense» — трата; «compte de chèque» по-французски не говорят — текущий счёт зовётся un compte courant."
+      },
+      {
+        "id": "wc-banque-pret-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-banque-pret",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для prêt (кредит), чтобы не путать его с прилагательным prêt «готовый» и помнить мужской род (un prêt).",
+        "examples": [
+          "Свяжи с глаголом prêter (давать в долг): банк prête тебе деньги — и появляется un prêt, который надо вернуть.",
+          "«Я готов (prêt) взять кредит (un prêt)» — одно звучание /pʁɛ/, но кредит идёт после un, он «он», мужского рода."
+        ]
+      }
+    ]
+  }
+]
