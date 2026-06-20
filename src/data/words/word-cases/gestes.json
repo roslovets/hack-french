@@ -1,0 +1,341 @@
+[
+  {
+    "id": "wc-gestes",
+    "title": "Движения тела",
+    "theme": "gestes",
+    "level": "A2",
+    "wordIds": [
+      "wl-gestes-sauter",
+      "wl-gestes-tomber",
+      "wl-gestes-lever",
+      "wl-gestes-baisser",
+      "wl-gestes-pousser",
+      "wl-gestes-tirer",
+      "wl-gestes-ramper",
+      "wl-gestes-glisser"
+    ],
+    "steps": [
+      {
+        "id": "wc-gestes-sauter-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gestes-sauter",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Один глагол повторяется во всех трёх сценах. Что он значит?",
+        "contexts": [
+          "Les enfants sautent sur le lit.",
+          "Le chat saute par-dessus le mur.",
+          "Je n'ai pas faim, je vais sauter le déjeuner."
+        ],
+        "options": [
+          "прыгать; а ещё «пропустить» (приём пищи, страницу)",
+          "падать вниз",
+          "ползти по полу",
+          "толкать что-то"
+        ],
+        "correctIndex": 0,
+        "explanation": "sauter — прыгать (sauter sur le lit, sauter par-dessus le mur) и в переносном «пропустить»: sauter un repas / le déjeuner — пропустить еду. Это глагол 1-й группы: je saute, nous sautons."
+      },
+      {
+        "id": "wc-gestes-sauter-sort",
+        "kind": "sort",
+        "wordId": "wl-gestes-sauter",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с sauter звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "sauter dans l'eau",
+            "basket": "ok"
+          },
+          {
+            "text": "sauter en l'air de joie",
+            "basket": "ok"
+          },
+          {
+            "text": "sauter un repas",
+            "basket": "ok"
+          },
+          {
+            "text": "sauter une voiture",
+            "basket": "no"
+          },
+          {
+            "text": "sauter la porte",
+            "basket": "no"
+          }
+        ],
+        "explanation": "sauter — прыгать (sauter dans l'eau, sauter en l'air) или пропустить (sauter un repas). Но «sauter une voiture» и «sauter la porte» бессмысленны: машину водят (conduire), дверь толкают (pousser) или тянут (tirer)."
+      },
+      {
+        "id": "wc-gestes-tomber-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gestes-tomber",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Один глагол — несколько значений. Что объединяет эти сцены?",
+        "contexts": [
+          "Attention, tu vas tomber !",
+          "Il est tombé malade hier.",
+          "Elle est tombée amoureuse de lui."
+        ],
+        "options": [
+          "падать; а в переносном «впасть в состояние»: tomber malade, tomber amoureux",
+          "подниматься вверх",
+          "оставаться на месте",
+          "толкать"
+        ],
+        "correctIndex": 0,
+        "explanation": "tomber — падать (tu vas tomber) и «впасть в состояние»: tomber malade (заболеть), tomber amoureux (влюбиться). В passé composé идёт с être: il est tombé, elle est tombée."
+      },
+      {
+        "id": "wc-gestes-tomber-trap",
+        "kind": "trap",
+        "wordId": "wl-gestes-tomber",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг говорит: «J'ai laissé tomber le projet». Что он имеет в виду?",
+        "options": [
+          "Он бросил проект (отказался от него); laisser tomber = «забить, махнуть рукой»",
+          "Он буквально уронил бумаги с проектом на пол",
+          "Он закончил проект успешно",
+          "Он упал во время работы над проектом"
+        ],
+        "correctIndex": 0,
+        "explanation": "laisser tomber — устойчивое выражение: «бросить, забросить, махнуть рукой» (а буквально — «дать упасть, уронить»). «J'ai laissé tomber le projet» = я забросил проект. О человеке: laisser tomber quelqu'un — бросить, подвести кого-то."
+      },
+      {
+        "id": "wc-gestes-lever-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gestes-lever",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Lève la main si tu connais la réponse.",
+          "Il lève les yeux vers le ciel.",
+          "Je me lève à sept heures tous les jours."
+        ],
+        "options": [
+          "поднимать (руку, глаза); в форме se lever — вставать",
+          "опускать вниз",
+          "ронять, бросать",
+          "тянуть на себя"
+        ],
+        "correctIndex": 0,
+        "explanation": "lever — поднимать: lever la main, lever les yeux. Возвратная форма se lever — вставать (с постели): je me lève à sept heures. Внимание на написание: e меняется на è — je lève /lɛv/, но nous levons."
+      },
+      {
+        "id": "wc-gestes-lever-cmp",
+        "kind": "compare",
+        "wordId": "wl-gestes-lever",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "lever и soulever легко перепутать. В чём разница здесь?",
+        "phrases": ["Lève la main.", "Soulève cette valise, elle est lourde."],
+        "options": [
+          "lever = поднять (часть тела, взгляд); soulever = приподнять что-то тяжёлое от земли",
+          "Это полные синонимы",
+          "lever = приподнять тяжёлое; soulever = поднять руку",
+          "Оба значат «опустить»"
+        ],
+        "correctIndex": 0,
+        "explanation": "lever — поднять руку, глаза, голову (lever la main). soulever — оторвать от земли что-то тяжёлое, приподнять (soulever une valise, soulever un carton). Руку — lever, чемодан — soulever."
+      },
+      {
+        "id": "wc-gestes-baisser-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gestes-baisser",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Один глагол повторяется во всех трёх сценах. Что он значит?",
+        "contexts": [
+          "Baisse la tête, le plafond est bas.",
+          "Tu peux baisser le son, s'il te plaît ?",
+          "Le magasin a baissé ses prix."
+        ],
+        "options": [
+          "опускать вниз; уменьшать (звук, цену)",
+          "поднимать вверх",
+          "прыгать",
+          "ползти"
+        ],
+        "correctIndex": 0,
+        "explanation": "baisser — опустить вниз (baisser la tête, baisser les yeux) и уменьшить уровень: baisser le son (убавить звук), baisser les prix (снизить цены). Возвратное se baisser — нагнуться."
+      },
+      {
+        "id": "wc-gestes-baisser-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-gestes-baisser",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три глагола описывают движение вниз / уменьшение. Найди лишний.",
+        "options": ["baisser", "descendre", "tomber", "lever"],
+        "correctIndex": 3,
+        "explanation": "baisser (опускать), descendre (спускаться) и tomber (падать) — всё про движение вниз. Лишний — lever (поднимать): это движение ВВЕРХ, прямой антоним baisser."
+      },
+      {
+        "id": "wc-gestes-pousser-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gestes-pousser",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Один глагол — несколько значений. Что объединяет эти сцены?",
+        "contexts": [
+          "Pousse la porte, elle n'est pas fermée à clé.",
+          "Les tomates poussent bien cet été.",
+          "Elle a poussé un cri de surprise."
+        ],
+        "options": [
+          "толкать (от себя); а ещё «расти» (о растениях) и pousser un cri = вскрикнуть",
+          "тянуть на себя",
+          "падать",
+          "поднимать"
+        ],
+        "correctIndex": 0,
+        "explanation": "pousser — толкать (pousser la porte = толкнуть дверь от себя). Ещё два смысла: «расти» (les tomates poussent) и pousser un cri — издать крик, вскрикнуть. Глагол 1-й группы: je pousse, nous poussons."
+      },
+      {
+        "id": "wc-gestes-pousser-cmp",
+        "kind": "compare",
+        "wordId": "wl-gestes-pousser",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "На дверях магазина написано Poussez и Tirez. В чём разница?",
+        "phrases": ["Poussez la porte.", "Tirez la porte."],
+        "options": [
+          "pousser = толкать от себя; tirer = тянуть на себя — это противоположные действия",
+          "Это синонимы, дверь открывается одинаково",
+          "pousser = тянуть на себя; tirer = толкать от себя",
+          "Оба значат «заприте дверь»"
+        ],
+        "correctIndex": 0,
+        "explanation": "pousser = толкать (от себя), tirer = тянуть (на себя). На французских дверях так и пишут: Poussez (от себя) / Tirez (на себя). Перепутаешь — упрёшься в дверь не в ту сторону."
+      },
+      {
+        "id": "wc-gestes-tirer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gestes-tirer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Один глагол — несколько значений. Что объединяет эти сцены?",
+        "contexts": [
+          "Tire la porte vers toi.",
+          "Le soir, on tire les rideaux.",
+          "Le chasseur a tiré sur le lièvre."
+        ],
+        "options": [
+          "тянуть (на себя); задёргивать (шторы); а ещё «стрелять»",
+          "толкать от себя",
+          "прыгать",
+          "падать"
+        ],
+        "correctIndex": 0,
+        "explanation": "tirer — тянуть на себя (tire la porte vers toi), задёрнуть/раздвинуть (tirer les rideaux) и «стрелять» (tirer sur qqch — стрелять по чему-то). Один глагол, несколько смыслов; различает контекст."
+      },
+      {
+        "id": "wc-gestes-tirer-hint",
+        "kind": "wordHint",
+        "wordId": "wl-gestes-tirer",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: «тянуть на себя» (дверь, верёвку), а ещё «стрелять».",
+        "answer": "tirer",
+        "hints": [
+          "Начинается на t…",
+          "1-я группа на -er; антоним глагола pousser",
+          "Sur la porte : Poussez / ___ez"
+        ],
+        "explanation": "tirer — тянуть на себя (антоним pousser) и стрелять (tirer un coup de feu). Формы: je tire, nous tirons. На двери пара Poussez / Tirez и помогает вспомнить."
+      },
+      {
+        "id": "wc-gestes-ramper-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gestes-ramper",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Le bébé rampe avant de savoir marcher.",
+          "Le serpent rampe dans l'herbe.",
+          "Les soldats rampent sous les barbelés."
+        ],
+        "options": [
+          "ползти (по земле, на животе или четвереньках)",
+          "карабкаться вверх",
+          "прыгать",
+          "скользить по льду"
+        ],
+        "correctIndex": 0,
+        "explanation": "ramper — ползти, прижимаясь к земле: ползёт младенец (le bébé rampe), змея (le serpent rampe), солдат под колючей проволокой. Движение горизонтальное, по поверхности. Глагол 1-й группы: je rampe, nous rampons."
+      },
+      {
+        "id": "wc-gestes-ramper-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-gestes-ramper",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, какое из похожих по звучанию написано верно.",
+        "audioText": "ramper",
+        "options": ["ramper", "grimper", "camper", "tremper"],
+        "correctIndex": 0,
+        "explanation": "ramper /ʁɑ̃.pe/ — ползти. Похоже звучат, но это другие глаголы: grimper /ɡʁɛ̃.pe/ — карабкаться (вверх!), camper /kɑ̃.pe/ — стоять лагерем, tremper /tʁɑ̃.pe/ — мочить, макать. Главное — не путать ramper (ползти) и grimper (лезть вверх)."
+      },
+      {
+        "id": "wc-gestes-glisser-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-gestes-glisser",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Один глагол — несколько значений. Что объединяет эти сцены?",
+        "contexts": [
+          "Attention, ça glisse, le sol est mouillé.",
+          "J'ai glissé sur la glace et je suis tombé.",
+          "Il a glissé un mot à l'oreille de son ami."
+        ],
+        "options": [
+          "скользить / поскользнуться; а ещё «незаметно сунуть» (glisser un mot)",
+          "толкать от себя",
+          "прыгать вверх",
+          "ползти по земле"
+        ],
+        "correctIndex": 0,
+        "explanation": "glisser — скользить и поскользнуться (ça glisse = скользко; j'ai glissé sur la glace) и в переносном «незаметно сунуть/шепнуть»: glisser un mot à l'oreille. Глагол 1-й группы: je glisse, nous glissons."
+      },
+      {
+        "id": "wc-gestes-glisser-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-gestes-glisser",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, какое из похожих по звучанию написано верно.",
+        "audioText": "glisser",
+        "options": ["glisser", "glacer", "plisser", "lisser"],
+        "correctIndex": 0,
+        "explanation": "glisser /ɡli.se/ — скользить. Похоже звучат другие глаголы: glacer /ɡla.se/ — замораживать, plisser /pli.se/ — морщить (складками), lisser /li.se/ — приглаживать. Слушай первый слог: gli- (glisser), а не gla- или pli-."
+      },
+      {
+        "id": "wc-gestes-lever-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-gestes-lever",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для lever, чтобы запомнить два момента: смену e→è в спряжении (je lève) и возвратное se lever = «вставать».",
+        "examples": [
+          "«Рычаг» — это un levier от того же корня: рычаг поднимает груз, как ты lèves la main; а утром ты «поднимаешь» сам себя — je me lève.",
+          "Услышь è в je lève /lɛv/: будто слово приподнимается на ударном слоге, как и его смысл — вверх."
+        ]
+      }
+    ]
+  }
+]

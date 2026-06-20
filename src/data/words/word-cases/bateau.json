@@ -1,0 +1,302 @@
+[
+  {
+    "id": "wc-bateau",
+    "title": "Лодка и порт",
+    "theme": "bateau",
+    "level": "A2",
+    "wordIds": [
+      "wl-bateau-voilier",
+      "wl-bateau-voile",
+      "wl-bateau-rame",
+      "wl-bateau-ancre",
+      "wl-bateau-marin",
+      "wl-bateau-naviguer",
+      "wl-bateau-quai",
+      "wl-bateau-port"
+    ],
+    "steps": [
+      {
+        "id": "wc-bateau-port-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bateau-port",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le bateau entre dans le port.",
+          "Marseille a un très grand port.",
+          "Les pêcheurs reviennent au port le soir."
+        ],
+        "options": ["порт, гавань", "пляж", "маяк", "море"],
+        "correctIndex": 0,
+        "explanation": "port (m) — порт, гавань, куда заходят суда. Конечная t не читается: /pɔʁ/. Пляж — une plage, маяк — un phare, море — la mer."
+      },
+      {
+        "id": "wc-bateau-port-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-bateau-port",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит port?",
+        "bridge": "Англ. «port» — порт, гавань; пишется так же. По-французски только не читается конечная t: /pɔʁ/.",
+        "options": ["порт, гавань", "дверь", "часть", "груз"],
+        "correctIndex": 0,
+        "explanation": "port = порт. Англ. «port» — прямой мост: те же буквы, тот же смысл. Дверь — une porte (с e на конце, другое слово)."
+      },
+      {
+        "id": "wc-bateau-quai-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bateau-quai",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "Le voilier est à quai depuis ce matin.",
+          "On se promène sur les quais de la Seine.",
+          "Le bateau s'approche lentement du quai."
+        ],
+        "options": ["причал, набережная", "палуба", "волна", "мост"],
+        "correctIndex": 0,
+        "explanation": "quai (m) — причал (стенка у воды, к которой швартуются) и набережная (где гуляют). «être à quai» — стоять у причала. Палуба — le pont, волна — une vague, мост — un pont."
+      },
+      {
+        "id": "wc-bateau-quai-cmp",
+        "kind": "compare",
+        "wordId": "wl-bateau-quai",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le port и le quai. В чём разница между этими словами?",
+        "phrases": ["Le bateau entre dans le port.", "Le bateau est à quai."],
+        "options": [
+          "port — вся гавань целиком; quai — причальная стенка внутри неё, у которой швартуются.",
+          "Это полные синонимы, разницы нет.",
+          "port — это причал, а quai — открытое море.",
+          "quai больше порта и включает его."
+        ],
+        "correctIndex": 0,
+        "explanation": "le port — вся гавань (всё защищённое место для судов); le quai — конкретная стенка внутри неё. Судно входит dans le port, а швартуется au quai."
+      },
+      {
+        "id": "wc-bateau-voile-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bateau-voile",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le vent gonfle la voile.",
+          "Il faut hisser la voile avant de partir.",
+          "Le dimanche, ils font de la voile."
+        ],
+        "options": ["парус (и парусный спорт)", "весло", "якорь", "флаг"],
+        "correctIndex": 0,
+        "explanation": "la voile (f) — парус; то же слово значит парусный спорт: «faire de la voile». «hisser la voile» — поднять парус. Весло — une rame, якорь — une ancre."
+      },
+      {
+        "id": "wc-bateau-voile-trap",
+        "kind": "trap",
+        "wordId": "wl-bateau-voile",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "У слова voile род меняет смысл. Что значит la voile (с артиклем la)?",
+        "options": ["парус (на корабле)", "вуаль, покрывало", "дорога", "машина"],
+        "correctIndex": 0,
+        "explanation": "Ловушка рода: la voile (f) — парус; le voile (m) — вуаль, покрывало, дымка. Одно написание, но артикль меняет значение. На лодке нужен именно la voile."
+      },
+      {
+        "id": "wc-bateau-voilier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bateau-voilier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Un voilier blanc traverse la baie.",
+          "Il rêve d'acheter un petit voilier.",
+          "Le voilier avance grâce au vent."
+        ],
+        "options": ["парусник (парусная лодка)", "моторная лодка", "паром", "рыба"],
+        "correctIndex": 0,
+        "explanation": "voilier (m) — парусник, судно под парусом. Внутри слова прячется voile (парус): voilier = «несущий парус». Идёт «grâce au vent» — благодаря ветру, а не мотору."
+      },
+      {
+        "id": "wc-bateau-voilier-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-bateau-voilier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — то, что движется по воде. Найди лишнее.",
+        "options": ["un voilier", "un bateau", "une barque", "un phare"],
+        "correctIndex": 3,
+        "explanation": "voilier (парусник), bateau (судно) и barque (лодка) плавают по воде. Лишнее — un phare (маяк): он стоит на берегу и светит, а не плывёт."
+      },
+      {
+        "id": "wc-bateau-marin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bateau-marin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le marin connaît bien la mer.",
+          "Mon grand-père était marin.",
+          "Le vieux marin raconte ses voyages."
+        ],
+        "options": ["моряк", "капитан корабля", "рыба", "пассажир"],
+        "correctIndex": 0,
+        "explanation": "marin (m) — моряк, тот, кто работает в море. «un marin pêcheur» — моряк-рыбак. Капитан — un capitaine (он тоже marin, но это более узкое слово); пассажир — un passager."
+      },
+      {
+        "id": "wc-bateau-marin-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-bateau-marin",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало (моряк).",
+        "audioText": "marin",
+        "options": ["marin", "matin", "malin", "marron"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало marin /ma.ʁɛ̃/ — моряк. Похожие, но другие слова: matin /ma.tɛ̃/ (утро), malin /ma.lɛ̃/ (хитрый), marron /ma.ʁɔ̃/ (коричневый, каштан). Все близкие по звучанию, но смысл разный."
+      },
+      {
+        "id": "wc-bateau-naviguer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bateau-naviguer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол?",
+        "contexts": [
+          "Ce bateau peut naviguer même par gros temps.",
+          "Ils ont navigué toute la nuit.",
+          "Apprendre à naviguer demande de la pratique."
+        ],
+        "options": [
+          "плыть, идти по морю (о судне)",
+          "плавать телом (как рыба)",
+          "тонуть",
+          "грести"
+        ],
+        "correctIndex": 0,
+        "explanation": "naviguer — идти по воде на судне, вести корабль. «naviguer par gros temps» — идти в шторм. Плавать телом — nager; тонуть — couler; грести — ramer."
+      },
+      {
+        "id": "wc-bateau-naviguer-trap",
+        "kind": "trap",
+        "wordId": "wl-bateau-naviguer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "По-русски и судно, и пловец «плывут». Как сказать про КОРАБЛЬ «плывёт» по-французски?",
+        "phrases": ["Le bateau navigue vers le port.", "L'enfant nage dans la mer."],
+        "options": [
+          "Le bateau navigue — судно идёт по воде",
+          "Le bateau nage — так не говорят: nager это про тело",
+          "Le bateau rame — гребёт само? не подходит",
+          "Le bateau coule — это «тонет», а не «плывёт»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: судно naviguer (идёт по воде), а человек nager (плывёт телом). «Le bateau nage» — ошибка, корабль никогда не nage. Ramer — грести (это делает человек веслом), а couler — вообще «тонуть»."
+      },
+      {
+        "id": "wc-bateau-rame-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bateau-rame",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il prend les rames et commence à ramer.",
+          "Une rame est tombée à l'eau.",
+          "Sans rames, la barque ne bouge pas."
+        ],
+        "options": ["весло", "парус", "якорь", "руль"],
+        "correctIndex": 0,
+        "explanation": "la rame (f) — весло; глагол от него — ramer (грести). «un bateau à rames» — вёсельная лодка. Парус — la voile, якорь — l'ancre, руль — le gouvernail."
+      },
+      {
+        "id": "wc-bateau-rame-sort",
+        "kind": "sort",
+        "wordId": "wl-bateau-rame",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом rame звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un bateau à rames",
+            "basket": "ok"
+          },
+          {
+            "text": "donner un coup de rame",
+            "basket": "ok"
+          },
+          {
+            "text": "tirer sur les rames",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une rame",
+            "basket": "no"
+          },
+          {
+            "text": "une rame en colère",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un bateau à rames», «donner un coup de rame», «tirer sur les rames» — естественно. «boire une rame» (пить весло) и «une rame en colère» (сердитое весло) — бессмыслица."
+      },
+      {
+        "id": "wc-bateau-ancre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bateau-ancre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le capitaine ordonne de jeter l'ancre.",
+          "Le bateau reste à l'ancre toute la nuit.",
+          "On lève l'ancre au lever du soleil."
+        ],
+        "options": ["якорь", "чернила", "цепь", "парус"],
+        "correctIndex": 0,
+        "explanation": "l'ancre (f) — якорь. «jeter l'ancre» — бросить якорь, «lever l'ancre» — сняться с якоря. Осторожно: l'encre (чернила) звучит так же /ɑ̃kʁ/, но пишется иначе и не имеет отношения к морю."
+      },
+      {
+        "id": "wc-bateau-ancre-trap",
+        "kind": "trap",
+        "wordId": "wl-bateau-ancre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слова ancre и encre звучат одинаково /ɑ̃kʁ/. Что бросают в море, чтобы судно стояло?",
+        "options": [
+          "l'ancre — якорь (anc-)",
+          "l'encre — чернила (enc-)",
+          "оба слова значат «якорь»",
+          "оба слова значат «чернила»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Омофоны: l'ancre (anc-) — якорь, его бросают в море; l'encre (enc-) — чернила, ими пишут. Звучат одинаково /ɑ̃kʁ/, различает только написание и смысл."
+      },
+      {
+        "id": "wc-bateau-ancre-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-bateau-ancre",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию, чтобы не путать ancre (якорь) и encre (чернила) — оба /ɑ̃kʁ/.",
+        "examples": [
+          "ancre с буквой a — как Anchor по-английски (тоже на a): a = якорь.",
+          "Представь, что якорь оставляет на карте чёрный след, будто l'encre (чернила) — так свяжешь похожие слова через образ, но запомнишь, что в море нужна именно ancre."
+        ]
+      }
+    ]
+  }
+]

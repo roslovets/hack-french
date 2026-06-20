@@ -1,0 +1,280 @@
+[
+  {
+    "id": "wc-jardinage",
+    "title": "Садоводство",
+    "theme": "jardinage",
+    "level": "A2",
+    "wordIds": [
+      "wl-jardinage-plante",
+      "wl-jardinage-herbe",
+      "wl-jardinage-arroser",
+      "wl-jardinage-planter",
+      "wl-jardinage-tondre",
+      "wl-jardinage-semer",
+      "wl-jardinage-terre",
+      "wl-jardinage-graine"
+    ],
+    "steps": [
+      {
+        "id": "wc-jardinage-plante-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jardinage-plante",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai une belle plante verte dans le salon.",
+          "Cette plante a besoin de beaucoup de lumière.",
+          "Il vend des plantes au marché."
+        ],
+        "options": ["растение", "цветок (один распустившийся)", "дерево", "букет"],
+        "correctIndex": 0,
+        "explanation": "plante (f) — растение (особенно комнатное или садовое). Цветок (распустившийся) — une fleur, дерево — un arbre. «une plante verte» — комнатное растение."
+      },
+      {
+        "id": "wc-jardinage-plante-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-jardinage-plante",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит plante?",
+        "bridge": "Англ. «plant» — растение; почти те же буквы. Фр. plante читается /plɑ̃t/ — носовой звук вместо английского, и на конце немой -e.",
+        "options": ["растение", "завод (фабрика)", "тарелка", "план"],
+        "correctIndex": 0,
+        "explanation": "plante = растение, как англ. «plant» в значении «растение». Но осторожно: англ. «plant» значит ещё и «завод» — этого смысла у фр. plante нет (завод — une usine)."
+      },
+      {
+        "id": "wc-jardinage-herbe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jardinage-herbe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Les enfants jouent sur l'herbe.",
+          "L'herbe est encore mouillée le matin.",
+          "Il faut couper l'herbe, elle est trop haute."
+        ],
+        "options": ["трава", "земля", "лист", "ветка"],
+        "correctIndex": 0,
+        "explanation": "herbe (f) — трава. Обрати внимание на немое h: говорят l'herbe (с элизией), а не «la herbe». Земля — la terre, лист — une feuille."
+      },
+      {
+        "id": "wc-jardinage-herbe-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-jardinage-herbe",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для herbe (трава), чтобы запомнить немое h (говорят l'herbe, une herbe) и женский род.",
+        "examples": [
+          "h не слышно: l'herbe звучит как «лэрб» — слитно, будто буквы h нет вовсе.",
+          "Представь зелёную лужайку: la bonne herbe — она «своя», женского рода, мягкая под ногами."
+        ]
+      },
+      {
+        "id": "wc-jardinage-arroser-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jardinage-arroser",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "N'oublie pas d'arroser les fleurs ce soir.",
+          "En été, j'arrose le jardin tous les jours.",
+          "Elle arrose ses plantes avec un arrosoir."
+        ],
+        "options": ["поливать", "срезать", "сажать", "пересаживать"],
+        "correctIndex": 0,
+        "explanation": "arroser — поливать (лить воду на растения). Лейка — un arrosoir (от того же корня). Сажать — planter, срезать — couper."
+      },
+      {
+        "id": "wc-jardinage-arroser-sort",
+        "kind": "sort",
+        "wordId": "wl-jardinage-arroser",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с глаголом arroser звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "arroser les plantes",
+            "basket": "ok"
+          },
+          {
+            "text": "arroser le jardin",
+            "basket": "ok"
+          },
+          {
+            "text": "arroser tous les matins",
+            "basket": "ok"
+          },
+          {
+            "text": "arroser la télévision",
+            "basket": "no"
+          },
+          {
+            "text": "arroser ses chaussures",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Поливают то, что растёт, или землю: «arroser les plantes / le jardin», и можно «arroser tous les matins». «arroser la télévision» (полить телевизор) и «arroser ses chaussures» (полить ботинки) — бессмыслица: их не поливают."
+      },
+      {
+        "id": "wc-jardinage-planter-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jardinage-planter",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Au printemps, on plante des tomates.",
+          "Ils ont planté un arbre dans le jardin.",
+          "Plante les fleurs ici, il y a du soleil."
+        ],
+        "options": ["сажать", "поливать", "косить", "собирать"],
+        "correctIndex": 0,
+        "explanation": "planter — сажать (помещать растение в землю). Однокоренное с une plante (растение). Поливать — arroser, собирать (урожай) — récolter."
+      },
+      {
+        "id": "wc-jardinage-planter-cmp",
+        "kind": "compare",
+        "wordId": "wl-jardinage-planter",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "planter un arbre и semer des graines. В чём разница?",
+        "phrases": ["Je plante un arbre.", "Je sème des graines."],
+        "options": [
+          "planter — сажать готовый саженец или клубень в лунку; semer — сеять мелкие семена, рассыпая их.",
+          "Это полные синонимы, разницы нет.",
+          "planter — сеять семена, а semer — сажать деревья.",
+          "planter — про цветы, semer — только про деревья."
+        ],
+        "correctIndex": 0,
+        "explanation": "planter — сажать что-то готовое (саженец, рассаду, клубень) в землю; semer — сеять семена (graines), рассыпая их по почве. Дерево plante, а морковь чаще sème."
+      },
+      {
+        "id": "wc-jardinage-tondre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jardinage-tondre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le dimanche, mon voisin tond sa pelouse.",
+          "Il faut tondre le gazon, il est trop long.",
+          "À la ferme, on tond les moutons au printemps."
+        ],
+        "options": ["коротко стричь (газон, шерсть)", "поливать", "копать", "полоть"],
+        "correctIndex": 0,
+        "explanation": "tondre — коротко стричь машинкой: газон (la pelouse) или шерсть овцы. Машинка — une tondeuse. Это глагол 3-й группы: je tonds, il tond."
+      },
+      {
+        "id": "wc-jardinage-tondre-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-jardinage-tondre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три фразы — про уход за садом. Найди лишнюю (так не говорят).",
+        "options": ["tondre la pelouse", "tondre le gazon", "tondre un mouton", "tondre une fleur"],
+        "correctIndex": 3,
+        "explanation": "tondre — про ровную короткую стрижку поверхности: газон (la pelouse, le gazon) или шерсть (un mouton). «tondre une fleur» так не говорят: цветок не «стригут» машинкой — его срезают (couper)."
+      },
+      {
+        "id": "wc-jardinage-semer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jardinage-semer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Au printemps, on sème les graines dans la terre.",
+          "Mon grand-père sème des carottes chaque année.",
+          "Il faut semer avant qu'il pleuve."
+        ],
+        "options": ["сеять", "поливать", "стричь", "пересаживать"],
+        "correctIndex": 0,
+        "explanation": "semer — сеять (рассыпать семена по земле). Стебель меняется на è: je sème, il sème, но nous semons. Поливать — arroser."
+      },
+      {
+        "id": "wc-jardinage-semer-hint",
+        "kind": "wordHint",
+        "wordId": "wl-jardinage-semer",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни глагол: рассыпать семена по земле, чтобы из них выросли растения.",
+        "answer": "semer",
+        "hints": [
+          "Начинается на s…",
+          "5 букв, заканчивается на -er (1-я группа, но je sème — с accent grave)",
+          "On ___ des graines au printemps."
+        ],
+        "explanation": "semer — сеять. Пишется без accent в инфинитиве (semer), но в спряжении стебель меняется: je sème, tu sèmes, il sème, nous semons, vous semez, ils sèment."
+      },
+      {
+        "id": "wc-jardinage-terre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jardinage-terre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On met les graines dans la terre.",
+          "Cette terre est très fertile.",
+          "Le pot est rempli de terre."
+        ],
+        "options": ["земля, почва", "вода", "песок", "камень"],
+        "correctIndex": 0,
+        "explanation": "terre (f) — земля, почва (в которую сажают). То же слово значит «земля» под ногами (par terre) и планету Земля (la Terre). Песок — le sable."
+      },
+      {
+        "id": "wc-jardinage-terre-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-jardinage-terre",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, какое из похожих по звучанию ты услышал.",
+        "audioText": "terre",
+        "options": ["terre", "verre", "serre", "guerre"],
+        "correctIndex": 0,
+        "explanation": "Все четыре звучат на /...ɛʁ/, но различаются началом: terre /tɛʁ/ — земля, verre /vɛʁ/ — стакан/стекло, serre /sɛʁ/ — теплица, guerre /ɡɛʁ/ — война. Здесь прозвучало terre."
+      },
+      {
+        "id": "wc-jardinage-graine-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-jardinage-graine",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai acheté un sachet de graines de tomate.",
+          "On plante les graines à deux centimètres de profondeur.",
+          "Les oiseaux mangent les graines de tournesol."
+        ],
+        "options": ["семя, семечко", "корень", "лист", "плод"],
+        "correctIndex": 0,
+        "explanation": "graine (f) — семя, семечко (его сеют, из него растёт растение). «un sachet de graines» — пакетик семян. Корень — une racine, плод — un fruit."
+      },
+      {
+        "id": "wc-jardinage-graine-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-jardinage-graine",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, какое из похожих по звучанию ты услышал.",
+        "audioText": "graine",
+        "options": ["graine", "gaine", "reine", "scène"],
+        "correctIndex": 0,
+        "explanation": "Слова звучат похоже, но это разные слова: graine /ɡʁɛn/ — семя, gaine /ɡɛn/ — оболочка/чехол, reine /ʁɛn/ — королева, scène /sɛn/ — сцена. Здесь прозвучало graine — со звуком /ɡʁ/ в начале."
+      }
+    ]
+  }
+]

@@ -1,0 +1,343 @@
+[
+  {
+    "id": "wc-photo",
+    "title": "Фотография",
+    "theme": "photo",
+    "level": "A2",
+    "wordIds": [
+      "wl-photo-photo",
+      "wl-photo-appareil",
+      "wl-photo-objectif",
+      "wl-photo-flash",
+      "wl-photo-pose",
+      "wl-photo-cliche",
+      "wl-photo-album",
+      "wl-photo-filmer"
+    ],
+    "steps": [
+      {
+        "id": "wc-photo-photo-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-photo-photo",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Tu peux prendre une photo de nous ?",
+          "J'ai mis la photo sur Instagram.",
+          "C'est une vieille photo de mes grands-parents."
+        ],
+        "options": ["фотография, снимок", "рисунок", "рамка", "зеркало"],
+        "correctIndex": 0,
+        "explanation": "photo (f) — фотография, снимок. «prendre une photo» — сделать снимок. Это короткая форма от photographie. Рисунок — un dessin, рамка — un cadre."
+      },
+      {
+        "id": "wc-photo-photo-sort",
+        "kind": "sort",
+        "wordId": "wl-photo-photo",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом photo звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "prendre une photo",
+            "basket": "ok"
+          },
+          {
+            "text": "une photo de famille",
+            "basket": "ok"
+          },
+          {
+            "text": "prendre quelqu'un en photo",
+            "basket": "ok"
+          },
+          {
+            "text": "faire une photo de la pluie",
+            "basket": "ok"
+          },
+          {
+            "text": "écrire une photo",
+            "basket": "no"
+          },
+          {
+            "text": "boire une photo",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Фотографию «делают»: prendre une photo, prendre quelqu'un en photo, faire une photo. «écrire une photo» (писать фото) и «boire une photo» (пить фото) — бессмыслица."
+      },
+      {
+        "id": "wc-photo-appareil-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-photo-appareil",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai acheté un nouvel appareil photo.",
+          "N'oublie pas l'appareil pour les vacances.",
+          "Mon appareil n'a plus de batterie."
+        ],
+        "options": ["фотоаппарат, аппарат", "штатив", "плёнка", "альбом"],
+        "correctIndex": 0,
+        "explanation": "appareil (m) — прибор, аппарат; «un appareil photo» — фотоаппарат. В разговоре про съёмку l'appareil сразу понимают как «камера». Плёнка — une pellicule."
+      },
+      {
+        "id": "wc-photo-appareil-trap",
+        "kind": "trap",
+        "wordId": "wl-photo-appareil",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг говорит: «J'ai filmé le concert avec ma caméra». Чем caméra отличается от un appareil photo?",
+        "phrases": ["Je prends une photo avec mon appareil.", "Je filme avec ma caméra."],
+        "options": [
+          "un appareil (photo) снимает фотографии; une caméra снимает видео.",
+          "Это полные синонимы, разницы нет.",
+          "un appareil — для видео, une caméra — для фото.",
+          "caméra — это вспышка, а не камера."
+        ],
+        "correctIndex": 0,
+        "explanation": "По-русски оба «камера», но во французском: un appareil photo — для фотографий, une caméra — для видео. Поэтому «filmer» идёт с caméra, «prendre une photo» — с appareil."
+      },
+      {
+        "id": "wc-photo-objectif-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-photo-objectif",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Regarde bien l'objectif et souris !",
+          "J'ai acheté un nouvel objectif pour mon appareil.",
+          "Il y a une poussière sur l'objectif."
+        ],
+        "options": ["объектив (камеры)", "экран", "кнопка", "вспышка"],
+        "correctIndex": 0,
+        "explanation": "objectif (m) — объектив, стеклянная часть камеры, через которую снимают. «regarder l'objectif» — смотреть в объектив. Вспышка — un flash, экран — un écran."
+      },
+      {
+        "id": "wc-photo-objectif-trap",
+        "kind": "trap",
+        "wordId": "wl-photo-objectif",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "У слова objectif два смысла. Что оно значит в «Mon objectif est de parler français» (вне фото)?",
+        "options": [
+          "цель, задача — то, чего хотят достичь",
+          "объектив фотоаппарата",
+          "объективность, беспристрастность",
+          "возражение"
+        ],
+        "correctIndex": 0,
+        "explanation": "Одно слово — два смысла: un objectif — это и объектив камеры, и цель/задача («atteindre son objectif»). Здесь речь о цели: «Моя цель — говорить по-французски»."
+      },
+      {
+        "id": "wc-photo-flash-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-photo-flash",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит flash?",
+        "bridge": "Англ. «flash» — вспышка; во французском пишется так же. Читается по-французски /flaʃ/, род мужской: un flash.",
+        "options": ["вспышка (фотоаппарата)", "экран", "кнопка", "батарейка"],
+        "correctIndex": 0,
+        "explanation": "flash (m) = вспышка. Прямой мост из английского. «avec flash / sans flash» — со вспышкой / без вспышки. То же слово — про срочную новость: un flash info."
+      },
+      {
+        "id": "wc-photo-flash-sort",
+        "kind": "sort",
+        "wordId": "wl-photo-flash",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом flash звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une photo avec flash",
+            "basket": "ok"
+          },
+          {
+            "text": "prendre la photo sans flash",
+            "basket": "ok"
+          },
+          {
+            "text": "un flash info",
+            "basket": "ok"
+          },
+          {
+            "text": "manger un flash",
+            "basket": "no"
+          },
+          {
+            "text": "un flash en bois",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«avec / sans flash», «un flash info» (срочная новость) — естественно. «manger un flash» (есть вспышку) и «un flash en bois» (деревянная вспышка) — бессмыслица."
+      },
+      {
+        "id": "wc-photo-pose-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-photo-pose",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Prends la pose, je te photographie !",
+          "Garde la pose, ne bouge pas.",
+          "Sa pose est très naturelle sur cette photo."
+        ],
+        "options": ["поза (для съёмки)", "улыбка", "взгляд", "тень"],
+        "correctIndex": 0,
+        "explanation": "pose (f) — поза, в которой позируют. «prendre la pose» — встать в позу, позировать; «garder la pose» — держать позу. В технике pose значит ещё и выдержку (le temps de pose)."
+      },
+      {
+        "id": "wc-photo-pose-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-photo-pose",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "pose",
+        "options": ["pose", "rose", "dose", "chose"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало pose /poz/ — поза/выдержка. Все четыре слова оканчиваются на /-oz/, но различаются первым согласным: rose /ʁoz/ — роза/розовый, dose /doz/ — доза, chose /ʃoz/ — вещь. (Отдельно есть pause /poz/ — перерыв: звучит как pose, но это другое слово.)"
+      },
+      {
+        "id": "wc-photo-cliche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-photo-cliche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит здесь?",
+        "contexts": [
+          "Le photographe a pris quelques clichés.",
+          "C'est un très beau cliché en noir et blanc.",
+          "On voit le château sur ce cliché."
+        ],
+        "options": ["снимок, фотокадр", "негатив", "рамка", "альбом"],
+        "correctIndex": 0,
+        "explanation": "cliché (m) — снимок, фотокадр (слово книжное/профессиональное, как «кадр»). У него есть и второй смысл — «штамп, банальность», но здесь речь о фотографиях."
+      },
+      {
+        "id": "wc-photo-cliche-cmp",
+        "kind": "compare",
+        "wordId": "wl-photo-cliche",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une photo и un cliché — в чём разница в значении «снимок»?",
+        "phrases": ["J'ai pris une photo.", "Le photographe a pris un cliché."],
+        "options": [
+          "photo — обычное, нейтральное слово; cliché — то же «снимок», но книжно/профессионально (как «кадр»).",
+          "Это совершенно разные вещи, ничего общего.",
+          "cliché — это только негатив, а не снимок.",
+          "photo — про видео, cliché — про фото."
+        ],
+        "correctIndex": 0,
+        "explanation": "Оба — «снимок», но регистр разный: une photo — обиходно и нейтрально; un cliché — приподнято/профессионально (в речи фотографа, в подписи к кадру). У cliché есть и второй смысл — «штамп»."
+      },
+      {
+        "id": "wc-photo-album-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-photo-album",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит album?",
+        "bridge": "Англ. «album» — альбом; пишется так же. По-французски конечная m звучит: /al.bɔm/, род мужской — un album.",
+        "options": ["альбом (для фото, музыки)", "полка", "коробка", "конверт"],
+        "correctIndex": 0,
+        "explanation": "album (m) = альбом. Мост из английского, те же буквы. Важно: m на конце читается — /al.bɔm/. «un album photo» — фотоальбом, «un album de famille» — семейный альбом."
+      },
+      {
+        "id": "wc-photo-album-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-photo-album",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова связаны с хранением и показом фотографий. Найди лишнее.",
+        "options": ["un album", "un cadre", "une pellicule", "une pause"],
+        "correctIndex": 3,
+        "explanation": "Альбом (un album) хранит снимки, рамка (un cadre) показывает один кадр, плёнка (une pellicule) — носитель, на который снимали. Перерыв (une pause) — лишнее: это пауза, отдых, не про фотографии."
+      },
+      {
+        "id": "wc-photo-filmer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-photo-filmer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il a filmé tout le concert avec son téléphone.",
+          "On va filmer le mariage de ma sœur.",
+          "Ne me filme pas, je suis mal coiffé !"
+        ],
+        "options": ["снимать на видео", "фотографировать", "печатать фото", "рисовать"],
+        "correctIndex": 0,
+        "explanation": "filmer — снимать видео (движущееся изображение). Правильный глагол на -er: je filme, tu filmes. Делать фото (один кадр) — photographier или prendre en photo."
+      },
+      {
+        "id": "wc-photo-filmer-cmp",
+        "kind": "compare",
+        "wordId": "wl-photo-filmer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "filmer и photographier — в чём разница?",
+        "phrases": ["Je filme la scène.", "Je photographie la scène."],
+        "options": [
+          "filmer — снимать видео (движение); photographier — делать фотографию (один кадр).",
+          "Это полные синонимы.",
+          "filmer — это про фото, photographier — про видео.",
+          "filmer значит «смотреть фильм»."
+        ],
+        "correctIndex": 0,
+        "explanation": "По-русски оба «снимать», но во французском: filmer — видео (с une caméra), photographier — отдельный кадр (с un appareil photo). «filmer un concert», «photographier un paysage»."
+      },
+      {
+        "id": "wc-photo-objectif-hint",
+        "kind": "wordHint",
+        "wordId": "wl-photo-objectif",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: стеклянная часть фотоаппарата, через которую проходит свет и в которую смотрят при съёмке.",
+        "answer": "objectif",
+        "hints": [
+          "Начинается на o…",
+          "То же слово значит «цель, задача»",
+          "Regarde bien l'___ et souris !"
+        ],
+        "explanation": "objectif (m) — объектив. Род мужской: un objectif. У слова два смысла: объектив камеры и цель/задача (atteindre son objectif)."
+      },
+      {
+        "id": "wc-photo-pose-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-photo-pose",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для pose (поза), чтобы не путать её с pause (перерыв) — звучат одинаково /poz/.",
+        "examples": [
+          "POSE — позируешь на фото; PAUSE — нажал «паузу», отдыхаешь. Свяжи pose с замиранием перед камерой.",
+          "Представь: «Prends la pose !» — фотограф просит застыть; а «Fais une pause» — друг зовёт передохнуть."
+        ]
+      }
+    ]
+  }
+]

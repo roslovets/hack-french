@@ -1,0 +1,235 @@
+[
+  {
+    "id": "wl-ferme-cochon",
+    "lemma": "cochon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔ.ʃɔ̃/",
+    "translationsRu": ["свинья", "поросёнок"],
+    "translationsEn": ["pig"],
+    "semanticCore": "Свинья как живое животное на ферме; о мясе чаще говорят le porc (свинина), хотя в деревенской речи встречается и «viande de cochon».",
+    "collocations": [
+      { "fr": "un cochon rose", "ru": "розовая свинья" },
+      { "fr": "élever des cochons", "ru": "разводить свиней" },
+      { "fr": "de la viande de cochon", "ru": "свинина (мясо свиньи)" },
+      { "fr": "un petit cochon", "ru": "поросёнок" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "porc",
+        "note": "cochon — живое животное (свинья); porc — прежде всего свинина как мясо («côte de porc»), хотя porc может означать и само животное."
+      },
+      {
+        "with": "sanglier",
+        "note": "cochon — домашняя свинья; sanglier — кабан (дикий). Не путать: кабан живёт в лесу."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["ferme", "animaux"],
+    "caseIds": ["wc-ferme"]
+  },
+  {
+    "id": "wl-ferme-tracteur",
+    "lemma": "tracteur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tʁak.tœʁ/",
+    "translationsRu": ["трактор"],
+    "translationsEn": ["tractor"],
+    "semanticCore": "Трактор — сельскохозяйственная машина, которая тянет плуг, прицеп и другую технику.",
+    "collocations": [
+      { "fr": "conduire un tracteur", "ru": "водить трактор" },
+      { "fr": "un tracteur rouge", "ru": "красный трактор" },
+      { "fr": "le tracteur tire la remorque", "ru": "трактор тянет прицеп" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "remorque",
+        "note": "tracteur — сам трактор (тягач); remorque — прицеп, который он тянет. Это две разные части."
+      },
+      {
+        "with": "facteur",
+        "note": "tracteur (трактор) и facteur (почтальон) звучат похоже из-за общего «хвоста» -teur, но это совсем разные слова."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["ferme", "machine"],
+    "caseIds": ["wc-ferme"]
+  },
+  {
+    "id": "wl-ferme-grange",
+    "lemma": "grange",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɡʁɑ̃ʒ/",
+    "translationsRu": ["амбар", "сарай"],
+    "translationsEn": ["barn"],
+    "semanticCore": "Амбар: хозяйственная постройка, где хранят сено, солому и урожай (но не держат скот).",
+    "collocations": [
+      { "fr": "ranger le foin dans la grange", "ru": "складывать сено в амбар" },
+      { "fr": "une vieille grange", "ru": "старый амбар" },
+      { "fr": "une grange en bois", "ru": "деревянный сарай" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "étable",
+        "note": "grange — амбар для сена и урожая (без животных); étable — коровник, где держат скот."
+      },
+      {
+        "with": "grange (англ.)",
+        "note": "Фр. la grange — амбар (хранилище). Англ. «grange» иногда значит сам фермерский дом — ложный друг."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["ferme", "batiment"],
+    "caseIds": ["wc-ferme"]
+  },
+  {
+    "id": "wl-ferme-recolte",
+    "lemma": "récolte",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁe.kɔlt/",
+    "translationsRu": ["урожай", "сбор урожая"],
+    "translationsEn": ["harvest", "crop"],
+    "semanticCore": "Урожай: и собранные плоды, и сам процесс уборки — для любых культур, не только зерна.",
+    "collocations": [
+      { "fr": "une bonne récolte", "ru": "хороший урожай" },
+      { "fr": "la récolte des pommes", "ru": "сбор яблок" },
+      { "fr": "faire la récolte", "ru": "собирать урожай" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "moisson",
+        "note": "récolte — сбор урожая вообще (овощи, фрукты, любые культуры); moisson — именно жатва зерновых (пшеницы, ржи)."
+      },
+      {
+        "with": "récolter",
+        "note": "récolte — существительное (урожай); récolter — глагол (собирать урожай). «faire la récolte» = «récolter»."
+      }
+    ],
+    "frequencyRank": 690,
+    "level": "A2",
+    "tags": ["ferme", "agriculture"],
+    "caseIds": ["wc-ferme"]
+  },
+  {
+    "id": "wl-ferme-foin",
+    "lemma": "foin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fwɛ̃/",
+    "translationsRu": ["сено"],
+    "translationsEn": ["hay"],
+    "semanticCore": "Сено: высушенная скошенная трава, которой кормят скот, прежде всего зимой.",
+    "collocations": [
+      { "fr": "une botte de foin", "ru": "тюк сена" },
+      { "fr": "du foin coupé", "ru": "скошенное сено" },
+      { "fr": "donner du foin aux vaches", "ru": "давать сено коровам" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "paille",
+        "note": "foin — сено (сушёная трава на корм); paille — солома (стебли злаков после обмолота, идёт на подстилку). Едят foin, спят на paille."
+      },
+      {
+        "with": "herbe",
+        "note": "foin — высушенная трава (сено); herbe — свежая, растущая трава. Корова ест l'herbe летом и le foin зимой."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["ferme", "agriculture"],
+    "caseIds": ["wc-ferme"]
+  },
+  {
+    "id": "wl-ferme-etable",
+    "lemma": "étable",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.tabl/",
+    "translationsRu": ["хлев", "коровник"],
+    "translationsEn": ["cowshed", "barn"],
+    "semanticCore": "Хлев/коровник: помещение, где держат коров и другой крупный рогатый скот.",
+    "collocations": [
+      { "fr": "rentrer les vaches à l'étable", "ru": "загнать коров в хлев" },
+      { "fr": "nettoyer l'étable", "ru": "чистить коровник" },
+      { "fr": "la chaleur de l'étable", "ru": "тепло хлева" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "écurie",
+        "note": "étable — коровник (для коров и крупного скота); écurie — конюшня (для лошадей). Лошадей держат отдельно от коров."
+      },
+      {
+        "with": "table",
+        "note": "étable (хлев) похоже на table (стол), но это разные слова: é-table читается /e.tabl/."
+      }
+    ],
+    "frequencyRank": 840,
+    "level": "A2",
+    "tags": ["ferme", "batiment"],
+    "caseIds": ["wc-ferme"]
+  },
+  {
+    "id": "wl-ferme-fermier",
+    "lemma": "fermier",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fɛʁ.mje/",
+    "translationsRu": ["фермер"],
+    "translationsEn": ["farmer"],
+    "semanticCore": "Фермер: человек, который владеет фермой и работает на ней — разводит скот и собирает урожай.",
+    "collocations": [
+      { "fr": "un fermier travailleur", "ru": "трудолюбивый фермер" },
+      { "fr": "le fermier trait les vaches", "ru": "фермер доит коров" },
+      { "fr": "un poulet fermier", "ru": "фермерская курица" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fermière",
+        "note": "un fermier — фермер (мужчина); une fermière — фермерша. Корень тот же, что у la ferme."
+      },
+      {
+        "with": "agriculteur",
+        "note": "fermier — фермер (часто арендатор фермы, бытовое слово); agriculteur — земледелец / аграрий (более официальное, общее)."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["ferme", "metiers"],
+    "caseIds": ["wc-ferme"]
+  },
+  {
+    "id": "wl-ferme-chevre",
+    "lemma": "chèvre",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʃɛvʁ/",
+    "translationsRu": ["коза"],
+    "translationsEn": ["goat"],
+    "semanticCore": "Коза как животное (всегда женского рода); из её молока делают козий сыр le chèvre.",
+    "collocations": [
+      { "fr": "le lait de chèvre", "ru": "козье молоко" },
+      { "fr": "le fromage de chèvre", "ru": "козий сыр" },
+      { "fr": "garder les chèvres", "ru": "пасти коз" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "le chèvre",
+        "note": "la chèvre — коза (животное, женский род); le chèvre — козий сыр (мужской род, сокращение от le fromage de chèvre)."
+      },
+      {
+        "with": "brebis",
+        "note": "chèvre — коза (с рожками, любит лазить); brebis — овца (самка). Бывает и козье, и овечье молоко."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["ferme", "animaux"],
+    "caseIds": ["wc-ferme"]
+  }
+]

@@ -69,7 +69,8 @@
       "directions",
       "deplacements",
       "transport2",
-      "voiture"
+      "voiture",
+      "bateau"
     ],
     "bossId": "wc-boss-transport"
   },
@@ -104,7 +105,8 @@
       "heure",
       "jours",
       "mois",
-      "duree"
+      "duree",
+      "gestes"
     ],
     "bossId": "wc-boss-verbes"
   },
@@ -134,14 +136,15 @@
       "paysage",
       "ecologie",
       "espace",
-      "insectes"
+      "insectes",
+      "ferme"
     ],
     "bossId": "wc-boss-weather"
   },
   {
     "id": "leisure",
     "title": "Досуг и интересы",
-    "themes": ["loisirs", "sport", "fetes", "arts", "plage", "camping"],
+    "themes": ["loisirs", "sport", "fetes", "arts", "plage", "camping", "jardinage", "photo"],
     "bossId": "wc-boss-leisure"
   },
   {

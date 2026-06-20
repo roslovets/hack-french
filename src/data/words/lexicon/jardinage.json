@@ -1,0 +1,238 @@
+[
+  {
+    "id": "wl-jardinage-plante",
+    "lemma": "plante",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/plɑ̃t/",
+    "translationsRu": ["растение"],
+    "translationsEn": ["plant"],
+    "semanticCore": "Любое зелёное растение, особенно домашнее в горшке или садовое; то, что сажают и поливают.",
+    "collocations": [
+      { "fr": "une plante verte", "ru": "комнатное (зелёное) растение" },
+      { "fr": "arroser les plantes", "ru": "поливать растения" },
+      { "fr": "une plante d'intérieur", "ru": "комнатное растение" },
+      { "fr": "une plante grasse", "ru": "суккулент (кактус и т. п.)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "arbre",
+        "note": "une plante = растение (обычно небольшое, травянистое, в горшке); un arbre = дерево (большое, со стволом). Дерево — частный случай растения, но в быту их различают."
+      },
+      {
+        "with": "la plante du pied",
+        "note": "то же слово la plante значит ещё и «ступня» (la plante du pied — подошва стопы). Контекст сада или тела подсказывает смысл."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["jardinage", "vegetation"],
+    "caseIds": ["wc-jardinage"]
+  },
+  {
+    "id": "wl-jardinage-herbe",
+    "lemma": "herbe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɛʁb/",
+    "translationsRu": ["трава"],
+    "translationsEn": ["grass", "herb"],
+    "semanticCore": "Трава как зелёный покров земли; во множественном — травы (пряные или сорные).",
+    "collocations": [
+      { "fr": "marcher sur l'herbe", "ru": "ходить по траве" },
+      { "fr": "couper l'herbe", "ru": "косить траву" },
+      { "fr": "les mauvaises herbes", "ru": "сорняки" },
+      { "fr": "les fines herbes", "ru": "пряные травы (зелень)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "gazon",
+        "note": "l'herbe = трава вообще (в том числе дикая); le gazon = газон, специально засеянная и подстриженная трава. Газон — это ухоженная herbe."
+      },
+      {
+        "with": "herb (англ.)",
+        "note": "англ. «herb» — это пряная трава (приправа); фр. herbe в первую очередь «трава» (на земле). «Приправы» по-французски — les fines herbes, во множественном."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["jardinage", "vegetation"],
+    "caseIds": ["wc-jardinage"]
+  },
+  {
+    "id": "wl-jardinage-arroser",
+    "lemma": "arroser",
+    "pos": "verb",
+    "ipa": "/a.ʁo.ze/",
+    "translationsRu": ["поливать"],
+    "translationsEn": ["to water"],
+    "semanticCore": "Лить воду на растения или землю, чтобы они не засохли; делают это из лейки (un arrosoir).",
+    "collocations": [
+      { "fr": "arroser les fleurs", "ru": "поливать цветы" },
+      { "fr": "arroser le jardin", "ru": "поливать сад" },
+      { "fr": "arroser tous les jours", "ru": "поливать каждый день" },
+      { "fr": "un arrosoir", "ru": "лейка" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "verser",
+        "note": "arroser = поливать (растения, землю — равномерно, чтобы напоить); verser = наливать (воду в стакан, направленно). Поливают цветы, а воду в стакан versent."
+      },
+      {
+        "with": "mouiller",
+        "note": "arroser = поливать намеренно (растения); mouiller = намочить (часто случайно: одежду под дождём). Цель разная."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["jardinage", "action"],
+    "caseIds": ["wc-jardinage"]
+  },
+  {
+    "id": "wl-jardinage-planter",
+    "lemma": "planter",
+    "pos": "verb",
+    "ipa": "/plɑ̃.te/",
+    "translationsRu": ["сажать"],
+    "translationsEn": ["to plant"],
+    "semanticCore": "Помещать растение, саженец или луковицу в землю, чтобы оно росло; родственно слову une plante.",
+    "collocations": [
+      { "fr": "planter un arbre", "ru": "посадить дерево" },
+      { "fr": "planter des fleurs", "ru": "сажать цветы" },
+      { "fr": "planter des tomates", "ru": "сажать помидоры" },
+      { "fr": "planter dans la terre", "ru": "сажать в землю" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "semer",
+        "note": "planter = сажать готовое растение, саженец или клубень (в лунку); semer = сеять семена (рассыпать). Дерево plante, а морковь чаще sème."
+      },
+      {
+        "with": "planter (разг.)",
+        "note": "в разговорной речи «ça a planté» значит «(программа) зависла, вылетела»: l'ordinateur a planté. В саду же planter — всегда «сажать»."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["jardinage", "action"],
+    "caseIds": ["wc-jardinage"]
+  },
+  {
+    "id": "wl-jardinage-tondre",
+    "lemma": "tondre",
+    "pos": "verb",
+    "ipa": "/tɔ̃dʁ/",
+    "translationsRu": ["стричь (газон)", "косить"],
+    "translationsEn": ["to mow"],
+    "semanticCore": "Коротко срезать траву газона (или шерсть овцы) специальной машинкой — une tondeuse.",
+    "collocations": [
+      { "fr": "tondre la pelouse", "ru": "косить газон" },
+      { "fr": "tondre le gazon", "ru": "стричь газон" },
+      { "fr": "tondre un mouton", "ru": "стричь овцу" },
+      { "fr": "une tondeuse", "ru": "газонокосилка / машинка для стрижки" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "couper",
+        "note": "tondre = подстригать ровно и коротко всю поверхность (газон, шерсть) машинкой; couper = резать, отрезать вообще (ветку, бумагу). Газон tondent, ветку coupent."
+      },
+      {
+        "with": "raser",
+        "note": "tondre = коротко стричь (оставляя немного); raser = брить наголо, под ноль. Газон tondent, а бороду rasent."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["jardinage", "action"],
+    "caseIds": ["wc-jardinage"]
+  },
+  {
+    "id": "wl-jardinage-semer",
+    "lemma": "semer",
+    "pos": "verb",
+    "ipa": "/sə.me/",
+    "translationsRu": ["сеять"],
+    "translationsEn": ["to sow"],
+    "semanticCore": "Рассыпать семена по земле, чтобы из них выросли растения; первый шаг до того, как появится сама plante.",
+    "collocations": [
+      { "fr": "semer des graines", "ru": "сеять семена" },
+      { "fr": "semer des carottes", "ru": "сеять морковь" },
+      { "fr": "semer du gazon", "ru": "сеять газон (засевать)" },
+      { "fr": "semer au printemps", "ru": "сеять весной" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "planter",
+        "note": "semer = сеять (рассыпать мелкие семена, graines); planter = сажать (готовый саженец или клубень в лунку). Зёрна sèment, рассаду plantent."
+      },
+      {
+        "with": "récolter",
+        "note": "semer = сеять (в начале); récolter = собирать урожай (в конце). Пословица: « Qui sème le vent récolte la tempête » — что посеешь, то и пожнёшь."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["jardinage", "action"],
+    "caseIds": ["wc-jardinage"]
+  },
+  {
+    "id": "wl-jardinage-terre",
+    "lemma": "terre",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tɛʁ/",
+    "translationsRu": ["земля", "почва"],
+    "translationsEn": ["earth", "soil"],
+    "semanticCore": "Земля как почва, в которую сажают; также «земля» под ногами (par terre) и планета Земля (la Terre).",
+    "collocations": [
+      { "fr": "planter dans la terre", "ru": "сажать в землю" },
+      { "fr": "une terre fertile", "ru": "плодородная почва" },
+      { "fr": "par terre", "ru": "на полу / на земле" },
+      { "fr": "un pot de terre", "ru": "глиняный горшок" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sol",
+        "note": "la terre = почва (материал, в который сажают) и земля вообще; le sol = поверхность, по которой ходят (пол в доме, грунт). В terre сажают, по sol ходят."
+      },
+      {
+        "with": "sable",
+        "note": "la terre = плодородная почва (тёмная, для растений); le sable = песок (на пляже, в нём почти ничего не растёт)."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A2",
+    "tags": ["jardinage", "nature"],
+    "caseIds": ["wc-jardinage"]
+  },
+  {
+    "id": "wl-jardinage-graine",
+    "lemma": "graine",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɡʁɛn/",
+    "translationsRu": ["семя", "семечко"],
+    "translationsEn": ["seed"],
+    "semanticCore": "Семя, которое сеют в землю, чтобы из него выросло растение; начало всего сада.",
+    "collocations": [
+      { "fr": "semer des graines", "ru": "сеять семена" },
+      { "fr": "un sachet de graines", "ru": "пакетик семян" },
+      { "fr": "des graines de tournesol", "ru": "семена подсолнечника" },
+      { "fr": "planter une graine", "ru": "посадить семечко" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "grain",
+        "note": "une graine = семя (его сеют, из него растёт растение); un grain = зёрнышко, крупинка (un grain de café, un grain de raisin — кофейное зерно, виноградина). Разный род и смысл."
+      },
+      {
+        "with": "noyau",
+        "note": "une graine = маленькое семечко (для посева); un noyau = крупная косточка внутри плода (noyau de cerise, d'abricot — косточка вишни, абрикоса)."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["jardinage", "vegetation"],
+    "caseIds": ["wc-jardinage"]
+  }
+]

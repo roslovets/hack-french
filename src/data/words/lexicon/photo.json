@@ -1,0 +1,241 @@
+[
+  {
+    "id": "wl-photo-photo",
+    "lemma": "photo",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fɔ.to/",
+    "translationsRu": ["фотография", "фото", "снимок"],
+    "translationsEn": ["photo", "photograph"],
+    "semanticCore": "Снимок, сделанный фотоаппаратом или телефоном. Разговорное сокращение от photographie; та же photo и про само занятие («заниматься фото» — faire de la photo).",
+    "collocations": [
+      { "fr": "prendre une photo", "ru": "сделать фотографию" },
+      { "fr": "prendre quelqu'un en photo", "ru": "сфотографировать кого-то" },
+      { "fr": "une photo de famille", "ru": "семейная фотография" },
+      { "fr": "faire de la photo", "ru": "заниматься фотографией" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "photographie",
+        "note": "photo — обиходное короткое слово (снимок); photographie — то же, но полнее и официальнее, а также «фотография» как искусство. В речи почти всегда говорят photo."
+      },
+      {
+        "with": "image",
+        "note": "une photo — снимок с камеры (реальный кадр); une image — любое изображение (рисунок, картинка, кадр). Всякая photo — это image, но не наоборот."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["photo", "image"],
+    "caseIds": ["wc-photo"]
+  },
+  {
+    "id": "wl-photo-appareil",
+    "lemma": "appareil",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.pa.ʁɛj/",
+    "translationsRu": ["фотоаппарат", "аппарат", "прибор"],
+    "translationsEn": ["camera", "device"],
+    "semanticCore": "Любой прибор/аппарат; «фотоаппарат» — это un appareil photo. Само слово appareil — техническое устройство вообще (бытовой прибор, аппарат), а в контексте съёмки сразу понимают «камера».",
+    "collocations": [
+      { "fr": "un appareil photo", "ru": "фотоаппарат" },
+      { "fr": "un appareil photo numérique", "ru": "цифровой фотоаппарат" },
+      { "fr": "allumer l'appareil", "ru": "включить аппарат" },
+      { "fr": "un appareil ménager", "ru": "бытовой прибор" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "caméra",
+        "note": "un appareil (photo) снимает фотографии; une caméra снимает видео (кино, телевидение). По-русски оба «камера», но во французском их строго различают."
+      },
+      {
+        "with": "machine",
+        "note": "un appareil — прибор/аппарат, обычно компактный электронный (téléphone, appareil photo); une machine — машина/механизм покрупнее (стиральная — machine à laver). Не путать."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["photo", "appareil"],
+    "caseIds": ["wc-photo"]
+  },
+  {
+    "id": "wl-photo-objectif",
+    "lemma": "objectif",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɔb.ʒɛk.tif/",
+    "translationsRu": ["объектив", "цель"],
+    "translationsEn": ["lens", "objective"],
+    "semanticCore": "У камеры — объектив (стеклянная часть, через которую снимают). То же слово значит «цель, задача» (un objectif à atteindre), а как прилагательное — «объективный».",
+    "collocations": [
+      { "fr": "changer d'objectif", "ru": "сменить объектив" },
+      { "fr": "regarder l'objectif", "ru": "смотреть в объектив" },
+      { "fr": "un objectif grand-angle", "ru": "широкоугольный объектив" },
+      { "fr": "atteindre son objectif", "ru": "достичь своей цели" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "objectif (цель)",
+        "note": "Одно слово — два смысла: un objectif — объектив камеры И цель/задача. По контексту: «regarder l'objectif» — в объектив; «un objectif clair» — ясная цель."
+      },
+      {
+        "with": "but",
+        "note": "В смысле «цель» objectif и but близки: un objectif — измеримая цель/задача (часто в работе, спорте); un but — цель/намерение вообще. Объектив камеры — только objectif."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["photo", "appareil"],
+    "caseIds": ["wc-photo"]
+  },
+  {
+    "id": "wl-photo-flash",
+    "lemma": "flash",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/flaʃ/",
+    "translationsRu": ["вспышка", "экстренное сообщение"],
+    "translationsEn": ["flash"],
+    "semanticCore": "Короткая яркая вспышка света при съёмке. То же слово — про короткое экстренное сообщение в СМИ (un flash info / un flash spécial). Заимствовано из английского.",
+    "collocations": [
+      { "fr": "avec flash", "ru": "со вспышкой" },
+      { "fr": "sans flash", "ru": "без вспышки" },
+      { "fr": "déclencher le flash", "ru": "привести в действие вспышку" },
+      { "fr": "un flash info", "ru": "экстренный выпуск новостей" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "éclair",
+        "note": "un flash — вспышка фотоаппарата (прибор и его свет); un éclair — молния в небе. Оба «вспышка света», но flash — техника, éclair — природа."
+      },
+      {
+        "with": "flash (новости)",
+        "note": "В фото un flash — вспышка; в медиа un flash (info) — короткая срочная новость в эфире. Один и тот же англицизм, разные сферы."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["photo", "appareil"],
+    "caseIds": ["wc-photo"]
+  },
+  {
+    "id": "wl-photo-pose",
+    "lemma": "pose",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/poz/",
+    "translationsRu": ["поза", "выдержка"],
+    "translationsEn": ["pose", "exposure"],
+    "semanticCore": "Поза, в которой человек позирует для снимка. В технике съёмки — ещё и выдержка (le temps de pose), сколько времени открыт затвор. От глагола poser (позировать, класть).",
+    "collocations": [
+      { "fr": "prendre la pose", "ru": "принять позу (позировать)" },
+      { "fr": "garder la pose", "ru": "держать позу" },
+      { "fr": "le temps de pose", "ru": "выдержка (время экспозиции)" },
+      { "fr": "une pose naturelle", "ru": "естественная поза" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pause",
+        "note": "la pose (/poz/) — поза/выдержка; la pause (/poz/) — перерыв («faire une pause»). Звучат одинаково, пишутся по-разному и значат разное."
+      },
+      {
+        "with": "poser",
+        "note": "la pose — существительное (поза); poser — глагол: «позировать» (poser pour une photo) и «класть/ставить» (poser un livre). Корень один, роли разные."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["photo", "image"],
+    "caseIds": ["wc-photo"]
+  },
+  {
+    "id": "wl-photo-cliche",
+    "lemma": "cliché",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kli.ʃe/",
+    "translationsRu": ["снимок", "клише", "штамп"],
+    "translationsEn": ["snapshot", "cliché"],
+    "semanticCore": "Снимок, фотокадр (немного книжно/профессионально, как «кадр»). То же слово — «клише, избитый штамп» (банальная фраза или идея). Русское «клише» пришло именно отсюда.",
+    "collocations": [
+      { "fr": "prendre un cliché", "ru": "сделать снимок" },
+      { "fr": "un beau cliché", "ru": "красивый снимок" },
+      { "fr": "tomber dans le cliché", "ru": "скатиться в штамп" },
+      { "fr": "un cliché sur les Français", "ru": "штамп о французах" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "photo",
+        "note": "un cliché — снимок, но слово книжное/профессиональное (как «кадр»); в обычной речи говорят une photo. «Une jolie photo» — нейтрально, «un beau cliché» — приподнято."
+      },
+      {
+        "with": "cliché (штамп)",
+        "note": "Два смысла одного слова: un cliché — фотоснимок И избитый штамп/банальность. По контексту: «un cliché flou» — снимок; «c'est un cliché» — это штамп."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["photo", "image"],
+    "caseIds": ["wc-photo"]
+  },
+  {
+    "id": "wl-photo-album",
+    "lemma": "album",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/al.bɔm/",
+    "translationsRu": ["альбом"],
+    "translationsEn": ["album"],
+    "semanticCore": "Альбом — книга/папка, куда собирают фотографии; то же слово про музыкальный альбом и альбом для рисования. Обрати внимание: конечная m здесь звучит — /al.bɔm/.",
+    "collocations": [
+      { "fr": "un album photo", "ru": "фотоальбом" },
+      { "fr": "feuilleter un album", "ru": "листать альбом" },
+      { "fr": "un album de famille", "ru": "семейный альбом" },
+      { "fr": "le dernier album du groupe", "ru": "последний альбом группы" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "album (произношение)",
+        "note": "Пишется album, без e на конце, но m читается: /al.bɔm/ (как в латинских словах album, forum). Не «альбэн» — звук m слышен."
+      },
+      {
+        "with": "cahier",
+        "note": "un album — альбом (для фото, рисунков, музыки), на хорошей плотной бумаге; un cahier — школьная тетрадь в линейку/клетку. Не путать."
+      }
+    ],
+    "frequencyRank": 580,
+    "level": "A2",
+    "tags": ["photo", "objet"],
+    "caseIds": ["wc-photo"]
+  },
+  {
+    "id": "wl-photo-filmer",
+    "lemma": "filmer",
+    "pos": "verb",
+    "ipa": "/fil.me/",
+    "translationsRu": ["снимать (видео)", "записывать на видео"],
+    "translationsEn": ["to film", "to record"],
+    "semanticCore": "Снимать движущееся изображение — видео или кино. Противоположно фотографии: filmer — это видео, photographier / prendre en photo — это отдельный кадр.",
+    "collocations": [
+      { "fr": "filmer un mariage", "ru": "снимать свадьбу (на видео)" },
+      { "fr": "filmer avec son téléphone", "ru": "снимать на телефон" },
+      { "fr": "se faire filmer", "ru": "быть заснятым (на видео)" },
+      { "fr": "filmer une scène", "ru": "снимать сцену" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "photographier",
+        "note": "filmer — снимать видео (движение); photographier — делать фото (один кадр). По-русски оба «снимать», но во французском это разные глаголы."
+      },
+      {
+        "with": "film",
+        "note": "filmer — глагол (снимать); un film — существительное (фильм). Один корень: on filme pour faire un film (снимают, чтобы получился фильм)."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["photo", "video"],
+    "caseIds": ["wc-photo"]
+  }
+]

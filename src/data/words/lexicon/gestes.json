@@ -1,0 +1,330 @@
+[
+  {
+    "id": "wl-gestes-sauter",
+    "lemma": "sauter",
+    "pos": "verb",
+    "ipa": "/so.te/",
+    "translationsRu": ["прыгать", "скакать"],
+    "translationsEn": ["to jump", "to leap"],
+    "semanticCore": "Оттолкнуться и оказаться в воздухе: прыгать, перепрыгивать; в переносном — «пропустить» (sauter un repas) и «взлететь на воздух» (взорваться).",
+    "collocations": [
+      {
+        "fr": "sauter en l'air",
+        "ru": "подпрыгнуть (в воздух)"
+      },
+      {
+        "fr": "sauter dans l'eau",
+        "ru": "прыгнуть в воду"
+      },
+      {
+        "fr": "sauter par-dessus la barrière",
+        "ru": "перепрыгнуть через ограду"
+      },
+      {
+        "fr": "sauter un repas",
+        "ru": "пропустить приём пищи"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bondir",
+        "note": "sauter = прыгать (нейтрально, в т.ч. на месте); bondir = резко вскочить/рвануть (внезапный мощный прыжок, например от испуга). Le chat bondit sur la souris — резкий бросок."
+      },
+      {
+        "with": "sursauter",
+        "note": "sauter = прыгать; sursauter = вздрогнуть (непроизвольно дёрнуться от неожиданного звука). Это разные действия, хотя корень общий."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["gestes", "mouvement", "corps"],
+    "caseIds": ["wc-gestes"]
+  },
+  {
+    "id": "wl-gestes-tomber",
+    "lemma": "tomber",
+    "pos": "verb",
+    "ipa": "/tɔ̃.be/",
+    "translationsRu": ["падать", "упасть"],
+    "translationsEn": ["to fall", "to drop"],
+    "semanticCore": "Непроизвольно оказаться внизу под действием тяжести: падать. В переносном — «впасть в состояние»: tomber malade, tomber amoureux. В passé composé идёт с être.",
+    "collocations": [
+      {
+        "fr": "tomber par terre",
+        "ru": "упасть на пол / на землю"
+      },
+      {
+        "fr": "tomber malade",
+        "ru": "заболеть (слечь)"
+      },
+      {
+        "fr": "tomber amoureux",
+        "ru": "влюбиться"
+      },
+      {
+        "fr": "laisser tomber",
+        "ru": "бросить (дело) / уронить / махнуть рукой"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "baisser",
+        "note": "tomber = падать (непроизвольно, вниз под тяжестью); baisser = опускать (намеренно: голову, глаза, цену). Лист tombe сам; голову ты baisses сознательно."
+      },
+      {
+        "with": "se coucher",
+        "note": "tomber = упасть (потеря равновесия); se coucher = лечь (по своей воле, в кровать). Падают случайно, ложатся специально."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A2",
+    "tags": ["gestes", "mouvement", "corps"],
+    "caseIds": ["wc-gestes"]
+  },
+  {
+    "id": "wl-gestes-lever",
+    "lemma": "lever",
+    "pos": "verb",
+    "ipa": "/lə.ve/",
+    "translationsRu": ["поднимать", "приподнимать"],
+    "translationsEn": ["to raise", "to lift"],
+    "semanticCore": "Поднять что-то вверх — руку, глаза, голову. В возвратной форме se lever = вставать (с постели, со стула) и «подниматься» (о солнце). Внимание: в спряжении e → è: je lève /lɛv/.",
+    "collocations": [
+      {
+        "fr": "lever la main",
+        "ru": "поднять руку"
+      },
+      {
+        "fr": "lever les yeux",
+        "ru": "поднять глаза (взгляд)"
+      },
+      {
+        "fr": "se lever tôt",
+        "ru": "рано вставать"
+      },
+      {
+        "fr": "le soleil se lève",
+        "ru": "солнце встаёт (восходит)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "soulever",
+        "note": "lever = поднять (часть тела, взгляд: lever la main); soulever = приподнять что-то тяжёлое от земли (soulever une valise). Руку — lever, чемодан — soulever."
+      },
+      {
+        "with": "élever",
+        "note": "lever = поднимать (физически вверх); élever = воспитывать (детей), разводить (животных), повышать (уровень). élever un enfant ≠ lever un enfant."
+      }
+    ],
+    "frequencyRank": 410,
+    "level": "A2",
+    "tags": ["gestes", "mouvement", "corps"],
+    "caseIds": ["wc-gestes"]
+  },
+  {
+    "id": "wl-gestes-baisser",
+    "lemma": "baisser",
+    "pos": "verb",
+    "ipa": "/bɛ.se/",
+    "translationsRu": ["опускать", "понижать"],
+    "translationsEn": ["to lower", "to turn down"],
+    "semanticCore": "Опустить что-то вниз — голову, глаза — или уменьшить уровень: звук, цену, температуру. В возвратной форме se baisser = нагнуться, наклониться.",
+    "collocations": [
+      {
+        "fr": "baisser la tête",
+        "ru": "опустить голову"
+      },
+      {
+        "fr": "baisser les yeux",
+        "ru": "опустить глаза (потупиться)"
+      },
+      {
+        "fr": "baisser le son",
+        "ru": "убавить звук"
+      },
+      {
+        "fr": "baisser le prix",
+        "ru": "снизить цену"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "lever",
+        "note": "baisser = опускать вниз (baisser la tête); lever = поднимать вверх (lever la tête). Прямые антонимы: baisser/lever les yeux, la main, la tête."
+      },
+      {
+        "with": "se baisser",
+        "note": "baisser qqch = опустить что-то (baisser la tête); se baisser = нагнуться самому (наклониться, чтобы что-то поднять с пола). Il se baisse pour ramasser ses clés."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["gestes", "mouvement", "corps"],
+    "caseIds": ["wc-gestes"]
+  },
+  {
+    "id": "wl-gestes-pousser",
+    "lemma": "pousser",
+    "pos": "verb",
+    "ipa": "/pu.se/",
+    "translationsRu": ["толкать", "нажимать"],
+    "translationsEn": ["to push"],
+    "semanticCore": "Давить на что-то, чтобы сдвинуть от себя: толкать дверь, тележку. Ещё два ходовых смысла: «расти» (о растениях, волосах) и «издать» звук — pousser un cri.",
+    "collocations": [
+      {
+        "fr": "pousser la porte",
+        "ru": "толкнуть дверь (открыть от себя)"
+      },
+      {
+        "fr": "pousser un cri",
+        "ru": "вскрикнуть (издать крик)"
+      },
+      {
+        "fr": "les plantes poussent",
+        "ru": "растения растут"
+      },
+      {
+        "fr": "pousser quelqu'un à partir",
+        "ru": "подтолкнуть кого-то уйти"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tirer",
+        "note": "pousser = толкать (от себя); tirer = тянуть (на себя). На дверях так и пишут: Poussez (от себя) / Tirez (на себя). Прямые антонимы."
+      },
+      {
+        "with": "appuyer",
+        "note": "pousser = толкать, чтобы сдвинуть (pousser la porte); appuyer (sur) = нажимать на кнопку/точку (appuyer sur le bouton). Дверь толкают, кнопку нажимают."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["gestes", "mouvement", "force"],
+    "caseIds": ["wc-gestes"]
+  },
+  {
+    "id": "wl-gestes-tirer",
+    "lemma": "tirer",
+    "pos": "verb",
+    "ipa": "/ti.ʁe/",
+    "translationsRu": ["тянуть", "тащить"],
+    "translationsEn": ["to pull"],
+    "semanticCore": "Тянуть к себе или за собой: дверь, верёвку, чемодан. Второй частый смысл — «стрелять» (tirer un coup de feu) и «провести линию» (tirer un trait).",
+    "collocations": [
+      {
+        "fr": "tirer la porte",
+        "ru": "потянуть дверь (на себя)"
+      },
+      {
+        "fr": "tirer les rideaux",
+        "ru": "задёрнуть (или раздвинуть) шторы"
+      },
+      {
+        "fr": "tirer la langue",
+        "ru": "показать (высунуть) язык"
+      },
+      {
+        "fr": "tirer un trait",
+        "ru": "провести линию / подвести черту"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pousser",
+        "note": "tirer = тянуть на себя; pousser = толкать от себя. На двери: Tirez (на себя) / Poussez (от себя). Главная пара глаголов «открывания»."
+      },
+      {
+        "with": "traîner",
+        "note": "tirer = тянуть (за собой, прилагая силу к началу: tirer une charrette); traîner = тащить волоком (медленно, с трудом, по земле). traîner les pieds — шаркать ногами."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["gestes", "mouvement", "force"],
+    "caseIds": ["wc-gestes"]
+  },
+  {
+    "id": "wl-gestes-ramper",
+    "lemma": "ramper",
+    "pos": "verb",
+    "ipa": "/ʁɑ̃.pe/",
+    "translationsRu": ["ползти", "ползать"],
+    "translationsEn": ["to crawl", "to creep"],
+    "semanticCore": "Передвигаться по земле на животе или на четвереньках, прижимаясь к поверхности: ползёт младенец, змея, солдат под огнём.",
+    "collocations": [
+      {
+        "fr": "le bébé rampe",
+        "ru": "младенец ползает"
+      },
+      {
+        "fr": "ramper sous la table",
+        "ru": "ползти под столом"
+      },
+      {
+        "fr": "le serpent rampe",
+        "ru": "змея ползёт"
+      },
+      {
+        "fr": "ramper dans la boue",
+        "ru": "ползти по грязи"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "grimper",
+        "note": "ramper = ползти (горизонтально, прижавшись к земле); grimper = карабкаться, лезть вверх (grimper à un arbre). Звучат похоже, но направление разное: по земле vs вверх."
+      },
+      {
+        "with": "rampe",
+        "note": "глагол ramper = ползти; существительное une rampe = перила / пандус. Англ. «ramp» (пандус) — это la rampe, а не глагол. Не путать."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["gestes", "mouvement", "corps"],
+    "caseIds": ["wc-gestes"]
+  },
+  {
+    "id": "wl-gestes-glisser",
+    "lemma": "glisser",
+    "pos": "verb",
+    "ipa": "/ɡli.se/",
+    "translationsRu": ["скользить", "поскользнуться"],
+    "translationsEn": ["to slide", "to slip"],
+    "semanticCore": "Двигаться по гладкой поверхности без трения — скользить; нечаянно — поскользнуться. В переносном — «незаметно сунуть»: glisser un mot, glisser un billet.",
+    "collocations": [
+      {
+        "fr": "glisser sur la glace",
+        "ru": "скользить / поскользнуться на льду"
+      },
+      {
+        "fr": "attention, ça glisse",
+        "ru": "осторожно, скользко"
+      },
+      {
+        "fr": "glisser un mot à l'oreille",
+        "ru": "шепнуть словечко на ухо"
+      },
+      {
+        "fr": "glisser une lettre sous la porte",
+        "ru": "просунуть письмо под дверь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "déraper",
+        "note": "glisser = скользить / поскользнуться (нога, обувь на льду); déraper = занести (о машине, колёсах на дороге). Человек glisse, машина dérape."
+      },
+      {
+        "with": "tomber",
+        "note": "glisser = поскользнуться (потерять сцепление); tomber = упасть (оказаться на земле). Сначала on glisse, потом, если не удержался, on tombe."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["gestes", "mouvement", "surface"],
+    "caseIds": ["wc-gestes"]
+  }
+]

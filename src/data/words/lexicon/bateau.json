@@ -1,0 +1,337 @@
+[
+  {
+    "id": "wl-bateau-voilier",
+    "lemma": "voilier",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vwa.lje/",
+    "translationsRu": ["парусник", "парусная лодка"],
+    "translationsEn": ["sailboat", "sailing ship"],
+    "semanticCore": "Voilier — судно, которое идёт под парусами (la voile), а не на моторе. Мужской род: le voilier. Внутри слова прячется voile — парус.",
+    "collocations": [
+      {
+        "fr": "un voilier de course",
+        "ru": "гоночный парусник"
+      },
+      {
+        "fr": "un petit voilier",
+        "ru": "небольшой парусник"
+      },
+      {
+        "fr": "un tour en voilier",
+        "ru": "прогулка на парусной лодке"
+      },
+      {
+        "fr": "le mât du voilier",
+        "ru": "мачта парусника"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bateau",
+        "note": "bateau — любое судно/лодка (общее слово); voilier — именно парусник, который идёт под парусом. Всякий voilier — это bateau, но не наоборот."
+      },
+      {
+        "with": "voile",
+        "note": "le voilier — само судно; la voile — парус на нём (и парусный спорт). Слово voilier буквально «несущий voile»."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["bateau", "navigation"],
+    "caseIds": ["wc-bateau"]
+  },
+  {
+    "id": "wl-bateau-voile",
+    "lemma": "voile",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vwal/",
+    "translationsRu": ["парус"],
+    "translationsEn": ["sail"],
+    "semanticCore": "La voile (f) — парус, полотно, которое ловит ветер; то же слово значит парусный спорт (faire de la voile). Внимание: род меняет смысл — le voile (m) совсем другое (вуаль, покрывало).",
+    "collocations": [
+      {
+        "fr": "faire de la voile",
+        "ru": "заниматься парусным спортом"
+      },
+      {
+        "fr": "hisser la voile",
+        "ru": "поднять парус"
+      },
+      {
+        "fr": "un bateau à voile",
+        "ru": "парусное судно"
+      },
+      {
+        "fr": "la grand-voile",
+        "ru": "грот (главный парус)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "le voile",
+        "note": "Род меняет смысл: la voile — парус (на корабле); le voile — вуаль, покрывало, дымка. Одно написание, разный артикль и значение."
+      },
+      {
+        "with": "voilier",
+        "note": "la voile — сам парус (полотно); le voilier — судно под этим парусом. Voile внутри voilier и подсказывает связь."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["bateau", "navigation"],
+    "caseIds": ["wc-bateau"]
+  },
+  {
+    "id": "wl-bateau-rame",
+    "lemma": "rame",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁam/",
+    "translationsRu": ["весло"],
+    "translationsEn": ["oar"],
+    "semanticCore": "La rame (f) — весло, которым гребут в лодке; обычно их два, по одному в каждой руке. То же слово значит состав метро (une rame de métro), но базовое значение — весло.",
+    "collocations": [
+      {
+        "fr": "donner un coup de rame",
+        "ru": "сделать гребок веслом"
+      },
+      {
+        "fr": "tirer sur les rames",
+        "ru": "налегать на вёсла"
+      },
+      {
+        "fr": "lâcher les rames",
+        "ru": "бросить вёсла"
+      },
+      {
+        "fr": "un bateau à rames",
+        "ru": "вёсельная лодка"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pagaie",
+        "note": "rame — весло, закреплённое в уключине лодки (гребут спиной вперёд); pagaie — одиночное весло-лопата для каноэ/каяка, его держат в руках. Разные вёсла."
+      },
+      {
+        "with": "aviron",
+        "note": "rame — весло вообще (повседневное слово); aviron — гребля как спорт и спортивное весло. На прогулочной лодке — des rames; на соревнованиях — l'aviron."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["bateau", "navigation"],
+    "caseIds": ["wc-bateau"]
+  },
+  {
+    "id": "wl-bateau-ancre",
+    "lemma": "ancre",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɑ̃kʁ/",
+    "translationsRu": ["якорь"],
+    "translationsEn": ["anchor"],
+    "semanticCore": "L'ancre (f) — якорь, тяжёлый крюк, который бросают на дно, чтобы судно стояло на месте. Женский род: une ancre. Звучит точь-в-точь как l'encre (чернила) — /ɑ̃kʁ/.",
+    "collocations": [
+      {
+        "fr": "jeter l'ancre",
+        "ru": "бросить якорь (встать на стоянку)"
+      },
+      {
+        "fr": "lever l'ancre",
+        "ru": "сняться с якоря (отплыть; разг. уходить)"
+      },
+      {
+        "fr": "être à l'ancre",
+        "ru": "стоять на якоре"
+      },
+      {
+        "fr": "une ancre de marine",
+        "ru": "корабельный якорь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "encre",
+        "note": "Омофоны: l'ancre (f) — якорь; l'encre (f) — чернила. Оба звучат /ɑ̃kʁ/. Различает написание (anc- против enc-) и смысл: одно бросают в море, другим пишут."
+      },
+      {
+        "with": "ancrer",
+        "note": "l'ancre — существительное (якорь); ancrer — глагол «закрепить, поставить на якорь». От одного корня: jeter l'ancre = ancrer le bateau."
+      }
+    ],
+    "frequencyRank": 900,
+    "level": "A2",
+    "tags": ["bateau", "navigation"],
+    "caseIds": ["wc-bateau"]
+  },
+  {
+    "id": "wl-bateau-marin",
+    "lemma": "marin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ma.ʁɛ̃/",
+    "translationsRu": ["моряк", "мореплаватель"],
+    "translationsEn": ["sailor", "seaman"],
+    "semanticCore": "Le marin (m) — моряк, человек, который работает в море на судне. То же слово как прилагательное значит «морской» (un pull marin — тельняшка). Конечное -in даёт носовой /ɛ̃/.",
+    "collocations": [
+      {
+        "fr": "un marin pêcheur",
+        "ru": "моряк-рыбак"
+      },
+      {
+        "fr": "un vieux marin",
+        "ru": "старый моряк"
+      },
+      {
+        "fr": "un pull marin",
+        "ru": "тельняшка (морской свитер)"
+      },
+      {
+        "fr": "un bon marin",
+        "ru": "хороший моряк"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "matelot",
+        "note": "marin — моряк вообще (любой, кто ходит в море); matelot — матрос, рядовой член команды. Капитан — тоже marin, но не matelot."
+      },
+      {
+        "with": "marine",
+        "note": "le marin — моряк (человек); la marine — военно-морской флот или торговый флот (учреждение). Не путать: один служит, другая — это сам флот."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["bateau", "metier"],
+    "caseIds": ["wc-bateau"]
+  },
+  {
+    "id": "wl-bateau-naviguer",
+    "lemma": "naviguer",
+    "pos": "verb",
+    "ipa": "/na.vi.ɡe/",
+    "translationsRu": ["плавать (на судне)", "ходить по морю"],
+    "translationsEn": ["to sail", "to navigate"],
+    "semanticCore": "Naviguer — вести судно или идти на нём по воде (про корабль и про человека на борту). Это слово и про «сёрфить» в интернете (naviguer sur Internet). Плыть про судно — naviguer, а не nager.",
+    "collocations": [
+      {
+        "fr": "naviguer en mer",
+        "ru": "ходить по морю"
+      },
+      {
+        "fr": "naviguer à la voile",
+        "ru": "идти под парусом"
+      },
+      {
+        "fr": "naviguer le long de la côte",
+        "ru": "идти вдоль берега"
+      },
+      {
+        "fr": "naviguer sur Internet",
+        "ru": "сёрфить в интернете"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "nager",
+        "note": "Судно naviguer (идёт по воде), а человек/рыба nager (плывёт телом). По-русски оба «плыть», но по-французски корабль никогда не nage."
+      },
+      {
+        "with": "conduire",
+        "note": "naviguer — ходить по воде на судне (глагол без прямого дополнения: on navigue sur un bateau, le bateau navigue); conduire — вести машину по дороге (on conduit une voiture). Разный транспорт."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["bateau", "navigation"],
+    "caseIds": ["wc-bateau"]
+  },
+  {
+    "id": "wl-bateau-quai",
+    "lemma": "quai",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɛ/",
+    "translationsRu": ["причал", "набережная", "платформа"],
+    "translationsEn": ["quay", "platform"],
+    "semanticCore": "Le quai (m) — кромка у воды, к которой швартуются суда (причал) и вдоль которой идут пешком (набережная); то же слово — перрон на вокзале. Пишется qu-ai, читается /kɛ/.",
+    "collocations": [
+      {
+        "fr": "le bateau est à quai",
+        "ru": "судно стоит у причала"
+      },
+      {
+        "fr": "se promener sur les quais",
+        "ru": "гулять по набережной"
+      },
+      {
+        "fr": "le quai de la gare",
+        "ru": "перрон вокзала"
+      },
+      {
+        "fr": "accoster au quai",
+        "ru": "пришвартоваться к причалу"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "port",
+        "note": "le port — вся гавань, где стоят суда; le quai — конкретная стенка-причал внутри порта, у которой швартуются. Quai — часть порта."
+      },
+      {
+        "with": "quoi",
+        "note": "На письме не путать: le quai (причал) и quoi (что). Близко звучат, но quai — /kɛ/, а quoi — /kwa/, и смысл совсем разный."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["bateau", "port"],
+    "caseIds": ["wc-bateau"]
+  },
+  {
+    "id": "wl-bateau-port",
+    "lemma": "port",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɔʁ/",
+    "translationsRu": ["порт", "гавань"],
+    "translationsEn": ["port", "harbour"],
+    "semanticCore": "Le port (m) — гавань, защищённое место, куда заходят и где стоят суда. Английское «port» — прямой мост по смыслу. Конечная t не читается: /pɔʁ/.",
+    "collocations": [
+      {
+        "fr": "un port de pêche",
+        "ru": "рыболовный порт"
+      },
+      {
+        "fr": "un port de plaisance",
+        "ru": "яхтенная гавань (марина)"
+      },
+      {
+        "fr": "entrer au port",
+        "ru": "войти в порт"
+      },
+      {
+        "fr": "le port de Marseille",
+        "ru": "порт Марселя"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "porc",
+        "note": "Омофоны: le port (порт) и le porc (свинья) звучат одинаково /pɔʁ/. Различает написание и смысл: в один заходят суда, другой — животное/мясо."
+      },
+      {
+        "with": "quai",
+        "note": "le port — вся гавань целиком; le quai — причальная стенка внутри неё. Судно входит dans le port и швартуется au quai."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["bateau", "port"],
+    "caseIds": ["wc-bateau"]
+  }
+]

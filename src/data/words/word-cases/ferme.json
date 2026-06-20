@@ -1,0 +1,292 @@
+[
+  {
+    "id": "wc-ferme",
+    "title": "Ферма",
+    "theme": "ferme",
+    "level": "A2",
+    "wordIds": [
+      "wl-ferme-cochon",
+      "wl-ferme-tracteur",
+      "wl-ferme-grange",
+      "wl-ferme-recolte",
+      "wl-ferme-foin",
+      "wl-ferme-etable",
+      "wl-ferme-fermier",
+      "wl-ferme-chevre"
+    ],
+    "steps": [
+      {
+        "id": "wc-ferme-cochon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ferme-cochon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le cochon se roule dans la boue.",
+          "À la ferme, il y a trois cochons roses.",
+          "Le fermier nourrit le cochon le matin."
+        ],
+        "options": ["свинья", "корова", "овца", "коза"],
+        "correctIndex": 0,
+        "explanation": "cochon (m) — свинья (живое животное). Свинина как мясо — le porc. Корова — la vache, овца — le mouton."
+      },
+      {
+        "id": "wc-ferme-cochon-sort",
+        "kind": "sort",
+        "wordId": "wl-ferme-cochon",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом cochon звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un cochon rose",
+            "basket": "ok"
+          },
+          {
+            "text": "élever des cochons",
+            "basket": "ok"
+          },
+          {
+            "text": "de la viande de cochon",
+            "basket": "ok"
+          },
+          {
+            "text": "conduire un cochon",
+            "basket": "no"
+          },
+          {
+            "text": "un cochon liquide",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un cochon rose», «élever des cochons» (разводить свиней), «de la viande de cochon» — естественно. «conduire un cochon» (вести свинью как машину) и «un cochon liquide» (жидкая свинья) — бессмыслица."
+      },
+      {
+        "id": "wc-ferme-tracteur-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-ferme-tracteur",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит tracteur?",
+        "bridge": "Англ. «tractor» — трактор. Французское tracteur — почти то же слово, но с окончанием -eur и звуком /œʁ/ на конце.",
+        "options": ["трактор", "прицеп", "комбайн", "грузовик"],
+        "correctIndex": 0,
+        "explanation": "tracteur (m) — трактор, мост от англ. «tractor». Прицеп — une remorque, грузовик — un camion."
+      },
+      {
+        "id": "wc-ferme-tracteur-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-ferme-tracteur",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало — то, что значит «трактор».",
+        "audioText": "tracteur",
+        "options": ["facteur", "tracteur", "acteur", "secteur"],
+        "correctIndex": 1,
+        "explanation": "tracteur /tʁak.tœʁ/ — трактор. Похожие на слух слова с тем же «хвостом» -teur: facteur (почтальон), acteur (актёр), secteur (сектор). Различай по началу: trac-."
+      },
+      {
+        "id": "wc-ferme-grange-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ferme-grange",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On range le foin dans la grange.",
+          "La vieille grange est pleine de paille.",
+          "Le tracteur est garé derrière la grange."
+        ],
+        "options": ["амбар, сарай", "коровник", "погреб", "теплица"],
+        "correctIndex": 0,
+        "explanation": "grange (f) — амбар / сарай: постройка, где хранят сено, солому и урожай. Коровник (для скота) — une étable, погреб — une cave."
+      },
+      {
+        "id": "wc-ferme-grange-trap",
+        "kind": "trap",
+        "wordId": "wl-ferme-grange",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В английском «grange» иногда называют сам фермерский дом. А французское la grange — это что?",
+        "options": [
+          "амбар / сарай для сена и урожая",
+          "жилой фермерский дом",
+          "загон для скота",
+          "большой огород"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: фр. la grange — это хозяйственная постройка (амбар, где engranger — складывать урожай), а не жилище. Жилой дом фермера — la ferme или la maison."
+      },
+      {
+        "id": "wc-ferme-recolte-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ferme-recolte",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Cette année, la récolte de pommes est excellente.",
+          "Les fermiers attendent la récolte de septembre.",
+          "La pluie a abîmé toute la récolte."
+        ],
+        "options": ["урожай", "посев", "поле", "погода"],
+        "correctIndex": 0,
+        "explanation": "récolte (f) — урожай (и сам сбор урожая). Глагол récolter — собирать урожай. Посев — les semailles, поле — un champ."
+      },
+      {
+        "id": "wc-ferme-recolte-cmp",
+        "kind": "compare",
+        "wordId": "wl-ferme-recolte",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "récolte и moisson. В чём разница?",
+        "phrases": ["La récolte des tomates a commencé.", "La moisson du blé a commencé."],
+        "options": [
+          "récolte — сбор урожая вообще (любые культуры); moisson — именно жатва зерновых (пшеницы, ржи).",
+          "Это полные синонимы, разницы нет.",
+          "récolte — только про зерно, moisson — про фрукты.",
+          "moisson значит «посев», а récolte — «прополку»."
+        ],
+        "correctIndex": 0,
+        "explanation": "récolte — общий сбор урожая (овощи, фрукты, что угодно). moisson — жатва именно злаков (le blé — пшеница). Поэтому «moisson du blé», но «récolte des tomates»."
+      },
+      {
+        "id": "wc-ferme-foin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ferme-foin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Les vaches mangent du foin en hiver.",
+          "Il y a une botte de foin dans la grange.",
+          "Ça sent le foin coupé."
+        ],
+        "options": ["сено", "трава", "зерно", "молоко"],
+        "correctIndex": 0,
+        "explanation": "foin (m) — сено (высушенная трава на корм скоту). Свежая трава — l'herbe, зерно — le grain. Конечное -n носовое: /fwɛ̃/."
+      },
+      {
+        "id": "wc-ferme-foin-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-ferme-foin",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало — то, что значит «сено».",
+        "audioText": "foin",
+        "options": ["soin", "coin", "foin", "loin"],
+        "correctIndex": 2,
+        "explanation": "foin /fwɛ̃/ — сено. Похожие на слух слова с тем же гласным /wɛ̃/: soin (забота), coin (угол), loin (далеко). Различай по первому звуку: f-."
+      },
+      {
+        "id": "wc-ferme-etable-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ferme-etable",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les vaches rentrent à l'étable pour la nuit.",
+          "Le fermier nettoie l'étable chaque matin.",
+          "Il fait chaud dans l'étable."
+        ],
+        "options": ["коровник, хлев", "конюшня", "курятник", "стол"],
+        "correctIndex": 0,
+        "explanation": "étable (f) — хлев / коровник: помещение для коров и другого крупного скота. Конюшня (для лошадей) — une écurie, курятник — un poulailler."
+      },
+      {
+        "id": "wc-ferme-etable-trap",
+        "kind": "trap",
+        "wordId": "wl-ferme-etable",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово étable очень похоже на table (стол) и на écurie (конюшня). Что значит именно une étable?",
+        "options": [
+          "коровник — помещение для коров и крупного скота",
+          "обеденный стол на ферме",
+          "конюшня для лошадей",
+          "устойчивая, надёжная постройка"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: étable — это коровник (для bovins, прежде всего коров), а не «стол» (table) и не конюшня. Конюшня для лошадей — une écurie; лошадей и коров держат отдельно."
+      },
+      {
+        "id": "wc-ferme-fermier-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-ferme-fermier",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Узнай слово через знакомый корень. Что значит fermier?",
+        "bridge": "Англ. «farm» — ферма, фр. la ferme — тоже ферма. Тот, кто на ней работает, — le fermier (как «farmer»).",
+        "options": ["фермер", "сосед", "пастух", "садовник"],
+        "correctIndex": 0,
+        "explanation": "fermier (m) — фермер (от la ferme — ферма). Женщина-фермер — une fermière. Пастух — un berger, садовник — un jardinier."
+      },
+      {
+        "id": "wc-ferme-fermier-hint",
+        "kind": "wordHint",
+        "wordId": "wl-ferme-fermier",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: человек, который владеет фермой и работает на ней — разводит животных и собирает урожай.",
+        "answer": "fermier",
+        "hints": [
+          "Начинается на ferm…",
+          "Однокоренное с la ferme (ферма)",
+          "Le ___ trait les vaches le matin."
+        ],
+        "explanation": "fermier (m) — фермер. Корень тот же, что у la ferme. Женский род — une fermière. Читается /fɛʁ.mje/."
+      },
+      {
+        "id": "wc-ferme-grange-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-ferme-grange",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — постройки на ферме. Найди лишнее.",
+        "options": ["la grange", "l'étable", "l'écurie", "le cochon"],
+        "correctIndex": 3,
+        "explanation": "Амбар (la grange), коровник (l'étable) и конюшня (l'écurie) — это постройки. Свинья (le cochon) — лишнее: это животное, а не здание."
+      },
+      {
+        "id": "wc-ferme-chevre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-ferme-chevre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La chèvre grimpe sur le rocher.",
+          "On fait du fromage avec le lait de chèvre.",
+          "La chèvre a deux petites cornes."
+        ],
+        "options": ["коза", "овца", "корова", "свинья"],
+        "correctIndex": 0,
+        "explanation": "chèvre (f) — коза. «le lait de chèvre» — козье молоко, «le fromage de chèvre» — козий сыр. Овца — la brebis, баран/овца как вид — le mouton."
+      },
+      {
+        "id": "wc-ferme-chevre-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-ferme-chevre",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для chèvre, чтобы запомнить женский род (une chèvre — коза) и не путать с сыром.",
+        "examples": [
+          "Животное всегда женского рода: la chèvre с рожками лезет на скалу — «она», une chèvre.",
+          "А вот сыр — «le chèvre» (мужской род, сокращение от le fromage de chèvre). Коза — la, сыр — le."
+        ]
+      }
+    ]
+  }
+]
