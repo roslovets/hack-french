@@ -9,10 +9,22 @@
     "translationsEn": ["steering wheel"],
     "semanticCore": "Руль автомобиля — то, что водитель держит руками и крутит, чтобы повернуть.",
     "collocations": [
-      { "fr": "tenir le volant", "ru": "держать руль" },
-      { "fr": "être au volant", "ru": "быть за рулём" },
-      { "fr": "un coup de volant", "ru": "резкий поворот руля" },
-      { "fr": "le volant à droite", "ru": "руль справа" }
+      {
+        "fr": "tenir le volant",
+        "ru": "держать руль"
+      },
+      {
+        "fr": "être au volant",
+        "ru": "быть за рулём"
+      },
+      {
+        "fr": "un coup de volant",
+        "ru": "резкий поворот руля"
+      },
+      {
+        "fr": "le volant à droite",
+        "ru": "руль справа"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["voiture", "conduite"],
-    "caseIds": ["wc-voiture"]
+    "caseIds": ["wc-voiture"],
+    "audio": {
+      "isolated": "audio/wl-voiture-volant.mp3"
+    }
   },
   {
     "id": "wl-voiture-roue",
@@ -39,10 +54,22 @@
     "translationsEn": ["wheel"],
     "semanticCore": "Колесо машины (или велосипеда) — круглое, катится по дороге; бывает запасное.",
     "collocations": [
-      { "fr": "la roue de secours", "ru": "запасное колесо" },
-      { "fr": "changer une roue", "ru": "поменять колесо" },
-      { "fr": "les quatre roues", "ru": "все четыре колеса" },
-      { "fr": "une roue crevée", "ru": "пробитое колесо" }
+      {
+        "fr": "la roue de secours",
+        "ru": "запасное колесо"
+      },
+      {
+        "fr": "changer une roue",
+        "ru": "поменять колесо"
+      },
+      {
+        "fr": "les quatre roues",
+        "ru": "все четыре колеса"
+      },
+      {
+        "fr": "une roue crevée",
+        "ru": "пробитое колесо"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["voiture", "pièce"],
-    "caseIds": ["wc-voiture"]
+    "caseIds": ["wc-voiture"],
+    "audio": {
+      "isolated": "audio/wl-voiture-roue.mp3"
+    }
   },
   {
     "id": "wl-voiture-moteur",
@@ -69,10 +99,22 @@
     "translationsEn": ["engine", "motor"],
     "semanticCore": "Двигатель машины — то, что заводят и что приводит её в движение.",
     "collocations": [
-      { "fr": "démarrer le moteur", "ru": "завести двигатель" },
-      { "fr": "couper le moteur", "ru": "заглушить двигатель" },
-      { "fr": "un moteur diesel", "ru": "дизельный двигатель" },
-      { "fr": "le moteur tourne", "ru": "двигатель работает" }
+      {
+        "fr": "démarrer le moteur",
+        "ru": "завести двигатель"
+      },
+      {
+        "fr": "couper le moteur",
+        "ru": "заглушить двигатель"
+      },
+      {
+        "fr": "un moteur diesel",
+        "ru": "дизельный двигатель"
+      },
+      {
+        "fr": "le moteur tourne",
+        "ru": "двигатель работает"
+      }
     ],
     "contrastPairs": [
       {
@@ -87,7 +129,10 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["voiture", "pièce"],
-    "caseIds": ["wc-voiture"]
+    "caseIds": ["wc-voiture"],
+    "audio": {
+      "isolated": "audio/wl-voiture-moteur.mp3"
+    }
   },
   {
     "id": "wl-voiture-essence",
@@ -99,10 +144,22 @@
     "translationsEn": ["petrol", "gasoline"],
     "semanticCore": "Бензин — топливо, которым заправляют машину на заправке.",
     "collocations": [
-      { "fr": "faire le plein d'essence", "ru": "заправиться под завязку" },
-      { "fr": "une station-service", "ru": "заправка / АЗС" },
-      { "fr": "tomber en panne d'essence", "ru": "встать без бензина" },
-      { "fr": "le prix de l'essence", "ru": "цена на бензин" }
+      {
+        "fr": "faire le plein d'essence",
+        "ru": "заправиться под завязку"
+      },
+      {
+        "fr": "une station-service",
+        "ru": "заправка / АЗС"
+      },
+      {
+        "fr": "tomber en panne d'essence",
+        "ru": "встать без бензина"
+      },
+      {
+        "fr": "le prix de l'essence",
+        "ru": "цена на бензин"
+      }
     ],
     "contrastPairs": [
       {
@@ -117,7 +174,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["voiture", "carburant"],
-    "caseIds": ["wc-voiture"]
+    "caseIds": ["wc-voiture"],
+    "audio": {
+      "isolated": "audio/wl-voiture-essence.mp3"
+    }
   },
   {
     "id": "wl-voiture-frein",
@@ -129,10 +189,22 @@
     "translationsEn": ["brake"],
     "semanticCore": "Тормоз машины — то, чем останавливают или замедляют ход; есть ручной тормоз.",
     "collocations": [
-      { "fr": "le frein à main", "ru": "ручной тормоз" },
-      { "fr": "appuyer sur le frein", "ru": "нажать на тормоз" },
-      { "fr": "donner un coup de frein", "ru": "резко затормозить" },
-      { "fr": "les freins lâchent", "ru": "тормоза отказывают" }
+      {
+        "fr": "le frein à main",
+        "ru": "ручной тормоз"
+      },
+      {
+        "fr": "appuyer sur le frein",
+        "ru": "нажать на тормоз"
+      },
+      {
+        "fr": "donner un coup de frein",
+        "ru": "резко затормозить"
+      },
+      {
+        "fr": "les freins lâchent",
+        "ru": "тормоза отказывают"
+      }
     ],
     "contrastPairs": [
       {
@@ -147,7 +219,10 @@
     "frequencyRank": 660,
     "level": "A2",
     "tags": ["voiture", "pièce"],
-    "caseIds": ["wc-voiture"]
+    "caseIds": ["wc-voiture"],
+    "audio": {
+      "isolated": "audio/wl-voiture-frein.mp3"
+    }
   },
   {
     "id": "wl-voiture-permis",
@@ -159,10 +234,22 @@
     "translationsEn": ["driving licence", "driver's license"],
     "semanticCore": "Права — документ, дающий разрешение водить; полностью le permis de conduire.",
     "collocations": [
-      { "fr": "passer le permis", "ru": "сдавать на права" },
-      { "fr": "avoir le permis", "ru": "иметь права" },
-      { "fr": "le permis de conduire", "ru": "водительское удостоверение" },
-      { "fr": "perdre son permis", "ru": "лишиться прав" }
+      {
+        "fr": "passer le permis",
+        "ru": "сдавать на права"
+      },
+      {
+        "fr": "avoir le permis",
+        "ru": "иметь права"
+      },
+      {
+        "fr": "le permis de conduire",
+        "ru": "водительское удостоверение"
+      },
+      {
+        "fr": "perdre son permis",
+        "ru": "лишиться прав"
+      }
     ],
     "contrastPairs": [
       {
@@ -177,7 +264,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["voiture", "conduite"],
-    "caseIds": ["wc-voiture"]
+    "caseIds": ["wc-voiture"],
+    "audio": {
+      "isolated": "audio/wl-voiture-permis.mp3"
+    }
   },
   {
     "id": "wl-voiture-phare",
@@ -189,10 +279,22 @@
     "translationsEn": ["headlight"],
     "semanticCore": "Фара машины — передний свет, который включают в темноте; то же слово — маяк.",
     "collocations": [
-      { "fr": "allumer les phares", "ru": "включить фары" },
-      { "fr": "éteindre les phares", "ru": "выключить фары" },
-      { "fr": "les pleins phares", "ru": "дальний свет" },
-      { "fr": "un appel de phares", "ru": "моргнуть фарами" }
+      {
+        "fr": "allumer les phares",
+        "ru": "включить фары"
+      },
+      {
+        "fr": "éteindre les phares",
+        "ru": "выключить фары"
+      },
+      {
+        "fr": "les pleins phares",
+        "ru": "дальний свет"
+      },
+      {
+        "fr": "un appel de phares",
+        "ru": "моргнуть фарами"
+      }
     ],
     "contrastPairs": [
       {
@@ -207,7 +309,10 @@
     "frequencyRank": 680,
     "level": "A2",
     "tags": ["voiture", "pièce"],
-    "caseIds": ["wc-voiture"]
+    "caseIds": ["wc-voiture"],
+    "audio": {
+      "isolated": "audio/wl-voiture-phare.mp3"
+    }
   },
   {
     "id": "wl-voiture-coffre",
@@ -219,10 +324,22 @@
     "translationsEn": ["trunk", "boot"],
     "semanticCore": "Багажник машины — отделение сзади, куда кладут вещи; то же слово — сундук, сейф.",
     "collocations": [
-      { "fr": "ouvrir le coffre", "ru": "открыть багажник" },
-      { "fr": "mettre les valises dans le coffre", "ru": "положить чемоданы в багажник" },
-      { "fr": "le coffre est plein", "ru": "багажник полон" },
-      { "fr": "un grand coffre", "ru": "большой багажник" }
+      {
+        "fr": "ouvrir le coffre",
+        "ru": "открыть багажник"
+      },
+      {
+        "fr": "mettre les valises dans le coffre",
+        "ru": "положить чемоданы в багажник"
+      },
+      {
+        "fr": "le coffre est plein",
+        "ru": "багажник полон"
+      },
+      {
+        "fr": "un grand coffre",
+        "ru": "большой багажник"
+      }
     ],
     "contrastPairs": [
       {
@@ -237,6 +354,9 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["voiture", "pièce"],
-    "caseIds": ["wc-voiture"]
+    "caseIds": ["wc-voiture"],
+    "audio": {
+      "isolated": "audio/wl-voiture-coffre.mp3"
+    }
   }
 ]

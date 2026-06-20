@@ -126,7 +126,8 @@
         "audioText": "crevette",
         "options": ["crevette", "navette", "buvette"],
         "correctIndex": 0,
-        "explanation": "Прозвучало crevette /kʁə.vɛt/ — креветка. Похожие по звучанию, но другие слова: navette /na.vɛt/ — челнок/шаттл, buvette /by.vɛt/ — буфет/киоск с напитками. Все оканчиваются на -vette, но начало разное."
+        "explanation": "Прозвучало crevette /kʁə.vɛt/ — креветка. Похожие по звучанию, но другие слова: navette /na.vɛt/ — челнок/шаттл, buvette /by.vɛt/ — буфет/киоск с напитками. Все оканчиваются на -vette, но начало разное.",
+        "audioSrc": "audio/wl-mer-crevette.mp3"
       },
       {
         "id": "wc-mer-moule-ctx",
@@ -215,7 +216,8 @@
         "audioText": "homard",
         "options": ["homard", "canard", "hangar"],
         "correctIndex": 0,
-        "explanation": "Прозвучало homard /ɔ.maʁ/ — омар. Похожие, но другие слова: canard /ka.naʁ/ — утка, hangar /ɑ̃.ɡaʁ/ — ангар. Все на /aʁ/, но начало разное."
+        "explanation": "Прозвучало homard /ɔ.maʁ/ — омар. Похожие, но другие слова: canard /ka.naʁ/ — утка, hangar /ɑ̃.ɡaʁ/ — ангар. Все на /aʁ/, но начало разное.",
+        "audioSrc": "audio/wl-mer-homard.mp3"
       },
       {
         "id": "wc-mer-ecaille-ctx",

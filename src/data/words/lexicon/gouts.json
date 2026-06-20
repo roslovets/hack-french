@@ -8,9 +8,18 @@
     "translationsEn": ["sweet", "sugary"],
     "semanticCore": "Сладкий на вкус — содержащий сахар или похожий по вкусу на сахар; о еде и напитках.",
     "collocations": [
-      { "fr": "un café trop sucré", "ru": "слишком сладкий кофе" },
-      { "fr": "une boisson sucrée", "ru": "сладкий напиток" },
-      { "fr": "le sucré-salé", "ru": "сладко-солёное (сочетание вкусов)" }
+      {
+        "fr": "un café trop sucré",
+        "ru": "слишком сладкий кофе"
+      },
+      {
+        "fr": "une boisson sucrée",
+        "ru": "сладкий напиток"
+      },
+      {
+        "fr": "le sucré-salé",
+        "ru": "сладко-солёное (сочетание вкусов)"
+      }
     ],
     "contrastPairs": [
       {
@@ -25,7 +34,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["gouts", "cuisine"],
-    "caseIds": ["wc-gouts"]
+    "caseIds": ["wc-gouts"],
+    "audio": {
+      "isolated": "audio/wl-gouts-sucre.mp3"
+    }
   },
   {
     "id": "wl-gouts-sale",
@@ -36,9 +48,18 @@
     "translationsEn": ["salty", "savoury"],
     "semanticCore": "Солёный на вкус; в кулинарии — «несладкая» (закусочная) часть еды, в противовес сладкому.",
     "collocations": [
-      { "fr": "un plat salé", "ru": "солёное / несладкое блюдо" },
-      { "fr": "de l'eau salée", "ru": "солёная вода" },
-      { "fr": "trop salé", "ru": "слишком солёный (пересоленный)" }
+      {
+        "fr": "un plat salé",
+        "ru": "солёное / несладкое блюдо"
+      },
+      {
+        "fr": "de l'eau salée",
+        "ru": "солёная вода"
+      },
+      {
+        "fr": "trop salé",
+        "ru": "слишком солёный (пересоленный)"
+      }
     ],
     "contrastPairs": [
       {
@@ -53,7 +74,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["gouts", "cuisine"],
-    "caseIds": ["wc-gouts"]
+    "caseIds": ["wc-gouts"],
+    "audio": {
+      "isolated": "audio/wl-gouts-sale.mp3"
+    }
   },
   {
     "id": "wl-gouts-amer",
@@ -65,9 +89,18 @@
     "translationsEn": ["bitter"],
     "semanticCore": "Горький на вкус — как чёрный кофе, тёмный шоколад или хинин; также горький в переносном смысле.",
     "collocations": [
-      { "fr": "un café amer", "ru": "горький кофе" },
-      { "fr": "un goût amer", "ru": "горький привкус" },
-      { "fr": "un chocolat amer", "ru": "горький шоколад" }
+      {
+        "fr": "un café amer",
+        "ru": "горький кофе"
+      },
+      {
+        "fr": "un goût amer",
+        "ru": "горький привкус"
+      },
+      {
+        "fr": "un chocolat amer",
+        "ru": "горький шоколад"
+      }
     ],
     "contrastPairs": [
       {
@@ -82,7 +115,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["gouts", "sensation"],
-    "caseIds": ["wc-gouts"]
+    "caseIds": ["wc-gouts"],
+    "audio": {
+      "isolated": "audio/wl-gouts-amer.mp3"
+    }
   },
   {
     "id": "wl-gouts-acide",
@@ -93,9 +129,18 @@
     "translationsEn": ["sour", "acidic"],
     "semanticCore": "Кислый на вкус — как лимон, уксус или незрелые фрукты; от того же корня, что «кислота».",
     "collocations": [
-      { "fr": "un citron acide", "ru": "кислый лимон" },
-      { "fr": "un goût acide", "ru": "кислый вкус" },
-      { "fr": "des fruits acides", "ru": "кислые фрукты" }
+      {
+        "fr": "un citron acide",
+        "ru": "кислый лимон"
+      },
+      {
+        "fr": "un goût acide",
+        "ru": "кислый вкус"
+      },
+      {
+        "fr": "des fruits acides",
+        "ru": "кислые фрукты"
+      }
     ],
     "contrastPairs": [
       {
@@ -110,7 +155,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["gouts", "sensation"],
-    "caseIds": ["wc-gouts"]
+    "caseIds": ["wc-gouts"],
+    "audio": {
+      "isolated": "audio/wl-gouts-acide.mp3"
+    }
   },
   {
     "id": "wl-gouts-epice",
@@ -121,9 +169,18 @@
     "translationsEn": ["spicy", "spiced"],
     "semanticCore": "Острый или пряный — приготовленный с пряностями и специями (épices); о блюдах и кухне.",
     "collocations": [
-      { "fr": "un plat épicé", "ru": "острое / пряное блюдо" },
-      { "fr": "une cuisine épicée", "ru": "острая (пряная) кухня" },
-      { "fr": "trop épicé pour moi", "ru": "слишком остро для меня" }
+      {
+        "fr": "un plat épicé",
+        "ru": "острое / пряное блюдо"
+      },
+      {
+        "fr": "une cuisine épicée",
+        "ru": "острая (пряная) кухня"
+      },
+      {
+        "fr": "trop épicé pour moi",
+        "ru": "слишком остро для меня"
+      }
     ],
     "contrastPairs": [
       {
@@ -138,7 +195,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["gouts", "cuisine"],
-    "caseIds": ["wc-gouts"]
+    "caseIds": ["wc-gouts"],
+    "audio": {
+      "isolated": "audio/wl-gouts-epice.mp3"
+    }
   },
   {
     "id": "wl-gouts-gout",
@@ -150,9 +210,18 @@
     "translationsEn": ["taste", "flavour"],
     "semanticCore": "Вкус: и ощущение во рту, и «вкус» как чувство меры и предпочтения (хороший вкус, мои вкусы).",
     "collocations": [
-      { "fr": "avoir bon goût", "ru": "быть вкусным / иметь хороший вкус" },
-      { "fr": "le goût du café", "ru": "вкус кофе" },
-      { "fr": "chacun ses goûts", "ru": "у каждого свой вкус (о вкусах не спорят)" }
+      {
+        "fr": "avoir bon goût",
+        "ru": "быть вкусным / иметь хороший вкус"
+      },
+      {
+        "fr": "le goût du café",
+        "ru": "вкус кофе"
+      },
+      {
+        "fr": "chacun ses goûts",
+        "ru": "у каждого свой вкус (о вкусах не спорят)"
+      }
     ],
     "contrastPairs": [
       {
@@ -167,7 +236,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["gouts", "sensation"],
-    "caseIds": ["wc-gouts"]
+    "caseIds": ["wc-gouts"],
+    "audio": {
+      "isolated": "audio/wl-gouts-gout.mp3"
+    }
   },
   {
     "id": "wl-gouts-saveur",
@@ -179,9 +251,18 @@
     "translationsEn": ["flavour", "savour"],
     "semanticCore": "Вкусовой оттенок еды — то, как она «играет» во рту; более изысканное слово, чем goût.",
     "collocations": [
-      { "fr": "une saveur sucrée", "ru": "сладкий привкус" },
-      { "fr": "plein de saveur", "ru": "полный вкуса / насыщенный по вкусу" },
-      { "fr": "sans saveur", "ru": "без вкуса / безвкусный" }
+      {
+        "fr": "une saveur sucrée",
+        "ru": "сладкий привкус"
+      },
+      {
+        "fr": "plein de saveur",
+        "ru": "полный вкуса / насыщенный по вкусу"
+      },
+      {
+        "fr": "sans saveur",
+        "ru": "без вкуса / безвкусный"
+      }
     ],
     "contrastPairs": [
       {
@@ -196,7 +277,10 @@
     "frequencyRank": 840,
     "level": "A2",
     "tags": ["gouts", "sensation"],
-    "caseIds": ["wc-gouts"]
+    "caseIds": ["wc-gouts"],
+    "audio": {
+      "isolated": "audio/wl-gouts-saveur.mp3"
+    }
   },
   {
     "id": "wl-gouts-fade",
@@ -207,9 +291,18 @@
     "translationsEn": ["bland", "tasteless"],
     "semanticCore": "Пресный, безвкусный — еда без выраженного вкуса, которой не хватает соли или специй.",
     "collocations": [
-      { "fr": "un plat fade", "ru": "пресное (безвкусное) блюдо" },
-      { "fr": "une soupe fade", "ru": "пресный суп" },
-      { "fr": "c'est un peu fade", "ru": "это пресновато" }
+      {
+        "fr": "un plat fade",
+        "ru": "пресное (безвкусное) блюдо"
+      },
+      {
+        "fr": "une soupe fade",
+        "ru": "пресный суп"
+      },
+      {
+        "fr": "c'est un peu fade",
+        "ru": "это пресновато"
+      }
     ],
     "contrastPairs": [
       {
@@ -224,6 +317,9 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["gouts", "sensation"],
-    "caseIds": ["wc-gouts"]
+    "caseIds": ["wc-gouts"],
+    "audio": {
+      "isolated": "audio/wl-gouts-fade.mp3"
+    }
   }
 ]

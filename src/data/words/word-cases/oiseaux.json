@@ -102,7 +102,8 @@
         "audioText": "nid",
         "options": ["nid", "lit", "riz", "nez"],
         "correctIndex": 0,
-        "explanation": "Прозвучало nid /ni/ (гнездо). Похожие, но другие: lit /li/ (кровать), riz /ʁi/ (рис), nez /ne/ (нос). У всех «немой» хвост, но гласные и начало разные."
+        "explanation": "Прозвучало nid /ni/ (гнездо). Похожие, но другие: lit /li/ (кровать), riz /ʁi/ (рис), nez /ne/ (нос). У всех «немой» хвост, но гласные и начало разные.",
+        "audioSrc": "audio/wl-oiseaux-nid.mp3"
       },
       {
         "id": "wc-oiseaux-bec-ctx",

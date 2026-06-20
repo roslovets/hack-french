@@ -41,7 +41,8 @@
         "audioText": "marteau",
         "options": ["marteau", "manteau", "château", "gâteau"],
         "correctIndex": 0,
-        "explanation": "Прозвучало marteau /maʁ.to/ — молоток. Похожие по концовке -eau: manteau (пальто), château (замок), gâteau (торт). Все рифмуются, но по началу различаются."
+        "explanation": "Прозвучало marteau /maʁ.to/ — молоток. Похожие по концовке -eau: manteau (пальто), château (замок), gâteau (торт). Все рифмуются, но по началу различаются.",
+        "audioSrc": "audio/wl-outils-marteau.mp3"
       },
       {
         "id": "wc-outils-clou-ctx",
@@ -69,7 +70,8 @@
         "audioText": "clou",
         "options": ["clou", "cou", "chou", "loup"],
         "correctIndex": 0,
-        "explanation": "Прозвучало clou /klu/ — гвоздь. Похожи: cou (шея), chou (капуста), loup (волк). Все на /u/, но clou начинается с cl-."
+        "explanation": "Прозвучало clou /klu/ — гвоздь. Похожи: cou (шея), chou (капуста), loup (волк). Все на /u/, но clou начинается с cl-.",
+        "audioSrc": "audio/wl-outils-clou.mp3"
       },
       {
         "id": "wc-outils-vis-ctx",

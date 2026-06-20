@@ -247,7 +247,8 @@
         "audioText": "crabe",
         "options": ["crabe", "crâne", "grave", "cravate"],
         "correctIndex": 0,
-        "explanation": "Прозвучало crabe /kʁab/ — краб. Похоже звучат: crâne /kʁɑn/ (череп), grave /ɡʁav/ (серьёзный), cravate /kʁa.vat/ (галстук). Они отличаются началом или концом слова."
+        "explanation": "Прозвучало crabe /kʁab/ — краб. Похоже звучат: crâne /kʁɑn/ (череп), grave /ɡʁav/ (серьёзный), cravate /kʁa.vat/ (галстук). Они отличаются началом или концом слова.",
+        "audioSrc": "audio/wl-plage-crabe.mp3"
       },
       {
         "id": "wc-plage-nager-ctx",
@@ -275,7 +276,8 @@
         "audioText": "nager",
         "options": ["nager", "neiger", "manger", "ranger"],
         "correctIndex": 0,
-        "explanation": "Прозвучало nager /na.ʒe/ — плавать. Похоже звучат: neiger /ne.ʒe/ (идти — о снеге), manger /mɑ̃.ʒe/ (есть), ranger /ʁɑ̃.ʒe/ (убирать). Все на -ger, но с разным началом."
+        "explanation": "Прозвучало nager /na.ʒe/ — плавать. Похоже звучат: neiger /ne.ʒe/ (идти — о снеге), manger /mɑ̃.ʒe/ (есть), ranger /ʁɑ̃.ʒe/ (убирать). Все на -ger, но с разным началом.",
+        "audioSrc": "audio/wl-plage-nager.mp3"
       }
     ]
   }

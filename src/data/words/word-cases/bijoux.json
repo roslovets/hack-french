@@ -175,7 +175,8 @@
         "audioText": "perle",
         "options": ["perle", "pelle", "belle", "perd"],
         "correctIndex": 0,
-        "explanation": "Прозвучало perle (/pɛʁl/, жемчужина). Похожие: pelle (/pɛl/, лопата) — без r; belle (/bɛl/, красивая) — с b; perd (/pɛʁ/, «теряет») — без l на конце."
+        "explanation": "Прозвучало perle (/pɛʁl/, жемчужина). Похожие: pelle (/pɛl/, лопата) — без r; belle (/bɛl/, красивая) — с b; perd (/pɛʁ/, «теряет») — без l на конце.",
+        "audioSrc": "audio/wl-bijoux-perle.mp3"
       },
       {
         "id": "wc-bijoux-diamant-bridge",
@@ -285,7 +286,8 @@
         "audioText": "broche",
         "options": ["broche", "brioche", "brosse", "proche"],
         "correctIndex": 0,
-        "explanation": "Прозвучало broche (/bʁɔʃ/, брошь). Похожие: brioche (/bʁijɔʃ/, булочка) — с лишним слогом bri-; brosse (/bʁɔs/, щётка) — со звуком s; proche (/pʁɔʃ/, близкий) — с p."
+        "explanation": "Прозвучало broche (/bʁɔʃ/, брошь). Похожие: brioche (/bʁijɔʃ/, булочка) — с лишним слогом bri-; brosse (/bʁɔs/, щётка) — со звуком s; proche (/pʁɔʃ/, близкий) — с p.",
+        "audioSrc": "audio/wl-bijoux-broche.mp3"
       },
       {
         "id": "wc-bijoux-broche-mnemo",

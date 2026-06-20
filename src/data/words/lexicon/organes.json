@@ -9,10 +9,22 @@
     "translationsEn": ["heart"],
     "semanticCore": "Сердце как орган, который бьётся; и сердце как «средоточие» чувств и центра (au cœur de — в самом сердце чего-то).",
     "collocations": [
-      { "fr": "par cœur", "ru": "наизусть" },
-      { "fr": "avoir le cœur brisé", "ru": "быть с разбитым сердцем" },
-      { "fr": "au cœur de la ville", "ru": "в самом сердце города" },
-      { "fr": "de tout cœur", "ru": "от всего сердца" }
+      {
+        "fr": "par cœur",
+        "ru": "наизусть"
+      },
+      {
+        "fr": "avoir le cœur brisé",
+        "ru": "быть с разбитым сердцем"
+      },
+      {
+        "fr": "au cœur de la ville",
+        "ru": "в самом сердце города"
+      },
+      {
+        "fr": "de tout cœur",
+        "ru": "от всего сердца"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 240,
     "level": "B1",
     "tags": ["organes", "anatomie"],
-    "caseIds": ["wc-organes"]
+    "caseIds": ["wc-organes"],
+    "audio": {
+      "isolated": "audio/wl-organes-coeur.mp3"
+    }
   },
   {
     "id": "wl-organes-poumon",
@@ -39,9 +54,18 @@
     "translationsEn": ["lung"],
     "semanticCore": "Лёгкое — орган дыхания; чаще во множественном (les poumons), потому что их два.",
     "collocations": [
-      { "fr": "à pleins poumons", "ru": "во всю грудь, полной грудью" },
-      { "fr": "une infection des poumons", "ru": "инфекция лёгких" },
-      { "fr": "le cancer du poumon", "ru": "рак лёгкого" }
+      {
+        "fr": "à pleins poumons",
+        "ru": "во всю грудь, полной грудью"
+      },
+      {
+        "fr": "une infection des poumons",
+        "ru": "инфекция лёгких"
+      },
+      {
+        "fr": "le cancer du poumon",
+        "ru": "рак лёгкого"
+      }
     ],
     "contrastPairs": [
       {
@@ -56,7 +80,10 @@
     "frequencyRank": 620,
     "level": "B1",
     "tags": ["organes", "anatomie"],
-    "caseIds": ["wc-organes"]
+    "caseIds": ["wc-organes"],
+    "audio": {
+      "isolated": "audio/wl-organes-poumon.mp3"
+    }
   },
   {
     "id": "wl-organes-estomac",
@@ -68,9 +95,18 @@
     "translationsEn": ["stomach"],
     "semanticCore": "Желудок как внутренний орган, где переваривается пища; конечная -c не читается.",
     "collocations": [
-      { "fr": "avoir l'estomac vide", "ru": "быть с пустым желудком (голодным)" },
-      { "fr": "un estomac fragile", "ru": "слабый (чувствительный) желудок" },
-      { "fr": "avoir l'estomac noué", "ru": "желудок сжался (от волнения)" }
+      {
+        "fr": "avoir l'estomac vide",
+        "ru": "быть с пустым желудком (голодным)"
+      },
+      {
+        "fr": "un estomac fragile",
+        "ru": "слабый (чувствительный) желудок"
+      },
+      {
+        "fr": "avoir l'estomac noué",
+        "ru": "желудок сжался (от волнения)"
+      }
     ],
     "contrastPairs": [
       {
@@ -85,7 +121,10 @@
     "frequencyRank": 660,
     "level": "B1",
     "tags": ["organes", "anatomie"],
-    "caseIds": ["wc-organes"]
+    "caseIds": ["wc-organes"],
+    "audio": {
+      "isolated": "audio/wl-organes-estomac.mp3"
+    }
   },
   {
     "id": "wl-organes-foie",
@@ -97,9 +136,18 @@
     "translationsEn": ["liver"],
     "semanticCore": "Печень как орган; также печёнка как еда (foie de volaille, foie gras). Мужского рода — le foie.",
     "collocations": [
-      { "fr": "une crise de foie", "ru": "несварение, «печёночный криз» (от переедания)" },
-      { "fr": "le foie gras", "ru": "фуа-гра (паштет из гусиной печени)" },
-      { "fr": "du foie de veau", "ru": "телячья печень (еда)" }
+      {
+        "fr": "une crise de foie",
+        "ru": "несварение, «печёночный криз» (от переедания)"
+      },
+      {
+        "fr": "le foie gras",
+        "ru": "фуа-гра (паштет из гусиной печени)"
+      },
+      {
+        "fr": "du foie de veau",
+        "ru": "телячья печень (еда)"
+      }
     ],
     "contrastPairs": [
       {
@@ -114,7 +162,10 @@
     "frequencyRank": 700,
     "level": "B1",
     "tags": ["organes", "anatomie"],
-    "caseIds": ["wc-organes"]
+    "caseIds": ["wc-organes"],
+    "audio": {
+      "isolated": "audio/wl-organes-foie.mp3"
+    }
   },
   {
     "id": "wl-organes-cerveau",
@@ -126,9 +177,18 @@
     "translationsEn": ["brain"],
     "semanticCore": "Головной мозг как орган мышления; в переносном — «голова», умный человек (un cerveau).",
     "collocations": [
-      { "fr": "se triturer le cerveau", "ru": "ломать голову" },
-      { "fr": "un lavage de cerveau", "ru": "промывка мозгов" },
-      { "fr": "une tumeur au cerveau", "ru": "опухоль мозга" }
+      {
+        "fr": "se triturer le cerveau",
+        "ru": "ломать голову"
+      },
+      {
+        "fr": "un lavage de cerveau",
+        "ru": "промывка мозгов"
+      },
+      {
+        "fr": "une tumeur au cerveau",
+        "ru": "опухоль мозга"
+      }
     ],
     "contrastPairs": [
       {
@@ -143,7 +203,10 @@
     "frequencyRank": 540,
     "level": "B1",
     "tags": ["organes", "anatomie"],
-    "caseIds": ["wc-organes"]
+    "caseIds": ["wc-organes"],
+    "audio": {
+      "isolated": "audio/wl-organes-cerveau.mp3"
+    }
   },
   {
     "id": "wl-organes-os",
@@ -155,9 +218,18 @@
     "translationsEn": ["bone"],
     "semanticCore": "Кость скелета; коварное произношение: un os /ɔs/ (s читается), но les os /le.z‿o/ (s немая во мн. числе).",
     "collocations": [
-      { "fr": "se casser un os", "ru": "сломать кость" },
-      { "fr": "en chair et en os", "ru": "во плоти, собственной персоной" },
-      { "fr": "trempé jusqu'aux os", "ru": "промокший до костей" }
+      {
+        "fr": "se casser un os",
+        "ru": "сломать кость"
+      },
+      {
+        "fr": "en chair et en os",
+        "ru": "во плоти, собственной персоной"
+      },
+      {
+        "fr": "trempé jusqu'aux os",
+        "ru": "промокший до костей"
+      }
     ],
     "contrastPairs": [
       {
@@ -172,7 +244,10 @@
     "frequencyRank": 700,
     "level": "B1",
     "tags": ["organes", "anatomie"],
-    "caseIds": ["wc-organes"]
+    "caseIds": ["wc-organes"],
+    "audio": {
+      "isolated": "audio/wl-organes-os.mp3"
+    }
   },
   {
     "id": "wl-organes-muscle",
@@ -184,9 +259,18 @@
     "translationsEn": ["muscle"],
     "semanticCore": "Мышца как ткань, дающая силу и движение; le muscle — мужского рода.",
     "collocations": [
-      { "fr": "se déchirer un muscle", "ru": "порвать (потянуть) мышцу" },
-      { "fr": "prendre du muscle", "ru": "набрать мышечную массу" },
-      { "fr": "avoir des courbatures", "ru": "мышцы болят (после нагрузки)" }
+      {
+        "fr": "se déchirer un muscle",
+        "ru": "порвать (потянуть) мышцу"
+      },
+      {
+        "fr": "prendre du muscle",
+        "ru": "набрать мышечную массу"
+      },
+      {
+        "fr": "avoir des courbatures",
+        "ru": "мышцы болят (после нагрузки)"
+      }
     ],
     "contrastPairs": [
       {
@@ -201,7 +285,10 @@
     "frequencyRank": 720,
     "level": "B1",
     "tags": ["organes", "anatomie"],
-    "caseIds": ["wc-organes"]
+    "caseIds": ["wc-organes"],
+    "audio": {
+      "isolated": "audio/wl-organes-muscle.mp3"
+    }
   },
   {
     "id": "wl-organes-sang",
@@ -213,9 +300,18 @@
     "translationsEn": ["blood"],
     "semanticCore": "Кровь как жидкость в теле; конечная -g немая, звучит как носовое /sɑ̃/ (омофон sans, cent).",
     "collocations": [
-      { "fr": "une prise de sang", "ru": "забор крови, анализ крови" },
-      { "fr": "se faire du mauvais sang", "ru": "сильно переживать, изводиться" },
-      { "fr": "avoir le sang chaud", "ru": "быть вспыльчивым, горячим" }
+      {
+        "fr": "une prise de sang",
+        "ru": "забор крови, анализ крови"
+      },
+      {
+        "fr": "se faire du mauvais sang",
+        "ru": "сильно переживать, изводиться"
+      },
+      {
+        "fr": "avoir le sang chaud",
+        "ru": "быть вспыльчивым, горячим"
+      }
     ],
     "contrastPairs": [
       {
@@ -230,6 +326,9 @@
     "frequencyRank": 480,
     "level": "B1",
     "tags": ["organes", "anatomie"],
-    "caseIds": ["wc-organes"]
+    "caseIds": ["wc-organes"],
+    "audio": {
+      "isolated": "audio/wl-organes-sang.mp3"
+    }
   }
 ]

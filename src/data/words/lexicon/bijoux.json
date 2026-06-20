@@ -39,7 +39,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["bijoux", "objet"],
-    "caseIds": ["wc-bijoux"]
+    "caseIds": ["wc-bijoux"],
+    "audio": {
+      "isolated": "audio/wl-bijoux-bague.mp3"
+    }
   },
   {
     "id": "wl-bijoux-collier",
@@ -81,7 +84,10 @@
     "frequencyRank": 690,
     "level": "A2",
     "tags": ["bijoux", "objet"],
-    "caseIds": ["wc-bijoux"]
+    "caseIds": ["wc-bijoux"],
+    "audio": {
+      "isolated": "audio/wl-bijoux-collier.mp3"
+    }
   },
   {
     "id": "wl-bijoux-boucle",
@@ -124,7 +130,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["bijoux", "objet"],
-    "caseIds": ["wc-bijoux"]
+    "caseIds": ["wc-bijoux"],
+    "audio": {
+      "isolated": "audio/wl-bijoux-boucle.mp3"
+    }
   },
   {
     "id": "wl-bijoux-perle",
@@ -166,7 +175,10 @@
     "frequencyRank": 670,
     "level": "A2",
     "tags": ["bijoux", "matiere"],
-    "caseIds": ["wc-bijoux"]
+    "caseIds": ["wc-bijoux"],
+    "audio": {
+      "isolated": "audio/wl-bijoux-perle.mp3"
+    }
   },
   {
     "id": "wl-bijoux-diamant",
@@ -208,7 +220,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["bijoux", "matiere"],
-    "caseIds": ["wc-bijoux"]
+    "caseIds": ["wc-bijoux"],
+    "audio": {
+      "isolated": "audio/wl-bijoux-diamant.mp3"
+    }
   },
   {
     "id": "wl-bijoux-pendentif",
@@ -250,7 +265,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["bijoux", "objet"],
-    "caseIds": ["wc-bijoux"]
+    "caseIds": ["wc-bijoux"],
+    "audio": {
+      "isolated": "audio/wl-bijoux-pendentif.mp3"
+    }
   },
   {
     "id": "wl-bijoux-bracelet",
@@ -292,7 +310,10 @@
     "frequencyRank": 710,
     "level": "A2",
     "tags": ["bijoux", "objet"],
-    "caseIds": ["wc-bijoux"]
+    "caseIds": ["wc-bijoux"],
+    "audio": {
+      "isolated": "audio/wl-bijoux-bracelet.mp3"
+    }
   },
   {
     "id": "wl-bijoux-broche",
@@ -334,6 +355,9 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["bijoux", "objet"],
-    "caseIds": ["wc-bijoux"]
+    "caseIds": ["wc-bijoux"],
+    "audio": {
+      "isolated": "audio/wl-bijoux-broche.mp3"
+    }
   }
 ]

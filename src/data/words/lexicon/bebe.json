@@ -9,9 +9,18 @@
     "translationsEn": ["baby"],
     "semanticCore": "Маленький ребёнок до года-двух; слово всегда мужского рода, даже про девочку.",
     "collocations": [
-      { "fr": "un bébé qui pleure", "ru": "плачущий малыш" },
-      { "fr": "attendre un bébé", "ru": "ждать ребёнка (быть беременной)" },
-      { "fr": "s'occuper du bébé", "ru": "заниматься малышом / ухаживать за ним" }
+      {
+        "fr": "un bébé qui pleure",
+        "ru": "плачущий малыш"
+      },
+      {
+        "fr": "attendre un bébé",
+        "ru": "ждать ребёнка (быть беременной)"
+      },
+      {
+        "fr": "s'occuper du bébé",
+        "ru": "заниматься малышом / ухаживать за ним"
+      }
     ],
     "contrastPairs": [
       {
@@ -26,7 +35,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["bebe", "famille"],
-    "caseIds": ["wc-bebe"]
+    "caseIds": ["wc-bebe"],
+    "audio": {
+      "isolated": "audio/wl-bebe-bebe.mp3"
+    }
   },
   {
     "id": "wl-bebe-couche",
@@ -38,9 +50,18 @@
     "translationsEn": ["nappy", "diaper"],
     "semanticCore": "Подгузник, который надевают младенцу; то же слово значит «слой» (краски, снега).",
     "collocations": [
-      { "fr": "changer la couche", "ru": "менять подгузник" },
-      { "fr": "une couche propre", "ru": "чистый подгузник" },
-      { "fr": "un paquet de couches", "ru": "пачка подгузников" }
+      {
+        "fr": "changer la couche",
+        "ru": "менять подгузник"
+      },
+      {
+        "fr": "une couche propre",
+        "ru": "чистый подгузник"
+      },
+      {
+        "fr": "un paquet de couches",
+        "ru": "пачка подгузников"
+      }
     ],
     "contrastPairs": [
       {
@@ -55,7 +76,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["bebe", "objet"],
-    "caseIds": ["wc-bebe"]
+    "caseIds": ["wc-bebe"],
+    "audio": {
+      "isolated": "audio/wl-bebe-couche.mp3"
+    }
   },
   {
     "id": "wl-bebe-biberon",
@@ -67,9 +91,18 @@
     "translationsEn": ["baby bottle"],
     "semanticCore": "Детская бутылочка с соской, из которой кормят младенца молоком.",
     "collocations": [
-      { "fr": "donner le biberon", "ru": "кормить из бутылочки" },
-      { "fr": "préparer un biberon", "ru": "приготовить бутылочку" },
-      { "fr": "un biberon de lait", "ru": "бутылочка молока" }
+      {
+        "fr": "donner le biberon",
+        "ru": "кормить из бутылочки"
+      },
+      {
+        "fr": "préparer un biberon",
+        "ru": "приготовить бутылочку"
+      },
+      {
+        "fr": "un biberon de lait",
+        "ru": "бутылочка молока"
+      }
     ],
     "contrastPairs": [
       {
@@ -84,7 +117,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["bebe", "objet"],
-    "caseIds": ["wc-bebe"]
+    "caseIds": ["wc-bebe"],
+    "audio": {
+      "isolated": "audio/wl-bebe-biberon.mp3"
+    }
   },
   {
     "id": "wl-bebe-jouet",
@@ -96,9 +132,18 @@
     "translationsEn": ["toy"],
     "semanticCore": "Игрушка — предмет, которым играют дети; от глагола jouer (играть).",
     "collocations": [
-      { "fr": "un jouet en bois", "ru": "деревянная игрушка" },
-      { "fr": "ranger ses jouets", "ru": "убирать свои игрушки" },
-      { "fr": "le rayon des jouets", "ru": "отдел игрушек" }
+      {
+        "fr": "un jouet en bois",
+        "ru": "деревянная игрушка"
+      },
+      {
+        "fr": "ranger ses jouets",
+        "ru": "убирать свои игрушки"
+      },
+      {
+        "fr": "le rayon des jouets",
+        "ru": "отдел игрушек"
+      }
     ],
     "contrastPairs": [
       {
@@ -113,7 +158,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["bebe", "objet"],
-    "caseIds": ["wc-bebe"]
+    "caseIds": ["wc-bebe"],
+    "audio": {
+      "isolated": "audio/wl-bebe-jouet.mp3"
+    }
   },
   {
     "id": "wl-bebe-poussette",
@@ -125,9 +173,18 @@
     "translationsEn": ["stroller", "pushchair"],
     "semanticCore": "Прогулочная коляска, в которой малыш сидит; от глагола pousser (толкать).",
     "collocations": [
-      { "fr": "pousser la poussette", "ru": "катить коляску" },
-      { "fr": "plier la poussette", "ru": "сложить коляску" },
-      { "fr": "le bébé dort dans la poussette", "ru": "малыш спит в коляске" }
+      {
+        "fr": "pousser la poussette",
+        "ru": "катить коляску"
+      },
+      {
+        "fr": "plier la poussette",
+        "ru": "сложить коляску"
+      },
+      {
+        "fr": "le bébé dort dans la poussette",
+        "ru": "малыш спит в коляске"
+      }
     ],
     "contrastPairs": [
       {
@@ -142,7 +199,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["bebe", "objet"],
-    "caseIds": ["wc-bebe"]
+    "caseIds": ["wc-bebe"],
+    "audio": {
+      "isolated": "audio/wl-bebe-poussette.mp3"
+    }
   },
   {
     "id": "wl-bebe-berceau",
@@ -154,9 +214,18 @@
     "translationsEn": ["cradle"],
     "semanticCore": "Колыбель — маленькая качающаяся кроватка для новорождённого; во мн. ч. berceaux.",
     "collocations": [
-      { "fr": "le bébé dort dans son berceau", "ru": "малыш спит в колыбели" },
-      { "fr": "bercer le bébé", "ru": "качать малыша" },
-      { "fr": "un berceau en bois", "ru": "деревянная колыбель" }
+      {
+        "fr": "le bébé dort dans son berceau",
+        "ru": "малыш спит в колыбели"
+      },
+      {
+        "fr": "bercer le bébé",
+        "ru": "качать малыша"
+      },
+      {
+        "fr": "un berceau en bois",
+        "ru": "деревянная колыбель"
+      }
     ],
     "contrastPairs": [
       {
@@ -171,7 +240,10 @@
     "frequencyRank": 850,
     "level": "A2",
     "tags": ["bebe", "objet"],
-    "caseIds": ["wc-bebe"]
+    "caseIds": ["wc-bebe"],
+    "audio": {
+      "isolated": "audio/wl-bebe-berceau.mp3"
+    }
   },
   {
     "id": "wl-bebe-naitre",
@@ -182,9 +254,18 @@
     "translationsEn": ["to be born"],
     "semanticCore": "Появляться на свет; в прошедшем — être né(e): je suis né(e).",
     "collocations": [
-      { "fr": "Le bébé vient de naître.", "ru": "Малыш только что родился." },
-      { "fr": "Je suis né en 1990.", "ru": "Я родился в 1990 году." },
-      { "fr": "Elle est née à Paris.", "ru": "Она родилась в Париже." }
+      {
+        "fr": "Le bébé vient de naître.",
+        "ru": "Малыш только что родился."
+      },
+      {
+        "fr": "Je suis né en 1990.",
+        "ru": "Я родился в 1990 году."
+      },
+      {
+        "fr": "Elle est née à Paris.",
+        "ru": "Она родилась в Париже."
+      }
     ],
     "contrastPairs": [
       {
@@ -199,7 +280,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["bebe", "vie"],
-    "caseIds": ["wc-bebe"]
+    "caseIds": ["wc-bebe"],
+    "audio": {
+      "isolated": "audio/wl-bebe-naitre.mp3"
+    }
   },
   {
     "id": "wl-bebe-grandir",
@@ -210,9 +294,18 @@
     "translationsEn": ["to grow", "to grow up"],
     "semanticCore": "Становиться больше, взрослеть; глагол 2-й группы (je grandis, il grandit), от grand.",
     "collocations": [
-      { "fr": "Les enfants grandissent vite.", "ru": "Дети растут быстро." },
-      { "fr": "Il a beaucoup grandi.", "ru": "Он сильно вырос." },
-      { "fr": "grandir en bonne santé", "ru": "расти здоровым" }
+      {
+        "fr": "Les enfants grandissent vite.",
+        "ru": "Дети растут быстро."
+      },
+      {
+        "fr": "Il a beaucoup grandi.",
+        "ru": "Он сильно вырос."
+      },
+      {
+        "fr": "grandir en bonne santé",
+        "ru": "расти здоровым"
+      }
     ],
     "contrastPairs": [
       {
@@ -227,6 +320,9 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["bebe", "vie"],
-    "caseIds": ["wc-bebe"]
+    "caseIds": ["wc-bebe"],
+    "audio": {
+      "isolated": "audio/wl-bebe-grandir.mp3"
+    }
   }
 ]

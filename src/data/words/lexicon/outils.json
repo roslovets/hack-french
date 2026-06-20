@@ -9,9 +9,18 @@
     "translationsEn": ["hammer"],
     "semanticCore": "Молоток — инструмент, которым забивают гвозди и бьют по чему-то; во множественном числе marteaux.",
     "collocations": [
-      { "fr": "un coup de marteau", "ru": "удар молотком" },
-      { "fr": "planter un clou avec un marteau", "ru": "забить гвоздь молотком" },
-      { "fr": "un marteau et un burin", "ru": "молоток и зубило" }
+      {
+        "fr": "un coup de marteau",
+        "ru": "удар молотком"
+      },
+      {
+        "fr": "planter un clou avec un marteau",
+        "ru": "забить гвоздь молотком"
+      },
+      {
+        "fr": "un marteau et un burin",
+        "ru": "молоток и зубило"
+      }
     ],
     "contrastPairs": [
       {
@@ -26,7 +35,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["outils", "objet"],
-    "caseIds": ["wc-outils"]
+    "caseIds": ["wc-outils"],
+    "audio": {
+      "isolated": "audio/wl-outils-marteau.mp3"
+    }
   },
   {
     "id": "wl-outils-clou",
@@ -38,9 +50,18 @@
     "translationsEn": ["nail"],
     "semanticCore": "Гвоздь, который забивают молотком; во множественном числе clous. Переносно «le clou» — гвоздь программы, главный момент.",
     "collocations": [
-      { "fr": "planter un clou", "ru": "забить гвоздь" },
-      { "fr": "enfoncer un clou", "ru": "вбить гвоздь (поглубже)" },
-      { "fr": "le clou du spectacle", "ru": "гвоздь программы" }
+      {
+        "fr": "planter un clou",
+        "ru": "забить гвоздь"
+      },
+      {
+        "fr": "enfoncer un clou",
+        "ru": "вбить гвоздь (поглубже)"
+      },
+      {
+        "fr": "le clou du spectacle",
+        "ru": "гвоздь программы"
+      }
     ],
     "contrastPairs": [
       {
@@ -55,7 +76,10 @@
     "frequencyRank": 680,
     "level": "A2",
     "tags": ["outils", "objet"],
-    "caseIds": ["wc-outils"]
+    "caseIds": ["wc-outils"],
+    "audio": {
+      "isolated": "audio/wl-outils-clou.mp3"
+    }
   },
   {
     "id": "wl-outils-vis",
@@ -67,9 +91,18 @@
     "translationsEn": ["screw"],
     "semanticCore": "Винт или шуруп, который вкручивают отвёрткой. Слово не меняется во множественном (une vis, des vis), а конечное -s читается: /vis/.",
     "collocations": [
-      { "fr": "serrer une vis", "ru": "затянуть винт" },
-      { "fr": "une vis et un écrou", "ru": "винт и гайка" },
-      { "fr": "un tour de vis", "ru": "оборот винта (тж. ужесточение)" }
+      {
+        "fr": "serrer une vis",
+        "ru": "затянуть винт"
+      },
+      {
+        "fr": "une vis et un écrou",
+        "ru": "винт и гайка"
+      },
+      {
+        "fr": "un tour de vis",
+        "ru": "оборот винта (тж. ужесточение)"
+      }
     ],
     "contrastPairs": [
       {
@@ -84,7 +117,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["outils", "objet"],
-    "caseIds": ["wc-outils"]
+    "caseIds": ["wc-outils"],
+    "audio": {
+      "isolated": "audio/wl-outils-vis.mp3"
+    }
   },
   {
     "id": "wl-outils-tournevis",
@@ -96,9 +132,18 @@
     "translationsEn": ["screwdriver"],
     "semanticCore": "Отвёртка: инструмент, чтобы крутить винты. Слово прозрачно: tourne (крути) + vis (винт). В множественном не меняется: des tournevis.",
     "collocations": [
-      { "fr": "un tournevis cruciforme", "ru": "крестовая отвёртка" },
-      { "fr": "un tournevis plat", "ru": "плоская (шлицевая) отвёртка" },
-      { "fr": "serrer avec un tournevis", "ru": "затянуть отвёрткой" }
+      {
+        "fr": "un tournevis cruciforme",
+        "ru": "крестовая отвёртка"
+      },
+      {
+        "fr": "un tournevis plat",
+        "ru": "плоская (шлицевая) отвёртка"
+      },
+      {
+        "fr": "serrer avec un tournevis",
+        "ru": "затянуть отвёрткой"
+      }
     ],
     "contrastPairs": [
       {
@@ -113,7 +158,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["outils", "objet"],
-    "caseIds": ["wc-outils"]
+    "caseIds": ["wc-outils"],
+    "audio": {
+      "isolated": "audio/wl-outils-tournevis.mp3"
+    }
   },
   {
     "id": "wl-outils-scie",
@@ -125,9 +173,18 @@
     "translationsEn": ["saw"],
     "semanticCore": "Пила: инструмент с зубьями, чтобы пилить дерево или металл. Читается /si/, конечное -e немое. Глагол «пилить» — scier.",
     "collocations": [
-      { "fr": "une scie électrique", "ru": "электропила" },
-      { "fr": "une scie à métaux", "ru": "ножовка по металлу" },
-      { "fr": "scier une planche", "ru": "распилить доску" }
+      {
+        "fr": "une scie électrique",
+        "ru": "электропила"
+      },
+      {
+        "fr": "une scie à métaux",
+        "ru": "ножовка по металлу"
+      },
+      {
+        "fr": "scier une planche",
+        "ru": "распилить доску"
+      }
     ],
     "contrastPairs": [
       {
@@ -142,7 +199,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["outils", "objet"],
-    "caseIds": ["wc-outils"]
+    "caseIds": ["wc-outils"],
+    "audio": {
+      "isolated": "audio/wl-outils-scie.mp3"
+    }
   },
   {
     "id": "wl-outils-echelle",
@@ -154,9 +214,18 @@
     "translationsEn": ["ladder", "scale"],
     "semanticCore": "Échelle — приставная лестница или стремянка (переносная, со ступенями-перекладинами). Второе значение — «масштаб»: à grande échelle, échelle d'une carte.",
     "collocations": [
-      { "fr": "monter à l'échelle", "ru": "подниматься по (приставной) лестнице" },
-      { "fr": "une échelle en bois", "ru": "деревянная лестница" },
-      { "fr": "à grande échelle", "ru": "в большом масштабе" }
+      {
+        "fr": "monter à l'échelle",
+        "ru": "подниматься по (приставной) лестнице"
+      },
+      {
+        "fr": "une échelle en bois",
+        "ru": "деревянная лестница"
+      },
+      {
+        "fr": "à grande échelle",
+        "ru": "в большом масштабе"
+      }
     ],
     "contrastPairs": [
       {
@@ -171,7 +240,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["outils", "objet"],
-    "caseIds": ["wc-outils"]
+    "caseIds": ["wc-outils"],
+    "audio": {
+      "isolated": "audio/wl-outils-echelle.mp3"
+    }
   },
   {
     "id": "wl-outils-reparer",
@@ -182,9 +254,18 @@
     "translationsEn": ["to repair", "to fix"],
     "semanticCore": "Вернуть в рабочее состояние то, что сломалось: починить машину, кран, прибор. Правильный глагол на -er.",
     "collocations": [
-      { "fr": "réparer une voiture", "ru": "чинить машину" },
-      { "fr": "réparer une fuite", "ru": "устранить течь" },
-      { "fr": "faire réparer", "ru": "отдать в ремонт (чтобы починили)" }
+      {
+        "fr": "réparer une voiture",
+        "ru": "чинить машину"
+      },
+      {
+        "fr": "réparer une fuite",
+        "ru": "устранить течь"
+      },
+      {
+        "fr": "faire réparer",
+        "ru": "отдать в ремонт (чтобы починили)"
+      }
     ],
     "contrastPairs": [
       {
@@ -199,7 +280,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["outils", "verbe", "action"],
-    "caseIds": ["wc-outils"]
+    "caseIds": ["wc-outils"],
+    "audio": {
+      "isolated": "audio/wl-outils-reparer.mp3"
+    }
   },
   {
     "id": "wl-outils-visser",
@@ -210,9 +294,18 @@
     "translationsEn": ["to screw in", "to screw on"],
     "semanticCore": "Закручивать винт или резьбу: ввинтить шуруп, ввернуть лампочку, прикрутить полку. От слова vis. Противоположное — dévisser.",
     "collocations": [
-      { "fr": "visser une ampoule", "ru": "ввернуть лампочку" },
-      { "fr": "visser une étagère", "ru": "прикрутить полку" },
-      { "fr": "bien visser", "ru": "хорошо (плотно) закрутить" }
+      {
+        "fr": "visser une ampoule",
+        "ru": "ввернуть лампочку"
+      },
+      {
+        "fr": "visser une étagère",
+        "ru": "прикрутить полку"
+      },
+      {
+        "fr": "bien visser",
+        "ru": "хорошо (плотно) закрутить"
+      }
     ],
     "contrastPairs": [
       {
@@ -227,6 +320,9 @@
     "frequencyRank": 740,
     "level": "A2",
     "tags": ["outils", "verbe", "action"],
-    "caseIds": ["wc-outils"]
+    "caseIds": ["wc-outils"],
+    "audio": {
+      "isolated": "audio/wl-outils-visser.mp3"
+    }
   }
 ]

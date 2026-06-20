@@ -41,7 +41,8 @@
         "audioText": "lune",
         "options": ["lune", "dune", "lutte", "plume"],
         "correctIndex": 0,
-        "explanation": "Прозвучало lune /lyn/ — луна. Рядом похожие: dune /dyn/ (дюна), lutte /lyt/ (борьба), plume /plym/ (перо). Все с французским звуком /y/, но отличаются согласными."
+        "explanation": "Прозвучало lune /lyn/ — луна. Рядом похожие: dune /dyn/ (дюна), lutte /lyt/ (борьба), plume /plym/ (перо). Все с французским звуком /y/, но отличаются согласными.",
+        "audioSrc": "audio/wl-espace-lune.mp3"
       },
       {
         "id": "wc-espace-lune-mnemo",
@@ -306,7 +307,8 @@
         "audioText": "comète",
         "options": ["comète", "comédie", "comté", "cassette"],
         "correctIndex": 0,
-        "explanation": "Прозвучало comète /kɔ.mɛt/ — комета. Рядом похожие: comédie /kɔ.me.di/ (комедия), comté /kɔ̃.te/ (графство; сорт сыра), cassette /ka.sɛt/ (кассета). Слушай ударный гласный и конец слова."
+        "explanation": "Прозвучало comète /kɔ.mɛt/ — комета. Рядом похожие: comédie /kɔ.me.di/ (комедия), comté /kɔ̃.te/ (графство; сорт сыра), cassette /ka.sɛt/ (кассета). Слушай ударный гласный и конец слова.",
+        "audioSrc": "audio/wl-espace-comete.mp3"
       }
     ]
   }

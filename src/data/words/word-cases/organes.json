@@ -57,7 +57,8 @@
         "audioText": "cœur",
         "options": ["cours", "corps", "cœur", "peur"],
         "correctIndex": 2,
-        "explanation": "Прозвучало cœur /kœʁ/ (сердце). Похожие: cours /kuʁ/ (урок/курс), corps /kɔʁ/ (тело), peur /pœʁ/ (страх) — все реальные, но это не омофоны: различаются гласной или согласной."
+        "explanation": "Прозвучало cœur /kœʁ/ (сердце). Похожие: cours /kuʁ/ (урок/курс), corps /kɔʁ/ (тело), peur /pœʁ/ (страх) — все реальные, но это не омофоны: различаются гласной или согласной.",
+        "audioSrc": "audio/wl-organes-coeur.mp3"
       },
       {
         "id": "wc-organes-poumon-ctx",

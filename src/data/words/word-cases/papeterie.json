@@ -41,7 +41,8 @@
         "audioText": "gomme",
         "options": ["pomme", "homme", "somme", "gomme"],
         "correctIndex": 3,
-        "explanation": "gomme /ɡɔm/ — ластик. Похоже звучат, но это другие слова: pomme /pɔm/ — яблоко, homme /ɔm/ — мужчина/человек, somme /sɔm/ — сумма. Все рифмуются на -omme, слушай первый звук."
+        "explanation": "gomme /ɡɔm/ — ластик. Похоже звучат, но это другие слова: pomme /pɔm/ — яблоко, homme /ɔm/ — мужчина/человек, somme /sɔm/ — сумма. Все рифмуются на -omme, слушай первый звук.",
+        "audioSrc": "audio/wl-papeterie-gomme.mp3"
       },
       {
         "id": "wc-papeterie-regle-ctx",

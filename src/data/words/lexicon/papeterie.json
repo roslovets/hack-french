@@ -9,10 +9,22 @@
     "translationsEn": ["eraser", "rubber"],
     "semanticCore": "Ластик, которым стирают написанное карандашом; та самая «резинка» на конце или отдельная.",
     "collocations": [
-      { "fr": "effacer avec une gomme", "ru": "стирать ластиком" },
-      { "fr": "un crayon à papier", "ru": "простой (графитный) карандаш" },
-      { "fr": "une gomme blanche", "ru": "белый (мягкий) ластик" },
-      { "fr": "passer la gomme", "ru": "пройтись ластиком, стереть" }
+      {
+        "fr": "effacer avec une gomme",
+        "ru": "стирать ластиком"
+      },
+      {
+        "fr": "un crayon à papier",
+        "ru": "простой (графитный) карандаш"
+      },
+      {
+        "fr": "une gomme blanche",
+        "ru": "белый (мягкий) ластик"
+      },
+      {
+        "fr": "passer la gomme",
+        "ru": "пройтись ластиком, стереть"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["papeterie", "objet"],
-    "caseIds": ["wc-papeterie"]
+    "caseIds": ["wc-papeterie"],
+    "audio": {
+      "isolated": "audio/wl-papeterie-gomme.mp3"
+    }
   },
   {
     "id": "wl-papeterie-regle",
@@ -39,10 +54,22 @@
     "translationsEn": ["ruler", "rule"],
     "semanticCore": "Одно слово на два смысла: линейка (предмет, чтобы чертить и мерить) и правило (норма, закон).",
     "collocations": [
-      { "fr": "une règle graduée", "ru": "линейка с делениями" },
-      { "fr": "tracer un trait à la règle", "ru": "провести линию по линейке" },
-      { "fr": "la règle du jeu", "ru": "правило игры" },
-      { "fr": "respecter les règles", "ru": "соблюдать правила" }
+      {
+        "fr": "une règle graduée",
+        "ru": "линейка с делениями"
+      },
+      {
+        "fr": "tracer un trait à la règle",
+        "ru": "провести линию по линейке"
+      },
+      {
+        "fr": "la règle du jeu",
+        "ru": "правило игры"
+      },
+      {
+        "fr": "respecter les règles",
+        "ru": "соблюдать правила"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["papeterie", "objet"],
-    "caseIds": ["wc-papeterie"]
+    "caseIds": ["wc-papeterie"],
+    "audio": {
+      "isolated": "audio/wl-papeterie-regle.mp3"
+    }
   },
   {
     "id": "wl-papeterie-ciseaux",
@@ -69,10 +99,22 @@
     "translationsEn": ["scissors"],
     "semanticCore": "Ножницы — инструмент из двух лезвий; во французском, как и в русском, почти всегда во множественном числе.",
     "collocations": [
-      { "fr": "une paire de ciseaux", "ru": "ножницы (букв. пара ножниц)" },
-      { "fr": "découper aux ciseaux", "ru": "вырезать ножницами" },
-      { "fr": "des ciseaux pointus", "ru": "острые ножницы" },
-      { "fr": "des ciseaux de cuisine", "ru": "кухонные ножницы" }
+      {
+        "fr": "une paire de ciseaux",
+        "ru": "ножницы (букв. пара ножниц)"
+      },
+      {
+        "fr": "découper aux ciseaux",
+        "ru": "вырезать ножницами"
+      },
+      {
+        "fr": "des ciseaux pointus",
+        "ru": "острые ножницы"
+      },
+      {
+        "fr": "des ciseaux de cuisine",
+        "ru": "кухонные ножницы"
+      }
     ],
     "contrastPairs": [
       {
@@ -87,7 +129,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["papeterie", "outil"],
-    "caseIds": ["wc-papeterie"]
+    "caseIds": ["wc-papeterie"],
+    "audio": {
+      "isolated": "audio/wl-papeterie-ciseaux.mp3"
+    }
   },
   {
     "id": "wl-papeterie-colle",
@@ -99,10 +144,22 @@
     "translationsEn": ["glue"],
     "semanticCore": "Клей — то, чем склеивают бумагу и предметы; глагол coller — клеить.",
     "collocations": [
-      { "fr": "un tube de colle", "ru": "тюбик клея" },
-      { "fr": "un bâton de colle", "ru": "клей-карандаш" },
-      { "fr": "mettre de la colle", "ru": "нанести клей" },
-      { "fr": "de la colle forte", "ru": "сильный клей (момент)" }
+      {
+        "fr": "un tube de colle",
+        "ru": "тюбик клея"
+      },
+      {
+        "fr": "un bâton de colle",
+        "ru": "клей-карандаш"
+      },
+      {
+        "fr": "mettre de la colle",
+        "ru": "нанести клей"
+      },
+      {
+        "fr": "de la colle forte",
+        "ru": "сильный клей (момент)"
+      }
     ],
     "contrastPairs": [
       {
@@ -117,7 +174,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["papeterie", "objet"],
-    "caseIds": ["wc-papeterie"]
+    "caseIds": ["wc-papeterie"],
+    "audio": {
+      "isolated": "audio/wl-papeterie-colle.mp3"
+    }
   },
   {
     "id": "wl-papeterie-trombone",
@@ -129,9 +189,18 @@
     "translationsEn": ["paperclip", "trombone"],
     "semanticCore": "Скрепка для бумаги (гнутая проволока); то же слово — музыкальный инструмент тромбон, по форме которого скрепку и назвали.",
     "collocations": [
-      { "fr": "attacher avec un trombone", "ru": "скрепить скрепкой" },
-      { "fr": "une boîte de trombones", "ru": "коробка скрепок" },
-      { "fr": "un trombone en métal", "ru": "металлическая скрепка" }
+      {
+        "fr": "attacher avec un trombone",
+        "ru": "скрепить скрепкой"
+      },
+      {
+        "fr": "une boîte de trombones",
+        "ru": "коробка скрепок"
+      },
+      {
+        "fr": "un trombone en métal",
+        "ru": "металлическая скрепка"
+      }
     ],
     "contrastPairs": [
       {
@@ -146,7 +215,10 @@
     "frequencyRank": 850,
     "level": "A2",
     "tags": ["papeterie", "objet"],
-    "caseIds": ["wc-papeterie"]
+    "caseIds": ["wc-papeterie"],
+    "audio": {
+      "isolated": "audio/wl-papeterie-trombone.mp3"
+    }
   },
   {
     "id": "wl-papeterie-classeur",
@@ -158,10 +230,22 @@
     "translationsEn": ["binder", "folder"],
     "semanticCore": "Папка с кольцами или зажимом, куда подшивают отдельные листы и сортируют их по темам; от глагола classer.",
     "collocations": [
-      { "fr": "ranger dans un classeur", "ru": "подшить в папку" },
-      { "fr": "un classeur à anneaux", "ru": "папка на кольцах" },
-      { "fr": "un classeur à levier", "ru": "папка-регистратор (с рычагом)" },
-      { "fr": "un gros classeur", "ru": "толстая папка" }
+      {
+        "fr": "ranger dans un classeur",
+        "ru": "подшить в папку"
+      },
+      {
+        "fr": "un classeur à anneaux",
+        "ru": "папка на кольцах"
+      },
+      {
+        "fr": "un classeur à levier",
+        "ru": "папка-регистратор (с рычагом)"
+      },
+      {
+        "fr": "un gros classeur",
+        "ru": "толстая папка"
+      }
     ],
     "contrastPairs": [
       {
@@ -176,7 +260,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["papeterie", "rangement"],
-    "caseIds": ["wc-papeterie"]
+    "caseIds": ["wc-papeterie"],
+    "audio": {
+      "isolated": "audio/wl-papeterie-classeur.mp3"
+    }
   },
   {
     "id": "wl-papeterie-feutre",
@@ -188,10 +275,22 @@
     "translationsEn": ["felt-tip pen", "felt"],
     "semanticCore": "Фломастер (ручка с мягким фетровым кончиком); то же слово — войлок/фетр, материал, от которого пошло название.",
     "collocations": [
-      { "fr": "un feutre noir", "ru": "чёрный фломастер" },
-      { "fr": "écrire au feutre", "ru": "писать фломастером" },
-      { "fr": "un feutre effaçable", "ru": "стираемый маркер" },
-      { "fr": "colorier au feutre", "ru": "раскрашивать фломастерами" }
+      {
+        "fr": "un feutre noir",
+        "ru": "чёрный фломастер"
+      },
+      {
+        "fr": "écrire au feutre",
+        "ru": "писать фломастером"
+      },
+      {
+        "fr": "un feutre effaçable",
+        "ru": "стираемый маркер"
+      },
+      {
+        "fr": "colorier au feutre",
+        "ru": "раскрашивать фломастерами"
+      }
     ],
     "contrastPairs": [
       {
@@ -206,7 +305,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["papeterie", "objet"],
-    "caseIds": ["wc-papeterie"]
+    "caseIds": ["wc-papeterie"],
+    "audio": {
+      "isolated": "audio/wl-papeterie-feutre.mp3"
+    }
   },
   {
     "id": "wl-papeterie-agrafeuse",
@@ -218,10 +320,22 @@
     "translationsEn": ["stapler"],
     "semanticCore": "Степлер — инструмент, который забивает скобу (agrafe), чтобы скрепить листы; от глагола agrafer.",
     "collocations": [
-      { "fr": "agrafer des feuilles", "ru": "скрепить листы степлером" },
-      { "fr": "recharger l'agrafeuse", "ru": "зарядить степлер скобами" },
-      { "fr": "une agrafeuse de bureau", "ru": "офисный степлер" },
-      { "fr": "une boîte d'agrafes", "ru": "коробка скоб" }
+      {
+        "fr": "agrafer des feuilles",
+        "ru": "скрепить листы степлером"
+      },
+      {
+        "fr": "recharger l'agrafeuse",
+        "ru": "зарядить степлер скобами"
+      },
+      {
+        "fr": "une agrafeuse de bureau",
+        "ru": "офисный степлер"
+      },
+      {
+        "fr": "une boîte d'agrafes",
+        "ru": "коробка скоб"
+      }
     ],
     "contrastPairs": [
       {
@@ -236,6 +350,9 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["papeterie", "outil"],
-    "caseIds": ["wc-papeterie"]
+    "caseIds": ["wc-papeterie"],
+    "audio": {
+      "isolated": "audio/wl-papeterie-agrafeuse.mp3"
+    }
   }
 ]

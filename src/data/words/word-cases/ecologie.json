@@ -257,7 +257,8 @@
         "audioText": "planète",
         "options": ["planète", "plante", "planche", "plaine"],
         "correctIndex": 0,
-        "explanation": "planète /pla.nɛt/ — планета. Похожие, но другие слова: une plante /plɑ̃t/ (растение), une planche /plɑ̃ʃ/ (доска), une plaine /plɛn/ (равнина). У planète слышно открытое /a/ и концовку /nɛt/, без носового звука."
+        "explanation": "planète /pla.nɛt/ — планета. Похожие, но другие слова: une plante /plɑ̃t/ (растение), une planche /plɑ̃ʃ/ (доска), une plaine /plɛn/ (равнина). У planète слышно открытое /a/ и концовку /nɛt/, без носового звука.",
+        "audioSrc": "audio/wl-ecologie-planete.mp3"
       },
       {
         "id": "wc-ecologie-gaspillage-ctx",

@@ -73,7 +73,8 @@
         "audioText": "couche",
         "options": ["couche", "bouche", "douche", "touche"],
         "correctIndex": 0,
-        "explanation": "Прозвучало couche /kuʃ/ (подгузник). Похожие по звучанию, но другие слова: bouche /buʃ/ (рот), douche /duʃ/ (душ), touche /tuʃ/ (клавиша). Различается только первый звук."
+        "explanation": "Прозвучало couche /kuʃ/ (подгузник). Похожие по звучанию, но другие слова: bouche /buʃ/ (рот), douche /duʃ/ (душ), touche /tuʃ/ (клавиша). Различается только первый звук.",
+        "audioSrc": "audio/wl-bebe-couche.mp3"
       },
       {
         "id": "wc-bebe-biberon-ctx",
@@ -133,7 +134,8 @@
         "audioText": "jouet",
         "options": ["jouet", "jouer", "joue", "jour"],
         "correctIndex": 0,
-        "explanation": "Прозвучало jouet /ʒwɛ/ (игрушка). Похоже звучат: jouer /ʒwe/ (играть — конец -er), joue /ʒu/ (щека), jour /ʒuʁ/ (день). У jouet на конце открытое /ɛ/."
+        "explanation": "Прозвучало jouet /ʒwɛ/ (игрушка). Похоже звучат: jouer /ʒwe/ (играть — конец -er), joue /ʒu/ (щека), jour /ʒuʁ/ (день). У jouet на конце открытое /ɛ/.",
+        "audioSrc": "audio/wl-bebe-jouet.mp3"
       },
       {
         "id": "wc-bebe-poussette-ctx",
@@ -197,7 +199,8 @@
         "audioText": "berceau",
         "options": ["berceau", "morceau", "cerceau", "bureau"],
         "correctIndex": 0,
-        "explanation": "Прозвучало berceau /bɛʁ.so/ (колыбель). Похожи по звучанию: morceau /mɔʁ.so/ (кусок), cerceau /sɛʁ.so/ (обруч), bureau /by.ʁo/ (стол/офис). Все оканчиваются на /-o/."
+        "explanation": "Прозвучало berceau /bɛʁ.so/ (колыбель). Похожи по звучанию: morceau /mɔʁ.so/ (кусок), cerceau /sɛʁ.so/ (обруч), bureau /by.ʁo/ (стол/офис). Все оканчиваются на /-o/.",
+        "audioSrc": "audio/wl-bebe-berceau.mp3"
       },
       {
         "id": "wc-bebe-naitre-ctx",

@@ -9,10 +9,22 @@
     "translationsEn": ["fly"],
     "semanticCore": "Муха — мелкое назойливое насекомое, которое жужжит и садится на еду; в переносном смысле — мелочь, на которую злятся.",
     "collocations": [
-      { "fr": "chasser une mouche", "ru": "отгонять муху" },
-      { "fr": "une mouche bourdonne", "ru": "муха жужжит" },
-      { "fr": "un papier tue-mouches", "ru": "липкая лента от мух" },
-      { "fr": "une fine mouche", "ru": "хитрюга, пройдоха" }
+      {
+        "fr": "chasser une mouche",
+        "ru": "отгонять муху"
+      },
+      {
+        "fr": "une mouche bourdonne",
+        "ru": "муха жужжит"
+      },
+      {
+        "fr": "un papier tue-mouches",
+        "ru": "липкая лента от мух"
+      },
+      {
+        "fr": "une fine mouche",
+        "ru": "хитрюга, пройдоха"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["insectes", "nature"],
-    "caseIds": ["wc-insectes"]
+    "caseIds": ["wc-insectes"],
+    "audio": {
+      "isolated": "audio/wl-insectes-mouche.mp3"
+    }
   },
   {
     "id": "wl-insectes-fourmi",
@@ -39,10 +54,22 @@
     "translationsEn": ["ant"],
     "semanticCore": "Муравей — крошечное трудолюбивое насекомое, живущее колониями; символ работящего и запасливого.",
     "collocations": [
-      { "fr": "une fourmilière", "ru": "муравейник" },
-      { "fr": "travailleur comme une fourmi", "ru": "трудолюбивый как муравей" },
-      { "fr": "avoir des fourmis dans les jambes", "ru": "ноги затекли (мурашки в ногах)" },
-      { "fr": "un travail de fourmi", "ru": "кропотливая работа" }
+      {
+        "fr": "une fourmilière",
+        "ru": "муравейник"
+      },
+      {
+        "fr": "travailleur comme une fourmi",
+        "ru": "трудолюбивый как муравей"
+      },
+      {
+        "fr": "avoir des fourmis dans les jambes",
+        "ru": "ноги затекли (мурашки в ногах)"
+      },
+      {
+        "fr": "un travail de fourmi",
+        "ru": "кропотливая работа"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["insectes", "nature"],
-    "caseIds": ["wc-insectes"]
+    "caseIds": ["wc-insectes"],
+    "audio": {
+      "isolated": "audio/wl-insectes-fourmi.mp3"
+    }
   },
   {
     "id": "wl-insectes-abeille",
@@ -69,10 +99,22 @@
     "translationsEn": ["bee"],
     "semanticCore": "Пчела — насекомое, которое собирает нектар и делает мёд; жалит, только защищаясь, и гибнет после укуса.",
     "collocations": [
-      { "fr": "une piqûre d'abeille", "ru": "укус пчелы" },
-      { "fr": "un essaim d'abeilles", "ru": "пчелиный рой" },
-      { "fr": "les abeilles butinent", "ru": "пчёлы собирают нектар" },
-      { "fr": "une ruche d'abeilles", "ru": "пчелиный улей" }
+      {
+        "fr": "une piqûre d'abeille",
+        "ru": "укус пчелы"
+      },
+      {
+        "fr": "un essaim d'abeilles",
+        "ru": "пчелиный рой"
+      },
+      {
+        "fr": "les abeilles butinent",
+        "ru": "пчёлы собирают нектар"
+      },
+      {
+        "fr": "une ruche d'abeilles",
+        "ru": "пчелиный улей"
+      }
     ],
     "contrastPairs": [
       {
@@ -87,7 +129,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["insectes", "nature"],
-    "caseIds": ["wc-insectes"]
+    "caseIds": ["wc-insectes"],
+    "audio": {
+      "isolated": "audio/wl-insectes-abeille.mp3"
+    }
   },
   {
     "id": "wl-insectes-papillon",
@@ -99,10 +144,22 @@
     "translationsEn": ["butterfly"],
     "semanticCore": "Бабочка — насекомое с большими цветными крыльями, перелетающее с цветка на цветок; «papillon de nuit» — ночная бабочка / мотылёк.",
     "collocations": [
-      { "fr": "un papillon multicolore", "ru": "разноцветная бабочка" },
-      { "fr": "un papillon de nuit", "ru": "ночная бабочка / мотылёк" },
-      { "fr": "le papillon vole de fleur en fleur", "ru": "бабочка перелетает с цветка на цветок" },
-      { "fr": "la nage papillon", "ru": "плавание баттерфляем" }
+      {
+        "fr": "un papillon multicolore",
+        "ru": "разноцветная бабочка"
+      },
+      {
+        "fr": "un papillon de nuit",
+        "ru": "ночная бабочка / мотылёк"
+      },
+      {
+        "fr": "le papillon vole de fleur en fleur",
+        "ru": "бабочка перелетает с цветка на цветок"
+      },
+      {
+        "fr": "la nage papillon",
+        "ru": "плавание баттерфляем"
+      }
     ],
     "contrastPairs": [
       {
@@ -117,7 +174,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["insectes", "nature"],
-    "caseIds": ["wc-insectes"]
+    "caseIds": ["wc-insectes"],
+    "audio": {
+      "isolated": "audio/wl-insectes-papillon.mp3"
+    }
   },
   {
     "id": "wl-insectes-araignee",
@@ -129,10 +189,22 @@
     "translationsEn": ["spider"],
     "semanticCore": "Паук — восьминогое существо, плетущее паутину; строго говоря не насекомое, но в быту его относят к ним.",
     "collocations": [
-      { "fr": "une toile d'araignée", "ru": "паутина" },
-      { "fr": "avoir peur des araignées", "ru": "бояться пауков" },
-      { "fr": "l'araignée tisse sa toile", "ru": "паук плетёт паутину" },
-      { "fr": "avoir une araignée au plafond", "ru": "быть с причудами («не все дома»)" }
+      {
+        "fr": "une toile d'araignée",
+        "ru": "паутина"
+      },
+      {
+        "fr": "avoir peur des araignées",
+        "ru": "бояться пауков"
+      },
+      {
+        "fr": "l'araignée tisse sa toile",
+        "ru": "паук плетёт паутину"
+      },
+      {
+        "fr": "avoir une araignée au plafond",
+        "ru": "быть с причудами («не все дома»)"
+      }
     ],
     "contrastPairs": [
       {
@@ -147,7 +219,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["insectes", "nature"],
-    "caseIds": ["wc-insectes"]
+    "caseIds": ["wc-insectes"],
+    "audio": {
+      "isolated": "audio/wl-insectes-araignee.mp3"
+    }
   },
   {
     "id": "wl-insectes-moustique",
@@ -159,10 +234,22 @@
     "translationsEn": ["mosquito"],
     "semanticCore": "Комар — мелкое летающее насекомое, которое пьёт кровь и оставляет зудящие укусы; пищит по ночам.",
     "collocations": [
-      { "fr": "une piqûre de moustique", "ru": "укус комара" },
-      { "fr": "un anti-moustique", "ru": "средство от комаров" },
-      { "fr": "se faire piquer par un moustique", "ru": "быть укушенным комаром" },
-      { "fr": "une nuée de moustiques", "ru": "туча комаров" }
+      {
+        "fr": "une piqûre de moustique",
+        "ru": "укус комара"
+      },
+      {
+        "fr": "un anti-moustique",
+        "ru": "средство от комаров"
+      },
+      {
+        "fr": "se faire piquer par un moustique",
+        "ru": "быть укушенным комаром"
+      },
+      {
+        "fr": "une nuée de moustiques",
+        "ru": "туча комаров"
+      }
     ],
     "contrastPairs": [
       {
@@ -177,7 +264,10 @@
     "frequencyRank": 680,
     "level": "A2",
     "tags": ["insectes", "nature"],
-    "caseIds": ["wc-insectes"]
+    "caseIds": ["wc-insectes"],
+    "audio": {
+      "isolated": "audio/wl-insectes-moustique.mp3"
+    }
   },
   {
     "id": "wl-insectes-guepe",
@@ -189,10 +279,22 @@
     "translationsEn": ["wasp"],
     "semanticCore": "Оса — жёлто-чёрное жалящее насекомое; в отличие от пчелы, гладкая, агрессивная и может жалить много раз.",
     "collocations": [
-      { "fr": "un nid de guêpes", "ru": "осиное гнездо" },
-      { "fr": "une piqûre de guêpe", "ru": "укус осы" },
-      { "fr": "une taille de guêpe", "ru": "осиная талия" },
-      { "fr": "se faire piquer par une guêpe", "ru": "быть ужаленным осой" }
+      {
+        "fr": "un nid de guêpes",
+        "ru": "осиное гнездо"
+      },
+      {
+        "fr": "une piqûre de guêpe",
+        "ru": "укус осы"
+      },
+      {
+        "fr": "une taille de guêpe",
+        "ru": "осиная талия"
+      },
+      {
+        "fr": "se faire piquer par une guêpe",
+        "ru": "быть ужаленным осой"
+      }
     ],
     "contrastPairs": [
       {
@@ -207,7 +309,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["insectes", "nature"],
-    "caseIds": ["wc-insectes"]
+    "caseIds": ["wc-insectes"],
+    "audio": {
+      "isolated": "audio/wl-insectes-guepe.mp3"
+    }
   },
   {
     "id": "wl-insectes-ver",
@@ -219,10 +324,22 @@
     "translationsEn": ["worm"],
     "semanticCore": "Червь — длинное мягкое существо без ног, живущее в земле или во фруктах; «ver de terre» — дождевой червь.",
     "collocations": [
-      { "fr": "un ver de terre", "ru": "дождевой червь" },
-      { "fr": "un ver dans la pomme", "ru": "червяк в яблоке" },
-      { "fr": "un ver luisant", "ru": "светлячок" },
-      { "fr": "le ver à soie", "ru": "тутовый шелкопряд" }
+      {
+        "fr": "un ver de terre",
+        "ru": "дождевой червь"
+      },
+      {
+        "fr": "un ver dans la pomme",
+        "ru": "червяк в яблоке"
+      },
+      {
+        "fr": "un ver luisant",
+        "ru": "светлячок"
+      },
+      {
+        "fr": "le ver à soie",
+        "ru": "тутовый шелкопряд"
+      }
     ],
     "contrastPairs": [
       {
@@ -237,6 +354,9 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["insectes", "nature"],
-    "caseIds": ["wc-insectes"]
+    "caseIds": ["wc-insectes"],
+    "audio": {
+      "isolated": "audio/wl-insectes-ver.mp3"
+    }
   }
 ]

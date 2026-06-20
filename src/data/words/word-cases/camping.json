@@ -41,7 +41,8 @@
         "audioText": "tente",
         "options": ["tente", "trente", "vente", "pente"],
         "correctIndex": 0,
-        "explanation": "Прозвучало tente /tɑ̃t/ — палатка. Похожи, но другие: trente /tʁɑ̃t/ — тридцать (после t слышно r), vente /vɑ̃t/ — продажа (начинается на v), pente /pɑ̃t/ — склон (начинается на p). У всех носовой /ɑ̃t/, различает только начало слова."
+        "explanation": "Прозвучало tente /tɑ̃t/ — палатка. Похожи, но другие: trente /tʁɑ̃t/ — тридцать (после t слышно r), vente /vɑ̃t/ — продажа (начинается на v), pente /pɑ̃t/ — склон (начинается на p). У всех носовой /ɑ̃t/, различает только начало слова.",
+        "audioSrc": "audio/wl-camping-tente.mp3"
       },
       {
         "id": "wc-camping-randonnee-ctx",

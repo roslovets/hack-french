@@ -69,7 +69,8 @@
         "audioText": "salé",
         "options": ["salé", "sale", "salle", "sel"],
         "correctIndex": 0,
-        "explanation": "Прозвучало salé /sa.le/ — «солёный»: два слога, с é на конце. Остальные звучат иначе: sale /sal/ — грязный и salle /sal/ — зал звучат одинаково (один слог), а sel /sɛl/ — соль. Ни одно из них не совпадает с salé."
+        "explanation": "Прозвучало salé /sa.le/ — «солёный»: два слога, с é на конце. Остальные звучат иначе: sale /sal/ — грязный и salle /sal/ — зал звучат одинаково (один слог), а sel /sɛl/ — соль. Ни одно из них не совпадает с salé.",
+        "audioSrc": "audio/wl-gouts-sale.mp3"
       },
       {
         "id": "wc-gouts-amer-ctx",
@@ -215,7 +216,8 @@
         "audioText": "goût",
         "options": ["goût", "goutte", "coût", "goûter"],
         "correctIndex": 0,
-        "explanation": "Прозвучало goût /ɡu/ — «вкус» (конечное -t немое). une goutte /ɡut/ — капля (тут -tt- читается), le coût /ku/ — стоимость, goûter /ɡu.te/ — пробовать на вкус. Все разные."
+        "explanation": "Прозвучало goût /ɡu/ — «вкус» (конечное -t немое). une goutte /ɡut/ — капля (тут -tt- читается), le coût /ku/ — стоимость, goûter /ɡu.te/ — пробовать на вкус. Все разные.",
+        "audioSrc": "audio/wl-gouts-gout.mp3"
       },
       {
         "id": "wc-gouts-saveur-ctx",

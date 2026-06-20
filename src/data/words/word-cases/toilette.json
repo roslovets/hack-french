@@ -41,7 +41,8 @@
         "audioText": "savon",
         "options": ["salon", "savant", "jambon", "savon"],
         "correctIndex": 3,
-        "explanation": "savon /sa.vɔ̃/ — мыло. Похоже звучат другие слова: salon /sa.lɔ̃/ — гостиная, savant /sa.vɑ̃/ — учёный, jambon /ʒɑ̃.bɔ̃/ — ветчина. Слушай согласные и носовой звук."
+        "explanation": "savon /sa.vɔ̃/ — мыло. Похоже звучат другие слова: salon /sa.lɔ̃/ — гостиная, savant /sa.vɑ̃/ — учёный, jambon /ʒɑ̃.bɔ̃/ — ветчина. Слушай согласные и носовой звук.",
+        "audioSrc": "audio/wl-toilette-savon.mp3"
       },
       {
         "id": "wc-toilette-savon-hint",
@@ -84,7 +85,8 @@
         "audioText": "douche",
         "options": ["bouche", "mouche", "touche", "douche"],
         "correctIndex": 3,
-        "explanation": "douche /duʃ/ — душ. Отличается только первым согласным от: bouche /buʃ/ — рот, mouche /muʃ/ — муха, touche /tuʃ/ — клавиша. Гласная одна и та же — слушай начало слова."
+        "explanation": "douche /duʃ/ — душ. Отличается только первым согласным от: bouche /buʃ/ — рот, mouche /muʃ/ — муха, touche /tuʃ/ — клавиша. Гласная одна и та же — слушай начало слова.",
+        "audioSrc": "audio/wl-toilette-douche.mp3"
       },
       {
         "id": "wc-toilette-serviette-ctx",

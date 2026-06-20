@@ -9,10 +9,22 @@
     "translationsEn": ["tent"],
     "semanticCore": "Палатка, в которой ночуют на природе: её ставят, под ней прячутся от дождя и спят.",
     "collocations": [
-      { "fr": "monter la tente", "ru": "поставить палатку" },
-      { "fr": "planter la tente", "ru": "разбить палатку" },
-      { "fr": "une tente de camping", "ru": "туристическая палатка" },
-      { "fr": "dormir sous la tente", "ru": "спать в палатке" }
+      {
+        "fr": "monter la tente",
+        "ru": "поставить палатку"
+      },
+      {
+        "fr": "planter la tente",
+        "ru": "разбить палатку"
+      },
+      {
+        "fr": "une tente de camping",
+        "ru": "туристическая палатка"
+      },
+      {
+        "fr": "dormir sous la tente",
+        "ru": "спать в палатке"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["camping", "abri"],
-    "caseIds": ["wc-camping"]
+    "caseIds": ["wc-camping"],
+    "audio": {
+      "isolated": "audio/wl-camping-tente.mp3"
+    }
   },
   {
     "id": "wl-camping-randonnee",
@@ -39,10 +54,22 @@
     "translationsEn": ["hike", "hiking"],
     "semanticCore": "Долгий пеший (или велосипедный) маршрут на природе ради удовольствия, обычно в горах или в лесу.",
     "collocations": [
-      { "fr": "faire une randonnée", "ru": "ходить в поход" },
-      { "fr": "partir en randonnée", "ru": "отправиться в поход" },
-      { "fr": "une randonnée en montagne", "ru": "поход в горах" },
-      { "fr": "un chemin de randonnée", "ru": "туристическая тропа" }
+      {
+        "fr": "faire une randonnée",
+        "ru": "ходить в поход"
+      },
+      {
+        "fr": "partir en randonnée",
+        "ru": "отправиться в поход"
+      },
+      {
+        "fr": "une randonnée en montagne",
+        "ru": "поход в горах"
+      },
+      {
+        "fr": "un chemin de randonnée",
+        "ru": "туристическая тропа"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["camping", "activite"],
-    "caseIds": ["wc-camping"]
+    "caseIds": ["wc-camping"],
+    "audio": {
+      "isolated": "audio/wl-camping-randonnee.mp3"
+    }
   },
   {
     "id": "wl-camping-boussole",
@@ -69,9 +99,18 @@
     "translationsEn": ["compass"],
     "semanticCore": "Прибор со стрелкой, показывающей на север, чтобы не заблудиться без карты и GPS.",
     "collocations": [
-      { "fr": "suivre la boussole", "ru": "идти по компасу" },
-      { "fr": "la boussole indique le nord", "ru": "компас показывает на север" },
-      { "fr": "perdre la boussole", "ru": "потерять голову, растеряться (идиома)" }
+      {
+        "fr": "suivre la boussole",
+        "ru": "идти по компасу"
+      },
+      {
+        "fr": "la boussole indique le nord",
+        "ru": "компас показывает на север"
+      },
+      {
+        "fr": "perdre la boussole",
+        "ru": "потерять голову, растеряться (идиома)"
+      }
     ],
     "contrastPairs": [
       {
@@ -86,7 +125,10 @@
     "frequencyRank": 850,
     "level": "A2",
     "tags": ["camping", "orientation"],
-    "caseIds": ["wc-camping"]
+    "caseIds": ["wc-camping"],
+    "audio": {
+      "isolated": "audio/wl-camping-boussole.mp3"
+    }
   },
   {
     "id": "wl-camping-gourde",
@@ -98,9 +140,18 @@
     "translationsEn": ["water bottle", "flask"],
     "semanticCore": "Походная многоразовая ёмкость для воды, которую носят с собой и наполняют перед дорогой.",
     "collocations": [
-      { "fr": "remplir sa gourde", "ru": "наполнить флягу" },
-      { "fr": "une gourde d'eau", "ru": "фляга с водой" },
-      { "fr": "boire à la gourde", "ru": "пить из фляги" }
+      {
+        "fr": "remplir sa gourde",
+        "ru": "наполнить флягу"
+      },
+      {
+        "fr": "une gourde d'eau",
+        "ru": "фляга с водой"
+      },
+      {
+        "fr": "boire à la gourde",
+        "ru": "пить из фляги"
+      }
     ],
     "contrastPairs": [
       {
@@ -115,7 +166,10 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["camping", "objet"],
-    "caseIds": ["wc-camping"]
+    "caseIds": ["wc-camping"],
+    "audio": {
+      "isolated": "audio/wl-camping-gourde.mp3"
+    }
   },
   {
     "id": "wl-camping-sac-couchage",
@@ -127,9 +181,18 @@
     "translationsEn": ["sleeping bag"],
     "semanticCore": "Утеплённый мешок, в котором спят в палатке: раскатывают на ночь, он держит тепло.",
     "collocations": [
-      { "fr": "dérouler son sac de couchage", "ru": "разложить спальный мешок" },
-      { "fr": "dormir dans un sac de couchage", "ru": "спать в спальном мешке" },
-      { "fr": "un sac de couchage chaud", "ru": "тёплый спальный мешок" }
+      {
+        "fr": "dérouler son sac de couchage",
+        "ru": "разложить спальный мешок"
+      },
+      {
+        "fr": "dormir dans un sac de couchage",
+        "ru": "спать в спальном мешке"
+      },
+      {
+        "fr": "un sac de couchage chaud",
+        "ru": "тёплый спальный мешок"
+      }
     ],
     "contrastPairs": [
       {
@@ -144,7 +207,10 @@
     "frequencyRank": 900,
     "level": "A2",
     "tags": ["camping", "objet"],
-    "caseIds": ["wc-camping"]
+    "caseIds": ["wc-camping"],
+    "audio": {
+      "isolated": "audio/wl-camping-sac-couchage.mp3"
+    }
   },
   {
     "id": "wl-camping-feu-camp",
@@ -156,9 +222,18 @@
     "translationsEn": ["campfire"],
     "semanticCore": "Костёр в лагере: его разжигают вечером, вокруг него греются, поют и общаются.",
     "collocations": [
-      { "fr": "allumer un feu de camp", "ru": "разжечь костёр" },
-      { "fr": "autour du feu de camp", "ru": "вокруг костра" },
-      { "fr": "éteindre le feu de camp", "ru": "потушить костёр" }
+      {
+        "fr": "allumer un feu de camp",
+        "ru": "разжечь костёр"
+      },
+      {
+        "fr": "autour du feu de camp",
+        "ru": "вокруг костра"
+      },
+      {
+        "fr": "éteindre le feu de camp",
+        "ru": "потушить костёр"
+      }
     ],
     "contrastPairs": [
       {
@@ -173,7 +248,10 @@
     "frequencyRank": 870,
     "level": "A2",
     "tags": ["camping", "feu"],
-    "caseIds": ["wc-camping"]
+    "caseIds": ["wc-camping"],
+    "audio": {
+      "isolated": "audio/wl-camping-feu-camp.mp3"
+    }
   },
   {
     "id": "wl-camping-hamac",
@@ -185,9 +263,18 @@
     "translationsEn": ["hammock"],
     "semanticCore": "Подвесная сетка или полотно между двумя опорами, в котором лежат и качаются, отдыхая на природе.",
     "collocations": [
-      { "fr": "accrocher un hamac", "ru": "повесить гамак" },
-      { "fr": "se balancer dans un hamac", "ru": "качаться в гамаке" },
-      { "fr": "une sieste dans le hamac", "ru": "дневной сон в гамаке" }
+      {
+        "fr": "accrocher un hamac",
+        "ru": "повесить гамак"
+      },
+      {
+        "fr": "se balancer dans un hamac",
+        "ru": "качаться в гамаке"
+      },
+      {
+        "fr": "une sieste dans le hamac",
+        "ru": "дневной сон в гамаке"
+      }
     ],
     "contrastPairs": [
       {
@@ -202,7 +289,10 @@
     "frequencyRank": 1100,
     "level": "A2",
     "tags": ["camping", "objet"],
-    "caseIds": ["wc-camping"]
+    "caseIds": ["wc-camping"],
+    "audio": {
+      "isolated": "audio/wl-camping-hamac.mp3"
+    }
   },
   {
     "id": "wl-camping-rechaud",
@@ -214,9 +304,18 @@
     "translationsEn": ["camping stove", "burner"],
     "semanticCore": "Небольшая переносная газовая горелка/плитка, на которой готовят и греют еду в походе.",
     "collocations": [
-      { "fr": "un réchaud à gaz", "ru": "газовая горелка" },
-      { "fr": "allumer le réchaud", "ru": "зажечь горелку" },
-      { "fr": "faire chauffer sur le réchaud", "ru": "греть на горелке" }
+      {
+        "fr": "un réchaud à gaz",
+        "ru": "газовая горелка"
+      },
+      {
+        "fr": "allumer le réchaud",
+        "ru": "зажечь горелку"
+      },
+      {
+        "fr": "faire chauffer sur le réchaud",
+        "ru": "греть на горелке"
+      }
     ],
     "contrastPairs": [
       {
@@ -231,6 +330,9 @@
     "frequencyRank": 950,
     "level": "A2",
     "tags": ["camping", "cuisine"],
-    "caseIds": ["wc-camping"]
+    "caseIds": ["wc-camping"],
+    "audio": {
+      "isolated": "audio/wl-camping-rechaud.mp3"
+    }
   }
 ]

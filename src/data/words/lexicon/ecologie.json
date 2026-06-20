@@ -9,10 +9,22 @@
     "translationsEn": ["pollution"],
     "semanticCore": "Загрязнение среды вредными веществами — воздуха, воды, почвы; то, с чем «борются».",
     "collocations": [
-      { "fr": "la pollution de l'air", "ru": "загрязнение воздуха" },
-      { "fr": "lutter contre la pollution", "ru": "бороться с загрязнением" },
-      { "fr": "la pollution sonore", "ru": "шумовое загрязнение" },
-      { "fr": "réduire la pollution", "ru": "сократить загрязнение" }
+      {
+        "fr": "la pollution de l'air",
+        "ru": "загрязнение воздуха"
+      },
+      {
+        "fr": "lutter contre la pollution",
+        "ru": "бороться с загрязнением"
+      },
+      {
+        "fr": "la pollution sonore",
+        "ru": "шумовое загрязнение"
+      },
+      {
+        "fr": "réduire la pollution",
+        "ru": "сократить загрязнение"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 1600,
     "level": "B1",
     "tags": ["ecologie", "environnement"],
-    "caseIds": ["wc-ecologie"]
+    "caseIds": ["wc-ecologie"],
+    "audio": {
+      "isolated": "audio/wl-ecologie-pollution.mp3"
+    }
   },
   {
     "id": "wl-ecologie-recyclage",
@@ -39,9 +54,18 @@
     "translationsEn": ["recycling"],
     "semanticCore": "Переработка отходов во вторсырьё, чтобы использовать их заново, а не выбрасывать.",
     "collocations": [
-      { "fr": "le recyclage des déchets", "ru": "переработка отходов" },
-      { "fr": "le recyclage du plastique", "ru": "переработка пластика" },
-      { "fr": "le tri et le recyclage", "ru": "сортировка и переработка" }
+      {
+        "fr": "le recyclage des déchets",
+        "ru": "переработка отходов"
+      },
+      {
+        "fr": "le recyclage du plastique",
+        "ru": "переработка пластика"
+      },
+      {
+        "fr": "le tri et le recyclage",
+        "ru": "сортировка и переработка"
+      }
     ],
     "contrastPairs": [
       {
@@ -56,7 +80,10 @@
     "frequencyRank": 2100,
     "level": "B1",
     "tags": ["ecologie", "dechets"],
-    "caseIds": ["wc-ecologie"]
+    "caseIds": ["wc-ecologie"],
+    "audio": {
+      "isolated": "audio/wl-ecologie-recyclage.mp3"
+    }
   },
   {
     "id": "wl-ecologie-dechet",
@@ -68,9 +95,18 @@
     "translationsEn": ["waste"],
     "semanticCore": "То, что выбрасывают за ненадобностью; чаще во множественном — les déchets (бытовой, промышленный, ядерный мусор).",
     "collocations": [
-      { "fr": "trier les déchets", "ru": "сортировать отходы" },
-      { "fr": "les déchets ménagers", "ru": "бытовые отходы" },
-      { "fr": "les déchets nucléaires", "ru": "ядерные отходы" }
+      {
+        "fr": "trier les déchets",
+        "ru": "сортировать отходы"
+      },
+      {
+        "fr": "les déchets ménagers",
+        "ru": "бытовые отходы"
+      },
+      {
+        "fr": "les déchets nucléaires",
+        "ru": "ядерные отходы"
+      }
     ],
     "contrastPairs": [
       {
@@ -85,7 +121,10 @@
     "frequencyRank": 1900,
     "level": "B1",
     "tags": ["ecologie", "dechets"],
-    "caseIds": ["wc-ecologie"]
+    "caseIds": ["wc-ecologie"],
+    "audio": {
+      "isolated": "audio/wl-ecologie-dechet.mp3"
+    }
   },
   {
     "id": "wl-ecologie-energie",
@@ -97,10 +136,22 @@
     "translationsEn": ["energy"],
     "semanticCore": "Энергия и как ресурс (электричество, топливо), и как личная бодрость, силы.",
     "collocations": [
-      { "fr": "une énergie renouvelable", "ru": "возобновляемая энергия" },
-      { "fr": "économiser l'énergie", "ru": "экономить энергию" },
-      { "fr": "les énergies fossiles", "ru": "ископаемые виды энергии" },
-      { "fr": "plein d'énergie", "ru": "полный энергии (о человеке)" }
+      {
+        "fr": "une énergie renouvelable",
+        "ru": "возобновляемая энергия"
+      },
+      {
+        "fr": "économiser l'énergie",
+        "ru": "экономить энергию"
+      },
+      {
+        "fr": "les énergies fossiles",
+        "ru": "ископаемые виды энергии"
+      },
+      {
+        "fr": "plein d'énergie",
+        "ru": "полный энергии (о человеке)"
+      }
     ],
     "contrastPairs": [
       {
@@ -115,7 +166,10 @@
     "frequencyRank": 900,
     "level": "B1",
     "tags": ["ecologie", "ressources"],
-    "caseIds": ["wc-ecologie"]
+    "caseIds": ["wc-ecologie"],
+    "audio": {
+      "isolated": "audio/wl-ecologie-energie.mp3"
+    }
   },
   {
     "id": "wl-ecologie-planete",
@@ -127,9 +181,18 @@
     "translationsEn": ["planet"],
     "semanticCore": "Планета как небесное тело и, с артиклем la planète, — наша Земля, которую «надо спасать».",
     "collocations": [
-      { "fr": "sauver la planète", "ru": "спасти планету" },
-      { "fr": "la planète Terre", "ru": "планета Земля" },
-      { "fr": "protéger la planète", "ru": "защищать планету" }
+      {
+        "fr": "sauver la planète",
+        "ru": "спасти планету"
+      },
+      {
+        "fr": "la planète Terre",
+        "ru": "планета Земля"
+      },
+      {
+        "fr": "protéger la planète",
+        "ru": "защищать планету"
+      }
     ],
     "contrastPairs": [
       {
@@ -144,7 +207,10 @@
     "frequencyRank": 1100,
     "level": "B1",
     "tags": ["ecologie", "nature"],
-    "caseIds": ["wc-ecologie"]
+    "caseIds": ["wc-ecologie"],
+    "audio": {
+      "isolated": "audio/wl-ecologie-planete.mp3"
+    }
   },
   {
     "id": "wl-ecologie-environnement",
@@ -156,9 +222,18 @@
     "translationsEn": ["environment"],
     "semanticCore": "Окружающая среда — природа вокруг нас как то, что загрязняют или защищают; ключевое слово темы.",
     "collocations": [
-      { "fr": "protéger l'environnement", "ru": "защищать окружающую среду" },
-      { "fr": "respectueux de l'environnement", "ru": "экологичный, бережный к среде" },
-      { "fr": "la protection de l'environnement", "ru": "охрана окружающей среды" }
+      {
+        "fr": "protéger l'environnement",
+        "ru": "защищать окружающую среду"
+      },
+      {
+        "fr": "respectueux de l'environnement",
+        "ru": "экологичный, бережный к среде"
+      },
+      {
+        "fr": "la protection de l'environnement",
+        "ru": "охрана окружающей среды"
+      }
     ],
     "contrastPairs": [
       {
@@ -173,7 +248,10 @@
     "frequencyRank": 800,
     "level": "B1",
     "tags": ["ecologie", "environnement"],
-    "caseIds": ["wc-ecologie"]
+    "caseIds": ["wc-ecologie"],
+    "audio": {
+      "isolated": "audio/wl-ecologie-environnement.mp3"
+    }
   },
   {
     "id": "wl-ecologie-proteger",
@@ -184,9 +262,18 @@
     "translationsEn": ["to protect"],
     "semanticCore": "Защищать, оберегать от вреда — среду, природу, людей; ключевой глагол «зелёного» действия.",
     "collocations": [
-      { "fr": "protéger l'environnement", "ru": "защищать окружающую среду" },
-      { "fr": "protéger la nature", "ru": "беречь природу" },
-      { "fr": "se protéger du soleil", "ru": "защищаться от солнца" }
+      {
+        "fr": "protéger l'environnement",
+        "ru": "защищать окружающую среду"
+      },
+      {
+        "fr": "protéger la nature",
+        "ru": "беречь природу"
+      },
+      {
+        "fr": "se protéger du soleil",
+        "ru": "защищаться от солнца"
+      }
     ],
     "contrastPairs": [
       {
@@ -201,7 +288,10 @@
     "frequencyRank": 1000,
     "level": "B1",
     "tags": ["ecologie", "action"],
-    "caseIds": ["wc-ecologie"]
+    "caseIds": ["wc-ecologie"],
+    "audio": {
+      "isolated": "audio/wl-ecologie-proteger.mp3"
+    }
   },
   {
     "id": "wl-ecologie-gaspillage",
@@ -213,9 +303,18 @@
     "translationsEn": ["waste", "wastefulness"],
     "semanticCore": "Бессмысленная трата ресурсов впустую — еды, воды, энергии; не «отходы», а сам факт транжирства.",
     "collocations": [
-      { "fr": "le gaspillage alimentaire", "ru": "пищевые потери, растрата еды" },
-      { "fr": "le gaspillage de l'eau", "ru": "расточительный расход воды" },
-      { "fr": "lutter contre le gaspillage", "ru": "бороться с расточительством" }
+      {
+        "fr": "le gaspillage alimentaire",
+        "ru": "пищевые потери, растрата еды"
+      },
+      {
+        "fr": "le gaspillage de l'eau",
+        "ru": "расточительный расход воды"
+      },
+      {
+        "fr": "lutter contre le gaspillage",
+        "ru": "бороться с расточительством"
+      }
     ],
     "contrastPairs": [
       {
@@ -230,6 +329,9 @@
     "frequencyRank": 2600,
     "level": "B1",
     "tags": ["ecologie", "ressources"],
-    "caseIds": ["wc-ecologie"]
+    "caseIds": ["wc-ecologie"],
+    "audio": {
+      "isolated": "audio/wl-ecologie-gaspillage.mp3"
+    }
   }
 ]

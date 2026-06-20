@@ -9,9 +9,18 @@
     "translationsEn": ["wing"],
     "semanticCore": "Крыло — то, чем птица машет, чтобы лететь; так же называют крыло самолёта и боковую часть здания.",
     "collocations": [
-      { "fr": "battre des ailes", "ru": "махать крыльями" },
-      { "fr": "l'aile de l'avion", "ru": "крыло самолёта" },
-      { "fr": "ouvrir les ailes", "ru": "раскрыть крылья" }
+      {
+        "fr": "battre des ailes",
+        "ru": "махать крыльями"
+      },
+      {
+        "fr": "l'aile de l'avion",
+        "ru": "крыло самолёта"
+      },
+      {
+        "fr": "ouvrir les ailes",
+        "ru": "раскрыть крылья"
+      }
     ],
     "contrastPairs": [
       {
@@ -26,7 +35,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["oiseaux", "corps"],
-    "caseIds": ["wc-oiseaux"]
+    "caseIds": ["wc-oiseaux"],
+    "audio": {
+      "isolated": "audio/wl-oiseaux-aile.mp3"
+    }
   },
   {
     "id": "wl-oiseaux-plume",
@@ -38,9 +50,18 @@
     "translationsEn": ["feather"],
     "semanticCore": "Перо птицы; за лёгкость стало символом чего-то невесомого, а раньше так называли и перо для письма.",
     "collocations": [
-      { "fr": "une plume blanche", "ru": "белое перо" },
-      { "fr": "léger comme une plume", "ru": "лёгкий как пёрышко" },
-      { "fr": "perdre ses plumes", "ru": "терять перья (линять)" }
+      {
+        "fr": "une plume blanche",
+        "ru": "белое перо"
+      },
+      {
+        "fr": "léger comme une plume",
+        "ru": "лёгкий как пёрышко"
+      },
+      {
+        "fr": "perdre ses plumes",
+        "ru": "терять перья (линять)"
+      }
     ],
     "contrastPairs": [
       {
@@ -55,7 +76,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["oiseaux", "corps"],
-    "caseIds": ["wc-oiseaux"]
+    "caseIds": ["wc-oiseaux"],
+    "audio": {
+      "isolated": "audio/wl-oiseaux-plume.mp3"
+    }
   },
   {
     "id": "wl-oiseaux-nid",
@@ -67,9 +91,18 @@
     "translationsEn": ["nest"],
     "semanticCore": "Гнездо — дом, который птица вьёт из веточек, чтобы отложить яйца и вырастить птенцов.",
     "collocations": [
-      { "fr": "faire son nid", "ru": "вить гнездо" },
-      { "fr": "un nid d'oiseau", "ru": "птичье гнездо" },
-      { "fr": "un nid de guêpes", "ru": "осиное гнездо" }
+      {
+        "fr": "faire son nid",
+        "ru": "вить гнездо"
+      },
+      {
+        "fr": "un nid d'oiseau",
+        "ru": "птичье гнездо"
+      },
+      {
+        "fr": "un nid de guêpes",
+        "ru": "осиное гнездо"
+      }
     ],
     "contrastPairs": [
       {
@@ -84,7 +117,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["oiseaux", "nature"],
-    "caseIds": ["wc-oiseaux"]
+    "caseIds": ["wc-oiseaux"],
+    "audio": {
+      "isolated": "audio/wl-oiseaux-nid.mp3"
+    }
   },
   {
     "id": "wl-oiseaux-bec",
@@ -96,9 +132,18 @@
     "translationsEn": ["beak"],
     "semanticCore": "Клюв — твёрдый «рот» птицы, которым она клюёт корм; конечная c здесь читается /bɛk/.",
     "collocations": [
-      { "fr": "un coup de bec", "ru": "удар клювом" },
-      { "fr": "le bec jaune", "ru": "жёлтый клюв" },
-      { "fr": "ouvrir le bec", "ru": "раскрыть клюв" }
+      {
+        "fr": "un coup de bec",
+        "ru": "удар клювом"
+      },
+      {
+        "fr": "le bec jaune",
+        "ru": "жёлтый клюв"
+      },
+      {
+        "fr": "ouvrir le bec",
+        "ru": "раскрыть клюв"
+      }
     ],
     "contrastPairs": [
       {
@@ -113,7 +158,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["oiseaux", "corps"],
-    "caseIds": ["wc-oiseaux"]
+    "caseIds": ["wc-oiseaux"],
+    "audio": {
+      "isolated": "audio/wl-oiseaux-bec.mp3"
+    }
   },
   {
     "id": "wl-oiseaux-moineau",
@@ -125,9 +173,18 @@
     "translationsEn": ["sparrow"],
     "semanticCore": "Воробей — маленькая серо-коричневая городская птичка; самая привычная пташка на улице. Множественное — des moineaux.",
     "collocations": [
-      { "fr": "un petit moineau", "ru": "маленький воробей" },
-      { "fr": "des moineaux dans la cour", "ru": "воробьи во дворе" },
-      { "fr": "manger comme un moineau", "ru": "есть как воробушек (очень мало)" }
+      {
+        "fr": "un petit moineau",
+        "ru": "маленький воробей"
+      },
+      {
+        "fr": "des moineaux dans la cour",
+        "ru": "воробьи во дворе"
+      },
+      {
+        "fr": "manger comme un moineau",
+        "ru": "есть как воробушек (очень мало)"
+      }
     ],
     "contrastPairs": [
       {
@@ -142,7 +199,10 @@
     "frequencyRank": 850,
     "level": "A2",
     "tags": ["oiseaux", "ville"],
-    "caseIds": ["wc-oiseaux"]
+    "caseIds": ["wc-oiseaux"],
+    "audio": {
+      "isolated": "audio/wl-oiseaux-moineau.mp3"
+    }
   },
   {
     "id": "wl-oiseaux-pigeon",
@@ -154,9 +214,18 @@
     "translationsEn": ["pigeon"],
     "semanticCore": "Голубь — крупная городская птица, которую видишь на площадях; в разговоре pigeon ещё значит «простак, которого надули».",
     "collocations": [
-      { "fr": "un pigeon voyageur", "ru": "почтовый голубь" },
-      { "fr": "nourrir les pigeons", "ru": "кормить голубей" },
-      { "fr": "les pigeons sur la place", "ru": "голуби на площади" }
+      {
+        "fr": "un pigeon voyageur",
+        "ru": "почтовый голубь"
+      },
+      {
+        "fr": "nourrir les pigeons",
+        "ru": "кормить голубей"
+      },
+      {
+        "fr": "les pigeons sur la place",
+        "ru": "голуби на площади"
+      }
     ],
     "contrastPairs": [
       {
@@ -171,7 +240,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["oiseaux", "ville"],
-    "caseIds": ["wc-oiseaux"]
+    "caseIds": ["wc-oiseaux"],
+    "audio": {
+      "isolated": "audio/wl-oiseaux-pigeon.mp3"
+    }
   },
   {
     "id": "wl-oiseaux-hibou",
@@ -183,9 +255,18 @@
     "translationsEn": ["owl"],
     "semanticCore": "Сова (с «ушками» из перьев) — ночная птица, которая ухает в темноте; h здесь придыхательное, поэтому le hibou, а не l'hibou.",
     "collocations": [
-      { "fr": "le hibou hulule", "ru": "сова ухает" },
-      { "fr": "un hibou de nuit", "ru": "ночная сова" },
-      { "fr": "les yeux ronds d'un hibou", "ru": "круглые глаза совы" }
+      {
+        "fr": "le hibou hulule",
+        "ru": "сова ухает"
+      },
+      {
+        "fr": "un hibou de nuit",
+        "ru": "ночная сова"
+      },
+      {
+        "fr": "les yeux ronds d'un hibou",
+        "ru": "круглые глаза совы"
+      }
     ],
     "contrastPairs": [
       {
@@ -200,7 +281,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["oiseaux", "nature"],
-    "caseIds": ["wc-oiseaux"]
+    "caseIds": ["wc-oiseaux"],
+    "audio": {
+      "isolated": "audio/wl-oiseaux-hibou.mp3"
+    }
   },
   {
     "id": "wl-oiseaux-corbeau",
@@ -212,9 +296,18 @@
     "translationsEn": ["crow", "raven"],
     "semanticCore": "Ворон — крупная чёрная птица с хриплым криком; знаком французам по басне Лафонтена «Le Corbeau et le Renard». Множественное — des corbeaux.",
     "collocations": [
-      { "fr": "un corbeau noir", "ru": "чёрный ворон" },
-      { "fr": "le corbeau croasse", "ru": "ворон каркает" },
-      { "fr": "noir comme un corbeau", "ru": "чёрный как ворон" }
+      {
+        "fr": "un corbeau noir",
+        "ru": "чёрный ворон"
+      },
+      {
+        "fr": "le corbeau croasse",
+        "ru": "ворон каркает"
+      },
+      {
+        "fr": "noir comme un corbeau",
+        "ru": "чёрный как ворон"
+      }
     ],
     "contrastPairs": [
       {
@@ -229,6 +322,9 @@
     "frequencyRank": 800,
     "level": "A2",
     "tags": ["oiseaux", "nature"],
-    "caseIds": ["wc-oiseaux"]
+    "caseIds": ["wc-oiseaux"],
+    "audio": {
+      "isolated": "audio/wl-oiseaux-corbeau.mp3"
+    }
   }
 ]

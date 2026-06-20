@@ -9,10 +9,22 @@
     "translationsEn": ["moon"],
     "semanticCore": "Луна как небесное тело и в устойчивых образах: «pleine lune» (полнолуние), «être dans la lune» (витать в облаках).",
     "collocations": [
-      { "fr": "la pleine lune", "ru": "полнолуние" },
-      { "fr": "un clair de lune", "ru": "лунный свет" },
-      { "fr": "être dans la lune", "ru": "витать в облаках, замечтаться" },
-      { "fr": "aller sur la Lune", "ru": "полететь на Луну" }
+      {
+        "fr": "la pleine lune",
+        "ru": "полнолуние"
+      },
+      {
+        "fr": "un clair de lune",
+        "ru": "лунный свет"
+      },
+      {
+        "fr": "être dans la lune",
+        "ru": "витать в облаках, замечтаться"
+      },
+      {
+        "fr": "aller sur la Lune",
+        "ru": "полететь на Луну"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 620,
     "level": "B1",
     "tags": ["espace", "nature", "astre"],
-    "caseIds": ["wc-espace"]
+    "caseIds": ["wc-espace"],
+    "audio": {
+      "isolated": "audio/wl-espace-lune.mp3"
+    }
   },
   {
     "id": "wl-espace-fusee",
@@ -39,10 +54,22 @@
     "translationsEn": ["rocket"],
     "semanticCore": "Ракета как космический аппарат на реактивной тяге; также сигнальная или праздничная ракета (fusée éclairante).",
     "collocations": [
-      { "fr": "lancer une fusée", "ru": "запустить ракету" },
-      { "fr": "une fusée spatiale", "ru": "космическая ракета" },
-      { "fr": "un étage de fusée", "ru": "ступень ракеты" },
-      { "fr": "une fusée de détresse", "ru": "сигнальная ракета (бедствия)" }
+      {
+        "fr": "lancer une fusée",
+        "ru": "запустить ракету"
+      },
+      {
+        "fr": "une fusée spatiale",
+        "ru": "космическая ракета"
+      },
+      {
+        "fr": "un étage de fusée",
+        "ru": "ступень ракеты"
+      },
+      {
+        "fr": "une fusée de détresse",
+        "ru": "сигнальная ракета (бедствия)"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 840,
     "level": "B1",
     "tags": ["espace", "technique", "engin"],
-    "caseIds": ["wc-espace"]
+    "caseIds": ["wc-espace"],
+    "audio": {
+      "isolated": "audio/wl-espace-fusee.mp3"
+    }
   },
   {
     "id": "wl-espace-espace",
@@ -69,10 +99,22 @@
     "translationsEn": ["space"],
     "semanticCore": "И космическое пространство (l'espace), и физическое место/простор вокруг нас (il y a de l'espace, un espace vert).",
     "collocations": [
-      { "fr": "l'espace intersidéral", "ru": "космическое (межзвёздное) пространство" },
-      { "fr": "la conquête de l'espace", "ru": "освоение космоса" },
-      { "fr": "manquer d'espace", "ru": "испытывать нехватку места" },
-      { "fr": "un espace vert", "ru": "зелёная зона, сквер" }
+      {
+        "fr": "l'espace intersidéral",
+        "ru": "космическое (межзвёздное) пространство"
+      },
+      {
+        "fr": "la conquête de l'espace",
+        "ru": "освоение космоса"
+      },
+      {
+        "fr": "manquer d'espace",
+        "ru": "испытывать нехватку места"
+      },
+      {
+        "fr": "un espace vert",
+        "ru": "зелёная зона, сквер"
+      }
     ],
     "contrastPairs": [
       {
@@ -87,7 +129,10 @@
     "frequencyRank": 380,
     "level": "B1",
     "tags": ["espace", "abstrait", "lieu"],
-    "caseIds": ["wc-espace"]
+    "caseIds": ["wc-espace"],
+    "audio": {
+      "isolated": "audio/wl-espace-espace.mp3"
+    }
   },
   {
     "id": "wl-espace-galaxie",
@@ -99,9 +144,18 @@
     "translationsEn": ["galaxy"],
     "semanticCore": "Галактика — огромное скопление звёзд; наша называется la Voie lactée (Млечный Путь).",
     "collocations": [
-      { "fr": "une galaxie lointaine", "ru": "далёкая галактика" },
-      { "fr": "notre galaxie", "ru": "наша галактика" },
-      { "fr": "des milliards de galaxies", "ru": "миллиарды галактик" }
+      {
+        "fr": "une galaxie lointaine",
+        "ru": "далёкая галактика"
+      },
+      {
+        "fr": "notre galaxie",
+        "ru": "наша галактика"
+      },
+      {
+        "fr": "des milliards de galaxies",
+        "ru": "миллиарды галактик"
+      }
     ],
     "contrastPairs": [
       {
@@ -116,7 +170,10 @@
     "frequencyRank": 1500,
     "level": "B1",
     "tags": ["espace", "astronomie"],
-    "caseIds": ["wc-espace"]
+    "caseIds": ["wc-espace"],
+    "audio": {
+      "isolated": "audio/wl-espace-galaxie.mp3"
+    }
   },
   {
     "id": "wl-espace-astronaute",
@@ -128,9 +185,18 @@
     "translationsEn": ["astronaut"],
     "semanticCore": "Человек, летающий в космос; слово одной формы для мужчины и женщины (un / une astronaute).",
     "collocations": [
-      { "fr": "devenir astronaute", "ru": "стать космонавтом" },
-      { "fr": "un astronaute de la NASA", "ru": "астронавт НАСА" },
-      { "fr": "l'entraînement des astronautes", "ru": "подготовка космонавтов" }
+      {
+        "fr": "devenir astronaute",
+        "ru": "стать космонавтом"
+      },
+      {
+        "fr": "un astronaute de la NASA",
+        "ru": "астронавт НАСА"
+      },
+      {
+        "fr": "l'entraînement des astronautes",
+        "ru": "подготовка космонавтов"
+      }
     ],
     "contrastPairs": [
       {
@@ -145,7 +211,10 @@
     "frequencyRank": 1300,
     "level": "B1",
     "tags": ["espace", "metier", "personne"],
-    "caseIds": ["wc-espace"]
+    "caseIds": ["wc-espace"],
+    "audio": {
+      "isolated": "audio/wl-espace-astronaute.mp3"
+    }
   },
   {
     "id": "wl-espace-univers",
@@ -157,10 +226,22 @@
     "translationsEn": ["universe"],
     "semanticCore": "Вселенная как всё сущее; в переносном смысле — чей-то «мир», вселенная увлечения или бренда.",
     "collocations": [
-      { "fr": "l'origine de l'univers", "ru": "происхождение Вселенной" },
-      { "fr": "un univers infini", "ru": "бесконечная Вселенная" },
-      { "fr": "tout l'univers", "ru": "вся Вселенная" },
-      { "fr": "son propre univers", "ru": "свой собственный мир" }
+      {
+        "fr": "l'origine de l'univers",
+        "ru": "происхождение Вселенной"
+      },
+      {
+        "fr": "un univers infini",
+        "ru": "бесконечная Вселенная"
+      },
+      {
+        "fr": "tout l'univers",
+        "ru": "вся Вселенная"
+      },
+      {
+        "fr": "son propre univers",
+        "ru": "свой собственный мир"
+      }
     ],
     "contrastPairs": [
       {
@@ -175,7 +256,10 @@
     "frequencyRank": 900,
     "level": "B1",
     "tags": ["espace", "abstrait"],
-    "caseIds": ["wc-espace"]
+    "caseIds": ["wc-espace"],
+    "audio": {
+      "isolated": "audio/wl-espace-univers.mp3"
+    }
   },
   {
     "id": "wl-espace-atterrir",
@@ -186,10 +270,22 @@
     "translationsEn": ["to land"],
     "semanticCore": "Опускаться на землю (terre) после полёта; в разговорном смысле — «оказаться где-то» неожиданно. Спрягается с avoir: l'avion a atterri.",
     "collocations": [
-      { "fr": "l'avion atterrit", "ru": "самолёт приземляется" },
-      { "fr": "atterrir en douceur", "ru": "мягко приземлиться" },
-      { "fr": "atterrir sur la Lune", "ru": "прилуниться, сесть на Луну" },
-      { "fr": "être sur le point d'atterrir", "ru": "вот-вот приземлиться" }
+      {
+        "fr": "l'avion atterrit",
+        "ru": "самолёт приземляется"
+      },
+      {
+        "fr": "atterrir en douceur",
+        "ru": "мягко приземлиться"
+      },
+      {
+        "fr": "atterrir sur la Lune",
+        "ru": "прилуниться, сесть на Луну"
+      },
+      {
+        "fr": "être sur le point d'atterrir",
+        "ru": "вот-вот приземлиться"
+      }
     ],
     "contrastPairs": [
       {
@@ -204,7 +300,10 @@
     "frequencyRank": 1100,
     "level": "B1",
     "tags": ["espace", "verbe-action", "mouvement"],
-    "caseIds": ["wc-espace"]
+    "caseIds": ["wc-espace"],
+    "audio": {
+      "isolated": "audio/wl-espace-atterrir.mp3"
+    }
   },
   {
     "id": "wl-espace-comete",
@@ -216,9 +315,18 @@
     "translationsEn": ["comet"],
     "semanticCore": "Комета — ледяное тело с длинным светящимся хвостом, пролетающее у Солнца.",
     "collocations": [
-      { "fr": "la queue d'une comète", "ru": "хвост кометы" },
-      { "fr": "observer une comète", "ru": "наблюдать комету" },
-      { "fr": "la comète de Halley", "ru": "комета Галлея" }
+      {
+        "fr": "la queue d'une comète",
+        "ru": "хвост кометы"
+      },
+      {
+        "fr": "observer une comète",
+        "ru": "наблюдать комету"
+      },
+      {
+        "fr": "la comète de Halley",
+        "ru": "комета Галлея"
+      }
     ],
     "contrastPairs": [
       {
@@ -233,6 +341,9 @@
     "frequencyRank": 1700,
     "level": "B1",
     "tags": ["espace", "astronomie", "astre"],
-    "caseIds": ["wc-espace"]
+    "caseIds": ["wc-espace"],
+    "audio": {
+      "isolated": "audio/wl-espace-comete.mp3"
+    }
   }
 ]

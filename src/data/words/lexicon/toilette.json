@@ -9,10 +9,22 @@
     "translationsEn": ["soap"],
     "semanticCore": "Мыло, которым моют руки и тело — кусок или жидкое; неисчисляемое, обычно с частичным артиклем: du savon.",
     "collocations": [
-      { "fr": "se laver les mains au savon", "ru": "мыть руки с мылом" },
-      { "fr": "un savon liquide", "ru": "жидкое мыло" },
-      { "fr": "un pain de savon", "ru": "кусок (брусок) мыла" },
-      { "fr": "du savon de Marseille", "ru": "марсельское мыло" }
+      {
+        "fr": "se laver les mains au savon",
+        "ru": "мыть руки с мылом"
+      },
+      {
+        "fr": "un savon liquide",
+        "ru": "жидкое мыло"
+      },
+      {
+        "fr": "un pain de savon",
+        "ru": "кусок (брусок) мыла"
+      },
+      {
+        "fr": "du savon de Marseille",
+        "ru": "марсельское мыло"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 540,
     "level": "A1",
     "tags": ["toilette", "hygiene"],
-    "caseIds": ["wc-toilette"]
+    "caseIds": ["wc-toilette"],
+    "audio": {
+      "isolated": "audio/wl-toilette-savon.mp3"
+    }
   },
   {
     "id": "wl-toilette-douche",
@@ -39,10 +54,22 @@
     "translationsEn": ["shower"],
     "semanticCore": "Душ как действие («принять душ») и как место/устройство, где моются стоя.",
     "collocations": [
-      { "fr": "prendre une douche", "ru": "принять душ" },
-      { "fr": "sous la douche", "ru": "под душем / в душе" },
-      { "fr": "un gel douche", "ru": "гель для душа" },
-      { "fr": "une douche froide", "ru": "холодный душ" }
+      {
+        "fr": "prendre une douche",
+        "ru": "принять душ"
+      },
+      {
+        "fr": "sous la douche",
+        "ru": "под душем / в душе"
+      },
+      {
+        "fr": "un gel douche",
+        "ru": "гель для душа"
+      },
+      {
+        "fr": "une douche froide",
+        "ru": "холодный душ"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 600,
     "level": "A1",
     "tags": ["toilette", "hygiene"],
-    "caseIds": ["wc-toilette"]
+    "caseIds": ["wc-toilette"],
+    "audio": {
+      "isolated": "audio/wl-toilette-douche.mp3"
+    }
   },
   {
     "id": "wl-toilette-serviette",
@@ -69,10 +99,22 @@
     "translationsEn": ["towel", "napkin", "briefcase"],
     "semanticCore": "Одно слово для разного: банное полотенце, тканевая салфетка за столом и портфель — смысл подсказывает контекст.",
     "collocations": [
-      { "fr": "une serviette de bain", "ru": "банное полотенце" },
-      { "fr": "une serviette de toilette", "ru": "полотенце (для умывания)" },
-      { "fr": "se sécher avec une serviette", "ru": "вытираться полотенцем" },
-      { "fr": "une serviette en papier", "ru": "бумажная салфетка" }
+      {
+        "fr": "une serviette de bain",
+        "ru": "банное полотенце"
+      },
+      {
+        "fr": "une serviette de toilette",
+        "ru": "полотенце (для умывания)"
+      },
+      {
+        "fr": "se sécher avec une serviette",
+        "ru": "вытираться полотенцем"
+      },
+      {
+        "fr": "une serviette en papier",
+        "ru": "бумажная салфетка"
+      }
     ],
     "contrastPairs": [
       {
@@ -87,7 +129,10 @@
     "frequencyRank": 720,
     "level": "A1",
     "tags": ["toilette", "hygiene"],
-    "caseIds": ["wc-toilette"]
+    "caseIds": ["wc-toilette"],
+    "audio": {
+      "isolated": "audio/wl-toilette-serviette.mp3"
+    }
   },
   {
     "id": "wl-toilette-brosse",
@@ -99,10 +144,22 @@
     "translationsEn": ["brush"],
     "semanticCore": "Щётка вообще; конкретную называют через «à»: à dents, à cheveux — то есть «для зубов», «для волос».",
     "collocations": [
-      { "fr": "une brosse à dents", "ru": "зубная щётка" },
-      { "fr": "une brosse à cheveux", "ru": "щётка для волос" },
-      { "fr": "se brosser les dents", "ru": "чистить зубы" },
-      { "fr": "se brosser les cheveux", "ru": "расчёсывать волосы (щёткой)" }
+      {
+        "fr": "une brosse à dents",
+        "ru": "зубная щётка"
+      },
+      {
+        "fr": "une brosse à cheveux",
+        "ru": "щётка для волос"
+      },
+      {
+        "fr": "se brosser les dents",
+        "ru": "чистить зубы"
+      },
+      {
+        "fr": "se brosser les cheveux",
+        "ru": "расчёсывать волосы (щёткой)"
+      }
     ],
     "contrastPairs": [
       {
@@ -117,7 +174,10 @@
     "frequencyRank": 680,
     "level": "A1",
     "tags": ["toilette", "hygiene"],
-    "caseIds": ["wc-toilette"]
+    "caseIds": ["wc-toilette"],
+    "audio": {
+      "isolated": "audio/wl-toilette-brosse.mp3"
+    }
   },
   {
     "id": "wl-toilette-dentifrice",
@@ -129,9 +189,18 @@
     "translationsEn": ["toothpaste"],
     "semanticCore": "Зубная паста; внутри спрятано dent (зуб) — средство, которым чистят зубы.",
     "collocations": [
-      { "fr": "un tube de dentifrice", "ru": "тюбик зубной пасты" },
-      { "fr": "mettre du dentifrice sur la brosse", "ru": "выдавить пасту на щётку" },
-      { "fr": "un dentifrice à la menthe", "ru": "зубная паста с мятой" }
+      {
+        "fr": "un tube de dentifrice",
+        "ru": "тюбик зубной пасты"
+      },
+      {
+        "fr": "mettre du dentifrice sur la brosse",
+        "ru": "выдавить пасту на щётку"
+      },
+      {
+        "fr": "un dentifrice à la menthe",
+        "ru": "зубная паста с мятой"
+      }
     ],
     "contrastPairs": [
       {
@@ -146,7 +215,10 @@
     "frequencyRank": 900,
     "level": "A1",
     "tags": ["toilette", "hygiene"],
-    "caseIds": ["wc-toilette"]
+    "caseIds": ["wc-toilette"],
+    "audio": {
+      "isolated": "audio/wl-toilette-dentifrice.mp3"
+    }
   },
   {
     "id": "wl-toilette-shampooing",
@@ -158,9 +230,18 @@
     "translationsEn": ["shampoo"],
     "semanticCore": "Шампунь для мытья волос; слово пришло из английского, но пишется и читается по-французски.",
     "collocations": [
-      { "fr": "se faire un shampooing", "ru": "помыть голову (шампунем)" },
-      { "fr": "un shampooing doux", "ru": "мягкий шампунь" },
-      { "fr": "une bouteille de shampooing", "ru": "бутылка шампуня" }
+      {
+        "fr": "se faire un shampooing",
+        "ru": "помыть голову (шампунем)"
+      },
+      {
+        "fr": "un shampooing doux",
+        "ru": "мягкий шампунь"
+      },
+      {
+        "fr": "une bouteille de shampooing",
+        "ru": "бутылка шампуня"
+      }
     ],
     "contrastPairs": [
       {
@@ -175,7 +256,10 @@
     "frequencyRank": 950,
     "level": "A1",
     "tags": ["toilette", "hygiene"],
-    "caseIds": ["wc-toilette"]
+    "caseIds": ["wc-toilette"],
+    "audio": {
+      "isolated": "audio/wl-toilette-shampooing.mp3"
+    }
   },
   {
     "id": "wl-toilette-peigne",
@@ -187,9 +271,18 @@
     "translationsEn": ["comb"],
     "semanticCore": "Расчёска с зубьями (мужской род — un peigne); от неё глагол se peigner — причёсываться.",
     "collocations": [
-      { "fr": "se peigner les cheveux", "ru": "причёсываться (расчёской)" },
-      { "fr": "un coup de peigne", "ru": "пара движений расчёской / быстро причесаться" },
-      { "fr": "passer le peigne dans les cheveux", "ru": "провести расчёской по волосам" }
+      {
+        "fr": "se peigner les cheveux",
+        "ru": "причёсываться (расчёской)"
+      },
+      {
+        "fr": "un coup de peigne",
+        "ru": "пара движений расчёской / быстро причесаться"
+      },
+      {
+        "fr": "passer le peigne dans les cheveux",
+        "ru": "провести расчёской по волосам"
+      }
     ],
     "contrastPairs": [
       {
@@ -204,7 +297,10 @@
     "frequencyRank": 1100,
     "level": "A1",
     "tags": ["toilette", "hygiene"],
-    "caseIds": ["wc-toilette"]
+    "caseIds": ["wc-toilette"],
+    "audio": {
+      "isolated": "audio/wl-toilette-peigne.mp3"
+    }
   },
   {
     "id": "wl-toilette-laver",
@@ -215,10 +311,22 @@
     "translationsEn": ["to wash oneself", "to wash up"],
     "semanticCore": "Мыть себя: возвратное se laver (мыться), либо se laver + часть тела (les mains, les dents, les cheveux).",
     "collocations": [
-      { "fr": "se laver les mains", "ru": "мыть руки" },
-      { "fr": "se laver les dents", "ru": "чистить зубы" },
-      { "fr": "se laver les cheveux", "ru": "мыть голову (волосы)" },
-      { "fr": "se laver à l'eau froide", "ru": "мыться холодной водой" }
+      {
+        "fr": "se laver les mains",
+        "ru": "мыть руки"
+      },
+      {
+        "fr": "se laver les dents",
+        "ru": "чистить зубы"
+      },
+      {
+        "fr": "se laver les cheveux",
+        "ru": "мыть голову (волосы)"
+      },
+      {
+        "fr": "se laver à l'eau froide",
+        "ru": "мыться холодной водой"
+      }
     ],
     "contrastPairs": [
       {
@@ -233,6 +341,9 @@
     "frequencyRank": 380,
     "level": "A1",
     "tags": ["toilette", "hygiene"],
-    "caseIds": ["wc-toilette"]
+    "caseIds": ["wc-toilette"],
+    "audio": {
+      "isolated": "audio/wl-toilette-laver.mp3"
+    }
   }
 ]

@@ -68,7 +68,8 @@
         "audioText": "roue",
         "options": ["roue", "rue", "route", "loup"],
         "correctIndex": 0,
-        "explanation": "Прозвучало roue /ʁu/ — колесо. Похожие, но разные: rue /ʁy/ — улица (острое «ю»), route /ʁut/ — дорога (с конечным t), loup /lu/ — волк (другой первый согласный)."
+        "explanation": "Прозвучало roue /ʁu/ — колесо. Похожие, но разные: rue /ʁy/ — улица (острое «ю»), route /ʁut/ — дорога (с конечным t), loup /lu/ — волк (другой первый согласный).",
+        "audioSrc": "audio/wl-voiture-roue.mp3"
       },
       {
         "id": "wc-voiture-moteur-bridge",
@@ -176,7 +177,8 @@
         "audioText": "frein",
         "options": ["frein", "train", "pain", "frais"],
         "correctIndex": 0,
-        "explanation": "Прозвучало frein /fʁɛ̃/ — тормоз. Похожие: train /tʁɛ̃/ — поезд, pain /pɛ̃/ — хлеб (носовые), frais /fʁɛ/ — свежий (без носового на конце)."
+        "explanation": "Прозвучало frein /fʁɛ̃/ — тормоз. Похожие: train /tʁɛ̃/ — поезд, pain /pɛ̃/ — хлеб (носовые), frais /fʁɛ/ — свежий (без носового на конце).",
+        "audioSrc": "audio/wl-voiture-frein.mp3"
       },
       {
         "id": "wc-voiture-permis-ctx",

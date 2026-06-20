@@ -41,7 +41,8 @@
         "audioText": "mouche",
         "options": ["bouche", "douche", "mouche", "touche"],
         "correctIndex": 2,
-        "explanation": "mouche /muʃ/ — муха. Похожие настоящие слова: bouche /buʃ/ — рот, douche /duʃ/ — душ, touche /tuʃ/ — клавиша. Различай по первому согласному."
+        "explanation": "mouche /muʃ/ — муха. Похожие настоящие слова: bouche /buʃ/ — рот, douche /duʃ/ — душ, touche /tuʃ/ — клавиша. Различай по первому согласному.",
+        "audioSrc": "audio/wl-insectes-mouche.mp3"
       },
       {
         "id": "wc-insectes-fourmi-ctx",
