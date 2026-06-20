@@ -1,0 +1,305 @@
+[
+  {
+    "id": "wc-desserts",
+    "title": "Десерты",
+    "theme": "desserts",
+    "level": "A2",
+    "wordIds": [
+      "wl-desserts-macaron",
+      "wl-desserts-mousse",
+      "wl-desserts-crepe",
+      "wl-desserts-beignet",
+      "wl-desserts-profiterole",
+      "wl-desserts-sorbet",
+      "wl-desserts-millefeuille",
+      "wl-desserts-flan"
+    ],
+    "steps": [
+      {
+        "id": "wc-desserts-macaron-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-desserts-macaron",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский почти подсказывает слово. Что значит macaron?",
+        "bridge": "Англ. «macaron» — то самое разноцветное миндальное пирожное-безе; во французском оно пишется так же, читается /ma.ka.ʁɔ̃/ с носовым на конце.",
+        "options": [
+          "миндальное пирожное (две половинки безе с кремом)",
+          "кокосовое печенье",
+          "макароны (паста)",
+          "шоколадный мусс"
+        ],
+        "correctIndex": 0,
+        "explanation": "macaron (m) — миндальное пирожное из двух половинок безе с начинкой. Осторожно: англ. «macaroon» — это кокосовое печенье, а «macaroni» — паста."
+      },
+      {
+        "id": "wc-desserts-macaron-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-desserts-macaron",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "macaron",
+        "options": ["macaron", "marron", "macaroni", "maçon"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало macaron /ma.ka.ʁɔ̃/ — пирожное. Похожие, но другие слова: marron /ma.ʁɔ̃/ (каштан), macaroni (паста), maçon /ma.sɔ̃/ (каменщик)."
+      },
+      {
+        "id": "wc-desserts-mousse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-desserts-mousse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит как десерт?",
+        "contexts": [
+          "Pour le dessert, je prends une mousse au chocolat.",
+          "Cette mousse est très légère et aérienne.",
+          "Il a préparé une mousse aux fruits rouges."
+        ],
+        "options": ["воздушный взбитый десерт (мусс)", "плотный торт", "фруктовый лёд", "блинчик"],
+        "correctIndex": 0,
+        "explanation": "mousse (f) — мусс, воздушный взбитый десерт, классически «au chocolat». То же слово значит «пена» и «мох», но в десертах — это мусс."
+      },
+      {
+        "id": "wc-desserts-mousse-sort",
+        "kind": "sort",
+        "wordId": "wl-desserts-mousse",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом mousse звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une mousse au chocolat",
+            "basket": "ok"
+          },
+          {
+            "text": "une mousse légère",
+            "basket": "ok"
+          },
+          {
+            "text": "préparer une mousse",
+            "basket": "ok"
+          },
+          {
+            "text": "une mousse croustillante",
+            "basket": "no"
+          },
+          {
+            "text": "couper une mousse",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Мусс — воздушный и нежный: «au chocolat», «légère», «préparer une mousse» — естественно. «Croustillante» (хрустящий) и «couper» (резать) к муссу не подходят — его не режут и он не хрустит."
+      },
+      {
+        "id": "wc-desserts-crepe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-desserts-crepe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On mange des crêpes à la Chandeleur.",
+          "Une crêpe au sucre, s'il vous plaît.",
+          "Elle fait sauter la crêpe dans la poêle."
+        ],
+        "options": ["тонкий блинчик", "пончик", "пирожное-безе", "заварной пудинг"],
+        "correctIndex": 0,
+        "explanation": "crêpe (f) — тонкий блинчик, чаще сладкий (au sucre, au Nutella). Обрати внимание на accent circonflexe: c-r-ê-p-e."
+      },
+      {
+        "id": "wc-desserts-crepe-cmp",
+        "kind": "compare",
+        "wordId": "wl-desserts-crepe",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une crêpe и une galette. В чём разница?",
+        "phrases": ["Je voudrais une crêpe au sucre.", "Je voudrais une galette complète."],
+        "options": [
+          "crêpe — тонкий сладкий блин из пшеничной муки; galette — несладкий из гречневой (с сыром, яйцом, ветчиной).",
+          "Это одно и то же, просто разные регионы.",
+          "crêpe — несладкая с начинкой, а galette — сладкая.",
+          "galette — это напиток, а crêpe — еда."
+        ],
+        "correctIndex": 0,
+        "explanation": "crêpe — тонкий сладкий блинчик из пшеничной муки. galette (в Бретани) — несладкий блин из гречневой муки; «galette complète» — с сыром, яйцом и ветчиной."
+      },
+      {
+        "id": "wc-desserts-beignet-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-desserts-beignet",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "À la fête foraine, on achète des beignets au sucre.",
+          "Un beignet aux pommes, c'est chaud et sucré.",
+          "Ce beignet est fourré à la confiture."
+        ],
+        "options": ["жареный пончик", "шарик мороженого", "кусок торта", "тонкий блин"],
+        "correctIndex": 0,
+        "explanation": "beignet (m) — пончик / кусочек теста, обжаренный во фритюре, часто с начинкой (à la confiture) или с фруктом (aux pommes). Буквосочетание gn читается /ɲ/: /bɛ.ɲɛ/."
+      },
+      {
+        "id": "wc-desserts-beignet-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-desserts-beignet",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "beignet",
+        "options": ["beignet", "poignet", "saignant", "peignait"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало beignet /bɛ.ɲɛ/ — пончик. Похожие слова с тем же звуком /ɲ/: poignet /pwa.ɲɛ/ (запястье), saignant /sɛ.ɲɑ̃/ (с кровью, о мясе), peignait /pɛ.ɲɛ/ (он причёсывал / рисовал)."
+      },
+      {
+        "id": "wc-desserts-profiterole-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-desserts-profiterole",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значат выделенные слова?",
+        "contexts": [
+          "En dessert, des profiteroles au chocolat chaud.",
+          "Les profiteroles sont garnies de glace à la vanille.",
+          "Une assiette de profiteroles, c'est trop pour une personne."
+        ],
+        "options": [
+          "шарики из заварного теста с начинкой",
+          "миндальные пирожные",
+          "фруктовый лёд",
+          "слоёный «наполеон»"
+        ],
+        "correctIndex": 0,
+        "explanation": "profiterole (f) — маленький шарик из заварного теста; десертные подают с мороженым и тёплым шоколадом. Обычно во множественном: des profiteroles."
+      },
+      {
+        "id": "wc-desserts-profiterole-hint",
+        "kind": "wordHint",
+        "wordId": "wl-desserts-profiterole",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: маленький шарик из заварного теста, который подают с мороженым и горячим шоколадом.",
+        "answer": "profiterole",
+        "hints": [
+          "Начинается на profi…",
+          "11 букв, женский род — une ___",
+          "Des ___s au chocolat."
+        ],
+        "explanation": "profiterole (f) — заварной шарик с начинкой. Чаще встречается во множественном: des profiteroles au chocolat."
+      },
+      {
+        "id": "wc-desserts-sorbet-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-desserts-sorbet",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "En été, je préfère un sorbet au citron.",
+          "Le sorbet est plus léger qu'une glace.",
+          "Une boule de sorbet à la fraise, s'il vous plaît."
+        ],
+        "options": [
+          "фруктовый лёд (без молока)",
+          "взбитый мусс",
+          "заварной крем",
+          "слоёное пирожное"
+        ],
+        "correctIndex": 0,
+        "explanation": "sorbet (m) — замороженный десерт из фруктов и сахара, без молока и сливок. Конечная t не читается: /sɔʁ.bɛ/."
+      },
+      {
+        "id": "wc-desserts-sorbet-trap",
+        "kind": "trap",
+        "wordId": "wl-desserts-sorbet",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг не ест молочное и просит «que du sorbet». Чем sorbet отличается от glace?",
+        "options": [
+          "sorbet — фруктовый лёд без молока; glace — мороженое на молоке/сливках",
+          "это синонимы, разницы нет",
+          "sorbet — это мороженое со сливками, а glace — без",
+          "sorbet — горячий десерт, glace — холодный"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ключевое отличие — молочное: sorbet делают из фруктового пюре и сахара без молока, поэтому он подходит другу; glace (crème glacée) — мороженое на молоке/сливках."
+      },
+      {
+        "id": "wc-desserts-millefeuille-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-desserts-millefeuille",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le millefeuille, en Russie on l'appelle « Napoléon ».",
+          "Ce millefeuille a trois couches de pâte feuilletée.",
+          "Un millefeuille à la vanille, bien croustillant."
+        ],
+        "options": [
+          "слоёное пирожное «наполеон»",
+          "шоколадный мусс",
+          "миндальное безе",
+          "блинчик с сахаром"
+        ],
+        "correctIndex": 0,
+        "explanation": "millefeuille (m) — пирожное «Наполеон»: слои хрустящего слоёного теста с заварным кремом. Буквально «тысяча листов» (mille + feuille), -euille читается /œj/."
+      },
+      {
+        "id": "wc-desserts-millefeuille-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-desserts-millefeuille",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три десерта основаны на тесте (выпечка). Найди лишнее — то, что тестом не является.",
+        "options": ["un millefeuille", "un beignet", "une crêpe", "un sorbet"],
+        "correctIndex": 3,
+        "explanation": "millefeuille (слоёное тесто), beignet (жареное тесто) и crêpe (блинное тесто) — из теста. Лишний — sorbet: это замороженный фруктовый лёд, без всякого теста."
+      },
+      {
+        "id": "wc-desserts-flan-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-desserts-flan",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Un flan pâtissier, c'est ferme et crémeux.",
+          "Ma grand-mère fait un flan à la vanille.",
+          "Je coupe une part de flan."
+        ],
+        "options": [
+          "запечённый заварной десерт",
+          "фруктовый лёд",
+          "воздушный мусс",
+          "миндальное пирожное"
+        ],
+        "correctIndex": 0,
+        "explanation": "flan (m) — плотный запечённый десерт из яиц, молока и сахара, часто на основе из теста (flan pâtissier). Его режут кусками: une part de flan. «an» читается носовым /flɑ̃/."
+      },
+      {
+        "id": "wc-desserts-flan-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-desserts-flan",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для flan, чтобы запомнить мужской род (un flan) и носовой звук на конце /flɑ̃/.",
+        "examples": [
+          "«Флан» звучит почти как удар — «бам, флан!»: представь, как плотный кусок флана шлёпается на тарелку — un flan, мужской род.",
+          "Свяжи носовой -an с другими «-an»-словами: un flan, un plan, un an — все мужского рода и с носовым /ɑ̃/ на конце."
+        ]
+      }
+    ]
+  }
+]

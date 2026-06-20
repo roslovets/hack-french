@@ -1,0 +1,237 @@
+[
+  {
+    "id": "wl-legumes2-poivron",
+    "lemma": "poivron",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pwa.vʁɔ̃/",
+    "translationsRu": ["сладкий перец", "болгарский перец"],
+    "translationsEn": ["bell pepper", "sweet pepper"],
+    "semanticCore": "Крупный сладкий овощ-перец (красный, жёлтый, зелёный), который режут в салат или фаршируют, — НЕ острый и НЕ молотый.",
+    "collocations": [
+      { "fr": "un poivron rouge", "ru": "красный сладкий перец" },
+      { "fr": "des poivrons farcis", "ru": "фаршированный перец" },
+      { "fr": "couper un poivron en lanières", "ru": "нарезать перец полосками" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poivre",
+        "note": "poivron (m) = овощ, сладкий перец; poivre (m) = чёрный перец-приправа, который мелют. Похожи, но это еда и специя — не путать."
+      },
+      {
+        "with": "piment",
+        "note": "poivron = сладкий, неострый перец; piment (m) = острый перец, чили. По-русски оба «перец», по-французски разные слова."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["legumes2", "cuisine"],
+    "caseIds": ["wc-legumes2"]
+  },
+  {
+    "id": "wl-legumes2-aubergine",
+    "lemma": "aubergine",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/o.bɛʁ.ʒin/",
+    "translationsRu": ["баклажан"],
+    "translationsEn": ["aubergine", "eggplant"],
+    "semanticCore": "Длинный фиолетовый овощ, который жарят или запекают (рататуй, мусака); также название фиолетового цвета.",
+    "collocations": [
+      { "fr": "une aubergine grillée", "ru": "жареный баклажан" },
+      { "fr": "un gratin d'aubergines", "ru": "запеканка из баклажанов" },
+      { "fr": "une couleur aubergine", "ru": "баклажановый цвет" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "courgette",
+        "note": "aubergine (f) = баклажан (фиолетовый); courgette (f) = кабачок-цукини (зелёный). Оба длинные, но цвет и вкус разные."
+      },
+      {
+        "with": "eggplant (амер. англ.)",
+        "note": "Британское англ. «aubergine» = ровно баклажан, прямой мост. Американское «eggplant» (яйцо-растение) сбивает — по-французски только aubergine."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["legumes2", "cuisine"],
+    "caseIds": ["wc-legumes2"]
+  },
+  {
+    "id": "wl-legumes2-poireau",
+    "lemma": "poireau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pwa.ʁo/",
+    "translationsRu": ["лук-порей"],
+    "translationsEn": ["leek"],
+    "semanticCore": "Длинный бело-зелёный овощ-лук, который варят в супе или делают из него соус; во множественном — poireaux.",
+    "collocations": [
+      { "fr": "une soupe de poireaux", "ru": "суп из лука-порея" },
+      { "fr": "une tarte aux poireaux", "ru": "пирог с пореем" },
+      { "fr": "faire le poireau", "ru": "торчать в ожидании, ждать как столб" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "oignon",
+        "note": "poireau = лук-порей (длинный, мягкий, для супа); oignon (m) = обычный круглый репчатый лук. Оба «лук», но это разные овощи."
+      },
+      {
+        "with": "poireaux",
+        "note": "Множественное — poireaux (на -x, не -s): un poireau → des poireaux. Правило для слов на -eau."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["legumes2", "cuisine"],
+    "caseIds": ["wc-legumes2"]
+  },
+  {
+    "id": "wl-legumes2-epinard",
+    "lemma": "épinard",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.pi.naʁ/",
+    "translationsRu": ["шпинат"],
+    "translationsEn": ["spinach"],
+    "semanticCore": "Зелёные листья, которые тушат или кладут в салат; чаще всего во множественном — des épinards.",
+    "collocations": [
+      { "fr": "des épinards à la crème", "ru": "шпинат со сливками" },
+      { "fr": "manger des épinards", "ru": "есть шпинат" },
+      {
+        "fr": "mettre du beurre dans les épinards",
+        "ru": "улучшить своё материальное положение (досл. «масло в шпинат»)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "salade",
+        "note": "épinard = шпинат (плотные листья, чаще готовят); salade (f) = салат-латук (для сырого салата). Оба зелёные листья, но разные."
+      },
+      {
+        "with": "spinach (англ.)",
+        "note": "Англ. «spinach» помогает по смыслу, но не по виду слова. По-французски обычно во множественном: les épinards."
+      }
+    ],
+    "frequencyRank": 800,
+    "level": "A2",
+    "tags": ["legumes2", "cuisine"],
+    "caseIds": ["wc-legumes2"]
+  },
+  {
+    "id": "wl-legumes2-radis",
+    "lemma": "radis",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁa.di/",
+    "translationsRu": ["редис", "редиска"],
+    "translationsEn": ["radish"],
+    "semanticCore": "Маленький красный острый корнеплод, который едят сырым с солью; форма не меняется во множественном (un radis → des radis).",
+    "collocations": [
+      { "fr": "une botte de radis", "ru": "пучок редиса" },
+      { "fr": "des radis au beurre", "ru": "редис с маслом (закуска)" },
+      { "fr": "ne pas avoir un radis", "ru": "быть без гроша" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "navet",
+        "note": "radis (m) = редис (мелкий, красный, едят сырым); navet (m) = репа (крупнее, белая, варят). Оба корнеплоды, не путать."
+      },
+      {
+        "with": "radis (ед. = мн.)",
+        "note": "radis уже кончается на -s: и единственное, и множественное пишутся одинаково — un radis, des radis. Конечная s не читается: /ʁa.di/."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["legumes2", "cuisine"],
+    "caseIds": ["wc-legumes2"]
+  },
+  {
+    "id": "wl-legumes2-navet",
+    "lemma": "navet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/na.vɛ/",
+    "translationsRu": ["репа"],
+    "translationsEn": ["turnip"],
+    "semanticCore": "Круглый бело-фиолетовый корнеплод, который варят в супе или рагу; в разговоре — ещё и «плохой, провальный фильм».",
+    "collocations": [
+      { "fr": "un navet dans le pot-au-feu", "ru": "репа в мясном рагу" },
+      { "fr": "de la purée de navets", "ru": "пюре из репы" },
+      { "fr": "ce film est un navet", "ru": "этот фильм — полный провал" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "radis",
+        "note": "navet (m) = репа (крупная, белая, варёная); radis (m) = редис (мелкий, красный, сырой). Похожи как корнеплоды, но разного размера и вкуса."
+      },
+      {
+        "with": "navet (= плохой фильм)",
+        "note": "Кроме овоща, un navet в разговоре значит «бездарный, провальный фильм». Контекст подскажет: на тарелке — репа, в кино — провал."
+      }
+    ],
+    "frequencyRank": 840,
+    "level": "A2",
+    "tags": ["legumes2", "cuisine"],
+    "caseIds": ["wc-legumes2"]
+  },
+  {
+    "id": "wl-legumes2-betterave",
+    "lemma": "betterave",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bɛ.tʁav/",
+    "translationsRu": ["свёкла"],
+    "translationsEn": ["beetroot", "beet"],
+    "semanticCore": "Тёмно-красный сладковатый корнеплод, который варят и кладут в салат; пачкает руки ярко-красным.",
+    "collocations": [
+      { "fr": "une salade de betteraves", "ru": "салат из свёклы" },
+      { "fr": "de la betterave rouge", "ru": "красная свёкла" },
+      { "fr": "rouge comme une betterave", "ru": "красный как рак (от стыда)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "carotte",
+        "note": "betterave (f) = свёкла (тёмно-красная, сладковатая); carotte (f) = морковь (оранжевая). Оба сладкие корнеплоды, но цвет разный."
+      },
+      {
+        "with": "beetroot (англ.)",
+        "note": "Англ. «beet/beetroot» помогает узнать смысл, хотя слово выглядит иначе. Род женский: une betterave."
+      }
+    ],
+    "frequencyRank": 860,
+    "level": "A2",
+    "tags": ["legumes2", "cuisine"],
+    "caseIds": ["wc-legumes2"]
+  },
+  {
+    "id": "wl-legumes2-artichaut",
+    "lemma": "artichaut",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/aʁ.ti.ʃo/",
+    "translationsRu": ["артишок"],
+    "translationsEn": ["artichoke"],
+    "semanticCore": "Зелёный овощ-«шишка» из плотных листьев, которые отрывают и обмакивают в соус; съедобна и серединка — «сердце».",
+    "collocations": [
+      { "fr": "un cœur d'artichaut", "ru": "сердцевина артишока" },
+      { "fr": "manger un artichaut à la vinaigrette", "ru": "есть артишок с заправкой" },
+      { "fr": "avoir un cœur d'artichaut", "ru": "быть влюбчивым, легко влюбляться" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "artichoke (англ.)",
+        "note": "Англ. «artichoke» — почти тот же мост: arti-cho… По-французски конечная t не читается: /aʁ.ti.ʃo/."
+      },
+      {
+        "with": "cœur d'artichaut",
+        "note": "Буквально «сердце артишока» — съедобная серединка. Но «avoir un cœur d'artichaut» значит «быть влюбчивым»: листики-чувства раздают всем подряд."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["legumes2", "cuisine"],
+    "caseIds": ["wc-legumes2"]
+  }
+]

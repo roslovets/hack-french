@@ -1,0 +1,278 @@
+[
+  {
+    "id": "wc-legumes2",
+    "title": "Овощи",
+    "theme": "legumes2",
+    "level": "A2",
+    "wordIds": [
+      "wl-legumes2-poivron",
+      "wl-legumes2-aubergine",
+      "wl-legumes2-poireau",
+      "wl-legumes2-epinard",
+      "wl-legumes2-radis",
+      "wl-legumes2-navet",
+      "wl-legumes2-betterave",
+      "wl-legumes2-artichaut"
+    ],
+    "steps": [
+      {
+        "id": "wc-legumes2-poivron-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes2-poivron",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je coupe un poivron rouge pour la salade.",
+          "Elle prépare des poivrons farcis au four.",
+          "Au marché, les poivrons jaunes sont magnifiques."
+        ],
+        "options": [
+          "сладкий (болгарский) перец",
+          "чёрный перец-приправа",
+          "острый перец, чили",
+          "помидор"
+        ],
+        "correctIndex": 0,
+        "explanation": "poivron (m) — сладкий болгарский перец (овощ): его режут в салат и фаршируют. Чёрный перец-приправа — le poivre, острый перец — le piment."
+      },
+      {
+        "id": "wc-legumes2-poivron-cmp",
+        "kind": "compare",
+        "wordId": "wl-legumes2-poivron",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un poivron и du poivre. В чём разница?",
+        "phrases": ["Je mets un poivron dans la ratatouille.", "Je mets du poivre dans la soupe."],
+        "options": [
+          "poivron — сладкий перец-овощ (его режут); poivre — чёрный перец-приправа (его мелют).",
+          "Это одно и то же слово, разницы нет.",
+          "poivron — это приправа, а poivre — овощ.",
+          "Оба значат «острый перец чили»."
+        ],
+        "correctIndex": 0,
+        "explanation": "poivron (m) — овощ, сладкий перец, его кладут целым или режут. poivre (m) — молотая чёрная приправа. По-русски оба «перец», но это еда и специя."
+      },
+      {
+        "id": "wc-legumes2-aubergine-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-legumes2-aubergine",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит aubergine?",
+        "bridge": "В британском английском «aubergine» — это ровно баклажан, пишется почти так же. (Американское «eggplant» — другое слово, не сбивайся.)",
+        "options": ["баклажан", "кабачок", "тыква", "огурец"],
+        "correctIndex": 0,
+        "explanation": "aubergine (f) — баклажан, фиолетовый овощ для рагу и запеканок. Брит. англ. «aubergine» — прямой мост. Кабачок — une courgette."
+      },
+      {
+        "id": "wc-legumes2-aubergine-collo",
+        "kind": "sort",
+        "wordId": "wl-legumes2-aubergine",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом aubergine звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une aubergine grillée",
+            "basket": "ok"
+          },
+          {
+            "text": "un gratin d'aubergines",
+            "basket": "ok"
+          },
+          {
+            "text": "une couleur aubergine",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une aubergine",
+            "basket": "no"
+          },
+          {
+            "text": "une aubergine en colère",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«aubergine grillée», «gratin d'aubergines», «couleur aubergine» — естественно. «boire une aubergine» (пить баклажан) и «aubergine en colère» (сердитый баклажан) — бессмыслица."
+      },
+      {
+        "id": "wc-legumes2-poireau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes2-poireau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je fais une soupe de poireaux.",
+          "On achète des poireaux pour la tarte.",
+          "Lave bien le poireau avant de le couper."
+        ],
+        "options": ["лук-порей", "репчатый лук", "чеснок", "сельдерей"],
+        "correctIndex": 0,
+        "explanation": "poireau (m) — лук-порей, длинный бело-зелёный овощ для супа и пирога. Репчатый круглый лук — un oignon. Множественное — des poireaux (на -x)."
+      },
+      {
+        "id": "wc-legumes2-poireau-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-legumes2-poireau",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для poireau (лук-порей), чтобы запомнить мужской род (un poireau) и множественное на -x (des poireaux).",
+        "examples": [
+          "Длинный прямой порей «стоит как столб» — и правда, «faire le poireau» значит торчать в ожидании; он un, мужского рода.",
+          "Слово кончается на -eau, как cadeau/château: во множественном меняем на -x — des poireaux."
+        ]
+      },
+      {
+        "id": "wc-legumes2-epinard-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-legumes2-epinard",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет смысл. Что значит épinard?",
+        "bridge": "Англ. «spinach» — шпинат; вспомни моряка Попая, который ел шпинат из банки. Фр. épinard — то же самое, но обычно во множественном: des épinards.",
+        "options": ["шпинат", "щавель", "петрушка", "капуста"],
+        "correctIndex": 0,
+        "explanation": "épinard (m) — шпинат, зелёные листья, которые тушат со сливками. Чаще во множественном — les épinards. Англ. «spinach» помогает по смыслу."
+      },
+      {
+        "id": "wc-legumes2-epinard-collo",
+        "kind": "wordContext",
+        "wordId": "wl-legumes2-epinard",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les enfants n'aiment pas les épinards.",
+          "Des épinards à la crème, c'est délicieux.",
+          "Popeye mange des épinards pour être fort."
+        ],
+        "options": ["шпинат", "горошек", "морковь", "фасоль"],
+        "correctIndex": 0,
+        "explanation": "épinard (m) — шпинат. Обрати внимание: почти всегда во множественном — les épinards. «épinards à la crème» — шпинат со сливками."
+      },
+      {
+        "id": "wc-legumes2-radis-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes2-radis",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'achète une botte de radis au marché.",
+          "On mange des radis au beurre à l'apéro.",
+          "Ces radis sont bien croquants."
+        ],
+        "options": ["редис", "свёкла", "картошка", "морковь"],
+        "correctIndex": 0,
+        "explanation": "radis (m) — редис, маленький красный острый корнеплод, его едят сырым. «une botte de radis» — пучок редиса. Слово не меняется во множественном: un radis → des radis."
+      },
+      {
+        "id": "wc-legumes2-radis-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-legumes2-radis",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое именно слово прозвучало.",
+        "audioText": "radis",
+        "options": ["radis", "tapis", "abri", "habit"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало radis /ʁa.di/ — редис. Похоже звучат tapis /ta.pi/ (ковёр), abri /a.bʁi/ (укрытие), habit /a.bi/ (одеяние) — но это другие слова."
+      },
+      {
+        "id": "wc-legumes2-navet-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes2-navet",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих кулинарных сценах?",
+        "contexts": [
+          "Je mets un navet dans le pot-au-feu.",
+          "La purée de navets accompagne le canard.",
+          "Au potager, les navets sont prêts à récolter."
+        ],
+        "options": ["репа", "редис", "репчатый лук", "капуста"],
+        "correctIndex": 0,
+        "explanation": "navet (m) — репа, круглый бело-фиолетовый корнеплод для супа и рагу. Не путать с редисом (un radis), он мельче и красный."
+      },
+      {
+        "id": "wc-legumes2-navet-trap",
+        "kind": "trap",
+        "wordId": "wl-legumes2-navet",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг выходит из кино и говорит: «Quel navet !». Он имел в виду овощ?",
+        "options": [
+          "Нет: un navet в разговоре — это «плохой, провальный фильм».",
+          "Да: он жалуется, что в кино продавали репу.",
+          "Это значит «отличный фильм».",
+          "Это значит «я голоден»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: кроме овоща (репа), un navet в разговорной речи значит «бездарный, провальный фильм». «Quel navet !» — «Что за дрянь, а не фильм!»."
+      },
+      {
+        "id": "wc-legumes2-betterave-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-legumes2-betterave",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет смысл. Что значит betterave?",
+        "bridge": "Англ. «beet / beetroot» — свёкла. Фр. betterave начинается с «bette-» — слышен тот же корень.",
+        "options": ["свёкла", "морковь", "репа", "редис"],
+        "correctIndex": 0,
+        "explanation": "betterave (f) — свёкла, тёмно-красный сладковатый корнеплод, пачкает руки красным. Англ. «beet/beetroot» помогает узнать. Род женский: une betterave."
+      },
+      {
+        "id": "wc-legumes2-betterave-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-legumes2-betterave",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je prépare une salade de betteraves.",
+          "La betterave rouge tache les doigts.",
+          "Il est devenu rouge comme une betterave."
+        ],
+        "options": ["свёкла", "помидор", "перец", "морковь"],
+        "correctIndex": 0,
+        "explanation": "betterave (f) — свёкла. «rouge comme une betterave» — красный как рак (покраснеть от стыда): свёкла ведь ярко-красная."
+      },
+      {
+        "id": "wc-legumes2-artichaut-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-legumes2-artichaut",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит artichaut?",
+        "bridge": "Англ. «artichoke» — почти тот же мост: arti-cho… Фр. artichaut читается /aʁ.ti.ʃo/ — конечная t немая.",
+        "options": ["артишок", "кабачок", "спаржа", "цветная капуста"],
+        "correctIndex": 0,
+        "explanation": "artichaut (m) — артишок, зелёный овощ из плотных листьев, которые отрывают и макают в соус. Англ. «artichoke» — прямой мост. Спаржа — une asperge."
+      },
+      {
+        "id": "wc-legumes2-artichaut-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-legumes2-artichaut",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — овощи из этого дела. Найди лишнее.",
+        "options": ["l'artichaut", "la betterave", "le poireau", "le citron"],
+        "correctIndex": 3,
+        "explanation": "Артишок, свёкла и порей — овощи. Лишний — le citron (лимон): это фрукт-цитрус, а не овощ."
+      }
+    ]
+  }
+]

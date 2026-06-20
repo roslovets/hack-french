@@ -1,0 +1,329 @@
+[
+  {
+    "id": "wc-rivieres",
+    "title": "Водоёмы",
+    "theme": "rivieres",
+    "level": "A2",
+    "wordIds": [
+      "wl-rivieres-source",
+      "wl-rivieres-ruisseau",
+      "wl-rivieres-cascade",
+      "wl-rivieres-etang",
+      "wl-rivieres-marais",
+      "wl-rivieres-rive",
+      "wl-rivieres-torrent",
+      "wl-rivieres-berge"
+    ],
+    "steps": [
+      {
+        "id": "wc-rivieres-source-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-rivieres-source",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Nous avons bu de l'eau de source bien fraîche.",
+          "La Seine prend sa source en Bourgogne.",
+          "Il y a une source dans la montagne."
+        ],
+        "options": ["источник, родник", "берег", "водопад", "болото"],
+        "correctIndex": 0,
+        "explanation": "source (f) — источник, родник: место, где вода выходит из-под земли. «prendre sa source» — брать начало (о реке). «l'eau de source» — родниковая вода."
+      },
+      {
+        "id": "wc-rivieres-source-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-rivieres-source",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит source?",
+        "bridge": "Англ. «source» — источник, начало; пишется точно так же. Во французском source — это и родник (исток воды), и «источник» сведений.",
+        "options": ["источник, родник", "ручей", "пруд", "поток"],
+        "correctIndex": 0,
+        "explanation": "source = источник. Англ. «source» — прямой мост: те же буквы. Читается /suʁs/, конечная e почти не слышна."
+      },
+      {
+        "id": "wc-rivieres-ruisseau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-rivieres-ruisseau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Un petit ruisseau coule au fond du jardin.",
+          "Les enfants sautent par-dessus le ruisseau.",
+          "On entend le murmure du ruisseau."
+        ],
+        "options": ["ручей", "водопад", "болото", "родник"],
+        "correctIndex": 0,
+        "explanation": "ruisseau (m) — ручей: маленький спокойный водоток. Множественное число особое: des ruisseaux. Журчит — «le murmure du ruisseau»."
+      },
+      {
+        "id": "wc-rivieres-ruisseau-cmp",
+        "kind": "compare",
+        "wordId": "wl-rivieres-ruisseau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un ruisseau и un torrent. В чём разница?",
+        "phrases": ["Un ruisseau coule doucement dans le pré.", "Un torrent dévale la montagne."],
+        "options": [
+          "ruisseau — маленький спокойный ручей; torrent — бурный быстрый горный поток.",
+          "Это полные синонимы, разницы нет.",
+          "ruisseau — это водопад, а torrent — родник.",
+          "ruisseau бурный и быстрый, а torrent — тихий."
+        ],
+        "correctIndex": 0,
+        "explanation": "ruisseau течёт тихо и медленно (в поле, в лесу); torrent — стремительный горный поток. Разница не в размере, а в силе течения."
+      },
+      {
+        "id": "wc-rivieres-cascade-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-rivieres-cascade",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Au bout du sentier, on découvre une belle cascade.",
+          "L'eau tombe de la cascade dans un bassin.",
+          "On entend le bruit de la cascade de loin."
+        ],
+        "options": ["водопад", "пруд", "берег", "ручей"],
+        "correctIndex": 0,
+        "explanation": "cascade (f) — водопад: вода падает с уступа. Близкое слово — une chute d'eau. Cascade обычно поменьше и поживописнее."
+      },
+      {
+        "id": "wc-rivieres-cascade-trap",
+        "kind": "trap",
+        "wordId": "wl-rivieres-cascade",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В фильме герой прыгнул с крыши, и в титрах — «cascade». Тут речь о водопаде?",
+        "options": [
+          "Нет: в кино cascade — это трюк (каскадёр — un cascadeur), не водопад.",
+          "Да, в кино тоже показывали водопад.",
+          "cascade всегда значит только водопад.",
+          "cascade тут значит «падение» героя в воду."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка контекста: cascade — водопад, но в кино cascade = трюк, а каскадёр — un cascadeur. Значение подсказывает контекст."
+      },
+      {
+        "id": "wc-rivieres-etang-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-rivieres-etang",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Les canards nagent sur l'étang.",
+          "Mon grand-père pêche au bord de l'étang.",
+          "En hiver, l'étang est parfois gelé."
+        ],
+        "options": ["пруд", "море", "водопад", "ручей"],
+        "correctIndex": 0,
+        "explanation": "étang (m) — пруд: небольшой стоячий водоём. Финал -ang носовой, согласные не читаются: /e.tɑ̃/. «au bord de l'étang» — на берегу пруда."
+      },
+      {
+        "id": "wc-rivieres-etang-cmp",
+        "kind": "compare",
+        "wordId": "wl-rivieres-etang",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un étang и un lac. В чём разница?",
+        "phrases": ["On pêche dans un petit étang.", "Le lac Léman est immense et profond."],
+        "options": [
+          "étang — небольшой неглубокий пруд; lac — большое глубокое озеро.",
+          "étang больше и глубже, чем lac.",
+          "Это одно и то же слово.",
+          "étang — это солёное озеро, а lac — пресное."
+        ],
+        "correctIndex": 0,
+        "explanation": "étang = пруд (маленький, неглубокий, часто рукотворный); lac = озеро (большое и глубокое, например le lac Léman). Размер — главное отличие."
+      },
+      {
+        "id": "wc-rivieres-marais-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-rivieres-marais",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "De nombreux oiseaux vivent dans le marais.",
+          "Attention, on s'enfonce dans le marais !",
+          "On récolte le sel dans un marais salant."
+        ],
+        "options": ["болото", "пруд", "родник", "набережная"],
+        "correctIndex": 0,
+        "explanation": "marais (m) — болото: топкая земля, насыщенная водой. «un marais salant» — солончак для добычи соли. Конечная s не читается: /ma.ʁɛ/."
+      },
+      {
+        "id": "wc-rivieres-marais-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-rivieres-marais",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — это вода, которая течёт. Найди лишнее.",
+        "options": ["le ruisseau", "le torrent", "la cascade", "le marais"],
+        "correctIndex": 3,
+        "explanation": "Ручей (le ruisseau), поток (le torrent) и водопад (la cascade) — это движущаяся, текущая вода. Болото (le marais) — стоячая, неподвижная: оно лишнее."
+      },
+      {
+        "id": "wc-rivieres-rive-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-rivieres-rive",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "À Paris, le Quartier latin est sur la rive gauche.",
+          "Nous habitons rive droite.",
+          "La maison se trouve sur l'autre rive."
+        ],
+        "options": ["берег (сторона реки)", "мост", "остров", "лодка"],
+        "correctIndex": 0,
+        "explanation": "rive (f) — берег как сторона реки. В Париже Сена делит город на la rive gauche (левый берег) и la rive droite (правый берег)."
+      },
+      {
+        "id": "wc-rivieres-rive-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-rivieres-rive",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Звучит похоже. Какое слово ты услышал — то, что значит «берег»?",
+        "audioText": "rive",
+        "options": ["rêve", "rive", "rire", "rue"],
+        "correctIndex": 1,
+        "explanation": "rive /ʁiv/ — берег. Похожие: rêve /ʁɛv/ — сон, мечта; rire /ʁiʁ/ — смеяться; rue /ʁy/ — улица. Различает гласный: в rive — /i/."
+      },
+      {
+        "id": "wc-rivieres-torrent-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-rivieres-torrent",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Un torrent dévale la montagne après la pluie.",
+          "Le torrent gronde entre les rochers.",
+          "L'eau du torrent est glaciale et rapide."
+        ],
+        "options": ["горный поток", "пруд", "родник", "берег"],
+        "correctIndex": 0,
+        "explanation": "torrent (m) — горный поток: быстрый и бурный, особенно после дождя или таяния снега. «le torrent gronde» — поток ревёт."
+      },
+      {
+        "id": "wc-rivieres-torrent-trap",
+        "kind": "trap",
+        "wordId": "wl-rivieres-torrent",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Француз говорит «Il pleut à torrents». Это про горный поток?",
+        "options": [
+          "Нет: «il pleut à torrents» — устойчивое выражение «льёт как из ведра».",
+          "Да, он говорит, что рядом течёт горный поток.",
+          "Это значит «дождь кончился».",
+          "torrent тут значит «тихий дождик»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: torrent — горный поток, но в выражении «il pleut à torrents» речь о сильном ливне — «льёт как из ведра». Англ. «torrent» как раз о ливне."
+      },
+      {
+        "id": "wc-rivieres-berge-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-rivieres-berge",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le dimanche, on se promène sur les berges de la Seine.",
+          "Les pêcheurs s'installent sur la berge.",
+          "La ville a aménagé les berges du fleuve."
+        ],
+        "options": ["берег, набережная", "мост", "пляж у моря", "пруд"],
+        "correctIndex": 0,
+        "explanation": "berge (f) — берег у самой воды, насыпь, по которой гуляют. «les berges de la Seine» — берега Сены. Часто во множественном числе."
+      },
+      {
+        "id": "wc-rivieres-berge-sort",
+        "kind": "sort",
+        "wordId": "wl-rivieres-berge",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом berge звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "marcher sur les berges",
+            "basket": "ok"
+          },
+          {
+            "text": "les berges de la Seine",
+            "basket": "ok"
+          },
+          {
+            "text": "une berge escarpée",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une berge",
+            "basket": "no"
+          },
+          {
+            "text": "une berge salée",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«marcher sur les berges», «les berges de la Seine», «une berge escarpée» — естественно. «boire une berge» (пить берег) и «une berge salée» (солёный берег) — бессмыслица."
+      },
+      {
+        "id": "wc-rivieres-berge-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-rivieres-berge",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало — то, что значит «берег».",
+        "audioText": "berge",
+        "options": ["bergère", "beige", "barge", "berge"],
+        "correctIndex": 3,
+        "explanation": "berge /bɛʁʒ/ — берег. Похожие: bergère /bɛʁ.ʒɛʁ/ — пастушка; beige /bɛʒ/ — бежевый; barge /baʁʒ/ — баржа. Берегись лишних слогов и гласных."
+      },
+      {
+        "id": "wc-rivieres-source-hint",
+        "kind": "wordHint",
+        "wordId": "wl-rivieres-source",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: место, где вода выходит из-под земли и откуда река берёт начало.",
+        "answer": "source",
+        "hints": [
+          "Начинается на s…",
+          "6 букв, как в английском «source»",
+          "L'eau de ___ est très fraîche."
+        ],
+        "explanation": "source (f) — источник, родник. «prendre sa source» — брать начало (о реке). Читается /suʁs/."
+      },
+      {
+        "id": "wc-rivieres-etang-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-rivieres-etang",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для étang (пруд), чтобы запомнить мужской род (un étang) и носовой звук на конце /e.tɑ̃/.",
+        "examples": [
+          "É-TANG звучит почти как «этап» — представь тихий пруд как «этап» прогулки, у которого ты остановился отдохнуть.",
+          "Носовое -ang на конце: вообрази, как над прудом «тянется» туман — un étang в тумане, мужского рода, спокойный и неподвижный."
+        ]
+      }
+    ]
+  }
+]

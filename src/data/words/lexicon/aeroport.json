@@ -1,0 +1,234 @@
+[
+  {
+    "id": "wl-aeroport-vol",
+    "lemma": "vol",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vɔl/",
+    "translationsRu": ["рейс", "полёт"],
+    "translationsEn": ["flight"],
+    "semanticCore": "Авиарейс или сам полёт: то, что есть в билете и на табло; у того же слова есть и значение «кража».",
+    "collocations": [
+      { "fr": "un vol direct", "ru": "прямой рейс" },
+      { "fr": "le vol pour Paris", "ru": "рейс на Париж" },
+      { "fr": "un vol sans escale", "ru": "рейс без пересадки" },
+      { "fr": "rater son vol", "ru": "опоздать на рейс" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vol (кража)",
+        "note": "Одно слово, два значения: le vol = и «полёт/рейс», и «кража» (un vol à la tire — карманная кража). В аэропорту это всегда рейс; различает контекст."
+      },
+      {
+        "with": "voyage",
+        "note": "le vol = конкретный перелёт самолётом (с номером рейса); le voyage = поездка/путешествие в целом, любым транспортом."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["aeroport", "voyage"],
+    "caseIds": ["wc-aeroport"]
+  },
+  {
+    "id": "wl-aeroport-hublot",
+    "lemma": "hublot",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/y.blo/",
+    "translationsRu": ["иллюминатор"],
+    "translationsEn": ["porthole", "window"],
+    "semanticCore": "Круглое окошко самолёта или корабля; именно у него «место côté hublot». Слово с h aspiré: говорят le hublot, du hublot — без элизии.",
+    "collocations": [
+      { "fr": "une place côté hublot", "ru": "место у окна (иллюминатора)" },
+      { "fr": "regarder par le hublot", "ru": "смотреть в иллюминатор" },
+      { "fr": "le hublot de l'avion", "ru": "иллюминатор самолёта" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fenêtre",
+        "note": "la fenêtre = окно в доме; le hublot = круглый иллюминатор в самолёте/на корабле. В самолёте говорят hublot, а не fenêtre."
+      },
+      {
+        "with": "couloir",
+        "note": "côté hublot = у окна; côté couloir = у прохода. Так выбирают место в самолёте."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["aeroport", "avion"],
+    "caseIds": ["wc-aeroport"]
+  },
+  {
+    "id": "wl-aeroport-embarquer",
+    "lemma": "embarquer",
+    "pos": "verb",
+    "ipa": "/ɑ̃.baʁ.ke/",
+    "translationsRu": ["садиться в самолёт", "садиться на борт"],
+    "translationsEn": ["to board"],
+    "semanticCore": "Заходить на борт самолёта или корабля; в аэропорту — момент посадки пассажиров по объявлению.",
+    "collocations": [
+      { "fr": "embarquer dans l'avion", "ru": "садиться в самолёт" },
+      { "fr": "la carte d'embarquement", "ru": "посадочный талон" },
+      { "fr": "la porte d'embarquement", "ru": "выход на посадку" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "débarquer",
+        "note": "embarquer = садиться на борт (заходить); débarquer = высаживаться, сходить (выходить). Приставка em-/dé- задаёт противоположное направление."
+      },
+      {
+        "with": "monter (dans)",
+        "note": "monter dans l'avion — обиходно «сесть в самолёт»; embarquer — то же действие, но «официальнее», именно про посадку на рейс (отсюда embarquement, carte d'embarquement)."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["aeroport", "voyage"],
+    "caseIds": ["wc-aeroport"]
+  },
+  {
+    "id": "wl-aeroport-escale",
+    "lemma": "escale",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɛs.kal/",
+    "translationsRu": ["пересадка", "промежуточная остановка"],
+    "translationsEn": ["stopover", "layover"],
+    "semanticCore": "Промежуточная посадка рейса по пути к цели; самолёт садится и летит дальше.",
+    "collocations": [
+      { "fr": "faire escale à Rome", "ru": "сделать остановку в Риме" },
+      { "fr": "un vol sans escale", "ru": "прямой рейс (без пересадки)" },
+      { "fr": "une escale de deux heures", "ru": "пересадка два часа" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "correspondance",
+        "note": "escale = сама остановка рейса (часто тот же самолёт стоит и летит дальше); correspondance = стыковка/пересадка на ДРУГОЙ рейс. «J'ai une correspondance» = надо менять самолёт."
+      },
+      {
+        "with": "vol direct",
+        "note": "faire escale (с остановкой) ↔ un vol direct / sans escale (без остановок, напрямую)."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["aeroport", "voyage"],
+    "caseIds": ["wc-aeroport"]
+  },
+  {
+    "id": "wl-aeroport-decollage",
+    "lemma": "décollage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/de.kɔ.laʒ/",
+    "translationsRu": ["взлёт"],
+    "translationsEn": ["takeoff"],
+    "semanticCore": "Момент, когда самолёт отрывается от земли и поднимается в воздух; начало полёта.",
+    "collocations": [
+      { "fr": "le décollage est prévu à 9h", "ru": "взлёт назначен на 9 утра" },
+      { "fr": "avant le décollage", "ru": "перед взлётом" },
+      { "fr": "un retard au décollage", "ru": "задержка вылета" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "atterrissage",
+        "note": "le décollage = взлёт (отрыв от земли, начало); l'atterrissage = посадка (касание земли, конец). Антонимы: décoller ↔ atterrir."
+      },
+      {
+        "with": "piste",
+        "note": "le décollage = само действие взлёта; la piste = взлётно-посадочная полоса (место, с которого взлетают)."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["aeroport", "avion"],
+    "caseIds": ["wc-aeroport"]
+  },
+  {
+    "id": "wl-aeroport-atterrissage",
+    "lemma": "atterrissage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.te.ʁi.saʒ/",
+    "translationsRu": ["посадка", "приземление"],
+    "translationsEn": ["landing"],
+    "semanticCore": "Момент, когда самолёт касается земли и садится; конец полёта. Внутри спрятано terre (земля).",
+    "collocations": [
+      { "fr": "un atterrissage en douceur", "ru": "мягкая посадка" },
+      { "fr": "préparer l'atterrissage", "ru": "готовиться к посадке" },
+      { "fr": "à l'atterrissage", "ru": "при посадке / во время приземления" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "décollage",
+        "note": "l'atterrissage = посадка/приземление (конец полёта); le décollage = взлёт (начало). Антонимы: atterrir ↔ décoller."
+      },
+      {
+        "with": "embarquement",
+        "note": "l'atterrissage = приземление самолёта (про машину); l'embarquement = посадка пассажиров на борт (про людей). По-русски оба «посадка», но это разные вещи."
+      }
+    ],
+    "frequencyRank": 770,
+    "level": "A2",
+    "tags": ["aeroport", "avion"],
+    "caseIds": ["wc-aeroport"]
+  },
+  {
+    "id": "wl-aeroport-terminal",
+    "lemma": "terminal",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tɛʁ.mi.nal/",
+    "translationsRu": ["терминал"],
+    "translationsEn": ["terminal"],
+    "semanticCore": "Здание аэропорта, где регистрируются и откуда вылетают; их нумеруют (terminal 1, 2…). Множественное число особое: des terminaux.",
+    "collocations": [
+      { "fr": "le terminal 2", "ru": "терминал 2" },
+      { "fr": "à quel terminal ?", "ru": "к какому терминалу? / в каком терминале?" },
+      { "fr": "le terminal des départs", "ru": "терминал вылета" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "porte",
+        "note": "le terminal = всё здание/корпус аэропорта; la porte (d'embarquement) = конкретный выход на посадку внутри терминала."
+      },
+      {
+        "with": "terminaux (мн.)",
+        "note": "Множественное число особое: un terminal → des terminaux (как journal → journaux), а не «terminals»."
+      }
+    ],
+    "frequencyRank": 740,
+    "level": "A2",
+    "tags": ["aeroport", "lieu"],
+    "caseIds": ["wc-aeroport"]
+  },
+  {
+    "id": "wl-aeroport-soute",
+    "lemma": "soute",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sut/",
+    "translationsRu": ["багажный отсек", "трюм"],
+    "translationsEn": ["hold", "cargo hold"],
+    "semanticCore": "Нижний грузовой отсек самолёта (и корабля), куда грузят сданный багаж — в отличие от ручной клади в салоне.",
+    "collocations": [
+      { "fr": "un bagage en soute", "ru": "сданный багаж (в отсеке)" },
+      { "fr": "la soute à bagages", "ru": "багажный отсек" },
+      { "fr": "partir en soute", "ru": "уходить в багажный отсек" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cabine",
+        "note": "la soute = грузовой отсек внизу (туда едет сданный чемодан, en soute); la cabine = салон, где сидят пассажиры (там ручная кладь, en cabine / bagage à main)."
+      },
+      {
+        "with": "saute",
+        "note": "Звуковой двойник: la soute /sut/ (отсек) ≠ il saute /sot/ (он прыгает). Разные слова с разными гласными — не путать на слух."
+      }
+    ],
+    "frequencyRank": 850,
+    "level": "A2",
+    "tags": ["aeroport", "bagage"],
+    "caseIds": ["wc-aeroport"]
+  }
+]

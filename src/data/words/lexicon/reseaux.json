@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-reseaux-reseau",
+    "lemma": "réseau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁe.zo/",
+    "translationsRu": ["сеть (социальная)", "сеть"],
+    "translationsEn": ["network", "social network"],
+    "semanticCore": "Сеть связей вообще; в соцсетях — почти всегда во множественном: les réseaux sociaux = «соцсети».",
+    "collocations": [
+      {
+        "fr": "les réseaux sociaux",
+        "ru": "социальные сети"
+      },
+      {
+        "fr": "sur les réseaux",
+        "ru": "в соцсетях"
+      },
+      {
+        "fr": "un réseau professionnel",
+        "ru": "профессиональная сеть"
+      },
+      {
+        "fr": "se connecter au réseau",
+        "ru": "подключиться к сети"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "réseaux / réseau",
+        "note": "«Соцсети» — всегда во множественном: les réseaux sociaux (на -x). Один un réseau — это сеть вообще (метро, друзей, Wi-Fi)."
+      },
+      {
+        "with": "internet",
+        "note": "les réseaux (sociaux) = площадки вроде Instagram, TikTok; internet = сама сеть-интернет в целом. Соцсети живут «в» интернете."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["reseaux", "numerique"],
+    "caseIds": ["wc-reseaux"]
+  },
+  {
+    "id": "wl-reseaux-profil",
+    "lemma": "profil",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pʁɔ.fil/",
+    "translationsRu": ["профиль", "анкета"],
+    "translationsEn": ["profile"],
+    "semanticCore": "Твоя страница-анкета в соцсети: имя, фото, описание. Также «профиль» лица — вид сбоку.",
+    "collocations": [
+      {
+        "fr": "une photo de profil",
+        "ru": "фото профиля (аватар)"
+      },
+      {
+        "fr": "voir le profil de quelqu'un",
+        "ru": "смотреть чей-то профиль"
+      },
+      {
+        "fr": "un profil privé",
+        "ru": "закрытый профиль"
+      },
+      {
+        "fr": "compléter son profil",
+        "ru": "заполнить свой профиль"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "compte",
+        "note": "le profil = публичная страница-витрина (фото, имя, что видят другие); le compte = аккаунт целиком (логин, пароль, настройки). У одного compte бывает один profil."
+      },
+      {
+        "with": "profit",
+        "note": "profil /pʁɔ.fil/ (конечное l читается!) = профиль; profit /pʁɔ.fi/ (l немое) = выгода, прибыль. Похожи, но разные слова."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["reseaux", "compte"],
+    "caseIds": ["wc-reseaux"]
+  },
+  {
+    "id": "wl-reseaux-publier",
+    "lemma": "publier",
+    "pos": "verb",
+    "ipa": "/py.bli.je/",
+    "translationsRu": ["публиковать", "выкладывать", "постить"],
+    "translationsEn": ["to post", "to publish"],
+    "semanticCore": "Выложить своё в сеть, чтобы это увидели другие: фото, текст, видео. От слова «public».",
+    "collocations": [
+      {
+        "fr": "publier une photo",
+        "ru": "выложить фото"
+      },
+      {
+        "fr": "publier un commentaire",
+        "ru": "опубликовать комментарий"
+      },
+      {
+        "fr": "publier sur Instagram",
+        "ru": "опубликовать в Instagram"
+      },
+      {
+        "fr": "ce qu'il publie",
+        "ru": "то, что он публикует"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "partager",
+        "note": "publier = выложить своё (новый пост); partager = поделиться чужим (репостнуть) или скинуть ссылку. Сначала кто-то publie, потом другие partagent."
+      },
+      {
+        "with": "poster",
+        "note": "publier — нейтрально-правильное «опубликовать»; poster (от «post») — разговорный синоним, тоже частый: «poster une story»."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["reseaux", "action"],
+    "caseIds": ["wc-reseaux"]
+  },
+  {
+    "id": "wl-reseaux-partager",
+    "lemma": "partager",
+    "pos": "verb",
+    "ipa": "/paʁ.ta.ʒe/",
+    "translationsRu": ["делиться", "репостить", "поделиться"],
+    "translationsEn": ["to share"],
+    "semanticCore": "Поделиться: и в жизни (разделить пирог, чувства), и в сети — переслать/репостнуть чужой контент.",
+    "collocations": [
+      {
+        "fr": "partager une vidéo",
+        "ru": "поделиться видео"
+      },
+      {
+        "fr": "partager un lien",
+        "ru": "поделиться ссылкой"
+      },
+      {
+        "fr": "partager une publication",
+        "ru": "репостнуть публикацию"
+      },
+      {
+        "fr": "partager en story",
+        "ru": "выложить в сторис (поделиться)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "publier",
+        "note": "partager = переслать/репостнуть уже существующее (чужое или своё); publier = выложить новое от себя. «Поделиться» ≠ «опубликовать впервые»."
+      },
+      {
+        "with": "envoyer",
+        "note": "partager = поделиться публично или с кругом (в сети); envoyer = отправить лично кому-то (сообщение, файл). Не одно и то же."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["reseaux", "action"],
+    "caseIds": ["wc-reseaux"]
+  },
+  {
+    "id": "wl-reseaux-abonne",
+    "lemma": "abonné",
+    "displayForm": "abonné / abonnée",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/a.bɔ.ne/",
+    "translationsRu": ["подписчик", "подписчица"],
+    "translationsEn": ["subscriber", "follower"],
+    "semanticCore": "Тот, кто на тебя подписан и видит твои посты; стандартное французское слово вместо англ. «follower».",
+    "collocations": [
+      {
+        "fr": "des milliers d'abonnés",
+        "ru": "тысячи подписчиков"
+      },
+      {
+        "fr": "gagner des abonnés",
+        "ru": "набирать подписчиков"
+      },
+      {
+        "fr": "répondre à ses abonnés",
+        "ru": "отвечать своим подписчикам"
+      },
+      {
+        "fr": "un nouvel abonné",
+        "ru": "новый подписчик"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "s'abonner",
+        "note": "un abonné = подписчик (существительное); s'abonner (à) = подписаться (глагол). «Je m'abonne à ta chaîne» → теперь я ton abonné."
+      },
+      {
+        "with": "abonnement",
+        "note": "un abonné = человек-подписчик; un abonnement = сама подписка (на сервис, журнал). Не путать «кто» и «что»."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["reseaux", "personne"],
+    "caseIds": ["wc-reseaux"]
+  },
+  {
+    "id": "wl-reseaux-story",
+    "lemma": "story",
+    "displayForm": "une story (pl. stories)",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/stɔ.ʁi/",
+    "translationsRu": ["история (сторис)", "сторис"],
+    "translationsEn": ["story"],
+    "semanticCore": "Короткий пост-история, который исчезает через 24 часа; заимствование из английского, по-французски женского рода: une story.",
+    "collocations": [
+      {
+        "fr": "mettre une story",
+        "ru": "выложить сторис"
+      },
+      {
+        "fr": "regarder les stories",
+        "ru": "смотреть сторис"
+      },
+      {
+        "fr": "répondre à une story",
+        "ru": "ответить на сторис"
+      },
+      {
+        "fr": "ma story du jour",
+        "ru": "моя сегодняшняя сторис"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "une / un story",
+        "note": "Хоть слово английское, во французском оно женского рода: une story (как «une histoire»). Множественное обычно по-английски — des stories."
+      },
+      {
+        "with": "publication",
+        "note": "une story = временный пост (исчезает за 24 ч); une publication / un post = обычный пост, который остаётся в профиле."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["reseaux", "contenu"],
+    "caseIds": ["wc-reseaux"]
+  },
+  {
+    "id": "wl-reseaux-hashtag",
+    "lemma": "hashtag",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/aʃ.taɡ/",
+    "translationsRu": ["хештег"],
+    "translationsEn": ["hashtag"],
+    "semanticCore": "Слово или фраза после знака #, по которому ищут и группируют посты; заимствование, мужского рода: un hashtag.",
+    "collocations": [
+      {
+        "fr": "ajouter un hashtag",
+        "ru": "добавить хештег"
+      },
+      {
+        "fr": "mettre des hashtags",
+        "ru": "поставить хештеги"
+      },
+      {
+        "fr": "un hashtag populaire",
+        "ru": "популярный хештег"
+      },
+      {
+        "fr": "suivre un hashtag",
+        "ru": "следить за хештегом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mot-dièse",
+        "note": "hashtag — то слово, что все используют; mot-dièse — официальный французский эквивалент (рекомендован, но в жизни редок). Знают оба, говорят hashtag."
+      },
+      {
+        "with": "arobase",
+        "note": "hashtag = решётка # (для тем); une arobase = собачка @ (для упоминания человека: @nom). Разные значки и разные роли."
+      }
+    ],
+    "frequencyRank": 860,
+    "level": "A2",
+    "tags": ["reseaux", "contenu"],
+    "caseIds": ["wc-reseaux"]
+  },
+  {
+    "id": "wl-reseaux-notification",
+    "lemma": "notification",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/nɔ.ti.fi.ka.sjɔ̃/",
+    "translationsRu": ["уведомление", "оповещение"],
+    "translationsEn": ["notification"],
+    "semanticCore": "Сигнал от приложения: «у тебя новый лайк / сообщение». Часто во множественном — les notifications.",
+    "collocations": [
+      {
+        "fr": "recevoir une notification",
+        "ru": "получить уведомление"
+      },
+      {
+        "fr": "désactiver les notifications",
+        "ru": "отключить уведомления"
+      },
+      {
+        "fr": "une notification de message",
+        "ru": "уведомление о сообщении"
+      },
+      {
+        "fr": "trop de notifications",
+        "ru": "слишком много уведомлений"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "message",
+        "note": "une notification = сам сигнал «что-то произошло» (всплывашка, кружок с цифрой); un message = собственно сообщение, которое ты потом откроешь."
+      },
+      {
+        "with": "alerte",
+        "note": "une notification = обычное уведомление приложения; une alerte = тревожное оповещение (о важном/срочном). Notification — нейтральнее."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["reseaux", "numerique"],
+    "caseIds": ["wc-reseaux"]
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "id": "wl-desserts-macaron",
+    "lemma": "macaron",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ma.ka.ʁɔ̃/",
+    "translationsRu": ["макарон", "миндальное пирожное"],
+    "translationsEn": ["macaron"],
+    "semanticCore": "Маленькое круглое миндальное пирожное из двух половинок безе с кремовой начинкой между ними.",
+    "collocations": [
+      { "fr": "un macaron à la framboise", "ru": "макарон с малиной" },
+      { "fr": "une boîte de macarons", "ru": "коробка макаронов" },
+      { "fr": "des macarons colorés", "ru": "разноцветные макароны" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "macaroon (англ.)",
+        "note": "Англ. macaroon — кокосовое печенье; фр. macaron — миндальное пирожное-безе. Похожие слова, но разные сладости."
+      },
+      {
+        "with": "macaroni",
+        "note": "macaron — пирожное; macaroni — макароны (паста). Из-за созвучия их легко перепутать."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["desserts", "patisserie"],
+    "caseIds": ["wc-desserts"]
+  },
+  {
+    "id": "wl-desserts-mousse",
+    "lemma": "mousse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mus/",
+    "translationsRu": ["мусс"],
+    "translationsEn": ["mousse"],
+    "semanticCore": "Воздушный взбитый десерт, чаще всего шоколадный; то же слово значит и пену.",
+    "collocations": [
+      { "fr": "une mousse au chocolat", "ru": "шоколадный мусс" },
+      { "fr": "une mousse légère", "ru": "лёгкий мусс" },
+      { "fr": "préparer une mousse", "ru": "приготовить мусс" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "crème",
+        "note": "mousse — воздушный взбитый десерт (держит форму за счёт пены); crème — гладкий крем (как заварной)."
+      },
+      {
+        "with": "mousse (пена)",
+        "note": "То же слово mousse значит «пена» (la mousse de la bière — пивная пена) и «мох»; в десертах — взбитый мусс."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["desserts", "patisserie"],
+    "caseIds": ["wc-desserts"]
+  },
+  {
+    "id": "wl-desserts-crepe",
+    "lemma": "crêpe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kʁɛp/",
+    "translationsRu": ["блинчик", "блин"],
+    "translationsEn": ["crepe", "pancake"],
+    "semanticCore": "Тонкий французский блинчик из пшеничной муки, чаще сладкий (с сахаром, шоколадом, вареньем).",
+    "collocations": [
+      { "fr": "une crêpe au sucre", "ru": "блинчик с сахаром" },
+      { "fr": "une crêpe au Nutella", "ru": "блинчик с «Нутеллой»" },
+      { "fr": "faire des crêpes", "ru": "печь блинчики" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "galette",
+        "note": "crêpe (f) — тонкий сладкий блинчик из пшеничной муки; galette — несладкий блин из гречневой муки (с сыром, яйцом, ветчиной)."
+      },
+      {
+        "with": "le crêpe",
+        "note": "la crêpe — блинчик (еда); le crêpe (мужской род) — ткань креп. Род меняет смысл."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["desserts", "patisserie"],
+    "caseIds": ["wc-desserts"]
+  },
+  {
+    "id": "wl-desserts-beignet",
+    "lemma": "beignet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bɛ.ɲɛ/",
+    "translationsRu": ["пончик", "жареный пирожок"],
+    "translationsEn": ["doughnut", "fritter"],
+    "semanticCore": "Кусочек теста (иногда с начинкой), обжаренный во фритюре; пончик или фруктовый «в кляре».",
+    "collocations": [
+      { "fr": "un beignet aux pommes", "ru": "яблочный пончик (яблоко в тесте)" },
+      { "fr": "des beignets au sucre", "ru": "пончики в сахаре" },
+      { "fr": "un beignet à la confiture", "ru": "пончик с вареньем" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poignet",
+        "note": "beignet (пончик) и poignet (запястье) звучат похоже, но это разные слова; не перепутай на слух."
+      },
+      {
+        "with": "beigne",
+        "note": "beignet — пончик (выпечка); beigne в разговорном — «оплеуха». Разные слова от одного корня."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["desserts", "patisserie"],
+    "caseIds": ["wc-desserts"]
+  },
+  {
+    "id": "wl-desserts-profiterole",
+    "lemma": "profiterole",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pʁɔ.fi.tʁɔl/",
+    "translationsRu": ["профитроль"],
+    "translationsEn": ["profiterole"],
+    "semanticCore": "Маленький шарик из заварного теста с начинкой; десертные подаются с мороженым и тёплым шоколадом.",
+    "collocations": [
+      { "fr": "des profiteroles au chocolat", "ru": "профитроли с шоколадом" },
+      { "fr": "une assiette de profiteroles", "ru": "тарелка профитролей" },
+      { "fr": "des profiteroles à la vanille", "ru": "профитроли с ванилью" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chou",
+        "note": "profiterole — маленький шарик из заварного теста (pâte à choux); un chou (à la crème) — побольше, с кремом. Одно тесто, разный размер."
+      },
+      {
+        "with": "éclair",
+        "note": "profiterole — круглый шарик; éclair — продолговатый из того же заварного теста с глазурью сверху."
+      }
+    ],
+    "frequencyRank": 1200,
+    "level": "A2",
+    "tags": ["desserts", "patisserie"],
+    "caseIds": ["wc-desserts"]
+  },
+  {
+    "id": "wl-desserts-sorbet",
+    "lemma": "sorbet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɔʁ.bɛ/",
+    "translationsRu": ["сорбет", "фруктовый лёд"],
+    "translationsEn": ["sorbet", "sherbet"],
+    "semanticCore": "Замороженный десерт из фруктового пюре и сахара, без молока и сливок (в отличие от мороженого).",
+    "collocations": [
+      { "fr": "un sorbet au citron", "ru": "лимонный сорбет" },
+      { "fr": "une boule de sorbet", "ru": "шарик сорбета" },
+      { "fr": "un sorbet à la fraise", "ru": "клубничный сорбет" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "glace",
+        "note": "sorbet — фруктовый лёд без молока; glace (crème glacée) — мороженое на молоке/сливках. Главное отличие — наличие молочного."
+      },
+      {
+        "with": "sirop",
+        "note": "sorbet — замороженный десерт; sirop — сироп (жидкость). Созвучны в начале, но это разное."
+      }
+    ],
+    "frequencyRank": 900,
+    "level": "A2",
+    "tags": ["desserts", "patisserie"],
+    "caseIds": ["wc-desserts"]
+  },
+  {
+    "id": "wl-desserts-millefeuille",
+    "lemma": "millefeuille",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mil.fœj/",
+    "translationsRu": ["наполеон", "мильфёй"],
+    "translationsEn": ["millefeuille", "Napoleon"],
+    "semanticCore": "Пирожное «Наполеон»: слои хрустящего слоёного теста, проложенные заварным кремом.",
+    "collocations": [
+      { "fr": "un millefeuille à la vanille", "ru": "мильфёй с ванилью" },
+      { "fr": "une part de millefeuille", "ru": "кусок наполеона" },
+      { "fr": "un millefeuille croustillant", "ru": "хрустящий мильфёй" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "la millefeuille (растение)",
+        "note": "Десерт — мужского рода: un millefeuille (пирожное «Наполеон»). То же слово в женском роде, la millefeuille, — растение тысячелистник. Род разводит смысл."
+      },
+      {
+        "with": "feuille",
+        "note": "Слово буквально «тысяча листов» (mille + feuille) — про слои теста; сама по себе feuille — лист (бумаги, дерева)."
+      }
+    ],
+    "frequencyRank": 1300,
+    "level": "A2",
+    "tags": ["desserts", "patisserie"],
+    "caseIds": ["wc-desserts"]
+  },
+  {
+    "id": "wl-desserts-flan",
+    "lemma": "flan",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/flɑ̃/",
+    "translationsRu": ["флан", "заварной пудинг"],
+    "translationsEn": ["flan", "custard tart"],
+    "semanticCore": "Запечённый десерт из яиц, молока и сахара плотной кремовой текстуры; часто на тонкой основе из теста.",
+    "collocations": [
+      { "fr": "un flan pâtissier", "ru": "флан-патисье (заварной флан в тесте)" },
+      { "fr": "une part de flan", "ru": "кусок флана" },
+      { "fr": "un flan à la vanille", "ru": "флан с ванилью" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "crème caramel",
+        "note": "flan — плотный запечённый заварной десерт; crème caramel — нежнее и подаётся с карамельным соусом сверху."
+      },
+      {
+        "with": "crème brûlée",
+        "note": "flan — режется кусками, держит форму; crème brûlée — мягкий крем в формочке с хрустящей карамельной корочкой."
+      }
+    ],
+    "frequencyRank": 1100,
+    "level": "A2",
+    "tags": ["desserts", "patisserie"],
+    "caseIds": ["wc-desserts"]
+  }
+]

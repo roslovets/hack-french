@@ -1,0 +1,342 @@
+[
+  {
+    "id": "wc-aeroport",
+    "title": "Аэропорт",
+    "theme": "aeroport",
+    "level": "A2",
+    "wordIds": [
+      "wl-aeroport-vol",
+      "wl-aeroport-hublot",
+      "wl-aeroport-embarquer",
+      "wl-aeroport-escale",
+      "wl-aeroport-decollage",
+      "wl-aeroport-atterrissage",
+      "wl-aeroport-terminal",
+      "wl-aeroport-soute"
+    ],
+    "steps": [
+      {
+        "id": "wc-aeroport-vol-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aeroport-vol",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты смотришь на табло в аэропорту. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Le vol pour Madrid part à 14h30.",
+          "Notre vol a deux heures de retard.",
+          "C'est un vol direct, sans escale."
+        ],
+        "options": ["рейс, полёт", "выход на посадку", "место у окна", "билет"],
+        "correctIndex": 0,
+        "explanation": "vol (m) — рейс / полёт: «le vol pour Madrid» (рейс на Мадрид), «un vol direct» (прямой рейс). У слова есть и второе значение — «кража» (un vol dans le métro), но в аэропорту это всегда полёт. Выход на посадку — la porte, билет — le billet."
+      },
+      {
+        "id": "wc-aeroport-vol-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-aeroport-vol",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Объявляют рейс по громкой связи. Послушай и выбери, какое именно слово произнесли.",
+        "audioText": "vol",
+        "options": ["vol", "veau", "voile", "sol"],
+        "correctIndex": 0,
+        "explanation": "vol /vɔl/ (рейс; полёт; кража), veau /vo/ (телёнок; телятина), voile /vwal/ (парус; вуаль), sol /sɔl/ (земля, пол). Это разные слова, не омофоны: vol и sol различаются только первым звуком (v / s)."
+      },
+      {
+        "id": "wc-aeroport-decollage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aeroport-decollage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Самолёт готовится оторваться от земли. Что значит выделенное слово?",
+        "contexts": [
+          "Le décollage est prévu à 9h.",
+          "Attachez vos ceintures avant le décollage.",
+          "Il y a du retard au décollage."
+        ],
+        "options": ["взлёт", "посадка (приземление)", "пересадка", "взлётная полоса"],
+        "correctIndex": 0,
+        "explanation": "décollage (m) — взлёт, отрыв от земли. От глагола décoller (взлетать): «l'avion décolle». Приземление — l'atterrissage (противоположность), взлётная полоса — la piste."
+      },
+      {
+        "id": "wc-aeroport-atterrissage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aeroport-atterrissage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Самолёт снижается и касается полосы. Что значит выделенное слово?",
+        "contexts": [
+          "L'atterrissage s'est très bien passé.",
+          "Préparez-vous pour l'atterrissage à Nice.",
+          "Un atterrissage en douceur, on a à peine senti les roues."
+        ],
+        "options": ["посадка, приземление", "взлёт", "багажный отсек", "иллюминатор"],
+        "correctIndex": 0,
+        "explanation": "atterrissage (m) — посадка, приземление. Корень terre (земля) виден внутри: a-TERRE-issage. От глагола atterrir (приземляться): «l'avion atterrit». Внимание на двойные буквы: a-t-t-e-r-r-i-s-s-a-g-e."
+      },
+      {
+        "id": "wc-aeroport-decollage-cmp",
+        "kind": "compare",
+        "wordId": "wl-aeroport-decollage",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Два момента полёта — начало и конец. В чём разница между décollage и atterrissage?",
+        "phrases": ["Le décollage a eu lieu à Paris.", "L'atterrissage a eu lieu à Rome."],
+        "options": [
+          "décollage — взлёт (самолёт отрывается от земли в начале); atterrissage — посадка (самолёт касается земли в конце).",
+          "Это полные синонимы, разницы нет.",
+          "décollage — посадка, atterrissage — взлёт.",
+          "décollage — про багаж, atterrissage — про пассажиров."
+        ],
+        "correctIndex": 0,
+        "explanation": "décollage = взлёт (décoller — оторваться от земли), atterrissage = посадка/приземление (atterrir — коснуться земли, terre). Это антонимы: полёт начинается décollage и заканчивается atterrissage."
+      },
+      {
+        "id": "wc-aeroport-atterrissage-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-aeroport-atterrissage",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — это этапы или действия в полёте. Найди лишнее: оно обозначает не действие, а место в аэропорту.",
+        "options": ["le décollage", "l'atterrissage", "l'embarquement", "le terminal"],
+        "correctIndex": 3,
+        "explanation": "décollage (взлёт), atterrissage (посадка) и embarquement (посадка пассажиров на борт) — этапы/действия полёта. Лишнее — le terminal: это здание аэропорта, место, а не действие."
+      },
+      {
+        "id": "wc-aeroport-embarquer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aeroport-embarquer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Объявили твой выход. Что значит выделенный глагол во всех трёх сценах?",
+        "contexts": [
+          "Les passagers du vol AF210 peuvent embarquer.",
+          "On embarque dans dix minutes, dépêche-toi.",
+          "Il faut embarquer par la porte 12."
+        ],
+        "options": [
+          "садиться на борт (в самолёт)",
+          "выходить из самолёта",
+          "сдавать багаж",
+          "проходить досмотр"
+        ],
+        "correctIndex": 0,
+        "explanation": "embarquer — садиться на борт, заходить в самолёт (или на корабль): «embarquer par la porte 12». Противоположность — débarquer (высаживаться, выходить). Сдавать багаж — enregistrer les bagages."
+      },
+      {
+        "id": "wc-aeroport-embarquer-collo",
+        "kind": "sort",
+        "wordId": "wl-aeroport-embarquer",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Ты стоишь у выхода на посадку. Какие сочетания с embarquer звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "embarquer dans l'avion",
+            "basket": "ok"
+          },
+          {
+            "text": "la carte d'embarquement",
+            "basket": "ok"
+          },
+          {
+            "text": "la porte d'embarquement",
+            "basket": "ok"
+          },
+          {
+            "text": "embarquer le décollage",
+            "basket": "no"
+          },
+          {
+            "text": "embarquer une escale",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Садятся «embarquer dans l'avion»; нужен «la carte d'embarquement» (посадочный талон) и «la porte d'embarquement» (выход на посадку). «embarquer le décollage» и «embarquer une escale» — бессмыслица: взлёт и пересадку не «грузят» на борт."
+      },
+      {
+        "id": "wc-aeroport-escale-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aeroport-escale",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Твой маршрут не прямой. Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Notre vol fait escale à Istanbul.",
+          "Une escale de trois heures, c'est long.",
+          "Je préfère un vol sans escale."
+        ],
+        "options": [
+          "пересадка, промежуточная остановка",
+          "взлёт",
+          "посадочный талон",
+          "багажная лента"
+        ],
+        "correctIndex": 0,
+        "explanation": "escale (f) — промежуточная остановка / пересадка: самолёт садится по пути. «faire escale à» (делать остановку в), «un vol sans escale» (прямой рейс, = un vol direct). Это слово родилось у моряков: судно тоже «fait escale» в порту."
+      },
+      {
+        "id": "wc-aeroport-escale-cmp",
+        "kind": "compare",
+        "wordId": "wl-aeroport-escale",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Два слова про «пересадку», но не одно и то же. Чем escale отличается от correspondance?",
+        "phrases": [
+          "On fait une escale d'une heure à Rome.",
+          "On a une correspondance pour Berlin à Rome."
+        ],
+        "options": [
+          "escale — сама остановка самолёта по пути (та же машина садится и летит дальше); correspondance — стыковка, когда пересаживаешься на ДРУГОЙ рейс.",
+          "Это полные синонимы, разницы нет.",
+          "escale — пересадка на другой самолёт; correspondance — остановка того же самолёта.",
+          "escale — про автобусы, correspondance — только про самолёты."
+        ],
+        "correctIndex": 0,
+        "explanation": "escale = промежуточная посадка самого рейса (тот же самолёт стоит и летит дальше). correspondance = стыковка/пересадка на другой рейс (как «пересадка» в метро). Можно иметь escale без смены самолёта, а correspondance — это всегда новый рейс."
+      },
+      {
+        "id": "wc-aeroport-hublot-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aeroport-hublot",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты выбираешь место в самолёте. Что значит выделенное слово?",
+        "contexts": [
+          "Je voudrais une place côté hublot.",
+          "Regarde par le hublot, on voit les Alpes !",
+          "Le hublot est un peu sale."
+        ],
+        "options": [
+          "иллюминатор (окно в самолёте)",
+          "проход между рядами",
+          "багажная полка",
+          "крыло"
+        ],
+        "correctIndex": 0,
+        "explanation": "hublot (m) — иллюминатор, круглое окошко самолёта или корабля. «une place côté hublot» — место у окна (côté couloir — у прохода). Обычное окно в стене дома — la fenêtre, а в самолёте именно le hublot."
+      },
+      {
+        "id": "wc-aeroport-hublot-trap",
+        "kind": "trap",
+        "wordId": "wl-aeroport-hublot",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В самолёте хочется место у окна. Какое слово выбрать для «окна» в самолёте?",
+        "options": [
+          "une place côté hublot",
+          "une place côté fenêtre",
+          "une place côté vitre",
+          "une place côté window"
+        ],
+        "correctIndex": 0,
+        "explanation": "В самолёте и на корабле окно — le hublot, поэтому место у окна — «côté hublot». la fenêtre — это окно в доме, la vitre — стекло, «window» — английское. По-русски всё «окно», но француз у трапа скажет именно hublot."
+      },
+      {
+        "id": "wc-aeroport-terminal-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-aeroport-terminal",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит terminal в аэропорту?",
+        "bridge": "Англ. «terminal» (терминал аэропорта) — пишется почти так же. Во французском это le terminal, читается /tɛʁ.mi.nal/.",
+        "options": [
+          "терминал (здание аэропорта)",
+          "выход на посадку",
+          "взлётная полоса",
+          "табло вылетов"
+        ],
+        "correctIndex": 0,
+        "explanation": "le terminal — терминал, здание аэропорта, откуда вылетают: «le terminal 2», «à quel terminal ?». Англ. «terminal» — прямой мост. Множественное число особое: des terminaux. Выход на посадку — la porte."
+      },
+      {
+        "id": "wc-aeroport-terminal-collo",
+        "kind": "sort",
+        "wordId": "wl-aeroport-terminal",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Тебе нужно найти свой терминал. Какие сочетания со словом terminal звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "le terminal 2",
+            "basket": "ok"
+          },
+          {
+            "text": "à quel terminal ?",
+            "basket": "ok"
+          },
+          {
+            "text": "les vols internationaux partent du terminal E",
+            "basket": "ok"
+          },
+          {
+            "text": "embarquer le terminal",
+            "basket": "no"
+          },
+          {
+            "text": "un terminal sans escale",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Терминал нумеруют и из него вылетают: «le terminal 2», «à quel terminal ?», «partir du terminal E». «embarquer le terminal» (сесть на терминал) и «un terminal sans escale» (терминал без пересадки) — бессмыслица: «sans escale» относится к рейсу, а не к зданию."
+      },
+      {
+        "id": "wc-aeroport-soute-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-aeroport-soute",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Ты сдаёшь чемодан на стойке регистрации. Что значит выделенное слово?",
+        "contexts": [
+          "Votre valise part en soute.",
+          "Les grands bagages vont dans la soute.",
+          "Un bagage en soute coûte un supplément."
+        ],
+        "options": [
+          "багажный отсек (внизу самолёта)",
+          "ручная кладь в салоне",
+          "багажная лента",
+          "тележка для багажа"
+        ],
+        "correctIndex": 0,
+        "explanation": "soute (f) — багажный отсек, грузовой трюм внизу самолёта (и на корабле). «un bagage en soute» — сданный багаж (в отсеке), в отличие от «un bagage en cabine» / «un bagage à main» — ручная кладь в салоне."
+      },
+      {
+        "id": "wc-aeroport-soute-hint",
+        "kind": "wordHint",
+        "wordId": "wl-aeroport-soute",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: нижний отсек самолёта, куда грузят сданные чемоданы (не ручную кладь).",
+        "answer": "soute",
+        "hints": [
+          "Начинается на s…",
+          "Женский род, 5 букв: la ___; читается /sut/",
+          "Une valise part en ___ ."
+        ],
+        "explanation": "soute (f) — багажный отсек, трюм. Сданный чемодан едет «en soute», а ручная кладь остаётся «en cabine». Не путай со звуковыми двойниками: saute (прыгает), coûte (стоит), chute (падение) — другие слова."
+      }
+    ]
+  }
+]

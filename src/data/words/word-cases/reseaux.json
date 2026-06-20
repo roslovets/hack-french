@@ -1,0 +1,280 @@
+[
+  {
+    "id": "wc-reseaux",
+    "title": "Соцсети",
+    "theme": "reseaux",
+    "level": "A2",
+    "wordIds": [
+      "wl-reseaux-reseau",
+      "wl-reseaux-profil",
+      "wl-reseaux-publier",
+      "wl-reseaux-partager",
+      "wl-reseaux-abonne",
+      "wl-reseaux-story",
+      "wl-reseaux-hashtag",
+      "wl-reseaux-notification"
+    ],
+    "steps": [
+      {
+        "id": "wc-reseaux-reseau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-reseaux-reseau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит здесь?",
+        "contexts": [
+          "Je passe trop de temps sur les réseaux sociaux.",
+          "Elle est très active sur les réseaux.",
+          "TikTok est un réseau social très populaire."
+        ],
+        "options": ["(социальная) сеть", "сообщение", "экран", "приложение"],
+        "correctIndex": 0,
+        "explanation": "un réseau — сеть; les réseaux sociaux — социальные сети («соцсети»). В этом значении почти всегда множественное число: sur les réseaux."
+      },
+      {
+        "id": "wc-reseaux-reseau-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-reseaux-reseau",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "réseau",
+        "options": ["réseau", "roseau", "ruisseau", "ciseau"],
+        "correctIndex": 0,
+        "explanation": "réseau /ʁe.zo/ — сеть. Похоже звучат, но это другие слова: roseau /ʁo.zo/ — тростник, ruisseau /ʁɥi.so/ — ручей, ciseau /si.zo/ — резец (ножницы — des ciseaux)."
+      },
+      {
+        "id": "wc-reseaux-profil-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-reseaux-profil",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai changé ma photo de profil.",
+          "Son profil est privé, on ne voit rien.",
+          "Tu as vu le profil de ce chanteur ?"
+        ],
+        "options": ["профиль (страница)", "подписчик", "пароль", "уведомление"],
+        "correctIndex": 0,
+        "explanation": "le profil — профиль, твоя страница-анкета в соцсети. «une photo de profil» — фото профиля (аватар), «un profil privé» — закрытый профиль."
+      },
+      {
+        "id": "wc-reseaux-profil-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-reseaux-profil",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "profil",
+        "options": ["profil", "profit", "profond", "professeur"],
+        "correctIndex": 0,
+        "explanation": "profil /pʁɔ.fil/ — профиль; здесь конечное l читается. Не путай: profit /pʁɔ.fi/ — выгода (l немое), profond — глубокий, professeur — преподаватель."
+      },
+      {
+        "id": "wc-reseaux-publier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-reseaux-publier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il publie une photo tous les jours.",
+          "J'ai publié mon premier post hier.",
+          "Elle adore publier ses voyages."
+        ],
+        "options": ["публиковать (выкладывать)", "удалять", "лайкать", "листать"],
+        "correctIndex": 0,
+        "explanation": "publier — публиковать, выкладывать своё в сеть. От слова «public»: то, что publie, видят другие. Разг. синоним — poster."
+      },
+      {
+        "id": "wc-reseaux-publier-cmp",
+        "kind": "compare",
+        "wordId": "wl-reseaux-publier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "publier и partager. В чём разница?",
+        "phrases": ["Marie publie une photo de ses vacances.", "Paul partage la photo de Marie."],
+        "options": [
+          "publier — выложить своё (новый пост); partager — поделиться чужим (репостнуть).",
+          "Это синонимы, разницы нет.",
+          "publier — поделиться чужим; partager — выложить своё.",
+          "Оба значат «удалить пост»."
+        ],
+        "correctIndex": 0,
+        "explanation": "publier — выложить новое от себя. partager — переслать/репостнуть то, что уже есть. Сначала Marie publie, потом Paul partage."
+      },
+      {
+        "id": "wc-reseaux-partager-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-reseaux-partager",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Partage cette vidéo avec tes amis !",
+          "J'ai partagé le lien dans ma story.",
+          "Il partage souvent des articles."
+        ],
+        "options": ["делиться (репостить)", "скачивать", "комментировать", "блокировать"],
+        "correctIndex": 0,
+        "explanation": "partager — делиться, репостить: переслать видео, ссылку, чужой пост. В жизни это же слово значит «разделить» (пирог, чувства)."
+      },
+      {
+        "id": "wc-reseaux-partager-sort",
+        "kind": "sort",
+        "wordId": "wl-reseaux-partager",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с partager звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "partager un lien",
+            "basket": "ok"
+          },
+          {
+            "text": "partager une vidéo",
+            "basket": "ok"
+          },
+          {
+            "text": "partager une publication",
+            "basket": "ok"
+          },
+          {
+            "text": "allumer une vidéo",
+            "basket": "no"
+          },
+          {
+            "text": "conduire un lien",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«partager un lien / une vidéo / une publication» — естественно: контентом делятся. «allumer une vidéo» (включить видео — так с partager не сочетается) и «conduire un lien» (вести ссылку) — бессмыслица."
+      },
+      {
+        "id": "wc-reseaux-abonne-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-reseaux-abonne",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Elle a des milliers d'abonnés.",
+          "Merci à mes nouveaux abonnés !",
+          "Cet artiste répond à ses abonnés."
+        ],
+        "options": ["подписчик", "друг", "сосед", "продавец"],
+        "correctIndex": 0,
+        "explanation": "un abonné (f une abonnée) — подписчик: тот, кто на тебя подписан. Это стандартное французское слово вместо англ. «follower»."
+      },
+      {
+        "id": "wc-reseaux-abonne-hint",
+        "kind": "wordHint",
+        "wordId": "wl-reseaux-abonne",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: человек, который подписан на твой аккаунт и видит твои посты.",
+        "answer": "abonné",
+        "hints": [
+          "Начинается на a…",
+          "Однокоренное с глаголом s'abonner (подписаться)",
+          "Merci à mes ___s !"
+        ],
+        "explanation": "un abonné — подписчик. Глагол — s'abonner (à) «подписаться», подписка — un abonnement. Женский род: une abonnée."
+      },
+      {
+        "id": "wc-reseaux-story-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-reseaux-story",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai mis une story ce matin.",
+          "Tu as vu ma story ?",
+          "Sa story disparaît dans une heure."
+        ],
+        "options": ["сторис (история на 24 ч)", "профиль", "хештег", "лайк"],
+        "correctIndex": 0,
+        "explanation": "une story — сторис: короткий пост, который исчезает через 24 часа. Слово английское, но во французском женского рода: une story."
+      },
+      {
+        "id": "wc-reseaux-story-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-reseaux-story",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай ассоциацию для story, чтобы запомнить, что слово женского рода: une story (а не un).",
+        "examples": [
+          "story = «история», а une histoire — женского рода. Раз histoire — женская, то и story тоже: une story.",
+          "Представь, как говоришь подруге: «Tu as vu MA story ?» — ma, женский род, как ma photo."
+        ]
+      },
+      {
+        "id": "wc-reseaux-hashtag-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-reseaux-hashtag",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит hashtag?",
+        "bridge": "Англ. «hashtag» — то самое слово после значка #. Французы взяли его как есть: un hashtag (мужской род).",
+        "options": ["хештег (#тема)", "лайк", "репост", "подписка"],
+        "correctIndex": 0,
+        "explanation": "un hashtag — хештег, слово после #. Заимствование из английского, мужского рода. Официальный (редкий) синоним — un mot-dièse."
+      },
+      {
+        "id": "wc-reseaux-hashtag-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-reseaux-hashtag",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — то, что добавляют к посту, чтобы его нашли и сгруппировали. Найди лишнее.",
+        "options": ["un hashtag", "un mot-clé", "une légende", "un abonné"],
+        "correctIndex": 3,
+        "explanation": "Хештег (un hashtag), ключевое слово (un mot-clé) и подпись к посту (une légende) добавляют к публикации. Подписчик (un abonné) — это человек, а не часть поста."
+      },
+      {
+        "id": "wc-reseaux-notification-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-reseaux-notification",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai reçu une notification de ton message.",
+          "Désactive les notifications pour dormir.",
+          "Trop de notifications, ça me stresse."
+        ],
+        "options": ["уведомление", "подписчик", "сторис", "профиль"],
+        "correctIndex": 0,
+        "explanation": "une notification — уведомление: сигнал приложения «у тебя новый лайк / сообщение». Часто во множественном: désactiver les notifications — отключить уведомления."
+      },
+      {
+        "id": "wc-reseaux-notification-trap",
+        "kind": "trap",
+        "wordId": "wl-reseaux-notification",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Телефон показал «une notification». Что именно пришло?",
+        "options": [
+          "сигнал, что что-то произошло — само сообщение ещё надо открыть",
+          "обязательно новое текстовое сообщение и ничего больше",
+          "новый подписчик — другого notification не значит",
+          "ошибка приложения"
+        ],
+        "correctIndex": 0,
+        "explanation": "une notification — это оповещение «что-то случилось» (лайк, коммент, сообщение, новый abonné). Само сообщение (un message) ты прочитаешь, когда откроешь уведомление."
+      }
+    ]
+  }
+]
