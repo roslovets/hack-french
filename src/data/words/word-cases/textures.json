@@ -1,0 +1,319 @@
+[
+  {
+    "id": "wc-textures",
+    "title": "На ощупь",
+    "theme": "textures",
+    "level": "A2",
+    "wordIds": [
+      "wl-textures-doux",
+      "wl-textures-rugueux",
+      "wl-textures-lisse",
+      "wl-textures-mou",
+      "wl-textures-piquant",
+      "wl-textures-collant",
+      "wl-textures-soyeux",
+      "wl-textures-rapeux"
+    ],
+    "steps": [
+      {
+        "id": "wc-textures-doux-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-textures-doux",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ce pull est tout doux.",
+          "Le chat a un poil très doux.",
+          "Elle m'a parlé d'une voix douce."
+        ],
+        "options": ["мягкий, нежный", "шершавый", "липкий", "колючий"],
+        "correctIndex": 0,
+        "explanation": "doux — приятный, мягкий, нежный на ощупь и на слух. Женский род douce: une voix douce. Конечный x не читается: /du/. Будь внимателен: «l'eau douce» — это пресная вода, а не сладкая."
+      },
+      {
+        "id": "wc-textures-doux-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-textures-doux",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "doux",
+        "options": ["doute", "douze", "douche", "doux"],
+        "correctIndex": 3,
+        "explanation": "Прозвучало doux /du/ — мягкий. Похожи по началу, но это другие слова: doute /dut/ — сомнение, douze /duz/ — двенадцать, douche /duʃ/ — душ. У doux на конце нет согласного звука — слушай «голый» гласный /du/."
+      },
+      {
+        "id": "wc-textures-rugueux-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-textures-rugueux",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le mur en pierre est rugueux.",
+          "Ses mains de travailleur sont rugueuses.",
+          "Le papier de verre est très rugueux."
+        ],
+        "options": ["шершавый, шероховатый", "гладкий", "мягкий", "шелковистый"],
+        "correctIndex": 0,
+        "explanation": "rugueux — шершавый, неровный, грубый на ощупь. Женский род rugueuse: des mains rugueuses. «le papier de verre» — наждачная бумага. Антоним — lisse (гладкий)."
+      },
+      {
+        "id": "wc-textures-rugueux-sort",
+        "kind": "sort",
+        "wordId": "wl-textures-rugueux",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом rugueux/rugueuse звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une surface rugueuse",
+            "basket": "ok"
+          },
+          {
+            "text": "une peau rugueuse",
+            "basket": "ok"
+          },
+          {
+            "text": "une écorce rugueuse",
+            "basket": "ok"
+          },
+          {
+            "text": "une voix rugueuse",
+            "basket": "no"
+          },
+          {
+            "text": "un café rugueux",
+            "basket": "no"
+          }
+        ],
+        "explanation": "rugueux описывает шершавую поверхность: surface, peau, écorce — естественно. Про хриплый голос обычно говорят râpeuse, а не «rugueuse»; «un café rugueux» — бессмыслица (вкус так не описывают)."
+      },
+      {
+        "id": "wc-textures-lisse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-textures-lisse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La table en verre est parfaitement lisse.",
+          "Elle a la peau lisse.",
+          "Ce galet est tout lisse."
+        ],
+        "options": ["гладкий, ровный", "шершавый", "липкий", "колючий"],
+        "correctIndex": 0,
+        "explanation": "lisse — гладкий, ровный, без бугорков. Форма одинакова в мужском и женском роде (оканчивается на -e): un galet lisse, une peau lisse. «un galet» — морская галька. Антоним — rugueux."
+      },
+      {
+        "id": "wc-textures-lisse-cmp",
+        "kind": "compare",
+        "wordId": "wl-textures-lisse",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«une surface lisse» и «une étoffe douce». Чем отличаются lisse и doux?",
+        "phrases": ["Le marbre est lisse et froid.", "Cette étoffe est douce et chaude."],
+        "options": [
+          "lisse — гладкий, ровный (про рельеф); doux — приятный, мягкий, нежный (про ощущение).",
+          "Это полные синонимы.",
+          "lisse — мягкий, doux — гладкий.",
+          "lisse — тёплый, doux — холодный."
+        ],
+        "correctIndex": 0,
+        "explanation": "lisse описывает ровную поверхность без бугорков (мрамор, стекло), а doux — приятную мягкость на ощупь (ткань, кожа). Мрамор lisse, но не doux; бархат doux, но не идеально lisse. «une étoffe» — ткань."
+      },
+      {
+        "id": "wc-textures-mou-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-textures-mou",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ce matelas est trop mou pour mon dos.",
+          "Le pain d'hier est devenu mou.",
+          "Cette pâte est encore molle."
+        ],
+        "options": ["мягкий (не твёрдый, проминается)", "колючий", "гладкий", "шелковистый"],
+        "correctIndex": 0,
+        "explanation": "mou — мягкий в смысле «не твёрдый, поддаётся нажиму»: матрас, хлеб, тесто. Женский род — molle (нерегулярно!): une pâte molle. Антоним — dur (твёрдый)."
+      },
+      {
+        "id": "wc-textures-mou-trap",
+        "kind": "trap",
+        "wordId": "wl-textures-mou",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "По-русски и mou, и doux переводят как «мягкий». Хочешь сказать «мягкий (нежный) свитер». Какое слово?",
+        "phrases": ["Un pull doux.", "Un matelas mou."],
+        "options": [
+          "doux — приятный, нежный на ощупь; mou подошло бы матрасу (не твёрдый), но не свитеру.",
+          "mou — про любой мягкий предмет, в том числе свитер.",
+          "Разницы нет, оба одинаково подходят свитеру.",
+          "doux — твёрдый, mou — нежный."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка двух «мягких»: doux — приятный, нежный на ощупь (un pull doux — мягкий свитер); mou — проминается под нажимом (un matelas mou — мягкий матрас). Свитер бывает doux, но не «mou»."
+      },
+      {
+        "id": "wc-textures-mou-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-textures-mou",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "mou",
+        "options": ["mousse", "moule", "mouche", "mou"],
+        "correctIndex": 3,
+        "explanation": "Прозвучало mou /mu/ — мягкий. Похожи по началу, но это другие слова: mousse /mus/ — пена/мох, moule /mul/ — мидия/форма, mouche /muʃ/ — муха. У mou нет согласного на конце — слушай чистый гласный /mu/."
+      },
+      {
+        "id": "wc-textures-mou-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-textures-mou",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай ассоциацию для mou (мягкий, не твёрдый) — особенно чтобы запомнить нерегулярный женский род molle.",
+        "examples": [
+          "«Му-у» — корова прилегла на мягкое (mou) сено; а её мама с двумя «л» (molle) ещё мягче.",
+          "Представь, как палец тонет в мягком (mou) тесте: une pâte molle — рука уходит в неё легко."
+        ]
+      },
+      {
+        "id": "wc-textures-piquant-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-textures-piquant",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово в трёх сценах — на ощупь и на вкус. Что оно значит?",
+        "contexts": [
+          "Sa barbe de trois jours est piquante.",
+          "Attention, cette sauce est très piquante.",
+          "Le cactus a des épines piquantes."
+        ],
+        "options": ["колючий, острый (жгучий)", "гладкий", "липкий", "мягкий"],
+        "correctIndex": 0,
+        "explanation": "piquant — колющий на ощупь (борода, колючки) и жгуче-острый на вкус (соус). Женский род piquante: une sauce piquante. Это же слово — причастие от piquer (колоть, жалить)."
+      },
+      {
+        "id": "wc-textures-piquant-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-textures-piquant",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит piquant?",
+        "bridge": "Англ. «piquant» (о вкусе — пикантный, острый) взято прямо из французского: те же буквы. По-французски это ещё и «колючий» на ощупь.",
+        "options": ["колючий, острый (жгучий)", "сладкий", "гладкий", "пресный"],
+        "correctIndex": 0,
+        "explanation": "piquant = колючий / острый. Англ. «piquant» — прямой мост, это французское заимствование. Но во французском значение шире: не только про вкус, но и про колкость на ощупь (une barbe piquante)."
+      },
+      {
+        "id": "wc-textures-collant-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-textures-collant",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Mes doigts sont collants après le miel.",
+          "Le sol de la cuisine est tout collant.",
+          "Ce ruban est collant des deux côtés."
+        ],
+        "options": ["липкий, клейкий", "шершавый", "мягкий", "гладкий"],
+        "correctIndex": 0,
+        "explanation": "collant — липкий, клейкий: прилипает к рукам, к поверхности. Женский род collante: une table collante. От глагола coller (клеить). «le ruban» — лента/скотч."
+      },
+      {
+        "id": "wc-textures-collant-trap",
+        "kind": "trap",
+        "wordId": "wl-textures-collant",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Подруга говорит: «J'ai acheté un collant noir.» Что она купила?",
+        "options": [
+          "колготки — un collant (существительное) значит «колготки».",
+          "что-то липкое чёрного цвета.",
+          "клей.",
+          "чёрный скотч."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: прилагательное collant = липкий, но существительное un collant = колготки. Одна пара — обычно un collant (в единственном числе); встречается и множественное des collants. «un collant noir» — чёрные колготки, а не «нечто липкое»."
+      },
+      {
+        "id": "wc-textures-soyeux-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-textures-soyeux",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Après le shampooing, ses cheveux sont soyeux.",
+          "Le chat a un pelage soyeux.",
+          "Cette crème rend la peau soyeuse."
+        ],
+        "options": ["шелковистый", "колючий", "липкий", "шершавый"],
+        "correctIndex": 0,
+        "explanation": "soyeux — шелковистый: гладкий, нежный и струящийся, как шёлк. Женский род soyeuse: une peau soyeuse. Слово происходит от soie — шёлк (по-французски шёлк женского рода: la soie)."
+      },
+      {
+        "id": "wc-textures-soyeux-hint",
+        "kind": "wordHint",
+        "wordId": "wl-textures-soyeux",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: гладкий и нежный на ощупь, как шёлк (о волосах, коже).",
+        "answer": "soyeux",
+        "hints": [
+          "Однокоренное с soie (шёлк).",
+          "Мужской род оканчивается на -eux, как rugueux.",
+          "Des cheveux ___ après le shampooing."
+        ],
+        "explanation": "soyeux — шелковистый, от soie (шёлк). Читается /swa.jø/. Женский род — soyeuse (-eux → -euse): une peau soyeuse."
+      },
+      {
+        "id": "wc-textures-rapeux-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-textures-rapeux",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La langue du chat est râpeuse.",
+          "Cette serviette sèche est râpeuse.",
+          "Il a une voix grave et râpeuse."
+        ],
+        "options": ["шероховатый, царапающий (о голосе — хриплый)", "гладкий", "мягкий", "липкий"],
+        "correctIndex": 0,
+        "explanation": "râpeux — грубо-шершавый, царапающий, как тёрка или язык кошки; о голосе — хриплый. Женский род râpeuse: une langue râpeuse. Слово от râpe — тёрка. «une serviette» — полотенце."
+      },
+      {
+        "id": "wc-textures-rapeux-cmp",
+        "kind": "compare",
+        "wordId": "wl-textures-rapeux",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«une langue râpeuse» и «un mur rugueux». Чем râpeux отличается от rugueux?",
+        "phrases": ["La langue du chat est râpeuse.", "Le mur en pierre est rugueux."],
+        "options": [
+          "râpeux — царапающий, дерущий, как тёрка/язык кошки; rugueux — просто неровный, шершавый.",
+          "Это полные синонимы, разницы нет.",
+          "râpeux — гладкий, rugueux — шершавый.",
+          "râpeux — про стены, rugueux — про животных."
+        ],
+        "correctIndex": 0,
+        "explanation": "Оба про «шершавое», но râpeux резче: он «дерёт», царапает, как тёрка (râpe) или язык кошки. rugueux — общее «неровный на ощупь» без оттенка царапанья. Стена rugueuse; язык кошки именно râpeuse."
+      }
+    ]
+  }
+]

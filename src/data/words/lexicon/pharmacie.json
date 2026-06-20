@@ -1,0 +1,242 @@
+[
+  {
+    "id": "wl-pharmacie-comprime",
+    "lemma": "comprimé",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔ̃.pʁi.me/",
+    "translationsRu": ["таблетка"],
+    "translationsEn": ["tablet", "pill"],
+    "semanticCore": "Прессованная таблетка — плотная, которую глотают или растворяют в воде; самое нейтральное слово для «таблетка» в аптеке.",
+    "collocations": [
+      { "fr": "un comprimé effervescent", "ru": "шипучая (растворимая) таблетка" },
+      { "fr": "prendre un comprimé", "ru": "принять таблетку" },
+      { "fr": "deux comprimés par jour", "ru": "две таблетки в день" },
+      { "fr": "un comprimé contre la douleur", "ru": "таблетка от боли" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "gélule",
+        "note": "comprimé = спрессованная твёрдая таблетка; gélule = капсула из желатина с порошком внутри. Оба глотают, но это разная форма."
+      },
+      {
+        "with": "cachet",
+        "note": "comprimé и cachet оба значат «таблетка»; cachet чуть разговорнее и старше, comprimé — более точное аптечное слово."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["pharmacie", "medicament"],
+    "caseIds": ["wc-pharmacie"]
+  },
+  {
+    "id": "wl-pharmacie-pansement",
+    "lemma": "pansement",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɑ̃s.mɑ̃/",
+    "translationsRu": ["пластырь", "повязка"],
+    "translationsEn": ["bandage", "dressing"],
+    "semanticCore": "То, чем закрывают и защищают ранку: и маленький пластырь на палец, и повязка на рану.",
+    "collocations": [
+      { "fr": "mettre un pansement", "ru": "наложить пластырь (повязку)" },
+      { "fr": "un pansement adhésif", "ru": "лейкопластырь (клейкий)" },
+      { "fr": "changer le pansement", "ru": "поменять повязку" },
+      { "fr": "une boîte de pansements", "ru": "коробка пластырей" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sparadrap",
+        "note": "pansement = пластырь/повязка целиком (с подушечкой на ранку); sparadrap = клейкая лента-лейкопластырь сама по себе, которой что-то приклеивают."
+      },
+      {
+        "with": "plaie",
+        "note": "pansement = повязка, которой закрывают; plaie = сама рана. Le pansement накладывают sur la plaie."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["pharmacie", "soin"],
+    "caseIds": ["wc-pharmacie"]
+  },
+  {
+    "id": "wl-pharmacie-sirop",
+    "lemma": "sirop",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/si.ʁo/",
+    "translationsRu": ["сироп"],
+    "translationsEn": ["syrup"],
+    "semanticCore": "Густая сладкая жидкость: в аптеке — лекарство (например, от кашля), в кафе — концентрат, который разбавляют водой.",
+    "collocations": [
+      { "fr": "un sirop contre la toux", "ru": "сироп от кашля" },
+      { "fr": "une cuillère de sirop", "ru": "ложка сиропа" },
+      { "fr": "un sirop de menthe", "ru": "мятный сироп (напиток)" },
+      { "fr": "un sirop pour la gorge", "ru": "сироп для горла" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "comprimé",
+        "note": "sirop = жидкое лекарство, которое пьют ложками; comprimé = твёрдая таблетка. Детям и при кашле чаще дают le sirop, взрослым от боли — un comprimé."
+      },
+      {
+        "with": "gouttes",
+        "note": "sirop = жидкое лекарство, которое пьют ложками; les gouttes = капли (в нос, в глаза, в уши), которые капают по каплям."
+      }
+    ],
+    "frequencyRank": 740,
+    "level": "A2",
+    "tags": ["pharmacie", "medicament"],
+    "caseIds": ["wc-pharmacie"]
+  },
+  {
+    "id": "wl-pharmacie-pilule",
+    "lemma": "pilule",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pi.lyl/",
+    "translationsRu": ["пилюля", "таблетка"],
+    "translationsEn": ["pill"],
+    "semanticCore": "Маленькая таблетка; с артиклем «la pilule» во французском по умолчанию значит противозачаточную таблетку.",
+    "collocations": [
+      { "fr": "prendre la pilule", "ru": "принимать противозачаточные (таблетки)" },
+      { "fr": "une pilule contre le mal de mer", "ru": "таблетка от морской болезни" },
+      { "fr": "avaler une pilule", "ru": "проглотить пилюлю" },
+      { "fr": "oublier sa pilule", "ru": "забыть выпить таблетку" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "comprimé",
+        "note": "pilule = маленькая таблетка/пилюля, а «la pilule» отдельно = противозачаточное; comprimé — нейтральная прессованная таблетка от чего угодно. В аптеке от боли просят un comprimé, не une pilule."
+      },
+      {
+        "with": "cellule",
+        "note": "pilule /pi.lyl/ = таблетка; cellule /se.lyl/ = клетка (в биологии) или ячейка. Похожи на слух, различаются началом «пи-/се-»."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["pharmacie", "medicament"],
+    "caseIds": ["wc-pharmacie"]
+  },
+  {
+    "id": "wl-pharmacie-piqure",
+    "lemma": "piqûre",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pi.kyʁ/",
+    "translationsRu": ["укол", "укус (насекомого)"],
+    "translationsEn": ["injection", "shot"],
+    "semanticCore": "Прокол кожи: и медицинский укол (инъекция), и укус комара или пчелы.",
+    "collocations": [
+      { "fr": "faire une piqûre", "ru": "сделать укол" },
+      { "fr": "une piqûre de moustique", "ru": "укус комара" },
+      { "fr": "avoir peur des piqûres", "ru": "бояться уколов" },
+      { "fr": "une piqûre de rappel", "ru": "повторный укол (ревакцинация)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vaccin",
+        "note": "piqûre = укол вообще (любая инъекция или укус насекомого); vaccin = прививка от конкретной болезни. Le vaccin делают через une piqûre."
+      },
+      {
+        "with": "pure",
+        "note": "piqûre /pi.kyʁ/ = укол; pure /pyʁ/ = чистая (прил. ж. р.). Звучат похоже на конце, но piqûre на два слога и с accent circonflexe на û."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A2",
+    "tags": ["pharmacie", "soin"],
+    "caseIds": ["wc-pharmacie"]
+  },
+  {
+    "id": "wl-pharmacie-pommade",
+    "lemma": "pommade",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɔ.mad/",
+    "translationsRu": ["мазь"],
+    "translationsEn": ["ointment", "salve"],
+    "semanticCore": "Густое жирное лекарство, которое намазывают на кожу — на ранку, ожог или больное место.",
+    "collocations": [
+      { "fr": "mettre de la pommade", "ru": "намазать мазью" },
+      { "fr": "une pommade pour les brûlures", "ru": "мазь от ожогов" },
+      { "fr": "appliquer la pommade", "ru": "наносить мазь" },
+      { "fr": "un tube de pommade", "ru": "тюбик мази" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "crème",
+        "note": "pommade = мазь (лечебная, плотная и жирная); crème = крем (легче, может быть и уходовый, и лечебный). Ранку мажут la pommade, лицо — la crème."
+      },
+      {
+        "with": "limonade",
+        "note": "pommade /pɔ.mad/ = мазь; limonade /li.mɔ.nad/ = лимонад. Одинаковая концовка -ade, но это совсем разные слова — не путать на слух."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["pharmacie", "soin"],
+    "caseIds": ["wc-pharmacie"]
+  },
+  {
+    "id": "wl-pharmacie-gelule",
+    "lemma": "gélule",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʒe.lyl/",
+    "translationsRu": ["капсула"],
+    "translationsEn": ["capsule"],
+    "semanticCore": "Капсула из желатина с порошком или гранулами внутри; её глотают целиком.",
+    "collocations": [
+      { "fr": "prendre une gélule", "ru": "принять капсулу" },
+      { "fr": "une gélule de vitamines", "ru": "капсула витаминов" },
+      { "fr": "deux gélules par jour", "ru": "две капсулы в день" },
+      { "fr": "ouvrir la gélule", "ru": "вскрыть капсулу" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "comprimé",
+        "note": "gélule = желатиновая капсула с порошком внутри; comprimé = спрессованная твёрдая таблетка. Капсулу глотают целиком, таблетку можно и растолочь."
+      },
+      {
+        "with": "libellule",
+        "note": "gélule /ʒe.lyl/ = капсула; libellule /li.be.lyl/ = стрекоза. Похожая концовка -ule, но слова совсем разные."
+      }
+    ],
+    "frequencyRank": 860,
+    "level": "A2",
+    "tags": ["pharmacie", "medicament"],
+    "caseIds": ["wc-pharmacie"]
+  },
+  {
+    "id": "wl-pharmacie-pharmacien",
+    "lemma": "pharmacien",
+    "displayForm": "pharmacien / pharmacienne",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/faʁ.ma.sjɛ̃/",
+    "translationsRu": ["фармацевт", "аптекарь"],
+    "translationsEn": ["pharmacist", "chemist"],
+    "semanticCore": "Человек за стойкой в аптеке: выдаёт лекарства по рецепту и советует, что взять при лёгком недомогании.",
+    "collocations": [
+      { "fr": "demander au pharmacien", "ru": "спросить у фармацевта" },
+      { "fr": "le pharmacien de garde", "ru": "дежурный фармацевт" },
+      { "fr": "le conseil du pharmacien", "ru": "совет фармацевта" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pharmacie",
+        "note": "pharmacien / pharmacienne = аптекарь (человек); pharmacie = аптека (место). Корень один, но одно — кто, другое — где."
+      },
+      {
+        "with": "médecin",
+        "note": "pharmacien = фармацевт (выдаёт лекарства в аптеке); médecin = врач (ставит диагноз и выписывает рецепт). Рецепт пишет le médecin, лекарство даёт le pharmacien."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["pharmacie", "metier"],
+    "caseIds": ["wc-pharmacie"]
+  }
+]

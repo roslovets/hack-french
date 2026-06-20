@@ -1,0 +1,305 @@
+[
+  {
+    "id": "wc-fitness",
+    "title": "Фитнес",
+    "theme": "fitness",
+    "level": "A2",
+    "wordIds": [
+      "wl-fitness-poids",
+      "wl-fitness-haltere",
+      "wl-fitness-echauffement",
+      "wl-fitness-etirement",
+      "wl-fitness-endurance",
+      "wl-fitness-souplesse",
+      "wl-fitness-transpiration",
+      "wl-fitness-abdos"
+    ],
+    "steps": [
+      {
+        "id": "wc-fitness-poids-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fitness-poids",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Au début, soulève un poids léger.",
+          "J'ai pris du poids cet hiver.",
+          "Connais-tu ton poids ?"
+        ],
+        "options": ["вес (а также тяжести)", "рост", "сила", "размер"],
+        "correctIndex": 0,
+        "explanation": "poids (m) — вес: «prendre du poids» — набирать вес, «soulever un poids» — поднимать тяжесть. Конечные ds не читаются: /pwa/. Рост — la taille, сила — la force."
+      },
+      {
+        "id": "wc-fitness-poids-trap",
+        "kind": "trap",
+        "wordId": "wl-fitness-poids",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "poids и pois звучат одинаково — /pwa/. В какой фразе речь о весе, а не о горошине?",
+        "phrases": ["Je veux perdre du poids.", "Je mange des petits pois."],
+        "options": [
+          "«perdre du poids» — худеть (вес); «des petits pois» — зелёный горошек",
+          "оба раза речь о горошке",
+          "«perdre du poids» значит «потерять горошину»",
+          "«des petits pois» — это «немного веса»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Омофоны /pwa/: le poids — вес (пишется с d), le pois — горошина («les petits pois» — зелёный горошек). На слух одинаково, по написанию и смыслу — нет."
+      },
+      {
+        "id": "wc-fitness-haltere-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fitness-haltere",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il soulève des haltères à la salle.",
+          "Prends un haltère plus léger pour commencer.",
+          "Elle s'entraîne avec des haltères tous les matins."
+        ],
+        "options": ["гантель", "беговая дорожка", "коврик", "тренажёр"],
+        "correctIndex": 0,
+        "explanation": "haltère (m) — гантель (а также штанга). «soulever des haltères» — поднимать гантели. Слово мужского рода: un haltère. Беговая дорожка — un tapis de course."
+      },
+      {
+        "id": "wc-fitness-haltere-collo",
+        "kind": "sort",
+        "wordId": "wl-fitness-haltere",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом haltère звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "soulever des haltères",
+            "basket": "ok"
+          },
+          {
+            "text": "une paire d'haltères",
+            "basket": "ok"
+          },
+          {
+            "text": "un haltère lourd",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un haltère",
+            "basket": "no"
+          },
+          {
+            "text": "un haltère en chocolat",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Гантели поднимают (soulever des haltères), берут парой (une paire d'haltères), они бывают тяжёлыми (un haltère lourd — мужской род). «boire un haltère» (пить гантель) и «un haltère en chocolat» (шоколадная гантель) — бессмыслица."
+      },
+      {
+        "id": "wc-fitness-echauffement-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fitness-echauffement",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Avant de courir, fais un bon échauffement.",
+          "L'échauffement dure dix minutes.",
+          "Sans échauffement, on se blesse plus facilement."
+        ],
+        "options": ["разминка (разогрев)", "растяжка", "перерыв", "тренировка"],
+        "correctIndex": 0,
+        "explanation": "échauffement (m) — разминка, разогрев тела в начале тренировки. От chaud (тёплый) → échauffer (разогревать). «faire un échauffement» — размяться. Тренировка целиком — un entraînement."
+      },
+      {
+        "id": "wc-fitness-echauffement-cmp",
+        "kind": "compare",
+        "wordId": "wl-fitness-echauffement",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Оба слова про подготовку мышц. В чём разница между échauffement и étirement?",
+        "phrases": ["Je commence par un échauffement.", "Je termine par des étirements."],
+        "options": [
+          "échauffement — разогрев в начале (разминка); étirement — растяжка мышц, чаще в конце.",
+          "Это одно и то же слово.",
+          "échauffement — растяжка, а étirement — разогрев бегом.",
+          "échauffement — про потепление климата, étirement — про спорт."
+        ],
+        "correctIndex": 0,
+        "explanation": "échauffement — разминка, разогрев в начале тренировки (движением). étirement — растяжка, когда тянут мышцу, обычно в конце. Сначала on s'échauffe, потом on s'étire."
+      },
+      {
+        "id": "wc-fitness-etirement-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fitness-etirement",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Après le sport, je fais des étirements.",
+          "Cet étirement est bon pour le dos.",
+          "Le yoga, c'est beaucoup d'étirements."
+        ],
+        "options": ["растяжка", "приседание", "отжимание", "прыжок"],
+        "correctIndex": 0,
+        "explanation": "étirement (m) — растяжка, растягивание мышцы. От глагола étirer (тянуть, растягивать). «faire des étirements» — делать растяжку. Приседание — un squat / une flexion."
+      },
+      {
+        "id": "wc-fitness-etirement-hint",
+        "kind": "wordHint",
+        "wordId": "wl-fitness-etirement",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: упражнение, когда мягко тянешь мышцу, чтобы расслабить её и стать гибче.",
+        "answer": "étirement",
+        "hints": [
+          "Начинается на é…",
+          "От глагола étirer (тянуть); существительное на -ment, мужской род",
+          "Après le sport, je fais des ___s."
+        ],
+        "explanation": "étirement (m) — растяжка. От étirer (тянуть) + -ment. «faire des étirements». Развивает гибкость — la souplesse."
+      },
+      {
+        "id": "wc-fitness-endurance-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-fitness-endurance",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит endurance?",
+        "bridge": "Англ. «endurance» — выносливость; пишется почти так же. Французское endurance (f) — про спорт: долго держать нагрузку. Читается /ɑ̃.dy.ʁɑ̃s/, с носовыми.",
+        "options": ["выносливость", "сила", "скорость", "ловкость"],
+        "correctIndex": 0,
+        "explanation": "endurance (f) — выносливость. Прямой мост из английского «endurance». «avoir de l'endurance» — быть выносливым. Сила — la force, скорость — la vitesse."
+      },
+      {
+        "id": "wc-fitness-endurance-cmp",
+        "kind": "compare",
+        "wordId": "wl-fitness-endurance",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "В чём разница между endurance и force в этих фразах?",
+        "phrases": [
+          "Le marathon demande de l'endurance.",
+          "Soulever cette barre demande de la force."
+        ],
+        "options": [
+          "endurance — выносливость (долго держать нагрузку); force — сила (поднять много за раз).",
+          "Это синонимы, разницы нет.",
+          "endurance — сила мышц, force — скорость бега.",
+          "endurance нужна штангисту, force — марафонцу."
+        ],
+        "correctIndex": 0,
+        "explanation": "endurance — выносливость: бежать долго без остановки. force — сила: поднять большой вес за раз. Марафону нужна l'endurance, тяжёлой штанге — la force."
+      },
+      {
+        "id": "wc-fitness-souplesse-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-fitness-souplesse",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский даёт подсказку. Что значит souplesse?",
+        "bridge": "Англ. «supple» — гибкий, податливый; «suppleness» — гибкость. Фр. souplesse (f) — та же идея: гибкость тела. Корень soupl- виден в обоих языках.",
+        "options": ["гибкость", "сила", "выносливость", "вес"],
+        "correctIndex": 0,
+        "explanation": "souplesse (f) — гибкость. Мост: англ. «supple/suppleness». От прилагательного souple (гибкий). «gagner en souplesse» — становиться гибче."
+      },
+      {
+        "id": "wc-fitness-souplesse-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-fitness-souplesse",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "souplesse",
+        "options": ["souplesse", "sagesse", "finesse", "faiblesse"],
+        "correctIndex": 0,
+        "explanation": "souplesse /su.plɛs/ (гибкость), sagesse /sa.ʒɛs/ (мудрость), finesse /fi.nɛs/ (тонкость), faiblesse /fɛ.blɛs/ (слабость). Все на -esse и похожи концовкой, но это разные слова — слушай начало."
+      },
+      {
+        "id": "wc-fitness-transpiration-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fitness-transpiration",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "L'effort provoque la transpiration.",
+          "Après le sport, une douche enlève la transpiration.",
+          "Ce tee-shirt absorbe la transpiration."
+        ],
+        "options": ["потоотделение (пот)", "усталость", "дыхание", "жажда"],
+        "correctIndex": 0,
+        "explanation": "transpiration (f) — потоотделение, пот. От глагола transpirer (потеть). «une odeur de transpiration» — запах пота. Жажда — la soif, дыхание — la respiration."
+      },
+      {
+        "id": "wc-fitness-transpiration-trap",
+        "kind": "trap",
+        "wordId": "wl-fitness-transpiration",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«Капли пота» катятся по лбу. Какое слово выбрать для самих капель?",
+        "phrases": [
+          "Des gouttes de sueur coulent sur son front.",
+          "La transpiration mouille son tee-shirt."
+        ],
+        "options": [
+          "des gouttes de sueur — сам пот (жидкость, капли); la transpiration — процесс/пот в целом",
+          "des gouttes de transpiration — единственно верно для капель",
+          "sueur и transpiration здесь поменяны местами",
+          "sueur — это процесс, а transpiration — капля"
+        ],
+        "correctIndex": 0,
+        "explanation": "la sueur — сам пот как жидкость (des gouttes de sueur — капли пота). la transpiration — процесс потоотделения и пот в целом. О каплях говорят de sueur, а не de transpiration."
+      },
+      {
+        "id": "wc-fitness-abdos-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fitness-abdos",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je fais des abdos tous les soirs.",
+          "Il a des abdos très musclés.",
+          "Cet exercice travaille les abdos."
+        ],
+        "options": ["пресс (мышцы живота)", "спина", "плечи", "колени"],
+        "correctIndex": 0,
+        "explanation": "abdos (m, мн.) — пресс, мышцы живота; разговорное сокращение от abdominaux. «faire des abdos» — качать пресс. Спина — le dos, плечи — les épaules."
+      },
+      {
+        "id": "wc-fitness-abdos-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-fitness-abdos",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — группы мышц, которые «качают». Найди лишнее (это не мышца).",
+        "options": ["les abdos", "les biceps", "les pectoraux", "l'échauffement"],
+        "correctIndex": 3,
+        "explanation": "Пресс (les abdos), бицепсы (les biceps) и грудные (les pectoraux) — группы мышц. l'échauffement — разминка, а не мышца; поэтому оно лишнее."
+      },
+      {
+        "id": "wc-fitness-haltere-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-fitness-haltere",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для haltère (гантель), чтобы запомнить неожиданный мужской род: un haltère, l'haltère est lourd.",
+        "examples": [
+          "Слово выглядит «женственно» из-за -e на конце, но это ловушка: гантель — мужского рода, un haltère. Представь брутального качка с гантелей — «он», un haltère.",
+          "Свяжи с l'haltérophilie (тяжёлая атлетика): тот же корень halt-, та же штанга, и помни — un haltère lourd, а не une."
+        ]
+      }
+    ]
+  }
+]

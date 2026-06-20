@@ -1,0 +1,235 @@
+[
+  {
+    "id": "wl-fitness-poids",
+    "lemma": "poids",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pwa/",
+    "translationsRu": ["вес", "тяжесть", "отягощение"],
+    "translationsEn": ["weight"],
+    "semanticCore": "Вес тела или предмета, а также сами отягощения, которые поднимают в зале.",
+    "collocations": [
+      { "fr": "prendre du poids", "ru": "набирать вес" },
+      { "fr": "perdre du poids", "ru": "худеть, терять вес" },
+      { "fr": "soulever des poids", "ru": "поднимать тяжести / веса" },
+      { "fr": "le poids du corps", "ru": "вес тела" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pois",
+        "note": "poids /pwa/ — вес; pois /pwa/ — горошина (un petit pois). Звучат одинаково, но пишутся по-разному: вес — с d (poids)."
+      },
+      {
+        "with": "haltère",
+        "note": "poids — вес или тяжести вообще; haltère — конкретный снаряд, гантель. Гантель — это un haltère, а её тяжесть — son poids."
+      }
+    ],
+    "frequencyRank": 460,
+    "level": "A2",
+    "tags": ["fitness", "corps", "mesure"],
+    "caseIds": ["wc-fitness"]
+  },
+  {
+    "id": "wl-fitness-haltere",
+    "lemma": "haltère",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/al.tɛʁ/",
+    "translationsRu": ["гантель"],
+    "translationsEn": ["dumbbell"],
+    "semanticCore": "Снаряд для силовых упражнений — гантель или штанга с дисками на концах.",
+    "collocations": [
+      { "fr": "soulever des haltères", "ru": "поднимать гантели" },
+      { "fr": "faire des haltères", "ru": "заниматься с гантелями / тягать железо" },
+      { "fr": "une paire d'haltères", "ru": "пара гантелей" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poids",
+        "note": "haltère — сам снаряд (гантель); poids — вес как величина или тяжести в общем. «Гантель тяжёлая» — l'haltère est lourd, потому что слово мужского рода."
+      },
+      {
+        "with": "haltérophilie",
+        "note": "haltère — гантель/штанга (предмет); l'haltérophilie (f) — тяжёлая атлетика как вид спорта (поднятие штанги)."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["fitness", "materiel"],
+    "caseIds": ["wc-fitness"]
+  },
+  {
+    "id": "wl-fitness-echauffement",
+    "lemma": "échauffement",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.ʃof.mɑ̃/",
+    "translationsRu": ["разминка", "разогрев"],
+    "translationsEn": ["warm-up"],
+    "semanticCore": "Лёгкие упражнения в начале тренировки, чтобы разогреть мышцы перед нагрузкой.",
+    "collocations": [
+      { "fr": "faire un échauffement", "ru": "сделать разминку" },
+      { "fr": "des exercices d'échauffement", "ru": "разминочные упражнения" },
+      { "fr": "un échauffement de dix minutes", "ru": "десятиминутная разминка" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "réchauffement",
+        "note": "échauffement — разминка (разогрев тела перед спортом); réchauffement — потепление (le réchauffement climatique — глобальное потепление). Одна буква меняет смысл."
+      },
+      {
+        "with": "étirement",
+        "note": "échauffement — разогрев в начале (разминка); étirement — растяжка мышц, чаще в конце тренировки. Сначала échauffement, потом étirements."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["fitness", "entrainement"],
+    "caseIds": ["wc-fitness"]
+  },
+  {
+    "id": "wl-fitness-etirement",
+    "lemma": "étirement",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.tiʁ.mɑ̃/",
+    "translationsRu": ["растяжка", "потягивание"],
+    "translationsEn": ["stretch", "stretching"],
+    "semanticCore": "Растягивание мышц, чтобы расслабить их и улучшить гибкость; от глагола étirer.",
+    "collocations": [
+      { "fr": "faire des étirements", "ru": "делать растяжку" },
+      { "fr": "un étirement du dos", "ru": "растяжка спины" },
+      { "fr": "des exercices d'étirement", "ru": "упражнения на растяжку" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "échauffement",
+        "note": "étirement — растяжка (тянем мышцу); échauffement — разминка (разогреваем тело движением). Это разные части тренировки."
+      },
+      {
+        "with": "souplesse",
+        "note": "étirement — действие (растягивание мышц); souplesse — результат, гибкость тела. Растяжкой (étirements) развивают гибкость (la souplesse)."
+      }
+    ],
+    "frequencyRank": 900,
+    "level": "A2",
+    "tags": ["fitness", "entrainement"],
+    "caseIds": ["wc-fitness"]
+  },
+  {
+    "id": "wl-fitness-endurance",
+    "lemma": "endurance",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɑ̃.dy.ʁɑ̃s/",
+    "translationsRu": ["выносливость"],
+    "translationsEn": ["endurance", "stamina"],
+    "semanticCore": "Способность долго выдерживать нагрузку — бежать, плыть, тренироваться без остановки.",
+    "collocations": [
+      { "fr": "avoir de l'endurance", "ru": "обладать выносливостью" },
+      { "fr": "travailler son endurance", "ru": "развивать выносливость" },
+      { "fr": "un sport d'endurance", "ru": "вид спорта на выносливость" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "force",
+        "note": "endurance — выносливость (долго держать нагрузку); force — сила (поднять много за раз). Марафонцу нужна endurance, тяжелоатлету — la force."
+      },
+      {
+        "with": "résistance",
+        "note": "endurance — выносливость к длительной нагрузке (спорт); résistance — сопротивление, стойкость в более широком смысле. В спорте о «выносливости» говорят endurance."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["fitness", "qualite"],
+    "caseIds": ["wc-fitness"]
+  },
+  {
+    "id": "wl-fitness-souplesse",
+    "lemma": "souplesse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/su.plɛs/",
+    "translationsRu": ["гибкость", "мягкость"],
+    "translationsEn": ["flexibility", "suppleness"],
+    "semanticCore": "Гибкость тела — способность легко сгибаться и тянуться; от прилагательного souple.",
+    "collocations": [
+      { "fr": "gagner en souplesse", "ru": "становиться гибче" },
+      { "fr": "manquer de souplesse", "ru": "быть негибким / не хватать гибкости" },
+      { "fr": "des exercices de souplesse", "ru": "упражнения на гибкость" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "souple",
+        "note": "souplesse (f) — существительное «гибкость»; souple — прилагательное «гибкий». «Он гибкий» — il est souple; «у него гибкость» — il a de la souplesse."
+      },
+      {
+        "with": "flexibilité",
+        "note": "souplesse — гибкость тела (про спорт); flexibilité чаще про график, материалы или подход. О растяжке и теле говорят la souplesse."
+      }
+    ],
+    "frequencyRank": 850,
+    "level": "A2",
+    "tags": ["fitness", "qualite"],
+    "caseIds": ["wc-fitness"]
+  },
+  {
+    "id": "wl-fitness-transpiration",
+    "lemma": "transpiration",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tʁɑ̃s.pi.ʁa.sjɔ̃/",
+    "translationsRu": ["потоотделение", "пот"],
+    "translationsEn": ["perspiration", "sweating"],
+    "semanticCore": "Выделение пота телом, особенно при усилии или жаре; процесс, а не сама капля.",
+    "collocations": [
+      { "fr": "une forte transpiration", "ru": "сильное потоотделение" },
+      { "fr": "une odeur de transpiration", "ru": "запах пота" },
+      { "fr": "lutter contre la transpiration", "ru": "бороться с потливостью" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sueur",
+        "note": "transpiration — процесс потоотделения (и пот в целом); la sueur — сам пот как жидкость, капли. «Капли пота» — des gouttes de sueur, а не de transpiration."
+      },
+      {
+        "with": "transpirer",
+        "note": "transpiration (f) — существительное «потоотделение»; transpirer — глагол «потеть». «Я потею» — je transpire; «у меня сильное потоотделение» — j'ai une forte transpiration."
+      }
+    ],
+    "frequencyRank": 1100,
+    "level": "A2",
+    "tags": ["fitness", "corps"],
+    "caseIds": ["wc-fitness"]
+  },
+  {
+    "id": "wl-fitness-abdos",
+    "lemma": "abdos",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ab.do/",
+    "translationsRu": ["пресс", "мышцы живота"],
+    "translationsEn": ["abs"],
+    "semanticCore": "Мышцы живота (пресс) и упражнения на них; разговорное сокращение от abdominaux.",
+    "collocations": [
+      { "fr": "faire des abdos", "ru": "качать пресс" },
+      { "fr": "avoir des abdos", "ru": "иметь пресс / кубики" },
+      { "fr": "des abdos en béton", "ru": "стальной пресс (букв. «бетонный»)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "abdomen",
+        "note": "abdos — мышцы пресса и упражнения на них (разг.); l'abdomen (m) — живот как часть тела, медицинский термин. «Качать пресс» — faire des abdos, а не «faire de l'abdomen»."
+      },
+      {
+        "with": "abdominaux",
+        "note": "abdos — короткая разговорная форма; les abdominaux — полная форма того же слова (брюшные мышцы). В речи почти всегда говорят les abdos."
+      }
+    ],
+    "frequencyRank": 950,
+    "level": "A2",
+    "tags": ["fitness", "corps"],
+    "caseIds": ["wc-fitness"]
+  }
+]

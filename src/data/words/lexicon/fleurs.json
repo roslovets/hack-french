@@ -1,0 +1,235 @@
+[
+  {
+    "id": "wl-fleurs-rose",
+    "lemma": "rose",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁoz/",
+    "translationsRu": ["роза"],
+    "translationsEn": ["rose"],
+    "semanticCore": "Роза как цветок — символ любви и красоты; то же слово как прилагательное значит «розовый» (цвет).",
+    "collocations": [
+      { "fr": "un bouquet de roses", "ru": "букет роз" },
+      { "fr": "une rose rouge", "ru": "красная роза" },
+      { "fr": "offrir une rose", "ru": "подарить розу" },
+      { "fr": "un rosier", "ru": "розовый куст" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rose (прил.)",
+        "note": "une rose (f) = роза (цветок); rose как прилагательное = розовый (цвет): une robe rose — розовое платье. Одно слово, два смысла."
+      },
+      {
+        "with": "œillet",
+        "note": "rose = роза; un œillet = гвоздика. Оба дарят, но это разные цветы — не путать."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["fleurs", "vegetation"],
+    "caseIds": ["wc-fleurs"]
+  },
+  {
+    "id": "wl-fleurs-tulipe",
+    "lemma": "tulipe",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ty.lip/",
+    "translationsRu": ["тюльпан"],
+    "translationsEn": ["tulip"],
+    "semanticCore": "Тюльпан — весенний луковичный цветок с гладкими лепестками, символ Голландии.",
+    "collocations": [
+      { "fr": "un champ de tulipes", "ru": "поле тюльпанов" },
+      { "fr": "des tulipes rouges", "ru": "красные тюльпаны" },
+      { "fr": "un bouquet de tulipes", "ru": "букет тюльпанов" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tulip (англ.)",
+        "note": "англ. tulip = фр. tulipe (f): почти то же слово, но по-французски с конечным -e и ударением /ty.lip/."
+      },
+      {
+        "with": "jonquille",
+        "note": "tulipe = тюльпан; une jonquille = нарцисс. Оба весенние и луковичные, но разные цветы."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["fleurs", "vegetation"],
+    "caseIds": ["wc-fleurs"]
+  },
+  {
+    "id": "wl-fleurs-marguerite",
+    "lemma": "marguerite",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/maʁ.ɡə.ʁit/",
+    "translationsRu": ["ромашка"],
+    "translationsEn": ["daisy"],
+    "semanticCore": "Ромашка — полевой цветок с белыми лепестками и жёлтой серединкой; на ней «гадают» на любовь.",
+    "collocations": [
+      { "fr": "cueillir des marguerites", "ru": "рвать ромашки" },
+      { "fr": "effeuiller la marguerite", "ru": "гадать на ромашке (любит — не любит)" },
+      { "fr": "un champ de marguerites", "ru": "поле ромашек" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "camomille",
+        "note": "marguerite = ромашка крупная, полевая (которую рвут в букет); la camomille = аптечная ромашка, из которой делают чай. По-русски обе «ромашка», но во французском это разные слова."
+      },
+      {
+        "with": "pâquerette",
+        "note": "marguerite = большая луговая ромашка; une pâquerette = маленькая газонная маргаритка. Размер и место — главное различие."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["fleurs", "vegetation"],
+    "caseIds": ["wc-fleurs"]
+  },
+  {
+    "id": "wl-fleurs-petale",
+    "lemma": "pétale",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pe.tal/",
+    "translationsRu": ["лепесток"],
+    "translationsEn": ["petal"],
+    "semanticCore": "Лепесток — каждый из цветных листочков венчика цветка; во множественном они осыпаются.",
+    "collocations": [
+      { "fr": "des pétales de rose", "ru": "лепестки розы" },
+      { "fr": "les pétales tombent", "ru": "лепестки опадают" },
+      { "fr": "un pétale fané", "ru": "увядший лепесток" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "un / une pétale",
+        "note": "Несмотря на -e на конце, слово мужского рода: un pétale, des pétales. В разговоре иногда говорят «une pétale», но это ошибка."
+      },
+      {
+        "with": "sépale",
+        "note": "le pétale = цветной лепесток венчика; un sépale = зелёный чашелистик под ним. Лепесток виден, чашелистик прячется снизу."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["fleurs", "vegetation"],
+    "caseIds": ["wc-fleurs"]
+  },
+  {
+    "id": "wl-fleurs-tige",
+    "lemma": "tige",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tiʒ/",
+    "translationsRu": ["стебель"],
+    "translationsEn": ["stem", "stalk"],
+    "semanticCore": "Стебель — длинная зелёная часть растения, на которой держится цветок.",
+    "collocations": [
+      { "fr": "une longue tige", "ru": "длинный стебель" },
+      { "fr": "couper la tige", "ru": "обрезать стебель" },
+      { "fr": "une rose à longue tige", "ru": "роза на длинном стебле" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "branche",
+        "note": "la tige = стебель (мягкий, у цветка или травы); une branche = ветка (у дерева, одревесневшая). Цветок держится на tige, не на branche."
+      },
+      {
+        "with": "racine",
+        "note": "la tige = стебель (над землёй, держит цветок); la racine = корень (под землёй, питает). Верх и низ растения."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["fleurs", "vegetation"],
+    "caseIds": ["wc-fleurs"]
+  },
+  {
+    "id": "wl-fleurs-bouquet",
+    "lemma": "bouquet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bu.kɛ/",
+    "translationsRu": ["букет"],
+    "translationsEn": ["bouquet", "bunch"],
+    "semanticCore": "Букет — собранные вместе цветы, которые дарят или ставят в вазу; также «букет» аромата вина.",
+    "collocations": [
+      { "fr": "un bouquet de fleurs", "ru": "букет цветов" },
+      { "fr": "offrir un bouquet", "ru": "подарить букет" },
+      { "fr": "un joli bouquet", "ru": "красивый букет" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bouquet (англ.)",
+        "note": "англ. bouquet взято прямо из французского: те же буквы и смысл «букет», но по-французски читается /bu.kɛ/, конечный -t немой."
+      },
+      {
+        "with": "gerbe",
+        "note": "un bouquet = букет (небольшой, в руку, в подарок); une gerbe = большой сноп или венок (например, на торжественной или траурной церемонии). Размер и повод различаются."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["fleurs", "objet"],
+    "caseIds": ["wc-fleurs"]
+  },
+  {
+    "id": "wl-fleurs-epine",
+    "lemma": "épine",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.pin/",
+    "translationsRu": ["шип", "колючка"],
+    "translationsEn": ["thorn", "spine"],
+    "semanticCore": "Шип — острый вырост на стебле розы или куста; в переносном смысле — то, что причиняет боль.",
+    "collocations": [
+      { "fr": "les épines d'une rose", "ru": "шипы розы" },
+      { "fr": "se piquer avec une épine", "ru": "уколоться шипом" },
+      { "fr": "une rose sans épines", "ru": "роза без шипов" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "épine dorsale",
+        "note": "une épine = шип (на растении); но l'épine dorsale = позвоночник (буквально «спинной хребет»). Контекст — растение или тело — подсказывает смысл."
+      },
+      {
+        "with": "piquant",
+        "note": "une épine = шип розы или куста (тонкий, деревянистый); un piquant = колючка ежа или дикобраза. Разные «острия» у разных существ."
+      }
+    ],
+    "frequencyRank": 740,
+    "level": "A2",
+    "tags": ["fleurs", "vegetation"],
+    "caseIds": ["wc-fleurs"]
+  },
+  {
+    "id": "wl-fleurs-pollen",
+    "lemma": "pollen",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɔ.lɛn/",
+    "translationsRu": ["пыльца"],
+    "translationsEn": ["pollen"],
+    "semanticCore": "Пыльца — жёлтый порошок внутри цветка, который переносят пчёлы и ветер; частая причина аллергии весной.",
+    "collocations": [
+      { "fr": "le pollen des fleurs", "ru": "цветочная пыльца" },
+      { "fr": "une allergie au pollen", "ru": "аллергия на пыльцу" },
+      { "fr": "les abeilles butinent le pollen", "ru": "пчёлы собирают пыльцу" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pollen (англ.)",
+        "note": "англ. pollen = фр. pollen (m): то же слово, но конечное -en по-французски звучит /ɛn/ — /pɔ.lɛn/, как в abdomen."
+      },
+      {
+        "with": "nectar",
+        "note": "le pollen = пыльца (сухой жёлтый порошок); le nectar = нектар (сладкая жидкость). Пчёлы берут и то, и другое, но это разные вещества."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["fleurs", "nature"],
+    "caseIds": ["wc-fleurs"]
+  }
+]

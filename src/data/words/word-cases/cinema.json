@@ -1,0 +1,297 @@
+[
+  {
+    "id": "wc-cinema",
+    "title": "Кино",
+    "theme": "cinema",
+    "level": "A2",
+    "wordIds": [
+      "wl-cinema-realisateur",
+      "wl-cinema-seance",
+      "wl-cinema-affiche",
+      "wl-cinema-scenario",
+      "wl-cinema-tournage",
+      "wl-cinema-sous-titre",
+      "wl-cinema-spectateur",
+      "wl-cinema-generique"
+    ],
+    "steps": [
+      {
+        "id": "wc-cinema-realisateur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cinema-realisateur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le réalisateur du film est très connu.",
+          "Ce réalisateur a gagné un prix à Cannes.",
+          "Qui est le réalisateur de ce film ?"
+        ],
+        "options": ["режиссёр (фильма)", "директор фирмы", "главный актёр", "продюсер (деньги)"],
+        "correctIndex": 0,
+        "explanation": "un réalisateur — режиссёр фильма: тот, кто «réalise» (воплощает) фильм. Директор фирмы — un directeur, продюсер (отвечает за деньги) — un producteur."
+      },
+      {
+        "id": "wc-cinema-realisateur-trap",
+        "kind": "trap",
+        "wordId": "wl-cinema-realisateur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «director» так и тянет перевести как directeur. Но кто снимает фильм по-французски?",
+        "options": [
+          "un réalisateur — режиссёр фильма",
+          "un directeur — он снимает фильм",
+          "un acteur — он снимает фильм",
+          "un spectateur — он снимает фильм"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: англ. «film director» — это un réalisateur, а не un directeur. un directeur — директор (фирмы, школы), он не имеет отношения к съёмкам. Актёр (un acteur) играет, а не снимает."
+      },
+      {
+        "id": "wc-cinema-seance-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cinema-seance",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La séance de 20 heures est complète.",
+          "On va à la séance de ce soir ?",
+          "Il y a une séance à 18 h et une à 21 h."
+        ],
+        "options": ["сеанс (показ фильма)", "сцена в фильме", "билет", "зал кинотеатра"],
+        "correctIndex": 0,
+        "explanation": "une séance — сеанс, конкретный показ фильма в определённое время. Билет — un billet, зал — une salle. Слово séance шире кино: une séance de sport — тренировка, une séance photo — фотосессия."
+      },
+      {
+        "id": "wc-cinema-seance-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-cinema-seance",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "séance",
+        "options": ["séance", "science", "silence", "sens"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало séance /se.ɑ̃s/ — сеанс. Похожи, но другие слова: science /sjɑ̃s/ (наука), silence /si.lɑ̃s/ (тишина), sens /sɑ̃s/ (смысл / направление)."
+      },
+      {
+        "id": "wc-cinema-affiche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cinema-affiche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "L'affiche du film est magnifique.",
+          "Ce film est encore à l'affiche.",
+          "Il y a une grande affiche devant le cinéma."
+        ],
+        "options": ["афиша, постер фильма", "экран в зале", "реклама по ТВ", "касса"],
+        "correctIndex": 0,
+        "explanation": "une affiche — афиша, постер на улице или у кинотеатра. Идиома «être à l'affiche» — идти в прокате (фильм «на афише»). Экран — un écran, касса — une caisse."
+      },
+      {
+        "id": "wc-cinema-affiche-collo",
+        "kind": "sort",
+        "wordId": "wl-cinema-affiche",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом affiche звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "l'affiche du film",
+            "basket": "ok"
+          },
+          {
+            "text": "le film est à l'affiche",
+            "basket": "ok"
+          },
+          {
+            "text": "coller une affiche",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une affiche",
+            "basket": "no"
+          },
+          {
+            "text": "une affiche en or",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«l'affiche du film», «être à l'affiche» (идти в прокате), «coller une affiche» (расклеить афишу) — естественно. «boire une affiche» (пить афишу) и «une affiche en or» (золотая афиша) — бессмыслица."
+      },
+      {
+        "id": "wc-cinema-scenario-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-cinema-scenario",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет смысл. Что значит le scénario фильма?",
+        "bridge": "Англ. «scenario» / «script» — сценарий: текст, по которому снимают фильм. Фр. le scénario — то же, тот же корень.",
+        "options": ["сценарий (текст фильма)", "декорация", "сцена в фильме", "расписание сеансов"],
+        "correctIndex": 0,
+        "explanation": "le scénario — сценарий, весь текст и план фильма (как англ. «scenario / script»). Отдельная сцена — une scène, декорация — un décor."
+      },
+      {
+        "id": "wc-cinema-scenario-cmp",
+        "kind": "compare",
+        "wordId": "wl-cinema-scenario",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le scénario и la scène. В чём разница?",
+        "phrases": ["Il a écrit le scénario du film.", "La scène finale est très émouvante."],
+        "options": [
+          "scénario — весь текст/план фильма; scène — отдельная сцена внутри него.",
+          "Это синонимы, разницы нет.",
+          "scénario — это одна сцена, а scène — весь фильм.",
+          "Оба значат «экран»."
+        ],
+        "correctIndex": 0,
+        "explanation": "le scénario — целиком сценарий фильма; une scène — отдельная сцена (эпизод). В одном scénario много scènes. Не путать из-за общего начала «scén-»."
+      },
+      {
+        "id": "wc-cinema-tournage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cinema-tournage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le tournage du film a duré trois mois.",
+          "Pendant le tournage, il a plu tous les jours.",
+          "Le tournage a lieu à Paris cet été."
+        ],
+        "options": ["съёмки (процесс)", "поворот дороги", "экскурсия", "показ фильма"],
+        "correctIndex": 0,
+        "explanation": "le tournage — съёмки фильма как процесс (от tourner un film — снимать фильм). Поворот дороги — un virage / un tournant, показ фильма — une séance."
+      },
+      {
+        "id": "wc-cinema-tournage-hint",
+        "kind": "wordHint",
+        "wordId": "wl-cinema-tournage",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: сам процесс съёмок фильма (когда работают камера и актёры на площадке).",
+        "answer": "tournage",
+        "hints": [
+          "От глагола tourner un film — «снимать фильм».",
+          "Мужской род, оканчивается на -age: un ___.",
+          "Le ___ du film a duré trois mois."
+        ],
+        "explanation": "le tournage — съёмки. Глагол tourner здесь значит не «поворачивать», а «снимать (фильм)»: tourner un film → le tournage."
+      },
+      {
+        "id": "wc-cinema-sous-titre-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-cinema-sous-titre",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский разбирается по частям. Что значит un sous-titre?",
+        "bridge": "Англ. «subtitle» = sub- (под) + title (название). Фр. sous-titre = sous (под) + titre (название) — точная калька: субтитр.",
+        "options": [
+          "субтитр (текст внизу экрана)",
+          "заголовок статьи",
+          "название фильма",
+          "подпись режиссёра"
+        ],
+        "correctIndex": 0,
+        "explanation": "un sous-titre — субтитр: «sous» (под) + «titre» (название). Чаще во множественном: les sous-titres. Само название фильма — le titre."
+      },
+      {
+        "id": "wc-cinema-sous-titre-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-cinema-sous-titre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова связаны с тем, КАК идёт фильм (язык и текст на экране). Найди лишнее.",
+        "options": ["les sous-titres", "la version originale", "le doublage", "le tournage"],
+        "correctIndex": 3,
+        "explanation": "«les sous-titres» (субтитры), «la version originale» (оригинальная озвучка, VO) и «le doublage» (дубляж) — про то, как мы слышим и читаем фильм. «le tournage» (съёмки) — лишнее: это процесс создания, а не показа."
+      },
+      {
+        "id": "wc-cinema-spectateur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cinema-spectateur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les spectateurs applaudissent à la fin du film.",
+          "Un spectateur a oublié son manteau dans la salle.",
+          "Le film a attiré des millions de spectateurs."
+        ],
+        "options": ["зритель", "актёр", "режиссёр", "критик"],
+        "correctIndex": 0,
+        "explanation": "un spectateur — зритель (в кино, театре). Все зрители вместе — le public. Зритель у телевизора — un téléspectateur. Критик — un critique."
+      },
+      {
+        "id": "wc-cinema-spectateur-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-cinema-spectateur",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "spectateur",
+        "options": ["spectateur", "spectacle", "spectre", "inspecteur"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало spectateur /spɛk.ta.tœʁ/ — зритель. Похожи по корню «spect-», но другие: spectacle /spɛk.takl/ (зрелище, спектакль), spectre /spɛktʁ/ (призрак), inspecteur /ɛ̃.spɛk.tœʁ/ (инспектор)."
+      },
+      {
+        "id": "wc-cinema-generique-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-cinema-generique",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Les acteurs apparaissent dans le générique.",
+          "Ne pars pas avant le générique de fin !",
+          "Le générique du début est très court."
+        ],
+        "options": ["титры (фильма)", "субтитры", "афиша", "сценарий"],
+        "correctIndex": 0,
+        "explanation": "le générique — титры фильма (список актёров и съёмочной группы), которые идут в начале или в конце: «le générique de fin» — финальные титры. Субтитры — les sous-titres, афиша — une affiche."
+      },
+      {
+        "id": "wc-cinema-generique-trap",
+        "kind": "trap",
+        "wordId": "wl-cinema-generique",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В кинотеатре на экране пошёл «le générique». Англ. «generic» сбивает с толку. Что это?",
+        "options": [
+          "титры фильма (список создателей)",
+          "что-то «обычное, безликое»",
+          "субтитры с переводом",
+          "реклама перед фильмом"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: как существительное le générique — это титры фильма, а НЕ англ. «generic» (безликий). Прилагательное générique («общий, родовой») существует отдельно, но на экране кино речь именно о титрах. Субтитры — les sous-titres."
+      },
+      {
+        "id": "wc-cinema-generique-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-cinema-generique",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для le générique (титры), чтобы запомнить мужской род (un générique) и не путать с англ. «generic».",
+        "examples": [
+          "В титрах перечислены все, кто «генерировал» (gé-né…) фильм — отсюда le générique, список создателей.",
+          "Представь, как встаёшь с кресла, а на экране ползёт le générique de fin — финальные титры; он «он», мужского рода."
+        ]
+      }
+    ]
+  }
+]

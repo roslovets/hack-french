@@ -1,0 +1,237 @@
+[
+  {
+    "id": "wl-cinema-realisateur",
+    "lemma": "réalisateur",
+    "displayForm": "réalisateur / réalisatrice",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁe.a.li.za.tœʁ/",
+    "translationsRu": ["режиссёр"],
+    "translationsEn": ["film director", "director"],
+    "semanticCore": "Режиссёр фильма — тот, кто «воплощает» (réalise) фильм: ставит сцены и руководит съёмкой.",
+    "collocations": [
+      { "fr": "le réalisateur du film", "ru": "режиссёр фильма" },
+      { "fr": "un réalisateur célèbre", "ru": "известный режиссёр" },
+      { "fr": "un film réalisé par…", "ru": "фильм, снятый (режиссёром)…" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "directeur",
+        "note": "réalisateur = режиссёр фильма; directeur = директор (фирмы, школы). Англ. «director» в кино — это réalisateur, а directeur — ложный друг."
+      },
+      {
+        "with": "producteur",
+        "note": "réalisateur = творческий руководитель съёмок; producteur = продюсер, отвечает за деньги и организацию."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["cinema", "metier"],
+    "caseIds": ["wc-cinema"]
+  },
+  {
+    "id": "wl-cinema-seance",
+    "lemma": "séance",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/se.ɑ̃s/",
+    "translationsRu": ["сеанс", "показ"],
+    "translationsEn": ["showing", "session"],
+    "semanticCore": "Сеанс — конкретный показ фильма в назначенное время; шире — занятие/сессия (séance de sport, séance photo).",
+    "collocations": [
+      { "fr": "la séance de 20 heures", "ru": "сеанс в 20:00" },
+      { "fr": "une séance de cinéma", "ru": "киносеанс" },
+      { "fr": "la prochaine séance", "ru": "следующий сеанс" },
+      { "fr": "une séance photo", "ru": "фотосессия" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "film",
+        "note": "séance = показ (когда и где идёт); film = сам фильм. На одной séance показывают один film."
+      },
+      {
+        "with": "science",
+        "note": "séance /se.ɑ̃s/ (сеанс) и science /sjɑ̃s/ (наука) звучат похоже, но это разные слова — не путать на слух."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["cinema", "evenement"],
+    "caseIds": ["wc-cinema"]
+  },
+  {
+    "id": "wl-cinema-affiche",
+    "lemma": "affiche",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/a.fiʃ/",
+    "translationsRu": ["афиша", "постер"],
+    "translationsEn": ["poster", "playbill"],
+    "semanticCore": "Афиша — печатный плакат на улице или у кинотеатра; «être à l'affiche» — идти в прокате.",
+    "collocations": [
+      { "fr": "l'affiche du film", "ru": "афиша фильма" },
+      { "fr": "être à l'affiche", "ru": "идти в прокате" },
+      { "fr": "coller une affiche", "ru": "расклеить афишу" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poster",
+        "note": "affiche = афиша/плакат на улице (публичный); un poster = постер, который вешают дома на стену. Часто пересекаются, но affiche — уличная и официальная."
+      },
+      {
+        "with": "écran",
+        "note": "affiche = афиша (бумага снаружи); écran = экран (внутри зала, на нём идёт фильм)."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["cinema", "objet"],
+    "caseIds": ["wc-cinema"]
+  },
+  {
+    "id": "wl-cinema-scenario",
+    "lemma": "scénario",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/se.na.ʁjo/",
+    "translationsRu": ["сценарий"],
+    "translationsEn": ["screenplay", "script"],
+    "semanticCore": "Сценарий — весь текст и план фильма: диалоги и описание действия, по которым снимают.",
+    "collocations": [
+      { "fr": "écrire le scénario", "ru": "написать сценарий" },
+      { "fr": "le scénario du film", "ru": "сценарий фильма" },
+      { "fr": "un scénario original", "ru": "оригинальный сценарий" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "scène",
+        "note": "scénario = весь сценарий фильма; scène = отдельная сцена (эпизод) внутри него. Общее начало «scén-» путает."
+      },
+      {
+        "with": "décor",
+        "note": "scénario = текст/план; décor = декорация, место съёмки. Сценарий пишут, декорацию строят."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["cinema", "texte"],
+    "caseIds": ["wc-cinema"]
+  },
+  {
+    "id": "wl-cinema-tournage",
+    "lemma": "tournage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tuʁ.naʒ/",
+    "translationsRu": ["съёмки"],
+    "translationsEn": ["filming", "shooting"],
+    "semanticCore": "Съёмки фильма как процесс: работа камеры и актёров на площадке (от tourner un film).",
+    "collocations": [
+      { "fr": "le tournage du film", "ru": "съёмки фильма" },
+      { "fr": "pendant le tournage", "ru": "во время съёмок" },
+      { "fr": "tourner un film", "ru": "снимать фильм" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tour",
+        "note": "tournage = съёмки (процесс); un tour = поворот / прогулка, une tour = башня. Похожее начало, разные слова."
+      },
+      {
+        "with": "séance",
+        "note": "tournage = создание фильма (как его снимают); séance = показ готового фильма зрителям."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["cinema", "processus"],
+    "caseIds": ["wc-cinema"]
+  },
+  {
+    "id": "wl-cinema-sous-titre",
+    "lemma": "sous-titre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/su.titʁ/",
+    "translationsRu": ["субтитр"],
+    "translationsEn": ["subtitle"],
+    "semanticCore": "Субтитр — текст перевода или речи внизу экрана; «sous» (под) + «titre» (название). Чаще во множественном: les sous-titres.",
+    "collocations": [
+      { "fr": "les sous-titres en français", "ru": "субтитры на французском" },
+      { "fr": "un film en VO sous-titrée", "ru": "фильм в оригинале с субтитрами" },
+      { "fr": "mettre les sous-titres", "ru": "включить субтитры" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "titre",
+        "note": "sous-titre = субтитр (текст внизу экрана); titre = название фильма. sous-titre буквально «под-название»."
+      },
+      {
+        "with": "générique",
+        "note": "sous-titres = строки перевода во время фильма; générique = титры (список создателей) в начале или конце. Оба — текст на экране, легко спутать."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["cinema", "texte"],
+    "caseIds": ["wc-cinema"]
+  },
+  {
+    "id": "wl-cinema-spectateur",
+    "lemma": "spectateur",
+    "displayForm": "spectateur / spectatrice",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/spɛk.ta.tœʁ/",
+    "translationsRu": ["зритель"],
+    "translationsEn": ["spectator", "viewer"],
+    "semanticCore": "Зритель — тот, кто смотрит фильм или представление; в кино и театре это стандартное слово для человека в зале.",
+    "collocations": [
+      { "fr": "des millions de spectateurs", "ru": "миллионы зрителей" },
+      { "fr": "un spectateur attentif", "ru": "внимательный зритель" },
+      { "fr": "les spectateurs applaudissent", "ru": "зрители аплодируют" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "public",
+        "note": "spectateur = один зритель; le public = публика, все зрители вместе (собирательно)."
+      },
+      {
+        "with": "téléspectateur",
+        "note": "spectateur = зритель в кино/театре; téléspectateur = телезритель (у экрана дома)."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A2",
+    "tags": ["cinema", "personne"],
+    "caseIds": ["wc-cinema"]
+  },
+  {
+    "id": "wl-cinema-generique",
+    "lemma": "générique",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒe.ne.ʁik/",
+    "translationsRu": ["титры"],
+    "translationsEn": ["credits", "title sequence"],
+    "semanticCore": "Титры фильма — список актёров и съёмочной группы в начале или в конце; «le générique de fin» — финальные титры.",
+    "collocations": [
+      { "fr": "le générique de fin", "ru": "финальные титры" },
+      { "fr": "le générique du film", "ru": "титры фильма" },
+      { "fr": "au début du générique", "ru": "в начале титров" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "générique (adj.)",
+        "note": "le générique (сущ.) = титры фильма; générique как прилагательное = «общий, родовой». Англ. «generic» (безликий) — ложный друг для существительного."
+      },
+      {
+        "with": "sous-titres",
+        "note": "générique = титры (создатели фильма, в начале/конце); sous-titres = субтитры (перевод по ходу фильма). Не путать, хотя и то и то — текст."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["cinema", "texte"],
+    "caseIds": ["wc-cinema"]
+  }
+]

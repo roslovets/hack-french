@@ -1,0 +1,293 @@
+[
+  {
+    "id": "wc-pharmacie",
+    "title": "Аптека",
+    "theme": "pharmacie",
+    "level": "A2",
+    "wordIds": [
+      "wl-pharmacie-comprime",
+      "wl-pharmacie-pansement",
+      "wl-pharmacie-sirop",
+      "wl-pharmacie-pilule",
+      "wl-pharmacie-piqure",
+      "wl-pharmacie-pommade",
+      "wl-pharmacie-gelule",
+      "wl-pharmacie-pharmacien"
+    ],
+    "steps": [
+      {
+        "id": "wc-pharmacie-comprime-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pharmacie-comprime",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Prenez un comprimé matin et soir.",
+          "Ce comprimé effervescent se dissout dans l'eau.",
+          "J'ai pris un comprimé contre le mal de tête."
+        ],
+        "options": ["таблетка", "капля", "повязка", "укол"],
+        "correctIndex": 0,
+        "explanation": "comprimé (m) — прессованная таблетка. «un comprimé effervescent» — шипучая (растворимая) таблетка, «un comprimé contre…» — таблетка от чего-то. Слово от глагола comprimer (сжимать, прессовать)."
+      },
+      {
+        "id": "wc-pharmacie-comprime-cmp",
+        "kind": "compare",
+        "wordId": "wl-pharmacie-comprime",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un comprimé и une gélule. В чём разница?",
+        "phrases": ["Avalez le comprimé avec de l'eau.", "Avalez la gélule sans la croquer."],
+        "options": [
+          "comprimé — твёрдая прессованная таблетка; gélule — желатиновая капсула с порошком внутри",
+          "Это полные синонимы, разницы нет",
+          "comprimé — это капсула, а gélule — прессованная таблетка",
+          "comprimé — мазь, gélule — сироп"
+        ],
+        "correctIndex": 0,
+        "explanation": "le comprimé — спрессованная твёрдая таблетка (её можно и растолочь); la gélule — капсула из желатина с порошком внутри, её глотают целиком. Форма разная, но оба — для приёма внутрь."
+      },
+      {
+        "id": "wc-pharmacie-pansement-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pharmacie-pansement",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах?",
+        "contexts": [
+          "Mets un pansement sur ta coupure.",
+          "L'infirmière change le pansement chaque jour.",
+          "Vous avez des pansements pour les ampoules ?"
+        ],
+        "options": ["пластырь, повязка", "таблетка", "мазь", "градусник"],
+        "correctIndex": 0,
+        "explanation": "pansement (m) — пластырь или повязка: то, чем закрывают ранку. «mettre un pansement» — наложить пластырь, «changer le pansement» — поменять повязку. Произносится /pɑ̃s.mɑ̃/, с двумя носовыми."
+      },
+      {
+        "id": "wc-pharmacie-pansement-collo",
+        "kind": "sort",
+        "wordId": "wl-pharmacie-pansement",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом pansement звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "mettre un pansement",
+            "basket": "ok"
+          },
+          {
+            "text": "un pansement adhésif",
+            "basket": "ok"
+          },
+          {
+            "text": "changer le pansement",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un pansement",
+            "basket": "no"
+          },
+          {
+            "text": "un pansement effervescent",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественны: «mettre un pansement» (наложить), «un pansement adhésif» (клейкий), «changer le pansement» (поменять). «boire un pansement» (пить повязку) — бессмыслица; «effervescent» (шипучий) бывает у comprimé, а не у повязки."
+      },
+      {
+        "id": "wc-pharmacie-sirop-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-pharmacie-sirop",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит sirop?",
+        "bridge": "Англ. «syrup» — сироп. Французское sirop — тот же корень, только пишется через i и конечная p немая: /si.ʁo/.",
+        "options": ["сироп", "укол", "капсула", "пластырь"],
+        "correctIndex": 0,
+        "explanation": "sirop (m) = сироп, мост через англ. «syrup». В аптеке это жидкое лекарство: «un sirop contre la toux» — сироп от кашля. Конечная p не читается: /si.ʁo/."
+      },
+      {
+        "id": "wc-pharmacie-sirop-trap",
+        "kind": "trap",
+        "wordId": "wl-pharmacie-sirop",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В кафе вы слышали «un sirop de menthe». В аптеке просят «un sirop contre la toux». Это одно слово?",
+        "options": [
+          "Да, sirop одно — но в кафе это сладкий напиток-концентрат, а в аптеке жидкое лекарство",
+          "Нет, в аптеке это другое слово, оно пишется иначе",
+          "В кафе sirop значит «сок», а в аптеке «таблетка»",
+          "sirop бывает только в аптеке, в кафе так не говорят"
+        ],
+        "correctIndex": 0,
+        "explanation": "Слово одно — le sirop. В кафе «un sirop de menthe / de grenadine» — сладкий концентрат, который разбавляют водой; в аптеке «un sirop contre la toux» — жидкое лекарство, которое пьют ложками. Контекст подсказывает, о чём речь."
+      },
+      {
+        "id": "wc-pharmacie-pilule-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pharmacie-pilule",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово связывает все три сцены. Что оно значит?",
+        "contexts": [
+          "Une pilule contre le mal de mer, s'il vous plaît.",
+          "Elle a avalé la pilule avec un verre d'eau.",
+          "Ces vieux remèdes étaient des pilules amères."
+        ],
+        "options": ["пилюля, таблетка", "мазь", "повязка", "градусник"],
+        "correctIndex": 0,
+        "explanation": "pilule (f) — маленькая таблетка, пилюля. «avaler une pilule» — проглотить таблетку. Важно: отдельно «la pilule» (с артиклем, без уточнения) французы понимают как противозачаточную таблетку."
+      },
+      {
+        "id": "wc-pharmacie-pilule-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-pharmacie-pilule",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "pilule",
+        "options": ["pilule", "cellule", "libellule", "bascule"],
+        "correctIndex": 0,
+        "explanation": "Все оканчиваются на /-yl/, но различаются началом: pilule /pi.lyl/ (таблетка), cellule /se.lyl/ (клетка), libellule /li.be.lyl/ (стрекоза), bascule /bas.kyl/ (качели). Это не омофоны — слушай начало слова."
+      },
+      {
+        "id": "wc-pharmacie-piqure-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pharmacie-piqure",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит повторяющееся слово в этих сценах?",
+        "contexts": [
+          "L'infirmière m'a fait une piqûre au bras.",
+          "J'ai une piqûre de moustique qui me gratte.",
+          "Mon fils a peur des piqûres chez le médecin."
+        ],
+        "options": ["укол (а также укус насекомого)", "таблетка", "мазь", "рецепт"],
+        "correctIndex": 0,
+        "explanation": "piqûre (f) — прокол кожи: и медицинский укол («faire une piqûre»), и укус насекомого («une piqûre de moustique»). Обрати внимание на accent circonflexe на û: p-i-q-û-r-e, /pi.kyʁ/."
+      },
+      {
+        "id": "wc-pharmacie-piqure-cmp",
+        "kind": "compare",
+        "wordId": "wl-pharmacie-piqure",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une piqûre и un vaccin. В чём разница?",
+        "phrases": ["Le médecin m'a fait une piqûre.", "J'ai reçu le vaccin contre la grippe."],
+        "options": [
+          "piqûre — сам укол (любая инъекция или укус); vaccin — прививка от конкретной болезни",
+          "Это синонимы, разницы нет",
+          "piqûre — прививка, а vaccin — укус комара",
+          "piqûre — таблетка, vaccin — сироп"
+        ],
+        "correctIndex": 0,
+        "explanation": "la piqûre — это сам укол (или укус насекомого), способ ввести; le vaccin — прививка от болезни (что вводят и зачем). Прививку (le vaccin) как раз делают через укол (une piqûre)."
+      },
+      {
+        "id": "wc-pharmacie-pommade-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pharmacie-pommade",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mettez de la pommade sur la brûlure.",
+          "Cette pommade calme les douleurs musculaires.",
+          "Le pharmacien m'a conseillé une pommade pour la peau."
+        ],
+        "options": ["мазь", "таблетка", "сироп", "капсула"],
+        "correctIndex": 0,
+        "explanation": "pommade (f) — мазь: густое жирное лекарство, которое намазывают на кожу. «mettre de la pommade» — намазать мазью, «une pommade pour les brûlures» — мазь от ожогов."
+      },
+      {
+        "id": "wc-pharmacie-pommade-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-pharmacie-pommade",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово произнесли.",
+        "audioText": "pommade",
+        "options": ["pommade", "limonade", "marinade", "grenade"],
+        "correctIndex": 0,
+        "explanation": "Все оканчиваются на /-ad/, но различаются началом: pommade /pɔ.mad/ (мазь), limonade /li.mɔ.nad/ (лимонад), marinade /ma.ʁi.nad/ (маринад), grenade /ɡʁə.nad/ (гранат/граната). Слушай начало — это не омофоны."
+      },
+      {
+        "id": "wc-pharmacie-gelule-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-pharmacie-gelule",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Подсказка в самом слове. Что значит gélule?",
+        "bridge": "Внутри слова спрятан «gél-» — как в gélatine (желатин) и англ. «gel». Gélule — это желатиновая капсула. Читается /ʒe.lyl/.",
+        "options": ["капсула", "таблетка прессованная", "мазь", "пластырь"],
+        "correctIndex": 0,
+        "explanation": "gélule (f) = капсула из желатина с порошком внутри; её глотают целиком. Корень gél- (как в gélatine) — хороший мост к запоминанию. Не путать с твёрдым comprimé."
+      },
+      {
+        "id": "wc-pharmacie-gelule-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-pharmacie-gelule",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — это формы лекарства, которые принимают внутрь (глотают). Найди лишнее.",
+        "options": ["la gélule", "le comprimé", "la pilule", "le pansement"],
+        "correctIndex": 3,
+        "explanation": "Капсулу (la gélule), таблетку (le comprimé) и пилюлю (la pilule) глотают. le pansement (пластырь, повязка) — лишний: его накладывают снаружи на ранку, а не принимают внутрь."
+      },
+      {
+        "id": "wc-pharmacie-pharmacien-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-pharmacie-pharmacien",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит повторяющееся слово в этих сценах?",
+        "contexts": [
+          "Demandez conseil au pharmacien.",
+          "Le pharmacien lit l'ordonnance du médecin.",
+          "La pharmacienne m'a donné un sirop contre la toux."
+        ],
+        "options": ["фармацевт, аптекарь", "врач", "аптека", "медсестра"],
+        "correctIndex": 0,
+        "explanation": "pharmacien (m) / pharmacienne (f) — фармацевт, аптекарь: человек за стойкой в аптеке. «demander au pharmacien» — спросить у фармацевта. Сама аптека (место) — la pharmacie, врач — le médecin."
+      },
+      {
+        "id": "wc-pharmacie-pharmacien-hint",
+        "kind": "wordHint",
+        "wordId": "wl-pharmacie-pharmacien",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: человек за стойкой в аптеке, который выдаёт лекарства и советует, что взять.",
+        "answer": "pharmacien",
+        "hints": [
+          "Начинается на pharma…",
+          "10 букв; женская форма — pharmacienne",
+          "Demandez conseil au ___."
+        ],
+        "explanation": "pharmacien (m) / pharmacienne (f) — фармацевт. Не путать с la pharmacie (аптека, место) и le médecin (врач, который пишет рецепт)."
+      },
+      {
+        "id": "wc-pharmacie-pilule-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-pharmacie-pilule",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для pilule (таблетка), чтобы запомнить женский род (une pilule) и двойное «лю-лю» в звучании /pi.lyl/.",
+        "examples": [
+          "Англ. «pill» спрятано в начале: pi-lule — но французская она «своя», женского рода: une pilule.",
+          "Звук как считалочка «пи-люль»: une petite pilule — маленькая круглая таблетка, которую легко проглотить."
+        ]
+      }
+    ]
+  }
+]

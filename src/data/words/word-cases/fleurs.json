@@ -1,0 +1,304 @@
+[
+  {
+    "id": "wc-fleurs",
+    "title": "Цветы",
+    "theme": "fleurs",
+    "level": "A2",
+    "wordIds": [
+      "wl-fleurs-rose",
+      "wl-fleurs-tulipe",
+      "wl-fleurs-marguerite",
+      "wl-fleurs-petale",
+      "wl-fleurs-tige",
+      "wl-fleurs-bouquet",
+      "wl-fleurs-epine",
+      "wl-fleurs-pollen"
+    ],
+    "steps": [
+      {
+        "id": "wc-fleurs-rose-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fleurs-rose",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il lui a offert une rose rouge.",
+          "Le jardin est plein de roses.",
+          "Une rose, c'est joli, mais ça a des épines."
+        ],
+        "options": ["роза", "лилия", "ваза", "лепесток"],
+        "correctIndex": 0,
+        "explanation": "rose (f) — роза. «offrir une rose» — подарить розу. У розы есть шипы — des épines. Лилия — un lis, ваза — un vase."
+      },
+      {
+        "id": "wc-fleurs-rose-trap",
+        "kind": "trap",
+        "wordId": "wl-fleurs-rose",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В фразе «une robe rose» слово rose стоит после существительного. Что оно тут значит?",
+        "options": [
+          "розовый (цвет) — розовое платье",
+          "роза — платье-роза",
+          "красивый — красивое платье",
+          "из роз — платье из роз"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: une rose (f) — это цветок роза, но то же слово rose как прилагательное значит «розовый». «une robe rose» = розовое платье, а не «платье-роза»."
+      },
+      {
+        "id": "wc-fleurs-tulipe-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-fleurs-tulipe",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит tulipe?",
+        "bridge": "Англ. «tulip» — тюльпан. Французское tulipe — почти то же слово, только с конечным -e и ударением на конце: /ty.lip/.",
+        "options": ["тюльпан", "лилия", "пион", "тюлень"],
+        "correctIndex": 0,
+        "explanation": "tulipe (f) — тюльпан, по англ. «tulip». «un champ de tulipes» — поле тюльпанов. Не путать с похожим по звучанию «тюленем» (un phoque)."
+      },
+      {
+        "id": "wc-fleurs-tulipe-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-fleurs-tulipe",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери ровно то, что прозвучало. Остальные похожи, но это другие слова.",
+        "audioText": "tulipe",
+        "options": ["tulipe", "tunique", "turbine", "tulle"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало tulipe /ty.lip/ — тюльпан. «tunique» /ty.nik/ (туника), «turbine» /tyʁ.bin/ (турбина) и «tulle» /tyl/ (тюль) звучат похоже на «тю-», но это другие слова."
+      },
+      {
+        "id": "wc-fleurs-marguerite-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fleurs-marguerite",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Les enfants cueillent des marguerites dans le pré.",
+          "Elle effeuille une marguerite : il m'aime, un peu, beaucoup…",
+          "Une marguerite a des pétales blancs et un cœur jaune."
+        ],
+        "options": ["ромашка", "роза", "мак", "стебель"],
+        "correctIndex": 0,
+        "explanation": "marguerite (f) — (полевая) ромашка с белыми лепестками и жёлтой серединкой. «effeuiller la marguerite» — гадать «любит — не любит». Мак — un coquelicot."
+      },
+      {
+        "id": "wc-fleurs-marguerite-cmp",
+        "kind": "compare",
+        "wordId": "wl-fleurs-marguerite",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "marguerite и camomille — по-русски обе «ромашка». В чём разница во французском?",
+        "phrases": [
+          "Elle a cueilli des marguerites pour faire un bouquet.",
+          "Le soir, il boit une tisane à la camomille."
+        ],
+        "options": [
+          "marguerite — полевая ромашка, которую рвут в букет; camomille — аптечная ромашка для чая.",
+          "Это полные синонимы, разницы нет.",
+          "marguerite — это чай, а camomille — цветок в поле.",
+          "marguerite — жёлтая, camomille — красная."
+        ],
+        "correctIndex": 0,
+        "explanation": "По-русски обе «ромашка», но во французском различают: la marguerite — крупный луговой цветок (в букет), la camomille — аптечная ромашка, из которой делают tisane (травяной чай)."
+      },
+      {
+        "id": "wc-fleurs-petale-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fleurs-petale",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les pétales de la rose sont tombés sur la table.",
+          "Elle a semé des pétales rouges sur le lit.",
+          "Cette fleur a perdu un pétale."
+        ],
+        "options": ["лепесток", "стебель", "шип", "корень"],
+        "correctIndex": 0,
+        "explanation": "pétale (m) — лепесток. «des pétales de rose» — лепестки розы. «les pétales tombent» — лепестки опадают. Стебель — la tige, шип — une épine."
+      },
+      {
+        "id": "wc-fleurs-petale-trap",
+        "kind": "trap",
+        "wordId": "wl-fleurs-petale",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово pétale кончается на -e, как многие женские слова. Какой у него на самом деле род?",
+        "options": [
+          "мужской — un pétale, des pétales",
+          "женский — une pétale, так как кончается на -e",
+          "род зависит от цветка",
+          "у слова нет рода"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка рода: несмотря на -e на конце, pétale — мужского рода: un pétale, un beau pétale. Форма «une pétale» в разговоре встречается, но считается ошибкой."
+      },
+      {
+        "id": "wc-fleurs-tige-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fleurs-tige",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Coupe la tige avant de mettre la fleur dans le vase.",
+          "Cette rose a une longue tige.",
+          "La tige est verte, la fleur est rouge."
+        ],
+        "options": ["стебель", "лепесток", "шип", "букет"],
+        "correctIndex": 0,
+        "explanation": "tige (f) — стебель: длинная зелёная часть, на которой держится цветок. «une rose à longue tige» — роза на длинном стебле. «couper la tige» — обрезать стебель."
+      },
+      {
+        "id": "wc-fleurs-tige-cmp",
+        "kind": "compare",
+        "wordId": "wl-fleurs-tige",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "tige и branche. Когда какое слово?",
+        "phrases": [
+          "La fleur tient sur une tige verte.",
+          "L'oiseau est posé sur une branche de l'arbre."
+        ],
+        "options": [
+          "tige — мягкий стебель цветка или травы; branche — одревесневшая ветка дерева.",
+          "Это одно и то же, можно говорить как угодно.",
+          "tige — у дерева, branche — у цветка.",
+          "tige — под землёй, branche — над землёй."
+        ],
+        "correctIndex": 0,
+        "explanation": "la tige — стебель травянистого растения или цветка (гибкий, зелёный). une branche — ветка дерева (твёрдая, одревесневшая). Цветок держится на tige, а не на branche."
+      },
+      {
+        "id": "wc-fleurs-bouquet-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-fleurs-bouquet",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Это слово английский взял прямо из французского. Что значит bouquet?",
+        "bridge": "Англ. «bouquet» — это и есть французское bouquet (букет): те же буквы. Только по-французски читается /bu.kɛ/, конечный -t не произносится.",
+        "options": ["букет", "ваза", "сад", "запах"],
+        "correctIndex": 0,
+        "explanation": "bouquet (m) — букет. «un bouquet de fleurs» — букет цветов, «offrir un bouquet» — подарить букет. Англ. «bouquet» — прямой мост: то же слово."
+      },
+      {
+        "id": "wc-fleurs-bouquet-collo",
+        "kind": "sort",
+        "wordId": "wl-fleurs-bouquet",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом bouquet звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un bouquet de fleurs",
+            "basket": "ok"
+          },
+          {
+            "text": "offrir un bouquet",
+            "basket": "ok"
+          },
+          {
+            "text": "un joli bouquet de roses",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un bouquet",
+            "basket": "no"
+          },
+          {
+            "text": "un bouquet carré",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un bouquet de fleurs», «offrir un bouquet», «un joli bouquet de roses» — естественно. «boire un bouquet» (пить букет) и «un bouquet carré» (квадратный букет) — бессмыслица."
+      },
+      {
+        "id": "wc-fleurs-epine-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fleurs-epine",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Attention aux épines quand tu prends la rose.",
+          "Je me suis piqué avec une épine.",
+          "Il existe des roses presque sans épines."
+        ],
+        "options": ["шип", "лепесток", "пыльца", "ваза"],
+        "correctIndex": 0,
+        "explanation": "épine (f) — шип, колючка. «se piquer avec une épine» — уколоться шипом. «une rose sans épines» — роза без шипов. Пыльца — le pollen."
+      },
+      {
+        "id": "wc-fleurs-epine-hint",
+        "kind": "wordHint",
+        "wordId": "wl-fleurs-epine",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: острый колючий вырост на стебле розы, которым можно уколоться.",
+        "answer": "épine",
+        "hints": [
+          "Начинается на é…",
+          "Женский род, 5 букв, есть accent aigu",
+          "Une rose a des ___s."
+        ],
+        "explanation": "épine (f) — шип. Во множественном — des épines. Та же основа в «l'épine dorsale» — позвоночник."
+      },
+      {
+        "id": "wc-fleurs-pollen-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fleurs-pollen",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Au printemps, je suis allergique au pollen.",
+          "Les abeilles transportent le pollen de fleur en fleur.",
+          "Le pollen jaune recouvre les voitures."
+        ],
+        "options": ["пыльца", "лепесток", "нектар", "стебель"],
+        "correctIndex": 0,
+        "explanation": "pollen (m) — пыльца: жёлтый порошок цветка. «une allergie au pollen» — аллергия на пыльцу. Нектар (сладкая жидкость) — le nectar, это другое."
+      },
+      {
+        "id": "wc-fleurs-pollen-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-fleurs-pollen",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подсказывает значение, но не произношение. Что значит pollen?",
+        "bridge": "Англ. «pollen» — пыльца; пишется так же. Но по-французски конечное -en звучит /ɛn/: pollen → /pɔ.lɛn/ (как в abdomen).",
+        "options": ["пыльца", "цветок", "пыль (на полке)", "поляна"],
+        "correctIndex": 0,
+        "explanation": "pollen (m) = пыльца, как англ. «pollen». Ловушка произношения: -en тут читается /ɛn/, а не носовое /ɑ̃/. Бытовая пыль — la poussière, это другое слово."
+      },
+      {
+        "id": "wc-fleurs-petale-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-fleurs-petale",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для pétale (лепесток), чтобы запомнить, что слово мужского рода — un pétale, хотя кончается на -e.",
+        "examples": [
+          "Представь, что каждый лепесток — это маленький рыцарь «un pétale», который слетает с розы: он, мужского рода, несмотря на -e.",
+          "Свяжи в пару: un pétale — un cœur (серединка цветка) — оба «un», оба части цветка и оба мужского рода."
+        ]
+      }
+    ]
+  }
+]

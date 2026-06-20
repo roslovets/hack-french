@@ -1,0 +1,241 @@
+[
+  {
+    "id": "wl-textures-doux",
+    "lemma": "doux",
+    "displayForm": "doux / douce",
+    "pos": "adj",
+    "ipa": "/du/",
+    "translationsRu": ["мягкий", "нежный"],
+    "translationsEn": ["soft", "gentle"],
+    "semanticCore": "Приятный на ощупь, слух или вкус: мягкий, нежный, не резкий (о коже, ткани, голосе, погоде); также пресный — l'eau douce.",
+    "collocations": [
+      { "fr": "une peau douce", "ru": "мягкая кожа" },
+      { "fr": "doux au toucher", "ru": "мягкий на ощупь" },
+      { "fr": "une voix douce", "ru": "нежный голос" },
+      { "fr": "l'eau douce", "ru": "пресная вода" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mou",
+        "note": "doux = приятный, нежный на ощупь (мягкая ткань); mou = поддающийся нажиму, не твёрдый (мягкий матрас). Подушка бывает и douce, и molle."
+      },
+      {
+        "with": "sucré",
+        "note": "doux = мягкий/нежный (и пресный про воду); sucré = сладкий на вкус. «l'eau douce» — пресная вода, а не сладкая."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["textures", "toucher"],
+    "caseIds": ["wc-textures"]
+  },
+  {
+    "id": "wl-textures-rugueux",
+    "lemma": "rugueux",
+    "displayForm": "rugueux / rugueuse",
+    "pos": "adj",
+    "ipa": "/ʁy.ɡø/",
+    "translationsRu": ["шершавый", "шероховатый"],
+    "translationsEn": ["rough", "coarse"],
+    "semanticCore": "Неровный, грубый на ощупь — с бугорками и шероховатостями (о коже, поверхности, бумаге, коре).",
+    "collocations": [
+      { "fr": "une surface rugueuse", "ru": "шершавая поверхность" },
+      { "fr": "une peau rugueuse", "ru": "шершавая кожа" },
+      { "fr": "du papier rugueux", "ru": "шершавая бумага" },
+      { "fr": "une écorce rugueuse", "ru": "шершавая кора" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "lisse",
+        "note": "rugueux = шершавый, неровный; lisse = гладкий, ровный. Прямые антонимы на ощупь."
+      },
+      {
+        "with": "râpeux",
+        "note": "rugueux = шершавый вообще (неровная поверхность); râpeux = царапающий, как тёрка или язык кошки. râpeux — более резкий, «дерущий»."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["textures", "toucher"],
+    "caseIds": ["wc-textures"]
+  },
+  {
+    "id": "wl-textures-lisse",
+    "lemma": "lisse",
+    "pos": "adj",
+    "ipa": "/lis/",
+    "translationsRu": ["гладкий", "ровный"],
+    "translationsEn": ["smooth", "sleek"],
+    "semanticCore": "Гладкий и ровный на ощупь, без бугорков и шероховатостей (о коже, поверхности, волосах, воде).",
+    "collocations": [
+      { "fr": "une peau lisse", "ru": "гладкая кожа" },
+      { "fr": "une surface lisse", "ru": "гладкая поверхность" },
+      { "fr": "des cheveux lisses", "ru": "гладкие (прямые) волосы" },
+      { "fr": "une mer lisse", "ru": "гладкое (спокойное) море" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rugueux",
+        "note": "lisse = гладкий, ровный; rugueux = шершавый, неровный. Антонимы."
+      },
+      {
+        "with": "doux",
+        "note": "lisse = ровный, без бугорков (про рельеф поверхности); doux = приятный, мягкий на ощупь (про ощущение). Стекло lisse, но не особо doux; бархат doux, но не идеально lisse."
+      }
+    ],
+    "frequencyRank": 690,
+    "level": "A2",
+    "tags": ["textures", "toucher"],
+    "caseIds": ["wc-textures"]
+  },
+  {
+    "id": "wl-textures-mou",
+    "lemma": "mou",
+    "displayForm": "mou / molle",
+    "pos": "adj",
+    "ipa": "/mu/",
+    "translationsRu": ["мягкий", "податливый"],
+    "translationsEn": ["soft", "limp"],
+    "semanticCore": "Мягкий в смысле «не твёрдый, поддаётся нажиму, проминается» (о матрасе, хлебе, тесте); о человеке — вялый, безвольный.",
+    "collocations": [
+      { "fr": "un matelas mou", "ru": "мягкий матрас" },
+      { "fr": "du pain mou", "ru": "мягкий (несвежий) хлеб" },
+      { "fr": "des jambes molles", "ru": "ватные ноги" },
+      { "fr": "un fromage mou", "ru": "мягкий сыр" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "doux",
+        "note": "mou = не твёрдый, проминается (мягкий матрас); doux = приятный, нежный на ощупь (мягкая ткань). По-русски оба «мягкий», но это разные качества."
+      },
+      {
+        "with": "dur",
+        "note": "mou = мягкий, податливый; dur = твёрдый, жёсткий. Антонимы. Женский род mou — molle: une chaise dure / un coussin mou."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["textures", "consistance"],
+    "caseIds": ["wc-textures"]
+  },
+  {
+    "id": "wl-textures-piquant",
+    "lemma": "piquant",
+    "displayForm": "piquant / piquante",
+    "pos": "adj",
+    "ipa": "/pi.kɑ̃/",
+    "translationsRu": ["колючий", "острый"],
+    "translationsEn": ["prickly", "spicy"],
+    "semanticCore": "Колющий на ощупь (борода, колючка) или жгучий, острый на вкус (соус, перец); образно — острый, задорный.",
+    "collocations": [
+      { "fr": "une barbe piquante", "ru": "колючая борода" },
+      { "fr": "une sauce piquante", "ru": "острый соус" },
+      { "fr": "des poils piquants", "ru": "колючие волоски" },
+      { "fr": "un goût piquant", "ru": "острый (жгучий) вкус" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "épicé",
+        "note": "piquant = жгуче-острый, «дерёт» язык (как перец чили); épicé = сдобренный специями, пряный (не обязательно жгучий). Карри épicé, но не всегда piquant."
+      },
+      {
+        "with": "doux",
+        "note": "О вкусе: piquant = острый, жгучий; doux = мягкий, нежный, неострый. Антонимы по остроте."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["textures", "toucher"],
+    "caseIds": ["wc-textures"]
+  },
+  {
+    "id": "wl-textures-collant",
+    "lemma": "collant",
+    "displayForm": "collant / collante",
+    "pos": "adj",
+    "ipa": "/kɔ.lɑ̃/",
+    "translationsRu": ["липкий", "клейкий"],
+    "translationsEn": ["sticky", "clingy"],
+    "semanticCore": "Прилипающий, клейкий на ощупь (руки, поверхность); образно — навязчивый, «прилипчивый» человек. От глагола coller (клеить).",
+    "collocations": [
+      { "fr": "des mains collantes", "ru": "липкие руки" },
+      { "fr": "une surface collante", "ru": "липкая поверхность" },
+      { "fr": "du papier collant", "ru": "клейкая лента / скотч" },
+      { "fr": "un enfant collant", "ru": "ребёнок, который всё время липнет" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "collant (сущ.)",
+        "note": "прилаг. collant = липкий; но un collant (существительное) = колготки. «J'ai mis un collant» — я надела колготки, а не «что-то липкое»."
+      },
+      {
+        "with": "gluant",
+        "note": "collant = липкий, клейкий (прилипает к рукам, как скотч); gluant = склизкий, тягучий, противно-вязкий (слизь, улитка). gluant неприятнее."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["textures", "toucher"],
+    "caseIds": ["wc-textures"]
+  },
+  {
+    "id": "wl-textures-soyeux",
+    "lemma": "soyeux",
+    "displayForm": "soyeux / soyeuse",
+    "pos": "adj",
+    "ipa": "/swa.jø/",
+    "translationsRu": ["шелковистый"],
+    "translationsEn": ["silky", "silken"],
+    "semanticCore": "Гладкий, нежный и струящийся, как шёлк (о волосах, коже, ткани, шерсти животного). От слова soie — шёлк.",
+    "collocations": [
+      { "fr": "des cheveux soyeux", "ru": "шелковистые волосы" },
+      { "fr": "une peau soyeuse", "ru": "шелковистая кожа" },
+      { "fr": "un pelage soyeux", "ru": "шелковистая шерсть" },
+      { "fr": "une texture soyeuse", "ru": "шелковистая текстура" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "doux",
+        "note": "soyeux = именно шелковистый: гладкий и струящийся, как шёлк (волосы); doux = мягкий, нежный вообще. Всё soyeux является doux, но не всё doux — soyeux."
+      },
+      {
+        "with": "lisse",
+        "note": "soyeux = шелковистый (гладкий + мягкий + блестящий, приятный); lisse = просто гладкий, ровный, без оценки приятности. Стекло lisse, но не soyeux."
+      }
+    ],
+    "frequencyRank": 850,
+    "level": "A2",
+    "tags": ["textures", "toucher"],
+    "caseIds": ["wc-textures"]
+  },
+  {
+    "id": "wl-textures-rapeux",
+    "lemma": "râpeux",
+    "displayForm": "râpeux / râpeuse",
+    "pos": "adj",
+    "ipa": "/ʁɑ.pø/",
+    "translationsRu": ["шероховатый", "шершавый"],
+    "translationsEn": ["rough", "raspy"],
+    "semanticCore": "Грубо-шершавый, царапающий, как тёрка или язык кошки; о голосе — хриплый, сиплый. От слова râpe — тёрка.",
+    "collocations": [
+      { "fr": "une langue râpeuse", "ru": "шершавый язык (кошки)" },
+      { "fr": "une surface râpeuse", "ru": "шероховатая поверхность" },
+      { "fr": "une voix râpeuse", "ru": "хриплый голос" },
+      { "fr": "un tissu râpeux", "ru": "грубая (царапающая) ткань" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rugueux",
+        "note": "râpeux = царапающий, дерущий, как тёрка/наждак или язык кошки; rugueux = просто неровный, шершавый. râpeux резче и «зубастее»."
+      },
+      {
+        "with": "doux",
+        "note": "râpeux = грубый, царапающий; doux = мягкий, нежный, гладко-приятный. Антонимы на ощупь."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["textures", "toucher"],
+    "caseIds": ["wc-textures"]
+  }
+]

@@ -59,7 +59,8 @@
       "bebe",
       "organes",
       "maquillage",
-      "coiffure"
+      "coiffure",
+      "pharmacie"
     ],
     "bossId": "wc-boss-corps-famille"
   },
@@ -145,7 +146,8 @@
       "insectes",
       "ferme",
       "montagne",
-      "marins"
+      "marins",
+      "fleurs"
     ],
     "bossId": "wc-boss-weather"
   },
@@ -163,14 +165,16 @@
       "photo",
       "musees",
       "instruments",
-      "danse"
+      "danse",
+      "cinema",
+      "fitness"
     ],
     "bossId": "wc-boss-leisure"
   },
   {
     "id": "descriptions",
     "title": "Цвета и описания",
-    "themes": ["couleurs", "adjectifs", "quantite", "nombres", "adverbes", "formes"],
+    "themes": ["couleurs", "adjectifs", "quantite", "nombres", "adverbes", "formes", "textures"],
     "bossId": "wc-boss-descriptions"
   }
 ]
