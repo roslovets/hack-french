@@ -1,0 +1,324 @@
+[
+  {
+    "id": "wc-sante2",
+    "title": "Здоровье 2",
+    "theme": "sante2",
+    "level": "A2",
+    "wordIds": [
+      "wl-sante2-dentiste",
+      "wl-sante2-urgence",
+      "wl-sante2-blessure",
+      "wl-sante2-vaccin",
+      "wl-sante2-soigner",
+      "wl-sante2-tousser",
+      "wl-sante2-operation",
+      "wl-sante2-allergie"
+    ],
+    "steps": [
+      {
+        "id": "wc-sante2-dentiste-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante2-dentiste",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai mal aux dents, je dois aller chez le dentiste.",
+          "Mon dentiste m'a dit de moins manger de sucre.",
+          "Elle a peur du dentiste depuis l'enfance."
+        ],
+        "options": ["стоматолог, зубной врач", "терапевт", "медсестра", "аптекарь"],
+        "correctIndex": 0,
+        "explanation": "le / la dentiste — стоматолог, зубной врач. «aller chez le dentiste» — идти к стоматологу. Слово одно для мужчины и женщины, меняется лишь артикль: un dentiste / une dentiste."
+      },
+      {
+        "id": "wc-sante2-dentiste-trap",
+        "kind": "trap",
+        "wordId": "wl-sante2-dentiste",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Зуб болит. Как по-французски сказать «я иду к стоматологу»?",
+        "options": [
+          "Je vais chez le dentiste.",
+          "Je vais à le dentiste.",
+          "Je vais au dentiste docteur.",
+          "Je vais dans le dentiste."
+        ],
+        "correctIndex": 0,
+        "explanation": "К человеку идут «chez»: aller chez le dentiste, chez le médecin. «à le» невозможно (было бы au, но с людьми используют chez), «dans le dentiste» (внутри стоматолога) — бессмыслица."
+      },
+      {
+        "id": "wc-sante2-urgence-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante2-urgence",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il s'est cassé le bras, on l'a emmené aux urgences.",
+          "En cas d'urgence, appelez le 15.",
+          "Ce n'est pas grave, ce n'est pas une urgence."
+        ],
+        "options": [
+          "срочность; приёмный покой (les urgences)",
+          "очередь к врачу",
+          "страховка",
+          "больничный лист"
+        ],
+        "correctIndex": 0,
+        "explanation": "une urgence (f) — срочный, экстренный случай. Во множественном les urgences — приёмный покой, отделение неотложной помощи. «aller aux urgences» — попасть в неотложку, «en cas d'urgence» — в экстренном случае."
+      },
+      {
+        "id": "wc-sante2-urgence-cmp",
+        "kind": "compare",
+        "wordId": "wl-sante2-urgence",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "les urgences и une ambulance. В чём разница?",
+        "phrases": ["On l'a emmené aux urgences.", "On a appelé une ambulance."],
+        "options": [
+          "«les urgences» — отделение неотложной помощи (место); «une ambulance» — машина скорой (транспорт).",
+          "Это полные синонимы.",
+          "«les urgences» — это машина, а «ambulance» — здание.",
+          "Оба значат «врач»."
+        ],
+        "correctIndex": 0,
+        "explanation": "les urgences — приёмный покой, куда привозят (место в больнице). une ambulance — машина скорой помощи, которая туда везёт. Ambulance довозит до les urgences."
+      },
+      {
+        "id": "wc-sante2-blessure-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante2-blessure",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le médecin a nettoyé la blessure.",
+          "Il a une blessure au genou après le match.",
+          "Sa blessure n'est pas grave, ça va guérir vite."
+        ],
+        "options": ["рана, травма", "боль", "болезнь", "шрам"],
+        "correctIndex": 0,
+        "explanation": "une blessure (f) — рана, травма (повреждение тела). «une blessure au genou» — травма колена. Боль — la douleur, болезнь — une maladie, шрам — une cicatrice."
+      },
+      {
+        "id": "wc-sante2-blessure-cmp",
+        "kind": "compare",
+        "wordId": "wl-sante2-blessure",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une blessure и une maladie. В чём разница?",
+        "phrases": ["Il a une blessure au bras.", "Il a une maladie grave."],
+        "options": [
+          "«blessure» — травма от удара/падения (внешнее); «maladie» — болезнь (вирус, инфекция изнутри).",
+          "Это синонимы.",
+          "«blessure» — это болезнь, а «maladie» — рана.",
+          "Оба значат «боль»."
+        ],
+        "correctIndex": 0,
+        "explanation": "une blessure — повреждение от удара, падения, пореза (перелом, рана). une maladie — болезнь (грипп, инфекция). По-русски и то, и другое можно назвать «травма/болезнь», но во французском это разные слова."
+      },
+      {
+        "id": "wc-sante2-vaccin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante2-vaccin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le vaccin contre la grippe est gratuit cette année.",
+          "Les enfants reçoivent plusieurs vaccins.",
+          "Ce vaccin protège pendant un an."
+        ],
+        "options": ["вакцина, прививка", "лекарство", "укол крови на анализ", "витамин"],
+        "correctIndex": 0,
+        "explanation": "un vaccin (m) — вакцина, прививка (защищает от болезни). «le vaccin contre la grippe» — прививка от гриппа. Лекарство — un médicament; саму процедуру называют la vaccination."
+      },
+      {
+        "id": "wc-sante2-vaccin-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-sante2-vaccin",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит vaccin?",
+        "bridge": "Англ. «vaccine» и рус. «вакцина» — тот же корень. Французское vaccin короче, без -e на конце, читается /vak.sɛ̃/ с носовым «-эн».",
+        "options": ["вакцина, прививка", "вакуум", "пылесос", "пузырёк"],
+        "correctIndex": 0,
+        "explanation": "vaccin = вакцина (англ. vaccine). Надёжный мост через знакомый корень. Внимание: конечное -in даёт носовой звук /ɛ̃/, а две c читаются как /ks/: /vak.sɛ̃/."
+      },
+      {
+        "id": "wc-sante2-vaccin-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-sante2-vaccin",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало. Они звучат близко, но это разные слова.",
+        "audioText": "vaccin",
+        "options": ["vaccin", "bassin", "dessin"],
+        "correctIndex": 0,
+        "explanation": "vaccin /vak.sɛ̃/ — вакцина. Похожие на конце /-sɛ̃/: bassin /ba.sɛ̃/ — таз, бассейн (водоём), dessin /de.sɛ̃/ — рисунок. Различаются началом слова."
+      },
+      {
+        "id": "wc-sante2-soigner-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante2-soigner",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "L'infirmière soigne les malades avec patience.",
+          "Il faut bien soigner cette blessure.",
+          "Repose-toi et soigne-toi bien !"
+        ],
+        "options": ["лечить, ухаживать", "выздоравливать", "заболевать", "оперировать"],
+        "correctIndex": 0,
+        "explanation": "soigner — лечить, ухаживать (процесс заботы). «soigner un malade» — ухаживать за больным, «se soigner» — лечиться. Выздороветь (результат) — guérir."
+      },
+      {
+        "id": "wc-sante2-soigner-cmp",
+        "kind": "compare",
+        "wordId": "wl-sante2-soigner",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "soigner и guérir. В чём разница?",
+        "phrases": ["Le médecin soigne le patient.", "Le patient guérit en une semaine."],
+        "options": [
+          "«soigner» — лечить, ухаживать (процесс); «guérir» — вылечить(ся), стать здоровым (результат).",
+          "Это полные синонимы.",
+          "«soigner» значит выздороветь, а «guérir» — заболеть.",
+          "Оба значат «оперировать»."
+        ],
+        "correctIndex": 0,
+        "explanation": "soigner — сам процесс лечения и ухода (врач soigne больного). guérir — итог: больной guérit (выздоравливает). Можно долго soigner, пока пациент не guérit."
+      },
+      {
+        "id": "wc-sante2-tousser-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante2-tousser",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il tousse beaucoup depuis hier.",
+          "Arrête de fumer, ça te fait tousser.",
+          "L'enfant a toussé toute la nuit."
+        ],
+        "options": ["кашлять", "чихать", "храпеть", "дышать"],
+        "correctIndex": 0,
+        "explanation": "tousser — кашлять. «tousser toute la nuit» — кашлять всю ночь. Чихать — éternuer. Существительное «кашель» — la toux /tu/."
+      },
+      {
+        "id": "wc-sante2-tousser-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-sante2-tousser",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало. Они похожи, но это разные слова.",
+        "audioText": "tousser",
+        "options": ["tousser", "toucher", "pousser"],
+        "correctIndex": 0,
+        "explanation": "tousser /tu.se/ — кашлять. Похожие: toucher /tu.ʃe/ — трогать, касаться (звук «ш»), pousser /pu.se/ — толкать (гласная «у» в начале). Слушай первый и средний звук."
+      },
+      {
+        "id": "wc-sante2-operation-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante2-operation",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "L'opération a duré trois heures.",
+          "Après son opération, il doit rester à l'hôpital.",
+          "Le chirurgien va faire l'opération demain matin."
+        ],
+        "options": ["операция (хирургическая)", "осмотр", "анализ", "перевязка"],
+        "correctIndex": 0,
+        "explanation": "une opération (f) — хирургическая операция. «subir une opération» — перенести операцию, «une opération du cœur» — операция на сердце. Хирург — un chirurgien."
+      },
+      {
+        "id": "wc-sante2-operation-collo",
+        "kind": "sort",
+        "wordId": "wl-sante2-operation",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом opération звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "subir une opération",
+            "basket": "ok"
+          },
+          {
+            "text": "une opération du cœur",
+            "basket": "ok"
+          },
+          {
+            "text": "après l'opération",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une opération",
+            "basket": "no"
+          },
+          {
+            "text": "une opération mouillée",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«subir une opération» (перенести операцию), «une opération du cœur» (операция на сердце), «après l'opération» (после операции) — естественно. «boire une opération» (пить операцию) и «une opération mouillée» (мокрая операция) — бессмыслица."
+      },
+      {
+        "id": "wc-sante2-allergie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-sante2-allergie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai une allergie au pollen au printemps.",
+          "Attention, il a une allergie aux arachides.",
+          "Cette crème peut provoquer une allergie."
+        ],
+        "options": ["аллергия", "простуда", "сыпь от жары", "отравление"],
+        "correctIndex": 0,
+        "explanation": "une allergie (f) — аллергия (реакция организма на аллерген). «une allergie au pollen» — аллергия на пыльцу. Прилагательное — allergique: «je suis allergique aux arachides»."
+      },
+      {
+        "id": "wc-sante2-allergie-hint",
+        "kind": "wordHint",
+        "wordId": "wl-sante2-allergie",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: болезненная реакция организма на пыльцу, еду или лекарство.",
+        "answer": "allergie",
+        "hints": [
+          "Начинается на a…",
+          "Женский род, 8 букв, удвоенная l",
+          "J'ai une ___ au pollen."
+        ],
+        "explanation": "une allergie (f) — аллергия. Удвоенная l: a-l-l-e-r-g-i-e, читается /a.lɛʁ.ʒi/. Прилагательное — allergique (аллергический)."
+      },
+      {
+        "id": "wc-sante2-vaccin-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-sante2-vaccin",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для vaccin (вакцина), чтобы запомнить мужской род (un vaccin) и носовой звук на конце /vak.sɛ̃/.",
+        "examples": [
+          "Англ. «vaccine» без -e на конце: un vaccin — «он», мужского рода, заканчивается носовым «-эн».",
+          "Представь, как «un vaccin» защищает тебя от гриппа одним уколом — это твой «он», un vaccin."
+        ]
+      }
+    ]
+  }
+]

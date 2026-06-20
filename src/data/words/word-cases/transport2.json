@@ -1,0 +1,283 @@
+[
+  {
+    "id": "wc-transport2",
+    "title": "Транспорт 2",
+    "theme": "transport2",
+    "level": "A2",
+    "wordIds": [
+      "wl-transport2-metro",
+      "wl-transport2-tram",
+      "wl-transport2-taxi",
+      "wl-transport2-camion",
+      "wl-transport2-moto",
+      "wl-transport2-bateau",
+      "wl-transport2-scooter",
+      "wl-transport2-conducteur"
+    ],
+    "steps": [
+      {
+        "id": "wc-transport2-metro-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport2-metro",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je prends le métro tous les matins.",
+          "La station de métro est à côté de chez moi.",
+          "Le métro parisien ferme vers une heure du matin."
+        ],
+        "options": ["метро", "автобус", "вокзал", "трамвай"],
+        "correctIndex": 0,
+        "explanation": "le métro (m) — метро. «prendre le métro» — ехать на метро, «une station de métro» — станция метро. Слово — сокращение от le (chemin de fer) métropolitain. Трамвай — le tram, автобус — le bus."
+      },
+      {
+        "id": "wc-transport2-metro-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-transport2-metro",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово. Какое из написанных совпадает с тем, что прозвучало?",
+        "audioText": "métro",
+        "options": ["métro", "mètre", "métier", "menthe"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало métro /me.tʁo/ — метро. Похожие, но другие слова: mètre /mɛtʁ/ (метр), métier /me.tje/ (профессия), menthe /mɑ̃t/ (мята). Слушай гласные и концовку -о."
+      },
+      {
+        "id": "wc-transport2-tram-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport2-tram",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "On peut prendre le tram jusqu'au centre-ville.",
+          "L'arrêt de tram est juste devant la mairie.",
+          "La ligne de tram passe par la gare."
+        ],
+        "options": ["трамвай", "метро", "такси", "грузовик"],
+        "correctIndex": 0,
+        "explanation": "le tram (m) — трамвай; разговорное сокращение от le tramway. «prendre le tram» — ехать на трамвае, «l'arrêt de tram» — трамвайная остановка. Метро — le métro."
+      },
+      {
+        "id": "wc-transport2-tram-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-transport2-tram",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — городской общественный транспорт на рельсах или по маршруту. Найди лишнее.",
+        "options": ["le tram", "le métro", "le bus", "le camion"],
+        "correctIndex": 3,
+        "explanation": "Трамвай (le tram), метро (le métro) и автобус (le bus) — городской общественный транспорт по маршруту. Грузовик (le camion) — лишний: это грузовая машина, а не общественный транспорт."
+      },
+      {
+        "id": "wc-transport2-taxi-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport2-taxi",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il est tard, on va prendre un taxi.",
+          "Tu peux appeler un taxi, s'il te plaît ?",
+          "La station de taxis est devant l'hôtel."
+        ],
+        "options": ["такси", "автобус", "трамвай", "вокзал"],
+        "correctIndex": 0,
+        "explanation": "le taxi (m) — такси. «prendre un taxi» — взять/поехать на такси, «appeler un taxi» — вызвать такси, «un chauffeur de taxi» — таксист. Слово пишется и читается почти как в русском."
+      },
+      {
+        "id": "wc-transport2-taxi-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-transport2-taxi",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово. Какое из написанных совпадает с тем, что прозвучало?",
+        "audioText": "taxi",
+        "options": ["taxi", "taxe", "maxi", "saxo"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало taxi /tak.si/ — такси. Похожие, но другие слова: taxe /taks/ (налог, сбор), maxi /mak.si/ (макси, очень большой), saxo /sak.so/ (саксофон, разг.). Слушай начало t- и две гласные."
+      },
+      {
+        "id": "wc-transport2-camion-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport2-camion",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "Un gros camion bloque toute la rue.",
+          "Ils ont loué un camion pour le déménagement.",
+          "Mon oncle conduit un camion sur l'autoroute."
+        ],
+        "options": ["грузовик", "фургончик", "прицеп", "автобус"],
+        "correctIndex": 0,
+        "explanation": "le camion (m) — грузовик. «un camion de déménagement» — грузовик для переезда, «conduire un camion» — водить грузовик. Маленький фургончик — une camionnette."
+      },
+      {
+        "id": "wc-transport2-camion-trap",
+        "kind": "trap",
+        "wordId": "wl-transport2-camion",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг сказал, что приедет «en camion». Чего ожидать?",
+        "options": [
+          "большой грузовик — le camion это грузовая машина",
+          "маленький фургончик — это camionnette",
+          "легковую машину — camion это синоним voiture",
+          "автобус — camion это маршрутка"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка размера: le camion — это большой грузовик. Маленький развозной фургончик — une camionnette, легковая машина — une voiture. Английское «van» по-французски тоже une camionnette / un fourgon, а не camion."
+      },
+      {
+        "id": "wc-transport2-moto-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport2-moto",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il va au travail à moto.",
+          "Elle a acheté une moto d'occasion.",
+          "Le week-end, on fait de la moto à la campagne."
+        ],
+        "options": ["мотоцикл", "скутер", "велосипед", "грузовик"],
+        "correctIndex": 0,
+        "explanation": "la moto (f) — мотоцикл; сокращение от la motocyclette. Внимание: слово ЖЕНСКОГО рода — une moto, несмотря на -o в конце. «à moto» — на мотоцикле, «faire de la moto» — кататься на мотоцикле."
+      },
+      {
+        "id": "wc-transport2-moto-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-transport2-moto",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для moto (мотоцикл), чтобы не забыть, что слово женского рода: une moto, la moto — несмотря на окончание -o.",
+        "examples": [
+          "moto — это сокращение от la motocyclette: «спрятанная» -ette напоминает, что род женский, как у la voiture.",
+          "Представь: «une moto rouge» рядом с «une voiture rouge» — обе на дороге, обе la, обе женского рода."
+        ]
+      },
+      {
+        "id": "wc-transport2-bateau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport2-bateau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово во всех трёх сценах?",
+        "contexts": [
+          "On traverse le fleuve en bateau.",
+          "Mon grand-père a un petit bateau de pêche.",
+          "Cet été, on a fait du bateau sur le lac."
+        ],
+        "options": ["лодка / корабль", "мост", "берег", "поезд"],
+        "correctIndex": 0,
+        "explanation": "le bateau (m) — лодка, судно, корабль. «en bateau» — на лодке/корабле, «un bateau de pêche» — рыбацкая лодка, «faire du bateau» — кататься на лодке. Множественное — des bateaux (с -x)."
+      },
+      {
+        "id": "wc-transport2-bateau-sort",
+        "kind": "sort",
+        "wordId": "wl-transport2-bateau",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом bateau звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "prendre le bateau",
+            "basket": "ok"
+          },
+          {
+            "text": "un bateau de pêche",
+            "basket": "ok"
+          },
+          {
+            "text": "faire du bateau",
+            "basket": "ok"
+          },
+          {
+            "text": "voler en bateau",
+            "basket": "no"
+          },
+          {
+            "text": "un bateau électrique de poche",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«prendre le bateau», «un bateau de pêche», «faire du bateau» — естественно; лодкой управляют — «piloter un bateau» или «naviguer». «voler en bateau» (лететь на лодке) — нелепость: летают «en avion», по воде плывут «en bateau». «un bateau électrique de poche» (карманный электрокатер) — тоже бессмыслица."
+      },
+      {
+        "id": "wc-transport2-scooter-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-transport2-scooter",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит scooter?",
+        "bridge": "Англ. «scooter» — скутер; пишется точно так же. Французы взяли слово из английского и читают его близко: /sku.tɛʁ/.",
+        "options": ["скутер / мопед", "самокат-табуретка", "грузовик", "лодка"],
+        "correctIndex": 0,
+        "explanation": "le scooter (m) — скутер (мопед с платформой для ног). Слово английское, читается /sku.tɛʁ/. «rouler en scooter» — ездить на скутере, «un scooter électrique» — электроскутер."
+      },
+      {
+        "id": "wc-transport2-scooter-hint",
+        "kind": "wordHint",
+        "wordId": "wl-transport2-scooter",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: маленький двухколёсный мотороллер с платформой для ног, на котором ездят по городу.",
+        "answer": "scooter",
+        "hints": [
+          "Слово пришло из английского",
+          "Начинается на sc-, читается /sku.tɛʁ/",
+          "Il roule en ___ électrique."
+        ],
+        "explanation": "le scooter (m) — скутер. Английское заимствование, пишется как в английском, читается /sku.tɛʁ/. «rouler en scooter» — ездить на скутере."
+      },
+      {
+        "id": "wc-transport2-conducteur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-transport2-conducteur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le conducteur du bus s'est arrêté au feu rouge.",
+          "Le conducteur de la voiture roulait trop vite.",
+          "Chaque conducteur doit avoir un permis."
+        ],
+        "options": ["водитель", "пассажир", "пешеход", "механик"],
+        "correctIndex": 0,
+        "explanation": "le conducteur (m) / la conductrice (f) — водитель (тот, кто ведёт транспорт). «le conducteur du bus» — водитель автобуса. Пассажир — le passager, пешеход — le piéton."
+      },
+      {
+        "id": "wc-transport2-conducteur-cmp",
+        "kind": "compare",
+        "wordId": "wl-transport2-conducteur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le conducteur и le chauffeur. В чём разница?",
+        "phrases": [
+          "Le conducteur de la voiture devant nous a freiné brusquement.",
+          "On a réservé un taxi avec chauffeur pour l'aéroport."
+        ],
+        "options": [
+          "le conducteur — любой, кто за рулём (в т.ч. водитель-любитель); le chauffeur — водитель по профессии (такси, автобуса, наёмный).",
+          "Это полные синонимы, разницы нет.",
+          "le conducteur водит только грузовики, le chauffeur — только легковые.",
+          "le chauffeur по-французски значит «механик / тот, кто чинит машину»."
+        ],
+        "correctIndex": 0,
+        "explanation": "le conducteur — тот, кто ведёт машину, любой за рулём (и водитель-любитель). le chauffeur — водитель как профессия: chauffeur de taxi, chauffeur de bus, наёмный шофёр. Англ. «chauffeur» как раз отсюда. Не путать с «conductor»: дирижёр — le chef d'orchestre, контролёр в поезде — le contrôleur."
+      }
+    ]
+  }
+]

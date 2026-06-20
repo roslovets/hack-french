@@ -1,0 +1,308 @@
+[
+  {
+    "id": "wl-sante2-dentiste",
+    "lemma": "dentiste",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/dɑ̃.tist/",
+    "translationsRu": ["стоматолог", "зубной врач"],
+    "translationsEn": ["dentist"],
+    "semanticCore": "Врач, который лечит зубы; слово одинаково для мужчины и женщины — меняется только артикль (un / une dentiste).",
+    "collocations": [
+      {
+        "fr": "aller chez le dentiste",
+        "ru": "идти к стоматологу"
+      },
+      {
+        "fr": "prendre rendez-vous chez le dentiste",
+        "ru": "записаться к стоматологу"
+      },
+      {
+        "fr": "avoir peur du dentiste",
+        "ru": "бояться стоматолога"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "médecin",
+        "note": "dentiste = зубной врач (только зубы); médecin = врач общего профиля. К стоматологу идут «chez le dentiste», к врачу — «chez le médecin»."
+      },
+      {
+        "with": "dent",
+        "note": "dentiste = врач (человек); dent (f) = зуб (часть тела). Корень один, но dentiste лечит les dents."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["sante2", "metier"],
+    "caseIds": ["wc-sante2"]
+  },
+  {
+    "id": "wl-sante2-urgence",
+    "lemma": "urgence",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/yʁ.ʒɑ̃s/",
+    "translationsRu": ["неотложка", "экстренный случай", "срочность"],
+    "translationsEn": ["emergency", "urgency"],
+    "semanticCore": "Срочная ситуация, требующая немедленных действий; во множественном les urgences — приёмный покой (отделение неотложной помощи).",
+    "collocations": [
+      {
+        "fr": "aller aux urgences",
+        "ru": "ехать в приёмный покой (неотложку)"
+      },
+      {
+        "fr": "un cas d'urgence",
+        "ru": "экстренный случай"
+      },
+      {
+        "fr": "en cas d'urgence",
+        "ru": "в случае срочной необходимости"
+      },
+      {
+        "fr": "appeler les urgences",
+        "ru": "вызвать скорую / службу неотложки"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ambulance",
+        "note": "urgence = срочность / отделение неотложной помощи (les urgences); ambulance = машина скорой помощи (транспорт). В неотложку (les urgences) везёт ambulance."
+      },
+      {
+        "with": "hôpital",
+        "note": "les urgences = приёмный покой (куда обращаются срочно); hôpital = больница в целом. Les urgences — это отделение внутри hôpital."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["sante2", "lieu"],
+    "caseIds": ["wc-sante2"]
+  },
+  {
+    "id": "wl-sante2-blessure",
+    "lemma": "blessure",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ble.syʁ/",
+    "translationsRu": ["рана", "травма"],
+    "translationsEn": ["injury", "wound"],
+    "semanticCore": "Повреждение тела — порез, рана или травма, полученная при ударе, падении или несчастном случае.",
+    "collocations": [
+      {
+        "fr": "une blessure grave",
+        "ru": "серьёзная травма"
+      },
+      {
+        "fr": "soigner une blessure",
+        "ru": "обрабатывать (лечить) рану"
+      },
+      {
+        "fr": "une blessure au genou",
+        "ru": "травма колена"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "douleur",
+        "note": "blessure = рана, травма (само повреждение); douleur = боль (ощущение). Une blessure вызывает une douleur, но это не одно и то же."
+      },
+      {
+        "with": "maladie",
+        "note": "blessure = травма от удара/падения (внешнее повреждение); maladie = болезнь (вирус, инфекция изнутри). Перелом — blessure, грипп — maladie."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["sante2", "symptome"],
+    "caseIds": ["wc-sante2"]
+  },
+  {
+    "id": "wl-sante2-vaccin",
+    "lemma": "vaccin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/vak.sɛ̃/",
+    "translationsRu": ["вакцина", "прививка"],
+    "translationsEn": ["vaccine"],
+    "semanticCore": "Препарат, который вводят, чтобы защитить организм от болезни; саму процедуру укола чаще называют la vaccination.",
+    "collocations": [
+      {
+        "fr": "faire un vaccin",
+        "ru": "сделать прививку"
+      },
+      {
+        "fr": "le vaccin contre la grippe",
+        "ru": "вакцина (прививка) от гриппа"
+      },
+      {
+        "fr": "se faire vacciner",
+        "ru": "привиться, сделать себе прививку"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "vaccination",
+        "note": "vaccin = сама вакцина (вещество); vaccination = процесс прививания (процедура). «Le vaccin» — что вводят, «la vaccination» — действие."
+      },
+      {
+        "with": "piqûre",
+        "note": "vaccin = прививка от болезни (содержимое и цель); piqûre = укол вообще (любая инъекция). Le vaccin делают через une piqûre."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["sante2", "traitement"],
+    "caseIds": ["wc-sante2"]
+  },
+  {
+    "id": "wl-sante2-soigner",
+    "lemma": "soigner",
+    "pos": "verb",
+    "ipa": "/swa.ɲe/",
+    "translationsRu": ["лечить", "ухаживать", "заботиться"],
+    "translationsEn": ["to treat", "to care for"],
+    "semanticCore": "Лечить и ухаживать за больным или раной — это сам процесс заботы, а не обязательно итог выздоровления.",
+    "collocations": [
+      {
+        "fr": "soigner un malade",
+        "ru": "ухаживать за больным, лечить больного"
+      },
+      {
+        "fr": "soigner une blessure",
+        "ru": "обрабатывать рану"
+      },
+      {
+        "fr": "se soigner",
+        "ru": "лечиться, заботиться о своём здоровье"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "guérir",
+        "note": "soigner = лечить, ухаживать (процесс); guérir = вылечить(ся), стать здоровым (результат). Врач soigne, а пациент в итоге guérit."
+      },
+      {
+        "with": "soignant",
+        "note": "soigner = лечить (глагол); un soignant / une soignante = медработник, тот, кто лечит (существительное). Не путать действие и человека."
+      }
+    ],
+    "frequencyRank": 690,
+    "level": "A2",
+    "tags": ["sante2", "action"],
+    "caseIds": ["wc-sante2"]
+  },
+  {
+    "id": "wl-sante2-tousser",
+    "lemma": "tousser",
+    "pos": "verb",
+    "ipa": "/tu.se/",
+    "translationsRu": ["кашлять"],
+    "translationsEn": ["to cough"],
+    "semanticCore": "Кашлять — резко выталкивать воздух из горла при простуде, раздражении или болезни; существительное «кашель» — la toux.",
+    "collocations": [
+      {
+        "fr": "tousser toute la nuit",
+        "ru": "кашлять всю ночь"
+      },
+      {
+        "fr": "se mettre à tousser",
+        "ru": "начать кашлять"
+      },
+      {
+        "fr": "tousser et éternuer",
+        "ru": "кашлять и чихать"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "toux",
+        "note": "tousser = кашлять (глагол, действие); la toux = кашель (существительное). «J'ai de la toux» и «je tousse» — про одно, но разными частями речи."
+      },
+      {
+        "with": "éternuer",
+        "note": "tousser = кашлять (горло); éternuer = чихать (нос, «апчхи»). Разные действия, хотя оба бывают при простуде."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["sante2", "symptome"],
+    "caseIds": ["wc-sante2"]
+  },
+  {
+    "id": "wl-sante2-operation",
+    "lemma": "opération",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɔ.pe.ʁa.sjɔ̃/",
+    "translationsRu": ["операция"],
+    "translationsEn": ["operation", "surgery"],
+    "semanticCore": "Хирургическая операция: врачи оперируют тело, чтобы вылечить; то же слово значит и «действие, операция» в общем смысле.",
+    "collocations": [
+      {
+        "fr": "subir une opération",
+        "ru": "перенести операцию"
+      },
+      {
+        "fr": "une opération du cœur",
+        "ru": "операция на сердце"
+      },
+      {
+        "fr": "après l'opération",
+        "ru": "после операции"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "intervention",
+        "note": "opération = операция (обычное слово); une intervention (chirurgicale) = (хирургическое) вмешательство — более официальный, медицинский синоним."
+      },
+      {
+        "with": "opérer",
+        "note": "opération = операция (существительное); opérer = оперировать (глагол). Le chirurgien opère le patient → une opération."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["sante2", "traitement"],
+    "caseIds": ["wc-sante2"]
+  },
+  {
+    "id": "wl-sante2-allergie",
+    "lemma": "allergie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/a.lɛʁ.ʒi/",
+    "translationsRu": ["аллергия"],
+    "translationsEn": ["allergy"],
+    "semanticCore": "Болезненная реакция организма на вещество (пыльцу, еду, лекарство): сыпь, чихание, отёк.",
+    "collocations": [
+      {
+        "fr": "une allergie au pollen",
+        "ru": "аллергия на пыльцу"
+      },
+      {
+        "fr": "faire une allergie",
+        "ru": "заполучить аллергическую реакцию"
+      },
+      {
+        "fr": "une allergie alimentaire",
+        "ru": "пищевая аллергия"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "allergique",
+        "note": "allergie (f) = аллергия (существительное); allergique = аллергический / страдающий аллергией (прилагательное). «J'ai une allergie» = «je suis allergique»."
+      },
+      {
+        "with": "rhume",
+        "note": "allergie = аллергия (реакция на аллерген, бывает сезонной); rhume = простуда (вирусный насморк). Симптомы похожи, причина разная."
+      }
+    ],
+    "frequencyRank": 710,
+    "level": "A2",
+    "tags": ["sante2", "maladie"],
+    "caseIds": ["wc-sante2"]
+  }
+]

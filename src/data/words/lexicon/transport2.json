@@ -1,0 +1,335 @@
+[
+  {
+    "id": "wl-transport2-metro",
+    "lemma": "métro",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/me.tʁo/",
+    "translationsRu": ["метро"],
+    "translationsEn": ["subway", "underground"],
+    "semanticCore": "Городское метро как вид транспорта и как сеть линий со станциями; сокращение от métropolitain.",
+    "collocations": [
+      {
+        "fr": "prendre le métro",
+        "ru": "ехать на метро"
+      },
+      {
+        "fr": "une station de métro",
+        "ru": "станция метро"
+      },
+      {
+        "fr": "le métro parisien",
+        "ru": "парижское метро"
+      },
+      {
+        "fr": "en métro",
+        "ru": "на метро"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "station / arrêt",
+        "note": "У метро и поезда — une station (de métro); у автобуса и трамвая — un arrêt. Поэтому «station de métro», но «arrêt de bus»."
+      },
+      {
+        "with": "RER",
+        "note": "le métro — внутри города; le RER — пригородные скоростные поезда вокруг Парижа. В Париже это разные сети."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["transport2", "ville"],
+    "caseIds": ["wc-transport2"]
+  },
+  {
+    "id": "wl-transport2-tram",
+    "lemma": "tram",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tʁam/",
+    "translationsRu": ["трамвай"],
+    "translationsEn": ["tram", "streetcar"],
+    "semanticCore": "Городской трамвай — рельсовый транспорт по улицам; разговорное сокращение от tramway.",
+    "collocations": [
+      {
+        "fr": "prendre le tram",
+        "ru": "ехать на трамвае"
+      },
+      {
+        "fr": "l'arrêt de tram",
+        "ru": "трамвайная остановка"
+      },
+      {
+        "fr": "la ligne de tram",
+        "ru": "трамвайная линия"
+      },
+      {
+        "fr": "en tram",
+        "ru": "на трамвае"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tramway",
+        "note": "le tram — обычное разговорное слово; le tramway — полная, чуть более официальная форма. Значат одно."
+      },
+      {
+        "with": "métro",
+        "note": "le tram идёт по улицам на поверхности; le métro — под землёй (или на эстакаде). Оба рельсовые, но разные."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["transport2", "ville"],
+    "caseIds": ["wc-transport2"]
+  },
+  {
+    "id": "wl-transport2-taxi",
+    "lemma": "taxi",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tak.si/",
+    "translationsRu": ["такси"],
+    "translationsEn": ["taxi", "cab"],
+    "semanticCore": "Такси: машина с водителем, которую вызывают или ловят для поездки за плату.",
+    "collocations": [
+      {
+        "fr": "prendre un taxi",
+        "ru": "взять / поехать на такси"
+      },
+      {
+        "fr": "appeler un taxi",
+        "ru": "вызвать такси"
+      },
+      {
+        "fr": "un chauffeur de taxi",
+        "ru": "таксист"
+      },
+      {
+        "fr": "une station de taxis",
+        "ru": "стоянка такси"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "VTC",
+        "note": "le taxi — классическое такси с лицензией и счётчиком; un VTC — заказная машина с водителем через приложение (тип Uber). В речи их различают."
+      },
+      {
+        "with": "taxe",
+        "note": "le taxi /tak.si/ — такси; la taxe /taks/ — налог, сбор. Похожи на вид, но разные слова и произношение."
+      }
+    ],
+    "frequencyRank": 460,
+    "level": "A2",
+    "tags": ["transport2", "ville"],
+    "caseIds": ["wc-transport2"]
+  },
+  {
+    "id": "wl-transport2-camion",
+    "lemma": "camion",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ka.mjɔ̃/",
+    "translationsRu": ["грузовик"],
+    "translationsEn": ["truck", "lorry"],
+    "semanticCore": "Большой грузовой автомобиль для перевозки вещей и грузов.",
+    "collocations": [
+      {
+        "fr": "un camion de déménagement",
+        "ru": "грузовик для переезда"
+      },
+      {
+        "fr": "conduire un camion",
+        "ru": "водить грузовик"
+      },
+      {
+        "fr": "un camion-poubelle",
+        "ru": "мусоровоз"
+      },
+      {
+        "fr": "un camion de pompiers",
+        "ru": "пожарная машина"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "camionnette",
+        "note": "le camion — большой грузовик; la camionnette — маленький развозной фургончик. Английское «van» — это camionnette / fourgon, а не camion."
+      },
+      {
+        "with": "voiture",
+        "note": "le camion — грузовой; la voiture — легковой автомобиль. Не путать по размеру и назначению."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["transport2", "route"],
+    "caseIds": ["wc-transport2"]
+  },
+  {
+    "id": "wl-transport2-moto",
+    "lemma": "moto",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mɔ.to/",
+    "translationsRu": ["мотоцикл"],
+    "translationsEn": ["motorbike", "motorcycle"],
+    "semanticCore": "Мотоцикл; женского рода (сокращение от la motocyclette), несмотря на окончание -o.",
+    "collocations": [
+      {
+        "fr": "faire de la moto",
+        "ru": "кататься на мотоцикле"
+      },
+      {
+        "fr": "à moto",
+        "ru": "на мотоцикле"
+      },
+      {
+        "fr": "une moto d'occasion",
+        "ru": "подержанный мотоцикл"
+      },
+      {
+        "fr": "un casque de moto",
+        "ru": "мотоциклетный шлем"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "scooter",
+        "note": "la moto — мотоцикл (мощнее, посадка верхом); le scooter — скутер (платформа для ног, легче). Разный транспорт и разный род."
+      },
+      {
+        "with": "род на -o",
+        "note": "Несмотря на -o, la moto — женского рода (от la motocyclette). Сравни: une moto, но un vélo (m), un métro (m)."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["transport2", "route"],
+    "caseIds": ["wc-transport2"]
+  },
+  {
+    "id": "wl-transport2-bateau",
+    "lemma": "bateau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ba.to/",
+    "translationsRu": ["лодка", "корабль"],
+    "translationsEn": ["boat", "ship"],
+    "semanticCore": "Любое плавсредство — от лодки до судна; на нём плывут по воде. Множественное — bateaux.",
+    "collocations": [
+      {
+        "fr": "prendre le bateau",
+        "ru": "плыть на корабле / лодке"
+      },
+      {
+        "fr": "un bateau de pêche",
+        "ru": "рыбацкая лодка"
+      },
+      {
+        "fr": "faire du bateau",
+        "ru": "кататься на лодке"
+      },
+      {
+        "fr": "en bateau",
+        "ru": "на лодке / на корабле"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "navire",
+        "note": "le bateau — общее слово (лодка или судно); le navire — большое морское судно (книжно/официально). В быту почти всегда bateau."
+      },
+      {
+        "with": "barque",
+        "note": "le bateau — любое судно; la barque — маленькая вёсельная лодка. barque всегда маленькая."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["transport2", "voyage"],
+    "caseIds": ["wc-transport2"]
+  },
+  {
+    "id": "wl-transport2-scooter",
+    "lemma": "scooter",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sku.tɛʁ/",
+    "translationsRu": ["скутер", "мопед"],
+    "translationsEn": ["scooter", "moped"],
+    "semanticCore": "Скутер — лёгкий двухколёсный мотороллер с платформой для ног; городской транспорт. Английское заимствование.",
+    "collocations": [
+      {
+        "fr": "rouler en scooter",
+        "ru": "ездить на скутере"
+      },
+      {
+        "fr": "un scooter électrique",
+        "ru": "электроскутер"
+      },
+      {
+        "fr": "garer son scooter",
+        "ru": "припарковать скутер"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "moto",
+        "note": "le scooter — лёгкий, с платформой для ног, посадка как на стуле; la moto — мощнее, посадка верхом. Разный транспорт."
+      },
+      {
+        "with": "trottinette",
+        "note": "le scooter — мотороллер с двигателем; la trottinette — самокат (ногой или электрический). Английское «scooter» может значить и самокат, но во французском trottinette — именно самокат."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["transport2", "route"],
+    "caseIds": ["wc-transport2"]
+  },
+  {
+    "id": "wl-transport2-conducteur",
+    "lemma": "conducteur",
+    "displayForm": "conducteur / conductrice",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔ̃.dyk.tœʁ/",
+    "translationsRu": ["водитель"],
+    "translationsEn": ["driver"],
+    "semanticCore": "Тот, кто ведёт транспортное средство — любой за рулём, в том числе водитель-любитель.",
+    "collocations": [
+      {
+        "fr": "le conducteur du bus",
+        "ru": "водитель автобуса"
+      },
+      {
+        "fr": "un bon conducteur",
+        "ru": "хороший водитель"
+      },
+      {
+        "fr": "le permis de conduire",
+        "ru": "водительские права"
+      },
+      {
+        "fr": "la place du conducteur",
+        "ru": "водительское место"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chauffeur",
+        "note": "le conducteur — любой за рулём (в т.ч. водитель-любитель); le chauffeur — водитель по профессии (chauffeur de taxi, de bus, наёмный шофёр)."
+      },
+      {
+        "with": "conductor (англ.)",
+        "note": "Ложный друг: фр. conducteur = водитель, НЕ дирижёр (le chef d'orchestre) и не контролёр в поезде (le contrôleur)."
+      }
+    ],
+    "frequencyRank": 580,
+    "level": "A2",
+    "tags": ["transport2", "route"],
+    "caseIds": ["wc-transport2"]
+  }
+]

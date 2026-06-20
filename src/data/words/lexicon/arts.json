@@ -1,0 +1,337 @@
+[
+  {
+    "id": "wl-arts-chanson",
+    "lemma": "chanson",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʃɑ̃.sɔ̃/",
+    "translationsRu": ["песня"],
+    "translationsEn": ["song"],
+    "semanticCore": "Песня — музыкальное произведение со словами, которое поют.",
+    "collocations": [
+      {
+        "fr": "une chanson d'amour",
+        "ru": "песня о любви"
+      },
+      {
+        "fr": "les paroles d'une chanson",
+        "ru": "слова песни"
+      },
+      {
+        "fr": "écouter une chanson",
+        "ru": "слушать песню"
+      },
+      {
+        "fr": "la chanson française",
+        "ru": "французская (эстрадная) песня"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "musique",
+        "note": "chanson = песня (со словами, конкретная); musique = музыка (вообще, в т.ч. без слов). Песню поют, музыку слушают."
+      },
+      {
+        "with": "chant",
+        "note": "chanson = песня (отдельное произведение); chant = пение как процесс/искусство, а также песнопение."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["arts", "musique"],
+    "caseIds": ["wc-arts"]
+  },
+  {
+    "id": "wl-arts-chanter",
+    "lemma": "chanter",
+    "pos": "verb",
+    "ipa": "/ʃɑ̃.te/",
+    "translationsRu": ["петь"],
+    "translationsEn": ["to sing"],
+    "semanticCore": "Издавать голосом мелодию со словами или без — петь.",
+    "collocations": [
+      {
+        "fr": "chanter une chanson",
+        "ru": "петь песню"
+      },
+      {
+        "fr": "chanter faux",
+        "ru": "петь фальшиво"
+      },
+      {
+        "fr": "chanter juste",
+        "ru": "петь чисто (в ноту)"
+      },
+      {
+        "fr": "chanter en chœur",
+        "ru": "петь хором"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chanson",
+        "note": "chanter = глагол «петь» (действие); chanson = существительное «песня» (результат). Один корень chan-, разные слова."
+      },
+      {
+        "with": "crier",
+        "note": "chanter = петь (мелодично); crier = кричать (громко, без мелодии). Не путать при описании звука."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["arts", "musique"],
+    "caseIds": ["wc-arts"]
+  },
+  {
+    "id": "wl-arts-peinture",
+    "lemma": "peinture",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɛ̃.tyʁ/",
+    "translationsRu": ["живопись", "картина", "краска"],
+    "translationsEn": ["painting", "paint"],
+    "semanticCore": "И искусство писать красками (живопись), и сама картина, и материал — краска.",
+    "collocations": [
+      {
+        "fr": "faire de la peinture",
+        "ru": "заниматься живописью"
+      },
+      {
+        "fr": "une peinture à l'huile",
+        "ru": "картина маслом"
+      },
+      {
+        "fr": "un pot de peinture",
+        "ru": "банка краски"
+      },
+      {
+        "fr": "la peinture est fraîche",
+        "ru": "краска ещё не высохла"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "dessin",
+        "note": "peinture = живопись (работа красками); dessin = рисунок (линиями: карандаш, ручка). Глаголы peindre и dessiner."
+      },
+      {
+        "with": "tableau",
+        "note": "peinture = живопись/картина как вид искусства или процесс; tableau = конкретная картина (полотно на стене)."
+      }
+    ],
+    "frequencyRank": 740,
+    "level": "A2",
+    "tags": ["arts", "peinture"],
+    "caseIds": ["wc-arts"]
+  },
+  {
+    "id": "wl-arts-theatre",
+    "lemma": "théâtre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/te.ɑtʁ/",
+    "translationsRu": ["театр"],
+    "translationsEn": ["theatre", "theater"],
+    "semanticCore": "Театр — и здание, и вид искусства (игра актёров на сцене).",
+    "collocations": [
+      {
+        "fr": "aller au théâtre",
+        "ru": "идти в театр"
+      },
+      {
+        "fr": "une pièce de théâtre",
+        "ru": "пьеса, спектакль"
+      },
+      {
+        "fr": "faire du théâtre",
+        "ru": "заниматься театром (играть)"
+      },
+      {
+        "fr": "une salle de théâtre",
+        "ru": "театральный зал"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cinéma",
+        "note": "théâtre = театр (живая игра на сцене); cinéma = кино/кинотеатр (фильмы на экране). Оба «aller au…», но разные."
+      },
+      {
+        "with": "scène",
+        "note": "théâtre = театр (целиком, искусство/здание); scène = сцена (площадка, где играют, или эпизод)."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["arts", "spectacle"],
+    "caseIds": ["wc-arts"]
+  },
+  {
+    "id": "wl-arts-concert",
+    "lemma": "concert",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔ̃.sɛʁ/",
+    "translationsRu": ["концерт"],
+    "translationsEn": ["concert"],
+    "semanticCore": "Концерт — публичное выступление музыкантов с живой музыкой.",
+    "collocations": [
+      {
+        "fr": "aller à un concert",
+        "ru": "идти на концерт"
+      },
+      {
+        "fr": "un concert de rock",
+        "ru": "рок-концерт"
+      },
+      {
+        "fr": "donner un concert",
+        "ru": "давать концерт"
+      },
+      {
+        "fr": "une salle de concert",
+        "ru": "концертный зал"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "spectacle",
+        "note": "concert = концерт (именно музыкальное выступление); spectacle = представление вообще (танец, цирк, пьеса — любое зрелище)."
+      },
+      {
+        "with": "concert (англ.)",
+        "note": "Те же буквы, что в англ. «concert», но конечная t не читается: /kɔ̃.sɛʁ/. Не произносить «концер-т» с «т», как в русском."
+      }
+    ],
+    "frequencyRank": 680,
+    "level": "A2",
+    "tags": ["arts", "musique"],
+    "caseIds": ["wc-arts"]
+  },
+  {
+    "id": "wl-arts-instrument",
+    "lemma": "instrument",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛ̃.stʁy.mɑ̃/",
+    "translationsRu": ["инструмент"],
+    "translationsEn": ["instrument"],
+    "semanticCore": "Музыкальный инструмент — предмет, на котором играют музыку.",
+    "collocations": [
+      {
+        "fr": "jouer d'un instrument",
+        "ru": "играть на инструменте"
+      },
+      {
+        "fr": "un instrument de musique",
+        "ru": "музыкальный инструмент"
+      },
+      {
+        "fr": "un instrument à cordes",
+        "ru": "струнный инструмент"
+      },
+      {
+        "fr": "un instrument à vent",
+        "ru": "духовой инструмент"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "outil",
+        "note": "instrument = (чаще) музыкальный инструмент или точный прибор; outil = инструмент-орудие труда (молоток, отвёртка)."
+      },
+      {
+        "with": "instrument (англ.)",
+        "note": "Те же буквы, что в англ. «instrument», но читается /ɛ̃.stʁy.mɑ̃/: носовые in- и -ent, конечная t молчит."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["arts", "musique"],
+    "caseIds": ["wc-arts"]
+  },
+  {
+    "id": "wl-arts-danse",
+    "lemma": "danse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/dɑ̃s/",
+    "translationsRu": ["танец"],
+    "translationsEn": ["dance"],
+    "semanticCore": "Танец — движение тела под музыку как искусство или конкретный вид.",
+    "collocations": [
+      {
+        "fr": "un cours de danse",
+        "ru": "урок танцев"
+      },
+      {
+        "fr": "la danse classique",
+        "ru": "классический танец (балет)"
+      },
+      {
+        "fr": "une piste de danse",
+        "ru": "танцпол"
+      },
+      {
+        "fr": "la danse moderne",
+        "ru": "современный танец"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "danser",
+        "note": "la danse = существительное «танец»; danser = глагол «танцевать». «J'aime la danse» / «J'aime danser»."
+      },
+      {
+        "with": "bal",
+        "note": "danse = танец (искусство, вид); bal = бал, танцевальный вечер (мероприятие, где танцуют)."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["arts", "spectacle"],
+    "caseIds": ["wc-arts"]
+  },
+  {
+    "id": "wl-arts-spectacle",
+    "lemma": "spectacle",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/spɛk.takl/",
+    "translationsRu": ["спектакль", "представление", "зрелище"],
+    "translationsEn": ["show", "performance"],
+    "semanticCore": "Любое представление перед зрителями: танец, цирк, концерт, пьеса — то, что показывают на сцене.",
+    "collocations": [
+      {
+        "fr": "aller voir un spectacle",
+        "ru": "пойти на представление"
+      },
+      {
+        "fr": "un spectacle de danse",
+        "ru": "танцевальное представление"
+      },
+      {
+        "fr": "le spectacle commence",
+        "ru": "представление начинается"
+      },
+      {
+        "fr": "un spectacle vivant",
+        "ru": "живое представление (на сцене)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "spectacles (англ.)",
+        "note": "Ложный друг: англ. «spectacles» = очки; фр. spectacle = представление, зрелище. Очки по-французски — des lunettes."
+      },
+      {
+        "with": "pièce",
+        "note": "spectacle = представление вообще (танец, цирк, концерт); pièce (de théâtre) = именно театральная пьеса."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["arts", "spectacle"],
+    "caseIds": ["wc-arts"]
+  }
+]

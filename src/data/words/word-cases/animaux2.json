@@ -1,0 +1,292 @@
+[
+  {
+    "id": "wc-animaux2",
+    "title": "Животные 2",
+    "theme": "animaux2",
+    "level": "A2",
+    "wordIds": [
+      "wl-animaux2-lion",
+      "wl-animaux2-ours",
+      "wl-animaux2-elephant",
+      "wl-animaux2-singe",
+      "wl-animaux2-serpent",
+      "wl-animaux2-tigre",
+      "wl-animaux2-mouton",
+      "wl-animaux2-souris"
+    ],
+    "steps": [
+      {
+        "id": "wc-animaux2-lion-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux2-lion",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le lion est le roi des animaux.",
+          "Au zoo, le lion dort toute la journée.",
+          "On entend rugir un lion."
+        ],
+        "options": ["лев", "тигр", "волк", "медведь"],
+        "correctIndex": 0,
+        "explanation": "lion (m) — лев. «le roi des animaux» — царь зверей, «rugir» — рычать. Тигр — un tigre, волк — un loup."
+      },
+      {
+        "id": "wc-animaux2-lion-trap",
+        "kind": "trap",
+        "wordId": "wl-animaux2-lion",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как по-французски «львица» (самка льва)?",
+        "options": ["une lionne", "une lion", "une lione", "une lions"],
+        "correctIndex": 0,
+        "explanation": "Лев — un lion, львица — une lionne (удваивается n, как chien → chienne). Формы «une lion» нет: у льва есть отдельная форма женского рода."
+      },
+      {
+        "id": "wc-animaux2-ours-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux2-ours",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "L'ours brun vit dans la forêt.",
+          "En hiver, l'ours dort dans sa grotte.",
+          "L'enfant serre son ours en peluche."
+        ],
+        "options": ["медведь", "волк", "лиса", "олень"],
+        "correctIndex": 0,
+        "explanation": "ours (m) — медведь. «un ours en peluche» — плюшевый мишка, «un ours brun» — бурый медведь. Важно: конечное -s читается — /uʁs/."
+      },
+      {
+        "id": "wc-animaux2-ours-trap",
+        "kind": "trap",
+        "wordId": "wl-animaux2-ours",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В слове ours есть -s на конце. Читается ли это -s?",
+        "options": [
+          "да, -s произносится: /uʁs/",
+          "нет, конечное -s всегда немое во французском",
+          "только во множественном числе",
+          "только перед гласной"
+        ],
+        "correctIndex": 0,
+        "explanation": "В ours конечное -s читается всегда: /uʁs/ (в отличие от многих слов, где -s немое). Не путать с английским «our» (наш) — это ложный друг."
+      },
+      {
+        "id": "wc-animaux2-elephant-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-animaux2-elephant",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит éléphant?",
+        "bridge": "Англ. «elephant» — слон; почти то же слово. По-французски пишется с двумя accent aigu: é-l-é-phant, и читается /e.le.fɑ̃/ с носовым на конце.",
+        "options": ["слон", "носорог", "бегемот", "верблюд"],
+        "correctIndex": 0,
+        "explanation": "éléphant (m) — слон. Англ. «elephant» — прямой мост. Носорог — un rhinocéros, бегемот — un hippopotame."
+      },
+      {
+        "id": "wc-animaux2-elephant-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux2-elephant",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "L'éléphant a une longue trompe.",
+          "Les éléphants vivent en Afrique et en Asie.",
+          "L'éléphant est le plus grand animal terrestre."
+        ],
+        "options": ["слон", "жираф", "лев", "тигр"],
+        "correctIndex": 0,
+        "explanation": "éléphant (m) — слон. «une trompe» — хобот, «le plus grand animal terrestre» — самое крупное сухопутное животное. Жираф — une girafe."
+      },
+      {
+        "id": "wc-animaux2-singe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux2-singe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le singe grimpe aux arbres.",
+          "Au zoo, les singes mangent des bananes.",
+          "Ce petit singe est très malin."
+        ],
+        "options": ["обезьяна", "белка", "кот", "птица"],
+        "correctIndex": 0,
+        "explanation": "singe (m) — обезьяна. «grimper aux arbres» — лазить по деревьям. Белка — un écureuil, обезьяна — именно un singe."
+      },
+      {
+        "id": "wc-animaux2-singe-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-animaux2-singe",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Звучит похоже. Какое слово ты услышал — то, что значит «обезьяна»?",
+        "audioText": "singe",
+        "options": ["songe", "linge", "singe", "sage"],
+        "correctIndex": 2,
+        "explanation": "singe /sɛ̃ʒ/ — обезьяна. Похожие: songe /sɔ̃ʒ/ — сон/грёза, linge /lɛ̃ʒ/ — бельё, sage /saʒ/ — послушный/мудрый. Гласные разные.",
+        "audioSrc": "audio/wl-animaux2-singe.mp3"
+      },
+      {
+        "id": "wc-animaux2-serpent-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-animaux2-serpent",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит serpent?",
+        "bridge": "Англ. «serpent» — змей; пишется так же. По-французски читается /sɛʁ.pɑ̃/ с носовым на конце, конечное -t не звучит.",
+        "options": ["змея", "ящерица", "червяк", "паук"],
+        "correctIndex": 0,
+        "explanation": "serpent (m) — змея. Англ. «serpent» — прямой мост. Ящерица — un lézard, паук — une araignée."
+      },
+      {
+        "id": "wc-animaux2-serpent-collo",
+        "kind": "sort",
+        "wordId": "wl-animaux2-serpent",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом serpent звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un serpent venimeux",
+            "basket": "ok"
+          },
+          {
+            "text": "le serpent rampe",
+            "basket": "ok"
+          },
+          {
+            "text": "une morsure de serpent",
+            "basket": "ok"
+          },
+          {
+            "text": "le serpent aboie",
+            "basket": "no"
+          },
+          {
+            "text": "un serpent à fourrure",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un serpent venimeux» (ядовитая змея), «le serpent rampe» (змея ползёт), «une morsure de serpent» (укус змеи) — естественно. «aboie» (лает) — это про собаку; «à fourrure» (с мехом) — у змей нет меха, так не говорят."
+      },
+      {
+        "id": "wc-animaux2-tigre-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-animaux2-tigre",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит tigre?",
+        "bridge": "Англ. «tiger» — тигр; почти то же слово, только конец -re вместо -er. Читается /tiɡʁ/.",
+        "options": ["тигр", "лев", "леопард", "волк"],
+        "correctIndex": 0,
+        "explanation": "tigre (m) — тигр. Англ. «tiger» — мост (tiger → tigre). Леопард — un léopard, лев — un lion."
+      },
+      {
+        "id": "wc-animaux2-tigre-cmp",
+        "kind": "compare",
+        "wordId": "wl-animaux2-tigre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Le lion и le tigre — оба большие кошки. В чём разница?",
+        "phrases": [
+          "Le lion vit en Afrique et a une crinière.",
+          "Le tigre vit en Asie et a des rayures."
+        ],
+        "options": [
+          "lion — лев (с гривой, Африка); tigre — тигр (полосатый, Азия).",
+          "Это два названия одного и того же животного.",
+          "lion — тигр, а tigre — лев.",
+          "lion — самец, tigre — самка того же зверя."
+        ],
+        "correctIndex": 0,
+        "explanation": "le lion — лев: «une crinière» — грива. le tigre — тигр: «des rayures» — полосы. Это разные животные, не путать."
+      },
+      {
+        "id": "wc-animaux2-mouton-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux2-mouton",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le mouton donne de la laine.",
+          "Les moutons broutent dans le pré.",
+          "On a mangé du mouton au déjeuner."
+        ],
+        "options": ["баран/овца (и баранина)", "коза", "корова", "свинья"],
+        "correctIndex": 0,
+        "explanation": "mouton (m) — баран/овца как животное и баранина как мясо. «la laine» — шерсть, «brouter» — щипать траву. Коза — une chèvre, свинья — un cochon."
+      },
+      {
+        "id": "wc-animaux2-mouton-trap",
+        "kind": "trap",
+        "wordId": "wl-animaux2-mouton",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В меню написано «mouton». Это про животное на лугу или про мясо на тарелке?",
+        "options": [
+          "mouton значит и то, и другое — и животное, и баранину (мясо)",
+          "только живое животное; мясо называется иначе",
+          "только мясо; живое животное называется иначе",
+          "это вообще не баран, а ягнёнок"
+        ],
+        "correctIndex": 0,
+        "explanation": "В отличие от пары vache/bœuf, у барана одно слово: le mouton — и животное, и баранина. А вот ягнёнок (и его нежное мясо) — l'agneau."
+      },
+      {
+        "id": "wc-animaux2-souris-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-animaux2-souris",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le chat court après la souris.",
+          "Une petite souris grise se cache sous le lit.",
+          "Clique avec la souris de l'ordinateur."
+        ],
+        "options": ["мышь (и компьютерная мышь)", "крыса", "кролик", "белка"],
+        "correctIndex": 0,
+        "explanation": "souris (f) — мышь (зверёк) и компьютерная мышь. Слово женского рода и не меняется во множественном: une souris → des souris. Крыса — un rat."
+      },
+      {
+        "id": "wc-animaux2-souris-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-animaux2-souris",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — дикие/крупные звери. Найди лишнее.",
+        "options": ["le lion", "l'éléphant", "le tigre", "la souris"],
+        "correctIndex": 3,
+        "explanation": "Лев, слон и тигр — большие дикие животные. Мышь (la souris) — лишняя: это маленький зверёк, а ещё единственное здесь слово женского рода."
+      },
+      {
+        "id": "wc-animaux2-souris-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-animaux2-souris",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для souris (мышь), чтобы запомнить, что слово женского рода (une souris) и не меняется во множественном.",
+        "examples": [
+          "«Souris» звучит как «sourit» (улыбается) — представь мышку, которая улыбается: une souris qui sourit.",
+          "Одна мышка и сто мышек пишутся одинаково: une souris / des souris — форма «souris» не меняется."
+        ]
+      }
+    ]
+  }
+]

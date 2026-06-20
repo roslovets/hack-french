@@ -1,0 +1,362 @@
+[
+  {
+    "id": "wl-animaux2-lion",
+    "lemma": "lion",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ljɔ̃/",
+    "translationsRu": ["лев"],
+    "translationsEn": ["lion"],
+    "semanticCore": "Лев — крупный дикий хищник, «царь зверей»; самку называют une lionne.",
+    "collocations": [
+      {
+        "fr": "le roi des animaux",
+        "ru": "царь зверей (о льве)"
+      },
+      {
+        "fr": "le lion rugit",
+        "ru": "лев рычит"
+      },
+      {
+        "fr": "une cage aux lions",
+        "ru": "клетка со львами"
+      },
+      {
+        "fr": "un lion d'Afrique",
+        "ru": "африканский лев"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "lionne",
+        "note": "un lion — лев (самец или вообще); une lionne — львица (самка). Род меняет форму, как chien → chienne."
+      },
+      {
+        "with": "tigre",
+        "note": "lion — лев (с гривой, Африка); tigre — тигр (полосатый, Азия). Оба большие кошки, но разные."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["animaux2", "sauvage"],
+    "caseIds": ["wc-animaux2"],
+    "audio": {
+      "isolated": "audio/wl-animaux2-lion.mp3"
+    }
+  },
+  {
+    "id": "wl-animaux2-ours",
+    "lemma": "ours",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/uʁs/",
+    "translationsRu": ["медведь"],
+    "translationsEn": ["bear"],
+    "semanticCore": "Медведь — крупный лесной зверь; конечное -s в слове произносится (/uʁs/).",
+    "collocations": [
+      {
+        "fr": "un ours brun",
+        "ru": "бурый медведь"
+      },
+      {
+        "fr": "un ours polaire",
+        "ru": "белый (полярный) медведь"
+      },
+      {
+        "fr": "un ours en peluche",
+        "ru": "плюшевый мишка"
+      },
+      {
+        "fr": "l'ours hiberne",
+        "ru": "медведь впадает в спячку"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "our (англ.)",
+        "note": "Фр. ours = медведь; англ. «our» = наш. Ложный друг: пишутся почти одинаково, но смысл и звук разные. Конечное -s читается: /uʁs/."
+      },
+      {
+        "with": "loup",
+        "note": "ours — медведь (крупный, лазает, спит зимой); loup — волк (стайный хищник). Оба лесные, но это разные звери."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["animaux2", "sauvage"],
+    "caseIds": ["wc-animaux2"],
+    "audio": {
+      "isolated": "audio/wl-animaux2-ours.mp3"
+    }
+  },
+  {
+    "id": "wl-animaux2-elephant",
+    "lemma": "éléphant",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.le.fɑ̃/",
+    "translationsRu": ["слон"],
+    "translationsEn": ["elephant"],
+    "semanticCore": "Слон — самое крупное сухопутное животное, с хоботом и бивнями; самку называют une éléphante.",
+    "collocations": [
+      {
+        "fr": "une trompe d'éléphant",
+        "ru": "хобот слона"
+      },
+      {
+        "fr": "un éléphant d'Afrique",
+        "ru": "африканский слон"
+      },
+      {
+        "fr": "un troupeau d'éléphants",
+        "ru": "стадо слонов"
+      },
+      {
+        "fr": "une mémoire d'éléphant",
+        "ru": "феноменальная память («слоновья память»)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "elephant (англ.)",
+        "note": "Англ. «elephant» = éléphant: почти то же слово, но по-французски два accent aigu (é-l-é) и носовое окончание /ɑ̃/."
+      },
+      {
+        "with": "hippopotame",
+        "note": "éléphant — слон (хобот, бивни); hippopotame — бегемот (живёт в воде). Оба огромные, но разные."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["animaux2", "sauvage"],
+    "caseIds": ["wc-animaux2"],
+    "audio": {
+      "isolated": "audio/wl-animaux2-elephant.mp3"
+    }
+  },
+  {
+    "id": "wl-animaux2-singe",
+    "lemma": "singe",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɛ̃ʒ/",
+    "translationsRu": ["обезьяна"],
+    "translationsEn": ["monkey"],
+    "semanticCore": "Обезьяна — ловкий зверь, лазающий по деревьям; общее слово для всех обезьян.",
+    "collocations": [
+      {
+        "fr": "le singe grimpe aux arbres",
+        "ru": "обезьяна лазит по деревьям"
+      },
+      {
+        "fr": "un singe malin",
+        "ru": "хитрая/смышлёная обезьяна"
+      },
+      {
+        "fr": "faire le singe",
+        "ru": "кривляться, дурачиться"
+      },
+      {
+        "fr": "une cage à singes",
+        "ru": "клетка с обезьянами"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "songe",
+        "note": "singe /sɛ̃ʒ/ — обезьяна; songe /sɔ̃ʒ/ — сон, грёза (книжное). Похожи на слух, но гласные разные."
+      },
+      {
+        "with": "linge",
+        "note": "singe /sɛ̃ʒ/ — обезьяна; linge /lɛ̃ʒ/ — бельё. Звучат близко, легко перепутать на слух."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["animaux2", "sauvage"],
+    "caseIds": ["wc-animaux2"],
+    "audio": {
+      "isolated": "audio/wl-animaux2-singe.mp3"
+    }
+  },
+  {
+    "id": "wl-animaux2-serpent",
+    "lemma": "serpent",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɛʁ.pɑ̃/",
+    "translationsRu": ["змея"],
+    "translationsEn": ["snake", "serpent"],
+    "semanticCore": "Змея — длинное пресмыкающееся без ног; во французском слово мужского рода (un serpent).",
+    "collocations": [
+      {
+        "fr": "un serpent venimeux",
+        "ru": "ядовитая змея"
+      },
+      {
+        "fr": "le serpent rampe",
+        "ru": "змея ползёт"
+      },
+      {
+        "fr": "une morsure de serpent",
+        "ru": "укус змеи"
+      },
+      {
+        "fr": "un charmeur de serpents",
+        "ru": "заклинатель змей"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "serpent (англ.)",
+        "note": "Англ. «serpent» = serpent: то же написание. По-французски /sɛʁ.pɑ̃/, конечное -t немое, окончание носовое."
+      },
+      {
+        "with": "ver",
+        "note": "serpent — змея (пресмыкающееся, может кусать); ver — червяк (маленький, безобидный). Не путать длинных «ползающих»."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["animaux2", "sauvage"],
+    "caseIds": ["wc-animaux2"],
+    "audio": {
+      "isolated": "audio/wl-animaux2-serpent.mp3"
+    }
+  },
+  {
+    "id": "wl-animaux2-tigre",
+    "lemma": "tigre",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tiɡʁ/",
+    "translationsRu": ["тигр"],
+    "translationsEn": ["tiger"],
+    "semanticCore": "Тигр — крупный полосатый хищник из Азии; самку называют une tigresse.",
+    "collocations": [
+      {
+        "fr": "un tigre du Bengale",
+        "ru": "бенгальский тигр"
+      },
+      {
+        "fr": "les rayures du tigre",
+        "ru": "полосы тигра"
+      },
+      {
+        "fr": "le tigre rugit",
+        "ru": "тигр рычит"
+      },
+      {
+        "fr": "un tigre en liberté",
+        "ru": "тигр на воле"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tiger (англ.)",
+        "note": "Англ. «tiger» = tigre: разница только в конце (-er → -re). Читается /tiɡʁ/."
+      },
+      {
+        "with": "lion",
+        "note": "tigre — тигр (полосы, Азия); lion — лев (грива, Африка). Оба большие кошки, но разные звери."
+      }
+    ],
+    "frequencyRank": 740,
+    "level": "A2",
+    "tags": ["animaux2", "sauvage"],
+    "caseIds": ["wc-animaux2"],
+    "audio": {
+      "isolated": "audio/wl-animaux2-tigre.mp3"
+    }
+  },
+  {
+    "id": "wl-animaux2-mouton",
+    "lemma": "mouton",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mu.tɔ̃/",
+    "translationsRu": ["баран", "овца", "баранина"],
+    "translationsEn": ["sheep", "mutton"],
+    "semanticCore": "Овца/баран как фермерское животное (даёт шерсть) и баранина как мясо — одно слово на оба смысла.",
+    "collocations": [
+      {
+        "fr": "un troupeau de moutons",
+        "ru": "стадо овец"
+      },
+      {
+        "fr": "la laine de mouton",
+        "ru": "овечья шерсть"
+      },
+      {
+        "fr": "un gigot de mouton",
+        "ru": "баранья нога (блюдо)"
+      },
+      {
+        "fr": "compter les moutons",
+        "ru": "считать овец (чтобы уснуть)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "agneau",
+        "note": "mouton — взрослый баран/овца и баранина; agneau — ягнёнок и его нежное мясо (ягнятина). Разные слова для возраста и мяса."
+      },
+      {
+        "with": "chèvre",
+        "note": "mouton — овца/баран (шерсть); chèvre — коза (с рожками, бородкой). Оба пасутся, но это разные животные."
+      }
+    ],
+    "frequencyRank": 690,
+    "level": "A2",
+    "tags": ["animaux2", "ferme"],
+    "caseIds": ["wc-animaux2"],
+    "audio": {
+      "isolated": "audio/wl-animaux2-mouton.mp3"
+    }
+  },
+  {
+    "id": "wl-animaux2-souris",
+    "lemma": "souris",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/su.ʁi/",
+    "translationsRu": ["мышь", "компьютерная мышь"],
+    "translationsEn": ["mouse"],
+    "semanticCore": "Мышь — маленький грызун, а также компьютерная мышь; слово женского рода и не меняется во множественном (une souris → des souris).",
+    "collocations": [
+      {
+        "fr": "une petite souris grise",
+        "ru": "маленькая серая мышка"
+      },
+      {
+        "fr": "la souris de l'ordinateur",
+        "ru": "компьютерная мышь"
+      },
+      {
+        "fr": "le chat attrape la souris",
+        "ru": "кот ловит мышь"
+      },
+      {
+        "fr": "un clic de souris",
+        "ru": "щелчок мышью"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rat",
+        "note": "souris — мышь (маленькая, f); rat — крыса (крупнее, m). По размеру и роду разные."
+      },
+      {
+        "with": "sourit",
+        "note": "souris (мышь) и форма sourit (от sourire — улыбаться) звучат одинаково /su.ʁi/, но это разные слова. Помни: une souris — существительное, женский род."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["animaux2", "domestique"],
+    "caseIds": ["wc-animaux2"],
+    "audio": {
+      "isolated": "audio/wl-animaux2-souris.mp3"
+    }
+  }
+]

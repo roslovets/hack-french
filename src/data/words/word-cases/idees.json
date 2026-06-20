@@ -1,0 +1,305 @@
+[
+  {
+    "id": "wc-idees",
+    "title": "Идеи и проблемы",
+    "theme": "idees",
+    "level": "A2",
+    "wordIds": [
+      "wl-idees-idee",
+      "wl-idees-probleme",
+      "wl-idees-solution",
+      "wl-idees-reponse",
+      "wl-idees-exemple",
+      "wl-idees-but",
+      "wl-idees-projet",
+      "wl-idees-choix"
+    ],
+    "steps": [
+      {
+        "id": "wc-idees-idee-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-idees-idee",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai une bonne idée pour ce week-end.",
+          "Tu as changé d'idée ?",
+          "Je n'ai aucune idée de l'heure qu'il est."
+        ],
+        "options": ["идея, мысль", "мнение", "цель", "ответ"],
+        "correctIndex": 0,
+        "explanation": "idée (f) — идея, мысль. «avoir une idée» — придумать; «changer d'idée» — передумать; «aucune idée» — никакого понятия. Мнение — un avis, цель — un but."
+      },
+      {
+        "id": "wc-idees-idee-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-idees-idee",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит idée?",
+        "bridge": "Англ. «idea» — тот же корень. По-французски пишется idée (две e, accent aigu на первой) и читается /i.de/, без английского «айдиа».",
+        "options": ["идея", "идеал", "личность", "случай"],
+        "correctIndex": 0,
+        "explanation": "idée (f) = идея. Англ. «idea» — прямой мост. Отличия: французское написание с accent aigu (idée) и произношение /i.de/."
+      },
+      {
+        "id": "wc-idees-probleme-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-idees-probleme",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On a un petit problème avec la voiture.",
+          "Ce n'est pas un problème, je peux attendre.",
+          "Il faut résoudre ce problème de maths."
+        ],
+        "options": ["проблема, задача", "вопрос", "пример", "проект"],
+        "correctIndex": 0,
+        "explanation": "problème (m) — проблема, трудность, а также задача (по математике). «résoudre un problème» — решить проблему; «pas de problème» — без проблем. Внимание на accent grave: problème."
+      },
+      {
+        "id": "wc-idees-probleme-trap",
+        "kind": "trap",
+        "wordId": "wl-idees-probleme",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово problème выглядит «женским» (есть -e на конце). Какого оно рода?",
+        "options": [
+          "мужского — un problème, le problème",
+          "женского — une problème",
+          "может быть и тем, и другим",
+          "рода нет, это глагол"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка рода: несмотря на -e, problème — мужского рода: un problème, le problème, ce problème. Многие слова на -ème (système, thème, poème) тоже мужские."
+      },
+      {
+        "id": "wc-idees-solution-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-idees-solution",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il faut trouver une solution rapidement.",
+          "C'est la meilleure solution pour tout le monde.",
+          "La solution à ce problème est simple."
+        ],
+        "options": ["решение (проблемы)", "ответ на вопрос", "выбор", "пример"],
+        "correctIndex": 0,
+        "explanation": "solution (f) — решение проблемы (способ её устранить). «trouver une solution» — найти решение; «la solution à un problème». Произношение: /sɔ.ly.sjɔ̃/, конечное -tion носовое."
+      },
+      {
+        "id": "wc-idees-solution-cmp",
+        "kind": "compare",
+        "wordId": "wl-idees-solution",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une solution и une réponse. В чём разница?",
+        "phrases": [
+          "On cherche une solution à ce problème.",
+          "Je donne une réponse à ta question."
+        ],
+        "options": [
+          "solution — решение проблемы (как её устранить); réponse — ответ на вопрос (что сказать).",
+          "Это полные синонимы, разницы нет.",
+          "solution — это ответ на вопрос, а réponse — решение проблемы.",
+          "solution мужского рода, а réponse женского."
+        ],
+        "correctIndex": 0,
+        "explanation": "У проблемы ищут une solution (способ устранить), на вопрос дают une réponse (что сказать). Оба слова женского рода: une solution, une réponse."
+      },
+      {
+        "id": "wc-idees-reponse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-idees-reponse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'attends ta réponse avec impatience.",
+          "Ce n'est pas la bonne réponse.",
+          "En réponse à votre lettre, je vous écris."
+        ],
+        "options": ["ответ", "вопрос", "решение", "идея"],
+        "correctIndex": 0,
+        "explanation": "réponse (f) — ответ. «donner une réponse» — дать ответ; «la bonne réponse» — правильный ответ; «en réponse à» — в ответ на. Глагол «отвечать» — répondre."
+      },
+      {
+        "id": "wc-idees-reponse-hint",
+        "kind": "wordHint",
+        "wordId": "wl-idees-reponse",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: то, что ты говоришь или пишешь, когда тебе задали вопрос.",
+        "answer": "réponse",
+        "hints": [
+          "Начинается на r…, есть accent aigu",
+          "Однокоренное с глаголом répondre (отвечать)",
+          "C'est la bonne ___ !"
+        ],
+        "explanation": "réponse (f) — ответ. Однокоренное с répondre. Внимание: пишется ré-p-o-n-s-e, читается /ʁe.pɔ̃s/ — здесь s после -on- звучит как /s/ (а не /z/), потому что стоит за согласной."
+      },
+      {
+        "id": "wc-idees-exemple-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-idees-exemple",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Donne-moi un exemple concret.",
+          "Par exemple, on pourrait partir samedi.",
+          "Cet élève est un bon exemple pour les autres."
+        ],
+        "options": ["пример", "образец-копия (экземпляр)", "упражнение", "опыт"],
+        "correctIndex": 0,
+        "explanation": "exemple (m) — пример. «donner un exemple» — привести пример; «par exemple» — например. Не путать с exemplaire (экземпляр книги). Произношение: /ɛɡ.zɑ̃pl/."
+      },
+      {
+        "id": "wc-idees-exemple-sort",
+        "kind": "sort",
+        "wordId": "wl-idees-exemple",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом exemple звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "par exemple",
+            "basket": "ok"
+          },
+          {
+            "text": "donner un exemple",
+            "basket": "ok"
+          },
+          {
+            "text": "suivre l'exemple de son frère",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un exemple",
+            "basket": "no"
+          },
+          {
+            "text": "un exemple en plastique",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«par exemple», «donner un exemple», «suivre l'exemple de…» — естественно. «boire un exemple» (пить пример) и «un exemple en plastique» (пластмассовый пример) — бессмыслица: пример абстрактен."
+      },
+      {
+        "id": "wc-idees-but-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-idees-but",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово в двух разных мирах — учёба и спорт. Что оно значит?",
+        "contexts": [
+          "Mon but est de parler français couramment.",
+          "Il travaille dans le but de réussir.",
+          "L'équipe a marqué un but à la dernière minute."
+        ],
+        "options": ["цель; гол (в спорте)", "только гол в футболе", "проект", "выбор"],
+        "correctIndex": 0,
+        "explanation": "but (m) — цель (ради чего что-то делают) и гол в спорте. «dans le but de» — с целью; «marquer un but» — забить гол. Чаще читается /byt/, иногда /by/."
+      },
+      {
+        "id": "wc-idees-but-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-idees-but",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "but",
+        "options": ["but", "bus", "bout", "bouc"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало but /byt/ (цель/гол). Похожие, но другие: bus /bys/ (автобус), bout /bu/ (кончик), bouc /buk/ (козёл). Главное — гласный /y/ в but против /u/ в bout/bouc."
+      },
+      {
+        "id": "wc-idees-but-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-idees-but",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для but (цель/гол), чтобы запомнить мужской род (un but) и узкий гласный /y/.",
+        "examples": [
+          "Футбол: «marquer un but» — забить гол; гол — это и есть цель удара. Один гол — un but, мужского рода.",
+          "Гласный /y/ — узкий: губы «трубочкой» (как в русском «бю»), а не /u/. Цель — точная, и звук тоже узкий."
+        ]
+      },
+      {
+        "id": "wc-idees-projet-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-idees-projet",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On a un nouveau projet au travail.",
+          "Quels sont tes projets pour cet été ?",
+          "Elle veut réaliser son projet de voyage."
+        ],
+        "options": ["проект, план", "проблема", "пример", "цель"],
+        "correctIndex": 0,
+        "explanation": "projet (m) — проект, план на будущее. «avoir des projets» — иметь планы; «réaliser un projet» — осуществить проект. Конечное -t не читается: /pʁɔ.ʒɛ/."
+      },
+      {
+        "id": "wc-idees-projet-cmp",
+        "kind": "compare",
+        "wordId": "wl-idees-projet",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un projet и un plan. В чём разница?",
+        "phrases": ["J'ai un projet de start-up.", "Voici le plan de la ville."],
+        "options": [
+          "projet — замысел, дело на будущее (что хочу сделать); plan — схема действий или карта (как именно / где).",
+          "Это полные синонимы, разницы нет.",
+          "projet — это карта, а plan — замысел.",
+          "projet женского рода, а plan мужского."
+        ],
+        "correctIndex": 0,
+        "explanation": "un projet — замысел, дело (например, «un projet de voyage»). un plan — план-схема или карта («le plan de la ville» — карта города). Оба мужского рода."
+      },
+      {
+        "id": "wc-idees-choix-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-idees-choix",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Tu dois faire un choix maintenant.",
+          "Il y a un large choix de desserts.",
+          "C'était un bon choix !"
+        ],
+        "options": ["выбор", "решение проблемы", "ответ", "вкус"],
+        "correctIndex": 0,
+        "explanation": "choix (m) — выбор: и сам акт («faire un choix» — сделать выбор), и ассортимент («un large choix» — большой выбор). Форма не меняется: un choix / des choix /ʃwa/."
+      },
+      {
+        "id": "wc-idees-choix-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-idees-choix",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "choix",
+        "options": ["choix", "chaud", "chez", "joie"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало choix /ʃwa/ (выбор). Похожие, но другие: chaud /ʃo/ (горячий), chez /ʃe/ (у), joie /ʒwa/ (радость). У choix начало /ʃ/ и звук /wa/, как в «уа»."
+      }
+    ]
+  }
+]

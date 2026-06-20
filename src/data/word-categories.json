@@ -25,6 +25,7 @@
       "famille",
       "emotions",
       "sante",
+      "sante2",
       "visage",
       "famille2",
       "caractere",
@@ -35,7 +36,7 @@
   {
     "id": "city",
     "title": "Город и транспорт",
-    "themes": ["ville", "transport", "lieux", "voyage", "directions", "deplacements"],
+    "themes": ["ville", "transport", "lieux", "voyage", "directions", "deplacements", "transport2"],
     "bossId": "wc-boss-transport"
   },
   {
@@ -49,7 +50,8 @@
       "etudes",
       "salutations",
       "opinions",
-      "matieres"
+      "matieres",
+      "idees"
     ],
     "bossId": "wc-boss-ecole-politesse"
   },
@@ -84,13 +86,13 @@
   {
     "id": "weather",
     "title": "Погода и природа",
-    "themes": ["meteo", "animaux", "saisons", "nature2", "meteo2"],
+    "themes": ["meteo", "animaux", "saisons", "nature2", "meteo2", "animaux2"],
     "bossId": "wc-boss-weather"
   },
   {
     "id": "leisure",
     "title": "Досуг и интересы",
-    "themes": ["loisirs", "sport", "fetes"],
+    "themes": ["loisirs", "sport", "fetes", "arts"],
     "bossId": "wc-boss-leisure"
   },
   {

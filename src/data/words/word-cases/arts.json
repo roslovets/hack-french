@@ -1,0 +1,286 @@
+[
+  {
+    "id": "wc-arts",
+    "title": "Искусство и музыка",
+    "theme": "arts",
+    "level": "A2",
+    "wordIds": [
+      "wl-arts-chanson",
+      "wl-arts-chanter",
+      "wl-arts-peinture",
+      "wl-arts-theatre",
+      "wl-arts-concert",
+      "wl-arts-instrument",
+      "wl-arts-danse",
+      "wl-arts-spectacle"
+    ],
+    "steps": [
+      {
+        "id": "wc-arts-chanson-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-arts-chanson",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'adore cette chanson française.",
+          "Il connaît les paroles de la chanson par cœur.",
+          "Mets une chanson plus gaie, s'il te plaît."
+        ],
+        "options": ["песня", "музыка", "голос", "концерт"],
+        "correctIndex": 0,
+        "explanation": "chanson (f) — песня (со словами, которую поют). «les paroles de la chanson» — слова песни. Музыка (вообще) — la musique, концерт — un concert."
+      },
+      {
+        "id": "wc-arts-chanson-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-arts-chanson",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "chanson",
+        "options": ["chanson", "chausson", "chanteur", "chambre"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало chanson /ʃɑ̃.sɔ̃/ — песня. Похожие, но другие слова: chausson /ʃo.sɔ̃/ — тапок (и слоёный пирожок), chanteur /ʃɑ̃.tœʁ/ — певец, chambre /ʃɑ̃bʁ/ — комната."
+      },
+      {
+        "id": "wc-arts-chanter-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-arts-chanter",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Elle chante sous la douche tous les matins.",
+          "Les enfants chantent une chanson à l'école.",
+          "Tu chantes vraiment bien !"
+        ],
+        "options": ["петь", "слушать", "танцевать", "играть"],
+        "correctIndex": 0,
+        "explanation": "chanter — петь. Правильный глагол на -er: je chante, tu chantes, il chante. Слушать — écouter, танцевать — danser."
+      },
+      {
+        "id": "wc-arts-chanter-cmp",
+        "kind": "compare",
+        "wordId": "wl-arts-chanter",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "chanter и chanson — в чём разница?",
+        "phrases": ["J'aime chanter.", "J'aime cette chanson."],
+        "options": [
+          "chanter — это глагол «петь» (действие); chanson — существительное «песня» (то, что поют).",
+          "Это одно и то же слово в разных написаниях.",
+          "chanter — «песня», а chanson — «петь».",
+          "chanter значит «слушать песню»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Один корень chan-, но разные слова: chanter — глагол (петь), une chanson — существительное (песня). «J'aime chanter» = люблю петь; «J'aime cette chanson» = люблю эту песню."
+      },
+      {
+        "id": "wc-arts-peinture-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-arts-peinture",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il étudie la peinture aux Beaux-Arts.",
+          "C'est une peinture du XVIIe siècle.",
+          "Attention, la peinture est encore fraîche !"
+        ],
+        "options": ["живопись; картина; краска", "рисунок карандашом", "рамка", "музей"],
+        "correctIndex": 0,
+        "explanation": "peinture (f) — и живопись (искусство), и картина (написанная красками), и сама краска. «la peinture est fraîche» — краска ещё не высохла. Рисунок (карандашом) — un dessin."
+      },
+      {
+        "id": "wc-arts-peinture-trap",
+        "kind": "trap",
+        "wordId": "wl-arts-peinture",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Чем peinture отличается от dessin?",
+        "phrases": ["Elle fait de la peinture.", "Elle fait du dessin."],
+        "options": [
+          "peinture — работа красками (живопись); dessin — рисунок карандашом или ручкой.",
+          "Это полные синонимы.",
+          "peinture — карандашом, dessin — красками.",
+          "peinture — это только цвет краски в банке, не искусство."
+        ],
+        "correctIndex": 0,
+        "explanation": "la peinture — живопись, работа красками (à l'huile, à l'aquarelle). le dessin — рисунок линиями (карандаш, уголь, ручка). Глаголы: peindre (писать красками) и dessiner (рисовать)."
+      },
+      {
+        "id": "wc-arts-theatre-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-arts-theatre",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит théâtre?",
+        "bridge": "Англ. «theatre» — театр; почти те же буквы. По-французски пишется с accent aigu и accent circonflexe: th-é-â-tre, читается /te.ɑtʁ/.",
+        "options": ["театр", "кинотеатр", "сцена", "опера"],
+        "correctIndex": 0,
+        "explanation": "théâtre (m) = театр. Мост из английского «theatre». Внимание на акценты: é и â. Кинотеатр — un cinéma, сцена — une scène, опера — un opéra."
+      },
+      {
+        "id": "wc-arts-theatre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-arts-theatre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "On va au théâtre voir une pièce ce soir.",
+          "Elle fait du théâtre depuis dix ans.",
+          "Le Théâtre de l'Odéon est à Paris."
+        ],
+        "options": ["театр", "музей", "цирк", "библиотека"],
+        "correctIndex": 0,
+        "explanation": "théâtre (m) — театр. «aller au théâtre» — идти в театр, «une pièce de théâtre» — спектакль/пьеса, «faire du théâtre» — заниматься театром (играть). Музей — un musée."
+      },
+      {
+        "id": "wc-arts-concert-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-arts-concert",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит concert?",
+        "bridge": "Англ. «concert» — концерт; пишется точно так же. По-французски читается /kɔ̃.sɛʁ/, конечная t не звучит.",
+        "options": ["концерт", "согласие", "оркестр", "билет"],
+        "correctIndex": 0,
+        "explanation": "concert (m) = концерт. Те же буквы, что в английском. Внимание: конечная t молчит — /kɔ̃.sɛʁ/. Оркестр — un orchestre, билет — un billet."
+      },
+      {
+        "id": "wc-arts-concert-sort",
+        "kind": "sort",
+        "wordId": "wl-arts-concert",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом concert звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "aller à un concert",
+            "basket": "ok"
+          },
+          {
+            "text": "un concert de rock",
+            "basket": "ok"
+          },
+          {
+            "text": "donner un concert",
+            "basket": "ok"
+          },
+          {
+            "text": "manger un concert",
+            "basket": "no"
+          },
+          {
+            "text": "lire un concert",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«aller à un concert», «un concert de rock», «donner un concert» (давать концерт) — естественно. «manger un concert» (есть концерт) и «lire un concert» (читать концерт) — бессмыслица."
+      },
+      {
+        "id": "wc-arts-instrument-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-arts-instrument",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La guitare est mon instrument préféré.",
+          "Il joue d'un instrument à cordes.",
+          "Quel instrument veux-tu apprendre ?"
+        ],
+        "options": ["музыкальный инструмент", "оркестр", "нота", "мелодия"],
+        "correctIndex": 0,
+        "explanation": "instrument (m) — (музыкальный) инструмент. «un instrument à cordes» — струнный инструмент, «jouer d'un instrument» — играть на инструменте. Нота — une note, мелодия — une mélodie."
+      },
+      {
+        "id": "wc-arts-instrument-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-arts-instrument",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — музыкальные инструменты. Найди лишнее.",
+        "options": ["le piano", "la guitare", "le violon", "le tableau"],
+        "correctIndex": 3,
+        "explanation": "Пианино (le piano), гитара (la guitare) и скрипка (le violon) — музыкальные инструменты. Картина (le tableau) — лишняя: это живопись, а не инструмент."
+      },
+      {
+        "id": "wc-arts-danse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-arts-danse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Elle prend des cours de danse.",
+          "La danse classique demande beaucoup de travail.",
+          "Le tango est une danse argentine."
+        ],
+        "options": ["танец", "песня", "спектакль", "музыка"],
+        "correctIndex": 0,
+        "explanation": "danse (f) — танец. «un cours de danse» — урок танцев, «la danse classique» — классический танец (балет). Глагол «танцевать» — danser. Песня — une chanson."
+      },
+      {
+        "id": "wc-arts-danse-trap",
+        "kind": "trap",
+        "wordId": "wl-arts-danse",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "danse и danser — где существительное «танец», а где глагол «танцевать»?",
+        "phrases": ["J'aime la danse.", "J'aime danser."],
+        "options": [
+          "la danse — существительное «танец»; danser — глагол «танцевать».",
+          "danse — глагол, danser — существительное.",
+          "Это два разных вида танца.",
+          "danser значит «смотреть, как танцуют»."
+        ],
+        "correctIndex": 0,
+        "explanation": "la danse — существительное (танец, искусство танца). danser — глагол (танцевать): je danse, tu danses. «J'aime la danse» = люблю танец; «J'aime danser» = люблю танцевать."
+      },
+      {
+        "id": "wc-arts-spectacle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-arts-spectacle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le spectacle commence à 20 heures.",
+          "Les enfants préparent un spectacle pour Noël.",
+          "C'était un spectacle magnifique !"
+        ],
+        "options": ["представление, спектакль, зрелище", "очки", "зритель", "сцена"],
+        "correctIndex": 0,
+        "explanation": "spectacle (m) — представление, спектакль, зрелище (любое: танец, цирк, концерт). «un spectacle de danse» — танцевальное представление. Ложный друг: англ. «spectacles» — очки, но фр. spectacle — это представление."
+      },
+      {
+        "id": "wc-arts-spectacle-hint",
+        "kind": "wordHint",
+        "wordId": "wl-arts-spectacle",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: то, что показывают зрителям на сцене — танец, цирк, концерт или пьеса.",
+        "answer": "spectacle",
+        "hints": [
+          "Начинается на s…",
+          "Похоже на англ. «spectacle», но значит «представление»",
+          "Le ___ commence à 20 heures."
+        ],
+        "explanation": "spectacle (m) — представление, зрелище. Род мужской: un spectacle, le spectacle. Не путать с англ. «spectacles» (очки) — это ложный друг."
+      }
+    ]
+  }
+]

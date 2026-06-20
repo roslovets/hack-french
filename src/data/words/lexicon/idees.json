@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-idees-idee",
+    "lemma": "idée",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/i.de/",
+    "translationsRu": ["идея", "мысль"],
+    "translationsEn": ["idea"],
+    "semanticCore": "Идея как замысел или мысль, которая приходит в голову: то, что можно придумать, предложить или поменять.",
+    "collocations": [
+      {
+        "fr": "une bonne idée",
+        "ru": "хорошая идея"
+      },
+      {
+        "fr": "avoir une idée",
+        "ru": "придумать, прийти к мысли"
+      },
+      {
+        "fr": "changer d'idée",
+        "ru": "передумать, поменять решение"
+      },
+      {
+        "fr": "se faire une idée",
+        "ru": "составить себе представление"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pensée",
+        "note": "idée = идея, замысел (что-то новое, что придумал); pensée = мысль вообще, ход мыслей. «J'ai une idée» — у меня есть идея; «une pensée triste» — грустная мысль."
+      },
+      {
+        "with": "avis",
+        "note": "idée = идея (что сделать); avis = мнение (что думаешь о чём-то). «À mon avis» — по-моему, а не «à mon idée»."
+      }
+    ],
+    "frequencyRank": 320,
+    "level": "A2",
+    "tags": ["idees", "abstrait"],
+    "caseIds": ["wc-idees"]
+  },
+  {
+    "id": "wl-idees-probleme",
+    "lemma": "problème",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pʁɔ.blɛm/",
+    "translationsRu": ["проблема", "задача"],
+    "translationsEn": ["problem"],
+    "semanticCore": "Проблема — то, что мешает или требует решения: трудность в жизни или задача, которую надо решить.",
+    "collocations": [
+      {
+        "fr": "avoir un problème",
+        "ru": "иметь проблему"
+      },
+      {
+        "fr": "résoudre un problème",
+        "ru": "решить проблему"
+      },
+      {
+        "fr": "pas de problème",
+        "ru": "без проблем, не вопрос"
+      },
+      {
+        "fr": "un problème de maths",
+        "ru": "задача по математике"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "question",
+        "note": "problème = проблема/трудность, которую надо решить; question = вопрос, на который надо ответить. «Pas de problème» ≠ «pas de question»."
+      },
+      {
+        "with": "ennui",
+        "note": "problème = конкретная проблема; в значении «неприятность, морока» чаще множественное «des ennuis» (avoir des ennuis — иметь неприятности). А ennui в единственном числе — это скука; следи за контекстом."
+      }
+    ],
+    "frequencyRank": 280,
+    "level": "A2",
+    "tags": ["idees", "abstrait"],
+    "caseIds": ["wc-idees"]
+  },
+  {
+    "id": "wl-idees-solution",
+    "lemma": "solution",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sɔ.ly.sjɔ̃/",
+    "translationsRu": ["решение"],
+    "translationsEn": ["solution"],
+    "semanticCore": "Решение как способ устранить проблему: то, чем «закрывают» трудность или задачу.",
+    "collocations": [
+      {
+        "fr": "trouver une solution",
+        "ru": "найти решение"
+      },
+      {
+        "fr": "une solution simple",
+        "ru": "простое решение"
+      },
+      {
+        "fr": "la solution à un problème",
+        "ru": "решение проблемы"
+      },
+      {
+        "fr": "une solution de facilité",
+        "ru": "путь наименьшего сопротивления"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "réponse",
+        "note": "solution = решение проблемы (как её устранить); réponse = ответ на вопрос (что сказать). Проблеме нужна solution, вопросу — réponse."
+      },
+      {
+        "with": "décision",
+        "note": "solution = решение задачи/проблемы (способ); décision = решение в смысле «я решил так поступить» (выбор воли). «prendre une décision» — принять решение."
+      }
+    ],
+    "frequencyRank": 410,
+    "level": "A2",
+    "tags": ["idees", "abstrait"],
+    "caseIds": ["wc-idees"]
+  },
+  {
+    "id": "wl-idees-reponse",
+    "lemma": "réponse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁe.pɔ̃s/",
+    "translationsRu": ["ответ"],
+    "translationsEn": ["answer", "response"],
+    "semanticCore": "Ответ на вопрос, письмо или просьбу: то, что говорят или пишут в ответ.",
+    "collocations": [
+      {
+        "fr": "donner une réponse",
+        "ru": "дать ответ"
+      },
+      {
+        "fr": "une bonne réponse",
+        "ru": "правильный ответ"
+      },
+      {
+        "fr": "la réponse à la question",
+        "ru": "ответ на вопрос"
+      },
+      {
+        "fr": "en réponse à votre message",
+        "ru": "в ответ на ваше сообщение"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "solution",
+        "note": "réponse = ответ на вопрос (что сказать/написать); solution = решение проблемы (как её устранить). У вопроса — réponse, у проблемы — solution."
+      },
+      {
+        "with": "répondre",
+        "note": "réponse (f) — существительное «ответ»; répondre — глагол «отвечать». «une réponse» / «je réponds». Не путать форму."
+      }
+    ],
+    "frequencyRank": 390,
+    "level": "A2",
+    "tags": ["idees", "abstrait"],
+    "caseIds": ["wc-idees"]
+  },
+  {
+    "id": "wl-idees-exemple",
+    "lemma": "exemple",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛɡ.zɑ̃pl/",
+    "translationsRu": ["пример"],
+    "translationsEn": ["example"],
+    "semanticCore": "Пример — конкретный случай, который что-то показывает или поясняет; «par exemple» вводит пример («например»).",
+    "collocations": [
+      {
+        "fr": "par exemple",
+        "ru": "например"
+      },
+      {
+        "fr": "donner un exemple",
+        "ru": "привести пример"
+      },
+      {
+        "fr": "un bon exemple",
+        "ru": "хороший пример"
+      },
+      {
+        "fr": "suivre l'exemple de quelqu'un",
+        "ru": "следовать чьему-то примеру"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "exemplaire",
+        "note": "exemple = пример (случай); exemplaire = экземпляр (одна штука книги/газеты) или прилагательное «образцовый». Похожи, но это разные слова."
+      },
+      {
+        "with": "modèle",
+        "note": "exemple = пример, иллюстрация (один из многих); modèle = образец/модель, которому подражают. «un exemple» поясняет, «un modèle» задаёт стандарт."
+      }
+    ],
+    "frequencyRank": 300,
+    "level": "A2",
+    "tags": ["idees", "abstrait"],
+    "caseIds": ["wc-idees"]
+  },
+  {
+    "id": "wl-idees-but",
+    "lemma": "but",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/byt/",
+    "translationsRu": ["цель", "гол"],
+    "translationsEn": ["goal", "aim"],
+    "semanticCore": "Цель, к которой стремятся; в спорте — гол (мяч в воротах). Главный смысл — то, ради чего что-то делают.",
+    "collocations": [
+      {
+        "fr": "atteindre son but",
+        "ru": "достичь своей цели"
+      },
+      {
+        "fr": "dans le but de",
+        "ru": "с целью (что-то сделать)"
+      },
+      {
+        "fr": "marquer un but",
+        "ru": "забить гол"
+      },
+      {
+        "fr": "le but du jeu",
+        "ru": "цель игры"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "objectif",
+        "note": "but = цель вообще (зачем); objectif = конкретная, измеримая задача (более деловое слово). В речи часто взаимозаменяемы, но objectif звучит официальнее."
+      },
+      {
+        "with": "fin",
+        "note": "but = цель (ради чего); fin (f) = конец или (книжно) цель. «la fin justifie les moyens» — устойчиво, но в быту цель — это le but."
+      }
+    ],
+    "frequencyRank": 350,
+    "level": "A2",
+    "tags": ["idees", "abstrait"],
+    "caseIds": ["wc-idees"]
+  },
+  {
+    "id": "wl-idees-projet",
+    "lemma": "projet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pʁɔ.ʒɛ/",
+    "translationsRu": ["проект", "план"],
+    "translationsEn": ["project", "plan"],
+    "semanticCore": "Проект или план на будущее: то, что собираешься сделать или над чем работаешь.",
+    "collocations": [
+      {
+        "fr": "avoir des projets",
+        "ru": "иметь планы"
+      },
+      {
+        "fr": "réaliser un projet",
+        "ru": "осуществить проект"
+      },
+      {
+        "fr": "un projet de vacances",
+        "ru": "план на отпуск"
+      },
+      {
+        "fr": "un projet ambitieux",
+        "ru": "амбициозный проект"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "plan",
+        "note": "projet = замысел, дело на будущее (что хочу сделать); plan = план как схема действий или карта (как именно). «des projets de week-end» — планы, «le plan de la ville» — карта города."
+      },
+      {
+        "with": "but",
+        "note": "projet = что собираюсь делать (само дело); but = зачем, ради какой цели. У projet может быть свой but."
+      }
+    ],
+    "frequencyRank": 360,
+    "level": "A2",
+    "tags": ["idees", "abstrait"],
+    "caseIds": ["wc-idees"]
+  },
+  {
+    "id": "wl-idees-choix",
+    "lemma": "choix",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃwa/",
+    "translationsRu": ["выбор"],
+    "translationsEn": ["choice"],
+    "semanticCore": "Выбор — и сам акт выбора, и набор, из которого выбирают. Форма не меняется: un choix / des choix.",
+    "collocations": [
+      {
+        "fr": "faire un choix",
+        "ru": "сделать выбор"
+      },
+      {
+        "fr": "avoir le choix",
+        "ru": "иметь выбор"
+      },
+      {
+        "fr": "un large choix",
+        "ru": "большой выбор (ассортимент)"
+      },
+      {
+        "fr": "un bon choix",
+        "ru": "хороший выбор"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "choisir",
+        "note": "choix (m) — существительное «выбор»; choisir — глагол «выбирать». «faire un choix» = «choisir». Не путать формы."
+      },
+      {
+        "with": "décision",
+        "note": "choix = выбор из вариантов (что предпочесть); décision = решение (что я решил сделать). Сделав un choix, ты принимаешь une décision."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["idees", "abstrait"],
+    "caseIds": ["wc-idees"]
+  }
+]
