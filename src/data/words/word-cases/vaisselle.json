@@ -1,0 +1,318 @@
+[
+  {
+    "id": "wc-vaisselle",
+    "title": "Посуда",
+    "theme": "vaisselle",
+    "level": "A2",
+    "wordIds": [
+      "wl-vaisselle-casserole",
+      "wl-vaisselle-poele",
+      "wl-vaisselle-cuillere",
+      "wl-vaisselle-bol",
+      "wl-vaisselle-tasse",
+      "wl-vaisselle-planche",
+      "wl-vaisselle-louche",
+      "wl-vaisselle-plateau"
+    ],
+    "steps": [
+      {
+        "id": "wc-vaisselle-casserole-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vaisselle-casserole",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово повторяется во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Fais bouillir l'eau dans une casserole.",
+          "La casserole est trop petite pour ces pâtes.",
+          "Mets la casserole sur le feu."
+        ],
+        "options": ["кастрюля", "сковорода", "запеканка", "чайник"],
+        "correctIndex": 0,
+        "explanation": "casserole (f) — кастрюля: глубокая посуда с одной ручкой, в ней варят и кипятят. Сковорода — une poêle. Внимание: фр. casserole — это НЕ англ. casserole (запеканка)."
+      },
+      {
+        "id": "wc-vaisselle-casserole-trap",
+        "kind": "trap",
+        "wordId": "wl-vaisselle-casserole",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В английском меню «casserole» — это запеканка. А что значит французское la casserole?",
+        "options": ["кастрюля (для варки)", "запеканка из духовки", "большая тарелка", "крышка"],
+        "correctIndex": 0,
+        "explanation": "Ложный друг: фр. une casserole — кастрюля, в которой варят на плите. Английская «casserole» (запеканка) по-французски — un gratin или un plat en cocotte."
+      },
+      {
+        "id": "wc-vaisselle-poele-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vaisselle-poele",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Fais chauffer un peu d'huile dans la poêle.",
+          "Je fais cuire l'omelette à la poêle.",
+          "Cette poêle n'attache pas, c'est pratique."
+        ],
+        "options": ["сковорода", "кастрюля", "половник", "поднос"],
+        "correctIndex": 0,
+        "explanation": "la poêle (f) /pwal/ — сковорода: плоская, с длинной ручкой, на ней жарят. «à la poêle» — на сковороде. Кастрюля — une casserole."
+      },
+      {
+        "id": "wc-vaisselle-poele-trap",
+        "kind": "trap",
+        "wordId": "wl-vaisselle-poele",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово poêle пишется одинаково в двух значениях. Какое из них — «сковорода»?",
+        "options": [
+          "la poêle (женский род) — сковорода",
+          "le poêle (мужской род) — сковорода",
+          "оба значат «сковорода»",
+          "ни одно не про кухню"
+        ],
+        "correctIndex": 0,
+        "explanation": "Один и тот же набор букв, но род решает смысл: la poêle (f) — сковорода, а le poêle (m) — печка/обогреватель. Читается одинаково /pwal/. На кухне нужна именно la poêle."
+      },
+      {
+        "id": "wc-vaisselle-cuillere-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vaisselle-cuillere",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Tu remues le café avec la cuillère.",
+          "Il me faut une cuillère pour la soupe.",
+          "Ajoute une cuillère de sucre."
+        ],
+        "options": ["ложка", "вилка", "нож", "палочки"],
+        "correctIndex": 0,
+        "explanation": "cuillère (f) — ложка. Пишется cuillère или cuiller, оба верны, читается /kɥi.jɛʁ/. Вилка — une fourchette, нож — un couteau."
+      },
+      {
+        "id": "wc-vaisselle-cuillere-collo",
+        "kind": "sort",
+        "wordId": "wl-vaisselle-cuillere",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания с cuillère звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une cuillère à soupe",
+            "basket": "ok"
+          },
+          {
+            "text": "une cuillère à café",
+            "basket": "ok"
+          },
+          {
+            "text": "une cuillère de sucre",
+            "basket": "ok"
+          },
+          {
+            "text": "une cuillère à couteau",
+            "basket": "no"
+          },
+          {
+            "text": "boire une cuillère",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«cuillère à soupe» (столовая), «cuillère à café» (чайная) и «une cuillère de sucre» (ложка сахара) — естественно. «cuillère à couteau» и «boire une cuillère» — бессмыслица: ложкой не пьют, и она не «для ножа»."
+      },
+      {
+        "id": "wc-vaisselle-bol-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vaisselle-bol",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le matin, je bois un bol de café au lait.",
+          "Sers les céréales dans un bol.",
+          "Un bol de soupe chaude, ça fait du bien."
+        ],
+        "options": ["миска / пиала", "тарелка", "чашка с ручкой", "стакан"],
+        "correctIndex": 0,
+        "explanation": "bol (m) — миска, пиала: широкая чашка без ручки. Из неё по-французски часто пьют кофе с молоком по утрам. Тарелка — une assiette, стакан — un verre."
+      },
+      {
+        "id": "wc-vaisselle-bol-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-vaisselle-bol",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит bol?",
+        "bridge": "Англ. «bowl» — миска. Фр. bol — тот же предмет и почти то же звучание, только короче: /bɔl/, без английского «оу».",
+        "options": ["миска / пиала", "мяч", "бутылка", "поднос"],
+        "correctIndex": 0,
+        "explanation": "bol = миска/пиала, англ. «bowl» — прямой мост. Не путать с похожим по звуку «ball» (мяч): bol — это посуда."
+      },
+      {
+        "id": "wc-vaisselle-tasse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vaisselle-tasse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Tu veux une tasse de thé ?",
+          "Elle pose sa tasse de café sur la table.",
+          "Attention, la tasse est brûlante."
+        ],
+        "options": ["чашка", "стакан", "миска", "блюдце"],
+        "correctIndex": 0,
+        "explanation": "tasse (f) — чашка (с ручкой), для горячих напитков. «une tasse de café/thé» — чашка кофе/чая. Стакан — un verre, блюдце — une soucoupe, миска — un bol."
+      },
+      {
+        "id": "wc-vaisselle-tasse-cmp",
+        "kind": "compare",
+        "wordId": "wl-vaisselle-tasse",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une tasse de café и un verre d'eau. В чём разница между tasse и verre?",
+        "phrases": ["Je prends une tasse de café.", "Je bois un verre d'eau."],
+        "options": [
+          "tasse — чашка (для горячего, с ручкой); verre — стакан/бокал (для холодного, из стекла).",
+          "Это синонимы, разницы нет.",
+          "tasse — стеклянный стакан, verre — чашка с ручкой.",
+          "tasse — только про чай, verre — только про вино."
+        ],
+        "correctIndex": 0,
+        "explanation": "tasse — чашка с ручкой для горячих напитков (кофе, чай). verre — стакан или бокал, обычно из стекла, для холодного (вода, сок, вино). Кофе — в tasse, воду — в verre."
+      },
+      {
+        "id": "wc-vaisselle-planche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vaisselle-planche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в кухонном контексте?",
+        "contexts": [
+          "Coupe les légumes sur la planche.",
+          "Pose le pain sur la planche en bois.",
+          "Lave bien la planche après la viande."
+        ],
+        "options": ["разделочная доска", "сковорода", "поднос", "полка"],
+        "correctIndex": 0,
+        "explanation": "planche (f) — доска; на кухне — «la planche à découper» (разделочная доска), на ней режут. Также planche — доска вообще (деревянная). Полка — une étagère."
+      },
+      {
+        "id": "wc-vaisselle-planche-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-vaisselle-planche",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит planche?",
+        "bridge": "Англ. «plank» — доска (деревянная). Фр. planche — то же самое, родственное слово: /plɑ̃ʃ/, с носовым «ан».",
+        "options": ["доска", "тарелка", "ложка", "крышка"],
+        "correctIndex": 0,
+        "explanation": "planche = доска, англ. «plank» — родственный мост. На кухне — la planche à découper (разделочная доска)."
+      },
+      {
+        "id": "wc-vaisselle-louche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vaisselle-louche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Sers la soupe avec la louche.",
+          "Passe-moi la louche, s'il te plaît.",
+          "Une louche de bouillon dans chaque assiette."
+        ],
+        "options": ["половник", "ложка", "сковорода", "миска"],
+        "correctIndex": 0,
+        "explanation": "louche (f) — половник, поварёшка: большая глубокая ложка на длинной ручке, ею разливают суп. Обычная ложка — une cuillère."
+      },
+      {
+        "id": "wc-vaisselle-louche-trap",
+        "kind": "trap",
+        "wordId": "wl-vaisselle-louche",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово louche есть и как прилагательное. Что значит la louche на кухне?",
+        "options": ["половник (посуда)", "подозрительный человек", "косоглазие", "мутная жидкость"],
+        "correctIndex": 0,
+        "explanation": "Существительное la louche — половник. Но louche как прилагательное значит «подозрительный, мутный» (un type louche — тёмная личность). На кухне это всегда половник."
+      },
+      {
+        "id": "wc-vaisselle-louche-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-vaisselle-louche",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало. Остальные только похожи по звуку.",
+        "audioText": "louche",
+        "options": ["louche", "bouche", "mouche", "douche"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало louche /luʃ/ — половник. Похоже звучат: bouche (рот), mouche (муха), douche (душ). Все различаются только первым звуком — слушай начало слова."
+      },
+      {
+        "id": "wc-vaisselle-plateau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vaisselle-plateau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le serveur apporte les cafés sur un plateau.",
+          "Pose les tasses sur le plateau.",
+          "Un plateau de fromages pour finir le repas."
+        ],
+        "options": ["поднос", "тарелка", "стол", "доска"],
+        "correctIndex": 0,
+        "explanation": "plateau (m) — поднос: плоская доска с краями, на ней носят посуду. «un plateau de fromages» — сырная тарелка (ассорти). У слова есть и второе значение — плато (равнина)."
+      },
+      {
+        "id": "wc-vaisselle-plateau-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-vaisselle-plateau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова связаны с готовкой на плите (варка, жарка, разливание). Найди лишнее.",
+        "options": ["la casserole", "la poêle", "la louche", "le plateau"],
+        "correctIndex": 3,
+        "explanation": "В casserole варят, в poêle жарят, louche — для разливания горячего у плиты. le plateau (поднос) — лишний: на нём только носят готовую еду, к готовке он не относится."
+      },
+      {
+        "id": "wc-vaisselle-casserole-hint",
+        "kind": "wordHint",
+        "wordId": "wl-vaisselle-casserole",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: глубокая посуда с ручкой, в которой кипятят воду и варят суп на плите.",
+        "answer": "casserole",
+        "hints": [
+          "Начинается на c…",
+          "Похоже на англ. «casserole», но значит другое",
+          "Fais bouillir l'eau dans une ___."
+        ],
+        "explanation": "casserole (f) — кастрюля. Не путать с англ. «casserole» (запеканка). Читается /kas.ʁɔl/."
+      },
+      {
+        "id": "wc-vaisselle-poele-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-vaisselle-poele",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для poêle, чтобы запомнить написание с ê и что НА кухне это la poêle (сковорода, ж. р.), а le poêle — печка.",
+        "examples": [
+          "«Пуаль» /pwal/ — на сковороде что-то шипит «пшш». Ставлю артикль la: la poêle — она жарит.",
+          "Шляпка ê над «о» — как капля масла, которая прыгает на горячей сковороде la poêle."
+        ]
+      }
+    ]
+  }
+]

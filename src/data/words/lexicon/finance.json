@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-finance-compte",
+    "lemma": "compte",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔ̃t/",
+    "translationsRu": ["счёт (банковский)", "счёт (учётная запись)"],
+    "translationsEn": ["account", "count"],
+    "semanticCore": "Банковский счёт, где хранятся деньги; шире — учётная запись и «подсчёт».",
+    "collocations": [
+      {
+        "fr": "ouvrir un compte",
+        "ru": "открыть счёт"
+      },
+      {
+        "fr": "un compte en banque",
+        "ru": "счёт в банке"
+      },
+      {
+        "fr": "le solde du compte",
+        "ru": "баланс счёта"
+      },
+      {
+        "fr": "virer sur un compte",
+        "ru": "перевести на счёт"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "facture",
+        "note": "compte = банковский счёт (где лежат деньги); facture = счёт-фактура к оплате (бумага с суммой). В кафе «счёт» к оплате — l'addition, а не le compte."
+      },
+      {
+        "with": "conte",
+        "note": "Омофоны /kɔ̃t/: compte = счёт, а conte = сказка (un conte de fées). Различает только написание."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["finance", "banque"],
+    "caseIds": ["wc-finance"]
+  },
+  {
+    "id": "wl-finance-credit",
+    "lemma": "crédit",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kʁe.di/",
+    "translationsRu": ["кредит", "ссуда"],
+    "translationsEn": ["credit", "loan"],
+    "semanticCore": "Деньги, взятые в долг у банка под возврат с процентами; также «кредит» на счёте.",
+    "collocations": [
+      {
+        "fr": "faire un crédit",
+        "ru": "взять кредит"
+      },
+      {
+        "fr": "un crédit immobilier",
+        "ru": "ипотечный кредит"
+      },
+      {
+        "fr": "rembourser un crédit",
+        "ru": "погасить кредит"
+      },
+      {
+        "fr": "une carte de crédit",
+        "ru": "кредитная карта"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "dette",
+        "note": "crédit = взятый кредит (продукт банка, который оформляют); dette = долг как сумма, которую ты должен. Crédit берут, dette накапливается и её возвращают."
+      },
+      {
+        "with": "prêt",
+        "note": "crédit и prêt оба «заём»; prêt — это собственно ссуда (банк prête — даёт в долг), crédit чаще о потребительском/карточном кредите. В ипотеке говорят и crédit, и prêt immobilier."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["finance", "banque"],
+    "caseIds": ["wc-finance"]
+  },
+  {
+    "id": "wl-finance-dette",
+    "lemma": "dette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/dɛt/",
+    "translationsRu": ["долг"],
+    "translationsEn": ["debt"],
+    "semanticCore": "Сумма денег, которую ты должен вернуть кому-то; то, что висит на тебе.",
+    "collocations": [
+      {
+        "fr": "avoir des dettes",
+        "ru": "иметь долги"
+      },
+      {
+        "fr": "rembourser une dette",
+        "ru": "вернуть долг"
+      },
+      {
+        "fr": "être endetté",
+        "ru": "быть в долгах"
+      },
+      {
+        "fr": "une dette de jeu",
+        "ru": "карточный (игорный) долг"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "crédit",
+        "note": "dette = долг (сумма к возврату, твоё обязательство); crédit = кредит как банковский продукт. Из crédit рождается dette: взял crédit — появилась dette."
+      },
+      {
+        "with": "devoir",
+        "note": "Не путать существительное и глагол: une dette = долг (вещь), а je dois = я должен (глагол devoir). «У меня долг» — j'ai une dette; «я должен 50 €» — je dois 50 €."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["finance", "banque"],
+    "caseIds": ["wc-finance"]
+  },
+  {
+    "id": "wl-finance-budget",
+    "lemma": "budget",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/byd.ʒɛ/",
+    "translationsRu": ["бюджет"],
+    "translationsEn": ["budget"],
+    "semanticCore": "Деньги, которые ты планируешь потратить на что-то, и их распределение.",
+    "collocations": [
+      {
+        "fr": "un budget serré",
+        "ru": "ограниченный (скудный) бюджет"
+      },
+      {
+        "fr": "respecter son budget",
+        "ru": "укладываться в бюджет"
+      },
+      {
+        "fr": "le budget du mois",
+        "ru": "бюджет на месяц"
+      },
+      {
+        "fr": "dépasser le budget",
+        "ru": "выйти за рамки бюджета"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "budget (англ.)",
+        "note": "Англ. «budget» = фр. budget — то же значение, прямой когнат. Различается только произношение: фр. /byd.ʒɛ/, конечная t не читается."
+      },
+      {
+        "with": "compte",
+        "note": "budget = план трат (сколько ты собираешься потратить); compte = банковский счёт (где деньги реально лежат). Budget составляют, на compte деньги хранятся."
+      }
+    ],
+    "frequencyRank": 580,
+    "level": "A2",
+    "tags": ["finance", "planification"],
+    "caseIds": ["wc-finance"]
+  },
+  {
+    "id": "wl-finance-facture",
+    "lemma": "facture",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fak.tyʁ/",
+    "translationsRu": ["счёт (к оплате)", "счёт-фактура"],
+    "translationsEn": ["bill", "invoice"],
+    "semanticCore": "Документ с суммой к оплате за услугу или товар: счёт за свет, телефон, покупку.",
+    "collocations": [
+      {
+        "fr": "payer la facture",
+        "ru": "оплатить счёт"
+      },
+      {
+        "fr": "la facture d'électricité",
+        "ru": "счёт за электричество"
+      },
+      {
+        "fr": "une facture salée",
+        "ru": "большой (заоблачный) счёт"
+      },
+      {
+        "fr": "recevoir une facture",
+        "ru": "получить счёт"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "addition",
+        "note": "facture = счёт за услуги/товары (электричество, телефон, заказ фирме); l'addition = счёт в кафе или ресторане. В кафе просят «l'addition», а не «la facture»."
+      },
+      {
+        "with": "compte",
+        "note": "facture = счёт-фактура к оплате (бумага с суммой); compte = банковский счёт (где деньги). С facture платят, на compte хранят."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["finance", "paiement"],
+    "caseIds": ["wc-finance"]
+  },
+  {
+    "id": "wl-finance-depense",
+    "lemma": "dépense",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/de.pɑ̃s/",
+    "translationsRu": ["трата", "расход"],
+    "translationsEn": ["expense", "spending"],
+    "semanticCore": "Потраченные деньги: расход на конкретную вещь или статья затрат.",
+    "collocations": [
+      {
+        "fr": "réduire ses dépenses",
+        "ru": "сократить расходы"
+      },
+      {
+        "fr": "les dépenses du mois",
+        "ru": "траты за месяц"
+      },
+      {
+        "fr": "une grosse dépense",
+        "ru": "крупная трата"
+      },
+      {
+        "fr": "les dépenses courantes",
+        "ru": "текущие расходы"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "économie",
+        "note": "dépense = трата (деньги уходят); économie = экономия (деньги остаются). Антонимы: réduire les dépenses = faire des économies."
+      },
+      {
+        "with": "dépenser",
+        "note": "Не путать существительное и глагол: une dépense = трата (вещь), dépenser = тратить (действие). «Большая трата» — une grosse dépense; «много тратить» — dépenser beaucoup."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["finance", "argent"],
+    "caseIds": ["wc-finance"]
+  },
+  {
+    "id": "wl-finance-economie",
+    "lemma": "économie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.kɔ.nɔ.mi/",
+    "translationsRu": ["экономия", "экономика"],
+    "translationsEn": ["saving", "economy"],
+    "semanticCore": "Экономия (сбережённые деньги, во мн.ч. des économies) и экономика страны.",
+    "collocations": [
+      {
+        "fr": "faire des économies",
+        "ru": "копить, экономить"
+      },
+      {
+        "fr": "une économie de temps",
+        "ru": "экономия времени"
+      },
+      {
+        "fr": "l'économie française",
+        "ru": "французская экономика"
+      },
+      {
+        "fr": "mettre de l'argent de côté",
+        "ru": "откладывать деньги (копить)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "économie / économies",
+        "note": "В ед.ч. l'économie = экономика (страны) или экономия (бережливость); во мн.ч. des économies = сбережения, накопления. «Копить» — faire des économies (всегда мн.ч.)."
+      },
+      {
+        "with": "économique",
+        "note": "économie (сущ.) = экономия/экономика; économique (прил.) = экономный/экономический. «Экономная машина» — une voiture économique, а не «une voiture économie»."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["finance", "argent"],
+    "caseIds": ["wc-finance"]
+  },
+  {
+    "id": "wl-finance-impot",
+    "lemma": "impôt",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛ̃.po/",
+    "translationsRu": ["налог"],
+    "translationsEn": ["tax"],
+    "semanticCore": "Обязательный платёж государству: подоходный налог и налоги вообще.",
+    "collocations": [
+      {
+        "fr": "payer ses impôts",
+        "ru": "платить налоги"
+      },
+      {
+        "fr": "l'impôt sur le revenu",
+        "ru": "подоходный налог"
+      },
+      {
+        "fr": "la déclaration d'impôts",
+        "ru": "налоговая декларация"
+      },
+      {
+        "fr": "réduire les impôts",
+        "ru": "снизить налоги"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "taxe",
+        "note": "impôt = прямой налог государству (на доход, на имущество); taxe = сбор за конкретную услугу/товар (la taxe d'habitation, la TVA — НДС). Подоходный — l'impôt, а НДС — la taxe (TVA)."
+      },
+      {
+        "with": "import (англ.)",
+        "note": "Ложный друг по виду: фр. impôt = налог, а англ. «import» (импорт) — это l'importation. Похоже на письме, но смысл разный; конечная t в impôt не читается: /ɛ̃.po/."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["finance", "etat"],
+    "caseIds": ["wc-finance"]
+  }
+]

@@ -8,7 +8,7 @@
   {
     "id": "groceries",
     "title": "Фрукты и продукты",
-    "themes": ["fruits", "legumes", "aliments"],
+    "themes": ["fruits", "legumes", "aliments", "vaisselle"],
     "bossId": "wc-boss-groceries"
   },
   {
@@ -22,7 +22,8 @@
       "vetements2",
       "objets",
       "menage",
-      "electromenager"
+      "electromenager",
+      "vetements3"
     ],
     "bossId": "wc-boss-maison-vetements"
   },
@@ -61,7 +62,8 @@
       "salutations",
       "opinions",
       "matieres",
-      "idees"
+      "idees",
+      "media"
     ],
     "bossId": "wc-boss-ecole-politesse"
   },
@@ -77,14 +79,15 @@
       "verbes2",
       "heure",
       "jours",
-      "mois"
+      "mois",
+      "duree"
     ],
     "bossId": "wc-boss-verbes"
   },
   {
     "id": "money",
     "title": "Покупки и деньги",
-    "themes": ["argent", "courses", "magasins"],
+    "themes": ["argent", "courses", "magasins", "finance"],
     "bossId": "wc-boss-money"
   },
   {

@@ -1,0 +1,307 @@
+[
+  {
+    "id": "wl-vaisselle-casserole",
+    "lemma": "casserole",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kas.ʁɔl/",
+    "translationsRu": ["кастрюля"],
+    "translationsEn": ["saucepan", "pot"],
+    "semanticCore": "Кастрюля для плиты: глубокая посуда с одной длинной ручкой, в ней варят и кипятят.",
+    "collocations": [
+      {
+        "fr": "faire bouillir de l'eau dans une casserole",
+        "ru": "кипятить воду в кастрюле"
+      },
+      {
+        "fr": "mettre la casserole sur le feu",
+        "ru": "поставить кастрюлю на огонь"
+      },
+      {
+        "fr": "une casserole anti-adhésive",
+        "ru": "кастрюля с антипригарным покрытием"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "casserole (англ.)",
+        "note": "Ложный друг: фр. casserole — кастрюля для варки на плите; англ. «casserole» — запеканка (по-французски un gratin / un plat en cocotte)."
+      },
+      {
+        "with": "poêle",
+        "note": "casserole — глубокая, для варки; poêle — плоская сковорода, для жарки."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["vaisselle", "cuisine"],
+    "caseIds": ["wc-vaisselle"]
+  },
+  {
+    "id": "wl-vaisselle-poele",
+    "lemma": "poêle",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pwal/",
+    "translationsRu": ["сковорода"],
+    "translationsEn": ["frying pan", "skillet"],
+    "semanticCore": "Сковорода (la poêle, ж. р.): плоская посуда с длинной ручкой, на ней жарят; не путать с le poêle (печка).",
+    "collocations": [
+      {
+        "fr": "faire cuire à la poêle",
+        "ru": "жарить на сковороде"
+      },
+      {
+        "fr": "une poêle anti-adhésive",
+        "ru": "сковорода с антипригарным покрытием"
+      },
+      {
+        "fr": "chauffer l'huile dans la poêle",
+        "ru": "разогреть масло на сковороде"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "le poêle",
+        "note": "Одинаковое написание, но род меняет смысл: la poêle (f) — сковорода; le poêle (m) — печка/обогреватель. Читаются одинаково /pwal/."
+      },
+      {
+        "with": "casserole",
+        "note": "poêle — плоская, для жарки; casserole — глубокая, для варки."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["vaisselle", "cuisine"],
+    "caseIds": ["wc-vaisselle"]
+  },
+  {
+    "id": "wl-vaisselle-cuillere",
+    "lemma": "cuillère",
+    "displayForm": "cuillère / cuiller",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kɥi.jɛʁ/",
+    "translationsRu": ["ложка"],
+    "translationsEn": ["spoon"],
+    "semanticCore": "Ложка как столовый прибор и как мера («ложка сахара»).",
+    "collocations": [
+      {
+        "fr": "une cuillère à soupe",
+        "ru": "столовая ложка"
+      },
+      {
+        "fr": "une cuillère à café",
+        "ru": "чайная ложка"
+      },
+      {
+        "fr": "une cuillère de sucre",
+        "ru": "ложка сахара"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "fourchette",
+        "note": "cuillère — ложка (зачерпывают); fourchette — вилка (накалывают)."
+      },
+      {
+        "with": "cuiller",
+        "note": "cuillère и cuiller — два допустимых написания одного слова; читаются одинаково /kɥi.jɛʁ/."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["vaisselle", "couvert"],
+    "caseIds": ["wc-vaisselle"]
+  },
+  {
+    "id": "wl-vaisselle-bol",
+    "lemma": "bol",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bɔl/",
+    "translationsRu": ["миска", "пиала"],
+    "translationsEn": ["bowl"],
+    "semanticCore": "Миска/пиала: широкая чашка без ручки; из неё во Франции часто пьют утренний кофе с молоком.",
+    "collocations": [
+      {
+        "fr": "un bol de café au lait",
+        "ru": "миска кофе с молоком"
+      },
+      {
+        "fr": "un bol de soupe",
+        "ru": "миска супа"
+      },
+      {
+        "fr": "un bol de céréales",
+        "ru": "миска хлопьев"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tasse",
+        "note": "bol — миска без ручки (шире, для хлопьев, супа, утреннего кофе); tasse — чашка с ручкой."
+      },
+      {
+        "with": "ball (англ.)",
+        "note": "Похоже по звуку, но bol /bɔl/ — миска (посуда), а англ. «ball» — мяч."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["vaisselle", "cuisine"],
+    "caseIds": ["wc-vaisselle"]
+  },
+  {
+    "id": "wl-vaisselle-tasse",
+    "lemma": "tasse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tas/",
+    "translationsRu": ["чашка"],
+    "translationsEn": ["cup"],
+    "semanticCore": "Чашка с ручкой для горячих напитков; также мера («чашка кофе»).",
+    "collocations": [
+      {
+        "fr": "une tasse de café",
+        "ru": "чашка кофе"
+      },
+      {
+        "fr": "une tasse de thé",
+        "ru": "чашка чая"
+      },
+      {
+        "fr": "boire dans une tasse",
+        "ru": "пить из чашки"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "verre",
+        "note": "tasse — чашка с ручкой для горячего (кофе, чай); verre — стакан/бокал, обычно из стекла, для холодного."
+      },
+      {
+        "with": "bol",
+        "note": "tasse — с ручкой, поменьше; bol — миска без ручки, пошире."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["vaisselle", "boisson"],
+    "caseIds": ["wc-vaisselle"]
+  },
+  {
+    "id": "wl-vaisselle-planche",
+    "lemma": "planche",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/plɑ̃ʃ/",
+    "translationsRu": ["доска", "разделочная доска"],
+    "translationsEn": ["board", "plank"],
+    "semanticCore": "Плоская деревянная доска; на кухне — разделочная доска (la planche à découper), на ней режут.",
+    "collocations": [
+      {
+        "fr": "une planche à découper",
+        "ru": "разделочная доска"
+      },
+      {
+        "fr": "couper sur la planche",
+        "ru": "резать на доске"
+      },
+      {
+        "fr": "une planche en bois",
+        "ru": "деревянная доска"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "plateau",
+        "note": "planche — плоская доска (на ней режут); plateau — поднос с бортиками (на нём носят посуду)."
+      },
+      {
+        "with": "étagère",
+        "note": "planche — отдельная доска; étagère — полка (закреплённая на стене для хранения)."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["vaisselle", "cuisine"],
+    "caseIds": ["wc-vaisselle"]
+  },
+  {
+    "id": "wl-vaisselle-louche",
+    "lemma": "louche",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/luʃ/",
+    "translationsRu": ["половник", "поварёшка"],
+    "translationsEn": ["ladle"],
+    "semanticCore": "Половник: большая глубокая ложка на длинной ручке, ею разливают суп и бульон.",
+    "collocations": [
+      {
+        "fr": "servir la soupe à la louche",
+        "ru": "разливать суп половником"
+      },
+      {
+        "fr": "une louche de bouillon",
+        "ru": "половник бульона"
+      },
+      {
+        "fr": "passe-moi la louche",
+        "ru": "передай половник"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "louche (прил.)",
+        "note": "Существительное la louche — половник; прилагательное louche — подозрительный, мутный (un type louche — тёмная личность)."
+      },
+      {
+        "with": "cuillère",
+        "note": "louche — большой половник для разливания; cuillère — обычная ложка, чтобы есть."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["vaisselle", "cuisine"],
+    "caseIds": ["wc-vaisselle"]
+  },
+  {
+    "id": "wl-vaisselle-plateau",
+    "lemma": "plateau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pla.to/",
+    "translationsRu": ["поднос", "плато"],
+    "translationsEn": ["tray", "plateau"],
+    "semanticCore": "Поднос: плоская доска с бортиками, на нём носят посуду и еду; также «плато» (равнина) и съёмочная площадка.",
+    "collocations": [
+      {
+        "fr": "apporter les cafés sur un plateau",
+        "ru": "принести кофе на подносе"
+      },
+      {
+        "fr": "un plateau de fromages",
+        "ru": "сырная тарелка (ассорти)"
+      },
+      {
+        "fr": "un plateau-repas",
+        "ru": "поднос с готовым обедом"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "planche",
+        "note": "plateau — поднос с бортиками (носят посуду); planche — плоская доска (режут на ней)."
+      },
+      {
+        "with": "plateau (геогр.)",
+        "note": "То же слово значит и «плато» — высокая равнина; и «съёмочная площадка» (sur le plateau). Кухонный смысл — поднос."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["vaisselle", "cuisine"],
+    "caseIds": ["wc-vaisselle"]
+  }
+]

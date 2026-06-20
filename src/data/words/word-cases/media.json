@@ -1,0 +1,312 @@
+[
+  {
+    "id": "wc-media",
+    "title": "СМИ и медиа",
+    "theme": "media",
+    "level": "A2",
+    "wordIds": [
+      "wl-media-journal",
+      "wl-media-nouvelle",
+      "wl-media-presse",
+      "wl-media-publicite",
+      "wl-media-emission",
+      "wl-media-chaine",
+      "wl-media-info",
+      "wl-media-reportage"
+    ],
+    "steps": [
+      {
+        "id": "wc-media-journal-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-media-journal",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le matin, il lit le journal au café.",
+          "Le journal de 20 heures commence.",
+          "Elle écrit dans son journal tous les soirs."
+        ],
+        "options": ["газета / новости / дневник", "журнал (глянцевый)", "письмо", "книга"],
+        "correctIndex": 0,
+        "explanation": "journal (m) — газета, выпуск новостей (le journal de 20 heures) и личный дневник: всё, что «по дням» (jour). Глянцевый журнал — un magazine."
+      },
+      {
+        "id": "wc-media-journal-trap",
+        "kind": "trap",
+        "wordId": "wl-media-journal",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Русское «журнал» так и тянет перевести как journal. Но как сказать про глянцевый журнал с фото и темами?",
+        "options": ["un magazine", "un journal", "une journée", "un journalisme"],
+        "correctIndex": 0,
+        "explanation": "Ловушка: глянцевый журнал — un magazine, а un journal — это ежедневная газета/новости. journée (f) — день (отрезок времени), а не печать."
+      },
+      {
+        "id": "wc-media-nouvelle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-media-nouvelle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "J'ai une bonne nouvelle pour toi !",
+          "C'est une mauvaise nouvelle, malheureusement.",
+          "Tu as des nouvelles de Marie ?"
+        ],
+        "options": ["новость, известие", "новинка (товар)", "новелла-роман", "новизна"],
+        "correctIndex": 0,
+        "explanation": "une nouvelle — новость, известие. Во множественном «des nouvelles de qqn» — вести от кого-то. Ещё nouvelle — короткий рассказ (новелла)."
+      },
+      {
+        "id": "wc-media-nouvelle-trap",
+        "kind": "trap",
+        "wordId": "wl-media-nouvelle",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В книжном написано «une nouvelle». Это какой текст по объёму?",
+        "options": [
+          "короткий рассказ (новелла)",
+          "толстый роман",
+          "стихотворение",
+          "пьеса для театра"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка англ. «novel»: une nouvelle — это короткий рассказ (новелла), а роман — un roman. Англ. «novel» как раз и есть un roman, а не nouvelle."
+      },
+      {
+        "id": "wc-media-presse-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-media-presse",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет смысл. Что значит la presse?",
+        "bridge": "Англ. «the press» — пресса, СМИ (газеты и журналисты). Фр. la presse — то же самое, тот же корень «печатать».",
+        "options": ["пресса (газеты, журналисты)", "давление", "спешка", "гладильный пресс"],
+        "correctIndex": 0,
+        "explanation": "la presse — пресса: печать и журналисты вместе, как англ. «the press». Слово родственно «печатать» (presser — давить/печатать)."
+      },
+      {
+        "id": "wc-media-presse-collo",
+        "kind": "sort",
+        "wordId": "wl-media-presse",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом presse естественны, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "la liberté de la presse",
+            "basket": "ok"
+          },
+          {
+            "text": "une conférence de presse",
+            "basket": "ok"
+          },
+          {
+            "text": "la presse écrite",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une presse",
+            "basket": "no"
+          },
+          {
+            "text": "une presse en or",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«la liberté de la presse», «une conférence de presse», «la presse écrite» — естественно. «boire une presse» и «une presse en or» — бессмыслица (золотая цепочка — это chaîne, а не presse)."
+      },
+      {
+        "id": "wc-media-presse-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-media-presse",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "presse",
+        "options": ["presse", "prête", "pression", "prêtre"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало presse /pʁɛs/ — пресса. Похожи, но другие: prête (готова) /pʁɛt/, pression (давление) /pʁɛ.sjɔ̃/, prêtre (священник) /pʁɛtʁ/."
+      },
+      {
+        "id": "wc-media-publicite-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-media-publicite",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il y a trop de publicité à la télé.",
+          "On fait une pause, c'est la publicité.",
+          "Cette publicité pour le parfum est très belle."
+        ],
+        "options": ["реклама", "публика, зрители", "объявление о работе", "публикация"],
+        "correctIndex": 0,
+        "explanation": "la publicité — реклама (и явление, и конкретный ролик). Разг. сокращают до une pub. Объявление о работе — une annonce, публика — le public."
+      },
+      {
+        "id": "wc-media-publicite-trap",
+        "kind": "trap",
+        "wordId": "wl-media-publicite",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг говорит «c'est la pub». Что он имеет в виду?",
+        "options": [
+          "идёт реклама (pub = сокращение от publicité)",
+          "это паб, бар",
+          "это публика в зале",
+          "это публикация в газете"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка с англ. «pub»: во французском une pub — это разговорное сокращение от publicité (реклама), а не «паб». Бар-паб тоже есть (un pub), но по контексту медиа речь о рекламе."
+      },
+      {
+        "id": "wc-media-emission-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-media-emission",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "C'est mon émission préférée le samedi soir.",
+          "Une émission de cuisine passe à la télé.",
+          "L'émission est en direct ce soir."
+        ],
+        "options": ["теле/радиопередача", "выброс, излучение", "эмоция", "выпуск (марок, денег)"],
+        "correctIndex": 0,
+        "explanation": "une émission — теле- или радиопередача (программа, ток-шоу, кулинарное шоу). «en direct» — в прямом эфире. Англ. «emission» (выброс) — ложный друг. Перед émission (ж. р. на гласную) — «mon», а не «ma»."
+      },
+      {
+        "id": "wc-media-emission-cmp",
+        "kind": "compare",
+        "wordId": "wl-media-emission",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une émission и une chaîne. В чём разница?",
+        "phrases": ["Je regarde une émission de cuisine.", "Je change de chaîne."],
+        "options": [
+          "émission — отдельная передача; chaîne — канал, на котором её показывают.",
+          "Это синонимы, разницы нет.",
+          "émission — это канал, а chaîne — передача.",
+          "Оба значат «реклама»."
+        ],
+        "correctIndex": 0,
+        "explanation": "une émission — конкретная передача; une chaîne — телеканал. На одной chaîne идёт много émissions. «Какая передача?» — émission; «какой канал?» — chaîne."
+      },
+      {
+        "id": "wc-media-chaine-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-media-chaine",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Passe-moi la télécommande, je change de chaîne.",
+          "Cette chaîne ne montre que du sport.",
+          "Elle porte une jolie chaîne en or."
+        ],
+        "options": ["канал (ТВ) / цепочка", "пульт", "экран", "звук"],
+        "correctIndex": 0,
+        "explanation": "une chaîne — телеканал и одновременно цепь/цепочка (une chaîne en or — золотая цепочка). Пульт — une télécommande, экран — un écran."
+      },
+      {
+        "id": "wc-media-chaine-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-media-chaine",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "chaîne",
+        "options": ["chaîne", "scène", "saine", "Seine"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало chaîne /ʃɛn/ — канал/цепочка (звук /ʃ/). Похожи по концу, но с другим началом: scène /sɛn/ (сцена), saine /sɛn/ (здоровая), Seine /sɛn/ (Сена)."
+      },
+      {
+        "id": "wc-media-info-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-media-info",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le soir, on regarde les infos à la télé.",
+          "J'ai une info importante à te dire.",
+          "Il écoute les infos à la radio le matin."
+        ],
+        "options": ["новость / новости (разг.)", "офис", "интернет", "ошибка"],
+        "correctIndex": 0,
+        "explanation": "une info — разговорное сокращение от information: новость/сведение. «les infos» — выпуск новостей по ТВ или радио. Звучит обыденнее, чем information."
+      },
+      {
+        "id": "wc-media-info-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-media-info",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — про новости и СМИ. Найди лишнее.",
+        "options": ["les infos", "une nouvelle", "un reportage", "une publicité"],
+        "correctIndex": 3,
+        "explanation": "«les infos», «une nouvelle» и «un reportage» — про новости/информацию. «une publicité» (реклама) — лишнее: её цель не сообщить новость, а что-то продать."
+      },
+      {
+        "id": "wc-media-reportage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-media-reportage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le journaliste prépare un reportage sur la ville.",
+          "Ils ont diffusé un reportage sur les agriculteurs.",
+          "J'ai vu un reportage télévisé très intéressant."
+        ],
+        "options": [
+          "репортаж, сюжет с места событий",
+          "интервью один на один",
+          "реклама",
+          "прогноз погоды"
+        ],
+        "correctIndex": 0,
+        "explanation": "un reportage — журналистский материал с места событий (телесюжет или статья). Репортёр показывает, что там происходит. Интервью — une interview."
+      },
+      {
+        "id": "wc-media-reportage-hint",
+        "kind": "wordHint",
+        "wordId": "wl-media-reportage",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: журналистский сюжет с места событий, который показывают в новостях.",
+        "answer": "reportage",
+        "hints": [
+          "Начинается на r…, похоже на англ. «report»",
+          "Мужской род: un ___",
+          "Le journaliste fait un ___ sur la ville."
+        ],
+        "explanation": "un reportage — репортаж/сюжет. Делает его un reporter (репортёр) — не путать материал (reportage) и человека (reporter)."
+      },
+      {
+        "id": "wc-media-chaine-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-media-chaine",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для chaîne (канал / цепочка), чтобы запомнить женский род (une chaîne) и звук /ʃɛn/.",
+        "examples": [
+          "Каналы на ТВ идут «цепочкой» по номерам — une chaîne связывает оба значения: канал и цепь.",
+          "Слышишь «шэн» (/ʃɛn/) — представь золотую цепочку (une chaîne en or) на шее ведущего новостей."
+        ]
+      }
+    ]
+  }
+]

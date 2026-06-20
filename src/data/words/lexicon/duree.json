@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-duree-moment",
+    "lemma": "moment",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mɔ.mɑ̃/",
+    "translationsRu": ["момент", "миг", "минута"],
+    "translationsEn": ["moment", "while"],
+    "semanticCore": "Точка или короткий отрезок во времени — «момент»; в выражении «un bon moment» может означать заметный промежуток.",
+    "collocations": [
+      {
+        "fr": "en ce moment",
+        "ru": "сейчас, в данное время"
+      },
+      {
+        "fr": "à ce moment-là",
+        "ru": "в тот момент, тогда"
+      },
+      {
+        "fr": "pour le moment",
+        "ru": "пока что, на данный момент"
+      },
+      {
+        "fr": "un bon moment",
+        "ru": "приятное время / довольно долго"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "instant",
+        "note": "moment — момент или короткий отрезок (нейтрально); instant — мгновение, ещё короче и подчёркивает мимолётность. «Un moment !» и «Un instant !» оба значат «минутку!», но instant звучит чуть настойчивее."
+      },
+      {
+        "with": "fois",
+        "note": "moment — точка во времени («когда»); fois — раз, повторяющийся случай («сколько раз»). «à ce moment-là» ≠ «cette fois»."
+      }
+    ],
+    "frequencyRank": 220,
+    "level": "A2",
+    "tags": ["duree", "temps", "moment"],
+    "caseIds": ["wc-duree"]
+  },
+  {
+    "id": "wl-duree-instant",
+    "lemma": "instant",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛ̃s.tɑ̃/",
+    "translationsRu": ["мгновение", "момент", "миг"],
+    "translationsEn": ["instant", "moment"],
+    "semanticCore": "Очень короткий миг времени — «мгновение»; подчёркивает мимолётность.",
+    "collocations": [
+      {
+        "fr": "à l'instant",
+        "ru": "только что"
+      },
+      {
+        "fr": "pour l'instant",
+        "ru": "пока что"
+      },
+      {
+        "fr": "en un instant",
+        "ru": "в одно мгновение"
+      },
+      {
+        "fr": "Un instant !",
+        "ru": "Минутку!"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "moment",
+        "note": "instant — мгновение, очень короткое; moment — момент или отрезок подлиннее. «à l'instant» = только что (мгновение назад), «à ce moment-là» = тогда (в ту пору)."
+      },
+      {
+        "with": "pour l'instant",
+        "note": "«pour l'instant» = пока что (на данный момент), а «à l'instant» = только что (миг назад). Один предлог меняет смысл — не путать."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "A2",
+    "tags": ["duree", "temps", "moment"],
+    "caseIds": ["wc-duree"]
+  },
+  {
+    "id": "wl-duree-fois",
+    "lemma": "fois",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fwa/",
+    "translationsRu": ["раз"],
+    "translationsEn": ["time", "occasion"],
+    "semanticCore": "Счётный случай повторения — «раз» (один раз, два раза, в этот раз).",
+    "collocations": [
+      {
+        "fr": "une fois",
+        "ru": "один раз / однажды"
+      },
+      {
+        "fr": "deux fois",
+        "ru": "два раза, дважды"
+      },
+      {
+        "fr": "à la fois",
+        "ru": "одновременно, сразу"
+      },
+      {
+        "fr": "cette fois",
+        "ru": "на этот раз"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "temps",
+        "note": "fois — раз (отдельный случай, считается: une fois, deux fois); temps — время вообще (неисчисляемое). «трижды» — trois fois, но «у меня нет времени» — je n'ai pas le temps, не «pas de fois»."
+      },
+      {
+        "with": "foie",
+        "note": "Звучат одинаково /fwa/, но fois (f) — раз, а foie (m) — печень (орган и блюдо foie gras). Различаются по написанию и роду."
+      }
+    ],
+    "frequencyRank": 160,
+    "level": "A2",
+    "tags": ["duree", "temps", "frequence"],
+    "caseIds": ["wc-duree"]
+  },
+  {
+    "id": "wl-duree-duree",
+    "lemma": "durée",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/dy.ʁe/",
+    "translationsRu": ["длительность", "продолжительность"],
+    "translationsEn": ["duration", "length"],
+    "semanticCore": "Сколько длится событие во времени — его продолжительность от начала до конца.",
+    "collocations": [
+      {
+        "fr": "la durée du film",
+        "ru": "продолжительность фильма"
+      },
+      {
+        "fr": "de courte durée",
+        "ru": "кратковременный, недолгий"
+      },
+      {
+        "fr": "de longue durée",
+        "ru": "долгосрочный, длительный"
+      },
+      {
+        "fr": "pendant toute la durée",
+        "ru": "в течение всего времени"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "temps",
+        "note": "durée — измеримая продолжительность чего-то («la durée du film» — сколько идёт фильм); temps — время вообще или погода. durée отвечает на «как долго», а не «когда»."
+      },
+      {
+        "with": "longueur",
+        "note": "durée — протяжённость во времени; longueur — протяжённость в пространстве (длина в метрах). По-русски оба бывают «длина», но во французском их не путают."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["duree", "temps"],
+    "caseIds": ["wc-duree"]
+  },
+  {
+    "id": "wl-duree-epoque",
+    "lemma": "époque",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.pɔk/",
+    "translationsRu": ["эпоха", "время", "период"],
+    "translationsEn": ["era", "time", "period"],
+    "semanticCore": "Отрезок истории или жизни со своим духом — эпоха, но также просто «то время, та пора».",
+    "collocations": [
+      {
+        "fr": "à l'époque",
+        "ru": "в то время, тогда"
+      },
+      {
+        "fr": "à cette époque",
+        "ru": "в ту пору"
+      },
+      {
+        "fr": "à notre époque",
+        "ru": "в наше время"
+      },
+      {
+        "fr": "la Belle Époque",
+        "ru": "Прекрасная эпоха (период)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "эпоха (рус.)",
+        "note": "По-русски «эпоха» — обычно нечто грандиозное. Французское époque шире: «à l'époque» — это просто «тогда, в те годы», без пафоса."
+      },
+      {
+        "with": "période",
+        "note": "époque — пора, эпоха с характером, привязана к истории/жизни; période — нейтральный отрезок времени (период, фаза). «à l'époque» = тогда; «une période difficile» = трудный период."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["duree", "temps", "histoire"],
+    "caseIds": ["wc-duree"]
+  },
+  {
+    "id": "wl-duree-futur",
+    "lemma": "futur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fy.tyʁ/",
+    "translationsRu": ["будущее"],
+    "translationsEn": ["future"],
+    "semanticCore": "Время, которое ещё не наступило — будущее (часто абстрактно или как грамматическое время).",
+    "collocations": [
+      {
+        "fr": "dans le futur",
+        "ru": "в будущем"
+      },
+      {
+        "fr": "le futur proche",
+        "ru": "ближайшее будущее (грам. время)"
+      },
+      {
+        "fr": "un futur meilleur",
+        "ru": "лучшее будущее"
+      },
+      {
+        "fr": "le futur de la planète",
+        "ru": "будущее планеты"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "avenir",
+        "note": "futur — будущее абстрактно или как грамматическое время («le futur proche»); avenir — личное, конкретное будущее, перспективы. «un bel avenir» (светлое будущее у человека), но «le futur» в грамматике."
+      },
+      {
+        "with": "passé",
+        "note": "Прямая пара: futur — будущее (ещё не было); passé — прошлое (уже было). В грамматике: le futur ↔ le passé composé."
+      }
+    ],
+    "frequencyRank": 430,
+    "level": "A2",
+    "tags": ["duree", "temps", "futur"],
+    "caseIds": ["wc-duree"]
+  },
+  {
+    "id": "wl-duree-passe",
+    "lemma": "passé",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pa.se/",
+    "translationsRu": ["прошлое", "прошедшее"],
+    "translationsEn": ["past"],
+    "semanticCore": "Время, которое уже прошло — прошлое; в грамматике — прошедшее время.",
+    "collocations": [
+      {
+        "fr": "dans le passé",
+        "ru": "в прошлом"
+      },
+      {
+        "fr": "le passé composé",
+        "ru": "прошедшее время (passé composé)"
+      },
+      {
+        "fr": "oublier le passé",
+        "ru": "забыть прошлое"
+      },
+      {
+        "fr": "par le passé",
+        "ru": "в прошлом, прежде"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "passer",
+        "note": "passé (m) — прошлое (существительное); passer — проходить, проводить (глагол). Звучат одинаково — passé и passer оба /pa.se/ (омофоны), различаются лишь на письме и по части речи."
+      },
+      {
+        "with": "futur",
+        "note": "Противоположности: passé — прошлое (уже было); futur — будущее (ещё будет). «le passé» ↔ «le futur»."
+      }
+    ],
+    "frequencyRank": 340,
+    "level": "A2",
+    "tags": ["duree", "temps", "passe"],
+    "caseIds": ["wc-duree"]
+  },
+  {
+    "id": "wl-duree-avenir",
+    "lemma": "avenir",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/av.niʁ/",
+    "translationsRu": ["будущее", "грядущее", "перспективы"],
+    "translationsEn": ["future"],
+    "semanticCore": "Будущее как конкретные перспективы человека, страны, дела — то, что грядёт впереди.",
+    "collocations": [
+      {
+        "fr": "à l'avenir",
+        "ru": "впредь, в будущем"
+      },
+      {
+        "fr": "un bel avenir",
+        "ru": "светлое будущее"
+      },
+      {
+        "fr": "l'avenir du pays",
+        "ru": "будущее страны"
+      },
+      {
+        "fr": "avoir de l'avenir",
+        "ru": "иметь будущее, перспективы"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "futur",
+        "note": "avenir — конкретное, личное будущее, перспективы («un bel avenir»); futur — будущее абстрактно или грамматическое время. О человеке скажут «il a de l'avenir», а не «du futur»."
+      },
+      {
+        "with": "à venir",
+        "note": "avenir (одно слово, существительное) — будущее; «à venir» (два слова) — «предстоящий, грядущий» (les jours à venir — грядущие дни). Звучат похоже, но это разные конструкции."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["duree", "temps", "futur"],
+    "caseIds": ["wc-duree"]
+  }
+]

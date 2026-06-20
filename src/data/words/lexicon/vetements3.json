@@ -1,0 +1,274 @@
+[
+  {
+    "id": "wl-vetements3-bottes",
+    "lemma": "botte",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bɔt/",
+    "translationsRu": ["сапоги", "сапог"],
+    "translationsEn": ["boot", "boots"],
+    "semanticCore": "Высокая обувь, закрывающая щиколотку или голень; обычно во множественном — des bottes (пара сапог).",
+    "collocations": [
+      {
+        "fr": "des bottes en cuir",
+        "ru": "кожаные сапоги"
+      },
+      {
+        "fr": "des bottes de pluie",
+        "ru": "резиновые сапоги (от дождя)"
+      },
+      {
+        "fr": "mettre ses bottes",
+        "ru": "надеть сапоги"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chaussures",
+        "note": "des bottes — высокая обувь (выше щиколотки, сапоги); des chaussures — обувь вообще, чаще низкие туфли/ботинки."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["vetements3", "pieds", "accessoire"],
+    "caseIds": ["wc-vetements3"]
+  },
+  {
+    "id": "wl-vetements3-sandales",
+    "lemma": "sandale",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/sɑ̃.dal/",
+    "translationsRu": ["сандалии", "босоножки"],
+    "translationsEn": ["sandal", "sandals"],
+    "semanticCore": "Открытая лёгкая летняя обувь на ремешках; обычно во множественном — des sandales.",
+    "collocations": [
+      {
+        "fr": "des sandales d'été",
+        "ru": "летние сандалии"
+      },
+      {
+        "fr": "une paire de sandales",
+        "ru": "пара сандалий"
+      },
+      {
+        "fr": "porter des sandales",
+        "ru": "ходить в сандалиях"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bottes",
+        "note": "des sandales — открытая летняя обувь; des bottes — высокие закрытые сапоги. Противоположны по сезону и крою."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["vetements3", "pieds", "ete"],
+    "caseIds": ["wc-vetements3"]
+  },
+  {
+    "id": "wl-vetements3-cravate",
+    "lemma": "cravate",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kʁa.vat/",
+    "translationsRu": ["галстук"],
+    "translationsEn": ["tie", "necktie"],
+    "semanticCore": "Полоска ткани, которую завязывают вокруг воротника рубашки, обычно с костюмом.",
+    "collocations": [
+      {
+        "fr": "porter une cravate",
+        "ru": "носить галстук"
+      },
+      {
+        "fr": "un nœud de cravate",
+        "ru": "узел галстука"
+      },
+      {
+        "fr": "une cravate rayée",
+        "ru": "галстук в полоску"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "nœud papillon",
+        "note": "une cravate — обычный длинный галстук; un nœud papillon — галстук-бабочка. Это разные вещи."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["vetements3", "accessoire", "formel"],
+    "caseIds": ["wc-vetements3"]
+  },
+  {
+    "id": "wl-vetements3-costume",
+    "lemma": "costume",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔs.tym/",
+    "translationsRu": ["костюм"],
+    "translationsEn": ["suit", "costume"],
+    "semanticCore": "Мужской деловой костюм (пиджак + брюки); также — театральный или карнавальный костюм.",
+    "collocations": [
+      {
+        "fr": "un costume noir",
+        "ru": "чёрный костюм"
+      },
+      {
+        "fr": "un costume-cravate",
+        "ru": "костюм с галстуком (деловой вид)"
+      },
+      {
+        "fr": "porter un costume",
+        "ru": "носить костюм, быть в костюме"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tailleur",
+        "note": "un costume — мужской деловой костюм; un tailleur — женский костюм (жакет + юбка/брюки). По-русски оба «костюм», по-французски слова разные."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["vetements3", "formel"],
+    "caseIds": ["wc-vetements3"]
+  },
+  {
+    "id": "wl-vetements3-casquette",
+    "lemma": "casquette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kas.kɛt/",
+    "translationsRu": ["кепка", "бейсболка"],
+    "translationsEn": ["cap"],
+    "semanticCore": "Лёгкий головной убор с козырьком (кепка, бейсболка), без полей по кругу.",
+    "collocations": [
+      {
+        "fr": "une casquette de baseball",
+        "ru": "бейсболка"
+      },
+      {
+        "fr": "porter une casquette",
+        "ru": "носить кепку"
+      },
+      {
+        "fr": "la visière de la casquette",
+        "ru": "козырёк кепки"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chapeau",
+        "note": "une casquette — кепка с козырьком спереди; un chapeau — шляпа с полями по кругу. Это разные головные уборы."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["vetements3", "tete", "accessoire"],
+    "caseIds": ["wc-vetements3"]
+  },
+  {
+    "id": "wl-vetements3-bijou",
+    "lemma": "bijou",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bi.ʒu/",
+    "translationsRu": ["украшение", "драгоценность"],
+    "translationsEn": ["jewel", "piece of jewellery"],
+    "semanticCore": "Ювелирное украшение — кольцо, серьги, браслет и т. п.; во множественном des bijoux (через -x).",
+    "collocations": [
+      {
+        "fr": "porter des bijoux",
+        "ru": "носить украшения"
+      },
+      {
+        "fr": "une boîte à bijoux",
+        "ru": "шкатулка для украшений"
+      },
+      {
+        "fr": "un bijou en or",
+        "ru": "золотое украшение"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bijouterie",
+        "note": "un bijou — само украшение; une bijouterie — ювелирный магазин, где их продают. Не путать предмет и магазин."
+      }
+    ],
+    "frequencyRank": 690,
+    "level": "A2",
+    "tags": ["vetements3", "accessoire", "luxe"],
+    "caseIds": ["wc-vetements3"]
+  },
+  {
+    "id": "wl-vetements3-foulard",
+    "lemma": "foulard",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fu.laʁ/",
+    "translationsRu": ["платок", "косынка", "шейный платок"],
+    "translationsEn": ["scarf", "headscarf"],
+    "semanticCore": "Лёгкий тонкий платок из ткани — на шею или на голову (не тёплый зимний шарф).",
+    "collocations": [
+      {
+        "fr": "un foulard en soie",
+        "ru": "шёлковый платок"
+      },
+      {
+        "fr": "mettre un foulard",
+        "ru": "повязать платок"
+      },
+      {
+        "fr": "nouer un foulard",
+        "ru": "завязать платок"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "écharpe",
+        "note": "un foulard — лёгкий тонкий платок (на шею/голову, для красоты); une écharpe — тёплый длинный шарф (зимой, чтобы согреться)."
+      }
+    ],
+    "frequencyRank": 800,
+    "level": "A2",
+    "tags": ["vetements3", "accessoire", "cou"],
+    "caseIds": ["wc-vetements3"]
+  },
+  {
+    "id": "wl-vetements3-maillot",
+    "lemma": "maillot",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ma.jo/",
+    "translationsRu": ["купальник", "спортивная майка"],
+    "translationsEn": ["swimsuit", "jersey"],
+    "semanticCore": "Облегающая одежда: купальник/плавки (maillot de bain) или спортивная футболка/майка команды (maillot de l'équipe).",
+    "collocations": [
+      {
+        "fr": "un maillot de bain",
+        "ru": "купальник, плавки"
+      },
+      {
+        "fr": "le maillot de l'équipe",
+        "ru": "майка (форма) команды"
+      },
+      {
+        "fr": "un maillot jaune",
+        "ru": "жёлтая майка (лидера на Тур де Франс)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "maillot de corps",
+        "note": "un maillot de bain — купальник/плавки; un maillot de corps — нательная майка (бельё). Одно слово maillot, но de bain и de corps — разные вещи."
+      }
+    ],
+    "frequencyRank": 750,
+    "level": "A2",
+    "tags": ["vetements3", "sport", "plage"],
+    "caseIds": ["wc-vetements3"]
+  }
+]

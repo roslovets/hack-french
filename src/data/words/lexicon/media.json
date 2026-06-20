@@ -1,0 +1,338 @@
+[
+  {
+    "id": "wl-media-journal",
+    "lemma": "journal",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʒuʁ.nal/",
+    "translationsRu": ["газета", "новости (по ТВ)", "дневник"],
+    "translationsEn": ["newspaper", "news"],
+    "semanticCore": "То, где собраны новости за день: бумажная газета, выпуск новостей по ТВ (le journal télévisé) и личный дневник — всё, что ведут «по дням» (jour).",
+    "collocations": [
+      {
+        "fr": "lire le journal",
+        "ru": "читать газету"
+      },
+      {
+        "fr": "le journal télévisé",
+        "ru": "выпуск новостей (по ТВ)"
+      },
+      {
+        "fr": "le journal de 20 heures",
+        "ru": "новости в 20:00"
+      },
+      {
+        "fr": "tenir un journal",
+        "ru": "вести дневник"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "journée",
+        "note": "journal (m) — газета/новости; journée (f) — день (как промежуток времени). Оба от jour, но это разные слова: «Bonne journée !» ≠ газета."
+      },
+      {
+        "with": "magazine",
+        "note": "un journal — ежедневная газета (новости); un magazine — журнал (еженедельный/ежемесячный, с темами). По-русски «журнал» — это magazine, а не journal."
+      }
+    ],
+    "frequencyRank": 420,
+    "level": "A2",
+    "tags": ["media", "presse-ecrite"],
+    "caseIds": ["wc-media"]
+  },
+  {
+    "id": "wl-media-nouvelle",
+    "lemma": "nouvelle",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/nu.vɛl/",
+    "translationsRu": ["новость", "новелла (рассказ)"],
+    "translationsEn": ["news", "short story"],
+    "semanticCore": "Свежее известие о чём-то: une nouvelle — одна новость. Во множественном les nouvelles — новости (вообще, в т.ч. вести от человека). Ещё это короткий рассказ — новелла.",
+    "collocations": [
+      {
+        "fr": "une bonne nouvelle",
+        "ru": "хорошая новость"
+      },
+      {
+        "fr": "une mauvaise nouvelle",
+        "ru": "плохая новость"
+      },
+      {
+        "fr": "annoncer une nouvelle",
+        "ru": "сообщить новость"
+      },
+      {
+        "fr": "Tu as des nouvelles de lui ?",
+        "ru": "Есть от него вести?"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "nouveau / nouvelle (прил.)",
+        "note": "la nouvelle (сущ.) — новость; nouvelle здесь — ещё и форма женского рода прилагательного nouveau (новый): «une nouvelle voiture» = новая машина. Различать по контексту."
+      },
+      {
+        "with": "roman",
+        "note": "une nouvelle — короткий рассказ (новелла); un roman — роман (большое произведение). Не путать с англ. «novel» = роман, а вовсе не «новелла»."
+      }
+    ],
+    "frequencyRank": 380,
+    "level": "A2",
+    "tags": ["media", "information"],
+    "caseIds": ["wc-media"]
+  },
+  {
+    "id": "wl-media-presse",
+    "lemma": "presse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pʁɛs/",
+    "translationsRu": ["пресса", "печать (СМИ)"],
+    "translationsEn": ["the press"],
+    "semanticCore": "Пресса как собирательное: газеты, журналы и их журналисты вместе — то, что «press» по-английски. Обычно с артиклем: la presse.",
+    "collocations": [
+      {
+        "fr": "la presse écrite",
+        "ru": "печатная пресса"
+      },
+      {
+        "fr": "la liberté de la presse",
+        "ru": "свобода прессы"
+      },
+      {
+        "fr": "une conférence de presse",
+        "ru": "пресс-конференция"
+      },
+      {
+        "fr": "un communiqué de presse",
+        "ru": "пресс-релиз"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "presser (глагол)",
+        "note": "la presse (сущ.) — пресса; presser — давить/торопить. «être pressé» = спешить. Существительное и глагол не путать."
+      },
+      {
+        "with": "médias",
+        "note": "la presse — печать и журналисты (исторически из «печатать»); les médias — СМИ вообще, включая ТВ, радио, интернет. Пресса — часть médias."
+      }
+    ],
+    "frequencyRank": 520,
+    "level": "A2",
+    "tags": ["media", "presse-ecrite"],
+    "caseIds": ["wc-media"]
+  },
+  {
+    "id": "wl-media-publicite",
+    "lemma": "publicité",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/py.bli.si.te/",
+    "translationsRu": ["реклама"],
+    "translationsEn": ["advertising", "advert"],
+    "semanticCore": "Реклама: и явление в целом (la publicité), и конкретный ролик/объявление. В разговоре часто сокращают до une pub.",
+    "collocations": [
+      {
+        "fr": "une publicité à la télé",
+        "ru": "реклама по телевизору"
+      },
+      {
+        "fr": "faire de la publicité",
+        "ru": "рекламировать, давать рекламу"
+      },
+      {
+        "fr": "une pause publicité",
+        "ru": "рекламная пауза"
+      },
+      {
+        "fr": "regarder une pub",
+        "ru": "смотреть рекламу (разг.)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "publique (прил.)",
+        "note": "la publicité — реклама; publique — женская форма прилагательного public (общественный, публичный). Похожий корень, но разный смысл: «une école publique» ≠ реклама."
+      },
+      {
+        "with": "annonce",
+        "note": "la publicité — реклама (товара, бренда); une annonce — объявление (о работе, о продаже, новостное). Реклама — чтобы продать; annonce — чтобы сообщить."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["media", "communication"],
+    "caseIds": ["wc-media"]
+  },
+  {
+    "id": "wl-media-emission",
+    "lemma": "émission",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.mi.sjɔ̃/",
+    "translationsRu": ["передача (теле/радио)", "программа"],
+    "translationsEn": ["program", "broadcast"],
+    "semanticCore": "Отдельная теле- или радиопередача: конкретный выпуск или регулярная программа (ток-шоу, кулинарная, новостная). То, что «вещают» в эфир.",
+    "collocations": [
+      {
+        "fr": "une émission de télé",
+        "ru": "телепередача"
+      },
+      {
+        "fr": "une émission de radio",
+        "ru": "радиопередача"
+      },
+      {
+        "fr": "regarder une émission",
+        "ru": "смотреть передачу"
+      },
+      {
+        "fr": "une émission en direct",
+        "ru": "передача в прямом эфире"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chaîne",
+        "note": "une émission — конкретная передача; une chaîne — канал, на котором её показывают. На одной chaîne идут много émissions."
+      },
+      {
+        "with": "emission (англ.)",
+        "note": "Ложный друг: фр. une émission — теле/радиопередача, а англ. «emission» — выброс (газов, излучения). Не путать значения."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["media", "television"],
+    "caseIds": ["wc-media"]
+  },
+  {
+    "id": "wl-media-chaine",
+    "lemma": "chaîne",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʃɛn/",
+    "translationsRu": ["канал (ТВ)", "цепь, цепочка"],
+    "translationsEn": ["channel", "chain"],
+    "semanticCore": "Телеканал (la chaîne) — и одновременно цепь/цепочка: ряд звеньев, идущих друг за другом. Отсюда же «сеть» магазинов (une chaîne de magasins).",
+    "collocations": [
+      {
+        "fr": "changer de chaîne",
+        "ru": "переключить канал"
+      },
+      {
+        "fr": "une chaîne de télévision",
+        "ru": "телеканал"
+      },
+      {
+        "fr": "une chaîne en or",
+        "ru": "золотая цепочка"
+      },
+      {
+        "fr": "une chaîne de magasins",
+        "ru": "сеть магазинов"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chêne",
+        "note": "chaîne (/ʃɛn/) — канал/цепь; chêne (/ʃɛn/) — дуб (дерево). Звучат одинаково, но пишутся по-разному (ai против ê) и значат совсем разное."
+      },
+      {
+        "with": "émission",
+        "note": "une chaîne — канал (TF1, France 2…); une émission — отдельная передача на нём. «Какой канал?» — chaîne; «какая передача?» — émission."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "A2",
+    "tags": ["media", "television"],
+    "caseIds": ["wc-media"]
+  },
+  {
+    "id": "wl-media-info",
+    "lemma": "info",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɛ̃.fo/",
+    "translationsRu": ["новость", "информация (разг.)"],
+    "translationsEn": ["info", "news"],
+    "semanticCore": "Разговорное сокращение от information. Une info — одна новость/сведение; во множественном les infos — выпуск новостей («новости» по ТВ/радио).",
+    "collocations": [
+      {
+        "fr": "regarder les infos",
+        "ru": "смотреть новости"
+      },
+      {
+        "fr": "une info importante",
+        "ru": "важная новость"
+      },
+      {
+        "fr": "écouter les infos",
+        "ru": "слушать новости (по радио)"
+      },
+      {
+        "fr": "une chaîne d'info",
+        "ru": "новостной канал"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "information",
+        "note": "info — разговорная короткая форма от information. В речи почти всегда говорят les infos; information звучит более официально/письменно."
+      },
+      {
+        "with": "intox",
+        "note": "une info — настоящая новость; une intox — деза, фейк (от intoxication). В медиа их прямо противопоставляют: «info ou intox ?»."
+      }
+    ],
+    "frequencyRank": 500,
+    "level": "A2",
+    "tags": ["media", "information"],
+    "caseIds": ["wc-media"]
+  },
+  {
+    "id": "wl-media-reportage",
+    "lemma": "reportage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁə.pɔʁ.taʒ/",
+    "translationsRu": ["репортаж", "сюжет"],
+    "translationsEn": ["report", "feature"],
+    "semanticCore": "Журналистский материал с места событий: телесюжет или статья, где репортёр показывает/рассказывает, что происходит на месте.",
+    "collocations": [
+      {
+        "fr": "un reportage sur la guerre",
+        "ru": "репортаж о войне"
+      },
+      {
+        "fr": "faire un reportage",
+        "ru": "делать репортаж"
+      },
+      {
+        "fr": "un grand reportage",
+        "ru": "большой репортаж (очерк)"
+      },
+      {
+        "fr": "un reportage télévisé",
+        "ru": "телерепортаж"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "reporter",
+        "note": "un reportage — сам материал (репортаж); un reporter — человек, журналист, который его делает. Не путать продукт и автора."
+      },
+      {
+        "with": "documentaire",
+        "note": "un reportage — короткий журналистский сюжет о текущем событии; un documentaire — документальный фильм (длиннее, глубже, на одну тему)."
+      }
+    ],
+    "frequencyRank": 650,
+    "level": "A2",
+    "tags": ["media", "journalisme"],
+    "caseIds": ["wc-media"]
+  }
+]

@@ -1,0 +1,297 @@
+[
+  {
+    "id": "wc-vetements3",
+    "title": "Одежда: аксессуары",
+    "theme": "vetements3",
+    "level": "A2",
+    "wordIds": [
+      "wl-vetements3-bottes",
+      "wl-vetements3-sandales",
+      "wl-vetements3-cravate",
+      "wl-vetements3-costume",
+      "wl-vetements3-casquette",
+      "wl-vetements3-bijou",
+      "wl-vetements3-foulard",
+      "wl-vetements3-maillot"
+    ],
+    "steps": [
+      {
+        "id": "wc-vetements3-bottes-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements3-bottes",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "En hiver, je mets mes bottes.",
+          "Elle a acheté des bottes en cuir.",
+          "Avec la pluie, mets tes bottes !"
+        ],
+        "options": ["сапоги", "перчатки", "носки", "тапочки"],
+        "correctIndex": 0,
+        "explanation": "une botte (f) — сапог; обычно во множественном des bottes (пара). «des bottes de pluie» — резиновые сапоги. Перчатки — des gants, носки — des chaussettes."
+      },
+      {
+        "id": "wc-vetements3-bottes-cmp",
+        "kind": "compare",
+        "wordId": "wl-vetements3-bottes",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "des bottes и des chaussures. В чём разница?",
+        "phrases": ["Je porte des bottes.", "Je porte des chaussures."],
+        "options": [
+          "des bottes — высокие сапоги (выше щиколотки); des chaussures — обувь вообще, чаще низкие туфли.",
+          "Это полные синонимы.",
+          "des bottes — летние босоножки; des chaussures — сапоги.",
+          "des bottes — носки, а des chaussures — обувь."
+        ],
+        "correctIndex": 0,
+        "explanation": "des bottes — именно высокие сапоги; des chaussures — общее слово «обувь» (любая, чаще низкая). Сапоги — частный случай обуви."
+      },
+      {
+        "id": "wc-vetements3-sandales-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements3-sandales",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "En été, je porte des sandales.",
+          "Ces sandales sont très confortables.",
+          "Sur la plage, tout le monde a des sandales."
+        ],
+        "options": ["сандалии", "сапоги", "кроссовки", "тапочки"],
+        "correctIndex": 0,
+        "explanation": "une sandale (f) — сандалия; обычно во множественном des sandales. Открытая летняя обувь на ремешках. Кроссовки — des baskets."
+      },
+      {
+        "id": "wc-vetements3-sandales-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-vetements3-sandales",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — то, что носят на ногах. Найди лишнее.",
+        "options": ["les sandales", "les bottes", "les chaussures", "la cravate"],
+        "correctIndex": 3,
+        "explanation": "Сандалии (les sandales), сапоги (les bottes) и обувь (les chaussures) — на ногах. Галстук (la cravate) — лишний: его носят на шее."
+      },
+      {
+        "id": "wc-vetements3-cravate-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements3-cravate",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il porte une cravate bleue.",
+          "Pour l'entretien, mets une cravate.",
+          "Son nœud de cravate est parfait."
+        ],
+        "options": ["галстук", "ремень", "шарф", "воротник"],
+        "correctIndex": 0,
+        "explanation": "une cravate (f) — галстук. «un nœud de cravate» — узел галстука. Ремень — une ceinture, воротник — un col."
+      },
+      {
+        "id": "wc-vetements3-cravate-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-vetements3-cravate",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, какое из похожих по звучанию написано верно.",
+        "audioText": "cravate",
+        "options": ["cravate", "cravache", "carafe", "agrafe"],
+        "correctIndex": 0,
+        "explanation": "Звучит /kʁa.vat/ — это cravate (галстук). Похожие, но другие слова: une cravache (хлыст), une carafe (графин), une agrafe (скрепка/застёжка)."
+      },
+      {
+        "id": "wc-vetements3-costume-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-vetements3-costume",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит costume по-французски?",
+        "bridge": "Англ. «costume» — наряд, костюм; пишется почти так же. Во французском un costume — это прежде всего деловой мужской костюм.",
+        "options": ["костюм (деловой; пиджак + брюки)", "пальто", "рубашка", "галстук"],
+        "correctIndex": 0,
+        "explanation": "un costume (m) — деловой мужской костюм (пиджак + брюки), а также театральный/карнавальный костюм. Мост из англ. «costume» помогает, но во французском акцент на деловом наряде."
+      },
+      {
+        "id": "wc-vetements3-costume-trap",
+        "kind": "trap",
+        "wordId": "wl-vetements3-costume",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Женский деловой костюм (жакет + юбка) — это тоже un costume?",
+        "options": [
+          "Нет: мужской — un costume, женский — un tailleur.",
+          "Да, оба называются un costume.",
+          "Нет, женский костюм — une robe.",
+          "Да, но женский — une costume (женский род)."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: по-русски оба «костюм», но по-французски мужской деловой — un costume, а женский (жакет + юбка/брюки) — un tailleur. Платье — une robe."
+      },
+      {
+        "id": "wc-vetements3-casquette-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements3-casquette",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il met sa casquette pour le soleil.",
+          "Une casquette de baseball rouge.",
+          "Enlève ta casquette à table."
+        ],
+        "options": ["кепка (с козырьком)", "шапка тёплая", "шляпа с полями", "капюшон"],
+        "correctIndex": 0,
+        "explanation": "une casquette (f) — кепка/бейсболка с козырьком спереди. Тёплая шапка — un bonnet, шляпа с полями — un chapeau, капюшон — une capuche."
+      },
+      {
+        "id": "wc-vetements3-casquette-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-vetements3-casquette",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери верное написание среди похожих по звучанию.",
+        "audioText": "casquette",
+        "options": ["casquette", "raquette", "maquette", "baguette"],
+        "correctIndex": 0,
+        "explanation": "Звучит /kas.kɛt/ — это casquette (кепка). Похожие слова: une raquette (ракетка), une maquette (макет), une baguette (багет/палочка)."
+      },
+      {
+        "id": "wc-vetements3-bijou-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements3-bijou",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Elle porte de beaux bijoux.",
+          "Ce bijou est en or.",
+          "Range tes bijoux dans la boîte."
+        ],
+        "options": ["украшение (драгоценность)", "часы", "сумка", "зеркало"],
+        "correctIndex": 0,
+        "explanation": "un bijou (m) — украшение, драгоценность (кольцо, серьги, браслет). Множественное — des bijoux (через -x!). Часы — une montre, сумка — un sac."
+      },
+      {
+        "id": "wc-vetements3-bijou-hint",
+        "kind": "wordHint",
+        "wordId": "wl-vetements3-bijou",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: красивый предмет из золота или серебра, который носят на пальце, в ушах, на шее.",
+        "answer": "bijou",
+        "hints": [
+          "Начинается на b…",
+          "5 букв, мужской род: un ___",
+          "Множественное необычное: des bijou__ (с -x)"
+        ],
+        "explanation": "un bijou (m) — украшение. Во множественном — des bijoux (через -x, как hibou → hiboux). «une boîte à bijoux» — шкатулка."
+      },
+      {
+        "id": "wc-vetements3-foulard-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements3-foulard",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Elle noue un foulard en soie.",
+          "Un joli foulard autour du cou.",
+          "Mets un foulard sur tes cheveux."
+        ],
+        "options": ["лёгкий платок (косынка)", "тёплый зимний шарф", "перчатки", "пояс"],
+        "correctIndex": 0,
+        "explanation": "un foulard (m) — лёгкий тонкий платок (на шею или голову). «un foulard en soie» — шёлковый платок. Тёплый зимний шарф — une écharpe."
+      },
+      {
+        "id": "wc-vetements3-foulard-cmp",
+        "kind": "compare",
+        "wordId": "wl-vetements3-foulard",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un foulard и une écharpe. В чём разница?",
+        "phrases": ["Elle met un foulard en soie.", "Elle met une écharpe en laine."],
+        "options": [
+          "un foulard — лёгкий тонкий платок (для красоты); une écharpe — тёплый шарф (чтобы согреться зимой).",
+          "Это одно и то же.",
+          "un foulard — зимний шарф; une écharpe — летняя косынка.",
+          "un foulard — шапка; une écharpe — перчатки."
+        ],
+        "correctIndex": 0,
+        "explanation": "un foulard — лёгкий платок из тонкой ткани (шёлк), часто для вида; une écharpe — длинный тёплый шарф (шерсть), чтобы не мёрзнуть."
+      },
+      {
+        "id": "wc-vetements3-maillot-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-vetements3-maillot",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Prends ton maillot de bain pour la piscine.",
+          "Le joueur porte le maillot de l'équipe.",
+          "Mon maillot est encore mouillé."
+        ],
+        "options": ["купальник / спортивная майка", "полотенце", "халат", "купальная шапочка"],
+        "correctIndex": 0,
+        "explanation": "un maillot (m) — облегающая одежда: «un maillot de bain» — купальник/плавки, «le maillot de l'équipe» — спортивная майка команды. Полотенце — une serviette."
+      },
+      {
+        "id": "wc-vetements3-maillot-sort",
+        "kind": "sort",
+        "wordId": "wl-vetements3-maillot",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом maillot звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un maillot de bain",
+            "basket": "ok"
+          },
+          {
+            "text": "le maillot de l'équipe",
+            "basket": "ok"
+          },
+          {
+            "text": "un maillot jaune",
+            "basket": "ok"
+          },
+          {
+            "text": "un maillot de pluie",
+            "basket": "no"
+          },
+          {
+            "text": "boire un maillot",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un maillot de bain» (купальник), «le maillot de l'équipe» (майка команды), «un maillot jaune» (жёлтая майка лидера) — естественно. «un maillot de pluie» и «boire un maillot» — бессмыслица (от дождя — un imperméable)."
+      },
+      {
+        "id": "wc-vetements3-bijou-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-vetements3-bijou",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для bijou, чтобы запомнить мужской род (un bijou) и редкое множественное число des bijoux (через -x).",
+        "examples": [
+          "«Bijou» звучит почти как «би-жу» — представь, как ты прячешь украшение и говоришь «жу-жу, оно моё». Это un bijou — он «твой», мужского рода.",
+          "Запомни компанию слов на -ou, которые во множественном берут -x: bijou, caillou, chou, genou, hibou — des bijoux, des cailloux. Представь шкатулку, полную bijoux."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,317 @@
+[
+  {
+    "id": "wc-finance",
+    "title": "Финансы",
+    "theme": "finance",
+    "level": "A2",
+    "wordIds": [
+      "wl-finance-compte",
+      "wl-finance-credit",
+      "wl-finance-dette",
+      "wl-finance-budget",
+      "wl-finance-facture",
+      "wl-finance-depense",
+      "wl-finance-economie",
+      "wl-finance-impot"
+    ],
+    "steps": [
+      {
+        "id": "wc-finance-compte-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-finance-compte",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai ouvert un compte dans cette banque.",
+          "Il reste 200 euros sur mon compte.",
+          "Je vais virer l'argent sur ton compte."
+        ],
+        "options": ["банковский счёт", "счёт к оплате", "сдача", "касса"],
+        "correctIndex": 0,
+        "explanation": "compte (m) — банковский счёт, где лежат деньги. «ouvrir un compte» — открыть счёт, «sur mon compte» — на моём счёте. Счёт к оплате — une facture, в кафе — l'addition."
+      },
+      {
+        "id": "wc-finance-compte-trap",
+        "kind": "trap",
+        "wordId": "wl-finance-compte",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В ресторане вы хотите расплатиться. Что попросить у официанта?",
+        "options": [
+          "l'addition, s'il vous plaît",
+          "le compte, s'il vous plaît",
+          "la facture, s'il vous plaît",
+          "le crédit, s'il vous plaît"
+        ],
+        "correctIndex": 0,
+        "explanation": "В кафе и ресторане счёт к оплате — l'addition. «le compte» — это банковский счёт (где деньги), а «la facture» — счёт за услуги фирмы (свет, телефон). Поэтому официанту говорят «l'addition»."
+      },
+      {
+        "id": "wc-finance-credit-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-finance-credit",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Nous avons fait un crédit pour la maison.",
+          "Il rembourse son crédit chaque mois.",
+          "Je paie avec ma carte de crédit."
+        ],
+        "options": ["кредит (заём)", "наличные", "сдача", "налог"],
+        "correctIndex": 0,
+        "explanation": "crédit (m) — кредит, деньги, взятые в долг у банка под возврат. «faire un crédit» — взять кредит, «rembourser un crédit» — погасить его. «une carte de crédit» — кредитная карта."
+      },
+      {
+        "id": "wc-finance-credit-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-finance-credit",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет слово с первого взгляда. Что значит crédit?",
+        "bridge": "Англ. «credit» — кредит; почти то же написание. По-французски с accent aigu — crédit — и читается /kʁe.di/, конечная t не звучит.",
+        "options": ["кредит (заём)", "доверие", "карта", "долг как сумма"],
+        "correctIndex": 0,
+        "explanation": "crédit = кредит, заём у банка. Англ. «credit» — прямой мост. Не путать с dette (долг как сумма к возврату): crédit берут, dette из него возникает."
+      },
+      {
+        "id": "wc-finance-dette-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-finance-dette",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il a beaucoup de dettes.",
+          "Elle a enfin remboursé sa dette.",
+          "Vivre sans dettes, c'est tranquille."
+        ],
+        "options": ["долг (сумма к возврату)", "кредитная карта", "расход", "зарплата"],
+        "correctIndex": 0,
+        "explanation": "dette (f) — долг, сумма, которую нужно вернуть. «avoir des dettes» — иметь долги, «rembourser une dette» — вернуть долг. Из крупного crédit рождается dette."
+      },
+      {
+        "id": "wc-finance-dette-cmp",
+        "kind": "compare",
+        "wordId": "wl-finance-dette",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "faire un crédit и avoir une dette. В чём разница?",
+        "phrases": ["J'ai fait un crédit à la banque.", "J'ai une dette envers la banque."],
+        "options": [
+          "«faire un crédit» — оформить кредит (продукт банка); «avoir une dette» — иметь долг (сумму к возврату).",
+          "Это полные синонимы, разницы нет.",
+          "«faire un crédit» значит вернуть долг, а «avoir une dette» — открыть счёт.",
+          "Оба значат «платить налоги»."
+        ],
+        "correctIndex": 0,
+        "explanation": "crédit — это банковский продукт, который оформляют (faire un crédit). dette — сумма, которую ты должен (avoir une dette). Взял crédit → появилась dette, которую нужно погасить (rembourser une dette)."
+      },
+      {
+        "id": "wc-finance-budget-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-finance-budget",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Mon budget pour les vacances est de 800 euros.",
+          "Avec un budget serré, on cuisine à la maison.",
+          "Il faut respecter le budget du mois."
+        ],
+        "options": ["бюджет (план трат)", "банковский счёт", "налог", "счёт к оплате"],
+        "correctIndex": 0,
+        "explanation": "budget (m) — бюджет, деньги, запланированные на что-то. «un budget serré» — ограниченный бюджет, «respecter son budget» — укладываться в него. Это план, а не сами деньги на счёте (compte)."
+      },
+      {
+        "id": "wc-finance-budget-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-finance-budget",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский здесь — прямой мост. Что значит budget?",
+        "bridge": "Англ. «budget» = бюджет; пишется точно так же. Только читается по-французски /byd.ʒɛ/, конечная t не звучит.",
+        "options": ["бюджет (план трат)", "кошелёк", "доход", "магазин"],
+        "correctIndex": 0,
+        "explanation": "budget = бюджет, прямой когнат с английским. Те же буквы, отличается лишь произношение: ударение на конце, t немая."
+      },
+      {
+        "id": "wc-finance-facture-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-finance-facture",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai reçu la facture d'électricité.",
+          "La facture du téléphone est trop élevée.",
+          "N'oublie pas de payer la facture avant lundi."
+        ],
+        "options": ["счёт к оплате", "банковский счёт", "чек (сдача)", "налог"],
+        "correctIndex": 0,
+        "explanation": "facture (f) — счёт к оплате, документ с суммой за услугу или товар. «la facture d'électricité» — счёт за свет, «payer la facture» — оплатить счёт. В кафе же это l'addition."
+      },
+      {
+        "id": "wc-finance-facture-sort",
+        "kind": "sort",
+        "wordId": "wl-finance-facture",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом facture звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "payer la facture",
+            "basket": "ok"
+          },
+          {
+            "text": "la facture d'électricité",
+            "basket": "ok"
+          },
+          {
+            "text": "recevoir une facture",
+            "basket": "ok"
+          },
+          {
+            "text": "ouvrir une facture à la banque",
+            "basket": "no"
+          },
+          {
+            "text": "boire une facture",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«payer / recevoir la facture», «la facture d'électricité» — естественно. В банке «открывают» un compte (счёт), а не une facture; «boire une facture» (пить счёт) — бессмыслица."
+      },
+      {
+        "id": "wc-finance-depense-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-finance-depense",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ce mois-ci, mes dépenses sont trop élevées.",
+          "Il faut réduire les dépenses.",
+          "L'achat de la voiture est une grosse dépense."
+        ],
+        "options": ["трата, расход", "доход", "сбережения", "налог"],
+        "correctIndex": 0,
+        "explanation": "dépense (f) — трата, расход, потраченные деньги. «réduire les dépenses» — сократить расходы, «une grosse dépense» — крупная трата. Противоположность — économie (экономия)."
+      },
+      {
+        "id": "wc-finance-depense-cmp",
+        "kind": "compare",
+        "wordId": "wl-finance-depense",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "réduire les dépenses и faire des économies. В чём разница и связь?",
+        "phrases": ["Je veux réduire mes dépenses.", "Je veux faire des économies."],
+        "options": [
+          "dépense — то, что ты тратишь; économie — то, что копишь. Сократить dépenses = сделать économies (две стороны одного).",
+          "Это одно и то же слово в разных формах.",
+          "«réduire les dépenses» значит тратить больше, а «faire des économies» — брать кредит.",
+          "Оба значат «платить налоги вовремя»."
+        ],
+        "correctIndex": 0,
+        "explanation": "dépense = трата (деньги уходят), économie = экономия (деньги остаются). Это антонимы, но связаны: réduire les dépenses (сократить траты) и есть способ faire des économies (копить)."
+      },
+      {
+        "id": "wc-finance-economie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-finance-economie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах, но в двух смыслах. Какой общий перевод?",
+        "contexts": [
+          "Je fais des économies pour les vacances.",
+          "Cet appareil permet une économie d'énergie.",
+          "L'économie du pays va mieux."
+        ],
+        "options": ["экономия; экономика", "долг", "кредит", "налог"],
+        "correctIndex": 0,
+        "explanation": "économie (f) — экономия (des économies — сбережения; une économie d'énergie — экономия энергии) и экономика (l'économie du pays). Контекст решает, какой из смыслов."
+      },
+      {
+        "id": "wc-finance-economie-trap",
+        "kind": "trap",
+        "wordId": "wl-finance-economie",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как по-французски «копить деньги, откладывать на будущее»?",
+        "options": [
+          "faire des économies",
+          "faire une économie",
+          "faire un économique",
+          "faire de l'économie"
+        ],
+        "correctIndex": 0,
+        "explanation": "«Копить» — всегда faire des économies (во множественном числе: сбережения). «une économie» в ед.ч. — это «экономия (чего-то)», а économique — прилагательное (экономный), оно не подходит после faire."
+      },
+      {
+        "id": "wc-finance-impot-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-finance-impot",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "En mai, on remplit sa déclaration d'impôts.",
+          "Il paie beaucoup d'impôts.",
+          "L'impôt sur le revenu a augmenté."
+        ],
+        "options": ["налог", "счёт в банке", "долг", "трата"],
+        "correctIndex": 0,
+        "explanation": "impôt (m) — налог государству. «payer ses impôts» — платить налоги, «l'impôt sur le revenu» — подоходный налог. Пишется с accent circonflexe, конечная t немая: /ɛ̃.po/."
+      },
+      {
+        "id": "wc-finance-impot-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-finance-impot",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — деньги, которые ты ОТДАЁШЬ. Найди лишнее.",
+        "options": ["l'impôt", "la facture", "la dette", "l'économie"],
+        "correctIndex": 3,
+        "explanation": "impôt (налог), facture (счёт к оплате) и dette (долг) — это то, что платишь/отдаёшь. l'économie (экономия, сбережения) — наоборот, то, что остаётся у тебя. Поэтому она лишняя."
+      },
+      {
+        "id": "wc-finance-impot-hint",
+        "kind": "wordHint",
+        "wordId": "wl-finance-impot",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: обязательный платёж, который граждане отдают государству.",
+        "answer": "impôt",
+        "hints": [
+          "Начинается на i…",
+          "5 букв, есть accent circonflexe над o",
+          "L'___ sur le revenu."
+        ],
+        "explanation": "impôt (m) — налог. Пишется i-m-p-ô-t, конечная t не читается: /ɛ̃.po/. «Платить налоги» — payer ses impôts."
+      },
+      {
+        "id": "wc-finance-dette-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-finance-dette",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для dette (долг), чтобы запомнить женский род (une dette) и короткое звучание /dɛt/.",
+        "examples": [
+          "Англ. «debt» теряет немую b, но фр. dette удваивает t: представь, что долг «прилипает» к тебе вдвойне — d-e-tt-e.",
+          "Свяжи с фразой «une dette à rembourser» — долг, который висит и который надо вернуть; та, которую тащишь за собой, — она, la dette."
+        ]
+      }
+    ]
+  }
+]

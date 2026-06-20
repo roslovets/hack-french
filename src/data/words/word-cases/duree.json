@@ -1,0 +1,373 @@
+[
+  {
+    "id": "wc-duree",
+    "title": "Время: длительность",
+    "theme": "duree",
+    "level": "A2",
+    "wordIds": [
+      "wl-duree-moment",
+      "wl-duree-instant",
+      "wl-duree-fois",
+      "wl-duree-duree",
+      "wl-duree-epoque",
+      "wl-duree-futur",
+      "wl-duree-passe",
+      "wl-duree-avenir"
+    ],
+    "steps": [
+      {
+        "id": "wc-duree-moment-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-duree-moment",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "En ce moment, je suis très occupé.",
+          "Attends un moment, j'arrive.",
+          "À ce moment-là, il a souri."
+        ],
+        "options": ["момент, время", "раз", "год", "час"],
+        "correctIndex": 0,
+        "explanation": "moment (m) — момент, отрезок времени. «en ce moment» — сейчас, в данное время; «à ce moment-là» — тогда, в тот момент. Не путать с fois (раз)."
+      },
+      {
+        "id": "wc-duree-moment-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-duree-moment",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит moment?",
+        "bridge": "Англ. «moment» — момент; пишется почти так же. Только по-французски читается /mɔ.mɑ̃/, с носовым на конце.",
+        "options": ["момент, миг", "движение", "память", "гора"],
+        "correctIndex": 0,
+        "explanation": "moment = момент. Англ. «moment» — прямой мост: те же буквы. Различается лишь произношение: конечное -ent даёт носовой /ɑ̃/."
+      },
+      {
+        "id": "wc-duree-instant-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-duree-instant",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Elle est partie il y a un instant.",
+          "Un instant, s'il vous plaît !",
+          "En un instant, tout a changé."
+        ],
+        "options": ["мгновение, миг", "этаж", "вкус", "шум"],
+        "correctIndex": 0,
+        "explanation": "instant (m) — мгновение, очень короткий миг. «à l'instant» — только что, «en un instant» — в одно мгновение, «un instant !» — минутку!"
+      },
+      {
+        "id": "wc-duree-instant-cmp",
+        "kind": "compare",
+        "wordId": "wl-duree-instant",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«à l'instant» и «à ce moment-là». В чём разница?",
+        "phrases": ["Il est arrivé à l'instant.", "Il est arrivé à ce moment-là."],
+        "options": [
+          "«à l'instant» — только что (миг назад); «à ce moment-là» — тогда, в тот (прошлый) момент.",
+          "Это полные синонимы.",
+          "«à l'instant» значит «завтра», а «à ce moment-là» — «вчера».",
+          "Оба значат «всегда»."
+        ],
+        "correctIndex": 0,
+        "explanation": "«à l'instant» — действие произошло только что, мгновение назад. «à ce moment-là» — отсылка к ранее упомянутому моменту в прошлом («тогда»). Разные точки во времени."
+      },
+      {
+        "id": "wc-duree-instant-trap",
+        "kind": "trap",
+        "wordId": "wl-duree-instant",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«pour l'instant» и «à l'instant» отличаются одним предлогом. Где «пока что»?",
+        "options": [
+          "«pour l'instant» — пока что; «à l'instant» — только что.",
+          "«à l'instant» — пока что; «pour l'instant» — только что.",
+          "Оба значат «навсегда».",
+          "Оба значат «никогда»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка предлога: «pour l'instant» = пока что, на данный момент (смотрит вперёд); «à l'instant» = только что (миг назад). Один предлог переворачивает смысл."
+      },
+      {
+        "id": "wc-duree-fois-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-duree-fois",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Je l'ai vu deux fois cette semaine.",
+          "C'est la première fois que je viens ici.",
+          "Il fait tout à la fois."
+        ],
+        "options": ["раз", "день", "минута", "месяц"],
+        "correctIndex": 0,
+        "explanation": "fois (f) — раз. «deux fois» — два раза, «la première fois» — первый раз, «à la fois» — одновременно. Считаемый случай повторения."
+      },
+      {
+        "id": "wc-duree-fois-trap",
+        "kind": "trap",
+        "wordId": "wl-duree-fois",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "По-русски «раз» и «время» — разные слова, и во французском тоже. Как сказать «три раза»?",
+        "options": ["trois fois", "trois temps", "trois heures", "trois moments"],
+        "correctIndex": 0,
+        "explanation": "«три раза» — trois fois. fois — счётный случай повторения. temps — это время вообще (неисчисляемое), heures — часы, а moments — моменты; для счёта «раз» нужен только fois."
+      },
+      {
+        "id": "wc-duree-fois-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-duree-fois",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "fois",
+        "options": ["fois", "mois", "roi", "loi"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало fois /fwa/ (раз). mois /mwa/ — месяц, roi /ʁwa/ — король, loi /lwa/ — закон. Похожи по звучанию, но это разные слова."
+      },
+      {
+        "id": "wc-duree-duree-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-duree-duree",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Quelle est la durée du film ?",
+          "C'est un contrat de longue durée.",
+          "Le silence a été de courte durée."
+        ],
+        "options": ["длительность, продолжительность", "название", "цена", "качество"],
+        "correctIndex": 0,
+        "explanation": "durée (f) — продолжительность, сколько что-то длится. «la durée du film» — сколько идёт фильм; «de courte/longue durée» — кратко-/долговременный."
+      },
+      {
+        "id": "wc-duree-duree-cmp",
+        "kind": "compare",
+        "wordId": "wl-duree-duree",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«la durée du film» и «le temps du film». Что правильно и почему?",
+        "phrases": ["Quelle est la durée du film ?", "Combien de temps dure le film ?"],
+        "options": [
+          "durée — это сама продолжительность (существительное); о длительности спрашивают «la durée» или «combien de temps... dure».",
+          "durée и temps — одно и то же слово.",
+          "durée значит «погода», а temps — «время».",
+          "durée можно считать на штуки, как fois."
+        ],
+        "correctIndex": 0,
+        "explanation": "durée — измеримая продолжительность события. Спрашивают «Quelle est la durée ?» или «Combien de temps ça dure ?». temps — время вообще (и ещё «погода»), durée — конкретно «как долго»."
+      },
+      {
+        "id": "wc-duree-epoque-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-duree-epoque",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "À l'époque, je vivais à Lyon.",
+          "À cette époque, tout était différent.",
+          "À notre époque, on a Internet."
+        ],
+        "options": ["эпоха, пора, то время", "погода", "неделя", "праздник"],
+        "correctIndex": 0,
+        "explanation": "époque (f) — эпоха, пора. «à l'époque» — тогда, в то время; «à notre époque» — в наше время. Часто это просто «в те годы», без пафоса."
+      },
+      {
+        "id": "wc-duree-epoque-trap",
+        "kind": "trap",
+        "wordId": "wl-duree-epoque",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Друг пишет: «À l'époque, j'avais vingt ans.» Что он имеет в виду?",
+        "options": [
+          "«В то время мне было двадцать» — époque здесь значит просто «тогда».",
+          "«В великую историческую эпоху мне было двадцать» — речь о грандиозном веке.",
+          "«В эту погоду мне было двадцать».",
+          "«Однажды (один раз) мне было двадцать»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка «громкого» слова: русское «эпоха» звучит масштабно, но французское «à l'époque» — обыденное «тогда, в те годы». Здесь это просто «в то время»."
+      },
+      {
+        "id": "wc-duree-futur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-duree-futur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Personne ne connaît le futur.",
+          "Dans le futur, les voitures voleront peut-être.",
+          "On apprend le futur proche en cours."
+        ],
+        "options": ["будущее", "прошлое", "настоящее", "праздник"],
+        "correctIndex": 0,
+        "explanation": "futur (m) — будущее. «dans le futur» — в будущем; «le futur proche» — ближайшее будущее (и грамматическое время). Часто абстрактно или в грамматике."
+      },
+      {
+        "id": "wc-duree-futur-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-duree-futur",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет значение. Что значит futur?",
+        "bridge": "Англ. «future» — будущее; французское futur почти такое же, только без -e на конце и читается /fy.tyʁ/.",
+        "options": ["будущее", "мебель", "печь", "фрукт"],
+        "correctIndex": 0,
+        "explanation": "futur = будущее. Англ. «future» — надёжный мост. Во французском пишется без конечного -e: le futur."
+      },
+      {
+        "id": "wc-duree-passe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-duree-passe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il faut oublier le passé.",
+          "Dans le passé, on écrivait des lettres.",
+          "Le passé composé est un temps du passé."
+        ],
+        "options": ["прошлое", "будущее", "момент", "раз"],
+        "correctIndex": 0,
+        "explanation": "passé (m) — прошлое. «dans le passé» — в прошлом; «oublier le passé» — забыть прошлое. В грамматике «le passé composé» — прошедшее время."
+      },
+      {
+        "id": "wc-duree-passe-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-duree-passe",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "passé",
+        "options": ["passé", "posé", "pensée", "percé"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало passé /pa.se/ (прошлое). posé /po.ze/ — спокойный / поставленный, pensée /pɑ̃.se/ — мысль, percé /pɛʁ.se/ — пробитый. Похоже, но это разные слова."
+      },
+      {
+        "id": "wc-duree-avenir-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-duree-avenir",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Cette enfant a un bel avenir.",
+          "À l'avenir, sois plus prudent.",
+          "L'avenir du pays nous inquiète."
+        ],
+        "options": ["будущее, перспективы", "прошлое", "погода", "адрес"],
+        "correctIndex": 0,
+        "explanation": "avenir (m) — будущее, перспективы. «un bel avenir» — светлое будущее; «à l'avenir» — впредь; «l'avenir du pays» — будущее страны. Чаще о конкретном, личном будущем."
+      },
+      {
+        "id": "wc-duree-avenir-cmp",
+        "kind": "compare",
+        "wordId": "wl-duree-avenir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "«avenir» и «futur» — оба «будущее». В чём разница?",
+        "phrases": ["Cet étudiant a un bel avenir.", "On étudie le futur en grammaire."],
+        "options": [
+          "avenir — конкретное, личное будущее, перспективы; futur — будущее абстрактно или как грамматическое время.",
+          "Это одно и то же слово в двух написаниях.",
+          "avenir значит «прошлое», futur — «настоящее».",
+          "avenir используется только во множественном числе."
+        ],
+        "correctIndex": 0,
+        "explanation": "О человеке, стране, деле — «avenir» (un bel avenir, avoir de l'avenir). «futur» — отвлечённое будущее и грамматическое время (le futur proche). Поэтому «un bel avenir», но «le futur» в учебнике грамматики."
+      },
+      {
+        "id": "wc-duree-avenir-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-duree-avenir",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова смотрят в будущее. Найди лишнее.",
+        "options": ["l'avenir", "le futur", "demain", "le passé"],
+        "correctIndex": 3,
+        "explanation": "l'avenir, le futur и demain (завтра) — о будущем. le passé (прошлое) — лишнее: оно про то, что уже было."
+      },
+      {
+        "id": "wc-duree-moment-sort",
+        "kind": "sort",
+        "wordId": "wl-duree-moment",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "en ce moment",
+            "basket": "ok"
+          },
+          {
+            "text": "pour le moment",
+            "basket": "ok"
+          },
+          {
+            "text": "à ce moment-là",
+            "basket": "ok"
+          },
+          {
+            "text": "un moment difficile",
+            "basket": "ok"
+          },
+          {
+            "text": "boire un moment",
+            "basket": "no"
+          },
+          {
+            "text": "deux moments par jour",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«en ce moment», «pour le moment», «à ce moment-là», «un moment difficile» — естественно. «boire un moment» — бессмыслица, а считать «deux moments par jour» неестественно: для счёта раз используют fois (deux fois par jour)."
+      },
+      {
+        "id": "wc-duree-duree-hint",
+        "kind": "wordHint",
+        "wordId": "wl-duree-duree",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: то, сколько длится событие — от начала до конца.",
+        "answer": "durée",
+        "hints": [
+          "Однокоренное с глаголом durer (длиться)…",
+          "5 букв, есть accent aigu, читается /dy.ʁe/",
+          "Quelle est la ___ du film ?"
+        ],
+        "explanation": "durée (f) — продолжительность. От глагола durer (длиться). «Quelle est la durée du film ?» — Какова продолжительность фильма?"
+      },
+      {
+        "id": "wc-duree-epoque-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-duree-epoque",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для époque (эпоха, пора), чтобы запомнить женский род (une époque) и обыденное значение «тогда».",
+        "examples": [
+          "Русское «эпоха» почти то же слово — но во французском «à l'époque» это просто «в те годы», как старое фото из юности.",
+          "Представь свою школьную пору: «à cette époque» — в ту пору; она «своя», женского рода — une époque."
+        ]
+      }
+    ]
+  }
+]
