@@ -285,7 +285,8 @@
         "audioText": "équateur",
         "options": ["équateur", "acteur", "auteur", "docteur"],
         "correctIndex": 0,
-        "explanation": "équateur /e.kwa.tœʁ/ — экватор. Похоже звучат, но это другие слова: acteur (актёр), auteur (автор), docteur (врач). Все кончаются на -teur /tœʁ/, но начало разное: éq-wa- ни с чем не спутать."
+        "explanation": "équateur /e.kwa.tœʁ/ — экватор. Похоже звучат, но это другие слова: acteur (актёр), auteur (автор), docteur (врач). Все кончаются на -teur /tœʁ/, но начало разное: éq-wa- ни с чем не спутать.",
+        "audioSrc": "audio/wl-geographie-equateur.mp3"
       },
       {
         "id": "wc-geographie-equateur-mnemo",

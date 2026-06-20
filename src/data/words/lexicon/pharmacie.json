@@ -9,10 +9,22 @@
     "translationsEn": ["tablet", "pill"],
     "semanticCore": "Прессованная таблетка — плотная, которую глотают или растворяют в воде; самое нейтральное слово для «таблетка» в аптеке.",
     "collocations": [
-      { "fr": "un comprimé effervescent", "ru": "шипучая (растворимая) таблетка" },
-      { "fr": "prendre un comprimé", "ru": "принять таблетку" },
-      { "fr": "deux comprimés par jour", "ru": "две таблетки в день" },
-      { "fr": "un comprimé contre la douleur", "ru": "таблетка от боли" }
+      {
+        "fr": "un comprimé effervescent",
+        "ru": "шипучая (растворимая) таблетка"
+      },
+      {
+        "fr": "prendre un comprimé",
+        "ru": "принять таблетку"
+      },
+      {
+        "fr": "deux comprimés par jour",
+        "ru": "две таблетки в день"
+      },
+      {
+        "fr": "un comprimé contre la douleur",
+        "ru": "таблетка от боли"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["pharmacie", "medicament"],
-    "caseIds": ["wc-pharmacie"]
+    "caseIds": ["wc-pharmacie"],
+    "audio": {
+      "isolated": "audio/wl-pharmacie-comprime.mp3"
+    }
   },
   {
     "id": "wl-pharmacie-pansement",
@@ -39,10 +54,22 @@
     "translationsEn": ["bandage", "dressing"],
     "semanticCore": "То, чем закрывают и защищают ранку: и маленький пластырь на палец, и повязка на рану.",
     "collocations": [
-      { "fr": "mettre un pansement", "ru": "наложить пластырь (повязку)" },
-      { "fr": "un pansement adhésif", "ru": "лейкопластырь (клейкий)" },
-      { "fr": "changer le pansement", "ru": "поменять повязку" },
-      { "fr": "une boîte de pansements", "ru": "коробка пластырей" }
+      {
+        "fr": "mettre un pansement",
+        "ru": "наложить пластырь (повязку)"
+      },
+      {
+        "fr": "un pansement adhésif",
+        "ru": "лейкопластырь (клейкий)"
+      },
+      {
+        "fr": "changer le pansement",
+        "ru": "поменять повязку"
+      },
+      {
+        "fr": "une boîte de pansements",
+        "ru": "коробка пластырей"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["pharmacie", "soin"],
-    "caseIds": ["wc-pharmacie"]
+    "caseIds": ["wc-pharmacie"],
+    "audio": {
+      "isolated": "audio/wl-pharmacie-pansement.mp3"
+    }
   },
   {
     "id": "wl-pharmacie-sirop",
@@ -69,10 +99,22 @@
     "translationsEn": ["syrup"],
     "semanticCore": "Густая сладкая жидкость: в аптеке — лекарство (например, от кашля), в кафе — концентрат, который разбавляют водой.",
     "collocations": [
-      { "fr": "un sirop contre la toux", "ru": "сироп от кашля" },
-      { "fr": "une cuillère de sirop", "ru": "ложка сиропа" },
-      { "fr": "un sirop de menthe", "ru": "мятный сироп (напиток)" },
-      { "fr": "un sirop pour la gorge", "ru": "сироп для горла" }
+      {
+        "fr": "un sirop contre la toux",
+        "ru": "сироп от кашля"
+      },
+      {
+        "fr": "une cuillère de sirop",
+        "ru": "ложка сиропа"
+      },
+      {
+        "fr": "un sirop de menthe",
+        "ru": "мятный сироп (напиток)"
+      },
+      {
+        "fr": "un sirop pour la gorge",
+        "ru": "сироп для горла"
+      }
     ],
     "contrastPairs": [
       {
@@ -87,7 +129,10 @@
     "frequencyRank": 740,
     "level": "A2",
     "tags": ["pharmacie", "medicament"],
-    "caseIds": ["wc-pharmacie"]
+    "caseIds": ["wc-pharmacie"],
+    "audio": {
+      "isolated": "audio/wl-pharmacie-sirop.mp3"
+    }
   },
   {
     "id": "wl-pharmacie-pilule",
@@ -99,10 +144,22 @@
     "translationsEn": ["pill"],
     "semanticCore": "Маленькая таблетка; с артиклем «la pilule» во французском по умолчанию значит противозачаточную таблетку.",
     "collocations": [
-      { "fr": "prendre la pilule", "ru": "принимать противозачаточные (таблетки)" },
-      { "fr": "une pilule contre le mal de mer", "ru": "таблетка от морской болезни" },
-      { "fr": "avaler une pilule", "ru": "проглотить пилюлю" },
-      { "fr": "oublier sa pilule", "ru": "забыть выпить таблетку" }
+      {
+        "fr": "prendre la pilule",
+        "ru": "принимать противозачаточные (таблетки)"
+      },
+      {
+        "fr": "une pilule contre le mal de mer",
+        "ru": "таблетка от морской болезни"
+      },
+      {
+        "fr": "avaler une pilule",
+        "ru": "проглотить пилюлю"
+      },
+      {
+        "fr": "oublier sa pilule",
+        "ru": "забыть выпить таблетку"
+      }
     ],
     "contrastPairs": [
       {
@@ -117,7 +174,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["pharmacie", "medicament"],
-    "caseIds": ["wc-pharmacie"]
+    "caseIds": ["wc-pharmacie"],
+    "audio": {
+      "isolated": "audio/wl-pharmacie-pilule.mp3"
+    }
   },
   {
     "id": "wl-pharmacie-piqure",
@@ -129,10 +189,22 @@
     "translationsEn": ["injection", "shot"],
     "semanticCore": "Прокол кожи: и медицинский укол (инъекция), и укус комара или пчелы.",
     "collocations": [
-      { "fr": "faire une piqûre", "ru": "сделать укол" },
-      { "fr": "une piqûre de moustique", "ru": "укус комара" },
-      { "fr": "avoir peur des piqûres", "ru": "бояться уколов" },
-      { "fr": "une piqûre de rappel", "ru": "повторный укол (ревакцинация)" }
+      {
+        "fr": "faire une piqûre",
+        "ru": "сделать укол"
+      },
+      {
+        "fr": "une piqûre de moustique",
+        "ru": "укус комара"
+      },
+      {
+        "fr": "avoir peur des piqûres",
+        "ru": "бояться уколов"
+      },
+      {
+        "fr": "une piqûre de rappel",
+        "ru": "повторный укол (ревакцинация)"
+      }
     ],
     "contrastPairs": [
       {
@@ -147,7 +219,10 @@
     "frequencyRank": 680,
     "level": "A2",
     "tags": ["pharmacie", "soin"],
-    "caseIds": ["wc-pharmacie"]
+    "caseIds": ["wc-pharmacie"],
+    "audio": {
+      "isolated": "audio/wl-pharmacie-piqure.mp3"
+    }
   },
   {
     "id": "wl-pharmacie-pommade",
@@ -159,10 +234,22 @@
     "translationsEn": ["ointment", "salve"],
     "semanticCore": "Густое жирное лекарство, которое намазывают на кожу — на ранку, ожог или больное место.",
     "collocations": [
-      { "fr": "mettre de la pommade", "ru": "намазать мазью" },
-      { "fr": "une pommade pour les brûlures", "ru": "мазь от ожогов" },
-      { "fr": "appliquer la pommade", "ru": "наносить мазь" },
-      { "fr": "un tube de pommade", "ru": "тюбик мази" }
+      {
+        "fr": "mettre de la pommade",
+        "ru": "намазать мазью"
+      },
+      {
+        "fr": "une pommade pour les brûlures",
+        "ru": "мазь от ожогов"
+      },
+      {
+        "fr": "appliquer la pommade",
+        "ru": "наносить мазь"
+      },
+      {
+        "fr": "un tube de pommade",
+        "ru": "тюбик мази"
+      }
     ],
     "contrastPairs": [
       {
@@ -177,7 +264,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["pharmacie", "soin"],
-    "caseIds": ["wc-pharmacie"]
+    "caseIds": ["wc-pharmacie"],
+    "audio": {
+      "isolated": "audio/wl-pharmacie-pommade.mp3"
+    }
   },
   {
     "id": "wl-pharmacie-gelule",
@@ -189,10 +279,22 @@
     "translationsEn": ["capsule"],
     "semanticCore": "Капсула из желатина с порошком или гранулами внутри; её глотают целиком.",
     "collocations": [
-      { "fr": "prendre une gélule", "ru": "принять капсулу" },
-      { "fr": "une gélule de vitamines", "ru": "капсула витаминов" },
-      { "fr": "deux gélules par jour", "ru": "две капсулы в день" },
-      { "fr": "ouvrir la gélule", "ru": "вскрыть капсулу" }
+      {
+        "fr": "prendre une gélule",
+        "ru": "принять капсулу"
+      },
+      {
+        "fr": "une gélule de vitamines",
+        "ru": "капсула витаминов"
+      },
+      {
+        "fr": "deux gélules par jour",
+        "ru": "две капсулы в день"
+      },
+      {
+        "fr": "ouvrir la gélule",
+        "ru": "вскрыть капсулу"
+      }
     ],
     "contrastPairs": [
       {
@@ -207,7 +309,10 @@
     "frequencyRank": 860,
     "level": "A2",
     "tags": ["pharmacie", "medicament"],
-    "caseIds": ["wc-pharmacie"]
+    "caseIds": ["wc-pharmacie"],
+    "audio": {
+      "isolated": "audio/wl-pharmacie-gelule.mp3"
+    }
   },
   {
     "id": "wl-pharmacie-pharmacien",
@@ -220,9 +325,18 @@
     "translationsEn": ["pharmacist", "chemist"],
     "semanticCore": "Человек за стойкой в аптеке: выдаёт лекарства по рецепту и советует, что взять при лёгком недомогании.",
     "collocations": [
-      { "fr": "demander au pharmacien", "ru": "спросить у фармацевта" },
-      { "fr": "le pharmacien de garde", "ru": "дежурный фармацевт" },
-      { "fr": "le conseil du pharmacien", "ru": "совет фармацевта" }
+      {
+        "fr": "demander au pharmacien",
+        "ru": "спросить у фармацевта"
+      },
+      {
+        "fr": "le pharmacien de garde",
+        "ru": "дежурный фармацевт"
+      },
+      {
+        "fr": "le conseil du pharmacien",
+        "ru": "совет фармацевта"
+      }
     ],
     "contrastPairs": [
       {
@@ -237,6 +351,9 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["pharmacie", "metier"],
-    "caseIds": ["wc-pharmacie"]
+    "caseIds": ["wc-pharmacie"],
+    "audio": {
+      "isolated": "audio/wl-pharmacie-pharmacien.mp3"
+    }
   }
 ]

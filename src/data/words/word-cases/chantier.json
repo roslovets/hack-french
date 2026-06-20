@@ -109,7 +109,8 @@
         "audioText": "grue",
         "options": ["grue", "rue", "roue", "crue"],
         "correctIndex": 0,
-        "explanation": "Прозвучало grue /ɡʁy/ — подъёмный кран. Похожие, но другие слова: rue (улица), roue (колесо), crue (паводок). Слушай начало слова."
+        "explanation": "Прозвучало grue /ɡʁy/ — подъёмный кран. Похожие, но другие слова: rue (улица), roue (колесо), crue (паводок). Слушай начало слова.",
+        "audioSrc": "audio/wl-chantier-grue.mp3"
       },
       {
         "id": "wc-chantier-ciment-bridge",
@@ -162,7 +163,8 @@
         "audioText": "brique",
         "options": ["brique", "fabrique", "Afrique", "trique"],
         "correctIndex": 0,
-        "explanation": "Прозвучало brique /bʁik/ — кирпич. Похожие по звучанию слова: fabrique (фабрика), Afrique (Африка), trique (дубина). У всех общий конец -ique, но начало разное."
+        "explanation": "Прозвучало brique /bʁik/ — кирпич. Похожие по звучанию слова: fabrique (фабрика), Afrique (Африка), trique (дубина). У всех общий конец -ique, но начало разное.",
+        "audioSrc": "audio/wl-chantier-brique.mp3"
       },
       {
         "id": "wc-chantier-echafaudage-ctx",
@@ -221,7 +223,8 @@
         "audioText": "pelle",
         "options": ["pelle", "belle", "selle", "balle"],
         "correctIndex": 0,
-        "explanation": "Прозвучало pelle /pɛl/ — лопата. Похожие слова: belle (красивая), selle (седло), balle (мяч). Все короткие и созвучные — лови первый согласный."
+        "explanation": "Прозвучало pelle /pɛl/ — лопата. Похожие слова: belle (красивая), selle (седло), balle (мяч). Все короткие и созвучные — лови первый согласный.",
+        "audioSrc": "audio/wl-chantier-pelle.mp3"
       },
       {
         "id": "wc-chantier-truelle-ctx",

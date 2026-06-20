@@ -37,7 +37,8 @@
         "audioText": "ballet",
         "options": ["ballet", "ballon", "billet", "valet"],
         "correctIndex": 0,
-        "explanation": "Прозвучало ballet /ba.lɛ/ — балет. Похожие, но другие слова: ballon /ba.lɔ̃/ — мяч, billet /bi.jɛ/ — билет, valet /va.lɛ/ — слуга (и валет в картах)."
+        "explanation": "Прозвучало ballet /ba.lɛ/ — балет. Похожие, но другие слова: ballon /ba.lɔ̃/ — мяч, billet /bi.jɛ/ — билет, valet /va.lɛ/ — слуга (и валет в картах).",
+        "audioSrc": "audio/wl-danse-ballet.mp3"
       },
       {
         "id": "wc-danse-valse-ctx",
@@ -65,7 +66,8 @@
         "audioText": "valse",
         "options": ["valse", "vase", "valise", "vache"],
         "correctIndex": 0,
-        "explanation": "Прозвучало valse /vals/ — вальс. Похожие, но другие слова: vase /vaz/ — ваза, valise /va.liz/ — чемодан, vache /vaʃ/ — корова."
+        "explanation": "Прозвучало valse /vals/ — вальс. Похожие, но другие слова: vase /vaz/ — ваза, valise /va.liz/ — чемодан, vache /vaʃ/ — корова.",
+        "audioSrc": "audio/wl-danse-valse.mp3"
       },
       {
         "id": "wc-danse-tango-bridge",

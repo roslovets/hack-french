@@ -9,9 +9,18 @@
     "translationsEn": ["bell pepper", "sweet pepper"],
     "semanticCore": "Крупный сладкий овощ-перец (красный, жёлтый, зелёный), который режут в салат или фаршируют, — НЕ острый и НЕ молотый.",
     "collocations": [
-      { "fr": "un poivron rouge", "ru": "красный сладкий перец" },
-      { "fr": "des poivrons farcis", "ru": "фаршированный перец" },
-      { "fr": "couper un poivron en lanières", "ru": "нарезать перец полосками" }
+      {
+        "fr": "un poivron rouge",
+        "ru": "красный сладкий перец"
+      },
+      {
+        "fr": "des poivrons farcis",
+        "ru": "фаршированный перец"
+      },
+      {
+        "fr": "couper un poivron en lanières",
+        "ru": "нарезать перец полосками"
+      }
     ],
     "contrastPairs": [
       {
@@ -26,7 +35,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["legumes2", "cuisine"],
-    "caseIds": ["wc-legumes2"]
+    "caseIds": ["wc-legumes2"],
+    "audio": {
+      "isolated": "audio/wl-legumes2-poivron.mp3"
+    }
   },
   {
     "id": "wl-legumes2-aubergine",
@@ -38,9 +50,18 @@
     "translationsEn": ["aubergine", "eggplant"],
     "semanticCore": "Длинный фиолетовый овощ, который жарят или запекают (рататуй, мусака); также название фиолетового цвета.",
     "collocations": [
-      { "fr": "une aubergine grillée", "ru": "жареный баклажан" },
-      { "fr": "un gratin d'aubergines", "ru": "запеканка из баклажанов" },
-      { "fr": "une couleur aubergine", "ru": "баклажановый цвет" }
+      {
+        "fr": "une aubergine grillée",
+        "ru": "жареный баклажан"
+      },
+      {
+        "fr": "un gratin d'aubergines",
+        "ru": "запеканка из баклажанов"
+      },
+      {
+        "fr": "une couleur aubergine",
+        "ru": "баклажановый цвет"
+      }
     ],
     "contrastPairs": [
       {
@@ -55,7 +76,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["legumes2", "cuisine"],
-    "caseIds": ["wc-legumes2"]
+    "caseIds": ["wc-legumes2"],
+    "audio": {
+      "isolated": "audio/wl-legumes2-aubergine.mp3"
+    }
   },
   {
     "id": "wl-legumes2-poireau",
@@ -67,9 +91,18 @@
     "translationsEn": ["leek"],
     "semanticCore": "Длинный бело-зелёный овощ-лук, который варят в супе или делают из него соус; во множественном — poireaux.",
     "collocations": [
-      { "fr": "une soupe de poireaux", "ru": "суп из лука-порея" },
-      { "fr": "une tarte aux poireaux", "ru": "пирог с пореем" },
-      { "fr": "faire le poireau", "ru": "торчать в ожидании, ждать как столб" }
+      {
+        "fr": "une soupe de poireaux",
+        "ru": "суп из лука-порея"
+      },
+      {
+        "fr": "une tarte aux poireaux",
+        "ru": "пирог с пореем"
+      },
+      {
+        "fr": "faire le poireau",
+        "ru": "торчать в ожидании, ждать как столб"
+      }
     ],
     "contrastPairs": [
       {
@@ -84,7 +117,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["legumes2", "cuisine"],
-    "caseIds": ["wc-legumes2"]
+    "caseIds": ["wc-legumes2"],
+    "audio": {
+      "isolated": "audio/wl-legumes2-poireau.mp3"
+    }
   },
   {
     "id": "wl-legumes2-epinard",
@@ -96,8 +132,14 @@
     "translationsEn": ["spinach"],
     "semanticCore": "Зелёные листья, которые тушат или кладут в салат; чаще всего во множественном — des épinards.",
     "collocations": [
-      { "fr": "des épinards à la crème", "ru": "шпинат со сливками" },
-      { "fr": "manger des épinards", "ru": "есть шпинат" },
+      {
+        "fr": "des épinards à la crème",
+        "ru": "шпинат со сливками"
+      },
+      {
+        "fr": "manger des épinards",
+        "ru": "есть шпинат"
+      },
       {
         "fr": "mettre du beurre dans les épinards",
         "ru": "улучшить своё материальное положение (досл. «масло в шпинат»)"
@@ -116,7 +158,10 @@
     "frequencyRank": 800,
     "level": "A2",
     "tags": ["legumes2", "cuisine"],
-    "caseIds": ["wc-legumes2"]
+    "caseIds": ["wc-legumes2"],
+    "audio": {
+      "isolated": "audio/wl-legumes2-epinard.mp3"
+    }
   },
   {
     "id": "wl-legumes2-radis",
@@ -128,9 +173,18 @@
     "translationsEn": ["radish"],
     "semanticCore": "Маленький красный острый корнеплод, который едят сырым с солью; форма не меняется во множественном (un radis → des radis).",
     "collocations": [
-      { "fr": "une botte de radis", "ru": "пучок редиса" },
-      { "fr": "des radis au beurre", "ru": "редис с маслом (закуска)" },
-      { "fr": "ne pas avoir un radis", "ru": "быть без гроша" }
+      {
+        "fr": "une botte de radis",
+        "ru": "пучок редиса"
+      },
+      {
+        "fr": "des radis au beurre",
+        "ru": "редис с маслом (закуска)"
+      },
+      {
+        "fr": "ne pas avoir un radis",
+        "ru": "быть без гроша"
+      }
     ],
     "contrastPairs": [
       {
@@ -145,7 +199,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["legumes2", "cuisine"],
-    "caseIds": ["wc-legumes2"]
+    "caseIds": ["wc-legumes2"],
+    "audio": {
+      "isolated": "audio/wl-legumes2-radis.mp3"
+    }
   },
   {
     "id": "wl-legumes2-navet",
@@ -157,9 +214,18 @@
     "translationsEn": ["turnip"],
     "semanticCore": "Круглый бело-фиолетовый корнеплод, который варят в супе или рагу; в разговоре — ещё и «плохой, провальный фильм».",
     "collocations": [
-      { "fr": "un navet dans le pot-au-feu", "ru": "репа в мясном рагу" },
-      { "fr": "de la purée de navets", "ru": "пюре из репы" },
-      { "fr": "ce film est un navet", "ru": "этот фильм — полный провал" }
+      {
+        "fr": "un navet dans le pot-au-feu",
+        "ru": "репа в мясном рагу"
+      },
+      {
+        "fr": "de la purée de navets",
+        "ru": "пюре из репы"
+      },
+      {
+        "fr": "ce film est un navet",
+        "ru": "этот фильм — полный провал"
+      }
     ],
     "contrastPairs": [
       {
@@ -174,7 +240,10 @@
     "frequencyRank": 840,
     "level": "A2",
     "tags": ["legumes2", "cuisine"],
-    "caseIds": ["wc-legumes2"]
+    "caseIds": ["wc-legumes2"],
+    "audio": {
+      "isolated": "audio/wl-legumes2-navet.mp3"
+    }
   },
   {
     "id": "wl-legumes2-betterave",
@@ -186,9 +255,18 @@
     "translationsEn": ["beetroot", "beet"],
     "semanticCore": "Тёмно-красный сладковатый корнеплод, который варят и кладут в салат; пачкает руки ярко-красным.",
     "collocations": [
-      { "fr": "une salade de betteraves", "ru": "салат из свёклы" },
-      { "fr": "de la betterave rouge", "ru": "красная свёкла" },
-      { "fr": "rouge comme une betterave", "ru": "красный как рак (от стыда)" }
+      {
+        "fr": "une salade de betteraves",
+        "ru": "салат из свёклы"
+      },
+      {
+        "fr": "de la betterave rouge",
+        "ru": "красная свёкла"
+      },
+      {
+        "fr": "rouge comme une betterave",
+        "ru": "красный как рак (от стыда)"
+      }
     ],
     "contrastPairs": [
       {
@@ -203,7 +281,10 @@
     "frequencyRank": 860,
     "level": "A2",
     "tags": ["legumes2", "cuisine"],
-    "caseIds": ["wc-legumes2"]
+    "caseIds": ["wc-legumes2"],
+    "audio": {
+      "isolated": "audio/wl-legumes2-betterave.mp3"
+    }
   },
   {
     "id": "wl-legumes2-artichaut",
@@ -215,9 +296,18 @@
     "translationsEn": ["artichoke"],
     "semanticCore": "Зелёный овощ-«шишка» из плотных листьев, которые отрывают и обмакивают в соус; съедобна и серединка — «сердце».",
     "collocations": [
-      { "fr": "un cœur d'artichaut", "ru": "сердцевина артишока" },
-      { "fr": "manger un artichaut à la vinaigrette", "ru": "есть артишок с заправкой" },
-      { "fr": "avoir un cœur d'artichaut", "ru": "быть влюбчивым, легко влюбляться" }
+      {
+        "fr": "un cœur d'artichaut",
+        "ru": "сердцевина артишока"
+      },
+      {
+        "fr": "manger un artichaut à la vinaigrette",
+        "ru": "есть артишок с заправкой"
+      },
+      {
+        "fr": "avoir un cœur d'artichaut",
+        "ru": "быть влюбчивым, легко влюбляться"
+      }
     ],
     "contrastPairs": [
       {
@@ -232,6 +322,9 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["legumes2", "cuisine"],
-    "caseIds": ["wc-legumes2"]
+    "caseIds": ["wc-legumes2"],
+    "audio": {
+      "isolated": "audio/wl-legumes2-artichaut.mp3"
+    }
   }
 ]

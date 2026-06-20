@@ -42,7 +42,8 @@
         "audioText": "macaron",
         "options": ["macaron", "marron", "macaroni", "maçon"],
         "correctIndex": 0,
-        "explanation": "Прозвучало macaron /ma.ka.ʁɔ̃/ — пирожное. Похожие, но другие слова: marron /ma.ʁɔ̃/ (каштан), macaroni (паста), maçon /ma.sɔ̃/ (каменщик)."
+        "explanation": "Прозвучало macaron /ma.ka.ʁɔ̃/ — пирожное. Похожие, но другие слова: marron /ma.ʁɔ̃/ (каштан), macaroni (паста), maçon /ma.sɔ̃/ (каменщик).",
+        "audioSrc": "audio/wl-desserts-macaron.mp3"
       },
       {
         "id": "wc-desserts-mousse-ctx",
@@ -160,7 +161,8 @@
         "audioText": "beignet",
         "options": ["beignet", "poignet", "saignant", "peignait"],
         "correctIndex": 0,
-        "explanation": "Прозвучало beignet /bɛ.ɲɛ/ — пончик. Похожие слова с тем же звуком /ɲ/: poignet /pwa.ɲɛ/ (запястье), saignant /sɛ.ɲɑ̃/ (с кровью, о мясе), peignait /pɛ.ɲɛ/ (он причёсывал / рисовал)."
+        "explanation": "Прозвучало beignet /bɛ.ɲɛ/ — пончик. Похожие слова с тем же звуком /ɲ/: poignet /pwa.ɲɛ/ (запястье), saignant /sɛ.ɲɑ̃/ (с кровью, о мясе), peignait /pɛ.ɲɛ/ (он причёсывал / рисовал).",
+        "audioSrc": "audio/wl-desserts-beignet.mp3"
       },
       {
         "id": "wc-desserts-profiterole-ctx",

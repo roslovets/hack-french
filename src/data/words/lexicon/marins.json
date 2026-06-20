@@ -9,9 +9,18 @@
     "translationsEn": ["dolphin"],
     "semanticCore": "Дельфин — умное морское млекопитающее, которое выпрыгивает из воды; не рыба.",
     "collocations": [
-      { "fr": "nager avec les dauphins", "ru": "плавать с дельфинами" },
-      { "fr": "un banc de dauphins", "ru": "стая дельфинов" },
-      { "fr": "le dauphin saute hors de l'eau", "ru": "дельфин выпрыгивает из воды" }
+      {
+        "fr": "nager avec les dauphins",
+        "ru": "плавать с дельфинами"
+      },
+      {
+        "fr": "un banc de dauphins",
+        "ru": "стая дельфинов"
+      },
+      {
+        "fr": "le dauphin saute hors de l'eau",
+        "ru": "дельфин выпрыгивает из воды"
+      }
     ],
     "contrastPairs": [
       {
@@ -26,7 +35,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["marins", "mammifère"],
-    "caseIds": ["wc-marins"]
+    "caseIds": ["wc-marins"],
+    "audio": {
+      "isolated": "audio/wl-marins-dauphin.mp3"
+    }
   },
   {
     "id": "wl-marins-baleine",
@@ -38,9 +50,18 @@
     "translationsEn": ["whale"],
     "semanticCore": "Кит — самое крупное морское млекопитающее; дышит воздухом, выпускает фонтан.",
     "collocations": [
-      { "fr": "une baleine bleue", "ru": "синий кит" },
-      { "fr": "la chasse à la baleine", "ru": "китобойный промысел" },
-      { "fr": "la baleine est un mammifère", "ru": "кит — млекопитающее" }
+      {
+        "fr": "une baleine bleue",
+        "ru": "синий кит"
+      },
+      {
+        "fr": "la chasse à la baleine",
+        "ru": "китобойный промысел"
+      },
+      {
+        "fr": "la baleine est un mammifère",
+        "ru": "кит — млекопитающее"
+      }
     ],
     "contrastPairs": [
       {
@@ -55,7 +76,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["marins", "mammifère"],
-    "caseIds": ["wc-marins"]
+    "caseIds": ["wc-marins"],
+    "audio": {
+      "isolated": "audio/wl-marins-baleine.mp3"
+    }
   },
   {
     "id": "wl-marins-requin",
@@ -67,9 +91,18 @@
     "translationsEn": ["shark"],
     "semanticCore": "Акула — хищная рыба с острыми зубами; переносно — безжалостный делец.",
     "collocations": [
-      { "fr": "un requin blanc", "ru": "белая акула" },
-      { "fr": "une attaque de requin", "ru": "нападение акулы" },
-      { "fr": "un requin de la finance", "ru": "финансовый хищник («акула» бизнеса)" }
+      {
+        "fr": "un requin blanc",
+        "ru": "белая акула"
+      },
+      {
+        "fr": "une attaque de requin",
+        "ru": "нападение акулы"
+      },
+      {
+        "fr": "un requin de la finance",
+        "ru": "финансовый хищник («акула» бизнеса)"
+      }
     ],
     "contrastPairs": [
       {
@@ -84,7 +117,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["marins", "poisson"],
-    "caseIds": ["wc-marins"]
+    "caseIds": ["wc-marins"],
+    "audio": {
+      "isolated": "audio/wl-marins-requin.mp3"
+    }
   },
   {
     "id": "wl-marins-meduse",
@@ -96,9 +132,18 @@
     "translationsEn": ["jellyfish"],
     "semanticCore": "Медуза — прозрачное студенистое морское существо, которое жжётся.",
     "collocations": [
-      { "fr": "se faire piquer par une méduse", "ru": "обжечься о медузу" },
-      { "fr": "un banc de méduses", "ru": "скопление медуз" },
-      { "fr": "la piqûre de méduse", "ru": "ожог медузы" }
+      {
+        "fr": "se faire piquer par une méduse",
+        "ru": "обжечься о медузу"
+      },
+      {
+        "fr": "un banc de méduses",
+        "ru": "скопление медуз"
+      },
+      {
+        "fr": "la piqûre de méduse",
+        "ru": "ожог медузы"
+      }
     ],
     "contrastPairs": [
       {
@@ -113,7 +158,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["marins", "invertébré"],
-    "caseIds": ["wc-marins"]
+    "caseIds": ["wc-marins"],
+    "audio": {
+      "isolated": "audio/wl-marins-meduse.mp3"
+    }
   },
   {
     "id": "wl-marins-pieuvre",
@@ -125,9 +173,18 @@
     "translationsEn": ["octopus"],
     "semanticCore": "Осьминог — морское существо с восемью щупальцами-«руками»; синоним poulpe.",
     "collocations": [
-      { "fr": "les tentacules de la pieuvre", "ru": "щупальца осьминога" },
-      { "fr": "une pieuvre géante", "ru": "гигантский осьминог" },
-      { "fr": "la pieuvre change de couleur", "ru": "осьминог меняет цвет" }
+      {
+        "fr": "les tentacules de la pieuvre",
+        "ru": "щупальца осьминога"
+      },
+      {
+        "fr": "une pieuvre géante",
+        "ru": "гигантский осьминог"
+      },
+      {
+        "fr": "la pieuvre change de couleur",
+        "ru": "осьминог меняет цвет"
+      }
     ],
     "contrastPairs": [
       {
@@ -142,7 +199,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["marins", "invertébré"],
-    "caseIds": ["wc-marins"]
+    "caseIds": ["wc-marins"],
+    "audio": {
+      "isolated": "audio/wl-marins-pieuvre.mp3"
+    }
   },
   {
     "id": "wl-marins-phoque",
@@ -154,9 +214,18 @@
     "translationsEn": ["seal"],
     "semanticCore": "Тюлень — морское млекопитающее с ластами, лежит на льдинах и берегу.",
     "collocations": [
-      { "fr": "un bébé phoque", "ru": "детёныш тюленя (белёк)" },
-      { "fr": "un phoque sur la banquise", "ru": "тюлень на льдине" },
-      { "fr": "le phoque moine", "ru": "тюлень-монах" }
+      {
+        "fr": "un bébé phoque",
+        "ru": "детёныш тюленя (белёк)"
+      },
+      {
+        "fr": "un phoque sur la banquise",
+        "ru": "тюлень на льдине"
+      },
+      {
+        "fr": "le phoque moine",
+        "ru": "тюлень-монах"
+      }
     ],
     "contrastPairs": [
       {
@@ -171,7 +240,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["marins", "mammifère"],
-    "caseIds": ["wc-marins"]
+    "caseIds": ["wc-marins"],
+    "audio": {
+      "isolated": "audio/wl-marins-phoque.mp3"
+    }
   },
   {
     "id": "wl-marins-tortue",
@@ -183,9 +255,18 @@
     "translationsEn": ["turtle", "tortoise"],
     "semanticCore": "Черепаха — медлительное животное в панцире; по-французски одно слово и для морской, и для сухопутной.",
     "collocations": [
-      { "fr": "une tortue de mer", "ru": "морская черепаха" },
-      { "fr": "lent comme une tortue", "ru": "медленный как черепаха" },
-      { "fr": "la carapace de la tortue", "ru": "панцирь черепахи" }
+      {
+        "fr": "une tortue de mer",
+        "ru": "морская черепаха"
+      },
+      {
+        "fr": "lent comme une tortue",
+        "ru": "медленный как черепаха"
+      },
+      {
+        "fr": "la carapace de la tortue",
+        "ru": "панцирь черепахи"
+      }
     ],
     "contrastPairs": [
       {
@@ -200,7 +281,10 @@
     "frequencyRank": 660,
     "level": "A2",
     "tags": ["marins", "reptile"],
-    "caseIds": ["wc-marins"]
+    "caseIds": ["wc-marins"],
+    "audio": {
+      "isolated": "audio/wl-marins-tortue.mp3"
+    }
   },
   {
     "id": "wl-marins-hippocampe",
@@ -212,9 +296,18 @@
     "translationsEn": ["seahorse"],
     "semanticCore": "Морской конёк — крошечная рыбка с головой как у лошадки; детёнышей вынашивает самец.",
     "collocations": [
-      { "fr": "un hippocampe minuscule", "ru": "крошечный морской конёк" },
-      { "fr": "le mâle hippocampe porte les œufs", "ru": "самец морского конька вынашивает икру" },
-      { "fr": "l'hippocampe s'accroche aux algues", "ru": "морской конёк цепляется за водоросли" }
+      {
+        "fr": "un hippocampe minuscule",
+        "ru": "крошечный морской конёк"
+      },
+      {
+        "fr": "le mâle hippocampe porte les œufs",
+        "ru": "самец морского конька вынашивает икру"
+      },
+      {
+        "fr": "l'hippocampe s'accroche aux algues",
+        "ru": "морской конёк цепляется за водоросли"
+      }
     ],
     "contrastPairs": [
       {
@@ -229,6 +322,9 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["marins", "poisson"],
-    "caseIds": ["wc-marins"]
+    "caseIds": ["wc-marins"],
+    "audio": {
+      "isolated": "audio/wl-marins-hippocampe.mp3"
+    }
   }
 ]

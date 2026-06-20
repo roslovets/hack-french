@@ -35,7 +35,10 @@
     "frequencyRank": 720,
     "level": "B1",
     "tags": ["geographie", "lieux"],
-    "caseIds": ["wc-geographie"]
+    "caseIds": ["wc-geographie"],
+    "audio": {
+      "isolated": "audio/wl-geographie-capitale.mp3"
+    }
   },
   {
     "id": "wl-geographie-frontiere",
@@ -77,7 +80,10 @@
     "frequencyRank": 760,
     "level": "B1",
     "tags": ["geographie", "territoire"],
-    "caseIds": ["wc-geographie"]
+    "caseIds": ["wc-geographie"],
+    "audio": {
+      "isolated": "audio/wl-geographie-frontiere.mp3"
+    }
   },
   {
     "id": "wl-geographie-continent",
@@ -115,7 +121,10 @@
     "frequencyRank": 820,
     "level": "B1",
     "tags": ["geographie", "terre"],
-    "caseIds": ["wc-geographie"]
+    "caseIds": ["wc-geographie"],
+    "audio": {
+      "isolated": "audio/wl-geographie-continent.mp3"
+    }
   },
   {
     "id": "wl-geographie-ocean",
@@ -149,7 +158,10 @@
     "frequencyRank": 690,
     "level": "B1",
     "tags": ["geographie", "eau"],
-    "caseIds": ["wc-geographie"]
+    "caseIds": ["wc-geographie"],
+    "audio": {
+      "isolated": "audio/wl-geographie-ocean.mp3"
+    }
   },
   {
     "id": "wl-geographie-fleuve",
@@ -187,7 +199,10 @@
     "frequencyRank": 740,
     "level": "B1",
     "tags": ["geographie", "eau"],
-    "caseIds": ["wc-geographie"]
+    "caseIds": ["wc-geographie"],
+    "audio": {
+      "isolated": "audio/wl-geographie-fleuve.mp3"
+    }
   },
   {
     "id": "wl-geographie-region",
@@ -225,7 +240,10 @@
     "frequencyRank": 480,
     "level": "B1",
     "tags": ["geographie", "territoire"],
-    "caseIds": ["wc-geographie"]
+    "caseIds": ["wc-geographie"],
+    "audio": {
+      "isolated": "audio/wl-geographie-region.mp3"
+    }
   },
   {
     "id": "wl-geographie-territoire",
@@ -263,7 +281,10 @@
     "frequencyRank": 700,
     "level": "B1",
     "tags": ["geographie", "territoire"],
-    "caseIds": ["wc-geographie"]
+    "caseIds": ["wc-geographie"],
+    "audio": {
+      "isolated": "audio/wl-geographie-territoire.mp3"
+    }
   },
   {
     "id": "wl-geographie-equateur",
@@ -301,6 +322,9 @@
     "frequencyRank": 880,
     "level": "B1",
     "tags": ["geographie", "terre"],
-    "caseIds": ["wc-geographie"]
+    "caseIds": ["wc-geographie"],
+    "audio": {
+      "isolated": "audio/wl-geographie-equateur.mp3"
+    }
   }
 ]

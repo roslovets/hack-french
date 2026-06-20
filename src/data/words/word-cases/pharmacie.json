@@ -159,7 +159,8 @@
         "audioText": "pilule",
         "options": ["pilule", "cellule", "libellule", "bascule"],
         "correctIndex": 0,
-        "explanation": "Все оканчиваются на /-yl/, но различаются началом: pilule /pi.lyl/ (таблетка), cellule /se.lyl/ (клетка), libellule /li.be.lyl/ (стрекоза), bascule /bas.kyl/ (качели). Это не омофоны — слушай начало слова."
+        "explanation": "Все оканчиваются на /-yl/, но различаются началом: pilule /pi.lyl/ (таблетка), cellule /se.lyl/ (клетка), libellule /li.be.lyl/ (стрекоза), bascule /bas.kyl/ (качели). Это не омофоны — слушай начало слова.",
+        "audioSrc": "audio/wl-pharmacie-pilule.mp3"
       },
       {
         "id": "wc-pharmacie-piqure-ctx",
@@ -220,7 +221,8 @@
         "audioText": "pommade",
         "options": ["pommade", "limonade", "marinade", "grenade"],
         "correctIndex": 0,
-        "explanation": "Все оканчиваются на /-ad/, но различаются началом: pommade /pɔ.mad/ (мазь), limonade /li.mɔ.nad/ (лимонад), marinade /ma.ʁi.nad/ (маринад), grenade /ɡʁə.nad/ (гранат/граната). Слушай начало — это не омофоны."
+        "explanation": "Все оканчиваются на /-ad/, но различаются началом: pommade /pɔ.mad/ (мазь), limonade /li.mɔ.nad/ (лимонад), marinade /ma.ʁi.nad/ (маринад), grenade /ɡʁə.nad/ (гранат/граната). Слушай начало — это не омофоны.",
+        "audioSrc": "audio/wl-pharmacie-pommade.mp3"
       },
       {
         "id": "wc-pharmacie-gelule-bridge",

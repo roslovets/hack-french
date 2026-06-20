@@ -41,7 +41,8 @@
         "audioText": "doux",
         "options": ["doute", "douze", "douche", "doux"],
         "correctIndex": 3,
-        "explanation": "Прозвучало doux /du/ — мягкий. Похожи по началу, но это другие слова: doute /dut/ — сомнение, douze /duz/ — двенадцать, douche /duʃ/ — душ. У doux на конце нет согласного звука — слушай «голый» гласный /du/."
+        "explanation": "Прозвучало doux /du/ — мягкий. Похожи по началу, но это другие слова: doute /dut/ — сомнение, douze /duz/ — двенадцать, douche /duʃ/ — душ. У doux на конце нет согласного звука — слушай «голый» гласный /du/.",
+        "audioSrc": "audio/wl-textures-doux.mp3"
       },
       {
         "id": "wc-textures-rugueux-ctx",
@@ -176,7 +177,8 @@
         "audioText": "mou",
         "options": ["mousse", "moule", "mouche", "mou"],
         "correctIndex": 3,
-        "explanation": "Прозвучало mou /mu/ — мягкий. Похожи по началу, но это другие слова: mousse /mus/ — пена/мох, moule /mul/ — мидия/форма, mouche /muʃ/ — муха. У mou нет согласного на конце — слушай чистый гласный /mu/."
+        "explanation": "Прозвучало mou /mu/ — мягкий. Похожи по началу, но это другие слова: mousse /mus/ — пена/мох, moule /mul/ — мидия/форма, mouche /muʃ/ — муха. У mou нет согласного на конце — слушай чистый гласный /mu/.",
+        "audioSrc": "audio/wl-textures-mou.mp3"
       },
       {
         "id": "wc-textures-mou-mnemo",

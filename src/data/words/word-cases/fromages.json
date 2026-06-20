@@ -125,7 +125,8 @@
         "audioText": "roquefort",
         "options": ["roquefort", "réconfort", "confort", "effort"],
         "correctIndex": 0,
-        "explanation": "Прозвучало roquefort /ʁɔk.fɔʁ/ — сыр. Похоже оканчиваются réconfort (утешение), confort (комфорт), effort (усилие), но начало roque- выдаёт нужное слово."
+        "explanation": "Прозвучало roquefort /ʁɔk.fɔʁ/ — сыр. Похоже оканчиваются réconfort (утешение), confort (комфорт), effort (усилие), но начало roque- выдаёт нужное слово.",
+        "audioSrc": "audio/wl-fromages-roquefort.mp3"
       },
       {
         "id": "wc-fromages-gruyere-ctx",

@@ -9,9 +9,18 @@
     "translationsEn": ["macaron"],
     "semanticCore": "Маленькое круглое миндальное пирожное из двух половинок безе с кремовой начинкой между ними.",
     "collocations": [
-      { "fr": "un macaron à la framboise", "ru": "макарон с малиной" },
-      { "fr": "une boîte de macarons", "ru": "коробка макаронов" },
-      { "fr": "des macarons colorés", "ru": "разноцветные макароны" }
+      {
+        "fr": "un macaron à la framboise",
+        "ru": "макарон с малиной"
+      },
+      {
+        "fr": "une boîte de macarons",
+        "ru": "коробка макаронов"
+      },
+      {
+        "fr": "des macarons colorés",
+        "ru": "разноцветные макароны"
+      }
     ],
     "contrastPairs": [
       {
@@ -26,7 +35,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["desserts", "patisserie"],
-    "caseIds": ["wc-desserts"]
+    "caseIds": ["wc-desserts"],
+    "audio": {
+      "isolated": "audio/wl-desserts-macaron.mp3"
+    }
   },
   {
     "id": "wl-desserts-mousse",
@@ -38,9 +50,18 @@
     "translationsEn": ["mousse"],
     "semanticCore": "Воздушный взбитый десерт, чаще всего шоколадный; то же слово значит и пену.",
     "collocations": [
-      { "fr": "une mousse au chocolat", "ru": "шоколадный мусс" },
-      { "fr": "une mousse légère", "ru": "лёгкий мусс" },
-      { "fr": "préparer une mousse", "ru": "приготовить мусс" }
+      {
+        "fr": "une mousse au chocolat",
+        "ru": "шоколадный мусс"
+      },
+      {
+        "fr": "une mousse légère",
+        "ru": "лёгкий мусс"
+      },
+      {
+        "fr": "préparer une mousse",
+        "ru": "приготовить мусс"
+      }
     ],
     "contrastPairs": [
       {
@@ -55,7 +76,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["desserts", "patisserie"],
-    "caseIds": ["wc-desserts"]
+    "caseIds": ["wc-desserts"],
+    "audio": {
+      "isolated": "audio/wl-desserts-mousse.mp3"
+    }
   },
   {
     "id": "wl-desserts-crepe",
@@ -67,9 +91,18 @@
     "translationsEn": ["crepe", "pancake"],
     "semanticCore": "Тонкий французский блинчик из пшеничной муки, чаще сладкий (с сахаром, шоколадом, вареньем).",
     "collocations": [
-      { "fr": "une crêpe au sucre", "ru": "блинчик с сахаром" },
-      { "fr": "une crêpe au Nutella", "ru": "блинчик с «Нутеллой»" },
-      { "fr": "faire des crêpes", "ru": "печь блинчики" }
+      {
+        "fr": "une crêpe au sucre",
+        "ru": "блинчик с сахаром"
+      },
+      {
+        "fr": "une crêpe au Nutella",
+        "ru": "блинчик с «Нутеллой»"
+      },
+      {
+        "fr": "faire des crêpes",
+        "ru": "печь блинчики"
+      }
     ],
     "contrastPairs": [
       {
@@ -84,7 +117,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["desserts", "patisserie"],
-    "caseIds": ["wc-desserts"]
+    "caseIds": ["wc-desserts"],
+    "audio": {
+      "isolated": "audio/wl-desserts-crepe.mp3"
+    }
   },
   {
     "id": "wl-desserts-beignet",
@@ -96,9 +132,18 @@
     "translationsEn": ["doughnut", "fritter"],
     "semanticCore": "Кусочек теста (иногда с начинкой), обжаренный во фритюре; пончик или фруктовый «в кляре».",
     "collocations": [
-      { "fr": "un beignet aux pommes", "ru": "яблочный пончик (яблоко в тесте)" },
-      { "fr": "des beignets au sucre", "ru": "пончики в сахаре" },
-      { "fr": "un beignet à la confiture", "ru": "пончик с вареньем" }
+      {
+        "fr": "un beignet aux pommes",
+        "ru": "яблочный пончик (яблоко в тесте)"
+      },
+      {
+        "fr": "des beignets au sucre",
+        "ru": "пончики в сахаре"
+      },
+      {
+        "fr": "un beignet à la confiture",
+        "ru": "пончик с вареньем"
+      }
     ],
     "contrastPairs": [
       {
@@ -113,7 +158,10 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["desserts", "patisserie"],
-    "caseIds": ["wc-desserts"]
+    "caseIds": ["wc-desserts"],
+    "audio": {
+      "isolated": "audio/wl-desserts-beignet.mp3"
+    }
   },
   {
     "id": "wl-desserts-profiterole",
@@ -125,9 +173,18 @@
     "translationsEn": ["profiterole"],
     "semanticCore": "Маленький шарик из заварного теста с начинкой; десертные подаются с мороженым и тёплым шоколадом.",
     "collocations": [
-      { "fr": "des profiteroles au chocolat", "ru": "профитроли с шоколадом" },
-      { "fr": "une assiette de profiteroles", "ru": "тарелка профитролей" },
-      { "fr": "des profiteroles à la vanille", "ru": "профитроли с ванилью" }
+      {
+        "fr": "des profiteroles au chocolat",
+        "ru": "профитроли с шоколадом"
+      },
+      {
+        "fr": "une assiette de profiteroles",
+        "ru": "тарелка профитролей"
+      },
+      {
+        "fr": "des profiteroles à la vanille",
+        "ru": "профитроли с ванилью"
+      }
     ],
     "contrastPairs": [
       {
@@ -142,7 +199,10 @@
     "frequencyRank": 1200,
     "level": "A2",
     "tags": ["desserts", "patisserie"],
-    "caseIds": ["wc-desserts"]
+    "caseIds": ["wc-desserts"],
+    "audio": {
+      "isolated": "audio/wl-desserts-profiterole.mp3"
+    }
   },
   {
     "id": "wl-desserts-sorbet",
@@ -154,9 +214,18 @@
     "translationsEn": ["sorbet", "sherbet"],
     "semanticCore": "Замороженный десерт из фруктового пюре и сахара, без молока и сливок (в отличие от мороженого).",
     "collocations": [
-      { "fr": "un sorbet au citron", "ru": "лимонный сорбет" },
-      { "fr": "une boule de sorbet", "ru": "шарик сорбета" },
-      { "fr": "un sorbet à la fraise", "ru": "клубничный сорбет" }
+      {
+        "fr": "un sorbet au citron",
+        "ru": "лимонный сорбет"
+      },
+      {
+        "fr": "une boule de sorbet",
+        "ru": "шарик сорбета"
+      },
+      {
+        "fr": "un sorbet à la fraise",
+        "ru": "клубничный сорбет"
+      }
     ],
     "contrastPairs": [
       {
@@ -171,7 +240,10 @@
     "frequencyRank": 900,
     "level": "A2",
     "tags": ["desserts", "patisserie"],
-    "caseIds": ["wc-desserts"]
+    "caseIds": ["wc-desserts"],
+    "audio": {
+      "isolated": "audio/wl-desserts-sorbet.mp3"
+    }
   },
   {
     "id": "wl-desserts-millefeuille",
@@ -183,9 +255,18 @@
     "translationsEn": ["millefeuille", "Napoleon"],
     "semanticCore": "Пирожное «Наполеон»: слои хрустящего слоёного теста, проложенные заварным кремом.",
     "collocations": [
-      { "fr": "un millefeuille à la vanille", "ru": "мильфёй с ванилью" },
-      { "fr": "une part de millefeuille", "ru": "кусок наполеона" },
-      { "fr": "un millefeuille croustillant", "ru": "хрустящий мильфёй" }
+      {
+        "fr": "un millefeuille à la vanille",
+        "ru": "мильфёй с ванилью"
+      },
+      {
+        "fr": "une part de millefeuille",
+        "ru": "кусок наполеона"
+      },
+      {
+        "fr": "un millefeuille croustillant",
+        "ru": "хрустящий мильфёй"
+      }
     ],
     "contrastPairs": [
       {
@@ -200,7 +281,10 @@
     "frequencyRank": 1300,
     "level": "A2",
     "tags": ["desserts", "patisserie"],
-    "caseIds": ["wc-desserts"]
+    "caseIds": ["wc-desserts"],
+    "audio": {
+      "isolated": "audio/wl-desserts-millefeuille.mp3"
+    }
   },
   {
     "id": "wl-desserts-flan",
@@ -212,9 +296,18 @@
     "translationsEn": ["flan", "custard tart"],
     "semanticCore": "Запечённый десерт из яиц, молока и сахара плотной кремовой текстуры; часто на тонкой основе из теста.",
     "collocations": [
-      { "fr": "un flan pâtissier", "ru": "флан-патисье (заварной флан в тесте)" },
-      { "fr": "une part de flan", "ru": "кусок флана" },
-      { "fr": "un flan à la vanille", "ru": "флан с ванилью" }
+      {
+        "fr": "un flan pâtissier",
+        "ru": "флан-патисье (заварной флан в тесте)"
+      },
+      {
+        "fr": "une part de flan",
+        "ru": "кусок флана"
+      },
+      {
+        "fr": "un flan à la vanille",
+        "ru": "флан с ванилью"
+      }
     ],
     "contrastPairs": [
       {
@@ -229,6 +322,9 @@
     "frequencyRank": 1100,
     "level": "A2",
     "tags": ["desserts", "patisserie"],
-    "caseIds": ["wc-desserts"]
+    "caseIds": ["wc-desserts"],
+    "audio": {
+      "isolated": "audio/wl-desserts-flan.mp3"
+    }
   }
 ]

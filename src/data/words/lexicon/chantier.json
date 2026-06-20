@@ -9,10 +9,22 @@
     "translationsEn": ["construction site", "building site"],
     "semanticCore": "Место, где идёт стройка или большие работы; в разговоре также «бардак, беспорядок» (Quel chantier !).",
     "collocations": [
-      { "fr": "sur le chantier", "ru": "на стройке" },
-      { "fr": "un chantier de construction", "ru": "строительная площадка" },
-      { "fr": "le chef de chantier", "ru": "прораб, начальник стройки" },
-      { "fr": "Quel chantier !", "ru": "Ну и бардак!" }
+      {
+        "fr": "sur le chantier",
+        "ru": "на стройке"
+      },
+      {
+        "fr": "un chantier de construction",
+        "ru": "строительная площадка"
+      },
+      {
+        "fr": "le chef de chantier",
+        "ru": "прораб, начальник стройки"
+      },
+      {
+        "fr": "Quel chantier !",
+        "ru": "Ну и бардак!"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["chantier", "lieu"],
-    "caseIds": ["wc-chantier"]
+    "caseIds": ["wc-chantier"],
+    "audio": {
+      "isolated": "audio/wl-chantier-chantier.mp3"
+    }
   },
   {
     "id": "wl-chantier-ouvrier",
@@ -40,9 +55,18 @@
     "translationsEn": ["worker", "laborer"],
     "semanticCore": "Человек физического труда — на стройке, заводе или в мастерской; именно «рабочий», а не служащий за столом.",
     "collocations": [
-      { "fr": "un ouvrier du bâtiment", "ru": "строительный рабочий" },
-      { "fr": "un ouvrier qualifié", "ru": "квалифицированный рабочий" },
-      { "fr": "les ouvriers travaillent sur le chantier", "ru": "рабочие трудятся на стройке" }
+      {
+        "fr": "un ouvrier du bâtiment",
+        "ru": "строительный рабочий"
+      },
+      {
+        "fr": "un ouvrier qualifié",
+        "ru": "квалифицированный рабочий"
+      },
+      {
+        "fr": "les ouvriers travaillent sur le chantier",
+        "ru": "рабочие трудятся на стройке"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +81,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["chantier", "metier"],
-    "caseIds": ["wc-chantier"]
+    "caseIds": ["wc-chantier"],
+    "audio": {
+      "isolated": "audio/wl-chantier-ouvrier.mp3"
+    }
   },
   {
     "id": "wl-chantier-grue",
@@ -69,9 +96,18 @@
     "translationsEn": ["crane"],
     "semanticCore": "Подъёмный кран на стройке; то же слово — птица журавль (как и англ. crane).",
     "collocations": [
-      { "fr": "une grue de chantier", "ru": "строительный (башенный) кран" },
-      { "fr": "la grue soulève les charges", "ru": "кран поднимает грузы" },
-      { "fr": "le conducteur de grue", "ru": "крановщик" }
+      {
+        "fr": "une grue de chantier",
+        "ru": "строительный (башенный) кран"
+      },
+      {
+        "fr": "la grue soulève les charges",
+        "ru": "кран поднимает грузы"
+      },
+      {
+        "fr": "le conducteur de grue",
+        "ru": "крановщик"
+      }
     ],
     "contrastPairs": [
       {
@@ -86,7 +122,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["chantier", "machine"],
-    "caseIds": ["wc-chantier"]
+    "caseIds": ["wc-chantier"],
+    "audio": {
+      "isolated": "audio/wl-chantier-grue.mp3"
+    }
   },
   {
     "id": "wl-chantier-ciment",
@@ -98,9 +137,18 @@
     "translationsEn": ["cement"],
     "semanticCore": "Серый порошок, который смешивают с водой и песком, чтобы он схватился и скрепил кладку.",
     "collocations": [
-      { "fr": "un sac de ciment", "ru": "мешок цемента" },
-      { "fr": "mélanger le ciment", "ru": "замешивать цемент" },
-      { "fr": "un sol en ciment", "ru": "цементный пол" }
+      {
+        "fr": "un sac de ciment",
+        "ru": "мешок цемента"
+      },
+      {
+        "fr": "mélanger le ciment",
+        "ru": "замешивать цемент"
+      },
+      {
+        "fr": "un sol en ciment",
+        "ru": "цементный пол"
+      }
     ],
     "contrastPairs": [
       {
@@ -115,7 +163,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["chantier", "materiau"],
-    "caseIds": ["wc-chantier"]
+    "caseIds": ["wc-chantier"],
+    "audio": {
+      "isolated": "audio/wl-chantier-ciment.mp3"
+    }
   },
   {
     "id": "wl-chantier-brique",
@@ -127,9 +178,18 @@
     "translationsEn": ["brick"],
     "semanticCore": "Прямоугольный обожжённый блок из глины, из которого кладут стены.",
     "collocations": [
-      { "fr": "un mur en briques", "ru": "кирпичная стена" },
-      { "fr": "poser des briques", "ru": "класть кирпичи" },
-      { "fr": "une brique rouge", "ru": "красный кирпич" }
+      {
+        "fr": "un mur en briques",
+        "ru": "кирпичная стена"
+      },
+      {
+        "fr": "poser des briques",
+        "ru": "класть кирпичи"
+      },
+      {
+        "fr": "une brique rouge",
+        "ru": "красный кирпич"
+      }
     ],
     "contrastPairs": [
       {
@@ -144,7 +204,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["chantier", "materiau"],
-    "caseIds": ["wc-chantier"]
+    "caseIds": ["wc-chantier"],
+    "audio": {
+      "isolated": "audio/wl-chantier-brique.mp3"
+    }
   },
   {
     "id": "wl-chantier-echafaudage",
@@ -156,9 +219,18 @@
     "translationsEn": ["scaffolding"],
     "semanticCore": "Временная металлическая конструкция вокруг здания, по которой рабочие поднимаются и работают на высоте.",
     "collocations": [
-      { "fr": "monter un échafaudage", "ru": "собирать (ставить) леса" },
-      { "fr": "monter sur l'échafaudage", "ru": "подниматься на леса" },
-      { "fr": "un échafaudage métallique", "ru": "металлические леса" }
+      {
+        "fr": "monter un échafaudage",
+        "ru": "собирать (ставить) леса"
+      },
+      {
+        "fr": "monter sur l'échafaudage",
+        "ru": "подниматься на леса"
+      },
+      {
+        "fr": "un échafaudage métallique",
+        "ru": "металлические леса"
+      }
     ],
     "contrastPairs": [
       {
@@ -173,7 +245,10 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["chantier", "structure"],
-    "caseIds": ["wc-chantier"]
+    "caseIds": ["wc-chantier"],
+    "audio": {
+      "isolated": "audio/wl-chantier-echafaudage.mp3"
+    }
   },
   {
     "id": "wl-chantier-pelle",
@@ -185,9 +260,18 @@
     "translationsEn": ["shovel", "spade"],
     "semanticCore": "Инструмент с широким плоским полотном на черенке: ею копают и набирают (землю, песок, снег).",
     "collocations": [
-      { "fr": "creuser avec une pelle", "ru": "копать лопатой" },
-      { "fr": "un coup de pelle", "ru": "удар (взмах) лопатой" },
-      { "fr": "une pelle et une pioche", "ru": "лопата и кирка" }
+      {
+        "fr": "creuser avec une pelle",
+        "ru": "копать лопатой"
+      },
+      {
+        "fr": "un coup de pelle",
+        "ru": "удар (взмах) лопатой"
+      },
+      {
+        "fr": "une pelle et une pioche",
+        "ru": "лопата и кирка"
+      }
     ],
     "contrastPairs": [
       {
@@ -202,7 +286,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["chantier", "outil"],
-    "caseIds": ["wc-chantier"]
+    "caseIds": ["wc-chantier"],
+    "audio": {
+      "isolated": "audio/wl-chantier-pelle.mp3"
+    }
   },
   {
     "id": "wl-chantier-truelle",
@@ -214,9 +301,18 @@
     "translationsEn": ["trowel"],
     "semanticCore": "Маленький ручной инструмент каменщика с плоским треугольным лезвием: им набирают и разравнивают раствор.",
     "collocations": [
-      { "fr": "étaler le ciment à la truelle", "ru": "наносить раствор мастерком" },
-      { "fr": "la truelle du maçon", "ru": "мастерок каменщика" },
-      { "fr": "une truelle de plâtrier", "ru": "мастерок штукатура" }
+      {
+        "fr": "étaler le ciment à la truelle",
+        "ru": "наносить раствор мастерком"
+      },
+      {
+        "fr": "la truelle du maçon",
+        "ru": "мастерок каменщика"
+      },
+      {
+        "fr": "une truelle de plâtrier",
+        "ru": "мастерок штукатура"
+      }
     ],
     "contrastPairs": [
       {
@@ -231,6 +327,9 @@
     "frequencyRank": 920,
     "level": "A2",
     "tags": ["chantier", "outil"],
-    "caseIds": ["wc-chantier"]
+    "caseIds": ["wc-chantier"],
+    "audio": {
+      "isolated": "audio/wl-chantier-truelle.mp3"
+    }
   }
 ]

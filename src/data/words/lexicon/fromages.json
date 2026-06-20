@@ -9,9 +9,18 @@
     "translationsEn": ["camembert"],
     "semanticCore": "Мягкий нормандский сыр с белой плесневой корочкой, который продаётся в круглой деревянной коробочке.",
     "collocations": [
-      { "fr": "un camembert au lait cru", "ru": "камамбер из сырого молока" },
-      { "fr": "une boîte de camembert", "ru": "коробочка камамбера" },
-      { "fr": "un camembert bien coulant", "ru": "хорошо растёкшийся (спелый) камамбер" }
+      {
+        "fr": "un camembert au lait cru",
+        "ru": "камамбер из сырого молока"
+      },
+      {
+        "fr": "une boîte de camembert",
+        "ru": "коробочка камамбера"
+      },
+      {
+        "fr": "un camembert bien coulant",
+        "ru": "хорошо растёкшийся (спелый) камамбер"
+      }
     ],
     "contrastPairs": [
       {
@@ -22,7 +31,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["fromages", "aliment"],
-    "caseIds": ["wc-fromages"]
+    "caseIds": ["wc-fromages"],
+    "audio": {
+      "isolated": "audio/wl-fromages-camembert.mp3"
+    }
   },
   {
     "id": "wl-fromages-brie",
@@ -34,9 +46,18 @@
     "translationsEn": ["brie"],
     "semanticCore": "Большой мягкий сыр с белой корочкой родом из региона Бри под Парижем; продаётся треугольными ломтями.",
     "collocations": [
-      { "fr": "une part de brie", "ru": "ломтик бри" },
-      { "fr": "du brie de Meaux", "ru": "бри из Мо" },
-      { "fr": "un brie crémeux", "ru": "кремовый (мягкий) бри" }
+      {
+        "fr": "une part de brie",
+        "ru": "ломтик бри"
+      },
+      {
+        "fr": "du brie de Meaux",
+        "ru": "бри из Мо"
+      },
+      {
+        "fr": "un brie crémeux",
+        "ru": "кремовый (мягкий) бри"
+      }
     ],
     "contrastPairs": [
       {
@@ -47,7 +68,10 @@
     "frequencyRank": 740,
     "level": "A2",
     "tags": ["fromages", "aliment"],
-    "caseIds": ["wc-fromages"]
+    "caseIds": ["wc-fromages"],
+    "audio": {
+      "isolated": "audio/wl-fromages-brie.mp3"
+    }
   },
   {
     "id": "wl-fromages-roquefort",
@@ -59,9 +83,18 @@
     "translationsEn": ["roquefort"],
     "semanticCore": "Солёный овечий сыр с голубой плесенью и резким вкусом; один из самых известных «голубых» сыров.",
     "collocations": [
-      { "fr": "une sauce au roquefort", "ru": "соус с рокфором" },
-      { "fr": "un roquefort bien fort", "ru": "очень острый (резкий) рокфор" },
-      { "fr": "du roquefort persillé", "ru": "рокфор с прожилками плесени" }
+      {
+        "fr": "une sauce au roquefort",
+        "ru": "соус с рокфором"
+      },
+      {
+        "fr": "un roquefort bien fort",
+        "ru": "очень острый (резкий) рокфор"
+      },
+      {
+        "fr": "du roquefort persillé",
+        "ru": "рокфор с прожилками плесени"
+      }
     ],
     "contrastPairs": [
       {
@@ -72,7 +105,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["fromages", "aliment"],
-    "caseIds": ["wc-fromages"]
+    "caseIds": ["wc-fromages"],
+    "audio": {
+      "isolated": "audio/wl-fromages-roquefort.mp3"
+    }
   },
   {
     "id": "wl-fromages-gruyere",
@@ -84,9 +120,18 @@
     "translationsEn": ["gruyere"],
     "semanticCore": "Твёрдый выдержанный сыр, который трут в супы и в гратены; во Франции так часто называют любой тёртый твёрдый сыр.",
     "collocations": [
-      { "fr": "du gruyère râpé", "ru": "тёртый грюйер" },
-      { "fr": "gratiner au gruyère", "ru": "запечь под грюйером (под корочкой)" },
-      { "fr": "saupoudrer de gruyère", "ru": "посыпать грюйером" }
+      {
+        "fr": "du gruyère râpé",
+        "ru": "тёртый грюйер"
+      },
+      {
+        "fr": "gratiner au gruyère",
+        "ru": "запечь под грюйером (под корочкой)"
+      },
+      {
+        "fr": "saupoudrer de gruyère",
+        "ru": "посыпать грюйером"
+      }
     ],
     "contrastPairs": [
       {
@@ -97,7 +142,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["fromages", "aliment"],
-    "caseIds": ["wc-fromages"]
+    "caseIds": ["wc-fromages"],
+    "audio": {
+      "isolated": "audio/wl-fromages-gruyere.mp3"
+    }
   },
   {
     "id": "wl-fromages-croute",
@@ -109,9 +157,18 @@
     "translationsEn": ["rind", "crust"],
     "semanticCore": "Твёрдый или плесневый внешний слой сыра; то же слово — про корку хлеба и про корочку на запечённом блюде.",
     "collocations": [
-      { "fr": "la croûte du fromage", "ru": "сырная корка" },
-      { "fr": "enlever la croûte", "ru": "срезать корку" },
-      { "fr": "une croûte de pain", "ru": "хлебная корка" }
+      {
+        "fr": "la croûte du fromage",
+        "ru": "сырная корка"
+      },
+      {
+        "fr": "enlever la croûte",
+        "ru": "срезать корку"
+      },
+      {
+        "fr": "une croûte de pain",
+        "ru": "хлебная корка"
+      }
     ],
     "contrastPairs": [
       {
@@ -126,7 +183,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["fromages", "texture"],
-    "caseIds": ["wc-fromages"]
+    "caseIds": ["wc-fromages"],
+    "audio": {
+      "isolated": "audio/wl-fromages-croute.mp3"
+    }
   },
   {
     "id": "wl-fromages-pate",
@@ -138,9 +198,18 @@
     "translationsEn": ["paste", "dough"],
     "semanticCore": "Мягкая внутренняя масса сыра под коркой; то же слово — про тесто и любую тестообразную массу.",
     "collocations": [
-      { "fr": "un fromage à pâte molle", "ru": "мягкий сыр (с мягкой мякотью)" },
-      { "fr": "un fromage à pâte dure", "ru": "твёрдый сыр (с твёрдой мякотью)" },
-      { "fr": "une pâte à tarte", "ru": "тесто для пирога" }
+      {
+        "fr": "un fromage à pâte molle",
+        "ru": "мягкий сыр (с мягкой мякотью)"
+      },
+      {
+        "fr": "un fromage à pâte dure",
+        "ru": "твёрдый сыр (с твёрдой мякотью)"
+      },
+      {
+        "fr": "une pâte à tarte",
+        "ru": "тесто для пирога"
+      }
     ],
     "contrastPairs": [
       {
@@ -155,7 +224,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["fromages", "texture"],
-    "caseIds": ["wc-fromages"]
+    "caseIds": ["wc-fromages"],
+    "audio": {
+      "isolated": "audio/wl-fromages-pate.mp3"
+    }
   },
   {
     "id": "wl-fromages-fromager",
@@ -167,9 +239,18 @@
     "translationsEn": ["cheesemonger", "cheesemaker"],
     "semanticCore": "Человек, который делает или продаёт сыр; то же слово — про лавку, где торгуют сыром.",
     "collocations": [
-      { "fr": "acheter chez le fromager", "ru": "покупать у сыродела (в сырной лавке)" },
-      { "fr": "le fromager du marché", "ru": "сыродел на рынке" },
-      { "fr": "demander conseil au fromager", "ru": "спросить совета у сыродела" }
+      {
+        "fr": "acheter chez le fromager",
+        "ru": "покупать у сыродела (в сырной лавке)"
+      },
+      {
+        "fr": "le fromager du marché",
+        "ru": "сыродел на рынке"
+      },
+      {
+        "fr": "demander conseil au fromager",
+        "ru": "спросить совета у сыродела"
+      }
     ],
     "contrastPairs": [
       {
@@ -184,7 +265,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["fromages", "metier"],
-    "caseIds": ["wc-fromages"]
+    "caseIds": ["wc-fromages"],
+    "audio": {
+      "isolated": "audio/wl-fromages-fromager.mp3"
+    }
   },
   {
     "id": "wl-fromages-fondue",
@@ -196,9 +280,18 @@
     "translationsEn": ["fondue"],
     "semanticCore": "Блюдо из расплавленного сыра в общей кастрюльке, в который макают кусочки хлеба на длинной вилке.",
     "collocations": [
-      { "fr": "une fondue savoyarde", "ru": "савойское сырное фондю" },
-      { "fr": "faire une fondue", "ru": "приготовить фондю" },
-      { "fr": "tremper le pain dans la fondue", "ru": "макать хлеб в фондю" }
+      {
+        "fr": "une fondue savoyarde",
+        "ru": "савойское сырное фондю"
+      },
+      {
+        "fr": "faire une fondue",
+        "ru": "приготовить фондю"
+      },
+      {
+        "fr": "tremper le pain dans la fondue",
+        "ru": "макать хлеб в фондю"
+      }
     ],
     "contrastPairs": [
       {
@@ -213,6 +306,9 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["fromages", "plat"],
-    "caseIds": ["wc-fromages"]
+    "caseIds": ["wc-fromages"],
+    "audio": {
+      "isolated": "audio/wl-fromages-fondue.mp3"
+    }
   }
 ]

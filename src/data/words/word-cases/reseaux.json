@@ -41,7 +41,8 @@
         "audioText": "réseau",
         "options": ["réseau", "roseau", "ruisseau", "ciseau"],
         "correctIndex": 0,
-        "explanation": "réseau /ʁe.zo/ — сеть. Похоже звучат, но это другие слова: roseau /ʁo.zo/ — тростник, ruisseau /ʁɥi.so/ — ручей, ciseau /si.zo/ — резец (ножницы — des ciseaux)."
+        "explanation": "réseau /ʁe.zo/ — сеть. Похоже звучат, но это другие слова: roseau /ʁo.zo/ — тростник, ruisseau /ʁɥi.so/ — ручей, ciseau /si.zo/ — резец (ножницы — des ciseaux).",
+        "audioSrc": "audio/wl-reseaux-reseau.mp3"
       },
       {
         "id": "wc-reseaux-profil-ctx",
@@ -69,7 +70,8 @@
         "audioText": "profil",
         "options": ["profil", "profit", "profond", "professeur"],
         "correctIndex": 0,
-        "explanation": "profil /pʁɔ.fil/ — профиль; здесь конечное l читается. Не путай: profit /pʁɔ.fi/ — выгода (l немое), profond — глубокий, professeur — преподаватель."
+        "explanation": "profil /pʁɔ.fil/ — профиль; здесь конечное l читается. Не путай: profit /pʁɔ.fi/ — выгода (l немое), profond — глубокий, professeur — преподаватель.",
+        "audioSrc": "audio/wl-reseaux-profil.mp3"
       },
       {
         "id": "wc-reseaux-publier-ctx",

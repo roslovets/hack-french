@@ -39,7 +39,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["reseaux", "numerique"],
-    "caseIds": ["wc-reseaux"]
+    "caseIds": ["wc-reseaux"],
+    "audio": {
+      "isolated": "audio/wl-reseaux-reseau.mp3"
+    }
   },
   {
     "id": "wl-reseaux-profil",
@@ -81,7 +84,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["reseaux", "compte"],
-    "caseIds": ["wc-reseaux"]
+    "caseIds": ["wc-reseaux"],
+    "audio": {
+      "isolated": "audio/wl-reseaux-profil.mp3"
+    }
   },
   {
     "id": "wl-reseaux-publier",
@@ -122,7 +128,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["reseaux", "action"],
-    "caseIds": ["wc-reseaux"]
+    "caseIds": ["wc-reseaux"],
+    "audio": {
+      "isolated": "audio/wl-reseaux-publier.mp3"
+    }
   },
   {
     "id": "wl-reseaux-partager",
@@ -163,7 +172,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["reseaux", "action"],
-    "caseIds": ["wc-reseaux"]
+    "caseIds": ["wc-reseaux"],
+    "audio": {
+      "isolated": "audio/wl-reseaux-partager.mp3"
+    }
   },
   {
     "id": "wl-reseaux-abonne",
@@ -206,7 +218,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["reseaux", "personne"],
-    "caseIds": ["wc-reseaux"]
+    "caseIds": ["wc-reseaux"],
+    "audio": {
+      "isolated": "audio/wl-reseaux-abonne.mp3"
+    }
   },
   {
     "id": "wl-reseaux-story",
@@ -249,7 +264,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["reseaux", "contenu"],
-    "caseIds": ["wc-reseaux"]
+    "caseIds": ["wc-reseaux"],
+    "audio": {
+      "isolated": "audio/wl-reseaux-story.mp3"
+    }
   },
   {
     "id": "wl-reseaux-hashtag",
@@ -291,7 +309,10 @@
     "frequencyRank": 860,
     "level": "A2",
     "tags": ["reseaux", "contenu"],
-    "caseIds": ["wc-reseaux"]
+    "caseIds": ["wc-reseaux"],
+    "audio": {
+      "isolated": "audio/wl-reseaux-hashtag.mp3"
+    }
   },
   {
     "id": "wl-reseaux-notification",
@@ -333,6 +354,9 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["reseaux", "numerique"],
-    "caseIds": ["wc-reseaux"]
+    "caseIds": ["wc-reseaux"],
+    "audio": {
+      "isolated": "audio/wl-reseaux-notification.mp3"
+    }
   }
 ]

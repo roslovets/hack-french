@@ -9,10 +9,22 @@
     "translationsEn": ["spring", "source"],
     "semanticCore": "Место, где вода выходит из-под земли и откуда берёт начало река; также «источник» в переносном смысле.",
     "collocations": [
-      { "fr": "l'eau de source", "ru": "родниковая вода" },
-      { "fr": "la source d'une rivière", "ru": "исток реки" },
-      { "fr": "prendre sa source", "ru": "брать начало (о реке)" },
-      { "fr": "une source d'eau pure", "ru": "источник чистой воды" }
+      {
+        "fr": "l'eau de source",
+        "ru": "родниковая вода"
+      },
+      {
+        "fr": "la source d'une rivière",
+        "ru": "исток реки"
+      },
+      {
+        "fr": "prendre sa source",
+        "ru": "брать начало (о реке)"
+      },
+      {
+        "fr": "une source d'eau pure",
+        "ru": "источник чистой воды"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["rivieres", "eau"],
-    "caseIds": ["wc-rivieres"]
+    "caseIds": ["wc-rivieres"],
+    "audio": {
+      "isolated": "audio/wl-rivieres-source.mp3"
+    }
   },
   {
     "id": "wl-rivieres-ruisseau",
@@ -39,10 +54,22 @@
     "translationsEn": ["brook", "stream"],
     "semanticCore": "Маленький спокойный водоток, меньше реки; журчит в лесу или поле. Множественное число особое: des ruisseaux.",
     "collocations": [
-      { "fr": "un petit ruisseau", "ru": "маленький ручей" },
-      { "fr": "le ruisseau coule", "ru": "ручей течёт" },
-      { "fr": "traverser un ruisseau", "ru": "перейти ручей" },
-      { "fr": "le murmure du ruisseau", "ru": "журчание ручья" }
+      {
+        "fr": "un petit ruisseau",
+        "ru": "маленький ручей"
+      },
+      {
+        "fr": "le ruisseau coule",
+        "ru": "ручей течёт"
+      },
+      {
+        "fr": "traverser un ruisseau",
+        "ru": "перейти ручей"
+      },
+      {
+        "fr": "le murmure du ruisseau",
+        "ru": "журчание ручья"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["rivieres", "eau"],
-    "caseIds": ["wc-rivieres"]
+    "caseIds": ["wc-rivieres"],
+    "audio": {
+      "isolated": "audio/wl-rivieres-ruisseau.mp3"
+    }
   },
   {
     "id": "wl-rivieres-cascade",
@@ -69,10 +99,22 @@
     "translationsEn": ["waterfall", "cascade"],
     "semanticCore": "Падение воды с уступа; также «каскад» как череда чего-либо и трюк в кино.",
     "collocations": [
-      { "fr": "une belle cascade", "ru": "красивый водопад" },
-      { "fr": "une cascade d'eau", "ru": "поток падающей воды" },
-      { "fr": "le bruit de la cascade", "ru": "шум водопада" },
-      { "fr": "se baigner sous la cascade", "ru": "купаться под водопадом" }
+      {
+        "fr": "une belle cascade",
+        "ru": "красивый водопад"
+      },
+      {
+        "fr": "une cascade d'eau",
+        "ru": "поток падающей воды"
+      },
+      {
+        "fr": "le bruit de la cascade",
+        "ru": "шум водопада"
+      },
+      {
+        "fr": "se baigner sous la cascade",
+        "ru": "купаться под водопадом"
+      }
     ],
     "contrastPairs": [
       {
@@ -87,7 +129,10 @@
     "frequencyRank": 690,
     "level": "A2",
     "tags": ["rivieres", "eau"],
-    "caseIds": ["wc-rivieres"]
+    "caseIds": ["wc-rivieres"],
+    "audio": {
+      "isolated": "audio/wl-rivieres-cascade.mp3"
+    }
   },
   {
     "id": "wl-rivieres-etang",
@@ -99,10 +144,22 @@
     "translationsEn": ["pond"],
     "semanticCore": "Небольшой стоячий водоём со спокойной водой; в нём водится рыба, по краям — камыш. Финальные согласные -ng немые, гласная носовая: /e.tɑ̃/.",
     "collocations": [
-      { "fr": "au bord de l'étang", "ru": "на берегу пруда" },
-      { "fr": "un étang poissonneux", "ru": "пруд, богатый рыбой" },
-      { "fr": "pêcher dans l'étang", "ru": "ловить рыбу в пруду" },
-      { "fr": "un étang gelé", "ru": "замёрзший пруд" }
+      {
+        "fr": "au bord de l'étang",
+        "ru": "на берегу пруда"
+      },
+      {
+        "fr": "un étang poissonneux",
+        "ru": "пруд, богатый рыбой"
+      },
+      {
+        "fr": "pêcher dans l'étang",
+        "ru": "ловить рыбу в пруду"
+      },
+      {
+        "fr": "un étang gelé",
+        "ru": "замёрзший пруд"
+      }
     ],
     "contrastPairs": [
       {
@@ -117,7 +174,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["rivieres", "eau"],
-    "caseIds": ["wc-rivieres"]
+    "caseIds": ["wc-rivieres"],
+    "audio": {
+      "isolated": "audio/wl-rivieres-etang.mp3"
+    }
   },
   {
     "id": "wl-rivieres-marais",
@@ -129,10 +189,22 @@
     "translationsEn": ["marsh", "swamp"],
     "semanticCore": "Низкая, насыщенная водой земля с грязью и тростником; не открытый водоём, а заболоченная местность. Конечная s немая: /ma.ʁɛ/.",
     "collocations": [
-      { "fr": "un marais salant", "ru": "солончак (для добычи соли)" },
-      { "fr": "les oiseaux du marais", "ru": "болотные птицы" },
-      { "fr": "s'enfoncer dans le marais", "ru": "увязнуть в болоте" },
-      { "fr": "un marais asséché", "ru": "осушенное болото" }
+      {
+        "fr": "un marais salant",
+        "ru": "солончак (для добычи соли)"
+      },
+      {
+        "fr": "les oiseaux du marais",
+        "ru": "болотные птицы"
+      },
+      {
+        "fr": "s'enfoncer dans le marais",
+        "ru": "увязнуть в болоте"
+      },
+      {
+        "fr": "un marais asséché",
+        "ru": "осушенное болото"
+      }
     ],
     "contrastPairs": [
       {
@@ -147,7 +219,10 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["rivieres", "eau"],
-    "caseIds": ["wc-rivieres"]
+    "caseIds": ["wc-rivieres"],
+    "audio": {
+      "isolated": "audio/wl-rivieres-marais.mp3"
+    }
   },
   {
     "id": "wl-rivieres-rive",
@@ -159,10 +234,22 @@
     "translationsEn": ["bank", "riverside"],
     "semanticCore": "Берег реки или озера как сторона: левая или правая; в Париже — la rive gauche / la rive droite.",
     "collocations": [
-      { "fr": "la rive gauche", "ru": "левый берег" },
-      { "fr": "la rive droite", "ru": "правый берег" },
-      { "fr": "sur l'autre rive", "ru": "на другом берегу" },
-      { "fr": "habiter rive gauche", "ru": "жить на левом берегу" }
+      {
+        "fr": "la rive gauche",
+        "ru": "левый берег"
+      },
+      {
+        "fr": "la rive droite",
+        "ru": "правый берег"
+      },
+      {
+        "fr": "sur l'autre rive",
+        "ru": "на другом берегу"
+      },
+      {
+        "fr": "habiter rive gauche",
+        "ru": "жить на левом берегу"
+      }
     ],
     "contrastPairs": [
       {
@@ -177,7 +264,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["rivieres", "geographie"],
-    "caseIds": ["wc-rivieres"]
+    "caseIds": ["wc-rivieres"],
+    "audio": {
+      "isolated": "audio/wl-rivieres-rive.mp3"
+    }
   },
   {
     "id": "wl-rivieres-torrent",
@@ -189,10 +279,22 @@
     "translationsEn": ["torrent", "mountain stream"],
     "semanticCore": "Быстрый бурный поток, обычно в горах; стремителен после дождя или таяния снега.",
     "collocations": [
-      { "fr": "un torrent de montagne", "ru": "горный поток" },
-      { "fr": "un torrent impétueux", "ru": "бурный поток" },
-      { "fr": "le torrent gronde", "ru": "поток ревёт" },
-      { "fr": "il pleut à torrents", "ru": "льёт как из ведра" }
+      {
+        "fr": "un torrent de montagne",
+        "ru": "горный поток"
+      },
+      {
+        "fr": "un torrent impétueux",
+        "ru": "бурный поток"
+      },
+      {
+        "fr": "le torrent gronde",
+        "ru": "поток ревёт"
+      },
+      {
+        "fr": "il pleut à torrents",
+        "ru": "льёт как из ведра"
+      }
     ],
     "contrastPairs": [
       {
@@ -207,7 +309,10 @@
     "frequencyRank": 850,
     "level": "A2",
     "tags": ["rivieres", "eau"],
-    "caseIds": ["wc-rivieres"]
+    "caseIds": ["wc-rivieres"],
+    "audio": {
+      "isolated": "audio/wl-rivieres-torrent.mp3"
+    }
   },
   {
     "id": "wl-rivieres-berge",
@@ -219,10 +324,22 @@
     "translationsEn": ["bank", "riverbank"],
     "semanticCore": "Край земли у самой воды реки или канала; насыпь, по которой гуляют — например, les berges de la Seine.",
     "collocations": [
-      { "fr": "les berges de la Seine", "ru": "берега Сены" },
-      { "fr": "marcher sur les berges", "ru": "гулять по набережной" },
-      { "fr": "une berge escarpée", "ru": "крутой берег" },
-      { "fr": "aménager les berges", "ru": "обустроить набережную" }
+      {
+        "fr": "les berges de la Seine",
+        "ru": "берега Сены"
+      },
+      {
+        "fr": "marcher sur les berges",
+        "ru": "гулять по набережной"
+      },
+      {
+        "fr": "une berge escarpée",
+        "ru": "крутой берег"
+      },
+      {
+        "fr": "aménager les berges",
+        "ru": "обустроить набережную"
+      }
     ],
     "contrastPairs": [
       {
@@ -237,6 +354,9 @@
     "frequencyRank": 830,
     "level": "A2",
     "tags": ["rivieres", "geographie"],
-    "caseIds": ["wc-rivieres"]
+    "caseIds": ["wc-rivieres"],
+    "audio": {
+      "isolated": "audio/wl-rivieres-berge.mp3"
+    }
   }
 ]

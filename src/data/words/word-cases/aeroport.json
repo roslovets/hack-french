@@ -41,7 +41,8 @@
         "audioText": "vol",
         "options": ["vol", "veau", "voile", "sol"],
         "correctIndex": 0,
-        "explanation": "vol /vɔl/ (рейс; полёт; кража), veau /vo/ (телёнок; телятина), voile /vwal/ (парус; вуаль), sol /sɔl/ (земля, пол). Это разные слова, не омофоны: vol и sol различаются только первым звуком (v / s)."
+        "explanation": "vol /vɔl/ (рейс; полёт; кража), veau /vo/ (телёнок; телятина), voile /vwal/ (парус; вуаль), sol /sɔl/ (земля, пол). Это разные слова, не омофоны: vol и sol различаются только первым звуком (v / s).",
+        "audioSrc": "audio/wl-aeroport-vol.mp3"
       },
       {
         "id": "wc-aeroport-decollage-ctx",

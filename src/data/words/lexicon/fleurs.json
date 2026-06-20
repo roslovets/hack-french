@@ -9,10 +9,22 @@
     "translationsEn": ["rose"],
     "semanticCore": "Роза как цветок — символ любви и красоты; то же слово как прилагательное значит «розовый» (цвет).",
     "collocations": [
-      { "fr": "un bouquet de roses", "ru": "букет роз" },
-      { "fr": "une rose rouge", "ru": "красная роза" },
-      { "fr": "offrir une rose", "ru": "подарить розу" },
-      { "fr": "un rosier", "ru": "розовый куст" }
+      {
+        "fr": "un bouquet de roses",
+        "ru": "букет роз"
+      },
+      {
+        "fr": "une rose rouge",
+        "ru": "красная роза"
+      },
+      {
+        "fr": "offrir une rose",
+        "ru": "подарить розу"
+      },
+      {
+        "fr": "un rosier",
+        "ru": "розовый куст"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["fleurs", "vegetation"],
-    "caseIds": ["wc-fleurs"]
+    "caseIds": ["wc-fleurs"],
+    "audio": {
+      "isolated": "audio/wl-fleurs-rose.mp3"
+    }
   },
   {
     "id": "wl-fleurs-tulipe",
@@ -39,9 +54,18 @@
     "translationsEn": ["tulip"],
     "semanticCore": "Тюльпан — весенний луковичный цветок с гладкими лепестками, символ Голландии.",
     "collocations": [
-      { "fr": "un champ de tulipes", "ru": "поле тюльпанов" },
-      { "fr": "des tulipes rouges", "ru": "красные тюльпаны" },
-      { "fr": "un bouquet de tulipes", "ru": "букет тюльпанов" }
+      {
+        "fr": "un champ de tulipes",
+        "ru": "поле тюльпанов"
+      },
+      {
+        "fr": "des tulipes rouges",
+        "ru": "красные тюльпаны"
+      },
+      {
+        "fr": "un bouquet de tulipes",
+        "ru": "букет тюльпанов"
+      }
     ],
     "contrastPairs": [
       {
@@ -56,7 +80,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["fleurs", "vegetation"],
-    "caseIds": ["wc-fleurs"]
+    "caseIds": ["wc-fleurs"],
+    "audio": {
+      "isolated": "audio/wl-fleurs-tulipe.mp3"
+    }
   },
   {
     "id": "wl-fleurs-marguerite",
@@ -68,9 +95,18 @@
     "translationsEn": ["daisy"],
     "semanticCore": "Ромашка — полевой цветок с белыми лепестками и жёлтой серединкой; на ней «гадают» на любовь.",
     "collocations": [
-      { "fr": "cueillir des marguerites", "ru": "рвать ромашки" },
-      { "fr": "effeuiller la marguerite", "ru": "гадать на ромашке (любит — не любит)" },
-      { "fr": "un champ de marguerites", "ru": "поле ромашек" }
+      {
+        "fr": "cueillir des marguerites",
+        "ru": "рвать ромашки"
+      },
+      {
+        "fr": "effeuiller la marguerite",
+        "ru": "гадать на ромашке (любит — не любит)"
+      },
+      {
+        "fr": "un champ de marguerites",
+        "ru": "поле ромашек"
+      }
     ],
     "contrastPairs": [
       {
@@ -85,7 +121,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["fleurs", "vegetation"],
-    "caseIds": ["wc-fleurs"]
+    "caseIds": ["wc-fleurs"],
+    "audio": {
+      "isolated": "audio/wl-fleurs-marguerite.mp3"
+    }
   },
   {
     "id": "wl-fleurs-petale",
@@ -97,9 +136,18 @@
     "translationsEn": ["petal"],
     "semanticCore": "Лепесток — каждый из цветных листочков венчика цветка; во множественном они осыпаются.",
     "collocations": [
-      { "fr": "des pétales de rose", "ru": "лепестки розы" },
-      { "fr": "les pétales tombent", "ru": "лепестки опадают" },
-      { "fr": "un pétale fané", "ru": "увядший лепесток" }
+      {
+        "fr": "des pétales de rose",
+        "ru": "лепестки розы"
+      },
+      {
+        "fr": "les pétales tombent",
+        "ru": "лепестки опадают"
+      },
+      {
+        "fr": "un pétale fané",
+        "ru": "увядший лепесток"
+      }
     ],
     "contrastPairs": [
       {
@@ -114,7 +162,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["fleurs", "vegetation"],
-    "caseIds": ["wc-fleurs"]
+    "caseIds": ["wc-fleurs"],
+    "audio": {
+      "isolated": "audio/wl-fleurs-petale.mp3"
+    }
   },
   {
     "id": "wl-fleurs-tige",
@@ -126,9 +177,18 @@
     "translationsEn": ["stem", "stalk"],
     "semanticCore": "Стебель — длинная зелёная часть растения, на которой держится цветок.",
     "collocations": [
-      { "fr": "une longue tige", "ru": "длинный стебель" },
-      { "fr": "couper la tige", "ru": "обрезать стебель" },
-      { "fr": "une rose à longue tige", "ru": "роза на длинном стебле" }
+      {
+        "fr": "une longue tige",
+        "ru": "длинный стебель"
+      },
+      {
+        "fr": "couper la tige",
+        "ru": "обрезать стебель"
+      },
+      {
+        "fr": "une rose à longue tige",
+        "ru": "роза на длинном стебле"
+      }
     ],
     "contrastPairs": [
       {
@@ -143,7 +203,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["fleurs", "vegetation"],
-    "caseIds": ["wc-fleurs"]
+    "caseIds": ["wc-fleurs"],
+    "audio": {
+      "isolated": "audio/wl-fleurs-tige.mp3"
+    }
   },
   {
     "id": "wl-fleurs-bouquet",
@@ -155,9 +218,18 @@
     "translationsEn": ["bouquet", "bunch"],
     "semanticCore": "Букет — собранные вместе цветы, которые дарят или ставят в вазу; также «букет» аромата вина.",
     "collocations": [
-      { "fr": "un bouquet de fleurs", "ru": "букет цветов" },
-      { "fr": "offrir un bouquet", "ru": "подарить букет" },
-      { "fr": "un joli bouquet", "ru": "красивый букет" }
+      {
+        "fr": "un bouquet de fleurs",
+        "ru": "букет цветов"
+      },
+      {
+        "fr": "offrir un bouquet",
+        "ru": "подарить букет"
+      },
+      {
+        "fr": "un joli bouquet",
+        "ru": "красивый букет"
+      }
     ],
     "contrastPairs": [
       {
@@ -172,7 +244,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["fleurs", "objet"],
-    "caseIds": ["wc-fleurs"]
+    "caseIds": ["wc-fleurs"],
+    "audio": {
+      "isolated": "audio/wl-fleurs-bouquet.mp3"
+    }
   },
   {
     "id": "wl-fleurs-epine",
@@ -184,9 +259,18 @@
     "translationsEn": ["thorn", "spine"],
     "semanticCore": "Шип — острый вырост на стебле розы или куста; в переносном смысле — то, что причиняет боль.",
     "collocations": [
-      { "fr": "les épines d'une rose", "ru": "шипы розы" },
-      { "fr": "se piquer avec une épine", "ru": "уколоться шипом" },
-      { "fr": "une rose sans épines", "ru": "роза без шипов" }
+      {
+        "fr": "les épines d'une rose",
+        "ru": "шипы розы"
+      },
+      {
+        "fr": "se piquer avec une épine",
+        "ru": "уколоться шипом"
+      },
+      {
+        "fr": "une rose sans épines",
+        "ru": "роза без шипов"
+      }
     ],
     "contrastPairs": [
       {
@@ -201,7 +285,10 @@
     "frequencyRank": 740,
     "level": "A2",
     "tags": ["fleurs", "vegetation"],
-    "caseIds": ["wc-fleurs"]
+    "caseIds": ["wc-fleurs"],
+    "audio": {
+      "isolated": "audio/wl-fleurs-epine.mp3"
+    }
   },
   {
     "id": "wl-fleurs-pollen",
@@ -213,9 +300,18 @@
     "translationsEn": ["pollen"],
     "semanticCore": "Пыльца — жёлтый порошок внутри цветка, который переносят пчёлы и ветер; частая причина аллергии весной.",
     "collocations": [
-      { "fr": "le pollen des fleurs", "ru": "цветочная пыльца" },
-      { "fr": "une allergie au pollen", "ru": "аллергия на пыльцу" },
-      { "fr": "les abeilles butinent le pollen", "ru": "пчёлы собирают пыльцу" }
+      {
+        "fr": "le pollen des fleurs",
+        "ru": "цветочная пыльца"
+      },
+      {
+        "fr": "une allergie au pollen",
+        "ru": "аллергия на пыльцу"
+      },
+      {
+        "fr": "les abeilles butinent le pollen",
+        "ru": "пчёлы собирают пыльцу"
+      }
     ],
     "contrastPairs": [
       {
@@ -230,6 +326,9 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["fleurs", "nature"],
-    "caseIds": ["wc-fleurs"]
+    "caseIds": ["wc-fleurs"],
+    "audio": {
+      "isolated": "audio/wl-fleurs-pollen.mp3"
+    }
   }
 ]

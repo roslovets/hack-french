@@ -9,10 +9,22 @@
     "translationsEn": ["soft", "gentle"],
     "semanticCore": "Приятный на ощупь, слух или вкус: мягкий, нежный, не резкий (о коже, ткани, голосе, погоде); также пресный — l'eau douce.",
     "collocations": [
-      { "fr": "une peau douce", "ru": "мягкая кожа" },
-      { "fr": "doux au toucher", "ru": "мягкий на ощупь" },
-      { "fr": "une voix douce", "ru": "нежный голос" },
-      { "fr": "l'eau douce", "ru": "пресная вода" }
+      {
+        "fr": "une peau douce",
+        "ru": "мягкая кожа"
+      },
+      {
+        "fr": "doux au toucher",
+        "ru": "мягкий на ощупь"
+      },
+      {
+        "fr": "une voix douce",
+        "ru": "нежный голос"
+      },
+      {
+        "fr": "l'eau douce",
+        "ru": "пресная вода"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["textures", "toucher"],
-    "caseIds": ["wc-textures"]
+    "caseIds": ["wc-textures"],
+    "audio": {
+      "isolated": "audio/wl-textures-doux.mp3"
+    }
   },
   {
     "id": "wl-textures-rugueux",
@@ -39,10 +54,22 @@
     "translationsEn": ["rough", "coarse"],
     "semanticCore": "Неровный, грубый на ощупь — с бугорками и шероховатостями (о коже, поверхности, бумаге, коре).",
     "collocations": [
-      { "fr": "une surface rugueuse", "ru": "шершавая поверхность" },
-      { "fr": "une peau rugueuse", "ru": "шершавая кожа" },
-      { "fr": "du papier rugueux", "ru": "шершавая бумага" },
-      { "fr": "une écorce rugueuse", "ru": "шершавая кора" }
+      {
+        "fr": "une surface rugueuse",
+        "ru": "шершавая поверхность"
+      },
+      {
+        "fr": "une peau rugueuse",
+        "ru": "шершавая кожа"
+      },
+      {
+        "fr": "du papier rugueux",
+        "ru": "шершавая бумага"
+      },
+      {
+        "fr": "une écorce rugueuse",
+        "ru": "шершавая кора"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["textures", "toucher"],
-    "caseIds": ["wc-textures"]
+    "caseIds": ["wc-textures"],
+    "audio": {
+      "isolated": "audio/wl-textures-rugueux.mp3"
+    }
   },
   {
     "id": "wl-textures-lisse",
@@ -68,10 +98,22 @@
     "translationsEn": ["smooth", "sleek"],
     "semanticCore": "Гладкий и ровный на ощупь, без бугорков и шероховатостей (о коже, поверхности, волосах, воде).",
     "collocations": [
-      { "fr": "une peau lisse", "ru": "гладкая кожа" },
-      { "fr": "une surface lisse", "ru": "гладкая поверхность" },
-      { "fr": "des cheveux lisses", "ru": "гладкие (прямые) волосы" },
-      { "fr": "une mer lisse", "ru": "гладкое (спокойное) море" }
+      {
+        "fr": "une peau lisse",
+        "ru": "гладкая кожа"
+      },
+      {
+        "fr": "une surface lisse",
+        "ru": "гладкая поверхность"
+      },
+      {
+        "fr": "des cheveux lisses",
+        "ru": "гладкие (прямые) волосы"
+      },
+      {
+        "fr": "une mer lisse",
+        "ru": "гладкое (спокойное) море"
+      }
     ],
     "contrastPairs": [
       {
@@ -86,7 +128,10 @@
     "frequencyRank": 690,
     "level": "A2",
     "tags": ["textures", "toucher"],
-    "caseIds": ["wc-textures"]
+    "caseIds": ["wc-textures"],
+    "audio": {
+      "isolated": "audio/wl-textures-lisse.mp3"
+    }
   },
   {
     "id": "wl-textures-mou",
@@ -98,10 +143,22 @@
     "translationsEn": ["soft", "limp"],
     "semanticCore": "Мягкий в смысле «не твёрдый, поддаётся нажиму, проминается» (о матрасе, хлебе, тесте); о человеке — вялый, безвольный.",
     "collocations": [
-      { "fr": "un matelas mou", "ru": "мягкий матрас" },
-      { "fr": "du pain mou", "ru": "мягкий (несвежий) хлеб" },
-      { "fr": "des jambes molles", "ru": "ватные ноги" },
-      { "fr": "un fromage mou", "ru": "мягкий сыр" }
+      {
+        "fr": "un matelas mou",
+        "ru": "мягкий матрас"
+      },
+      {
+        "fr": "du pain mou",
+        "ru": "мягкий (несвежий) хлеб"
+      },
+      {
+        "fr": "des jambes molles",
+        "ru": "ватные ноги"
+      },
+      {
+        "fr": "un fromage mou",
+        "ru": "мягкий сыр"
+      }
     ],
     "contrastPairs": [
       {
@@ -116,7 +173,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["textures", "consistance"],
-    "caseIds": ["wc-textures"]
+    "caseIds": ["wc-textures"],
+    "audio": {
+      "isolated": "audio/wl-textures-mou.mp3"
+    }
   },
   {
     "id": "wl-textures-piquant",
@@ -128,10 +188,22 @@
     "translationsEn": ["prickly", "spicy"],
     "semanticCore": "Колющий на ощупь (борода, колючка) или жгучий, острый на вкус (соус, перец); образно — острый, задорный.",
     "collocations": [
-      { "fr": "une barbe piquante", "ru": "колючая борода" },
-      { "fr": "une sauce piquante", "ru": "острый соус" },
-      { "fr": "des poils piquants", "ru": "колючие волоски" },
-      { "fr": "un goût piquant", "ru": "острый (жгучий) вкус" }
+      {
+        "fr": "une barbe piquante",
+        "ru": "колючая борода"
+      },
+      {
+        "fr": "une sauce piquante",
+        "ru": "острый соус"
+      },
+      {
+        "fr": "des poils piquants",
+        "ru": "колючие волоски"
+      },
+      {
+        "fr": "un goût piquant",
+        "ru": "острый (жгучий) вкус"
+      }
     ],
     "contrastPairs": [
       {
@@ -146,7 +218,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["textures", "toucher"],
-    "caseIds": ["wc-textures"]
+    "caseIds": ["wc-textures"],
+    "audio": {
+      "isolated": "audio/wl-textures-piquant.mp3"
+    }
   },
   {
     "id": "wl-textures-collant",
@@ -158,10 +233,22 @@
     "translationsEn": ["sticky", "clingy"],
     "semanticCore": "Прилипающий, клейкий на ощупь (руки, поверхность); образно — навязчивый, «прилипчивый» человек. От глагола coller (клеить).",
     "collocations": [
-      { "fr": "des mains collantes", "ru": "липкие руки" },
-      { "fr": "une surface collante", "ru": "липкая поверхность" },
-      { "fr": "du papier collant", "ru": "клейкая лента / скотч" },
-      { "fr": "un enfant collant", "ru": "ребёнок, который всё время липнет" }
+      {
+        "fr": "des mains collantes",
+        "ru": "липкие руки"
+      },
+      {
+        "fr": "une surface collante",
+        "ru": "липкая поверхность"
+      },
+      {
+        "fr": "du papier collant",
+        "ru": "клейкая лента / скотч"
+      },
+      {
+        "fr": "un enfant collant",
+        "ru": "ребёнок, который всё время липнет"
+      }
     ],
     "contrastPairs": [
       {
@@ -176,7 +263,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["textures", "toucher"],
-    "caseIds": ["wc-textures"]
+    "caseIds": ["wc-textures"],
+    "audio": {
+      "isolated": "audio/wl-textures-collant.mp3"
+    }
   },
   {
     "id": "wl-textures-soyeux",
@@ -188,10 +278,22 @@
     "translationsEn": ["silky", "silken"],
     "semanticCore": "Гладкий, нежный и струящийся, как шёлк (о волосах, коже, ткани, шерсти животного). От слова soie — шёлк.",
     "collocations": [
-      { "fr": "des cheveux soyeux", "ru": "шелковистые волосы" },
-      { "fr": "une peau soyeuse", "ru": "шелковистая кожа" },
-      { "fr": "un pelage soyeux", "ru": "шелковистая шерсть" },
-      { "fr": "une texture soyeuse", "ru": "шелковистая текстура" }
+      {
+        "fr": "des cheveux soyeux",
+        "ru": "шелковистые волосы"
+      },
+      {
+        "fr": "une peau soyeuse",
+        "ru": "шелковистая кожа"
+      },
+      {
+        "fr": "un pelage soyeux",
+        "ru": "шелковистая шерсть"
+      },
+      {
+        "fr": "une texture soyeuse",
+        "ru": "шелковистая текстура"
+      }
     ],
     "contrastPairs": [
       {
@@ -206,7 +308,10 @@
     "frequencyRank": 850,
     "level": "A2",
     "tags": ["textures", "toucher"],
-    "caseIds": ["wc-textures"]
+    "caseIds": ["wc-textures"],
+    "audio": {
+      "isolated": "audio/wl-textures-soyeux.mp3"
+    }
   },
   {
     "id": "wl-textures-rapeux",
@@ -218,10 +323,22 @@
     "translationsEn": ["rough", "raspy"],
     "semanticCore": "Грубо-шершавый, царапающий, как тёрка или язык кошки; о голосе — хриплый, сиплый. От слова râpe — тёрка.",
     "collocations": [
-      { "fr": "une langue râpeuse", "ru": "шершавый язык (кошки)" },
-      { "fr": "une surface râpeuse", "ru": "шероховатая поверхность" },
-      { "fr": "une voix râpeuse", "ru": "хриплый голос" },
-      { "fr": "un tissu râpeux", "ru": "грубая (царапающая) ткань" }
+      {
+        "fr": "une langue râpeuse",
+        "ru": "шершавый язык (кошки)"
+      },
+      {
+        "fr": "une surface râpeuse",
+        "ru": "шероховатая поверхность"
+      },
+      {
+        "fr": "une voix râpeuse",
+        "ru": "хриплый голос"
+      },
+      {
+        "fr": "un tissu râpeux",
+        "ru": "грубая (царапающая) ткань"
+      }
     ],
     "contrastPairs": [
       {
@@ -236,6 +353,9 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["textures", "toucher"],
-    "caseIds": ["wc-textures"]
+    "caseIds": ["wc-textures"],
+    "audio": {
+      "isolated": "audio/wl-textures-rapeux.mp3"
+    }
   }
 ]

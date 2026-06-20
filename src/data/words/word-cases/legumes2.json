@@ -188,7 +188,8 @@
         "audioText": "radis",
         "options": ["radis", "tapis", "abri", "habit"],
         "correctIndex": 0,
-        "explanation": "Прозвучало radis /ʁa.di/ — редис. Похоже звучат tapis /ta.pi/ (ковёр), abri /a.bʁi/ (укрытие), habit /a.bi/ (одеяние) — но это другие слова."
+        "explanation": "Прозвучало radis /ʁa.di/ — редис. Похоже звучат tapis /ta.pi/ (ковёр), abri /a.bʁi/ (укрытие), habit /a.bi/ (одеяние) — но это другие слова.",
+        "audioSrc": "audio/wl-legumes2-radis.mp3"
       },
       {
         "id": "wc-legumes2-navet-ctx",

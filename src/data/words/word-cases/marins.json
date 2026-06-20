@@ -137,7 +137,8 @@
         "audioText": "méduse",
         "options": ["amuse", "ruse", "méduse", "abuse"],
         "correctIndex": 2,
-        "explanation": "méduse /me.dyz/ — медуза. Похоже оканчиваются, но это другие слова: amuse /a.myz/ — забавляет, ruse /ʁyz/ — хитрость, abuse /a.byz/ — злоупотребляет. Слушай начало слова."
+        "explanation": "méduse /me.dyz/ — медуза. Похоже оканчиваются, но это другие слова: amuse /a.myz/ — забавляет, ruse /ʁyz/ — хитрость, abuse /a.byz/ — злоупотребляет. Слушай начало слова.",
+        "audioSrc": "audio/wl-marins-meduse.mp3"
       },
       {
         "id": "wc-marins-pieuvre-ctx",
@@ -198,7 +199,8 @@
         "audioText": "phoque",
         "options": ["coque", "choc", "phoque", "bloc"],
         "correctIndex": 2,
-        "explanation": "phoque /fɔk/ — тюлень. Похожие односложные слова: coque /kɔk/ — скорлупа/корпус, choc /ʃɔk/ — удар/шок, bloc /blɔk/ — блок. Различай согласный в начале."
+        "explanation": "phoque /fɔk/ — тюлень. Похожие односложные слова: coque /kɔk/ — скорлупа/корпус, choc /ʃɔk/ — удар/шок, bloc /blɔk/ — блок. Различай согласный в начале.",
+        "audioSrc": "audio/wl-marins-phoque.mp3"
       },
       {
         "id": "wc-marins-phoque-mnemo",

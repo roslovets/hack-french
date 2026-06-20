@@ -73,7 +73,8 @@
         "audioText": "séance",
         "options": ["séance", "science", "silence", "sens"],
         "correctIndex": 0,
-        "explanation": "Прозвучало séance /se.ɑ̃s/ — сеанс. Похожи, но другие слова: science /sjɑ̃s/ (наука), silence /si.lɑ̃s/ (тишина), sens /sɑ̃s/ (смысл / направление)."
+        "explanation": "Прозвучало séance /se.ɑ̃s/ — сеанс. Похожи, но другие слова: science /sjɑ̃s/ (наука), silence /si.lɑ̃s/ (тишина), sens /sɑ̃s/ (смысл / направление).",
+        "audioSrc": "audio/wl-cinema-seance.mp3"
       },
       {
         "id": "wc-cinema-affiche-ctx",
@@ -246,7 +247,8 @@
         "audioText": "spectateur",
         "options": ["spectateur", "spectacle", "spectre", "inspecteur"],
         "correctIndex": 0,
-        "explanation": "Прозвучало spectateur /spɛk.ta.tœʁ/ — зритель. Похожи по корню «spect-», но другие: spectacle /spɛk.takl/ (зрелище, спектакль), spectre /spɛktʁ/ (призрак), inspecteur /ɛ̃.spɛk.tœʁ/ (инспектор)."
+        "explanation": "Прозвучало spectateur /spɛk.ta.tœʁ/ — зритель. Похожи по корню «spect-», но другие: spectacle /spɛk.takl/ (зрелище, спектакль), spectre /spɛktʁ/ (призрак), inspecteur /ɛ̃.spɛk.tœʁ/ (инспектор).",
+        "audioSrc": "audio/wl-cinema-spectateur.mp3"
       },
       {
         "id": "wc-cinema-generique-ctx",

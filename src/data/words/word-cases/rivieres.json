@@ -194,7 +194,8 @@
         "audioText": "rive",
         "options": ["rêve", "rive", "rire", "rue"],
         "correctIndex": 1,
-        "explanation": "rive /ʁiv/ — берег. Похожие: rêve /ʁɛv/ — сон, мечта; rire /ʁiʁ/ — смеяться; rue /ʁy/ — улица. Различает гласный: в rive — /i/."
+        "explanation": "rive /ʁiv/ — берег. Похожие: rêve /ʁɛv/ — сон, мечта; rire /ʁiʁ/ — смеяться; rue /ʁy/ — улица. Различает гласный: в rive — /i/.",
+        "audioSrc": "audio/wl-rivieres-rive.mp3"
       },
       {
         "id": "wc-rivieres-torrent-ctx",
@@ -295,7 +296,8 @@
         "audioText": "berge",
         "options": ["bergère", "beige", "barge", "berge"],
         "correctIndex": 3,
-        "explanation": "berge /bɛʁʒ/ — берег. Похожие: bergère /bɛʁ.ʒɛʁ/ — пастушка; beige /bɛʒ/ — бежевый; barge /baʁʒ/ — баржа. Берегись лишних слогов и гласных."
+        "explanation": "berge /bɛʁʒ/ — берег. Похожие: bergère /bɛʁ.ʒɛʁ/ — пастушка; beige /bɛʒ/ — бежевый; barge /baʁʒ/ — баржа. Берегись лишних слогов и гласных.",
+        "audioSrc": "audio/wl-rivieres-berge.mp3"
       },
       {
         "id": "wc-rivieres-source-hint",

@@ -9,10 +9,22 @@
     "translationsEn": ["weight"],
     "semanticCore": "Вес тела или предмета, а также сами отягощения, которые поднимают в зале.",
     "collocations": [
-      { "fr": "prendre du poids", "ru": "набирать вес" },
-      { "fr": "perdre du poids", "ru": "худеть, терять вес" },
-      { "fr": "soulever des poids", "ru": "поднимать тяжести / веса" },
-      { "fr": "le poids du corps", "ru": "вес тела" }
+      {
+        "fr": "prendre du poids",
+        "ru": "набирать вес"
+      },
+      {
+        "fr": "perdre du poids",
+        "ru": "худеть, терять вес"
+      },
+      {
+        "fr": "soulever des poids",
+        "ru": "поднимать тяжести / веса"
+      },
+      {
+        "fr": "le poids du corps",
+        "ru": "вес тела"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 460,
     "level": "A2",
     "tags": ["fitness", "corps", "mesure"],
-    "caseIds": ["wc-fitness"]
+    "caseIds": ["wc-fitness"],
+    "audio": {
+      "isolated": "audio/wl-fitness-poids.mp3"
+    }
   },
   {
     "id": "wl-fitness-haltere",
@@ -39,9 +54,18 @@
     "translationsEn": ["dumbbell"],
     "semanticCore": "Снаряд для силовых упражнений — гантель или штанга с дисками на концах.",
     "collocations": [
-      { "fr": "soulever des haltères", "ru": "поднимать гантели" },
-      { "fr": "faire des haltères", "ru": "заниматься с гантелями / тягать железо" },
-      { "fr": "une paire d'haltères", "ru": "пара гантелей" }
+      {
+        "fr": "soulever des haltères",
+        "ru": "поднимать гантели"
+      },
+      {
+        "fr": "faire des haltères",
+        "ru": "заниматься с гантелями / тягать железо"
+      },
+      {
+        "fr": "une paire d'haltères",
+        "ru": "пара гантелей"
+      }
     ],
     "contrastPairs": [
       {
@@ -56,7 +80,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["fitness", "materiel"],
-    "caseIds": ["wc-fitness"]
+    "caseIds": ["wc-fitness"],
+    "audio": {
+      "isolated": "audio/wl-fitness-haltere.mp3"
+    }
   },
   {
     "id": "wl-fitness-echauffement",
@@ -68,9 +95,18 @@
     "translationsEn": ["warm-up"],
     "semanticCore": "Лёгкие упражнения в начале тренировки, чтобы разогреть мышцы перед нагрузкой.",
     "collocations": [
-      { "fr": "faire un échauffement", "ru": "сделать разминку" },
-      { "fr": "des exercices d'échauffement", "ru": "разминочные упражнения" },
-      { "fr": "un échauffement de dix minutes", "ru": "десятиминутная разминка" }
+      {
+        "fr": "faire un échauffement",
+        "ru": "сделать разминку"
+      },
+      {
+        "fr": "des exercices d'échauffement",
+        "ru": "разминочные упражнения"
+      },
+      {
+        "fr": "un échauffement de dix minutes",
+        "ru": "десятиминутная разминка"
+      }
     ],
     "contrastPairs": [
       {
@@ -85,7 +121,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["fitness", "entrainement"],
-    "caseIds": ["wc-fitness"]
+    "caseIds": ["wc-fitness"],
+    "audio": {
+      "isolated": "audio/wl-fitness-echauffement.mp3"
+    }
   },
   {
     "id": "wl-fitness-etirement",
@@ -97,9 +136,18 @@
     "translationsEn": ["stretch", "stretching"],
     "semanticCore": "Растягивание мышц, чтобы расслабить их и улучшить гибкость; от глагола étirer.",
     "collocations": [
-      { "fr": "faire des étirements", "ru": "делать растяжку" },
-      { "fr": "un étirement du dos", "ru": "растяжка спины" },
-      { "fr": "des exercices d'étirement", "ru": "упражнения на растяжку" }
+      {
+        "fr": "faire des étirements",
+        "ru": "делать растяжку"
+      },
+      {
+        "fr": "un étirement du dos",
+        "ru": "растяжка спины"
+      },
+      {
+        "fr": "des exercices d'étirement",
+        "ru": "упражнения на растяжку"
+      }
     ],
     "contrastPairs": [
       {
@@ -114,7 +162,10 @@
     "frequencyRank": 900,
     "level": "A2",
     "tags": ["fitness", "entrainement"],
-    "caseIds": ["wc-fitness"]
+    "caseIds": ["wc-fitness"],
+    "audio": {
+      "isolated": "audio/wl-fitness-etirement.mp3"
+    }
   },
   {
     "id": "wl-fitness-endurance",
@@ -126,9 +177,18 @@
     "translationsEn": ["endurance", "stamina"],
     "semanticCore": "Способность долго выдерживать нагрузку — бежать, плыть, тренироваться без остановки.",
     "collocations": [
-      { "fr": "avoir de l'endurance", "ru": "обладать выносливостью" },
-      { "fr": "travailler son endurance", "ru": "развивать выносливость" },
-      { "fr": "un sport d'endurance", "ru": "вид спорта на выносливость" }
+      {
+        "fr": "avoir de l'endurance",
+        "ru": "обладать выносливостью"
+      },
+      {
+        "fr": "travailler son endurance",
+        "ru": "развивать выносливость"
+      },
+      {
+        "fr": "un sport d'endurance",
+        "ru": "вид спорта на выносливость"
+      }
     ],
     "contrastPairs": [
       {
@@ -143,7 +203,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["fitness", "qualite"],
-    "caseIds": ["wc-fitness"]
+    "caseIds": ["wc-fitness"],
+    "audio": {
+      "isolated": "audio/wl-fitness-endurance.mp3"
+    }
   },
   {
     "id": "wl-fitness-souplesse",
@@ -155,9 +218,18 @@
     "translationsEn": ["flexibility", "suppleness"],
     "semanticCore": "Гибкость тела — способность легко сгибаться и тянуться; от прилагательного souple.",
     "collocations": [
-      { "fr": "gagner en souplesse", "ru": "становиться гибче" },
-      { "fr": "manquer de souplesse", "ru": "быть негибким / не хватать гибкости" },
-      { "fr": "des exercices de souplesse", "ru": "упражнения на гибкость" }
+      {
+        "fr": "gagner en souplesse",
+        "ru": "становиться гибче"
+      },
+      {
+        "fr": "manquer de souplesse",
+        "ru": "быть негибким / не хватать гибкости"
+      },
+      {
+        "fr": "des exercices de souplesse",
+        "ru": "упражнения на гибкость"
+      }
     ],
     "contrastPairs": [
       {
@@ -172,7 +244,10 @@
     "frequencyRank": 850,
     "level": "A2",
     "tags": ["fitness", "qualite"],
-    "caseIds": ["wc-fitness"]
+    "caseIds": ["wc-fitness"],
+    "audio": {
+      "isolated": "audio/wl-fitness-souplesse.mp3"
+    }
   },
   {
     "id": "wl-fitness-transpiration",
@@ -184,9 +259,18 @@
     "translationsEn": ["perspiration", "sweating"],
     "semanticCore": "Выделение пота телом, особенно при усилии или жаре; процесс, а не сама капля.",
     "collocations": [
-      { "fr": "une forte transpiration", "ru": "сильное потоотделение" },
-      { "fr": "une odeur de transpiration", "ru": "запах пота" },
-      { "fr": "lutter contre la transpiration", "ru": "бороться с потливостью" }
+      {
+        "fr": "une forte transpiration",
+        "ru": "сильное потоотделение"
+      },
+      {
+        "fr": "une odeur de transpiration",
+        "ru": "запах пота"
+      },
+      {
+        "fr": "lutter contre la transpiration",
+        "ru": "бороться с потливостью"
+      }
     ],
     "contrastPairs": [
       {
@@ -201,7 +285,10 @@
     "frequencyRank": 1100,
     "level": "A2",
     "tags": ["fitness", "corps"],
-    "caseIds": ["wc-fitness"]
+    "caseIds": ["wc-fitness"],
+    "audio": {
+      "isolated": "audio/wl-fitness-transpiration.mp3"
+    }
   },
   {
     "id": "wl-fitness-abdos",
@@ -213,9 +300,18 @@
     "translationsEn": ["abs"],
     "semanticCore": "Мышцы живота (пресс) и упражнения на них; разговорное сокращение от abdominaux.",
     "collocations": [
-      { "fr": "faire des abdos", "ru": "качать пресс" },
-      { "fr": "avoir des abdos", "ru": "иметь пресс / кубики" },
-      { "fr": "des abdos en béton", "ru": "стальной пресс (букв. «бетонный»)" }
+      {
+        "fr": "faire des abdos",
+        "ru": "качать пресс"
+      },
+      {
+        "fr": "avoir des abdos",
+        "ru": "иметь пресс / кубики"
+      },
+      {
+        "fr": "des abdos en béton",
+        "ru": "стальной пресс (букв. «бетонный»)"
+      }
     ],
     "contrastPairs": [
       {
@@ -230,6 +326,9 @@
     "frequencyRank": 950,
     "level": "A2",
     "tags": ["fitness", "corps"],
-    "caseIds": ["wc-fitness"]
+    "caseIds": ["wc-fitness"],
+    "audio": {
+      "isolated": "audio/wl-fitness-abdos.mp3"
+    }
   }
 ]

@@ -223,7 +223,8 @@
         "audioText": "souplesse",
         "options": ["souplesse", "sagesse", "finesse", "faiblesse"],
         "correctIndex": 0,
-        "explanation": "souplesse /su.plɛs/ (гибкость), sagesse /sa.ʒɛs/ (мудрость), finesse /fi.nɛs/ (тонкость), faiblesse /fɛ.blɛs/ (слабость). Все на -esse и похожи концовкой, но это разные слова — слушай начало."
+        "explanation": "souplesse /su.plɛs/ (гибкость), sagesse /sa.ʒɛs/ (мудрость), finesse /fi.nɛs/ (тонкость), faiblesse /fɛ.blɛs/ (слабость). Все на -esse и похожи концовкой, но это разные слова — слушай начало.",
+        "audioSrc": "audio/wl-fitness-souplesse.mp3"
       },
       {
         "id": "wc-fitness-transpiration-ctx",

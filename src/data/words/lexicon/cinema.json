@@ -10,9 +10,18 @@
     "translationsEn": ["film director", "director"],
     "semanticCore": "Режиссёр фильма — тот, кто «воплощает» (réalise) фильм: ставит сцены и руководит съёмкой.",
     "collocations": [
-      { "fr": "le réalisateur du film", "ru": "режиссёр фильма" },
-      { "fr": "un réalisateur célèbre", "ru": "известный режиссёр" },
-      { "fr": "un film réalisé par…", "ru": "фильм, снятый (режиссёром)…" }
+      {
+        "fr": "le réalisateur du film",
+        "ru": "режиссёр фильма"
+      },
+      {
+        "fr": "un réalisateur célèbre",
+        "ru": "известный режиссёр"
+      },
+      {
+        "fr": "un film réalisé par…",
+        "ru": "фильм, снятый (режиссёром)…"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +36,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["cinema", "metier"],
-    "caseIds": ["wc-cinema"]
+    "caseIds": ["wc-cinema"],
+    "audio": {
+      "isolated": "audio/wl-cinema-realisateur.mp3"
+    }
   },
   {
     "id": "wl-cinema-seance",
@@ -39,10 +51,22 @@
     "translationsEn": ["showing", "session"],
     "semanticCore": "Сеанс — конкретный показ фильма в назначенное время; шире — занятие/сессия (séance de sport, séance photo).",
     "collocations": [
-      { "fr": "la séance de 20 heures", "ru": "сеанс в 20:00" },
-      { "fr": "une séance de cinéma", "ru": "киносеанс" },
-      { "fr": "la prochaine séance", "ru": "следующий сеанс" },
-      { "fr": "une séance photo", "ru": "фотосессия" }
+      {
+        "fr": "la séance de 20 heures",
+        "ru": "сеанс в 20:00"
+      },
+      {
+        "fr": "une séance de cinéma",
+        "ru": "киносеанс"
+      },
+      {
+        "fr": "la prochaine séance",
+        "ru": "следующий сеанс"
+      },
+      {
+        "fr": "une séance photo",
+        "ru": "фотосессия"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +81,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["cinema", "evenement"],
-    "caseIds": ["wc-cinema"]
+    "caseIds": ["wc-cinema"],
+    "audio": {
+      "isolated": "audio/wl-cinema-seance.mp3"
+    }
   },
   {
     "id": "wl-cinema-affiche",
@@ -69,9 +96,18 @@
     "translationsEn": ["poster", "playbill"],
     "semanticCore": "Афиша — печатный плакат на улице или у кинотеатра; «être à l'affiche» — идти в прокате.",
     "collocations": [
-      { "fr": "l'affiche du film", "ru": "афиша фильма" },
-      { "fr": "être à l'affiche", "ru": "идти в прокате" },
-      { "fr": "coller une affiche", "ru": "расклеить афишу" }
+      {
+        "fr": "l'affiche du film",
+        "ru": "афиша фильма"
+      },
+      {
+        "fr": "être à l'affiche",
+        "ru": "идти в прокате"
+      },
+      {
+        "fr": "coller une affiche",
+        "ru": "расклеить афишу"
+      }
     ],
     "contrastPairs": [
       {
@@ -86,7 +122,10 @@
     "frequencyRank": 660,
     "level": "A2",
     "tags": ["cinema", "objet"],
-    "caseIds": ["wc-cinema"]
+    "caseIds": ["wc-cinema"],
+    "audio": {
+      "isolated": "audio/wl-cinema-affiche.mp3"
+    }
   },
   {
     "id": "wl-cinema-scenario",
@@ -98,9 +137,18 @@
     "translationsEn": ["screenplay", "script"],
     "semanticCore": "Сценарий — весь текст и план фильма: диалоги и описание действия, по которым снимают.",
     "collocations": [
-      { "fr": "écrire le scénario", "ru": "написать сценарий" },
-      { "fr": "le scénario du film", "ru": "сценарий фильма" },
-      { "fr": "un scénario original", "ru": "оригинальный сценарий" }
+      {
+        "fr": "écrire le scénario",
+        "ru": "написать сценарий"
+      },
+      {
+        "fr": "le scénario du film",
+        "ru": "сценарий фильма"
+      },
+      {
+        "fr": "un scénario original",
+        "ru": "оригинальный сценарий"
+      }
     ],
     "contrastPairs": [
       {
@@ -115,7 +163,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["cinema", "texte"],
-    "caseIds": ["wc-cinema"]
+    "caseIds": ["wc-cinema"],
+    "audio": {
+      "isolated": "audio/wl-cinema-scenario.mp3"
+    }
   },
   {
     "id": "wl-cinema-tournage",
@@ -127,9 +178,18 @@
     "translationsEn": ["filming", "shooting"],
     "semanticCore": "Съёмки фильма как процесс: работа камеры и актёров на площадке (от tourner un film).",
     "collocations": [
-      { "fr": "le tournage du film", "ru": "съёмки фильма" },
-      { "fr": "pendant le tournage", "ru": "во время съёмок" },
-      { "fr": "tourner un film", "ru": "снимать фильм" }
+      {
+        "fr": "le tournage du film",
+        "ru": "съёмки фильма"
+      },
+      {
+        "fr": "pendant le tournage",
+        "ru": "во время съёмок"
+      },
+      {
+        "fr": "tourner un film",
+        "ru": "снимать фильм"
+      }
     ],
     "contrastPairs": [
       {
@@ -144,7 +204,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["cinema", "processus"],
-    "caseIds": ["wc-cinema"]
+    "caseIds": ["wc-cinema"],
+    "audio": {
+      "isolated": "audio/wl-cinema-tournage.mp3"
+    }
   },
   {
     "id": "wl-cinema-sous-titre",
@@ -156,9 +219,18 @@
     "translationsEn": ["subtitle"],
     "semanticCore": "Субтитр — текст перевода или речи внизу экрана; «sous» (под) + «titre» (название). Чаще во множественном: les sous-titres.",
     "collocations": [
-      { "fr": "les sous-titres en français", "ru": "субтитры на французском" },
-      { "fr": "un film en VO sous-titrée", "ru": "фильм в оригинале с субтитрами" },
-      { "fr": "mettre les sous-titres", "ru": "включить субтитры" }
+      {
+        "fr": "les sous-titres en français",
+        "ru": "субтитры на французском"
+      },
+      {
+        "fr": "un film en VO sous-titrée",
+        "ru": "фильм в оригинале с субтитрами"
+      },
+      {
+        "fr": "mettre les sous-titres",
+        "ru": "включить субтитры"
+      }
     ],
     "contrastPairs": [
       {
@@ -173,7 +245,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["cinema", "texte"],
-    "caseIds": ["wc-cinema"]
+    "caseIds": ["wc-cinema"],
+    "audio": {
+      "isolated": "audio/wl-cinema-sous-titre.mp3"
+    }
   },
   {
     "id": "wl-cinema-spectateur",
@@ -186,9 +261,18 @@
     "translationsEn": ["spectator", "viewer"],
     "semanticCore": "Зритель — тот, кто смотрит фильм или представление; в кино и театре это стандартное слово для человека в зале.",
     "collocations": [
-      { "fr": "des millions de spectateurs", "ru": "миллионы зрителей" },
-      { "fr": "un spectateur attentif", "ru": "внимательный зритель" },
-      { "fr": "les spectateurs applaudissent", "ru": "зрители аплодируют" }
+      {
+        "fr": "des millions de spectateurs",
+        "ru": "миллионы зрителей"
+      },
+      {
+        "fr": "un spectateur attentif",
+        "ru": "внимательный зритель"
+      },
+      {
+        "fr": "les spectateurs applaudissent",
+        "ru": "зрители аплодируют"
+      }
     ],
     "contrastPairs": [
       {
@@ -203,7 +287,10 @@
     "frequencyRank": 680,
     "level": "A2",
     "tags": ["cinema", "personne"],
-    "caseIds": ["wc-cinema"]
+    "caseIds": ["wc-cinema"],
+    "audio": {
+      "isolated": "audio/wl-cinema-spectateur.mp3"
+    }
   },
   {
     "id": "wl-cinema-generique",
@@ -215,9 +302,18 @@
     "translationsEn": ["credits", "title sequence"],
     "semanticCore": "Титры фильма — список актёров и съёмочной группы в начале или в конце; «le générique de fin» — финальные титры.",
     "collocations": [
-      { "fr": "le générique de fin", "ru": "финальные титры" },
-      { "fr": "le générique du film", "ru": "титры фильма" },
-      { "fr": "au début du générique", "ru": "в начале титров" }
+      {
+        "fr": "le générique de fin",
+        "ru": "финальные титры"
+      },
+      {
+        "fr": "le générique du film",
+        "ru": "титры фильма"
+      },
+      {
+        "fr": "au début du générique",
+        "ru": "в начале титров"
+      }
     ],
     "contrastPairs": [
       {
@@ -232,6 +328,9 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["cinema", "texte"],
-    "caseIds": ["wc-cinema"]
+    "caseIds": ["wc-cinema"],
+    "audio": {
+      "isolated": "audio/wl-cinema-generique.mp3"
+    }
   }
 ]

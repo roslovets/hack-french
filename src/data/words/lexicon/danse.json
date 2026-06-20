@@ -9,10 +9,22 @@
     "translationsEn": ["ballet"],
     "semanticCore": "Балет как искусство классического танца и как конкретный спектакль на сцене.",
     "collocations": [
-      { "fr": "un ballet classique", "ru": "классический балет" },
-      { "fr": "aller voir un ballet", "ru": "пойти на балет" },
-      { "fr": "une danseuse de ballet", "ru": "балерина" },
-      { "fr": "le corps de ballet", "ru": "кордебалет" }
+      {
+        "fr": "un ballet classique",
+        "ru": "классический балет"
+      },
+      {
+        "fr": "aller voir un ballet",
+        "ru": "пойти на балет"
+      },
+      {
+        "fr": "une danseuse de ballet",
+        "ru": "балерина"
+      },
+      {
+        "fr": "le corps de ballet",
+        "ru": "кордебалет"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["danse", "spectacle"],
-    "caseIds": ["wc-danse"]
+    "caseIds": ["wc-danse"],
+    "audio": {
+      "isolated": "audio/wl-danse-ballet.mp3"
+    }
   },
   {
     "id": "wl-danse-valse",
@@ -39,10 +54,22 @@
     "translationsEn": ["waltz"],
     "semanticCore": "Вальс — плавный парный танец на три счёта, а также музыка для него.",
     "collocations": [
-      { "fr": "danser la valse", "ru": "танцевать вальс" },
-      { "fr": "une valse de Chopin", "ru": "вальс Шопена" },
-      { "fr": "une valse lente", "ru": "медленный вальс" },
-      { "fr": "ouvrir le bal par une valse", "ru": "открыть бал вальсом" }
+      {
+        "fr": "danser la valse",
+        "ru": "танцевать вальс"
+      },
+      {
+        "fr": "une valse de Chopin",
+        "ru": "вальс Шопена"
+      },
+      {
+        "fr": "une valse lente",
+        "ru": "медленный вальс"
+      },
+      {
+        "fr": "ouvrir le bal par une valse",
+        "ru": "открыть бал вальсом"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["danse", "musique"],
-    "caseIds": ["wc-danse"]
+    "caseIds": ["wc-danse"],
+    "audio": {
+      "isolated": "audio/wl-danse-valse.mp3"
+    }
   },
   {
     "id": "wl-danse-tango",
@@ -69,9 +99,18 @@
     "translationsEn": ["tango"],
     "semanticCore": "Танго — страстный парный танец родом из Аргентины, а также музыка к нему.",
     "collocations": [
-      { "fr": "danser le tango", "ru": "танцевать танго" },
-      { "fr": "le tango argentin", "ru": "аргентинское танго" },
-      { "fr": "un cours de tango", "ru": "урок танго" }
+      {
+        "fr": "danser le tango",
+        "ru": "танцевать танго"
+      },
+      {
+        "fr": "le tango argentin",
+        "ru": "аргентинское танго"
+      },
+      {
+        "fr": "un cours de tango",
+        "ru": "урок танго"
+      }
     ],
     "contrastPairs": [
       {
@@ -86,7 +125,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["danse", "musique"],
-    "caseIds": ["wc-danse"]
+    "caseIds": ["wc-danse"],
+    "audio": {
+      "isolated": "audio/wl-danse-tango.mp3"
+    }
   },
   {
     "id": "wl-danse-rythme",
@@ -98,10 +140,22 @@
     "translationsEn": ["rhythm", "pace"],
     "semanticCore": "Ритм — мерное чередование во времени: в музыке, в танце, а в переносном смысле и темп жизни.",
     "collocations": [
-      { "fr": "suivre le rythme", "ru": "попадать в ритм" },
-      { "fr": "battre le rythme", "ru": "отбивать ритм" },
-      { "fr": "un rythme rapide", "ru": "быстрый ритм" },
-      { "fr": "le rythme de vie", "ru": "ритм жизни" }
+      {
+        "fr": "suivre le rythme",
+        "ru": "попадать в ритм"
+      },
+      {
+        "fr": "battre le rythme",
+        "ru": "отбивать ритм"
+      },
+      {
+        "fr": "un rythme rapide",
+        "ru": "быстрый ритм"
+      },
+      {
+        "fr": "le rythme de vie",
+        "ru": "ритм жизни"
+      }
     ],
     "contrastPairs": [
       {
@@ -116,7 +170,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["danse", "musique"],
-    "caseIds": ["wc-danse"]
+    "caseIds": ["wc-danse"],
+    "audio": {
+      "isolated": "audio/wl-danse-rythme.mp3"
+    }
   },
   {
     "id": "wl-danse-danseur",
@@ -129,9 +186,18 @@
     "translationsEn": ["dancer"],
     "semanticCore": "Тот, кто танцует, — как профессионально на сцене, так и просто в паре на балу.",
     "collocations": [
-      { "fr": "un danseur professionnel", "ru": "профессиональный танцор" },
-      { "fr": "un danseur étoile", "ru": "ведущий солист балета" },
-      { "fr": "un bon danseur", "ru": "хороший танцор (партнёр)" }
+      {
+        "fr": "un danseur professionnel",
+        "ru": "профессиональный танцор"
+      },
+      {
+        "fr": "un danseur étoile",
+        "ru": "ведущий солист балета"
+      },
+      {
+        "fr": "un bon danseur",
+        "ru": "хороший танцор (партнёр)"
+      }
     ],
     "contrastPairs": [
       {
@@ -146,7 +212,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["danse", "personne"],
-    "caseIds": ["wc-danse"]
+    "caseIds": ["wc-danse"],
+    "audio": {
+      "isolated": "audio/wl-danse-danseur.mp3"
+    }
   },
   {
     "id": "wl-danse-choregraphie",
@@ -158,9 +227,18 @@
     "translationsEn": ["choreography"],
     "semanticCore": "Хореография — заранее придуманный рисунок танца: какие движения и в каком порядке исполняют.",
     "collocations": [
-      { "fr": "répéter la chorégraphie", "ru": "репетировать хореографию" },
-      { "fr": "signer la chorégraphie", "ru": "быть автором хореографии" },
-      { "fr": "une chorégraphie moderne", "ru": "современная хореография" }
+      {
+        "fr": "répéter la chorégraphie",
+        "ru": "репетировать хореографию"
+      },
+      {
+        "fr": "signer la chorégraphie",
+        "ru": "быть автором хореографии"
+      },
+      {
+        "fr": "une chorégraphie moderne",
+        "ru": "современная хореография"
+      }
     ],
     "contrastPairs": [
       {
@@ -175,7 +253,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["danse", "spectacle"],
-    "caseIds": ["wc-danse"]
+    "caseIds": ["wc-danse"],
+    "audio": {
+      "isolated": "audio/wl-danse-choregraphie.mp3"
+    }
   },
   {
     "id": "wl-danse-tournoyer",
@@ -186,9 +267,18 @@
     "translationsEn": ["to whirl", "to spin"],
     "semanticCore": "Долго вращаться, описывая круги: о танцорах, юбке, листьях или снеге на ветру.",
     "collocations": [
-      { "fr": "tournoyer sur la piste", "ru": "кружиться на танцполе" },
-      { "fr": "faire tournoyer sa partenaire", "ru": "закружить партнёршу" },
-      { "fr": "tournoyer dans le vent", "ru": "кружиться на ветру" }
+      {
+        "fr": "tournoyer sur la piste",
+        "ru": "кружиться на танцполе"
+      },
+      {
+        "fr": "faire tournoyer sa partenaire",
+        "ru": "закружить партнёршу"
+      },
+      {
+        "fr": "tournoyer dans le vent",
+        "ru": "кружиться на ветру"
+      }
     ],
     "contrastPairs": [
       {
@@ -203,7 +293,10 @@
     "frequencyRank": 860,
     "level": "A2",
     "tags": ["danse", "mouvement"],
-    "caseIds": ["wc-danse"]
+    "caseIds": ["wc-danse"],
+    "audio": {
+      "isolated": "audio/wl-danse-tournoyer.mp3"
+    }
   },
   {
     "id": "wl-danse-entracte",
@@ -215,9 +308,18 @@
     "translationsEn": ["intermission", "interval"],
     "semanticCore": "Антракт — перерыв между действиями спектакля, балета или концерта.",
     "collocations": [
-      { "fr": "pendant l'entracte", "ru": "во время антракта" },
-      { "fr": "un entracte de vingt minutes", "ru": "двадцатиминутный антракт" },
-      { "fr": "après l'entracte", "ru": "после антракта" }
+      {
+        "fr": "pendant l'entracte",
+        "ru": "во время антракта"
+      },
+      {
+        "fr": "un entracte de vingt minutes",
+        "ru": "двадцатиминутный антракт"
+      },
+      {
+        "fr": "après l'entracte",
+        "ru": "после антракта"
+      }
     ],
     "contrastPairs": [
       {
@@ -232,6 +334,9 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["danse", "spectacle"],
-    "caseIds": ["wc-danse"]
+    "caseIds": ["wc-danse"],
+    "audio": {
+      "isolated": "audio/wl-danse-entracte.mp3"
+    }
   }
 ]

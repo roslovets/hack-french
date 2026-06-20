@@ -9,10 +9,22 @@
     "translationsEn": ["flight"],
     "semanticCore": "Авиарейс или сам полёт: то, что есть в билете и на табло; у того же слова есть и значение «кража».",
     "collocations": [
-      { "fr": "un vol direct", "ru": "прямой рейс" },
-      { "fr": "le vol pour Paris", "ru": "рейс на Париж" },
-      { "fr": "un vol sans escale", "ru": "рейс без пересадки" },
-      { "fr": "rater son vol", "ru": "опоздать на рейс" }
+      {
+        "fr": "un vol direct",
+        "ru": "прямой рейс"
+      },
+      {
+        "fr": "le vol pour Paris",
+        "ru": "рейс на Париж"
+      },
+      {
+        "fr": "un vol sans escale",
+        "ru": "рейс без пересадки"
+      },
+      {
+        "fr": "rater son vol",
+        "ru": "опоздать на рейс"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["aeroport", "voyage"],
-    "caseIds": ["wc-aeroport"]
+    "caseIds": ["wc-aeroport"],
+    "audio": {
+      "isolated": "audio/wl-aeroport-vol.mp3"
+    }
   },
   {
     "id": "wl-aeroport-hublot",
@@ -39,9 +54,18 @@
     "translationsEn": ["porthole", "window"],
     "semanticCore": "Круглое окошко самолёта или корабля; именно у него «место côté hublot». Слово с h aspiré: говорят le hublot, du hublot — без элизии.",
     "collocations": [
-      { "fr": "une place côté hublot", "ru": "место у окна (иллюминатора)" },
-      { "fr": "regarder par le hublot", "ru": "смотреть в иллюминатор" },
-      { "fr": "le hublot de l'avion", "ru": "иллюминатор самолёта" }
+      {
+        "fr": "une place côté hublot",
+        "ru": "место у окна (иллюминатора)"
+      },
+      {
+        "fr": "regarder par le hublot",
+        "ru": "смотреть в иллюминатор"
+      },
+      {
+        "fr": "le hublot de l'avion",
+        "ru": "иллюминатор самолёта"
+      }
     ],
     "contrastPairs": [
       {
@@ -56,7 +80,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["aeroport", "avion"],
-    "caseIds": ["wc-aeroport"]
+    "caseIds": ["wc-aeroport"],
+    "audio": {
+      "isolated": "audio/wl-aeroport-hublot.mp3"
+    }
   },
   {
     "id": "wl-aeroport-embarquer",
@@ -67,9 +94,18 @@
     "translationsEn": ["to board"],
     "semanticCore": "Заходить на борт самолёта или корабля; в аэропорту — момент посадки пассажиров по объявлению.",
     "collocations": [
-      { "fr": "embarquer dans l'avion", "ru": "садиться в самолёт" },
-      { "fr": "la carte d'embarquement", "ru": "посадочный талон" },
-      { "fr": "la porte d'embarquement", "ru": "выход на посадку" }
+      {
+        "fr": "embarquer dans l'avion",
+        "ru": "садиться в самолёт"
+      },
+      {
+        "fr": "la carte d'embarquement",
+        "ru": "посадочный талон"
+      },
+      {
+        "fr": "la porte d'embarquement",
+        "ru": "выход на посадку"
+      }
     ],
     "contrastPairs": [
       {
@@ -84,7 +120,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["aeroport", "voyage"],
-    "caseIds": ["wc-aeroport"]
+    "caseIds": ["wc-aeroport"],
+    "audio": {
+      "isolated": "audio/wl-aeroport-embarquer.mp3"
+    }
   },
   {
     "id": "wl-aeroport-escale",
@@ -96,9 +135,18 @@
     "translationsEn": ["stopover", "layover"],
     "semanticCore": "Промежуточная посадка рейса по пути к цели; самолёт садится и летит дальше.",
     "collocations": [
-      { "fr": "faire escale à Rome", "ru": "сделать остановку в Риме" },
-      { "fr": "un vol sans escale", "ru": "прямой рейс (без пересадки)" },
-      { "fr": "une escale de deux heures", "ru": "пересадка два часа" }
+      {
+        "fr": "faire escale à Rome",
+        "ru": "сделать остановку в Риме"
+      },
+      {
+        "fr": "un vol sans escale",
+        "ru": "прямой рейс (без пересадки)"
+      },
+      {
+        "fr": "une escale de deux heures",
+        "ru": "пересадка два часа"
+      }
     ],
     "contrastPairs": [
       {
@@ -113,7 +161,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["aeroport", "voyage"],
-    "caseIds": ["wc-aeroport"]
+    "caseIds": ["wc-aeroport"],
+    "audio": {
+      "isolated": "audio/wl-aeroport-escale.mp3"
+    }
   },
   {
     "id": "wl-aeroport-decollage",
@@ -125,9 +176,18 @@
     "translationsEn": ["takeoff"],
     "semanticCore": "Момент, когда самолёт отрывается от земли и поднимается в воздух; начало полёта.",
     "collocations": [
-      { "fr": "le décollage est prévu à 9h", "ru": "взлёт назначен на 9 утра" },
-      { "fr": "avant le décollage", "ru": "перед взлётом" },
-      { "fr": "un retard au décollage", "ru": "задержка вылета" }
+      {
+        "fr": "le décollage est prévu à 9h",
+        "ru": "взлёт назначен на 9 утра"
+      },
+      {
+        "fr": "avant le décollage",
+        "ru": "перед взлётом"
+      },
+      {
+        "fr": "un retard au décollage",
+        "ru": "задержка вылета"
+      }
     ],
     "contrastPairs": [
       {
@@ -142,7 +202,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["aeroport", "avion"],
-    "caseIds": ["wc-aeroport"]
+    "caseIds": ["wc-aeroport"],
+    "audio": {
+      "isolated": "audio/wl-aeroport-decollage.mp3"
+    }
   },
   {
     "id": "wl-aeroport-atterrissage",
@@ -154,9 +217,18 @@
     "translationsEn": ["landing"],
     "semanticCore": "Момент, когда самолёт касается земли и садится; конец полёта. Внутри спрятано terre (земля).",
     "collocations": [
-      { "fr": "un atterrissage en douceur", "ru": "мягкая посадка" },
-      { "fr": "préparer l'atterrissage", "ru": "готовиться к посадке" },
-      { "fr": "à l'atterrissage", "ru": "при посадке / во время приземления" }
+      {
+        "fr": "un atterrissage en douceur",
+        "ru": "мягкая посадка"
+      },
+      {
+        "fr": "préparer l'atterrissage",
+        "ru": "готовиться к посадке"
+      },
+      {
+        "fr": "à l'atterrissage",
+        "ru": "при посадке / во время приземления"
+      }
     ],
     "contrastPairs": [
       {
@@ -171,7 +243,10 @@
     "frequencyRank": 770,
     "level": "A2",
     "tags": ["aeroport", "avion"],
-    "caseIds": ["wc-aeroport"]
+    "caseIds": ["wc-aeroport"],
+    "audio": {
+      "isolated": "audio/wl-aeroport-atterrissage.mp3"
+    }
   },
   {
     "id": "wl-aeroport-terminal",
@@ -183,9 +258,18 @@
     "translationsEn": ["terminal"],
     "semanticCore": "Здание аэропорта, где регистрируются и откуда вылетают; их нумеруют (terminal 1, 2…). Множественное число особое: des terminaux.",
     "collocations": [
-      { "fr": "le terminal 2", "ru": "терминал 2" },
-      { "fr": "à quel terminal ?", "ru": "к какому терминалу? / в каком терминале?" },
-      { "fr": "le terminal des départs", "ru": "терминал вылета" }
+      {
+        "fr": "le terminal 2",
+        "ru": "терминал 2"
+      },
+      {
+        "fr": "à quel terminal ?",
+        "ru": "к какому терминалу? / в каком терминале?"
+      },
+      {
+        "fr": "le terminal des départs",
+        "ru": "терминал вылета"
+      }
     ],
     "contrastPairs": [
       {
@@ -200,7 +284,10 @@
     "frequencyRank": 740,
     "level": "A2",
     "tags": ["aeroport", "lieu"],
-    "caseIds": ["wc-aeroport"]
+    "caseIds": ["wc-aeroport"],
+    "audio": {
+      "isolated": "audio/wl-aeroport-terminal.mp3"
+    }
   },
   {
     "id": "wl-aeroport-soute",
@@ -212,9 +299,18 @@
     "translationsEn": ["hold", "cargo hold"],
     "semanticCore": "Нижний грузовой отсек самолёта (и корабля), куда грузят сданный багаж — в отличие от ручной клади в салоне.",
     "collocations": [
-      { "fr": "un bagage en soute", "ru": "сданный багаж (в отсеке)" },
-      { "fr": "la soute à bagages", "ru": "багажный отсек" },
-      { "fr": "partir en soute", "ru": "уходить в багажный отсек" }
+      {
+        "fr": "un bagage en soute",
+        "ru": "сданный багаж (в отсеке)"
+      },
+      {
+        "fr": "la soute à bagages",
+        "ru": "багажный отсек"
+      },
+      {
+        "fr": "partir en soute",
+        "ru": "уходить в багажный отсек"
+      }
     ],
     "contrastPairs": [
       {
@@ -229,6 +325,9 @@
     "frequencyRank": 850,
     "level": "A2",
     "tags": ["aeroport", "bagage"],
-    "caseIds": ["wc-aeroport"]
+    "caseIds": ["wc-aeroport"],
+    "audio": {
+      "isolated": "audio/wl-aeroport-soute.mp3"
+    }
   }
 ]

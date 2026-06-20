@@ -69,7 +69,8 @@
         "audioText": "tulipe",
         "options": ["tulipe", "tunique", "turbine", "tulle"],
         "correctIndex": 0,
-        "explanation": "Прозвучало tulipe /ty.lip/ — тюльпан. «tunique» /ty.nik/ (туника), «turbine» /tyʁ.bin/ (турбина) и «tulle» /tyl/ (тюль) звучат похоже на «тю-», но это другие слова."
+        "explanation": "Прозвучало tulipe /ty.lip/ — тюльпан. «tunique» /ty.nik/ (туника), «turbine» /tyʁ.bin/ (турбина) и «tulle» /tyl/ (тюль) звучат похоже на «тю-», но это другие слова.",
+        "audioSrc": "audio/wl-fleurs-tulipe.mp3"
       },
       {
         "id": "wc-fleurs-marguerite-ctx",
