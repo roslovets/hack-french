@@ -1,0 +1,236 @@
+[
+  {
+    "id": "wl-chantier-chantier",
+    "lemma": "chantier",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʃɑ̃.tje/",
+    "translationsRu": ["стройка", "строительная площадка"],
+    "translationsEn": ["construction site", "building site"],
+    "semanticCore": "Место, где идёт стройка или большие работы; в разговоре также «бардак, беспорядок» (Quel chantier !).",
+    "collocations": [
+      { "fr": "sur le chantier", "ru": "на стройке" },
+      { "fr": "un chantier de construction", "ru": "строительная площадка" },
+      { "fr": "le chef de chantier", "ru": "прораб, начальник стройки" },
+      { "fr": "Quel chantier !", "ru": "Ну и бардак!" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "usine",
+        "note": "chantier = стройплощадка (там строят); usine = завод/фабрика (там производят). На chantier строят здание, на usine выпускают товары."
+      },
+      {
+        "with": "bâtiment",
+        "note": "chantier = площадка, где идёт стройка; bâtiment = само здание (а также «строительство» как отрасль: travailler dans le bâtiment)."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["chantier", "lieu"],
+    "caseIds": ["wc-chantier"]
+  },
+  {
+    "id": "wl-chantier-ouvrier",
+    "lemma": "ouvrier",
+    "displayForm": "ouvrier / ouvrière",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/u.vʁi.je/",
+    "translationsRu": ["рабочий", "работница"],
+    "translationsEn": ["worker", "laborer"],
+    "semanticCore": "Человек физического труда — на стройке, заводе или в мастерской; именно «рабочий», а не служащий за столом.",
+    "collocations": [
+      { "fr": "un ouvrier du bâtiment", "ru": "строительный рабочий" },
+      { "fr": "un ouvrier qualifié", "ru": "квалифицированный рабочий" },
+      { "fr": "les ouvriers travaillent sur le chantier", "ru": "рабочие трудятся на стройке" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "employé",
+        "note": "ouvrier = рабочий (физический труд, цех, стройка); employé = служащий (офис, контора). Разные категории работников."
+      },
+      {
+        "with": "travailleur",
+        "note": "ouvrier = рабочий (конкретная категория, рабочий класс); travailleur = трудящийся / работник вообще (любой, кто работает)."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["chantier", "metier"],
+    "caseIds": ["wc-chantier"]
+  },
+  {
+    "id": "wl-chantier-grue",
+    "lemma": "grue",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɡʁy/",
+    "translationsRu": ["подъёмный кран", "журавль"],
+    "translationsEn": ["crane"],
+    "semanticCore": "Подъёмный кран на стройке; то же слово — птица журавль (как и англ. crane).",
+    "collocations": [
+      { "fr": "une grue de chantier", "ru": "строительный (башенный) кран" },
+      { "fr": "la grue soulève les charges", "ru": "кран поднимает грузы" },
+      { "fr": "le conducteur de grue", "ru": "крановщик" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "grue (птица)",
+        "note": "Одно слово — два значения: la grue = подъёмный кран и журавль (птица). Как и в английском crane. Контекст различает."
+      },
+      {
+        "with": "rue",
+        "note": "Различаются одной буквой и звуком: la grue = кран; la rue = улица. Не перепутай на слух."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["chantier", "machine"],
+    "caseIds": ["wc-chantier"]
+  },
+  {
+    "id": "wl-chantier-ciment",
+    "lemma": "ciment",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/si.mɑ̃/",
+    "translationsRu": ["цемент"],
+    "translationsEn": ["cement"],
+    "semanticCore": "Серый порошок, который смешивают с водой и песком, чтобы он схватился и скрепил кладку.",
+    "collocations": [
+      { "fr": "un sac de ciment", "ru": "мешок цемента" },
+      { "fr": "mélanger le ciment", "ru": "замешивать цемент" },
+      { "fr": "un sol en ciment", "ru": "цементный пол" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "béton",
+        "note": "ciment = цемент (вяжущий порошок); béton = бетон (цемент + песок + щебень + вода). Из ciment делают béton."
+      },
+      {
+        "with": "cement (англ.)",
+        "note": "Англ. «cement» — почти то же написание, помогает запомнить. Но фр. ciment пишется через c и i, с носовым на конце: /si.mɑ̃/."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["chantier", "materiau"],
+    "caseIds": ["wc-chantier"]
+  },
+  {
+    "id": "wl-chantier-brique",
+    "lemma": "brique",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bʁik/",
+    "translationsRu": ["кирпич"],
+    "translationsEn": ["brick"],
+    "semanticCore": "Прямоугольный обожжённый блок из глины, из которого кладут стены.",
+    "collocations": [
+      { "fr": "un mur en briques", "ru": "кирпичная стена" },
+      { "fr": "poser des briques", "ru": "класть кирпичи" },
+      { "fr": "une brique rouge", "ru": "красный кирпич" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "brick (англ.)",
+        "note": "Англ. «brick» — почти то же слово, помогает узнать. Фр. brique женского рода (une brique) и пишется с -que: /bʁik/."
+      },
+      {
+        "with": "tuile",
+        "note": "brique = кирпич (стены кладут); tuile = черепица (ею кроют крышу). И то и другое из обожжённой глины, но место разное."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["chantier", "materiau"],
+    "caseIds": ["wc-chantier"]
+  },
+  {
+    "id": "wl-chantier-echafaudage",
+    "lemma": "échafaudage",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.ʃa.fo.daʒ/",
+    "translationsRu": ["строительные леса"],
+    "translationsEn": ["scaffolding"],
+    "semanticCore": "Временная металлическая конструкция вокруг здания, по которой рабочие поднимаются и работают на высоте.",
+    "collocations": [
+      { "fr": "monter un échafaudage", "ru": "собирать (ставить) леса" },
+      { "fr": "monter sur l'échafaudage", "ru": "подниматься на леса" },
+      { "fr": "un échafaudage métallique", "ru": "металлические леса" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "échelle",
+        "note": "échafaudage = леса (целая конструкция-помост вдоль стены); échelle = (приставная) лестница, стремянка. Леса стоят, по лестнице залезают."
+      },
+      {
+        "with": "escalier",
+        "note": "échafaudage = строительные леса (снаружи, временные); escalier = лестница внутри здания (постоянная, по ней ходят между этажами)."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["chantier", "structure"],
+    "caseIds": ["wc-chantier"]
+  },
+  {
+    "id": "wl-chantier-pelle",
+    "lemma": "pelle",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɛl/",
+    "translationsRu": ["лопата", "совок"],
+    "translationsEn": ["shovel", "spade"],
+    "semanticCore": "Инструмент с широким плоским полотном на черенке: ею копают и набирают (землю, песок, снег).",
+    "collocations": [
+      { "fr": "creuser avec une pelle", "ru": "копать лопатой" },
+      { "fr": "un coup de pelle", "ru": "удар (взмах) лопатой" },
+      { "fr": "une pelle et une pioche", "ru": "лопата и кирка" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pelle (экскаватор)",
+        "note": "une pelle — и ручная лопата, и экскаватор: une pelle mécanique (механическая лопата). Размер и контекст различают."
+      },
+      {
+        "with": "truelle",
+        "note": "pelle = лопата (копать, набирать землю); truelle = мастерок (маленький, наносить раствор). Не путать большой инструмент с ручным."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["chantier", "outil"],
+    "caseIds": ["wc-chantier"]
+  },
+  {
+    "id": "wl-chantier-truelle",
+    "lemma": "truelle",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tʁy.ɛl/",
+    "translationsRu": ["мастерок", "кельма"],
+    "translationsEn": ["trowel"],
+    "semanticCore": "Маленький ручной инструмент каменщика с плоским треугольным лезвием: им набирают и разравнивают раствор.",
+    "collocations": [
+      { "fr": "étaler le ciment à la truelle", "ru": "наносить раствор мастерком" },
+      { "fr": "la truelle du maçon", "ru": "мастерок каменщика" },
+      { "fr": "une truelle de plâtrier", "ru": "мастерок штукатура" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pelle",
+        "note": "truelle = мастерок (маленький, для раствора и кладки); pelle = лопата (большая, чтобы копать). Каменщик работает truelle, землекоп — pelle."
+      },
+      {
+        "with": "couteau",
+        "note": "truelle = мастерок (раствор, кирпич); couteau = нож (резать). Похожи формой лезвия, но truelle — строительный инструмент, не столовый."
+      }
+    ],
+    "frequencyRank": 920,
+    "level": "A2",
+    "tags": ["chantier", "outil"],
+    "caseIds": ["wc-chantier"]
+  }
+]

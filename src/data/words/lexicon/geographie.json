@@ -1,0 +1,306 @@
+[
+  {
+    "id": "wl-geographie-capitale",
+    "lemma": "capitale",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ka.pi.tal/",
+    "translationsRu": ["столица"],
+    "translationsEn": ["capital", "capital city"],
+    "semanticCore": "Главный город страны или региона, где находится власть; также — заглавная буква.",
+    "collocations": [
+      {
+        "fr": "la capitale de la France",
+        "ru": "столица Франции"
+      },
+      {
+        "fr": "une capitale européenne",
+        "ru": "европейская столица"
+      },
+      {
+        "fr": "écrire en capitales",
+        "ru": "писать заглавными буквами"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "capital",
+        "note": "la capitale (f) = столица или заглавная буква; le capital (m) = капитал, денежные средства. Род меняет смысл!"
+      },
+      {
+        "with": "majuscule",
+        "note": "une capitale и une majuscule оба значат «заглавная буква»; majuscule — более частое слово в школе, capitale чаще про печать («EN CAPITALES»)."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "B1",
+    "tags": ["geographie", "lieux"],
+    "caseIds": ["wc-geographie"]
+  },
+  {
+    "id": "wl-geographie-frontiere",
+    "lemma": "frontière",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/fʁɔ̃.tjɛʁ/",
+    "translationsRu": ["граница"],
+    "translationsEn": ["border", "frontier"],
+    "semanticCore": "Граница между странами или областями — где кончается одна территория и начинается другая.",
+    "collocations": [
+      {
+        "fr": "passer la frontière",
+        "ru": "пересечь границу"
+      },
+      {
+        "fr": "la frontière franco-espagnole",
+        "ru": "франко-испанская граница"
+      },
+      {
+        "fr": "fermer les frontières",
+        "ru": "закрыть границы"
+      },
+      {
+        "fr": "à la frontière",
+        "ru": "на границе"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "limite",
+        "note": "frontière = граница между странами/областями (геополитическая); limite = предел, граница чего угодно (поля, города, терпения) — шире и абстрактнее."
+      },
+      {
+        "with": "bord",
+        "note": "frontière = рубеж между территориями; le bord = край, кромка (du verre, de la route). Не путать «границу страны» и «край стакана»."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "B1",
+    "tags": ["geographie", "territoire"],
+    "caseIds": ["wc-geographie"]
+  },
+  {
+    "id": "wl-geographie-continent",
+    "lemma": "continent",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔ̃.ti.nɑ̃/",
+    "translationsRu": ["континент", "материк"],
+    "translationsEn": ["continent"],
+    "semanticCore": "Континент, одна из крупных частей суши; для жителя острова — «большая земля» напротив.",
+    "collocations": [
+      {
+        "fr": "le continent africain",
+        "ru": "африканский континент"
+      },
+      {
+        "fr": "le vieux continent",
+        "ru": "Старый Свет (Европа)"
+      },
+      {
+        "fr": "sur tout le continent",
+        "ru": "по всему континенту"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "continent (англ.)",
+        "note": "Фр. continent = континент/материк. Англ. «the Continent» у британцев = материковая Европа; во французском такого сужения нет — это любой материк."
+      },
+      {
+        "with": "pays",
+        "note": "un continent = материк (Европа, Азия); un pays = страна (Франция, Япония). Континент состоит из многих pays."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "B1",
+    "tags": ["geographie", "terre"],
+    "caseIds": ["wc-geographie"]
+  },
+  {
+    "id": "wl-geographie-ocean",
+    "lemma": "océan",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɔ.se.ɑ̃/",
+    "translationsRu": ["океан"],
+    "translationsEn": ["ocean"],
+    "semanticCore": "Океан — огромное водное пространство между континентами, больше любого моря.",
+    "collocations": [
+      {
+        "fr": "l'océan Atlantique",
+        "ru": "Атлантический океан"
+      },
+      {
+        "fr": "traverser l'océan",
+        "ru": "пересечь океан"
+      },
+      {
+        "fr": "une goutte d'eau dans l'océan",
+        "ru": "капля в море (букв. в океане)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "mer",
+        "note": "un océan = океан (Atlantique, Pacifique) — огромный; la mer = море (Méditerranée) — меньше, часть океана или у берега. Французы у берега говорят «aller à la mer», а не «à l'océan»."
+      }
+    ],
+    "frequencyRank": 690,
+    "level": "B1",
+    "tags": ["geographie", "eau"],
+    "caseIds": ["wc-geographie"]
+  },
+  {
+    "id": "wl-geographie-fleuve",
+    "lemma": "fleuve",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/flœv/",
+    "translationsRu": ["река (впадающая в море)"],
+    "translationsEn": ["river"],
+    "semanticCore": "Крупная река, которая впадает прямо в море или океан (Сена, Луара); по-французски это не то же, что rivière.",
+    "collocations": [
+      {
+        "fr": "le fleuve se jette dans la mer",
+        "ru": "река впадает в море"
+      },
+      {
+        "fr": "les bords du fleuve",
+        "ru": "берега реки"
+      },
+      {
+        "fr": "un grand fleuve",
+        "ru": "большая река"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rivière",
+        "note": "Ключевое различие: un fleuve впадает в МОРЕ/океан (Seine, Loire); une rivière впадает в другую реку (приток). По-русски оба «река», по-французски — нет."
+      },
+      {
+        "with": "ruisseau",
+        "note": "un fleuve = большая река к морю; un ruisseau = ручей, маленький поток. Разный масштаб."
+      }
+    ],
+    "frequencyRank": 740,
+    "level": "B1",
+    "tags": ["geographie", "eau"],
+    "caseIds": ["wc-geographie"]
+  },
+  {
+    "id": "wl-geographie-region",
+    "lemma": "région",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ʁe.ʒjɔ̃/",
+    "translationsRu": ["регион", "область", "край"],
+    "translationsEn": ["region", "area"],
+    "semanticCore": "Часть страны или пространства: и официальный регион (как Бретань), и просто «местность, края».",
+    "collocations": [
+      {
+        "fr": "la région parisienne",
+        "ru": "Парижский регион (окрестности Парижа)"
+      },
+      {
+        "fr": "dans la région",
+        "ru": "в этих краях / в регионе"
+      },
+      {
+        "fr": "une région montagneuse",
+        "ru": "горная местность"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "département",
+        "note": "une région = крупная область Франции (Bretagne, Normandie); un département — меньшая единица внутри региона (с номером, как 75 — Paris). Région > département."
+      },
+      {
+        "with": "campagne",
+        "note": "une région = область, край (любой); la campagne = сельская местность, деревня (в противоположность городу). «Région» нейтральна к городу/селу."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "B1",
+    "tags": ["geographie", "territoire"],
+    "caseIds": ["wc-geographie"]
+  },
+  {
+    "id": "wl-geographie-territoire",
+    "lemma": "territoire",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tɛ.ʁi.twaʁ/",
+    "translationsRu": ["территория"],
+    "translationsEn": ["territory"],
+    "semanticCore": "Территория — пространство, принадлежащее государству, городу или животному; то, что «своё».",
+    "collocations": [
+      {
+        "fr": "le territoire national",
+        "ru": "национальная территория"
+      },
+      {
+        "fr": "sur le territoire français",
+        "ru": "на французской территории"
+      },
+      {
+        "fr": "défendre son territoire",
+        "ru": "защищать свою территорию"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "terrain",
+        "note": "le territoire = территория страны/области (абстрактнее, политически); le terrain = (конкретный) участок земли, площадка (de foot, à bâtir). Не путать."
+      },
+      {
+        "with": "région",
+        "note": "le territoire = пространство под властью (государства, животного); la région = географическая область. Territoire подчёркивает принадлежность и границы."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "B1",
+    "tags": ["geographie", "territoire"],
+    "caseIds": ["wc-geographie"]
+  },
+  {
+    "id": "wl-geographie-equateur",
+    "lemma": "équateur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/e.kwa.tœʁ/",
+    "translationsRu": ["экватор"],
+    "translationsEn": ["equator"],
+    "semanticCore": "Экватор — воображаемая линия вокруг Земли посередине, делящая её на два полушария.",
+    "collocations": [
+      {
+        "fr": "à l'équateur",
+        "ru": "на экваторе"
+      },
+      {
+        "fr": "près de l'équateur",
+        "ru": "близ экватора"
+      },
+      {
+        "fr": "passer l'équateur",
+        "ru": "пересечь экватор"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "Équateur",
+        "note": "l'équateur (со строчной) = экватор (линия); l'Équateur (с заглавной) = страна Эквадор в Южной Америке. Различают только заглавной буквой."
+      },
+      {
+        "with": "pôle",
+        "note": "l'équateur = экватор (середина Земли, жарко); le pôle = полюс (Nord/Sud, холодно). Противоположные точки глобуса."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "B1",
+    "tags": ["geographie", "terre"],
+    "caseIds": ["wc-geographie"]
+  }
+]

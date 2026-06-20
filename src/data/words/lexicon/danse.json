@@ -1,0 +1,237 @@
+[
+  {
+    "id": "wl-danse-ballet",
+    "lemma": "ballet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ba.lɛ/",
+    "translationsRu": ["балет"],
+    "translationsEn": ["ballet"],
+    "semanticCore": "Балет как искусство классического танца и как конкретный спектакль на сцене.",
+    "collocations": [
+      { "fr": "un ballet classique", "ru": "классический балет" },
+      { "fr": "aller voir un ballet", "ru": "пойти на балет" },
+      { "fr": "une danseuse de ballet", "ru": "балерина" },
+      { "fr": "le corps de ballet", "ru": "кордебалет" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "danse",
+        "note": "ballet = балет (определённый вид сценического танца и спектакль); danse = танец вообще (любой)."
+      },
+      {
+        "with": "ballon",
+        "note": "ballet /ba.lɛ/ = балет; ballon /ba.lɔ̃/ = мяч (или воздушный шар). Похожи на письме, но разный конец и звук."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["danse", "spectacle"],
+    "caseIds": ["wc-danse"]
+  },
+  {
+    "id": "wl-danse-valse",
+    "lemma": "valse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/vals/",
+    "translationsRu": ["вальс"],
+    "translationsEn": ["waltz"],
+    "semanticCore": "Вальс — плавный парный танец на три счёта, а также музыка для него.",
+    "collocations": [
+      { "fr": "danser la valse", "ru": "танцевать вальс" },
+      { "fr": "une valse de Chopin", "ru": "вальс Шопена" },
+      { "fr": "une valse lente", "ru": "медленный вальс" },
+      { "fr": "ouvrir le bal par une valse", "ru": "открыть бал вальсом" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tango",
+        "note": "valse = вальс (плавный, на три счёта); tango = танго (резкий, страстный, на два счёта). Оба парные танцы, но разный характер."
+      },
+      {
+        "with": "valise",
+        "note": "valse /vals/ = вальс; valise /va.liz/ = чемодан. Похожи в начале, но разные слова."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["danse", "musique"],
+    "caseIds": ["wc-danse"]
+  },
+  {
+    "id": "wl-danse-tango",
+    "lemma": "tango",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tɑ̃.ɡo/",
+    "translationsRu": ["танго"],
+    "translationsEn": ["tango"],
+    "semanticCore": "Танго — страстный парный танец родом из Аргентины, а также музыка к нему.",
+    "collocations": [
+      { "fr": "danser le tango", "ru": "танцевать танго" },
+      { "fr": "le tango argentin", "ru": "аргентинское танго" },
+      { "fr": "un cours de tango", "ru": "урок танго" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "valse",
+        "note": "tango = танго (резкий, на два счёта, из Аргентины); valse = вальс (плавный, на три счёта, из Вены)."
+      },
+      {
+        "with": "mangue",
+        "note": "tango /tɑ̃.ɡo/ = танго; mangue /mɑ̃ɡ/ = манго (фрукт). По-русски «танго/манго» рифмуются, по-французски это разные слова."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["danse", "musique"],
+    "caseIds": ["wc-danse"]
+  },
+  {
+    "id": "wl-danse-rythme",
+    "lemma": "rythme",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁitm/",
+    "translationsRu": ["ритм", "темп"],
+    "translationsEn": ["rhythm", "pace"],
+    "semanticCore": "Ритм — мерное чередование во времени: в музыке, в танце, а в переносном смысле и темп жизни.",
+    "collocations": [
+      { "fr": "suivre le rythme", "ru": "попадать в ритм" },
+      { "fr": "battre le rythme", "ru": "отбивать ритм" },
+      { "fr": "un rythme rapide", "ru": "быстрый ритм" },
+      { "fr": "le rythme de vie", "ru": "ритм жизни" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "rime",
+        "note": "rythme = ритм (чередование во времени); rime = рифма (созвучие концов стихов). Разные слова и разное написание."
+      },
+      {
+        "with": "mélodie",
+        "note": "rythme = ритм (когда и как сильно); mélodie = мелодия (какие ноты и в каком порядке)."
+      }
+    ],
+    "frequencyRank": 560,
+    "level": "A2",
+    "tags": ["danse", "musique"],
+    "caseIds": ["wc-danse"]
+  },
+  {
+    "id": "wl-danse-danseur",
+    "lemma": "danseur",
+    "displayForm": "danseur / danseuse",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/dɑ̃.sœʁ/",
+    "translationsRu": ["танцор", "танцовщик"],
+    "translationsEn": ["dancer"],
+    "semanticCore": "Тот, кто танцует, — как профессионально на сцене, так и просто в паре на балу.",
+    "collocations": [
+      { "fr": "un danseur professionnel", "ru": "профессиональный танцор" },
+      { "fr": "un danseur étoile", "ru": "ведущий солист балета" },
+      { "fr": "un bon danseur", "ru": "хороший танцор (партнёр)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "danseuse",
+        "note": "danseur = танцор (мужчина); danseuse = танцовщица (женщина). Мужское -eur меняется на женское -euse."
+      },
+      {
+        "with": "danse",
+        "note": "danseur = человек, который танцует; danse = сам танец (действие/искусство). Не путать лицо и занятие."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["danse", "personne"],
+    "caseIds": ["wc-danse"]
+  },
+  {
+    "id": "wl-danse-choregraphie",
+    "lemma": "chorégraphie",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kɔ.ʁe.ɡʁa.fi/",
+    "translationsRu": ["хореография", "постановка танца"],
+    "translationsEn": ["choreography"],
+    "semanticCore": "Хореография — заранее придуманный рисунок танца: какие движения и в каком порядке исполняют.",
+    "collocations": [
+      { "fr": "répéter la chorégraphie", "ru": "репетировать хореографию" },
+      { "fr": "signer la chorégraphie", "ru": "быть автором хореографии" },
+      { "fr": "une chorégraphie moderne", "ru": "современная хореография" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chorégraphe",
+        "note": "chorégraphie = сама постановка (что танцуют); chorégraphe = хореограф (человек, который её придумал)."
+      },
+      {
+        "with": "danse",
+        "note": "chorégraphie = конкретный, поставленный набор движений; danse = танец вообще как искусство или занятие."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["danse", "spectacle"],
+    "caseIds": ["wc-danse"]
+  },
+  {
+    "id": "wl-danse-tournoyer",
+    "lemma": "tournoyer",
+    "pos": "verb",
+    "ipa": "/tuʁ.nwa.je/",
+    "translationsRu": ["кружиться", "вертеться"],
+    "translationsEn": ["to whirl", "to spin"],
+    "semanticCore": "Долго вращаться, описывая круги: о танцорах, юбке, листьях или снеге на ветру.",
+    "collocations": [
+      { "fr": "tournoyer sur la piste", "ru": "кружиться на танцполе" },
+      { "fr": "faire tournoyer sa partenaire", "ru": "закружить партнёршу" },
+      { "fr": "tournoyer dans le vent", "ru": "кружиться на ветру" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "tourner",
+        "note": "tourner = повернуть(ся) (единично, сменить направление); tournoyer = кружиться долго, описывая круги."
+      },
+      {
+        "with": "danser",
+        "note": "tournoyer = именно вращаться, кружиться; danser = танцевать вообще (любые движения, не только вращение)."
+      }
+    ],
+    "frequencyRank": 860,
+    "level": "A2",
+    "tags": ["danse", "mouvement"],
+    "caseIds": ["wc-danse"]
+  },
+  {
+    "id": "wl-danse-entracte",
+    "lemma": "entracte",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɑ̃.tʁakt/",
+    "translationsRu": ["антракт", "перерыв"],
+    "translationsEn": ["intermission", "interval"],
+    "semanticCore": "Антракт — перерыв между действиями спектакля, балета или концерта.",
+    "collocations": [
+      { "fr": "pendant l'entracte", "ru": "во время антракта" },
+      { "fr": "un entracte de vingt minutes", "ru": "двадцатиминутный антракт" },
+      { "fr": "après l'entracte", "ru": "после антракта" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pause",
+        "note": "entracte = антракт именно в спектакле/концерте (между актами); pause = пауза, перерыв в любой ситуации (на работе, в учёбе)."
+      },
+      {
+        "with": "acte",
+        "note": "entracte = перерыв между актами; acte = сам акт, действие спектакля. Слово буквально: entre (между) + acte."
+      }
+    ],
+    "frequencyRank": 880,
+    "level": "A2",
+    "tags": ["danse", "spectacle"],
+    "caseIds": ["wc-danse"]
+  }
+]

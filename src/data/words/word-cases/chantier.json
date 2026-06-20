@@ -1,0 +1,308 @@
+[
+  {
+    "id": "wc-chantier",
+    "title": "Стройка",
+    "theme": "chantier",
+    "level": "A2",
+    "wordIds": [
+      "wl-chantier-chantier",
+      "wl-chantier-ouvrier",
+      "wl-chantier-grue",
+      "wl-chantier-ciment",
+      "wl-chantier-brique",
+      "wl-chantier-echafaudage",
+      "wl-chantier-pelle",
+      "wl-chantier-truelle"
+    ],
+    "steps": [
+      {
+        "id": "wc-chantier-chantier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-chantier-chantier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les ouvriers arrivent sur le chantier à sept heures.",
+          "Le chantier de l'immeuble durera deux ans.",
+          "Attention, c'est un chantier : port du casque obligatoire."
+        ],
+        "options": ["стройка (строительная площадка)", "завод", "склад", "магазин"],
+        "correctIndex": 0,
+        "explanation": "chantier (m) — стройка, строительная площадка. «sur le chantier» — на стройке. Завод — une usine, склад — un entrepôt."
+      },
+      {
+        "id": "wc-chantier-chantier-trap",
+        "kind": "trap",
+        "wordId": "wl-chantier-chantier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Француз заходит в комнату и говорит: «Quel chantier !» Что он имеет в виду?",
+        "options": [
+          "«Ну и бардак!» — chantier в разговоре значит беспорядок",
+          "«Какая стройка!» — он восхищён зданием",
+          "«Какой завод!» — речь о производстве",
+          "«Какая работа!» — он хвалит чужой труд"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка переносного смысла: буквально chantier — стройка, но в разговоре «Quel chantier !» = «Ну и бардак, ну и беспорядок!» (как у нас «тут как после стройки»)."
+      },
+      {
+        "id": "wc-chantier-ouvrier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-chantier-ouvrier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Les ouvriers déjeunent à midi.",
+          "Mon voisin est ouvrier dans le bâtiment.",
+          "Il faut dix ouvriers pour ce chantier."
+        ],
+        "options": ["рабочий", "инженер", "начальник", "сосед"],
+        "correctIndex": 0,
+        "explanation": "ouvrier (m) — рабочий (физического труда). «un ouvrier du bâtiment» — строительный рабочий. Инженер — un ingénieur, начальник — un chef."
+      },
+      {
+        "id": "wc-chantier-ouvrier-cmp",
+        "kind": "compare",
+        "wordId": "wl-chantier-ouvrier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un ouvrier и un employé — в чём разница?",
+        "phrases": [
+          "Mon frère est ouvrier sur un chantier.",
+          "Mon frère est employé dans une banque."
+        ],
+        "options": [
+          "ouvrier — рабочий (физический труд: стройка, цех); employé — служащий (офис, контора).",
+          "Это полные синонимы.",
+          "ouvrier — служащий в офисе; employé — рабочий на стройке.",
+          "ouvrier — начальник; employé — его подчинённый."
+        ],
+        "correctIndex": 0,
+        "explanation": "ouvrier — рабочий, занятый физическим трудом (chantier, usine). employé — служащий, работает в офисе/конторе (banque, bureau). Разные категории работников."
+      },
+      {
+        "id": "wc-chantier-grue-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-chantier-grue",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La grue soulève les poutres en acier.",
+          "Une grue immense domine le chantier.",
+          "Le conducteur de grue monte dans la cabine."
+        ],
+        "options": ["подъёмный кран", "грузовик", "лестница", "леса"],
+        "correctIndex": 0,
+        "explanation": "grue (f) — подъёмный кран. «une grue de chantier» — строительный кран. Грузовик — un camion, леса — un échafaudage."
+      },
+      {
+        "id": "wc-chantier-grue-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-chantier-grue",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "grue",
+        "options": ["grue", "rue", "roue", "crue"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало grue /ɡʁy/ — подъёмный кран. Похожие, но другие слова: rue (улица), roue (колесо), crue (паводок). Слушай начало слова."
+      },
+      {
+        "id": "wc-chantier-ciment-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-chantier-ciment",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет слово. Что значит ciment?",
+        "bridge": "Англ. «cement» — почти то же слово. Фр. ciment пишется через c-i, читается /si.mɑ̃/ с носовым на конце.",
+        "options": ["цемент", "песок", "кирпич", "краска"],
+        "correctIndex": 0,
+        "explanation": "ciment = цемент. Англ. «cement» — прямой мост. Песок — le sable, кирпич — une brique."
+      },
+      {
+        "id": "wc-chantier-ciment-cmp",
+        "kind": "compare",
+        "wordId": "wl-chantier-ciment",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le ciment и le béton — это одно и то же?",
+        "phrases": ["On mélange le ciment avec de l'eau.", "Le pont est en béton."],
+        "options": [
+          "Нет: ciment — цемент (порошок-вяжущее); béton — бетон (цемент + песок + щебень + вода).",
+          "Да, это полные синонимы.",
+          "ciment — это бетон, а béton — цемент.",
+          "ciment — жидкий бетон, béton — сухой цемент."
+        ],
+        "correctIndex": 0,
+        "explanation": "ciment — цемент, серый порошок-вяжущее. béton — бетон, готовая смесь из цемента, песка, щебня и воды. Из ciment делают béton."
+      },
+      {
+        "id": "wc-chantier-brique-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-chantier-brique",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет слово с первого взгляда. Что значит brique?",
+        "bridge": "Англ. «brick» — почти то же слово. Фр. brique женского рода (une brique), пишется с -que, читается /bʁik/.",
+        "options": ["кирпич", "доска", "плитка", "балка"],
+        "correctIndex": 0,
+        "explanation": "brique = кирпич. Англ. «brick» — прямой мост. «un mur en briques» — кирпичная стена. Доска — une planche, балка — une poutre."
+      },
+      {
+        "id": "wc-chantier-brique-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-chantier-brique",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "brique",
+        "options": ["brique", "fabrique", "Afrique", "trique"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало brique /bʁik/ — кирпич. Похожие по звучанию слова: fabrique (фабрика), Afrique (Африка), trique (дубина). У всех общий конец -ique, но начало разное."
+      },
+      {
+        "id": "wc-chantier-echafaudage-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-chantier-echafaudage",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Les peintres montent sur l'échafaudage.",
+          "On installe un échafaudage devant la façade.",
+          "L'échafaudage entoure tout l'immeuble."
+        ],
+        "options": ["строительные леса", "лестница", "балкон", "крыша"],
+        "correctIndex": 0,
+        "explanation": "échafaudage (m) — строительные леса: временный помост вдоль стены для работы на высоте. Лестница (приставная) — une échelle, балкон — un balcon."
+      },
+      {
+        "id": "wc-chantier-echafaudage-hint",
+        "kind": "wordHint",
+        "wordId": "wl-chantier-echafaudage",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: временная металлическая конструкция вокруг здания, по которой рабочие поднимаются и работают на высоте.",
+        "answer": "échafaudage",
+        "hints": [
+          "Начинается с é… (accent aigu)",
+          "Мужской род: un ___",
+          "On monte sur l'___ pour peindre la façade."
+        ],
+        "explanation": "échafaudage (m) — строительные леса. Длинное слово: é-c-h-a-f-a-u-d-a-g-e, /e.ʃa.fo.daʒ/. «monter un échafaudage» — собирать леса."
+      },
+      {
+        "id": "wc-chantier-pelle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-chantier-pelle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il creuse un trou avec une pelle.",
+          "Passe-moi la pelle, le tas de sable est là.",
+          "Une pelle et une pioche suffisent pour ce travail."
+        ],
+        "options": ["лопата", "молоток", "ведро", "тачка"],
+        "correctIndex": 0,
+        "explanation": "pelle (f) — лопата. «creuser avec une pelle» — копать лопатой. Молоток — un marteau, ведро — un seau, тачка — une brouette."
+      },
+      {
+        "id": "wc-chantier-pelle-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-chantier-pelle",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "pelle",
+        "options": ["pelle", "belle", "selle", "balle"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало pelle /pɛl/ — лопата. Похожие слова: belle (красивая), selle (седло), balle (мяч). Все короткие и созвучные — лови первый согласный."
+      },
+      {
+        "id": "wc-chantier-truelle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-chantier-truelle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le maçon étale le ciment avec sa truelle.",
+          "La truelle a une lame triangulaire.",
+          "Sans truelle, impossible de poser les briques proprement."
+        ],
+        "options": ["мастерок (кельма)", "лопата", "кисть", "пила"],
+        "correctIndex": 0,
+        "explanation": "truelle (f) — мастерок (кельма): маленький инструмент каменщика с треугольным лезвием, им наносят раствор. Кисть — un pinceau, пила — une scie."
+      },
+      {
+        "id": "wc-chantier-truelle-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-chantier-truelle",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — ручные инструменты со стройки. Найди лишнее.",
+        "options": ["la truelle", "la pelle", "la pioche", "la grue"],
+        "correctIndex": 3,
+        "explanation": "Мастерок (la truelle), лопата (la pelle) и кирка (la pioche) — ручные инструменты. Кран (la grue) — лишний: это большая машина, а не ручной инструмент."
+      },
+      {
+        "id": "wc-chantier-ciment-sort",
+        "kind": "sort",
+        "wordId": "wl-chantier-ciment",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со стройки звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un sac de ciment",
+            "basket": "ok"
+          },
+          {
+            "text": "un mur en briques",
+            "basket": "ok"
+          },
+          {
+            "text": "monter sur l'échafaudage",
+            "basket": "ok"
+          },
+          {
+            "text": "boire du ciment",
+            "basket": "no"
+          },
+          {
+            "text": "une brique liquide",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un sac de ciment», «un mur en briques», «monter sur l'échafaudage» — естественно. «boire du ciment» (пить цемент) и «une brique liquide» (жидкий кирпич) — бессмыслица."
+      },
+      {
+        "id": "wc-chantier-grue-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-chantier-grue",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для grue (кран), чтобы запомнить женский род (une grue) и что это же слово — журавль.",
+        "examples": [
+          "Журавль (grue) тянет длинную шею вверх — как стрела крана. Англ. crane — тоже и кран, и журавль.",
+          "«Гру-у!» — слышно, как стрела крана со скрипом ползёт вверх. Она, la grue, тянется к небу — женского рода."
+        ]
+      }
+    ]
+  }
+]

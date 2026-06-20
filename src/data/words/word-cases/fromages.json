@@ -1,0 +1,334 @@
+[
+  {
+    "id": "wc-fromages",
+    "title": "Сыры",
+    "theme": "fromages",
+    "level": "A2",
+    "wordIds": [
+      "wl-fromages-camembert",
+      "wl-fromages-brie",
+      "wl-fromages-roquefort",
+      "wl-fromages-gruyere",
+      "wl-fromages-croute",
+      "wl-fromages-pate",
+      "wl-fromages-fromager",
+      "wl-fromages-fondue"
+    ],
+    "steps": [
+      {
+        "id": "wc-fromages-camembert-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fromages-camembert",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On achète un camembert au lait cru pour ce soir.",
+          "Le camembert vient de Normandie.",
+          "Ce camembert est bien coulant, parfait."
+        ],
+        "options": [
+          "камамбер (мягкий сыр с белой корочкой)",
+          "твёрдый тёртый сыр",
+          "голубой сыр с плесенью",
+          "плавленый сыр"
+        ],
+        "correctIndex": 0,
+        "explanation": "camembert (m) — мягкий нормандский сыр с белой плесневой корочкой, в круглой деревянной коробочке. «coulant» — растёкшийся, спелый. Голубой сыр — un fromage bleu."
+      },
+      {
+        "id": "wc-fromages-camembert-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-fromages-camembert",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Это слово английский взял у французского без изменений. Что значит camembert?",
+        "bridge": "Англ. «camembert» пишется ровно так же — это и есть французское название сыра. Меняется только произношение: фр. /ka.mɑ̃.bɛʁ/ с носовым -am-.",
+        "options": [
+          "камамбер (сорт мягкого сыра)",
+          "название региона",
+          "сырная тарелка",
+          "сорт хлеба"
+        ],
+        "correctIndex": 0,
+        "explanation": "camembert = камамбер. Слово названо по деревне Camembert в Нормандии и вошло в английский без изменений — прямой мост, отличается лишь звучанием."
+      },
+      {
+        "id": "wc-fromages-brie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fromages-brie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Je voudrais une part de brie, s'il vous plaît.",
+          "Le brie de Meaux est très crémeux.",
+          "On a mis du brie sur la baguette."
+        ],
+        "options": [
+          "бри (мягкий сыр с белой корочкой)",
+          "сливочное масло",
+          "творог",
+          "корка хлеба"
+        ],
+        "correctIndex": 0,
+        "explanation": "brie (m) — большой мягкий сыр с белой корочкой из региона Бри. «une part de brie» — ломтик бри (его режут треугольниками). Масло — le beurre."
+      },
+      {
+        "id": "wc-fromages-brie-cmp",
+        "kind": "compare",
+        "wordId": "wl-fromages-brie",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "le brie и le camembert. В чём разница?",
+        "phrases": [
+          "Le brie se vend en grandes parts.",
+          "Le camembert se vend en petite boîte ronde."
+        ],
+        "options": [
+          "оба мягкие с белой корочкой, но brie крупнее и мягче, camembert меньше и насыщеннее.",
+          "это полные синонимы, разницы нет.",
+          "brie — твёрдый сыр, camembert — голубой.",
+          "brie из Нормандии, camembert из региона Бри."
+        ],
+        "correctIndex": 0,
+        "explanation": "brie и camembert — близкие родственники: оба мягкие, с белой плесневой корочкой. Но brie больше и мягче по вкусу, а camembert меньше, плотнее и из Нормандии."
+      },
+      {
+        "id": "wc-fromages-roquefort-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fromages-roquefort",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'adore la sauce au roquefort sur les pâtes.",
+          "Le roquefort est un fromage très fort.",
+          "Le roquefort est fait avec du lait de brebis."
+        ],
+        "options": [
+          "рокфор (солёный овечий сыр с голубой плесенью)",
+          "мягкий сыр с белой корочкой",
+          "тёртый твёрдый сыр",
+          "свежий творожный сыр"
+        ],
+        "correctIndex": 0,
+        "explanation": "roquefort (m) — солёный сыр из овечьего молока (lait de brebis) с голубой плесенью и резким вкусом. «fort» здесь — резкий, острый по вкусу. Мягкий белый сыр — le brie или le camembert."
+      },
+      {
+        "id": "wc-fromages-roquefort-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-fromages-roquefort",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "roquefort",
+        "options": ["roquefort", "réconfort", "confort", "effort"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало roquefort /ʁɔk.fɔʁ/ — сыр. Похоже оканчиваются réconfort (утешение), confort (комфорт), effort (усилие), но начало roque- выдаёт нужное слово."
+      },
+      {
+        "id": "wc-fromages-gruyere-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fromages-gruyere",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ajoute du gruyère râpé sur les pâtes.",
+          "On fait gratiner le plat avec du gruyère.",
+          "Il reste un peu de gruyère pour la soupe."
+        ],
+        "options": [
+          "грюйер (твёрдый сыр, который трут)",
+          "мягкий сыр в коробочке",
+          "голубой сыр с плесенью",
+          "сырный соус"
+        ],
+        "correctIndex": 0,
+        "explanation": "gruyère (m) — твёрдый сыр, который трут (râpé) в супы и запеканки. «gratiner» — запечь под сырной корочкой. Во Франции «gruyère» в быту зовут почти любой тёртый твёрдый сыр."
+      },
+      {
+        "id": "wc-fromages-gruyere-sort",
+        "kind": "sort",
+        "wordId": "wl-fromages-gruyere",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом gruyère звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "du gruyère râpé",
+            "basket": "ok"
+          },
+          {
+            "text": "gratiner au gruyère",
+            "basket": "ok"
+          },
+          {
+            "text": "saupoudrer de gruyère",
+            "basket": "ok"
+          },
+          {
+            "text": "boire du gruyère",
+            "basket": "no"
+          },
+          {
+            "text": "un gruyère coulant",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«du gruyère râpé», «gratiner au gruyère», «saupoudrer de gruyère» — естественно: грюйер трут и им посыпают. «boire du gruyère» (пить грюйер) — бессмыслица, а «coulant» (растёкшийся) говорят про мягкий сыр вроде камамбера, а не про твёрдый грюйер."
+      },
+      {
+        "id": "wc-fromages-croute-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fromages-croute",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La croûte du camembert est blanche.",
+          "Tu peux enlever la croûte si tu veux.",
+          "J'aime la croûte croustillante du pain."
+        ],
+        "options": ["корка / корочка", "мякоть", "плесень", "коробочка"],
+        "correctIndex": 0,
+        "explanation": "croûte (f) — твёрдый или плесневый внешний слой сыра, а ещё корка хлеба. Обрати внимание на accent circonflexe: c-r-o-û-t-e. Мякоть сыра — la pâte."
+      },
+      {
+        "id": "wc-fromages-croute-trap",
+        "kind": "trap",
+        "wordId": "wl-fromages-croute",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "«Корка» сыра и «кора» дерева по-русски почти одно слово. А по-французски?",
+        "options": [
+          "корка сыра — la croûte, кора дерева — l'écorce",
+          "и то и другое — la croûte",
+          "и то и другое — l'écorce",
+          "корка сыра — l'écorce, кора дерева — la croûte"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: la croûte — корка хлеба, сыра, запечённого блюда; l'écorce (f) — кора дерева или кожура цитрусовых. Звучат по-русски похоже, но во французском это разные слова."
+      },
+      {
+        "id": "wc-fromages-pate-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fromages-pate",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах про сыр?",
+        "contexts": [
+          "Le camembert est un fromage à pâte molle.",
+          "Le gruyère est un fromage à pâte dure.",
+          "Sous la croûte, la pâte est crémeuse."
+        ],
+        "options": ["мякоть сыра (масса под коркой)", "корка сыра", "плесень", "запах"],
+        "correctIndex": 0,
+        "explanation": "pâte (f) — мягкая внутренняя масса сыра под коркой. Сыры по ней и делят: «à pâte molle» (мягкая мякоть, как камамбер) и «à pâte dure» (твёрдая, как грюйер). То же слово значит «тесто»."
+      },
+      {
+        "id": "wc-fromages-pate-trap",
+        "kind": "trap",
+        "wordId": "wl-fromages-pate",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "la pâte и les pâtes — это про разное. Где «мякоть сыра / тесто»?",
+        "options": [
+          "la pâte (ед. ч.) — тесто или мякоть сыра",
+          "les pâtes (мн. ч.) — мякоть сыра",
+          "оба значат «макароны»",
+          "la pâte — это макароны, les pâtes — тесто"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка числа: la pâte (ед. ч.) — тесто или мякоть сыра; les pâtes (мн. ч.) — макароны, паста. Разница только в числе и артикле, а пишутся одинаково."
+      },
+      {
+        "id": "wc-fromages-pate-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-fromages-pate",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для pâte (мякоть сыра / тесто), чтобы не путать её с les pâtes (макароны) и помнить про accent circonflexe (â).",
+        "examples": [
+          "Шапочка над â — как «крышечка» на кастрюльке с тестом: одна la pâte под крышкой, а макароны (les pâtes) — это уже много, во множественном.",
+          "Представь, как режешь камамбер: сверху la croûte (корка), а внутри мягкая la pâte (мякоть) — обе женского рода, «свои»."
+        ]
+      },
+      {
+        "id": "wc-fromages-fromager-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fromages-fromager",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Le fromager m'a conseillé un bon roquefort.",
+          "On achète le brie chez le fromager.",
+          "Le fromager du marché vend du lait de brebis."
+        ],
+        "options": ["сыродел / продавец сыра", "сам сыр", "сырная тарелка", "молочный отдел"],
+        "correctIndex": 0,
+        "explanation": "fromager (m) — человек, который делает или продаёт сыр (а ещё так зовут сырную лавку). Сам сыр — le fromage. Разница в конце: -age (продукт) против -ager (профессия)."
+      },
+      {
+        "id": "wc-fromages-fromager-trap",
+        "kind": "trap",
+        "wordId": "wl-fromages-fromager",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "le fromage и le fromager отличаются одной буквой. Кто из них — человек?",
+        "options": [
+          "le fromager — сыродел/продавец; le fromage — сам сыр",
+          "le fromage — продавец; le fromager — сам сыр",
+          "оба значат «сыр»",
+          "оба значат «продавец сыра»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка похожих слов: le fromage — продукт (сыр), le fromager — профессия (сыродел, продавец сыра). Суффикс -er часто даёт название деятеля: boulanger, fromager."
+      },
+      {
+        "id": "wc-fromages-fondue-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-fromages-fondue",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ce soir, on fait une fondue savoyarde.",
+          "On trempe le pain dans la fondue.",
+          "La fondue, c'est convivial entre amis."
+        ],
+        "options": [
+          "фондю (блюдо из расплавленного сыра)",
+          "сырная корка",
+          "тёртый сыр",
+          "сырная лавка"
+        ],
+        "correctIndex": 0,
+        "explanation": "fondue (f) — блюдо из расплавленного сыра в общей кастрюльке, куда макают хлеб на длинной вилке. «savoyarde» — савойская (из региона Савойя). «convivial» — за общим столом, по-дружески."
+      },
+      {
+        "id": "wc-fromages-fondue-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-fromages-fondue",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — это сыры, а одно — блюдо из сыра. Найди лишнее.",
+        "options": ["le camembert", "le roquefort", "la fondue", "le gruyère"],
+        "correctIndex": 2,
+        "explanation": "camembert, roquefort и gruyère — это сорта сыра. la fondue — лишнее: это не сыр, а блюдо, которое из сыра готовят (его плавят в кастрюльке)."
+      }
+    ]
+  }
+]

@@ -1,0 +1,336 @@
+[
+  {
+    "id": "wc-marins",
+    "title": "Морские животные",
+    "theme": "marins",
+    "level": "A2",
+    "wordIds": [
+      "wl-marins-dauphin",
+      "wl-marins-baleine",
+      "wl-marins-requin",
+      "wl-marins-meduse",
+      "wl-marins-pieuvre",
+      "wl-marins-phoque",
+      "wl-marins-tortue",
+      "wl-marins-hippocampe"
+    ],
+    "steps": [
+      {
+        "id": "wc-marins-dauphin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-marins-dauphin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Un dauphin saute hors de l'eau près du bateau.",
+          "Les enfants rêvent de nager avec les dauphins.",
+          "Le dauphin est un mammifère très intelligent."
+        ],
+        "options": ["дельфин", "кит", "акула", "тюлень"],
+        "correctIndex": 0,
+        "explanation": "dauphin (m) — дельфин: умное морское млекопитающее, не рыба. «nager avec les dauphins» — плавать с дельфинами. Кит — une baleine, акула — un requin."
+      },
+      {
+        "id": "wc-marins-dauphin-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-marins-dauphin",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский подскажет слово с первого взгляда. Что значит dauphin?",
+        "bridge": "Англ. «dolphin» — дельфин. Французское dauphin — тот же корень: dau-ph… ≈ dol-ph…",
+        "options": ["дельфин", "кит", "осьминог", "черепаха"],
+        "correctIndex": 0,
+        "explanation": "dauphin = дельфин. Англ. «dolphin» — прямой мост к слову. Читается /do.fɛ̃/, с носовым звуком на конце."
+      },
+      {
+        "id": "wc-marins-baleine-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-marins-baleine",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La baleine bleue est le plus grand animal du monde.",
+          "On a vu une baleine souffler de l'eau au loin.",
+          "La chasse à la baleine est interdite ici."
+        ],
+        "options": ["кит", "акула", "дельфин", "морж"],
+        "correctIndex": 0,
+        "explanation": "baleine (f) — кит. «une baleine bleue» — синий кит, «la chasse à la baleine» — китобойный промысел. Кит — млекопитающее (mammifère), а не рыба."
+      },
+      {
+        "id": "wc-marins-baleine-cmp",
+        "kind": "compare",
+        "wordId": "wl-marins-baleine",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "la baleine и le requin. В чём главная разница?",
+        "phrases": [
+          "La baleine remonte respirer à la surface.",
+          "Le requin respire sous l'eau avec ses branchies."
+        ],
+        "options": [
+          "baleine — кит, млекопитающее (дышит воздухом на поверхности); requin — акула, рыба (дышит жабрами под водой).",
+          "Это одно и то же животное, просто разные слова.",
+          "baleine — акула, requin — кит.",
+          "baleine — рыба, requin — млекопитающее."
+        ],
+        "correctIndex": 0,
+        "explanation": "Оба огромные и живут в море, но la baleine — un mammifère: поднимается дышать воздухом. le requin — un poisson: дышит жабрами (branchies) под водой. Это ключевое различие."
+      },
+      {
+        "id": "wc-marins-requin-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-marins-requin",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Un requin blanc rôde près de la plage.",
+          "Les surfeurs ont peur des attaques de requin.",
+          "Le requin a des dents très pointues."
+        ],
+        "options": ["акула", "кит", "тюлень", "медуза"],
+        "correctIndex": 0,
+        "explanation": "requin (m) — акула: хищная рыба с острыми зубами. «un requin blanc» — белая акула, «une attaque de requin» — нападение акулы."
+      },
+      {
+        "id": "wc-marins-requin-trap",
+        "kind": "trap",
+        "wordId": "wl-marins-requin",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Коллега говорит про начальника: «C'est un requin de la finance». Он что, про рыбу?",
+        "options": [
+          "Нет: «requin de la finance» — безжалостный, хваткий делец («акула» бизнеса).",
+          "Да, буквально про акулу в аквариуме офиса.",
+          "Это значит «новичок в финансах».",
+          "Это значит «честный и щедрый человек»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Переносное значение: un requin de la finance — «акула» финансового мира, жёсткий и хищный делец. Как и в русском, акулой называют опасного, безжалостного человека в деле."
+      },
+      {
+        "id": "wc-marins-meduse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-marins-meduse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Attention, il y a des méduses dans l'eau.",
+          "Je me suis fait piquer par une méduse.",
+          "La méduse est presque transparente."
+        ],
+        "options": ["медуза", "морская звезда", "осьминог", "краб"],
+        "correctIndex": 0,
+        "explanation": "méduse (f) — медуза: студенистое прозрачное существо, которое жжётся. «se faire piquer par une méduse» — обжечься о медузу. Морская звезда — une étoile de mer."
+      },
+      {
+        "id": "wc-marins-meduse-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-marins-meduse",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "méduse",
+        "options": ["amuse", "ruse", "méduse", "abuse"],
+        "correctIndex": 2,
+        "explanation": "méduse /me.dyz/ — медуза. Похоже оканчиваются, но это другие слова: amuse /a.myz/ — забавляет, ruse /ʁyz/ — хитрость, abuse /a.byz/ — злоупотребляет. Слушай начало слова."
+      },
+      {
+        "id": "wc-marins-pieuvre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-marins-pieuvre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La pieuvre a huit tentacules.",
+          "Une pieuvre peut changer de couleur pour se cacher.",
+          "Le plongeur a vu une pieuvre entre les rochers."
+        ],
+        "options": ["осьминог", "медуза", "краб", "кальмар"],
+        "correctIndex": 0,
+        "explanation": "pieuvre (f) — осьминог: восемь «рук»-щупалец, умеет менять цвет. Кальмар — un calmar (десять щупалец, плавает в толще воды)."
+      },
+      {
+        "id": "wc-marins-pieuvre-cmp",
+        "kind": "compare",
+        "wordId": "wl-marins-pieuvre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "une pieuvre и un poulpe. В чём разница?",
+        "phrases": ["Le roman décrit une pieuvre géante.", "Au marché, j'ai acheté du poulpe."],
+        "options": [
+          "Это одно животное — осьминог. poulpe чаще в еде/на рынке, pieuvre — более книжное слово.",
+          "pieuvre — осьминог, poulpe — кальмар.",
+          "pieuvre — щупальце, poulpe — целое животное.",
+          "pieuvre живёт в реке, poulpe — в море."
+        ],
+        "correctIndex": 0,
+        "explanation": "pieuvre и poulpe — оба «осьминог», это синонимы. В кулинарии и на рынке чаще говорят poulpe; pieuvre — слово более литературное (его закрепил Виктор Гюго). Оба верны."
+      },
+      {
+        "id": "wc-marins-phoque-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-marins-phoque",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Un phoque se repose sur la banquise.",
+          "Le bébé phoque est tout blanc.",
+          "Le phoque plonge pour attraper des poissons."
+        ],
+        "options": ["тюлень", "пингвин", "морж", "выдра"],
+        "correctIndex": 0,
+        "explanation": "phoque (m) — тюлень: морское млекопитающее с ластами. «un bébé phoque» — белёк, детёныш тюленя. Читается /fɔk/, конечное e не звучит."
+      },
+      {
+        "id": "wc-marins-phoque-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-marins-phoque",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "phoque",
+        "options": ["coque", "choc", "phoque", "bloc"],
+        "correctIndex": 2,
+        "explanation": "phoque /fɔk/ — тюлень. Похожие односложные слова: coque /kɔk/ — скорлупа/корпус, choc /ʃɔk/ — удар/шок, bloc /blɔk/ — блок. Различай согласный в начале."
+      },
+      {
+        "id": "wc-marins-phoque-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-marins-phoque",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для phoque (тюлень), чтобы запомнить написание ph- и мужской род (un phoque).",
+        "examples": [
+          "ph- читается как «ф», точно как в photo и phrase: phoque = /фок/. Один и тот же «ph».",
+          "Представь толстого тюленя-фотографа: un phoque фотографирует льдину — «он», мужского рода."
+        ]
+      },
+      {
+        "id": "wc-marins-tortue-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-marins-tortue",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Une tortue de mer nage lentement vers la plage.",
+          "La tortue rentre sa tête dans sa carapace.",
+          "Tu marches lentement comme une tortue !"
+        ],
+        "options": ["черепаха", "краб", "улитка", "тюлень"],
+        "correctIndex": 0,
+        "explanation": "tortue (f) — черепаха. «une tortue de mer» — морская черепаха, «la carapace» — панцирь, «lent comme une tortue» — медленный как черепаха."
+      },
+      {
+        "id": "wc-marins-tortue-trap",
+        "kind": "trap",
+        "wordId": "wl-marins-tortue",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В английском «turtle» (морская) и «tortoise» (сухопутная) — разные слова. Как по-французски назвать обеих?",
+        "options": [
+          "Обе — une tortue; уточняют: tortue de mer / tortue terrestre.",
+          "Морская — une turtle, сухопутная — une tortoise.",
+          "Морская — une tortue, сухопутная — une tortoise.",
+          "Для черепахи во французском вообще нет слова."
+        ],
+        "correctIndex": 0,
+        "explanation": "Во французском одно слово на обеих: la tortue. При необходимости уточняют — une tortue de mer (морская) или une tortue terrestre (сухопутная). Англ. turtle/tortoise во французском не существует."
+      },
+      {
+        "id": "wc-marins-hippocampe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-marins-hippocampe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "L'hippocampe est un tout petit poisson.",
+          "Chez l'hippocampe, c'est le mâle qui porte les œufs.",
+          "L'hippocampe s'accroche aux algues avec sa queue."
+        ],
+        "options": ["морской конёк", "морская звезда", "креветка", "медуза"],
+        "correctIndex": 0,
+        "explanation": "hippocampe (m) — морской конёк: крошечная рыбка с головой как у лошадки. Удивительный факт: икру вынашивает самец (le mâle porte les œufs). Перед h ставят l' — l'hippocampe."
+      },
+      {
+        "id": "wc-marins-hippocampe-hint",
+        "kind": "wordHint",
+        "wordId": "wl-marins-hippocampe",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: крошечная морская рыбка с головой, похожей на лошадиную, и хвостиком-крючком.",
+        "answer": "hippocampe",
+        "hints": [
+          "Начинается с немой h…",
+          "От греч. hippos «конь» — как «гиппо…»",
+          "L'___ s'accroche aux algues."
+        ],
+        "explanation": "hippocampe (m) — морской конёк. От греч. hippos (конь) + kampos (морское чудище). То же слово — отдел мозга (гиппокамп), названный за похожую форму."
+      },
+      {
+        "id": "wc-marins-meduse-sort",
+        "kind": "sort",
+        "wordId": "wl-marins-meduse",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания про морских животных звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "se faire piquer par une méduse",
+            "basket": "ok"
+          },
+          {
+            "text": "nager avec les dauphins",
+            "basket": "ok"
+          },
+          {
+            "text": "un requin blanc",
+            "basket": "ok"
+          },
+          {
+            "text": "la carapace de la tortue",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une baleine",
+            "basket": "no"
+          },
+          {
+            "text": "une méduse en bois",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественно: «se faire piquer par une méduse», «nager avec les dauphins», «un requin blanc», «la carapace de la tortue». Бессмыслица: «boire une baleine» (пить кита) и «une méduse en bois» (деревянная медуза)."
+      },
+      {
+        "id": "wc-marins-pieuvre-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-marins-pieuvre",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — морские млекопитающие. Найди лишнее.",
+        "options": ["le dauphin", "la baleine", "le phoque", "la pieuvre"],
+        "correctIndex": 3,
+        "explanation": "Дельфин (le dauphin), кит (la baleine) и тюлень (le phoque) — морские млекопитающие. Осьминог (la pieuvre) — лишний: это беспозвоночное (моллюск), а не млекопитающее."
+      }
+    ]
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "id": "wl-marins-dauphin",
+    "lemma": "dauphin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/do.fɛ̃/",
+    "translationsRu": ["дельфин"],
+    "translationsEn": ["dolphin"],
+    "semanticCore": "Дельфин — умное морское млекопитающее, которое выпрыгивает из воды; не рыба.",
+    "collocations": [
+      { "fr": "nager avec les dauphins", "ru": "плавать с дельфинами" },
+      { "fr": "un banc de dauphins", "ru": "стая дельфинов" },
+      { "fr": "le dauphin saute hors de l'eau", "ru": "дельфин выпрыгивает из воды" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "baleine",
+        "note": "dauphin = дельфин (небольшой, быстрый); baleine = кит (огромный). Оба млекопитающие, не рыбы."
+      },
+      {
+        "with": "Dauphin (титул)",
+        "note": "le dauphin = и дельфин, и исторический титул наследника французского престола. В море речь, конечно, о животном."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "A2",
+    "tags": ["marins", "mammifère"],
+    "caseIds": ["wc-marins"]
+  },
+  {
+    "id": "wl-marins-baleine",
+    "lemma": "baleine",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ba.lɛn/",
+    "translationsRu": ["кит"],
+    "translationsEn": ["whale"],
+    "semanticCore": "Кит — самое крупное морское млекопитающее; дышит воздухом, выпускает фонтан.",
+    "collocations": [
+      { "fr": "une baleine bleue", "ru": "синий кит" },
+      { "fr": "la chasse à la baleine", "ru": "китобойный промысел" },
+      { "fr": "la baleine est un mammifère", "ru": "кит — млекопитающее" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "requin",
+        "note": "baleine = кит (млекопитающее, дышит воздухом); requin = акула (рыба, дышит жабрами). Размер тут ни при чём — главное, как дышат."
+      },
+      {
+        "with": "poisson",
+        "note": "Кит похож на огромную рыбу, но la baleine — un mammifère, а не un poisson."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["marins", "mammifère"],
+    "caseIds": ["wc-marins"]
+  },
+  {
+    "id": "wl-marins-requin",
+    "lemma": "requin",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ʁə.kɛ̃/",
+    "translationsRu": ["акула"],
+    "translationsEn": ["shark"],
+    "semanticCore": "Акула — хищная рыба с острыми зубами; переносно — безжалостный делец.",
+    "collocations": [
+      { "fr": "un requin blanc", "ru": "белая акула" },
+      { "fr": "une attaque de requin", "ru": "нападение акулы" },
+      { "fr": "un requin de la finance", "ru": "финансовый хищник («акула» бизнеса)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "baleine",
+        "note": "requin = акула (рыба, опасный хищник); baleine = кит (мирное млекопитающее). Не путать, хотя оба крупные."
+      },
+      {
+        "with": "dauphin",
+        "note": "requin = акула (хищник); dauphin = дельфин (дружелюбный). Внешне плавник похож, но это разные животные."
+      }
+    ],
+    "frequencyRank": 600,
+    "level": "A2",
+    "tags": ["marins", "poisson"],
+    "caseIds": ["wc-marins"]
+  },
+  {
+    "id": "wl-marins-meduse",
+    "lemma": "méduse",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/me.dyz/",
+    "translationsRu": ["медуза"],
+    "translationsEn": ["jellyfish"],
+    "semanticCore": "Медуза — прозрачное студенистое морское существо, которое жжётся.",
+    "collocations": [
+      { "fr": "se faire piquer par une méduse", "ru": "обжечься о медузу" },
+      { "fr": "un banc de méduses", "ru": "скопление медуз" },
+      { "fr": "la piqûre de méduse", "ru": "ожог медузы" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "Méduse (миф)",
+        "note": "la méduse = медуза (животное); Méduse — Медуза Горгона из мифа. Отсюда глагол méduser — «ошеломить, обратить в камень»."
+      },
+      {
+        "with": "piquer",
+        "note": "Медуза не «кусает», а «жжёт»: говорят se faire piquer par une méduse (как про укол/ожог), не mordre."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["marins", "invertébré"],
+    "caseIds": ["wc-marins"]
+  },
+  {
+    "id": "wl-marins-pieuvre",
+    "lemma": "pieuvre",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pjœvʁ/",
+    "translationsRu": ["осьминог"],
+    "translationsEn": ["octopus"],
+    "semanticCore": "Осьминог — морское существо с восемью щупальцами-«руками»; синоним poulpe.",
+    "collocations": [
+      { "fr": "les tentacules de la pieuvre", "ru": "щупальца осьминога" },
+      { "fr": "une pieuvre géante", "ru": "гигантский осьминог" },
+      { "fr": "la pieuvre change de couleur", "ru": "осьминог меняет цвет" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poulpe",
+        "note": "pieuvre и poulpe — оба «осьминог». poulpe чаще в кулинарии/на рынке, pieuvre — более книжное (его прославил Виктор Гюго). Оба верны."
+      },
+      {
+        "with": "calmar",
+        "note": "pieuvre = осьминог (8 «рук», живёт у дна); calmar = кальмар (10 щупалец, плавает). Не путать."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["marins", "invertébré"],
+    "caseIds": ["wc-marins"]
+  },
+  {
+    "id": "wl-marins-phoque",
+    "lemma": "phoque",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fɔk/",
+    "translationsRu": ["тюлень"],
+    "translationsEn": ["seal"],
+    "semanticCore": "Тюлень — морское млекопитающее с ластами, лежит на льдинах и берегу.",
+    "collocations": [
+      { "fr": "un bébé phoque", "ru": "детёныш тюленя (белёк)" },
+      { "fr": "un phoque sur la banquise", "ru": "тюлень на льдине" },
+      { "fr": "le phoque moine", "ru": "тюлень-монах" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "foc",
+        "note": "phoque /fɔk/ (тюлень) и foc /fɔk/ (кливер, парус) звучат одинаково — омофоны. Различают только по смыслу и написанию."
+      },
+      {
+        "with": "otarie",
+        "note": "phoque = настоящий тюлень (короткие ласты, ползёт); otarie = морской лев / котик (умеет «ходить» на ластах, есть ушки)."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["marins", "mammifère"],
+    "caseIds": ["wc-marins"]
+  },
+  {
+    "id": "wl-marins-tortue",
+    "lemma": "tortue",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/tɔʁ.ty/",
+    "translationsRu": ["черепаха"],
+    "translationsEn": ["turtle", "tortoise"],
+    "semanticCore": "Черепаха — медлительное животное в панцире; по-французски одно слово и для морской, и для сухопутной.",
+    "collocations": [
+      { "fr": "une tortue de mer", "ru": "морская черепаха" },
+      { "fr": "lent comme une tortue", "ru": "медленный как черепаха" },
+      { "fr": "la carapace de la tortue", "ru": "панцирь черепахи" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "turtle / tortoise (англ.)",
+        "note": "В английском turtle (морская) и tortoise (сухопутная) — разные слова; во французском обе — la tortue (уточняют: de mer / terrestre)."
+      },
+      {
+        "with": "torture",
+        "note": "tortue /tɔʁ.ty/ (черепаха) похоже на torture /tɔʁ.tyʁ/ (пытка), но у torture есть конечный звук /ʁ/. Не перепутай."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "A2",
+    "tags": ["marins", "reptile"],
+    "caseIds": ["wc-marins"]
+  },
+  {
+    "id": "wl-marins-hippocampe",
+    "lemma": "hippocampe",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/i.pɔ.kɑ̃p/",
+    "translationsRu": ["морской конёк"],
+    "translationsEn": ["seahorse"],
+    "semanticCore": "Морской конёк — крошечная рыбка с головой как у лошадки; детёнышей вынашивает самец.",
+    "collocations": [
+      { "fr": "un hippocampe minuscule", "ru": "крошечный морской конёк" },
+      { "fr": "le mâle hippocampe porte les œufs", "ru": "самец морского конька вынашивает икру" },
+      { "fr": "l'hippocampe s'accroche aux algues", "ru": "морской конёк цепляется за водоросли" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "hippocampe (мозг)",
+        "note": "l'hippocampe — и морской конёк, и отдел мозга (гиппокамп): он по форме напоминает этого конька."
+      },
+      {
+        "with": "cheval",
+        "note": "Назван «морской лошадкой» (от греч. hippos «конь»), но hippocampe — это рыба, а не cheval."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["marins", "poisson"],
+    "caseIds": ["wc-marins"]
+  }
+]

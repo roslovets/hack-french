@@ -11,7 +11,8 @@
       "cuisson",
       "atable",
       "gouts",
-      "epices"
+      "epices",
+      "fromages"
     ],
     "bossId": "wc-boss-table"
   },
@@ -74,7 +75,8 @@
       "deplacements",
       "transport2",
       "voiture",
-      "bateau"
+      "bateau",
+      "geographie"
     ],
     "bossId": "wc-boss-transport"
   },
@@ -123,7 +125,7 @@
   {
     "id": "work",
     "title": "Работа",
-    "themes": ["travail", "metiers", "documents"],
+    "themes": ["travail", "metiers", "documents", "chantier"],
     "bossId": "wc-boss-work"
   },
   {
@@ -142,7 +144,8 @@
       "espace",
       "insectes",
       "ferme",
-      "montagne"
+      "montagne",
+      "marins"
     ],
     "bossId": "wc-boss-weather"
   },
@@ -159,7 +162,8 @@
       "jardinage",
       "photo",
       "musees",
-      "instruments"
+      "instruments",
+      "danse"
     ],
     "bossId": "wc-boss-leisure"
   },

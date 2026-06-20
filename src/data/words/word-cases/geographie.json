@@ -1,0 +1,304 @@
+[
+  {
+    "id": "wc-geographie",
+    "title": "География",
+    "theme": "geographie",
+    "level": "B1",
+    "wordIds": [
+      "wl-geographie-capitale",
+      "wl-geographie-frontiere",
+      "wl-geographie-continent",
+      "wl-geographie-ocean",
+      "wl-geographie-fleuve",
+      "wl-geographie-region",
+      "wl-geographie-territoire",
+      "wl-geographie-equateur"
+    ],
+    "steps": [
+      {
+        "id": "wc-geographie-capitale-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-geographie-capitale",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Paris est la capitale de la France.",
+          "Nous visitons plusieurs capitales européennes cet été.",
+          "Quelle est la capitale de l'Australie ?"
+        ],
+        "options": ["столица", "крупный город (любой)", "центр города", "страна"],
+        "correctIndex": 0,
+        "explanation": "la capitale (f) — столица, главный город страны. Не любой большой город: «la capitale de la France» = Париж. Большой город вообще — une grande ville."
+      },
+      {
+        "id": "wc-geographie-capitale-trap",
+        "kind": "trap",
+        "wordId": "wl-geographie-capitale",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ловушка рода. Как сказать «Берлин — столица Германии»?",
+        "options": [
+          "Berlin est la capitale de l'Allemagne.",
+          "Berlin est le capital de l'Allemagne.",
+          "Berlin est la capital de l'Allemagne.",
+          "Berlin est le capitale de l'Allemagne."
+        ],
+        "correctIndex": 0,
+        "explanation": "Род меняет смысл: la capitale (f) — столица; le capital (m) — капитал (деньги). Нужна женская форма с e: «la capitale de l'Allemagne»."
+      },
+      {
+        "id": "wc-geographie-frontiere-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-geographie-frontiere",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Nous avons passé la frontière à minuit.",
+          "L'Espagne partage une frontière avec la France.",
+          "Pendant la crise, ils ont fermé les frontières."
+        ],
+        "options": ["граница (между странами)", "таможня", "паспорт", "дорога"],
+        "correctIndex": 0,
+        "explanation": "la frontière (f) — граница между странами или областями. «passer la frontière» — пересечь границу. Таможня — la douane, паспорт — le passeport."
+      },
+      {
+        "id": "wc-geographie-frontiere-sort",
+        "kind": "sort",
+        "wordId": "wl-geographie-frontiere",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом frontière звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "passer la frontière",
+            "basket": "ok"
+          },
+          {
+            "text": "la frontière franco-espagnole",
+            "basket": "ok"
+          },
+          {
+            "text": "fermer les frontières",
+            "basket": "ok"
+          },
+          {
+            "text": "boire la frontière",
+            "basket": "no"
+          },
+          {
+            "text": "la frontière du verre",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«passer la frontière», «fermer les frontières», «la frontière franco-espagnole» — естественно. «boire la frontière» бессмысленно; край стакана — это le bord du verre, а не la frontière."
+      },
+      {
+        "id": "wc-geographie-continent-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-geographie-continent",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "L'Afrique est un continent immense.",
+          "Il y a sept continents sur la Terre.",
+          "Cette espèce vit sur le continent américain."
+        ],
+        "options": ["континент, материк", "страна", "регион", "остров"],
+        "correctIndex": 0,
+        "explanation": "un continent (m) — континент, материк: l'Afrique, l'Asie, l'Europe. Страна — un pays, остров — une île. Континент объединяет много стран."
+      },
+      {
+        "id": "wc-geographie-continent-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-geographie-continent",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит continent?",
+        "bridge": "Англ. «continent» и фр. «continent» пишутся одинаково. Только читается по-французски /kɔ̃.ti.nɑ̃/ — с носовыми, без конечного t.",
+        "options": ["континент, материк", "страна", "побережье", "пустыня"],
+        "correctIndex": 0,
+        "explanation": "continent = континент. Англ. «continent» — прямой мост: те же буквы. Осторожно с произношением: оба n носовые, конечное t немое."
+      },
+      {
+        "id": "wc-geographie-ocean-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-geographie-ocean",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "L'océan Atlantique sépare l'Europe de l'Amérique.",
+          "Ils ont traversé l'océan en bateau.",
+          "Les baleines vivent dans l'océan."
+        ],
+        "options": ["океан", "озеро", "пляж", "залив"],
+        "correctIndex": 0,
+        "explanation": "un océan (m) — океан: l'océan Atlantique, l'océan Pacifique. Огромное водное пространство между континентами. Озеро — un lac, залив — une baie."
+      },
+      {
+        "id": "wc-geographie-ocean-cmp",
+        "kind": "compare",
+        "wordId": "wl-geographie-ocean",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "océan и mer. В чём разница?",
+        "phrases": [
+          "On traverse l'océan Atlantique en avion.",
+          "Cet été, on va à la mer en Bretagne."
+        ],
+        "options": [
+          "un océan — огромный океан (Atlantique, Pacifique); la mer — море, меньше, и именно так говорят про отдых у берега («aller à la mer»).",
+          "Это полные синонимы, разницы нет.",
+          "un océan — это пресная вода, la mer — солёная.",
+          "la mer больше океана."
+        ],
+        "correctIndex": 0,
+        "explanation": "un océan — самые большие водные пространства (Atlantique, Pacifique); la mer — море, поменьше (Méditerranée), часть океана у берега. На отдых едут «à la mer», а не «à l'océan», даже на атлантическом берегу."
+      },
+      {
+        "id": "wc-geographie-fleuve-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-geographie-fleuve",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La Seine est un fleuve qui traverse Paris.",
+          "Ce fleuve se jette dans la mer Méditerranée.",
+          "Les enfants se promènent au bord du fleuve."
+        ],
+        "options": ["большая река (впадающая в море)", "ручей", "озеро", "канал"],
+        "correctIndex": 0,
+        "explanation": "un fleuve (m) — крупная река, впадающая прямо в море или океан (la Seine, la Loire). «se jeter dans la mer» — впадать в море. Ручей — un ruisseau."
+      },
+      {
+        "id": "wc-geographie-fleuve-cmp",
+        "kind": "compare",
+        "wordId": "wl-geographie-fleuve",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "fleuve и rivière. По-русски оба «река». В чём французская разница?",
+        "phrases": [
+          "La Loire est un fleuve : elle se jette dans l'océan.",
+          "La Marne est une rivière : elle se jette dans la Seine."
+        ],
+        "options": [
+          "un fleuve впадает в МОРЕ или океан; une rivière впадает в другую реку (это приток).",
+          "un fleuve — это маленькая река, une rivière — большая.",
+          "Это синонимы, выбор любой.",
+          "un fleuve — пресная вода, une rivière — солёная."
+        ],
+        "correctIndex": 0,
+        "explanation": "Главное различие французской географии: fleuve впадает в море/океан (la Seine, la Loire), а rivière — в другую реку (la Marne впадает в Seine). Размер ни при чём: важно, КУДА впадает."
+      },
+      {
+        "id": "wc-geographie-region-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-geographie-region",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La Bretagne est une région de l'ouest de la France.",
+          "Dans cette région, on produit beaucoup de vin.",
+          "Il fait plus chaud dans les régions du sud."
+        ],
+        "options": ["регион, область, край", "столица", "граница", "континент"],
+        "correctIndex": 0,
+        "explanation": "une région (f) — область, край: и официальный регион (la Bretagne), и просто местность («dans cette région» — в этих краях). Шире, чем город, меньше, чем страна."
+      },
+      {
+        "id": "wc-geographie-region-trap",
+        "kind": "trap",
+        "wordId": "wl-geographie-region",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Во Франции есть région и département. Что больше?",
+        "options": [
+          "la région больше: département — меньшая единица внутри региона",
+          "le département больше: région — это маленький район в нём",
+          "они одинакового размера, просто два названия",
+          "la région — это город, а le département — страна"
+        ],
+        "correctIndex": 0,
+        "explanation": "Иерархия: la région (Bretagne, Normandie) делится на départements (с номерами, как 75 — Paris). Région > département. Не путать с русским «департамент» = отдел."
+      },
+      {
+        "id": "wc-geographie-territoire-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-geographie-territoire",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит territoire?",
+        "bridge": "Англ. «territory» и фр. «territoire» — один корень (лат. territorium). Французское окончание -oire, читается /tɛ.ʁi.twaʁ/.",
+        "options": ["территория", "башня", "лестница", "история"],
+        "correctIndex": 0,
+        "explanation": "territoire = территория. Англ. «territory» — надёжный мост. Запомни французский хвост -oire (как в histoire) и звук /twaʁ/ на конце."
+      },
+      {
+        "id": "wc-geographie-territoire-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-geographie-territoire",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова описывают участок суши / пространство страны. Найди лишнее.",
+        "options": ["le territoire", "la région", "le continent", "l'océan"],
+        "correctIndex": 3,
+        "explanation": "le territoire, la région и le continent — про сушу/пространство земли. l'océan — лишний: это вода, а не участок суши."
+      },
+      {
+        "id": "wc-geographie-equateur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-geographie-equateur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "L'équateur partage la Terre en deux hémisphères.",
+          "Près de l'équateur, il fait chaud toute l'année.",
+          "Le navire a franchi l'équateur hier soir."
+        ],
+        "options": ["экватор", "горизонт", "полюс", "меридиан"],
+        "correctIndex": 0,
+        "explanation": "l'équateur (m) — экватор, воображаемая линия посередине Земли. «près de l'équateur» — близ экватора. Полюс — le pôle, меридиан — le méridien."
+      },
+      {
+        "id": "wc-geographie-equateur-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-geographie-equateur",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "équateur",
+        "options": ["équateur", "acteur", "auteur", "docteur"],
+        "correctIndex": 0,
+        "explanation": "équateur /e.kwa.tœʁ/ — экватор. Похоже звучат, но это другие слова: acteur (актёр), auteur (автор), docteur (врач). Все кончаются на -teur /tœʁ/, но начало разное: éq-wa- ни с чем не спутать."
+      },
+      {
+        "id": "wc-geographie-equateur-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-geographie-equateur",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для équateur, чтобы запомнить мужской род (un équateur) и не путать с актёром/автором.",
+        "examples": [
+          "«Эква-тёр» звучит как -teur (acteur, auteur), но это линия, а не человек: un équateur, мужского рода.",
+          "Представь жаркий пояс Земли посередине: проводник объявляет «On passe l'équateur !» — корабль пересекает экватор."
+        ]
+      }
+    ]
+  }
+]

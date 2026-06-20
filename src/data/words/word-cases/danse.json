@@ -1,0 +1,283 @@
+[
+  {
+    "id": "wc-danse",
+    "title": "Танец",
+    "theme": "danse",
+    "level": "A2",
+    "wordIds": [
+      "wl-danse-ballet",
+      "wl-danse-valse",
+      "wl-danse-tango",
+      "wl-danse-rythme",
+      "wl-danse-danseur",
+      "wl-danse-choregraphie",
+      "wl-danse-tournoyer",
+      "wl-danse-entracte"
+    ],
+    "steps": [
+      {
+        "id": "wc-danse-ballet-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-danse-ballet",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит ballet?",
+        "bridge": "Англ. «ballet» — балет; пишется точно так же (слово вообще пришло в английский из французского). По-французски читается /ba.lɛ/, конечная t не звучит.",
+        "options": ["балет", "мяч", "билет", "балкон"],
+        "correctIndex": 0,
+        "explanation": "ballet (m) = балет. Те же буквы, что в английском, но конечная t молчит: /ba.lɛ/. Мяч — un ballon, билет — un billet, балкон — un balcon."
+      },
+      {
+        "id": "wc-danse-ballet-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-danse-ballet",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "ballet",
+        "options": ["ballet", "ballon", "billet", "valet"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало ballet /ba.lɛ/ — балет. Похожие, но другие слова: ballon /ba.lɔ̃/ — мяч, billet /bi.jɛ/ — билет, valet /va.lɛ/ — слуга (и валет в картах)."
+      },
+      {
+        "id": "wc-danse-valse-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-danse-valse",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Ils ouvrent le bal par une valse.",
+          "Cette valse de Chopin est magnifique.",
+          "Tu sais danser la valse ?"
+        ],
+        "options": ["вальс", "балет", "ритм", "антракт"],
+        "correctIndex": 0,
+        "explanation": "valse (f) — вальс (танец на три счёта). «danser la valse» — танцевать вальс, «une valse de Chopin» — вальс Шопена. Балет — un ballet."
+      },
+      {
+        "id": "wc-danse-valse-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-danse-valse",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "valse",
+        "options": ["valse", "vase", "valise", "vache"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало valse /vals/ — вальс. Похожие, но другие слова: vase /vaz/ — ваза, valise /va.liz/ — чемодан, vache /vaʃ/ — корова."
+      },
+      {
+        "id": "wc-danse-tango-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-danse-tango",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово сразу. Что значит tango?",
+        "bridge": "Англ. «tango» — танго; пишется точно так же (международное слово из Аргентины). По-французски читается /tɑ̃.ɡo/ с носовым an.",
+        "options": ["танго", "тангенс", "манго", "темп"],
+        "correctIndex": 0,
+        "explanation": "tango (m) = танго. Слово международное, пишется одинаково везде. Манго (фрукт) — une mangue: по-русски «танго/манго» рифмуются, а по-французски это совсем разные слова."
+      },
+      {
+        "id": "wc-danse-tango-sort",
+        "kind": "sort",
+        "wordId": "wl-danse-tango",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом tango звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "danser le tango",
+            "basket": "ok"
+          },
+          {
+            "text": "un cours de tango",
+            "basket": "ok"
+          },
+          {
+            "text": "le tango argentin",
+            "basket": "ok"
+          },
+          {
+            "text": "manger le tango",
+            "basket": "no"
+          },
+          {
+            "text": "lire un tango",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«danser le tango», «un cours de tango», «le tango argentin» — естественно. «manger le tango» (есть танго) и «lire un tango» (читать танго) — бессмыслица."
+      },
+      {
+        "id": "wc-danse-rythme-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-danse-rythme",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Suis le rythme de la musique.",
+          "Cette danse a un rythme très rapide.",
+          "Il bat le rythme avec son pied."
+        ],
+        "options": ["ритм", "звук", "голос", "шаг"],
+        "correctIndex": 0,
+        "explanation": "rythme (m) — ритм. «suivre le rythme» — попадать в ритм, «battre le rythme» — отбивать ритм. Внимание на написание: r-y-t-h-m-e, читается /ʁitm/."
+      },
+      {
+        "id": "wc-danse-rythme-trap",
+        "kind": "trap",
+        "wordId": "wl-danse-rythme",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "rythme и rime — оба про музыку и стихи. Какое слово значит «ритм»?",
+        "phrases": ["La danse suit le rythme.", "Les deux vers ont la même rime."],
+        "options": [
+          "«ритм» — le rythme; la rime — это рифма (созвучие в конце стихов).",
+          "оба значат «ритм», разницы нет.",
+          "la rime — ритм, а le rythme — рифма.",
+          "rythme значит «рифма», а rime — «строчка»."
+        ],
+        "correctIndex": 0,
+        "explanation": "le rythme — ритм (мерное чередование во времени): /ʁitm/, пишется через y и th. la rime — рифма (созвучие концов стихов, как «amour / toujours»). Слова разные и пишутся по-разному."
+      },
+      {
+        "id": "wc-danse-danseur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-danse-danseur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ce danseur de l'Opéra est très connu.",
+          "Le danseur salue le public à la fin.",
+          "Elle cherche un bon danseur pour le bal."
+        ],
+        "options": ["танцор", "зритель", "учитель", "музыкант"],
+        "correctIndex": 0,
+        "explanation": "danseur (m) — танцор (мужчина). Образовано от глагола danser (танцевать) + -eur. Зритель — un spectateur, музыкант — un musicien."
+      },
+      {
+        "id": "wc-danse-danseur-cmp",
+        "kind": "compare",
+        "wordId": "wl-danse-danseur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "danseur и danseuse — в чём разница?",
+        "phrases": ["C'est un danseur étoile.", "C'est une danseuse étoile."],
+        "options": [
+          "danseur — танцор (мужчина); danseuse — танцовщица (женщина). Это та же роль, но разный род.",
+          "danseur — это танец, а danseuse — танцовщица.",
+          "danseuse — мужчина, danseur — женщина.",
+          "danseuse значит «учительница танцев», а не танцовщица."
+        ],
+        "correctIndex": 0,
+        "explanation": "danseur — танцор (мужчина), danseuse — танцовщица (женщина): мужской -eur меняется на женский -euse. «un danseur / une danseuse étoile» — солист(ка) балета (буквально «звезда»)."
+      },
+      {
+        "id": "wc-danse-choregraphie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-danse-choregraphie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La chorégraphie de ce spectacle est superbe.",
+          "Ils répètent la chorégraphie depuis des semaines.",
+          "Qui a signé la chorégraphie du ballet ?"
+        ],
+        "options": ["хореография (постановка танца)", "музыка к танцу", "сцена", "костюм"],
+        "correctIndex": 0,
+        "explanation": "chorégraphie (f) — хореография: рисунок танца, последовательность движений, которую ставит хореограф. Внимание: ch здесь читается как /k/ — /kɔ.ʁe.ɡʁa.fi/. Музыка — la musique."
+      },
+      {
+        "id": "wc-danse-choregraphie-hint",
+        "kind": "wordHint",
+        "wordId": "wl-danse-choregraphie",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: придуманная заранее последовательность движений танца, которую разучивают и повторяют.",
+        "answer": "chorégraphie",
+        "hints": [
+          "Начинается на cho…, но ch звучит как /k/",
+          "Похоже на англ. «choreography», женский род: une ___",
+          "La ___ de ce ballet est superbe."
+        ],
+        "explanation": "chorégraphie (f) — хореография. Пишется через ch (читается /k/) и греческий корень -graphie (как в géographie). Тот, кто её ставит, — un chorégraphe (хореограф)."
+      },
+      {
+        "id": "wc-danse-tournoyer-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-danse-tournoyer",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол?",
+        "contexts": [
+          "Les danseurs tournoient au centre de la salle.",
+          "Sa jupe tournoie quand elle danse.",
+          "Les feuilles tournoient dans le vent."
+        ],
+        "options": ["кружиться (вращаться)", "прыгать", "падать", "хлопать"],
+        "correctIndex": 0,
+        "explanation": "tournoyer — кружиться, вращаться (долго описывать круги). Образовано от tour (оборот, круг). Внимание на спряжение: y → i перед немой e — il tournoie, ils tournoient. Прыгать — sauter."
+      },
+      {
+        "id": "wc-danse-tournoyer-trap",
+        "kind": "trap",
+        "wordId": "wl-danse-tournoyer",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "tourner и tournoyer — оба про вращение. В чём разница?",
+        "phrases": ["Tourne à gauche au feu.", "Les danseurs tournoient sur la piste."],
+        "options": [
+          "tourner — повернуть(ся) один раз или поворачивать; tournoyer — долго кружиться, описывать круги.",
+          "это одно и то же слово.",
+          "tourner — кружиться без остановки, tournoyer — повернуть один раз.",
+          "tournoyer значит «остановиться», а не вращаться."
+        ],
+        "correctIndex": 0,
+        "explanation": "tourner — поворачивать, повернуть (tourne à gauche — поверни налево; единичное действие или смена направления). tournoyer — кружиться, вертеться долго и кругами (танцоры, листья, снег). У tournoyer есть оттенок продолжительного вращения."
+      },
+      {
+        "id": "wc-danse-entracte-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-danse-entracte",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On boit un verre pendant l'entracte.",
+          "L'entracte dure vingt minutes.",
+          "Le deuxième acte commence après l'entracte."
+        ],
+        "options": ["антракт (перерыв)", "сцена", "билет", "финал"],
+        "correctIndex": 0,
+        "explanation": "entracte (m) — антракт: перерыв между актами спектакля. Видна структура: entre (между) + acte (акт), то есть «между действиями». Финал — la fin / le final."
+      },
+      {
+        "id": "wc-danse-entracte-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-danse-entracte",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для entracte (антракт), чтобы помнить мужской род (un entracte) и состав слова entre + acte.",
+        "examples": [
+          "Entracte = entre + acte: пауза «между актами». Представь, как в этот un entracte (он, мужской род) ты успеваешь выпить кофе.",
+          "Русское «антракт» и французское entracte — почти близнецы; держись за «АКТ» внутри слова: между двумя actes."
+        ]
+      }
+    ]
+  }
+]
