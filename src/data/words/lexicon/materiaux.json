@@ -9,10 +9,22 @@
     "translationsEn": ["wood"],
     "semanticCore": "Дерево как материал, из которого делают мебель и предметы; во множественном — небольшой лес, роща.",
     "collocations": [
-      { "fr": "une table en bois", "ru": "деревянный стол" },
-      { "fr": "du bois de chauffage", "ru": "дрова (для отопления)" },
-      { "fr": "une cuillère en bois", "ru": "деревянная ложка" },
-      { "fr": "se promener dans les bois", "ru": "гулять в лесу" }
+      {
+        "fr": "une table en bois",
+        "ru": "деревянный стол"
+      },
+      {
+        "fr": "du bois de chauffage",
+        "ru": "дрова (для отопления)"
+      },
+      {
+        "fr": "une cuillère en bois",
+        "ru": "деревянная ложка"
+      },
+      {
+        "fr": "se promener dans les bois",
+        "ru": "гулять в лесу"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 360,
     "level": "A2",
     "tags": ["materiaux", "matiere"],
-    "caseIds": ["wc-materiaux"]
+    "caseIds": ["wc-materiaux"],
+    "audio": {
+      "isolated": "audio/wl-materiaux-bois.mp3"
+    }
   },
   {
     "id": "wl-materiaux-metal",
@@ -39,9 +54,18 @@
     "translationsEn": ["metal"],
     "semanticCore": "Металл как материал вообще (железо, сталь, алюминий и т. п.); во множественном — métaux.",
     "collocations": [
-      { "fr": "une boîte en métal", "ru": "металлическая коробка" },
-      { "fr": "un métal lourd", "ru": "тяжёлый металл" },
-      { "fr": "le métal rouille", "ru": "металл ржавеет" }
+      {
+        "fr": "une boîte en métal",
+        "ru": "металлическая коробка"
+      },
+      {
+        "fr": "un métal lourd",
+        "ru": "тяжёлый металл"
+      },
+      {
+        "fr": "le métal rouille",
+        "ru": "металл ржавеет"
+      }
     ],
     "contrastPairs": [
       {
@@ -56,7 +80,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["materiaux", "matiere"],
-    "caseIds": ["wc-materiaux"]
+    "caseIds": ["wc-materiaux"],
+    "audio": {
+      "isolated": "audio/wl-materiaux-metal.mp3"
+    }
   },
   {
     "id": "wl-materiaux-plastique",
@@ -68,9 +95,18 @@
     "translationsEn": ["plastic"],
     "semanticCore": "Пластик как материал; то же слово работает прилагательным в обороте «en plastique».",
     "collocations": [
-      { "fr": "un sac en plastique", "ru": "пластиковый пакет" },
-      { "fr": "une bouteille en plastique", "ru": "пластиковая бутылка" },
-      { "fr": "le plastique recyclé", "ru": "переработанный пластик" }
+      {
+        "fr": "un sac en plastique",
+        "ru": "пластиковый пакет"
+      },
+      {
+        "fr": "une bouteille en plastique",
+        "ru": "пластиковая бутылка"
+      },
+      {
+        "fr": "le plastique recyclé",
+        "ru": "переработанный пластик"
+      }
     ],
     "contrastPairs": [
       {
@@ -85,7 +121,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["materiaux", "matiere"],
-    "caseIds": ["wc-materiaux"]
+    "caseIds": ["wc-materiaux"],
+    "audio": {
+      "isolated": "audio/wl-materiaux-plastique.mp3"
+    }
   },
   {
     "id": "wl-materiaux-tissu",
@@ -97,9 +136,18 @@
     "translationsEn": ["fabric", "cloth"],
     "semanticCore": "Ткань как материал, из которого шьют одежду и шторы; не «бумажная салфетка».",
     "collocations": [
-      { "fr": "un tissu doux", "ru": "мягкая ткань" },
-      { "fr": "un morceau de tissu", "ru": "кусок ткани" },
-      { "fr": "un tissu en coton", "ru": "хлопковая ткань" }
+      {
+        "fr": "un tissu doux",
+        "ru": "мягкая ткань"
+      },
+      {
+        "fr": "un morceau de tissu",
+        "ru": "кусок ткани"
+      },
+      {
+        "fr": "un tissu en coton",
+        "ru": "хлопковая ткань"
+      }
     ],
     "contrastPairs": [
       {
@@ -114,7 +162,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["materiaux", "matiere"],
-    "caseIds": ["wc-materiaux"]
+    "caseIds": ["wc-materiaux"],
+    "audio": {
+      "isolated": "audio/wl-materiaux-tissu.mp3"
+    }
   },
   {
     "id": "wl-materiaux-cuir",
@@ -126,9 +177,18 @@
     "translationsEn": ["leather"],
     "semanticCore": "Кожа как выделанный материал (сумки, обувь, куртки) — не кожа живого человека.",
     "collocations": [
-      { "fr": "une veste en cuir", "ru": "кожаная куртка" },
-      { "fr": "un sac en cuir", "ru": "кожаная сумка" },
-      { "fr": "du cuir véritable", "ru": "натуральная кожа" }
+      {
+        "fr": "une veste en cuir",
+        "ru": "кожаная куртка"
+      },
+      {
+        "fr": "un sac en cuir",
+        "ru": "кожаная сумка"
+      },
+      {
+        "fr": "du cuir véritable",
+        "ru": "натуральная кожа"
+      }
     ],
     "contrastPairs": [
       {
@@ -143,7 +203,10 @@
     "frequencyRank": 660,
     "level": "A2",
     "tags": ["materiaux", "matiere"],
-    "caseIds": ["wc-materiaux"]
+    "caseIds": ["wc-materiaux"],
+    "audio": {
+      "isolated": "audio/wl-materiaux-cuir.mp3"
+    }
   },
   {
     "id": "wl-materiaux-pierre",
@@ -155,9 +218,18 @@
     "translationsEn": ["stone"],
     "semanticCore": "Камень как материал (стены, дома) и как отдельный камень; с большой буквы Pierre — имя Пётр.",
     "collocations": [
-      { "fr": "une maison en pierre", "ru": "каменный дом" },
-      { "fr": "un mur de pierre", "ru": "каменная стена" },
-      { "fr": "une pierre précieuse", "ru": "драгоценный камень" }
+      {
+        "fr": "une maison en pierre",
+        "ru": "каменный дом"
+      },
+      {
+        "fr": "un mur de pierre",
+        "ru": "каменная стена"
+      },
+      {
+        "fr": "une pierre précieuse",
+        "ru": "драгоценный камень"
+      }
     ],
     "contrastPairs": [
       {
@@ -172,7 +244,10 @@
     "frequencyRank": 300,
     "level": "A2",
     "tags": ["materiaux", "matiere"],
-    "caseIds": ["wc-materiaux"]
+    "caseIds": ["wc-materiaux"],
+    "audio": {
+      "isolated": "audio/wl-materiaux-pierre.mp3"
+    }
   },
   {
     "id": "wl-materiaux-carton",
@@ -184,9 +259,18 @@
     "translationsEn": ["cardboard"],
     "semanticCore": "Картон как плотный материал; то же слово часто значит «картонная коробка» (при переезде).",
     "collocations": [
-      { "fr": "une boîte en carton", "ru": "картонная коробка" },
-      { "fr": "un carton de déménagement", "ru": "коробка для переезда" },
-      { "fr": "mettre dans un carton", "ru": "сложить в коробку" }
+      {
+        "fr": "une boîte en carton",
+        "ru": "картонная коробка"
+      },
+      {
+        "fr": "un carton de déménagement",
+        "ru": "коробка для переезда"
+      },
+      {
+        "fr": "mettre dans un carton",
+        "ru": "сложить в коробку"
+      }
     ],
     "contrastPairs": [
       {
@@ -201,7 +285,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["materiaux", "matiere"],
-    "caseIds": ["wc-materiaux"]
+    "caseIds": ["wc-materiaux"],
+    "audio": {
+      "isolated": "audio/wl-materiaux-carton.mp3"
+    }
   },
   {
     "id": "wl-materiaux-caoutchouc",
@@ -213,9 +300,18 @@
     "translationsEn": ["rubber"],
     "semanticCore": "Резина / каучук — гибкий материал для шин, сапог, прокладок; слово с непривычным написанием.",
     "collocations": [
-      { "fr": "des bottes en caoutchouc", "ru": "резиновые сапоги" },
-      { "fr": "un joint en caoutchouc", "ru": "резиновая прокладка" },
-      { "fr": "le caoutchouc naturel", "ru": "натуральный каучук" }
+      {
+        "fr": "des bottes en caoutchouc",
+        "ru": "резиновые сапоги"
+      },
+      {
+        "fr": "un joint en caoutchouc",
+        "ru": "резиновая прокладка"
+      },
+      {
+        "fr": "le caoutchouc naturel",
+        "ru": "натуральный каучук"
+      }
     ],
     "contrastPairs": [
       {
@@ -230,6 +326,9 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["materiaux", "matiere"],
-    "caseIds": ["wc-materiaux"]
+    "caseIds": ["wc-materiaux"],
+    "audio": {
+      "isolated": "audio/wl-materiaux-caoutchouc.mp3"
+    }
   }
 ]

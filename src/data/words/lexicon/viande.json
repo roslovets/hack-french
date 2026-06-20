@@ -39,7 +39,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["viande", "aliment"],
-    "caseIds": ["wc-viande"]
+    "caseIds": ["wc-viande"],
+    "audio": {
+      "isolated": "audio/wl-viande-boeuf.mp3"
+    }
   },
   {
     "id": "wl-viande-porc",
@@ -81,7 +84,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["viande", "aliment"],
-    "caseIds": ["wc-viande"]
+    "caseIds": ["wc-viande"],
+    "audio": {
+      "isolated": "audio/wl-viande-porc.mp3"
+    }
   },
   {
     "id": "wl-viande-agneau",
@@ -123,7 +129,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["viande", "aliment"],
-    "caseIds": ["wc-viande"]
+    "caseIds": ["wc-viande"],
+    "audio": {
+      "isolated": "audio/wl-viande-agneau.mp3"
+    }
   },
   {
     "id": "wl-viande-saucisse",
@@ -165,7 +174,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["viande", "charcuterie"],
-    "caseIds": ["wc-viande"]
+    "caseIds": ["wc-viande"],
+    "audio": {
+      "isolated": "audio/wl-viande-saucisse.mp3"
+    }
   },
   {
     "id": "wl-viande-steak",
@@ -207,7 +219,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["viande", "aliment"],
-    "caseIds": ["wc-viande"]
+    "caseIds": ["wc-viande"],
+    "audio": {
+      "isolated": "audio/wl-viande-steak.mp3"
+    }
   },
   {
     "id": "wl-viande-cotelette",
@@ -249,7 +264,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["viande", "aliment"],
-    "caseIds": ["wc-viande"]
+    "caseIds": ["wc-viande"],
+    "audio": {
+      "isolated": "audio/wl-viande-cotelette.mp3"
+    }
   },
   {
     "id": "wl-viande-volaille",
@@ -291,7 +309,10 @@
     "frequencyRank": 800,
     "level": "A2",
     "tags": ["viande", "aliment"],
-    "caseIds": ["wc-viande"]
+    "caseIds": ["wc-viande"],
+    "audio": {
+      "isolated": "audio/wl-viande-volaille.mp3"
+    }
   },
   {
     "id": "wl-viande-gigot",
@@ -333,6 +354,9 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["viande", "aliment"],
-    "caseIds": ["wc-viande"]
+    "caseIds": ["wc-viande"],
+    "audio": {
+      "isolated": "audio/wl-viande-gigot.mp3"
+    }
   }
 ]

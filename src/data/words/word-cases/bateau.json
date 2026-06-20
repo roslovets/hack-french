@@ -156,7 +156,8 @@
         "audioText": "marin",
         "options": ["marin", "matin", "malin", "marron"],
         "correctIndex": 0,
-        "explanation": "Прозвучало marin /ma.ʁɛ̃/ — моряк. Похожие, но другие слова: matin /ma.tɛ̃/ (утро), malin /ma.lɛ̃/ (хитрый), marron /ma.ʁɔ̃/ (коричневый, каштан). Все близкие по звучанию, но смысл разный."
+        "explanation": "Прозвучало marin /ma.ʁɛ̃/ — моряк. Похожие, но другие слова: matin /ma.tɛ̃/ (утро), malin /ma.lɛ̃/ (хитрый), marron /ma.ʁɔ̃/ (коричневый, каштан). Все близкие по звучанию, но смысл разный.",
+        "audioSrc": "audio/wl-bateau-marin.mp3"
       },
       {
         "id": "wc-bateau-naviguer-ctx",

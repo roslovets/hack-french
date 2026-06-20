@@ -9,10 +9,22 @@
     "translationsEn": ["summit", "top", "peak"],
     "semanticCore": "Самая верхняя точка горы — то, до чего доходят альпинисты; в переносном смысле — пик и саммит (встреча на высшем уровне).",
     "collocations": [
-      { "fr": "atteindre le sommet", "ru": "достичь вершины" },
-      { "fr": "le sommet de la montagne", "ru": "вершина горы" },
-      { "fr": "au sommet", "ru": "на вершине / наверху" },
-      { "fr": "un sommet international", "ru": "международный саммит" }
+      {
+        "fr": "atteindre le sommet",
+        "ru": "достичь вершины"
+      },
+      {
+        "fr": "le sommet de la montagne",
+        "ru": "вершина горы"
+      },
+      {
+        "fr": "au sommet",
+        "ru": "на вершине / наверху"
+      },
+      {
+        "fr": "un sommet international",
+        "ru": "международный саммит"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["montagne", "relief"],
-    "caseIds": ["wc-montagne"]
+    "caseIds": ["wc-montagne"],
+    "audio": {
+      "isolated": "audio/wl-montagne-sommet.mp3"
+    }
   },
   {
     "id": "wl-montagne-rocher",
@@ -39,10 +54,22 @@
     "translationsEn": ["rock", "boulder"],
     "semanticCore": "Крупный выступ твёрдого камня или большой валун — то, на что взбираются или что обходят в горах и у моря.",
     "collocations": [
-      { "fr": "grimper sur un rocher", "ru": "взобраться на скалу" },
-      { "fr": "un gros rocher", "ru": "большой камень / валун" },
-      { "fr": "sauter de rocher en rocher", "ru": "прыгать с камня на камень" },
-      { "fr": "un rocher au bord de la mer", "ru": "скала у моря" }
+      {
+        "fr": "grimper sur un rocher",
+        "ru": "взобраться на скалу"
+      },
+      {
+        "fr": "un gros rocher",
+        "ru": "большой камень / валун"
+      },
+      {
+        "fr": "sauter de rocher en rocher",
+        "ru": "прыгать с камня на камень"
+      },
+      {
+        "fr": "un rocher au bord de la mer",
+        "ru": "скала у моря"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["montagne", "relief"],
-    "caseIds": ["wc-montagne"]
+    "caseIds": ["wc-montagne"],
+    "audio": {
+      "isolated": "audio/wl-montagne-rocher.mp3"
+    }
   },
   {
     "id": "wl-montagne-falaise",
@@ -69,10 +99,22 @@
     "translationsEn": ["cliff"],
     "semanticCore": "Высокая отвесная стена из камня, резко обрывающаяся вниз — часто у моря или над долиной.",
     "collocations": [
-      { "fr": "une falaise abrupte", "ru": "отвесный утёс" },
-      { "fr": "au bord de la falaise", "ru": "на краю обрыва" },
-      { "fr": "les falaises d'Étretat", "ru": "утёсы Этрета" },
-      { "fr": "tomber d'une falaise", "ru": "упасть с обрыва" }
+      {
+        "fr": "une falaise abrupte",
+        "ru": "отвесный утёс"
+      },
+      {
+        "fr": "au bord de la falaise",
+        "ru": "на краю обрыва"
+      },
+      {
+        "fr": "les falaises d'Étretat",
+        "ru": "утёсы Этрета"
+      },
+      {
+        "fr": "tomber d'une falaise",
+        "ru": "упасть с обрыва"
+      }
     ],
     "contrastPairs": [
       {
@@ -87,7 +129,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["montagne", "relief"],
-    "caseIds": ["wc-montagne"]
+    "caseIds": ["wc-montagne"],
+    "audio": {
+      "isolated": "audio/wl-montagne-falaise.mp3"
+    }
   },
   {
     "id": "wl-montagne-pic",
@@ -99,10 +144,22 @@
     "translationsEn": ["peak"],
     "semanticCore": "Острая, заострённая вершина горы; в выражении «à pic» — отвесно, прямо вниз.",
     "collocations": [
-      { "fr": "le pic du Midi", "ru": "пик Миди (название горы)" },
-      { "fr": "un pic enneigé", "ru": "заснеженный пик" },
-      { "fr": "une falaise à pic", "ru": "отвесный утёс" },
-      { "fr": "couler à pic", "ru": "пойти ко дну (камнем)" }
+      {
+        "fr": "le pic du Midi",
+        "ru": "пик Миди (название горы)"
+      },
+      {
+        "fr": "un pic enneigé",
+        "ru": "заснеженный пик"
+      },
+      {
+        "fr": "une falaise à pic",
+        "ru": "отвесный утёс"
+      },
+      {
+        "fr": "couler à pic",
+        "ru": "пойти ко дну (камнем)"
+      }
     ],
     "contrastPairs": [
       {
@@ -117,7 +174,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["montagne", "relief"],
-    "caseIds": ["wc-montagne"]
+    "caseIds": ["wc-montagne"],
+    "audio": {
+      "isolated": "audio/wl-montagne-pic.mp3"
+    }
   },
   {
     "id": "wl-montagne-col",
@@ -129,10 +189,22 @@
     "translationsEn": ["mountain pass", "col"],
     "semanticCore": "Понижение в горном хребте, через которое проходит путь с одной стороны гор на другую; то же слово — воротник рубашки.",
     "collocations": [
-      { "fr": "franchir un col", "ru": "перейти / преодолеть перевал" },
-      { "fr": "le col du Tourmalet", "ru": "перевал Турмале" },
-      { "fr": "un col de montagne", "ru": "горный перевал" },
-      { "fr": "le col d'une chemise", "ru": "воротник рубашки" }
+      {
+        "fr": "franchir un col",
+        "ru": "перейти / преодолеть перевал"
+      },
+      {
+        "fr": "le col du Tourmalet",
+        "ru": "перевал Турмале"
+      },
+      {
+        "fr": "un col de montagne",
+        "ru": "горный перевал"
+      },
+      {
+        "fr": "le col d'une chemise",
+        "ru": "воротник рубашки"
+      }
     ],
     "contrastPairs": [
       {
@@ -147,7 +219,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["montagne", "relief"],
-    "caseIds": ["wc-montagne"]
+    "caseIds": ["wc-montagne"],
+    "audio": {
+      "isolated": "audio/wl-montagne-col.mp3"
+    }
   },
   {
     "id": "wl-montagne-sentier",
@@ -159,10 +234,22 @@
     "translationsEn": ["path", "trail"],
     "semanticCore": "Узкая протоптанная дорожка для пешеходов — в лесу, в горах, по которой ходят пешком, а не ездят.",
     "collocations": [
-      { "fr": "un sentier de randonnée", "ru": "туристическая тропа" },
-      { "fr": "suivre le sentier", "ru": "идти по тропе" },
-      { "fr": "un sentier étroit", "ru": "узкая тропинка" },
-      { "fr": "un sentier de montagne", "ru": "горная тропа" }
+      {
+        "fr": "un sentier de randonnée",
+        "ru": "туристическая тропа"
+      },
+      {
+        "fr": "suivre le sentier",
+        "ru": "идти по тропе"
+      },
+      {
+        "fr": "un sentier étroit",
+        "ru": "узкая тропинка"
+      },
+      {
+        "fr": "un sentier de montagne",
+        "ru": "горная тропа"
+      }
     ],
     "contrastPairs": [
       {
@@ -177,7 +264,10 @@
     "frequencyRank": 800,
     "level": "A2",
     "tags": ["montagne", "randonnee"],
-    "caseIds": ["wc-montagne"]
+    "caseIds": ["wc-montagne"],
+    "audio": {
+      "isolated": "audio/wl-montagne-sentier.mp3"
+    }
   },
   {
     "id": "wl-montagne-grimper",
@@ -188,10 +278,22 @@
     "translationsEn": ["to climb", "to clamber"],
     "semanticCore": "Подниматься вверх с усилием, цепляясь руками и ногами — на дерево, скалу, по крутому склону.",
     "collocations": [
-      { "fr": "grimper sur un rocher", "ru": "взобраться на скалу" },
-      { "fr": "grimper à un arbre", "ru": "залезть на дерево" },
-      { "fr": "grimper jusqu'au sommet", "ru": "взобраться до вершины" },
-      { "fr": "grimper une côte", "ru": "взбираться по склону" }
+      {
+        "fr": "grimper sur un rocher",
+        "ru": "взобраться на скалу"
+      },
+      {
+        "fr": "grimper à un arbre",
+        "ru": "залезть на дерево"
+      },
+      {
+        "fr": "grimper jusqu'au sommet",
+        "ru": "взобраться до вершины"
+      },
+      {
+        "fr": "grimper une côte",
+        "ru": "взбираться по склону"
+      }
     ],
     "contrastPairs": [
       {
@@ -206,7 +308,10 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["montagne", "mouvement"],
-    "caseIds": ["wc-montagne"]
+    "caseIds": ["wc-montagne"],
+    "audio": {
+      "isolated": "audio/wl-montagne-grimper.mp3"
+    }
   },
   {
     "id": "wl-montagne-glacier",
@@ -218,10 +323,22 @@
     "translationsEn": ["glacier"],
     "semanticCore": "Огромная масса векового льда, медленно сползающая по горам; то же слово — кафе-мороженое / мороженщик.",
     "collocations": [
-      { "fr": "la fonte des glaciers", "ru": "таяние ледников" },
-      { "fr": "un glacier de montagne", "ru": "горный ледник" },
-      { "fr": "marcher sur le glacier", "ru": "идти по леднику" },
-      { "fr": "une glace chez le glacier", "ru": "мороженое у мороженщика" }
+      {
+        "fr": "la fonte des glaciers",
+        "ru": "таяние ледников"
+      },
+      {
+        "fr": "un glacier de montagne",
+        "ru": "горный ледник"
+      },
+      {
+        "fr": "marcher sur le glacier",
+        "ru": "идти по леднику"
+      },
+      {
+        "fr": "une glace chez le glacier",
+        "ru": "мороженое у мороженщика"
+      }
     ],
     "contrastPairs": [
       {
@@ -236,6 +353,9 @@
     "frequencyRank": 840,
     "level": "A2",
     "tags": ["montagne", "relief"],
-    "caseIds": ["wc-montagne"]
+    "caseIds": ["wc-montagne"],
+    "audio": {
+      "isolated": "audio/wl-montagne-glacier.mp3"
+    }
   }
 ]

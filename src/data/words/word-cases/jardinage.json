@@ -245,7 +245,8 @@
         "audioText": "terre",
         "options": ["terre", "verre", "serre", "guerre"],
         "correctIndex": 0,
-        "explanation": "Все четыре звучат на /...ɛʁ/, но различаются началом: terre /tɛʁ/ — земля, verre /vɛʁ/ — стакан/стекло, serre /sɛʁ/ — теплица, guerre /ɡɛʁ/ — война. Здесь прозвучало terre."
+        "explanation": "Все четыре звучат на /...ɛʁ/, но различаются началом: terre /tɛʁ/ — земля, verre /vɛʁ/ — стакан/стекло, serre /sɛʁ/ — теплица, guerre /ɡɛʁ/ — война. Здесь прозвучало terre.",
+        "audioSrc": "audio/wl-jardinage-terre.mp3"
       },
       {
         "id": "wc-jardinage-graine-ctx",
@@ -273,7 +274,8 @@
         "audioText": "graine",
         "options": ["graine", "gaine", "reine", "scène"],
         "correctIndex": 0,
-        "explanation": "Слова звучат похоже, но это разные слова: graine /ɡʁɛn/ — семя, gaine /ɡɛn/ — оболочка/чехол, reine /ʁɛn/ — королева, scène /sɛn/ — сцена. Здесь прозвучало graine — со звуком /ɡʁ/ в начале."
+        "explanation": "Слова звучат похоже, но это разные слова: graine /ɡʁɛn/ — семя, gaine /ɡɛn/ — оболочка/чехол, reine /ʁɛn/ — королева, scène /sɛn/ — сцена. Здесь прозвучало graine — со звуком /ɡʁ/ в начале.",
+        "audioSrc": "audio/wl-jardinage-graine.mp3"
       }
     ]
   }

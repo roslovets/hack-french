@@ -38,7 +38,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["gestes", "mouvement", "corps"],
-    "caseIds": ["wc-gestes"]
+    "caseIds": ["wc-gestes"],
+    "audio": {
+      "isolated": "audio/wl-gestes-sauter.mp3"
+    }
   },
   {
     "id": "wl-gestes-tomber",
@@ -79,7 +82,10 @@
     "frequencyRank": 300,
     "level": "A2",
     "tags": ["gestes", "mouvement", "corps"],
-    "caseIds": ["wc-gestes"]
+    "caseIds": ["wc-gestes"],
+    "audio": {
+      "isolated": "audio/wl-gestes-tomber.mp3"
+    }
   },
   {
     "id": "wl-gestes-lever",
@@ -120,7 +126,10 @@
     "frequencyRank": 410,
     "level": "A2",
     "tags": ["gestes", "mouvement", "corps"],
-    "caseIds": ["wc-gestes"]
+    "caseIds": ["wc-gestes"],
+    "audio": {
+      "isolated": "audio/wl-gestes-lever.mp3"
+    }
   },
   {
     "id": "wl-gestes-baisser",
@@ -161,7 +170,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["gestes", "mouvement", "corps"],
-    "caseIds": ["wc-gestes"]
+    "caseIds": ["wc-gestes"],
+    "audio": {
+      "isolated": "audio/wl-gestes-baisser.mp3"
+    }
   },
   {
     "id": "wl-gestes-pousser",
@@ -202,7 +214,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["gestes", "mouvement", "force"],
-    "caseIds": ["wc-gestes"]
+    "caseIds": ["wc-gestes"],
+    "audio": {
+      "isolated": "audio/wl-gestes-pousser.mp3"
+    }
   },
   {
     "id": "wl-gestes-tirer",
@@ -243,7 +258,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["gestes", "mouvement", "force"],
-    "caseIds": ["wc-gestes"]
+    "caseIds": ["wc-gestes"],
+    "audio": {
+      "isolated": "audio/wl-gestes-tirer.mp3"
+    }
   },
   {
     "id": "wl-gestes-ramper",
@@ -284,7 +302,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["gestes", "mouvement", "corps"],
-    "caseIds": ["wc-gestes"]
+    "caseIds": ["wc-gestes"],
+    "audio": {
+      "isolated": "audio/wl-gestes-ramper.mp3"
+    }
   },
   {
     "id": "wl-gestes-glisser",
@@ -325,6 +346,9 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["gestes", "mouvement", "surface"],
-    "caseIds": ["wc-gestes"]
+    "caseIds": ["wc-gestes"],
+    "audio": {
+      "isolated": "audio/wl-gestes-glisser.mp3"
+    }
   }
 ]

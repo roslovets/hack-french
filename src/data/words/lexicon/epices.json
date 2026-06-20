@@ -9,10 +9,22 @@
     "translationsEn": ["vinegar"],
     "semanticCore": "Кислая жидкость, которой заправляют салаты и маринады; буквально «кислое вино» (vin aigre).",
     "collocations": [
-      { "fr": "du vinaigre balsamique", "ru": "бальзамический уксус" },
-      { "fr": "de l'huile et du vinaigre", "ru": "масло и уксус (для заправки)" },
-      { "fr": "une cuillère de vinaigre", "ru": "ложка уксуса" },
-      { "fr": "le vinaigre de vin", "ru": "винный уксус" }
+      {
+        "fr": "du vinaigre balsamique",
+        "ru": "бальзамический уксус"
+      },
+      {
+        "fr": "de l'huile et du vinaigre",
+        "ru": "масло и уксус (для заправки)"
+      },
+      {
+        "fr": "une cuillère de vinaigre",
+        "ru": "ложка уксуса"
+      },
+      {
+        "fr": "le vinaigre de vin",
+        "ru": "винный уксус"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["epices", "cuisine"],
-    "caseIds": ["wc-epices"]
+    "caseIds": ["wc-epices"],
+    "audio": {
+      "isolated": "audio/wl-epices-vinaigre.mp3"
+    }
   },
   {
     "id": "wl-epices-moutarde",
@@ -39,10 +54,22 @@
     "translationsEn": ["mustard"],
     "semanticCore": "Острая жёлтая паста-приправа к мясу и сэндвичам; самая известная — дижонская.",
     "collocations": [
-      { "fr": "la moutarde de Dijon", "ru": "дижонская горчица" },
-      { "fr": "de la moutarde forte", "ru": "острая горчица" },
-      { "fr": "un pot de moutarde", "ru": "банка горчицы" },
-      { "fr": "mettre de la moutarde", "ru": "добавить горчицы" }
+      {
+        "fr": "la moutarde de Dijon",
+        "ru": "дижонская горчица"
+      },
+      {
+        "fr": "de la moutarde forte",
+        "ru": "острая горчица"
+      },
+      {
+        "fr": "un pot de moutarde",
+        "ru": "банка горчицы"
+      },
+      {
+        "fr": "mettre de la moutarde",
+        "ru": "добавить горчицы"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["epices", "cuisine"],
-    "caseIds": ["wc-epices"]
+    "caseIds": ["wc-epices"],
+    "audio": {
+      "isolated": "audio/wl-epices-moutarde.mp3"
+    }
   },
   {
     "id": "wl-epices-sauce",
@@ -69,10 +99,22 @@
     "translationsEn": ["sauce", "gravy"],
     "semanticCore": "Жидкая или густая основа, которой поливают блюдо, чтобы добавить вкуса.",
     "collocations": [
-      { "fr": "une sauce tomate", "ru": "томатный соус" },
-      { "fr": "la sauce au poivre", "ru": "перечный соус" },
-      { "fr": "la sauce piquante", "ru": "острый соус" },
-      { "fr": "napper de sauce", "ru": "полить соусом" }
+      {
+        "fr": "une sauce tomate",
+        "ru": "томатный соус"
+      },
+      {
+        "fr": "la sauce au poivre",
+        "ru": "перечный соус"
+      },
+      {
+        "fr": "la sauce piquante",
+        "ru": "острый соус"
+      },
+      {
+        "fr": "napper de sauce",
+        "ru": "полить соусом"
+      }
     ],
     "contrastPairs": [
       {
@@ -87,7 +129,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["epices", "cuisine"],
-    "caseIds": ["wc-epices"]
+    "caseIds": ["wc-epices"],
+    "audio": {
+      "isolated": "audio/wl-epices-sauce.mp3"
+    }
   },
   {
     "id": "wl-epices-basilic",
@@ -99,10 +144,22 @@
     "translationsEn": ["basil"],
     "semanticCore": "Ароматная зелёная трава, основа песто и итальянской кухни; добавляют свежей в конце.",
     "collocations": [
-      { "fr": "du basilic frais", "ru": "свежий базилик" },
-      { "fr": "des feuilles de basilic", "ru": "листья базилика" },
-      { "fr": "la sauce au basilic", "ru": "соус с базиликом" },
-      { "fr": "tomate-mozzarella au basilic", "ru": "томат-моцарелла с базиликом" }
+      {
+        "fr": "du basilic frais",
+        "ru": "свежий базилик"
+      },
+      {
+        "fr": "des feuilles de basilic",
+        "ru": "листья базилика"
+      },
+      {
+        "fr": "la sauce au basilic",
+        "ru": "соус с базиликом"
+      },
+      {
+        "fr": "tomate-mozzarella au basilic",
+        "ru": "томат-моцарелла с базиликом"
+      }
     ],
     "contrastPairs": [
       {
@@ -117,7 +174,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["epices", "herbe"],
-    "caseIds": ["wc-epices"]
+    "caseIds": ["wc-epices"],
+    "audio": {
+      "isolated": "audio/wl-epices-basilic.mp3"
+    }
   },
   {
     "id": "wl-epices-persil",
@@ -129,10 +189,22 @@
     "translationsEn": ["parsley"],
     "semanticCore": "Свежая зелёная трава, которой посыпают почти любое блюдо в конце готовки.",
     "collocations": [
-      { "fr": "du persil plat", "ru": "петрушка плосколистная" },
-      { "fr": "un bouquet de persil", "ru": "пучок петрушки" },
-      { "fr": "saupoudrer de persil", "ru": "посыпать петрушкой" },
-      { "fr": "le persil haché", "ru": "рубленая петрушка" }
+      {
+        "fr": "du persil plat",
+        "ru": "петрушка плосколистная"
+      },
+      {
+        "fr": "un bouquet de persil",
+        "ru": "пучок петрушки"
+      },
+      {
+        "fr": "saupoudrer de persil",
+        "ru": "посыпать петрушкой"
+      },
+      {
+        "fr": "le persil haché",
+        "ru": "рубленая петрушка"
+      }
     ],
     "contrastPairs": [
       {
@@ -147,7 +219,10 @@
     "frequencyRank": 860,
     "level": "A2",
     "tags": ["epices", "herbe"],
-    "caseIds": ["wc-epices"]
+    "caseIds": ["wc-epices"],
+    "audio": {
+      "isolated": "audio/wl-epices-persil.mp3"
+    }
   },
   {
     "id": "wl-epices-cannelle",
@@ -159,10 +234,22 @@
     "translationsEn": ["cinnamon"],
     "semanticCore": "Сладкая тёплая специя из коры дерева; для десертов, выпечки и глинтвейна.",
     "collocations": [
-      { "fr": "un bâton de cannelle", "ru": "палочка корицы" },
-      { "fr": "la cannelle en poudre", "ru": "молотая корица" },
-      { "fr": "une pomme à la cannelle", "ru": "яблоко с корицей" },
-      { "fr": "du pain perdu à la cannelle", "ru": "гренки с корицей" }
+      {
+        "fr": "un bâton de cannelle",
+        "ru": "палочка корицы"
+      },
+      {
+        "fr": "la cannelle en poudre",
+        "ru": "молотая корица"
+      },
+      {
+        "fr": "une pomme à la cannelle",
+        "ru": "яблоко с корицей"
+      },
+      {
+        "fr": "du pain perdu à la cannelle",
+        "ru": "гренки с корицей"
+      }
     ],
     "contrastPairs": [
       {
@@ -177,7 +264,10 @@
     "frequencyRank": 900,
     "level": "A2",
     "tags": ["epices", "dessert"],
-    "caseIds": ["wc-epices"]
+    "caseIds": ["wc-epices"],
+    "audio": {
+      "isolated": "audio/wl-epices-cannelle.mp3"
+    }
   },
   {
     "id": "wl-epices-piment",
@@ -189,10 +279,22 @@
     "translationsEn": ["chilli", "hot pepper"],
     "semanticCore": "Острый стручковый перец, от которого «горит» во рту; даёт блюду остроту (ça pique).",
     "collocations": [
-      { "fr": "le piment d'Espelette", "ru": "перец из Эспелета (мягкий острый)" },
-      { "fr": "un piment fort", "ru": "очень острый перец" },
-      { "fr": "une pincée de piment", "ru": "щепотка чили" },
-      { "fr": "de la sauce au piment", "ru": "соус с чили" }
+      {
+        "fr": "le piment d'Espelette",
+        "ru": "перец из Эспелета (мягкий острый)"
+      },
+      {
+        "fr": "un piment fort",
+        "ru": "очень острый перец"
+      },
+      {
+        "fr": "une pincée de piment",
+        "ru": "щепотка чили"
+      },
+      {
+        "fr": "de la sauce au piment",
+        "ru": "соус с чили"
+      }
     ],
     "contrastPairs": [
       {
@@ -207,7 +309,10 @@
     "frequencyRank": 840,
     "level": "A2",
     "tags": ["epices", "piquant"],
-    "caseIds": ["wc-epices"]
+    "caseIds": ["wc-epices"],
+    "audio": {
+      "isolated": "audio/wl-epices-piment.mp3"
+    }
   },
   {
     "id": "wl-epices-thym",
@@ -219,10 +324,22 @@
     "translationsEn": ["thyme"],
     "semanticCore": "Душистая прованская трава для мяса, рагу и «букета гарни»; кладут веточками.",
     "collocations": [
-      { "fr": "une branche de thym", "ru": "веточка тимьяна" },
-      { "fr": "le thym et le romarin", "ru": "тимьян и розмарин" },
-      { "fr": "du thym séché", "ru": "сушёный тимьян" },
-      { "fr": "un bouquet garni au thym", "ru": "букет гарни с тимьяном" }
+      {
+        "fr": "une branche de thym",
+        "ru": "веточка тимьяна"
+      },
+      {
+        "fr": "le thym et le romarin",
+        "ru": "тимьян и розмарин"
+      },
+      {
+        "fr": "du thym séché",
+        "ru": "сушёный тимьян"
+      },
+      {
+        "fr": "un bouquet garni au thym",
+        "ru": "букет гарни с тимьяном"
+      }
     ],
     "contrastPairs": [
       {
@@ -237,6 +354,9 @@
     "frequencyRank": 920,
     "level": "A2",
     "tags": ["epices", "herbe"],
-    "caseIds": ["wc-epices"]
+    "caseIds": ["wc-epices"],
+    "audio": {
+      "isolated": "audio/wl-epices-thym.mp3"
+    }
   }
 ]

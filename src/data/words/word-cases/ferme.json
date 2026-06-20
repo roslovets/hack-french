@@ -94,7 +94,8 @@
         "audioText": "tracteur",
         "options": ["facteur", "tracteur", "acteur", "secteur"],
         "correctIndex": 1,
-        "explanation": "tracteur /tʁak.tœʁ/ — трактор. Похожие на слух слова с тем же «хвостом» -teur: facteur (почтальон), acteur (актёр), secteur (сектор). Различай по началу: trac-."
+        "explanation": "tracteur /tʁak.tœʁ/ — трактор. Похожие на слух слова с тем же «хвостом» -teur: facteur (почтальон), acteur (актёр), secteur (сектор). Различай по началу: trac-.",
+        "audioSrc": "audio/wl-ferme-tracteur.mp3"
       },
       {
         "id": "wc-ferme-grange-ctx",
@@ -187,7 +188,8 @@
         "audioText": "foin",
         "options": ["soin", "coin", "foin", "loin"],
         "correctIndex": 2,
-        "explanation": "foin /fwɛ̃/ — сено. Похожие на слух слова с тем же гласным /wɛ̃/: soin (забота), coin (угол), loin (далеко). Различай по первому звуку: f-."
+        "explanation": "foin /fwɛ̃/ — сено. Похожие на слух слова с тем же гласным /wɛ̃/: soin (забота), coin (угол), loin (далеко). Различай по первому звуку: f-.",
+        "audioSrc": "audio/wl-ferme-foin.mp3"
       },
       {
         "id": "wc-ferme-etable-ctx",

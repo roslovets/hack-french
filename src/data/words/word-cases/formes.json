@@ -41,7 +41,8 @@
         "audioText": "rond",
         "options": ["rond", "rang", "ronde"],
         "correctIndex": 0,
-        "explanation": "rond /ʁɔ̃/ — круг (носовой /ɔ̃/, конечная -d не читается). Похожие: rang /ʁɑ̃/ — ряд (другой носовой /ɑ̃/), ronde /ʁɔ̃d/ — обход / круглая (ж. род, здесь слышно d). Различай носовые: /ɔ̃/ против /ɑ̃/."
+        "explanation": "rond /ʁɔ̃/ — круг (носовой /ɔ̃/, конечная -d не читается). Похожие: rang /ʁɑ̃/ — ряд (другой носовой /ɑ̃/), ronde /ʁɔ̃d/ — обход / круглая (ж. род, здесь слышно d). Различай носовые: /ɔ̃/ против /ɑ̃/.",
+        "audioSrc": "audio/wl-formes-rond.mp3"
       },
       {
         "id": "wc-formes-carre-ctx",
@@ -278,7 +279,8 @@
         "audioText": "ovale",
         "options": ["ovale", "avale", "rivale"],
         "correctIndex": 0,
-        "explanation": "ovale /ɔ.val/ — овал (начинается на /ɔ/). Похожие: avale /a.val/ — «глотает» (форма глагола avaler, начинается на /a/), rivale /ʁi.val/ — соперница. Концовка одинаковая, но начало разное."
+        "explanation": "ovale /ɔ.val/ — овал (начинается на /ɔ/). Похожие: avale /a.val/ — «глотает» (форма глагола avaler, начинается на /a/), rivale /ʁi.val/ — соперница. Концовка одинаковая, но начало разное.",
+        "audioSrc": "audio/wl-formes-ovale.mp3"
       }
     ]
   }

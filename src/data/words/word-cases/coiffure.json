@@ -219,7 +219,8 @@
         "audioText": "raie",
         "options": ["raie", "rue", "roue", "rat"],
         "correctIndex": 0,
-        "explanation": "Прозвучало raie /ʁɛ/ (пробор). Похожие, но другие слова: rue /ʁy/ (улица), roue /ʁu/ (колесо), rat /ʁa/ (крыса). Различает только гласный — у raie это /ɛ/."
+        "explanation": "Прозвучало raie /ʁɛ/ (пробор). Похожие, но другие слова: rue /ʁy/ (улица), roue /ʁu/ (колесо), rat /ʁa/ (крыса). Различает только гласный — у raie это /ɛ/.",
+        "audioSrc": "audio/wl-coiffure-raie.mp3"
       },
       {
         "id": "wc-coiffure-secher-ctx",
@@ -247,7 +248,8 @@
         "audioText": "sécher",
         "options": ["sécher", "cacher", "lécher", "pêcher"],
         "correctIndex": 0,
-        "explanation": "Прозвучало sécher /se.ʃe/ (сушить). Похожие глаголы: cacher /ka.ʃe/ (прятать), lécher /le.ʃe/ (лизать), pêcher /pe.ʃe/ (ловить рыбу). Все на -cher, но первый слог разный."
+        "explanation": "Прозвучало sécher /se.ʃe/ (сушить). Похожие глаголы: cacher /ka.ʃe/ (прятать), lécher /le.ʃe/ (лизать), pêcher /pe.ʃe/ (ловить рыбу). Все на -cher, но первый слог разный.",
+        "audioSrc": "audio/wl-coiffure-secher.mp3"
       },
       {
         "id": "wc-coiffure-tresse-ctx",

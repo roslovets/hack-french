@@ -9,10 +9,22 @@
     "translationsEn": ["pig"],
     "semanticCore": "Свинья как живое животное на ферме; о мясе чаще говорят le porc (свинина), хотя в деревенской речи встречается и «viande de cochon».",
     "collocations": [
-      { "fr": "un cochon rose", "ru": "розовая свинья" },
-      { "fr": "élever des cochons", "ru": "разводить свиней" },
-      { "fr": "de la viande de cochon", "ru": "свинина (мясо свиньи)" },
-      { "fr": "un petit cochon", "ru": "поросёнок" }
+      {
+        "fr": "un cochon rose",
+        "ru": "розовая свинья"
+      },
+      {
+        "fr": "élever des cochons",
+        "ru": "разводить свиней"
+      },
+      {
+        "fr": "de la viande de cochon",
+        "ru": "свинина (мясо свиньи)"
+      },
+      {
+        "fr": "un petit cochon",
+        "ru": "поросёнок"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["ferme", "animaux"],
-    "caseIds": ["wc-ferme"]
+    "caseIds": ["wc-ferme"],
+    "audio": {
+      "isolated": "audio/wl-ferme-cochon.mp3"
+    }
   },
   {
     "id": "wl-ferme-tracteur",
@@ -39,9 +54,18 @@
     "translationsEn": ["tractor"],
     "semanticCore": "Трактор — сельскохозяйственная машина, которая тянет плуг, прицеп и другую технику.",
     "collocations": [
-      { "fr": "conduire un tracteur", "ru": "водить трактор" },
-      { "fr": "un tracteur rouge", "ru": "красный трактор" },
-      { "fr": "le tracteur tire la remorque", "ru": "трактор тянет прицеп" }
+      {
+        "fr": "conduire un tracteur",
+        "ru": "водить трактор"
+      },
+      {
+        "fr": "un tracteur rouge",
+        "ru": "красный трактор"
+      },
+      {
+        "fr": "le tracteur tire la remorque",
+        "ru": "трактор тянет прицеп"
+      }
     ],
     "contrastPairs": [
       {
@@ -56,7 +80,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["ferme", "machine"],
-    "caseIds": ["wc-ferme"]
+    "caseIds": ["wc-ferme"],
+    "audio": {
+      "isolated": "audio/wl-ferme-tracteur.mp3"
+    }
   },
   {
     "id": "wl-ferme-grange",
@@ -68,9 +95,18 @@
     "translationsEn": ["barn"],
     "semanticCore": "Амбар: хозяйственная постройка, где хранят сено, солому и урожай (но не держат скот).",
     "collocations": [
-      { "fr": "ranger le foin dans la grange", "ru": "складывать сено в амбар" },
-      { "fr": "une vieille grange", "ru": "старый амбар" },
-      { "fr": "une grange en bois", "ru": "деревянный сарай" }
+      {
+        "fr": "ranger le foin dans la grange",
+        "ru": "складывать сено в амбар"
+      },
+      {
+        "fr": "une vieille grange",
+        "ru": "старый амбар"
+      },
+      {
+        "fr": "une grange en bois",
+        "ru": "деревянный сарай"
+      }
     ],
     "contrastPairs": [
       {
@@ -85,7 +121,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["ferme", "batiment"],
-    "caseIds": ["wc-ferme"]
+    "caseIds": ["wc-ferme"],
+    "audio": {
+      "isolated": "audio/wl-ferme-grange.mp3"
+    }
   },
   {
     "id": "wl-ferme-recolte",
@@ -97,9 +136,18 @@
     "translationsEn": ["harvest", "crop"],
     "semanticCore": "Урожай: и собранные плоды, и сам процесс уборки — для любых культур, не только зерна.",
     "collocations": [
-      { "fr": "une bonne récolte", "ru": "хороший урожай" },
-      { "fr": "la récolte des pommes", "ru": "сбор яблок" },
-      { "fr": "faire la récolte", "ru": "собирать урожай" }
+      {
+        "fr": "une bonne récolte",
+        "ru": "хороший урожай"
+      },
+      {
+        "fr": "la récolte des pommes",
+        "ru": "сбор яблок"
+      },
+      {
+        "fr": "faire la récolte",
+        "ru": "собирать урожай"
+      }
     ],
     "contrastPairs": [
       {
@@ -114,7 +162,10 @@
     "frequencyRank": 690,
     "level": "A2",
     "tags": ["ferme", "agriculture"],
-    "caseIds": ["wc-ferme"]
+    "caseIds": ["wc-ferme"],
+    "audio": {
+      "isolated": "audio/wl-ferme-recolte.mp3"
+    }
   },
   {
     "id": "wl-ferme-foin",
@@ -126,9 +177,18 @@
     "translationsEn": ["hay"],
     "semanticCore": "Сено: высушенная скошенная трава, которой кормят скот, прежде всего зимой.",
     "collocations": [
-      { "fr": "une botte de foin", "ru": "тюк сена" },
-      { "fr": "du foin coupé", "ru": "скошенное сено" },
-      { "fr": "donner du foin aux vaches", "ru": "давать сено коровам" }
+      {
+        "fr": "une botte de foin",
+        "ru": "тюк сена"
+      },
+      {
+        "fr": "du foin coupé",
+        "ru": "скошенное сено"
+      },
+      {
+        "fr": "donner du foin aux vaches",
+        "ru": "давать сено коровам"
+      }
     ],
     "contrastPairs": [
       {
@@ -143,7 +203,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["ferme", "agriculture"],
-    "caseIds": ["wc-ferme"]
+    "caseIds": ["wc-ferme"],
+    "audio": {
+      "isolated": "audio/wl-ferme-foin.mp3"
+    }
   },
   {
     "id": "wl-ferme-etable",
@@ -155,9 +218,18 @@
     "translationsEn": ["cowshed", "barn"],
     "semanticCore": "Хлев/коровник: помещение, где держат коров и другой крупный рогатый скот.",
     "collocations": [
-      { "fr": "rentrer les vaches à l'étable", "ru": "загнать коров в хлев" },
-      { "fr": "nettoyer l'étable", "ru": "чистить коровник" },
-      { "fr": "la chaleur de l'étable", "ru": "тепло хлева" }
+      {
+        "fr": "rentrer les vaches à l'étable",
+        "ru": "загнать коров в хлев"
+      },
+      {
+        "fr": "nettoyer l'étable",
+        "ru": "чистить коровник"
+      },
+      {
+        "fr": "la chaleur de l'étable",
+        "ru": "тепло хлева"
+      }
     ],
     "contrastPairs": [
       {
@@ -172,7 +244,10 @@
     "frequencyRank": 840,
     "level": "A2",
     "tags": ["ferme", "batiment"],
-    "caseIds": ["wc-ferme"]
+    "caseIds": ["wc-ferme"],
+    "audio": {
+      "isolated": "audio/wl-ferme-etable.mp3"
+    }
   },
   {
     "id": "wl-ferme-fermier",
@@ -184,9 +259,18 @@
     "translationsEn": ["farmer"],
     "semanticCore": "Фермер: человек, который владеет фермой и работает на ней — разводит скот и собирает урожай.",
     "collocations": [
-      { "fr": "un fermier travailleur", "ru": "трудолюбивый фермер" },
-      { "fr": "le fermier trait les vaches", "ru": "фермер доит коров" },
-      { "fr": "un poulet fermier", "ru": "фермерская курица" }
+      {
+        "fr": "un fermier travailleur",
+        "ru": "трудолюбивый фермер"
+      },
+      {
+        "fr": "le fermier trait les vaches",
+        "ru": "фермер доит коров"
+      },
+      {
+        "fr": "un poulet fermier",
+        "ru": "фермерская курица"
+      }
     ],
     "contrastPairs": [
       {
@@ -201,7 +285,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["ferme", "metiers"],
-    "caseIds": ["wc-ferme"]
+    "caseIds": ["wc-ferme"],
+    "audio": {
+      "isolated": "audio/wl-ferme-fermier.mp3"
+    }
   },
   {
     "id": "wl-ferme-chevre",
@@ -213,9 +300,18 @@
     "translationsEn": ["goat"],
     "semanticCore": "Коза как животное (всегда женского рода); из её молока делают козий сыр le chèvre.",
     "collocations": [
-      { "fr": "le lait de chèvre", "ru": "козье молоко" },
-      { "fr": "le fromage de chèvre", "ru": "козий сыр" },
-      { "fr": "garder les chèvres", "ru": "пасти коз" }
+      {
+        "fr": "le lait de chèvre",
+        "ru": "козье молоко"
+      },
+      {
+        "fr": "le fromage de chèvre",
+        "ru": "козий сыр"
+      },
+      {
+        "fr": "garder les chèvres",
+        "ru": "пасти коз"
+      }
     ],
     "contrastPairs": [
       {
@@ -230,6 +326,9 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["ferme", "animaux"],
-    "caseIds": ["wc-ferme"]
+    "caseIds": ["wc-ferme"],
+    "audio": {
+      "isolated": "audio/wl-ferme-chevre.mp3"
+    }
   }
 ]

@@ -9,10 +9,22 @@
     "translationsEn": ["guitar"],
     "semanticCore": "Гитара — самый народный струнный инструмент; играют на ней «de la guitare».",
     "collocations": [
-      { "fr": "jouer de la guitare", "ru": "играть на гитаре" },
-      { "fr": "une guitare classique", "ru": "классическая гитара" },
-      { "fr": "une guitare électrique", "ru": "электрогитара" },
-      { "fr": "apprendre la guitare", "ru": "учиться игре на гитаре" }
+      {
+        "fr": "jouer de la guitare",
+        "ru": "играть на гитаре"
+      },
+      {
+        "fr": "une guitare classique",
+        "ru": "классическая гитара"
+      },
+      {
+        "fr": "une guitare électrique",
+        "ru": "электрогитара"
+      },
+      {
+        "fr": "apprendre la guitare",
+        "ru": "учиться игре на гитаре"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["instruments", "cordes"],
-    "caseIds": ["wc-instruments"]
+    "caseIds": ["wc-instruments"],
+    "audio": {
+      "isolated": "audio/wl-instruments-guitare.mp3"
+    }
   },
   {
     "id": "wl-instruments-piano",
@@ -39,10 +54,22 @@
     "translationsEn": ["piano"],
     "semanticCore": "Клавишный инструмент; одно слово и для пианино, и для рояля (рояль уточняют как piano à queue).",
     "collocations": [
-      { "fr": "jouer du piano", "ru": "играть на пианино" },
-      { "fr": "un cours de piano", "ru": "урок (игры на) фортепиано" },
-      { "fr": "se mettre au piano", "ru": "сесть за пианино" },
-      { "fr": "un piano à queue", "ru": "рояль" }
+      {
+        "fr": "jouer du piano",
+        "ru": "играть на пианино"
+      },
+      {
+        "fr": "un cours de piano",
+        "ru": "урок (игры на) фортепиано"
+      },
+      {
+        "fr": "se mettre au piano",
+        "ru": "сесть за пианино"
+      },
+      {
+        "fr": "un piano à queue",
+        "ru": "рояль"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 590,
     "level": "A2",
     "tags": ["instruments", "clavier"],
-    "caseIds": ["wc-instruments"]
+    "caseIds": ["wc-instruments"],
+    "audio": {
+      "isolated": "audio/wl-instruments-piano.mp3"
+    }
   },
   {
     "id": "wl-instruments-violon",
@@ -69,10 +99,22 @@
     "translationsEn": ["violin"],
     "semanticCore": "Скрипка — небольшой струнный инструмент, на котором играют смычком (archet).",
     "collocations": [
-      { "fr": "jouer du violon", "ru": "играть на скрипке" },
-      { "fr": "un instrument à cordes", "ru": "струнный инструмент" },
-      { "fr": "accorder son violon", "ru": "настраивать скрипку" },
-      { "fr": "un cours de violon", "ru": "урок игры на скрипке" }
+      {
+        "fr": "jouer du violon",
+        "ru": "играть на скрипке"
+      },
+      {
+        "fr": "un instrument à cordes",
+        "ru": "струнный инструмент"
+      },
+      {
+        "fr": "accorder son violon",
+        "ru": "настраивать скрипку"
+      },
+      {
+        "fr": "un cours de violon",
+        "ru": "урок игры на скрипке"
+      }
     ],
     "contrastPairs": [
       {
@@ -87,7 +129,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["instruments", "cordes"],
-    "caseIds": ["wc-instruments"]
+    "caseIds": ["wc-instruments"],
+    "audio": {
+      "isolated": "audio/wl-instruments-violon.mp3"
+    }
   },
   {
     "id": "wl-instruments-trompette",
@@ -99,9 +144,18 @@
     "translationsEn": ["trumpet"],
     "semanticCore": "Труба — медный духовой инструмент с ярким, звонким звуком.",
     "collocations": [
-      { "fr": "jouer de la trompette", "ru": "играть на трубе" },
-      { "fr": "un instrument à vent", "ru": "духовой инструмент" },
-      { "fr": "un joueur de trompette", "ru": "трубач" }
+      {
+        "fr": "jouer de la trompette",
+        "ru": "играть на трубе"
+      },
+      {
+        "fr": "un instrument à vent",
+        "ru": "духовой инструмент"
+      },
+      {
+        "fr": "un joueur de trompette",
+        "ru": "трубач"
+      }
     ],
     "contrastPairs": [
       {
@@ -116,7 +170,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["instruments", "vents"],
-    "caseIds": ["wc-instruments"]
+    "caseIds": ["wc-instruments"],
+    "audio": {
+      "isolated": "audio/wl-instruments-trompette.mp3"
+    }
   },
   {
     "id": "wl-instruments-flute",
@@ -128,9 +185,18 @@
     "translationsEn": ["flute"],
     "semanticCore": "Флейта — духовой инструмент с мягким, светлым звуком; пишется с accent circonflexe.",
     "collocations": [
-      { "fr": "jouer de la flûte", "ru": "играть на флейте" },
-      { "fr": "la flûte à bec", "ru": "блокфлейта" },
-      { "fr": "la flûte traversière", "ru": "поперечная флейта" }
+      {
+        "fr": "jouer de la flûte",
+        "ru": "играть на флейте"
+      },
+      {
+        "fr": "la flûte à bec",
+        "ru": "блокфлейта"
+      },
+      {
+        "fr": "la flûte traversière",
+        "ru": "поперечная флейта"
+      }
     ],
     "contrastPairs": [
       {
@@ -145,7 +211,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["instruments", "vents"],
-    "caseIds": ["wc-instruments"]
+    "caseIds": ["wc-instruments"],
+    "audio": {
+      "isolated": "audio/wl-instruments-flute.mp3"
+    }
   },
   {
     "id": "wl-instruments-tambour",
@@ -157,9 +226,18 @@
     "translationsEn": ["drum"],
     "semanticCore": "Барабан — один ударный инструмент, который задаёт ритм (особенно в оркестре, фанфаре).",
     "collocations": [
-      { "fr": "jouer du tambour", "ru": "играть на барабане" },
-      { "fr": "battre le tambour", "ru": "бить в барабан" },
-      { "fr": "un roulement de tambour", "ru": "барабанная дробь" }
+      {
+        "fr": "jouer du tambour",
+        "ru": "играть на барабане"
+      },
+      {
+        "fr": "battre le tambour",
+        "ru": "бить в барабан"
+      },
+      {
+        "fr": "un roulement de tambour",
+        "ru": "барабанная дробь"
+      }
     ],
     "contrastPairs": [
       {
@@ -174,7 +252,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["instruments", "percussions"],
-    "caseIds": ["wc-instruments"]
+    "caseIds": ["wc-instruments"],
+    "audio": {
+      "isolated": "audio/wl-instruments-tambour.mp3"
+    }
   },
   {
     "id": "wl-instruments-archet",
@@ -186,9 +267,18 @@
     "translationsEn": ["bow"],
     "semanticCore": "Смычок — палочка с конским волосом, которой водят по струнам скрипки или виолончели.",
     "collocations": [
-      { "fr": "passer l'archet sur les cordes", "ru": "вести смычком по струнам" },
-      { "fr": "tenir l'archet", "ru": "держать смычок" },
-      { "fr": "un coup d'archet", "ru": "движение смычком, штрих" }
+      {
+        "fr": "passer l'archet sur les cordes",
+        "ru": "вести смычком по струнам"
+      },
+      {
+        "fr": "tenir l'archet",
+        "ru": "держать смычок"
+      },
+      {
+        "fr": "un coup d'archet",
+        "ru": "движение смычком, штрих"
+      }
     ],
     "contrastPairs": [
       {
@@ -203,7 +293,10 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["instruments", "cordes"],
-    "caseIds": ["wc-instruments"]
+    "caseIds": ["wc-instruments"],
+    "audio": {
+      "isolated": "audio/wl-instruments-archet.mp3"
+    }
   },
   {
     "id": "wl-instruments-corde",
@@ -215,10 +308,22 @@
     "translationsEn": ["string", "rope"],
     "semanticCore": "Натянутая нить, которая звучит (струна) — то же слово значит «верёвка, канат».",
     "collocations": [
-      { "fr": "un instrument à cordes", "ru": "струнный инструмент" },
-      { "fr": "une corde cassée", "ru": "лопнувшая струна" },
-      { "fr": "les cordes du violon", "ru": "струны скрипки" },
-      { "fr": "une corde à sauter", "ru": "скакалка" }
+      {
+        "fr": "un instrument à cordes",
+        "ru": "струнный инструмент"
+      },
+      {
+        "fr": "une corde cassée",
+        "ru": "лопнувшая струна"
+      },
+      {
+        "fr": "les cordes du violon",
+        "ru": "струны скрипки"
+      },
+      {
+        "fr": "une corde à sauter",
+        "ru": "скакалка"
+      }
     ],
     "contrastPairs": [
       {
@@ -233,6 +338,9 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["instruments", "cordes"],
-    "caseIds": ["wc-instruments"]
+    "caseIds": ["wc-instruments"],
+    "audio": {
+      "isolated": "audio/wl-instruments-corde.mp3"
+    }
   }
 ]

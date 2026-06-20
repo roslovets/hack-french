@@ -9,10 +9,22 @@
     "translationsEn": ["make-up", "makeup"],
     "semanticCore": "Макияж в целом: и сама декоративная косметика, и нанесённый на лицо результат.",
     "collocations": [
-      { "fr": "se mettre du maquillage", "ru": "накраситься, нанести макияж" },
-      { "fr": "un maquillage léger", "ru": "лёгкий макияж" },
-      { "fr": "enlever son maquillage", "ru": "снять макияж" },
-      { "fr": "une trousse de maquillage", "ru": "косметичка" }
+      {
+        "fr": "se mettre du maquillage",
+        "ru": "накраситься, нанести макияж"
+      },
+      {
+        "fr": "un maquillage léger",
+        "ru": "лёгкий макияж"
+      },
+      {
+        "fr": "enlever son maquillage",
+        "ru": "снять макияж"
+      },
+      {
+        "fr": "une trousse de maquillage",
+        "ru": "косметичка"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["maquillage", "beaute"],
-    "caseIds": ["wc-maquillage"]
+    "caseIds": ["wc-maquillage"],
+    "audio": {
+      "isolated": "audio/wl-maquillage-maquillage.mp3"
+    }
   },
   {
     "id": "wl-maquillage-mascara",
@@ -39,9 +54,18 @@
     "translationsEn": ["mascara"],
     "semanticCore": "Тушь — средство, которым красят ресницы; несмотря на окончание -a, слово мужского рода.",
     "collocations": [
-      { "fr": "mettre du mascara", "ru": "накрасить ресницы тушью" },
-      { "fr": "un mascara noir", "ru": "чёрная тушь" },
-      { "fr": "du mascara waterproof", "ru": "водостойкая тушь" }
+      {
+        "fr": "mettre du mascara",
+        "ru": "накрасить ресницы тушью"
+      },
+      {
+        "fr": "un mascara noir",
+        "ru": "чёрная тушь"
+      },
+      {
+        "fr": "du mascara waterproof",
+        "ru": "водостойкая тушь"
+      }
     ],
     "contrastPairs": [
       {
@@ -56,7 +80,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["maquillage", "beaute"],
-    "caseIds": ["wc-maquillage"]
+    "caseIds": ["wc-maquillage"],
+    "audio": {
+      "isolated": "audio/wl-maquillage-mascara.mp3"
+    }
   },
   {
     "id": "wl-maquillage-fard",
@@ -68,9 +95,18 @@
     "translationsEn": ["blush", "eyeshadow"],
     "semanticCore": "Цветная косметика для лица: fard à joues — румяна, fard à paupières — тени; конечная d немая (/faʁ/).",
     "collocations": [
-      { "fr": "le fard à joues", "ru": "румяна" },
-      { "fr": "le fard à paupières", "ru": "тени для век" },
-      { "fr": "mettre du fard", "ru": "нанести румяна/тени" }
+      {
+        "fr": "le fard à joues",
+        "ru": "румяна"
+      },
+      {
+        "fr": "le fard à paupières",
+        "ru": "тени для век"
+      },
+      {
+        "fr": "mettre du fard",
+        "ru": "нанести румяна/тени"
+      }
     ],
     "contrastPairs": [
       {
@@ -85,7 +121,10 @@
     "frequencyRank": 900,
     "level": "A2",
     "tags": ["maquillage", "beaute"],
-    "caseIds": ["wc-maquillage"]
+    "caseIds": ["wc-maquillage"],
+    "audio": {
+      "isolated": "audio/wl-maquillage-fard.mp3"
+    }
   },
   {
     "id": "wl-maquillage-vernis",
@@ -97,10 +136,22 @@
     "translationsEn": ["nail polish", "varnish"],
     "semanticCore": "Лак: чаще всего vernis à ongles — лак для ногтей; также любой лак (для дерева, мебели). Конечная s немая (/vɛʁ.ni/).",
     "collocations": [
-      { "fr": "le vernis à ongles", "ru": "лак для ногтей" },
-      { "fr": "mettre du vernis", "ru": "накрасить ногти, нанести лак" },
-      { "fr": "un vernis rouge", "ru": "красный лак" },
-      { "fr": "enlever le vernis", "ru": "снять лак" }
+      {
+        "fr": "le vernis à ongles",
+        "ru": "лак для ногтей"
+      },
+      {
+        "fr": "mettre du vernis",
+        "ru": "накрасить ногти, нанести лак"
+      },
+      {
+        "fr": "un vernis rouge",
+        "ru": "красный лак"
+      },
+      {
+        "fr": "enlever le vernis",
+        "ru": "снять лак"
+      }
     ],
     "contrastPairs": [
       {
@@ -115,7 +166,10 @@
     "frequencyRank": 850,
     "level": "A2",
     "tags": ["maquillage", "beaute"],
-    "caseIds": ["wc-maquillage"]
+    "caseIds": ["wc-maquillage"],
+    "audio": {
+      "isolated": "audio/wl-maquillage-vernis.mp3"
+    }
   },
   {
     "id": "wl-maquillage-poudre",
@@ -127,9 +181,18 @@
     "translationsEn": ["powder"],
     "semanticCore": "Пудра — рассыпчатое или прессованное средство, матирующее кожу; шире — любой порошок. Женского рода (la poudre).",
     "collocations": [
-      { "fr": "de la poudre", "ru": "пудра (немного)" },
-      { "fr": "se poudrer le nez", "ru": "припудрить нос" },
-      { "fr": "un fond de teint poudre", "ru": "пудровая тональная основа" }
+      {
+        "fr": "de la poudre",
+        "ru": "пудра (немного)"
+      },
+      {
+        "fr": "se poudrer le nez",
+        "ru": "припудрить нос"
+      },
+      {
+        "fr": "un fond de teint poudre",
+        "ru": "пудровая тональная основа"
+      }
     ],
     "contrastPairs": [
       {
@@ -144,7 +207,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["maquillage", "beaute"],
-    "caseIds": ["wc-maquillage"]
+    "caseIds": ["wc-maquillage"],
+    "audio": {
+      "isolated": "audio/wl-maquillage-poudre.mp3"
+    }
   },
   {
     "id": "wl-maquillage-teint",
@@ -156,9 +222,18 @@
     "translationsEn": ["complexion", "skin tone"],
     "semanticCore": "Цвет лица, тон кожи: какой у человека оттенок и вид кожи. Носовое окончание /tɛ̃/, без т на конце.",
     "collocations": [
-      { "fr": "un teint clair", "ru": "светлый цвет лица" },
-      { "fr": "un teint mat", "ru": "смуглый/матовый цвет лица" },
-      { "fr": "le fond de teint", "ru": "тональный крем" }
+      {
+        "fr": "un teint clair",
+        "ru": "светлый цвет лица"
+      },
+      {
+        "fr": "un teint mat",
+        "ru": "смуглый/матовый цвет лица"
+      },
+      {
+        "fr": "le fond de teint",
+        "ru": "тональный крем"
+      }
     ],
     "contrastPairs": [
       {
@@ -173,7 +248,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["maquillage", "beaute"],
-    "caseIds": ["wc-maquillage"]
+    "caseIds": ["wc-maquillage"],
+    "audio": {
+      "isolated": "audio/wl-maquillage-teint.mp3"
+    }
   },
   {
     "id": "wl-maquillage-pinceau",
@@ -185,9 +263,18 @@
     "translationsEn": ["brush"],
     "semanticCore": "Кисть с мягким пучком волоса: для макияжа, рисования, краски. Не щётка с жёсткой щетиной (brosse).",
     "collocations": [
-      { "fr": "un pinceau de maquillage", "ru": "кисть для макияжа" },
-      { "fr": "un pinceau fin", "ru": "тонкая кисть" },
-      { "fr": "un coup de pinceau", "ru": "мазок кистью" }
+      {
+        "fr": "un pinceau de maquillage",
+        "ru": "кисть для макияжа"
+      },
+      {
+        "fr": "un pinceau fin",
+        "ru": "тонкая кисть"
+      },
+      {
+        "fr": "un coup de pinceau",
+        "ru": "мазок кистью"
+      }
     ],
     "contrastPairs": [
       {
@@ -202,7 +289,10 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["maquillage", "outil"],
-    "caseIds": ["wc-maquillage"]
+    "caseIds": ["wc-maquillage"],
+    "audio": {
+      "isolated": "audio/wl-maquillage-pinceau.mp3"
+    }
   },
   {
     "id": "wl-maquillage-creme",
@@ -214,10 +304,22 @@
     "translationsEn": ["cream"],
     "semanticCore": "Крем — мягкое средство для кожи (увлажняющий, дневной, солнцезащитный); то же слово — про сливки и кремовые десерты. Женского рода.",
     "collocations": [
-      { "fr": "une crème hydratante", "ru": "увлажняющий крем" },
-      { "fr": "une crème de jour", "ru": "дневной крем" },
-      { "fr": "une crème solaire", "ru": "солнцезащитный крем" },
-      { "fr": "mettre de la crème", "ru": "нанести крем" }
+      {
+        "fr": "une crème hydratante",
+        "ru": "увлажняющий крем"
+      },
+      {
+        "fr": "une crème de jour",
+        "ru": "дневной крем"
+      },
+      {
+        "fr": "une crème solaire",
+        "ru": "солнцезащитный крем"
+      },
+      {
+        "fr": "mettre de la crème",
+        "ru": "нанести крем"
+      }
     ],
     "contrastPairs": [
       {
@@ -232,6 +334,9 @@
     "frequencyRank": 510,
     "level": "A2",
     "tags": ["maquillage", "beaute"],
-    "caseIds": ["wc-maquillage"]
+    "caseIds": ["wc-maquillage"],
+    "audio": {
+      "isolated": "audio/wl-maquillage-creme.mp3"
+    }
   }
 ]

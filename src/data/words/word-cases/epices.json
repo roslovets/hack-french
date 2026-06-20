@@ -239,7 +239,8 @@
         "audioText": "cannelle",
         "options": ["cannelle", "caramel", "flanelle", "dentelle"],
         "correctIndex": 0,
-        "explanation": "Прозвучало cannelle /ka.nɛl/ — корица. Похоже звучат caramel (карамель), flanelle (фланель) и dentelle (кружево), но это другие слова — слушай начало ca-nelle."
+        "explanation": "Прозвучало cannelle /ka.nɛl/ — корица. Похоже звучат caramel (карамель), flanelle (фланель) и dentelle (кружево), но это другие слова — слушай начало ca-nelle.",
+        "audioSrc": "audio/wl-epices-cannelle.mp3"
       },
       {
         "id": "wc-epices-piment-ctx",
@@ -284,7 +285,8 @@
         "audioText": "piment",
         "options": ["piment", "ciment", "aliment", "moment"],
         "correctIndex": 0,
-        "explanation": "Прозвучало piment /pi.mɑ̃/ — перец чили. Похожи по звучанию ciment (цемент), aliment (продукт), moment (момент), но начало pi- выдаёт нужное слово."
+        "explanation": "Прозвучало piment /pi.mɑ̃/ — перец чили. Похожи по звучанию ciment (цемент), aliment (продукт), moment (момент), но начало pi- выдаёт нужное слово.",
+        "audioSrc": "audio/wl-epices-piment.mp3"
       },
       {
         "id": "wc-epices-thym-ctx",

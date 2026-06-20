@@ -9,10 +9,22 @@
     "translationsEn": ["museum"],
     "semanticCore": "Музей как здание и учреждение, куда ходят смотреть произведения искусства.",
     "collocations": [
-      { "fr": "aller au musée", "ru": "идти в музей" },
-      { "fr": "visiter un musée", "ru": "посетить музей" },
-      { "fr": "le musée du Louvre", "ru": "Лувр (музей Лувр)" },
-      { "fr": "un musée d'art moderne", "ru": "музей современного искусства" }
+      {
+        "fr": "aller au musée",
+        "ru": "идти в музей"
+      },
+      {
+        "fr": "visiter un musée",
+        "ru": "посетить музей"
+      },
+      {
+        "fr": "le musée du Louvre",
+        "ru": "Лувр (музей Лувр)"
+      },
+      {
+        "fr": "un musée d'art moderne",
+        "ru": "музей современного искусства"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["musees", "lieu"],
-    "caseIds": ["wc-musees"]
+    "caseIds": ["wc-musees"],
+    "audio": {
+      "isolated": "audio/wl-musees-musee.mp3"
+    }
   },
   {
     "id": "wl-musees-tableau",
@@ -39,9 +54,18 @@
     "translationsEn": ["painting", "picture"],
     "semanticCore": "Картина — изображение на холсте или доске, которое вешают на стену; во мн.ч. tableaux.",
     "collocations": [
-      { "fr": "un tableau de Monet", "ru": "картина Моне" },
-      { "fr": "accrocher un tableau au mur", "ru": "повесить картину на стену" },
-      { "fr": "un tableau célèbre", "ru": "знаменитая картина" }
+      {
+        "fr": "un tableau de Monet",
+        "ru": "картина Моне"
+      },
+      {
+        "fr": "accrocher un tableau au mur",
+        "ru": "повесить картину на стену"
+      },
+      {
+        "fr": "un tableau célèbre",
+        "ru": "знаменитая картина"
+      }
     ],
     "contrastPairs": [
       {
@@ -56,7 +80,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["musees", "art"],
-    "caseIds": ["wc-musees"]
+    "caseIds": ["wc-musees"],
+    "audio": {
+      "isolated": "audio/wl-musees-tableau.mp3"
+    }
   },
   {
     "id": "wl-musees-statue",
@@ -68,9 +95,18 @@
     "translationsEn": ["statue"],
     "semanticCore": "Статуя — объёмное изображение человека или фигуры из камня, бронзы и т. п.",
     "collocations": [
-      { "fr": "une statue en bronze", "ru": "бронзовая статуя" },
-      { "fr": "une statue de marbre", "ru": "мраморная статуя" },
-      { "fr": "la statue de la Liberté", "ru": "статуя Свободы" }
+      {
+        "fr": "une statue en bronze",
+        "ru": "бронзовая статуя"
+      },
+      {
+        "fr": "une statue de marbre",
+        "ru": "мраморная статуя"
+      },
+      {
+        "fr": "la statue de la Liberté",
+        "ru": "статуя Свободы"
+      }
     ],
     "contrastPairs": [
       {
@@ -85,7 +121,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["musees", "art"],
-    "caseIds": ["wc-musees"]
+    "caseIds": ["wc-musees"],
+    "audio": {
+      "isolated": "audio/wl-musees-statue.mp3"
+    }
   },
   {
     "id": "wl-musees-exposition",
@@ -97,9 +136,18 @@
     "translationsEn": ["exhibition", "exposition"],
     "semanticCore": "Выставка — временный показ работ или предметов; в разговоре часто сокращают до «expo».",
     "collocations": [
-      { "fr": "une exposition de peinture", "ru": "выставка живописи" },
-      { "fr": "visiter une exposition", "ru": "сходить на выставку" },
-      { "fr": "une exposition temporaire", "ru": "временная выставка" }
+      {
+        "fr": "une exposition de peinture",
+        "ru": "выставка живописи"
+      },
+      {
+        "fr": "visiter une exposition",
+        "ru": "сходить на выставку"
+      },
+      {
+        "fr": "une exposition temporaire",
+        "ru": "временная выставка"
+      }
     ],
     "contrastPairs": [
       {
@@ -114,7 +162,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["musees", "art"],
-    "caseIds": ["wc-musees"]
+    "caseIds": ["wc-musees"],
+    "audio": {
+      "isolated": "audio/wl-musees-exposition.mp3"
+    }
   },
   {
     "id": "wl-musees-oeuvre",
@@ -126,9 +177,18 @@
     "translationsEn": ["work", "artwork"],
     "semanticCore": "Произведение искусства — то, что создал художник: картина, статуя, книга, музыка.",
     "collocations": [
-      { "fr": "une œuvre d'art", "ru": "произведение искусства" },
-      { "fr": "les œuvres de Picasso", "ru": "произведения Пикассо" },
-      { "fr": "une œuvre célèbre", "ru": "знаменитое произведение" }
+      {
+        "fr": "une œuvre d'art",
+        "ru": "произведение искусства"
+      },
+      {
+        "fr": "les œuvres de Picasso",
+        "ru": "произведения Пикассо"
+      },
+      {
+        "fr": "une œuvre célèbre",
+        "ru": "знаменитое произведение"
+      }
     ],
     "contrastPairs": [
       {
@@ -143,7 +203,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["musees", "art"],
-    "caseIds": ["wc-musees"]
+    "caseIds": ["wc-musees"],
+    "audio": {
+      "isolated": "audio/wl-musees-oeuvre.mp3"
+    }
   },
   {
     "id": "wl-musees-visite",
@@ -155,9 +218,18 @@
     "translationsEn": ["visit", "tour"],
     "semanticCore": "Посещение места или человека; в музее — осмотр, часто с гидом (visite guidée).",
     "collocations": [
-      { "fr": "une visite guidée", "ru": "экскурсия с гидом" },
-      { "fr": "la visite du musée", "ru": "осмотр музея" },
-      { "fr": "rendre visite à un ami", "ru": "навестить друга" }
+      {
+        "fr": "une visite guidée",
+        "ru": "экскурсия с гидом"
+      },
+      {
+        "fr": "la visite du musée",
+        "ru": "осмотр музея"
+      },
+      {
+        "fr": "rendre visite à un ami",
+        "ru": "навестить друга"
+      }
     ],
     "contrastPairs": [
       {
@@ -172,7 +244,10 @@
     "frequencyRank": 450,
     "level": "A2",
     "tags": ["musees", "experience"],
-    "caseIds": ["wc-musees"]
+    "caseIds": ["wc-musees"],
+    "audio": {
+      "isolated": "audio/wl-musees-visite.mp3"
+    }
   },
   {
     "id": "wl-musees-guide",
@@ -184,9 +259,18 @@
     "translationsEn": ["guide", "guidebook"],
     "semanticCore": "Гид — человек, который ведёт экскурсию, ИЛИ книга-путеводитель; обычно мужского рода.",
     "collocations": [
-      { "fr": "un guide touristique", "ru": "туристический гид / путеводитель" },
-      { "fr": "suivre le guide", "ru": "идти за гидом" },
-      { "fr": "une visite guidée", "ru": "экскурсия с гидом" }
+      {
+        "fr": "un guide touristique",
+        "ru": "туристический гид / путеводитель"
+      },
+      {
+        "fr": "suivre le guide",
+        "ru": "идти за гидом"
+      },
+      {
+        "fr": "une visite guidée",
+        "ru": "экскурсия с гидом"
+      }
     ],
     "contrastPairs": [
       {
@@ -201,7 +285,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["musees", "experience"],
-    "caseIds": ["wc-musees"]
+    "caseIds": ["wc-musees"],
+    "audio": {
+      "isolated": "audio/wl-musees-guide.mp3"
+    }
   },
   {
     "id": "wl-musees-collection",
@@ -213,9 +300,18 @@
     "translationsEn": ["collection"],
     "semanticCore": "Коллекция — собрание предметов одной темы; в музее — его постоянное собрание работ.",
     "collocations": [
-      { "fr": "la collection du musée", "ru": "коллекция музея" },
-      { "fr": "la collection permanente", "ru": "постоянная экспозиция" },
-      { "fr": "une collection de tableaux", "ru": "коллекция картин" }
+      {
+        "fr": "la collection du musée",
+        "ru": "коллекция музея"
+      },
+      {
+        "fr": "la collection permanente",
+        "ru": "постоянная экспозиция"
+      },
+      {
+        "fr": "une collection de tableaux",
+        "ru": "коллекция картин"
+      }
     ],
     "contrastPairs": [
       {
@@ -230,6 +326,9 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["musees", "art"],
-    "caseIds": ["wc-musees"]
+    "caseIds": ["wc-musees"],
+    "audio": {
+      "isolated": "audio/wl-musees-collection.mp3"
+    }
   }
 ]

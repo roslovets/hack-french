@@ -221,7 +221,8 @@
         "audioText": "chèque",
         "options": ["chèque", "choc", "chic", "chaque"],
         "correctIndex": 0,
-        "explanation": "Прозвучало chèque /ʃɛk/ — чек. Похожи, но другие: choc /ʃɔk/ (удар, шок), chic /ʃik/ (шикарный), chaque /ʃak/ (каждый). Это не омофоны — слушай гласный."
+        "explanation": "Прозвучало chèque /ʃɛk/ — чек. Похожи, но другие: choc /ʃɔk/ (удар, шок), chic /ʃik/ (шикарный), chaque /ʃak/ (каждый). Это не омофоны — слушай гласный.",
+        "audioSrc": "audio/wl-banque-cheque.mp3"
       },
       {
         "id": "wc-banque-cheque-bridge",
@@ -261,7 +262,8 @@
         "audioText": "guichet",
         "options": ["guichet", "gilet", "cachet", "ticket"],
         "correctIndex": 0,
-        "explanation": "Прозвучало guichet /ɡi.ʃɛ/ — окно кассы. Похожи концовкой -et /ɛ/, но другие: gilet /ʒi.lɛ/ (жилет), cachet /ka.ʃɛ/ (печать; таблетка), ticket /ti.kɛ/ (билет, чек). Это не омофоны — слушай начало слова."
+        "explanation": "Прозвучало guichet /ɡi.ʃɛ/ — окно кассы. Похожи концовкой -et /ɛ/, но другие: gilet /ʒi.lɛ/ (жилет), cachet /ka.ʃɛ/ (печать; таблетка), ticket /ti.kɛ/ (билет, чек). Это не омофоны — слушай начало слова.",
+        "audioSrc": "audio/wl-banque-guichet.mp3"
       },
       {
         "id": "wc-banque-epargne-ctx",

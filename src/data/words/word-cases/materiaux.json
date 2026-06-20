@@ -185,7 +185,8 @@
         "audioText": "cuir",
         "options": ["cuir", "cuivre", "cuisse", "cuit"],
         "correctIndex": 0,
-        "explanation": "Прозвучало cuir /kɥiʁ/ — кожа. Похожие, но другие слова: cuivre /kɥivʁ/ (медь), cuisse /kɥis/ (бедро), cuit /kɥi/ (приготовленный). Различай по концу: -r, -vre, -sse, -t."
+        "explanation": "Прозвучало cuir /kɥiʁ/ — кожа. Похожие, но другие слова: cuivre /kɥivʁ/ (медь), cuisse /kɥis/ (бедро), cuit /kɥi/ (приготовленный). Различай по концу: -r, -vre, -sse, -t.",
+        "audioSrc": "audio/wl-materiaux-cuir.mp3"
       },
       {
         "id": "wc-materiaux-pierre-ctx",
@@ -213,7 +214,8 @@
         "audioText": "pierre",
         "options": ["pierre", "bière", "paire", "pire"],
         "correctIndex": 0,
-        "explanation": "Прозвучало pierre /pjɛʁ/ — камень. Похожие на слух: bière /bjɛʁ/ (пиво), paire /pɛʁ/ (пара), pire /piʁ/ (хуже). Решает гласная и начало pi-e-."
+        "explanation": "Прозвучало pierre /pjɛʁ/ — камень. Похожие на слух: bière /bjɛʁ/ (пиво), paire /pɛʁ/ (пара), pire /piʁ/ (хуже). Решает гласная и начало pi-e-.",
+        "audioSrc": "audio/wl-materiaux-pierre.mp3"
       },
       {
         "id": "wc-materiaux-carton-ctx",

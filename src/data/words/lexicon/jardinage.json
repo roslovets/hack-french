@@ -9,10 +9,22 @@
     "translationsEn": ["plant"],
     "semanticCore": "Любое зелёное растение, особенно домашнее в горшке или садовое; то, что сажают и поливают.",
     "collocations": [
-      { "fr": "une plante verte", "ru": "комнатное (зелёное) растение" },
-      { "fr": "arroser les plantes", "ru": "поливать растения" },
-      { "fr": "une plante d'intérieur", "ru": "комнатное растение" },
-      { "fr": "une plante grasse", "ru": "суккулент (кактус и т. п.)" }
+      {
+        "fr": "une plante verte",
+        "ru": "комнатное (зелёное) растение"
+      },
+      {
+        "fr": "arroser les plantes",
+        "ru": "поливать растения"
+      },
+      {
+        "fr": "une plante d'intérieur",
+        "ru": "комнатное растение"
+      },
+      {
+        "fr": "une plante grasse",
+        "ru": "суккулент (кактус и т. п.)"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["jardinage", "vegetation"],
-    "caseIds": ["wc-jardinage"]
+    "caseIds": ["wc-jardinage"],
+    "audio": {
+      "isolated": "audio/wl-jardinage-plante.mp3"
+    }
   },
   {
     "id": "wl-jardinage-herbe",
@@ -39,10 +54,22 @@
     "translationsEn": ["grass", "herb"],
     "semanticCore": "Трава как зелёный покров земли; во множественном — травы (пряные или сорные).",
     "collocations": [
-      { "fr": "marcher sur l'herbe", "ru": "ходить по траве" },
-      { "fr": "couper l'herbe", "ru": "косить траву" },
-      { "fr": "les mauvaises herbes", "ru": "сорняки" },
-      { "fr": "les fines herbes", "ru": "пряные травы (зелень)" }
+      {
+        "fr": "marcher sur l'herbe",
+        "ru": "ходить по траве"
+      },
+      {
+        "fr": "couper l'herbe",
+        "ru": "косить траву"
+      },
+      {
+        "fr": "les mauvaises herbes",
+        "ru": "сорняки"
+      },
+      {
+        "fr": "les fines herbes",
+        "ru": "пряные травы (зелень)"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["jardinage", "vegetation"],
-    "caseIds": ["wc-jardinage"]
+    "caseIds": ["wc-jardinage"],
+    "audio": {
+      "isolated": "audio/wl-jardinage-herbe.mp3"
+    }
   },
   {
     "id": "wl-jardinage-arroser",
@@ -68,10 +98,22 @@
     "translationsEn": ["to water"],
     "semanticCore": "Лить воду на растения или землю, чтобы они не засохли; делают это из лейки (un arrosoir).",
     "collocations": [
-      { "fr": "arroser les fleurs", "ru": "поливать цветы" },
-      { "fr": "arroser le jardin", "ru": "поливать сад" },
-      { "fr": "arroser tous les jours", "ru": "поливать каждый день" },
-      { "fr": "un arrosoir", "ru": "лейка" }
+      {
+        "fr": "arroser les fleurs",
+        "ru": "поливать цветы"
+      },
+      {
+        "fr": "arroser le jardin",
+        "ru": "поливать сад"
+      },
+      {
+        "fr": "arroser tous les jours",
+        "ru": "поливать каждый день"
+      },
+      {
+        "fr": "un arrosoir",
+        "ru": "лейка"
+      }
     ],
     "contrastPairs": [
       {
@@ -86,7 +128,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["jardinage", "action"],
-    "caseIds": ["wc-jardinage"]
+    "caseIds": ["wc-jardinage"],
+    "audio": {
+      "isolated": "audio/wl-jardinage-arroser.mp3"
+    }
   },
   {
     "id": "wl-jardinage-planter",
@@ -97,10 +142,22 @@
     "translationsEn": ["to plant"],
     "semanticCore": "Помещать растение, саженец или луковицу в землю, чтобы оно росло; родственно слову une plante.",
     "collocations": [
-      { "fr": "planter un arbre", "ru": "посадить дерево" },
-      { "fr": "planter des fleurs", "ru": "сажать цветы" },
-      { "fr": "planter des tomates", "ru": "сажать помидоры" },
-      { "fr": "planter dans la terre", "ru": "сажать в землю" }
+      {
+        "fr": "planter un arbre",
+        "ru": "посадить дерево"
+      },
+      {
+        "fr": "planter des fleurs",
+        "ru": "сажать цветы"
+      },
+      {
+        "fr": "planter des tomates",
+        "ru": "сажать помидоры"
+      },
+      {
+        "fr": "planter dans la terre",
+        "ru": "сажать в землю"
+      }
     ],
     "contrastPairs": [
       {
@@ -115,7 +172,10 @@
     "frequencyRank": 660,
     "level": "A2",
     "tags": ["jardinage", "action"],
-    "caseIds": ["wc-jardinage"]
+    "caseIds": ["wc-jardinage"],
+    "audio": {
+      "isolated": "audio/wl-jardinage-planter.mp3"
+    }
   },
   {
     "id": "wl-jardinage-tondre",
@@ -126,10 +186,22 @@
     "translationsEn": ["to mow"],
     "semanticCore": "Коротко срезать траву газона (или шерсть овцы) специальной машинкой — une tondeuse.",
     "collocations": [
-      { "fr": "tondre la pelouse", "ru": "косить газон" },
-      { "fr": "tondre le gazon", "ru": "стричь газон" },
-      { "fr": "tondre un mouton", "ru": "стричь овцу" },
-      { "fr": "une tondeuse", "ru": "газонокосилка / машинка для стрижки" }
+      {
+        "fr": "tondre la pelouse",
+        "ru": "косить газон"
+      },
+      {
+        "fr": "tondre le gazon",
+        "ru": "стричь газон"
+      },
+      {
+        "fr": "tondre un mouton",
+        "ru": "стричь овцу"
+      },
+      {
+        "fr": "une tondeuse",
+        "ru": "газонокосилка / машинка для стрижки"
+      }
     ],
     "contrastPairs": [
       {
@@ -144,7 +216,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["jardinage", "action"],
-    "caseIds": ["wc-jardinage"]
+    "caseIds": ["wc-jardinage"],
+    "audio": {
+      "isolated": "audio/wl-jardinage-tondre.mp3"
+    }
   },
   {
     "id": "wl-jardinage-semer",
@@ -155,10 +230,22 @@
     "translationsEn": ["to sow"],
     "semanticCore": "Рассыпать семена по земле, чтобы из них выросли растения; первый шаг до того, как появится сама plante.",
     "collocations": [
-      { "fr": "semer des graines", "ru": "сеять семена" },
-      { "fr": "semer des carottes", "ru": "сеять морковь" },
-      { "fr": "semer du gazon", "ru": "сеять газон (засевать)" },
-      { "fr": "semer au printemps", "ru": "сеять весной" }
+      {
+        "fr": "semer des graines",
+        "ru": "сеять семена"
+      },
+      {
+        "fr": "semer des carottes",
+        "ru": "сеять морковь"
+      },
+      {
+        "fr": "semer du gazon",
+        "ru": "сеять газон (засевать)"
+      },
+      {
+        "fr": "semer au printemps",
+        "ru": "сеять весной"
+      }
     ],
     "contrastPairs": [
       {
@@ -173,7 +260,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["jardinage", "action"],
-    "caseIds": ["wc-jardinage"]
+    "caseIds": ["wc-jardinage"],
+    "audio": {
+      "isolated": "audio/wl-jardinage-semer.mp3"
+    }
   },
   {
     "id": "wl-jardinage-terre",
@@ -185,10 +275,22 @@
     "translationsEn": ["earth", "soil"],
     "semanticCore": "Земля как почва, в которую сажают; также «земля» под ногами (par terre) и планета Земля (la Terre).",
     "collocations": [
-      { "fr": "planter dans la terre", "ru": "сажать в землю" },
-      { "fr": "une terre fertile", "ru": "плодородная почва" },
-      { "fr": "par terre", "ru": "на полу / на земле" },
-      { "fr": "un pot de terre", "ru": "глиняный горшок" }
+      {
+        "fr": "planter dans la terre",
+        "ru": "сажать в землю"
+      },
+      {
+        "fr": "une terre fertile",
+        "ru": "плодородная почва"
+      },
+      {
+        "fr": "par terre",
+        "ru": "на полу / на земле"
+      },
+      {
+        "fr": "un pot de terre",
+        "ru": "глиняный горшок"
+      }
     ],
     "contrastPairs": [
       {
@@ -203,7 +305,10 @@
     "frequencyRank": 300,
     "level": "A2",
     "tags": ["jardinage", "nature"],
-    "caseIds": ["wc-jardinage"]
+    "caseIds": ["wc-jardinage"],
+    "audio": {
+      "isolated": "audio/wl-jardinage-terre.mp3"
+    }
   },
   {
     "id": "wl-jardinage-graine",
@@ -215,10 +320,22 @@
     "translationsEn": ["seed"],
     "semanticCore": "Семя, которое сеют в землю, чтобы из него выросло растение; начало всего сада.",
     "collocations": [
-      { "fr": "semer des graines", "ru": "сеять семена" },
-      { "fr": "un sachet de graines", "ru": "пакетик семян" },
-      { "fr": "des graines de tournesol", "ru": "семена подсолнечника" },
-      { "fr": "planter une graine", "ru": "посадить семечко" }
+      {
+        "fr": "semer des graines",
+        "ru": "сеять семена"
+      },
+      {
+        "fr": "un sachet de graines",
+        "ru": "пакетик семян"
+      },
+      {
+        "fr": "des graines de tournesol",
+        "ru": "семена подсолнечника"
+      },
+      {
+        "fr": "planter une graine",
+        "ru": "посадить семечко"
+      }
     ],
     "contrastPairs": [
       {
@@ -233,6 +350,9 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["jardinage", "vegetation"],
-    "caseIds": ["wc-jardinage"]
+    "caseIds": ["wc-jardinage"],
+    "audio": {
+      "isolated": "audio/wl-jardinage-graine.mp3"
+    }
   }
 ]

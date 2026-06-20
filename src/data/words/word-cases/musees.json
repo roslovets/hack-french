@@ -41,7 +41,8 @@
         "audioText": "musée",
         "options": ["musée", "fusée", "musique", "mousse"],
         "correctIndex": 0,
-        "explanation": "Прозвучало musée /my.ze/ (музей). Похожие на слух, но другие слова: fusée /fy.ze/ (ракета), musique /my.zik/ (музыка), mousse /mus/ (пена/мусс)."
+        "explanation": "Прозвучало musée /my.ze/ (музей). Похожие на слух, но другие слова: fusée /fy.ze/ (ракета), musique /my.zik/ (музыка), mousse /mus/ (пена/мусс).",
+        "audioSrc": "audio/wl-musees-musee.mp3"
       },
       {
         "id": "wc-musees-tableau-ctx",

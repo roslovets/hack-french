@@ -9,10 +9,22 @@
     "translationsEn": ["circle", "round"],
     "semanticCore": "Круг, кружок как круглая форма, нарисованная от руки или бытовая; разговорнее, чем cercle.",
     "collocations": [
-      { "fr": "dessiner un rond", "ru": "нарисовать кружок" },
-      { "fr": "faire un rond autour", "ru": "обвести кружком" },
-      { "fr": "des ronds dans l'eau", "ru": "круги на воде" },
-      { "fr": "en rond", "ru": "по кругу / кружком" }
+      {
+        "fr": "dessiner un rond",
+        "ru": "нарисовать кружок"
+      },
+      {
+        "fr": "faire un rond autour",
+        "ru": "обвести кружком"
+      },
+      {
+        "fr": "des ronds dans l'eau",
+        "ru": "круги на воде"
+      },
+      {
+        "fr": "en rond",
+        "ru": "по кругу / кружком"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 240,
     "level": "A1",
     "tags": ["formes", "geometrie"],
-    "caseIds": ["wc-formes"]
+    "caseIds": ["wc-formes"],
+    "audio": {
+      "isolated": "audio/wl-formes-rond.mp3"
+    }
   },
   {
     "id": "wl-formes-carre",
@@ -39,10 +54,22 @@
     "translationsEn": ["square"],
     "semanticCore": "Квадрат: фигура с четырьмя равными сторонами и прямыми углами; также «в квадрате» в математике.",
     "collocations": [
-      { "fr": "dessiner un carré", "ru": "нарисовать квадрат" },
-      { "fr": "un mètre carré", "ru": "квадратный метр" },
-      { "fr": "un carré parfait", "ru": "ровный квадрат" },
-      { "fr": "le carré de trois", "ru": "три в квадрате (девять)" }
+      {
+        "fr": "dessiner un carré",
+        "ru": "нарисовать квадрат"
+      },
+      {
+        "fr": "un mètre carré",
+        "ru": "квадратный метр"
+      },
+      {
+        "fr": "un carré parfait",
+        "ru": "ровный квадрат"
+      },
+      {
+        "fr": "le carré de trois",
+        "ru": "три в квадрате (девять)"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 300,
     "level": "A1",
     "tags": ["formes", "geometrie"],
-    "caseIds": ["wc-formes"]
+    "caseIds": ["wc-formes"],
+    "audio": {
+      "isolated": "audio/wl-formes-carre.mp3"
+    }
   },
   {
     "id": "wl-formes-triangle",
@@ -69,9 +99,18 @@
     "translationsEn": ["triangle"],
     "semanticCore": "Треугольник: фигура с тремя сторонами и тремя углами; внутри слова спрятаны trois и angle.",
     "collocations": [
-      { "fr": "un triangle équilatéral", "ru": "равносторонний треугольник" },
-      { "fr": "un triangle rectangle", "ru": "прямоугольный треугольник" },
-      { "fr": "couper en triangle", "ru": "разрезать на треугольники (по диагонали)" }
+      {
+        "fr": "un triangle équilatéral",
+        "ru": "равносторонний треугольник"
+      },
+      {
+        "fr": "un triangle rectangle",
+        "ru": "прямоугольный треугольник"
+      },
+      {
+        "fr": "couper en triangle",
+        "ru": "разрезать на треугольники (по диагонали)"
+      }
     ],
     "contrastPairs": [
       {
@@ -82,7 +121,10 @@
     "frequencyRank": 520,
     "level": "A1",
     "tags": ["formes", "geometrie"],
-    "caseIds": ["wc-formes"]
+    "caseIds": ["wc-formes"],
+    "audio": {
+      "isolated": "audio/wl-formes-triangle.mp3"
+    }
   },
   {
     "id": "wl-formes-cercle",
@@ -94,10 +136,22 @@
     "translationsEn": ["circle"],
     "semanticCore": "Круг, окружность как точная геометрическая фигура; образно — круг людей («un cercle d'amis»).",
     "collocations": [
-      { "fr": "tracer un cercle", "ru": "начертить окружность" },
-      { "fr": "un cercle d'amis", "ru": "круг друзей" },
-      { "fr": "un cercle vicieux", "ru": "порочный круг" },
-      { "fr": "en cercle", "ru": "в круг / по кругу" }
+      {
+        "fr": "tracer un cercle",
+        "ru": "начертить окружность"
+      },
+      {
+        "fr": "un cercle d'amis",
+        "ru": "круг друзей"
+      },
+      {
+        "fr": "un cercle vicieux",
+        "ru": "порочный круг"
+      },
+      {
+        "fr": "en cercle",
+        "ru": "в круг / по кругу"
+      }
     ],
     "contrastPairs": [
       {
@@ -112,7 +166,10 @@
     "frequencyRank": 330,
     "level": "A1",
     "tags": ["formes", "geometrie"],
-    "caseIds": ["wc-formes"]
+    "caseIds": ["wc-formes"],
+    "audio": {
+      "isolated": "audio/wl-formes-cercle.mp3"
+    }
   },
   {
     "id": "wl-formes-courbe",
@@ -124,9 +181,18 @@
     "translationsEn": ["curve"],
     "semanticCore": "Кривая линия, изгиб: всё, что не прямое — поворот дороги, график, плавная линия.",
     "collocations": [
-      { "fr": "une courbe de température", "ru": "кривая температуры" },
-      { "fr": "la route fait une courbe", "ru": "дорога делает изгиб" },
-      { "fr": "une ligne courbe", "ru": "кривая линия" }
+      {
+        "fr": "une courbe de température",
+        "ru": "кривая температуры"
+      },
+      {
+        "fr": "la route fait une courbe",
+        "ru": "дорога делает изгиб"
+      },
+      {
+        "fr": "une ligne courbe",
+        "ru": "кривая линия"
+      }
     ],
     "contrastPairs": [
       {
@@ -141,7 +207,10 @@
     "frequencyRank": 560,
     "level": "A1",
     "tags": ["formes", "ligne"],
-    "caseIds": ["wc-formes"]
+    "caseIds": ["wc-formes"],
+    "audio": {
+      "isolated": "audio/wl-formes-courbe.mp3"
+    }
   },
   {
     "id": "wl-formes-angle",
@@ -153,9 +222,18 @@
     "translationsEn": ["angle", "corner"],
     "semanticCore": "Угол: геометрический угол между линиями и внешний угол улицы («à l'angle de la rue»).",
     "collocations": [
-      { "fr": "un angle droit", "ru": "прямой угол" },
-      { "fr": "à l'angle de la rue", "ru": "на углу улицы" },
-      { "fr": "mesurer un angle", "ru": "измерить угол" }
+      {
+        "fr": "un angle droit",
+        "ru": "прямой угол"
+      },
+      {
+        "fr": "à l'angle de la rue",
+        "ru": "на углу улицы"
+      },
+      {
+        "fr": "mesurer un angle",
+        "ru": "измерить угол"
+      }
     ],
     "contrastPairs": [
       {
@@ -166,7 +244,10 @@
     "frequencyRank": 290,
     "level": "A1",
     "tags": ["formes", "geometrie"],
-    "caseIds": ["wc-formes"]
+    "caseIds": ["wc-formes"],
+    "audio": {
+      "isolated": "audio/wl-formes-angle.mp3"
+    }
   },
   {
     "id": "wl-formes-losange",
@@ -178,9 +259,18 @@
     "translationsEn": ["rhombus", "diamond"],
     "semanticCore": "Ромб: четыре равные стороны при наклонённых углах — форма «бубен» на картах, как накренённый квадрат.",
     "collocations": [
-      { "fr": "un losange parfait", "ru": "ровный ромб" },
-      { "fr": "en forme de losange", "ru": "в форме ромба" },
-      { "fr": "le losange rouge", "ru": "красный ромб (бубны на картах)" }
+      {
+        "fr": "un losange parfait",
+        "ru": "ровный ромб"
+      },
+      {
+        "fr": "en forme de losange",
+        "ru": "в форме ромба"
+      },
+      {
+        "fr": "le losange rouge",
+        "ru": "красный ромб (бубны на картах)"
+      }
     ],
     "contrastPairs": [
       {
@@ -195,7 +285,10 @@
     "frequencyRank": 720,
     "level": "A1",
     "tags": ["formes", "geometrie"],
-    "caseIds": ["wc-formes"]
+    "caseIds": ["wc-formes"],
+    "audio": {
+      "isolated": "audio/wl-formes-losange.mp3"
+    }
   },
   {
     "id": "wl-formes-ovale",
@@ -207,9 +300,18 @@
     "translationsEn": ["oval"],
     "semanticCore": "Овал: вытянутый круг, форма яйца; слово бывает и прилагательным («une table ovale»).",
     "collocations": [
-      { "fr": "en forme d'ovale", "ru": "в форме овала" },
-      { "fr": "une table ovale", "ru": "овальный стол" },
-      { "fr": "un visage ovale", "ru": "овальное лицо" }
+      {
+        "fr": "en forme d'ovale",
+        "ru": "в форме овала"
+      },
+      {
+        "fr": "une table ovale",
+        "ru": "овальный стол"
+      },
+      {
+        "fr": "un visage ovale",
+        "ru": "овальное лицо"
+      }
     ],
     "contrastPairs": [
       {
@@ -224,6 +326,9 @@
     "frequencyRank": 640,
     "level": "A1",
     "tags": ["formes", "geometrie"],
-    "caseIds": ["wc-formes"]
+    "caseIds": ["wc-formes"],
+    "audio": {
+      "isolated": "audio/wl-formes-ovale.mp3"
+    }
   }
 ]

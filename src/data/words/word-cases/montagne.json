@@ -170,7 +170,8 @@
         "audioText": "pic",
         "options": ["pic", "bic", "tic", "pile"],
         "correctIndex": 0,
-        "explanation": "Прозвучало pic /pik/ — пик. Рядом похожие: bic /bik/ (ручка «Бик»), tic /tik/ (тик, привычка), pile /pil/ (батарейка; стопка). Они отличаются первым или последним звуком."
+        "explanation": "Прозвучало pic /pik/ — пик. Рядом похожие: bic /bik/ (ручка «Бик»), tic /tik/ (тик, привычка), pile /pil/ (батарейка; стопка). Они отличаются первым или последним звуком.",
+        "audioSrc": "audio/wl-montagne-pic.mp3"
       },
       {
         "id": "wc-montagne-col-ctx",

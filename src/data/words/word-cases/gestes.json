@@ -289,7 +289,8 @@
         "audioText": "ramper",
         "options": ["ramper", "grimper", "camper", "tremper"],
         "correctIndex": 0,
-        "explanation": "ramper /ʁɑ̃.pe/ — ползти. Похоже звучат, но это другие глаголы: grimper /ɡʁɛ̃.pe/ — карабкаться (вверх!), camper /kɑ̃.pe/ — стоять лагерем, tremper /tʁɑ̃.pe/ — мочить, макать. Главное — не путать ramper (ползти) и grimper (лезть вверх)."
+        "explanation": "ramper /ʁɑ̃.pe/ — ползти. Похоже звучат, но это другие глаголы: grimper /ɡʁɛ̃.pe/ — карабкаться (вверх!), camper /kɑ̃.pe/ — стоять лагерем, tremper /tʁɑ̃.pe/ — мочить, макать. Главное — не путать ramper (ползти) и grimper (лезть вверх).",
+        "audioSrc": "audio/wl-gestes-ramper.mp3"
       },
       {
         "id": "wc-gestes-glisser-ctx",
@@ -322,7 +323,8 @@
         "audioText": "glisser",
         "options": ["glisser", "glacer", "plisser", "lisser"],
         "correctIndex": 0,
-        "explanation": "glisser /ɡli.se/ — скользить. Похоже звучат другие глаголы: glacer /ɡla.se/ — замораживать, plisser /pli.se/ — морщить (складками), lisser /li.se/ — приглаживать. Слушай первый слог: gli- (glisser), а не gla- или pli-."
+        "explanation": "glisser /ɡli.se/ — скользить. Похоже звучат другие глаголы: glacer /ɡla.se/ — замораживать, plisser /pli.se/ — морщить (складками), lisser /li.se/ — приглаживать. Слушай первый слог: gli- (glisser), а не gla- или pli-.",
+        "audioSrc": "audio/wl-gestes-glisser.mp3"
       },
       {
         "id": "wc-gestes-lever-mnemo",

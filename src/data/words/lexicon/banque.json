@@ -9,10 +9,22 @@
     "translationsEn": ["withdrawal", "cash withdrawal"],
     "semanticCore": "Снятие денег со счёта — деньги уходят со счёта тебе на руки; противоположность вклада (dépôt).",
     "collocations": [
-      { "fr": "faire un retrait", "ru": "снять деньги (сделать снятие)" },
-      { "fr": "un retrait d'espèces", "ru": "снятие наличных" },
-      { "fr": "un retrait au distributeur", "ru": "снятие в банкомате" },
-      { "fr": "le montant du retrait", "ru": "сумма снятия" }
+      {
+        "fr": "faire un retrait",
+        "ru": "снять деньги (сделать снятие)"
+      },
+      {
+        "fr": "un retrait d'espèces",
+        "ru": "снятие наличных"
+      },
+      {
+        "fr": "un retrait au distributeur",
+        "ru": "снятие в банкомате"
+      },
+      {
+        "fr": "le montant du retrait",
+        "ru": "сумма снятия"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +39,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["banque", "argent", "operation"],
-    "caseIds": ["wc-banque"]
+    "caseIds": ["wc-banque"],
+    "audio": {
+      "isolated": "audio/wl-banque-retrait.mp3"
+    }
   },
   {
     "id": "wl-banque-depot",
@@ -39,10 +54,22 @@
     "translationsEn": ["deposit"],
     "semanticCore": "Внесение денег на счёт или сумма, положенная на хранение; противоположность снятия (retrait).",
     "collocations": [
-      { "fr": "faire un dépôt", "ru": "внести деньги (сделать вклад)" },
-      { "fr": "un dépôt d'espèces", "ru": "внесение наличных" },
-      { "fr": "un dépôt de garantie", "ru": "залог (при аренде)" },
-      { "fr": "le montant du dépôt", "ru": "сумма вклада / внесения" }
+      {
+        "fr": "faire un dépôt",
+        "ru": "внести деньги (сделать вклад)"
+      },
+      {
+        "fr": "un dépôt d'espèces",
+        "ru": "внесение наличных"
+      },
+      {
+        "fr": "un dépôt de garantie",
+        "ru": "залог (при аренде)"
+      },
+      {
+        "fr": "le montant du dépôt",
+        "ru": "сумма вклада / внесения"
+      }
     ],
     "contrastPairs": [
       {
@@ -57,7 +84,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["banque", "argent", "operation"],
-    "caseIds": ["wc-banque"]
+    "caseIds": ["wc-banque"],
+    "audio": {
+      "isolated": "audio/wl-banque-depot.mp3"
+    }
   },
   {
     "id": "wl-banque-pret",
@@ -69,10 +99,22 @@
     "translationsEn": ["loan"],
     "semanticCore": "Деньги, которые банк даёт в долг под возврат; ссуда, которую потом погашают.",
     "collocations": [
-      { "fr": "faire un prêt", "ru": "взять кредит / оформить ссуду" },
-      { "fr": "un prêt immobilier", "ru": "ипотечный кредит" },
-      { "fr": "rembourser un prêt", "ru": "погасить кредит" },
-      { "fr": "demander un prêt à la banque", "ru": "просить кредит в банке" }
+      {
+        "fr": "faire un prêt",
+        "ru": "взять кредит / оформить ссуду"
+      },
+      {
+        "fr": "un prêt immobilier",
+        "ru": "ипотечный кредит"
+      },
+      {
+        "fr": "rembourser un prêt",
+        "ru": "погасить кредит"
+      },
+      {
+        "fr": "demander un prêt à la banque",
+        "ru": "просить кредит в банке"
+      }
     ],
     "contrastPairs": [
       {
@@ -87,7 +129,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["banque", "argent", "credit"],
-    "caseIds": ["wc-banque"]
+    "caseIds": ["wc-banque"],
+    "audio": {
+      "isolated": "audio/wl-banque-pret.mp3"
+    }
   },
   {
     "id": "wl-banque-virement",
@@ -99,10 +144,22 @@
     "translationsEn": ["transfer", "bank transfer"],
     "semanticCore": "Безналичный перевод денег с одного счёта на другой; от глагола virer — перечислять.",
     "collocations": [
-      { "fr": "faire un virement", "ru": "сделать перевод" },
-      { "fr": "un virement bancaire", "ru": "банковский перевод" },
-      { "fr": "payer par virement", "ru": "оплатить переводом" },
-      { "fr": "un virement automatique", "ru": "автоматический перевод" }
+      {
+        "fr": "faire un virement",
+        "ru": "сделать перевод"
+      },
+      {
+        "fr": "un virement bancaire",
+        "ru": "банковский перевод"
+      },
+      {
+        "fr": "payer par virement",
+        "ru": "оплатить переводом"
+      },
+      {
+        "fr": "un virement automatique",
+        "ru": "автоматический перевод"
+      }
     ],
     "contrastPairs": [
       {
@@ -117,7 +174,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["banque", "argent", "operation"],
-    "caseIds": ["wc-banque"]
+    "caseIds": ["wc-banque"],
+    "audio": {
+      "isolated": "audio/wl-banque-virement.mp3"
+    }
   },
   {
     "id": "wl-banque-distributeur",
@@ -129,10 +189,22 @@
     "translationsEn": ["ATM", "cash machine"],
     "semanticCore": "Уличный автомат, выдающий наличные с карты (DAB); то же слово — и торговый автомат с едой/напитками.",
     "collocations": [
-      { "fr": "retirer de l'argent au distributeur", "ru": "снять деньги в банкомате" },
-      { "fr": "un distributeur automatique de billets", "ru": "банкомат (полное название, DAB)" },
-      { "fr": "le distributeur est en panne", "ru": "банкомат не работает" },
-      { "fr": "un distributeur de boissons", "ru": "автомат с напитками" }
+      {
+        "fr": "retirer de l'argent au distributeur",
+        "ru": "снять деньги в банкомате"
+      },
+      {
+        "fr": "un distributeur automatique de billets",
+        "ru": "банкомат (полное название, DAB)"
+      },
+      {
+        "fr": "le distributeur est en panne",
+        "ru": "банкомат не работает"
+      },
+      {
+        "fr": "un distributeur de boissons",
+        "ru": "автомат с напитками"
+      }
     ],
     "contrastPairs": [
       {
@@ -147,7 +219,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["banque", "argent", "objet"],
-    "caseIds": ["wc-banque"]
+    "caseIds": ["wc-banque"],
+    "audio": {
+      "isolated": "audio/wl-banque-distributeur.mp3"
+    }
   },
   {
     "id": "wl-banque-cheque",
@@ -159,10 +234,22 @@
     "translationsEn": ["cheque", "check"],
     "semanticCore": "Банковский чек: бумажное распоряжение банку выплатить сумму; им расплачиваются или его выписывают.",
     "collocations": [
-      { "fr": "faire un chèque", "ru": "выписать чек" },
-      { "fr": "payer par chèque", "ru": "платить чеком" },
-      { "fr": "un chèque sans provision", "ru": "чек без покрытия (необеспеченный)" },
-      { "fr": "encaisser un chèque", "ru": "обналичить чек" }
+      {
+        "fr": "faire un chèque",
+        "ru": "выписать чек"
+      },
+      {
+        "fr": "payer par chèque",
+        "ru": "платить чеком"
+      },
+      {
+        "fr": "un chèque sans provision",
+        "ru": "чек без покрытия (необеспеченный)"
+      },
+      {
+        "fr": "encaisser un chèque",
+        "ru": "обналичить чек"
+      }
     ],
     "contrastPairs": [
       {
@@ -177,7 +264,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["banque", "argent", "paiement"],
-    "caseIds": ["wc-banque"]
+    "caseIds": ["wc-banque"],
+    "audio": {
+      "isolated": "audio/wl-banque-cheque.mp3"
+    }
   },
   {
     "id": "wl-banque-guichet",
@@ -189,10 +279,22 @@
     "translationsEn": ["counter", "window"],
     "semanticCore": "Окошко обслуживания, где сотрудник принимает клиентов — в банке, на вокзале, на почте.",
     "collocations": [
-      { "fr": "au guichet", "ru": "у окошка / в кассе" },
-      { "fr": "faire la queue au guichet", "ru": "стоять в очереди к окошку" },
-      { "fr": "le guichet est fermé", "ru": "окно (касса) закрыто" },
-      { "fr": "un guichet automatique", "ru": "автоматическая касса / банкомат-окно" }
+      {
+        "fr": "au guichet",
+        "ru": "у окошка / в кассе"
+      },
+      {
+        "fr": "faire la queue au guichet",
+        "ru": "стоять в очереди к окошку"
+      },
+      {
+        "fr": "le guichet est fermé",
+        "ru": "окно (касса) закрыто"
+      },
+      {
+        "fr": "un guichet automatique",
+        "ru": "автоматическая касса / банкомат-окно"
+      }
     ],
     "contrastPairs": [
       {
@@ -207,7 +309,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["banque", "lieux", "service"],
-    "caseIds": ["wc-banque"]
+    "caseIds": ["wc-banque"],
+    "audio": {
+      "isolated": "audio/wl-banque-guichet.mp3"
+    }
   },
   {
     "id": "wl-banque-epargne",
@@ -219,10 +324,22 @@
     "translationsEn": ["savings"],
     "semanticCore": "Отложенные деньги, которые копят на будущее; то, что лежит и не тратится.",
     "collocations": [
-      { "fr": "un compte d'épargne", "ru": "сберегательный счёт" },
-      { "fr": "un livret d'épargne", "ru": "сберкнижка (накопительный счёт)" },
-      { "fr": "puiser dans son épargne", "ru": "брать из сбережений" },
-      { "fr": "l'épargne des ménages", "ru": "сбережения домохозяйств" }
+      {
+        "fr": "un compte d'épargne",
+        "ru": "сберегательный счёт"
+      },
+      {
+        "fr": "un livret d'épargne",
+        "ru": "сберкнижка (накопительный счёт)"
+      },
+      {
+        "fr": "puiser dans son épargne",
+        "ru": "брать из сбережений"
+      },
+      {
+        "fr": "l'épargne des ménages",
+        "ru": "сбережения домохозяйств"
+      }
     ],
     "contrastPairs": [
       {
@@ -237,6 +354,9 @@
     "frequencyRank": 740,
     "level": "A2",
     "tags": ["banque", "argent", "epargne"],
-    "caseIds": ["wc-banque"]
+    "caseIds": ["wc-banque"],
+    "audio": {
+      "isolated": "audio/wl-banque-epargne.mp3"
+    }
   }
 ]

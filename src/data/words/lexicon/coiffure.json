@@ -10,9 +10,18 @@
     "translationsEn": ["hairdresser", "barber"],
     "semanticCore": "Мастер, который стрижёт и укладывает волосы; также сам салон («у парикмахера»).",
     "collocations": [
-      { "fr": "aller chez le coiffeur", "ru": "идти к парикмахеру / в парикмахерскую" },
-      { "fr": "prendre rendez-vous chez le coiffeur", "ru": "записаться к парикмахеру" },
-      { "fr": "un salon de coiffure", "ru": "парикмахерский салон" }
+      {
+        "fr": "aller chez le coiffeur",
+        "ru": "идти к парикмахеру / в парикмахерскую"
+      },
+      {
+        "fr": "prendre rendez-vous chez le coiffeur",
+        "ru": "записаться к парикмахеру"
+      },
+      {
+        "fr": "un salon de coiffure",
+        "ru": "парикмахерский салон"
+      }
     ],
     "contrastPairs": [
       {
@@ -27,7 +36,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["coiffure", "metier"],
-    "caseIds": ["wc-coiffure"]
+    "caseIds": ["wc-coiffure"],
+    "audio": {
+      "isolated": "audio/wl-coiffure-coiffeur.mp3"
+    }
   },
   {
     "id": "wl-coiffure-meche",
@@ -39,9 +51,18 @@
     "translationsEn": ["lock (of hair)", "highlight"],
     "semanticCore": "Отдельная прядь волос; во множественном — мелирование (окрашенные пряди).",
     "collocations": [
-      { "fr": "une mèche de cheveux", "ru": "прядь волос" },
-      { "fr": "se faire des mèches", "ru": "сделать мелирование" },
-      { "fr": "remettre une mèche derrière l'oreille", "ru": "заправить прядь за ухо" }
+      {
+        "fr": "une mèche de cheveux",
+        "ru": "прядь волос"
+      },
+      {
+        "fr": "se faire des mèches",
+        "ru": "сделать мелирование"
+      },
+      {
+        "fr": "remettre une mèche derrière l'oreille",
+        "ru": "заправить прядь за ухо"
+      }
     ],
     "contrastPairs": [
       {
@@ -56,7 +77,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["coiffure", "cheveux"],
-    "caseIds": ["wc-coiffure"]
+    "caseIds": ["wc-coiffure"],
+    "audio": {
+      "isolated": "audio/wl-coiffure-meche.mp3"
+    }
   },
   {
     "id": "wl-coiffure-frange",
@@ -68,9 +92,18 @@
     "translationsEn": ["fringe", "bangs"],
     "semanticCore": "Чёлка — волосы, спадающие на лоб; также бахрома (у ковра, шарфа).",
     "collocations": [
-      { "fr": "avoir une frange", "ru": "носить чёлку" },
-      { "fr": "se couper une frange", "ru": "подстричь себе чёлку" },
-      { "fr": "une frange droite", "ru": "прямая чёлка" }
+      {
+        "fr": "avoir une frange",
+        "ru": "носить чёлку"
+      },
+      {
+        "fr": "se couper une frange",
+        "ru": "подстричь себе чёлку"
+      },
+      {
+        "fr": "une frange droite",
+        "ru": "прямая чёлка"
+      }
     ],
     "contrastPairs": [
       {
@@ -85,7 +118,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["coiffure", "cheveux"],
-    "caseIds": ["wc-coiffure"]
+    "caseIds": ["wc-coiffure"],
+    "audio": {
+      "isolated": "audio/wl-coiffure-frange.mp3"
+    }
   },
   {
     "id": "wl-coiffure-chignon",
@@ -97,9 +133,18 @@
     "translationsEn": ["bun", "chignon"],
     "semanticCore": "Пучок — волосы, собранные и закрученные узлом на затылке.",
     "collocations": [
-      { "fr": "se faire un chignon", "ru": "собрать волосы в пучок" },
-      { "fr": "un chignon haut", "ru": "высокий пучок" },
-      { "fr": "attacher ses cheveux en chignon", "ru": "собрать волосы в пучок" }
+      {
+        "fr": "se faire un chignon",
+        "ru": "собрать волосы в пучок"
+      },
+      {
+        "fr": "un chignon haut",
+        "ru": "высокий пучок"
+      },
+      {
+        "fr": "attacher ses cheveux en chignon",
+        "ru": "собрать волосы в пучок"
+      }
     ],
     "contrastPairs": [
       {
@@ -114,7 +159,10 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["coiffure", "cheveux"],
-    "caseIds": ["wc-coiffure"]
+    "caseIds": ["wc-coiffure"],
+    "audio": {
+      "isolated": "audio/wl-coiffure-chignon.mp3"
+    }
   },
   {
     "id": "wl-coiffure-brushing",
@@ -126,9 +174,18 @@
     "translationsEn": ["blow-dry"],
     "semanticCore": "Укладка волос феном и круглой щёткой (результат и сама процедура).",
     "collocations": [
-      { "fr": "faire un brushing", "ru": "сделать укладку феном" },
-      { "fr": "une coupe et un brushing", "ru": "стрижка и укладка" },
-      { "fr": "un brushing lisse", "ru": "гладкая укладка" }
+      {
+        "fr": "faire un brushing",
+        "ru": "сделать укладку феном"
+      },
+      {
+        "fr": "une coupe et un brushing",
+        "ru": "стрижка и укладка"
+      },
+      {
+        "fr": "un brushing lisse",
+        "ru": "гладкая укладка"
+      }
     ],
     "contrastPairs": [
       {
@@ -143,7 +200,10 @@
     "frequencyRank": 900,
     "level": "A2",
     "tags": ["coiffure", "soin"],
-    "caseIds": ["wc-coiffure"]
+    "caseIds": ["wc-coiffure"],
+    "audio": {
+      "isolated": "audio/wl-coiffure-brushing.mp3"
+    }
   },
   {
     "id": "wl-coiffure-raie",
@@ -155,9 +215,18 @@
     "translationsEn": ["parting", "part (in hair)"],
     "semanticCore": "Пробор — линия, разделяющая волосы на две части.",
     "collocations": [
-      { "fr": "une raie au milieu", "ru": "пробор посередине" },
-      { "fr": "une raie sur le côté", "ru": "косой пробор / пробор сбоку" },
-      { "fr": "se faire une raie sur le côté", "ru": "сделать пробор сбоку" }
+      {
+        "fr": "une raie au milieu",
+        "ru": "пробор посередине"
+      },
+      {
+        "fr": "une raie sur le côté",
+        "ru": "косой пробор / пробор сбоку"
+      },
+      {
+        "fr": "se faire une raie sur le côté",
+        "ru": "сделать пробор сбоку"
+      }
     ],
     "contrastPairs": [
       {
@@ -172,7 +241,10 @@
     "frequencyRank": 940,
     "level": "A2",
     "tags": ["coiffure", "cheveux"],
-    "caseIds": ["wc-coiffure"]
+    "caseIds": ["wc-coiffure"],
+    "audio": {
+      "isolated": "audio/wl-coiffure-raie.mp3"
+    }
   },
   {
     "id": "wl-coiffure-secher",
@@ -183,9 +255,18 @@
     "translationsEn": ["to dry"],
     "semanticCore": "Сушить что-то или сохнуть; в разговорном — «прогуливать» (sécher les cours).",
     "collocations": [
-      { "fr": "se sécher les cheveux", "ru": "сушить волосы (себе)" },
-      { "fr": "sécher au sèche-cheveux", "ru": "сушить феном" },
-      { "fr": "laisser sécher à l'air libre", "ru": "сушить на воздухе (без фена)" }
+      {
+        "fr": "se sécher les cheveux",
+        "ru": "сушить волосы (себе)"
+      },
+      {
+        "fr": "sécher au sèche-cheveux",
+        "ru": "сушить феном"
+      },
+      {
+        "fr": "laisser sécher à l'air libre",
+        "ru": "сушить на воздухе (без фена)"
+      }
     ],
     "contrastPairs": [
       {
@@ -200,7 +281,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["coiffure", "soin"],
-    "caseIds": ["wc-coiffure"]
+    "caseIds": ["wc-coiffure"],
+    "audio": {
+      "isolated": "audio/wl-coiffure-secher.mp3"
+    }
   },
   {
     "id": "wl-coiffure-tresse",
@@ -212,9 +296,18 @@
     "translationsEn": ["braid", "plait"],
     "semanticCore": "Коса — волосы, заплетённые из трёх и более прядей.",
     "collocations": [
-      { "fr": "faire une tresse", "ru": "заплести косу" },
-      { "fr": "se coiffer en tresses", "ru": "заплести волосы в косы" },
-      { "fr": "une tresse africaine", "ru": "африканская косичка" }
+      {
+        "fr": "faire une tresse",
+        "ru": "заплести косу"
+      },
+      {
+        "fr": "se coiffer en tresses",
+        "ru": "заплести волосы в косы"
+      },
+      {
+        "fr": "une tresse africaine",
+        "ru": "африканская косичка"
+      }
     ],
     "contrastPairs": [
       {
@@ -229,6 +322,9 @@
     "frequencyRank": 860,
     "level": "A2",
     "tags": ["coiffure", "cheveux"],
-    "caseIds": ["wc-coiffure"]
+    "caseIds": ["wc-coiffure"],
+    "audio": {
+      "isolated": "audio/wl-coiffure-tresse.mp3"
+    }
   }
 ]

@@ -135,7 +135,8 @@
         "audioText": "fard",
         "options": ["fard", "fort", "part", "car"],
         "correctIndex": 0,
-        "explanation": "Прозвучало fard /faʁ/ (румяна). Похожие, но другие: fort /fɔʁ/ (сильный), part /paʁ/ (часть), car /kaʁ/ (потому что). Различай по первому и второму звуку."
+        "explanation": "Прозвучало fard /faʁ/ (румяна). Похожие, но другие: fort /fɔʁ/ (сильный), part /paʁ/ (часть), car /kaʁ/ (потому что). Различай по первому и второму звуку.",
+        "audioSrc": "audio/wl-maquillage-fard.mp3"
       },
       {
         "id": "wc-maquillage-vernis-ctx",
@@ -268,7 +269,8 @@
         "audioText": "pinceau",
         "options": ["pinceau", "panneau", "anneau", "manteau"],
         "correctIndex": 0,
-        "explanation": "Прозвучало pinceau /pɛ̃.so/ (кисть). Похожие на -eau /o/, но другие: panneau /pa.no/ (щит), anneau /a.no/ (кольцо), manteau /mɑ̃.to/ (пальто). Различай по началу слова."
+        "explanation": "Прозвучало pinceau /pɛ̃.so/ (кисть). Похожие на -eau /o/, но другие: panneau /pa.no/ (щит), anneau /a.no/ (кольцо), manteau /mɑ̃.to/ (пальто). Различай по началу слова.",
+        "audioSrc": "audio/wl-maquillage-pinceau.mp3"
       },
       {
         "id": "wc-maquillage-creme-ctx",

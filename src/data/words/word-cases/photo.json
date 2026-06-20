@@ -220,7 +220,8 @@
         "audioText": "pose",
         "options": ["pose", "rose", "dose", "chose"],
         "correctIndex": 0,
-        "explanation": "Прозвучало pose /poz/ — поза/выдержка. Все четыре слова оканчиваются на /-oz/, но различаются первым согласным: rose /ʁoz/ — роза/розовый, dose /doz/ — доза, chose /ʃoz/ — вещь. (Отдельно есть pause /poz/ — перерыв: звучит как pose, но это другое слово.)"
+        "explanation": "Прозвучало pose /poz/ — поза/выдержка. Все четыре слова оканчиваются на /-oz/, но различаются первым согласным: rose /ʁoz/ — роза/розовый, dose /doz/ — доза, chose /ʃoz/ — вещь. (Отдельно есть pause /poz/ — перерыв: звучит как pose, но это другое слово.)",
+        "audioSrc": "audio/wl-photo-pose.mp3"
       },
       {
         "id": "wc-photo-cliche-ctx",

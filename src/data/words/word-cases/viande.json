@@ -74,7 +74,8 @@
         "audioText": "porc",
         "options": ["porc", "part", "pour", "pomme"],
         "correctIndex": 0,
-        "explanation": "porc /pɔʁ/ — свинина/свинья (конечное c немое). Не путай с part /paʁ/ — часть/доля, pour /puʁ/ — для, pomme /pɔm/ — яблоко. Кстати, le port (порт) звучит точно так же — /pɔʁ/ — это омофон, его различает только смысл и написание."
+        "explanation": "porc /pɔʁ/ — свинина/свинья (конечное c немое). Не путай с part /paʁ/ — часть/доля, pour /puʁ/ — для, pomme /pɔm/ — яблоко. Кстати, le port (порт) звучит точно так же — /pɔʁ/ — это омофон, его различает только смысл и написание.",
+        "audioSrc": "audio/wl-viande-porc.mp3"
       },
       {
         "id": "wc-viande-agneau-ctx",
