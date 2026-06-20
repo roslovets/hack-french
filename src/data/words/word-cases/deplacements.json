@@ -194,7 +194,8 @@
         "audioText": "attendre",
         "options": ["attendre", "entendre", "attendrir", "rendre"],
         "correctIndex": 0,
-        "explanation": "attendre /a.tɑ̃dʁ/ — ждать. Очень близко звучит entendre /ɑ̃.tɑ̃dʁ/ — слышать (другой первый звук). attendrir — растрогать, rendre — возвращать. Различай attendre (ждать) и entendre (слышать) на слух."
+        "explanation": "attendre /a.tɑ̃dʁ/ — ждать. Очень близко звучит entendre /ɑ̃.tɑ̃dʁ/ — слышать (другой первый звук). attendrir — растрогать, rendre — возвращать. Различай attendre (ждать) и entendre (слышать) на слух.",
+        "audioSrc": "audio/wl-deplacements-attendre.mp3"
       },
       {
         "id": "wc-deplacements-rentrer-ctx",

@@ -87,7 +87,8 @@
         "audioText": "citron",
         "options": ["citron", "chiffon", "cochon", "citrouille"],
         "correctIndex": 0,
-        "explanation": "citron /si.tʁɔ̃/ (лимон), chiffon /ʃi.fɔ̃/ (тряпка), cochon /kɔ.ʃɔ̃/ (свинья), citrouille /si.tʁuj/ (тыква). Все близки по звучанию, но это разные слова: у citron в начале чистый звук /s/, а в конце носовой /ɔ̃/. Это не омофоны — слушай первый и последний слог."
+        "explanation": "citron /si.tʁɔ̃/ (лимон), chiffon /ʃi.fɔ̃/ (тряпка), cochon /kɔ.ʃɔ̃/ (свинья), citrouille /si.tʁuj/ (тыква). Все близки по звучанию, но это разные слова: у citron в начале чистый звук /s/, а в конце носовой /ɔ̃/. Это не омофоны — слушай первый и последний слог.",
+        "audioSrc": "audio/wl-fruits-citron.mp3"
       },
       {
         "id": "wc-boss-groceries-citron-sort",
@@ -252,7 +253,8 @@
         "audioText": "tomate",
         "options": ["tomate", "tomette", "patate", "natte"],
         "correctIndex": 0,
-        "explanation": "tomate /tɔ.mat/ (помидор), tomette /tɔ.mɛt/ (терракотовая плитка), patate /pa.tat/ (картошка, разг.), natte /nat/ (косичка/циновка). Все похожи по ритму, но это разные слова: у tomate в середине звук /a/, а на конце /t/. Это не омофоны."
+        "explanation": "tomate /tɔ.mat/ (помидор), tomette /tɔ.mɛt/ (терракотовая плитка), patate /pa.tat/ (картошка, разг.), natte /nat/ (косичка/циновка). Все похожи по ритму, но это разные слова: у tomate в середине звук /a/, а на конце /t/. Это не омофоны.",
+        "audioSrc": "audio/wl-legumes-tomate.mp3"
       },
       {
         "id": "wc-boss-groceries-cross-peel-sort",

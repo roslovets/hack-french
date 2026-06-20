@@ -38,7 +38,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["menage", "logement"],
-    "caseIds": ["wc-menage"]
+    "caseIds": ["wc-menage"],
+    "audio": {
+      "isolated": "audio/wl-menage-habiter.mp3"
+    }
   },
   {
     "id": "wl-menage-demenager",
@@ -75,7 +78,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["menage", "logement"],
-    "caseIds": ["wc-menage"]
+    "caseIds": ["wc-menage"],
+    "audio": {
+      "isolated": "audio/wl-menage-demenager.mp3"
+    }
   },
   {
     "id": "wl-menage-nettoyer",
@@ -112,7 +118,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["menage", "tache"],
-    "caseIds": ["wc-menage"]
+    "caseIds": ["wc-menage"],
+    "audio": {
+      "isolated": "audio/wl-menage-nettoyer.mp3"
+    }
   },
   {
     "id": "wl-menage-ranger",
@@ -149,7 +158,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["menage", "tache"],
-    "caseIds": ["wc-menage"]
+    "caseIds": ["wc-menage"],
+    "audio": {
+      "isolated": "audio/wl-menage-ranger.mp3"
+    }
   },
   {
     "id": "wl-menage-allumer",
@@ -186,7 +198,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["menage", "objet"],
-    "caseIds": ["wc-menage"]
+    "caseIds": ["wc-menage"],
+    "audio": {
+      "isolated": "audio/wl-menage-allumer.mp3"
+    }
   },
   {
     "id": "wl-menage-eteindre",
@@ -223,7 +238,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["menage", "objet"],
-    "caseIds": ["wc-menage"]
+    "caseIds": ["wc-menage"],
+    "audio": {
+      "isolated": "audio/wl-menage-eteindre.mp3"
+    }
   },
   {
     "id": "wl-menage-ouvrir",
@@ -260,7 +278,10 @@
     "frequencyRank": 250,
     "level": "A2",
     "tags": ["menage", "objet"],
-    "caseIds": ["wc-menage"]
+    "caseIds": ["wc-menage"],
+    "audio": {
+      "isolated": "audio/wl-menage-ouvrir.mp3"
+    }
   },
   {
     "id": "wl-menage-fermer",
@@ -297,6 +318,9 @@
     "frequencyRank": 270,
     "level": "A2",
     "tags": ["menage", "objet"],
-    "caseIds": ["wc-menage"]
+    "caseIds": ["wc-menage"],
+    "audio": {
+      "isolated": "audio/wl-menage-fermer.mp3"
+    }
   }
 ]

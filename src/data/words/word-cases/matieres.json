@@ -278,7 +278,8 @@
         "audioText": "chimie",
         "options": ["chimie", "chimère", "chemise", "Chine"],
         "correctIndex": 0,
-        "explanation": "chimie /ʃi.mi/ — химия. Похожие по звучанию, но другие слова: chimère /ʃi.mɛʁ/ (химера), chemise /ʃə.miz/ (рубашка), Chine /ʃin/ (Китай). Все начинаются на «ш», но это разные слова."
+        "explanation": "chimie /ʃi.mi/ — химия. Похожие по звучанию, но другие слова: chimère /ʃi.mɛʁ/ (химера), chemise /ʃə.miz/ (рубашка), Chine /ʃin/ (Китай). Все начинаются на «ш», но это разные слова.",
+        "audioSrc": "audio/wl-matieres-chimie.mp3"
       },
       {
         "id": "wc-matieres-chimie-mnemo",

@@ -296,7 +296,8 @@
         "audioText": "ouvrir",
         "options": ["ouvrir", "offrir", "couvrir", "souffrir"],
         "correctIndex": 0,
-        "explanation": "Прозвучало ouvrir /u.vʁiʁ/ (открывать). Похожи по строению, но другие: offrir /ɔ.fʁiʁ/ (дарить), couvrir /ku.vʁiʁ/ (покрывать), souffrir /su.fʁiʁ/ (страдать). Все на -frir/-vrir, легко перепутать на слух."
+        "explanation": "Прозвучало ouvrir /u.vʁiʁ/ (открывать). Похожи по строению, но другие: offrir /ɔ.fʁiʁ/ (дарить), couvrir /ku.vʁiʁ/ (покрывать), souffrir /su.fʁiʁ/ (страдать). Все на -frir/-vrir, легко перепутать на слух.",
+        "audioSrc": "audio/wl-menage-ouvrir.mp3"
       },
       {
         "id": "wc-menage-fermer-ctx",

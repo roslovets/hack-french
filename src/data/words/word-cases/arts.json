@@ -41,7 +41,8 @@
         "audioText": "chanson",
         "options": ["chanson", "chausson", "chanteur", "chambre"],
         "correctIndex": 0,
-        "explanation": "Прозвучало chanson /ʃɑ̃.sɔ̃/ — песня. Похожие, но другие слова: chausson /ʃo.sɔ̃/ — тапок (и слоёный пирожок), chanteur /ʃɑ̃.tœʁ/ — певец, chambre /ʃɑ̃bʁ/ — комната."
+        "explanation": "Прозвучало chanson /ʃɑ̃.sɔ̃/ — песня. Похожие, но другие слова: chausson /ʃo.sɔ̃/ — тапок (и слоёный пирожок), chanteur /ʃɑ̃.tœʁ/ — певец, chambre /ʃɑ̃bʁ/ — комната.",
+        "audioSrc": "audio/wl-arts-chanson.mp3"
       },
       {
         "id": "wc-arts-chanter-ctx",

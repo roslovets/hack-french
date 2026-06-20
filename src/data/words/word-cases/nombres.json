@@ -69,7 +69,8 @@
         "audioText": "deux",
         "options": ["deux", "doux", "dur", "douze"],
         "correctIndex": 0,
-        "explanation": "deux /dø/ — «два», чистое /ø/ с округлёнными губами. Похожие слова: doux /du/ — мягкий, dur /dyʁ/ — твёрдый, douze /duz/ — двенадцать. Различай гласную: /ø/ в deux, /u/ в doux и douze."
+        "explanation": "deux /dø/ — «два», чистое /ø/ с округлёнными губами. Похожие слова: doux /du/ — мягкий, dur /dyʁ/ — твёрдый, douze /duz/ — двенадцать. Различай гласную: /ø/ в deux, /u/ в doux и douze.",
+        "audioSrc": "audio/wl-nombres-deux.mp3"
       },
       {
         "id": "wc-nombres-trois-ctx",
@@ -128,7 +129,8 @@
         "audioText": "cinq",
         "options": ["cinq", "sain", "sang", "singe"],
         "correctIndex": 0,
-        "explanation": "cinq /sɛ̃k/ — «пять», с чётким /k/ на конце. Похожие слова без /k/: sain /sɛ̃/ — здоровый, sang /sɑ̃/ — кровь, singe /sɛ̃ʒ/ — обезьяна. Ключ — звук /k/ в конце cinq."
+        "explanation": "cinq /sɛ̃k/ — «пять», с чётким /k/ на конце. Похожие слова без /k/: sain /sɛ̃/ — здоровый, sang /sɑ̃/ — кровь, singe /sɛ̃ʒ/ — обезьяна. Ключ — звук /k/ в конце cinq.",
+        "audioSrc": "audio/wl-nombres-cinq.mp3"
       },
       {
         "id": "wc-nombres-dix-ctx",

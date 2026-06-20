@@ -35,7 +35,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["vaisselle", "cuisine"],
-    "caseIds": ["wc-vaisselle"]
+    "caseIds": ["wc-vaisselle"],
+    "audio": {
+      "isolated": "audio/wl-vaisselle-casserole.mp3"
+    }
   },
   {
     "id": "wl-vaisselle-poele",
@@ -73,7 +76,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["vaisselle", "cuisine"],
-    "caseIds": ["wc-vaisselle"]
+    "caseIds": ["wc-vaisselle"],
+    "audio": {
+      "isolated": "audio/wl-vaisselle-poele.mp3"
+    }
   },
   {
     "id": "wl-vaisselle-cuillere",
@@ -112,7 +118,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["vaisselle", "couvert"],
-    "caseIds": ["wc-vaisselle"]
+    "caseIds": ["wc-vaisselle"],
+    "audio": {
+      "isolated": "audio/wl-vaisselle-cuillere.mp3"
+    }
   },
   {
     "id": "wl-vaisselle-bol",
@@ -150,7 +159,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["vaisselle", "cuisine"],
-    "caseIds": ["wc-vaisselle"]
+    "caseIds": ["wc-vaisselle"],
+    "audio": {
+      "isolated": "audio/wl-vaisselle-bol.mp3"
+    }
   },
   {
     "id": "wl-vaisselle-tasse",
@@ -188,7 +200,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["vaisselle", "boisson"],
-    "caseIds": ["wc-vaisselle"]
+    "caseIds": ["wc-vaisselle"],
+    "audio": {
+      "isolated": "audio/wl-vaisselle-tasse.mp3"
+    }
   },
   {
     "id": "wl-vaisselle-planche",
@@ -226,7 +241,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["vaisselle", "cuisine"],
-    "caseIds": ["wc-vaisselle"]
+    "caseIds": ["wc-vaisselle"],
+    "audio": {
+      "isolated": "audio/wl-vaisselle-planche.mp3"
+    }
   },
   {
     "id": "wl-vaisselle-louche",
@@ -264,7 +282,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["vaisselle", "cuisine"],
-    "caseIds": ["wc-vaisselle"]
+    "caseIds": ["wc-vaisselle"],
+    "audio": {
+      "isolated": "audio/wl-vaisselle-louche.mp3"
+    }
   },
   {
     "id": "wl-vaisselle-plateau",
@@ -302,6 +323,9 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["vaisselle", "cuisine"],
-    "caseIds": ["wc-vaisselle"]
+    "caseIds": ["wc-vaisselle"],
+    "audio": {
+      "isolated": "audio/wl-vaisselle-plateau.mp3"
+    }
   }
 ]

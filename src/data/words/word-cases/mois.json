@@ -157,7 +157,8 @@
         "audioText": "juin",
         "options": ["juin", "juillet", "join", "soin"],
         "correctIndex": 0,
-        "explanation": "Прозвучало juin /ʒɥɛ̃/ — июнь, один слог. juillet /ʒɥi.jɛ/ — июль (два слога). «join» — английское, «soin» /swɛ̃/ — «забота, уход»: похоже на слух, но это не месяц."
+        "explanation": "Прозвучало juin /ʒɥɛ̃/ — июнь, один слог. juillet /ʒɥi.jɛ/ — июль (два слога). «join» — английское, «soin» /swɛ̃/ — «забота, уход»: похоже на слух, но это не месяц.",
+        "audioSrc": "audio/wl-mois-juin.mp3"
       },
       {
         "id": "wc-mois-juillet-ctx",

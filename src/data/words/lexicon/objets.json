@@ -39,7 +39,10 @@
     "frequencyRank": 360,
     "level": "A2",
     "tags": ["objets", "accessoire"],
-    "caseIds": ["wc-objets"]
+    "caseIds": ["wc-objets"],
+    "audio": {
+      "isolated": "audio/wl-objets-sac.mp3"
+    }
   },
   {
     "id": "wl-objets-parapluie",
@@ -77,7 +80,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["objets", "meteo"],
-    "caseIds": ["wc-objets"]
+    "caseIds": ["wc-objets"],
+    "audio": {
+      "isolated": "audio/wl-objets-parapluie.mp3"
+    }
   },
   {
     "id": "wl-objets-montre",
@@ -115,7 +121,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["objets", "temps"],
-    "caseIds": ["wc-objets"]
+    "caseIds": ["wc-objets"],
+    "audio": {
+      "isolated": "audio/wl-objets-montre.mp3"
+    }
   },
   {
     "id": "wl-objets-lunettes",
@@ -153,7 +162,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["objets", "vue"],
-    "caseIds": ["wc-objets"]
+    "caseIds": ["wc-objets"],
+    "audio": {
+      "isolated": "audio/wl-objets-lunettes.mp3"
+    }
   },
   {
     "id": "wl-objets-portefeuille",
@@ -191,7 +203,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["objets", "argent"],
-    "caseIds": ["wc-objets"]
+    "caseIds": ["wc-objets"],
+    "audio": {
+      "isolated": "audio/wl-objets-portefeuille.mp3"
+    }
   },
   {
     "id": "wl-objets-parfum",
@@ -229,7 +244,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["objets", "odorat"],
-    "caseIds": ["wc-objets"]
+    "caseIds": ["wc-objets"],
+    "audio": {
+      "isolated": "audio/wl-objets-parfum.mp3"
+    }
   },
   {
     "id": "wl-objets-miroir",
@@ -267,7 +285,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["objets", "salle-de-bain"],
-    "caseIds": ["wc-objets"]
+    "caseIds": ["wc-objets"],
+    "audio": {
+      "isolated": "audio/wl-objets-miroir.mp3"
+    }
   },
   {
     "id": "wl-objets-mouchoir",
@@ -305,6 +326,9 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["objets", "hygiene"],
-    "caseIds": ["wc-objets"]
+    "caseIds": ["wc-objets"],
+    "audio": {
+      "isolated": "audio/wl-objets-mouchoir.mp3"
+    }
   }
 ]

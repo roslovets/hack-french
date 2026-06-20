@@ -115,7 +115,8 @@
         "audioText": "peu",
         "options": ["peu", "peur", "père", "peau"],
         "correctIndex": 0,
-        "explanation": "peu /pø/ — «мало». Похожие, но другие слова: peur /pœʁ/ — страх, père /pɛʁ/ — отец, peau /po/ — кожа. Главное — чистое /ø/ без звука r на конце."
+        "explanation": "peu /pø/ — «мало». Похожие, но другие слова: peur /pœʁ/ — страх, père /pɛʁ/ — отец, peau /po/ — кожа. Главное — чистое /ø/ без звука r на конце.",
+        "audioSrc": "audio/wl-quantite-peu.mp3"
       },
       {
         "id": "wc-quantite-assez-ctx",
@@ -176,7 +177,8 @@
         "audioText": "trop",
         "options": ["trop", "trou", "tour", "drôle"],
         "correctIndex": 0,
-        "explanation": "trop /tʁo/ — «слишком», конечное p немое. Похожие слова: trou /tʁu/ — дыра, tour /tuʁ/ — башня/прогулка, drôle /dʁol/ — смешной. Различай гласную: /o/ в trop, /u/ в trou."
+        "explanation": "trop /tʁo/ — «слишком», конечное p немое. Похожие слова: trou /tʁu/ — дыра, tour /tuʁ/ — башня/прогулка, drôle /dʁol/ — смешной. Различай гласную: /o/ в trop, /u/ в trou.",
+        "audioSrc": "audio/wl-quantite-trop.mp3"
       },
       {
         "id": "wc-quantite-plusieurs-ctx",

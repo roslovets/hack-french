@@ -156,7 +156,8 @@
         "audioText": "vaccin",
         "options": ["vaccin", "bassin", "dessin"],
         "correctIndex": 0,
-        "explanation": "vaccin /vak.sɛ̃/ — вакцина. Похожие на конце /-sɛ̃/: bassin /ba.sɛ̃/ — таз, бассейн (водоём), dessin /de.sɛ̃/ — рисунок. Различаются началом слова."
+        "explanation": "vaccin /vak.sɛ̃/ — вакцина. Похожие на конце /-sɛ̃/: bassin /ba.sɛ̃/ — таз, бассейн (водоём), dessin /de.sɛ̃/ — рисунок. Различаются началом слова.",
+        "audioSrc": "audio/wl-sante2-vaccin.mp3"
       },
       {
         "id": "wc-sante2-soigner-ctx",
@@ -217,7 +218,8 @@
         "audioText": "tousser",
         "options": ["tousser", "toucher", "pousser"],
         "correctIndex": 0,
-        "explanation": "tousser /tu.se/ — кашлять. Похожие: toucher /tu.ʃe/ — трогать, касаться (звук «ш»), pousser /pu.se/ — толкать (гласная «у» в начале). Слушай первый и средний звук."
+        "explanation": "tousser /tu.se/ — кашлять. Похожие: toucher /tu.ʃe/ — трогать, касаться (звук «ш»), pousser /pu.se/ — толкать (гласная «у» в начале). Слушай первый и средний звук.",
+        "audioSrc": "audio/wl-sante2-tousser.mp3"
       },
       {
         "id": "wc-sante2-operation-ctx",

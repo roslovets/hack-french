@@ -39,7 +39,10 @@
     "frequencyRank": 240,
     "level": "A1",
     "tags": ["fruits", "nourriture"],
-    "caseIds": ["wc-fruits"]
+    "caseIds": ["wc-fruits"],
+    "audio": {
+      "isolated": "audio/wl-fruits-pomme.mp3"
+    }
   },
   {
     "id": "wl-fruits-banane",
@@ -81,7 +84,10 @@
     "frequencyRank": 620,
     "level": "A1",
     "tags": ["fruits", "nourriture"],
-    "caseIds": ["wc-fruits"]
+    "caseIds": ["wc-fruits"],
+    "audio": {
+      "isolated": "audio/wl-fruits-banane.mp3"
+    }
   },
   {
     "id": "wl-fruits-fraise",
@@ -119,7 +125,10 @@
     "frequencyRank": 720,
     "level": "A1",
     "tags": ["fruits", "nourriture"],
-    "caseIds": ["wc-fruits"]
+    "caseIds": ["wc-fruits"],
+    "audio": {
+      "isolated": "audio/wl-fruits-fraise.mp3"
+    }
   },
   {
     "id": "wl-fruits-raisin",
@@ -161,7 +170,10 @@
     "frequencyRank": 780,
     "level": "A1",
     "tags": ["fruits", "nourriture"],
-    "caseIds": ["wc-fruits"]
+    "caseIds": ["wc-fruits"],
+    "audio": {
+      "isolated": "audio/wl-fruits-raisin.mp3"
+    }
   },
   {
     "id": "wl-fruits-poire",
@@ -199,7 +211,10 @@
     "frequencyRank": 760,
     "level": "A1",
     "tags": ["fruits", "nourriture"],
-    "caseIds": ["wc-fruits"]
+    "caseIds": ["wc-fruits"],
+    "audio": {
+      "isolated": "audio/wl-fruits-poire.mp3"
+    }
   },
   {
     "id": "wl-fruits-cerise",
@@ -237,7 +252,10 @@
     "frequencyRank": 800,
     "level": "A1",
     "tags": ["fruits", "nourriture"],
-    "caseIds": ["wc-fruits"]
+    "caseIds": ["wc-fruits"],
+    "audio": {
+      "isolated": "audio/wl-fruits-cerise.mp3"
+    }
   },
   {
     "id": "wl-fruits-citron",
@@ -275,7 +293,10 @@
     "frequencyRank": 700,
     "level": "A1",
     "tags": ["fruits", "nourriture"],
-    "caseIds": ["wc-fruits"]
+    "caseIds": ["wc-fruits"],
+    "audio": {
+      "isolated": "audio/wl-fruits-citron.mp3"
+    }
   },
   {
     "id": "wl-fruits-abricot",
@@ -313,6 +334,9 @@
     "frequencyRank": 850,
     "level": "A1",
     "tags": ["fruits", "nourriture"],
-    "caseIds": ["wc-fruits"]
+    "caseIds": ["wc-fruits"],
+    "audio": {
+      "isolated": "audio/wl-fruits-abricot.mp3"
+    }
   }
 ]

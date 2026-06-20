@@ -35,7 +35,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["sante2", "metier"],
-    "caseIds": ["wc-sante2"]
+    "caseIds": ["wc-sante2"],
+    "audio": {
+      "isolated": "audio/wl-sante2-dentiste.mp3"
+    }
   },
   {
     "id": "wl-sante2-urgence",
@@ -77,7 +80,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["sante2", "lieu"],
-    "caseIds": ["wc-sante2"]
+    "caseIds": ["wc-sante2"],
+    "audio": {
+      "isolated": "audio/wl-sante2-urgence.mp3"
+    }
   },
   {
     "id": "wl-sante2-blessure",
@@ -115,7 +121,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["sante2", "symptome"],
-    "caseIds": ["wc-sante2"]
+    "caseIds": ["wc-sante2"],
+    "audio": {
+      "isolated": "audio/wl-sante2-blessure.mp3"
+    }
   },
   {
     "id": "wl-sante2-vaccin",
@@ -153,7 +162,10 @@
     "frequencyRank": 660,
     "level": "A2",
     "tags": ["sante2", "traitement"],
-    "caseIds": ["wc-sante2"]
+    "caseIds": ["wc-sante2"],
+    "audio": {
+      "isolated": "audio/wl-sante2-vaccin.mp3"
+    }
   },
   {
     "id": "wl-sante2-soigner",
@@ -190,7 +202,10 @@
     "frequencyRank": 690,
     "level": "A2",
     "tags": ["sante2", "action"],
-    "caseIds": ["wc-sante2"]
+    "caseIds": ["wc-sante2"],
+    "audio": {
+      "isolated": "audio/wl-sante2-soigner.mp3"
+    }
   },
   {
     "id": "wl-sante2-tousser",
@@ -227,7 +242,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["sante2", "symptome"],
-    "caseIds": ["wc-sante2"]
+    "caseIds": ["wc-sante2"],
+    "audio": {
+      "isolated": "audio/wl-sante2-tousser.mp3"
+    }
   },
   {
     "id": "wl-sante2-operation",
@@ -265,7 +283,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["sante2", "traitement"],
-    "caseIds": ["wc-sante2"]
+    "caseIds": ["wc-sante2"],
+    "audio": {
+      "isolated": "audio/wl-sante2-operation.mp3"
+    }
   },
   {
     "id": "wl-sante2-allergie",
@@ -303,6 +324,9 @@
     "frequencyRank": 710,
     "level": "A2",
     "tags": ["sante2", "maladie"],
-    "caseIds": ["wc-sante2"]
+    "caseIds": ["wc-sante2"],
+    "audio": {
+      "isolated": "audio/wl-sante2-allergie.mp3"
+    }
   }
 ]

@@ -39,7 +39,10 @@
     "frequencyRank": 420,
     "level": "A2",
     "tags": ["media", "presse-ecrite"],
-    "caseIds": ["wc-media"]
+    "caseIds": ["wc-media"],
+    "audio": {
+      "isolated": "audio/wl-media-journal.mp3"
+    }
   },
   {
     "id": "wl-media-nouvelle",
@@ -81,7 +84,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["media", "information"],
-    "caseIds": ["wc-media"]
+    "caseIds": ["wc-media"],
+    "audio": {
+      "isolated": "audio/wl-media-nouvelle.mp3"
+    }
   },
   {
     "id": "wl-media-presse",
@@ -123,7 +129,10 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["media", "presse-ecrite"],
-    "caseIds": ["wc-media"]
+    "caseIds": ["wc-media"],
+    "audio": {
+      "isolated": "audio/wl-media-presse.mp3"
+    }
   },
   {
     "id": "wl-media-publicite",
@@ -165,7 +174,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["media", "communication"],
-    "caseIds": ["wc-media"]
+    "caseIds": ["wc-media"],
+    "audio": {
+      "isolated": "audio/wl-media-publicite.mp3"
+    }
   },
   {
     "id": "wl-media-emission",
@@ -207,7 +219,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["media", "television"],
-    "caseIds": ["wc-media"]
+    "caseIds": ["wc-media"],
+    "audio": {
+      "isolated": "audio/wl-media-emission.mp3"
+    }
   },
   {
     "id": "wl-media-chaine",
@@ -249,7 +264,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["media", "television"],
-    "caseIds": ["wc-media"]
+    "caseIds": ["wc-media"],
+    "audio": {
+      "isolated": "audio/wl-media-chaine.mp3"
+    }
   },
   {
     "id": "wl-media-info",
@@ -291,7 +309,10 @@
     "frequencyRank": 500,
     "level": "A2",
     "tags": ["media", "information"],
-    "caseIds": ["wc-media"]
+    "caseIds": ["wc-media"],
+    "audio": {
+      "isolated": "audio/wl-media-info.mp3"
+    }
   },
   {
     "id": "wl-media-reportage",
@@ -333,6 +354,9 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["media", "journalisme"],
-    "caseIds": ["wc-media"]
+    "caseIds": ["wc-media"],
+    "audio": {
+      "isolated": "audio/wl-media-reportage.mp3"
+    }
   }
 ]

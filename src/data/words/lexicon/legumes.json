@@ -35,7 +35,10 @@
     "frequencyRank": 700,
     "level": "A1",
     "tags": ["legumes", "nourriture"],
-    "caseIds": ["wc-legumes"]
+    "caseIds": ["wc-legumes"],
+    "audio": {
+      "isolated": "audio/wl-legumes-carotte.mp3"
+    }
   },
   {
     "id": "wl-legumes-tomate",
@@ -73,7 +76,10 @@
     "frequencyRank": 650,
     "level": "A1",
     "tags": ["legumes", "nourriture"],
-    "caseIds": ["wc-legumes"]
+    "caseIds": ["wc-legumes"],
+    "audio": {
+      "isolated": "audio/wl-legumes-tomate.mp3"
+    }
   },
   {
     "id": "wl-legumes-oignon",
@@ -112,7 +118,10 @@
     "frequencyRank": 720,
     "level": "A1",
     "tags": ["legumes", "nourriture"],
-    "caseIds": ["wc-legumes"]
+    "caseIds": ["wc-legumes"],
+    "audio": {
+      "isolated": "audio/wl-legumes-oignon.mp3"
+    }
   },
   {
     "id": "wl-legumes-salade",
@@ -150,7 +159,10 @@
     "frequencyRank": 600,
     "level": "A1",
     "tags": ["legumes", "nourriture"],
-    "caseIds": ["wc-legumes"]
+    "caseIds": ["wc-legumes"],
+    "audio": {
+      "isolated": "audio/wl-legumes-salade.mp3"
+    }
   },
   {
     "id": "wl-legumes-patate",
@@ -189,7 +201,10 @@
     "frequencyRank": 680,
     "level": "A1",
     "tags": ["legumes", "nourriture"],
-    "caseIds": ["wc-legumes"]
+    "caseIds": ["wc-legumes"],
+    "audio": {
+      "isolated": "audio/wl-legumes-patate.mp3"
+    }
   },
   {
     "id": "wl-legumes-courgette",
@@ -227,7 +242,10 @@
     "frequencyRank": 850,
     "level": "A1",
     "tags": ["legumes", "nourriture"],
-    "caseIds": ["wc-legumes"]
+    "caseIds": ["wc-legumes"],
+    "audio": {
+      "isolated": "audio/wl-legumes-courgette.mp3"
+    }
   },
   {
     "id": "wl-legumes-champignon",
@@ -265,7 +283,10 @@
     "frequencyRank": 780,
     "level": "A1",
     "tags": ["legumes", "nourriture"],
-    "caseIds": ["wc-legumes"]
+    "caseIds": ["wc-legumes"],
+    "audio": {
+      "isolated": "audio/wl-legumes-champignon.mp3"
+    }
   },
   {
     "id": "wl-legumes-ail",
@@ -303,6 +324,9 @@
     "frequencyRank": 820,
     "level": "A1",
     "tags": ["legumes", "nourriture"],
-    "caseIds": ["wc-legumes"]
+    "caseIds": ["wc-legumes"],
+    "audio": {
+      "isolated": "audio/wl-legumes-ail.mp3"
+    }
   }
 ]

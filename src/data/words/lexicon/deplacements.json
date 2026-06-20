@@ -38,7 +38,10 @@
     "frequencyRank": 320,
     "level": "A2",
     "tags": ["deplacements", "verbe-action", "quotidien"],
-    "caseIds": ["wc-deplacements"]
+    "caseIds": ["wc-deplacements"],
+    "audio": {
+      "isolated": "audio/wl-deplacements-marcher.mp3"
+    }
   },
   {
     "id": "wl-deplacements-conduire",
@@ -79,7 +82,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["deplacements", "transport", "verbe-action"],
-    "caseIds": ["wc-deplacements"]
+    "caseIds": ["wc-deplacements"],
+    "audio": {
+      "isolated": "audio/wl-deplacements-conduire.mp3"
+    }
   },
   {
     "id": "wl-deplacements-voler",
@@ -120,7 +126,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["deplacements", "verbe-action", "polyseme"],
-    "caseIds": ["wc-deplacements"]
+    "caseIds": ["wc-deplacements"],
+    "audio": {
+      "isolated": "audio/wl-deplacements-voler.mp3"
+    }
   },
   {
     "id": "wl-deplacements-attendre",
@@ -161,7 +170,10 @@
     "frequencyRank": 300,
     "level": "A2",
     "tags": ["deplacements", "verbe-action", "faux-amis"],
-    "caseIds": ["wc-deplacements"]
+    "caseIds": ["wc-deplacements"],
+    "audio": {
+      "isolated": "audio/wl-deplacements-attendre.mp3"
+    }
   },
   {
     "id": "wl-deplacements-rentrer",
@@ -202,7 +214,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["deplacements", "verbe-action", "quotidien"],
-    "caseIds": ["wc-deplacements"]
+    "caseIds": ["wc-deplacements"],
+    "audio": {
+      "isolated": "audio/wl-deplacements-rentrer.mp3"
+    }
   },
   {
     "id": "wl-deplacements-rester",
@@ -243,7 +258,10 @@
     "frequencyRank": 280,
     "level": "A2",
     "tags": ["deplacements", "verbe-etat", "faux-amis"],
-    "caseIds": ["wc-deplacements"]
+    "caseIds": ["wc-deplacements"],
+    "audio": {
+      "isolated": "audio/wl-deplacements-rester.mp3"
+    }
   },
   {
     "id": "wl-deplacements-arriver",
@@ -284,7 +302,10 @@
     "frequencyRank": 150,
     "level": "A2",
     "tags": ["deplacements", "verbe-action", "polyseme"],
-    "caseIds": ["wc-deplacements"]
+    "caseIds": ["wc-deplacements"],
+    "audio": {
+      "isolated": "audio/wl-deplacements-arriver.mp3"
+    }
   },
   {
     "id": "wl-deplacements-suivre",
@@ -325,6 +346,9 @@
     "frequencyRank": 260,
     "level": "A2",
     "tags": ["deplacements", "verbe-action", "etudes"],
-    "caseIds": ["wc-deplacements"]
+    "caseIds": ["wc-deplacements"],
+    "audio": {
+      "isolated": "audio/wl-deplacements-suivre.mp3"
+    }
   }
 ]

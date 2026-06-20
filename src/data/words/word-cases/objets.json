@@ -142,7 +142,8 @@
         "audioText": "montre",
         "options": ["montre", "montrer", "monstre", "contre"],
         "correctIndex": 0,
-        "explanation": "Прозвучало montre /mɔ̃tʁ/ — часы. Похожие: montrer /mɔ̃.tʁe/ (показывать), monstre /mɔ̃stʁ/ (чудовище), contre /kɔ̃tʁ/ (против). Это разные слова, не омофоны."
+        "explanation": "Прозвучало montre /mɔ̃tʁ/ — часы. Похожие: montrer /mɔ̃.tʁe/ (показывать), monstre /mɔ̃stʁ/ (чудовище), contre /kɔ̃tʁ/ (против). Это разные слова, не омофоны.",
+        "audioSrc": "audio/wl-objets-montre.mp3"
       },
       {
         "id": "wc-objets-lunettes-ctx",
@@ -262,7 +263,8 @@
         "audioText": "miroir",
         "options": ["miroir", "mouchoir", "tiroir", "couloir"],
         "correctIndex": 0,
-        "explanation": "Прозвучало miroir /mi.ʁwaʁ/ — зеркало. Похожие на -oir: mouchoir (платок), tiroir (ящик), couloir (коридор). Разные слова, не омофоны — слушай начало."
+        "explanation": "Прозвучало miroir /mi.ʁwaʁ/ — зеркало. Похожие на -oir: mouchoir (платок), tiroir (ящик), couloir (коридор). Разные слова, не омофоны — слушай начало.",
+        "audioSrc": "audio/wl-objets-miroir.mp3"
       },
       {
         "id": "wc-objets-mouchoir-ctx",

@@ -39,7 +39,10 @@
     "frequencyRank": 360,
     "level": "A2",
     "tags": ["voyage", "deplacement"],
-    "caseIds": ["wc-voyage"]
+    "caseIds": ["wc-voyage"],
+    "audio": {
+      "isolated": "audio/wl-voyage-voyage.mp3"
+    }
   },
   {
     "id": "wl-voyage-hotel",
@@ -81,7 +84,10 @@
     "frequencyRank": 400,
     "level": "A2",
     "tags": ["voyage", "logement"],
-    "caseIds": ["wc-voyage"]
+    "caseIds": ["wc-voyage"],
+    "audio": {
+      "isolated": "audio/wl-voyage-hotel.mp3"
+    }
   },
   {
     "id": "wl-voyage-valise",
@@ -119,7 +125,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["voyage", "objet"],
-    "caseIds": ["wc-voyage"]
+    "caseIds": ["wc-voyage"],
+    "audio": {
+      "isolated": "audio/wl-voyage-valise.mp3"
+    }
   },
   {
     "id": "wl-voyage-passeport",
@@ -157,7 +166,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["voyage", "document"],
-    "caseIds": ["wc-voyage"]
+    "caseIds": ["wc-voyage"],
+    "audio": {
+      "isolated": "audio/wl-voyage-passeport.mp3"
+    }
   },
   {
     "id": "wl-voyage-aeroport",
@@ -195,7 +207,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["voyage", "lieu"],
-    "caseIds": ["wc-voyage"]
+    "caseIds": ["wc-voyage"],
+    "audio": {
+      "isolated": "audio/wl-voyage-aeroport.mp3"
+    }
   },
   {
     "id": "wl-voyage-bagage",
@@ -233,7 +248,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["voyage", "objet"],
-    "caseIds": ["wc-voyage"]
+    "caseIds": ["wc-voyage"],
+    "audio": {
+      "isolated": "audio/wl-voyage-bagage.mp3"
+    }
   },
   {
     "id": "wl-voyage-touriste",
@@ -271,7 +289,10 @@
     "frequencyRank": 580,
     "level": "A2",
     "tags": ["voyage", "personne"],
-    "caseIds": ["wc-voyage"]
+    "caseIds": ["wc-voyage"],
+    "audio": {
+      "isolated": "audio/wl-voyage-touriste.mp3"
+    }
   },
   {
     "id": "wl-voyage-douane",
@@ -309,6 +330,9 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["voyage", "frontiere"],
-    "caseIds": ["wc-voyage"]
+    "caseIds": ["wc-voyage"],
+    "audio": {
+      "isolated": "audio/wl-voyage-douane.mp3"
+    }
   }
 ]

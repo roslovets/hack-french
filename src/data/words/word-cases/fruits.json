@@ -166,7 +166,8 @@
         "audioText": "poire",
         "options": ["poire", "boire", "poil", "poids"],
         "correctIndex": 0,
-        "explanation": "Прозвучало poire /pwaʁ/ — груша. Похожие: boire /bwaʁ/ — пить, poil /pwal/ — волосок, poids /pwa/ — вес. Все разные слова."
+        "explanation": "Прозвучало poire /pwaʁ/ — груша. Похожие: boire /bwaʁ/ — пить, poil /pwal/ — волосок, poids /pwa/ — вес. Все разные слова.",
+        "audioSrc": "audio/wl-fruits-poire.mp3"
       },
       {
         "id": "wc-fruits-cerise-ctx",

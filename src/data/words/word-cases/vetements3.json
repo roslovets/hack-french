@@ -101,7 +101,8 @@
         "audioText": "cravate",
         "options": ["cravate", "cravache", "carafe", "agrafe"],
         "correctIndex": 0,
-        "explanation": "Звучит /kʁa.vat/ — это cravate (галстук). Похожие, но другие слова: une cravache (хлыст), une carafe (графин), une agrafe (скрепка/застёжка)."
+        "explanation": "Звучит /kʁa.vat/ — это cravate (галстук). Похожие, но другие слова: une cravache (хлыст), une carafe (графин), une agrafe (скрепка/застёжка).",
+        "audioSrc": "audio/wl-vetements3-cravate.mp3"
       },
       {
         "id": "wc-vetements3-costume-bridge",
@@ -157,7 +158,8 @@
         "audioText": "casquette",
         "options": ["casquette", "raquette", "maquette", "baguette"],
         "correctIndex": 0,
-        "explanation": "Звучит /kas.kɛt/ — это casquette (кепка). Похожие слова: une raquette (ракетка), une maquette (макет), une baguette (багет/палочка)."
+        "explanation": "Звучит /kas.kɛt/ — это casquette (кепка). Похожие слова: une raquette (ракетка), une maquette (макет), une baguette (багет/палочка).",
+        "audioSrc": "audio/wl-vetements3-casquette.mp3"
       },
       {
         "id": "wc-vetements3-bijou-ctx",

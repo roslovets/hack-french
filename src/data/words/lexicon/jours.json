@@ -39,7 +39,10 @@
     "frequencyRank": 290,
     "level": "A1",
     "tags": ["jours", "calendrier"],
-    "caseIds": ["wc-jours"]
+    "caseIds": ["wc-jours"],
+    "audio": {
+      "isolated": "audio/wl-jours-lundi.mp3"
+    }
   },
   {
     "id": "wl-jours-mardi",
@@ -81,7 +84,10 @@
     "frequencyRank": 310,
     "level": "A1",
     "tags": ["jours", "calendrier"],
-    "caseIds": ["wc-jours"]
+    "caseIds": ["wc-jours"],
+    "audio": {
+      "isolated": "audio/wl-jours-mardi.mp3"
+    }
   },
   {
     "id": "wl-jours-mercredi",
@@ -123,7 +129,10 @@
     "frequencyRank": 360,
     "level": "A1",
     "tags": ["jours", "calendrier"],
-    "caseIds": ["wc-jours"]
+    "caseIds": ["wc-jours"],
+    "audio": {
+      "isolated": "audio/wl-jours-mercredi.mp3"
+    }
   },
   {
     "id": "wl-jours-jeudi",
@@ -165,7 +174,10 @@
     "frequencyRank": 350,
     "level": "A1",
     "tags": ["jours", "calendrier"],
-    "caseIds": ["wc-jours"]
+    "caseIds": ["wc-jours"],
+    "audio": {
+      "isolated": "audio/wl-jours-jeudi.mp3"
+    }
   },
   {
     "id": "wl-jours-vendredi",
@@ -207,7 +219,10 @@
     "frequencyRank": 330,
     "level": "A1",
     "tags": ["jours", "calendrier"],
-    "caseIds": ["wc-jours"]
+    "caseIds": ["wc-jours"],
+    "audio": {
+      "isolated": "audio/wl-jours-vendredi.mp3"
+    }
   },
   {
     "id": "wl-jours-samedi",
@@ -249,7 +264,10 @@
     "frequencyRank": 320,
     "level": "A1",
     "tags": ["jours", "calendrier"],
-    "caseIds": ["wc-jours"]
+    "caseIds": ["wc-jours"],
+    "audio": {
+      "isolated": "audio/wl-jours-samedi.mp3"
+    }
   },
   {
     "id": "wl-jours-dimanche",
@@ -291,7 +309,10 @@
     "frequencyRank": 300,
     "level": "A1",
     "tags": ["jours", "calendrier"],
-    "caseIds": ["wc-jours"]
+    "caseIds": ["wc-jours"],
+    "audio": {
+      "isolated": "audio/wl-jours-dimanche.mp3"
+    }
   },
   {
     "id": "wl-jours-weekend",
@@ -333,6 +354,9 @@
     "frequencyRank": 340,
     "level": "A1",
     "tags": ["jours", "calendrier"],
-    "caseIds": ["wc-jours"]
+    "caseIds": ["wc-jours"],
+    "audio": {
+      "isolated": "audio/wl-jours-weekend.mp3"
+    }
   }
 ]

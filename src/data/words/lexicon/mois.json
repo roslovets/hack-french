@@ -39,7 +39,10 @@
     "frequencyRank": 620,
     "level": "A1",
     "tags": ["mois", "calendrier"],
-    "caseIds": ["wc-mois"]
+    "caseIds": ["wc-mois"],
+    "audio": {
+      "isolated": "audio/wl-mois-janvier.mp3"
+    }
   },
   {
     "id": "wl-mois-fevrier",
@@ -81,7 +84,10 @@
     "frequencyRank": 700,
     "level": "A1",
     "tags": ["mois", "calendrier"],
-    "caseIds": ["wc-mois"]
+    "caseIds": ["wc-mois"],
+    "audio": {
+      "isolated": "audio/wl-mois-fevrier.mp3"
+    }
   },
   {
     "id": "wl-mois-mars",
@@ -123,7 +129,10 @@
     "frequencyRank": 660,
     "level": "A1",
     "tags": ["mois", "calendrier"],
-    "caseIds": ["wc-mois"]
+    "caseIds": ["wc-mois"],
+    "audio": {
+      "isolated": "audio/wl-mois-mars.mp3"
+    }
   },
   {
     "id": "wl-mois-avril",
@@ -165,7 +174,10 @@
     "frequencyRank": 680,
     "level": "A1",
     "tags": ["mois", "calendrier"],
-    "caseIds": ["wc-mois"]
+    "caseIds": ["wc-mois"],
+    "audio": {
+      "isolated": "audio/wl-mois-avril.mp3"
+    }
   },
   {
     "id": "wl-mois-juin",
@@ -207,7 +219,10 @@
     "frequencyRank": 640,
     "level": "A1",
     "tags": ["mois", "calendrier"],
-    "caseIds": ["wc-mois"]
+    "caseIds": ["wc-mois"],
+    "audio": {
+      "isolated": "audio/wl-mois-juin.mp3"
+    }
   },
   {
     "id": "wl-mois-juillet",
@@ -249,7 +264,10 @@
     "frequencyRank": 650,
     "level": "A1",
     "tags": ["mois", "calendrier"],
-    "caseIds": ["wc-mois"]
+    "caseIds": ["wc-mois"],
+    "audio": {
+      "isolated": "audio/wl-mois-juillet.mp3"
+    }
   },
   {
     "id": "wl-mois-aout",
@@ -291,7 +309,10 @@
     "frequencyRank": 670,
     "level": "A1",
     "tags": ["mois", "calendrier"],
-    "caseIds": ["wc-mois"]
+    "caseIds": ["wc-mois"],
+    "audio": {
+      "isolated": "audio/wl-mois-aout.mp3"
+    }
   },
   {
     "id": "wl-mois-decembre",
@@ -333,6 +354,9 @@
     "frequencyRank": 630,
     "level": "A1",
     "tags": ["mois", "calendrier"],
-    "caseIds": ["wc-mois"]
+    "caseIds": ["wc-mois"],
+    "audio": {
+      "isolated": "audio/wl-mois-decembre.mp3"
+    }
   }
 ]

@@ -295,7 +295,8 @@
         "audioText": "tard",
         "options": ["tard", "tarte", "part", "car"],
         "correctIndex": 0,
-        "explanation": "Прозвучало tard /taʁ/ (поздно). tarte /taʁt/ — пирог (слышен звук t), part /paʁ/ — доля, car /kaʁ/ — потому что / автобус. Это похожие, но разные слова."
+        "explanation": "Прозвучало tard /taʁ/ (поздно). tarte /taʁt/ — пирог (слышен звук t), part /paʁ/ — доля, car /kaʁ/ — потому что / автобус. Это похожие, но разные слова.",
+        "audioSrc": "audio/wl-heure-tard.mp3"
       },
       {
         "id": "wc-heure-midi-twin",
@@ -307,7 +308,8 @@
         "audioText": "midi",
         "options": ["midi", "mardi", "mercredi", "minuit"],
         "correctIndex": 0,
-        "explanation": "Прозвучало midi /mi.di/ (полдень). mardi /maʁ.di/ — вторник, mercredi — среда, minuit /mi.nɥi/ — полночь. Похоже по звучанию, но значения разные."
+        "explanation": "Прозвучало midi /mi.di/ (полдень). mardi /maʁ.di/ — вторник, mercredi — среда, minuit /mi.nɥi/ — полночь. Похоже по звучанию, но значения разные.",
+        "audioSrc": "audio/wl-heure-midi.mp3"
       },
       {
         "id": "wc-heure-heure-hint",

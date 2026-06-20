@@ -74,7 +74,8 @@
         "audioText": "couper",
         "options": ["couper", "couler", "coucher", "compter"],
         "correctIndex": 0,
-        "explanation": "couper /ku.pe/ — резать. Похожие, но другие: couler /ku.le/ — течь, coucher /ku.ʃe/ — укладывать спать, compter /kɔ̃.te/ — считать. Решает второй звук: p, а не l/ʃ."
+        "explanation": "couper /ku.pe/ — резать. Похожие, но другие: couler /ku.le/ — течь, coucher /ku.ʃe/ — укладывать спать, compter /kɔ̃.te/ — считать. Решает второй звук: p, а не l/ʃ.",
+        "audioSrc": "audio/wl-cuisson-couper.mp3"
       },
       {
         "id": "wc-cuisson-gouter-ctx",
@@ -195,7 +196,8 @@
         "audioText": "verser",
         "options": ["verser", "laver", "fermer", "passer"],
         "correctIndex": 0,
-        "explanation": "verser /vɛʁ.se/ — наливать. Похожие глаголы: laver /la.ve/ — мыть, fermer /fɛʁ.me/ — закрывать, passer /pɑ.se/ — передавать. Начало vers- отличает verser от остальных."
+        "explanation": "verser /vɛʁ.se/ — наливать. Похожие глаголы: laver /la.ve/ — мыть, fermer /fɛʁ.me/ — закрывать, passer /pɑ.se/ — передавать. Начало vers- отличает verser от остальных.",
+        "audioSrc": "audio/wl-cuisson-verser.mp3"
       },
       {
         "id": "wc-cuisson-melanger-ctx",

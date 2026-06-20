@@ -307,7 +307,8 @@
         "audioText": "rire",
         "options": ["rire", "lire", "dire"],
         "correctIndex": 0,
-        "explanation": "Прозвучало rire /ʁiʁ/ (смеяться). Сравни: lire /liʁ/ (читать) и dire /diʁ/ (сказать). Все рифмуются — различай первый звук: r против l против d."
+        "explanation": "Прозвучало rire /ʁiʁ/ (смеяться). Сравни: lire /liʁ/ (читать) и dire /diʁ/ (сказать). Все рифмуются — различай первый звук: r против l против d.",
+        "audioSrc": "audio/wl-sentiments-rire.mp3"
       }
     ]
   }

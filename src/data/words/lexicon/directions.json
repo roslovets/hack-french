@@ -39,7 +39,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["directions", "orientation"],
-    "caseIds": ["wc-directions"]
+    "caseIds": ["wc-directions"],
+    "audio": {
+      "isolated": "audio/wl-directions-gauche.mp3"
+    }
   },
   {
     "id": "wl-directions-droite",
@@ -81,7 +84,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["directions", "orientation"],
-    "caseIds": ["wc-directions"]
+    "caseIds": ["wc-directions"],
+    "audio": {
+      "isolated": "audio/wl-directions-droite.mp3"
+    }
   },
   {
     "id": "wl-directions-toutdroit",
@@ -118,7 +124,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["directions", "orientation"],
-    "caseIds": ["wc-directions"]
+    "caseIds": ["wc-directions"],
+    "audio": {
+      "isolated": "audio/wl-directions-toutdroit.mp3"
+    }
   },
   {
     "id": "wl-directions-devant",
@@ -155,7 +164,10 @@
     "frequencyRank": 410,
     "level": "A2",
     "tags": ["directions", "position"],
-    "caseIds": ["wc-directions"]
+    "caseIds": ["wc-directions"],
+    "audio": {
+      "isolated": "audio/wl-directions-devant.mp3"
+    }
   },
   {
     "id": "wl-directions-derriere",
@@ -192,7 +204,10 @@
     "frequencyRank": 470,
     "level": "A2",
     "tags": ["directions", "position"],
-    "caseIds": ["wc-directions"]
+    "caseIds": ["wc-directions"],
+    "audio": {
+      "isolated": "audio/wl-directions-derriere.mp3"
+    }
   },
   {
     "id": "wl-directions-ici",
@@ -233,7 +248,10 @@
     "frequencyRank": 220,
     "level": "A2",
     "tags": ["directions", "position"],
-    "caseIds": ["wc-directions"]
+    "caseIds": ["wc-directions"],
+    "audio": {
+      "isolated": "audio/wl-directions-ici.mp3"
+    }
   },
   {
     "id": "wl-directions-la",
@@ -274,7 +292,10 @@
     "frequencyRank": 120,
     "level": "A2",
     "tags": ["directions", "position"],
-    "caseIds": ["wc-directions"]
+    "caseIds": ["wc-directions"],
+    "audio": {
+      "isolated": "audio/wl-directions-la.mp3"
+    }
   },
   {
     "id": "wl-directions-loin",
@@ -315,6 +336,9 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["directions", "distance"],
-    "caseIds": ["wc-directions"]
+    "caseIds": ["wc-directions"],
+    "audio": {
+      "isolated": "audio/wl-directions-loin.mp3"
+    }
   }
 ]

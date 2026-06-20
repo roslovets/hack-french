@@ -134,7 +134,8 @@
         "audioText": "valise",
         "options": ["balise", "valise", "vanille", "malice"],
         "correctIndex": 1,
-        "explanation": "Прозвучало valise /va.liz/ — чемодан. Похожие по звучанию, но другие слова: balise /ba.liz/ — буй/метка, vanille /va.nij/ — ваниль, malice /ma.lis/ — лукавство."
+        "explanation": "Прозвучало valise /va.liz/ — чемодан. Похожие по звучанию, но другие слова: balise /ba.liz/ — буй/метка, vanille /va.nij/ — ваниль, malice /ma.lis/ — лукавство.",
+        "audioSrc": "audio/wl-voyage-valise.mp3"
       },
       {
         "id": "wc-voyage-passeport-bridge",

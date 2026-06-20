@@ -257,7 +257,8 @@
         "audioText": "louche",
         "options": ["louche", "bouche", "mouche", "douche"],
         "correctIndex": 0,
-        "explanation": "Прозвучало louche /luʃ/ — половник. Похоже звучат: bouche (рот), mouche (муха), douche (душ). Все различаются только первым звуком — слушай начало слова."
+        "explanation": "Прозвучало louche /luʃ/ — половник. Похоже звучат: bouche (рот), mouche (муха), douche (душ). Все различаются только первым звуком — слушай начало слова.",
+        "audioSrc": "audio/wl-vaisselle-louche.mp3"
       },
       {
         "id": "wc-vaisselle-plateau-ctx",

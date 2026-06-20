@@ -123,7 +123,8 @@
         "audioText": "jupe",
         "options": ["jupe", "juge", "dupe", "jus"],
         "correctIndex": 0,
-        "explanation": "jupe /ʒyp/ (юбка), juge /ʒyʒ/ (судья), dupe /dyp/ (обманутый, простак), jus /ʒy/ (сок). Звучат похоже, но это разные слова: слушай начало и концовку."
+        "explanation": "jupe /ʒyp/ (юбка), juge /ʒyʒ/ (судья), dupe /dyp/ (обманутый, простак), jus /ʒy/ (сок). Звучат похоже, но это разные слова: слушай начало и концовку.",
+        "audioSrc": "audio/wl-vetements2-jupe.mp3"
       },
       {
         "id": "wc-vetements2-echarpe-ctx",
@@ -178,7 +179,8 @@
         "audioText": "gant",
         "options": ["gant", "gens", "grand", "quand"],
         "correctIndex": 0,
-        "explanation": "Все с носовым звуком на конце: gant /ɡɑ̃/ (перчатка), gens /ʒɑ̃/ (люди), grand /ɡʁɑ̃/ (большой), quand /kɑ̃/ (когда). Это разные слова — слушай начало."
+        "explanation": "Все с носовым звуком на конце: gant /ɡɑ̃/ (перчатка), gens /ʒɑ̃/ (люди), grand /ɡʁɑ̃/ (большой), quand /kɑ̃/ (когда). Это разные слова — слушай начало.",
+        "audioSrc": "audio/wl-vetements2-gant.mp3"
       },
       {
         "id": "wc-vetements2-ceinture-ctx",
@@ -263,7 +265,8 @@
         "audioText": "chapeau",
         "options": ["chapeau", "chameau", "château", "drapeau"],
         "correctIndex": 0,
-        "explanation": "Все оканчиваются на /-o/: chapeau /ʃa.po/ (шляпа), chameau /ʃa.mo/ (верблюд), château /ʃɑ.to/ (замок), drapeau /dʁa.po/ (флаг). Это разные слова — слушай середину."
+        "explanation": "Все оканчиваются на /-o/: chapeau /ʃa.po/ (шляпа), chameau /ʃa.mo/ (верблюд), château /ʃɑ.to/ (замок), drapeau /dʁa.po/ (флаг). Это разные слова — слушай середину.",
+        "audioSrc": "audio/wl-vetements2-chapeau.mp3"
       },
       {
         "id": "wc-vetements2-pyjama-bridge",

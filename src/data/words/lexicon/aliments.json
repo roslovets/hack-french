@@ -39,7 +39,10 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["aliments", "petit-déjeuner"],
-    "caseIds": ["wc-aliments"]
+    "caseIds": ["wc-aliments"],
+    "audio": {
+      "isolated": "audio/wl-aliments-oeuf.mp3"
+    }
   },
   {
     "id": "wl-aliments-beurre",
@@ -81,7 +84,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["aliments", "produits-laitiers"],
-    "caseIds": ["wc-aliments"]
+    "caseIds": ["wc-aliments"],
+    "audio": {
+      "isolated": "audio/wl-aliments-beurre.mp3"
+    }
   },
   {
     "id": "wl-aliments-sel",
@@ -123,7 +129,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["aliments", "épices"],
-    "caseIds": ["wc-aliments"]
+    "caseIds": ["wc-aliments"],
+    "audio": {
+      "isolated": "audio/wl-aliments-sel.mp3"
+    }
   },
   {
     "id": "wl-aliments-poivre",
@@ -165,7 +174,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["aliments", "épices"],
-    "caseIds": ["wc-aliments"]
+    "caseIds": ["wc-aliments"],
+    "audio": {
+      "isolated": "audio/wl-aliments-poivre.mp3"
+    }
   },
   {
     "id": "wl-aliments-farine",
@@ -207,7 +219,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["aliments", "épicerie"],
-    "caseIds": ["wc-aliments"]
+    "caseIds": ["wc-aliments"],
+    "audio": {
+      "isolated": "audio/wl-aliments-farine.mp3"
+    }
   },
   {
     "id": "wl-aliments-riz",
@@ -249,7 +264,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["aliments", "épicerie"],
-    "caseIds": ["wc-aliments"]
+    "caseIds": ["wc-aliments"],
+    "audio": {
+      "isolated": "audio/wl-aliments-riz.mp3"
+    }
   },
   {
     "id": "wl-aliments-pates",
@@ -292,7 +310,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["aliments", "plats"],
-    "caseIds": ["wc-aliments"]
+    "caseIds": ["wc-aliments"],
+    "audio": {
+      "isolated": "audio/wl-aliments-pates.mp3"
+    }
   },
   {
     "id": "wl-aliments-huile",
@@ -334,6 +355,9 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["aliments", "épicerie"],
-    "caseIds": ["wc-aliments"]
+    "caseIds": ["wc-aliments"],
+    "audio": {
+      "isolated": "audio/wl-aliments-huile.mp3"
+    }
   }
 ]

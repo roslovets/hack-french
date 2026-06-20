@@ -39,7 +39,10 @@
     "frequencyRank": 320,
     "level": "A2",
     "tags": ["idees", "abstrait"],
-    "caseIds": ["wc-idees"]
+    "caseIds": ["wc-idees"],
+    "audio": {
+      "isolated": "audio/wl-idees-idee.mp3"
+    }
   },
   {
     "id": "wl-idees-probleme",
@@ -81,7 +84,10 @@
     "frequencyRank": 280,
     "level": "A2",
     "tags": ["idees", "abstrait"],
-    "caseIds": ["wc-idees"]
+    "caseIds": ["wc-idees"],
+    "audio": {
+      "isolated": "audio/wl-idees-probleme.mp3"
+    }
   },
   {
     "id": "wl-idees-solution",
@@ -123,7 +129,10 @@
     "frequencyRank": 410,
     "level": "A2",
     "tags": ["idees", "abstrait"],
-    "caseIds": ["wc-idees"]
+    "caseIds": ["wc-idees"],
+    "audio": {
+      "isolated": "audio/wl-idees-solution.mp3"
+    }
   },
   {
     "id": "wl-idees-reponse",
@@ -165,7 +174,10 @@
     "frequencyRank": 390,
     "level": "A2",
     "tags": ["idees", "abstrait"],
-    "caseIds": ["wc-idees"]
+    "caseIds": ["wc-idees"],
+    "audio": {
+      "isolated": "audio/wl-idees-reponse.mp3"
+    }
   },
   {
     "id": "wl-idees-exemple",
@@ -207,7 +219,10 @@
     "frequencyRank": 300,
     "level": "A2",
     "tags": ["idees", "abstrait"],
-    "caseIds": ["wc-idees"]
+    "caseIds": ["wc-idees"],
+    "audio": {
+      "isolated": "audio/wl-idees-exemple.mp3"
+    }
   },
   {
     "id": "wl-idees-but",
@@ -249,7 +264,10 @@
     "frequencyRank": 350,
     "level": "A2",
     "tags": ["idees", "abstrait"],
-    "caseIds": ["wc-idees"]
+    "caseIds": ["wc-idees"],
+    "audio": {
+      "isolated": "audio/wl-idees-but.mp3"
+    }
   },
   {
     "id": "wl-idees-projet",
@@ -291,7 +309,10 @@
     "frequencyRank": 360,
     "level": "A2",
     "tags": ["idees", "abstrait"],
-    "caseIds": ["wc-idees"]
+    "caseIds": ["wc-idees"],
+    "audio": {
+      "isolated": "audio/wl-idees-projet.mp3"
+    }
   },
   {
     "id": "wl-idees-choix",
@@ -333,6 +354,9 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["idees", "abstrait"],
-    "caseIds": ["wc-idees"]
+    "caseIds": ["wc-idees"],
+    "audio": {
+      "isolated": "audio/wl-idees-choix.mp3"
+    }
   }
 ]

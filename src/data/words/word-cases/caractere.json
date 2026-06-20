@@ -135,7 +135,8 @@
         "audioText": "sérieux",
         "options": ["sérieux", "curieux", "furieux", "mystérieux"],
         "correctIndex": 0,
-        "explanation": "Все четыре оканчиваются на -ieux /jø/ и звучат похоже, но звучит именно sérieux (серьёзный). curieux — любопытный, furieux — в ярости, mystérieux — загадочный."
+        "explanation": "Все четыре оканчиваются на -ieux /jø/ и звучат похоже, но звучит именно sérieux (серьёзный). curieux — любопытный, furieux — в ярости, mystérieux — загадочный.",
+        "audioSrc": "audio/wl-caractere-serieux.mp3"
       },
       {
         "id": "wc-caractere-calme-ctx",
@@ -345,7 +346,8 @@
         "audioText": "poli",
         "options": ["poli", "joli", "Paris", "police"],
         "correctIndex": 0,
-        "explanation": "Звучит poli /pɔ.li/ (вежливый). Похожие: joli /ʒɔ.li/ — красивый, Paris /pa.ʁi/ — Париж, police /pɔ.lis/ — полиция. Совпадает только poli."
+        "explanation": "Звучит poli /pɔ.li/ (вежливый). Похожие: joli /ʒɔ.li/ — красивый, Paris /pa.ʁi/ — Париж, police /pɔ.lis/ — полиция. Совпадает только poli.",
+        "audioSrc": "audio/wl-caractere-poli.mp3"
       },
       {
         "id": "wc-caractere-timide-mnemo",

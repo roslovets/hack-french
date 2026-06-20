@@ -39,7 +39,10 @@
     "frequencyRank": 420,
     "level": "A2",
     "tags": ["finance", "banque"],
-    "caseIds": ["wc-finance"]
+    "caseIds": ["wc-finance"],
+    "audio": {
+      "isolated": "audio/wl-finance-compte.mp3"
+    }
   },
   {
     "id": "wl-finance-credit",
@@ -81,7 +84,10 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["finance", "banque"],
-    "caseIds": ["wc-finance"]
+    "caseIds": ["wc-finance"],
+    "audio": {
+      "isolated": "audio/wl-finance-credit.mp3"
+    }
   },
   {
     "id": "wl-finance-dette",
@@ -123,7 +129,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["finance", "banque"],
-    "caseIds": ["wc-finance"]
+    "caseIds": ["wc-finance"],
+    "audio": {
+      "isolated": "audio/wl-finance-dette.mp3"
+    }
   },
   {
     "id": "wl-finance-budget",
@@ -165,7 +174,10 @@
     "frequencyRank": 580,
     "level": "A2",
     "tags": ["finance", "planification"],
-    "caseIds": ["wc-finance"]
+    "caseIds": ["wc-finance"],
+    "audio": {
+      "isolated": "audio/wl-finance-budget.mp3"
+    }
   },
   {
     "id": "wl-finance-facture",
@@ -207,7 +219,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["finance", "paiement"],
-    "caseIds": ["wc-finance"]
+    "caseIds": ["wc-finance"],
+    "audio": {
+      "isolated": "audio/wl-finance-facture.mp3"
+    }
   },
   {
     "id": "wl-finance-depense",
@@ -249,7 +264,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["finance", "argent"],
-    "caseIds": ["wc-finance"]
+    "caseIds": ["wc-finance"],
+    "audio": {
+      "isolated": "audio/wl-finance-depense.mp3"
+    }
   },
   {
     "id": "wl-finance-economie",
@@ -291,7 +309,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["finance", "argent"],
-    "caseIds": ["wc-finance"]
+    "caseIds": ["wc-finance"],
+    "audio": {
+      "isolated": "audio/wl-finance-economie.mp3"
+    }
   },
   {
     "id": "wl-finance-impot",
@@ -333,6 +354,9 @@
     "frequencyRank": 660,
     "level": "A2",
     "tags": ["finance", "etat"],
-    "caseIds": ["wc-finance"]
+    "caseIds": ["wc-finance"],
+    "audio": {
+      "isolated": "audio/wl-finance-impot.mp3"
+    }
   }
 ]

@@ -35,7 +35,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["electromenager", "menage"],
-    "caseIds": ["wc-electromenager"]
+    "caseIds": ["wc-electromenager"],
+    "audio": {
+      "isolated": "audio/wl-electromenager-machinealaver.mp3"
+    }
   },
   {
     "id": "wl-electromenager-microondes",
@@ -73,7 +76,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["electromenager", "cuisine"],
-    "caseIds": ["wc-electromenager"]
+    "caseIds": ["wc-electromenager"],
+    "audio": {
+      "isolated": "audio/wl-electromenager-microondes.mp3"
+    }
   },
   {
     "id": "wl-electromenager-aspirateur",
@@ -111,7 +117,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["electromenager", "menage"],
-    "caseIds": ["wc-electromenager"]
+    "caseIds": ["wc-electromenager"],
+    "audio": {
+      "isolated": "audio/wl-electromenager-aspirateur.mp3"
+    }
   },
   {
     "id": "wl-electromenager-tele",
@@ -154,7 +163,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["electromenager", "loisirs"],
-    "caseIds": ["wc-electromenager"]
+    "caseIds": ["wc-electromenager"],
+    "audio": {
+      "isolated": "audio/wl-electromenager-tele.mp3"
+    }
   },
   {
     "id": "wl-electromenager-radio",
@@ -192,7 +204,10 @@
     "frequencyRank": 400,
     "level": "A2",
     "tags": ["electromenager", "loisirs"],
-    "caseIds": ["wc-electromenager"]
+    "caseIds": ["wc-electromenager"],
+    "audio": {
+      "isolated": "audio/wl-electromenager-radio.mp3"
+    }
   },
   {
     "id": "wl-electromenager-grillepain",
@@ -226,7 +241,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["electromenager", "cuisine"],
-    "caseIds": ["wc-electromenager"]
+    "caseIds": ["wc-electromenager"],
+    "audio": {
+      "isolated": "audio/wl-electromenager-grillepain.mp3"
+    }
   },
   {
     "id": "wl-electromenager-lavevaisselle",
@@ -264,7 +282,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["electromenager", "cuisine"],
-    "caseIds": ["wc-electromenager"]
+    "caseIds": ["wc-electromenager"],
+    "audio": {
+      "isolated": "audio/wl-electromenager-lavevaisselle.mp3"
+    }
   },
   {
     "id": "wl-electromenager-ventilateur",
@@ -302,6 +323,9 @@
     "frequencyRank": 800,
     "level": "A2",
     "tags": ["electromenager", "objet"],
-    "caseIds": ["wc-electromenager"]
+    "caseIds": ["wc-electromenager"],
+    "audio": {
+      "isolated": "audio/wl-electromenager-ventilateur.mp3"
+    }
   }
 ]

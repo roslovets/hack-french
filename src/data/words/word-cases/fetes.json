@@ -223,7 +223,8 @@
         "audioText": "fêter",
         "options": ["fêter", "jeter", "prêter", "acheter"],
         "correctIndex": 0,
-        "explanation": "Все оканчиваются на -ter и похожи на слух, но это разные глаголы: fêter /fe.te/ (праздновать), jeter /ʒə.te/ (бросать), prêter /pʁɛ.te/ (давать взаймы), acheter /aʃ.te/ (покупать). Нужное — fêter."
+        "explanation": "Все оканчиваются на -ter и похожи на слух, но это разные глаголы: fêter /fe.te/ (праздновать), jeter /ʒə.te/ (бросать), prêter /pʁɛ.te/ (давать взаймы), acheter /aʃ.te/ (покупать). Нужное — fêter.",
+        "audioSrc": "audio/wl-fetes-feter.mp3"
       },
       {
         "id": "wc-fetes-feter-hint",
@@ -293,7 +294,8 @@
         "audioText": "danser",
         "options": ["danser", "penser", "passer", "lancer"],
         "correctIndex": 0,
-        "explanation": "Похожие по звучанию, но разные глаголы: danser /dɑ̃.se/ (танцевать), penser /pɑ̃.se/ (думать), passer /pa.se/ (проходить), lancer /lɑ̃.se/ (бросать, запускать). Нужное — danser; различай носовой /ɑ̃/ и начальный согласный."
+        "explanation": "Похожие по звучанию, но разные глаголы: danser /dɑ̃.se/ (танцевать), penser /pɑ̃.se/ (думать), passer /pa.se/ (проходить), lancer /lɑ̃.se/ (бросать, запускать). Нужное — danser; различай носовой /ɑ̃/ и начальный согласный.",
+        "audioSrc": "audio/wl-fetes-danser.mp3"
       },
       {
         "id": "wc-fetes-noel-mnemo",

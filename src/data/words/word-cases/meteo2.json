@@ -213,7 +213,8 @@
         "audioText": "tonnerre",
         "options": ["tonneau", "tonnerre", "tondre", "tanière"],
         "correctIndex": 1,
-        "explanation": "tonnerre /tɔ.nɛʁ/ — гром. Похоже звучат tonneau /tɔ.no/ (бочка), tondre /tɔ̃dʁ/ (стричь), tanière /ta.njɛʁ/ (логово) — но это другие слова."
+        "explanation": "tonnerre /tɔ.nɛʁ/ — гром. Похоже звучат tonneau /tɔ.no/ (бочка), tondre /tɔ̃dʁ/ (стричь), tanière /ta.njɛʁ/ (логово) — но это другие слова.",
+        "audioSrc": "audio/wl-meteo2-tonnerre.mp3"
       },
       {
         "id": "wc-meteo2-gel-ctx",

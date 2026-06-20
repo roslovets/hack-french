@@ -39,7 +39,10 @@
     "frequencyRank": 360,
     "level": "A2",
     "tags": ["documents", "bureau"],
-    "caseIds": ["wc-documents"]
+    "caseIds": ["wc-documents"],
+    "audio": {
+      "isolated": "audio/wl-documents-papier.mp3"
+    }
   },
   {
     "id": "wl-documents-document",
@@ -81,7 +84,10 @@
     "frequencyRank": 420,
     "level": "A2",
     "tags": ["documents", "bureau"],
-    "caseIds": ["wc-documents"]
+    "caseIds": ["wc-documents"],
+    "audio": {
+      "isolated": "audio/wl-documents-document.mp3"
+    }
   },
   {
     "id": "wl-documents-dossier",
@@ -123,7 +129,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["documents", "bureau"],
-    "caseIds": ["wc-documents"]
+    "caseIds": ["wc-documents"],
+    "audio": {
+      "isolated": "audio/wl-documents-dossier.mp3"
+    }
   },
   {
     "id": "wl-documents-agenda",
@@ -165,7 +174,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["documents", "bureau", "temps"],
-    "caseIds": ["wc-documents"]
+    "caseIds": ["wc-documents"],
+    "audio": {
+      "isolated": "audio/wl-documents-agenda.mp3"
+    }
   },
   {
     "id": "wl-documents-imprimante",
@@ -207,7 +219,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["documents", "bureau", "objet"],
-    "caseIds": ["wc-documents"]
+    "caseIds": ["wc-documents"],
+    "audio": {
+      "isolated": "audio/wl-documents-imprimante.mp3"
+    }
   },
   {
     "id": "wl-documents-tache",
@@ -249,7 +264,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["documents", "bureau", "travail"],
-    "caseIds": ["wc-documents"]
+    "caseIds": ["wc-documents"],
+    "audio": {
+      "isolated": "audio/wl-documents-tache.mp3"
+    }
   },
   {
     "id": "wl-documents-rendezvous",
@@ -291,7 +309,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["documents", "bureau", "temps"],
-    "caseIds": ["wc-documents"]
+    "caseIds": ["wc-documents"],
+    "audio": {
+      "isolated": "audio/wl-documents-rendezvous.mp3"
+    }
   },
   {
     "id": "wl-documents-signature",
@@ -333,6 +354,9 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["documents", "bureau"],
-    "caseIds": ["wc-documents"]
+    "caseIds": ["wc-documents"],
+    "audio": {
+      "isolated": "audio/wl-documents-signature.mp3"
+    }
   }
 ]

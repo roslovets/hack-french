@@ -212,7 +212,8 @@
         "audioText": "salut",
         "options": ["salut", "salade", "salon", "samedi"],
         "correctIndex": 0,
-        "explanation": "salut /sa.ly/ — «привет». Похожие на слух, но другие слова: salade (салат), salon (гостиная), samedi (суббота). Конечная t в salut не звучит."
+        "explanation": "salut /sa.ly/ — «привет». Похожие на слух, но другие слова: salade (салат), salon (гостиная), samedi (суббота). Конечная t в salut не звучит.",
+        "audioSrc": "audio/wl-salutations-salut.mp3"
       },
       {
         "id": "wc-salutations-enchante-ctx",

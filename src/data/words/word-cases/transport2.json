@@ -41,7 +41,8 @@
         "audioText": "métro",
         "options": ["métro", "mètre", "métier", "menthe"],
         "correctIndex": 0,
-        "explanation": "Прозвучало métro /me.tʁo/ — метро. Похожие, но другие слова: mètre /mɛtʁ/ (метр), métier /me.tje/ (профессия), menthe /mɑ̃t/ (мята). Слушай гласные и концовку -о."
+        "explanation": "Прозвучало métro /me.tʁo/ — метро. Похожие, но другие слова: mètre /mɛtʁ/ (метр), métier /me.tje/ (профессия), menthe /mɑ̃t/ (мята). Слушай гласные и концовку -о.",
+        "audioSrc": "audio/wl-transport2-metro.mp3"
       },
       {
         "id": "wc-transport2-tram-ctx",
@@ -96,7 +97,8 @@
         "audioText": "taxi",
         "options": ["taxi", "taxe", "maxi", "saxo"],
         "correctIndex": 0,
-        "explanation": "Прозвучало taxi /tak.si/ — такси. Похожие, но другие слова: taxe /taks/ (налог, сбор), maxi /mak.si/ (макси, очень большой), saxo /sak.so/ (саксофон, разг.). Слушай начало t- и две гласные."
+        "explanation": "Прозвучало taxi /tak.si/ — такси. Похожие, но другие слова: taxe /taks/ (налог, сбор), maxi /mak.si/ (макси, очень большой), saxo /sak.so/ (саксофон, разг.). Слушай начало t- и две гласные.",
+        "audioSrc": "audio/wl-transport2-taxi.mp3"
       },
       {
         "id": "wc-transport2-camion-ctx",

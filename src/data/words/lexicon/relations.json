@@ -40,7 +40,10 @@
     "frequencyRank": 150,
     "level": "A2",
     "tags": ["relations", "amitie"],
-    "caseIds": ["wc-relations"]
+    "caseIds": ["wc-relations"],
+    "audio": {
+      "isolated": "audio/wl-relations-ami.mp3"
+    }
   },
   {
     "id": "wl-relations-copain",
@@ -83,7 +86,10 @@
     "frequencyRank": 380,
     "level": "A2",
     "tags": ["relations", "amitie"],
-    "caseIds": ["wc-relations"]
+    "caseIds": ["wc-relations"],
+    "audio": {
+      "isolated": "audio/wl-relations-copain.mp3"
+    }
   },
   {
     "id": "wl-relations-amour",
@@ -125,7 +131,10 @@
     "frequencyRank": 200,
     "level": "A2",
     "tags": ["relations", "sentiments"],
-    "caseIds": ["wc-relations"]
+    "caseIds": ["wc-relations"],
+    "audio": {
+      "isolated": "audio/wl-relations-amour.mp3"
+    }
   },
   {
     "id": "wl-relations-couple",
@@ -167,7 +176,10 @@
     "frequencyRank": 350,
     "level": "A2",
     "tags": ["relations", "couple"],
-    "caseIds": ["wc-relations"]
+    "caseIds": ["wc-relations"],
+    "audio": {
+      "isolated": "audio/wl-relations-couple.mp3"
+    }
   },
   {
     "id": "wl-relations-dispute",
@@ -209,7 +221,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["relations", "conflit"],
-    "caseIds": ["wc-relations"]
+    "caseIds": ["wc-relations"],
+    "audio": {
+      "isolated": "audio/wl-relations-dispute.mp3"
+    }
   },
   {
     "id": "wl-relations-bisou",
@@ -251,7 +266,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["relations", "tendresse"],
-    "caseIds": ["wc-relations"]
+    "caseIds": ["wc-relations"],
+    "audio": {
+      "isolated": "audio/wl-relations-bisou.mp3"
+    }
   },
   {
     "id": "wl-relations-calin",
@@ -293,7 +311,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["relations", "tendresse"],
-    "caseIds": ["wc-relations"]
+    "caseIds": ["wc-relations"],
+    "audio": {
+      "isolated": "audio/wl-relations-calin.mp3"
+    }
   },
   {
     "id": "wl-relations-seul",
@@ -335,6 +356,9 @@
     "frequencyRank": 250,
     "level": "A2",
     "tags": ["relations", "solitude"],
-    "caseIds": ["wc-relations"]
+    "caseIds": ["wc-relations"],
+    "audio": {
+      "isolated": "audio/wl-relations-seul.mp3"
+    }
   }
 ]

@@ -222,7 +222,8 @@
         "audioText": "faim",
         "options": ["faim", "femme", "feu", "ferme"],
         "correctIndex": 0,
-        "explanation": "faim /fɛ̃/ — голод. Слушай носовой /ɛ̃/. Другие слова звучат иначе: femme /fam/ — женщина, feu /fø/ — огонь, ferme /fɛʁm/ — ферма."
+        "explanation": "faim /fɛ̃/ — голод. Слушай носовой /ɛ̃/. Другие слова звучат иначе: femme /fam/ — женщина, feu /fø/ — огонь, ferme /fɛʁm/ — ферма.",
+        "audioSrc": "audio/wl-atable-faim.mp3"
       },
       {
         "id": "wc-atable-soif-ctx",

@@ -69,7 +69,8 @@
         "audioText": "tomate",
         "options": ["tomate", "tomette", "pommade", "tornade"],
         "correctIndex": 0,
-        "explanation": "Звучит /tɔ.mat/ — это tomate (помидор). Похоже звучат, но это другие слова: tomette /tɔ.mɛt/ (плитка), pommade /pɔ.mad/ (мазь), tornade /tɔʁ.nad/ (торнадо)."
+        "explanation": "Звучит /tɔ.mat/ — это tomate (помидор). Похоже звучат, но это другие слова: tomette /tɔ.mɛt/ (плитка), pommade /pɔ.mad/ (мазь), tornade /tɔʁ.nad/ (торнадо).",
+        "audioSrc": "audio/wl-legumes-tomate.mp3"
       },
       {
         "id": "wc-legumes-oignon-ctx",

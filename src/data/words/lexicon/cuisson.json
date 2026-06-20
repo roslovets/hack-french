@@ -38,7 +38,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["cuisson", "verbe-action"],
-    "caseIds": ["wc-cuisson"]
+    "caseIds": ["wc-cuisson"],
+    "audio": {
+      "isolated": "audio/wl-cuisson-cuisiner.mp3"
+    }
   },
   {
     "id": "wl-cuisson-couper",
@@ -79,7 +82,10 @@
     "frequencyRank": 430,
     "level": "A2",
     "tags": ["cuisson", "verbe-action"],
-    "caseIds": ["wc-cuisson"]
+    "caseIds": ["wc-cuisson"],
+    "audio": {
+      "isolated": "audio/wl-cuisson-couper.mp3"
+    }
   },
   {
     "id": "wl-cuisson-gouter",
@@ -120,7 +126,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["cuisson", "perception"],
-    "caseIds": ["wc-cuisson"]
+    "caseIds": ["wc-cuisson"],
+    "audio": {
+      "isolated": "audio/wl-cuisson-gouter.mp3"
+    }
   },
   {
     "id": "wl-cuisson-preparer",
@@ -161,7 +170,10 @@
     "frequencyRank": 300,
     "level": "A2",
     "tags": ["cuisson", "verbe-action"],
-    "caseIds": ["wc-cuisson"]
+    "caseIds": ["wc-cuisson"],
+    "audio": {
+      "isolated": "audio/wl-cuisson-preparer.mp3"
+    }
   },
   {
     "id": "wl-cuisson-servir",
@@ -202,7 +214,10 @@
     "frequencyRank": 340,
     "level": "A2",
     "tags": ["cuisson", "verbe-action"],
-    "caseIds": ["wc-cuisson"]
+    "caseIds": ["wc-cuisson"],
+    "audio": {
+      "isolated": "audio/wl-cuisson-servir.mp3"
+    }
   },
   {
     "id": "wl-cuisson-verser",
@@ -243,7 +258,10 @@
     "frequencyRank": 680,
     "level": "A2",
     "tags": ["cuisson", "verbe-action"],
-    "caseIds": ["wc-cuisson"]
+    "caseIds": ["wc-cuisson"],
+    "audio": {
+      "isolated": "audio/wl-cuisson-verser.mp3"
+    }
   },
   {
     "id": "wl-cuisson-melanger",
@@ -284,7 +302,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["cuisson", "verbe-action"],
-    "caseIds": ["wc-cuisson"]
+    "caseIds": ["wc-cuisson"],
+    "audio": {
+      "isolated": "audio/wl-cuisson-melanger.mp3"
+    }
   },
   {
     "id": "wl-cuisson-chauffer",
@@ -325,6 +346,9 @@
     "frequencyRank": 660,
     "level": "A2",
     "tags": ["cuisson", "verbe-action"],
-    "caseIds": ["wc-cuisson"]
+    "caseIds": ["wc-cuisson"],
+    "audio": {
+      "isolated": "audio/wl-cuisson-chauffer.mp3"
+    }
   }
 ]

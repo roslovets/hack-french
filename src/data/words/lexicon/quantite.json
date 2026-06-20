@@ -38,7 +38,10 @@
     "frequencyRank": 120,
     "level": "A2",
     "tags": ["quantite", "degre"],
-    "caseIds": ["wc-quantite"]
+    "caseIds": ["wc-quantite"],
+    "audio": {
+      "isolated": "audio/wl-quantite-beaucoup.mp3"
+    }
   },
   {
     "id": "wl-quantite-peu",
@@ -79,7 +82,10 @@
     "frequencyRank": 180,
     "level": "A2",
     "tags": ["quantite", "degre"],
-    "caseIds": ["wc-quantite"]
+    "caseIds": ["wc-quantite"],
+    "audio": {
+      "isolated": "audio/wl-quantite-peu.mp3"
+    }
   },
   {
     "id": "wl-quantite-assez",
@@ -120,7 +126,10 @@
     "frequencyRank": 300,
     "level": "A2",
     "tags": ["quantite", "degre"],
-    "caseIds": ["wc-quantite"]
+    "caseIds": ["wc-quantite"],
+    "audio": {
+      "isolated": "audio/wl-quantite-assez.mp3"
+    }
   },
   {
     "id": "wl-quantite-trop",
@@ -161,7 +170,10 @@
     "frequencyRank": 250,
     "level": "A2",
     "tags": ["quantite", "degre"],
-    "caseIds": ["wc-quantite"]
+    "caseIds": ["wc-quantite"],
+    "audio": {
+      "isolated": "audio/wl-quantite-trop.mp3"
+    }
   },
   {
     "id": "wl-quantite-plusieurs",
@@ -202,7 +214,10 @@
     "frequencyRank": 340,
     "level": "A2",
     "tags": ["quantite", "nombre"],
-    "caseIds": ["wc-quantite"]
+    "caseIds": ["wc-quantite"],
+    "audio": {
+      "isolated": "audio/wl-quantite-plusieurs.mp3"
+    }
   },
   {
     "id": "wl-quantite-quelques",
@@ -243,7 +258,10 @@
     "frequencyRank": 320,
     "level": "A2",
     "tags": ["quantite", "nombre"],
-    "caseIds": ["wc-quantite"]
+    "caseIds": ["wc-quantite"],
+    "audio": {
+      "isolated": "audio/wl-quantite-quelques.mp3"
+    }
   },
   {
     "id": "wl-quantite-tout",
@@ -284,7 +302,10 @@
     "frequencyRank": 90,
     "level": "A2",
     "tags": ["quantite", "totalite"],
-    "caseIds": ["wc-quantite"]
+    "caseIds": ["wc-quantite"],
+    "audio": {
+      "isolated": "audio/wl-quantite-tout.mp3"
+    }
   },
   {
     "id": "wl-quantite-rien",
@@ -325,6 +346,9 @@
     "frequencyRank": 140,
     "level": "A2",
     "tags": ["quantite", "negation"],
-    "caseIds": ["wc-quantite"]
+    "caseIds": ["wc-quantite"],
+    "audio": {
+      "isolated": "audio/wl-quantite-rien.mp3"
+    }
   }
 ]

@@ -225,7 +225,8 @@
         "audioText": "but",
         "options": ["but", "bus", "bout", "bouc"],
         "correctIndex": 0,
-        "explanation": "Прозвучало but /byt/ (цель/гол). Похожие, но другие: bus /bys/ (автобус), bout /bu/ (кончик), bouc /buk/ (козёл). Главное — гласный /y/ в but против /u/ в bout/bouc."
+        "explanation": "Прозвучало but /byt/ (цель/гол). Похожие, но другие: bus /bys/ (автобус), bout /bu/ (кончик), bouc /buk/ (козёл). Главное — гласный /y/ в but против /u/ в bout/bouc.",
+        "audioSrc": "audio/wl-idees-but.mp3"
       },
       {
         "id": "wc-idees-but-mnemo",
@@ -298,7 +299,8 @@
         "audioText": "choix",
         "options": ["choix", "chaud", "chez", "joie"],
         "correctIndex": 0,
-        "explanation": "Прозвучало choix /ʃwa/ (выбор). Похожие, но другие: chaud /ʃo/ (горячий), chez /ʃe/ (у), joie /ʒwa/ (радость). У choix начало /ʃ/ и звук /wa/, как в «уа»."
+        "explanation": "Прозвучало choix /ʃwa/ (выбор). Похожие, но другие: chaud /ʃo/ (горячий), chez /ʃe/ (у), joie /ʒwa/ (радость). У choix начало /ʃ/ и звук /wa/, как в «уа».",
+        "audioSrc": "audio/wl-idees-choix.mp3"
       }
     ]
   }

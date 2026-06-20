@@ -39,7 +39,10 @@
     "frequencyRank": 320,
     "level": "A2",
     "tags": ["etudes", "ecole"],
-    "caseIds": ["wc-etudes"]
+    "caseIds": ["wc-etudes"],
+    "audio": {
+      "isolated": "audio/wl-etudes-cours.mp3"
+    }
   },
   {
     "id": "wl-etudes-examen",
@@ -81,7 +84,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["etudes", "ecole"],
-    "caseIds": ["wc-etudes"]
+    "caseIds": ["wc-etudes"],
+    "audio": {
+      "isolated": "audio/wl-etudes-examen.mp3"
+    }
   },
   {
     "id": "wl-etudes-cahier",
@@ -119,7 +125,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["etudes", "objet"],
-    "caseIds": ["wc-etudes"]
+    "caseIds": ["wc-etudes"],
+    "audio": {
+      "isolated": "audio/wl-etudes-cahier.mp3"
+    }
   },
   {
     "id": "wl-etudes-stylo",
@@ -157,7 +166,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["etudes", "objet"],
-    "caseIds": ["wc-etudes"]
+    "caseIds": ["wc-etudes"],
+    "audio": {
+      "isolated": "audio/wl-etudes-stylo.mp3"
+    }
   },
   {
     "id": "wl-etudes-crayon",
@@ -195,7 +207,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["etudes", "objet"],
-    "caseIds": ["wc-etudes"]
+    "caseIds": ["wc-etudes"],
+    "audio": {
+      "isolated": "audio/wl-etudes-crayon.mp3"
+    }
   },
   {
     "id": "wl-etudes-lecon",
@@ -233,7 +248,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["etudes", "ecole"],
-    "caseIds": ["wc-etudes"]
+    "caseIds": ["wc-etudes"],
+    "audio": {
+      "isolated": "audio/wl-etudes-lecon.mp3"
+    }
   },
   {
     "id": "wl-etudes-exercice",
@@ -271,7 +289,10 @@
     "frequencyRank": 580,
     "level": "A2",
     "tags": ["etudes", "ecole"],
-    "caseIds": ["wc-etudes"]
+    "caseIds": ["wc-etudes"],
+    "audio": {
+      "isolated": "audio/wl-etudes-exercice.mp3"
+    }
   },
   {
     "id": "wl-etudes-dictionnaire",
@@ -309,6 +330,9 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["etudes", "objet"],
-    "caseIds": ["wc-etudes"]
+    "caseIds": ["wc-etudes"],
+    "audio": {
+      "isolated": "audio/wl-etudes-dictionnaire.mp3"
+    }
   }
 ]

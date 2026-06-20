@@ -90,7 +90,8 @@
         "audioText": "copain",
         "options": ["lapin", "sapin", "copain", "copine"],
         "correctIndex": 2,
-        "explanation": "copain звучит /kɔ.pɛ̃/ — с носовым «эн» на конце. Похожие реальные слова другие: lapin «кролик» (/la.pɛ̃/), sapin «ёлка» (/sa.pɛ̃/), copine «подруга» (/kɔ.pin/ — с обычным «ин», без носового)."
+        "explanation": "copain звучит /kɔ.pɛ̃/ — с носовым «эн» на конце. Похожие реальные слова другие: lapin «кролик» (/la.pɛ̃/), sapin «ёлка» (/sa.pɛ̃/), copine «подруга» (/kɔ.pin/ — с обычным «ин», без носового).",
+        "audioSrc": "audio/wl-relations-copain.mp3"
       },
       {
         "id": "wc-relations-amour-ctx",
@@ -296,7 +297,8 @@
         "audioText": "seul",
         "options": ["sel", "sol", "ciel", "seul"],
         "correctIndex": 3,
-        "explanation": "seul звучит /sœl/ — с округлым «ё». Похожие реальные слова другие: sel «соль» (/sɛl/), sol «пол/почва» (/sɔl/), ciel «небо» (/sjɛl/). У всех гласный другой."
+        "explanation": "seul звучит /sœl/ — с округлым «ё». Похожие реальные слова другие: sel «соль» (/sɛl/), sol «пол/почва» (/sɔl/), ciel «небо» (/sjɛl/). У всех гласный другой.",
+        "audioSrc": "audio/wl-relations-seul.mp3"
       },
       {
         "id": "wc-relations-seul-hint",

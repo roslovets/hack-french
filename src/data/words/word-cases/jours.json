@@ -74,7 +74,8 @@
         "audioText": "mardi",
         "options": ["mardi", "mercredi", "midi", "mari"],
         "correctIndex": 0,
-        "explanation": "Прозвучало mardi /maʁ.di/ (вторник). mercredi /mɛʁ.kʁə.di/ — среда, midi /mi.di/ — полдень, mari /ma.ʁi/ — муж. Похоже по звучанию, но значения разные."
+        "explanation": "Прозвучало mardi /maʁ.di/ (вторник). mercredi /mɛʁ.kʁə.di/ — среда, midi /mi.di/ — полдень, mari /ma.ʁi/ — муж. Похоже по звучанию, но значения разные.",
+        "audioSrc": "audio/wl-jours-mardi.mp3"
       },
       {
         "id": "wc-jours-mercredi-ctx",
@@ -102,7 +103,8 @@
         "audioText": "mercredi",
         "options": ["mercredi", "mardi", "vendredi", "merci"],
         "correctIndex": 0,
-        "explanation": "Прозвучало mercredi /mɛʁ.kʁə.di/ (среда). mardi — вторник, vendredi — пятница, merci /mɛʁ.si/ — спасибо. Начало mer- общее, но дальше слова расходятся."
+        "explanation": "Прозвучало mercredi /mɛʁ.kʁə.di/ (среда). mardi — вторник, vendredi — пятница, merci /mɛʁ.si/ — спасибо. Начало mer- общее, но дальше слова расходятся.",
+        "audioSrc": "audio/wl-jours-mercredi.mp3"
       },
       {
         "id": "wc-jours-jeudi-ctx",
@@ -130,7 +132,8 @@
         "audioText": "jeudi",
         "options": ["jeudi", "jeu", "jeune", "deux"],
         "correctIndex": 0,
-        "explanation": "Прозвучало jeudi /ʒø.di/ (четверг). jeu /ʒø/ — игра, jeune /ʒœn/ — молодой, deux /dø/ — два. Все близки по гласному, но это разные слова."
+        "explanation": "Прозвучало jeudi /ʒø.di/ (четверг). jeu /ʒø/ — игра, jeune /ʒœn/ — молодой, deux /dø/ — два. Все близки по гласному, но это разные слова.",
+        "audioSrc": "audio/wl-jours-jeudi.mp3"
       },
       {
         "id": "wc-jours-vendredi-ctx",

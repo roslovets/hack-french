@@ -102,7 +102,8 @@
         "audioText": "sel",
         "options": ["ciel", "seul", "elle", "sel"],
         "correctIndex": 3,
-        "explanation": "sel /sɛl/ — соль. Похоже звучат, но это другие слова: ciel /sjɛl/ — небо, seul /sœl/ — один (единственный), elle /ɛl/ — она."
+        "explanation": "sel /sɛl/ — соль. Похоже звучат, но это другие слова: ciel /sjɛl/ — небо, seul /sœl/ — один (единственный), elle /ɛl/ — она.",
+        "audioSrc": "audio/wl-aliments-sel.mp3"
       },
       {
         "id": "wc-aliments-poivre-ctx",
@@ -219,7 +220,8 @@
         "audioText": "riz",
         "options": ["rue", "roue", "riz", "rat"],
         "correctIndex": 2,
-        "explanation": "riz /ʁi/ — рис. Похожие односложные слова: rue /ʁy/ — улица, roue /ʁu/ — колесо, rat /ʁa/ — крыса. Все начинаются на «р», но гласный разный — слушай его."
+        "explanation": "riz /ʁi/ — рис. Похожие односложные слова: rue /ʁy/ — улица, roue /ʁu/ — колесо, rat /ʁa/ — крыса. Все начинаются на «р», но гласный разный — слушай его.",
+        "audioSrc": "audio/wl-aliments-riz.mp3"
       },
       {
         "id": "wc-aliments-pates-ctx",
@@ -279,7 +281,8 @@
         "audioText": "huile",
         "options": ["ville", "fille", "île", "huile"],
         "correctIndex": 3,
-        "explanation": "huile /ɥil/ — масло. Похоже звучат: ville /vil/ — город, fille /fij/ — девочка/дочь, île /il/ — остров. Начало /ɥi/ у huile особенное — слушай его."
+        "explanation": "huile /ɥil/ — масло. Похоже звучат: ville /vil/ — город, fille /fij/ — девочка/дочь, île /il/ — остров. Начало /ɥi/ у huile особенное — слушай его.",
+        "audioSrc": "audio/wl-aliments-huile.mp3"
       },
       {
         "id": "wc-aliments-huile-bridge",

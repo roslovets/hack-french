@@ -262,7 +262,8 @@
         "audioText": "vrai",
         "options": ["vrai", "vert", "frais", "vais"],
         "correctIndex": 0,
-        "explanation": "Прозвучало vrai /vʁɛ/ — правда/настоящий. Похожие, но другие слова: vert /vɛʁ/ — зелёный, frais /fʁɛ/ — свежий, vais /vɛ/ — (je) vais «иду»."
+        "explanation": "Прозвучало vrai /vʁɛ/ — правда/настоящий. Похожие, но другие слова: vert /vɛʁ/ — зелёный, frais /fʁɛ/ — свежий, vais /vɛ/ — (je) vais «иду».",
+        "audioSrc": "audio/wl-opinions-vrai.mp3"
       },
       {
         "id": "wc-opinions-faux-ctx",

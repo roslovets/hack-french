@@ -31,7 +31,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["vetements3", "pieds", "accessoire"],
-    "caseIds": ["wc-vetements3"]
+    "caseIds": ["wc-vetements3"],
+    "audio": {
+      "isolated": "audio/wl-vetements3-bottes.mp3"
+    }
   },
   {
     "id": "wl-vetements3-sandales",
@@ -65,7 +68,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["vetements3", "pieds", "ete"],
-    "caseIds": ["wc-vetements3"]
+    "caseIds": ["wc-vetements3"],
+    "audio": {
+      "isolated": "audio/wl-vetements3-sandales.mp3"
+    }
   },
   {
     "id": "wl-vetements3-cravate",
@@ -99,7 +105,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["vetements3", "accessoire", "formel"],
-    "caseIds": ["wc-vetements3"]
+    "caseIds": ["wc-vetements3"],
+    "audio": {
+      "isolated": "audio/wl-vetements3-cravate.mp3"
+    }
   },
   {
     "id": "wl-vetements3-costume",
@@ -133,7 +142,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["vetements3", "formel"],
-    "caseIds": ["wc-vetements3"]
+    "caseIds": ["wc-vetements3"],
+    "audio": {
+      "isolated": "audio/wl-vetements3-costume.mp3"
+    }
   },
   {
     "id": "wl-vetements3-casquette",
@@ -167,7 +179,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["vetements3", "tete", "accessoire"],
-    "caseIds": ["wc-vetements3"]
+    "caseIds": ["wc-vetements3"],
+    "audio": {
+      "isolated": "audio/wl-vetements3-casquette.mp3"
+    }
   },
   {
     "id": "wl-vetements3-bijou",
@@ -201,7 +216,10 @@
     "frequencyRank": 690,
     "level": "A2",
     "tags": ["vetements3", "accessoire", "luxe"],
-    "caseIds": ["wc-vetements3"]
+    "caseIds": ["wc-vetements3"],
+    "audio": {
+      "isolated": "audio/wl-vetements3-bijou.mp3"
+    }
   },
   {
     "id": "wl-vetements3-foulard",
@@ -235,7 +253,10 @@
     "frequencyRank": 800,
     "level": "A2",
     "tags": ["vetements3", "accessoire", "cou"],
-    "caseIds": ["wc-vetements3"]
+    "caseIds": ["wc-vetements3"],
+    "audio": {
+      "isolated": "audio/wl-vetements3-foulard.mp3"
+    }
   },
   {
     "id": "wl-vetements3-maillot",
@@ -269,6 +290,9 @@
     "frequencyRank": 750,
     "level": "A2",
     "tags": ["vetements3", "sport", "plage"],
-    "caseIds": ["wc-vetements3"]
+    "caseIds": ["wc-vetements3"],
+    "audio": {
+      "isolated": "audio/wl-vetements3-maillot.mp3"
+    }
   }
 ]

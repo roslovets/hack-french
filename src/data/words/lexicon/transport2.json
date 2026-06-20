@@ -39,7 +39,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["transport2", "ville"],
-    "caseIds": ["wc-transport2"]
+    "caseIds": ["wc-transport2"],
+    "audio": {
+      "isolated": "audio/wl-transport2-metro.mp3"
+    }
   },
   {
     "id": "wl-transport2-tram",
@@ -81,7 +84,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["transport2", "ville"],
-    "caseIds": ["wc-transport2"]
+    "caseIds": ["wc-transport2"],
+    "audio": {
+      "isolated": "audio/wl-transport2-tram.mp3"
+    }
   },
   {
     "id": "wl-transport2-taxi",
@@ -123,7 +129,10 @@
     "frequencyRank": 460,
     "level": "A2",
     "tags": ["transport2", "ville"],
-    "caseIds": ["wc-transport2"]
+    "caseIds": ["wc-transport2"],
+    "audio": {
+      "isolated": "audio/wl-transport2-taxi.mp3"
+    }
   },
   {
     "id": "wl-transport2-camion",
@@ -165,7 +174,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["transport2", "route"],
-    "caseIds": ["wc-transport2"]
+    "caseIds": ["wc-transport2"],
+    "audio": {
+      "isolated": "audio/wl-transport2-camion.mp3"
+    }
   },
   {
     "id": "wl-transport2-moto",
@@ -207,7 +219,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["transport2", "route"],
-    "caseIds": ["wc-transport2"]
+    "caseIds": ["wc-transport2"],
+    "audio": {
+      "isolated": "audio/wl-transport2-moto.mp3"
+    }
   },
   {
     "id": "wl-transport2-bateau",
@@ -249,7 +264,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["transport2", "voyage"],
-    "caseIds": ["wc-transport2"]
+    "caseIds": ["wc-transport2"],
+    "audio": {
+      "isolated": "audio/wl-transport2-bateau.mp3"
+    }
   },
   {
     "id": "wl-transport2-scooter",
@@ -287,7 +305,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["transport2", "route"],
-    "caseIds": ["wc-transport2"]
+    "caseIds": ["wc-transport2"],
+    "audio": {
+      "isolated": "audio/wl-transport2-scooter.mp3"
+    }
   },
   {
     "id": "wl-transport2-conducteur",
@@ -330,6 +351,9 @@
     "frequencyRank": 580,
     "level": "A2",
     "tags": ["transport2", "route"],
-    "caseIds": ["wc-transport2"]
+    "caseIds": ["wc-transport2"],
+    "audio": {
+      "isolated": "audio/wl-transport2-conducteur.mp3"
+    }
   }
 ]

@@ -39,7 +39,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["meteo2", "nature"],
-    "caseIds": ["wc-meteo2"]
+    "caseIds": ["wc-meteo2"],
+    "audio": {
+      "isolated": "audio/wl-meteo2-orage.mp3"
+    }
   },
   {
     "id": "wl-meteo2-brouillard",
@@ -81,7 +84,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["meteo2", "nature"],
-    "caseIds": ["wc-meteo2"]
+    "caseIds": ["wc-meteo2"],
+    "audio": {
+      "isolated": "audio/wl-meteo2-brouillard.mp3"
+    }
   },
   {
     "id": "wl-meteo2-tempete",
@@ -123,7 +129,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["meteo2", "nature"],
-    "caseIds": ["wc-meteo2"]
+    "caseIds": ["wc-meteo2"],
+    "audio": {
+      "isolated": "audio/wl-meteo2-tempete.mp3"
+    }
   },
   {
     "id": "wl-meteo2-eclair",
@@ -165,7 +174,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["meteo2", "nature"],
-    "caseIds": ["wc-meteo2"]
+    "caseIds": ["wc-meteo2"],
+    "audio": {
+      "isolated": "audio/wl-meteo2-eclair.mp3"
+    }
   },
   {
     "id": "wl-meteo2-tonnerre",
@@ -207,7 +219,10 @@
     "frequencyRank": 780,
     "level": "A2",
     "tags": ["meteo2", "nature"],
-    "caseIds": ["wc-meteo2"]
+    "caseIds": ["wc-meteo2"],
+    "audio": {
+      "isolated": "audio/wl-meteo2-tonnerre.mp3"
+    }
   },
   {
     "id": "wl-meteo2-gel",
@@ -249,7 +264,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["meteo2", "temperature"],
-    "caseIds": ["wc-meteo2"]
+    "caseIds": ["wc-meteo2"],
+    "audio": {
+      "isolated": "audio/wl-meteo2-gel.mp3"
+    }
   },
   {
     "id": "wl-meteo2-glace",
@@ -291,7 +309,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["meteo2", "temperature"],
-    "caseIds": ["wc-meteo2"]
+    "caseIds": ["wc-meteo2"],
+    "audio": {
+      "isolated": "audio/wl-meteo2-glace.mp3"
+    }
   },
   {
     "id": "wl-meteo2-humide",
@@ -332,6 +353,9 @@
     "frequencyRank": 880,
     "level": "A2",
     "tags": ["meteo2", "temperature"],
-    "caseIds": ["wc-meteo2"]
+    "caseIds": ["wc-meteo2"],
+    "audio": {
+      "isolated": "audio/wl-meteo2-humide.mp3"
+    }
   }
 ]

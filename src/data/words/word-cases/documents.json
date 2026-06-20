@@ -319,7 +319,8 @@
         "audioText": "tâche",
         "options": ["tâche", "tasse", "touche", "tas"],
         "correctIndex": 0,
-        "explanation": "Прозвучало tâche /taʃ/ — задача. «tasse» /tas/ — чашка, «touche» /tuʃ/ — клавиша, «tas» /ta/ — куча. Это разные слова: слушай согласные. (Пятно — tache — звучит так же, как tâche, поэтому его здесь нет.)"
+        "explanation": "Прозвучало tâche /taʃ/ — задача. «tasse» /tas/ — чашка, «touche» /tuʃ/ — клавиша, «tas» /ta/ — куча. Это разные слова: слушай согласные. (Пятно — tache — звучит так же, как tâche, поэтому его здесь нет.)",
+        "audioSrc": "audio/wl-documents-tache.mp3"
       }
     ]
   }

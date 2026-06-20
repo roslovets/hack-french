@@ -194,7 +194,8 @@
         "audioText": "caisse",
         "options": ["caisse", "casse", "cesse", "caisson"],
         "correctIndex": 0,
-        "explanation": "caisse /kɛs/ — касса/ящик. Похожи по звучанию, но это разные слова: casse /kas/ (поломка), cesse /sɛs/ (от cesser — переставать), caisson /kɛ.sɔ̃/ (короб, кессон)."
+        "explanation": "caisse /kɛs/ — касса/ящик. Похожи по звучанию, но это разные слова: casse /kas/ (поломка), cesse /sɛs/ (от cesser — переставать), caisson /kɛ.sɔ̃/ (короб, кессон).",
+        "audioSrc": "audio/wl-magasins-caisse.mp3"
       },
       {
         "id": "wc-magasins-rayon-ctx",
@@ -222,7 +223,8 @@
         "audioText": "rayon",
         "options": ["rayon", "crayon", "rayonne", "raison"],
         "correctIndex": 0,
-        "explanation": "rayon /ʁɛ.jɔ̃/ — отдел / полка / луч. Похожи, но другие: crayon /kʁɛ.jɔ̃/ (карандаш), rayonne /ʁɛ.jɔn/ (вискоза), raison /ʁɛ.zɔ̃/ (причина, правота)."
+        "explanation": "rayon /ʁɛ.jɔ̃/ — отдел / полка / луч. Похожи, но другие: crayon /kʁɛ.jɔ̃/ (карандаш), rayonne /ʁɛ.jɔn/ (вискоза), raison /ʁɛ.zɔ̃/ (причина, правота).",
+        "audioSrc": "audio/wl-magasins-rayon.mp3"
       },
       {
         "id": "wc-magasins-panier-ctx",

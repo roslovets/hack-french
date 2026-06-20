@@ -39,7 +39,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["opinions", "communication"],
-    "caseIds": ["wc-opinions"]
+    "caseIds": ["wc-opinions"],
+    "audio": {
+      "isolated": "audio/wl-opinions-avis.mp3"
+    }
   },
   {
     "id": "wl-opinions-raison",
@@ -81,7 +84,10 @@
     "frequencyRank": 320,
     "level": "A2",
     "tags": ["opinions", "communication"],
-    "caseIds": ["wc-opinions"]
+    "caseIds": ["wc-opinions"],
+    "audio": {
+      "isolated": "audio/wl-opinions-raison.mp3"
+    }
   },
   {
     "id": "wl-opinions-tort",
@@ -123,7 +129,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["opinions", "communication"],
-    "caseIds": ["wc-opinions"]
+    "caseIds": ["wc-opinions"],
+    "audio": {
+      "isolated": "audio/wl-opinions-tort.mp3"
+    }
   },
   {
     "id": "wl-opinions-accord",
@@ -165,7 +174,10 @@
     "frequencyRank": 280,
     "level": "A2",
     "tags": ["opinions", "communication"],
-    "caseIds": ["wc-opinions"]
+    "caseIds": ["wc-opinions"],
+    "audio": {
+      "isolated": "audio/wl-opinions-accord.mp3"
+    }
   },
   {
     "id": "wl-opinions-peutetre",
@@ -202,7 +214,10 @@
     "frequencyRank": 260,
     "level": "A2",
     "tags": ["opinions", "modalite"],
-    "caseIds": ["wc-opinions"]
+    "caseIds": ["wc-opinions"],
+    "audio": {
+      "isolated": "audio/wl-opinions-peutetre.mp3"
+    }
   },
   {
     "id": "wl-opinions-biensur",
@@ -239,7 +254,10 @@
     "frequencyRank": 300,
     "level": "A2",
     "tags": ["opinions", "modalite"],
-    "caseIds": ["wc-opinions"]
+    "caseIds": ["wc-opinions"],
+    "audio": {
+      "isolated": "audio/wl-opinions-biensur.mp3"
+    }
   },
   {
     "id": "wl-opinions-vrai",
@@ -280,7 +298,10 @@
     "frequencyRank": 340,
     "level": "A2",
     "tags": ["opinions", "verite"],
-    "caseIds": ["wc-opinions"]
+    "caseIds": ["wc-opinions"],
+    "audio": {
+      "isolated": "audio/wl-opinions-vrai.mp3"
+    }
   },
   {
     "id": "wl-opinions-faux",
@@ -322,6 +343,9 @@
     "frequencyRank": 420,
     "level": "A2",
     "tags": ["opinions", "verite"],
-    "caseIds": ["wc-opinions"]
+    "caseIds": ["wc-opinions"],
+    "audio": {
+      "isolated": "audio/wl-opinions-faux.mp3"
+    }
   }
 ]

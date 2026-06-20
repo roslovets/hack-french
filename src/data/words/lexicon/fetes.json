@@ -39,7 +39,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["fetes", "calendrier"],
-    "caseIds": ["wc-fetes"]
+    "caseIds": ["wc-fetes"],
+    "audio": {
+      "isolated": "audio/wl-fetes-noel.mp3"
+    }
   },
   {
     "id": "wl-fetes-anniversaire",
@@ -81,7 +84,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["fetes", "calendrier"],
-    "caseIds": ["wc-fetes"]
+    "caseIds": ["wc-fetes"],
+    "audio": {
+      "isolated": "audio/wl-fetes-anniversaire.mp3"
+    }
   },
   {
     "id": "wl-fetes-mariage",
@@ -123,7 +129,10 @@
     "frequencyRank": 580,
     "level": "A2",
     "tags": ["fetes", "famille"],
-    "caseIds": ["wc-fetes"]
+    "caseIds": ["wc-fetes"],
+    "audio": {
+      "isolated": "audio/wl-fetes-mariage.mp3"
+    }
   },
   {
     "id": "wl-fetes-paques",
@@ -165,7 +174,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["fetes", "calendrier"],
-    "caseIds": ["wc-fetes"]
+    "caseIds": ["wc-fetes"],
+    "audio": {
+      "isolated": "audio/wl-fetes-paques.mp3"
+    }
   },
   {
     "id": "wl-fetes-invite",
@@ -208,7 +220,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["fetes", "social"],
-    "caseIds": ["wc-fetes"]
+    "caseIds": ["wc-fetes"],
+    "audio": {
+      "isolated": "audio/wl-fetes-invite.mp3"
+    }
   },
   {
     "id": "wl-fetes-feter",
@@ -249,7 +264,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["fetes", "verbe"],
-    "caseIds": ["wc-fetes"]
+    "caseIds": ["wc-fetes"],
+    "audio": {
+      "isolated": "audio/wl-fetes-feter.mp3"
+    }
   },
   {
     "id": "wl-fetes-bougie",
@@ -291,7 +309,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["fetes", "objet"],
-    "caseIds": ["wc-fetes"]
+    "caseIds": ["wc-fetes"],
+    "audio": {
+      "isolated": "audio/wl-fetes-bougie.mp3"
+    }
   },
   {
     "id": "wl-fetes-danser",
@@ -332,6 +353,9 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["fetes", "verbe"],
-    "caseIds": ["wc-fetes"]
+    "caseIds": ["wc-fetes"],
+    "audio": {
+      "isolated": "audio/wl-fetes-danser.mp3"
+    }
   }
 ]

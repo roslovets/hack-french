@@ -39,7 +39,10 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["caractere", "trait-negatif"],
-    "caseIds": ["wc-caractere"]
+    "caseIds": ["wc-caractere"],
+    "audio": {
+      "isolated": "audio/wl-caractere-mechant.mp3"
+    }
   },
   {
     "id": "wl-caractere-timide",
@@ -80,7 +83,10 @@
     "frequencyRank": 610,
     "level": "A2",
     "tags": ["caractere", "trait"],
-    "caseIds": ["wc-caractere"]
+    "caseIds": ["wc-caractere"],
+    "audio": {
+      "isolated": "audio/wl-caractere-timide.mp3"
+    }
   },
   {
     "id": "wl-caractere-drole",
@@ -121,7 +127,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["caractere", "trait"],
-    "caseIds": ["wc-caractere"]
+    "caseIds": ["wc-caractere"],
+    "audio": {
+      "isolated": "audio/wl-caractere-drole.mp3"
+    }
   },
   {
     "id": "wl-caractere-serieux",
@@ -163,7 +172,10 @@
     "frequencyRank": 430,
     "level": "A2",
     "tags": ["caractere", "trait"],
-    "caseIds": ["wc-caractere"]
+    "caseIds": ["wc-caractere"],
+    "audio": {
+      "isolated": "audio/wl-caractere-serieux.mp3"
+    }
   },
   {
     "id": "wl-caractere-calme",
@@ -204,7 +216,10 @@
     "frequencyRank": 390,
     "level": "A2",
     "tags": ["caractere", "trait"],
-    "caseIds": ["wc-caractere"]
+    "caseIds": ["wc-caractere"],
+    "audio": {
+      "isolated": "audio/wl-caractere-calme.mp3"
+    }
   },
   {
     "id": "wl-caractere-courageux",
@@ -246,7 +261,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["caractere", "trait"],
-    "caseIds": ["wc-caractere"]
+    "caseIds": ["wc-caractere"],
+    "audio": {
+      "isolated": "audio/wl-caractere-courageux.mp3"
+    }
   },
   {
     "id": "wl-caractere-paresseux",
@@ -288,7 +306,10 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["caractere", "trait-negatif"],
-    "caseIds": ["wc-caractere"]
+    "caseIds": ["wc-caractere"],
+    "audio": {
+      "isolated": "audio/wl-caractere-paresseux.mp3"
+    }
   },
   {
     "id": "wl-caractere-poli",
@@ -330,6 +351,9 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["caractere", "trait"],
-    "caseIds": ["wc-caractere"]
+    "caseIds": ["wc-caractere"],
+    "audio": {
+      "isolated": "audio/wl-caractere-poli.mp3"
+    }
   }
 ]

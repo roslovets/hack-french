@@ -39,7 +39,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["magasins", "commerce", "alimentation"],
-    "caseIds": ["wc-magasins"]
+    "caseIds": ["wc-magasins"],
+    "audio": {
+      "isolated": "audio/wl-magasins-epicerie.mp3"
+    }
   },
   {
     "id": "wl-magasins-librairie",
@@ -77,7 +80,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["magasins", "commerce", "culture"],
-    "caseIds": ["wc-magasins"]
+    "caseIds": ["wc-magasins"],
+    "audio": {
+      "isolated": "audio/wl-magasins-librairie.mp3"
+    }
   },
   {
     "id": "wl-magasins-kiosque",
@@ -115,7 +121,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["magasins", "commerce", "ville"],
-    "caseIds": ["wc-magasins"]
+    "caseIds": ["wc-magasins"],
+    "audio": {
+      "isolated": "audio/wl-magasins-kiosque.mp3"
+    }
   },
   {
     "id": "wl-magasins-caisse",
@@ -157,7 +166,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["magasins", "commerce", "paiement"],
-    "caseIds": ["wc-magasins"]
+    "caseIds": ["wc-magasins"],
+    "audio": {
+      "isolated": "audio/wl-magasins-caisse.mp3"
+    }
   },
   {
     "id": "wl-magasins-rayon",
@@ -199,7 +211,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["magasins", "commerce", "organisation"],
-    "caseIds": ["wc-magasins"]
+    "caseIds": ["wc-magasins"],
+    "audio": {
+      "isolated": "audio/wl-magasins-rayon.mp3"
+    }
   },
   {
     "id": "wl-magasins-panier",
@@ -241,7 +256,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["magasins", "commerce", "objet"],
-    "caseIds": ["wc-magasins"]
+    "caseIds": ["wc-magasins"],
+    "audio": {
+      "isolated": "audio/wl-magasins-panier.mp3"
+    }
   },
   {
     "id": "wl-magasins-vitrine",
@@ -279,7 +297,10 @@
     "frequencyRank": 660,
     "level": "A2",
     "tags": ["magasins", "commerce", "objet"],
-    "caseIds": ["wc-magasins"]
+    "caseIds": ["wc-magasins"],
+    "audio": {
+      "isolated": "audio/wl-magasins-vitrine.mp3"
+    }
   },
   {
     "id": "wl-magasins-etiquette",
@@ -321,6 +342,9 @@
     "frequencyRank": 680,
     "level": "A2",
     "tags": ["magasins", "commerce", "objet"],
-    "caseIds": ["wc-magasins"]
+    "caseIds": ["wc-magasins"],
+    "audio": {
+      "isolated": "audio/wl-magasins-etiquette.mp3"
+    }
   }
 ]

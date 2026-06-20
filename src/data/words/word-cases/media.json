@@ -137,7 +137,8 @@
         "audioText": "presse",
         "options": ["presse", "prête", "pression", "prêtre"],
         "correctIndex": 0,
-        "explanation": "Прозвучало presse /pʁɛs/ — пресса. Похожи, но другие: prête (готова) /pʁɛt/, pression (давление) /pʁɛ.sjɔ̃/, prêtre (священник) /pʁɛtʁ/."
+        "explanation": "Прозвучало presse /pʁɛs/ — пресса. Похожи, но другие: prête (готова) /pʁɛt/, pression (давление) /pʁɛ.sjɔ̃/, prêtre (священник) /pʁɛtʁ/.",
+        "audioSrc": "audio/wl-media-presse.mp3"
       },
       {
         "id": "wc-media-publicite-ctx",
@@ -230,7 +231,8 @@
         "audioText": "chaîne",
         "options": ["chaîne", "scène", "saine", "Seine"],
         "correctIndex": 0,
-        "explanation": "Прозвучало chaîne /ʃɛn/ — канал/цепочка (звук /ʃ/). Похожи по концу, но с другим началом: scène /sɛn/ (сцена), saine /sɛn/ (здоровая), Seine /sɛn/ (Сена)."
+        "explanation": "Прозвучало chaîne /ʃɛn/ — канал/цепочка (звук /ʃ/). Похожи по концу, но с другим началом: scène /sɛn/ (сцена), saine /sɛn/ (здоровая), Seine /sɛn/ (Сена).",
+        "audioSrc": "audio/wl-media-chaine.mp3"
       },
       {
         "id": "wc-media-info-ctx",

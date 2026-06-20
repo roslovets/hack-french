@@ -39,7 +39,10 @@
     "frequencyRank": 30,
     "level": "A1",
     "tags": ["nombres", "cardinal"],
-    "caseIds": ["wc-nombres"]
+    "caseIds": ["wc-nombres"],
+    "audio": {
+      "isolated": "audio/wl-nombres-un.mp3"
+    }
   },
   {
     "id": "wl-nombres-deux",
@@ -80,7 +83,10 @@
     "frequencyRank": 70,
     "level": "A1",
     "tags": ["nombres", "cardinal"],
-    "caseIds": ["wc-nombres"]
+    "caseIds": ["wc-nombres"],
+    "audio": {
+      "isolated": "audio/wl-nombres-deux.mp3"
+    }
   },
   {
     "id": "wl-nombres-trois",
@@ -121,7 +127,10 @@
     "frequencyRank": 110,
     "level": "A1",
     "tags": ["nombres", "cardinal"],
-    "caseIds": ["wc-nombres"]
+    "caseIds": ["wc-nombres"],
+    "audio": {
+      "isolated": "audio/wl-nombres-trois.mp3"
+    }
   },
   {
     "id": "wl-nombres-cinq",
@@ -162,7 +171,10 @@
     "frequencyRank": 130,
     "level": "A1",
     "tags": ["nombres", "cardinal"],
-    "caseIds": ["wc-nombres"]
+    "caseIds": ["wc-nombres"],
+    "audio": {
+      "isolated": "audio/wl-nombres-cinq.mp3"
+    }
   },
   {
     "id": "wl-nombres-dix",
@@ -203,7 +215,10 @@
     "frequencyRank": 120,
     "level": "A1",
     "tags": ["nombres", "cardinal"],
-    "caseIds": ["wc-nombres"]
+    "caseIds": ["wc-nombres"],
+    "audio": {
+      "isolated": "audio/wl-nombres-dix.mp3"
+    }
   },
   {
     "id": "wl-nombres-vingt",
@@ -244,7 +259,10 @@
     "frequencyRank": 160,
     "level": "A1",
     "tags": ["nombres", "cardinal"],
-    "caseIds": ["wc-nombres"]
+    "caseIds": ["wc-nombres"],
+    "audio": {
+      "isolated": "audio/wl-nombres-vingt.mp3"
+    }
   },
   {
     "id": "wl-nombres-cent",
@@ -285,7 +303,10 @@
     "frequencyRank": 230,
     "level": "A1",
     "tags": ["nombres", "cardinal"],
-    "caseIds": ["wc-nombres"]
+    "caseIds": ["wc-nombres"],
+    "audio": {
+      "isolated": "audio/wl-nombres-cent.mp3"
+    }
   },
   {
     "id": "wl-nombres-mille",
@@ -326,6 +347,9 @@
     "frequencyRank": 250,
     "level": "A1",
     "tags": ["nombres", "cardinal"],
-    "caseIds": ["wc-nombres"]
+    "caseIds": ["wc-nombres"],
+    "audio": {
+      "isolated": "audio/wl-nombres-mille.mp3"
+    }
   }
 ]

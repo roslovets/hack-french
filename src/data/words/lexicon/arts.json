@@ -39,7 +39,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["arts", "musique"],
-    "caseIds": ["wc-arts"]
+    "caseIds": ["wc-arts"],
+    "audio": {
+      "isolated": "audio/wl-arts-chanson.mp3"
+    }
   },
   {
     "id": "wl-arts-chanter",
@@ -80,7 +83,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["arts", "musique"],
-    "caseIds": ["wc-arts"]
+    "caseIds": ["wc-arts"],
+    "audio": {
+      "isolated": "audio/wl-arts-chanter.mp3"
+    }
   },
   {
     "id": "wl-arts-peinture",
@@ -122,7 +128,10 @@
     "frequencyRank": 740,
     "level": "A2",
     "tags": ["arts", "peinture"],
-    "caseIds": ["wc-arts"]
+    "caseIds": ["wc-arts"],
+    "audio": {
+      "isolated": "audio/wl-arts-peinture.mp3"
+    }
   },
   {
     "id": "wl-arts-theatre",
@@ -164,7 +173,10 @@
     "frequencyRank": 660,
     "level": "A2",
     "tags": ["arts", "spectacle"],
-    "caseIds": ["wc-arts"]
+    "caseIds": ["wc-arts"],
+    "audio": {
+      "isolated": "audio/wl-arts-theatre.mp3"
+    }
   },
   {
     "id": "wl-arts-concert",
@@ -206,7 +218,10 @@
     "frequencyRank": 680,
     "level": "A2",
     "tags": ["arts", "musique"],
-    "caseIds": ["wc-arts"]
+    "caseIds": ["wc-arts"],
+    "audio": {
+      "isolated": "audio/wl-arts-concert.mp3"
+    }
   },
   {
     "id": "wl-arts-instrument",
@@ -248,7 +263,10 @@
     "frequencyRank": 820,
     "level": "A2",
     "tags": ["arts", "musique"],
-    "caseIds": ["wc-arts"]
+    "caseIds": ["wc-arts"],
+    "audio": {
+      "isolated": "audio/wl-arts-instrument.mp3"
+    }
   },
   {
     "id": "wl-arts-danse",
@@ -290,7 +308,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["arts", "spectacle"],
-    "caseIds": ["wc-arts"]
+    "caseIds": ["wc-arts"],
+    "audio": {
+      "isolated": "audio/wl-arts-danse.mp3"
+    }
   },
   {
     "id": "wl-arts-spectacle",
@@ -332,6 +353,9 @@
     "frequencyRank": 760,
     "level": "A2",
     "tags": ["arts", "spectacle"],
-    "caseIds": ["wc-arts"]
+    "caseIds": ["wc-arts"],
+    "audio": {
+      "isolated": "audio/wl-arts-spectacle.mp3"
+    }
   }
 ]

@@ -261,7 +261,8 @@
         "audioText": "là",
         "options": ["là", "lit", "loup", "lac"],
         "correctIndex": 0,
-        "explanation": "Прозвучало «là» /la/ — «там». Похожие по началу, но другие слова: «lit» /li/ (кровать), «loup» /lu/ (волк), «lac» /lak/ (озеро). Все на l-, но гласный (и конец) другие."
+        "explanation": "Прозвучало «là» /la/ — «там». Похожие по началу, но другие слова: «lit» /li/ (кровать), «loup» /lu/ (волк), «lac» /lak/ (озеро). Все на l-, но гласный (и конец) другие.",
+        "audioSrc": "audio/wl-directions-la.mp3"
       },
       {
         "id": "wc-directions-loin-ctx",
@@ -289,7 +290,8 @@
         "audioText": "loin",
         "options": ["loin", "long", "lien", "loup"],
         "correctIndex": 0,
-        "explanation": "Прозвучало «loin» /lwɛ̃/ — «далеко». Похожие, но другие: «long» /lɔ̃/ (длинный), «lien» /ljɛ̃/ (связь), «loup» /lu/ (волк). Разный носовой звук."
+        "explanation": "Прозвучало «loin» /lwɛ̃/ — «далеко». Похожие, но другие: «long» /lɔ̃/ (длинный), «lien» /ljɛ̃/ (связь), «loup» /lu/ (волк). Разный носовой звук.",
+        "audioSrc": "audio/wl-directions-loin.mp3"
       },
       {
         "id": "wc-directions-loin-hint",

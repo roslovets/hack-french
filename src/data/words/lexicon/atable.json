@@ -39,7 +39,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["atable", "repas"],
-    "caseIds": ["wc-atable"]
+    "caseIds": ["wc-atable"],
+    "audio": {
+      "isolated": "audio/wl-atable-petitdej.mp3"
+    }
   },
   {
     "id": "wl-atable-dejeuner",
@@ -81,7 +84,10 @@
     "frequencyRank": 580,
     "level": "A2",
     "tags": ["atable", "repas"],
-    "caseIds": ["wc-atable"]
+    "caseIds": ["wc-atable"],
+    "audio": {
+      "isolated": "audio/wl-atable-dejeuner.mp3"
+    }
   },
   {
     "id": "wl-atable-diner",
@@ -123,7 +129,10 @@
     "frequencyRank": 600,
     "level": "A2",
     "tags": ["atable", "repas"],
-    "caseIds": ["wc-atable"]
+    "caseIds": ["wc-atable"],
+    "audio": {
+      "isolated": "audio/wl-atable-diner.mp3"
+    }
   },
   {
     "id": "wl-atable-aperitif",
@@ -165,7 +174,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["atable", "boisson"],
-    "caseIds": ["wc-atable"]
+    "caseIds": ["wc-atable"],
+    "audio": {
+      "isolated": "audio/wl-atable-aperitif.mp3"
+    }
   },
   {
     "id": "wl-atable-recette",
@@ -207,7 +219,10 @@
     "frequencyRank": 690,
     "level": "A2",
     "tags": ["atable", "cuisine"],
-    "caseIds": ["wc-atable"]
+    "caseIds": ["wc-atable"],
+    "audio": {
+      "isolated": "audio/wl-atable-recette.mp3"
+    }
   },
   {
     "id": "wl-atable-faim",
@@ -249,7 +264,10 @@
     "frequencyRank": 430,
     "level": "A2",
     "tags": ["atable", "sensation"],
-    "caseIds": ["wc-atable"]
+    "caseIds": ["wc-atable"],
+    "audio": {
+      "isolated": "audio/wl-atable-faim.mp3"
+    }
   },
   {
     "id": "wl-atable-soif",
@@ -291,7 +309,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["atable", "sensation"],
-    "caseIds": ["wc-atable"]
+    "caseIds": ["wc-atable"],
+    "audio": {
+      "isolated": "audio/wl-atable-soif.mp3"
+    }
   },
   {
     "id": "wl-atable-regime",
@@ -333,6 +354,9 @@
     "frequencyRank": 660,
     "level": "A2",
     "tags": ["atable", "cuisine"],
-    "caseIds": ["wc-atable"]
+    "caseIds": ["wc-atable"],
+    "audio": {
+      "isolated": "audio/wl-atable-regime.mp3"
+    }
   }
 ]

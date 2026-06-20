@@ -40,7 +40,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["matieres", "ecole", "etude"],
-    "caseIds": ["wc-matieres"]
+    "caseIds": ["wc-matieres"],
+    "audio": {
+      "isolated": "audio/wl-matieres-maths.mp3"
+    }
   },
   {
     "id": "wl-matieres-histoire",
@@ -82,7 +85,10 @@
     "frequencyRank": 280,
     "level": "A2",
     "tags": ["matieres", "ecole", "recit"],
-    "caseIds": ["wc-matieres"]
+    "caseIds": ["wc-matieres"],
+    "audio": {
+      "isolated": "audio/wl-matieres-histoire.mp3"
+    }
   },
   {
     "id": "wl-matieres-geographie",
@@ -117,7 +123,10 @@
     "frequencyRank": 700,
     "level": "A2",
     "tags": ["matieres", "ecole", "etude"],
-    "caseIds": ["wc-matieres"]
+    "caseIds": ["wc-matieres"],
+    "audio": {
+      "isolated": "audio/wl-matieres-geographie.mp3"
+    }
   },
   {
     "id": "wl-matieres-sciences",
@@ -160,7 +169,10 @@
     "frequencyRank": 400,
     "level": "A2",
     "tags": ["matieres", "ecole", "etude"],
-    "caseIds": ["wc-matieres"]
+    "caseIds": ["wc-matieres"],
+    "audio": {
+      "isolated": "audio/wl-matieres-sciences.mp3"
+    }
   },
   {
     "id": "wl-matieres-langue",
@@ -202,7 +214,10 @@
     "frequencyRank": 240,
     "level": "A2",
     "tags": ["matieres", "ecole", "corps"],
-    "caseIds": ["wc-matieres"]
+    "caseIds": ["wc-matieres"],
+    "audio": {
+      "isolated": "audio/wl-matieres-langue.mp3"
+    }
   },
   {
     "id": "wl-matieres-dessin",
@@ -244,7 +259,10 @@
     "frequencyRank": 650,
     "level": "A2",
     "tags": ["matieres", "ecole", "art"],
-    "caseIds": ["wc-matieres"]
+    "caseIds": ["wc-matieres"],
+    "audio": {
+      "isolated": "audio/wl-matieres-dessin.mp3"
+    }
   },
   {
     "id": "wl-matieres-biologie",
@@ -279,7 +297,10 @@
     "frequencyRank": 720,
     "level": "A2",
     "tags": ["matieres", "ecole", "etude"],
-    "caseIds": ["wc-matieres"]
+    "caseIds": ["wc-matieres"],
+    "audio": {
+      "isolated": "audio/wl-matieres-biologie.mp3"
+    }
   },
   {
     "id": "wl-matieres-chimie",
@@ -318,6 +339,9 @@
     "frequencyRank": 730,
     "level": "A2",
     "tags": ["matieres", "ecole", "etude"],
-    "caseIds": ["wc-matieres"]
+    "caseIds": ["wc-matieres"],
+    "audio": {
+      "isolated": "audio/wl-matieres-chimie.mp3"
+    }
   }
 ]

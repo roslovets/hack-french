@@ -38,7 +38,10 @@
     "frequencyRank": 640,
     "level": "A2",
     "tags": ["sentiments", "negatif"],
-    "caseIds": ["wc-sentiments"]
+    "caseIds": ["wc-sentiments"],
+    "audio": {
+      "isolated": "audio/wl-sentiments-detester.mp3"
+    }
   },
   {
     "id": "wl-sentiments-preferer",
@@ -79,7 +82,10 @@
     "frequencyRank": 470,
     "level": "A2",
     "tags": ["sentiments", "choix"],
-    "caseIds": ["wc-sentiments"]
+    "caseIds": ["wc-sentiments"],
+    "audio": {
+      "isolated": "audio/wl-sentiments-preferer.mp3"
+    }
   },
   {
     "id": "wl-sentiments-esperer",
@@ -120,7 +126,10 @@
     "frequencyRank": 390,
     "level": "A2",
     "tags": ["sentiments", "futur"],
-    "caseIds": ["wc-sentiments"]
+    "caseIds": ["wc-sentiments"],
+    "audio": {
+      "isolated": "audio/wl-sentiments-esperer.mp3"
+    }
   },
   {
     "id": "wl-sentiments-rever",
@@ -161,7 +170,10 @@
     "frequencyRank": 560,
     "level": "A2",
     "tags": ["sentiments", "imagination"],
-    "caseIds": ["wc-sentiments"]
+    "caseIds": ["wc-sentiments"],
+    "audio": {
+      "isolated": "audio/wl-sentiments-rever.mp3"
+    }
   },
   {
     "id": "wl-sentiments-regretter",
@@ -202,7 +214,10 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["sentiments", "negatif"],
-    "caseIds": ["wc-sentiments"]
+    "caseIds": ["wc-sentiments"],
+    "audio": {
+      "isolated": "audio/wl-sentiments-regretter.mp3"
+    }
   },
   {
     "id": "wl-sentiments-sourire",
@@ -243,7 +258,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["sentiments", "positif"],
-    "caseIds": ["wc-sentiments"]
+    "caseIds": ["wc-sentiments"],
+    "audio": {
+      "isolated": "audio/wl-sentiments-sourire.mp3"
+    }
   },
   {
     "id": "wl-sentiments-pleurer",
@@ -284,7 +302,10 @@
     "frequencyRank": 580,
     "level": "A2",
     "tags": ["sentiments", "negatif"],
-    "caseIds": ["wc-sentiments"]
+    "caseIds": ["wc-sentiments"],
+    "audio": {
+      "isolated": "audio/wl-sentiments-pleurer.mp3"
+    }
   },
   {
     "id": "wl-sentiments-rire",
@@ -325,6 +346,9 @@
     "frequencyRank": 450,
     "level": "A2",
     "tags": ["sentiments", "positif"],
-    "caseIds": ["wc-sentiments"]
+    "caseIds": ["wc-sentiments"],
+    "audio": {
+      "isolated": "audio/wl-sentiments-rire.mp3"
+    }
   }
 ]

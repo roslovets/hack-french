@@ -39,7 +39,10 @@
     "frequencyRank": 220,
     "level": "A2",
     "tags": ["duree", "temps", "moment"],
-    "caseIds": ["wc-duree"]
+    "caseIds": ["wc-duree"],
+    "audio": {
+      "isolated": "audio/wl-duree-moment.mp3"
+    }
   },
   {
     "id": "wl-duree-instant",
@@ -81,7 +84,10 @@
     "frequencyRank": 480,
     "level": "A2",
     "tags": ["duree", "temps", "moment"],
-    "caseIds": ["wc-duree"]
+    "caseIds": ["wc-duree"],
+    "audio": {
+      "isolated": "audio/wl-duree-instant.mp3"
+    }
   },
   {
     "id": "wl-duree-fois",
@@ -123,7 +129,10 @@
     "frequencyRank": 160,
     "level": "A2",
     "tags": ["duree", "temps", "frequence"],
-    "caseIds": ["wc-duree"]
+    "caseIds": ["wc-duree"],
+    "audio": {
+      "isolated": "audio/wl-duree-fois.mp3"
+    }
   },
   {
     "id": "wl-duree-duree",
@@ -165,7 +174,10 @@
     "frequencyRank": 620,
     "level": "A2",
     "tags": ["duree", "temps"],
-    "caseIds": ["wc-duree"]
+    "caseIds": ["wc-duree"],
+    "audio": {
+      "isolated": "audio/wl-duree-duree.mp3"
+    }
   },
   {
     "id": "wl-duree-epoque",
@@ -207,7 +219,10 @@
     "frequencyRank": 520,
     "level": "A2",
     "tags": ["duree", "temps", "histoire"],
-    "caseIds": ["wc-duree"]
+    "caseIds": ["wc-duree"],
+    "audio": {
+      "isolated": "audio/wl-duree-epoque.mp3"
+    }
   },
   {
     "id": "wl-duree-futur",
@@ -249,7 +264,10 @@
     "frequencyRank": 430,
     "level": "A2",
     "tags": ["duree", "temps", "futur"],
-    "caseIds": ["wc-duree"]
+    "caseIds": ["wc-duree"],
+    "audio": {
+      "isolated": "audio/wl-duree-futur.mp3"
+    }
   },
   {
     "id": "wl-duree-passe",
@@ -291,7 +309,10 @@
     "frequencyRank": 340,
     "level": "A2",
     "tags": ["duree", "temps", "passe"],
-    "caseIds": ["wc-duree"]
+    "caseIds": ["wc-duree"],
+    "audio": {
+      "isolated": "audio/wl-duree-passe.mp3"
+    }
   },
   {
     "id": "wl-duree-avenir",
@@ -333,6 +354,9 @@
     "frequencyRank": 540,
     "level": "A2",
     "tags": ["duree", "temps", "futur"],
-    "caseIds": ["wc-duree"]
+    "caseIds": ["wc-duree"],
+    "audio": {
+      "isolated": "audio/wl-duree-avenir.mp3"
+    }
   }
 ]

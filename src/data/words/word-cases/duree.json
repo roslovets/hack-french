@@ -129,7 +129,8 @@
         "audioText": "fois",
         "options": ["fois", "mois", "roi", "loi"],
         "correctIndex": 0,
-        "explanation": "Прозвучало fois /fwa/ (раз). mois /mwa/ — месяц, roi /ʁwa/ — король, loi /lwa/ — закон. Похожи по звучанию, но это разные слова."
+        "explanation": "Прозвучало fois /fwa/ (раз). mois /mwa/ — месяц, roi /ʁwa/ — король, loi /lwa/ — закон. Похожи по звучанию, но это разные слова.",
+        "audioSrc": "audio/wl-duree-fois.mp3"
       },
       {
         "id": "wc-duree-duree-ctx",
@@ -250,7 +251,8 @@
         "audioText": "passé",
         "options": ["passé", "posé", "pensée", "percé"],
         "correctIndex": 0,
-        "explanation": "Прозвучало passé /pa.se/ (прошлое). posé /po.ze/ — спокойный / поставленный, pensée /pɑ̃.se/ — мысль, percé /pɛʁ.se/ — пробитый. Похоже, но это разные слова."
+        "explanation": "Прозвучало passé /pa.se/ (прошлое). posé /po.ze/ — спокойный / поставленный, pensée /pɑ̃.se/ — мысль, percé /pɛʁ.se/ — пробитый. Похоже, но это разные слова.",
+        "audioSrc": "audio/wl-duree-passe.mp3"
       },
       {
         "id": "wc-duree-avenir-ctx",
