@@ -1,0 +1,241 @@
+[
+  {
+    "id": "wl-mer-thon",
+    "lemma": "thon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/tɔ̃/",
+    "translationsRu": ["тунец"],
+    "translationsEn": ["tuna"],
+    "semanticCore": "Тунец — крупная морская рыба; чаще всего встречается как консервы или в салате/сэндвиче. Мужской род: le thon. Группа th читается как простое /t/.",
+    "collocations": [
+      { "fr": "une boîte de thon", "ru": "банка тунца" },
+      { "fr": "un sandwich au thon", "ru": "сэндвич с тунцом" },
+      { "fr": "du thon en conserve", "ru": "консервированный тунец" },
+      { "fr": "une salade de thon", "ru": "салат с тунцом" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "saumon",
+        "note": "thon — тунец (плотное светлое мясо, часто из банки); saumon — лосось (розовое мясо, часто копчёный). Обе — морская рыба, но разные."
+      },
+      {
+        "with": "ton",
+        "note": "thon /tɔ̃/ и ton (твой / тон) /tɔ̃/ звучат одинаково. На письме различает th и сам смысл: le thon — рыба, ton — притяжательное «твой»."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["mer", "poisson", "aliment"],
+    "caseIds": ["wc-mer"]
+  },
+  {
+    "id": "wl-mer-saumon",
+    "lemma": "saumon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/so.mɔ̃/",
+    "translationsRu": ["лосось", "сёмга"],
+    "translationsEn": ["salmon"],
+    "semanticCore": "Лосось — морская рыба с розовым мясом; часто копчёный (saumon fumé) к праздничному столу. Мужской род: le saumon. Буквы au дают звук /o/, конечная n — носовой /ɔ̃/.",
+    "collocations": [
+      { "fr": "du saumon fumé", "ru": "копчёный лосось" },
+      { "fr": "un pavé de saumon", "ru": "стейк (кусок) лосося" },
+      { "fr": "du saumon grillé", "ru": "лосось на гриле" },
+      { "fr": "rose saumon", "ru": "лососёвый (розовый) цвет" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "salmon (англ.)",
+        "note": "Англ. «salmon» — тот же лосось, удобный мост по смыслу. Но пишется и звучит иначе: фр. saumon /somɔ̃/, через au и с носовым на конце."
+      },
+      {
+        "with": "thon",
+        "note": "saumon — лосось (розовое мясо, часто копчёный); thon — тунец (светлое мясо, часто из банки). Не путать двух главных рыб."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["mer", "poisson", "aliment"],
+    "caseIds": ["wc-mer"]
+  },
+  {
+    "id": "wl-mer-crevette",
+    "lemma": "crevette",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/kʁə.vɛt/",
+    "translationsRu": ["креветка"],
+    "translationsEn": ["shrimp", "prawn"],
+    "semanticCore": "Креветка — маленький морской рачок, которого едят варёным или жареным. Женский род: une crevette. Часто во множественном: des crevettes.",
+    "collocations": [
+      { "fr": "des crevettes grillées", "ru": "жареные креветки" },
+      { "fr": "un cocktail de crevettes", "ru": "коктейль из креветок" },
+      { "fr": "des crevettes roses", "ru": "розовые креветки" },
+      { "fr": "décortiquer une crevette", "ru": "чистить креветку" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "crabe",
+        "note": "crevette — маленькая креветка (рачок); crabe — краб (с клешнями, крупнее). Обе — fruits de mer, но это разные животные."
+      },
+      {
+        "with": "gambas",
+        "note": "crevette — креветка (любого размера); gambas — крупные креветки (по-испански), так называют большие тигровые. Gambas — это, по сути, большие crevettes."
+      }
+    ],
+    "frequencyRank": 740,
+    "level": "A2",
+    "tags": ["mer", "fruits de mer", "aliment"],
+    "caseIds": ["wc-mer"]
+  },
+  {
+    "id": "wl-mer-moule",
+    "lemma": "moule",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/mul/",
+    "translationsRu": ["мидия"],
+    "translationsEn": ["mussel"],
+    "semanticCore": "Мидия — морской моллюск в чёрной раковине; классическое блюдо moules-frites (мидии с картошкой фри). В этом значении — женский род: la moule. Почти всегда во множественном: des moules.",
+    "collocations": [
+      { "fr": "des moules frites", "ru": "мидии с картошкой фри" },
+      { "fr": "des moules marinières", "ru": "мидии в белом вине (по-моряцки)" },
+      { "fr": "une marmite de moules", "ru": "котелок мидий" },
+      { "fr": "manger des moules", "ru": "есть мидии" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "moule (le)",
+        "note": "Род меняет смысл: la moule — мидия (еда); le moule — форма для выпечки/литья (un moule à gâteau). Одно написание, разный артикль и значение."
+      },
+      {
+        "with": "huître",
+        "note": "moule — мидия (чёрная ракушка, едят варёной); huître — устрица (едят чаще сырой). Оба моллюски, но разные."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["mer", "fruits de mer", "aliment"],
+    "caseIds": ["wc-mer"]
+  },
+  {
+    "id": "wl-mer-huitre",
+    "lemma": "huître",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɥitʁ/",
+    "translationsRu": ["устрица"],
+    "translationsEn": ["oyster"],
+    "semanticCore": "Устрица — морской моллюск в шершавой раковине, которого едят живым/сырым, часто с лимоном; традиция праздничного стола. Женский род: une huître, с accent circonflexe на î.",
+    "collocations": [
+      { "fr": "une douzaine d'huîtres", "ru": "дюжина устриц" },
+      { "fr": "ouvrir des huîtres", "ru": "открывать устрицы" },
+      { "fr": "des huîtres fraîches", "ru": "свежие устрицы" },
+      { "fr": "manger des huîtres", "ru": "есть устрицы" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "moule",
+        "note": "huître — устрица (едят сырой, с лимоном); moule — мидия (едят варёной). Не путать двух моллюсков."
+      },
+      {
+        "with": "oyster (англ.)",
+        "note": "Англ. «oyster» совсем не похоже на huître — мост не работает, слово надо запомнить. Начальное h не читается, но требует l'huître (элизия)."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["mer", "fruits de mer", "aliment"],
+    "caseIds": ["wc-mer"]
+  },
+  {
+    "id": "wl-mer-homard",
+    "lemma": "homard",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɔ.maʁ/",
+    "translationsRu": ["омар", "лобстер"],
+    "translationsEn": ["lobster"],
+    "semanticCore": "Омар (лобстер) — крупный морской рак с большими клешнями; дорогое праздничное блюдо. Мужской род с придыхательным h: le homard, без элизии (не «l'homard»). Конечная d не читается.",
+    "collocations": [
+      { "fr": "un homard grillé", "ru": "омар на гриле" },
+      { "fr": "une pince de homard", "ru": "клешня омара" },
+      { "fr": "du homard à l'américaine", "ru": "омар по-американски" },
+      { "fr": "un demi-homard", "ru": "половина омара" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "h aspiré",
+        "note": "homard — с придыхательным h: говорят le homard и du homard, без элизии и связки. Сравни с l'huître (немое h). Конечная d немая: /ɔmaʁ/."
+      },
+      {
+        "with": "crabe",
+        "note": "homard — омар (большой, с мощными клешнями, дорогой); crabe — краб (меньше, шире). Оба — ракообразные, но homard крупнее и престижнее."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["mer", "fruits de mer", "aliment"],
+    "caseIds": ["wc-mer"]
+  },
+  {
+    "id": "wl-mer-ecaille",
+    "lemma": "écaille",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/e.kaj/",
+    "translationsRu": ["чешуя", "чешуйка"],
+    "translationsEn": ["scale", "shell"],
+    "semanticCore": "Чешуя — тонкие твёрдые пластинки на коже рыбы; в ед. ч. une écaille — одна чешуйка, во мн. ч. les écailles — вся чешуя. Также раковина устрицы/панцирь черепахи. Женский род. Сочетание -aille даёт звук /aj/.",
+    "collocations": [
+      { "fr": "les écailles d'un poisson", "ru": "чешуя рыбы" },
+      { "fr": "enlever les écailles", "ru": "очистить от чешуи" },
+      { "fr": "un poisson couvert d'écailles", "ru": "рыба, покрытая чешуёй" },
+      { "fr": "des lunettes en écaille", "ru": "очки в роговой оправе" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "scale (англ.)",
+        "note": "Англ. «scale» — это и чешуя, и весы, и музыкальная гамма. Фр. écaille — только чешуя/панцирь; весы — une balance, гамма — une gamme. Ложный друг: одно англ. слово, три разных французских."
+      },
+      {
+        "with": "arête",
+        "note": "écaille — чешуя (снаружи, на коже рыбы); arête — рыбья кость (внутри). При чистке рыбы убирают les écailles, при еде вынимают les arêtes."
+      }
+    ],
+    "frequencyRank": 860,
+    "level": "A2",
+    "tags": ["mer", "poisson", "anatomie"],
+    "caseIds": ["wc-mer"]
+  },
+  {
+    "id": "wl-mer-pecher",
+    "lemma": "pêcher",
+    "pos": "verb",
+    "ipa": "/pe.ʃe/",
+    "translationsRu": ["ловить рыбу", "рыбачить"],
+    "translationsEn": ["to fish"],
+    "semanticCore": "Pêcher — ловить рыбу (или другую морскую живность). Accent circonflexe на ê сохраняется во всех формах: je pêche, nous pêcherons. Существительное от него — la pêche (рыбалка).",
+    "collocations": [
+      { "fr": "pêcher du poisson", "ru": "ловить рыбу" },
+      { "fr": "aller pêcher", "ru": "идти на рыбалку" },
+      { "fr": "pêcher à la ligne", "ru": "ловить на удочку" },
+      { "fr": "pêcher des crevettes", "ru": "ловить креветок" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pécher",
+        "note": "pêcher (ê) — ловить рыбу; pécher (é) — грешить. Разные глаголы, всё решает один accent: ê (от pêche — рыбалка) против é (от péché — грех)."
+      },
+      {
+        "with": "pêche",
+        "note": "Глагол pêcher / существительное la pêche: «la pêche» — и рыбалка, и персик (омонимы). По контексту: aller à la pêche — на рыбалку; manger une pêche — съесть персик."
+      }
+    ],
+    "frequencyRank": 800,
+    "level": "A2",
+    "tags": ["mer", "verbe", "action"],
+    "caseIds": ["wc-mer"]
+  }
+]

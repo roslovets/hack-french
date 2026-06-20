@@ -1,0 +1,235 @@
+[
+  {
+    "id": "wl-organes-coeur",
+    "lemma": "cœur",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kœʁ/",
+    "translationsRu": ["сердце"],
+    "translationsEn": ["heart"],
+    "semanticCore": "Сердце как орган, который бьётся; и сердце как «средоточие» чувств и центра (au cœur de — в самом сердце чего-то).",
+    "collocations": [
+      { "fr": "par cœur", "ru": "наизусть" },
+      { "fr": "avoir le cœur brisé", "ru": "быть с разбитым сердцем" },
+      { "fr": "au cœur de la ville", "ru": "в самом сердце города" },
+      { "fr": "de tout cœur", "ru": "от всего сердца" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "avoir mal au cœur",
+        "note": "Это НЕ «болит сердце», а «тошнит». О сердечной боли скажут j'ai mal à la poitrine (или вызовут врача); avoir mal au cœur = тошнота."
+      },
+      {
+        "with": "corps",
+        "note": "cœur /kœʁ/ (сердце) и corps /kɔʁ/ (тело) звучат близко: разные гласные œ/ɔ. Сердце — часть тела, не само тело."
+      }
+    ],
+    "frequencyRank": 240,
+    "level": "B1",
+    "tags": ["organes", "anatomie"],
+    "caseIds": ["wc-organes"]
+  },
+  {
+    "id": "wl-organes-poumon",
+    "lemma": "poumon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pu.mɔ̃/",
+    "translationsRu": ["лёгкое"],
+    "translationsEn": ["lung"],
+    "semanticCore": "Лёгкое — орган дыхания; чаще во множественном (les poumons), потому что их два.",
+    "collocations": [
+      { "fr": "à pleins poumons", "ru": "во всю грудь, полной грудью" },
+      { "fr": "une infection des poumons", "ru": "инфекция лёгких" },
+      { "fr": "le cancer du poumon", "ru": "рак лёгкого" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poitrine",
+        "note": "poumon = лёгкое (орган внутри); poitrine = грудь, грудная клетка снаружи. «Болит в груди» = à la poitrine, а воспаляются les poumons."
+      },
+      {
+        "with": "souffle",
+        "note": "poumon = лёгкое (орган); souffle = дыхание, дух (être à bout de souffle — запыхаться). Дышат лёгкими, но «перехватило дыхание» — про le souffle."
+      }
+    ],
+    "frequencyRank": 620,
+    "level": "B1",
+    "tags": ["organes", "anatomie"],
+    "caseIds": ["wc-organes"]
+  },
+  {
+    "id": "wl-organes-estomac",
+    "lemma": "estomac",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɛs.tɔ.ma/",
+    "translationsRu": ["желудок"],
+    "translationsEn": ["stomach"],
+    "semanticCore": "Желудок как внутренний орган, где переваривается пища; конечная -c не читается.",
+    "collocations": [
+      { "fr": "avoir l'estomac vide", "ru": "быть с пустым желудком (голодным)" },
+      { "fr": "un estomac fragile", "ru": "слабый (чувствительный) желудок" },
+      { "fr": "avoir l'estomac noué", "ru": "желудок сжался (от волнения)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "ventre",
+        "note": "estomac = желудок (орган внутри); ventre = живот снаружи. В быту «болит живот» = mal au ventre, а estomac — когда речь именно про орган/пищеварение."
+      },
+      {
+        "with": "stomach (англ.)",
+        "note": "Похоже на англ. stomach, но пишется estomac и конечная -c немая: /ɛs.tɔ.ma/, без «-мак» на конце."
+      }
+    ],
+    "frequencyRank": 660,
+    "level": "B1",
+    "tags": ["organes", "anatomie"],
+    "caseIds": ["wc-organes"]
+  },
+  {
+    "id": "wl-organes-foie",
+    "lemma": "foie",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/fwa/",
+    "translationsRu": ["печень"],
+    "translationsEn": ["liver"],
+    "semanticCore": "Печень как орган; также печёнка как еда (foie de volaille, foie gras). Мужского рода — le foie.",
+    "collocations": [
+      { "fr": "une crise de foie", "ru": "несварение, «печёночный криз» (от переедания)" },
+      { "fr": "le foie gras", "ru": "фуа-гра (паштет из гусиной печени)" },
+      { "fr": "du foie de veau", "ru": "телячья печень (еда)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "la foi / une fois",
+        "note": "Три омофона /fwa/: le foie (печень, м.р.), la foi (вера, ж.р.), une fois (раз, ж.р.). Различаются только написанием и родом — печень всегда le foie."
+      },
+      {
+        "with": "foie / foa (англ.-like)",
+        "note": "Не пишется как звучит: /fwa/, но буквы f-o-i-e. Конечная -e немая, oi читается /wa/."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "B1",
+    "tags": ["organes", "anatomie"],
+    "caseIds": ["wc-organes"]
+  },
+  {
+    "id": "wl-organes-cerveau",
+    "lemma": "cerveau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɛʁ.vo/",
+    "translationsRu": ["мозг", "головной мозг"],
+    "translationsEn": ["brain"],
+    "semanticCore": "Головной мозг как орган мышления; в переносном — «голова», умный человек (un cerveau).",
+    "collocations": [
+      { "fr": "se triturer le cerveau", "ru": "ломать голову" },
+      { "fr": "un lavage de cerveau", "ru": "промывка мозгов" },
+      { "fr": "une tumeur au cerveau", "ru": "опухоль мозга" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cervelle",
+        "note": "cerveau = мозг как орган/ум; cervelle (f) = мозги как вещество или еда (cervelle d'agneau), а также «куриные мозги» в выражениях (une cervelle d'oiseau — пустоголовый)."
+      },
+      {
+        "with": "cerebral (англ.)",
+        "note": "Англ. корень cerebr- (cerebral) — мост к cerveau: оба про мозг. Но французское слово — cerveau /sɛʁ.vo/, c читается как /s/."
+      }
+    ],
+    "frequencyRank": 540,
+    "level": "B1",
+    "tags": ["organes", "anatomie"],
+    "caseIds": ["wc-organes"]
+  },
+  {
+    "id": "wl-organes-os",
+    "lemma": "os",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ɔs/",
+    "translationsRu": ["кость"],
+    "translationsEn": ["bone"],
+    "semanticCore": "Кость скелета; коварное произношение: un os /ɔs/ (s читается), но les os /le.z‿o/ (s немая во мн. числе).",
+    "collocations": [
+      { "fr": "se casser un os", "ru": "сломать кость" },
+      { "fr": "en chair et en os", "ru": "во плоти, собственной персоной" },
+      { "fr": "trempé jusqu'aux os", "ru": "промокший до костей" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "os (sing.) / os (plur.)",
+        "note": "un os /ɔs/ — конечная s читается; les os /le.z‿o/ — во множественном s немая. Одно и то же слово, разное чтение."
+      },
+      {
+        "with": "squelette",
+        "note": "os = (одна) кость; squelette = скелет (все кости вместе). «Сломать кость» — un os; «скелет» — le squelette."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "B1",
+    "tags": ["organes", "anatomie"],
+    "caseIds": ["wc-organes"]
+  },
+  {
+    "id": "wl-organes-muscle",
+    "lemma": "muscle",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/myskl/",
+    "translationsRu": ["мышца", "мускул"],
+    "translationsEn": ["muscle"],
+    "semanticCore": "Мышца как ткань, дающая силу и движение; le muscle — мужского рода.",
+    "collocations": [
+      { "fr": "se déchirer un muscle", "ru": "порвать (потянуть) мышцу" },
+      { "fr": "prendre du muscle", "ru": "набрать мышечную массу" },
+      { "fr": "avoir des courbatures", "ru": "мышцы болят (после нагрузки)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "muscle (англ.)",
+        "note": "Пишется как англ. muscle, но читается /myskl/: u как /y/, конечный -cle как /kl/, без «масл». Мужского рода — le muscle."
+      },
+      {
+        "with": "moule",
+        "note": "muscle /myskl/ = мышца; moule (f) = мидия, (m) = форма для выпечки. Не путать: разные слова с разным смыслом."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "B1",
+    "tags": ["organes", "anatomie"],
+    "caseIds": ["wc-organes"]
+  },
+  {
+    "id": "wl-organes-sang",
+    "lemma": "sang",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/sɑ̃/",
+    "translationsRu": ["кровь"],
+    "translationsEn": ["blood"],
+    "semanticCore": "Кровь как жидкость в теле; конечная -g немая, звучит как носовое /sɑ̃/ (омофон sans, cent).",
+    "collocations": [
+      { "fr": "une prise de sang", "ru": "забор крови, анализ крови" },
+      { "fr": "se faire du mauvais sang", "ru": "сильно переживать, изводиться" },
+      { "fr": "avoir le sang chaud", "ru": "быть вспыльчивым, горячим" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "sans / cent",
+        "note": "sang /sɑ̃/ (кровь) звучит как sans (без) и cent (сто) — полные омофоны. Различаются только написанием и смыслом; «кровь» — это s-a-n-g."
+      },
+      {
+        "with": "sanguine (англ.)",
+        "note": "Англ. корень sangu- (sanguine — кровавый, румяный) — мост к sang. Но во французском конечная -g немая: /sɑ̃/."
+      }
+    ],
+    "frequencyRank": 480,
+    "level": "B1",
+    "tags": ["organes", "anatomie"],
+    "caseIds": ["wc-organes"]
+  }
+]

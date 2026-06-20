@@ -17,7 +17,7 @@
   {
     "id": "groceries",
     "title": "Фрукты и продукты",
-    "themes": ["fruits", "legumes", "aliments", "vaisselle"],
+    "themes": ["fruits", "legumes", "aliments", "vaisselle", "mer"],
     "bossId": "wc-boss-groceries"
   },
   {
@@ -34,7 +34,8 @@
       "electromenager",
       "vetements3",
       "outils",
-      "toilette"
+      "toilette",
+      "bijoux"
     ],
     "bossId": "wc-boss-maison-vetements"
   },
@@ -52,7 +53,8 @@
       "caractere",
       "sentiments",
       "relations",
-      "bebe"
+      "bebe",
+      "organes"
     ],
     "bossId": "wc-boss-corps-famille"
   },
@@ -124,13 +126,15 @@
     "themes": [
       "meteo",
       "animaux",
+      "oiseaux",
       "saisons",
       "nature2",
       "meteo2",
       "animaux2",
       "paysage",
       "ecologie",
-      "espace"
+      "espace",
+      "insectes"
     ],
     "bossId": "wc-boss-weather"
   },

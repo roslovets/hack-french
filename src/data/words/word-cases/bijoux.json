@@ -1,0 +1,304 @@
+[
+  {
+    "id": "wc-bijoux",
+    "title": "Украшения",
+    "theme": "bijoux",
+    "level": "A2",
+    "wordIds": [
+      "wl-bijoux-bague",
+      "wl-bijoux-collier",
+      "wl-bijoux-boucle",
+      "wl-bijoux-perle",
+      "wl-bijoux-diamant",
+      "wl-bijoux-pendentif",
+      "wl-bijoux-bracelet",
+      "wl-bijoux-broche"
+    ],
+    "steps": [
+      {
+        "id": "wc-bijoux-bague-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bijoux-bague",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Elle porte une jolie bague en or.",
+          "Il a offert une bague de fiançailles à Marie.",
+          "Cette bague est trop petite pour mon doigt."
+        ],
+        "options": ["кольцо (на палец)", "браслет", "серьга", "цепочка"],
+        "correctIndex": 0,
+        "explanation": "bague (f) — кольцо, которое носят на пальце (au doigt). Браслет — un bracelet, серьга — une boucle d'oreille."
+      },
+      {
+        "id": "wc-bijoux-bague-trap",
+        "kind": "trap",
+        "wordId": "wl-bijoux-bague",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Молодожёны обмениваются кольцами в мэрии. Какое кольцо они надевают?",
+        "options": [
+          "une alliance — обручальное кольцо",
+          "une bague — любое кольцо подойдёт",
+          "un anneau — простое колечко",
+          "un collier — ожерелье"
+        ],
+        "correctIndex": 0,
+        "explanation": "Обручальное кольцо — une alliance (гладкое кольцо для свадьбы). bague — кольцо-украшение вообще; помолвочное — une bague de fiançailles. На свадьбе обмениваются именно alliances."
+      },
+      {
+        "id": "wc-bijoux-collier-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bijoux-collier",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Elle a un collier de perles autour du cou.",
+          "Ce collier en argent brille joliment.",
+          "Le chien porte un collier rouge."
+        ],
+        "options": ["ожерелье / то, что на шее", "браслет", "кольцо", "брошь"],
+        "correctIndex": 0,
+        "explanation": "collier (m) — то, что носят на шее: ожерелье у человека, ошейник у собаки (le collier du chien). От слова cou — шея. Браслет (на руке) — un bracelet."
+      },
+      {
+        "id": "wc-bijoux-collier-cmp",
+        "kind": "compare",
+        "wordId": "wl-bijoux-collier",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un collier и un pendentif. В чём разница?",
+        "phrases": ["Elle porte un collier en or.", "Elle porte un pendentif en or."],
+        "options": [
+          "collier — вся цепочка/ожерелье на шее; pendentif — только подвеска (кулон), которая на нём висит.",
+          "Это полные синонимы, разницы нет.",
+          "collier носят на руке, pendentif — на шее.",
+          "pendentif — это ожерелье, collier — кулон."
+        ],
+        "correctIndex": 0,
+        "explanation": "collier — само ожерелье/цепочка вокруг шеи. pendentif — отдельная подвеска (кулон), которая висит на цепочке. Кулон надевают на цепочку: un pendentif sur une chaîne."
+      },
+      {
+        "id": "wc-bijoux-boucle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bijoux-boucle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Слово boucle во всех трёх сценах. Что значит «boucle d'oreille»?",
+        "contexts": [
+          "Elle a mis de nouvelles boucles d'oreilles.",
+          "J'ai perdu une boucle d'oreille dans le métro.",
+          "Ces boucles d'oreilles en argent sont magnifiques."
+        ],
+        "options": ["серьга", "цепочка", "кольцо", "заколка для волос"],
+        "correctIndex": 0,
+        "explanation": "une boucle d'oreille — серьга (буквально «петелька для уха»). Чаще говорят во множественном: des boucles d'oreilles — серьги. Само слово boucle отдельно — петля или локон."
+      },
+      {
+        "id": "wc-bijoux-boucle-trap",
+        "kind": "trap",
+        "wordId": "wl-bijoux-boucle",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Подруга говорит просто «une boucle», без d'oreille. Про что речь — точно про серьгу?",
+        "options": [
+          "не обязательно: boucle само по себе — петля, локон или пряжка; серьга — только boucle d'oreille",
+          "да, boucle всегда значит «серьга»",
+          "boucle само по себе значит «ожерелье»",
+          "boucle — это всегда «пряжка ремня»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: boucle отдельно многозначно — une boucle de cheveux (локон), une boucle de ceinture (пряжка), une boucle (петля). «Серьга» — только в сочетании boucle d'oreille."
+      },
+      {
+        "id": "wc-bijoux-perle-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-bijoux-perle",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит perle?",
+        "bridge": "Англ. «pearl» — жемчужина. Фр. perle — почти то же слово, только читается /pɛʁl/, с грассирующим r.",
+        "options": ["жемчужина / жемчуг", "бриллиант", "серебро", "золото"],
+        "correctIndex": 0,
+        "explanation": "perle (f) = жемчужина (и жемчуг). Мост от англ. «pearl». Бриллиант — un diamant, серебро — l'argent."
+      },
+      {
+        "id": "wc-bijoux-perle-collo",
+        "kind": "sort",
+        "wordId": "wl-bijoux-perle",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом perle звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un collier de perles",
+            "basket": "ok"
+          },
+          {
+            "text": "des perles de culture",
+            "basket": "ok"
+          },
+          {
+            "text": "une perle rare",
+            "basket": "ok"
+          },
+          {
+            "text": "boire une perle",
+            "basket": "no"
+          },
+          {
+            "text": "une perle en bois de fer",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un collier de perles» (жемчужное ожерелье), «des perles de culture» (культивированный жемчуг), «une perle rare» (о редкой находке) — естественно. «boire une perle» (пить жемчужину) и «une perle en bois de fer» (жемчужина из железного дерева) — бессмыслица."
+      },
+      {
+        "id": "wc-bijoux-perle-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-bijoux-perle",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "perle",
+        "options": ["perle", "pelle", "belle", "perd"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало perle (/pɛʁl/, жемчужина). Похожие: pelle (/pɛl/, лопата) — без r; belle (/bɛl/, красивая) — с b; perd (/pɛʁ/, «теряет») — без l на конце."
+      },
+      {
+        "id": "wc-bijoux-diamant-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-bijoux-diamant",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит diamant?",
+        "bridge": "Англ. «diamond» — алмаз, бриллиант. Фр. diamant — тот же корень; конечная t не читается, на конце носовой звук: /dja.mɑ̃/.",
+        "options": ["бриллиант / алмаз", "жемчужина", "серебро", "стекло"],
+        "correctIndex": 0,
+        "explanation": "diamant (m) = бриллиант, алмаз. Мост от англ. «diamond». Одно слово и для камня, и для огранённого бриллианта. Жемчужина — une perle."
+      },
+      {
+        "id": "wc-bijoux-diamant-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bijoux-diamant",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Sa bague est ornée d'un gros diamant.",
+          "Le diamant est la pierre la plus dure.",
+          "Ces boucles d'oreilles en diamants coûtent une fortune."
+        ],
+        "options": ["бриллиант / алмаз", "жемчуг", "золото", "хрусталь"],
+        "correctIndex": 0,
+        "explanation": "diamant (m) — алмаз/бриллиант, самый твёрдый камень (la pierre la plus dure). «une bague en diamant» — кольцо с бриллиантом. Золото — l'or."
+      },
+      {
+        "id": "wc-bijoux-pendentif-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bijoux-pendentif",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Elle porte un pendentif en forme de cœur.",
+          "Ce pendentif pend au bout d'une fine chaîne.",
+          "Dans le pendentif, il y a une petite photo."
+        ],
+        "options": ["кулон / подвеска", "ожерелье", "браслет", "брошь"],
+        "correctIndex": 0,
+        "explanation": "pendentif (m) — кулон, подвеска: то, что висит (pendre — висеть) на цепочке. С фото внутри — это médaillon (медальон). Само ожерелье/цепочка — un collier / une chaîne."
+      },
+      {
+        "id": "wc-bijoux-pendentif-hint",
+        "kind": "wordHint",
+        "wordId": "wl-bijoux-pendentif",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: маленькое украшение, которое висит на цепочке на шее.",
+        "answer": "pendentif",
+        "hints": [
+          "Начинается на pen… (от pendre — висеть)",
+          "Мужской род, кончается на -if",
+          "Un ___ en forme de cœur."
+        ],
+        "explanation": "pendentif (m) — кулон, подвеска. От глагола pendre (висеть): кулон висит на цепочке. Не путать с collier (само ожерелье)."
+      },
+      {
+        "id": "wc-bijoux-bracelet-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-bijoux-bracelet",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит bracelet?",
+        "bridge": "Англ. «bracelet» — браслет; пишется почти так же. Фр. bracelet читается /bʁas.lɛ/, конечная t немая.",
+        "options": ["браслет (на запястье)", "кольцо", "ожерелье", "серьга"],
+        "correctIndex": 0,
+        "explanation": "bracelet (m) = браслет, его носят на запястье (au poignet). Мост от англ. «bracelet». Тем же словом называют ремешок часов: un bracelet de montre."
+      },
+      {
+        "id": "wc-bijoux-bracelet-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-bijoux-bracelet",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три из этих украшений носят на руке или пальце. Найди лишнее.",
+        "options": ["un bracelet", "une bague", "une montre", "un collier"],
+        "correctIndex": 3,
+        "explanation": "Браслет (bracelet) и часы (montre) носят на запястье, кольцо (bague) — на пальце. Ожерелье (collier) — лишнее: его носят на шее, а не на руке."
+      },
+      {
+        "id": "wc-bijoux-broche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-bijoux-broche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово в этих сценах об украшении?",
+        "contexts": [
+          "Ma grand-mère épingle une broche sur son manteau.",
+          "Cette broche ancienne vient de sa mère.",
+          "Elle a fixé une jolie broche en argent sur sa veste."
+        ],
+        "options": ["брошь (украшение с булавкой)", "пуговица", "серьга", "кулон"],
+        "correctIndex": 0,
+        "explanation": "une broche — брошь: украшение с булавкой, которое прикалывают (épingler) к одежде. Пуговица — un bouton. Внимание: то же слово broche значит ещё и «вертел» (poulet à la broche)."
+      },
+      {
+        "id": "wc-bijoux-broche-sound",
+        "kind": "soundTwin",
+        "wordId": "wl-bijoux-broche",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало.",
+        "audioText": "broche",
+        "options": ["broche", "brioche", "brosse", "proche"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало broche (/bʁɔʃ/, брошь). Похожие: brioche (/bʁijɔʃ/, булочка) — с лишним слогом bri-; brosse (/bʁɔs/, щётка) — со звуком s; proche (/pʁɔʃ/, близкий) — с p."
+      },
+      {
+        "id": "wc-bijoux-broche-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-bijoux-broche",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для broche (брошь), чтобы запомнить женский род (une broche) и не путать с brioche (булочка).",
+        "examples": [
+          "«Брошь» и broche звучат почти одинаково — но на конце французское -che /ʃ/: une broche приколота к пальто.",
+          "Brioche (булочка) длиннее на слог bri-: убери «bri», прибавь булавку — и сладкая brioche превращается в строгую broche."
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,289 @@
+[
+  {
+    "id": "wc-organes",
+    "title": "Органы тела",
+    "theme": "organes",
+    "level": "B1",
+    "wordIds": [
+      "wl-organes-coeur",
+      "wl-organes-poumon",
+      "wl-organes-estomac",
+      "wl-organes-foie",
+      "wl-organes-cerveau",
+      "wl-organes-os",
+      "wl-organes-muscle",
+      "wl-organes-sang"
+    ],
+    "steps": [
+      {
+        "id": "wc-organes-coeur-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-organes-coeur",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Mon cœur bat très vite après la course.",
+          "Elle connaît ce poème par cœur.",
+          "Le café est au cœur de la ville."
+        ],
+        "options": ["сердце", "грудь", "пульс", "дыхание"],
+        "correctIndex": 0,
+        "explanation": "cœur (m) — сердце. Орган, который «bat» (бьётся), а в переносном — центр: «par cœur» (наизусть), «au cœur de la ville» (в сердце города)."
+      },
+      {
+        "id": "wc-organes-coeur-trap",
+        "kind": "trap",
+        "wordId": "wl-organes-coeur",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "В автобусе попутчик говорит: «J'ai mal au cœur.» Что с ним?",
+        "options": [
+          "его тошнит",
+          "у него болит сердце (инфаркт)",
+          "он влюбился",
+          "у него разбито сердце"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка: «avoir mal au cœur» — это «тошнит», а не «болит сердце». О сердечной боли скажут «j'ai mal à la poitrine» или вызовут врача; о разбитом сердце — «avoir le cœur brisé»."
+      },
+      {
+        "id": "wc-organes-coeur-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-organes-coeur",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери слово, которое прозвучало. Остальные — похожие, но другие.",
+        "audioText": "cœur",
+        "options": ["cours", "corps", "cœur", "peur"],
+        "correctIndex": 2,
+        "explanation": "Прозвучало cœur /kœʁ/ (сердце). Похожие: cours /kuʁ/ (урок/курс), corps /kɔʁ/ (тело), peur /pœʁ/ (страх) — все реальные, но это не омофоны: различаются гласной или согласной."
+      },
+      {
+        "id": "wc-organes-poumon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-organes-poumon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Le médecin a écouté ses poumons.",
+          "Il a crié à pleins poumons.",
+          "Le tabac abîme les poumons."
+        ],
+        "options": ["лёгкое", "горло", "грудь", "сердце"],
+        "correctIndex": 0,
+        "explanation": "poumon (m) — лёгкое. Их два, поэтому часто «les poumons». «à pleins poumons» — полной грудью, во весь голос."
+      },
+      {
+        "id": "wc-organes-poumon-sort",
+        "kind": "sort",
+        "wordId": "wl-organes-poumon",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом poumon естественны, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "respirer à pleins poumons",
+            "basket": "ok"
+          },
+          {
+            "text": "une infection des poumons",
+            "basket": "ok"
+          },
+          {
+            "text": "le cancer du poumon",
+            "basket": "ok"
+          },
+          {
+            "text": "boire avec les poumons",
+            "basket": "no"
+          },
+          {
+            "text": "un poumon cassé",
+            "basket": "no"
+          }
+        ],
+        "explanation": "Естественно: «respirer à pleins poumons», «une infection des poumons», «le cancer du poumon». Бессмыслица: «boire avec les poumons» (пить лёгкими) и «un poumon cassé» — кость бывает cassé, а лёгкое скорее abîmé / malade."
+      },
+      {
+        "id": "wc-organes-estomac-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-organes-estomac",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ai l'estomac vide, je n'ai rien mangé.",
+          "Il a un estomac fragile, il évite les épices.",
+          "Avant l'examen, j'avais l'estomac noué."
+        ],
+        "options": ["желудок", "живот (снаружи)", "аппетит", "горло"],
+        "correctIndex": 0,
+        "explanation": "estomac (m) — желудок (орган внутри). Внимание: конечная -c не читается — /ɛs.tɔ.ma/. «l'estomac noué» — желудок сжался от волнения."
+      },
+      {
+        "id": "wc-organes-estomac-cmp",
+        "kind": "compare",
+        "wordId": "wl-organes-estomac",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "estomac и ventre — в чём разница?",
+        "phrases": ["J'ai mal à l'estomac (digestion).", "J'ai mal au ventre."],
+        "options": [
+          "estomac — желудок как орган (пищеварение); ventre — живот снаружи. В быту «болит живот» чаще mal au ventre.",
+          "Это полные синонимы, разницы нет.",
+          "estomac — живот снаружи, ventre — орган внутри.",
+          "ventre — только у животных, estomac — у людей."
+        ],
+        "correctIndex": 0,
+        "explanation": "estomac — внутренний орган, где переваривается еда; ventre — живот как внешняя часть тела. Обычное «болит живот» — mal au ventre; про конкретный орган и пищеварение — l'estomac."
+      },
+      {
+        "id": "wc-organes-foie-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-organes-foie",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Après la fête, il a eu une crise de foie.",
+          "Le foie gras est une spécialité française.",
+          "L'alcool est mauvais pour le foie."
+        ],
+        "options": ["печень", "почка", "вера", "раз"],
+        "correctIndex": 0,
+        "explanation": "foie (m) — печень. «une crise de foie» — несварение от переедания. Осторожно с омофонами /fwa/: la foi (вера), une fois (раз) — но печень всегда le foie."
+      },
+      {
+        "id": "wc-organes-foie-trap",
+        "kind": "trap",
+        "wordId": "wl-organes-foie",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Три слова звучат одинаково /fwa/. Какое из них — «печень»?",
+        "phrases": ["le foie — l'organe", "la foi — la croyance", "une fois — une occasion"],
+        "options": ["le foie", "la foi", "une fois", "le foi"],
+        "correctIndex": 0,
+        "explanation": "Печень — le foie (мужской род, -e на конце). la foi /fwa/ — вера (ж.р.), une fois /fwa/ — раз (ж.р.). Все три звучат одинаково, различаются написанием и родом; «le foi» не существует."
+      },
+      {
+        "id": "wc-organes-cerveau-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-organes-cerveau",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английское слово подскажет смысл. Что значит cerveau?",
+        "bridge": "Англ. «cerebral» (мозговой, церебральный) — тот же корень cerebr-. Французское cerveau /sɛʁ.vo/ — это сам орган.",
+        "options": ["мозг", "череп", "нерв", "память"],
+        "correctIndex": 0,
+        "explanation": "cerveau (m) — головной мозг. Мост — англ. «cerebral». Череп — le crâne, нерв — le nerf."
+      },
+      {
+        "id": "wc-organes-cerveau-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-organes-cerveau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — внутренние органы. Найди лишнее.",
+        "options": ["le cerveau", "le foie", "le poumon", "le squelette"],
+        "correctIndex": 3,
+        "explanation": "Мозг (le cerveau), печень (le foie) и лёгкое (le poumon) — мягкие внутренние органы. Лишний — le squelette (скелет): это костный каркас, а не орган."
+      },
+      {
+        "id": "wc-organes-os-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-organes-os",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Il s'est cassé un os du bras.",
+          "Le chien ronge un os.",
+          "On était trempés jusqu'aux os."
+        ],
+        "options": ["кость", "сустав", "мышца", "зуб"],
+        "correctIndex": 0,
+        "explanation": "os (m) — кость. Произношение коварное: un os /ɔs/ (s читается), но les os /le.z‿o/ (s немая). «trempé jusqu'aux os» — промокнуть до костей."
+      },
+      {
+        "id": "wc-organes-os-trap",
+        "kind": "trap",
+        "wordId": "wl-organes-os",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Как читается s в un os и в les os?",
+        "options": [
+          "un os /ɔs/ — s звучит; les os /le.z‿o/ — s немая",
+          "в обоих случаях s звучит: /ɔs/",
+          "в обоих случаях s немая: /o/",
+          "un os /o/ без s, les os /ɔs/ с s"
+        ],
+        "correctIndex": 0,
+        "explanation": "Одно слово, но в единственном числе s читается — un os /ɔs/, а во множественном немеет — les os /le.z‿o/. Это классическая «костяная» ловушка произношения."
+      },
+      {
+        "id": "wc-organes-muscle-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-organes-muscle",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Слово почти как в английском. Что значит muscle и как оно звучит?",
+        "bridge": "Англ. «muscle» пишется так же. Но по-французски — /myskl/: u как /y/, -cle как /kl/, без «масл».",
+        "options": ["мышца", "ракушка", "сила", "кость"],
+        "correctIndex": 0,
+        "explanation": "muscle (m) — мышца. Буквы те же, что в англ. «muscle», но чтение французское: /myskl/. Сила — la force, кость — l'os."
+      },
+      {
+        "id": "wc-organes-muscle-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-organes-muscle",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il s'est déchiré un muscle au foot.",
+          "La musculation développe les muscles.",
+          "Le cœur est aussi un muscle."
+        ],
+        "options": ["мышца", "сустав", "связка", "жила"],
+        "correctIndex": 0,
+        "explanation": "muscle (m) — мышца. «se déchirer un muscle» — потянуть (порвать) мышцу. Интересно: сердце (le cœur) — тоже мышца."
+      },
+      {
+        "id": "wc-organes-sang-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-organes-sang",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский корень поможет. Что значит sang?",
+        "bridge": "Англ. «sanguine» (кровавый, румяный) — корень sangu-. Французское sang /sɑ̃/ — это кровь; конечная -g немая.",
+        "options": ["кровь", "песня", "сотня", "без"],
+        "correctIndex": 0,
+        "explanation": "sang (m) — кровь. Мост — англ. «sanguine». Осторожно: на слух sang /sɑ̃/ = sans (без) = cent (сто) — это омофоны, различай по смыслу и письму."
+      },
+      {
+        "id": "wc-organes-sang-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-organes-sang",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для sang (кровь), чтобы не путать с омофонами sans (без) и cent (сто) и помнить носовое /sɑ̃/.",
+        "examples": [
+          "«Sang без -g не прочесть»: на письме -g есть, но молчит — /sɑ̃/, как sans и cent.",
+          "Представь «une prise de sang» (анализ крови): медсестра берёт кровь — le sang, мужского рода."
+        ]
+      }
+    ]
+  }
+]

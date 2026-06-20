@@ -1,0 +1,283 @@
+[
+  {
+    "id": "wc-insectes",
+    "title": "Насекомые",
+    "theme": "insectes",
+    "level": "A2",
+    "wordIds": [
+      "wl-insectes-mouche",
+      "wl-insectes-fourmi",
+      "wl-insectes-abeille",
+      "wl-insectes-papillon",
+      "wl-insectes-araignee",
+      "wl-insectes-moustique",
+      "wl-insectes-guepe",
+      "wl-insectes-ver"
+    ],
+    "steps": [
+      {
+        "id": "wc-insectes-mouche-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-insectes-mouche",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Une mouche tourne autour de la salade.",
+          "Il y a une mouche sur la vitre.",
+          "J'entends une mouche bourdonner."
+        ],
+        "options": ["муха", "комар", "пчела", "оса"],
+        "correctIndex": 0,
+        "explanation": "mouche (f) — муха. Она «bourdonne» (жужжит) и садится на еду, но не кусается. Комар — un moustique, пчела — une abeille."
+      },
+      {
+        "id": "wc-insectes-mouche-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-insectes-mouche",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Звучит похоже. Какое слово ты услышал — то, что значит «муха»?",
+        "audioText": "mouche",
+        "options": ["bouche", "douche", "mouche", "touche"],
+        "correctIndex": 2,
+        "explanation": "mouche /muʃ/ — муха. Похожие настоящие слова: bouche /buʃ/ — рот, douche /duʃ/ — душ, touche /tuʃ/ — клавиша. Различай по первому согласному."
+      },
+      {
+        "id": "wc-insectes-fourmi-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-insectes-fourmi",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Une fourmi transporte une miette de pain.",
+          "Les fourmis marchent en file.",
+          "Il y a une fourmilière au fond du jardin."
+        ],
+        "options": ["муравей", "паук", "червь", "муха"],
+        "correctIndex": 0,
+        "explanation": "fourmi (f) — муравей. «une fourmilière» — муравейник, «marcher en file» — идти цепочкой. Паук — une araignée."
+      },
+      {
+        "id": "wc-insectes-fourmi-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-insectes-fourmi",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для fourmi (муравей), чтобы запомнить, что слово женского рода (une fourmi), хотя кончается на -i.",
+        "examples": [
+          "Кончается на -i, но это «une fourmi»: представь, что муравьиха-королева (la reine) у муравьёв главная — отсюда женский род.",
+          "«Fourmi» начинается как «four» (печь/духовка), но это не она: запомни маленькую une fourmi, что несёт крошку к une fourmilière."
+        ]
+      },
+      {
+        "id": "wc-insectes-abeille-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-insectes-abeille",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "L'abeille butine les fleurs.",
+          "Les abeilles font du miel.",
+          "Une abeille m'a piqué au bras."
+        ],
+        "options": ["пчела", "оса", "муха", "бабочка"],
+        "correctIndex": 0,
+        "explanation": "abeille (f) — пчела. «butiner» — собирать нектар, «faire du miel» — делать мёд. Оса (une guêpe) мёд не делает."
+      },
+      {
+        "id": "wc-insectes-abeille-collo",
+        "kind": "sort",
+        "wordId": "wl-insectes-abeille",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом abeille звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une piqûre d'abeille",
+            "basket": "ok"
+          },
+          {
+            "text": "un essaim d'abeilles",
+            "basket": "ok"
+          },
+          {
+            "text": "les abeilles butinent",
+            "basket": "ok"
+          },
+          {
+            "text": "une abeille aboie",
+            "basket": "no"
+          },
+          {
+            "text": "traire une abeille",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«une piqûre d'abeille» (укус пчелы), «un essaim d'abeilles» (рой), «les abeilles butinent» (собирают нектар) — естественно. «aboie» (лает) — про собаку; «traire» (доить) — про корову, не про пчелу."
+      },
+      {
+        "id": "wc-insectes-papillon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-insectes-papillon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Un papillon multicolore se pose sur la fleur.",
+          "Les enfants courent après les papillons.",
+          "Ce papillon a de grandes ailes."
+        ],
+        "options": ["бабочка", "пчела", "стрекоза", "жук"],
+        "correctIndex": 0,
+        "explanation": "papillon (m) — бабочка. «se poser» — садиться, «les ailes» — крылья. Слово мужского рода: un papillon."
+      },
+      {
+        "id": "wc-insectes-papillon-trap",
+        "kind": "trap",
+        "wordId": "wl-insectes-papillon",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "На свитере дырки, и кто-то говорит про «un papillon de nuit». О ком речь?",
+        "options": [
+          "о ночной бабочке (мотыльке) — «papillon de nuit»",
+          "о дневной яркой бабочке на лугу",
+          "о любом комаре, что летит на свет",
+          "это вообще не насекомое, а стиль плавания"
+        ],
+        "correctIndex": 0,
+        "explanation": "un papillon de nuit — ночная бабочка, мотылёк (летит на свет). Дневной papillon (de jour) порхает на лугу. «la nage papillon» — отдельное значение (баттерфляй). Платяную моль точнее зовут la mite."
+      },
+      {
+        "id": "wc-insectes-araignee-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-insectes-araignee",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Une araignée tisse sa toile dans le coin.",
+          "J'ai peur des araignées.",
+          "Une petite araignée descend du plafond."
+        ],
+        "options": ["паук", "муравей", "оса", "червь"],
+        "correctIndex": 0,
+        "explanation": "araignée (f) — паук. «tisser sa toile» — плести паутину, «une toile d'araignée» — паутина. Слово женского рода: une araignée."
+      },
+      {
+        "id": "wc-insectes-araignee-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-insectes-araignee",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три из этих существ — настоящие насекомые с шестью ногами. Найди лишнее.",
+        "options": ["une mouche", "une abeille", "une araignée", "une fourmi"],
+        "correctIndex": 2,
+        "explanation": "Муха, пчела и муравей — насекомые (6 ног). Паук (une araignée) — лишний: у него 8 ног, и зоологически это не насекомое, хотя в быту его к ним причисляют."
+      },
+      {
+        "id": "wc-insectes-moustique-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-insectes-moustique",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово с первого взгляда. Что значит moustique?",
+        "bridge": "Англ. «mosquito» — комар; французское moustique того же корня. Читается /mus.tik/, конечная -e немая.",
+        "options": ["комар", "муха", "москитная сетка", "оса"],
+        "correctIndex": 0,
+        "explanation": "moustique (m) — комар. Англ. «mosquito» — прямой мост к слову. Не путать с une moustiquaire — это москитная сетка, а не само насекомое."
+      },
+      {
+        "id": "wc-insectes-moustique-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-insectes-moustique",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Un moustique m'a piqué pendant la nuit.",
+          "Mets de l'anti-moustique avant de sortir.",
+          "Les moustiques adorent l'eau stagnante."
+        ],
+        "options": ["комар", "муха", "пчела", "бабочка"],
+        "correctIndex": 0,
+        "explanation": "moustique (m) — комар. «piquer» — кусать, «l'anti-moustique» — средство от комаров. Муха (une mouche) не кусает."
+      },
+      {
+        "id": "wc-insectes-guepe-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-insectes-guepe",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Une guêpe tourne autour de la confiture.",
+          "Attention, il y a un nid de guêpes !",
+          "Une guêpe l'a piqué à la main."
+        ],
+        "options": ["оса", "пчела", "муха", "муравей"],
+        "correctIndex": 0,
+        "explanation": "guêpe (f) — оса. «un nid de guêpes» — осиное гнездо. Оса любит сладкое и жалит больно; пишется с accent circonflexe: guêpe."
+      },
+      {
+        "id": "wc-insectes-guepe-cmp",
+        "kind": "compare",
+        "wordId": "wl-insectes-guepe",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "Une abeille и une guêpe — оба жалят. В чём разница?",
+        "phrases": [
+          "L'abeille est velue et fait du miel.",
+          "La guêpe est lisse, jaune et noire, et ne fait pas de miel."
+        ],
+        "options": [
+          "abeille — пчела (мохнатая, делает мёд); guêpe — оса (гладкая, жёлто-чёрная, без мёда).",
+          "Это два названия одного и того же насекомого.",
+          "abeille — оса, а guêpe — пчела.",
+          "abeille — самка, guêpe — самец того же насекомого."
+        ],
+        "correctIndex": 0,
+        "explanation": "l'abeille — пчела: «velue» (мохнатая), делает мёд, жалит один раз. la guêpe — оса: «lisse» (гладкая), жёлто-чёрная, мёд не делает и может жалить несколько раз."
+      },
+      {
+        "id": "wc-insectes-ver-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-insectes-ver",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Il y a un ver dans la pomme.",
+          "Le pêcheur met un ver sur l'hameçon.",
+          "Un ver de terre sort après la pluie."
+        ],
+        "options": ["червь", "паук", "гусеница", "муравей"],
+        "correctIndex": 0,
+        "explanation": "ver (m) — червь. «un ver de terre» — дождевой червь, «un ver dans la pomme» — червяк в яблоке. Конечная -r читается: /vɛʁ/."
+      },
+      {
+        "id": "wc-insectes-ver-trap",
+        "kind": "trap",
+        "wordId": "wl-insectes-ver",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слова ver, verre, vert и vers звучат одинаково — /vɛʁ/. Какое из них значит «червь»?",
+        "options": ["ver", "verre", "vert", "vers"],
+        "correctIndex": 0,
+        "explanation": "Все четыре — омофоны /vɛʁ/, но различаются по смыслу: ver — червь, verre — стакан/стекло, vert — зелёный, vers — к / около. Различай только по написанию и контексту."
+      }
+    ]
+  }
+]

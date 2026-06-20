@@ -1,0 +1,339 @@
+[
+  {
+    "id": "wl-bijoux-bague",
+    "lemma": "bague",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/baɡ/",
+    "translationsRu": ["кольцо", "перстень"],
+    "translationsEn": ["ring"],
+    "semanticCore": "Кольцо, которое носят на пальце (украшение); не путать с обручальным кольцом — для него есть alliance.",
+    "collocations": [
+      {
+        "fr": "une bague en or",
+        "ru": "золотое кольцо"
+      },
+      {
+        "fr": "porter une bague",
+        "ru": "носить кольцо"
+      },
+      {
+        "fr": "une bague de fiançailles",
+        "ru": "помолвочное кольцо"
+      },
+      {
+        "fr": "mettre une bague au doigt",
+        "ru": "надеть кольцо на палец"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "alliance",
+        "note": "bague = кольцо вообще (украшение на палец); alliance = именно обручальное кольцо (которое надевают на свадьбе)."
+      },
+      {
+        "with": "anneau",
+        "note": "bague = кольцо-украшение с камнем или узором; anneau = простое гладкое кольцо/колечко (без камня), а также «кольцо» как геометрическая форма."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["bijoux", "objet"],
+    "caseIds": ["wc-bijoux"]
+  },
+  {
+    "id": "wl-bijoux-collier",
+    "lemma": "collier",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔ.lje/",
+    "translationsRu": ["ожерелье", "колье"],
+    "translationsEn": ["necklace"],
+    "semanticCore": "Украшение, которое носят на шее; тем же словом называют ошейник для собаки.",
+    "collocations": [
+      {
+        "fr": "un collier de perles",
+        "ru": "жемчужное ожерелье"
+      },
+      {
+        "fr": "porter un collier",
+        "ru": "носить ожерелье"
+      },
+      {
+        "fr": "un collier en argent",
+        "ru": "серебряное колье"
+      },
+      {
+        "fr": "le collier du chien",
+        "ru": "собачий ошейник"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pendentif",
+        "note": "collier = вся цепочка/ожерелье на шее; pendentif = только подвеска (кулон), которая на нём висит. Кулон надевают на цепочку — sur un collier / une chaîne."
+      },
+      {
+        "with": "col",
+        "note": "Не путать по виду: le collier = ожерелье; le col = воротник (одежды) или горный перевал. Однокоренные (от cou — шея), но разные слова."
+      }
+    ],
+    "frequencyRank": 690,
+    "level": "A2",
+    "tags": ["bijoux", "objet"],
+    "caseIds": ["wc-bijoux"]
+  },
+  {
+    "id": "wl-bijoux-boucle",
+    "lemma": "boucle",
+    "displayForm": "boucle (d'oreille)",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bukl/",
+    "translationsRu": ["серьга", "локон", "петля"],
+    "translationsEn": ["earring", "loop"],
+    "semanticCore": "Само по себе boucle — петля, локон или пряжка; «серьга» — это boucle d'oreille (петелька «для уха»).",
+    "collocations": [
+      {
+        "fr": "des boucles d'oreilles",
+        "ru": "серьги"
+      },
+      {
+        "fr": "une boucle de ceinture",
+        "ru": "пряжка ремня"
+      },
+      {
+        "fr": "des boucles blondes",
+        "ru": "светлые локоны"
+      },
+      {
+        "fr": "mettre ses boucles d'oreilles",
+        "ru": "надеть серьги"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "boucle d'oreille",
+        "note": "boucle отдельно = петля, локон или пряжка; чтобы получилось «серьга», нужно добавить d'oreille: une boucle d'oreille. Чаще всего во множественном — des boucles d'oreilles."
+      },
+      {
+        "with": "anneau",
+        "note": "boucle d'oreille = серьга любой формы (гвоздик, подвеска, кольцо); anneau = именно серьга-колечко. Anneau — частный случай серьги."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["bijoux", "objet"],
+    "caseIds": ["wc-bijoux"]
+  },
+  {
+    "id": "wl-bijoux-perle",
+    "lemma": "perle",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/pɛʁl/",
+    "translationsRu": ["жемчужина", "жемчуг", "бусина"],
+    "translationsEn": ["pearl", "bead"],
+    "semanticCore": "Жемчужина (и жемчуг как материал); переносно — «жемчужина», что-то редкое и ценное.",
+    "collocations": [
+      {
+        "fr": "un collier de perles",
+        "ru": "жемчужное ожерелье"
+      },
+      {
+        "fr": "des perles de culture",
+        "ru": "культивированный жемчуг"
+      },
+      {
+        "fr": "une perle rare",
+        "ru": "редкая жемчужина (о человеке/находке)"
+      },
+      {
+        "fr": "des perles fines",
+        "ru": "натуральный жемчуг"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "pearl (англ.)",
+        "note": "Англ. «pearl» — прямая подсказка: perle = жемчужина. Только читается по-французски /pɛʁl/, с грассирующим r."
+      },
+      {
+        "with": "perle / perd",
+        "note": "На слух perle (/pɛʁl/, жемчужина) похоже на perd (/pɛʁ/, форма глагола perdre — «теряет»). В perle слышен звук l на конце, в perd — нет."
+      }
+    ],
+    "frequencyRank": 670,
+    "level": "A2",
+    "tags": ["bijoux", "matiere"],
+    "caseIds": ["wc-bijoux"]
+  },
+  {
+    "id": "wl-bijoux-diamant",
+    "lemma": "diamant",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/dja.mɑ̃/",
+    "translationsRu": ["бриллиант", "алмаз"],
+    "translationsEn": ["diamond"],
+    "semanticCore": "Алмаз/бриллиант — самый твёрдый и дорогой драгоценный камень; в отличие от русского, одно слово и для камня, и для огранённого бриллианта.",
+    "collocations": [
+      {
+        "fr": "une bague en diamant",
+        "ru": "кольцо с бриллиантом"
+      },
+      {
+        "fr": "un diamant pur",
+        "ru": "чистый бриллиант"
+      },
+      {
+        "fr": "des boucles d'oreilles en diamants",
+        "ru": "серьги с бриллиантами"
+      },
+      {
+        "fr": "dur comme le diamant",
+        "ru": "твёрдый как алмаз"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "diamond (англ.)",
+        "note": "Англ. «diamond» — узнаваемый мост: diamant = бриллиант, алмаз. Конечная t не читается, на конце носовой звук: /dja.mɑ̃/."
+      },
+      {
+        "with": "pierre précieuse",
+        "note": "diamant = конкретный камень (алмаз/бриллиант); une pierre précieuse = драгоценный камень вообще (рубин, изумруд, сапфир и т. д.). Diamant — её частный случай."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["bijoux", "matiere"],
+    "caseIds": ["wc-bijoux"]
+  },
+  {
+    "id": "wl-bijoux-pendentif",
+    "lemma": "pendentif",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pɑ̃.dɑ̃.tif/",
+    "translationsRu": ["кулон", "подвеска"],
+    "translationsEn": ["pendant"],
+    "semanticCore": "Кулон — украшение, которое висит на цепочке или шнурке (от глагола pendre — висеть).",
+    "collocations": [
+      {
+        "fr": "un pendentif en or",
+        "ru": "золотой кулон"
+      },
+      {
+        "fr": "porter un pendentif",
+        "ru": "носить кулон"
+      },
+      {
+        "fr": "un pendentif en forme de cœur",
+        "ru": "кулон в форме сердца"
+      },
+      {
+        "fr": "un pendentif avec une photo",
+        "ru": "кулон с фотографией (медальон)"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "collier",
+        "note": "pendentif = только подвеска (кулон), которая висит; collier = вся цепочка/ожерелье на шее. Кулон надевают на цепочку: un pendentif sur une chaîne."
+      },
+      {
+        "with": "médaillon",
+        "note": "pendentif = любой кулон; un médaillon = медальон, который открывается (внутрь кладут фото). Médaillon — особый вид кулона."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["bijoux", "objet"],
+    "caseIds": ["wc-bijoux"]
+  },
+  {
+    "id": "wl-bijoux-bracelet",
+    "lemma": "bracelet",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bʁas.lɛ/",
+    "translationsRu": ["браслет"],
+    "translationsEn": ["bracelet"],
+    "semanticCore": "Браслет — украшение, которое носят на запястье; тем же словом называют ремешок часов.",
+    "collocations": [
+      {
+        "fr": "un bracelet en argent",
+        "ru": "серебряный браслет"
+      },
+      {
+        "fr": "porter un bracelet",
+        "ru": "носить браслет"
+      },
+      {
+        "fr": "un bracelet de montre",
+        "ru": "ремешок часов"
+      },
+      {
+        "fr": "un bracelet en cuir",
+        "ru": "кожаный браслет"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bracelet (англ.)",
+        "note": "Англ. «bracelet» — почти то же слово: bracelet = браслет. Различие в произношении: конечная t не читается, /bʁas.lɛ/."
+      },
+      {
+        "with": "montre",
+        "note": "bracelet = браслет (украшение) или ремешок; la montre = (наручные) часы целиком. Ремешок этих часов — le bracelet de la montre."
+      }
+    ],
+    "frequencyRank": 710,
+    "level": "A2",
+    "tags": ["bijoux", "objet"],
+    "caseIds": ["wc-bijoux"]
+  },
+  {
+    "id": "wl-bijoux-broche",
+    "lemma": "broche",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/bʁɔʃ/",
+    "translationsRu": ["брошь", "брошка"],
+    "translationsEn": ["brooch"],
+    "semanticCore": "Брошь — украшение с булавкой, которое прикалывают к одежде; то же слово значит «вертел» (мясо à la broche).",
+    "collocations": [
+      {
+        "fr": "une broche en argent",
+        "ru": "серебряная брошь"
+      },
+      {
+        "fr": "porter une broche",
+        "ru": "носить брошь"
+      },
+      {
+        "fr": "épingler une broche",
+        "ru": "приколоть брошь"
+      },
+      {
+        "fr": "une jolie broche ancienne",
+        "ru": "красивая старинная брошь"
+      }
+    ],
+    "contrastPairs": [
+      {
+        "with": "broche (вертел)",
+        "note": "Одно написание — два смысла: la broche = брошь (украшение) и broche = вертел (du poulet à la broche — курица на вертеле). Понятно по контексту."
+      },
+      {
+        "with": "brioche",
+        "note": "На слух broche (/bʁɔʃ/, брошь) похоже на brioche (/bʁijɔʃ/, булочка-бриошь). В brioche есть лишний слог bri-, в broche его нет."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["bijoux", "objet"],
+    "caseIds": ["wc-bijoux"]
+  }
+]

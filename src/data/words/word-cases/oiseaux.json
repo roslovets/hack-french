@@ -1,0 +1,288 @@
+[
+  {
+    "id": "wc-oiseaux",
+    "title": "Птицы",
+    "theme": "oiseaux",
+    "level": "A2",
+    "wordIds": [
+      "wl-oiseaux-aile",
+      "wl-oiseaux-plume",
+      "wl-oiseaux-nid",
+      "wl-oiseaux-bec",
+      "wl-oiseaux-moineau",
+      "wl-oiseaux-pigeon",
+      "wl-oiseaux-hibou",
+      "wl-oiseaux-corbeau"
+    ],
+    "steps": [
+      {
+        "id": "wc-oiseaux-aile-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-oiseaux-aile",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "L'oiseau ouvre ses ailes et s'envole.",
+          "Le canard bat des ailes dans l'eau.",
+          "L'avion a perdu un morceau de son aile."
+        ],
+        "options": ["крыло", "перо", "клюв", "хвост"],
+        "correctIndex": 0,
+        "explanation": "aile (f) — крыло: им машут, чтобы лететь (battre des ailes). Так же зовут крыло самолёта. Перо — une plume, клюв — un bec, хвост — une queue."
+      },
+      {
+        "id": "wc-oiseaux-aile-trap",
+        "kind": "trap",
+        "wordId": "wl-oiseaux-aile",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Ты слышишь /ɛl/. В фразе «L'oiseau ouvre ses ___» — какое слово тут подходит по смыслу?",
+        "phrases": ["L'oiseau ouvre ses ailes.", "Elle ouvre la fenêtre."],
+        "options": [
+          "ailes — крылья (то, что у птицы)",
+          "elles — они (о людях/предметах)",
+          "elle — она",
+          "île — остров"
+        ],
+        "correctIndex": 0,
+        "explanation": "Ловушка на слух: aile (крыло), elle/elles (она/они) звучат одинаково — /ɛl/. После «ses» нужно существительное: ses ailes — её/его крылья. Остров — une île /il/, звучит иначе."
+      },
+      {
+        "id": "wc-oiseaux-plume-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-oiseaux-plume",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Une plume blanche est tombée du nid.",
+          "Ce coussin est léger comme une plume.",
+          "Le paon a de longues plumes colorées."
+        ],
+        "options": ["перо", "крыло", "пух одеяла", "ветка"],
+        "correctIndex": 0,
+        "explanation": "plume (f) — перо птицы. «léger comme une plume» — лёгкий как пёрышко. Крыло (целиком) — une aile; перо — это часть, из которой состоит крыло."
+      },
+      {
+        "id": "wc-oiseaux-plume-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-oiseaux-plume",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит plume?",
+        "bridge": "Англ. «plume / plumage» — оперение, перо (а ещё «султан» из перьев на шлеме). Французское plume — тот же корень: перо птицы.",
+        "options": ["перо", "дым", "ручей", "шерсть"],
+        "correctIndex": 0,
+        "explanation": "plume = перо. Английское «plumage» (оперение) — прямой мост. Не путай с англ. «plume» в значении «струйка дыма» — по-французски перо это именно перо птицы."
+      },
+      {
+        "id": "wc-oiseaux-nid-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-oiseaux-nid",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Les oiseaux font leur nid au printemps.",
+          "Il y a trois œufs dans le nid.",
+          "Attention, un nid de guêpes sous le toit !"
+        ],
+        "options": ["гнездо", "дупло", "клетка", "ветка"],
+        "correctIndex": 0,
+        "explanation": "nid (m) — гнездо: его птица вьёт сама (faire son nid). Бывает и «un nid de guêpes» — осиное гнездо. Конечная d не читается: /ni/. Клетка — une cage."
+      },
+      {
+        "id": "wc-oiseaux-nid-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-oiseaux-nid",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай слово и выбери, какое из написаний прозвучало.",
+        "audioText": "nid",
+        "options": ["nid", "lit", "riz", "nez"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало nid /ni/ (гнездо). Похожие, но другие: lit /li/ (кровать), riz /ʁi/ (рис), nez /ne/ (нос). У всех «немой» хвост, но гласные и начало разные."
+      },
+      {
+        "id": "wc-oiseaux-bec-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-oiseaux-bec",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "La cigogne a un long bec rouge.",
+          "L'oiseau casse la graine avec son bec.",
+          "Le poussin ouvre le bec pour manger."
+        ],
+        "options": ["клюв", "крыло", "лапа", "коготь"],
+        "correctIndex": 0,
+        "explanation": "bec (m) — клюв: им птица клюёт и хватает корм. Здесь конечная c читается: /bɛk/. Лапа — une patte, коготь — une griffe."
+      },
+      {
+        "id": "wc-oiseaux-bec-sort",
+        "kind": "sort",
+        "wordId": "wl-oiseaux-bec",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом bec звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "un coup de bec",
+            "basket": "ok"
+          },
+          {
+            "text": "ouvrir le bec",
+            "basket": "ok"
+          },
+          {
+            "text": "le bec jaune du canard",
+            "basket": "ok"
+          },
+          {
+            "text": "manger avec le bec et les dents",
+            "basket": "no"
+          },
+          {
+            "text": "mettre des chaussures au bec",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«un coup de bec», «ouvrir le bec», «le bec jaune» — естественно. У птицы нет зубов (des dents) и обуви (des chaussures), поэтому последние два — бессмыслица."
+      },
+      {
+        "id": "wc-oiseaux-moineau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-oiseaux-moineau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Un petit moineau saute sur la terrasse.",
+          "Des moineaux se battent pour une miette de pain.",
+          "Tu manges comme un moineau, prends-en plus !"
+        ],
+        "options": ["воробей", "голубь", "сова", "орёл"],
+        "correctIndex": 0,
+        "explanation": "moineau (m) — воробей: маленькая городская птичка. «manger comme un moineau» — есть очень мало. Голубь — un pigeon, сова — un hibou."
+      },
+      {
+        "id": "wc-oiseaux-moineau-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-oiseaux-moineau",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — птицы. Найди лишнее.",
+        "options": ["le moineau", "le pigeon", "le corbeau", "le renard"],
+        "correctIndex": 3,
+        "explanation": "Воробей (le moineau), голубь (le pigeon) и ворон (le corbeau) — птицы. Лишний — le renard (лиса): это зверь. Кстати, лиса и ворон встречаются в басне «Le Corbeau et le Renard»."
+      },
+      {
+        "id": "wc-oiseaux-pigeon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-oiseaux-pigeon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Sur la place, les pigeons cherchent des miettes.",
+          "Autrefois, un pigeon voyageur portait les lettres.",
+          "Un gros pigeon gris s'est posé sur le balcon."
+        ],
+        "options": ["голубь", "воробей", "чайка", "утка"],
+        "correctIndex": 0,
+        "explanation": "pigeon (m) — голубь: крупная городская птица. «un pigeon voyageur» — почтовый голубь. Воробей — un moineau, утка — un canard."
+      },
+      {
+        "id": "wc-oiseaux-pigeon-cmp",
+        "kind": "compare",
+        "wordId": "wl-oiseaux-pigeon",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "un pigeon и une colombe — в чём разница?",
+        "phrases": [
+          "Un pigeon gris picore sur le trottoir.",
+          "Une colombe blanche, symbole de paix."
+        ],
+        "options": [
+          "pigeon — обычный (серый, городской) голубь; colombe — белая голубка, символ мира.",
+          "Это одно и то же слово, разницы нет.",
+          "pigeon — самка, colombe — самец того же вида.",
+          "pigeon — это голубь, а colombe — вообще другая птица, не голубь."
+        ],
+        "correctIndex": 0,
+        "explanation": "Биологически это близкие птицы, но в языке образы разные: le pigeon — будничный серый голубь с площади; la colombe — белая голубка, символ мира и нежности."
+      },
+      {
+        "id": "wc-oiseaux-hibou-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-oiseaux-hibou",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "La nuit, le hibou hulule dans la forêt.",
+          "Le hibou a de grands yeux ronds et deux aigrettes.",
+          "On ne voit pas bien le hibou, il dort le jour."
+        ],
+        "options": ["сова (филин)", "летучая мышь", "ворон", "орёл"],
+        "correctIndex": 0,
+        "explanation": "hibou (m) — сова с перьевыми «ушками» (как филин); ночная птица, «hululer» — ухать. Летучая мышь — une chauve-souris (это не птица). Говорят le hibou, без слияния."
+      },
+      {
+        "id": "wc-oiseaux-hibou-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-oiseaux-hibou",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для hibou (сова), чтобы запомнить придыхательное h: говорят le hibou, а не l'hibou.",
+        "examples": [
+          "Перед hibou делаешь крошечную паузу, как сова замирает перед прыжком: le | hibou, les | hiboux.",
+          "Сова сидит «отдельно» и не сливается с артиклем — представь её как нелюдимую птицу, к которой не подойти вплотную (нет l'hibou)."
+        ]
+      },
+      {
+        "id": "wc-oiseaux-corbeau-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-oiseaux-corbeau",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Un corbeau noir croasse sur la branche.",
+          "Dans la fable, le corbeau laisse tomber son fromage.",
+          "Les corbeaux volent au-dessus du champ."
+        ],
+        "options": ["ворон", "голубь", "воробей", "аист"],
+        "correctIndex": 0,
+        "explanation": "corbeau (m) — ворон: крупная чёрная птица, «croasser» — каркать. Известен по басне Лафонтена «Le Corbeau et le Renard». Множественное — des corbeaux. Аист — une cigogne."
+      },
+      {
+        "id": "wc-oiseaux-corbeau-hint",
+        "kind": "wordHint",
+        "wordId": "wl-oiseaux-corbeau",
+        "dimension": "activeRecall",
+        "mechanic": "M29",
+        "prompt": "Вспомни слово: большая чёрная птица, которая каркает; у Лафонтена роняет сыр.",
+        "answer": "corbeau",
+        "hints": [
+          "Начинается на cor…",
+          "Заканчивается на -eau, как oiseau и moineau",
+          "Le ___ et le Renard (название басни)"
+        ],
+        "explanation": "corbeau (m) — ворон. Множественное на -eaux: des corbeaux. Не путай с corneille (ворона, поменьше)."
+      }
+    ]
+  }
+]

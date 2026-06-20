@@ -1,0 +1,298 @@
+[
+  {
+    "id": "wc-mer",
+    "title": "Морепродукты",
+    "theme": "mer",
+    "level": "A2",
+    "wordIds": [
+      "wl-mer-thon",
+      "wl-mer-saumon",
+      "wl-mer-crevette",
+      "wl-mer-moule",
+      "wl-mer-huitre",
+      "wl-mer-homard",
+      "wl-mer-ecaille",
+      "wl-mer-pecher"
+    ],
+    "steps": [
+      {
+        "id": "wc-mer-thon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mer-thon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "J'ouvre une boîte de thon pour la salade.",
+          "Un sandwich au thon, s'il vous plaît.",
+          "Le thon est un grand poisson de mer."
+        ],
+        "options": ["тунец", "лосось", "краб", "сардина"],
+        "correctIndex": 0,
+        "explanation": "thon (m) — тунец, крупная морская рыба, которую часто продают в банках (une boîte de thon). Группа th читается как обычное /t/: /tɔ̃/. Лосось — le saumon."
+      },
+      {
+        "id": "wc-mer-thon-sort",
+        "kind": "sort",
+        "wordId": "wl-mer-thon",
+        "dimension": "collocationKnowledge",
+        "mechanic": "M12",
+        "prompt": "Какие сочетания со словом thon звучат естественно, а какие — нет?",
+        "baskets": [
+          {
+            "id": "ok",
+            "label": "Естественно"
+          },
+          {
+            "id": "no",
+            "label": "Так не говорят"
+          }
+        ],
+        "items": [
+          {
+            "text": "une boîte de thon",
+            "basket": "ok"
+          },
+          {
+            "text": "un sandwich au thon",
+            "basket": "ok"
+          },
+          {
+            "text": "une salade de thon",
+            "basket": "ok"
+          },
+          {
+            "text": "un thon en pull",
+            "basket": "no"
+          },
+          {
+            "text": "boire du thon",
+            "basket": "no"
+          }
+        ],
+        "explanation": "«une boîte de thon», «un sandwich au thon», «une salade de thon» — естественно. «un thon en pull» (тунец в свитере) и «boire du thon» (пить тунца) — бессмыслица: тунца едят, а не пьют."
+      },
+      {
+        "id": "wc-mer-saumon-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mer-saumon",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Pour Noël, on mange souvent du saumon fumé.",
+          "Je voudrais un pavé de saumon grillé.",
+          "Ce poisson rose, c'est du saumon."
+        ],
+        "options": ["лосось", "тунец", "форель", "сельдь"],
+        "correctIndex": 0,
+        "explanation": "saumon (m) — лосось, морская рыба с розовым мясом; «saumon fumé» — копчёный лосось. Буквы au дают /o/, конец носовой: /so.mɔ̃/."
+      },
+      {
+        "id": "wc-mer-saumon-bridge",
+        "kind": "wordBridge",
+        "wordId": "wl-mer-saumon",
+        "dimension": "visualRecognition",
+        "mechanic": "M06",
+        "prompt": "Английский поможет узнать слово. Что значит saumon?",
+        "bridge": "Англ. «salmon» — это лосось. Французское saumon — тот же корень, тот же смысл. Только пишется через au и читается /so.mɔ̃/ (l в «salmon» молчит и там, и там).",
+        "options": ["лосось", "креветка", "тунец", "копчёность"],
+        "correctIndex": 0,
+        "explanation": "saumon = лосось, как англ. «salmon». Смысл совпадает — хороший мост. Различие в написании (au) и в носовом звуке на конце."
+      },
+      {
+        "id": "wc-mer-crevette-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mer-crevette",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "En entrée, des crevettes grillées au citron.",
+          "Il décortique une crevette avant de la manger.",
+          "Un cocktail de crevettes, c'est ma préférence."
+        ],
+        "options": ["креветка", "мидия", "устрица", "краб"],
+        "correctIndex": 0,
+        "explanation": "crevette (f) — креветка, маленький морской рачок; часто во множественном: des crevettes. «décortiquer» — чистить (снимать панцирь). Краб — un crabe."
+      },
+      {
+        "id": "wc-mer-crevette-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-mer-crevette",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "crevette",
+        "options": ["crevette", "navette", "buvette"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало crevette /kʁə.vɛt/ — креветка. Похожие по звучанию, но другие слова: navette /na.vɛt/ — челнок/шаттл, buvette /by.vɛt/ — буфет/киоск с напитками. Все оканчиваются на -vette, но начало разное."
+      },
+      {
+        "id": "wc-mer-moule-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mer-moule",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Ce soir, on commande des moules frites.",
+          "Des moules marinières au vin blanc, c'est délicieux.",
+          "Elle ouvre une moule et la mange."
+        ],
+        "options": ["мидия", "устрица", "креветка", "омар"],
+        "correctIndex": 0,
+        "explanation": "moule (f) — мидия, морской моллюск в чёрной раковине; «moules frites» — классическое блюдо (мидии с картошкой фри). Устрица — une huître."
+      },
+      {
+        "id": "wc-mer-moule-trap",
+        "kind": "trap",
+        "wordId": "wl-mer-moule",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Слово moule пишется одинаково в двух смыслах. Где «мидия» (которую едят)?",
+        "phrases": ["On mange des moules.", "Je verse la pâte dans le moule."],
+        "options": [
+          "la moule (женский род) — мидия; le moule (мужской род) — форма для выпечки",
+          "le moule — мидия; la moule — форма для выпечки",
+          "оба значат «мидия»",
+          "оба значат «форма для выпечки»"
+        ],
+        "correctIndex": 0,
+        "explanation": "Род меняет смысл: la moule (f) — мидия, морепродукт; le moule (m) — форма (un moule à gâteau — форма для торта). Пишутся одинаково, но артикль разный."
+      },
+      {
+        "id": "wc-mer-huitre-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mer-huitre",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "On commande une douzaine d'huîtres.",
+          "Il faut un couteau spécial pour ouvrir les huîtres.",
+          "Les huîtres se mangent avec un peu de citron."
+        ],
+        "options": ["устрица", "мидия", "креветка", "ракушка-гребешок"],
+        "correctIndex": 0,
+        "explanation": "huître (f) — устрица; её едят живой/сырой, с лимоном. Пишется с accent circonflexe: h-u-î-t-r-e. Начальное h немое, поэтому d'huîtres, les huîtres (элизия и связка)."
+      },
+      {
+        "id": "wc-mer-huitre-mnemo",
+        "kind": "wordMnemonic",
+        "wordId": "wl-mer-huitre",
+        "dimension": "personalUsage",
+        "mechanic": "M09",
+        "prompt": "Придумай свою ассоциацию для huître, чтобы запомнить странное написание (h-u-î-t-r-e) и звук /ɥitʁ/.",
+        "examples": [
+          "В слове «huître» спрятано huit (восемь): представь блюдо из восьми устриц — huit huîtres.",
+          "Шляпка-«домик» над î — как створка раковины над спрятанной внутри устрицей."
+        ]
+      },
+      {
+        "id": "wc-mer-homard-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mer-homard",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенное слово?",
+        "contexts": [
+          "Pour son anniversaire, il a commandé un homard.",
+          "Le homard a deux grosses pinces.",
+          "Le homard est plus cher que les crevettes."
+        ],
+        "options": ["омар (лобстер)", "краб", "осьминог", "кальмар"],
+        "correctIndex": 0,
+        "explanation": "homard (m) — омар, крупный морской рак с большими клешнями (pinces), дорогое блюдо. Важно: h придыхательное — говорят «le homard», «du homard», без элизии. Конечная d немая: /ɔ.maʁ/."
+      },
+      {
+        "id": "wc-mer-homard-twin",
+        "kind": "soundTwin",
+        "wordId": "wl-mer-homard",
+        "dimension": "listeningRecognition",
+        "mechanic": "M10",
+        "prompt": "Послушай и выбери, какое слово прозвучало.",
+        "audioText": "homard",
+        "options": ["homard", "canard", "hangar"],
+        "correctIndex": 0,
+        "explanation": "Прозвучало homard /ɔ.maʁ/ — омар. Похожие, но другие слова: canard /ka.naʁ/ — утка, hangar /ɑ̃.ɡaʁ/ — ангар. Все на /aʁ/, но начало разное."
+      },
+      {
+        "id": "wc-mer-ecaille-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mer-ecaille",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Одно слово во всех трёх сценах. Что оно значит?",
+        "contexts": [
+          "Avant de cuire le poisson, il faut enlever les écailles.",
+          "Ce poisson est couvert de petites écailles brillantes.",
+          "Le poissonnier gratte les écailles avec un couteau."
+        ],
+        "options": ["чешуя", "плавник", "жабры", "кость рыбы"],
+        "correctIndex": 0,
+        "explanation": "écaille (f) — чешуя (одна чешуйка — une écaille, вся чешуя — les écailles). При чистке рыбы её соскабливают. Сочетание -aille читается /aj/: /e.kaj/. Рыбья кость — une arête."
+      },
+      {
+        "id": "wc-mer-ecaille-trap",
+        "kind": "trap",
+        "wordId": "wl-mer-ecaille",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M07",
+        "prompt": "Англ. «scale» значит и «чешуя», и «весы», и «гамма». Как сказать «чешуя рыбы» по-французски?",
+        "options": [
+          "les écailles du poisson",
+          "la balance du poisson (это «весы»)",
+          "la gamme du poisson (это музыкальная «гамма»)",
+          "l'échelle du poisson (это «лестница / масштаб»)"
+        ],
+        "correctIndex": 0,
+        "explanation": "Чешуя — les écailles. Англ. «scale» приходится разделять: весы — une balance, музыкальная гамма — une gamme, масштаб/лестница — une échelle. Один англ. «scale» = четыре разных французских слова."
+      },
+      {
+        "id": "wc-mer-ecaille-odd",
+        "kind": "oddOneOut",
+        "wordId": "wl-mer-ecaille",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M17",
+        "prompt": "Три слова — то, что заказывают и едят в ресторане у моря. Найди лишнее.",
+        "options": ["le homard", "les crevettes", "les moules", "les écailles"],
+        "correctIndex": 3,
+        "explanation": "Омар (le homard), креветки (les crevettes) и мидии (les moules) — морепродукты, которые едят. Чешуя (les écailles) — лишнее: это часть рыбы (её наоборот убирают), а не блюдо."
+      },
+      {
+        "id": "wc-mer-pecher-ctx",
+        "kind": "wordContext",
+        "wordId": "wl-mer-pecher",
+        "dimension": "contextualUnderstanding",
+        "mechanic": "M01",
+        "prompt": "Что значит выделенный глагол?",
+        "contexts": [
+          "Mon grand-père aime pêcher au bord de la mer.",
+          "Ils partent pêcher des crevettes à marée basse.",
+          "On peut pêcher ce poisson toute l'année."
+        ],
+        "options": ["ловить рыбу", "готовить рыбу", "продавать рыбу", "чистить рыбу"],
+        "correctIndex": 0,
+        "explanation": "pêcher — ловить рыбу (или морскую живность). Accent circonflexe на ê: /pe.ʃe/. Существительное от него — la pêche (рыбалка): aller à la pêche."
+      },
+      {
+        "id": "wc-mer-pecher-cmp",
+        "kind": "compare",
+        "wordId": "wl-mer-pecher",
+        "dimension": "contrastiveUnderstanding",
+        "mechanic": "M18",
+        "prompt": "pêcher и pécher отличаются одним акцентом. В чём разница?",
+        "phrases": ["Il va pêcher dans la rivière.", "Il ne faut pas pécher."],
+        "options": [
+          "pêcher (ê) — ловить рыбу; pécher (é) — грешить. Всё решает акцент над e.",
+          "Это одно и то же слово, акцент не важен.",
+          "pêcher (ê) — грешить; pécher (é) — ловить рыбу.",
+          "Оба значат «ловить рыбу»."
+        ],
+        "correctIndex": 0,
+        "explanation": "Два разных глагола: pêcher (accent circonflexe ê, от la pêche — рыбалка) — ловить рыбу; pécher (accent aigu é, от le péché — грех) — грешить. Один штрих над e полностью меняет смысл."
+      }
+    ]
+  }
+]

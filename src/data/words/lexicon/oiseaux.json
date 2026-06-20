@@ -1,0 +1,234 @@
+[
+  {
+    "id": "wl-oiseaux-aile",
+    "lemma": "aile",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/ɛl/",
+    "translationsRu": ["крыло"],
+    "translationsEn": ["wing"],
+    "semanticCore": "Крыло — то, чем птица машет, чтобы лететь; так же называют крыло самолёта и боковую часть здания.",
+    "collocations": [
+      { "fr": "battre des ailes", "ru": "махать крыльями" },
+      { "fr": "l'aile de l'avion", "ru": "крыло самолёта" },
+      { "fr": "ouvrir les ailes", "ru": "раскрыть крылья" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "elle",
+        "note": "aile (крыло) и elle (она) звучат одинаково /ɛl/ — различаешь только по смыслу: une aile — крыло, elle est là — она здесь."
+      },
+      {
+        "with": "plume",
+        "note": "aile — крыло целиком (им машут); plume — отдельное перо, из которых крыло состоит."
+      }
+    ],
+    "frequencyRank": 640,
+    "level": "A2",
+    "tags": ["oiseaux", "corps"],
+    "caseIds": ["wc-oiseaux"]
+  },
+  {
+    "id": "wl-oiseaux-plume",
+    "lemma": "plume",
+    "pos": "noun",
+    "gender": "f",
+    "ipa": "/plym/",
+    "translationsRu": ["перо"],
+    "translationsEn": ["feather"],
+    "semanticCore": "Перо птицы; за лёгкость стало символом чего-то невесомого, а раньше так называли и перо для письма.",
+    "collocations": [
+      { "fr": "une plume blanche", "ru": "белое перо" },
+      { "fr": "léger comme une plume", "ru": "лёгкий как пёрышко" },
+      { "fr": "perdre ses plumes", "ru": "терять перья (линять)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "poil",
+        "note": "plume — перо (у птиц); poil — шерстинка / волосок (у зверей). У птицы des plumes, у кота des poils."
+      },
+      {
+        "with": "stylo",
+        "note": "plume сегодня — птичье перо; писать пером уже не пишут, ручка — un stylo (а перьевая ручка — un stylo à plume)."
+      }
+    ],
+    "frequencyRank": 720,
+    "level": "A2",
+    "tags": ["oiseaux", "corps"],
+    "caseIds": ["wc-oiseaux"]
+  },
+  {
+    "id": "wl-oiseaux-nid",
+    "lemma": "nid",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/ni/",
+    "translationsRu": ["гнездо"],
+    "translationsEn": ["nest"],
+    "semanticCore": "Гнездо — дом, который птица вьёт из веточек, чтобы отложить яйца и вырастить птенцов.",
+    "collocations": [
+      { "fr": "faire son nid", "ru": "вить гнездо" },
+      { "fr": "un nid d'oiseau", "ru": "птичье гнездо" },
+      { "fr": "un nid de guêpes", "ru": "осиное гнездо" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "cage",
+        "note": "nid — гнездо, которое птица вьёт сама на воле; cage — клетка, куда птицу сажает человек."
+      },
+      {
+        "with": "nie",
+        "note": "nid (гнездо) звучит как форма nie (от nier — отрицать): оба /ni/. Конечная d в nid не читается."
+      }
+    ],
+    "frequencyRank": 760,
+    "level": "A2",
+    "tags": ["oiseaux", "nature"],
+    "caseIds": ["wc-oiseaux"]
+  },
+  {
+    "id": "wl-oiseaux-bec",
+    "lemma": "bec",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/bɛk/",
+    "translationsRu": ["клюв"],
+    "translationsEn": ["beak"],
+    "semanticCore": "Клюв — твёрдый «рот» птицы, которым она клюёт корм; конечная c здесь читается /bɛk/.",
+    "collocations": [
+      { "fr": "un coup de bec", "ru": "удар клювом" },
+      { "fr": "le bec jaune", "ru": "жёлтый клюв" },
+      { "fr": "ouvrir le bec", "ru": "раскрыть клюв" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "bouche",
+        "note": "bec — клюв (у птицы); bouche — рот (у человека). У зверя с зубами это gueule (пасть)."
+      },
+      {
+        "with": "sec",
+        "note": "bec /bɛk/ и sec /sɛk/ (сухой) различаются только первым звуком — не перепутай на слух."
+      }
+    ],
+    "frequencyRank": 700,
+    "level": "A2",
+    "tags": ["oiseaux", "corps"],
+    "caseIds": ["wc-oiseaux"]
+  },
+  {
+    "id": "wl-oiseaux-moineau",
+    "lemma": "moineau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/mwa.no/",
+    "translationsRu": ["воробей"],
+    "translationsEn": ["sparrow"],
+    "semanticCore": "Воробей — маленькая серо-коричневая городская птичка; самая привычная пташка на улице. Множественное — des moineaux.",
+    "collocations": [
+      { "fr": "un petit moineau", "ru": "маленький воробей" },
+      { "fr": "des moineaux dans la cour", "ru": "воробьи во дворе" },
+      { "fr": "manger comme un moineau", "ru": "есть как воробушек (очень мало)" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "oiseau",
+        "note": "moineau — воробей (конкретный вид); oiseau — птица вообще. Воробей — это un oiseau, но не всякая птица воробей."
+      },
+      {
+        "with": "moineaux",
+        "note": "un moineau → des moineaux: слова на -eau дают множественное на -eaux (как oiseau → oiseaux). Формы «moineaus» нет."
+      }
+    ],
+    "frequencyRank": 850,
+    "level": "A2",
+    "tags": ["oiseaux", "ville"],
+    "caseIds": ["wc-oiseaux"]
+  },
+  {
+    "id": "wl-oiseaux-pigeon",
+    "lemma": "pigeon",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/pi.ʒɔ̃/",
+    "translationsRu": ["голубь"],
+    "translationsEn": ["pigeon"],
+    "semanticCore": "Голубь — крупная городская птица, которую видишь на площадях; в разговоре pigeon ещё значит «простак, которого надули».",
+    "collocations": [
+      { "fr": "un pigeon voyageur", "ru": "почтовый голубь" },
+      { "fr": "nourrir les pigeons", "ru": "кормить голубей" },
+      { "fr": "les pigeons sur la place", "ru": "голуби на площади" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "colombe",
+        "note": "pigeon — обычный (серый, городской) голубь; colombe — белая голубка, символ мира. Птица одна, но образ разный."
+      },
+      {
+        "with": "moineau",
+        "note": "pigeon — голубь (крупный); moineau — воробей (маленький). По размеру их не спутать."
+      }
+    ],
+    "frequencyRank": 780,
+    "level": "A2",
+    "tags": ["oiseaux", "ville"],
+    "caseIds": ["wc-oiseaux"]
+  },
+  {
+    "id": "wl-oiseaux-hibou",
+    "lemma": "hibou",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/i.bu/",
+    "translationsRu": ["сова", "филин"],
+    "translationsEn": ["owl"],
+    "semanticCore": "Сова (с «ушками» из перьев) — ночная птица, которая ухает в темноте; h здесь придыхательное, поэтому le hibou, а не l'hibou.",
+    "collocations": [
+      { "fr": "le hibou hulule", "ru": "сова ухает" },
+      { "fr": "un hibou de nuit", "ru": "ночная сова" },
+      { "fr": "les yeux ronds d'un hibou", "ru": "круглые глаза совы" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "chouette",
+        "note": "hibou — сова с перьевыми «ушками» (как филин); chouette — сова без «ушек» (например, сипуха). А ещё «chouette !» в речи — «классно!»."
+      },
+      {
+        "with": "le hibou",
+        "note": "h в hibou придыхательное (h aspiré): говорят le hibou и les hiboux (с паузой), без слияния — не l'hibou и не [lezibou]."
+      }
+    ],
+    "frequencyRank": 820,
+    "level": "A2",
+    "tags": ["oiseaux", "nature"],
+    "caseIds": ["wc-oiseaux"]
+  },
+  {
+    "id": "wl-oiseaux-corbeau",
+    "lemma": "corbeau",
+    "pos": "noun",
+    "gender": "m",
+    "ipa": "/kɔʁ.bo/",
+    "translationsRu": ["ворон"],
+    "translationsEn": ["crow", "raven"],
+    "semanticCore": "Ворон — крупная чёрная птица с хриплым криком; знаком французам по басне Лафонтена «Le Corbeau et le Renard». Множественное — des corbeaux.",
+    "collocations": [
+      { "fr": "un corbeau noir", "ru": "чёрный ворон" },
+      { "fr": "le corbeau croasse", "ru": "ворон каркает" },
+      { "fr": "noir comme un corbeau", "ru": "чёрный как ворон" }
+    ],
+    "contrastPairs": [
+      {
+        "with": "corneille",
+        "note": "corbeau — крупный во́рон; corneille — ворона (поменьше, тоже чёрная). По-русски «ворон» и «ворона» тоже разные."
+      },
+      {
+        "with": "corbeille",
+        "note": "Не путай похожие слова: corbeau (m) — во́рон-птица, а corbeille (f) — корзина (например, une corbeille de fruits — корзина фруктов)."
+      }
+    ],
+    "frequencyRank": 800,
+    "level": "A2",
+    "tags": ["oiseaux", "nature"],
+    "caseIds": ["wc-oiseaux"]
+  }
+]
